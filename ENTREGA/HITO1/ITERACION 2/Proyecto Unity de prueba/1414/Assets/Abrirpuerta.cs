@@ -4,59 +4,60 @@ using System.Collections;
 public class Abrirpuerta : MonoBehaviour {
 
 
-	public bool T_ActivatedOpen = true;
-	public bool T_ActivatedClose = false;
-	public bool activateTrigger = false;
+	public bool Ahoraabierto = true;
+	public bool Ahoracerrado = false;
+	public bool Triggerp = false;
 
-	Animator animator;
-	bool doorOpen;
-	// Use this for initialization
+	Animator anim;
+	bool puerta;
+
 	void Start () {
 	
 
-		T_ActivatedOpen = true;
-		T_ActivatedClose = false;
+		Ahoraabierto = true;
+		Ahoracerrado = false;
 
-		animator = GetComponent<Animator> ();
-		doorOpen = false;
+		anim = GetComponent<Animator> ();
+		puerta = false;
 
 	}
-	
-	// Update is called once per frame
+
+
 	void Update () {
 	
-		if (T_ActivatedOpen == true)
-			T_ActivatedClose = false;
+		if (Ahoraabierto == true)
+			Ahoracerrado = false;
 
-		else if (T_ActivatedClose == true)
-			T_ActivatedOpen = false;
+		else if (Ahoracerrado == true)
+			Ahoraabierto = false;
 
-		if (activateTrigger && Input.GetKeyDown (KeyCode.E)) //For some reaseon you can't have both E (open and close).
+		if (Ahoraabierto && Triggerp && Input.GetKeyDown (KeyCode.E)) 
 		{
 			
-			T_ActivatedOpen = false;
-			T_ActivatedClose = true;
+			Ahoraabierto = false;
+			Ahoracerrado = true;
 
-			doorOpen = true;
+			puerta = true;
 
 
 
-			if (doorOpen) 
-			{
-				doorOpen = true;
+
+
+				
 				doorController ("Abrir");
-			}
+			
 
 		}
-		else if(T_ActivatedClose && activateTrigger && Input.GetKey (KeyCode.F)) 
+		else if(Ahoracerrado && Triggerp && Input.GetKeyDown (KeyCode.E)) 
 		{
-			T_ActivatedOpen = true;
-			T_ActivatedClose = false;
+			Ahoraabierto = true;
+			Ahoracerrado = false;
 
 
-			if (doorOpen) 
+
+			if (puerta) 
 			{
-				doorOpen = false;
+				puerta = false;
 				doorController ("Cerrar");
 			}
 
@@ -64,9 +65,9 @@ public class Abrirpuerta : MonoBehaviour {
 	}
 
 
-	void doorController(string direction) //Animator function.
+	void doorController(string direction) 
 	{
-		animator.SetTrigger(direction);
+		anim.SetTrigger(direction);
 	}
 
 
