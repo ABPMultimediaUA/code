@@ -3,9 +3,8 @@ using System.Collections;
 
 public class Abrirpuerta : MonoBehaviour {
 
-
-	public bool Ahoraabierto = true;
-	public bool Ahoracerrado = false;
+	
+	public bool abierto = false;
 	public bool Triggerp = false;
 
 	Animator anim;
@@ -13,9 +12,8 @@ public class Abrirpuerta : MonoBehaviour {
 
 	void Start () {
 	
-
-		Ahoraabierto = true;
-		Ahoracerrado = false;
+        
+		abierto = false;
 
 		anim = GetComponent<Animator> ();
 		puerta = false;
@@ -25,42 +23,25 @@ public class Abrirpuerta : MonoBehaviour {
 
 	void Update () {
 	
-		if (Ahoraabierto == true)
-			Ahoracerrado = false;
+		
 
-		else if (Ahoracerrado == true)
-			Ahoraabierto = false;
-
-		if (Ahoraabierto && Triggerp && Input.GetKeyDown (KeyCode.E)) 
+		if (!abierto && Triggerp && Input.GetKeyDown (KeyCode.E)) 
 		{
 			
-			Ahoraabierto = false;
-			Ahoracerrado = true;
-
 			puerta = true;
+            doorController("Abrir");
+            abierto = true;
 
-
-
-
-
-				
-				doorController ("Abrir");
-			
-
-		}
-		else if(Ahoracerrado && Triggerp && Input.GetKeyDown (KeyCode.E)) 
+        }
+		else if(abierto && Triggerp && Input.GetKeyDown (KeyCode.E)) 
 		{
-			Ahoraabierto = true;
-			Ahoracerrado = false;
-
-
 
 			if (puerta) 
 			{
 				puerta = false;
 				doorController ("Cerrar");
 			}
-
+            abierto = false;
 		} 
 	}
 
