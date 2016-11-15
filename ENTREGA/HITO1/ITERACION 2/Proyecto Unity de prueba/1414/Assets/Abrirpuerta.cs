@@ -3,46 +3,74 @@ using System.Collections;
 
 public class Abrirpuerta : MonoBehaviour {
 
-	
-	public bool abierto = false;
+
+
 	public bool Triggerp = false;
 
 	Animator anim;
+	SphereCollider punto;
 	bool puerta;
 
 	void Start () {
 	
-        
-		abierto = false;
+
+
 
 		anim = GetComponent<Animator> ();
 		puerta = false;
+		punto = GetComponent<SphereCollider> ();
 
 	}
 
 
 	void Update () {
-	
-		
 
-		if (!abierto && Triggerp && Input.GetKeyDown (KeyCode.E)) 
+
+
+		if (!puerta && Triggerp && Input.GetKeyDown (KeyCode.E)) 
 		{
 			
+
+
 			puerta = true;
-            doorController("Abrir");
-            abierto = true;
 
-        }
-		else if(abierto && Triggerp && Input.GetKeyDown (KeyCode.E)) 
+
+
+
+
+				
+				doorController ("Abrir");
+			punto.center = new Vector3 (punto.center.x, punto.center.y, -1);
+			
+
+		}
+		else if(puerta && Triggerp && Input.GetKeyDown (KeyCode.E)) 
 		{
+			
 
-			if (puerta) 
-			{
+
+
+
 				puerta = false;
 				doorController ("Cerrar");
-			}
-            abierto = false;
+
+			punto.center = new Vector3 (punto.center.x, punto.center.y, 0);
+
 		} 
+	}
+
+	void OnTriggerEnter(Collider col)
+	{
+		if (col.gameObject.tag == "Player") {
+			Triggerp = true;
+		}
+	}
+
+	void OnTriggerExit(Collider col)
+	{
+		if (col.gameObject.tag == "Player") {
+			Triggerp = false;
+		}
 	}
 
 
