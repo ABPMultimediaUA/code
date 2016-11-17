@@ -27,14 +27,15 @@ using namespace gui;
 #endif
 
 
-Personaje::Personaje(ISceneManager* smgr){
+Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver){
     
     IMeshSceneNode *cube = smgr -> addCubeSceneNode(10); //preguntar a Miguel Angel
         if(cube){
             cube -> setMaterialFlag(EMF_LIGHTING, false);
             cube -> setPosition(vector3df(0,0,0));
+             cube->setMaterialTexture(0, driver->getTexture("texture/bruce.jpg"));
             //primer parametro del setVertexColors es de la maya que quieres cambiar el color y con su getMesh se consigue
-            smgr -> getMeshManipulator()->setVertexColors(cube->getMesh(), SColor(0, 0, 255, 128));//lus, R, G, B
+           // smgr -> getMeshManipulator()->setVertexColors(cube->getMesh(), SColor(0, 0, 255, 128));//lus, R, G, B
             
 	}
     

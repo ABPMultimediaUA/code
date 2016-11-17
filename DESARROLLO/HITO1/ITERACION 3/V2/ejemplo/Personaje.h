@@ -36,7 +36,7 @@ private:
    IMeshSceneNode *maya;
 
 public:
-    Personaje (ISceneManager* smgr);
+    Personaje (ISceneManager* smgr, IVideoDriver* driver);
     Personaje(const Personaje& orig);
     virtual ~Personaje();
     vector3df getPos();

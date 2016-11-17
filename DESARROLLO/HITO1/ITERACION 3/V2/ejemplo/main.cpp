@@ -1,6 +1,7 @@
 #include <irrlicht.h>
 #include "CAppReceiver.h"
 #include "Personaje.h"
+#include "Escenario.h"
 
 #define vel 20
 
@@ -16,43 +17,6 @@ using namespace gui;
 #pragma comment(lib, "Irrlicht.lib")
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
-
-
-/*class CAppReceiver : public IEventReceiver { 
-    
-private:
-    bool KeyDown[KEY_KEY_CODES_COUNT]; 
-    
-public:
-    CAppReceiver(){
-       for(int i = 0; i < KEY_KEY_CODES_COUNT; i++){
-           KeyDown[i] = false;
-       }
-           
-   }
-    virtual bool onEvent(const SEvent &event){
-       switch(event.EventType){
-           case irr::EET_KEY_INPUT_EVENT:
-           {
-              KeyDown[event.KeyInput.Key] = event.KeyInput.PressedDown; 
-           }
-           default:
-               break;
-       }
-       return false;
-   }
-    
-    virtual bool isKeyDown(EKEY_CODE keyCode) const{
-        return KeyDown[keyCode];
-    }
-
-    virtual bool isKeyUp(EKEY_CODE keyCode) const{
-        return !KeyDown[keyCode];
-    }
-
-    
-    
-};*/
 
 int main()
 {
@@ -78,8 +42,8 @@ int main()
 		rect<s32>(10,10,260,22), true);//metodo para poner algo por pantalla
         //cambiar la camara activa smgr->setActiveCamera(camera);
         
-        Personaje *pers = new Personaje(smgr);
-        
+        Personaje *pers = new Personaje(smgr,driver);
+        Escenario *esce = new Escenario(smgr,driver);
        /* IMeshSceneNode *cube = smgr -> addCubeSceneNode(10); //preguntar a Miguel Angel
         if(cube){
             cube -> setMaterialFlag(EMF_LIGHTING, false);
