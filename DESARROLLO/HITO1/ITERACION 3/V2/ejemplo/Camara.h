@@ -23,22 +23,26 @@ using namespace io;
 using namespace gui;
 
 class Camara {
+    
+    private:
+    
+    vector3df posicion;
+    vector3df foco;
+    float vel;
+    int cont;
+    ICameraSceneNode* camara;
+
+
 public:
     Camara(ISceneManager* smgr, IVideoDriver* driver);
     Camara(const Camara& orig);
     virtual ~Camara();
-    void actualizarCamara(vector3df posPersonaje);
+    void actualizarCamara(int modo, f32 dt);
     vector3df getPos();
     vector3df getFoco();
     void setPos(vector3df pos);
-    void setFoco(vector3df foco);
+    void setFoco(vector3df f);
     
-private:
-    
-    vector3df pos;
-    vector3df foco;
-
 };
-
 #endif /* CAMARA_H */
 

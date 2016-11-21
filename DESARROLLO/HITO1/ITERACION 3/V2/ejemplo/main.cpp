@@ -47,7 +47,6 @@ int main()
         Escenario *esce = new Escenario(smgr,driver);
         Camara *cam = new Camara(smgr,driver);
 
-        
 	//smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
        
         //primer parametro nodo padre, 0 el nodo raiz
@@ -68,26 +67,31 @@ int main()
                 if(teclado.isKeyDown(irr::KEY_KEY_D)){
                     //cubePos.X += pers->getVel()*dt; 0
                     pers->moverPersonaje(0,dt);
+                    cam->actualizarCamara(0, dt);
                 }
                 if(teclado.isKeyDown(irr::KEY_KEY_A)){
                    // cubePos.X -= pers->getVel()*dt; 1
                  pers->moverPersonaje(1,dt);
+                 cam->actualizarCamara(1,dt);
 
                 }
                 if(teclado.isKeyDown(irr::KEY_KEY_W)){
                     //cubePos.Z += pers->getVel()*dt; 2
                      pers->moverPersonaje(2,dt);
+                     cam->actualizarCamara(2, dt);
                 }
                 if(teclado.isKeyDown(irr::KEY_KEY_S)){
                    // cubePos.Z -= pers->getVel()*dt; 3
                      pers->moverPersonaje(3,dt);
+                     cam->actualizarCamara(3, dt);
+
                 }
                 then = now;
-             
                 
 		driver->beginScene(true, true, SColor(255,100,101,140));//se usa para hacer el render
 
 		smgr->drawAll(); //dibuja todo el grafo
+                
 		guienv->drawAll();//dibujar el GUI
 
 		driver->endScene(); //intercambia buffer
