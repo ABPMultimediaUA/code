@@ -45,7 +45,7 @@ Camara::~Camara() {
 void Camara::actualizarCamara(int modo, f32 dt){
 
     
-        switch(modo){
+       switch(modo){
     
         case 0:
             posicion.X += vel*dt;
