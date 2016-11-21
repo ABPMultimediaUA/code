@@ -6,6 +6,8 @@
       </df>
       <in>CAppReceiver.cpp</in>
       <in>CAppReceiver.h</in>
+      <in>Camara.cpp</in>
+      <in>Camara.h</in>
       <in>Escenario.cpp</in>
       <in>Escenario.h</in>
       <in>Personaje.cpp</in>

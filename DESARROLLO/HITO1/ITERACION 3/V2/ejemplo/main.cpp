@@ -1,8 +1,9 @@
 #include <irrlicht.h>
-//#include <Box2D.h>
+//#include "Box2D.h"
 #include "CAppReceiver.h"
 #include "Personaje.h"
 #include "Escenario.h"
+#include "Camara.h"
 
 
 using namespace irr;
@@ -44,17 +45,11 @@ int main()
         
         Personaje *pers = new Personaje(smgr,driver);
         Escenario *esce = new Escenario(smgr,driver);
-       /* IMeshSceneNode *cube = smgr -> addCubeSceneNode(10); //preguntar a Miguel Angel
-        if(cube){
-            cube -> setMaterialFlag(EMF_LIGHTING, false);
-            cube -> setPosition(vector3df(0,0,0));
-            //primer parametro del setVertexColors es de la maya que quieres cambiar el color y con su getMesh se consigue
-            smgr -> getMeshManipulator()->setVertexColors(cube->getMesh(), SColor(0, 0, 255, 128));//lus, R, G, B
-            
-	}*/
+        Camara *cam = new Camara(smgr,driver);
 
         
-	smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
+	//smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
+       
         //primer parametro nodo padre, 0 el nodo raiz
         //primer vector posicion, segundo direccion
         
@@ -88,7 +83,7 @@ int main()
                      pers->moverPersonaje(3,dt);
                 }
                 then = now;
-                //pers->setPos(cubePos);
+             
                 
 		driver->beginScene(true, true, SColor(255,100,101,140));//se usa para hacer el render
 

@@ -12,6 +12,8 @@
  */
 #include <irrlicht.h>
 #include "Personaje.h"
+#include "Camara.h"
+
 
 using namespace irr;
 
@@ -74,6 +76,7 @@ void Personaje::moverPersonaje(int modo, f32 deltaTime){
             break;
             
     }
+    
     
     setPos(pos);
 }
