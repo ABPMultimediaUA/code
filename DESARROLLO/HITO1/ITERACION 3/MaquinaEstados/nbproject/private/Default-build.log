@@ -1,0 +1,1 @@
+g++ -Ic:\irrlicht/include -I/usr/X11R6/include  -O3 -ffast-math main.cpp -o ./MaquinaEstado.exe -Lc:\irrlicht/lib/Win32-gcc -lIrrlicht -lopengl32 -lm
