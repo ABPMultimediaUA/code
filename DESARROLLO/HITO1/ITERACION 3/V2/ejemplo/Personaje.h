@@ -35,6 +35,7 @@ private:
   
    IMeshSceneNode *maya;
    float vel;
+   vector3df pos;
 
 public:
     Personaje (ISceneManager* smgr, IVideoDriver* driver);
@@ -43,6 +44,7 @@ public:
     vector3df getPos();
     void setPos(vector3df pos);
     float getVel();
+    void moverPersonaje(int modo, f32 deltaTime);
 };
 
 

@@ -1,4 +1,5 @@
 #include <irrlicht.h>
+//#include <Box2D.h>
 #include "CAppReceiver.h"
 #include "Personaje.h"
 #include "Escenario.h"
@@ -67,22 +68,27 @@ int main()
                 const u32 now = device->getTimer()->getTime();
                 const f32 dt = (f32) (now - then) / 1000.f;
                 
-                vector3df cubePos = pers->getPos();
+               // vector3df cubePos = pers->getPos();
                 
                 if(teclado.isKeyDown(irr::KEY_KEY_D)){
-                    cubePos.X += pers->getVel()*dt;
+                    //cubePos.X += pers->getVel()*dt; 0
+                    pers->moverPersonaje(0,dt);
                 }
                 if(teclado.isKeyDown(irr::KEY_KEY_A)){
-                    cubePos.X -= pers->getVel()*dt;
+                   // cubePos.X -= pers->getVel()*dt; 1
+                 pers->moverPersonaje(1,dt);
+
                 }
                 if(teclado.isKeyDown(irr::KEY_KEY_W)){
-                    cubePos.Z += pers->getVel()*dt;
+                    //cubePos.Z += pers->getVel()*dt; 2
+                     pers->moverPersonaje(2,dt);
                 }
                 if(teclado.isKeyDown(irr::KEY_KEY_S)){
-                    cubePos.Z -= pers->getVel()*dt;
+                   // cubePos.Z -= pers->getVel()*dt; 3
+                     pers->moverPersonaje(3,dt);
                 }
                 then = now;
-                pers->setPos(cubePos);
+                //pers->setPos(cubePos);
                 
 		driver->beginScene(true, true, SColor(255,100,101,140));//se usa para hacer el render
 

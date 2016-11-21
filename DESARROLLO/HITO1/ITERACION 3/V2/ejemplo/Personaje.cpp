@@ -41,15 +41,45 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver){
     
     maya = cube;
     vel = 20.f;
-    
+    pos = maya->getPosition();
 }
 
 Personaje::Personaje(const Personaje& orig){}
 Personaje::~Personaje(){}
 
+void Personaje::moverPersonaje(int modo, f32 deltaTime){
+
+    
+    switch(modo){
+    
+        case 0:
+            pos.X += vel*deltaTime;
+            break;
+            
+        case 1:
+            pos.X -= vel*deltaTime;
+
+            break;
+            
+        case 2:
+            
+             pos.Z += vel*deltaTime;
+
+            break;
+            
+        case 3:
+            
+             pos.Z -= vel*deltaTime;
+
+            break;
+            
+    }
+    
+    setPos(pos);
+}
 
 vector3df Personaje::getPos(){
-    return maya->getPosition();
+    return pos;
 }
 
 void Personaje::setPos(vector3df pos){

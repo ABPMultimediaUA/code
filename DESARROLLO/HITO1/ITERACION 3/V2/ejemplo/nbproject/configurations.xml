@@ -41,7 +41,7 @@
           <ccTool>
             <incDir>
               <pElem>../irrlicht-1.8.4/include</pElem>
-              <pElem>D:/usr/X11R6/include</pElem>
+              <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
               <pElem></pElem>
             </incDir>
           </ccTool>
