@@ -40,6 +40,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver){
 	}
     
     maya = cube;
+    vel = 20.f;
     
 }
 
@@ -53,5 +54,9 @@ vector3df Personaje::getPos(){
 
 void Personaje::setPos(vector3df pos){
     maya->setPosition(pos);
+}
+
+float Personaje::getVel(){
+    return vel;
 }
 

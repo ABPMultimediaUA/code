@@ -34,6 +34,7 @@ class Personaje {
 private:
   
    IMeshSceneNode *maya;
+   float vel;
 
 public:
     Personaje (ISceneManager* smgr, IVideoDriver* driver);
@@ -41,6 +42,7 @@ public:
     virtual ~Personaje();
     vector3df getPos();
     void setPos(vector3df pos);
+    float getVel();
 };
 
 

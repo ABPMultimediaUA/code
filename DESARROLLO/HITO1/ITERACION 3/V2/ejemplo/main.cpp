@@ -3,7 +3,6 @@
 #include "Personaje.h"
 #include "Escenario.h"
 
-#define vel 20
 
 using namespace irr;
 
@@ -71,16 +70,16 @@ int main()
                 vector3df cubePos = pers->getPos();
                 
                 if(teclado.isKeyDown(irr::KEY_KEY_D)){
-                    cubePos.X += vel*dt;
+                    cubePos.X += pers->getVel()*dt;
                 }
                 if(teclado.isKeyDown(irr::KEY_KEY_A)){
-                    cubePos.X -= vel*dt;
+                    cubePos.X -= pers->getVel()*dt;
                 }
                 if(teclado.isKeyDown(irr::KEY_KEY_W)){
-                    cubePos.Z += vel*dt;
+                    cubePos.Z += pers->getVel()*dt;
                 }
                 if(teclado.isKeyDown(irr::KEY_KEY_S)){
-                    cubePos.Z -= vel*dt;
+                    cubePos.Z -= pers->getVel()*dt;
                 }
                 then = now;
                 pers->setPos(cubePos);
