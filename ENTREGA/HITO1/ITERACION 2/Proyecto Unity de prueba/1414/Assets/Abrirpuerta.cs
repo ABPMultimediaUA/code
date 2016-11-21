@@ -29,16 +29,8 @@ public class Abrirpuerta : MonoBehaviour {
 
 		if (!puerta && Triggerp && Input.GetKeyDown (KeyCode.E)) 
 		{
-			
 
-
-			puerta = true;
-
-
-
-
-
-				
+			puerta = true;			
 				doorController ("Abrir");
 			punto.center = new Vector3 (punto.center.x, punto.center.y, -1);
 			

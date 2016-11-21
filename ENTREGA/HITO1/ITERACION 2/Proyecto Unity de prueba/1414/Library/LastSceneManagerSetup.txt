@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/puerta.unity
+- path: Assets/Ascensor y puerta.unity
   isLoaded: 1
   isActive: 1
