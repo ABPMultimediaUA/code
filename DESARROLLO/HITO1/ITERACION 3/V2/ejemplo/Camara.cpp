@@ -11,19 +11,11 @@
  * Created on 21 de noviembre de 2016, 17:37
  */
 
-#include <irrlicht.h>
+
 #include "Personaje.h"
 #include "Camara.h"
 
-using namespace irr;
-
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
-
-
+//cuando esten las fisicas hay que hacer una camara con resorte para que sea fluido el movimiento
 Camara::Camara(ISceneManager* smgr, IVideoDriver* driver) {
     
     smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,0,0));

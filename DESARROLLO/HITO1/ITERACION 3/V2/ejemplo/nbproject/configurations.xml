@@ -4,7 +4,6 @@
     <df root="." name="0">
       <in>CAppReceiver.cpp</in>
       <in>Camara.cpp</in>
-      <in>Camara.h</in>
       <in>Escenario.cpp</in>
       <in>Personaje.cpp</in>
       <in>main.cpp</in>
@@ -44,6 +43,7 @@
             <incDir>
               <pElem>../irrlicht-1.8.4/include</pElem>
               <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+              <pElem>../Box2D/Box2D</pElem>
               <pElem></pElem>
             </incDir>
           </ccTool>
@@ -58,8 +58,8 @@
         </ccTool>
       </item>
       <item path="Camara.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Camara.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Escenario.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">

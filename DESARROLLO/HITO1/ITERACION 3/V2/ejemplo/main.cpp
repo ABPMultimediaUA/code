@@ -1,5 +1,5 @@
 #include <irrlicht.h>
-//#include "Box2D.h"
+#include <Box2D.h>
 #include "CAppReceiver.h"
 #include "Personaje.h"
 #include "Escenario.h"
