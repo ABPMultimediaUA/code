@@ -11,17 +11,8 @@
  * Created on 17 de noviembre de 2016, 20:08
  */
 
-#include <irrlicht.h>
-
 #include "Escenario.h"
 
-using namespace irr;
-
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
 
 Escenario::Escenario(ISceneManager* smgr, IVideoDriver* driver) {
      IAnimatedMesh *terrain_model = smgr->addHillPlaneMesh("groundPlane", // Name of the scenenode
