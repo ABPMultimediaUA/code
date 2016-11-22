@@ -14,15 +14,22 @@
 #ifndef ENTITYMANAGER_H
 #define ENTITYMANAGER_H
 
+#include "gameEntity.h"
 class entityManager {
 public:
     entityManager();
     entityManager(const entityManager& orig);
     virtual ~entityManager();
+    int generarID();
+    gameEntity* crearEntidad();
+    void addComponentToEntity(gameEntity*,componente*);
+    componente* getComponentOffEntity(gameEntity*,componente*);
+    void borrarEntity(gameEntity*);
+    std::vector<componente*>* getAllEntityComponent(gameEntity*);
 private:
-    unsigned int idMasBajaUsada;
-    
-
+    unsigned int *idMasBajaUsada;
+    std::vector<gameEntity*> *entidades;
+    std::map<gameEntity*,componente*> *dicc;
 };
 
 #endif /* ENTITYMANAGER_H */

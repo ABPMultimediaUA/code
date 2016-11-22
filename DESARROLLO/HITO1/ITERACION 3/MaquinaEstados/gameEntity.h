@@ -18,7 +18,7 @@ class gameEntity {
 public:
     gameEntity();
     gameEntity(const gameEntity& orig);
-    gameEntity(int _id);
+    gameEntity(int);
     virtual ~gameEntity();
     int getID();
 private:

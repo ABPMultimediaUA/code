@@ -14,16 +14,16 @@
 #include "gameEntity.h"
 
 gameEntity::gameEntity() {
-    this->id = new int;
+    this->id = new int();
 }
 
 gameEntity::gameEntity(const gameEntity& orig) {
-    this->id = new int;
+    this->id = new int();
     this->id = orig.id;
 }
 
 gameEntity::gameEntity(int _id){
-    this->id = new int;
+    this->id = new int();
     this->*id = _id;
 }
 
