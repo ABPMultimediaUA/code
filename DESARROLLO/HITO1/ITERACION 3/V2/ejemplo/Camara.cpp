@@ -16,7 +16,7 @@
 #include "Camara.h"
 
 //cuando esten las fisicas hay que hacer una camara con resorte para que sea fluido el movimiento
-Camara::Camara(ISceneManager* smgr, IVideoDriver* driver) {
+Camara::Camara(ISceneManager* smgr) {
     
     smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,0,0));
     
@@ -25,7 +25,7 @@ Camara::Camara(ISceneManager* smgr, IVideoDriver* driver) {
     foco = camara->getTarget();
     cont = 0;
     vel = 10.f;
-      
+    
 }
 
 Camara::Camara(const Camara& orig) {

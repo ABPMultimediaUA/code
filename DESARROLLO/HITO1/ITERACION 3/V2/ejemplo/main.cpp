@@ -45,10 +45,14 @@ int main()
         
         Personaje *pers = new Personaje(smgr,driver);
         Escenario *esce = new Escenario(smgr,driver);
-        Camara *cam = new Camara(smgr,driver);
-
-	//smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
+        Camara *cam = new Camara(smgr);
+        //smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
        
+        /*b2Vec2 gravity(0.0f, -10.0f);
+        b2World world(gravity);
+        b2BodyDef groundBodyDef;
+        groundBodyDef.position.Set(0.0f, -10.0f);*/
+        
         //primer parametro nodo padre, 0 el nodo raiz
         //primer vector posicion, segundo direccion
         

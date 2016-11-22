@@ -34,7 +34,7 @@ class Camara {
 
 
 public:
-    Camara(ISceneManager* smgr, IVideoDriver* driver);
+    Camara(ISceneManager* smgr);
     Camara(const Camara& orig);
     virtual ~Camara();
     void actualizarCamara(int modo, f32 dt);
