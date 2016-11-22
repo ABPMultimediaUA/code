@@ -38,28 +38,39 @@ entityManager::~entityManager() {
     delete this->entidades;
 }
 
-//valor maximo del unsigned int = 4294967294
+//valor maximo del unsigned int = 4294967296
 int entityManager::generarID(){
     if(this->idMasBajaUsada < 65535){
         return *this->idMasBajaUsada++;
     }
     else{
-        for(int i = 1; i < 65535; i++){
-            if(this->entidades->at(i) == 0){
-                return i;
-            }
+        for(int i = 1; i < 65535 && this->entidades->at(i) == 0; i++){
+            return i;
         }
     }
     cerr<<"Error: No quedan mas IDs!"<<endl;
     return 0;
 }
 
-gameEntity* entityManager::crearEntidad(){}
+gameEntity* entityManager::crearEntidad(){
+    return new gameEntity(this->generarID()); 
+}
 
-void entityManager::addComponentToEntity(gameEntity*,componente*){}
+void entityManager::addComponentToEntity(gameEntity* ge,componente* co){
+    if(!ge && !co){
+        this->dicc->insert(pair<gameEntity*,componente*>(ge,co));
+    }
+}
 
-componente* entityManager::getComponentOffEntity(gameEntity*,componente*){}
+componente* entityManager::getComponentOffEntity(gameEntity* ge){
+}
 
-void entityManager::borrarEntity(gameEntity*){}
+std::vector<componente*>* entityManager::getAllEntityComponent(gameEntity* ge){}
 
-std::vector<componente*>* entityManager::getAllEntityComponent(gameEntity*){}
+void entityManager::borrarEntity(gameEntity* ge){
+    if(!ge){
+        for(int i = 0; i<this->entidades->size() && *this->entidades->at(i)->getID() == *ge->getID();i++){
+            this->entidades->erase(this->entidades->begin() + i);
+        }
+    }
+}

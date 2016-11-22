@@ -23,9 +23,9 @@ public:
     int generarID();
     gameEntity* crearEntidad();
     void addComponentToEntity(gameEntity*,componente*);
-    componente* getComponentOffEntity(gameEntity*,componente*);
-    void borrarEntity(gameEntity*);
+    componente* getComponentOffEntity(gameEntity*);
     std::vector<componente*>* getAllEntityComponent(gameEntity*);
+    void borrarEntity(gameEntity*);
 private:
     unsigned int *idMasBajaUsada;
     std::vector<gameEntity*> *entidades;

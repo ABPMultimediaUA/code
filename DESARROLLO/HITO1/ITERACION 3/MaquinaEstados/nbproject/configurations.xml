@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <logicalFolder name="f2" displayName="Header" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f2" displayName="Header" projectFiles="true">
       <itemPath>componente.h</itemPath>
       <itemPath>entityManager.h</itemPath>
       <itemPath>gameEntity.h</itemPath>
@@ -9,7 +9,7 @@
     </logicalFolder>
     <df root="." name="0">
     </df>
-    <logicalFolder name="f1" displayName="Source" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f1" displayName="Source" projectFiles="true">
       <itemPath>componente.cpp</itemPath>
       <itemPath>entityManager.cpp</itemPath>
       <itemPath>gameEntity.cpp</itemPath>
