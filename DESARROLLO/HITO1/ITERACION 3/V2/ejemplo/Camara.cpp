@@ -10,6 +10,7 @@
  * 
  * Created on 21 de noviembre de 2016, 17:37
  */
+
 #include <irrlicht.h>
 #include "Personaje.h"
 #include "Camara.h"
@@ -25,9 +26,13 @@ using namespace gui;
 
 Camara::Camara(ISceneManager* smgr, IVideoDriver* driver) {
     
-    smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0));
-    pos = smgr->getActiveCamera()->getPosition();
-    foco = smgr->getActiveCamera()->getTarget();
+    smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,0,0));
+    
+    camara = smgr->getActiveCamera(); 
+    posicion = camara->getPosition();
+    foco = camara->getTarget();
+    cont = 0;
+    vel = 10.f;
       
 }
 
@@ -37,23 +42,59 @@ Camara::Camara(const Camara& orig) {
 Camara::~Camara() {
 }
 
-Camara::actualizarCamara(vector3df posPersonaje){
+void Camara::actualizarCamara(int modo, f32 dt){
+
+    
+       switch(modo){
+    
+        case 0:
+            posicion.X += vel*dt;
+            foco.X += vel*dt;
+            break;
+            
+        case 1:
+            posicion.X -= vel*dt;
+            foco.X -= vel*dt;
+            break;
+            
+        case 2:
+            
+             posicion.Z += vel*dt;
+            foco.Z += vel*dt;
+
+            break;
+            
+        case 3:
+            
+             posicion.Z -= vel*dt;
+            foco.Z -= vel*dt;
+
+            break;
+            
+    }
+    
+    setPos(posicion);
+    setFoco(foco);
+    
+    
 }
 
-Camara::getFoco(){
+vector3df Camara::getFoco(){
     return foco;
 }
 
-Camara::getPos(){
-    return pos;
+vector3df Camara::getPos(){
+    return posicion;
 }
 
-Camara::setFoco(vector3df foco){
-    foco = foco;
+void Camara::setFoco(vector3df f){
+    foco = f;
+    camara->setTarget(f);
 }
-
-Camara::setPos(vector3df pos){
-    pos = foco;
+void Camara::setPos(vector3df pos){
+    posicion = pos;
+    camara->setPosition(pos);
+    
 }
 
 
