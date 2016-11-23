@@ -68,6 +68,7 @@ int main()
                 
                // vector3df cubePos = pers->getPos();
                 
+                // X + and -
                 if(teclado.isKeyDown(irr::KEY_KEY_D)){
                     //cubePos.X += pers->getVel()*dt; 0
                     pers->moverPersonaje(0,dt);
@@ -79,6 +80,8 @@ int main()
                  cam->actualizarCamara(1,dt);
 
                 }
+                
+                //Z + and -
                 if(teclado.isKeyDown(irr::KEY_KEY_W)){
                     //cubePos.Z += pers->getVel()*dt; 2
                      pers->moverPersonaje(2,dt);

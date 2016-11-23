@@ -18,13 +18,13 @@
 //cuando esten las fisicas hay que hacer una camara con resorte para que sea fluido el movimiento
 Camara::Camara(ISceneManager* smgr) {
     
-    smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,0,0));
+    smgr->addCameraSceneNode(0, vector3df(0,50,-40), vector3df(0,0,0));
     
     camara = smgr->getActiveCamera(); 
     posicion = camara->getPosition();
     foco = camara->getTarget();
     cont = 0;
-    vel = 10.f;
+    vel = 20.f;
     
 }
 
