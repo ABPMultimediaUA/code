@@ -1,5 +1,6 @@
 #include <irrlicht.h>
 #include <Box2D.h>
+#include <iostream>
 #include "CAppReceiver.h"
 #include "Personaje.h"
 #include "Escenario.h"
@@ -32,26 +33,28 @@ int main()
         
 	if (!device)
 		return 1;
-
-	device->setWindowCaption(L"Ejemplo");
+        
+        
+        b2Vec2 gravity(0.0f, -10.0f);
+        b2World *world = new b2World(gravity);
+        
+	device->setWindowCaption(L"Movimiento del personaje");
 
 	IVideoDriver* driver = device->getVideoDriver();
 	ISceneManager* smgr = device->getSceneManager(); //grafo de la escena(controlador)
 	IGUIEnvironment* guienv = device->getGUIEnvironment(); //hacer intrerfaces de usuario
 
-	guienv->addStaticText(L"Ejemplo basico de Irrlicht",
+	guienv->addStaticText(L"Movimiento del personaje",
 		rect<s32>(10,10,260,22), true);//metodo para poner algo por pantalla
         //cambiar la camara activa smgr->setActiveCamera(camera);
         
-        Personaje *pers = new Personaje(smgr,driver);
+        Personaje *pers = new Personaje(smgr,driver,world); //el cubo que se crea es de 10x10x10 10px = 1m
         Escenario *esce = new Escenario(smgr,driver);
         Camara *cam = new Camara(smgr);
         //smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
+        
+        
        
-        /*b2Vec2 gravity(0.0f, -10.0f);
-        b2World world(gravity);
-        b2BodyDef groundBodyDef;
-        groundBodyDef.position.Set(0.0f, -10.0f);*/
         
         //primer parametro nodo padre, 0 el nodo raiz
         //primer vector posicion, segundo direccion
@@ -62,7 +65,8 @@ int main()
 	{
             
             if(device->isWindowActive()){
-                
+                world->Step(1/60, 6, 2);
+                world->ClearForces();
                 const u32 now = device->getTimer()->getTime();
                 const f32 dt = (f32) (now - then) / 1000.f;
                 

@@ -12,6 +12,9 @@
  */
 
 #include <irrlicht.h>
+#include <iostream>
+#include <Box2D.h>
+
 #ifndef PERSONAJE_H
 #define PERSONAJE_H
 
@@ -36,15 +39,20 @@ private:
    IMeshSceneNode *maya;
    float vel;
    vector3df pos;
+   b2Body *body;
+   b2BodyDef bodyDef;
+   b2PolygonShape bodyShape;
+   b2MassData md;
 
 public:
-    Personaje (ISceneManager* smgr, IVideoDriver* driver);
+    Personaje (ISceneManager* smgr, IVideoDriver* driver, b2World *world);
     Personaje(const Personaje& orig);
     virtual ~Personaje();
     vector3df getPos();
     void setPos(vector3df pos);
     float getVel();
     void moverPersonaje(int modo, f32 deltaTime);
+    
 };
 
 

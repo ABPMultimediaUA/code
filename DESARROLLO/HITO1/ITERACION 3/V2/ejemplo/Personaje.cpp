@@ -21,21 +21,38 @@
 #endif
 
 
-Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver){
+Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world){
     
-    IMeshSceneNode *cube = smgr -> addCubeSceneNode(10); //preguntar a Miguel Angel
-        if(cube){
-            cube -> setMaterialFlag(EMF_LIGHTING, false);
-            cube -> setPosition(vector3df(0,0,0));
-             cube->setMaterialTexture(0, driver->getTexture("texture/bruce.jpg"));
+    maya = smgr -> addCubeSceneNode(10); //preguntar a Miguel Angel
+    
+        if(maya){
+            maya -> setMaterialFlag(EMF_LIGHTING, false);
+            maya -> setPosition(vector3df(0,0,0));           
+             maya->setMaterialTexture(0, driver->getTexture("texture/bruce.jpg"));
             //primer parametro del setVertexColors es de la maya que quieres cambiar el color y con su getMesh se consigue
            // smgr -> getMeshManipulator()->setVertexColors(cube->getMesh(), SColor(0, 0, 255, 128));//lus, R, G, B
-            
+             
 	}
     
-    maya = cube;
+   
     vel = 20.f;
     pos = maya->getPosition();
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.position.Set(0,0);
+    bodyShape.SetAsBox(10,10);
+    body = world->CreateBody(&bodyDef);
+    body -> CreateFixture(&bodyShape, 1.0f);
+    md.mass = 2.0;
+    md.center = b2Vec2(5.0,5.0);
+    md.I = 1.0;
+    body->SetMassData(&md);
+    
+    /*std::cout<<"Tam X: "<<maya->getScale().X<<std::endl;
+    std::cout<<"Tam Y: "<<maya->getScale().Y<<std::endl;
+    std::cout<<"Tam Z: "<<maya->getScale().Z<<std::endl;
+    std::cout<<"Pos X: "<<pos.X<<" Pos Y: "<<pos.Y<<" Pos Z: "<<pos.Z<<std::endl;*/
+
+    
 }
 
 Personaje::Personaje(const Personaje& orig){}
@@ -47,7 +64,15 @@ void Personaje::moverPersonaje(int modo, f32 deltaTime){
     switch(modo){
     
         case 0:
-            pos.X += vel*deltaTime;
+            std::cout<<"Sntes"<<std::endl;
+             std::cout<<"Pos X: "<<pos.X<<std::endl;
+             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;
+            body->ApplyForceToCenter(b2Vec2(5.0,0.0), false);
+           // pos.X += vel*deltaTime;
+            pos.X = body->GetPosition().x;
+            std::cout<<"Des"<<std::endl;
+             std::cout<<"Pos X: "<<pos.X<<std::endl;
+             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;
             break;
             
         case 1:
