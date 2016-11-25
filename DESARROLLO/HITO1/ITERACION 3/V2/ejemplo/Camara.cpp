@@ -24,7 +24,7 @@ Camara::Camara(ISceneManager* smgr) {
     posicion = camara->getPosition();
     foco = camara->getTarget();
     cont = 0;
-    vel = 20.f;
+    vel = 20.0f;
     
 }
 

@@ -65,42 +65,78 @@ int main()
 	{
             
             if(device->isWindowActive()){
-                world->Step(1.0f/60.0f, 6, 2);
-                world->ClearForces();
+                
+                
                 const u32 now = device->getTimer()->getTime();
                 const f32 dt = (f32) (now - then) / 1000.f;
-                
-               // vector3df cubePos = pers->getPos();
+                world->Step(dt, 6, 2); //1.0f/60.0f
+                world->ClearForces();
+         
                  if(teclado.isKeyUp(irr::KEY_KEY_D) || teclado.isKeyUp(irr::KEY_KEY_A) || teclado.isKeyUp(irr::KEY_KEY_W) || teclado.isKeyUp(irr::KEY_KEY_S) ){
                     pers->setVelocidad();
                 }
+                
+              if(teclado.isKeyDown(irr::KEY_KEY_W) && teclado.isKeyDown(irr::KEY_KEY_D) ){
+                   
+                     pers->moverPersonaje(4, dt);
+                     cam->actualizarCamara(0,dt);
+                     cam->actualizarCamara(2,dt);
+                }
+                
+                else if(teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_D)){
+                   
+                     pers->moverPersonaje(5, dt);
+                     cam->actualizarCamara(0,dt);
+                     cam->actualizarCamara(3,dt);
+                    
+                }
+                
+                else if(teclado.isKeyDown(irr::KEY_KEY_S) &&  teclado.isKeyDown(irr::KEY_KEY_A)){
+              
+                     pers->moverPersonaje(6, dt);
+                     cam->actualizarCamara(1,dt);
+                     cam->actualizarCamara(3,dt);
+                     
+
+                }
+                
+                else if(teclado.isKeyDown(irr::KEY_KEY_A) && teclado.isKeyDown(irr::KEY_KEY_W)){
+                 
+                     pers->moverPersonaje(7,dt);
+                     cam->actualizarCamara(1,dt);
+                     cam->actualizarCamara(2,dt);
+                     
+
+                }
+            
                 // X + and -
-                if(teclado.isKeyDown(irr::KEY_KEY_D)){
-                    //cubePos.X += pers->getVel()*dt; 0
-                    pers->moverPersonaje(0);
+                else if(teclado.isKeyDown(irr::KEY_KEY_D)){
+                   
+                    pers->moverPersonaje(0,dt);
                     cam->actualizarCamara(0, dt);
                 }
                
-                if(teclado.isKeyDown(irr::KEY_KEY_A)){
-                   // cubePos.X -= pers->getVel()*dt; 1
-                 pers->moverPersonaje(1);
+                else if(teclado.isKeyDown(irr::KEY_KEY_A)){
+                  
+                 pers->moverPersonaje(1,dt);
                  cam->actualizarCamara(1,dt);
 
                 }
                 
                 //Z + and -
-                if(teclado.isKeyDown(irr::KEY_KEY_W)){
-                    //cubePos.Z += pers->getVel()*dt; 2
-                     pers->moverPersonaje(2);
+                else if(teclado.isKeyDown(irr::KEY_KEY_W)){
+                   
+                     pers->moverPersonaje(2,dt);
                      cam->actualizarCamara(2, dt);
                 }
-                if(teclado.isKeyDown(irr::KEY_KEY_S)){
-                   // cubePos.Z -= pers->getVel()*dt; 3
-                     pers->moverPersonaje(3);
+                else if(teclado.isKeyDown(irr::KEY_KEY_S)){
+                   
+                     pers->moverPersonaje(3,dt);
                      cam->actualizarCamara(3, dt);
 
                 }
                 
+           
                
                 then = now;
                 

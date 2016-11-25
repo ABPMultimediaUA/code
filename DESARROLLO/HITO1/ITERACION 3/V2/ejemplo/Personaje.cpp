@@ -35,7 +35,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world){
 	}
     
    
-    vel = 5.0f;
+    vel = 20.0f;
     pos = maya->getPosition();
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(0,0);
@@ -58,73 +58,107 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world){
 Personaje::Personaje(const Personaje& orig){}
 Personaje::~Personaje(){}
 
-void Personaje::moverPersonaje(int modo){
+void Personaje::moverPersonaje(int modo, f32 dt){
 
     
     switch(modo){
     
         case 0:
-            std::cout<<"case 0: Sntes"<<std::endl;
+          /* std::cout<<"case 0: Sntes"<<std::endl;
              std::cout<<"Pos X: "<<pos.X<<std::endl;
-             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;
+             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
            // body->ApplyForceToCenter(b2Vec2(5.0,0.0), true);
+            
              body->SetLinearVelocity(b2Vec2(vel,0.0f));
-           // pos.X += vel*deltaTime;
             pos.X = body->GetPosition().x;
-            std::cout<<"Des"<<std::endl;
+            
+           /* std::cout<<"Des"<<std::endl;
              std::cout<<"Pos X: "<<pos.X<<std::endl;
-             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;
+             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
              
             break;
             
         case 1:
             
-              std::cout<<"case 1: Sntes"<<std::endl;
+           /*  std::cout<<"case 1: Sntes"<<std::endl;
              std::cout<<"Pos X: "<<pos.X<<std::endl;
-             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;
-            body->SetLinearVelocity(b2Vec2(-vel,0.0f));
+             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
             
+            body->SetLinearVelocity(b2Vec2(-vel,0.0f));
             pos.X = body->GetPosition().x;
 
-             std::cout<<"Des"<<std::endl;
+            /*std::cout<<"Des"<<std::endl;
              std::cout<<"Pos X: "<<pos.X<<std::endl;
-             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;
+             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
              
             break;
             
         case 2:
             
-             //pos.Z += vel*deltaTime;
-              std::cout<<"case 2: Sntes"<<std::endl;
+           /*   std::cout<<"case 2: Sntes"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-             std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;
-            body->SetLinearVelocity(b2Vec2(0.0f,vel));
+             std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
             
+            body->SetLinearVelocity(b2Vec2(0.0f,vel));
             pos.Z = body->GetPosition().y;
 
-             std::cout<<"Des"<<std::endl;
+           /*  std::cout<<"Des"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-             std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;
+             std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
 
             break;
             
         case 3:
             
-             //pos.Z -= vel*deltaTime;
-               std::cout<<"case 3: Sntes"<<std::endl;
+            /*   std::cout<<"case 3: Sntes"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-             std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;
-            body->SetLinearVelocity(b2Vec2(0.0f,-vel));
+             std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
             
+            body->SetLinearVelocity(b2Vec2(0.0f,-vel));
             pos.Z = body->GetPosition().y;
 
-             std::cout<<"Des"<<std::endl;
+            /* std::cout<<"Des"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-             std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;
+             std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
 
 
             break;
+        
+        //W+D
+        case 4:
             
+            body->SetLinearVelocity(b2Vec2(vel, vel));
+            pos.X = body->GetPosition().x;
+            pos.Z = body->GetPosition().y;
+
+            
+            break;
+            
+         //D+S
+        case 5:
+            body->SetLinearVelocity(b2Vec2(vel, -vel));
+            pos.X = body->GetPosition().x;
+            pos.Z = body->GetPosition().y;
+            break;
+        
+        //A+S
+        case 6:
+            
+            body->SetLinearVelocity(b2Vec2(-vel, -vel));
+            pos.X = body->GetPosition().x;
+            pos.Z = body->GetPosition().y;
+            
+            break;
+        
+        //A+W    
+        case 7:
+            
+            body->SetLinearVelocity(b2Vec2(-vel, vel));
+            pos.X = body->GetPosition().x;
+            pos.Z = body->GetPosition().y;
+            
+            break;
+             
     }
     
     
