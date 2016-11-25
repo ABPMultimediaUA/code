@@ -35,7 +35,7 @@ int main()
 		return 1;
         
         
-        b2Vec2 gravity(0.0f, -10.0f);
+        b2Vec2 gravity(0.0f, 0.0f);
         b2World *world = new b2World(gravity);
         
 	device->setWindowCaption(L"Movimiento del personaje");
@@ -65,22 +65,25 @@ int main()
 	{
             
             if(device->isWindowActive()){
-                world->Step(1/60, 6, 2);
+                world->Step(1.0f/60.0f, 6, 2);
                 world->ClearForces();
                 const u32 now = device->getTimer()->getTime();
                 const f32 dt = (f32) (now - then) / 1000.f;
                 
                // vector3df cubePos = pers->getPos();
-                
+                 if(teclado.isKeyUp(irr::KEY_KEY_D) || teclado.isKeyUp(irr::KEY_KEY_A) || teclado.isKeyUp(irr::KEY_KEY_W) || teclado.isKeyUp(irr::KEY_KEY_S) ){
+                    pers->setVelocidad();
+                }
                 // X + and -
                 if(teclado.isKeyDown(irr::KEY_KEY_D)){
                     //cubePos.X += pers->getVel()*dt; 0
-                    pers->moverPersonaje(0,dt);
+                    pers->moverPersonaje(0);
                     cam->actualizarCamara(0, dt);
                 }
+               
                 if(teclado.isKeyDown(irr::KEY_KEY_A)){
                    // cubePos.X -= pers->getVel()*dt; 1
-                 pers->moverPersonaje(1,dt);
+                 pers->moverPersonaje(1);
                  cam->actualizarCamara(1,dt);
 
                 }
@@ -88,15 +91,17 @@ int main()
                 //Z + and -
                 if(teclado.isKeyDown(irr::KEY_KEY_W)){
                     //cubePos.Z += pers->getVel()*dt; 2
-                     pers->moverPersonaje(2,dt);
+                     pers->moverPersonaje(2);
                      cam->actualizarCamara(2, dt);
                 }
                 if(teclado.isKeyDown(irr::KEY_KEY_S)){
                    // cubePos.Z -= pers->getVel()*dt; 3
-                     pers->moverPersonaje(3,dt);
+                     pers->moverPersonaje(3);
                      cam->actualizarCamara(3, dt);
 
                 }
+                
+               
                 then = now;
                 
 		driver->beginScene(true, true, SColor(255,100,101,140));//se usa para hacer el render

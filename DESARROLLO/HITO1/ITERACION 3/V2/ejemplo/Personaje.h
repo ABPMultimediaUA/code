@@ -51,7 +51,8 @@ public:
     vector3df getPos();
     void setPos(vector3df pos);
     float getVel();
-    void moverPersonaje(int modo, f32 deltaTime);
+    void moverPersonaje(int modo);
+    void setVelocidad();
     
 };
 
