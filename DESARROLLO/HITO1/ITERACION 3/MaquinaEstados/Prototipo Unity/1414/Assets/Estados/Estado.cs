@@ -8,6 +8,7 @@ public class Estado : MonoBehaviour {
 	public void Start () {
 		 id = 0;
 		punto = GetComponent<Transform> ();
+
 	}
 
 	public virtual void Entrada(){
@@ -19,5 +20,9 @@ public class Estado : MonoBehaviour {
 	// Update is called once per frame
 	public void Update () {
 		
+	}
+
+	public virtual void Updatesec(){
+
 	}
 }

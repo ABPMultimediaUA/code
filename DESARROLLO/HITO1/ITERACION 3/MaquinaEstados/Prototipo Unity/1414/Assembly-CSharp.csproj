@@ -51,6 +51,7 @@
      <Compile Include="Assets\Estados\Estado.cs" />
      <Compile Include="Assets\Estados\Estado1.cs" />
      <Compile Include="Assets\Estados\Estado2.cs" />
+     <Compile Include="Assets\Estados\Perseguir.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
