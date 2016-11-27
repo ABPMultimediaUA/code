@@ -47,10 +47,12 @@
   <ItemGroup>
      <Compile Include="Assets\Abrirpuerta.cs" />
      <Compile Include="Assets\Ascensor\MoverAscensor.cs" />
+     <Compile Include="Assets\Estados\Alejarse.cs" />
      <Compile Include="Assets\Estados\Enemigo.cs" />
      <Compile Include="Assets\Estados\Estado.cs" />
      <Compile Include="Assets\Estados\Estado1.cs" />
      <Compile Include="Assets\Estados\Estado2.cs" />
+     <Compile Include="Assets\Estados\Irapunto.cs" />
      <Compile Include="Assets\Estados\Perseguir.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />

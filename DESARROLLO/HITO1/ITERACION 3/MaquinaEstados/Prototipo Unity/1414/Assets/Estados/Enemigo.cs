@@ -24,28 +24,41 @@ public class Enemigo : MonoBehaviour {
 			//Debug.Log (act);
 		}
 		if(Input.GetKeyDown(KeyCode.K)){
-		 Change();
+		 Change(10);
+		}
+		if(Input.GetKeyDown(KeyCode.R)){
+			Change(11);
+		}
+		if(Input.GetKeyDown(KeyCode.P)){
+			Change(12);
 		}
 	}
 
-			void Change (){
-		if (state.id == 1) {
-			
-			state.enabled = false;
+	void Change (int nuevo){
+		switch (nuevo) {
+		case 10:
+			state.enabled=false;
+		    //state.Salida();
+			state=g.GetComponent<Perseguir>();
+			state.enabled=true;
+			//state.Entrada();
+			break;
+		case 11:
+			state.enabled=false;
 			//state.Salida();
-			state=g.GetComponent<Estado2>();
-			state.enabled = true;
-			//state.Entrada
-
-		} else {
-			
-			state.enabled = false;
+			state=g.GetComponent<Alejarse>();
+			state.enabled=true;
+			//state.Entrada();
+			break;
+		case 12:
+			state.enabled=false;
 			//state.Salida();
-			state=g.GetComponent<Estado1>();
-			state.enabled = true;
-			//state.Entrada
+			state=g.GetComponent<Irapunto>();
+			state.enabled=true;
+			//state.Entrada();
+			break;
 		}
-		//Debug.Log (state);
+
 	}
 
 
