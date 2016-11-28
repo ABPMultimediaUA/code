@@ -17,6 +17,7 @@
 #include "componente.h"
 #include "vectorEntity.h"
 #include "diccionarioEnCo.h"
+#include <string>
 
 using namespace std;
 
@@ -62,7 +63,8 @@ void entityManager::addComponentToEntity(gameEntity* ge,componente* co){
     }
 }
 
-componente* entityManager::getComponentOffEntity(gameEntity* ge){
+componente* entityManager::getComponentOffEntity(gameEntity* ge, string c){
+    
 }
 
 std::vector<componente*>* entityManager::getAllEntityComponent(gameEntity* ge){}

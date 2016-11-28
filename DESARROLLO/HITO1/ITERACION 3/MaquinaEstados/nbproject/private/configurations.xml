@@ -280,8 +280,6 @@
               </df>
               <df name="06">
               </df>
-              <df name="07">
-              </df>
               <df name="08">
               </df>
               <df name="09">
@@ -302,8 +300,6 @@
               </df>
               <df name="11">
               </df>
-              <df name="12">
-              </df>
               <df name="13">
               </df>
               <df name="14">
@@ -318,15 +314,7 @@
               </df>
               <df name="19">
               </df>
-              <df name="1a">
-              </df>
-              <df name="1b">
-              </df>
               <df name="1c">
-              </df>
-              <df name="1d">
-              </df>
-              <df name="1e">
               </df>
               <df name="1f">
               </df>
@@ -357,10 +345,6 @@
               <df name="2c">
               </df>
               <df name="2d">
-              </df>
-              <df name="2e">
-              </df>
-              <df name="2f">
               </df>
               <df name="30">
               </df>
@@ -498,8 +482,6 @@
               </df>
               <df name="73">
               </df>
-              <df name="74">
-              </df>
               <df name="75">
               </df>
               <df name="76">
@@ -548,8 +530,6 @@
               </df>
               <df name="8c">
               </df>
-              <df name="8d">
-              </df>
               <df name="8e">
               </df>
               <df name="8f">
@@ -582,8 +562,6 @@
               </df>
               <df name="9d">
               </df>
-              <df name="9e">
-              </df>
               <df name="9f">
               </df>
               <df name="a0">
@@ -605,8 +583,6 @@
               <df name="a8">
               </df>
               <df name="a9">
-              </df>
-              <df name="aa">
               </df>
               <df name="ab">
               </df>
@@ -815,17 +791,11 @@
               <df name="f">
               </df>
             </df>
-            <df name="UnityAssemblies">
-            </df>
           </df>
           <df name="ProjectSettings">
           </df>
         </df>
       </df>
-      <in>diccionarioEnCo.cpp</in>
-      <in>diccionarioEnCo.h</in>
-      <in>vectorEntity.cpp</in>
-      <in>vectorEntity.h</in>
     </df>
     <itemPath>main.cpp</itemPath>
   </logicalFolder>

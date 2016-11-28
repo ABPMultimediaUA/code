@@ -16,7 +16,6 @@
 
 #include "diccionarioEnCo.h"
 
-
 class entityManager {
 public:
     entityManager();
@@ -25,7 +24,7 @@ public:
     int generarID();
     gameEntity* crearEntidad();
     void addComponentToEntity(gameEntity*,componente*);
-    componente* getComponentOffEntity(gameEntity*);
+    componente* getComponentOffEntity(gameEntity*, std::string);
     std::vector<componente*>* getAllEntityComponent(gameEntity*);
     void borrarEntity(gameEntity*);
     bool existEntity(gameEntity*);
