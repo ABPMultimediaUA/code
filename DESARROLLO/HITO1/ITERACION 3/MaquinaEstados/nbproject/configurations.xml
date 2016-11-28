@@ -8,6 +8,10 @@
       <itemPath>maquinaEstadosComponete.h</itemPath>
     </logicalFolder>
     <df root="." name="0">
+      <in>diccionarioEnCo.cpp</in>
+      <in>diccionarioEnCo.h</in>
+      <in>vectorEntity.cpp</in>
+      <in>vectorEntity.h</in>
     </df>
     <logicalFolder name="f1" displayName="Source" projectFiles="true">
       <itemPath>componente.cpp</itemPath>
@@ -60,6 +64,10 @@
           </incDir>
         </ccTool>
       </item>
+      <item path="diccionarioEnCo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="diccionarioEnCo.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="entityManager.cpp" ex="false" tool="1" flavor2="4">
         <ccTool>
           <incDir>
@@ -89,6 +97,10 @@
             <pElem></pElem>
           </incDir>
         </ccTool>
+      </item>
+      <item path="vectorEntity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="vectorEntity.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

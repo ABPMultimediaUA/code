@@ -14,7 +14,6 @@
 #ifndef ENTITYMANAGER_H
 #define ENTITYMANAGER_H
 
-#include "gameEntity.h"
 class entityManager {
 public:
     entityManager();
@@ -27,8 +26,8 @@ public:
     std::vector<componente*>* getAllEntityComponent(gameEntity*);
     void borrarEntity(gameEntity*);
 private:
-    unsigned int *idMasBajaUsada;
-    std::vector<gameEntity*> *entidades;
+    unsigned short *idMasBajaUsada;
+    vectorEntity *entidades;
     std::map<gameEntity*,componente*> *dicc;
 };
 

@@ -11,12 +11,11 @@
  * Created on 21 de noviembre de 2016, 19:53
  */
 
-#include <vector>
-#include <map>
 #include <iostream>
 #include "entityManager.h"
 #include "gameEntity.h"
 #include "componente.h"
+#include "vectorEntity.h"
 
 using namespace std;
 

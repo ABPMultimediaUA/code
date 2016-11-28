@@ -2,6 +2,830 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
+      <df name="Prototipo Unity">
+        <df name="1414">
+          <df name="Assets">
+            <df name="Ascensor">
+            </df>
+            <df name="Editor">
+              <df name="CrossPlatformInput">
+              </df>
+              <df name="ImageEffects">
+              </df>
+            </df>
+            <df name="Estados">
+            </df>
+            <df name="Standard Assets">
+              <df name="Cameras">
+                <df name="Prefabs">
+                </df>
+                <df name="Scripts">
+                </df>
+              </df>
+              <df name="Characters">
+                <df name="FirstPersonCharacter">
+                  <df name="Audio">
+                  </df>
+                  <df name="Prefabs">
+                  </df>
+                  <df name="Scripts">
+                  </df>
+                </df>
+                <df name="RollerBall">
+                  <df name="Materials">
+                  </df>
+                  <df name="Models">
+                  </df>
+                  <df name="Prefabs">
+                  </df>
+                  <df name="Scripts">
+                  </df>
+                  <df name="Textures">
+                  </df>
+                </df>
+                <df name="ThirdPersonCharacter">
+                  <df name="Animation">
+                  </df>
+                  <df name="Animator">
+                  </df>
+                  <df name="Materials">
+                  </df>
+                  <df name="Models">
+                  </df>
+                  <df name="Prefabs">
+                  </df>
+                  <df name="Scripts">
+                  </df>
+                  <df name="Textures">
+                  </df>
+                </df>
+              </df>
+              <df name="CrossPlatformInput">
+                <df name="Prefabs">
+                </df>
+                <df name="Scripts">
+                  <df name="PlatformSpecific">
+                  </df>
+                </df>
+                <df name="Sprites">
+                </df>
+              </df>
+              <df name="Effects">
+                <df name="GlassRefraction">
+                  <df name="Materials">
+                  </df>
+                  <df name="Shaders">
+                  </df>
+                  <df name="Textures">
+                  </df>
+                </df>
+                <df name="ImageEffects">
+                  <df name="Scripts">
+                  </df>
+                  <df name="Shaders">
+                    <df name="_Antialiasing">
+                    </df>
+                    <df name="_BloomAndFlares">
+                    </df>
+                    <df name="_DepthOfField">
+                    </df>
+                    <df name="Contrast Stretch">
+                    </df>
+                  </df>
+                  <df name="Textures">
+                  </df>
+                </df>
+                <df name="LightCookies">
+                  <df name="Textures">
+                  </df>
+                </df>
+                <df name="LightFlares">
+                  <df name="Flares">
+                  </df>
+                  <df name="Materials">
+                  </df>
+                  <df name="Textures">
+                  </df>
+                </df>
+                <df name="Projectors">
+                  <df name="Materials">
+                  </df>
+                  <df name="Prefabs">
+                  </df>
+                  <df name="Shaders">
+                  </df>
+                  <df name="Textures">
+                  </df>
+                </df>
+                <df name="TessellationShaders">
+                  <df name="Materials">
+                  </df>
+                  <df name="Models">
+                  </df>
+                  <df name="Scenes">
+                  </df>
+                  <df name="Shaders">
+                  </df>
+                  <df name="Textures">
+                  </df>
+                </df>
+                <df name="ToonShading">
+                  <df name="Materials">
+                  </df>
+                  <df name="Shaders">
+                  </df>
+                  <df name="Textures">
+                  </df>
+                </df>
+              </df>
+              <df name="Environment">
+                <df name="SpeedTree">
+                  <df name="Broadleaf">
+                    <df name="Broadleaf_Desktop Materials">
+                      <df name="LOD0">
+                      </df>
+                      <df name="LOD1">
+                      </df>
+                      <df name="LOD2">
+                      </df>
+                    </df>
+                    <df name="Broadleaf_Mobile Materials">
+                      <df name="LOD0">
+                      </df>
+                      <df name="LOD1">
+                      </df>
+                      <df name="LOD2">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="Conifer">
+                    <df name="Conifer_Desktop Materials">
+                      <df name="LOD0">
+                      </df>
+                      <df name="LOD1">
+                      </df>
+                      <df name="LOD2">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="Palm">
+                    <df name="Palm_Desktop Materials">
+                      <df name="LOD0">
+                      </df>
+                      <df name="LOD1">
+                      </df>
+                      <df name="LOD2">
+                      </df>
+                    </df>
+                  </df>
+                </df>
+                <df name="TerrainAssets">
+                  <df name="BillboardTextures">
+                  </df>
+                  <df name="SurfaceTextures">
+                  </df>
+                </df>
+                <df name="Water">
+                  <df name="Water">
+                    <df name="Materials">
+                    </df>
+                    <df name="Models">
+                    </df>
+                    <df name="Prefabs">
+                    </df>
+                    <df name="Scripts">
+                    </df>
+                    <df name="Shaders">
+                    </df>
+                    <df name="Textures">
+                    </df>
+                  </df>
+                  <df name="Water4">
+                    <df name="Materials">
+                    </df>
+                    <df name="Models">
+                    </df>
+                    <df name="Prefabs">
+                    </df>
+                    <df name="Shaders">
+                    </df>
+                    <df name="Textures">
+                    </df>
+                  </df>
+                </df>
+                <df name="Water (Basic)">
+                  <df name="Materials">
+                  </df>
+                  <df name="Models">
+                  </df>
+                  <df name="Prefabs">
+                  </df>
+                  <df name="Scripts">
+                  </df>
+                  <df name="Shaders">
+                  </df>
+                  <df name="Textures">
+                  </df>
+                </df>
+              </df>
+              <df name="Fonts">
+                <df name="OpenSans">
+                </df>
+              </df>
+              <df name="ParticleSystems">
+                <df name="Materials">
+                </df>
+                <df name="Prefabs">
+                </df>
+                <df name="Scripts">
+                </df>
+                <df name="Shaders">
+                </df>
+                <df name="Textures">
+                </df>
+              </df>
+              <df name="PhysicsMaterials">
+              </df>
+              <df name="Prototyping">
+                <df name="Materials">
+                </df>
+                <df name="Models">
+                </df>
+                <df name="Prefabs">
+                </df>
+                <df name="Shaders">
+                </df>
+                <df name="Textures">
+                </df>
+              </df>
+              <df name="Utility">
+                <df name="Prefabs">
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="Library">
+            <df name="metadata">
+              <df name="00">
+              </df>
+              <df name="01">
+              </df>
+              <df name="02">
+              </df>
+              <df name="03">
+              </df>
+              <df name="04">
+              </df>
+              <df name="05">
+              </df>
+              <df name="06">
+              </df>
+              <df name="07">
+              </df>
+              <df name="08">
+              </df>
+              <df name="09">
+              </df>
+              <df name="0a">
+              </df>
+              <df name="0b">
+              </df>
+              <df name="0c">
+              </df>
+              <df name="0d">
+              </df>
+              <df name="0e">
+              </df>
+              <df name="0f">
+              </df>
+              <df name="10">
+              </df>
+              <df name="11">
+              </df>
+              <df name="12">
+              </df>
+              <df name="13">
+              </df>
+              <df name="14">
+              </df>
+              <df name="15">
+              </df>
+              <df name="16">
+              </df>
+              <df name="17">
+              </df>
+              <df name="18">
+              </df>
+              <df name="19">
+              </df>
+              <df name="1a">
+              </df>
+              <df name="1b">
+              </df>
+              <df name="1c">
+              </df>
+              <df name="1d">
+              </df>
+              <df name="1e">
+              </df>
+              <df name="1f">
+              </df>
+              <df name="20">
+              </df>
+              <df name="21">
+              </df>
+              <df name="22">
+              </df>
+              <df name="23">
+              </df>
+              <df name="24">
+              </df>
+              <df name="25">
+              </df>
+              <df name="26">
+              </df>
+              <df name="27">
+              </df>
+              <df name="28">
+              </df>
+              <df name="29">
+              </df>
+              <df name="2a">
+              </df>
+              <df name="2b">
+              </df>
+              <df name="2c">
+              </df>
+              <df name="2d">
+              </df>
+              <df name="2e">
+              </df>
+              <df name="2f">
+              </df>
+              <df name="30">
+              </df>
+              <df name="31">
+              </df>
+              <df name="32">
+              </df>
+              <df name="33">
+              </df>
+              <df name="34">
+              </df>
+              <df name="35">
+              </df>
+              <df name="36">
+              </df>
+              <df name="37">
+              </df>
+              <df name="38">
+              </df>
+              <df name="39">
+              </df>
+              <df name="3a">
+              </df>
+              <df name="3b">
+              </df>
+              <df name="3c">
+              </df>
+              <df name="3d">
+              </df>
+              <df name="3e">
+              </df>
+              <df name="3f">
+              </df>
+              <df name="40">
+              </df>
+              <df name="41">
+              </df>
+              <df name="42">
+              </df>
+              <df name="43">
+              </df>
+              <df name="44">
+              </df>
+              <df name="45">
+              </df>
+              <df name="46">
+              </df>
+              <df name="47">
+              </df>
+              <df name="48">
+              </df>
+              <df name="49">
+              </df>
+              <df name="4a">
+              </df>
+              <df name="4b">
+              </df>
+              <df name="4c">
+              </df>
+              <df name="4d">
+              </df>
+              <df name="4e">
+              </df>
+              <df name="4f">
+              </df>
+              <df name="50">
+              </df>
+              <df name="51">
+              </df>
+              <df name="52">
+              </df>
+              <df name="53">
+              </df>
+              <df name="54">
+              </df>
+              <df name="55">
+              </df>
+              <df name="56">
+              </df>
+              <df name="57">
+              </df>
+              <df name="58">
+              </df>
+              <df name="59">
+              </df>
+              <df name="5a">
+              </df>
+              <df name="5b">
+              </df>
+              <df name="5c">
+              </df>
+              <df name="5d">
+              </df>
+              <df name="5e">
+              </df>
+              <df name="5f">
+              </df>
+              <df name="60">
+              </df>
+              <df name="61">
+              </df>
+              <df name="62">
+              </df>
+              <df name="63">
+              </df>
+              <df name="64">
+              </df>
+              <df name="65">
+              </df>
+              <df name="66">
+              </df>
+              <df name="67">
+              </df>
+              <df name="68">
+              </df>
+              <df name="69">
+              </df>
+              <df name="6a">
+              </df>
+              <df name="6b">
+              </df>
+              <df name="6c">
+              </df>
+              <df name="6d">
+              </df>
+              <df name="6e">
+              </df>
+              <df name="6f">
+              </df>
+              <df name="70">
+              </df>
+              <df name="71">
+              </df>
+              <df name="72">
+              </df>
+              <df name="73">
+              </df>
+              <df name="74">
+              </df>
+              <df name="75">
+              </df>
+              <df name="76">
+              </df>
+              <df name="77">
+              </df>
+              <df name="78">
+              </df>
+              <df name="79">
+              </df>
+              <df name="7a">
+              </df>
+              <df name="7b">
+              </df>
+              <df name="7c">
+              </df>
+              <df name="7d">
+              </df>
+              <df name="7e">
+              </df>
+              <df name="7f">
+              </df>
+              <df name="80">
+              </df>
+              <df name="81">
+              </df>
+              <df name="82">
+              </df>
+              <df name="83">
+              </df>
+              <df name="84">
+              </df>
+              <df name="85">
+              </df>
+              <df name="86">
+              </df>
+              <df name="87">
+              </df>
+              <df name="88">
+              </df>
+              <df name="89">
+              </df>
+              <df name="8a">
+              </df>
+              <df name="8b">
+              </df>
+              <df name="8c">
+              </df>
+              <df name="8d">
+              </df>
+              <df name="8e">
+              </df>
+              <df name="8f">
+              </df>
+              <df name="90">
+              </df>
+              <df name="91">
+              </df>
+              <df name="92">
+              </df>
+              <df name="93">
+              </df>
+              <df name="94">
+              </df>
+              <df name="95">
+              </df>
+              <df name="96">
+              </df>
+              <df name="97">
+              </df>
+              <df name="98">
+              </df>
+              <df name="99">
+              </df>
+              <df name="9a">
+              </df>
+              <df name="9b">
+              </df>
+              <df name="9c">
+              </df>
+              <df name="9d">
+              </df>
+              <df name="9e">
+              </df>
+              <df name="9f">
+              </df>
+              <df name="a0">
+              </df>
+              <df name="a1">
+              </df>
+              <df name="a2">
+              </df>
+              <df name="a3">
+              </df>
+              <df name="a4">
+              </df>
+              <df name="a5">
+              </df>
+              <df name="a6">
+              </df>
+              <df name="a7">
+              </df>
+              <df name="a8">
+              </df>
+              <df name="a9">
+              </df>
+              <df name="aa">
+              </df>
+              <df name="ab">
+              </df>
+              <df name="ac">
+              </df>
+              <df name="ad">
+              </df>
+              <df name="ae">
+              </df>
+              <df name="af">
+              </df>
+              <df name="b0">
+              </df>
+              <df name="b1">
+              </df>
+              <df name="b2">
+              </df>
+              <df name="b3">
+              </df>
+              <df name="b4">
+              </df>
+              <df name="b5">
+              </df>
+              <df name="b6">
+              </df>
+              <df name="b7">
+              </df>
+              <df name="b8">
+              </df>
+              <df name="b9">
+              </df>
+              <df name="ba">
+              </df>
+              <df name="bb">
+              </df>
+              <df name="bc">
+              </df>
+              <df name="bd">
+              </df>
+              <df name="be">
+              </df>
+              <df name="bf">
+              </df>
+              <df name="c0">
+              </df>
+              <df name="c1">
+              </df>
+              <df name="c2">
+              </df>
+              <df name="c3">
+              </df>
+              <df name="c4">
+              </df>
+              <df name="c5">
+              </df>
+              <df name="c6">
+              </df>
+              <df name="c7">
+              </df>
+              <df name="c8">
+              </df>
+              <df name="c9">
+              </df>
+              <df name="ca">
+              </df>
+              <df name="cb">
+              </df>
+              <df name="cc">
+              </df>
+              <df name="cd">
+              </df>
+              <df name="ce">
+              </df>
+              <df name="cf">
+              </df>
+              <df name="d0">
+              </df>
+              <df name="d1">
+              </df>
+              <df name="d2">
+              </df>
+              <df name="d3">
+              </df>
+              <df name="d4">
+              </df>
+              <df name="d5">
+              </df>
+              <df name="d6">
+              </df>
+              <df name="d7">
+              </df>
+              <df name="d8">
+              </df>
+              <df name="d9">
+              </df>
+              <df name="da">
+              </df>
+              <df name="db">
+              </df>
+              <df name="dc">
+              </df>
+              <df name="dd">
+              </df>
+              <df name="de">
+              </df>
+              <df name="df">
+              </df>
+              <df name="e0">
+              </df>
+              <df name="e1">
+              </df>
+              <df name="e2">
+              </df>
+              <df name="e3">
+              </df>
+              <df name="e4">
+              </df>
+              <df name="e5">
+              </df>
+              <df name="e6">
+              </df>
+              <df name="e7">
+              </df>
+              <df name="e8">
+              </df>
+              <df name="e9">
+              </df>
+              <df name="ea">
+              </df>
+              <df name="eb">
+              </df>
+              <df name="ec">
+              </df>
+              <df name="ed">
+              </df>
+              <df name="ee">
+              </df>
+              <df name="ef">
+              </df>
+              <df name="f0">
+              </df>
+              <df name="f1">
+              </df>
+              <df name="f2">
+              </df>
+              <df name="f3">
+              </df>
+              <df name="f4">
+              </df>
+              <df name="f5">
+              </df>
+              <df name="f6">
+              </df>
+              <df name="f7">
+              </df>
+              <df name="f8">
+              </df>
+              <df name="f9">
+              </df>
+              <df name="fa">
+              </df>
+              <df name="fb">
+              </df>
+              <df name="fc">
+              </df>
+              <df name="fd">
+              </df>
+              <df name="fe">
+              </df>
+              <df name="ff">
+              </df>
+            </df>
+            <df name="ScriptAssemblies">
+            </df>
+            <df name="ShaderCache">
+              <df name="0">
+              </df>
+              <df name="1">
+              </df>
+              <df name="2">
+              </df>
+              <df name="3">
+              </df>
+              <df name="4">
+              </df>
+              <df name="5">
+              </df>
+              <df name="6">
+              </df>
+              <df name="7">
+              </df>
+              <df name="8">
+              </df>
+              <df name="9">
+              </df>
+              <df name="a">
+              </df>
+              <df name="b">
+              </df>
+              <df name="c">
+              </df>
+              <df name="d">
+              </df>
+              <df name="e">
+              </df>
+              <df name="f">
+              </df>
+            </df>
+            <df name="UnityAssemblies">
+            </df>
+          </df>
+          <df name="ProjectSettings">
+          </df>
+        </df>
+      </df>
+      <in>diccionarioEnCo.cpp</in>
+      <in>diccionarioEnCo.h</in>
+      <in>vectorEntity.cpp</in>
+      <in>vectorEntity.h</in>
     </df>
     <itemPath>main.cpp</itemPath>
   </logicalFolder>
