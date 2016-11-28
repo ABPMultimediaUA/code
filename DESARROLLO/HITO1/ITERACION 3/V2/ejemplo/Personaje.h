@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   Personaje.h
  * Author: User
  *
@@ -33,19 +33,18 @@ using namespace gui;
 #endif
 
 class Personaje {
-    
 private:
-  
-   IMeshSceneNode *maya;
-   float vel;
-   vector3df pos;
-   b2Body *body;
-   b2BodyDef bodyDef;
-   b2PolygonShape bodyShape;
-   b2MassData md;
+
+    IMeshSceneNode *maya;
+    float vel;
+    vector3df pos;
+    b2Body *body;
+    b2BodyDef bodyDef;
+    b2PolygonShape bodyShape;
+    b2MassData md;
 
 public:
-    Personaje (ISceneManager* smgr, IVideoDriver* driver, b2World *world);
+    Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
     Personaje(const Personaje& orig);
     virtual ~Personaje();
     vector3df getPos();
@@ -53,7 +52,8 @@ public:
     float getVel();
     void moverPersonaje(int modo, f32 dt);
     void setVelocidad();
-    
+    void rotar(vector3df raton);
+
 };
 
 
