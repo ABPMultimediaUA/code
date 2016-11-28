@@ -16,13 +16,14 @@
 #include "gameEntity.h"
 #include "componente.h"
 #include "vectorEntity.h"
+#include "diccionarioEnCo.h"
 
 using namespace std;
 
 entityManager::entityManager() {
-    this->idMasBajaUsada = new unsigned int();
-    this->entidades = new vector<gameEntity*>();
-    this->dicc = new map<gameEntity*,componente*>();
+    this->idMasBajaUsada = new unsigned short();
+    this->entidades = new vectorEntity();
+    this->dicc = new diccionarioEnCo();
 }
 
 entityManager::entityManager(const entityManager& orig) {
@@ -56,8 +57,8 @@ gameEntity* entityManager::crearEntidad(){
 }
 
 void entityManager::addComponentToEntity(gameEntity* ge,componente* co){
-    if(!ge && !co){
-        this->dicc->insert(pair<gameEntity*,componente*>(ge,co));
+    if(entityManager.existEntity(ge)){
+        this->dicc->add(ge,co);
     }
 }
 
@@ -68,8 +69,15 @@ std::vector<componente*>* entityManager::getAllEntityComponent(gameEntity* ge){}
 
 void entityManager::borrarEntity(gameEntity* ge){
     if(!ge){
-        for(int i = 0; i<this->entidades->size() && *this->entidades->at(i)->getID() == *ge->getID();i++){
-            this->entidades->erase(this->entidades->begin() + i);
+        for(unsigned short i = 0; i<this->entidades->size() && *this->entidades->at(i)->getID() == *ge->getID();i++){
+            this->entidades->remove(i);
         }
     }
+}
+
+bool entityManager::existEntity(gameEntity *g){
+    for(unsigned short i = 0; i<this->entidades->size() && *this->entidades->at(i)->getID() == *g->getID();i++){
+        return true;
+    }
+    return false;
 }

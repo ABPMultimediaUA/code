@@ -14,6 +14,9 @@
 #ifndef ENTITYMANAGER_H
 #define ENTITYMANAGER_H
 
+#include "diccionarioEnCo.h"
+
+
 class entityManager {
 public:
     entityManager();
@@ -25,10 +28,11 @@ public:
     componente* getComponentOffEntity(gameEntity*);
     std::vector<componente*>* getAllEntityComponent(gameEntity*);
     void borrarEntity(gameEntity*);
+    bool existEntity(gameEntity*);
 private:
     unsigned short *idMasBajaUsada;
     vectorEntity *entidades;
-    std::map<gameEntity*,componente*> *dicc;
+    diccionarioEnCo *dicc;
 };
 
 #endif /* ENTITYMANAGER_H */

@@ -14,13 +14,21 @@
 #ifndef DICCIONARIOENCO_H
 #define DICCIONARIOENCO_H
 
+#include "gameEntity.h"
+#include "componente.h"
+
+
 class diccionarioEnCo {
 public:
     diccionarioEnCo();
     diccionarioEnCo(const diccionarioEnCo& orig);
     virtual ~diccionarioEnCo();
+    std::pair<gameEntity*, componente*> at(unsigned short);
+    bool add(gameEntity*, componente*);
+    void remove(unsigned short);
+    bool existCompWithEnt(gameEntity*, componente*);
 private:
-
+    std::vector< std::pair<gameEntity*, componente*> > *dicc;
 };
 
 #endif /* DICCIONARIOENCO_H */

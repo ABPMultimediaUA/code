@@ -82,3 +82,7 @@ bool vectorEntity::remove(unsigned short p){
         return false;
     }
 }
+
+unsigned short vectorEntity::size(){
+    return u;
+}
