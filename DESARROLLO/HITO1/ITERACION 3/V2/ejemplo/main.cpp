@@ -52,23 +52,13 @@ int main() {
     Camara *cam = new Camara(smgr);
     //smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
 
-    //Para raton:
-    ISceneNode * node = smgr->addMeshSceneNode(
-            smgr->addArrowMesh("Arrow",
-            video::SColor(255, 255, 0, 0),
-            video::SColor(255, 0, 255, 0),
-            16, 16,
-            2.f, 1.3f,
-            0.1f, 0.6f
-            )
-            );
-    node->setMaterialFlag(video::EMF_LIGHTING, false);
+
 
     //primer parametro nodo padre, 0 el nodo raiz
     //primer vector posicion, segundo direccion
 
     u32 then = device->getTimer()->getTime();
-    const f32 MOVEMENT_SPEED = 100.f;
+    //const f32 MOVEMENT_SPEED = 100.f;
 
     while (device->run()) {
 
@@ -132,27 +122,15 @@ int main() {
             }
 
             //RATON
-            vector3df nodePosition = node->getPosition();
+            vector3df mousePosition;
             // Create a ray through the mouse cursor.
             line3df ray = smgr->getSceneCollisionManager()->getRayFromScreenCoordinates(teclado.GetMouseState().Position, smgr->getActiveCamera());
-
             // And intersect the ray with a plane around the node facing towards the camera.
-            plane3df plane(nodePosition, vector3df(0, 0, -1));
-            vector3df mousePosition;
+            plane3df plane(mousePosition, vector3df(0, 0, -1));
             plane.getIntersectionWithLine(ray.start, ray.getVector(), mousePosition);
-            // We now have a mouse position in 3d space; move towards it.
-            //vector3df toMousePosition(mousePosition - nodePosition);
-            //const f32 availableMovement = MOVEMENT_SPEED * dt;
 
-            // if (toMousePosition.getLength() <= availableMovement)
-            nodePosition = mousePosition; // Jump to the final position
-            // else
-            //   nodePosition += toMousePosition.normalize() * availableMovement; // Move towards it
-            pers->rotar(nodePosition);
-            node->setPosition(nodePosition);
+            pers->rotar(mousePosition);
 
-            // Turn lighting on and off depending on whether the left mouse button is down.
-            node->setMaterialFlag(video::EMF_LIGHTING, teclado.GetMouseState().LeftButtonDown);
 
             then = now;
 
