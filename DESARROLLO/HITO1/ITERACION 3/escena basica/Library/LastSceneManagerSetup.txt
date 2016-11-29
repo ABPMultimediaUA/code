@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/Hector/Desktop/xmldatawriter/Assets/XmlDataReader.unity
+  isLoaded: 1
+  isActive: 1
