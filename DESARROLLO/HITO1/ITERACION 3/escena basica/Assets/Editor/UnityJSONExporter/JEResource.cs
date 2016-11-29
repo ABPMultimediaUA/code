@@ -52,11 +52,11 @@ public class JEResource : JEObject
     {
         var json = new JSONResources();
 
-        json.textures = JETexture.GenerateJSONTextureList();
+      /*  json.textures = JETexture.GenerateJSONTextureList();
         json.lightmaps = JELightmap.GenerateJSONLightmapList();
         json.shaders = JEShader.GenerateJSONShaderList();
         json.materials = JEMaterial.GenerateJSONMaterialList();
-        json.meshes = JEMesh.GenerateJSONMeshList();
+        json.meshes = JEMesh.GenerateJSONMeshList();*/
 
         return json;
     }
