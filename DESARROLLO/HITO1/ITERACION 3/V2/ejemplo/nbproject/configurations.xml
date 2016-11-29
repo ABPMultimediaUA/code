@@ -42,8 +42,9 @@
           <ccTool>
             <incDir>
               <pElem>../irrlicht-1.8.4/include</pElem>
-              <pElem>../../../../../../../../../../MinGW/msys/1.0/X11R6/include</pElem>
+              <pElem>../../../../../../../../../../../usr/X11R6/include</pElem>
               <pElem>../Box2D/Box2D</pElem>
+              <pElem>../rapidjson</pElem>
               <pElem></pElem>
             </incDir>
           </ccTool>

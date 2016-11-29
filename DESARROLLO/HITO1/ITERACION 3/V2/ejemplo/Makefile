@@ -10,6 +10,7 @@ Resources :=
 # Ruta del directorio donde tenemos Irrlicht instalado (donde estan los directorios lib e include)
 IrrlichtHome := ..\irrlicht-1.8.4
 Box2DHome := ..\Box2D\Box2D
+JsonHome := ..\rapidjson
 # Ruta del ejecutable generado
 BinPath = .
 CXX = mingw32-g++
@@ -26,7 +27,7 @@ USERLDFLAGS =
 # No es necesario hacer cambios a partir de aqui
 ####
 
-CPPFLAGS = -I$(IrrlichtHome)/include -I/usr/X11R6/include $(USERCPPFLAGS) -I$(Box2DHome)
+CPPFLAGS = -I$(IrrlichtHome)/include -I/usr/X11R6/include $(USERCPPFLAGS) -I$(Box2DHome) -I$(JsonHome)
 CXXFLAGS = $(USERCXXFLAGS)
 LDFLAGS = $(USERLDFLAGS)
 
@@ -34,7 +35,7 @@ LDFLAGS = $(USERLDFLAGS)
 all: all_win32
 
 # opciones especificas de cada target
-all_linux all_macos all_win32 static_win32: LDFLAGS += -L$(IrrlichtHome)/lib/$(SYSTEM) -lIrrlicht -L$(Box2DHome) -lBox2D
+all_linux all_macos all_win32 static_win32: LDFLAGS += -L$(IrrlichtHome)/lib/$(SYSTEM) -lIrrlicht -L$(Box2DHome) -lBox2D 
 all_linux: LDFLAGS += -L/usr/X11R6/lib$(LIBSELECT) -lGL -lXxf86vm -lXext -lX11 -lXcursor
 all_linux clean_linux: SYSTEM=Linux
 all_macos: LDFLAGS += -Xlinker -no_pie -framework OpenGL -framework Cocoa -framework Carbon -framework IOKit

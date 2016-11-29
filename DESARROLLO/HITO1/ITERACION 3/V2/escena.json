@@ -1,0 +1,345 @@
+{
+  "name": "escena",
+  "resources": {
+    "textures": null,
+    "lightmaps": null,
+    "shaders": null,
+    "materials": null,
+    "meshes": null
+  },
+  "hierarchy": [
+    {
+      "name": "Paredes",
+      "components": [
+        {
+          "localPosition": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "Pared1",
+          "components": [
+            {
+              "localPosition": [
+                -5.0,
+                0.8,
+                -10.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                -0.7071068,
+                0.7071068
+              ],
+              "localScale": [
+                0.200000122,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Plane",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            },
+            {
+              "type": "MeshCollider"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Pared2",
+          "components": [
+            {
+              "localPosition": [
+                5.0,
+                0.8,
+                -10.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.7071068,
+                0.7071068
+              ],
+              "localScale": [
+                0.200000122,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Plane",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            },
+            {
+              "type": "MeshCollider"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Pared3",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.8,
+                -5.0
+              ],
+              "localRotation": [
+                -0.5,
+                -0.5,
+                0.5,
+                0.5
+              ],
+              "localScale": [
+                0.2,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Plane",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            },
+            {
+              "type": "MeshCollider"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Pared4",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.8,
+                -15.0
+              ],
+              "localRotation": [
+                0.5,
+                0.5,
+                0.5,
+                0.5
+              ],
+              "localScale": [
+                0.2,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Plane",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            },
+            {
+              "type": "MeshCollider"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Suelo",
+      "components": [
+        {
+          "localPosition": [
+            0.0,
+            -0.210000038,
+            -10.0
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        },
+        {
+          "mesh": "unity default resources_Plane",
+          "enabled": true,
+          "castShadows": true,
+          "receiveShadows": true,
+          "lightmapIndex": -1,
+          "lightmapTilingOffset": [
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "materials": [
+            "Default-Material"
+          ],
+          "type": "MeshRenderer"
+        },
+        {
+          "type": "MeshCollider"
+        }
+      ],
+      "children": []
+    },
+    {
+      "name": "Main Camera",
+      "components": [
+        {
+          "localPosition": [
+            0.0,
+            4.95,
+            -18.71
+          ],
+          "localRotation": [
+            0.173648164,
+            0.0,
+            0.0,
+            0.9848078
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        },
+        {
+          "type": "Camera"
+        }
+      ],
+      "children": []
+    },
+    {
+      "name": "Directional Light",
+      "components": [
+        {
+          "localPosition": [
+            0.0,
+            40.0,
+            -10.0
+          ],
+          "localRotation": [
+            0.7071068,
+            0.0,
+            0.0,
+            0.7071068
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        },
+        {
+          "color": [
+            1.0,
+            0.956862748,
+            0.8392157,
+            1.0
+          ],
+          "range": 10.0,
+          "lightType": "Point",
+          "castsShadows": true,
+          "realtime": false,
+          "type": "Light"
+        }
+      ],
+      "children": []
+    }
+  ]
+}
