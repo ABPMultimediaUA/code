@@ -1,12 +1,5 @@
 {
   "name": "escena",
-  "resources": {
-    "textures": null,
-    "lightmaps": null,
-    "shaders": null,
-    "materials": null,
-    "meshes": null
-  },
   "hierarchy": [
     {
       "name": "Paredes",

@@ -13,6 +13,8 @@
       <in>Personaje.cpp</in>
       <in>Personaje.h</in>
       <in>main.cpp</in>
+      <in>readJson.cpp</in>
+      <in>readJson.h</in>
     </df>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

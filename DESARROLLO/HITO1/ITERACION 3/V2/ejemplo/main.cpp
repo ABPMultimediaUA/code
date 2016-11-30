@@ -5,7 +5,7 @@
 #include "Personaje.h"
 #include "Escenario.h"
 #include "Camara.h"
-
+#include "readJson.h"
 
 using namespace irr;
 
@@ -29,7 +29,9 @@ int main() {
             createDevice(video::EDT_OPENGL, dimension2d<u32>(640, 480), 16,
             false, false, false, &teclado);
 
-
+    readJson read;
+    
+    
     if (!device)
         return 1;
 
