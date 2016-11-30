@@ -6,7 +6,7 @@
 
 /* 
  * File:   diccionarioEnCo.h
- * Author: elcuc_000
+ * Author: JaumeLloret
  *
  * Created on 28 de noviembre de 2016, 1:34
  */
@@ -23,12 +23,14 @@ public:
     diccionarioEnCo();
     diccionarioEnCo(const diccionarioEnCo& orig);
     virtual ~diccionarioEnCo();
-    std::pair<gameEntity*, componente*> at(unsigned short);
+    componente* getComponent(gameEntity*, std::string);
+    std::vector<componente*> getComponents(gameEntity*);
+    unsigned short size();
     bool add(gameEntity*, componente*);
-    void remove(unsigned short);
+    void remove(gameEntity*, componente*);
     bool existCompWithEnt(gameEntity*, componente*);
 private:
-    std::vector< std::pair<gameEntity*, componente*> > *dicc;
+    std::multimap<gameEntity*, componente*> *dicc;
 };
 
 #endif /* DICCIONARIOENCO_H */

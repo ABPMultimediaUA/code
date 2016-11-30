@@ -25,7 +25,7 @@ public:
     gameEntity* crearEntidad();
     void addComponentToEntity(gameEntity*,componente*);
     componente* getComponentOffEntity(gameEntity*, std::string);
-    std::vector<componente*>* getAllEntityComponent(gameEntity*);
+    std::vector<componente*> getAllEntityComponent(gameEntity*);
     void borrarEntity(gameEntity*);
     bool existEntity(gameEntity*);
 private:

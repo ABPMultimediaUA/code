@@ -6,7 +6,7 @@
 
 /* 
  * File:   vectorEntity.cpp
- * Author: elcuc_000
+ * Author: JaumeLloret
  * 
  * Created on 28 de noviembre de 2016, 1:34
  */

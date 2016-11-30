@@ -58,16 +58,18 @@ gameEntity* entityManager::crearEntidad(){
 }
 
 void entityManager::addComponentToEntity(gameEntity* ge,componente* co){
-    if(entityManager.existEntity(ge)){
+    if(!entityManager.existEntity(ge,co)){
         this->dicc->add(ge,co);
     }
 }
 
-componente* entityManager::getComponentOffEntity(gameEntity* ge, string c){
-    
+componente* entityManager::getComponentOffEntity(gameEntity* ge, string s){
+    return this->dicc->getComponent(ge,s);
 }
 
-std::vector<componente*>* entityManager::getAllEntityComponent(gameEntity* ge){}
+vector<componente*> entityManager::getAllEntityComponent(gameEntity* ge){
+    return this->dicc->getComponents(ge);
+}
 
 void entityManager::borrarEntity(gameEntity* ge){
     if(!ge){
