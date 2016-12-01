@@ -96,7 +96,7 @@ public class JSONComponent
 public class JSONTransform : JSONComponent
 {
     public Vector3 localPosition;
-    public Quaternion localRotation;
+    public Vector3 localRotation;
     public Vector3 localScale;
     public String name;
     public String parentName;

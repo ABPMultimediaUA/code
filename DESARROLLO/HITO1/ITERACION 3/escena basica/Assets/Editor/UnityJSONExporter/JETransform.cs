@@ -28,7 +28,7 @@ public class JETransform : JEComponent
         var json = new JSONTransform();
         json.type = "Transform";
         json.localPosition = unityTransform.localPosition;
-        json.localRotation = unityTransform.localRotation;
+        json.localRotation = unityTransform.localEulerAngles;
         json.localScale = unityTransform.localScale;
         return json;
     }

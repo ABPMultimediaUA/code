@@ -138,7 +138,7 @@ public class JEMesh : JEResource
             {
                 JSONTransform jt = new JSONTransform();
                 jt.localPosition = bones[i].localPosition;
-                jt.localRotation = bones[i].localRotation;
+               // jt.localRotation = bones[i].localRotation;
                 jt.localScale = bones[i].localScale;
                 jt.name = bones[i].gameObject.name;
                 jt.parentName = bones[i].parent == null ? "" : bones[i].parent.gameObject.name;
