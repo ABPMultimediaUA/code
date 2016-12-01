@@ -10,6 +10,8 @@
       <in>Camara.h</in>
       <in>Escenario.cpp</in>
       <in>Escenario.h</in>
+      <in>Pared.cpp</in>
+      <in>Pared.h</in>
       <in>Personaje.cpp</in>
       <in>Personaje.h</in>
       <in>main.cpp</in>

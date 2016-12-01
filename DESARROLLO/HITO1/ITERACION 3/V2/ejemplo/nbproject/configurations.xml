@@ -5,10 +5,10 @@
       <in>CAppReceiver.cpp</in>
       <in>Camara.cpp</in>
       <in>Escenario.cpp</in>
+      <in>Pared.cpp</in>
       <in>Personaje.cpp</in>
       <in>main.cpp</in>
       <in>readJson.cpp</in>
-      <in>readJson.h</in>
     </df>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -44,10 +44,6 @@
           <ccTool>
             <incDir>
               <pElem>../irrlicht-1.8.4/include</pElem>
-              <pElem>../../../../../../../../../../../usr/X11R6/include</pElem>
-              <pElem>../Box2D/Box2D</pElem>
-              <pElem>../rapidjson</pElem>
-              <pElem></pElem>
             </incDir>
           </ccTool>
         </makeTool>
@@ -58,27 +54,73 @@
       </makefileType>
       <item path="CAppReceiver.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
+          <incDir>
+            <pElem>D:/usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="Camara.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
+          <incDir>
+            <pElem>D:/usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="Escenario.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
+          <incDir>
+            <pElem>D:/usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="Pared.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="Personaje.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
+          <incDir>
+            <pElem>D:/usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
+          <incDir>
+            <pElem>D:/usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="readJson.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="readJson.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>D:/usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
       </item>
     </conf>
   </confs>

@@ -29,8 +29,12 @@ public:
     Escenario(ISceneManager* smgr, IVideoDriver* driver);
     Escenario(const Escenario& orig);
     virtual ~Escenario();
+    void crearPared(vector3df pos, vector3df rot);
 private:
-
+    ISceneManager* SM;
+    IVideoDriver* VD;
+    //vector con cada elemento que se cree (puertas, objetos, paredes, etc...)
+    
 };
 
 #endif /* ESCENARIO_H */
