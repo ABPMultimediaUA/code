@@ -11,16 +11,25 @@
  * Created on 30 de noviembre de 2016, 0:21
  */
 
+
 #ifndef READJSON_H
 #define READJSON_H
+
+#include "../rapidjson/document.h"
+#include <iostream>
+using namespace rapidjson;
+using namespace std;
+
 
 class readJson {
 public:
     readJson();
     readJson(const readJson& orig);
     virtual ~readJson();
+    void leerArchivo(const char* rutaArchivo);
+    void crearPared();
 private:
-
+    Document d;
 };
 
 #endif /* READJSON_H */
