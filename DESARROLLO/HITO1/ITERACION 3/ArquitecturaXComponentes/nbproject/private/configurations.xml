@@ -1121,10 +1121,9 @@
           </df>
         </df>
       </df>
-      <in>stateMachineComponent.cpp</in>
-      <in>stateMachineComponent.h</in>
-      <in>transformComponent.cpp</in>
-      <in>transformComponent.h</in>
+      <in>personaje.h</in>
+      <in>vector2.cpp</in>
+      <in>vector2.h</in>
     </df>
     <itemPath>main.cpp</itemPath>
   </logicalFolder>
@@ -1153,8 +1152,6 @@
         <gdb_interceptlist>
           <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
         </gdb_interceptlist>
-        <gdb_signals>
-        </gdb_signals>
         <gdb_options>
           <DebugOptions>
           </DebugOptions>

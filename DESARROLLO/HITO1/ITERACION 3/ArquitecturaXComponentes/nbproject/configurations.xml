@@ -2,26 +2,36 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
-      <in>stateMachineComponent.cpp</in>
-      <in>stateMachineComponent.h</in>
-      <in>transformComponent.cpp</in>
-      <in>transformComponent.h</in>
+      <in>personaje.h</in>
+      <in>vector2.cpp</in>
+      <in>vector2.h</in>
     </df>
-    <logicalFolder name="f1" displayName="Header" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f1" displayName="Header" projectFiles="true">
       <itemPath>CAppReceiver.h</itemPath>
       <itemPath>componente.h</itemPath>
       <itemPath>diccionarioEnCo.h</itemPath>
       <itemPath>entityManager.h</itemPath>
       <itemPath>gameEntity.h</itemPath>
+      <itemPath>renderComponent.h</itemPath>
+      <itemPath>stateMachineComponent.h</itemPath>
+      <itemPath>transformComponent.h</itemPath>
+      <itemPath>vector3.h</itemPath>
       <itemPath>vectorEntity.h</itemPath>
+      <itemPath>velocityComponent.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="f2" displayName="Source" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f2" displayName="Source" projectFiles="true">
       <itemPath>CAppReceiver.cpp</itemPath>
       <itemPath>componente.cpp</itemPath>
       <itemPath>diccionarioEnCo.cpp</itemPath>
       <itemPath>entityManager.cpp</itemPath>
       <itemPath>gameEntity.cpp</itemPath>
+      <itemPath>personaje.cpp</itemPath>
+      <itemPath>renderComponent.cpp</itemPath>
+      <itemPath>stateMachineComponent.cpp</itemPath>
+      <itemPath>transformComponent.cpp</itemPath>
+      <itemPath>vector3.cpp</itemPath>
       <itemPath>vectorEntity.cpp</itemPath>
+      <itemPath>velocityComponent.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -93,6 +103,14 @@
         <ccTool flags="0">
         </ccTool>
       </item>
+      <item path="personaje.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="personaje.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="renderComponent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="renderComponent.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="stateMachineComponent.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="stateMachineComponent.h" ex="false" tool="3" flavor2="0">
@@ -101,9 +119,21 @@
       </item>
       <item path="transformComponent.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="vector2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="vector2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="vector3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="vector3.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="vectorEntity.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="velocityComponent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="velocityComponent.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

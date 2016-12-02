@@ -12,13 +12,15 @@
  */
 
 #include "stateMachineComponent.h"
+#include <iostream>
 
 stateMachineComponent::stateMachineComponent() : componente() {
 }
 
-stateMachineComponent::stateMachineComponent(const stateMachineComponent& orig) : componente() {
+stateMachineComponent::stateMachineComponent(const stateMachineComponent& orig) : componente(orig) {
 }
 
 stateMachineComponent::~stateMachineComponent() {
+    std::cout<<"Borrado Componente Maquina de estados"<<std::endl;
 }
 

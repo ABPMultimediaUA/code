@@ -15,14 +15,22 @@
 #define TRANSFORMCOMPONENT_H
 
 #include "componente.h"
+#include "vector3.h"
 
 class transformComponent : public componente {
 public:
     transformComponent();
     transformComponent(const transformComponent& orig);
     virtual ~transformComponent();
+    vector3 getPosicion();
+    vector3 getRotacion();
+    void setPosicion(float,float,float);
+    void setPosicion(vector3);
+    void setRotacion(float,float,float);
+    void setRotacion(vector3);
 private:
-
+    vector3 *posicion;
+    vector3 *rotacion;    
 };
 
 #endif /* TRANSFORMCOMPONENT_H */
