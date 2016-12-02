@@ -2,6 +2,10 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
+      <df name="escenario">
+        <in>Escenario.cpp</in>
+        <in>Pared.cpp</in>
+      </df>
       <in>CAppReceiver.cpp</in>
       <in>Camara.cpp</in>
       <in>Escenario.cpp</in>
@@ -44,7 +48,7 @@
           <ccTool>
             <incDir>
               <pElem>../irrlicht-1.8.4/include</pElem>
-              <pElem>../../../../../../../../../../../usr/X11R6/include</pElem>
+              <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
               <pElem>../Box2D/Box2D</pElem>
               <pElem>../rapidjson</pElem>
               <pElem></pElem>
@@ -64,7 +68,7 @@
         <ccTool flags="0">
         </ccTool>
       </item>
-      <item path="Escenario.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Escenario.cpp" ex="false" tool="1" flavor2="4">
         <ccTool flags="0">
         </ccTool>
       </item>
@@ -73,6 +77,14 @@
         </ccTool>
       </item>
       <item path="Personaje.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="escenario/Escenario.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="escenario/Pared.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
       </item>

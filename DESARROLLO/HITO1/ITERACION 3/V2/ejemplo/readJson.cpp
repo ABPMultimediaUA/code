@@ -65,29 +65,28 @@ void readJson::crearPared()
                assert(b.IsArray());
                
                 for (SizeType j = 0; j < b.Size(); j++) 
-                {         
+                { 
+                      
+                          
                         if(b[j].HasMember("localPosition"))
                         {
                               const Value& c = b[j]["localPosition"];
                               assert(c.IsArray());
                               printf("------------------------------------------------->localPosition: x=%g, y=%g, z=%g\n", c[0].GetDouble(), c[1].GetDouble(),c[2].GetDouble());
-
                         }
                         if(b[j].HasMember("localRotation"))
                         {
                              const Value& c = b[j]["localRotation"];
                               assert(c.IsArray());
                                  printf("------------------------------------------------->localRotation: x=%g, y=%g, z=%g \n", c[0].GetDouble(), c[1].GetDouble(),c[2].GetDouble());
-                              
                         }
                         if(b[j].HasMember("localScale"))
                         {
                              const Value& c = b[j]["localScale"];
                               assert(c.IsArray());
                                   printf("------------------------------------------------->localScale: x=%g, y=%g, z=%g\n", c[0].GetDouble(), c[1].GetDouble(),c[2].GetDouble());
-                              
                         }
-                    
+                         
                 }
                
                  
@@ -97,6 +96,12 @@ void readJson::crearPared()
                  
                 for (SizeType t = 0; t < d.Size(); t++) 
                 {         
+                    
+                    vector3df pos;
+                    vector3df rot;
+                    vector3df escala;
+                    
+                    
                       printf("------------------------------------------------------->Entra a Paredes->%s\n",d[t]["name"].GetString());
                       const Value& e = d[t]["components"];
                        for (SizeType r = 0; r < e.Size(); r++) 
@@ -106,15 +111,16 @@ void readJson::crearPared()
                                   const Value& c = e[r]["localPosition"];
                                   assert(c.IsArray());
                                   printf("---------------------------------------------------------------------->localPosition: x=%g, y=%g, z=%g\n", c[0].GetDouble(), c[1].GetDouble(),c[2].GetDouble());
-
-
-
+                              pos.set(c[0].GetDouble()*10, c[1].GetDouble()*10 ,c[2].GetDouble()*10);
+                              
                             }
+                            
                             if(e[r].HasMember("localRotation"))
                             {
                                  const Value& c = e[r]["localRotation"];
                                   assert(c.IsArray());
                                      printf("---------------------------------------------------------------------->localRotation: x=%g, y=%g, z=%g\n", c[0].GetDouble(), c[1].GetDouble(),c[2].GetDouble());
+                               rot.set(c[1].GetDouble(), c[0].GetDouble(), c[1].GetDouble());
 
                             }
                             if(e[r].HasMember("localScale"))
@@ -122,12 +128,19 @@ void readJson::crearPared()
                                  const Value& c = e[r]["localScale"];
                                   assert(c.IsArray());
                                       printf("---------------------------------------------------------------------->localScale: x=%g, y=%g, z=%g\n", c[0].GetDouble(), c[1].GetDouble(),c[2].GetDouble());
+                                  escala.set(c[0].GetDouble(), c[1].GetDouble(),c[2].GetDouble());
 
                             }
                           
                        }
+                       Pared *pared = new Pared(pos, rot, escala);
+                          paredes.push_back(pared);
                 }
             }
         }
     }
 }
+
+std::list<Pared*> readJson::getParedes(){      
+    return paredes;
+}   

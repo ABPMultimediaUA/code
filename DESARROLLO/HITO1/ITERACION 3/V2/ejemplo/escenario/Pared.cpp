@@ -14,9 +14,9 @@
 #include "Pared.h"
 
 
-Pared::Pared(ISceneManager* smgr, IVideoDriver* driver, vector3df posicion, vector3df rotacion) {
+Pared::Pared(vector3df posicion, vector3df rotacion, vector3df escala) {
     
-    IAnimatedMesh *pared1 = smgr->addHillPlaneMesh("pared", // Name of the scenenode
+   /* IAnimatedMesh *pared1 = smgr->addHillPlaneMesh("pared", // Name of the scenenode
                            core::dimension2d<f32>(4.0f, 4.0f), // Tile size
                            core::dimension2d<u32>(20, 10), // Tile count
                            0, // Material
@@ -28,12 +28,13 @@ Pared::Pared(ISceneManager* smgr, IVideoDriver* driver, vector3df posicion, vect
        wall->setMaterialTexture(0, driver->getTexture("texture/pared.bmp"));   
         wall->setMaterialFlag(EMF_LIGHTING, false);
       wall->setPosition(posicion);
-      wall->setRotation(rotacion);
+      wall->setRotation(rotacion);*/
       
-      pared = pared1;
-      paredColocada = wall;
+     // pared = pared1;
+     // paredColocada = wall;
       pos = posicion;
       rot = rotacion;
+      escal = escala;
 }
 
 Pared::Pared(const Pared& orig) {
@@ -50,10 +51,18 @@ vector3df Pared::getRotacion(){
     return rot;
 }
 
+vector3df Pared::getEscala(){
+    return escal;
+}
+
 void Pared::setPosicion(vector3df newPos){
     pos = newPos;
 }
 
 void Pared::setRotacion(vector3df newRot){
     rot = newRot;
+}
+
+void Pared::setEscala(vector3df newEscala){
+    escal = newEscala;
 }

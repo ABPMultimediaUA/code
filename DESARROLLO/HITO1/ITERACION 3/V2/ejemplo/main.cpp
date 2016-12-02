@@ -3,7 +3,7 @@
 #include <iostream>
 #include "CAppReceiver.h"
 #include "Personaje.h"
-#include "Escenario.h"
+#include "Escenario/Escenario.h"
 #include "Camara.h"
 #include "readJson.h"
 
@@ -29,7 +29,6 @@ int main() {
             createDevice(video::EDT_OPENGL, dimension2d<u32>(640, 480), 16,
             false, false, false, &teclado);
 
-    readJson read;
     
     
     if (!device)
@@ -53,8 +52,8 @@ int main() {
     Escenario *esce = new Escenario(smgr, driver);
     Camara *cam = new Camara(smgr);
     //smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
-    esce->crearPared(vector3df(40,0,0), vector3df(90,-90,0));
-    esce->crearPared(vector3df(-40,0,0), vector3df(90,90,0));
+    //esce->crearPared(vector3df(40,0,0), vector3df(90,-90,0));
+   // esce->crearPared(vector3df(-40,0,0), vector3df(90,90,0));
 
 
     //primer parametro nodo padre, 0 el nodo raiz

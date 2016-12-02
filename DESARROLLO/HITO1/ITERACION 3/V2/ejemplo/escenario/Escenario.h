@@ -11,6 +11,10 @@
  * Created on 17 de noviembre de 2016, 20:08
  */
 #include <irrlicht.h>
+#include <list>
+#include "Pared.h"
+
+
 
 #ifndef ESCENARIO_H
 #define ESCENARIO_H
@@ -29,7 +33,7 @@ public:
     Escenario(ISceneManager* smgr, IVideoDriver* driver);
     Escenario(const Escenario& orig);
     virtual ~Escenario();
-    void crearPared(vector3df pos, vector3df rot);
+    void dibujarPared(std::list<Pared*> paredes);
 private:
     ISceneManager* SM;
     IVideoDriver* VD;

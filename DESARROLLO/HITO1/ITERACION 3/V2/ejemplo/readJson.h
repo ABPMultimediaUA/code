@@ -17,6 +17,9 @@
 
 #include "../rapidjson/document.h"
 #include <iostream>
+#include <list>
+#include "escenario/Pared.h"
+
 using namespace rapidjson;
 using namespace std;
 
@@ -28,8 +31,12 @@ public:
     virtual ~readJson();
     void leerArchivo(const char* rutaArchivo);
     void crearPared();
+    std::list<Pared*> getParedes();
+    
 private:
     Document d;
+   std::list<Pared*> paredes;
+   
 };
 
 #endif /* READJSON_H */

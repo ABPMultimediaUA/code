@@ -1,7 +1,8 @@
-﻿<Properties StartupItem="escena basica.csproj">
+﻿<Properties StartupItem="escena basica.CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Editor\UnityJSONExporter\JERigidBody.cs">
     <Files>
+      <File FileName="Assets\Editor\UnityJSONExporter\JERigidBody.cs" Line="1" Column="1" />
       <File FileName="Assets\main.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

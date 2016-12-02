@@ -27,22 +27,24 @@ using namespace gui;
 
 class Pared {
 public:
-    Pared(ISceneManager* smgr, IVideoDriver* driver, vector3df posicion, vector3df rotacion);
+    Pared(vector3df posicion, vector3df rotacion, vector3df escala);
     Pared(const Pared& orig);
     virtual ~Pared();
     
     vector3df getPosicion();
     vector3df getRotacion();
+    vector3df getEscala();
     
     void setPosicion(vector3df newPos);
     void setRotacion(vector3df newRot);
+    void setEscala(vector3df newEscala);
     
 private:
     
-    IAnimatedMesh* pared;
-    IAnimatedMeshSceneNode* paredColocada;
+   
     vector3df pos;
     vector3df rot;
+    vector3df escal;
     
     
 };
