@@ -10,21 +10,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/vector2.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/renderComponent.h</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/transformComponent.h</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/transformComponent.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/stateMachineComponent.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/velocityComponent.h</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/diccionarioEnCo.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/stateMachineComponent.h</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/vector2.h</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/diccionarioEnCo.h</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/renderComponent.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/main.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entityManager.h</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/velocityComponent.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entityManager.cpp</file>
+            <file>file:/D:/Documentos/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/renderComponent.cpp</file>
+            <file>file:/D:/Documentos/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/renderComponent.h</file>
         </group>
     </open-files>
 </project-private>

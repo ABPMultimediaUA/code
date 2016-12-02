@@ -15,15 +15,22 @@
 #define RENDERCOMPONENT_H
 
 #include "componente.h"
+#include <irrlicht.h>
 
+
+#ifdef _IRR_WINDOWS_
+#pragma comment(lib, "Irrlicht.lib")
+#pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
+#endif
 
 class renderComponent : public componente {
 public:
     renderComponent();
     renderComponent(const renderComponent& orig);
+    renderComponent(irr::scene::ISceneManager*, irr::video::IVideoDriver*);
     virtual ~renderComponent();
 private:
-
+    irr::scene::IMeshSceneNode *maya; //esto debe canviar a nuestra propia clase;
 };
 
 #endif /* RENDERCOMPONENT_H */

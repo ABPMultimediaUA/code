@@ -14,13 +14,28 @@
 #include "renderComponent.h"
 #include <iostream>
 
-renderComponent::renderComponent() : componente() {
-}
+using namespace irr;
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
+
+renderComponent::renderComponent() : componente() {}
 
 renderComponent::renderComponent(const renderComponent& orig) : componente(orig) {
+    maya = orig.maya;
 }
 
 renderComponent::~renderComponent() {
     std::cout<<"Borrado Componente render"<<std::endl;
 }
 
+renderComponent::renderComponent(ISceneManager* smgr, IVideoDriver* driver) : componente() {
+    maya = smgr->addCubeSceneNode(10);
+    if(maya){
+        maya -> setMaterialFlag(EMF_LIGHTING, false);
+        maya -> setPosition(vector3df(0, 0, 0));
+        maya->setMaterialTexture(0, driver->getTexture("resources/texture/life/bruce.jpg"));
+    }
+}

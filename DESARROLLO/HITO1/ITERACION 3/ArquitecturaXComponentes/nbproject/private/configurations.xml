@@ -2,6 +2,16 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
+      <df name="resources">
+        <df name="texture">
+          <df name="life">
+          </df>
+          <df name="materials">
+          </df>
+          <df name="objects">
+          </df>
+        </df>
+      </df>
       <df name="tools">
         <df name="Box2D">
           <df name="CMakeFiles">
@@ -226,8 +236,6 @@
               <in>main.cpp</in>
             </df>
             <df name="25.XmlHandling">
-              <df name=".objs">
-              </df>
               <in>main.cpp</in>
             </df>
             <df name="26.OcclusionQuery">
@@ -429,10 +437,6 @@
             <in>vector3d.h</in>
           </df>
           <df name="lib">
-            <df name="Linux">
-            </df>
-            <df name="MacOSX">
-            </df>
             <df name="Win32-gcc">
             </df>
             <df name="Win32-visualstudio">
@@ -1122,8 +1126,6 @@
         </df>
       </df>
       <in>personaje.h</in>
-      <in>vector2.cpp</in>
-      <in>vector2.h</in>
     </df>
     <itemPath>main.cpp</itemPath>
   </logicalFolder>

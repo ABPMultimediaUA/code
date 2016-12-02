@@ -24,13 +24,17 @@ public:
     virtual ~transformComponent();
     vector3 getPosicion();
     vector3 getRotacion();
+    vector3 getEscala();
     void setPosicion(float,float,float);
     void setPosicion(vector3);
     void setRotacion(float,float,float);
     void setRotacion(vector3);
+    void setEscala(float,float,float);
+    void setEscala(vector3);
 private:
     vector3 *posicion;
-    vector3 *rotacion;    
+    vector3 *rotacion;
+    vector3 *escala;
 };
 
 #endif /* TRANSFORMCOMPONENT_H */
