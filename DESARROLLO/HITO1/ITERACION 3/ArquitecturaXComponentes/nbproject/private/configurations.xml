@@ -8,8 +8,6 @@
           </df>
           <df name="materials">
           </df>
-          <df name="objects">
-          </df>
         </df>
       </df>
       <df name="tools">
@@ -236,6 +234,8 @@
               <in>main.cpp</in>
             </df>
             <df name="25.XmlHandling">
+              <df name=".objs">
+              </df>
               <in>main.cpp</in>
             </df>
             <df name="26.OcclusionQuery">
@@ -437,6 +437,10 @@
             <in>vector3d.h</in>
           </df>
           <df name="lib">
+            <df name="Linux">
+            </df>
+            <df name="MacOSX">
+            </df>
             <df name="Win32-gcc">
             </df>
             <df name="Win32-visualstudio">
@@ -1125,6 +1129,10 @@
           </df>
         </df>
       </df>
+      <in>camaraComponent.cpp</in>
+      <in>camaraComponent.h</in>
+      <in>facadeMotorGrafico.cpp</in>
+      <in>facadeMotorGrafico.h</in>
       <in>personaje.h</in>
     </df>
     <itemPath>main.cpp</itemPath>

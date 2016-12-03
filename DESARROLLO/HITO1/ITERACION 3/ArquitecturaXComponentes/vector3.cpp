@@ -20,9 +20,6 @@ vector3::vector3() {
 }
 
 vector3::vector3(const vector3& orig) {
-    x = new float();
-    y = new float();
-    z = new float();
     x = orig.x;
     y = orig.y;
     z = orig.z;

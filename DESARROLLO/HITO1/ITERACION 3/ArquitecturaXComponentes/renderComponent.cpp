@@ -21,21 +21,33 @@ using namespace video;
 using namespace io;
 using namespace gui;
 
-renderComponent::renderComponent() : componente() {}
+renderComponent::renderComponent() : componente() {
+    maya = new facadeMotorGrafico();
+}
 
 renderComponent::renderComponent(const renderComponent& orig) : componente(orig) {
     maya = orig.maya;
 }
 
 renderComponent::~renderComponent() {
+    delete maya;
     std::cout<<"Borrado Componente render"<<std::endl;
 }
 
-renderComponent::renderComponent(ISceneManager* smgr, IVideoDriver* driver) : componente() {
-    maya = smgr->addCubeSceneNode(10);
+renderComponent::renderComponent(facadeMotorGrafico* fMG) : componente() {
+    maya = fMG;
+    /*maya = smgr->addCubeSceneNode(10);
     if(maya){
         maya -> setMaterialFlag(EMF_LIGHTING, false);
         maya -> setPosition(vector3df(0, 0, 0));
         maya->setMaterialTexture(0, driver->getTexture("resources/texture/life/bruce.jpg"));
-    }
+    }*/
+}
+
+facadeMotorGrafico* renderComponent::getMaya(){
+    return maya;
+}
+
+void renderComponent::setMaya(facadeMotorGrafico* fMG){
+    maya = fMG;
 }

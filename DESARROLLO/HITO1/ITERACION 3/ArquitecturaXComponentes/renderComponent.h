@@ -15,22 +15,18 @@
 #define RENDERCOMPONENT_H
 
 #include "componente.h"
-#include <irrlicht.h>
-
-
-#ifdef _IRR_WINDOWS_
-#pragma comment(lib, "Irrlicht.lib")
-#pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
-#endif
+#include "facadeMotorGrafico.h"
 
 class renderComponent : public componente {
 public:
     renderComponent();
     renderComponent(const renderComponent& orig);
-    renderComponent(irr::scene::ISceneManager*, irr::video::IVideoDriver*);
+    renderComponent(facadeMotorGrafico*);
     virtual ~renderComponent();
+    facadeMotorGrafico* getMaya();
+    void setMaya(facadeMotorGrafico*);
 private:
-    irr::scene::IMeshSceneNode *maya; //esto debe canviar a nuestra propia clase;
+    facadeMotorGrafico *maya; //esto puede canviar a una facade nueva;
 };
 
 #endif /* RENDERCOMPONENT_H */
