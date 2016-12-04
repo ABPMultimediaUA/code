@@ -22,11 +22,11 @@ public:
     void setX(float);
     void setY(float);
     void setZ(float);
-    void setXYZ(float,float,float);
+    void setXYZ(float, float, float);
     float getX();
     float getY();
     float getZ();
-    void getXYZ(float*,float*,float*);
+    void getXYZ(float*, float*, float*);
 private:
     float *x,*y,*z;
 };

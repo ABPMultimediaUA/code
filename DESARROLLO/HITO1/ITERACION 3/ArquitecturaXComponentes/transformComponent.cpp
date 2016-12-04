@@ -13,7 +13,6 @@
 
 #include "transformComponent.h"
 #include "Common/b2Settings.h"
-#include "vector2.h"
 #include <iostream>
 
 transformComponent::transformComponent() : componente() {
@@ -50,7 +49,7 @@ vector3 transformComponent::getEscala(){
     return *escala;
 }
 
-void transformComponent::setPosicion(float x,float y,float z){
+void transformComponent::setPosicion(float x, float y,float z){
     posicion->setXYZ(x, y, z);
 }
 
@@ -58,7 +57,7 @@ void transformComponent::setPosicion(vector3 v){
     *posicion = v;
 }
 
-void transformComponent::setRotacion(float x,float y, float z){
+void transformComponent::setRotacion(float x, float y, float z){
     rotacion->setXYZ(x, y, z);
 }
 
@@ -66,7 +65,7 @@ void transformComponent::setRotacion(vector3 v){
     *rotacion = v;
 }
 
-void transformComponent::setEscala(float x,float y, float z){
+void transformComponent::setEscala(float x, float y, float z){
     escala->setXYZ(x, y, z);
 }
 

@@ -34,10 +34,10 @@ using namespace std;
 
 class facadeMotorGrafico {
 public:
-    facadeMotorGrafico();
+    facadeMotorGrafico(int , int , CAppReceiver*);
     facadeMotorGrafico(const facadeMotorGrafico& orig);
     virtual ~facadeMotorGrafico();
-    void addStaticTextOnScreen(char*, int, int, int, int);
+    void addStaticTextProva();
     void changeActiveCamera(int);
     unsigned int getTime();
     unsigned int getLastTime();
@@ -47,7 +47,7 @@ public:
     void setFondoScene(int,int,int,int);
     void drawObjectsGraf();
     void drawGUI();
-    void changeScene();
+    void changeVideoBuffer();
     void yield();
     void drop();
     void close();

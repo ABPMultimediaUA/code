@@ -4,7 +4,7 @@
 # Nombre del ejecutable que va a ser generado
 Target := MaquinaEstadoXComponentes
 # Lista de ficheros fuente, separados por espacios
-Sources := main.cpp CAppReceiver.cpp gameEntity.cpp componente.cpp diccionarioEnCo.cpp vectorEntity.cpp entityManager.cpp transformComponent.cpp stateMachineComponent.cpp
+Sources := main.cpp CAppReceiver.cpp gameEntity.cpp componente.cpp diccionarioEnCo.cpp vectorEntity.cpp entityManager.cpp transformComponent.cpp stateMachineComponent.cpp vector3.cpp
 # Lista de ficheros de recursos, separados por espacios windows no hace falta
 Resources :=
 # Ruta del directorio donde tenemos Irrlicht instalado (donde estan los directorios lib e include)
