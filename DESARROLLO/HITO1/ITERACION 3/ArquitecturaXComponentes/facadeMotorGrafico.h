@@ -51,15 +51,16 @@ public:
     void yield();
     void drop();
     void close();
-    void addMaya(int,char*);
-    void addCamera(int,int,vector3,vector3);
+    void addMaya(int*,char*);
+    void addCamera(int*,int,vector3,vector3);
+    vector3 getCameraFoco(int*);
 private:
     IrrlichtDevice *device; //ventana del Juego
     IVideoDriver *driver;
-    ISceneManager* smgr; //grafo de la escena(controlador)
-    IGUIEnvironment* guienv; //hacer intrerfaces de usuario
-    map<int,IMeshSceneNode> *mayas; //Mayas de los Objetos de la scena
-    map<int,ICameraSceneNode> *camaras; //Camaras de la scena
+    ISceneManager *smgr; //grafo de la escena(controlador)
+    IGUIEnvironment *guienv; //hacer intrerfaces de usuario
+    map<int,IMeshSceneNode*> *mayas; //Mayas de los Objetos de la scena
+    map<int,ICameraSceneNode*> *camaras; //Camaras de la scena
     ISceneNode *node; //Para el movimiento y captura del raton
     unsigned int *then; //variable para el control temporal
 };

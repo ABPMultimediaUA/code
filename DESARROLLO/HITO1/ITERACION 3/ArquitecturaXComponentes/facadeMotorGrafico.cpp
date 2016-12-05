@@ -11,6 +11,8 @@
  * Created on 3 de diciembre de 2016, 1:47
  */
 
+#include <vector>
+
 #include "facadeMotorGrafico.h"
 #include "CAppReceiver.h"
 
@@ -102,6 +104,20 @@ void facadeMotorGrafico::close(){
     device->closeDevice();
 }
 
-void facadeMotorGrafico::addMaya(int,char*){}
+void facadeMotorGrafico::addMaya(int *id, char *textura, vector3 p){
+    mayas->insert(make_pair(*id,smgr->addCubeSceneNode(10)));
+    std::map<int,IMeshSceneNode*>::iterator it = mayas->find(*id);
+    it->second->setMaterialFlag(EMF_LIGHTING, false);
+    it->second->setPosition(vector3df(p.getX(),p.getY(),p.getZ()));
+    it->second->setMaterialTexture(0,driver->getTexture(textura));
+}
 
-void facadeMotorGrafico::addCamera(int,int,vector3,vector3){}
+void facadeMotorGrafico::addCamera(int *id, int f, vector3 v1, vector3 v2){
+    camaras->insert(make_pair(*id,smgr->addCameraSceneNode(f,vector3df(v1.getX(),v1.getY(),v1.getZ()),vector3df(v2.getX(),v2.getY(),v2.getZ()))));
+}
+vector3 facadeMotorGrafico::getCameraFoco(int* id){
+    vector3 foco;
+    std::map<int,ICameraSceneNode*>::iterator it = mayas->find(*id);
+    foco.setXYZ(it->second->getTarget().X,it->second->getTarget().Y,it->second->getTarget().Z);
+    return foco;
+}

@@ -15,6 +15,7 @@
 #define CAMARA_H
 
 #include "gameEntity.h"
+#include "facadeMotorGrafico.h"
 
 class camara : public gameEntity {
 public:
@@ -22,9 +23,9 @@ public:
     camara(const camara& orig);
     camara(int);
     virtual ~camara();
-    
+    vector3 getFoco();
 private:
-
+    facadeMotorGrafico *camara;
 };
 
 #endif /* CAMARA_H */
