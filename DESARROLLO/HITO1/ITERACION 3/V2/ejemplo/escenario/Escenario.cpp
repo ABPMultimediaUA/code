@@ -48,6 +48,7 @@ Escenario::~Escenario() {
 
 void Escenario::dibujarPared(std::list<Pared*> paredes){
      
+    int i = 0;
     IAnimatedMesh *pared1 = SM->addHillPlaneMesh("pared", // Name of the scenenode
                            core::dimension2d<f32>(4.0f, 4.0f), // Tile size
                            core::dimension2d<u32>(20, 10), // Tile count
@@ -64,6 +65,25 @@ void Escenario::dibujarPared(std::list<Pared*> paredes){
         wall->setMaterialFlag(EMF_LIGHTING, false);
       wall->setPosition((*I)->getPosicion());
       wall->setRotation((*I)->getRotacion());
-        
+     
+     /* if(i==0){
+          wall->setPosition(vector3df(0,5,-40));
+          
+      }
+      
+      if(i==1){
+        wall->setPosition(vector3df(0,-20,-80));
+
+      }
+      
+       if(i==2){
+        wall->setPosition(vector3df(-40,15,0));
+
+      }
+       if(i==3){
+        wall->setPosition(vector3df(40,5,0));
+
+      }
+       i++;*/
     } 
 }

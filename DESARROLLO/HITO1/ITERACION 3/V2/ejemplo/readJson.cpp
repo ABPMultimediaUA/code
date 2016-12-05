@@ -111,7 +111,7 @@ void readJson::crearPared()
                                   const Value& c = e[r]["localPosition"];
                                   assert(c.IsArray());
                                   printf("---------------------------------------------------------------------->localPosition: x=%g, y=%g, z=%g\n", c[0].GetDouble(), c[1].GetDouble(),c[2].GetDouble());
-                              pos.set(c[0].GetDouble()*10, c[1].GetDouble()*10 ,c[2].GetDouble()*10);
+                              pos.set(10*c[0].GetDouble(), 10*c[1].GetDouble() ,10*c[2].GetDouble());
                               
                             }
                             
@@ -120,8 +120,10 @@ void readJson::crearPared()
                                  const Value& c = e[r]["localRotation"];
                                   assert(c.IsArray());
                                      printf("---------------------------------------------------------------------->localRotation: x=%g, y=%g, z=%g\n", c[0].GetDouble(), c[1].GetDouble(),c[2].GetDouble());
-                               rot.set(c[1].GetDouble(), c[0].GetDouble(), c[1].GetDouble());
-
+                              // rot.set(c[2].GetDouble(), c[1].GetDouble(), c[0].GetDouble());
+                             
+                                rot.set(c[0].GetDouble(), c[1].GetDouble(), -c[2].GetDouble());
+                          
                             }
                             if(e[r].HasMember("localScale"))
                             {
