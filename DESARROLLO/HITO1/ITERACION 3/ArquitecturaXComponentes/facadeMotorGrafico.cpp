@@ -12,7 +12,6 @@
  */
 
 #include <vector>
-
 #include "facadeMotorGrafico.h"
 #include "CAppReceiver.h"
 
@@ -104,7 +103,7 @@ void facadeMotorGrafico::close(){
     device->closeDevice();
 }
 
-void facadeMotorGrafico::addMaya(int *id, char *textura, vector3 p){
+void facadeMotorGrafico::addMaya(int *id, const char *textura, vector3 p){
     mayas->insert(make_pair(*id,smgr->addCubeSceneNode(10)));
     std::map<int,IMeshSceneNode*>::iterator it = mayas->find(*id);
     it->second->setMaterialFlag(EMF_LIGHTING, false);

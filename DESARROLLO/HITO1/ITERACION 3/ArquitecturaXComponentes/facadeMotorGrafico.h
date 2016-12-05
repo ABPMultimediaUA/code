@@ -51,7 +51,7 @@ public:
     void yield();
     void drop();
     void close();
-    void addMaya(int*,char*);
+    void addMaya(int*, const char*);
     void addCamera(int*,int,vector3,vector3);
     vector3 getCameraFoco(int*);
 private:
