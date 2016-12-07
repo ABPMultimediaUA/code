@@ -14,9 +14,12 @@
 #include "Estado.h"
 #include <iostream>
 
+using namespace std;
+
 
 Estado::Estado() {
     id=0;
+     
 }
 
 Estado::Estado(const Estado& orig) {
@@ -29,5 +32,19 @@ void Estado::Ejecutar(Personaje *pers, Enemigo *ene){
  //std::cout<<"Hola"<<std::endl;   
 }
 
+void Estado::Ejecutar(Juego *j){
+ //std::cout<<"Hola"<<std::endl;   
+    IrrlichtDevice *device =
+            createDevice(video::EDT_OPENGL, dimension2d<u32>(640, 480), 16,
+            false, false, false, &teclado);
+    while(device->run()){
+        
+    if(teclado.isKeyDown(irr::KEY_KEY_O)){
+          std::cout<<j->actual->id <<std::endl;
+        j->actual=j->jugando;
+      
+    }
+    }
+}
         
 

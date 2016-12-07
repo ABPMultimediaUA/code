@@ -4,6 +4,8 @@
     <df root="." name="0">
       <df name="texture">
       </df>
+      <in>Actu.cpp</in>
+      <in>Actu.h</in>
       <in>Alejarse.cpp</in>
       <in>Alejarse.h</in>
       <in>CAppReceiver.cpp</in>
@@ -18,6 +20,8 @@
       <in>Estado.h</in>
       <in>Irapunto.cpp</in>
       <in>Irapunto.h</in>
+      <in>Juego.cpp</in>
+      <in>Juego.h</in>
       <in>Perseguir.cpp</in>
       <in>Perseguir.h</in>
       <in>Personaje.cpp</in>
@@ -50,6 +54,8 @@
         <gdb_interceptlist>
           <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
         </gdb_interceptlist>
+        <gdb_signals>
+        </gdb_signals>
         <gdb_options>
           <DebugOptions>
           </DebugOptions>

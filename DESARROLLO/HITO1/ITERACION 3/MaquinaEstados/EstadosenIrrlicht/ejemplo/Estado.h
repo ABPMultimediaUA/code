@@ -15,14 +15,19 @@
 #define ESTADO_H
 #include "Personaje.h"
 #include "Enemigo.h"
+#include "CAppReceiver.h"
+#include "Juego.h"
 
 class Estado {
 public:
     Estado();
     int id;
+    CAppReceiver teclado;
+    IrrlichtDevice *device;
     Estado(const Estado& orig);
     virtual ~Estado();
     virtual void Ejecutar(Personaje *pers, Enemigo *ene);
+    virtual void Ejecutar(Juego *j);
 private:
 
 };
