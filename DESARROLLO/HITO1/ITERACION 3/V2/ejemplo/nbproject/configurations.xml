@@ -8,8 +8,8 @@
       </df>
       <in>CAppReceiver.cpp</in>
       <in>Camara.cpp</in>
-      <in>Escenario.cpp</in>
-      <in>Pared.cpp</in>
+      <in>MiContactListener.cpp</in>
+      <in>MiContactListener.h</in>
       <in>Personaje.cpp</in>
       <in>main.cpp</in>
       <in>readJson.cpp</in>
@@ -68,13 +68,9 @@
         <ccTool flags="0">
         </ccTool>
       </item>
-      <item path="Escenario.cpp" ex="false" tool="1" flavor2="4">
-        <ccTool flags="0">
-        </ccTool>
+      <item path="MiContactListener.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Pared.cpp" ex="false" tool="1" flavor2="4">
-        <ccTool flags="0">
-        </ccTool>
+      <item path="MiContactListener.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Personaje.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">

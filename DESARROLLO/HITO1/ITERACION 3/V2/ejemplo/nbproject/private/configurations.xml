@@ -14,8 +14,8 @@
       <in>CAppReceiver.h</in>
       <in>Camara.cpp</in>
       <in>Camara.h</in>
-      <in>Escenario.cpp</in>
-      <in>Pared.cpp</in>
+      <in>MiContactListener.cpp</in>
+      <in>MiContactListener.h</in>
       <in>Personaje.cpp</in>
       <in>Personaje.h</in>
       <in>main.cpp</in>

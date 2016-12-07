@@ -16,22 +16,7 @@
 
 Pared::Pared(vector3df posicion, vector3df rotacion, vector3df escala) {
     
-   /* IAnimatedMesh *pared1 = smgr->addHillPlaneMesh("pared", // Name of the scenenode
-                           core::dimension2d<f32>(4.0f, 4.0f), // Tile size
-                           core::dimension2d<u32>(20, 10), // Tile count
-                           0, // Material
-                           0.0f, // Hill height
-                           core::dimension2d<f32>(0.0f, 0.0f), // countHills
-                           core::dimension2d<f32>(3.0f, 3.0f)); // textureRepeatCount
-    
-    IAnimatedMeshSceneNode *wall = smgr->addAnimatedMeshSceneNode(pared1);
-       wall->setMaterialTexture(0, driver->getTexture("texture/pared.bmp"));   
-        wall->setMaterialFlag(EMF_LIGHTING, false);
-      wall->setPosition(posicion);
-      wall->setRotation(rotacion);*/
-      
-     // pared = pared1;
-     // paredColocada = wall;
+ 
       pos = posicion;
       rot = rotacion;
       escal = escala;
@@ -65,4 +50,26 @@ void Pared::setRotacion(vector3df newRot){
 
 void Pared::setEscala(vector3df newEscala){
     escal = newEscala;
+}
+
+void Pared::setFisica(b2World* world){
+    
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.position.Set(pos.X, pos.Z);
+    //si tiene rotacion en Y van | sino van -
+    if(rot.Y == 90){
+        
+        bodyShape.SetAsBox(1, 20);
+
+    }
+    
+    else{
+         bodyShape.SetAsBox(20, 1);
+
+    }
+    
+    body = world->CreateBody(&bodyDef);
+    body -> CreateFixture(&bodyShape, 1.0f);
+    body->SetUserData(this);
+    
 }

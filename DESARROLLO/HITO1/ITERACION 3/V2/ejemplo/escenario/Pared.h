@@ -10,10 +10,9 @@
  *
  * Created on 1 de diciembre de 2016, 19:35
  */
-#include <irrlicht.h>
 
-#ifndef PARED_H
-#define PARED_H
+#include <Box2D.h>
+#include <irrlicht.h>
 
 using namespace irr;
 
@@ -22,6 +21,9 @@ using namespace scene;
 using namespace video;
 using namespace io;
 using namespace gui;
+
+#ifndef PARED_H
+#define PARED_H
 
 
 
@@ -38,6 +40,7 @@ public:
     void setPosicion(vector3df newPos);
     void setRotacion(vector3df newRot);
     void setEscala(vector3df newEscala);
+    void setFisica(b2World *world);
     
 private:
     
@@ -45,6 +48,10 @@ private:
     vector3df pos;
     vector3df rot;
     vector3df escal;
+    b2Body *body;
+    b2BodyDef bodyDef;
+    b2PolygonShape bodyShape;
+    b2MassData md;
     
     
 };

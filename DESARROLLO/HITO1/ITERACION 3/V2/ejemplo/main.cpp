@@ -6,6 +6,7 @@
 #include "Escenario/Escenario.h"
 #include "Camara.h"
 #include "readJson.h"
+#include "MiContactListener.h"
 
 using namespace irr;
 
@@ -35,9 +36,14 @@ int main() {
         return 1;
 
 
+    //creamos el mundo 2D
     b2Vec2 gravity(0.0f, 0.0f);
     b2World *world = new b2World(gravity);
-
+    
+    //creamos el manejador de colisiones y lo seteamos al mundo
+    MiContactListener contactListenerInstance;
+    world->SetContactListener(&contactListenerInstance);
+    
     device->setWindowCaption(L"Movimiento del personaje");
 
     IVideoDriver* driver = device->getVideoDriver();
@@ -49,7 +55,7 @@ int main() {
     //cambiar la camara activa smgr->setActiveCamera(camera);
 
     Personaje *pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
-    Escenario *esce = new Escenario(smgr, driver);
+    Escenario *esce = new Escenario(smgr, driver, world);
     Camara *cam = new Camara(smgr);
     //smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
     //esce->crearPared(vector3df(40,0,0), vector3df(90,-90,0));

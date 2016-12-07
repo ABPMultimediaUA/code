@@ -11,6 +11,7 @@
  * Created on 17 de noviembre de 2016, 20:08
  */
 #include <irrlicht.h>
+#include <Box2D.h>
 #include <list>
 #include "Pared.h"
 
@@ -30,10 +31,10 @@ using namespace gui;
 
 class Escenario {
 public:
-    Escenario(ISceneManager* smgr, IVideoDriver* driver);
+    Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
     Escenario(const Escenario& orig);
     virtual ~Escenario();
-    void dibujarPared(std::list<Pared*> paredes);
+    void dibujarPared(std::list<Pared*> paredes, b2World *world);
 private:
     ISceneManager* SM;
     IVideoDriver* VD;
