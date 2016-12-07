@@ -28,6 +28,7 @@ using namespace gui;
 int main() {
 
     CAppReceiver teclado;
+    bool pausa=true;
 
     //creas una ventana, primer false es si quieres fullscreen
     IrrlichtDevice *device =
@@ -83,6 +84,8 @@ int main() {
     while (device->run()) {
 
         if (device->isWindowActive()) {
+            
+            
 
 
             const u32 now = device->getTimer()->getTime();
@@ -90,6 +93,10 @@ int main() {
             world->Step(dt, 6, 2); //1.0f/60.0f
             world->ClearForces();
 
+            //Comprobar si se pulsa tecla de pausa
+            if(teclado.isKeyDown(irr::KEY_KEY_P)){
+                    pausa=true;
+                }
             
             //estados del enemigo
             if(teclado.isKeyDown(irr::KEY_KEY_J)){
@@ -181,6 +188,15 @@ int main() {
 
             then = now;
 
+            if(pausa){
+             //comprobar si se pulsa tecla de inicio 
+                if(teclado.isKeyDown(irr::KEY_KEY_O)){
+                    pausa=false;
+                }
+            }
+            else{
+            
+            
             driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
 
             smgr->drawAll(); //dibuja todo el grafo
@@ -189,6 +205,7 @@ int main() {
 
             driver->endScene(); //intercambia buffer
 
+            }
         } else {
             device->yield();
         }
