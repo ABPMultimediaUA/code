@@ -10,14 +10,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/User/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/readJson.cpp</file>
-            <file>file:/C:/Users/User/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/main.cpp</file>
-            <file>file:/C:/Users/User/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/escenario/Pared.cpp</file>
-            <file>file:/C:/Users/User/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/Personaje.cpp</file>
-            <file>file:/C:/Users/User/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/readJson.h</file>
-            <file>file:/C:/Users/User/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/escenario/Escenario.cpp</file>
-            <file>file:/C:/Users/User/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/escenario/Escenario.h</file>
-            <file>file:/C:/Users/User/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/Makefile</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/Personaje.h</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/escenario/Escenario.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/escenario/Pared.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/escenario/Pared.h</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/MiContactListener.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/escenario/Escenario.h</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/main.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/Makefile</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/Personaje.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/V2/ejemplo/MiContactListener.h</file>
         </group>
     </open-files>
 </project-private>
