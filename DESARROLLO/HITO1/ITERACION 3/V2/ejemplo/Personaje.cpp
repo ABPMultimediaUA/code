@@ -35,6 +35,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     }
 
 
+    
     vel = 20.0f;
     pos = maya->getPosition();
     bodyDef.type = b2_dynamicBody;
@@ -43,6 +44,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     body->SetUserData(this);
+    
     /* md.mass = 2.0;
      md.center = b2Vec2(5.0,5.0);
      md.I = 1.0;

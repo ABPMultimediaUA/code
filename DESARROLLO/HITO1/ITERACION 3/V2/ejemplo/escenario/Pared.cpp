@@ -59,15 +59,15 @@ void Pared::setFisica(b2World* world){
     //si tiene rotacion en Y van | sino van -
     if(rot.Y == 90){
         
-        bodyShape.SetAsBox(1, 20);
+        bodyShape.SetAsBox(5, 20);
 
     }
     
     else{
-         bodyShape.SetAsBox(20, 1);
+         bodyShape.SetAsBox(20, 5);
 
     }
-    
+   
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     body->SetUserData(this);

@@ -37,6 +37,7 @@ public:
     vector3df getRotacion();
     vector3df getEscala();
     
+    
     void setPosicion(vector3df newPos);
     void setRotacion(vector3df newRot);
     void setEscala(vector3df newEscala);

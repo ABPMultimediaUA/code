@@ -42,7 +42,7 @@ private:
     b2BodyDef bodyDef;
     b2PolygonShape bodyShape;
     b2MassData md;
-
+   
 public:
     Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
     Personaje(const Personaje& orig);
