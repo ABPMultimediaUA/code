@@ -43,6 +43,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     bodyShape.SetAsBox(10, 10);
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
+    
     body->SetUserData(this);
     
     /* md.mass = 2.0;
@@ -170,6 +171,83 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
     setPos(pos);
 }
+
+
+f32 Personaje::lanzarRayo(int modo){
+    
+    b2RayCastInput input;
+    b2RayCastOutput output;
+    
+/*input.p1.Set(0.0f, 0.0f, 0.0f); // Punto inicial del rayo
+input.p2.Set(1.0f, 0.0f, 0.0f); // Punto final del rayo
+input.maxFraction = 1.0f;
+
+bool hit = body->GetFixtureList()->RayCast(&output, input, 0);
+
+if (hit) {
+b2Vec2 hitPoint = input.p1 + output.fraction * (input.p2 – input.p1);
+b2Vec2 normal = output.normal;
+
+}*/
+    
+    switch(modo){
+        
+        case 0:
+            
+            std::cout<<"ENTRO"<<std::endl;
+
+            input.p1.Set(pos.X, pos.Z);
+            input.p2.Set((pos.X + 5.0f),pos.Z);
+            input.maxFraction = 1.0f;
+            std::cout<<"X: "<<input.p1.x<<"Z: "<<input.p1.y<<std::endl;
+            std::cout<<"X: "<<input.p2.x<<"Z: "<<input.p2.y<<std::endl;
+
+            bool hit;
+            
+            hit = bodyShape.RayCast(&output, input,body->GetTransform(), 1);
+            //hit = body->GetFixtureList()->RayCast(&output, input, 0);
+             std::cout<<hit<<std::endl;
+            if(hit){
+                //return output.fraction;           
+                std::cout<<"CACA"<<std::endl;
+
+                std::cout<<output.fraction<<std::endl;
+            }
+            
+            break;
+            
+        case 1:
+            
+            break;
+            
+        case 2:
+            
+            break;
+            
+        case 3:
+            
+            break;
+            
+        case 4:
+            
+            break;
+            
+        case 5:
+            
+            break;
+            
+        case 6:
+            
+            break;
+            
+        case 7:
+            
+            break;
+            
+            
+    }
+}
+
 
 vector3df Personaje::getPos() {
     return pos;

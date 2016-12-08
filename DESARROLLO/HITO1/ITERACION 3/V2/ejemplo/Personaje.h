@@ -53,6 +53,7 @@ public:
     void moverPersonaje(int modo, f32 dt);
     void setVelocidad();
     void rotar(vector3df raton);
+    f32 lanzarRayo(int modo);
 
 };
 

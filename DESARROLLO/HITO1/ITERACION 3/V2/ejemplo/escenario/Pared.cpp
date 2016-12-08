@@ -68,6 +68,7 @@ void Pared::setFisica(b2World* world){
 
     }
    
+   
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     body->SetUserData(this);
