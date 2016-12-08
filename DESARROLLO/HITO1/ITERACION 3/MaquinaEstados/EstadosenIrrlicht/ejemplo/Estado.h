@@ -27,7 +27,8 @@ public:
     Estado(const Estado& orig);
     virtual ~Estado();
     virtual void Ejecutar(Personaje *pers, Enemigo *ene);
-    virtual void Ejecutar(Juego *j);
+    virtual void Ejecutar(Juego j);
+    int getid();
 private:
 
 };

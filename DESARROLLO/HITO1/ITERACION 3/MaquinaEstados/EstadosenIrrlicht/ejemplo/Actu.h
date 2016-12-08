@@ -43,7 +43,7 @@ public:
     Actu();
     Actu(const Actu& orig);
     virtual ~Actu();
-    void Ejecutar(Juego *j);
+    void Ejecutar(Juego j);
 private:
 
 };

@@ -31,17 +31,18 @@ int main() {
     
     
 
-    Juego* j;
+    Juego j;
     
-    Estado *juego= new Actu();
-    Estado *pausa=new Estado();
-    j->pausa=pausa;
-    j->jugando=juego;
-    j->actual=pausa;
+    Estado* juego= new Actu();
+    Estado* pausa=new Estado();
     
+    j.pausa=pausa;
+    j.jugando=juego;
+    j.actual=juego;
+    //std::cout<<j.actual->getid()<<std::endl; 
     
     while(1){
-    j->actual->Ejecutar(j);
+    j.actual->Ejecutar(j);
     
 }
 }

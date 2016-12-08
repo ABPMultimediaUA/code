@@ -32,19 +32,28 @@ void Estado::Ejecutar(Personaje *pers, Enemigo *ene){
  //std::cout<<"Hola"<<std::endl;   
 }
 
-void Estado::Ejecutar(Juego *j){
- //std::cout<<"Hola"<<std::endl;   
+void Estado::Ejecutar(Juego j){
+ 
     IrrlichtDevice *device =
             createDevice(video::EDT_OPENGL, dimension2d<u32>(640, 480), 16,
             false, false, false, &teclado);
+      
     while(device->run()){
         
+        
+        //std::cout<<"Hola"<<std::endl; 
+        int i=j.actual->id;
+        //std::cout<<i <<std::endl;
     if(teclado.isKeyDown(irr::KEY_KEY_O)){
-          std::cout<<j->actual->id <<std::endl;
-        j->actual=j->jugando;
+          //std::cout<<j->actual->id <<std::endl;
+        j.actual=j.jugando;
       
     }
     }
+}
+
+int Estado::getid(){
+    return id;
 }
         
 

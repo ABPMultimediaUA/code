@@ -24,6 +24,7 @@ public:
     Estado* actual; 
     Estado* jugando;
     Estado* pausa;
+    Estado* getactual();
 private:
 
 };

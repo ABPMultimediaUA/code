@@ -23,7 +23,7 @@ Actu::Actu(const Actu& orig) {
 Actu::~Actu() {
 }
 
-void Actu::Ejecutar(Juego *j){
+void Actu::Ejecutar(Juego j){
     
     
     
@@ -95,7 +95,7 @@ void Actu::Ejecutar(Juego *j){
 
             
             if(teclado.isKeyDown(irr::KEY_KEY_P)){
-                j->actual=j->pausa;
+                j.actual=j.pausa;
             }
                 
                 

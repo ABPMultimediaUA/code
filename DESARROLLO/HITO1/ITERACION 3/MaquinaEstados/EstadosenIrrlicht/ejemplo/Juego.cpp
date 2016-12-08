@@ -13,6 +13,7 @@
 
 #include "Juego.h"
 
+
 Juego::Juego() {
 }
 
@@ -20,5 +21,9 @@ Juego::Juego(const Juego& orig) {
 }
 
 Juego::~Juego() {
+}
+
+Estado* Juego::getactual(){
+    return actual;
 }
 
