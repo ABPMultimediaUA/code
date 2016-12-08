@@ -12,7 +12,6 @@
  */
 
 #include "transformComponent.h"
-#include "Common/b2Settings.h"
 #include <iostream>
 
 transformComponent::transformComponent() : componente() {

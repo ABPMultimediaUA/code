@@ -18,6 +18,7 @@ class vector3 {
 public:
     vector3();
     vector3(const vector3& orig);
+    vector3(float, float, float);
     virtual ~vector3();
     void setX(float);
     void setY(float);

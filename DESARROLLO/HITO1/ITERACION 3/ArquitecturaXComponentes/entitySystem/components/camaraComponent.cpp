@@ -14,30 +14,32 @@
 #include "camaraComponent.h"
 #include <iostream>
 
-camaraComponent::camaraComponent() {
+camaraComponent::camaraComponent() : componente() {
     foco = new vector3();
-    camara = new facadeMotorGrafico();
+    posCamara = new int();
 }
 
-camaraComponent::camaraComponent(const camaraComponent& orig) {
+camaraComponent::camaraComponent(const camaraComponent& orig) : componente() {
     camara = orig.camara;
     foco = orig.foco;
+    posCamara = orig.posCamara;
 }
 
 camaraComponent::~camaraComponent() {
     delete foco;
-    delete camara;
+    camara->borrarPorIDCamara(*posCamara);
+    delete posCamara;
     std::cout<<"Borrado el componente Camara"<<std::endl;
 }
 
-camaraComponent::camaraComponent(facadeMotorGrafico* fMG, vector3* v){
-    foco = new vector3();
-    camara = fMG;
+camaraComponent::camaraComponent(facadeMotorGrafico *fMG, vector3* v, int *id, vector3 *v1, vector3 *v2) : componente() {
     foco = v;
+    camara = fMG;
+    posCamara = camara->addCamera(id,v1,v2);
  }
 
-void camaraComponent::setFoco(vector3 v){
-    *foco = v;
+void camaraComponent::setFoco(vector3 *v){
+    foco = v;
 }
 
 void camaraComponent::setFoco(float x, float y, float z){
@@ -49,7 +51,7 @@ void camaraComponent::setCamara(facadeMotorGrafico* fMG){
 }
 
 vector3 camaraComponent::getFoco(){
-    return foco;
+    return *foco;
 }
 
 float camaraComponent::getFocoX(){
@@ -66,4 +68,12 @@ float camaraComponent::getFocoZ(){
 
 facadeMotorGrafico* camaraComponent::getCamara(){
     return camara;
+}
+
+void camaraComponent::setFoco(int *c){
+    camara->getCameraFoco(c);
+}
+
+void camaraComponent::crearCamara(int *id, vector3 *v1, vector3 *v2){
+    posCamara = camara->addCamera(id,v1,v2);
 }

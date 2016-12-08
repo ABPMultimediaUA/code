@@ -15,16 +15,16 @@
 #define CAMARACOMPONENT_H
 
 #include "componente.h"
-#include "vector3.h"
-#include "facadeMotorGrafico.h"
+#include "../framework/vector3.h"
+#include "../facade/facadeMotorGrafico.h"
 
 class camaraComponent : public componente {
 public:
     camaraComponent();
     camaraComponent(const camaraComponent& orig);
-    camaraComponent(facadeMotorGrafico*, vector3*);
+    camaraComponent(facadeMotorGrafico*, vector3*, int*, vector3*, vector3*);
     virtual ~camaraComponent();
-    void setFoco(vector3);
+    void setFoco(vector3*);
     void setFoco(float,float,float);
     void setCamara(facadeMotorGrafico*);
     vector3 getFoco();
@@ -32,9 +32,12 @@ public:
     float getFocoY();
     float getFocoZ();
     facadeMotorGrafico* getCamara();
+    void setFoco(int*);
+    void crearCamara(int*, vector3*, vector3*);
 private:
     vector3 *foco;
     facadeMotorGrafico *camara;
+    int *posCamara;
 };
 
 #endif /* CAMARACOMPONENT_H */

@@ -12,6 +12,7 @@
  */
 
 #include "velocityComponent.h"
+#include <iostream>
 
 velocityComponent::velocityComponent() : componente() {
     velocidad = new vector2();

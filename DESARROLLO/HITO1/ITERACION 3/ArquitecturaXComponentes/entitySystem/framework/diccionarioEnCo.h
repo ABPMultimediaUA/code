@@ -15,7 +15,7 @@
 #define DICCIONARIOENCO_H
 
 #include "gameEntity.h"
-#include "componente.h"
+#include "../components/componente.h"
 #include <map>
 #include <vector>
 

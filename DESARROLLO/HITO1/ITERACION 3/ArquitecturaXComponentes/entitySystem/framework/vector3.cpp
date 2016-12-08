@@ -10,7 +10,7 @@
  * 
  * Created on 2 de diciembre de 2016, 2:23
  */
-
+#include <iostream>
 #include "vector3.h"
 
 vector3::vector3() {
@@ -23,6 +23,17 @@ vector3::vector3(const vector3& orig) {
     x = orig.x;
     y = orig.y;
     z = orig.z;
+}
+
+vector3::vector3(float XX, float YY, float ZZ){
+    std::cout<<"vector3 0"<<std::endl;
+    x = new float();
+    y = new float();
+    z = new float();
+    *x = XX;
+    *y = YY;
+    *z = ZZ;
+    std::cout<<"vector3 1"<<std::endl;
 }
 
 vector3::~vector3() {

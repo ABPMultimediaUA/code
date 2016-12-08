@@ -16,7 +16,7 @@
 
 #include "diccionarioEnCo.h"
 #include "gameEntity.h"
-#include "componente.h"
+#include "../components/componente.h"
 #include "vectorEntity.h"
 #include "diccionarioEnCo.h"
 #include <vector>

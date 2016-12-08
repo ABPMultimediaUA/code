@@ -15,7 +15,8 @@
 #define RENDERCOMPONENT_H
 
 #include "componente.h"
-#include "facadeMotorGrafico.h"
+#include "../facade/facadeMotorGrafico.h"
+#include "../framework/vector3.h"
 
 class renderComponent : public componente {
 public:
@@ -25,8 +26,10 @@ public:
     virtual ~renderComponent();
     facadeMotorGrafico* getMaya();
     void setMaya(facadeMotorGrafico*);
+    void crearMaya(int*, const char*, vector3);
 private:
-    facadeMotorGrafico *maya; //esto puede canviar a una facade nueva;
+    facadeMotorGrafico &maya; //esto puede canviar a una facade nueva;
+    int &posMaya;
 };
 
 #endif /* RENDERCOMPONENT_H */
