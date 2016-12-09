@@ -25,7 +25,7 @@
 
 Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
 
-    maya = smgr -> addCubeSceneNode(10); //preguntar a Miguel Angel
+    maya = smgr -> addCubeSceneNode(10); //se crea de tamanyo 10x10x10
 
     if (maya) {
         maya -> setMaterialFlag(EMF_LIGHTING, false);

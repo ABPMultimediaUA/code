@@ -27,6 +27,6 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 }
 
 float32 RayCastCallback::getDistancia(){
-    
+    return distancia;
 }
 

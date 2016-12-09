@@ -13,6 +13,8 @@
 
 #include "Entity2D.h"
 
+
+//hacer diferentes constructores para los distintos objetos
 Entity2D::Entity2D(b2World *world, vector3df pos) {
     
     mundo = world;
@@ -57,40 +59,76 @@ float Entity2D::rayCast(int modo){
     //std::cout<<result<<std::endl;
     ////////////////////////////////////////////
     return result;*/
+    
+    float rayo1, rayo2, resultado = 0;
+    
     switch(modo){
         
+        //D: 0 -> x++ al punto final hay que sumarle a la X
         case 0:
-   
-            break;
+            rayo1 = rayCasting(b2Vec2(body->GetPosition().x, body->GetPosition().y), 
+                    b2Vec2(body->GetPosition().x+5.0f, body->GetPosition().y));
             
+            rayo2 = rayCasting(b2Vec2(body->GetPosition().x, body->GetPosition().y), 
+                    b2Vec2(body->GetPosition().x+5.0f, body->GetPosition().y));
+            
+            break;
+        
+        //A: 1 -> x-- al punto final hay que restarle a la X
         case 1:
             
             break;
-            
+        
+        //W: 2 -> z++ al punto final hay que sumarle en Z (la y en 2D)
         case 2:
             
             break;
-            
+        
+        //S: 3 -> z-- al punto final hay que restarle en Z (la y en 2D)
         case 3:
             
             break;
-            
+        
+        //W+D: 4 -> x++ y z++ al punto final hay que sumarle en ambas coordenadas
         case 4:
             
             break;
-            
+        
+        //S+D: 5 -> x++ y z-- al punto final hay que restarle en Z (Y) y sumarle en X    
         case 5:
             
             break;
-            
+        
+        //S+A: 6 -> x-- y z-- al punto final hay que restarle en ambas coordenadas    
         case 6:
             
             break;
-            
+        
+        //A+W: 7 -> x-- y z++ al punto final hay que restarle en X y sumarle en Z(Y)
         case 7:
             
             break;
     }
+    
+     if(rayo1!=0 && rayo2!=0){
+                if(rayo1<rayo2){
+                    resultado = rayo1;
+                }
+                else{
+                    resultado = rayo2;
+                }
+            }
+            
+            else{
+                if(rayo1>rayo2){
+                    resultado = rayo1;
+                }
+                else{
+                    resultado = rayo2;
+                }
+            }
+    
+    return resultado;
 }
 
 
