@@ -8,9 +8,13 @@
       </df>
       <in>CAppReceiver.cpp</in>
       <in>Camara.cpp</in>
+      <in>Entity2D.cpp</in>
+      <in>Entity2D.h</in>
       <in>MiContactListener.cpp</in>
       <in>MiContactListener.h</in>
       <in>Personaje.cpp</in>
+      <in>RayCastCallback.cpp</in>
+      <in>RayCastCallback.h</in>
       <in>main.cpp</in>
       <in>readJson.cpp</in>
     </df>
@@ -68,6 +72,10 @@
         <ccTool flags="0">
         </ccTool>
       </item>
+      <item path="Entity2D.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Entity2D.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="MiContactListener.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="MiContactListener.h" ex="false" tool="3" flavor2="0">
@@ -75,6 +83,10 @@
       <item path="Personaje.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="RayCastCallback.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RayCastCallback.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="escenario/Escenario.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">

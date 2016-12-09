@@ -14,10 +14,14 @@
       <in>CAppReceiver.h</in>
       <in>Camara.cpp</in>
       <in>Camara.h</in>
+      <in>Entity2D.cpp</in>
+      <in>Entity2D.h</in>
       <in>MiContactListener.cpp</in>
       <in>MiContactListener.h</in>
       <in>Personaje.cpp</in>
       <in>Personaje.h</in>
+      <in>RayCastCallback.cpp</in>
+      <in>RayCastCallback.h</in>
       <in>main.cpp</in>
       <in>readJson.cpp</in>
       <in>readJson.h</in>

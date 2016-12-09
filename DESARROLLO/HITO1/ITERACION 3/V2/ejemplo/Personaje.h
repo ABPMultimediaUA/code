@@ -15,6 +15,8 @@
 #include <iostream>
 #include <Box2D.h>
 
+#include "Entity2D.h"
+
 #ifndef PERSONAJE_H
 #define PERSONAJE_H
 
@@ -38,10 +40,7 @@ private:
     IMeshSceneNode *maya;
     float vel;
     vector3df pos;
-    b2Body *body;
-    b2BodyDef bodyDef;
-    b2PolygonShape bodyShape;
-    b2MassData md;
+    Entity2D *entity;
    
 public:
     Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
@@ -53,7 +52,7 @@ public:
     void moverPersonaje(int modo, f32 dt);
     void setVelocidad();
     void rotar(vector3df raton);
-    f32 lanzarRayo(int modo);
+    float lanzarRayo(int modo);
 
 };
 

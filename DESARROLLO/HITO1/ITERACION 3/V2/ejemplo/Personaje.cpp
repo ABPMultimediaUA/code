@@ -12,7 +12,9 @@
  */
 
 #include "Personaje.h"
+//#include "RayCastCallback.h"
 #include "Camara.h"
+#include "Entity2D.h"
 #include <Math.h>
 
 
@@ -38,13 +40,14 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     
     vel = 20.0f;
     pos = maya->getPosition();
-    bodyDef.type = b2_dynamicBody;
+    entity = new Entity2D(world, pos);
+    /*bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
     bodyShape.SetAsBox(10, 10);
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     
-    body->SetUserData(this);
+    body->SetUserData(this);*/
     
     /* md.mass = 2.0;
      md.center = b2Vec2(5.0,5.0);
@@ -76,12 +79,12 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
                std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
             // body->ApplyForceToCenter(b2Vec2(5.0,0.0), true);
 
-            body->SetLinearVelocity(b2Vec2(vel, 0.0f));
-            pos.X = body->GetPosition().x;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
+            pos.X = entity->getCuerpo2D()->GetPosition().x;
 
             /* std::cout<<"Des"<<std::endl;
               std::cout<<"Pos X: "<<pos.X<<std::endl;
-              std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
+              std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
 
             break;
 
@@ -89,14 +92,14 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
             /*  std::cout<<"case 1: Sntes"<<std::endl;
               std::cout<<"Pos X: "<<pos.X<<std::endl;
-              std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
+              std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
 
-            body->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-            pos.X = body->GetPosition().x;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+            pos.X = entity->getCuerpo2D()->GetPosition().x;
 
             /*std::cout<<"Des"<<std::endl;
              std::cout<<"Pos X: "<<pos.X<<std::endl;
-             std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
+             std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
 
             break;
 
@@ -104,14 +107,14 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
             /*   std::cout<<"case 2: Sntes"<<std::endl;
               std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-              std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
+              std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
 
-            body->SetLinearVelocity(b2Vec2(0.0f, vel));
-            pos.Z = body->GetPosition().y;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
+            pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
             /*  std::cout<<"Des"<<std::endl;
               std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-              std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
+              std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
 
             break;
 
@@ -119,14 +122,14 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
             /*   std::cout<<"case 3: Sntes"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-             std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
+             std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
 
-            body->SetLinearVelocity(b2Vec2(0.0f, -vel));
-            pos.Z = body->GetPosition().y;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
+            pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
             /* std::cout<<"Des"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-             std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
+             std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
 
 
             break;
@@ -134,35 +137,35 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
             //W+D
         case 4:
 
-            body->SetLinearVelocity(b2Vec2(vel, vel));
-            pos.X = body->GetPosition().x;
-            pos.Z = body->GetPosition().y;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, vel));
+            pos.X = entity->getCuerpo2D()->GetPosition().x;
+            pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 
             break;
 
             //D+S
         case 5:
-            body->SetLinearVelocity(b2Vec2(vel, -vel));
-            pos.X = body->GetPosition().x;
-            pos.Z = body->GetPosition().y;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, -vel));
+            pos.X = entity->getCuerpo2D()->GetPosition().x;
+            pos.Z = entity->getCuerpo2D()->GetPosition().y;
             break;
 
             //A+S
         case 6:
 
-            body->SetLinearVelocity(b2Vec2(-vel, -vel));
-            pos.X = body->GetPosition().x;
-            pos.Z = body->GetPosition().y;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
+            pos.X = entity->getCuerpo2D()->GetPosition().x;
+            pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
             break;
 
             //A+W
         case 7:
 
-            body->SetLinearVelocity(b2Vec2(-vel, vel));
-            pos.X = body->GetPosition().x;
-            pos.Z = body->GetPosition().y;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, vel));
+            pos.X = entity->getCuerpo2D()->GetPosition().x;
+            pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
             break;
 
@@ -173,81 +176,9 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 }
 
 
-f32 Personaje::lanzarRayo(int modo){
-    
-    b2RayCastInput input;
-    b2RayCastOutput output;
-    
-/*input.p1.Set(0.0f, 0.0f, 0.0f); // Punto inicial del rayo
-input.p2.Set(1.0f, 0.0f, 0.0f); // Punto final del rayo
-input.maxFraction = 1.0f;
-
-bool hit = body->GetFixtureList()->RayCast(&output, input, 0);
-
-if (hit) {
-b2Vec2 hitPoint = input.p1 + output.fraction * (input.p2 – input.p1);
-b2Vec2 normal = output.normal;
-
-}*/
-    
-    switch(modo){
-        
-        case 0:
-            
-            std::cout<<"ENTRO"<<std::endl;
-
-            input.p1.Set(pos.X, pos.Z);
-            input.p2.Set((pos.X + 5.0f),pos.Z);
-            input.maxFraction = 1.0f;
-            std::cout<<"X: "<<input.p1.x<<"Z: "<<input.p1.y<<std::endl;
-            std::cout<<"X: "<<input.p2.x<<"Z: "<<input.p2.y<<std::endl;
-
-            bool hit;
-            
-            hit = bodyShape.RayCast(&output, input,body->GetTransform(), 1);
-            //hit = body->GetFixtureList()->RayCast(&output, input, 0);
-             std::cout<<hit<<std::endl;
-            if(hit){
-                //return output.fraction;           
-                std::cout<<"CACA"<<std::endl;
-
-                std::cout<<output.fraction<<std::endl;
-            }
-            
-            break;
-            
-        case 1:
-            
-            break;
-            
-        case 2:
-            
-            break;
-            
-        case 3:
-            
-            break;
-            
-        case 4:
-            
-            break;
-            
-        case 5:
-            
-            break;
-            
-        case 6:
-            
-            break;
-            
-        case 7:
-            
-            break;
-            
-            
-    }
+float Personaje::lanzarRayo(int modo){
+    return entity->rayCast(modo);
 }
-
 
 vector3df Personaje::getPos() {
     return pos;
@@ -263,7 +194,8 @@ float Personaje::getVel() {
 
 void Personaje::setVelocidad() {
 
-    body->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+   
 
 }
 
