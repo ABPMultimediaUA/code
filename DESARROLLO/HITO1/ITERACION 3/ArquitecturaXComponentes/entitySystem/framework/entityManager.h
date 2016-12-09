@@ -33,6 +33,8 @@ public:
     std::vector<componente*> getAllEntityComponent(gameEntity*);
     void borrarEntity(gameEntity*);
     bool existEntity(gameEntity*);
+    gameEntity* getEntity(unsigned int);
+    gameEntity* findEntity(char*);
 private:
     unsigned short *idMasBajaUsada;
     vectorEntity *entidades;

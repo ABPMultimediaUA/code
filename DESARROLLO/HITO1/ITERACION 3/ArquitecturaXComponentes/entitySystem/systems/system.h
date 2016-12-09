@@ -24,6 +24,7 @@ public:
     system(entityManager *);
     virtual ~system();
     void update(float);
+    entityManager* getEntityManager();
 private:
     entityManager *eManager;
 };

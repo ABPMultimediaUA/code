@@ -5,6 +5,12 @@
       <df name="entitySystem">
         <df name="components">
           <in>componente.cpp</in>
+          <in>playerComponent.cpp</in>
+          <in>playerComponent.h</in>
+        </df>
+        <df name="systems">
+          <in>camaraSystem.cpp</in>
+          <in>camaraSystem.h</in>
         </df>
       </df>
     </df>
@@ -109,6 +115,16 @@
         <ccTool flags="0">
         </ccTool>
       </item>
+      <item path="entitySystem/components/playerComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/components/playerComponent.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="entitySystem/components/stateMachineComponent.cpp"
             ex="false"
             tool="1"
@@ -190,6 +206,16 @@
             flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="entitySystem/systems/camaraSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/systems/camaraSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
       <item path="entitySystem/systems/moveSystem.cpp"
             ex="false"

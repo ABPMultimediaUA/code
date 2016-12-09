@@ -153,3 +153,43 @@ void facadeMotorGrafico::inicarCamaras(){
 void facadeMotorGrafico::inicarMayas(){
     mayas = new std::map<int,IMeshSceneNode*>();
 }
+
+void facadeMotorGrafico::render(){
+    then = getTime();
+    driver->beginScene(true, true, SColor(255, 100, 101, 140));
+    smgr->drawAll();
+    guienv->drawAll();
+    driver->endScene();
+}
+
+char facadeMotorGrafico::teclaPulsada(){
+    if (teclado.isKeyDown(irr::KEY_KEY_W) && teclado.isKeyDown(irr::KEY_KEY_D)) {
+        return 4;
+    } else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_D)) {
+        return 5;
+    } else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_A)) {
+        return 6;
+    } else if (teclado.isKeyDown(irr::KEY_KEY_A) && teclado.isKeyDown(irr::KEY_KEY_W)) {
+        return 7;
+    }// X + and -
+    else if (teclado.isKeyDown(irr::KEY_KEY_D)) {
+        return 0;
+    } else if (teclado.isKeyDown(irr::KEY_KEY_A)) {
+        return 1;
+    }//Z + and -
+    else if (teclado.isKeyDown(irr::KEY_KEY_W)) {
+        return 2;
+    } else if (teclado.isKeyDown(irr::KEY_KEY_S)) {
+        return 3;
+    }
+    return 9;
+}
+
+void facadeMotorGrafico::setFocoandPoscionCamara(int ID, vector3 f, vector3 p){
+    camaras->find(ID)->second->getPosition(new vector3df(p.getX(),p.getY(),p.getZ()));
+    camaras->find(ID)->second->setTarget(new vector3df(f.getX(),f.getY(),f.getZ()));
+}
+
+unsigned int facadeMotorGrafico::getCamaraActiva(){
+    smgr->getActiveCamera();
+}

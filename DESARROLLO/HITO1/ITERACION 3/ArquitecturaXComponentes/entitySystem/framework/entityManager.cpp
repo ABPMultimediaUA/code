@@ -80,3 +80,17 @@ bool entityManager::existEntity(gameEntity *g){
     }
     return false;
 }
+
+gameEntity* entityManager::getEntity(unsigned int e){
+    for(unsigned short i = 0; i<entidades->size() && entidades->at(i)->getID() == e;i++){
+        return entidades->at(i);
+    }
+    return 0;
+}
+
+gameEntity* entityManager::findEntity(char* t){
+    for(unsigned short i = 0; i<entidades->size() && strcmp(t, typeid(*entidades->at(i))) == 0 ;i++){
+        return entidades->at(i);
+    }
+    return 0;
+}

@@ -29,7 +29,7 @@ public:
     void crearMaya(int*, const char*, vector3);
 private:
     facadeMotorGrafico &maya; //esto puede canviar a una facade nueva;
-    int &posMaya;
+    int posMaya;
 };
 
 #endif /* RENDERCOMPONENT_H */

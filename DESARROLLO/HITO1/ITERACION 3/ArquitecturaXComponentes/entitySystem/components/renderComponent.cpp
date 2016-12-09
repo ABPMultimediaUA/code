@@ -46,5 +46,5 @@ void renderComponent::setMaya(facadeMotorGrafico* fMG){
 }
 
 void renderComponent::crearMaya(int *id, const char *textura, vector3 p){
-    posMaya = *maya.addMaya(id,textura,p);
+    posMaya = *(maya->addMaya(id,textura,p));
 }

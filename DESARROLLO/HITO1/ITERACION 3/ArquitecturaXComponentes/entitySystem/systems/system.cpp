@@ -32,3 +32,6 @@ system::~system(){
 void system::update(float dt){
 }
 
+entityManager* system::getEntityManager(){
+    return eManager;
+}

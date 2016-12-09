@@ -59,6 +59,10 @@ public:
     bool deviceOK();
     void inicarCamaras();
     void inicarMayas();
+    void render();
+    char teclaPulsada();
+    void setFocoandPoscionCamara(int,vector3,vector3);
+    unsigned int getCamaraActiva();
 private:
     IrrlichtDevice *device; //ventana del Juego
     IVideoDriver *driver;
