@@ -12,7 +12,7 @@
  */
 #include <iostream>
 #include "Entity2D.h"
-#include "RayCastCallback.h"
+
 
 
 //hacer diferentes constructores para los distintos objetos
@@ -143,16 +143,7 @@ float Entity2D::rayCast(int modo){
 
 
 float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin){
-    /*//Creates the callback and sets the origin height
-    RayCastCallback* callback = new RayCastCallback();
-    callback->SetZ(m_position.z);
-    callback->SetVolume(volume);
-    //std::cout<<volume<<std::endl;
-    
-    //Sets the ray in the world
-    Facade2D::CreateRay(callback, _start, _end);
-    
-    return callback->m_fraction;*/
+  
     RayCastCallback *callback = new RayCastCallback();
     llamarCallBack(callback, inicio, fin);
     
