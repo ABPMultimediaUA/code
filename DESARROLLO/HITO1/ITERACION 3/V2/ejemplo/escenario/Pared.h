@@ -13,6 +13,7 @@
 
 #include <Box2D.h>
 #include <irrlicht.h>
+#include "../Entity2D.h"
 
 using namespace irr;
 
@@ -49,10 +50,11 @@ private:
     vector3df pos;
     vector3df rot;
     vector3df escal;
-    b2Body *body;
+    Entity2D *entity;
+    /*b2Body *body;
     b2BodyDef bodyDef;
     b2PolygonShape bodyShape;
-    b2MassData md;
+    b2MassData md;*/
     
     
 };

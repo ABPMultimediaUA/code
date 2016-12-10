@@ -28,13 +28,14 @@ using namespace gui;
 class Entity2D {
 public:
     Entity2D(b2World *world, vector3df pos);
+    Entity2D(b2World* world, vector3df pos, vector3df rot);
     Entity2D(const Entity2D& orig);
     virtual ~Entity2D();
     float rayCast(int modo);
     b2Body* getCuerpo2D();
     float rayCasting(b2Vec2 inicio, b2Vec2 fin);
     float llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
-    
+    int getIDEN();
     
 private:
     
@@ -43,6 +44,7 @@ private:
     b2BodyDef bodyDef;
     b2PolygonShape bodyShape;
     b2MassData md;
+    int iden;
 };
 
 #endif /* ENTITY2D_H */

@@ -10,7 +10,7 @@
  * 
  * Created on 1 de diciembre de 2016, 19:35
  */
-
+#include <iostream>
 #include "Pared.h"
 
 
@@ -53,24 +53,8 @@ void Pared::setEscala(vector3df newEscala){
 }
 
 void Pared::setFisica(b2World* world){
-    
-    bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(pos.X, pos.Z);
-    //si tiene rotacion en Y van | sino van -
-    if(rot.Y == 90){
-        
-        bodyShape.SetAsBox(5, 20);
+     std::cout<<"CREO PARED! "<<std::endl;
 
-    }
-    
-    else{
-         bodyShape.SetAsBox(20, 5);
-
-    }
-   
-   
-    body = world->CreateBody(&bodyDef);
-    body -> CreateFixture(&bodyShape, 1.0f);
-    body->SetUserData(this);
+    entity = new Entity2D(world, pos, rot);
     
 }

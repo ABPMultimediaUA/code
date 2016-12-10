@@ -75,7 +75,7 @@ int main() {
 
             const u32 now = device->getTimer()->getTime();
             const f32 dt = (f32) (now - then) / 1000.f;
-            f32 distancia;
+            float distancia;
             world->Step(dt, 6, 2); //1.0f/60.0f
             world->ClearForces();
 
@@ -111,7 +111,8 @@ int main() {
             }// X + and -
             else if (teclado.isKeyDown(irr::KEY_KEY_D)) {
 
-                pers->lanzarRayo(0);
+               distancia = pers->lanzarRayo(0);
+               
                 pers->moverPersonaje(0, dt);
                 cam->actualizarCamara(0, dt);
             } else if (teclado.isKeyDown(irr::KEY_KEY_A)) {

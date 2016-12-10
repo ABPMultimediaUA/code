@@ -12,7 +12,6 @@
  */
 
 #include "Personaje.h"
-//#include "RayCastCallback.h"
 #include "Camara.h"
 #include "Entity2D.h"
 #include <Math.h>
@@ -170,6 +169,8 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
             break;
 
     }
+                 //std::cout<<"Pos 3D X: "<<pos.X<<std::endl;
+             // std::cout<<"Pos 3D Z: "<<pos.Z<<std::endl;
 
 
     setPos(pos);
