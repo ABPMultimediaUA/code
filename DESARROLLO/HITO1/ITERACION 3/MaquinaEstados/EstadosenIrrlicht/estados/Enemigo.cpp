@@ -12,6 +12,7 @@
  */
 
 #include "Enemigo.h"
+
 #include <Math.h>
 
 #ifdef _IRR_WINDOWS_
@@ -19,7 +20,7 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world,Estado *ei) {
+Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
     
     maya = smgr -> addCubeSceneNode(10); //preguntar a Miguel Angel
 
@@ -40,7 +41,7 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world,Estad
     bodyShape.SetAsBox(10, 10);
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
-    est=ei;
+    estado=1;
     /* md.mass = 2.0;
      md.center = b2Vec2(5.0,5.0);
      md.I = 1.0;
@@ -164,9 +165,83 @@ void Enemigo::rotar(vector3df raton) {
     //    line3df linea = getRay
 }
 
-void Enemigo::Cambiar(Estado *enuevo){
+void Enemigo::Cambiar(int nuevo){
   
       
-          est=enuevo;
+          estado=nuevo;
    
 } 
+
+void Enemigo::Update(Personaje *pers){
+    
+    switch(estado){
+        case 1: //perseguir
+            this->Perseguir(pers);
+            break;
+        case 2: //huir
+            this->Alejarse(pers);
+            break;
+        case 3: //irapunto
+            this->Irapunto();
+            break;
+            
+    }
+}
+
+void Enemigo::Perseguir(Personaje* pers){
+    vector3df vj=pers->getPos();
+    vector3df ve=this->getPos();
+    if(vj.X>ve.X){
+        this->mover(0,1);//que hacer con dt???
+    }
+    else {
+        this->mover(1,1);
+    }
+    
+    if(vj.Z>ve.Z){
+        this->mover(2,1);
+    }
+    else{
+        this->mover(3,1);
+    }
+    
+}
+
+void Enemigo::Alejarse(Personaje* pers){
+    vector3df vj=pers->getPos();
+    vector3df ve=this->getPos();
+    if(vj.X<ve.X){
+        this->mover(0,1);//que hacer con dt???
+    }
+    else {
+        this->mover(1,1);
+    }
+    
+    if(vj.Z<ve.Z){
+        this->mover(2,1);
+    }
+    else{
+        this->mover(3,1);
+    }
+    
+}
+
+void Enemigo::Irapunto(){
+    
+     vector3df vo=vector3df(60.0f,0.0f,50.0f);
+    vector3df ve=this->getPos();
+    if(vo.X>ve.X){
+        this->mover(0,1);//que hacer con dt???
+    }
+    else {
+        this->mover(1,1);
+    }
+    
+    if(vo.Z>ve.Z){
+        this->mover(2,1);
+    }
+    else{
+        this->mover(3,1);
+    }
+    
+}

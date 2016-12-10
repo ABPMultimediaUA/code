@@ -3,7 +3,7 @@
     <type>org.netbeans.modules.cnd.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>ejemplo</name>
+            <name>estados</name>
             <c-extensions/>
             <cpp-extensions>cpp</cpp-extensions>
             <header-extensions>h</header-extensions>
@@ -14,8 +14,12 @@
             </sourceRootList>
             <confList>
                 <confElem>
-                    <name>Default</name>
-                    <type>0</type>
+                    <name>Debug</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>Release</name>
+                    <type>1</type>
                 </confElem>
             </confList>
             <formatting>

@@ -14,9 +14,10 @@
 #include <irrlicht.h>
 #include <iostream>
 #include <Box2D.h>
+#include "Personaje.h"
 #include "CAppReceiver.h"
 
-class Estado;
+
 
 
 #ifndef ENEMIGO_H
@@ -37,17 +38,21 @@ using namespace gui;
 
 class Enemigo {
 public:
-    Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, Estado *ei);
+    Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
     Enemigo(const Enemigo& orig);
     virtual ~Enemigo();
     vector3df getPos();
-    Estado *est;
+    int estado;
     void setPos(vector3df pos);
     float getVel();
+    void Update(Personaje *pers);
     void mover(int modo, f32 dt);
     void setVelocidad();
     void rotar(vector3df raton);
-    void Cambiar(Estado *enuevo);
+    void Cambiar(int nuevo);
+    void Perseguir(Personaje *pers);
+    void Alejarse (Personaje *pers);
+    void Irapunto ();
 private:
     IMeshSceneNode *maya;
     float vel;

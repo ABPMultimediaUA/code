@@ -1,64 +1,61 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+#include <irrlicht.h>
+#include <Box2D.h>
+#include <iostream>
+#include "CAppReceiver.h"
+#include "Personaje.h"
+#include "Enemigo.h"
+#include "Escenario.h"
+#include "Camara.h"
 
-/* 
- * File:   Actu.cpp
- * Author: Iván
- * 
- * Created on 7 de diciembre de 2016, 11:44
- */
 
-#include "Actu.h"
 
-Actu::Actu() {
-    id=4;
-}
+using namespace irr;
 
-Actu::Actu(const Actu& orig) {
-}
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
 
-Actu::~Actu() {
-}
+#ifdef _IRR_WINDOWS_
+#pragma comment(lib, "Irrlicht.lib")
+#pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
+#endif
 
-void Actu::Ejecutar(Juego j){
+
+
+
+int main() {
     
     
-    
-    
 
-    //creas una ventana, primer false es si quieres fullscreen
+    CAppReceiver teclado;
+    
     IrrlichtDevice *device =
             createDevice(video::EDT_OPENGL, dimension2d<u32>(640, 480), 16,
             false, false, false, &teclado);
-
-
-    if (!device)
-        //salir
-        return;
-
-
-    b2Vec2 gravity(0.0f, 0.0f);
-    b2World *world = new b2World(gravity);
-    Estado *ei= new Perseguir();
-    Estado *ep= ei;
-    Estado *ea= new Alejarse();
-    Estado *eir= new Irapunto();
-
-    device->setWindowCaption(L"Movimiento del personaje");
-
+    
+    
     IVideoDriver* driver = device->getVideoDriver();
     ISceneManager* smgr = device->getSceneManager(); //grafo de la escena(controlador)
     IGUIEnvironment* guienv = device->getGUIEnvironment(); //hacer intrerfaces de usuario
+    
+    if (!device)
+        //salir
+        return 0;
+    b2Vec2 gravity(0.0f, 0.0f);
+    b2World *world = new b2World(gravity);
+    
 
+    device->setWindowCaption(L"Movimiento del personaje");
+    
+    
     guienv->addStaticText(L"Movimiento del personaje",
             rect<s32>(10, 10, 260, 22), true); //metodo para poner algo por pantalla
     //cambiar la camara activa smgr->setActiveCamera(camera);
 
     Personaje *pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
-    Enemigo *ene = new Enemigo(smgr, driver, world, ei);
+    Enemigo *ene = new Enemigo(smgr, driver, world);
     Escenario *esce = new Escenario(smgr, driver);
     Camara *cam = new Camara(smgr);
     //smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
@@ -94,24 +91,21 @@ void Actu::Ejecutar(Juego j){
             world->ClearForces();
 
             
-            if(teclado.isKeyDown(irr::KEY_KEY_P)){
-                j.actual=j.pausa;
-            }
-                
+           
                 
             //estados del enemigo
             if(teclado.isKeyDown(irr::KEY_KEY_J)){
-                ene->Cambiar(ep);
+                ene->Cambiar(1);
             }
             else if(teclado.isKeyDown(irr::KEY_KEY_K)){
-                ene->Cambiar(ea);
+                ene->Cambiar(2);
             }
             else if(teclado.isKeyDown(irr::KEY_KEY_L)){
-                ene->Cambiar(eir);
+                ene->Cambiar(3);
             }
             
             
-            ene->est->Ejecutar(pers,ene);
+            ene->Update(pers);
             
             if (teclado.isKeyUp(irr::KEY_KEY_D) || teclado.isKeyUp(irr::KEY_KEY_A) || teclado.isKeyUp(irr::KEY_KEY_W) || teclado.isKeyUp(irr::KEY_KEY_S)) {
                 pers->setVelocidad();
@@ -209,8 +203,6 @@ void Actu::Ejecutar(Juego j){
     device->drop();
 
     //salir
-    return;
-    
-    
+    return 1;
     
 }
