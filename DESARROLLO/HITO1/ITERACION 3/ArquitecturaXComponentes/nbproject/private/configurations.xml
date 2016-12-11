@@ -11,6 +11,8 @@
         <df name="facade">
         </df>
         <df name="framework">
+          <in>gameClock.cpp</in>
+          <in>gameClock.h</in>
         </df>
         <df name="systems">
           <in>camaraSystem.cpp</in>
@@ -22,8 +24,6 @@
           <df name="life">
           </df>
           <df name="materials">
-          </df>
-          <df name="objects">
           </df>
         </df>
       </df>
@@ -251,6 +251,8 @@
               <in>main.cpp</in>
             </df>
             <df name="25.XmlHandling">
+              <df name=".objs">
+              </df>
               <in>main.cpp</in>
             </df>
             <df name="26.OcclusionQuery">
@@ -452,6 +454,10 @@
             <in>vector3d.h</in>
           </df>
           <df name="lib">
+            <df name="Linux">
+            </df>
+            <df name="MacOSX">
+            </df>
             <df name="Win32-gcc">
             </df>
             <df name="Win32-visualstudio">
@@ -1168,6 +1174,8 @@
         <gdb_interceptlist>
           <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
         </gdb_interceptlist>
+        <gdb_signals>
+        </gdb_signals>
         <gdb_options>
           <DebugOptions>
           </DebugOptions>

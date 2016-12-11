@@ -8,6 +8,10 @@
           <in>playerComponent.cpp</in>
           <in>playerComponent.h</in>
         </df>
+        <df name="framework">
+          <in>gameClock.cpp</in>
+          <in>gameClock.h</in>
+        </df>
         <df name="systems">
           <in>camaraSystem.cpp</in>
           <in>camaraSystem.h</in>
@@ -177,6 +181,13 @@
             flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="entitySystem/framework/gameClock.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/framework/gameClock.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="entitySystem/framework/gameEntity.cpp"
             ex="false"

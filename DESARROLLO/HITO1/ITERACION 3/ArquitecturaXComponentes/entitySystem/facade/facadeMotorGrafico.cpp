@@ -26,6 +26,7 @@ facadeMotorGrafico::facadeMotorGrafico(int w, int h) {
     node = smgr->addMeshSceneNode(smgr->addArrowMesh("Arrow", video::SColor(255, 255, 0, 0), video::SColor(255, 0, 255, 0), 16, 16, 2.f, 1.3f, 0.1f, 0.6f));
     node->setMaterialFlag(video::EMF_LIGHTING, false);
     then = new unsigned int();
+    device->getTimer()->start();
     *then = 1 * device->getTimer()->getTime();
 }
 
@@ -36,7 +37,7 @@ facadeMotorGrafico::facadeMotorGrafico(const facadeMotorGrafico& orig) {
     smgr = orig.smgr;
     guienv = orig.guienv;
     node = orig.node;
-    then = reinterpret_cast<unsigned int*>(device->getTimer()->getTime());
+    *then = 1 * device->getTimer()->getTime();
     teclado = orig.teclado;
 }
 
@@ -154,40 +155,40 @@ void facadeMotorGrafico::inicarMayas(){
     mayas = new std::map<int,IMeshSceneNode*>();
 }
 
-void facadeMotorGrafico::render(){
-    then = getTime();
-    driver->beginScene(true, true, SColor(255, 100, 101, 140));
+void facadeMotorGrafico::render(int c1,int c2,int c3,int c4){
+    *then = getTime();
+    driver->beginScene(true, true, SColor(c1, c2, c3, c4));
     smgr->drawAll();
     guienv->drawAll();
     driver->endScene();
 }
 
 char facadeMotorGrafico::teclaPulsada(){
-    if (teclado.isKeyDown(irr::KEY_KEY_W) && teclado.isKeyDown(irr::KEY_KEY_D)) {
+    if (teclado->isKeyDown(irr::KEY_KEY_W) && teclado->isKeyDown(irr::KEY_KEY_D)) {
         return 4;
-    } else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_D)) {
+    } else if (teclado->isKeyDown(irr::KEY_KEY_S) && teclado->isKeyDown(irr::KEY_KEY_D)) {
         return 5;
-    } else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_A)) {
+    } else if (teclado->isKeyDown(irr::KEY_KEY_S) && teclado->isKeyDown(irr::KEY_KEY_A)) {
         return 6;
-    } else if (teclado.isKeyDown(irr::KEY_KEY_A) && teclado.isKeyDown(irr::KEY_KEY_W)) {
+    } else if (teclado->isKeyDown(irr::KEY_KEY_A) && teclado->isKeyDown(irr::KEY_KEY_W)) {
         return 7;
     }// X + and -
-    else if (teclado.isKeyDown(irr::KEY_KEY_D)) {
+    else if (teclado->isKeyDown(irr::KEY_KEY_D)) {
         return 0;
-    } else if (teclado.isKeyDown(irr::KEY_KEY_A)) {
+    } else if (teclado->isKeyDown(irr::KEY_KEY_A)) {
         return 1;
     }//Z + and -
-    else if (teclado.isKeyDown(irr::KEY_KEY_W)) {
+    else if (teclado->isKeyDown(irr::KEY_KEY_W)) {
         return 2;
-    } else if (teclado.isKeyDown(irr::KEY_KEY_S)) {
+    } else if (teclado->isKeyDown(irr::KEY_KEY_S)) {
         return 3;
     }
     return 9;
 }
 
 void facadeMotorGrafico::setFocoandPoscionCamara(int ID, vector3 f, vector3 p){
-    camaras->find(ID)->second->getPosition(new vector3df(p.getX(),p.getY(),p.getZ()));
-    camaras->find(ID)->second->setTarget(new vector3df(f.getX(),f.getY(),f.getZ()));
+    camaras->find(ID)->second->setPosition(vector3df(p.getX(),p.getY(),p.getZ()));
+    camaras->find(ID)->second->setTarget(vector3df(f.getX(),f.getY(),f.getZ()));
 }
 
 unsigned int facadeMotorGrafico::getCamaraActiva(){

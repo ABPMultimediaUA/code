@@ -11,7 +11,9 @@
  * Created on 21 de noviembre de 2016, 19:53
  */
 
+#include <typeinfo>
 #include <iostream>
+#include <string.h>
 #include "entityManager.h"
 
 using namespace std;
@@ -89,7 +91,7 @@ gameEntity* entityManager::getEntity(unsigned int e){
 }
 
 gameEntity* entityManager::findEntity(char* t){
-    for(unsigned short i = 0; i<entidades->size() && strcmp(t, typeid(*entidades->at(i))) == 0 ;i++){
+    for(unsigned short i = 0; i<entidades->size() && strcmp(t, typeid(*entidades->at(i)).name()) == 0 ;i++){
         return entidades->at(i);
     }
     return 0;

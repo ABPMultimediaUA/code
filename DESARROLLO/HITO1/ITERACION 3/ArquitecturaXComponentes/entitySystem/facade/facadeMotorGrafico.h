@@ -59,7 +59,7 @@ public:
     bool deviceOK();
     void inicarCamaras();
     void inicarMayas();
-    void render();
+    void render(int,int,int,int);
     char teclaPulsada();
     void setFocoandPoscionCamara(int,vector3,vector3);
     unsigned int getCamaraActiva();

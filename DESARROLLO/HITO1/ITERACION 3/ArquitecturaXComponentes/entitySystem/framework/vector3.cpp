@@ -26,14 +26,12 @@ vector3::vector3(const vector3& orig) {
 }
 
 vector3::vector3(float XX, float YY, float ZZ){
-    std::cout<<"vector3 0"<<std::endl;
     x = new float();
     y = new float();
     z = new float();
     *x = XX;
     *y = YY;
     *z = ZZ;
-    std::cout<<"vector3 1"<<std::endl;
 }
 
 vector3::~vector3() {
