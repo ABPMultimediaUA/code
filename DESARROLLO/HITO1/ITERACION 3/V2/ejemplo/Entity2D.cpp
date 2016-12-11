@@ -68,13 +68,16 @@ float Entity2D::rayCast(int modo){
         
         //D: 0 -> x++ al punto final hay que sumarle a la X
         case 0:
+            std::cout<<"TIPO ENTITY: "<<this->iden<<std::endl;
             std::cout<<"Posicion X: "<<body->GetPosition().x<<"Y: "<<body->GetPosition().y<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<""<<std::endl;
 
             rayo1 = rayCasting(b2Vec2(body->GetPosition().x, body->GetPosition().y), 
-                    b2Vec2(body->GetPosition().x+1.0f, body->GetPosition().y));
+                    b2Vec2(body->GetPosition().x+100.0f, body->GetPosition().y));
             
             rayo2 = rayCasting(b2Vec2(body->GetPosition().x, body->GetPosition().y), 
-                    b2Vec2(body->GetPosition().x+5.0f, body->GetPosition().y));
+                    b2Vec2(body->GetPosition().x+500.0f, body->GetPosition().y));
             
             break;
         

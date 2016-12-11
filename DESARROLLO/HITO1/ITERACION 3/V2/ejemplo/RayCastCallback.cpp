@@ -30,6 +30,8 @@ RayCastCallback::~RayCastCallback() {
 float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, const b2Vec2& normal, float32 fraction){
  
         std::cout<<"ENTRO AL CALLBACK "<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<""<<std::endl;
 
     if(fraction!=0){
         void* bodyUserData = fixture->GetBody()->GetUserData();
@@ -37,9 +39,13 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
         if(bodyUserData){
                 if(static_cast<Entity2D*>(bodyUserData)){
                     Entity2D *entity = static_cast<Entity2D*>(bodyUserData);
-                    
+                                std::cout<<"//////////////////////////////////////////"<<std::endl;
+
+                    std::cout<<"ID ENTITY "<<entity->getIDEN()<<std::endl;
                     std::cout<<"Posicion de la Entity X: "<<entity->getCuerpo2D()->GetPosition().x<<"Y: "<<entity->getCuerpo2D()->GetPosition().x<<std::endl;
-                    
+                                std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<""<<std::endl;
+
                     if(fraction < distancia || distancia == 0){
                         distancia = fraction;
 
