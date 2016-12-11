@@ -103,9 +103,17 @@
       <compileType>
         <cTool>
           <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>../irrlicht-1.8.4/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+          </incDir>
         </cTool>
         <ccTool>
           <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../irrlicht-1.8.4/include</pElem>
+          </incDir>
         </ccTool>
         <fortranCompilerTool>
           <developmentMode>5</developmentMode>
