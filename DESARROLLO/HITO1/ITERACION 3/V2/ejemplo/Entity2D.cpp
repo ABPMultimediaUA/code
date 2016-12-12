@@ -37,12 +37,12 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot){
     //si tiene rotacion en Y van | sino van -
     if(rot.Y == 90){
         
-        bodyShape.SetAsBox(5, 20);
+        bodyShape.SetAsBox(1, 40);
 
     }
     
     else{
-         bodyShape.SetAsBox(20, 5);
+         bodyShape.SetAsBox(40, 1);
 
     }
    
@@ -62,8 +62,8 @@ Entity2D::~Entity2D() {
 float Entity2D::rayCast(int modo){
   
     
-    float rayo1, rayo2, resultado = 0;
-    
+    float resultado = 0;
+    float rayo1, rayo2 = 0;
     switch(modo){
         
         //D: 0 -> x++ al punto final hay que sumarle a la X
@@ -74,10 +74,10 @@ float Entity2D::rayCast(int modo){
             std::cout<<""<<std::endl;
 
             rayo1 = rayCasting(b2Vec2(body->GetPosition().x, body->GetPosition().y), 
-                    b2Vec2(body->GetPosition().x+100.0f, body->GetPosition().y));
+                    b2Vec2(body->GetPosition().x+50.0f, body->GetPosition().y));
             
-            rayo2 = rayCasting(b2Vec2(body->GetPosition().x, body->GetPosition().y), 
-                    b2Vec2(body->GetPosition().x+500.0f, body->GetPosition().y));
+           // rayo2 = rayCasting(b2Vec2(body->GetPosition().x, body->GetPosition().y), 
+                  //  b2Vec2(body->GetPosition().x+500.0f, body->GetPosition().y));
             
             break;
         

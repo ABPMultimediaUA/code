@@ -41,8 +41,8 @@ int main() {
     b2World *world = new b2World(gravity);
     
     //creamos el manejador de colisiones y lo seteamos al mundo
-    MiContactListener contactListenerInstance;
-    world->SetContactListener(&contactListenerInstance);
+    MiContactListener* contactListenerInstance = new MiContactListener();
+    world->SetContactListener(contactListenerInstance);
     
     device->setWindowCaption(L"Movimiento del personaje");
 
@@ -112,10 +112,16 @@ int main() {
             else if (teclado.isKeyDown(irr::KEY_KEY_D)) {
 
                distancia = pers->lanzarRayo(0);
+               if(distancia == 0 || (distancia > 0.25)){
+                    pers->moverPersonaje(0, dt);
+                    cam->actualizarCamara(0, dt);
+                } 
+               else {
+                   pers->setVelocidad();
+               }
+            } 
                
-                pers->moverPersonaje(0, dt);
-                cam->actualizarCamara(0, dt);
-            } else if (teclado.isKeyDown(irr::KEY_KEY_A)) {
+            else if (teclado.isKeyDown(irr::KEY_KEY_A)) {
 
                 pers->moverPersonaje(1, dt);
                 cam->actualizarCamara(1, dt);
