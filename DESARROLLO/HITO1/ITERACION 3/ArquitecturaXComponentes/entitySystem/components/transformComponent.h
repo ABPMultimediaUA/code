@@ -21,6 +21,7 @@ class transformComponent : public componente {
 public:
     transformComponent();
     transformComponent(const transformComponent& orig);
+    transformComponent(vector3*, vector3*, vector3*);
     virtual ~transformComponent();
     vector3 getPosicion();
     vector3 getRotacion();

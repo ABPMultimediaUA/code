@@ -21,6 +21,7 @@ class velocityComponent : public componente {
 public:
     velocityComponent();
     velocityComponent(const velocityComponent& orig);
+    velocityComponent(vector2*);
     virtual ~velocityComponent();
     void setVelocidad(float,float);
     void setVelocidad(vector2);

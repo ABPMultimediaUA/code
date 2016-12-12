@@ -23,6 +23,10 @@ velocityComponent::velocityComponent(const velocityComponent& orig) : componente
     velocidad = orig.velocidad;
 }
 
+velocityComponent::velocityComponent(vector2 *v) : componente() {
+    velocidad = v;
+}
+
 velocityComponent::~velocityComponent() {
     delete velocidad;
     std::cout<<"Borrado Componente velocidad"<<std::endl;

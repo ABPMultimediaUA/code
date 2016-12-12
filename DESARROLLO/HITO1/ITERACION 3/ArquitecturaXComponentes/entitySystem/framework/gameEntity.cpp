@@ -31,6 +31,6 @@ gameEntity::~gameEntity() {
     delete this->id;
 }
 
-int gameEntity::getID(){
-    return *this->id;
+int* gameEntity::getID(){
+    return this->id;
 }

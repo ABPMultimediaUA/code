@@ -14,12 +14,12 @@
 #include <typeinfo>
 
 #include "camaraSystem.h"
-#include "entitySystem/components/camaraComponent.h"
-#include "entitySystem/components/velocityComponent.h"
-#include "entitySystem/components/transformComponent.h"
-#include "entitySystem/components/renderComponent.h"
-#include "entitySystem/components/playerComponent.h"
-#include "entitySystem/framework/personaje.h"
+#include "../components/camaraComponent.h"
+#include "../components/velocityComponent.h"
+#include "../components/transformComponent.h"
+#include "../components/renderComponent.h"
+#include "../components/playerComponent.h"
+#include "../framework/gameEntity.h"
 
 camaraSystem::camaraSystem() : system() {
 }
@@ -34,7 +34,7 @@ camaraSystem::~camaraSystem() {
 }
 
 void camaraSystem::update(double dt, unsigned int id){
-    playerComponent *pl =  this->getEntityManager()->getComponentOffEntity(getEntityManager()->findEntity(typeid(personaje).name()),typeid(playerComponent).name());
+    playerComponent *pl =  this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(1),typeid(playerComponent).name());
     switch(pl->getLastDirr()){
         case 0:
             this->actualizarCamara(id, 0, dt);

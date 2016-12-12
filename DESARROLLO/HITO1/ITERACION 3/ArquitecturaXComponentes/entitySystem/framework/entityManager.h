@@ -34,7 +34,7 @@ public:
     void borrarEntity(gameEntity*);
     bool existEntity(gameEntity*);
     gameEntity* getEntity(unsigned int);
-    gameEntity* findEntity(char*);
+    void addEntity();
 private:
     unsigned short *idMasBajaUsada;
     vectorEntity *entidades;

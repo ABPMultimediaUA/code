@@ -31,10 +31,13 @@ gameClock::~gameClock() {
 
 void gameClock::start() {
     if(!running) {
-        if(resetted)
+        if(resetted){
             beg = (unsigned long) clock();
-        else
+            then = ((unsigned long) clock() - beg) / CLOCKS_PER_MILISEC;
+        }
+        else{
             beg -= end - (unsigned long) clock();
+        }
         running = true;
         resetted = false;
     }
@@ -71,10 +74,13 @@ unsigned long gameClock::getTime() {
     }
 }
 
-bool gameClock::isOver(unsigned long seconds) {
-    return seconds >= getTime();
+double gameClock::timeElapsed() {
+    now = this->getTime();
+    float dt = (now - then) / 1000.f;
+    then = now;
+    return dt;
 }
 
-double gameClock::timeElapsed() {
-
+void gameClock::setThen(){
+    then = this->getTime();
 }

@@ -24,13 +24,15 @@ public:
     void reset();
     bool isRunning();
     unsigned long getTime();
-    bool isOver(unsigned long seconds);
     double timeElapsed();
+    void setThen();
 private:
     bool resetted;
     bool running;
     unsigned long beg;
     unsigned long end;
+    unsigned long then;
+    unsigned long now;
 };
 
 #endif /* GAMECLOCK_H */

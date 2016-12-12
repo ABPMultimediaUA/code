@@ -12,6 +12,12 @@
  */
 
 #include "diccionarioEnCo.h"
+#include "../components/camaraComponent.h"
+#include "../components/playerComponent.h"
+#include "../components/renderComponent.h"
+#include "../components/transformComponent.h"
+#include "../components/velocityComponent.h"
+#include "../components/stateMachineComponent.h"
 #include <typeinfo>
 #include <string.h>
 

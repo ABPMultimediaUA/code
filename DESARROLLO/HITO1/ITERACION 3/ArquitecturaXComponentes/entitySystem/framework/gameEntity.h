@@ -20,7 +20,7 @@ public:
     gameEntity(const gameEntity& orig);
     gameEntity(int);
     virtual ~gameEntity();
-    int getID();
+    int* getID();
 private:
     int *id;
 };

@@ -15,6 +15,7 @@
 #define CAMARASYSTEM_H
 
 #include "system.h"
+#include "../framework/entityManager.h"
 
 class camaraSystem : public system {
 public:

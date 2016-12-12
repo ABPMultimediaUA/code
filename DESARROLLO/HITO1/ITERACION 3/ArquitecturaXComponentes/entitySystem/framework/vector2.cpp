@@ -25,6 +25,13 @@ vector2::vector2(const vector2& orig) {
     y = orig.y;
 }
 
+vector2::vector2(float XX, float YY) {
+    x = new float();
+    y = new float();
+    *x = XX;
+    *y = YY;
+}
+
 vector2::~vector2() {
     delete x;
     delete y;

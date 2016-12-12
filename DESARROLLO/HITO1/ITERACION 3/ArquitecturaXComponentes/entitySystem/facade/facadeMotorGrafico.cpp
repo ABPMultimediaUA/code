@@ -54,7 +54,7 @@ facadeMotorGrafico::~facadeMotorGrafico() {
 }
 
 void facadeMotorGrafico::addStaticTextProva(){
-    guienv->addStaticText(L"Prova", rect<s32>(10, 10, 260, 22), true); 
+    guienv->addStaticText(L"Aquitectura X Componentes v0.5", rect<s32>(10, 10, 260, 22), true); 
 }
 
 void facadeMotorGrafico::changeActiveCamera(int c){
@@ -80,8 +80,11 @@ bool facadeMotorGrafico::run(){
     return false;
 }
 
-void facadeMotorGrafico::isWindowActive(){
-    device->isWindowActive();
+bool facadeMotorGrafico::isWindowActive(){
+    if(device->isWindowActive()){
+        return true;
+    }
+    return false;
 }
 
 void facadeMotorGrafico::setFondoScene(int c1,int c2,int c3,int c4){
@@ -121,8 +124,8 @@ int* facadeMotorGrafico::addMaya(int *id, const char *textura, vector3 *p){
     return id;
 }
 
-int* facadeMotorGrafico::addCamera(int *id, vector3 *v1, vector3 *v2){
-    camaras->insert(std::pair<int,ICameraSceneNode*>(*id, smgr->addCameraSceneNode(0,vector3df(v1->getX(),v1->getY(),v1->getZ()),vector3df(v2->getX(),v2->getY(),v2->getZ()))));
+int* facadeMotorGrafico::addCamera(int *id, vector3 *vp, vector3 *vf){
+    camaras->insert(std::pair<int,ICameraSceneNode*>(*id, smgr->addCameraSceneNode(0,vector3df(vp->getX(),vp->getY(),vp->getZ()),vector3df(vf->getX(),vf->getY(),vf->getZ()))));
     return id;
 }
 vector3 facadeMotorGrafico::getCameraFoco(int* id){

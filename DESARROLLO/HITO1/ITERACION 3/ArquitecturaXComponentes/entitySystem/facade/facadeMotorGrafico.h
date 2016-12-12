@@ -43,7 +43,7 @@ public:
     unsigned int getLastTime();
     void setLastTime(unsigned int);
     bool run();
-    void isWindowActive();
+    bool isWindowActive();
     void setFondoScene(int,int,int,int);
     void drawObjectsGraf();
     void drawGUI();

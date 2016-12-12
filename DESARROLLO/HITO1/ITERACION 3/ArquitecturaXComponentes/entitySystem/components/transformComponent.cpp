@@ -29,6 +29,12 @@ transformComponent::transformComponent(const transformComponent& orig) : compone
     escala = orig.escala;
 }
 
+transformComponent::transformComponent(vector3 *vp, vector3 *vr, vector3 *ve) : componente() {
+    posicion = vp;
+    rotacion = vr;
+    escala = ve;
+}
+
 transformComponent::~transformComponent() {
     delete posicion;
     delete rotacion;

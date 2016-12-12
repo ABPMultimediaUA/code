@@ -19,9 +19,10 @@
 using namespace std;
 
 entityManager::entityManager() {
-    this->idMasBajaUsada = new unsigned short();
-    this->entidades = new vectorEntity();
-    this->dicc = new diccionarioEnCo();
+    idMasBajaUsada = new unsigned short();
+    entidades = new vectorEntity();
+    *idMasBajaUsada = 1;
+    dicc = new diccionarioEnCo();
 }
 
 entityManager::entityManager(const entityManager& orig) {
@@ -55,6 +56,10 @@ gameEntity* entityManager::crearEntidad(){
 }
 
 void entityManager::addComponentToEntity(gameEntity* ge,componente* co){
+    std::cout<<"addComponentToEntity: Entra"<<std::endl;
+    if(!ge){
+        std::cout<<"entity no creada o encontrada"<<std::endl;
+    }
     if(!existEntity(ge)){
         this->dicc->add(ge,co);
     }
@@ -77,22 +82,21 @@ void entityManager::borrarEntity(gameEntity* ge){
 }
 
 bool entityManager::existEntity(gameEntity *g){
-    for(unsigned short i = 0; i<entidades->size() && entidades->at(i)->getID() == g->getID();i++){
+    for(unsigned short i = 0; i<entidades->size() && !g && entidades->at(i)->getID() == g->getID();i++){
         return true;
     }
     return false;
 }
 
 gameEntity* entityManager::getEntity(unsigned int e){
-    for(unsigned short i = 0; i<entidades->size() && entidades->at(i)->getID() == e;i++){
+    std::cout<<"getEntity: Entra"<<std::endl;
+    for(unsigned short i = 0; i<entidades->size() && *entidades->at(i)->getID() == e;i++){
+        std::cout<<"entity: "<<entidades->at(i)->getID()<<std::endl;
         return entidades->at(i);
     }
     return 0;
 }
 
-gameEntity* entityManager::findEntity(char* t){
-    for(unsigned short i = 0; i<entidades->size() && strcmp(t, typeid(*entidades->at(i)).name()) == 0 ;i++){
-        return entidades->at(i);
-    }
-    return 0;
+void entityManager::addEntity(){
+    entidades->add(this->crearEntidad());
 }
