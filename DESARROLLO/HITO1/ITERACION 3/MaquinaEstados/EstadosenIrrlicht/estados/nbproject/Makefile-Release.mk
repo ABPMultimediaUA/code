@@ -70,32 +70,32 @@ LDLIBSOPTIONS=
 ${OBJECTDIR}/CAppReceiver.o: CAppReceiver.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../Box2D/Box2D -I../irrlicht-1.8.4/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CAppReceiver.o CAppReceiver.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CAppReceiver.o CAppReceiver.cpp
 
 ${OBJECTDIR}/Camara.o: Camara.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../Box2D/Box2D -I../irrlicht-1.8.4/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Camara.o Camara.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Camara.o Camara.cpp
 
 ${OBJECTDIR}/Enemigo.o: Enemigo.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../Box2D/Box2D -I../irrlicht-1.8.4/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Enemigo.o Enemigo.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Enemigo.o Enemigo.cpp
 
 ${OBJECTDIR}/Escenario.o: Escenario.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../Box2D/Box2D -I../irrlicht-1.8.4/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Escenario.o Escenario.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Escenario.o Escenario.cpp
 
 ${OBJECTDIR}/Personaje.o: Personaje.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../Box2D/Box2D -I../irrlicht-1.8.4/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Personaje.o Personaje.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Personaje.o Personaje.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../Box2D/Box2D -I../irrlicht-1.8.4/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:
