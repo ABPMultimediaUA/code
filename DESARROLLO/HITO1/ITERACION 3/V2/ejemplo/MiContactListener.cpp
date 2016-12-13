@@ -25,7 +25,7 @@ MiContactListener::~MiContactListener() {
 }
 
 void MiContactListener::BeginContact(b2Contact* contact){
-    std::cout<<"COLISION"<<std::endl;
+   std::cout<<"COLISION"<<std::endl;
     b2Fixture *f1 = contact->GetFixtureA();
     b2Fixture *f2 = contact->GetFixtureB();
     

@@ -56,6 +56,7 @@ int main() {
 
     Personaje *pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
     Escenario *esce = new Escenario(smgr, driver, world);
+    readJson *json = new readJson(esce);
     Camara *cam = new Camara(smgr);
     //smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
     //esce->crearPared(vector3df(40,0,0), vector3df(90,-90,0));

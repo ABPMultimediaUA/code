@@ -19,6 +19,7 @@
 #include <iostream>
 #include <list>
 #include "escenario/Pared.h"
+#include "escenario/Escenario.h"
 
 using namespace rapidjson;
 using namespace std;
@@ -26,7 +27,7 @@ using namespace std;
 
 class readJson {
 public:
-    readJson();
+    readJson(Escenario *e);
     readJson(const readJson& orig);
     virtual ~readJson();
     void leerArchivo(const char* rutaArchivo);
@@ -35,8 +36,8 @@ public:
     
 private:
     Document d;
-   std::list<Pared*> paredes;
-   
+    std::list<Pared*> paredes;
+    Escenario *esce;
 };
 
 #endif /* READJSON_H */
