@@ -40,7 +40,7 @@ entityManager::~entityManager() {
 //valor maximo del unsigned int = 4294967296
 int entityManager::generarID(){
     if(*idMasBajaUsada < 65535){
-        return *idMasBajaUsada++;
+        return (*idMasBajaUsada)++;
     }
     else{
         for(int i = 1; i < 65535 && entidades->at(i) == 0; i++){
@@ -51,15 +51,15 @@ int entityManager::generarID(){
     return 0;
 }
 
+void entityManager::addEntity(){
+    entidades->add(this->crearEntidad());
+}
+
 gameEntity* entityManager::crearEntidad(){
     return new gameEntity(this->generarID()); 
 }
 
 void entityManager::addComponentToEntity(gameEntity* ge,componente* co){
-    std::cout<<"addComponentToEntity: Entra"<<std::endl;
-    if(!ge){
-        std::cout<<"entity no creada o encontrada"<<std::endl;
-    }
     if(!existEntity(ge)){
         this->dicc->add(ge,co);
     }
@@ -89,14 +89,15 @@ bool entityManager::existEntity(gameEntity *g){
 }
 
 gameEntity* entityManager::getEntity(unsigned int e){
-    std::cout<<"getEntity: Entra"<<std::endl;
-    for(unsigned short i = 0; i<entidades->size() && *entidades->at(i)->getID() == e;i++){
-        std::cout<<"entity: "<<entidades->at(i)->getID()<<std::endl;
-        return entidades->at(i);
+for(unsigned short i = 0; i<entidades->size();i++){
+        if(*entidades->at(i)->getID() == e){
+            return entidades->at(i);
+        }
     }
+    std::cerr<<"Error en Entidad pasada"<<std::endl;
     return 0;
 }
 
-void entityManager::addEntity(){
-    entidades->add(this->crearEntidad());
+void entityManager::printAllEntitysID(){
+    entidades->printAllEntitysID();
 }

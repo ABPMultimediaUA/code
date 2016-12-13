@@ -11,6 +11,8 @@
  * Created on 28 de noviembre de 2016, 1:34
  */
 
+#include <iostream>
+
 #include "vectorEntity.h"
 
 vectorEntity::vectorEntity() {
@@ -49,26 +51,26 @@ gameEntity* vectorEntity::at(unsigned short p){
 }
 
 void vectorEntity::add(gameEntity* gE){
-    if(*u<*t){
-        vE[*u] = gE;
-        ++*u;
+    if((*u)<(*t)){
+        vE[(*u)] = gE;
+        (*u)++;
     }
     else{
-        gameEntity **aux = new gameEntity*[*t];
+        gameEntity **aux = new gameEntity*[(*t)];
         for(unsigned short i; i<*t;i++){
             aux[i] = vE[i];
             delete vE[i];
         }
         delete[] vE;
         *t += 100;
-        vE = new gameEntity*[*t];
-        for(unsigned short i; i<(*t-100);i++){
+        vE = new gameEntity*[(*t)];
+        for(unsigned short i; i<((*t)-100);i++){
             vE[i] = aux[i];
             delete aux[i];
         }
         delete[] aux;
-        vE[*u] = gE;
-        ++*u;
+        vE[(*u)] = gE;
+        (*u)++;
     }
 }
 
@@ -84,4 +86,11 @@ bool vectorEntity::remove(unsigned short p){
 
 unsigned short vectorEntity::size(){
     return *u;
+}
+
+void vectorEntity::printAllEntitysID(){
+    std::cout<<"Print Entitys ID"<<std::endl;
+    for(unsigned short i = 0; i < (*u); i++){
+        std::cout<<"vE["<<i<<"]->getID() = "<<*vE[i]->getID()<<std::endl;
+    }
 }

@@ -25,6 +25,7 @@ public:
     void add(gameEntity*);
     bool remove(unsigned short);
     unsigned short size();
+    void printAllEntitysID();
 private:
     gameEntity **vE;
     unsigned short *t;

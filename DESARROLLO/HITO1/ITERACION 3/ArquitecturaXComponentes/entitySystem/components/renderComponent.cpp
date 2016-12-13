@@ -29,22 +29,23 @@ renderComponent::renderComponent(const renderComponent& orig) : componente(orig)
 }
 
 renderComponent::~renderComponent() {
-    maya.borrarPorIDMaya(posMaya);
+    maya->borrarPorIDMaya(*posMaya);
     std::cout<<"Borrado Componente render"<<std::endl;
 }
 
-renderComponent::renderComponent(facadeMotorGrafico* fMG) : componente() {
-    maya = *fMG;
+renderComponent::renderComponent(facadeMotorGrafico *fMG, int *id, const char *textura, vector3 *vp) : componente() {
+    maya = fMG;
+    posMaya = maya->addMaya(id,textura,vp);
 }
 
 facadeMotorGrafico* renderComponent::getMaya(){
     return maya;
 }
 
-void renderComponent::setMaya(facadeMotorGrafico* fMG){
-    maya = *fMG;
+void renderComponent::setMaya(facadeMotorGrafico *fMG){
+    maya = fMG;
 }
 
-void renderComponent::crearMaya(int *id, const char *textura, vector3 p){
-    posMaya = *(maya->addMaya(id,textura,p));
+void renderComponent::crearMaya(int *id, const char *textura, vector3 *vp){
+    posMaya = maya->addMaya(id,textura,vp);
 }

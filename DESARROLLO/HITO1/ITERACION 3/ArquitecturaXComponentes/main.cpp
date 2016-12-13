@@ -20,6 +20,8 @@
 #include "entitySystem/components/camaraComponent.h"
 #include "entitySystem/components/transformComponent.h"
 #include "entitySystem/components/velocityComponent.h"
+#include "entitySystem/components/playerComponent.h"
+#include "entitySystem/components/renderComponent.h"
 
 int main(){
     facadeMotorGrafico *fMG = new facadeMotorGrafico(640,480);
@@ -27,13 +29,27 @@ int main(){
 	return 1;
     }
     entityManager *eM = new entityManager();
-    eM->addEntity();
     fMG->inicarCamaras();
     fMG->inicarMayas();
-    vector3 *vp = new vector3(0, 30, -40);
-    eM->addComponentToEntity(eM->getEntity(1), new camaraComponent(fMG, eM->getEntity(1)->getID(), vp, new vector3(0, 5, 0)));
+    
+    //Jugador 1
+    eM->addEntity();
+    std::cout<<"Jugador getEntity: "<<*eM->getEntity(1)->getID()<<std::endl;
+    vector3 *vp = new vector3(0, 0, 0);
+    eM->addComponentToEntity(eM->getEntity(1), new playerComponent());
     eM->addComponentToEntity(eM->getEntity(1), new transformComponent(vp, new vector3(1, 1, 1), new vector3(1, 1, 1)));
     eM->addComponentToEntity(eM->getEntity(1), new velocityComponent(new vector2(20,20)));
+    eM->addComponentToEntity(eM->getEntity(1), new renderComponent(fMG, eM->getEntity(1)->getID(), "resources/texture/life/bruce.jpg", vp));
+    std::cout<<std::endl;
+    std::cout<<std::endl;
+    //Camara 2
+    eM->addEntity();
+    std::cout<<"Camara getEntity: "<<*eM->getEntity(2)->getID()<<std::endl;
+    vp = new vector3(0, 30, -40);
+    eM->addComponentToEntity(eM->getEntity(2), new camaraComponent(fMG, eM->getEntity(2)->getID(), vp, new vector3(0, 5, 0)));
+    eM->addComponentToEntity(eM->getEntity(2), new transformComponent(vp, new vector3(1, 1, 1), new vector3(1, 1, 1)));
+    eM->addComponentToEntity(eM->getEntity(2), new velocityComponent(new vector2(20,20)));
+    
     fMG->addStaticTextProva();
     gameClock *clock = new gameClock();
     clock->start();

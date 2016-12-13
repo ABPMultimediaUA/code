@@ -22,14 +22,14 @@ class renderComponent : public componente {
 public:
     renderComponent();
     renderComponent(const renderComponent& orig);
-    renderComponent(facadeMotorGrafico*);
+    renderComponent(facadeMotorGrafico*, int*, const char*, vector3*);
     virtual ~renderComponent();
     facadeMotorGrafico* getMaya();
     void setMaya(facadeMotorGrafico*);
-    void crearMaya(int*, const char*, vector3);
+    void crearMaya(int*, const char*, vector3*);
 private:
-    facadeMotorGrafico &maya; //esto puede canviar a una facade nueva;
-    int posMaya;
+    facadeMotorGrafico *maya; //esto puede canviar a una facade nueva;
+    int *posMaya;
 };
 
 #endif /* RENDERCOMPONENT_H */

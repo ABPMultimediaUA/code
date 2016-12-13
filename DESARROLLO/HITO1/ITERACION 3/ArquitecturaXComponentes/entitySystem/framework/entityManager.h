@@ -35,6 +35,7 @@ public:
     bool existEntity(gameEntity*);
     gameEntity* getEntity(unsigned int);
     void addEntity();
+    void printAllEntitysID();
 private:
     unsigned short *idMasBajaUsada;
     vectorEntity *entidades;

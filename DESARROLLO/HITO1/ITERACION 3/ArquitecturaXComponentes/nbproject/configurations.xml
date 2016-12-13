@@ -6,15 +6,12 @@
         <df name="components">
           <in>componente.cpp</in>
           <in>playerComponent.cpp</in>
-          <in>playerComponent.h</in>
         </df>
         <df name="framework">
           <in>gameClock.cpp</in>
-          <in>gameClock.h</in>
         </df>
         <df name="systems">
           <in>camaraSystem.cpp</in>
-          <in>camaraSystem.h</in>
         </df>
       </df>
     </df>
@@ -123,11 +120,15 @@
             ex="false"
             tool="1"
             flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
-      <item path="entitySystem/components/playerComponent.h"
+      <item path="entitySystem/components/renderComponent.cpp"
             ex="false"
-            tool="3"
+            tool="1"
             flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="entitySystem/components/stateMachineComponent.cpp"
             ex="false"
@@ -164,8 +165,11 @@
         <ccTool flags="0">
         </ccTool>
       </item>
-      <item path="entitySystem/framework/camara.cpp" ex="false" tool="1" flavor2="0">
+      <item path="entitySystem/framework/camara.cpp" ex="false" tool="1" flavor2="4">
         <ccTool flags="0">
+          <incDir>
+            <pElem>entitySystem/framework</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/framework/diccionarioEnCo.cpp"
@@ -186,8 +190,8 @@
             ex="false"
             tool="1"
             flavor2="0">
-      </item>
-      <item path="entitySystem/framework/gameClock.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="entitySystem/framework/gameEntity.cpp"
             ex="false"
@@ -199,8 +203,11 @@
       <item path="entitySystem/framework/personaje.cpp"
             ex="false"
             tool="1"
-            flavor2="0">
+            flavor2="4">
         <ccTool flags="0">
+          <incDir>
+            <pElem>entitySystem/framework</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/framework/vector2.cpp" ex="false" tool="1" flavor2="0">
@@ -221,12 +228,7 @@
       <item path="entitySystem/systems/camaraSystem.cpp"
             ex="false"
             tool="1"
-            flavor2="0">
-      </item>
-      <item path="entitySystem/systems/camaraSystem.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
+            flavor2="4">
       </item>
       <item path="entitySystem/systems/moveSystem.cpp"
             ex="false"
@@ -246,6 +248,13 @@
         <ccTool flags="0">
         </ccTool>
       </item>
+      <folder path="0/entitySystem/systems">
+        <ccTool>
+          <incDir>
+            <pElem>entitySystem/systems</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
