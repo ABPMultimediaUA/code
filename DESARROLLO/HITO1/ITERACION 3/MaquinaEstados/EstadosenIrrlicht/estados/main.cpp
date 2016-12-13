@@ -103,6 +103,12 @@ int main() {
             else if(teclado.isKeyDown(irr::KEY_KEY_L)){
                 ene->Cambiar(3);
             }
+            else if(teclado.isKeyDown(irr::KEY_KEY_P)){
+                ene->Cambiar(4);
+            }
+            else if(teclado.isKeyDown(irr::KEY_KEY_O)){
+                ene->Cambiar(5);
+            }
             
             
             ene->Update(pers);

@@ -47,15 +47,19 @@ public:
     float getVel();
     void Update(Personaje *pers);
     void mover(int modo, f32 dt);
+    void moverRapido(int modo, f32 dt);
     void setVelocidad();
     void rotar(vector3df raton);
     void Cambiar(int nuevo);
     void Perseguir(Personaje *pers);
     void Alejarse (Personaje *pers);
     void Irapunto ();
+    void Patrullar();
+    void PatrullarCorriendo();
 private:
     IMeshSceneNode *maya;
     float vel;
+    float velRapida;
     vector3df pos;
     b2Body *body;
     b2BodyDef bodyDef;
