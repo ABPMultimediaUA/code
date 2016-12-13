@@ -43,6 +43,7 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     estado=1;
+    estPatrulla=0;
     /* md.mass = 2.0;
      md.center = b2Vec2(5.0,5.0);
      md.I = 1.0;
@@ -330,17 +331,26 @@ void Enemigo::Patrullar(){
     
     //this->Irapunto(); //va a p1
     vector3df p1=vector3df(60.0f,0.0f,50.0f);
-    vector3df p2=vector3df(20.0f,0.0f,50.0f);
+    vector3df p2=vector3df(-20.0f,0.0f,50.0f);
     vector3df ve=this->getPos();
-    int h=0;
+   
     
-    while(h<20){ //se mueve de p1 a p2 y viceversa, en bucle
-        if(p2.X >= ve.X)
-            this->mover(1,1);//izquierda
-        if(p1.X <= ve.X)
-            this->mover(0,1); //derecha
-        h++;
+     //se mueve de p1 a p2 y viceversa, en bucle
+        if(p2.X >= ve.X){
+            estPatrulla=1;
+        }
+    
+    if(p1.X <= ve.X){
+        estPatrulla=0;
     }
+    if(estPatrulla)
+            this->mover(0,1);//derecha
+        else 
+            this->mover(1,1); //izquierda
+       
+        //std::cout<<h<<std::endl;
+        //std::cout<<ve.X<<std::endl;
+    
     
 }
 
@@ -348,15 +358,21 @@ void Enemigo::PatrullarCorriendo(){
     
     //this->Irapunto(); //va a p1
     vector3df p1=vector3df(60.0f,0.0f,50.0f);
-    vector3df p2=vector3df(20.0f,0.0f,50.0f);
+    vector3df p2=vector3df(-20.0f,0.0f,50.0f);
     vector3df ve=this->getPos();
-    int h=0;
+   
     
-    while(h<20){ //se mueve de p1 a p2 y viceversa, en bucle
-        if(p2.X <= ve.X)
-            this->moverRapido(1,1);//izquierda
-        if(p1.X >= ve.X)
-            this->moverRapido(0,1); //derecha
-        h++;
+     //se mueve de p1 a p2 y viceversa, en bucle
+        if(p2.X >= ve.X){
+            estPatrulla=1;
+        }
+    
+    if(p1.X <= ve.X){
+        estPatrulla=0;
     }
+    if(estPatrulla)
+            this->moverRapido(0,1);//derecha
+        else 
+            this->moverRapido(1,1); //izquierda
+       
 }

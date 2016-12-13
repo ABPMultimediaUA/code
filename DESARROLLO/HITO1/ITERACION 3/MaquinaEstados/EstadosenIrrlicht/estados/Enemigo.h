@@ -60,6 +60,7 @@ private:
     IMeshSceneNode *maya;
     float vel;
     float velRapida;
+    int estPatrulla;
     vector3df pos;
     b2Body *body;
     b2BodyDef bodyDef;
