@@ -28,7 +28,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 
     if (maya) {
         maya -> setMaterialFlag(EMF_LIGHTING, false);
-        maya -> setPosition(vector3df(0, 0, 0));
+        maya -> setPosition(vector3df(0, 10, 0));
         maya->setMaterialTexture(0, driver->getTexture("texture/bruce.jpg"));
         //primer parametro del setVertexColors es de la maya que quieres cambiar el color y con su getMesh se consigue
         // smgr -> getMeshManipulator()->setVertexColors(cube->getMesh(), SColor(0, 0, 255, 128));//lus, R, G, B

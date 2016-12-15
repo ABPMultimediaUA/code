@@ -159,60 +159,43 @@ void Escenario::removeListSubHijos()
 }
 
 void Escenario::dibujarEscenario(){
-    cout<<"/////////////////////////////////////////////////////"<<endl;
+
       for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
-          std::cout<<"Padre: "<<(*I).nombre<<std::endl;
-          std::cout<<"  Posicion: x="<<(*I).position.x<<" y= "<<(*I).position.y<<" z= "<<(*I).position.z<<std::endl;
-          std::cout<<"  Rotacion: x="<<(*I).rotation.x<<" y= "<<(*I).rotation.y<<" z= "<<(*I).rotation.z<<std::endl;
-          std::cout<<"  Escala: x="<<(*I).escala.x<<" y= "<<(*I).escala.y<<" z= "<<(*I).escala.z<<std::endl;
-          
-          /* IAnimatedMesh *Escena = SM->addHillPlaneMesh("groundPlane", // Name of the scenenode
-                           core::dimension2d<f32>(4.0f, 4.0f), // Tile size
-                           core::dimension2d<u32>(20, 20), // Tile count
-                           0, // Material
-                           0.0f, // Hill height
-                           core::dimension2d<f32>(0.0f, 0.0f), // countHills
-                           core::dimension2d<f32>(5.0f, 5.0f)); // textureRepeatCount*/
-           
-           
-           
           for (std::list<ElementoHijo>::iterator M = (*I).ObjetosEscena.begin(); M!= (*I).ObjetosEscena.end(); M++) {
-                 cout<<"..............................................."<<endl;
-                std::cout<<"      Hijo: "<<(*M).nombre<<std::endl;
-                std::cout<<"          Posicion: x="<<(*M).position.x<<" y= "<<(*M).position.y<<" z= "<<(*M).position.z<<std::endl;
-                std::cout<<"          Rotacion: x="<<(*M).rotation.x<<" y= "<<(*M).rotation.y<<" z= "<<(*M).rotation.z<<std::endl;
-                std::cout<<"          Escala: x="<<(*M).escala.x<<" y= "<<(*M).escala.y<<" z= "<<(*M).escala.z<<std::endl;
-                
                  if((*M).nombre=="Suelo")
                   {
-                           /* IAnimatedMeshSceneNode *suelo = SM->addAnimatedMeshSceneNode(Escena);
-                             suelo->setMaterialTexture(0, VD->getTexture("texture/suelo.png"));   
-                            suelo->setMaterialFlag(EMF_LIGHTING, false);
-                            // Insert it into the scene
-                            suelo->setPosition(vector3df((*M).position.x,(*M).position.y,(*M).position.z));
-                            suelo->setRotation(vector3df((*M).rotation.x,(*M).rotation.y,(*M).rotation.z));
-                            suelo->setScale(vector3df((*M).escala.x,(*M).escala.y,(*M).escala.z));*/
-                  }
-                 else
+                                 IMeshSceneNode *objeto = SM->addCubeSceneNode(100.0f, 0, -1, 
+                                  vector3df((*M).position.x+(*I).position.x,(*M).position.y+(*I).position.y,(*M).position.z+(*I).position.y),
+                                  vector3df((*M).rotation.x+(*I).rotation.x,(*M).rotation.y+(*I).rotation.y,(*M).rotation.z+(*I).rotation.z),
+                                  vector3df((*M).escala.x*(*I).escala.x,0,(*M).escala.z*(*I).escala.z));
+                          
+                                 objeto->getMaterial(0).EmissiveColor.set(0,20,20,20);
+                 }
+                 else 
                  {
-                
                         for (std::list<Elemento>::iterator N = (*M).ObjetosEscena.begin(); N!= (*M).ObjetosEscena.end(); N++) {
-                        cout<<"*****************************************************"<<endl;
-                          std::cout<<"      SubHijo: "<<(*N).nombre<<std::endl;
-                          std::cout<<"          Posicion: x="<<(*N).position.x<<" y= "<<(*N).position.y<<" z= "<<(*N).position.z<<std::endl;
-                          std::cout<<"          Rotacion: x="<<(*N).rotation.x<<" y= "<<(*N).rotation.y<<" z= "<<(*N).rotation.z<<std::endl;
-                          std::cout<<"          Escala: x="<<(*N).escala.x<<" y= "<<(*N).escala.y<<" z= "<<(*N).escala.z<<std::endl;
-
-
-
-
-                       cout<<"******************************************************"<<endl;
+                        
+                                if((*M).nombre=="Puertas")
+                                {
+                                     IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1, 
+                                          vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)),10*((*N).position.y+((*M).position.y+(*I).position.y)),10*((*N).position.z+(*M).position.z+(*I).position.z)),
+                                          vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
+                                          vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
+                                         objeto->getMaterial(0).EmissiveColor.set(0,0,128,0);
+                                }   
+                                else
+                                {
+                                         IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1, 
+                                          vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)),10*((*N).position.y+((*M).position.y+(*I).position.y)),10*((*N).position.z+(*M).position.z+(*I).position.z)),
+                                          vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
+                                          vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
+                                         objeto->getMaterial(0).EmissiveColor.set(20,80,80,80);
+                                }
                       }
                  }
-             cout<<"..............................................."<<endl;
+
             }
           
+         
       }
-      
-    cout<<"/////////////////////////////////////////////////////"<<endl;
 }
