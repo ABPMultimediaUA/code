@@ -30,19 +30,21 @@ Entity2D::Entity2D(b2World *world, vector3df pos) {
 }
 
 Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala){
-         std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
+       //  std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
 
     bodyDef.type = b2_staticBody;
     bodyDef.position.Set(pos.X, pos.Z);
+    
     //si tiene rotacion en Y van | sino van -
+    // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     if(rot.Y == 90){
         
-        bodyShape.SetAsBox(10*escala.X, 10*escala.Z);
+        bodyShape.SetAsBox(escala.Z, 10*escala.X);
 
     }
     
     else{
-         bodyShape.SetAsBox(10*escala.X, 10*escala.Z);
+         bodyShape.SetAsBox(10*escala.X, escala.Z);
 
     }
    

@@ -17,6 +17,11 @@
 Pared::Pared(vector3df posicion, vector3df rotacion, vector3df escala) {
     
  
+    std::cout<<"///////////////////////////////////"<<std::endl;
+    std::cout<<""<<std::endl;
+    std::cout<<this<<std::endl;
+    std::cout<<"X: "<<posicion.X<<" Y: "<<posicion.Y<<" Z: "<<posicion.Z<<std::endl;
+
       pos = posicion;
       rot = rotacion;
       escal = escala;
@@ -53,7 +58,7 @@ void Pared::setEscala(vector3df newEscala){
 }
 
 void Pared::setFisica(b2World* world){
-     std::cout<<"CREO PARED! "<<std::endl;
+     //std::cout<<"CREO PARED! "<<std::endl;
 
     entity = new Entity2D(world, pos, rot, escal);
     

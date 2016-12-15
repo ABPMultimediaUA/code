@@ -24,9 +24,9 @@ Camara::Camara(ISceneManager* smgr, vector3df posPers) {
     posicion = camara->getPosition();
     foco = camara->getTarget();
     cont = 0;
-    vel = 20.0f;
-     std::cout<<"CREO"<<std::endl;
-    std::cout<<"X: "<<posicion.X<<" Y: "<<posicion.Y<<" Z: "<<posicion.Z<<std::endl;
+    vel = 100.0f;
+//     std::cout<<"CREO"<<std::endl;
+//    std::cout<<"X: "<<posicion.X<<" Y: "<<posicion.Y<<" Z: "<<posicion.Z<<std::endl;
 }
 
 Camara::Camara(const Camara& orig) {

@@ -37,7 +37,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 
 
     
-    vel = 20.0f;
+    vel = 100.0f;
     pos = maya->getPosition();
     entity = new Entity2D(world, pos);
     /*bodyDef.type = b2_dynamicBody;
