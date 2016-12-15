@@ -37,17 +37,17 @@ Camara::~Camara() {
 
 void Camara::actualizarCamara(vector3df posPers, vector3df rotPers, f32 dt){
 
-     std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<""<<std::endl;
-    std::cout<<"ANTES"<<std::endl;
-    std::cout<<"X: "<<posicion.X<<" Y: "<<posicion.Y<<" Z: "<<posicion.Z<<std::endl;
+//     std::cout<<"//////////////////////////////////////////"<<std::endl;
+//            std::cout<<""<<std::endl;
+//    std::cout<<"ANTES"<<std::endl;
+//    std::cout<<"X: "<<posicion.X<<" Y: "<<posicion.Y<<" Z: "<<posicion.Z<<std::endl;
 
     vector3df vecRel = posicion - posPers;
-      std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<""<<std::endl;
-     std::cout<<"vecRel"<<std::endl;
-    std::cout<<"X: "<<vecRel.X<<" Y: "<<vecRel.Y<<" Z: "<<vecRel.Z<<std::endl;
-    //vector3df newPos = (posPers + vecRel)*vel*dt;
+//      std::cout<<"//////////////////////////////////////////"<<std::endl;
+//            std::cout<<""<<std::endl;
+//     std::cout<<"vecRel"<<std::endl;
+//    std::cout<<"X: "<<vecRel.X<<" Y: "<<vecRel.Y<<" Z: "<<vecRel.Z<<std::endl;
+//    //vector3df newPos = (posPers + vecRel)*vel*dt;
     
     vector3df newPos = newPos.set(posPers.X, 70 ,posPers.Z-40);
     //newPos.X = (posPers.X + vecRel.X);
@@ -57,10 +57,10 @@ void Camara::actualizarCamara(vector3df posPers, vector3df rotPers, f32 dt){
     //newPos.Y = 70;
     setPos(newPos);
     setFoco(posPers);
-      std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<""<<std::endl;
-      std::cout<<"Despues"<<std::endl;
-    std::cout<<"X: "<<posicion.X<<" Y: "<<posicion.Y<<" Z: "<<posicion.Z<<std::endl;
+//      std::cout<<"//////////////////////////////////////////"<<std::endl;
+//            std::cout<<""<<std::endl;
+//      std::cout<<"Despues"<<std::endl;
+//    std::cout<<"X: "<<posicion.X<<" Y: "<<posicion.Y<<" Z: "<<posicion.Z<<std::endl;
         /* switch(modo){
     
         case 0:

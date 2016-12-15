@@ -19,7 +19,7 @@ Escenario::Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     
     SM = smgr;
     VD = driver;
-
+    mundo = world;
 }
 
 Escenario::Escenario(const Escenario& orig) {
@@ -187,12 +187,17 @@ void Escenario::dibujarEscenario(){
                                 else
                                 {
                                     //paredes y objetos
-                                    
+                                        
                                          IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1, 
                                           vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)),10*((*N).position.y+((*M).position.y+(*I).position.y)),10*((*N).position.z+(*M).position.z+(*I).position.z)),
                                           vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
                                           vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
                                          objeto->getMaterial(0).EmissiveColor.set(20,80,80,80);
+                                         Pared *wall = new Pared(vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)),10*((*N).position.y+((*M).position.y+(*I).position.y)),10*((*N).position.z+(*M).position.z+(*I).position.z)),
+                                                    vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
+                                                    vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
+                                         
+                                         wall->setFisica(mundo);
                                 }
                       }
                  }

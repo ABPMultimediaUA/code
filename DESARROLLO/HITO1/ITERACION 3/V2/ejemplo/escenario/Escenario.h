@@ -72,7 +72,7 @@ private:
     std::list<ElementoPadre> Padres;
     std::list<ElementoHijo> Hijos;
     std::list<Elemento> SubHijos;
-    
+    b2World *mundo;
     
     public:
     Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world);

@@ -28,7 +28,7 @@ using namespace gui;
 class Entity2D {
 public:
     Entity2D(b2World *world, vector3df pos);
-    Entity2D(b2World* world, vector3df pos, vector3df rot);
+    Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala);
     Entity2D(const Entity2D& orig);
     virtual ~Entity2D();
     float rayCast(int modo);
