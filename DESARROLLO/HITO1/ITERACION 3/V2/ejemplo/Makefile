@@ -4,7 +4,7 @@
 # Nombre del ejecutable que va a ser generado
 Target := ejemplo
 # Lista de ficheros fuente, separados por espacios
-Sources := main.cpp CAppReceiver.cpp Personaje.cpp Escenario/Escenario.cpp Camara.cpp readJson.cpp Escenario/Pared.cpp MiContactListener.cpp Entity2D.cpp RayCastCallback.cpp
+Sources := main.cpp CAppReceiver.cpp Personaje.cpp Escenario/Escenario.cpp Camara.cpp readJson.cpp Escenario/Pared.cpp MiContactListener.cpp Entity2D.cpp RayCastCallback.cpp Escenario/Puerta.cpp
 # Lista de ficheros de recursos, separados por espacios windows no hace falta
 Resources := 
 # Ruta del directorio donde tenemos Irrlicht instalado (donde estan los directorios lib e include)

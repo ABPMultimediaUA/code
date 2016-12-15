@@ -13,6 +13,7 @@
 
 #include "Escenario.h"
 #include "Pared.h"
+#include "Puerta.h"
 #include "../readJson.h"
 
 Escenario::Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
@@ -183,6 +184,13 @@ void Escenario::dibujarEscenario(){
                                           vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
                                           vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
                                          objeto->getMaterial(0).EmissiveColor.set(0,0,128,0);
+                                         
+                                         Puerta *door = new Puerta( vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)),10*((*N).position.y+((*M).position.y+(*I).position.y)),10*((*N).position.z+(*M).position.z+(*I).position.z)),
+                                                        vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
+                                                        vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
+
+                                         door->setFisica(mundo);
+
                                 } 
                                 
 //                                if((*I).nombre=="Escenario"){

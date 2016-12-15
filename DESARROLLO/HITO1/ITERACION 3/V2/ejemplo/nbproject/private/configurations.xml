@@ -7,6 +7,8 @@
         <in>Escenario.h</in>
         <in>Pared.cpp</in>
         <in>Pared.h</in>
+        <in>Puerta.cpp</in>
+        <in>Puerta.h</in>
       </df>
       <df name="texture">
       </df>
