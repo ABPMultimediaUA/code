@@ -69,6 +69,11 @@ Personaje::~Personaje() {
 
 void Personaje::moverPersonaje(int modo, f32 dt) {
 
+std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<""<<std::endl;
+            std::cout<<"POS PERS ANTES"<<std::endl;
+                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
+                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 
     switch (modo) {
 
@@ -168,9 +173,13 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
             break;
 
-    }
-                 //std::cout<<"Pos 3D X: "<<pos.X<<std::endl;
-             // std::cout<<"Pos 3D Z: "<<pos.Z<<std::endl;
+    }  
+    std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<""<<std::endl;
+            std::cout<<"POS PERS DESPUES"<<std::endl;
+                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
+                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+
 
 
     setPos(pos);
@@ -183,6 +192,10 @@ float Personaje::lanzarRayo(int modo){
 
 vector3df Personaje::getPos() {
     return pos;
+}
+
+vector3df Personaje::getRot() {
+    return maya->getRotation();
 }
 
 void Personaje::setPos(vector3df pos) {

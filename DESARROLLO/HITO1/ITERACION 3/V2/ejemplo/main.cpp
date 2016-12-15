@@ -57,7 +57,7 @@ int main() {
     Personaje *pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
     Escenario *esce = new Escenario(smgr, driver, world);
     readJson *json = new readJson(esce);
-    Camara *cam = new Camara(smgr);
+    Camara *cam = new Camara(smgr, pers->getPos());
     //smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
     //esce->crearPared(vector3df(40,0,0), vector3df(90,-90,0));
    // esce->crearPared(vector3df(-40,0,0), vector3df(90,90,0));
@@ -76,7 +76,7 @@ int main() {
 
             const u32 now = device->getTimer()->getTime();
             const f32 dt = (f32) (now - then) / 1000.f;
-            float distancia;
+            //float distancia;
             world->Step(dt, 6, 2); //1.0f/60.0f
             world->ClearForces();
 
@@ -87,57 +87,70 @@ int main() {
             if (teclado.isKeyDown(irr::KEY_KEY_W) && teclado.isKeyDown(irr::KEY_KEY_D)) {
 
                 pers->moverPersonaje(4, dt);
-                cam->actualizarCamara(0, dt);
-                cam->actualizarCamara(2, dt);
+                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+
+                //cam->actualizarCamara(0, dt);
+                //cam->actualizarCamara(2, dt);
             } else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_D)) {
 
                 pers->moverPersonaje(5, dt);
-                cam->actualizarCamara(0, dt);
-                cam->actualizarCamara(3, dt);
+                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+
+               // cam->actualizarCamara(0, dt);
+                //cam->actualizarCamara(3, dt);
 
             } else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_A)) {
 
                 pers->moverPersonaje(6, dt);
-                cam->actualizarCamara(1, dt);
-                cam->actualizarCamara(3, dt);
+                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+
+               // cam->actualizarCamara(1, dt);
+               // cam->actualizarCamara(3, dt);
 
 
             } else if (teclado.isKeyDown(irr::KEY_KEY_A) && teclado.isKeyDown(irr::KEY_KEY_W)) {
 
                 pers->moverPersonaje(7, dt);
-                cam->actualizarCamara(1, dt);
-                cam->actualizarCamara(2, dt);
+                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+
+               // cam->actualizarCamara(1, dt);
+               // cam->actualizarCamara(2, dt);
 
 
             }// X + and -
             else if (teclado.isKeyDown(irr::KEY_KEY_D)) {
 
-               distancia = pers->lanzarRayo(0);
-               if(distancia == 0 || (distancia > 0.25)){
                     pers->moverPersonaje(0, dt);
-                    cam->actualizarCamara(0, dt);
-                } 
-               else {
-                   pers->setVelocidad();
-               }
+                                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+
+                 //   cam->actualizarCamara(0, dt);
+              
             } 
                
             else if (teclado.isKeyDown(irr::KEY_KEY_A)) {
 
                 pers->moverPersonaje(1, dt);
-                cam->actualizarCamara(1, dt);
+                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+
+                //cam->actualizarCamara(1, dt);
 
             }//Z + and -
             else if (teclado.isKeyDown(irr::KEY_KEY_W)) {
 
                 pers->moverPersonaje(2, dt);
-                cam->actualizarCamara(2, dt);
+                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+
+                //cam->actualizarCamara(2, dt);
             } else if (teclado.isKeyDown(irr::KEY_KEY_S)) {
 
                 pers->moverPersonaje(3, dt);
-                cam->actualizarCamara(3, dt);
+                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+
+                //cam->actualizarCamara(3, dt);
 
             }
+
+                           // cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
             //RATON
             vector3df mousePosition;
@@ -146,9 +159,8 @@ int main() {
             // And intersect the ray with a plane around the node facing towards the camera.
             plane3df plane(mousePosition, vector3df(0, 0, -1));
             plane.getIntersectionWithLine(ray.start, ray.getVector(), mousePosition);
-
             pers->rotar(mousePosition);
-
+            
 
             then = now;
 

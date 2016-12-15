@@ -32,7 +32,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos) {
 Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot){
          std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
 
-    bodyDef.type = b2_dynamicBody;
+    bodyDef.type = b2_staticBody;
     bodyDef.position.Set(pos.X, pos.Z);
     //si tiene rotacion en Y van | sino van -
     if(rot.Y == 90){

@@ -34,10 +34,10 @@ class Camara {
 
 
 public:
-    Camara(ISceneManager* smgr);
+    Camara(ISceneManager* smgr, vector3df posPers);
     Camara(const Camara& orig);
     virtual ~Camara();
-    void actualizarCamara(int modo, f32 dt);
+    void actualizarCamara(vector3df posPers, vector3df rotPers, f32 dt);
     vector3df getPos();
     vector3df getFoco();
     void setPos(vector3df pos);

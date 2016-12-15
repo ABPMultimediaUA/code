@@ -53,6 +53,7 @@ public:
     void setVelocidad();
     void rotar(vector3df raton);
     float lanzarRayo(int modo);
+    vector3df getRot();
 
 };
 
