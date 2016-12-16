@@ -6,6 +6,7 @@
 #include "Enemigo.h"
 #include "Escenario.h"
 #include "Camara.h"
+#include "Nodo.h"
 
 
 
@@ -54,8 +55,9 @@ int main() {
             rect<s32>(10, 10, 260, 22), true); //metodo para poner algo por pantalla
     //cambiar la camara activa smgr->setActiveCamera(camera);
 
+    Nodo *n=new Nodo();
     Personaje *pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
-    Enemigo *ene = new Enemigo(smgr, driver, world);
+    Enemigo *ene = new Enemigo(smgr, driver, world, n);
     Escenario *esce = new Escenario(smgr, driver);
     Camara *cam = new Camara(smgr);
     //smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo
@@ -109,7 +111,10 @@ int main() {
             else if(teclado.isKeyDown(irr::KEY_KEY_O)){
                 ene->Cambiar(5);
             }
-            //nuevo etado para el arbol
+            //nuevo estado para el arbol
+            else if(teclado.isKeyDown(irr::KEY_KEY_B)){
+                ene->Cambiar(6);
+            }
             
             ene->Update(pers);
             

@@ -14,11 +14,16 @@
 #ifndef NODO_H
 #define NODO_H
 
+#include <iostream>
+#include <list>
+
 class Nodo {
 public:
     Nodo();
     Nodo(const Nodo& orig);
     virtual ~Nodo();
+    void Ejecutar();
+    list<Nodo> hijos;
 private:
 
 };

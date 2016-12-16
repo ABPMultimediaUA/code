@@ -13,7 +13,11 @@
 
 #include "Nodo.h"
 
+
 Nodo::Nodo() {
+    
+        
+    
 }
 
 Nodo::Nodo(const Nodo& orig) {
@@ -22,3 +26,7 @@ Nodo::Nodo(const Nodo& orig) {
 Nodo::~Nodo() {
 }
 
+void Nodo::Ejecutar(){
+     //std::cout<<"El nodo funciona."<<std::endl;
+     
+}

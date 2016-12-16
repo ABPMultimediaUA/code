@@ -16,6 +16,7 @@
 #include <Box2D.h>
 #include "Personaje.h"
 #include "CAppReceiver.h"
+#include "Nodo.h"
 
 
 
@@ -38,7 +39,7 @@ using namespace gui;
 
 class Enemigo {
 public:
-    Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
+    Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, Nodo* n);
     Enemigo(const Enemigo& orig);
     virtual ~Enemigo();
     vector3df getPos();
@@ -56,6 +57,8 @@ public:
     void Irapunto ();
     void Patrullar();
     void PatrullarCorriendo();
+    Nodo* tarea;
+    void Tree();
 private:
     IMeshSceneNode *maya;
     float vel;

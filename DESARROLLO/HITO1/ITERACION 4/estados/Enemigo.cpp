@@ -20,7 +20,7 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
+Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, Nodo* n) {
     
     maya = smgr -> addCubeSceneNode(10); //preguntar a Miguel Angel
 
@@ -44,6 +44,7 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
     body -> CreateFixture(&bodyShape, 1.0f);
     estado=1;
     estPatrulla=0;
+    tarea=n;
     /* md.mass = 2.0;
      md.center = b2Vec2(5.0,5.0);
      md.I = 1.0;
@@ -266,6 +267,9 @@ void Enemigo::Update(Personaje *pers){
         case 5:
             this->PatrullarCorriendo();
             break;
+        case 6:
+            this->Tree();
+            break;
     }
 }
 
@@ -375,4 +379,8 @@ void Enemigo::PatrullarCorriendo(){
         else 
             this->moverRapido(1,1); //izquierda
        
+}
+
+void Enemigo::Tree(){
+    this->tarea->Ejecutar();
 }
