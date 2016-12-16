@@ -1,12 +1,15 @@
 #include <irrlicht.h>
 #include <Box2D.h>
 #include <iostream>
+
+
 #include "CAppReceiver.h"
 #include "Personaje.h"
 #include "Escenario/Escenario.h"
 #include "Camara.h"
 #include "readJson.h"
 #include "MiContactListener.h"
+
 
 using namespace irr;
 
@@ -149,6 +152,10 @@ int main() {
                 //cam->actualizarCamara(3, dt);
 
             }
+            //recarga
+            if(teclado.isKeyDown(irr::KEY_KEY_R)){
+                pers->setCargador(30);
+            }
 
                            // cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
@@ -158,10 +165,46 @@ int main() {
             line3df ray = smgr->getSceneCollisionManager()->getRayFromScreenCoordinates(teclado.GetMouseState().Position, smgr->getActiveCamera());
             // And intersect the ray with a plane around the node facing towards the camera.
             plane3df plane(mousePosition, vector3df(0, 0, -1));
-            plane.getIntersectionWithLine(ray.start, ray.getVector(), mousePosition);
+            bool ok = plane.getIntersectionWithLine(ray.start, ray.getVector(), mousePosition);
+            mousePosition.X = teclado.GetMouseState().Position.X;
+            mousePosition.Y = teclado.GetMouseState().Position.Y;
             pers->rotar(mousePosition);
             
+            
+            if (teclado.GetMouseState().LeftButtonDown && pers->getDisparo() == false) {
+                //tiempoDisparo += dt;
+                
+                //pers -> disparar(dt,ok);
+                //disparo = true;
+                //Bala *bullet = new Bala(smgr, driver, world, pers, vector2df(teclado.GetMouseState().Position.X, teclado.GetMouseState().Position.Y));
+                //listaBalas.push_back(bullet);
+                //  }
+                // }
+                
+                if(pers->getCargador() >= 0){
+                    pers->disparar(smgr, driver, world, dt, vector2df(mousePosition.X, mousePosition.Y));
 
+                }
+            }
+            
+
+            if(pers->getDisparo() == true){
+                pers->setTiempoDisparo(pers->getTiempoDisparo()+dt);
+                if(pers->getTiempoDisparo() >= 0.2){
+                    pers->setDisparo(false);
+                    pers->setTiempoDisparo(0);
+                }
+            }
+            
+            
+            
+             if (ok) {
+    
+                 pers->actualizarLista(dt);
+               
+            }
+            
+            
             then = now;
 
             driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render

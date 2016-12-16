@@ -29,30 +29,6 @@ Escenario::Escenario(const Escenario& orig) {
 Escenario::~Escenario() {
 }
 
-void Escenario::dibujarPared(std::list<Pared*> paredes, b2World *world){
-     
-  
-    IAnimatedMesh *pared1 = SM->addHillPlaneMesh("pared", // Name of the scenenode
-                           core::dimension2d<f32>(4.0f, 4.0f), // Tile size
-                           core::dimension2d<u32>(20, 10), // Tile count
-                           0, // Material
-                           0.0f, // Hill height
-                           core::dimension2d<f32>(0.0f, 0.0f), // countHills
-                           core::dimension2d<f32>(3.0f, 3.0f)); // textureRepeatCount
-  
-    for (std::list<Pared*>::iterator I = paredes.begin(); I != paredes.end(); I++) {
-       
-    
-    IAnimatedMeshSceneNode *wall = SM->addAnimatedMeshSceneNode(pared1);
-       wall->setMaterialTexture(0, VD->getTexture("texture/pared.bmp"));   
-        wall->setMaterialFlag(EMF_LIGHTING, false);
-      wall->setPosition((*I)->getPosicion());
-      wall->setRotation((*I)->getRotacion());
-      (*I)->setFisica(world);
-     
- 
-    } 
-}
 
 
 void Escenario::setPadres(std::string nombre, double t[], double r[], double s[], std::list<Escenario::ElementoHijo> objetos)

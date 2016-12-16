@@ -6,8 +6,8 @@
         <in>Escenario.cpp</in>
         <in>Pared.cpp</in>
         <in>Puerta.cpp</in>
-        <in>Puerta.h</in>
       </df>
+      <in>Bala.cpp</in>
       <in>CAppReceiver.cpp</in>
       <in>Camara.cpp</in>
       <in>Entity2D.cpp</in>
@@ -51,7 +51,7 @@
           <ccTool>
             <incDir>
               <pElem>../irrlicht-1.8.4/include</pElem>
-              <pElem>D:/usr/X11R6/include</pElem>
+              <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
               <pElem>../Box2D/Box2D</pElem>
               <pElem>../rapidjson</pElem>
               <pElem></pElem>
@@ -63,6 +63,10 @@
           <preBuildCommand></preBuildCommand>
         </preBuild>
       </makefileType>
+      <item path="Bala.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
       <item path="CAppReceiver.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
@@ -96,8 +100,8 @@
         </ccTool>
       </item>
       <item path="escenario/Puerta.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="escenario/Puerta.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">

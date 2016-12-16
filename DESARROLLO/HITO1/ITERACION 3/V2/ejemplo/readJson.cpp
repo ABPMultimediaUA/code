@@ -196,7 +196,4 @@ void readJson::crearPared()
     
     esce->dibujarEscenario();
 }
-
-std::list<Pared*> readJson::getParedes(){      
-    return paredes;
-}   
+ 

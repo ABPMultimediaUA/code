@@ -17,7 +17,7 @@
 
 #include "../rapidjson/document.h"
 #include <iostream>
-#include <list>
+
 #include "escenario/Pared.h"
 #include "escenario/Escenario.h"
 
@@ -32,11 +32,11 @@ public:
     virtual ~readJson();
     void leerArchivo(const char* rutaArchivo);
     void crearPared();
-    std::list<Pared*> getParedes();
+   
     
 private:
     Document d;
-    std::list<Pared*> paredes;
+    
     Escenario *esce;
 };
 

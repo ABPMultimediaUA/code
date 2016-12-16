@@ -78,7 +78,7 @@ private:
     Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
     Escenario(const Escenario& orig);
     virtual ~Escenario();
-    void dibujarPared(std::list<Pared*> paredes, b2World *world);
+   
     void setPadres(std::string nombre, double t[], double r[], double s[], std::list<Escenario::ElementoHijo> objetos);
     void setHijos(std::string nombre, double t[], double r[], double s[],std::list<Escenario::Elemento> objetos);
     void setSubHijos(std::string nombre, double t[], double r[], double s[]);

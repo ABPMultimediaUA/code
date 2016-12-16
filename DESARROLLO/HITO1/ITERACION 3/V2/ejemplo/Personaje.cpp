@@ -11,9 +11,11 @@
  * Created on 16 de noviembre de 2016, 15:41
  */
 
+
 #include "Personaje.h"
 #include "Camara.h"
 #include "Entity2D.h"
+#include "readJson.h"
 #include <Math.h>
 
 
@@ -40,13 +42,11 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     vel = 100.0f;
     pos = maya->getPosition();
     entity = new Entity2D(world, pos);
-    /*bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(pos.X, pos.Z);
-    bodyShape.SetAsBox(10, 10);
-    body = world->CreateBody(&bodyDef);
-    body -> CreateFixture(&bodyShape, 1.0f);
+    cargador = 30;
+    tiempoDisparo = 0.0f;
+    disparo = false;
     
-    body->SetUserData(this);*/
+    
     
     /* md.mass = 2.0;
      md.center = b2Vec2(5.0,5.0);
@@ -65,6 +65,7 @@ Personaje::Personaje(const Personaje& orig) {
 }
 
 Personaje::~Personaje() {
+    //delete(entity);
 }
 
 void Personaje::moverPersonaje(int modo, f32 dt) {
@@ -215,12 +216,80 @@ void Personaje::setVelocidad() {
 
 void Personaje::rotar(vector3df raton) {
 
+ float anguloRaton;
+    anguloRaton = -atan2f(raton.X - 320, raton.Y - 240)*180 / 3.14;
 
-    float angulo;
-
-    angulo = atan2f(raton.X - pos.X, raton.Y - pos.Z)*180 / 3.14;
-
-    maya->setRotation(vector3df(0, angulo + 90, 0));
+    //std::cout << "ANGULO: " << anguloRaton << std::endl;
+    maya->setRotation(vector3df(0, anguloRaton + 90, 0));
+    angulo = maya->getRotation();
 
     //    line3df linea = getRay
+
 }
+
+vector3df Personaje::getAngulo() {
+    return angulo;
+}
+
+
+bool Personaje::getDisparo(){
+    return disparo;
+}
+
+int Personaje::getCargador(){
+    return cargador;
+}
+
+f32 Personaje::getTiempoDisparo(){
+    return tiempoDisparo;
+}
+
+void Personaje::setCargador(int newCargador){
+    cargador = newCargador;
+}
+
+void Personaje::setDisparo(bool x){
+    disparo = x;
+}
+
+void Personaje::setTiempoDisparo(f32 t){
+    tiempoDisparo = t;
+}
+
+
+void Personaje::disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *world, f32 dt, vector2df posRaton){
+    
+    tiempoDisparo += dt;
+    disparo = true;
+    Bala *bullet = new Bala(smgr, driver, world, pos, posRaton);
+    listaBalas.push_back(bullet);
+    cargador--;
+}
+
+void Personaje::actualizarLista(f32 dt){
+    if(!listaBalas.empty()){
+        for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end();) {
+            if ((*it) != NULL) {
+                if (!(*it)->estaViva()) {
+
+                    delete(*it);
+                    it = listaBalas.erase(it);
+                } else
+                    it++;
+            } else
+                it++;
+        }
+
+        for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end(); it++) {
+            if ((*it) != NULL) {
+                (*it)->mover(dt);
+                (*it)->update();
+            }
+         }
+    }
+
+}
+
+    
+
+
