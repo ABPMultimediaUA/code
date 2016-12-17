@@ -5,42 +5,33 @@
  */
 
 /* 
- * File:   Nodo.cpp
+ * File:   Nodo1.cpp
  * Author: Iván
  * 
- * Created on 16 de diciembre de 2016, 16:28
+ * Created on 17 de diciembre de 2016, 13:52
  */
 
-#include "Nodo.h"
+#include "Nodo1.h"
 
-
-Nodo::Nodo() {
-    
-        
-    
+Nodo1::Nodo1() {
 }
 
-Nodo::Nodo(const Nodo& orig) {
+Nodo1::Nodo1(const Nodo1& orig) {
 }
 
-Nodo::~Nodo() {
+Nodo1::~Nodo1() {
 }
 
-bool Nodo::Ejecutar(){
+bool Nodo1::Ejecutar(){
      //std::cout<<"El nodo funciona."<<std::endl;
     bool result=false;
-    std::cout<<hijos.size()<<std::endl;
     if(hijos.empty()){
-        //std::cout<<"No hay hijos"<<std::endl;
+        std::cout<<"No hay hijos en Nodo1"<<std::endl;
     }
     else{
     for(std::list<Nodo>::iterator it=hijos.begin();it!=hijos.end();it++) {
-        result=(*it).Ejecutar();
+        result=it->Ejecutar();
     }
     }
     return result;
-}
-
-void Nodo::Extra(Nodo* n){
-    hijos.push_front(*n);
 }

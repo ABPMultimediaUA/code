@@ -5,30 +5,27 @@
  */
 
 /* 
- * File:   Nodo.h
+ * File:   Nodo1.h
  * Author: Iván
  *
- * Created on 16 de diciembre de 2016, 16:28
+ * Created on 17 de diciembre de 2016, 13:52
  */
 
-#ifndef NODO_H
-#define NODO_H
-
-#include <iostream>
+#ifndef NODO1_H
+#define NODO1_H
 #include <List>
 #include <iterator>
+#include "Nodo.h"
 
-class Nodo {
+class Nodo1 : public Nodo {
 public:
-    Nodo();
-    Nodo(const Nodo& orig);
-    virtual ~Nodo();
+    Nodo1();
+    Nodo1(const Nodo1& orig);
+    virtual ~Nodo1();
     virtual bool Ejecutar();
-    std::list<Nodo> hijos;
-    void Extra(Nodo* n);
 private:
 
 };
 
-#endif /* NODO_H */
+#endif /* NODO1_H */
 

@@ -40,6 +40,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Enemigo.o \
 	${OBJECTDIR}/Escenario.o \
 	${OBJECTDIR}/Nodo.o \
+	${OBJECTDIR}/Nodo1.o \
+	${OBJECTDIR}/Nodo2.o \
 	${OBJECTDIR}/Personaje.o \
 	${OBJECTDIR}/main.o
 
@@ -92,6 +94,16 @@ ${OBJECTDIR}/Nodo.o: Nodo.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -I../Box2D/Box2D -I../irrlicht-1.8.4/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Nodo.o Nodo.cpp
+
+${OBJECTDIR}/Nodo1.o: Nodo1.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -I../Box2D/Box2D -I../irrlicht-1.8.4/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Nodo1.o Nodo1.cpp
+
+${OBJECTDIR}/Nodo2.o: Nodo2.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -I../Box2D/Box2D -I../irrlicht-1.8.4/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Nodo2.o Nodo2.cpp
 
 ${OBJECTDIR}/Personaje.o: Personaje.cpp 
 	${MKDIR} -p ${OBJECTDIR}

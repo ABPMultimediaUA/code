@@ -7,6 +7,9 @@
 #include "Escenario.h"
 #include "Camara.h"
 #include "Nodo.h"
+#include "Nodo1.h"
+#include "Nodo2.h"
+#include <list>
 
 
 
@@ -55,7 +58,16 @@ int main() {
             rect<s32>(10, 10, 260, 22), true); //metodo para poner algo por pantalla
     //cambiar la camara activa smgr->setActiveCamera(camera);
 
+    //BehaviorTree
     Nodo *n=new Nodo();
+    Nodo1 *n1=new Nodo1();
+    Nodo2 *n2=new Nodo2();
+    n->Extra(n1);
+    n->Extra(n2);
+    
+    //std::cout<<n->hijos.size()<<std::endl;
+    
+    
     Personaje *pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
     Enemigo *ene = new Enemigo(smgr, driver, world, n);
     Escenario *esce = new Escenario(smgr, driver);
