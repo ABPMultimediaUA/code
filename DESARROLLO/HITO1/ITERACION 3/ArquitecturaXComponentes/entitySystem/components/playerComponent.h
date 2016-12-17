@@ -21,10 +21,7 @@ public:
     playerComponent();
     playerComponent(const playerComponent& orig);
     virtual ~playerComponent();
-    char getLastDirr();
-    void setLastDirr(char);
 private:
-    char *lastDirreccion;
 };
 
 #endif /* PLAYERCOMPONENT_H */

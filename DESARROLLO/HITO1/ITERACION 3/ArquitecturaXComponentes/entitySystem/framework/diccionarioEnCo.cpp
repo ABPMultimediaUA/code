@@ -12,14 +12,9 @@
  */
 
 #include "diccionarioEnCo.h"
-#include "../components/camaraComponent.h"
-#include "../components/playerComponent.h"
-#include "../components/renderComponent.h"
-#include "../components/transformComponent.h"
-#include "../components/velocityComponent.h"
-#include "../components/stateMachineComponent.h"
 #include <typeinfo>
 #include <string.h>
+#include <iostream>
 
 using namespace std;
 
@@ -35,11 +30,15 @@ diccionarioEnCo::~diccionarioEnCo() {
     delete dicc;
 }
 
-componente* diccionarioEnCo::getComponent(gameEntity* g, char* s){
+componente* diccionarioEnCo::getComponent(gameEntity* g, const char* s){
+    std::cout<<"dicc->size(): "<<dicc->size()<<std::endl;
     pair<multimap<gameEntity* ,componente*>::iterator, multimap<gameEntity* ,componente*>::iterator> rangeComp = dicc->equal_range(g);
-    for (multimap<gameEntity* ,componente*>::iterator it = rangeComp.first; it != rangeComp.second && strcmp(s, typeid(*it->second).name()) ; ++it){
-        return it->second;
+    for (multimap<gameEntity* ,componente*>::iterator it = rangeComp.first; it != rangeComp.second; ++it){
+        if(strcmp(s, typeid(*it->second).name()) == 0){
+            return it->second;
+        }
     }
+    std::cerr<<"Error: Componente no existe"<<std::endl;
     return 0;
 }
 
@@ -64,15 +63,28 @@ bool diccionarioEnCo::add(gameEntity* g, componente* c){
 
 void diccionarioEnCo::remove(gameEntity* g, componente* c){
     pair<multimap<gameEntity* ,componente*>::iterator, multimap<gameEntity* ,componente*>::iterator> rangeComp = dicc->equal_range(g);
-    for (multimap<gameEntity* ,componente*>::iterator it = rangeComp.first; it != rangeComp.second && dicc->value_comp()(*it,make_pair(g,c)) == 0 ; ++it){
-        dicc->erase(it);
+    for (multimap<gameEntity* ,componente*>::iterator it = rangeComp.first; it != rangeComp.second; ++it){
+        if(dicc->value_comp()(*it,make_pair(g,c)) == 0){
+            dicc->erase(it);
+        }
     }
 }
 
 bool diccionarioEnCo::existCompWithEnt(gameEntity* g, componente* c){
     pair<multimap<gameEntity* ,componente*>::iterator, multimap<gameEntity* ,componente*>::iterator> rangeComp = dicc->equal_range(g);
-    for (multimap<gameEntity* ,componente*>::iterator it = rangeComp.first; it != rangeComp.second && dicc->value_comp()(*it,make_pair(g,c)) == 0 ; ++it){
-        return true;
+    for (multimap<gameEntity* ,componente*>::iterator it = rangeComp.first; it != rangeComp.second; ++it){
+        std::cout<<"it.id: "<<*it->first->getID()<<" g.id: "<<*g->getID()<<" it.getTipo: "<<it->second->getTipo()<<" c.getTipo"<<c->getTipo()<<std::endl;
+        if(*it->first->getID() == *g->getID() && strcmp(it->second->getTipo(), c->getTipo()) == 0){
+            return true;
+        }
     }
     return false;
+}
+
+void diccionarioEnCo::printAllEntitysAndComponents(){
+    std::cout<<"========================= Dicionario ==========================="<<std::endl;
+    for (std::multimap<gameEntity* ,componente*>::iterator it = dicc->begin(); it != dicc->end(); ++it){
+        std::cout<<"Entidad: "<<*it->first->getID()<<" Componente: "<<it->second->getTipo()<<std::endl;
+    }
+    std::cout<<"================================================================"<<std::endl;
 }

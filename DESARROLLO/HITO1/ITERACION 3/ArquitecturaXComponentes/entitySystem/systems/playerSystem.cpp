@@ -28,7 +28,3 @@ playerSystem::~playerSystem() {
 void playerSystem::update(float dt){
 
 }
-
-void HandleMover(gameEntity *j, facadeMotorGrafico *fMG){
-
-}

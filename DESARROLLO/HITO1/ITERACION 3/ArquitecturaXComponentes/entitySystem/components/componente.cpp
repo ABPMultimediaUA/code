@@ -14,11 +14,24 @@
 #include "componente.h"
 
 componente::componente() {
+    tipo = "Component";
 }
 
 componente::componente(const componente& orig) {
+    tipo = orig.tipo;
+}
+
+componente::componente(const char* t){
+    tipo = t;
 }
 
 componente::~componente() {
 }
 
+void componente::setTipo(const char* t){
+    tipo = t;
+}
+
+const char* componente::getTipo(){
+    return tipo;
+}

@@ -12,7 +12,6 @@
  */
 
 #include <iostream>
-
 #include "vectorEntity.h"
 
 vectorEntity::vectorEntity() {

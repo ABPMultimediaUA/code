@@ -13,6 +13,7 @@
 
 #include "renderComponent.h"
 #include <iostream>
+#include <typeinfo>
 
 using namespace irr;
 using namespace core;
@@ -21,9 +22,9 @@ using namespace video;
 using namespace io;
 using namespace gui;
 
-renderComponent::renderComponent() : componente() {}
+renderComponent::renderComponent() : componente(typeid(renderComponent).name()) {}
 
-renderComponent::renderComponent(const renderComponent& orig) : componente(orig) {
+renderComponent::renderComponent(const renderComponent& orig) : componente(typeid(renderComponent).name()) {
     maya = orig.maya;
     posMaya = orig.posMaya;
 }
@@ -33,7 +34,7 @@ renderComponent::~renderComponent() {
     std::cout<<"Borrado Componente render"<<std::endl;
 }
 
-renderComponent::renderComponent(facadeMotorGrafico *fMG, int *id, const char *textura, vector3 *vp) : componente() {
+renderComponent::renderComponent(facadeMotorGrafico *fMG, int *id, const char *textura, vector3 *vp) : componente(typeid(renderComponent).name()) {
     maya = fMG;
     posMaya = maya->addMaya(id,textura,vp);
 }

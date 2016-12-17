@@ -13,19 +13,20 @@
 
 #include "camaraComponent.h"
 #include <iostream>
+#include <typeinfo>
 
-camaraComponent::camaraComponent() : componente() {
+camaraComponent::camaraComponent() : componente(typeid(camaraComponent).name()) {
     foco = new vector3();
     posCamara = new int();
 }
 
-camaraComponent::camaraComponent(const camaraComponent& orig) : componente() {
+camaraComponent::camaraComponent(const camaraComponent& orig) : componente(typeid(camaraComponent).name()) {
     camara = orig.camara;
     foco = orig.foco;
     posCamara = orig.posCamara;
 }
 
-camaraComponent::camaraComponent(facadeMotorGrafico *fMG, int *id, vector3 *vp, vector3 *vf) : componente() {
+camaraComponent::camaraComponent(facadeMotorGrafico *fMG, int *id, vector3 *vp, vector3 *vf) : componente(typeid(camaraComponent).name()) {
     foco = vf;
     camara = fMG;
     posCamara = camara->addCamera(id,vp,vf);

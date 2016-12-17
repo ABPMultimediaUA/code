@@ -12,23 +12,13 @@
  */
 
 #include "playerComponent.h"
+#include <typeinfo>
 
-playerComponent::playerComponent() : componente() {
-    lastDirreccion = new char();
+playerComponent::playerComponent() : componente(typeid(playerComponent).name()) {
 }
 
-playerComponent::playerComponent(const playerComponent& orig) : componente() {
-    lastDirreccion = orig.lastDirreccion;
+playerComponent::playerComponent(const playerComponent& orig) : componente(typeid(playerComponent).name()) {
 }
 
 playerComponent::~playerComponent() {
-    delete lastDirreccion;
-}
-
-char playerComponent::getLastDirr(){
-    return *lastDirreccion;
-}
-
-void playerComponent::setLastDirr(char d){
-    *lastDirreccion = d;
 }

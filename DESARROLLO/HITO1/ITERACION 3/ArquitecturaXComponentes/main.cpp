@@ -22,6 +22,9 @@
 #include "entitySystem/components/velocityComponent.h"
 #include "entitySystem/components/playerComponent.h"
 #include "entitySystem/components/renderComponent.h"
+#include "entitySystem/systems/handleMoverSystem.h"
+#include "entitySystem/components/handleMoverComponent.h"
+#include "entitySystem/systems/camaraSystem.h"
 
 int main(){
     facadeMotorGrafico *fMG = new facadeMotorGrafico(640,480);
@@ -31,17 +34,18 @@ int main(){
     entityManager *eM = new entityManager();
     fMG->inicarCamaras();
     fMG->inicarMayas();
+    handleMoverSystem *hMS = new handleMoverSystem(eM);
+    camaraSystem *cS = new camaraSystem(eM);
     
     //Jugador 1
     eM->addEntity();
     std::cout<<"Jugador getEntity: "<<*eM->getEntity(1)->getID()<<std::endl;
     vector3 *vp = new vector3(0, 0, 0);
-    eM->addComponentToEntity(eM->getEntity(1), new playerComponent());
+    eM->addComponentToEntity(eM->getEntity(1), new handleMoverComponent());
     eM->addComponentToEntity(eM->getEntity(1), new transformComponent(vp, new vector3(1, 1, 1), new vector3(1, 1, 1)));
     eM->addComponentToEntity(eM->getEntity(1), new velocityComponent(new vector2(20,20)));
     eM->addComponentToEntity(eM->getEntity(1), new renderComponent(fMG, eM->getEntity(1)->getID(), "resources/texture/life/bruce.jpg", vp));
-    std::cout<<std::endl;
-    std::cout<<std::endl;
+    std::cout<<"====================="<<std::endl;
     //Camara 2
     eM->addEntity();
     std::cout<<"Camara getEntity: "<<*eM->getEntity(2)->getID()<<std::endl;
@@ -53,9 +57,16 @@ int main(){
     fMG->addStaticTextProva();
     gameClock *clock = new gameClock();
     clock->start();
+    double dt = 0;
+    
+    eM->printAllEntitysAndComponents();
+    
     while(fMG->run()){
-        std::cout<<"My clock dt: "<<clock->timeElapsed()<<std::endl;
+        dt = clock->timeElapsed();
+        std::cout<<"My clock dt: "<<dt<<" Time: "<<clock->getTime()<<std::endl;
         if(fMG->isWindowActive()){
+            hMS->update(fMG);
+            cS->update(dt,2);
             fMG->render(255,100,101,140);
         }
         else{

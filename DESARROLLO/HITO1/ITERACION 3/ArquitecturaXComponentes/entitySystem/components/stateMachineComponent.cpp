@@ -13,11 +13,12 @@
 
 #include "stateMachineComponent.h"
 #include <iostream>
+#include <typeinfo>
 
-stateMachineComponent::stateMachineComponent() : componente() {
+stateMachineComponent::stateMachineComponent() : componente(typeid(stateMachineComponent).name()) {
 }
 
-stateMachineComponent::stateMachineComponent(const stateMachineComponent& orig) : componente(orig) {
+stateMachineComponent::stateMachineComponent(const stateMachineComponent& orig) : componente(typeid(stateMachineComponent).name()) {
 }
 
 stateMachineComponent::~stateMachineComponent() {

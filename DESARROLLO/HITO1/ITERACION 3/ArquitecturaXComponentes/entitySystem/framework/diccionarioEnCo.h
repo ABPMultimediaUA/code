@@ -25,12 +25,13 @@ public:
     diccionarioEnCo();
     diccionarioEnCo(const diccionarioEnCo& orig);
     virtual ~diccionarioEnCo();
-    componente* getComponent(gameEntity*, char*);
+    componente* getComponent(gameEntity*, const char*);
     std::vector<componente*> getComponents(gameEntity*);
     unsigned short size();
     bool add(gameEntity*, componente*);
     void remove(gameEntity*, componente*);
     bool existCompWithEnt(gameEntity*, componente*);
+    void printAllEntitysAndComponents();
 private:
     std::multimap<gameEntity*, componente*> *dicc;
 };

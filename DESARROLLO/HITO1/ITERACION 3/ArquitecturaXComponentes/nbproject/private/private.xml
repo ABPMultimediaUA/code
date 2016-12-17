@@ -10,10 +10,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/framework/vectorEntity.h</file>
+            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/components/camaraComponent.h</file>
+            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/systems/moveSystem.h</file>
             <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/main.cpp</file>
+            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/systems/camaraSystem.h</file>
+            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/systems/moveSystem.cpp</file>
+            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/framework/diccionarioEnCo.cpp</file>
             <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/framework/entityManager.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/framework/vectorEntity.cpp</file>
+            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/systems/camaraSystem.cpp</file>
         </group>
     </open-files>
 </project-private>

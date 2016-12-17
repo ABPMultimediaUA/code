@@ -76,7 +76,7 @@ unsigned long gameClock::getTime() {
 
 double gameClock::timeElapsed() {
     now = this->getTime();
-    float dt = (now - then) / 1000.f;
+    double dt = (now - then) / 1000.;
     then = now;
     return dt;
 }

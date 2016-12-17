@@ -16,8 +16,6 @@
 #include <string.h>
 #include "entityManager.h"
 
-using namespace std;
-
 entityManager::entityManager() {
     idMasBajaUsada = new unsigned short();
     entidades = new vectorEntity();
@@ -47,7 +45,7 @@ int entityManager::generarID(){
             return i;
         }
     }
-    cerr<<"Error: No quedan mas IDs!"<<endl;
+    std::cerr<<"Error: No quedan mas IDs!"<<std::endl;
     return 0;
 }
 
@@ -60,21 +58,24 @@ gameEntity* entityManager::crearEntidad(){
 }
 
 void entityManager::addComponentToEntity(gameEntity* ge,componente* co){
-    if(!existEntity(ge)){
+    if(existEntity(ge)){
         this->dicc->add(ge,co);
+    }
+    else{
+        std::cerr<<"Error: No se ha incluido el componente!"<<std::endl;
     }
 }
 
-componente* entityManager::getComponentOffEntity(gameEntity* ge, char* s){
+componente* entityManager::getComponentOffEntity(gameEntity* ge, const char* s){
     return this->dicc->getComponent(ge,s);
 }
 
-vector<componente*> entityManager::getAllEntityComponent(gameEntity* ge){
+std::vector<componente*> entityManager::getAllEntityComponent(gameEntity* ge){
     return dicc->getComponents(ge);
 }
 
 void entityManager::borrarEntity(gameEntity* ge){
-    if(!ge){
+    if(ge){
         for(unsigned short i = 0; i<entidades->size() && entidades->at(i)->getID() == ge->getID();i++){
             entidades->remove(i);
         }
@@ -82,22 +83,31 @@ void entityManager::borrarEntity(gameEntity* ge){
 }
 
 bool entityManager::existEntity(gameEntity *g){
-    for(unsigned short i = 0; i<entidades->size() && !g && entidades->at(i)->getID() == g->getID();i++){
-        return true;
+    if(g){
+        for(unsigned short i = 0; i<entidades->size();i++){
+            if(entidades->at(i)->getID() == g->getID()){
+                return true;
+            }
+        }
     }
+    std::cerr<<"Error: Entidad pasada Null"<<std::endl;
     return false;
 }
 
 gameEntity* entityManager::getEntity(unsigned int e){
-for(unsigned short i = 0; i<entidades->size();i++){
+    for(unsigned short i = 0; i<entidades->size();i++){
         if(*entidades->at(i)->getID() == e){
             return entidades->at(i);
         }
     }
-    std::cerr<<"Error en Entidad pasada"<<std::endl;
+    std::cerr<<"Error: No existe ninguna entidad con esa ID"<<std::endl;
     return 0;
 }
 
 void entityManager::printAllEntitysID(){
     entidades->printAllEntitysID();
+}
+
+void entityManager::printAllEntitysAndComponents(){
+    dicc->printAllEntitysAndComponents();
 }

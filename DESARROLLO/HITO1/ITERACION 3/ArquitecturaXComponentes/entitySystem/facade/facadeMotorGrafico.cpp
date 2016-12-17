@@ -166,7 +166,7 @@ void facadeMotorGrafico::render(int c1,int c2,int c3,int c4){
     driver->endScene();
 }
 
-char facadeMotorGrafico::teclaPulsada(){
+unsigned short facadeMotorGrafico::teclaPulsada(){
     if (teclado->isKeyDown(irr::KEY_KEY_W) && teclado->isKeyDown(irr::KEY_KEY_D)) {
         return 4;
     } else if (teclado->isKeyDown(irr::KEY_KEY_S) && teclado->isKeyDown(irr::KEY_KEY_D)) {
@@ -194,6 +194,6 @@ void facadeMotorGrafico::setFocoandPoscionCamara(int ID, vector3 f, vector3 p){
     camaras->find(ID)->second->setTarget(vector3df(f.getX(),f.getY(),f.getZ()));
 }
 
-unsigned int facadeMotorGrafico::getCamaraActiva(){
+unsigned short facadeMotorGrafico::getCamaraActiva(){
     smgr->getActiveCamera();
 }

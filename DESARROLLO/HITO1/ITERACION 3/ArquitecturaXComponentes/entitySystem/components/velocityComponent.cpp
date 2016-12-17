@@ -13,17 +13,18 @@
 
 #include "velocityComponent.h"
 #include <iostream>
+#include <typeinfo>
 
-velocityComponent::velocityComponent() : componente() {
+velocityComponent::velocityComponent() : componente(typeid(velocityComponent).name()) {
     velocidad = new vector2();
 }
 
-velocityComponent::velocityComponent(const velocityComponent& orig) : componente() {
+velocityComponent::velocityComponent(const velocityComponent& orig) : componente(typeid(velocityComponent).name()) {
     velocidad = new vector2();
     velocidad = orig.velocidad;
 }
 
-velocityComponent::velocityComponent(vector2 *v) : componente() {
+velocityComponent::velocityComponent(vector2 *v) : componente(typeid(velocityComponent).name()) {
     velocidad = v;
 }
 

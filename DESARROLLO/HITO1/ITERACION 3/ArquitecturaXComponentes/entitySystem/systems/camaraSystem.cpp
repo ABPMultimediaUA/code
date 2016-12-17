@@ -12,19 +12,19 @@
  */
 
 #include <typeinfo>
-
+#include <iostream>
 #include "camaraSystem.h"
+#include "../framework/gameEntity.h"
 #include "../components/camaraComponent.h"
 #include "../components/velocityComponent.h"
 #include "../components/transformComponent.h"
 #include "../components/renderComponent.h"
-#include "../components/playerComponent.h"
-#include "../framework/gameEntity.h"
+#include "../components/handleMoverComponent.h"
 
 camaraSystem::camaraSystem() : system() {
 }
 
-camaraSystem::camaraSystem(const camaraSystem& orig) : camaraSystem(orig) {
+camaraSystem::camaraSystem(const camaraSystem& orig) : system(orig) {
 }
 
 camaraSystem::camaraSystem(entityManager *eM) : system(eM) {
@@ -34,7 +34,7 @@ camaraSystem::~camaraSystem() {
 }
 
 void camaraSystem::update(double dt, unsigned int id){
-    playerComponent *pl =  this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(1),typeid(playerComponent).name());
+    handleMoverComponent *pl =  dynamic_cast<handleMoverComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(1),typeid(handleMoverComponent).name()));
     switch(pl->getLastDirr()){
         case 0:
             this->actualizarCamara(id, 0, dt);
@@ -68,9 +68,9 @@ void camaraSystem::update(double dt, unsigned int id){
 }
 
 void camaraSystem::actualizarCamara(unsigned int ID, char d, double dt){
-    camaraComponent *cam = this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(ID),typeid(camaraComponent).name());
-    velocityComponent *vel = this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(ID),typeid(velocityComponent).name());
-    transformComponent *pos = this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(ID),typeid(transformComponent).name());
+    camaraComponent *cam = dynamic_cast<camaraComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(ID),typeid(camaraComponent).name()));
+    velocityComponent *vel = dynamic_cast<velocityComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(ID),typeid(velocityComponent).name()));
+    transformComponent *pos = dynamic_cast<transformComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(ID),typeid(transformComponent).name()));
     switch(d){
         case 0:
             cam->setFoco((cam->getFocoX()+vel->getVelocidad().getX()*dt),cam->getFocoY(),cam->getFocoZ());
@@ -89,6 +89,5 @@ void camaraSystem::actualizarCamara(unsigned int ID, char d, double dt){
             pos->setPosicion(pos->getPosicion().getX(),pos->getPosicion().getY(),(pos->getPosicion().getZ()-vel->getVelocidad().getX()*dt));
             break;
     }
-    renderComponent *re = this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(ID),typeid(renderComponent).name());
-    re->getMaya()->setFocoandPoscionCamara(ID,cam->getFoco(),pos->getPosicion());
+    cam->getCamara()->setFocoandPoscionCamara(ID,cam->getFoco(),pos->getPosicion());
 }

@@ -24,7 +24,6 @@ public:
     playerSystem(entityManager*);
     virtual ~playerSystem();
     void update(float);
-    void HandleMover(gameEntity*, facadeMotorGrafico*);
 private:
 
 };

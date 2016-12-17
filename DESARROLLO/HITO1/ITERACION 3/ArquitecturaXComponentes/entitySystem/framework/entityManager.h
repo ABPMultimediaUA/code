@@ -29,13 +29,14 @@ public:
     int generarID();
     gameEntity* crearEntidad();
     void addComponentToEntity(gameEntity*,componente*);
-    componente* getComponentOffEntity(gameEntity*, char*);
+    componente* getComponentOffEntity(gameEntity*, const char*);
     std::vector<componente*> getAllEntityComponent(gameEntity*);
     void borrarEntity(gameEntity*);
     bool existEntity(gameEntity*);
     gameEntity* getEntity(unsigned int);
     void addEntity();
     void printAllEntitysID();
+    void printAllEntitysAndComponents();
 private:
     unsigned short *idMasBajaUsada;
     vectorEntity *entidades;

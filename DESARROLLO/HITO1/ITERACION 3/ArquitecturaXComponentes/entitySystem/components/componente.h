@@ -18,9 +18,12 @@ class componente {
 public:
     componente();
     componente(const componente& orig);
+    componente(const char *);
     virtual ~componente();
+    const char* getTipo();
+    void setTipo(const char*);
 private:
-
+    const char *tipo;
 };
 
 #endif /* COMPONENTE_H */

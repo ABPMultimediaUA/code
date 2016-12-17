@@ -5,6 +5,8 @@
       <df name="entitySystem">
         <df name="components">
           <in>componente.cpp</in>
+          <in>handleMoverComponent.cpp</in>
+          <in>handleMoverComponent.h</in>
           <in>playerComponent.cpp</in>
           <in>playerComponent.h</in>
         </df>
@@ -17,6 +19,8 @@
         <df name="systems">
           <in>camaraSystem.cpp</in>
           <in>camaraSystem.h</in>
+          <in>handleMoverSystem.cpp</in>
+          <in>handleMoverSystem.h</in>
         </df>
       </df>
       <df name="resources">

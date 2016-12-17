@@ -60,9 +60,9 @@ public:
     void inicarCamaras();
     void inicarMayas();
     void render(int,int,int,int);
-    char teclaPulsada();
+    unsigned short teclaPulsada();
     void setFocoandPoscionCamara(int,vector3,vector3);
-    unsigned int getCamaraActiva();
+    unsigned short getCamaraActiva();
 private:
     IrrlichtDevice *device; //ventana del Juego
     IVideoDriver *driver;

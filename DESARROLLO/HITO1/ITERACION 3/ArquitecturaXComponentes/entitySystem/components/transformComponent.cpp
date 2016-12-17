@@ -13,14 +13,15 @@
 
 #include "transformComponent.h"
 #include <iostream>
+#include <typeinfo>
 
-transformComponent::transformComponent() : componente() {
+transformComponent::transformComponent() : componente(typeid(transformComponent).name()) {
     posicion = new vector3();
     rotacion = new vector3();
     escala = new vector3();
 }
 
-transformComponent::transformComponent(const transformComponent& orig) : componente() {
+transformComponent::transformComponent(const transformComponent& orig) : componente(typeid(transformComponent).name()) {
     posicion = new vector3();
     rotacion = new vector3();
     escala = new vector3();
@@ -29,7 +30,7 @@ transformComponent::transformComponent(const transformComponent& orig) : compone
     escala = orig.escala;
 }
 
-transformComponent::transformComponent(vector3 *vp, vector3 *vr, vector3 *ve) : componente() {
+transformComponent::transformComponent(vector3 *vp, vector3 *vr, vector3 *ve) : componente(typeid(transformComponent).name()) {
     posicion = vp;
     rotacion = vr;
     escala = ve;
