@@ -62,5 +62,5 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB){
 
 //       colision = (f1.maskBits & f2.categoryBits) != 0 && (f1.categoryBits & f2.maskBits) != 0;
     }
-    colision;
+    return colision;
 }
