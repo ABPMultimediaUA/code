@@ -281,7 +281,7 @@ void Personaje::actualizarLista(f32 dt){
         }
 
         for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end(); it++) {
-            if ((*it) != NULL) {
+            if ((*it) != NULL && (*it)->estaViva() == true) {
                 (*it)->mover(dt);
                 (*it)->update();
             }

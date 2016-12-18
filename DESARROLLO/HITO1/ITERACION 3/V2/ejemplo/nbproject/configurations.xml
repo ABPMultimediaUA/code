@@ -12,6 +12,8 @@
       <in>Camara.cpp</in>
       <in>Entity2D.cpp</in>
       <in>MiContactListener.cpp</in>
+      <in>MyContactFilter.cpp</in>
+      <in>MyContactFilter.h</in>
       <in>Personaje.cpp</in>
       <in>RayCastCallback.cpp</in>
       <in>main.cpp</in>
@@ -51,7 +53,7 @@
           <ccTool>
             <incDir>
               <pElem>../irrlicht-1.8.4/include</pElem>
-              <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+              <pElem>D:/usr/X11R6/include</pElem>
               <pElem>../Box2D/Box2D</pElem>
               <pElem>../rapidjson</pElem>
               <pElem></pElem>
@@ -82,6 +84,10 @@
       <item path="MiContactListener.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="MyContactFilter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MyContactFilter.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Personaje.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">

@@ -30,6 +30,7 @@ public:
     Entity2D(b2World *world, vector3df pos);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor);
+    Entity2D(b2World* world, vector3df pos, vector3df rot,  bool vivo);
     Entity2D(const Entity2D& orig);
     virtual ~Entity2D();
     float rayCast(int modo);
@@ -37,6 +38,8 @@ public:
     float rayCasting(b2Vec2 inicio, b2Vec2 fin);
     float llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
     int getIDEN();
+    bool getLive();
+    void setLive(bool x);
     
 private:
     
@@ -45,7 +48,9 @@ private:
     b2BodyDef bodyDef;
     b2PolygonShape bodyShape;
     b2MassData md;
+    b2Filter filtro;
     int iden;
+    bool live;
 };
 
 #endif /* ENTITY2D_H */

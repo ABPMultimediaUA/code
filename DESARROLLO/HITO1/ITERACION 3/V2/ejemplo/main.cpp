@@ -9,6 +9,7 @@
 #include "Camara.h"
 #include "readJson.h"
 #include "MiContactListener.h"
+#include "MyContactFilter.h"
 
 
 using namespace irr;
@@ -45,7 +46,9 @@ int main() {
     
     //creamos el manejador de colisiones y lo seteamos al mundo
     MiContactListener* contactListenerInstance = new MiContactListener();
+    MyContactFilter* filtroContact = new MyContactFilter();
     world->SetContactListener(contactListenerInstance);
+    world->SetContactFilter(filtroContact);
     
     device->setWindowCaption(L"Movimiento del personaje");
 

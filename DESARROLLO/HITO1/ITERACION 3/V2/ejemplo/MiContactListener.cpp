@@ -25,6 +25,10 @@ MiContactListener::~MiContactListener() {
 }
 
 void MiContactListener::BeginContact(b2Contact* contact){
+       std::cout<<""<<std::endl;
+
+       std::cout<<"////////////////////////"<<std::endl;
+
    std::cout<<"COLISION"<<std::endl;
     b2Fixture *f1 = contact->GetFixtureA();
     b2Fixture *f2 = contact->GetFixtureB();
@@ -52,6 +56,13 @@ void MiContactListener::BeginContact(b2Contact* contact){
         std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
         std::cout<<"///////////////////////////////////"<<std::endl;
 
+        if(entity1->getIDEN() == 3 ){
+            entity1->setLive(false);
+        }
+        
+        else if(entity2->getIDEN() == 3){
+            entity2->setLive(false);
+        }
  
     
     

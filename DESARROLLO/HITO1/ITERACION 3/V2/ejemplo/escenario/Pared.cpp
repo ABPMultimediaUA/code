@@ -17,10 +17,10 @@
 Pared::Pared(vector3df posicion, vector3df rotacion, vector3df escala) {
     
  
-    std::cout<<"///////////////////////////////////"<<std::endl;
-    std::cout<<""<<std::endl;
-    std::cout<<this<<std::endl;
-    std::cout<<"X: "<<posicion.X<<" Y: "<<posicion.Y<<" Z: "<<posicion.Z<<std::endl;
+//    std::cout<<"///////////////////////////////////"<<std::endl;
+//    std::cout<<""<<std::endl;
+//    std::cout<<this<<std::endl;
+//    std::cout<<"X: "<<posicion.X<<" Y: "<<posicion.Y<<" Z: "<<posicion.Z<<std::endl;
 
       pos = posicion;
       rot = rotacion;

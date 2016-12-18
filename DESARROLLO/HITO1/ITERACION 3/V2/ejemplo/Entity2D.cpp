@@ -13,6 +13,14 @@
 #include <iostream>
 #include "Entity2D.h"
 
+#define FILTRO_PERSONAJE 1
+#define FILTRO_PARED 2
+#define FILTRO_PUERTA 3
+#define FILTRO_DISPAROPERS 4
+#define FILTRO_DISPAROENE 5
+
+
+
 
 
 //hacer diferentes constructores para los distintos objetos
@@ -26,6 +34,8 @@ Entity2D::Entity2D(b2World *world, vector3df pos) {
     body -> CreateFixture(&bodyShape, 1.0f);
     
     body->SetUserData(this);
+    filtro.groupIndex = FILTRO_PERSONAJE;
+    body->GetFixtureList()->SetFilterData(filtro);
     iden = 0;
 }
 
@@ -37,7 +47,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
-    std::cout<<"PARED: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
+   // std::cout<<"PARED: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
     if(rot.Y == 90){
         
         bodyShape.SetAsBox(5*escala.Z, 5*escala.X);
@@ -48,11 +58,16 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
          bodyShape.SetAsBox(5*escala.X, 5*escala.Z);
 
     }
+    
    
-   
+    
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     body->SetUserData(this);
+    
+    filtro.groupIndex = FILTRO_PARED;
+    body->GetFixtureList()->SetFilterData(filtro);
+   
     
     iden = 1;
 }
@@ -63,7 +78,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
-    std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
+    //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
     if(rot.Y == 90){
         
         bodyShape.SetAsBox(10*escala.Z, 5*escala.X);
@@ -79,17 +94,33 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     body->GetFixtureList()->SetSensor(sensor);
-    std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
+    //std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
     body->SetUserData(this);
-    
+      filtro.groupIndex = FILTRO_PUERTA;
+    body->GetFixtureList()->SetFilterData(filtro);
     iden = 2;
+}
+
+Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo){
+    
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.position.Set(pos.X, pos.Z);
+    bodyShape.SetAsBox(2, 2);
+    body = world->CreateBody(&bodyDef);
+    body -> CreateFixture(&bodyShape, 1.0f);
+    body ->SetBullet(true);
+    body->SetUserData(this);
+    iden = 3;
+    live = vivo;
+    filtro.groupIndex = FILTRO_DISPAROPERS;
+    body->GetFixtureList()->SetFilterData(filtro);
 }
 
 Entity2D::Entity2D(const Entity2D& orig) {
 }
 
 Entity2D::~Entity2D() {
-    //mundo->DestroyBody(body);
+   // mundo->DestroyBody(body);
 }
 
 float Entity2D::rayCast(int modo){
@@ -198,4 +229,12 @@ b2Body* Entity2D::getCuerpo2D(){
 
 int Entity2D::getIDEN(){
     return iden;
+}
+
+bool Entity2D::getLive(){
+    return live;
+}
+
+void Entity2D::setLive(bool x){
+    live = x;
 }

@@ -14,6 +14,7 @@
 #include <irrlicht.h>
 #include <iostream>
 #include <Box2D.h>
+#include "Entity2D.h"
 
 
 #ifndef BALA_H
@@ -44,9 +45,9 @@ private:
     
     vector3df pos;
     vector2df posRaton;
-   
+    Entity2D *entity;
     f32 MOVEMENT_SPEED;
-    bool live;
+    bool life;
 
 public:
     Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posPers, vector2df mousePosition);
@@ -59,6 +60,7 @@ public:
     bool estaViva();
     vector3df posInicial;
     bool update();
+    
 };
 
 
