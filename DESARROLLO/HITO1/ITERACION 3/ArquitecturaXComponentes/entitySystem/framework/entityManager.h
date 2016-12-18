@@ -37,6 +37,7 @@ public:
     void addEntity();
     void printAllEntitysID();
     void printAllEntitysAndComponents();
+    std::vector< std::pair<gameEntity*,componente*> > getAllComponentType(const char*);
 private:
     unsigned short *idMasBajaUsada;
     vectorEntity *entidades;

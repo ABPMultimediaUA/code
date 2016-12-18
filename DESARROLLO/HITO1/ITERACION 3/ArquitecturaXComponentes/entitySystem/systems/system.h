@@ -23,7 +23,7 @@ public:
     system(const system& orig);
     system(entityManager *);
     virtual ~system();
-    void update(float);
+    void update(unsigned int);
     entityManager* getEntityManager();
 private:
     entityManager *eManager;

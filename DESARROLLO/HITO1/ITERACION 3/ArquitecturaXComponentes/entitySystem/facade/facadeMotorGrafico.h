@@ -63,6 +63,7 @@ public:
     unsigned short teclaPulsada();
     void setFocoandPoscionCamara(int,vector3,vector3);
     unsigned short getCamaraActiva();
+    void setPosicionMaya(int, vector3);
 private:
     IrrlichtDevice *device; //ventana del Juego
     IVideoDriver *driver;

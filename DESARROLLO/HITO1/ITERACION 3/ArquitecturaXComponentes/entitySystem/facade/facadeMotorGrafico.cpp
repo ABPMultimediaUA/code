@@ -197,3 +197,7 @@ void facadeMotorGrafico::setFocoandPoscionCamara(int ID, vector3 f, vector3 p){
 unsigned short facadeMotorGrafico::getCamaraActiva(){
     smgr->getActiveCamera();
 }
+
+void facadeMotorGrafico::setPosicionMaya(int ID, vector3 p){
+    mayas->find(ID)->second->setPosition(vector3df(p.getX(),p.getY(),p.getZ()));
+}

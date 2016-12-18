@@ -32,6 +32,7 @@ public:
     void remove(gameEntity*, componente*);
     bool existCompWithEnt(gameEntity*, componente*);
     void printAllEntitysAndComponents();
+    std::vector< std::pair<gameEntity*,componente*> > getAllComponentType(const char*);
 private:
     std::multimap<gameEntity*, componente*> *dicc;
 };

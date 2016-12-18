@@ -25,6 +25,6 @@ playerSystem::playerSystem(entityManager *eM) : system(eM) {
 playerSystem::~playerSystem() {
 }
 
-void playerSystem::update(float dt){
+void playerSystem::update(unsigned int dt){
 
 }

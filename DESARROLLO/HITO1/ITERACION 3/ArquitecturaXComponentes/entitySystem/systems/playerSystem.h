@@ -23,7 +23,7 @@ public:
     playerSystem(const playerSystem& orig);
     playerSystem(entityManager*);
     virtual ~playerSystem();
-    void update(float);
+    void update(unsigned int);
 private:
 
 };

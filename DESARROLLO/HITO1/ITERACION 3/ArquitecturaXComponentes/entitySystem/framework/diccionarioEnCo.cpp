@@ -31,10 +31,9 @@ diccionarioEnCo::~diccionarioEnCo() {
 }
 
 componente* diccionarioEnCo::getComponent(gameEntity* g, const char* s){
-    std::cout<<"dicc->size(): "<<dicc->size()<<std::endl;
     pair<multimap<gameEntity* ,componente*>::iterator, multimap<gameEntity* ,componente*>::iterator> rangeComp = dicc->equal_range(g);
     for (multimap<gameEntity* ,componente*>::iterator it = rangeComp.first; it != rangeComp.second; ++it){
-        if(strcmp(s, typeid(*it->second).name()) == 0){
+        if(strcmp(s, it->second->getTipo()) == 0){
             return it->second;
         }
     }
@@ -73,7 +72,6 @@ void diccionarioEnCo::remove(gameEntity* g, componente* c){
 bool diccionarioEnCo::existCompWithEnt(gameEntity* g, componente* c){
     pair<multimap<gameEntity* ,componente*>::iterator, multimap<gameEntity* ,componente*>::iterator> rangeComp = dicc->equal_range(g);
     for (multimap<gameEntity* ,componente*>::iterator it = rangeComp.first; it != rangeComp.second; ++it){
-        std::cout<<"it.id: "<<*it->first->getID()<<" g.id: "<<*g->getID()<<" it.getTipo: "<<it->second->getTipo()<<" c.getTipo"<<c->getTipo()<<std::endl;
         if(*it->first->getID() == *g->getID() && strcmp(it->second->getTipo(), c->getTipo()) == 0){
             return true;
         }
@@ -87,4 +85,14 @@ void diccionarioEnCo::printAllEntitysAndComponents(){
         std::cout<<"Entidad: "<<*it->first->getID()<<" Componente: "<<it->second->getTipo()<<std::endl;
     }
     std::cout<<"================================================================"<<std::endl;
+}
+
+std::vector< std::pair<gameEntity*,componente*> > diccionarioEnCo::getAllComponentType(const char* type){
+    vector< std::pair<gameEntity*,componente*> > vecComp;
+    for (std::multimap<gameEntity* ,componente*>::iterator it = dicc->begin(); it != dicc->end(); ++it){
+        if(strcmp(type, it->second->getTipo()) == 0){
+            vecComp.push_back(make_pair(it->first, it->second));
+        }
+    }
+    return vecComp;
 }

@@ -25,6 +25,9 @@
 #include "entitySystem/systems/handleMoverSystem.h"
 #include "entitySystem/components/handleMoverComponent.h"
 #include "entitySystem/systems/camaraSystem.h"
+#include "entitySystem/systems/moveSystem.h"
+
+#define kUpdateTimePS15 1000/15
 
 int main(){
     facadeMotorGrafico *fMG = new facadeMotorGrafico(640,480);
@@ -36,19 +39,17 @@ int main(){
     fMG->inicarMayas();
     handleMoverSystem *hMS = new handleMoverSystem(eM);
     camaraSystem *cS = new camaraSystem(eM);
+    moveSystem *mS = new moveSystem(eM);
     
     //Jugador 1
     eM->addEntity();
-    std::cout<<"Jugador getEntity: "<<*eM->getEntity(1)->getID()<<std::endl;
     vector3 *vp = new vector3(0, 0, 0);
     eM->addComponentToEntity(eM->getEntity(1), new handleMoverComponent());
     eM->addComponentToEntity(eM->getEntity(1), new transformComponent(vp, new vector3(1, 1, 1), new vector3(1, 1, 1)));
     eM->addComponentToEntity(eM->getEntity(1), new velocityComponent(new vector2(20,20)));
     eM->addComponentToEntity(eM->getEntity(1), new renderComponent(fMG, eM->getEntity(1)->getID(), "resources/texture/life/bruce.jpg", vp));
-    std::cout<<"====================="<<std::endl;
     //Camara 2
     eM->addEntity();
-    std::cout<<"Camara getEntity: "<<*eM->getEntity(2)->getID()<<std::endl;
     vp = new vector3(0, 30, -40);
     eM->addComponentToEntity(eM->getEntity(2), new camaraComponent(fMG, eM->getEntity(2)->getID(), vp, new vector3(0, 5, 0)));
     eM->addComponentToEntity(eM->getEntity(2), new transformComponent(vp, new vector3(1, 1, 1), new vector3(1, 1, 1)));
@@ -56,18 +57,32 @@ int main(){
     
     fMG->addStaticTextProva();
     gameClock *clock = new gameClock();
-    clock->start();
-    double dt = 0;
-    
+    clock->start();    
     eM->printAllEntitysAndComponents();
-    
+    unsigned int dt = 0;
+    unsigned long time = clock->getTime();
     while(fMG->run()){
-        dt = clock->timeElapsed();
-        std::cout<<"My clock dt: "<<dt<<" Time: "<<clock->getTime()<<std::endl;
+        
+        //std::cout<<"My clock time: "<<time<<std::endl;
         if(fMG->isWindowActive()){
+            /****************/
+            /*    Imput    */
+            /**************/
             hMS->update(fMG);
-            cS->update(dt,2);
+            /*****************/
+            /*    update    */
+            /***************/
+            dt = clock->getTime() - time;
+            if(dt>kUpdateTimePS15){
+                cS->update(dt,2);
+                mS->update(dt);
+                time = clock->getTime();
+            }
+            /*****************/
+            /*    Render    */
+            /***************/
             fMG->render(255,100,101,140);
+            
         }
         else{
             fMG->yield();

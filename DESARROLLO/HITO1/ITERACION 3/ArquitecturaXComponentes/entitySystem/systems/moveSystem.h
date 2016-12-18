@@ -22,7 +22,7 @@ public:
     moveSystem(const moveSystem& orig);
     moveSystem(entityManager*);
     virtual ~moveSystem();
-    void update(float);
+    void update(unsigned int);
 private:
 
 };

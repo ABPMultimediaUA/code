@@ -111,3 +111,7 @@ void entityManager::printAllEntitysID(){
 void entityManager::printAllEntitysAndComponents(){
     dicc->printAllEntitysAndComponents();
 }
+
+std::vector< std::pair<gameEntity*,componente*> > entityManager::getAllComponentType(const char* type){
+    return dicc->getAllComponentType(type);
+}

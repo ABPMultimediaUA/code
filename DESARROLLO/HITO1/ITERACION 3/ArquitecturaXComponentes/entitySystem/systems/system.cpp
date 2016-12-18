@@ -29,7 +29,7 @@ system::~system(){
     std::cout<<"Sistema eleminado"<<std::endl;
 }
 
-void system::update(float dt){
+void system::update(unsigned int dt){
 }
 
 entityManager* system::getEntityManager(){
