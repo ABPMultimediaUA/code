@@ -30,8 +30,8 @@ bool Nodo2::Ejecutar(){
         std::cout<<"No hay hijos en Nodo2"<<std::endl;
     }
     else{
-    for(std::list<Nodo>::iterator it=hijos.begin();it!=hijos.end();it++) {
-        result=it->Ejecutar();
+    for(std::list<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
+        result=(*it)->Ejecutar();
     }
     }
     return result;

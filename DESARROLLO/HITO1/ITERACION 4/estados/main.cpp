@@ -62,8 +62,8 @@ int main() {
     Nodo *n=new Nodo();
     Nodo1 *n1=new Nodo1();
     Nodo2 *n2=new Nodo2();
-    n->Extra(*n1);
-    n->Extra(*n2);
+    n->Extra(n1);
+    n->Extra(n2);
     
     //std::cout<<n->hijos.size()<<std::endl;
     

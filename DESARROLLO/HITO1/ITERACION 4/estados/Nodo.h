@@ -26,8 +26,8 @@ public:
     Nodo(const Nodo& orig);
     virtual ~Nodo();
     virtual bool Ejecutar();
-    std::list<Nodo> hijos;
-    void Extra(Nodo& n);
+    std::list<Nodo*> hijos;
+    void Extra(Nodo* n);
     int id;
 private:
 

@@ -34,12 +34,12 @@ bool Nodo::Ejecutar(){
         //std::cout<<"No hay hijos"<<std::endl;
     }
     else{
-    for(std::list<Nodo>::iterator it=hijos.begin();it!=hijos.end();it++) {
-        Nodo* np=&(*it);
+    for(std::list<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
+        //Nodo* np=it._M_const_cast()->;
         //std::cout<<np->id<<std::endl;
        
             //std::cout<<"ID 1"<<std::endl;
-            result=np->Ejecutar();
+            result=(*it)->Ejecutar();
         
         
             //result=np->Ejecutar();
@@ -48,6 +48,6 @@ bool Nodo::Ejecutar(){
     return result;
 }
 
-void Nodo::Extra(Nodo& n){
+void Nodo::Extra(Nodo* n){
     hijos.push_front(n);
 }
