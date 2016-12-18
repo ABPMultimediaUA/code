@@ -50,6 +50,8 @@ Bala::Bala(const Bala& orig) {
 }
 
 Bala::~Bala() {
+        std::cout<<"MUERO BALA"<<std::endl;
+
     maya->getParent()->removeChild(maya);
     delete(entity);
 }
@@ -66,34 +68,35 @@ void Bala::mover(f32 tiempo) {
 //                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
 //                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 
-    vector2df direction(posRaton.X - 320, posRaton.Y - 240);
-    direction.normalize();
+    if(entity != NULL){    
+        vector2df direction(posRaton.X - 320, posRaton.Y - 240);
+        direction.normalize();
 
 
-    float v1 = direction.X * 200.0f;
-    float v2 = -direction.Y * 200.0f;
-    
-    float x = entity->getCuerpo2D()->GetPosition().x + v1;
-    float y = entity->getCuerpo2D()->GetPosition().y + v2;
-    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(x, y));
+        float v1 = direction.X * 200.0f;
+        float v2 = -direction.Y * 200.0f;
 
-    maya->setPosition(vector3df(entity->getCuerpo2D()->GetPosition().x, 10, entity->getCuerpo2D()->GetPosition().y));
-    pos = maya->getPosition();
+        float x = entity->getCuerpo2D()->GetPosition().x + v1;
+        float y = entity->getCuerpo2D()->GetPosition().y + v2;
+        entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(x, y));
 
-//    float v1 = direction.X * 200.0f * tiempo;
-//    float v2 = -direction.Y * 200.0f * tiempo;
+        maya->setPosition(vector3df(entity->getCuerpo2D()->GetPosition().x, 10, entity->getCuerpo2D()->GetPosition().y));
+        pos = maya->getPosition();
 
-//    float x = maya->getPosition().X + v1;
-//    float y = maya->getPosition().Z + v2;
-//
-//    maya->setPosition(vector3df(x, 10, y));
-//    pos = maya->getPosition();
-//        std::cout<<"//////////////////////////////////////////"<<std::endl;
-//            std::cout<<""<<std::endl;
-//            std::cout<<"POS BALA DESPUES"<<std::endl;
-//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+    //    float v1 = direction.X * 200.0f * tiempo;
+    //    float v2 = -direction.Y * 200.0f * tiempo;
 
+    //    float x = maya->getPosition().X + v1;
+    //    float y = maya->getPosition().Z + v2;
+    //
+    //    maya->setPosition(vector3df(x, 10, y));
+    //    pos = maya->getPosition();
+    //        std::cout<<"//////////////////////////////////////////"<<std::endl;
+    //            std::cout<<""<<std::endl;
+    //            std::cout<<"POS BALA DESPUES"<<std::endl;
+    //                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
+    //                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+    }
 }
 
 vector3df Bala::getPos() {
@@ -106,8 +109,10 @@ void Bala::setPosRaton() {
 }
 
 bool Bala::estaViva() {
-
-    return entity->getLive();
+    if(entity != NULL)
+        return entity->getLive();
+    else
+        return false;
 //    return life;
 }
 
@@ -117,7 +122,8 @@ bool Bala::update() {
     //std::cout << "Distancia: " << hola << std::endl;
 
     if (hola > 100) {
-        entity->setLive(false);
+        if(entity != NULL)
+            entity->setLive(false);
 //        life = false;
         return false;
     } else
