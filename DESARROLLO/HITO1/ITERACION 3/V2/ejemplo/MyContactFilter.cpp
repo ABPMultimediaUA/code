@@ -27,9 +27,11 @@ MyContactFilter::~MyContactFilter() {
 
 bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB){
     
+    if(fixtureA != NULL && fixtureB != NULL){
+    
     const b2Filter& f1 = fixtureA->GetFilterData();
     const b2Filter& f2 = fixtureB->GetFilterData();
-    bool colision = true;
+    bool colision = false;
  
     
     if(f1.groupIndex == 1){
@@ -41,12 +43,13 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB){
             
         }
     }
-    else if(f1.groupIndex == 4){
-        if(f2.groupIndex == 2 || f2.groupIndex == 3 || f2.groupIndex == 5){
+    else if(f1.groupIndex == 4 || f2.groupIndex == 4){
+        if(f1.groupIndex == 2 || f1.groupIndex == 3 || f1.groupIndex == 5 || f2.groupIndex == 2 || f2.groupIndex == 3 || f2.groupIndex == 5){
                         std::cout<<"ENTRO CON 4"<<std::endl;
 
 //             colision = (f1.maskBits & f2.categoryBits) != 0 && (f1.categoryBits & f2.maskBits) != 0;
                      colision = true;
+                     
                     return colision;
 
         }
@@ -61,6 +64,10 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB){
                             return colision;
 
 //       colision = (f1.maskBits & f2.categoryBits) != 0 && (f1.categoryBits & f2.maskBits) != 0;
-    }
+    } 
+    
     return colision;
+    
+    }
+    return false;
 }

@@ -120,7 +120,7 @@ Entity2D::Entity2D(const Entity2D& orig) {
 }
 
 Entity2D::~Entity2D() {
-   // mundo->DestroyBody(body);
+   //mundo->DestroyBody(this->body);
 }
 
 float Entity2D::rayCast(int modo){
