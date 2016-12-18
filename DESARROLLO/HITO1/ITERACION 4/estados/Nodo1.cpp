@@ -28,6 +28,7 @@ bool Nodo1::Ejecutar(){
     bool result=false;
     if(hijos.empty()){
         std::cout<<"No hay hijos en Nodo1"<<std::endl;
+        return result;
     }
     else{
     for(std::list<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {

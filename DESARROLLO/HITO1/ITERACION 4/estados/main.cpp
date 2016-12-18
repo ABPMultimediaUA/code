@@ -10,6 +10,8 @@
 #include "Nodo1.h"
 #include "Nodo2.h"
 #include <list>
+#include "Secuencia.h"
+#include "Selector.h"
 
 
 
@@ -62,8 +64,11 @@ int main() {
     Nodo *n=new Nodo();
     Nodo1 *n1=new Nodo1();
     Nodo2 *n2=new Nodo2();
-    n->Extra(n1);
-    n->Extra(n2);
+    //Secuencia *ns=new Secuencia();
+    Selector *nsr= new Selector();
+    nsr->Extra(n2);
+    nsr->Extra(n1);
+    n->Extra(nsr);
     
     //std::cout<<n->hijos.size()<<std::endl;
     

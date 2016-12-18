@@ -7,6 +7,8 @@
       <itemPath>Nodo.h</itemPath>
       <itemPath>Nodo1.h</itemPath>
       <itemPath>Nodo2.h</itemPath>
+      <itemPath>Secuencia.h</itemPath>
+      <itemPath>Selector.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -35,6 +37,8 @@
       <itemPath>Nodo2.cpp</itemPath>
       <itemPath>Personaje.cpp</itemPath>
       <itemPath>Personaje.h</itemPath>
+      <itemPath>Secuencia.cpp</itemPath>
+      <itemPath>Selector.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -96,6 +100,14 @@
       <item path="Personaje.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Personaje.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Secuencia.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Secuencia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Selector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Selector.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="bruce.jpg" ex="false" tool="3" flavor2="0">
       </item>
@@ -172,6 +184,14 @@
       <item path="Personaje.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Personaje.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Secuencia.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Secuencia.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Selector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Selector.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="bruce.jpg" ex="false" tool="3" flavor2="0">
       </item>

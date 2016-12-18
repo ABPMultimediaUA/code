@@ -28,8 +28,8 @@ Nodo::~Nodo() {
 
 bool Nodo::Ejecutar(){
      //std::cout<<"El nodo funciona."<<std::endl;
-    bool result=false;
-    std::cout<<hijos.size()<<std::endl;
+    bool result;
+    //std::cout<<hijos.size()<<std::endl;
     if(hijos.empty()){
         //std::cout<<"No hay hijos"<<std::endl;
     }

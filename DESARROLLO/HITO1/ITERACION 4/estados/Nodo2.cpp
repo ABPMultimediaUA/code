@@ -25,9 +25,10 @@ Nodo2::~Nodo2() {
 
 bool Nodo2::Ejecutar(){
      //std::cout<<"El nodo funciona."<<std::endl;
-    bool result;
+    bool result=false;
     if(hijos.empty()){
         std::cout<<"No hay hijos en Nodo2"<<std::endl;
+        return result;
     }
     else{
     for(std::list<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {

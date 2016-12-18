@@ -43,6 +43,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Nodo1.o \
 	${OBJECTDIR}/Nodo2.o \
 	${OBJECTDIR}/Personaje.o \
+	${OBJECTDIR}/Secuencia.o \
+	${OBJECTDIR}/Selector.o \
 	${OBJECTDIR}/main.o
 
 
@@ -109,6 +111,16 @@ ${OBJECTDIR}/Personaje.o: Personaje.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Personaje.o Personaje.cpp
+
+${OBJECTDIR}/Secuencia.o: Secuencia.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Secuencia.o Secuencia.cpp
+
+${OBJECTDIR}/Selector.o: Selector.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Selector.o Selector.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

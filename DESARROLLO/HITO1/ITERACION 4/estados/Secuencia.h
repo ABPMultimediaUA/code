@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   Secuencia.h
+ * Author: RicharRisa
+ *
+ * Created on 18 de diciembre de 2016, 19:19
+ */
+
+#ifndef SECUENCIA_H
+#define SECUENCIA_H
+#include <List>
+#include <iterator>
+#include "Nodo.h"
+
+class Secuencia : public Nodo {
+public:
+    Secuencia();
+    Secuencia(const Secuencia& orig);
+    virtual ~Secuencia();
+    virtual bool Ejecutar();
+private:
+
+};
+
+#endif /* SECUENCIA_H */
+
