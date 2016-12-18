@@ -14,6 +14,7 @@
 #include "Nodo2.h"
 
 Nodo2::Nodo2() {
+    id=2;
 }
 
 Nodo2::Nodo2(const Nodo2& orig) {

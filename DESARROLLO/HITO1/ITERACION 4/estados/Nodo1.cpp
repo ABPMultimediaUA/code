@@ -14,6 +14,7 @@
 #include "Nodo1.h"
 
 Nodo1::Nodo1() {
+    id=1;
 }
 
 Nodo1::Nodo1(const Nodo1& orig) {

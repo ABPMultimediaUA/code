@@ -17,6 +17,8 @@
 #include <iostream>
 #include <List>
 #include <iterator>
+#include <memory>
+#include <vector>
 
 class Nodo {
 public:
@@ -25,7 +27,8 @@ public:
     virtual ~Nodo();
     virtual bool Ejecutar();
     std::list<Nodo> hijos;
-    void Extra(Nodo* n);
+    void Extra(Nodo& n);
+    int id;
 private:
 
 };

@@ -16,7 +16,7 @@
 
 Nodo::Nodo() {
     
-        
+    id=0;
     
 }
 
@@ -35,12 +35,19 @@ bool Nodo::Ejecutar(){
     }
     else{
     for(std::list<Nodo>::iterator it=hijos.begin();it!=hijos.end();it++) {
-        result=(*it).Ejecutar();
+        Nodo* np=&(*it);
+        //std::cout<<np->id<<std::endl;
+       
+            //std::cout<<"ID 1"<<std::endl;
+            result=np->Ejecutar();
+        
+        
+            //result=np->Ejecutar();
     }
     }
     return result;
 }
 
-void Nodo::Extra(Nodo* n){
-    hijos.push_front(*n);
+void Nodo::Extra(Nodo& n){
+    hijos.push_front(n);
 }
