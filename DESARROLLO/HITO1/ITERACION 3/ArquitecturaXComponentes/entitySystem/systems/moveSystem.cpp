@@ -44,27 +44,35 @@ void moveSystem::update(double dt){
                 std::cout<<"Posicion Jugador: X = "<<traCom->getPosicion().getX()<<" Y = "<<traCom->getPosicion().getY()<<" Z = "<<traCom->getPosicion().getZ()<<" dt: "<<dt<<std::endl;
                 switch(hanMov->getLastDirr()){
                     case 0:
+                        std::cout<<"Entra 0"<<std::endl;
                         traCom->setPosicion(traCom->getPosicion().getX()+(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ());
                         break;
                     case 1:
+                        std::cout<<"Entra 1"<<std::endl;
                         traCom->setPosicion(traCom->getPosicion().getX()-(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ());
                         break;
                     case 2:
+                        std::cout<<"Entra 2"<<std::endl;
                         traCom->setPosicion(traCom->getPosicion().getX(), traCom->getPosicion().getY(), traCom->getPosicion().getZ()+(dt*velCom->getVelocidad().getY()));
                         break;
                     case 3:
+                        std::cout<<"Entra 3"<<std::endl;
                         traCom->setPosicion(traCom->getPosicion().getX(), traCom->getPosicion().getY(), traCom->getPosicion().getZ()-(dt*velCom->getVelocidad().getY()));
                         break;
                     case 4:
+                        std::cout<<"Entra 4"<<std::endl;
                         traCom->setPosicion(traCom->getPosicion().getX()+(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ()+(dt*velCom->getVelocidad().getY()));
                         break;
                     case 5:
+                        std::cout<<"Entra 5"<<std::endl;
                         traCom->setPosicion(traCom->getPosicion().getX()+(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ()-(dt*velCom->getVelocidad().getY()));
                         break;
                     case 6:
+                        std::cout<<"Entra 6"<<std::endl;
                         traCom->setPosicion(traCom->getPosicion().getX()-(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ()-(dt*velCom->getVelocidad().getY()));
                         break;
                     case 7:
+                        std::cout<<"Entra 7"<<std::endl;
                         traCom->setPosicion(traCom->getPosicion().getX()-(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ()+(dt*velCom->getVelocidad().getY()));
                         break;
                 }

@@ -24,7 +24,6 @@ public:
     camaraSystem(entityManager*);
     virtual ~camaraSystem();
     void update(double, unsigned int);
-    void actualizarCamara(unsigned int, char, double);
 private:
 
 };
