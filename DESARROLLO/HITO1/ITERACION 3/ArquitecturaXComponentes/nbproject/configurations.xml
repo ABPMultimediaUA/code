@@ -4,7 +4,11 @@
     <df root="." name="0">
       <df name="entitySystem">
         <df name="components">
+          <in>colisionComponent.cpp</in>
+          <in>colisionComponent.h</in>
           <in>componente.cpp</in>
+          <in>escenarioComponent.cpp</in>
+          <in>escenarioComponent.h</in>
           <in>handleMoverComponent.cpp</in>
           <in>playerComponent.cpp</in>
         </df>
@@ -14,6 +18,8 @@
         <df name="systems">
           <in>camaraSystem.cpp</in>
           <in>handleMoverSystem.cpp</in>
+          <in>rotarSystem.cpp</in>
+          <in>rotarSystem.h</in>
         </df>
       </df>
     </df>
@@ -111,12 +117,32 @@
         <ccTool flags="0">
         </ccTool>
       </item>
+      <item path="entitySystem/components/colisionComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/components/colisionComponent.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="entitySystem/components/componente.cpp"
             ex="false"
             tool="1"
             flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="entitySystem/components/escenarioComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/components/escenarioComponent.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
       <item path="entitySystem/components/handleMoverComponent.cpp"
             ex="false"
@@ -261,6 +287,13 @@
             flavor2="4">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="entitySystem/systems/rotarSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/systems/rotarSystem.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="entitySystem/systems/system.cpp" ex="false" tool="1" flavor2="4">
         <ccTool flags="0">

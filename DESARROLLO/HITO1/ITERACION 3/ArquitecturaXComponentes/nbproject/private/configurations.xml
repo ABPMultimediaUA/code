@@ -4,7 +4,11 @@
     <df root="." name="0">
       <df name="entitySystem">
         <df name="components">
+          <in>colisionComponent.cpp</in>
+          <in>colisionComponent.h</in>
           <in>componente.cpp</in>
+          <in>escenarioComponent.cpp</in>
+          <in>escenarioComponent.h</in>
           <in>handleMoverComponent.cpp</in>
           <in>handleMoverComponent.h</in>
           <in>playerComponent.cpp</in>
@@ -21,6 +25,8 @@
           <in>camaraSystem.h</in>
           <in>handleMoverSystem.cpp</in>
           <in>handleMoverSystem.h</in>
+          <in>rotarSystem.cpp</in>
+          <in>rotarSystem.h</in>
         </df>
       </df>
       <df name="resources">

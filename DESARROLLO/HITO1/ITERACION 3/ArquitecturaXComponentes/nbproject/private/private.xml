@@ -10,9 +10,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/systems/moveSystem.h</file>
             <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/main.cpp</file>
             <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/systems/moveSystem.cpp</file>
+            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/systems/handleMoverSystem.cpp</file>
+            <file>file:/D:/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%203/ArquitecturaXComponentes/entitySystem/systems/camaraSystem.cpp</file>
         </group>
     </open-files>
 </project-private>

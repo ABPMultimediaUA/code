@@ -33,7 +33,7 @@ camaraSystem::camaraSystem(entityManager *eM) : system(eM) {
 camaraSystem::~camaraSystem() {
 }
 
-void camaraSystem::update(unsigned int dt, unsigned int id){
+void camaraSystem::update(double dt, unsigned int id){
     handleMoverComponent *pl =  dynamic_cast<handleMoverComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(1),typeid(handleMoverComponent).name()));
     switch(pl->getLastDirr()){
         case 0:
@@ -89,5 +89,8 @@ void camaraSystem::actualizarCamara(unsigned int ID, char d, double dt){
             pos->setPosicion(pos->getPosicion().getX(),pos->getPosicion().getY(),(pos->getPosicion().getZ()-(vel->getVelocidad().getX()*dt)));
             break;
     }
+    std::cout<<"============== CAMARA =============="<<std::endl;
+    std::cout<<"Nueva Posicion Camara: X = "<<pos->getPosicion().getX()<<" Y = "<<pos->getPosicion().getY()<<" Z = "<<pos->getPosicion().getZ()<<" dt: "<<dt<<std::endl;
+    std::cout<<"Nueva Foco Camara: X = "<<cam->getFocoX()<<" Y = "<<cam->getFocoY()<<" Z = "<<cam->getFocoZ()<<std::endl;
     cam->getCamara()->setFocoandPoscionCamara(ID,cam->getFoco(),pos->getPosicion());
 }

@@ -27,7 +27,7 @@ facadeMotorGrafico::facadeMotorGrafico(int w, int h) {
     node->setMaterialFlag(video::EMF_LIGHTING, false);
     then = new unsigned int();
     device->getTimer()->start();
-    *then = 1 * device->getTimer()->getTime();
+    *then = 1 * device->getTimer()->getTime();    
 }
 
 facadeMotorGrafico::facadeMotorGrafico(const facadeMotorGrafico& orig) {
@@ -200,4 +200,16 @@ unsigned short facadeMotorGrafico::getCamaraActiva(){
 
 void facadeMotorGrafico::setPosicionMaya(int ID, vector3 p){
     mayas->find(ID)->second->setPosition(vector3df(p.getX(),p.getY(),p.getZ()));
+}
+
+vector3 facadeMotorGrafico::getMousePosition(){
+    vector3df position;
+    line3df ray = smgr->getSceneCollisionManager()->getRayFromScreenCoordinates(teclado->GetMouseState().Position,smgr->getActiveCamera());
+    plane3df plane(position,vector3df(0,0,1));
+    plane.getIntersectionWithLine(ray.start,ray.getVector(),position);
+    return vector3((position.X*1),(position.Y*1),(position.Z*1));
+}
+
+void facadeMotorGrafico::setRotationMaya(int e, vector3 r){
+    mayas->find(e)->second->setRotation(vector3df(r.getX(),r.getY(),r.getZ()));
 }
