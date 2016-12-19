@@ -10,10 +10,14 @@
       <in>Bala.cpp</in>
       <in>CAppReceiver.cpp</in>
       <in>Camara.cpp</in>
+      <in>Enemigo.cpp</in>
       <in>Entity2D.cpp</in>
+      <in>EstadoJuego.cpp</in>
+      <in>EstadoJuego.h</in>
+      <in>Juego.cpp</in>
+      <in>Juego.h</in>
       <in>MiContactListener.cpp</in>
       <in>MyContactFilter.cpp</in>
-      <in>MyContactFilter.h</in>
       <in>Personaje.cpp</in>
       <in>RayCastCallback.cpp</in>
       <in>main.cpp</in>
@@ -53,7 +57,7 @@
           <ccTool>
             <incDir>
               <pElem>../irrlicht-1.8.4/include</pElem>
-              <pElem>D:/usr/X11R6/include</pElem>
+              <pElem>../../../../../../../../../../../usr/X11R6/include</pElem>
               <pElem>../Box2D/Box2D</pElem>
               <pElem>../rapidjson</pElem>
               <pElem></pElem>
@@ -77,17 +81,29 @@
         <ccTool flags="0">
         </ccTool>
       </item>
+      <item path="Enemigo.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
       <item path="Entity2D.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="EstadoJuego.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EstadoJuego.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Juego.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Juego.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="MiContactListener.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
       </item>
       <item path="MyContactFilter.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="MyContactFilter.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Personaje.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
