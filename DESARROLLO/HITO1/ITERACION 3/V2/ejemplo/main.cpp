@@ -11,6 +11,8 @@
 #include "MiContactListener.h"
 #include "MyContactFilter.h"
 
+#define ANCHO 640
+#define LARGO 480
 
 using namespace irr;
 
@@ -31,7 +33,7 @@ int main() {
 
     //creas una ventana, primer false es si quieres fullscreen
     IrrlichtDevice *device =
-            createDevice(video::EDT_OPENGL, dimension2d<u32>(640, 480), 16,
+            createDevice(video::EDT_OPENGL, dimension2d<u32>(ANCHO, LARGO), 16,
             false, false, false, &teclado);
 
     
@@ -172,8 +174,12 @@ int main() {
             mousePosition.X = teclado.GetMouseState().Position.X;
             mousePosition.Y = teclado.GetMouseState().Position.Y;
             pers->rotar(mousePosition);
-            
-            
+            if(teclado.isKeyDown(irr::KEY_KEY_E)){
+             std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<""<<std::endl;
+            std::cout<<"POS RATON"<<std::endl;
+                 std::cout<<"PosX: "<<mousePosition.X<<"PosY: "<<mousePosition.Y<<std::endl;
+            }
             if (teclado.GetMouseState().LeftButtonDown && pers->getDisparo() == false) {
                 //tiempoDisparo += dt;
                 

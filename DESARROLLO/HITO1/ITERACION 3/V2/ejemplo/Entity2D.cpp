@@ -122,7 +122,7 @@ Entity2D::Entity2D(const Entity2D& orig) {
 Entity2D::~Entity2D() {
     std::cout<<"ID DE LA ENTITY "<<iden<<std::endl;
     std::cout<<"MUERO ENTITY2D"<<std::endl;
-    body->GetWorld()->DestroyBody(body);
+    body->GetWorld()->DestroyBody(body); //así se tienen que borrar los objetos, no vale con la copia del puntero
     //mundo->DestroyBody(body);
 //    body->SetUserData(NULL);
 //    body = NULL;
