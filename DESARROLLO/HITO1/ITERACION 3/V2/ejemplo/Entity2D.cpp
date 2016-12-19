@@ -120,8 +120,10 @@ Entity2D::Entity2D(const Entity2D& orig) {
 }
 
 Entity2D::~Entity2D() {
+    std::cout<<"ID DE LA ENTITY "<<iden<<std::endl;
     std::cout<<"MUERO ENTITY2D"<<std::endl;
-   mundo->DestroyBody(body);
+    body->GetWorld()->DestroyBody(body);
+    //mundo->DestroyBody(body);
 //    body->SetUserData(NULL);
 //    body = NULL;
     
