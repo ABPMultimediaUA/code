@@ -18,8 +18,14 @@
       <in>CAppReceiver.h</in>
       <in>Camara.cpp</in>
       <in>Camara.h</in>
+      <in>Enemigo.cpp</in>
+      <in>Enemigo.h</in>
       <in>Entity2D.cpp</in>
       <in>Entity2D.h</in>
+      <in>EstadoJuego.cpp</in>
+      <in>EstadoJuego.h</in>
+      <in>Juego.cpp</in>
+      <in>Juego.h</in>
       <in>MiContactListener.cpp</in>
       <in>MiContactListener.h</in>
       <in>MyContactFilter.cpp</in>
