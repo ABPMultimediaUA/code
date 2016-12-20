@@ -29,7 +29,7 @@ class Entity2D {
 public:
     Entity2D(b2World *world, vector3df pos);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala);
-    Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor);
+    Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta);
     Entity2D(b2World* world, vector3df pos, vector3df rot,  bool vivo);
     Entity2D(const Entity2D& orig);
     virtual ~Entity2D();
@@ -40,6 +40,7 @@ public:
     int getIDEN();
     bool getLive();
     void setLive(bool x);
+    void* getPuerta();
     
 private:
     
@@ -51,6 +52,8 @@ private:
     b2Filter filtro;
     int iden;
     bool live;
+    void* puerta;
+  
 };
 
 #endif /* ENTITY2D_H */

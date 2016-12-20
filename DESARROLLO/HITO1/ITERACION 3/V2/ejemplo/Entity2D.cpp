@@ -72,33 +72,40 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     iden = 1;
 }
 
-Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor){
-        bodyDef.type = b2_staticBody;
+Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta){
+        bodyDef.type = b2_kinematicBody;
     bodyDef.position.Set(pos.X, pos.Z);
-    
+    b2PolygonShape bodyShape2;
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
     if(rot.Y == 90){
         
-        bodyShape.SetAsBox(10*escala.Z, 5*escala.X);
+        bodyShape.SetAsBox(20*escala.Z, 5*escala.X);
+        bodyShape2.SetAsBox(5*escala.Z, 5*escala.X);
         
     }
     
     else{
-         bodyShape.SetAsBox(5*escala.X, 10*escala.Z);
+         bodyShape.SetAsBox(5*escala.X, 20*escala.Z);
+         bodyShape2.SetAsBox(5*escala.X, 5*escala.Z);
+         
 
     }
    
-   
+    puerta = dirPuerta;
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     body->GetFixtureList()->SetSensor(sensor);
     //std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
     body->SetUserData(this);
-      filtro.groupIndex = FILTRO_PUERTA;
-    body->GetFixtureList()->SetFilterData(filtro);
+    body->CreateFixture(&bodyShape2, 1.0f);
+    filtro.groupIndex = FILTRO_PUERTA;
+//    body->GetFixtureList()->SetFilterData(filtro);
     iden = 2;
+ for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()){
+     f->SetFilterData(filtro);
+  }
 }
 
 Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo){
@@ -243,4 +250,8 @@ bool Entity2D::getLive(){
 
 void Entity2D::setLive(bool x){
     live = x;
+}
+
+void* Entity2D::getPuerta(){
+    return puerta;
 }
