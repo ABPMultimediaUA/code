@@ -62,12 +62,12 @@ void Bala::setPosition(vector3df v) {
 
 void Bala::mover(f32 tiempo) {
 
-    std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<""<<std::endl;
-            std::cout<<"POS BALA ANTES"<<std::endl;
-                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
-   
+//    std::cout<<"//////////////////////////////////////////"<<std::endl;
+//            std::cout<<""<<std::endl;
+//            std::cout<<"POS BALA ANTES"<<std::endl;
+//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
+//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+//   
                  
     if(entity != NULL){    
         vector2df direction(posRaton.X - 320, posRaton.Y - 240);
@@ -94,11 +94,11 @@ void Bala::mover(f32 tiempo) {
 //    
 //        maya->setPosition(vector3df(x, 10, y));
 //        pos = maya->getPosition();
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
-                std::cout<<""<<std::endl;
-                std::cout<<"POS BALA DESPUES"<<std::endl;
-                     std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-                     std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+//            std::cout<<"//////////////////////////////////////////"<<std::endl;
+//                std::cout<<""<<std::endl;
+//                std::cout<<"POS BALA DESPUES"<<std::endl;
+//                     std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
+//                     std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
     }
 }
 

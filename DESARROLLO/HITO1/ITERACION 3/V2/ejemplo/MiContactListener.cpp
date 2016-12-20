@@ -24,6 +24,23 @@ MiContactListener::MiContactListener(const MiContactListener& orig) {
 MiContactListener::~MiContactListener() {
 }
 
+void MiContactListener::actualizarPuerta(Entity2D* entity, int modo){
+                std::cout<<"ACTUALIZO "<<modo<<std::endl;
+  Puerta *puerta = static_cast<Puerta*>(entity->getPuerta());
+    if(modo == 0){
+            //si tiene rotacion en Y van | sino van -
+        puerta->abrirPuerta();
+            
+    }
+    
+    
+    else{
+        puerta->cerrarPuerta();
+       
+    }
+    
+}
+
 void MiContactListener::BeginContact(b2Contact* contact){
        std::cout<<""<<std::endl;
 
@@ -60,6 +77,7 @@ void MiContactListener::BeginContact(b2Contact* contact){
 
             if(entity1->getIDEN() == 3 ){
                 entity1->setLive(false);
+                
             }
 
             else if(entity2->getIDEN() == 3){
@@ -132,33 +150,3 @@ void MiContactListener::PreSolve(b2Contact* contact, const b2Manifold* oldManifo
 }
 
 
-void MiContactListener::actualizarPuerta(Entity2D* entity, int modo){
-                std::cout<<"ACTUALIZO "<<modo<<std::endl;
-
-    if(modo == 0){
-        Puerta *puerta = static_cast<Puerta*>(entity->getPuerta());
-            //si tiene rotacion en Y van | sino van -
-
-        if(puerta->getPosicion().Y == 90){
-            std::cout<<"CAAAAAAAAAAAACA"<<std::endl;
-            puerta->abrirPuerta(puerta->getPosicion().X, puerta->getPosicion().Z - 80, 0);
-        }
-        
-        else{
-            puerta->abrirPuerta(puerta->getPosicion().X - 80, puerta->getPosicion().Z, 1);
-        }
-    }
-    
-    
-    else{
-        Puerta *puerta = static_cast<Puerta*>(entity->getPuerta());
-        if(puerta->getRotacion().Y == 90){
-            puerta->cerrarPuerta(puerta->getPosicion().X, puerta->getPosicion().Z + 80, 0);
-        }
-        
-        else{
-            puerta->cerrarPuerta(puerta->getPosicion().X + 80, puerta->getPosicion().Z, 1);
-        }
-    }
-    
-}

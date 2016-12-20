@@ -41,8 +41,8 @@ public:
     void setRotacion(vector3df newRot);
     void setEscala(vector3df newEscala);
     void setFisica(b2World *world);
-    void abrirPuerta(float x, float y, int modo);
-    void cerrarPuerta(float x, float y, int modo);
+    void abrirPuerta();
+    void cerrarPuerta();
     
 private:
     

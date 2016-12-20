@@ -41,10 +41,12 @@ public:
     bool getLive();
     void setLive(bool x);
     void* getPuerta();
+    void destruirFixture();
+    void crearFixture();
     
 private:
     
-    b2World *mundo;
+  
     b2Body *body;
     b2BodyDef bodyDef;
     b2PolygonShape bodyShape;

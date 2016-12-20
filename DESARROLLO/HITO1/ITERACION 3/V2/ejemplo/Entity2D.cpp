@@ -12,6 +12,7 @@
  */
 #include <iostream>
 #include "Entity2D.h"
+#include "Enemigo.h"
 
 #define FILTRO_PERSONAJE 1
 #define FILTRO_PARED 2
@@ -20,13 +21,14 @@
 #define FILTRO_DISPAROENE 5
 
 
+#define FILTRO_PUERTAABIERTA 15
 
 
 
 //hacer diferentes constructores para los distintos objetos
 Entity2D::Entity2D(b2World *world, vector3df pos) {
     
-    mundo = world;
+    
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
     bodyShape.SetAsBox(10, 10);
@@ -73,7 +75,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
 }
 
 Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta){
-        bodyDef.type = b2_kinematicBody;
+        bodyDef.type = b2_staticBody;
     bodyDef.position.Set(pos.X, pos.Z);
     b2PolygonShape bodyShape2;
     //si tiene rotacion en Y van | sino van -
@@ -100,11 +102,13 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     //std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
     body->SetUserData(this);
     body->CreateFixture(&bodyShape2, 1.0f);
+    
     filtro.groupIndex = FILTRO_PUERTA;
 //    body->GetFixtureList()->SetFilterData(filtro);
     iden = 2;
  for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()){
      f->SetFilterData(filtro);
+     
   }
 }
 
@@ -121,6 +125,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo){
     live = vivo;
     filtro.groupIndex = FILTRO_DISPAROPERS;
     body->GetFixtureList()->SetFilterData(filtro);
+    
 }
 
 Entity2D::Entity2D(const Entity2D& orig) {
@@ -232,8 +237,42 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin){
 }
 
 float Entity2D::llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin){
-    mundo->RayCast(callback, inicio, fin);
+    //mundo->RayCast(callback, inicio, fin);
     
+}
+
+void Entity2D::destruirFixture(){
+    
+   for (b2Fixture* f = body->GetFixtureList(); f; f ){
+       
+       if(f->IsSensor() == false ){
+          
+           b2Filter newFilter;
+           newFilter.groupIndex = FILTRO_PUERTAABIERTA;
+           f->SetFilterData(newFilter);
+          // b2Fixture* destroyMe = f;
+           
+          // body->DestroyFixture(destroyMe);
+       }
+     f = f->GetNext();
+  }
+}
+
+void Entity2D::crearFixture(){
+        
+   for (b2Fixture* f = body->GetFixtureList(); f; f ){
+       
+       if(f->IsSensor() == false ){
+          
+           b2Filter newFilter;
+           newFilter.groupIndex = FILTRO_PUERTA;
+           f->SetFilterData(newFilter);
+          // b2Fixture* destroyMe = f;
+           
+          // body->DestroyFixture(destroyMe);
+       }
+     f = f->GetNext();
+  }
 }
 
 b2Body* Entity2D::getCuerpo2D(){
