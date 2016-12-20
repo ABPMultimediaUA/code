@@ -12,9 +12,9 @@
  */
 #include <Box2D.h>
 #include <iostream>
-#include "Entity2D.h"
+#include "../facade/Entity2D.h"
 #include "MyContactFilter.h"
-#include "readJson.h"
+//#include "readJson.h"
 
 MyContactFilter::MyContactFilter() {
 }

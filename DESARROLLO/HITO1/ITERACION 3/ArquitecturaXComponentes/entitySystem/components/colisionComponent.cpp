@@ -14,11 +14,15 @@
 #include <typeinfo>
 
 #include "colisionComponent.h"
+#include "facade/facadeColision.h"
 
 colisionComponent::colisionComponent() : componente(typeid(colisionComponent).name()) {
 }
 
 colisionComponent::colisionComponent(const colisionComponent& orig) : componente(typeid(colisionComponent).name()) {
+}
+
+colisionComponent::colisionComponent(facadeColision* fC, vector3 p) : componente(typeid(colisionComponent).name()) {
 }
 
 colisionComponent::~colisionComponent() {

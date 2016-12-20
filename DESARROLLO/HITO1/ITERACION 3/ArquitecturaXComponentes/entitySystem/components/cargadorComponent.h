@@ -5,21 +5,23 @@
  */
 
 /* 
- * File:   cargadorComponente.h
- * Author: elcuc_000
+ * File:   cargadorComponent.h
+ * Author: JaumeLloret
  *
- * Created on 20 de diciembre de 2016, 2:29
+ * Created on 20 de diciembre de 2016, 16:13
  */
 
-#ifndef CARGADORCOMPONENTE_H
-#define CARGADORCOMPONENTE_H
+#ifndef CARGADORCOMPONENT_H
+#define CARGADORCOMPONENT_H
 
-class cargadorComponente {
+#include "componente.h"
+
+class cargadorComponent : public componente{
 public:
-    cargadorComponente();
-    cargadorComponente(const cargadorComponente& orig);
-    cargadorComponente(int, float, bool);
-    virtual ~cargadorComponente();
+    cargadorComponent();
+    cargadorComponent(const cargadorComponent& orig);
+    cargadorComponent(int, float, bool);
+    virtual ~cargadorComponent();
     void setCargador(int);
     void setTiempoDisparo(float);
     void setDisparo(bool);
@@ -33,5 +35,5 @@ private:
     //std::list<Bala*> listaBalas;
 };
 
-#endif /* CARGADORCOMPONENTE_H */
+#endif /* CARGADORCOMPONENT_H */
 

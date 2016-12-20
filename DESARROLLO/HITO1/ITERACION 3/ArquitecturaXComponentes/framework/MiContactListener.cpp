@@ -12,7 +12,7 @@
  */
 #include <Box2D.h>
 #include <iostream>
-#include "Entity2D.h"
+#include "../facade/Entity2D.h"
 #include "MiContactListener.h"
 
 MiContactListener::MiContactListener() {

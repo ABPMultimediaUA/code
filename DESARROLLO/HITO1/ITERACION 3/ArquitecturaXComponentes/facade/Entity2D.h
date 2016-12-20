@@ -13,37 +13,28 @@
 
 #ifndef ENTITY2D_H
 #define ENTITY2D_H
+
 #include <Box2D.h>
-#include <irrlicht.h>
-#include "RayCastCallback.h"
-
-using namespace irr;
-
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
+#include "../framework/vector3.h"
+//#include "../framework/RayCastCallback.h"
 
 class Entity2D {
 public:
-    Entity2D(b2World *world, vector3df pos);
-    Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala);
-    Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor);
-    Entity2D(b2World* world, vector3df pos, vector3df rot,  bool vivo);
+    Entity2D(b2World*, vector3);
+    Entity2D(b2World*, vector3, vector3, vector3);
+    Entity2D(b2World*, vector3, vector3, vector3, bool);
+    Entity2D(b2World*, vector3, vector3, bool);
     Entity2D(const Entity2D& orig);
     virtual ~Entity2D();
-    float rayCast(int modo);
+    //float rayCast(int modo);
     b2Body* getCuerpo2D();
-    float rayCasting(b2Vec2 inicio, b2Vec2 fin);
-    float llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
+    //float rayCasting(b2Vec2 inicio, b2Vec2 fin);
+    //float llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
     int getIDEN();
     bool getLive();
-    void setLive(bool x);
+    void setLive(bool);
     
 private:
-    
-    b2World *mundo;
     b2Body *body;
     b2BodyDef bodyDef;
     b2PolygonShape bodyShape;

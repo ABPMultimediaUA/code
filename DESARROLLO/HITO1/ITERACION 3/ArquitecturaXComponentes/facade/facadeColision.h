@@ -15,8 +15,9 @@
 #define FACADECOLISION_H
 
 #include <Box2D.h>
-#include "MiContactListener.h"
-#include "MyContactFilter.h"
+#include "../framework/MiContactListener.h"
+#include "../framework/MyContactFilter.h"
+#include "Entity2D.h"
 
 class facadeColision {
 public:
@@ -24,10 +25,13 @@ public:
     facadeColision(const facadeColision& orig);
     virtual ~facadeColision();
     void setWorldStep(float);
+    b2World* getWorld();
+    void newEntity2D();
 private:
     b2World* world;
     MiContactListener* contactListenerInstance;
     MyContactFilter* filtroContact;
+    std::map<gameEntity*, Entity2D*> entityMap;
 };
 
 #endif /* FACADECOLISION_H */

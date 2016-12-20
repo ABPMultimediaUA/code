@@ -21,9 +21,10 @@ class colisionComponent : public componente{
 public:
     colisionComponent();
     colisionComponent(const colisionComponent& orig);
+    colisionComponent(facadeColision*,vector3);
     virtual ~colisionComponent();
 private:
-    Entity2D *entity;
+    unsigned short id;
 };
 
 #endif /* COLISIONCOMPONENT_H */
