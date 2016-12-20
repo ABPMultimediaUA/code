@@ -10,6 +10,7 @@ Resources :=
 # Ruta del directorio donde tenemos Irrlicht instalado (donde estan los directorios lib e include)
 IrrlichtHome := tools\irrlicht184
 Box2DHome := tools\Box2D
+JsonHome := tools\rapidjson
 # Ruta del ejecutable generado
 BinPath = .
 # CXX = mingw32-g++

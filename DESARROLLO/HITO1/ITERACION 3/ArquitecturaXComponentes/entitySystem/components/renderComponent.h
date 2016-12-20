@@ -15,8 +15,8 @@
 #define RENDERCOMPONENT_H
 
 #include "componente.h"
-#include "../facade/facadeMotorGrafico.h"
-#include "../framework/vector3.h"
+#include "../../facade/facadeMotorGrafico.h"
+#include "../../framework/vector3.h"
 
 class renderComponent : public componente {
 public:

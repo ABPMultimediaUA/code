@@ -30,7 +30,7 @@ rotarSystem::rotarSystem(entityManager* eM) : system(eM) {
 rotarSystem::~rotarSystem() {
 }
 
-void rotarSystem::update(unsigned int dt){
+void rotarSystem::update(float dt){
     transformComponent* tr = dynamic_cast<transformComponent*>(getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(1),typeid(transformComponent).name()));
     renderComponent* re = dynamic_cast<renderComponent*>(getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(1),typeid(renderComponent).name()));
     vector3 mP = re->getMaya()->getMousePosition();

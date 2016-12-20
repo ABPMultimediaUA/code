@@ -15,7 +15,7 @@
 #define VELOCITYCOMPONENT_H
 
 #include "componente.h"
-#include "../framework/vector2.h"
+#include "../../framework/vector2.h"
 
 class velocityComponent : public componente {
 public:

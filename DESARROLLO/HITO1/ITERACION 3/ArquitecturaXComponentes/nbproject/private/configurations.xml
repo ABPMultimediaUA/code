@@ -4,6 +4,8 @@
     <df root="." name="0">
       <df name="entitySystem">
         <df name="components">
+          <in>cargadorComponente.cpp</in>
+          <in>cargadorComponente.h</in>
           <in>colisionComponent.cpp</in>
           <in>colisionComponent.h</in>
           <in>componente.cpp</in>
@@ -14,11 +16,7 @@
           <in>playerComponent.cpp</in>
           <in>playerComponent.h</in>
         </df>
-        <df name="facade">
-        </df>
         <df name="framework">
-          <in>gameClock.cpp</in>
-          <in>gameClock.h</in>
         </df>
         <df name="systems">
           <in>camaraSystem.cpp</in>
@@ -29,7 +27,35 @@
           <in>rotarSystem.h</in>
         </df>
       </df>
+      <df name="facade">
+        <in>CAppReceiver.cpp</in>
+        <in>CAppReceiver.h</in>
+        <in>Entity2D.cpp</in>
+        <in>Entity2D.h</in>
+        <in>MiContactListener.cpp</in>
+        <in>MiContactListener.h</in>
+        <in>MyContactFilter.cpp</in>
+        <in>MyContactFilter.h</in>
+        <in>RayCastCallback.cpp</in>
+        <in>RayCastCallback.h</in>
+        <in>facadeColision.cpp</in>
+        <in>facadeColision.h</in>
+        <in>facadeMotorGrafico.cpp</in>
+        <in>facadeMotorGrafico.h</in>
+        <in>readJson.cpp</in>
+        <in>readJson.h</in>
+      </df>
+      <df name="framework">
+        <in>gameClock.cpp</in>
+        <in>gameClock.h</in>
+        <in>vector2.cpp</in>
+        <in>vector2.h</in>
+        <in>vector3.cpp</in>
+        <in>vector3.h</in>
+      </df>
       <df name="resources">
+        <df name="stage">
+        </df>
         <df name="texture">
           <df name="life">
           </df>
@@ -1154,6 +1180,49 @@
               <in>main.cpp</in>
             </df>
           </df>
+        </df>
+        <df name="rapidjson">
+          <df name="error">
+            <in>en.h</in>
+            <in>error.h</in>
+          </df>
+          <df name="internal">
+            <in>biginteger.h</in>
+            <in>diyfp.h</in>
+            <in>dtoa.h</in>
+            <in>ieee754.h</in>
+            <in>itoa.h</in>
+            <in>meta.h</in>
+            <in>pow10.h</in>
+            <in>regex.h</in>
+            <in>stack.h</in>
+            <in>strfunc.h</in>
+            <in>strtod.h</in>
+            <in>swap.h</in>
+          </df>
+          <df name="msinttypes">
+            <in>inttypes.h</in>
+            <in>stdint.h</in>
+          </df>
+          <in>allocators.h</in>
+          <in>document.h</in>
+          <in>encodedstream.h</in>
+          <in>encodings.h</in>
+          <in>filereadstream.h</in>
+          <in>filewritestream.h</in>
+          <in>fwd.h</in>
+          <in>istreamwrapper.h</in>
+          <in>memorybuffer.h</in>
+          <in>memorystream.h</in>
+          <in>ostreamwrapper.h</in>
+          <in>pointer.h</in>
+          <in>prettywriter.h</in>
+          <in>rapidjson.h</in>
+          <in>reader.h</in>
+          <in>schema.h</in>
+          <in>stream.h</in>
+          <in>stringbuffer.h</in>
+          <in>writer.h</in>
         </df>
       </df>
     </df>

@@ -4,6 +4,8 @@
     <df root="." name="0">
       <df name="entitySystem">
         <df name="components">
+          <in>cargadorComponente.cpp</in>
+          <in>cargadorComponente.h</in>
           <in>colisionComponent.cpp</in>
           <in>colisionComponent.h</in>
           <in>componente.cpp</in>
@@ -12,15 +14,19 @@
           <in>handleMoverComponent.cpp</in>
           <in>playerComponent.cpp</in>
         </df>
-        <df name="framework">
-          <in>gameClock.cpp</in>
-        </df>
         <df name="systems">
           <in>camaraSystem.cpp</in>
           <in>handleMoverSystem.cpp</in>
           <in>rotarSystem.cpp</in>
           <in>rotarSystem.h</in>
         </df>
+      </df>
+      <df name="facade">
+        <in>facadeColision.cpp</in>
+        <in>facadeColision.h</in>
+      </df>
+      <df name="framework">
+        <in>gameClock.cpp</in>
       </df>
     </df>
     <logicalFolder name="f2" displayName="Header" projectFiles="true">
@@ -116,6 +122,16 @@
             flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="entitySystem/components/cargadorComponente.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/components/cargadorComponente.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
       <item path="entitySystem/components/colisionComponent.cpp"
             ex="false"
@@ -221,13 +237,6 @@
         <ccTool flags="0">
         </ccTool>
       </item>
-      <item path="entitySystem/framework/gameClock.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
       <item path="entitySystem/framework/gameEntity.cpp"
             ex="false"
             tool="1"
@@ -296,6 +305,14 @@
       <item path="entitySystem/systems/rotarSystem.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="entitySystem/systems/system.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="facade/facadeColision.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="facade/facadeColision.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="framework/gameClock.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
       </item>

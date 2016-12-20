@@ -23,7 +23,7 @@ public:
     camaraSystem(const camaraSystem& orig);
     camaraSystem(entityManager*);
     virtual ~camaraSystem();
-    void update(double, unsigned int);
+    void update(float, unsigned int);
 private:
 
 };

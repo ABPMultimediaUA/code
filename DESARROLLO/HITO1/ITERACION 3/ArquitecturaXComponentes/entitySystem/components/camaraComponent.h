@@ -15,8 +15,8 @@
 #define CAMARACOMPONENT_H
 
 #include "componente.h"
-#include "../framework/vector3.h"
-#include "../facade/facadeMotorGrafico.h"
+#include "../../framework/vector3.h"
+#include "../../facade/facadeMotorGrafico.h"
 
 class camaraComponent : public componente {
 public:

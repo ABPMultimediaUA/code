@@ -15,6 +15,7 @@
 #define COLISIONCOMPONENT_H
 
 #include "componente.h"
+#include "../../facade/Entity2D.h"
 
 class colisionComponent : public componente{
 public:
@@ -22,7 +23,7 @@ public:
     colisionComponent(const colisionComponent& orig);
     virtual ~colisionComponent();
 private:
-
+    Entity2D *entity;
 };
 
 #endif /* COLISIONCOMPONENT_H */

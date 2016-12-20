@@ -15,7 +15,7 @@
 #define ROTARSYSTEM_H
 
 #include "system.h"
-#include "../facade/facadeMotorGrafico.h"
+#include "../../facade/facadeMotorGrafico.h"
 
 class rotarSystem : public system {
 public:
@@ -23,7 +23,7 @@ public:
     rotarSystem(const rotarSystem& orig);
     rotarSystem(entityManager*);
     virtual ~rotarSystem();
-    void update(unsigned int);
+    void update(float);
 private:
 
 };

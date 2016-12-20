@@ -15,7 +15,7 @@
 #define TRANSFORMCOMPONENT_H
 
 #include "componente.h"
-#include "../framework/vector3.h"
+#include "../../framework/vector3.h"
 
 class transformComponent : public componente {
 public:

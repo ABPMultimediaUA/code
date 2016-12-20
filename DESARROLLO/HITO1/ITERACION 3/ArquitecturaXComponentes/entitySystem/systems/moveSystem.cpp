@@ -32,7 +32,7 @@ moveSystem::moveSystem(entityManager* eM) : system(eM) {
 moveSystem::~moveSystem() {
 }
 
-void moveSystem::update(double dt){
+void moveSystem::update(float dt){
     std::vector< std::pair<gameEntity*,componente*> > v = this->getEntityManager()->getAllComponentType(typeid(transformComponent).name());
     for (unsigned short i = 0; i < v.size(); ++i){
         if(*v.at(i).first->getID() == 1){

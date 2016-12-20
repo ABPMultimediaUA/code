@@ -33,7 +33,7 @@ camaraSystem::camaraSystem(entityManager *eM) : system(eM) {
 camaraSystem::~camaraSystem() {
 }
 
-void camaraSystem::update(double dt, unsigned int id){
+void camaraSystem::update(float dt, unsigned int id){
     handleMoverComponent *pl =  dynamic_cast<handleMoverComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(1),typeid(handleMoverComponent).name()));
     if(pl->getLastDirr() != 9){
         camaraComponent *cam = dynamic_cast<camaraComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(id),typeid(camaraComponent).name()));

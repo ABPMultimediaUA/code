@@ -15,7 +15,6 @@
 #define PLAYERSYSTEM_H
 
 #include "system.h"
-#include "../facade/facadeMotorGrafico.h"
 
 class playerSystem : public system {
 public:
