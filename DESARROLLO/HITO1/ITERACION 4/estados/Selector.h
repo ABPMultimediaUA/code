@@ -13,7 +13,7 @@
 
 #ifndef SELECTOR_H
 #define SELECTOR_H
-#include <List>
+#include <vector>
 #include <iterator>
 #include "Nodo.h"
 
@@ -22,7 +22,7 @@ public:
     Selector();
     Selector(const Selector& orig);
     virtual ~Selector();
-    std::list<Nodo*> hijos;
+    std::vector<Nodo*> hijos;
     virtual bool Ejecutar();
     virtual void Anyadir(Nodo* n);
 private:

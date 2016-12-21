@@ -13,7 +13,7 @@
 
 #ifndef SECUENCIA_H
 #define SECUENCIA_H
-#include <List>
+#include <vector>
 #include <iterator>
 #include "Nodo.h"
 
@@ -22,7 +22,7 @@ public:
     Secuencia();
     Secuencia(const Secuencia& orig);
     virtual ~Secuencia();
-    std::list<Nodo*> hijos;
+    std::vector<Nodo*> hijos;
     virtual bool Ejecutar();
     virtual void Anyadir(Nodo* n);
 private:

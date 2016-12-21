@@ -26,7 +26,7 @@ bool Selector::Ejecutar(){
     bool result;
     
      std::cout<<"Entro en bucle Selector"<<std::endl;
-    for(std::list<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
+    for(std::vector<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
         result=(*it)->Ejecutar();
         
         if(result){
@@ -38,5 +38,5 @@ bool Selector::Ejecutar(){
 }
 
 void Selector::Anyadir(Nodo* n){
-    hijos.push_front(n);
+    hijos.push_back(n);
 }
