@@ -14,7 +14,7 @@
 #include "Nodo2.h"
 
 Nodo2::Nodo2() {
-    id=2;
+    
 }
 
 Nodo2::Nodo2(const Nodo2& orig) {
@@ -24,16 +24,6 @@ Nodo2::~Nodo2() {
 }
 
 bool Nodo2::Ejecutar(){
-     //std::cout<<"El nodo funciona."<<std::endl;
-    bool result=false;
-    if(hijos.empty()){
-        std::cout<<"No hay hijos en Nodo2"<<std::endl;
-        return result;
-    }
-    else{
-    for(std::list<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
-        result=(*it)->Ejecutar();
-    }
-    }
-    return result;
+     std::cout<<"Este es el nodo 2."<<std::endl;
+     return true;
 }

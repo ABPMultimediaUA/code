@@ -23,12 +23,11 @@
 class Nodo {
 public:
     Nodo();
-    Nodo(const Nodo& orig);
+    Nodo (const Nodo& orig);
     virtual ~Nodo();
     virtual bool Ejecutar();
-    std::list<Nodo*> hijos;
-    void Extra(Nodo* n);
-    int id;
+    virtual void Anyadir(Nodo* n);
+    
 private:
 
 };

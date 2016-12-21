@@ -6,7 +6,7 @@
 
 /* 
  * File:   Secuencia.cpp
- * Author: RicharRisa
+ * Author: Iván
  * 
  * Created on 18 de diciembre de 2016, 19:19
  */
@@ -36,4 +36,8 @@ bool Secuencia::Ejecutar(){
     }
     
     return result;//verdadero
+}
+
+void Secuencia::Anyadir(Nodo* n){
+    hijos.push_front(n);
 }

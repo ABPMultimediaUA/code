@@ -6,7 +6,7 @@
 
 /* 
  * File:   Selector.cpp
- * Author: RicharRisa
+ * Author: Iván
  * 
  * Created on 18 de diciembre de 2016, 19:28
  */
@@ -35,4 +35,8 @@ bool Selector::Ejecutar(){
     }
     
     return result;//falso
+}
+
+void Selector::Anyadir(Nodo* n){
+    hijos.push_front(n);
 }

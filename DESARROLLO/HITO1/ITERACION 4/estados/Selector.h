@@ -6,7 +6,7 @@
 
 /* 
  * File:   Selector.h
- * Author: RicharRisa
+ * Author: Iván
  *
  * Created on 18 de diciembre de 2016, 19:28
  */
@@ -22,9 +22,12 @@ public:
     Selector();
     Selector(const Selector& orig);
     virtual ~Selector();
+    std::list<Nodo*> hijos;
     virtual bool Ejecutar();
+    virtual void Anyadir(Nodo* n);
 private:
 
+    
 };
 
 #endif /* SELECTOR_H */

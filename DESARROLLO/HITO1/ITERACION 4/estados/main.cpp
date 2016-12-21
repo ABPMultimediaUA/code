@@ -61,20 +61,20 @@ int main() {
     //cambiar la camara activa smgr->setActiveCamera(camera);
 
     //BehaviorTree
-    Nodo *n=new Nodo();
+    //Nodo *n=new Nodo();
     Nodo1 *n1=new Nodo1();
     Nodo2 *n2=new Nodo2();
-    //Secuencia *ns=new Secuencia();
-    Selector *nsr= new Selector();
-    nsr->Extra(n2);
-    nsr->Extra(n1);
-    n->Extra(nsr);
+    Secuencia *ns=new Secuencia();
+    //Selector *nsr= new Selector();
+    ns->Anyadir(n2);
+    ns->Anyadir(n1);
+    //n->Anyadir(nsr);
     
     //std::cout<<n->hijos.size()<<std::endl;
     
     
     Personaje *pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
-    Enemigo *ene = new Enemigo(smgr, driver, world, n);
+    Enemigo *ene = new Enemigo(smgr, driver, world, ns);
     Escenario *esce = new Escenario(smgr, driver);
     Camara *cam = new Camara(smgr);
     //smgr->addCameraSceneNode(0, vector3df(0,30,-40), vector3df(0,5,0)); //se añade una camara al grafo

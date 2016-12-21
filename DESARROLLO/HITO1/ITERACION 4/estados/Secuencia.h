@@ -6,7 +6,7 @@
 
 /* 
  * File:   Secuencia.h
- * Author: RicharRisa
+ * Author: Iván
  *
  * Created on 18 de diciembre de 2016, 19:19
  */
@@ -22,7 +22,9 @@ public:
     Secuencia();
     Secuencia(const Secuencia& orig);
     virtual ~Secuencia();
+    std::list<Nodo*> hijos;
     virtual bool Ejecutar();
+    virtual void Anyadir(Nodo* n);
 private:
 
 };

@@ -16,7 +16,7 @@
 
 Nodo::Nodo() {
     
-    id=0;
+   
     
 }
 
@@ -27,6 +27,7 @@ Nodo::~Nodo() {
 }
 
 bool Nodo::Ejecutar(){
+    /*
      //std::cout<<"El nodo funciona."<<std::endl;
     bool result;
     //std::cout<<hijos.size()<<std::endl;
@@ -46,8 +47,9 @@ bool Nodo::Ejecutar(){
     }
     }
     return result;
+    */
 }
 
-void Nodo::Extra(Nodo* n){
-    hijos.push_front(n);
+void Nodo::Anyadir(Nodo* n){
+   // hijos.push_front(n);
 }
