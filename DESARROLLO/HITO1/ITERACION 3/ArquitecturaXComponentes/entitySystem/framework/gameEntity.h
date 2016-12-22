@@ -18,11 +18,13 @@ class gameEntity {
 public:
     gameEntity();
     gameEntity(const gameEntity& orig);
-    gameEntity(int);
+    gameEntity(int,const char*);
     virtual ~gameEntity();
-    int* getID();
+    int getID();
+    const char* getTipo();
 private:
-    int *id;
+    int id;
+    const char* tipo; 
 };
 
 #endif /* GAMEENTITY_H */

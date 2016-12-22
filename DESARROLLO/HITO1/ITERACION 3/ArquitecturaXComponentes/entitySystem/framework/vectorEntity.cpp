@@ -90,6 +90,6 @@ unsigned short vectorEntity::size(){
 void vectorEntity::printAllEntitysID(){
     std::cout<<"Print Entitys ID"<<std::endl;
     for(unsigned short i = 0; i < (*u); i++){
-        std::cout<<"vE["<<i<<"]->getID() = "<<*vE[i]->getID()<<std::endl;
+        std::cout<<"vE["<<i<<"]->getID() = "<<vE[i]->getID()<<std::endl;
     }
 }

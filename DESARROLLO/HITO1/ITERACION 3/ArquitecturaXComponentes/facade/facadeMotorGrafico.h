@@ -18,6 +18,7 @@
 #include <map>
 #include "../framework/vector3.h"
 #include "CAppReceiver.h"
+#include "../entitySystem/framework/entityManager.h"
 
 using namespace irr;
 using namespace core;
@@ -51,8 +52,8 @@ public:
     void yield();
     void drop();
     void close();
-    int* addMaya(int*, const char*, vector3*);
-    int* addCamera(int*, vector3*, vector3*);
+    int addMaya(unsigned short,const char*, vector3);
+    int addCamera(int, vector3*, vector3*);
     vector3 getCameraFoco(int*);
     void borrarPorIDCamara(int);
     void borrarPorIDMaya(int);
@@ -66,6 +67,8 @@ public:
     void setPosicionMaya(int, vector3);
     vector3 getMousePosition();
     void setRotationMaya(int,vector3);
+    bool getClickIZQ();
+    void accionPulsada(entityManager*);
 private:
     IrrlichtDevice *device; //ventana del Juego
     IVideoDriver *driver;
@@ -74,8 +77,9 @@ private:
     std::map<int,IMeshSceneNode*> *mayas; //Mayas de los Objetos de la scena
     std::map<int,ICameraSceneNode*> *camaras; //Camaras de la scena
     ISceneNode *node; //Para el movimiento y captura del raton
-    unsigned int *then; //variable para el control temporal
     CAppReceiver *teclado;
+    unsigned long posMaya;
+    unsigned long posCamara;
 };
 
 #endif /* FACADEMOTORGRAFICO_H */

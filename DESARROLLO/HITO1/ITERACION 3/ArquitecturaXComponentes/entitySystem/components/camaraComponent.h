@@ -22,7 +22,7 @@ class camaraComponent : public componente {
 public:
     camaraComponent();
     camaraComponent(const camaraComponent& orig);
-    camaraComponent(facadeMotorGrafico*, int*, vector3*, vector3*);
+    camaraComponent(facadeMotorGrafico*, int, vector3*, vector3*);
     virtual ~camaraComponent();
     void setFoco(vector3*);
     void setFoco(float,float,float);
@@ -33,11 +33,11 @@ public:
     float getFocoZ();
     facadeMotorGrafico* getCamara();
     void setFoco(int*);
-    void crearCamara(int*, vector3*, vector3*);
+    void crearCamara(int, vector3*, vector3*);
 private:
     vector3 *foco;
     facadeMotorGrafico *camara;
-    int *posCamara;
+    int posCamara;
 };
 
 #endif /* CAMARACOMPONENT_H */

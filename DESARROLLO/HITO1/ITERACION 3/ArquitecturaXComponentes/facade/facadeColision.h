@@ -15,8 +15,12 @@
 #define FACADECOLISION_H
 
 #include <Box2D.h>
+#include <map>
 #include "../framework/MiContactListener.h"
 #include "../framework/MyContactFilter.h"
+#include "../entitySystem/framework/gameEntity.h"
+#include "../framework/vector2.h"
+#include "../framework/vector3.h"
 #include "Entity2D.h"
 
 class facadeColision {
@@ -25,13 +29,23 @@ public:
     facadeColision(const facadeColision& orig);
     virtual ~facadeColision();
     void setWorldStep(float);
-    b2World* getWorld();
-    void newEntity2D();
+    unsigned long newEntity2D(vector3);
+    unsigned long newEntity2D(vector3,vector3,bool);
+    vector3 moveEntity2D0(int,vector2);
+    vector3 moveEntity2D1(int,vector2);
+    vector3 moveEntity2D2(int,vector2);
+    vector3 moveEntity2D3(int,vector2);
+    vector3 moveEntity2D4(int,vector2);
+    vector3 moveEntity2D5(int,vector2);
+    vector3 moveEntity2D6(int,vector2);
+    vector3 moveEntity2D7(int,vector2);
+    void setEntity2DVelocity(int,vector2);
 private:
     b2World* world;
     MiContactListener* contactListenerInstance;
     MyContactFilter* filtroContact;
-    std::map<gameEntity*, Entity2D*> entityMap;
+    std::map<int, Entity2D*>* entityMap;
+    unsigned long numEntity2D;
 };
 
 #endif /* FACADECOLISION_H */

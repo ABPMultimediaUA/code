@@ -13,24 +13,21 @@
 
 #include "gameEntity.h"
 
-gameEntity::gameEntity() {
-    this->id = new int();
-}
+gameEntity::gameEntity() {}
 
 gameEntity::gameEntity(const gameEntity& orig) {
-    this->id = new int();
-    this->id = orig.id;
+    id = orig.id;
+    tipo = orig.tipo;
 }
 
-gameEntity::gameEntity(int _id){
-    id = new int();
-    *id = _id;
+gameEntity::gameEntity(int _id, const char* t){
+    id = _id;
+    tipo = t;
 }
 
 gameEntity::~gameEntity() {
-    delete this->id;
 }
 
-int* gameEntity::getID(){
-    return this->id;
+int gameEntity::getID(){
+    return id;
 }

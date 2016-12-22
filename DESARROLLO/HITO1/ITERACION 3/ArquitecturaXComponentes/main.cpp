@@ -26,11 +26,15 @@
 #include "entitySystem/systems/camaraSystem.h"
 #include "entitySystem/systems/moveSystem.h"
 #include "entitySystem/systems/rotarSystem.h"
+#include "entitySystem/components/colisionComponent.h"
+#include "entitySystem/systems/disparoSystem.h"
+#include "entitySystem/components/cargadorComponent.h"
 
 #define kUpdateTimePS15 1000/15
 
 int main(){
     facadeMotorGrafico *fMG = new facadeMotorGrafico(640,480);
+    facadeColision *fC = new facadeColision();
     if(fMG->deviceOK()){
 	return 1;
     }
@@ -41,18 +45,21 @@ int main(){
     camaraSystem *cS = new camaraSystem(eM);
     moveSystem *mS = new moveSystem(eM);
     rotarSystem *rS = new rotarSystem(eM);
+    disparoSystem *dS = new disparoSystem(eM);
     
     //Jugador 1
-    eM->addEntity();
+    eM->addEntity("Jugador");
     eM->addComponentToEntity(eM->getEntity(1), new handleMoverComponent());
-    eM->addComponentToEntity(eM->getEntity(1), new transformComponent(new vector3(0, 0, 0), new vector3(0, 0, 0), new vector3(1, 1, 1)));
-    eM->addComponentToEntity(eM->getEntity(1), new velocityComponent(new vector2(20,20)));
-    eM->addComponentToEntity(eM->getEntity(1), new renderComponent(fMG, eM->getEntity(1)->getID(), "resources/texture/life/bruce.jpg", new vector3(0, 0, 0)));
+    eM->addComponentToEntity(eM->getEntity(1), new transformComponent(vector3(0, 0, 0), vector3(0, 0, 0), vector3(0, 0, 0)));
+    eM->addComponentToEntity(eM->getEntity(1), new velocityComponent(vector2(100.0f,100.0f)));
+    eM->addComponentToEntity(eM->getEntity(1), new colisionComponent(fC,vector3(0, 0, 0)));
+    eM->addComponentToEntity(eM->getEntity(1), new renderComponent(1, fMG, "resources/texture/life/bruce.jpg", vector3(0, 0, 0)));
+    eM->addComponentToEntity(eM->getEntity(1), new cargadorComponent(30));
     //Camara 2
-    eM->addEntity();
-    eM->addComponentToEntity(eM->getEntity(2), new camaraComponent(fMG, eM->getEntity(2)->getID(), new vector3(0, 30, -40), new vector3(0, 5, 0)));
-    eM->addComponentToEntity(eM->getEntity(2), new transformComponent(new vector3(0, 30, -40), new vector3(0, 0, 0), new vector3(1, 1, 1)));
-    eM->addComponentToEntity(eM->getEntity(2), new velocityComponent(new vector2(20,20)));
+    eM->addEntity("Camara");
+    eM->addComponentToEntity(eM->getEntity(2), new camaraComponent(fMG, eM->getEntity(2)->getID(), new vector3(0, 70, -40), new vector3(0, 5, 0)));
+    eM->addComponentToEntity(eM->getEntity(2), new transformComponent(vector3(0, 70, -40),vector3(0, 0, 0),vector3(0, 0, 0)));
+    eM->addComponentToEntity(eM->getEntity(2), new velocityComponent(vector2(100.0f,100.0f)));
     
     fMG->addStaticTextProva();
     gameClock *clock = new gameClock();
@@ -66,22 +73,20 @@ int main(){
             /*    Imput    */
             /**************/
             hMS->update(fMG);
-            rS->update(dt);
+            rS->update(fMG);
+            dS->update(fC, fMG, clock);
             /*****************/
             /*    update    */
             /***************/
-            dt = clock->getTime() - time;
-            if(dt>kUpdateTimePS15){
-                dt = dt/1000.f;
-                mS->update(dt);
-                cS->update((dt),2);
-                time = clock->getTime();
-            }
+            dt = (clock->getTime() - time)/1000.f;
+            fC->setWorldStep(dt);
+            mS->update(fC, fMG);
+            cS->update(2);
             /*****************/
             /*    Render    */
             /***************/
             fMG->render(255,100,101,140);
-            
+            time = clock->getTime();
         }
         else{
             fMG->yield();

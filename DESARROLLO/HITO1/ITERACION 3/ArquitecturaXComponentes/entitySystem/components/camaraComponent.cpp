@@ -17,7 +17,6 @@
 
 camaraComponent::camaraComponent() : componente(typeid(camaraComponent).name()) {
     foco = new vector3();
-    posCamara = new int();
 }
 
 camaraComponent::camaraComponent(const camaraComponent& orig) : componente(typeid(camaraComponent).name()) {
@@ -26,7 +25,7 @@ camaraComponent::camaraComponent(const camaraComponent& orig) : componente(typei
     posCamara = orig.posCamara;
 }
 
-camaraComponent::camaraComponent(facadeMotorGrafico *fMG, int *id, vector3 *vp, vector3 *vf) : componente(typeid(camaraComponent).name()) {
+camaraComponent::camaraComponent(facadeMotorGrafico *fMG, int id, vector3 *vp, vector3 *vf) : componente(typeid(camaraComponent).name()) {
     foco = vf;
     camara = fMG;
     posCamara = camara->addCamera(id,vp,vf);
@@ -34,8 +33,7 @@ camaraComponent::camaraComponent(facadeMotorGrafico *fMG, int *id, vector3 *vp, 
 
 camaraComponent::~camaraComponent() {
     delete foco;
-    camara->borrarPorIDCamara(*posCamara);
-    delete posCamara;
+    camara->borrarPorIDCamara(posCamara);
     std::cout<<"Borrado el componente Camara"<<std::endl;
 }
 
@@ -75,6 +73,6 @@ void camaraComponent::setFoco(int *c){
     camara->getCameraFoco(c);
 }
 
-void camaraComponent::crearCamara(int *id, vector3 *v1, vector3 *v2){
+void camaraComponent::crearCamara(int id, vector3 *v1, vector3 *v2){
     posCamara = camara->addCamera(id,v1,v2);
 }

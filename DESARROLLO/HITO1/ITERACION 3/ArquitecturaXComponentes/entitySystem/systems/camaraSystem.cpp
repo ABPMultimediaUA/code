@@ -33,49 +33,14 @@ camaraSystem::camaraSystem(entityManager *eM) : system(eM) {
 camaraSystem::~camaraSystem() {
 }
 
-void camaraSystem::update(float dt, unsigned int id){
-    handleMoverComponent *pl =  dynamic_cast<handleMoverComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(1),typeid(handleMoverComponent).name()));
-    if(pl->getLastDirr() != 9){
+void camaraSystem::update(unsigned int id){
+    transformComponent *posPer = dynamic_cast<transformComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(1),typeid(transformComponent).name()));
+    if(posPer->getModificado()){
+        transformComponent *posCam = dynamic_cast<transformComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(id),typeid(transformComponent).name()));
         camaraComponent *cam = dynamic_cast<camaraComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(id),typeid(camaraComponent).name()));
-        velocityComponent *vel = dynamic_cast<velocityComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(id),typeid(velocityComponent).name()));
-        transformComponent *pos = dynamic_cast<transformComponent*>(this->getEntityManager()->getComponentOffEntity(getEntityManager()->getEntity(id),typeid(transformComponent).name()));
-        switch(pl->getLastDirr()){
-            case 0:
-                cam->setFoco((cam->getFocoX()+(vel->getVelocidad().getX()*dt)), cam->getFocoY(), cam->getFocoZ());
-                pos->setPosicion((pos->getPosicion().getX()+(vel->getVelocidad().getX()*dt)), pos->getPosicion().getY(), pos->getPosicion().getZ());
-                break;
-            case 1:
-                cam->setFoco((cam->getFocoX()-(vel->getVelocidad().getX()*dt)), cam->getFocoY(), cam->getFocoZ());
-                pos->setPosicion((pos->getPosicion().getX()-(vel->getVelocidad().getX()*dt)), pos->getPosicion().getY(), pos->getPosicion().getZ());
-                break;
-            case 2:
-                cam->setFoco(cam->getFocoX(), cam->getFocoY(), (cam->getFocoZ()+(vel->getVelocidad().getX()*dt)));
-                pos->setPosicion(pos->getPosicion().getX(),pos->getPosicion().getY(),(pos->getPosicion().getZ()+(vel->getVelocidad().getX()*dt)));
-                break;
-            case 3:
-                cam->setFoco(cam->getFocoX(), cam->getFocoY(), (cam->getFocoZ()-(vel->getVelocidad().getX()*dt)));
-                pos->setPosicion(pos->getPosicion().getX(), pos->getPosicion().getY(), (pos->getPosicion().getZ()-(vel->getVelocidad().getX()*dt)));
-                break;
-            case 4:
-                cam->setFoco((cam->getFocoX()+(vel->getVelocidad().getX()*dt)), cam->getFocoY(), (cam->getFocoZ()+(vel->getVelocidad().getX()*dt)));
-                pos->setPosicion((pos->getPosicion().getX()+(vel->getVelocidad().getX()*dt)), pos->getPosicion().getY(), (pos->getPosicion().getZ()+(vel->getVelocidad().getX()*dt)));
-                break;
-            case 5:
-                cam->setFoco((cam->getFocoX()+(vel->getVelocidad().getX()*dt)), cam->getFocoY(), (cam->getFocoZ()-(vel->getVelocidad().getX()*dt)));
-                pos->setPosicion((pos->getPosicion().getX()+(vel->getVelocidad().getX()*dt)), pos->getPosicion().getY(), (pos->getPosicion().getZ()-(vel->getVelocidad().getX()*dt)));
-                break;
-            case 6:
-                cam->setFoco((cam->getFocoX()-(vel->getVelocidad().getX()*dt)), cam->getFocoY(), (cam->getFocoZ()-(vel->getVelocidad().getX()*dt)));
-                pos->setPosicion((pos->getPosicion().getX()-(vel->getVelocidad().getX()*dt)), pos->getPosicion().getY(), (pos->getPosicion().getZ()-(vel->getVelocidad().getX()*dt)));
-                break;
-            case 7:
-                cam->setFoco((cam->getFocoX()-(vel->getVelocidad().getX()*dt)), cam->getFocoY(), (cam->getFocoZ()+(vel->getVelocidad().getX()*dt)));
-                pos->setPosicion((pos->getPosicion().getX()-(vel->getVelocidad().getX()*dt)), pos->getPosicion().getY(), (pos->getPosicion().getZ()+(vel->getVelocidad().getX()*dt)));
-                break;
-        }
-        std::cout<<"============== CAMARA =============="<<std::endl;
-        std::cout<<"Nueva Posicion Camara: X = "<<pos->getPosicion().getX()<<" Y = "<<pos->getPosicion().getY()<<" Z = "<<pos->getPosicion().getZ()<<" dt: "<<dt<<std::endl;
-        std::cout<<"Nueva Foco Camara: X = "<<cam->getFocoX()<<" Y = "<<cam->getFocoY()<<" Z = "<<cam->getFocoZ()<<std::endl;
-        cam->getCamara()->setFocoandPoscionCamara(id,cam->getFoco(),pos->getPosicion());
+        posCam->setPosicion(posPer->getPosicion().getX(), 70.0f, (posPer->getPosicion().getZ() - 40));
+        cam->setFoco(posPer->getPosicion().getX(), posPer->getPosicion().getY(), posPer->getPosicion().getZ());
+        cam->getCamara()->setFocoandPoscionCamara(id,cam->getFoco(),posCam->getPosicion());
+        posPer->setModificado(false);
     }
 }

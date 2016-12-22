@@ -21,13 +21,13 @@ class velocityComponent : public componente {
 public:
     velocityComponent();
     velocityComponent(const velocityComponent& orig);
-    velocityComponent(vector2*);
+    velocityComponent(vector2);
     virtual ~velocityComponent();
     void setVelocidad(float,float);
     void setVelocidad(vector2);
     vector2 getVelocidad();
 private:
-    vector2 *velocidad;
+    vector2 velocidad;
 };
 
 #endif /* VELOCITYCOMPONENT_H */

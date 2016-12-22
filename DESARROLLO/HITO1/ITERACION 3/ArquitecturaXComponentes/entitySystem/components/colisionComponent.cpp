@@ -14,7 +14,6 @@
 #include <typeinfo>
 
 #include "colisionComponent.h"
-#include "facade/facadeColision.h"
 
 colisionComponent::colisionComponent() : componente(typeid(colisionComponent).name()) {
 }
@@ -22,9 +21,17 @@ colisionComponent::colisionComponent() : componente(typeid(colisionComponent).na
 colisionComponent::colisionComponent(const colisionComponent& orig) : componente(typeid(colisionComponent).name()) {
 }
 
-colisionComponent::colisionComponent(facadeColision* fC, vector3 p) : componente(typeid(colisionComponent).name()) {
+colisionComponent::colisionComponent(facadeColision* fC, vector3 v) : componente(typeid(colisionComponent).name()) {
+    pos = fC->newEntity2D(v);
+}
+
+colisionComponent::colisionComponent(facadeColision* fC, vector3 v, vector3 r, bool s) : componente(typeid(colisionComponent).name()) {
+    pos = fC->newEntity2D(v,r,s);
 }
 
 colisionComponent::~colisionComponent() {
 }
 
+unsigned long colisionComponent::getPosCol(){
+    return pos;
+}

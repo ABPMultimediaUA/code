@@ -16,11 +16,24 @@
 #include "cargadorComponent.h"
 
 cargadorComponent::cargadorComponent() : componente(typeid(cargadorComponent).name()) {
+    cargador = 30;
 }
 
 cargadorComponent::cargadorComponent(const cargadorComponent& orig) : componente(typeid(cargadorComponent).name()) {
+    cargador = orig.cargador;
+}
+
+cargadorComponent::cargadorComponent(unsigned short c) : componente(typeid(cargadorComponent).name()) {
+    cargador = c;
 }
 
 cargadorComponent::~cargadorComponent() {
 }
 
+void cargadorComponent::setCargador(unsigned short c){
+    cargador = c;
+}
+
+unsigned short cargadorComponent::getCargador(){
+    return cargador;
+}

@@ -20,19 +20,12 @@ class cargadorComponent : public componente{
 public:
     cargadorComponent();
     cargadorComponent(const cargadorComponent& orig);
-    cargadorComponent(int, float, bool);
+    cargadorComponent(unsigned short);
     virtual ~cargadorComponent();
-    void setCargador(int);
-    void setTiempoDisparo(float);
-    void setDisparo(bool);
-    int getCargador();
-    float getTiempoDisparo();
-    bool getDisparo();
+    void setCargador(unsigned short);
+    unsigned short getCargador();
 private:
-    int cargador;
-    float tiempoDisparo;
-    bool disparo;
-    //std::list<Bala*> listaBalas;
+    unsigned short cargador;
 };
 
 #endif /* CARGADORCOMPONENT_H */

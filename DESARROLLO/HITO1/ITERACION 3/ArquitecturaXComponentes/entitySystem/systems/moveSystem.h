@@ -15,6 +15,8 @@
 #define MOVESYSTEM_H
 
 #include "system.h"
+#include "../../facade/facadeColision.h"
+#include "../../facade/facadeMotorGrafico.h"
 
 class moveSystem : public system {
 public:
@@ -22,7 +24,7 @@ public:
     moveSystem(const moveSystem& orig);
     moveSystem(entityManager*);
     virtual ~moveSystem();
-    void update(float);
+    void update(facadeColision*, facadeMotorGrafico*);
 private:
 
 };

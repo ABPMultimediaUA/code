@@ -25,28 +25,21 @@ using namespace gui;
 renderComponent::renderComponent() : componente(typeid(renderComponent).name()) {}
 
 renderComponent::renderComponent(const renderComponent& orig) : componente(typeid(renderComponent).name()) {
-    maya = orig.maya;
     posMaya = orig.posMaya;
 }
 
 renderComponent::~renderComponent() {
-    maya->borrarPorIDMaya(*posMaya);
     std::cout<<"Borrado Componente render"<<std::endl;
 }
 
-renderComponent::renderComponent(facadeMotorGrafico *fMG, int *id, const char *textura, vector3 *vp) : componente(typeid(renderComponent).name()) {
-    maya = fMG;
-    posMaya = maya->addMaya(id,textura,vp);
+renderComponent::renderComponent(unsigned short t, facadeMotorGrafico *fMG, const char *textura, vector3 vp) : componente(typeid(renderComponent).name()) {
+    posMaya = fMG->addMaya(t,textura,vp);
 }
 
-facadeMotorGrafico* renderComponent::getMaya(){
-    return maya;
+void renderComponent::crearMaya(unsigned short t, facadeMotorGrafico *fMG, const char *textura, vector3 vp){
+    posMaya = fMG->addMaya(t,textura,vp);
 }
 
-void renderComponent::setMaya(facadeMotorGrafico *fMG){
-    maya = fMG;
-}
-
-void renderComponent::crearMaya(int *id, const char *textura, vector3 *vp){
-    posMaya = maya->addMaya(id,textura,vp);
+int renderComponent::getPosMaya(){
+    return posMaya;
 }

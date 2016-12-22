@@ -4,15 +4,21 @@
     <df root="." name="0">
       <df name="entitySystem">
         <df name="components">
+          <in>balaComponent.cpp</in>
+          <in>balaComponent.h</in>
           <in>cargadorComponent.cpp</in>
           <in>colisionComponent.cpp</in>
           <in>componente.cpp</in>
           <in>escenarioComponent.cpp</in>
           <in>handleMoverComponent.cpp</in>
+          <in>healthComponent.cpp</in>
+          <in>healthComponent.h</in>
           <in>playerComponent.cpp</in>
         </df>
         <df name="systems">
           <in>camaraSystem.cpp</in>
+          <in>disparoSystem.cpp</in>
+          <in>disparoSystem.h</in>
           <in>handleMoverSystem.cpp</in>
           <in>rotarSystem.cpp</in>
         </df>
@@ -116,16 +122,21 @@
           <preBuildCommand></preBuildCommand>
         </preBuild>
       </makefileType>
+      <item path="entitySystem/components/balaComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/components/balaComponent.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="entitySystem/components/camaraComponent.cpp"
             ex="false"
             tool="1"
             flavor2="0">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/components/cargadorComponent.cpp"
@@ -163,6 +174,16 @@
         <ccTool flags="0">
         </ccTool>
       </item>
+      <item path="entitySystem/components/healthComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/components/healthComponent.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="entitySystem/components/playerComponent.cpp"
             ex="false"
             tool="1"
@@ -175,11 +196,6 @@
             tool="1"
             flavor2="0">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/components/stateMachineComponent.cpp"
@@ -187,11 +203,6 @@
             tool="1"
             flavor2="0">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/components/transformComponent.cpp"
@@ -199,11 +210,6 @@
             tool="1"
             flavor2="0">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/components/velocityComponent.cpp"
@@ -211,11 +217,6 @@
             tool="1"
             flavor2="0">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/facade/CAppReceiver.cpp"
@@ -224,9 +225,6 @@
             flavor2="4">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
             <pElem>entitySystem/facade</pElem>
           </incDir>
         </ccTool>
@@ -237,9 +235,6 @@
             flavor2="4">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
             <pElem>entitySystem/facade</pElem>
           </incDir>
         </ccTool>
@@ -247,9 +242,6 @@
       <item path="entitySystem/framework/camara.cpp" ex="false" tool="1" flavor2="4">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
             <pElem>entitySystem/framework</pElem>
           </incDir>
         </ccTool>
@@ -259,11 +251,6 @@
             tool="1"
             flavor2="0">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/framework/entityManager.cpp"
@@ -271,11 +258,6 @@
             tool="1"
             flavor2="0">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/framework/gameEntity.cpp"
@@ -283,11 +265,6 @@
             tool="1"
             flavor2="0">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/framework/personaje.cpp"
@@ -296,9 +273,6 @@
             flavor2="4">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
             <pElem>entitySystem/framework</pElem>
           </incDir>
         </ccTool>
@@ -306,9 +280,6 @@
       <item path="entitySystem/framework/vector2.cpp" ex="false" tool="1" flavor2="4">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
             <pElem>entitySystem/framework</pElem>
           </incDir>
         </ccTool>
@@ -316,9 +287,6 @@
       <item path="entitySystem/framework/vector3.cpp" ex="false" tool="1" flavor2="4">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
             <pElem>entitySystem/framework</pElem>
           </incDir>
         </ccTool>
@@ -328,11 +296,6 @@
             tool="1"
             flavor2="0">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/systems/camaraSystem.cpp"
@@ -341,6 +304,16 @@
             flavor2="4">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="entitySystem/systems/disparoSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/systems/disparoSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
       <item path="entitySystem/systems/handleMoverSystem.cpp"
             ex="false"
@@ -354,11 +327,6 @@
             tool="1"
             flavor2="4">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/systems/playerSystem.cpp"
@@ -366,11 +334,6 @@
             tool="1"
             flavor2="4">
         <ccTool flags="0">
-          <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
-            <pElem>tools/Box2D</pElem>
-            <pElem></pElem>
-          </incDir>
         </ccTool>
       </item>
       <item path="entitySystem/systems/rotarSystem.cpp"
@@ -382,17 +345,30 @@
       </item>
       <item path="entitySystem/systems/system.cpp" ex="false" tool="1" flavor2="4">
         <ccTool flags="0">
+        </ccTool>
+      </item>
+      <folder path="0/entitySystem">
+        <ccTool>
           <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
             <pElem>tools/Box2D</pElem>
             <pElem></pElem>
           </incDir>
         </ccTool>
-      </item>
-      <folder path="0">
+      </folder>
+      <folder path="0/facade">
         <ccTool>
           <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="f1">
+        <ccTool>
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
             <pElem>tools/Box2D</pElem>
             <pElem></pElem>
           </incDir>
@@ -416,32 +392,63 @@
       </item>
       <item path="framework/MiContactListener.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="framework/MyContactFilter.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="framework/gameClock.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
         </ccTool>
       </item>
-      <item path="framework/readJson.cpp" ex="false" tool="1" flavor2="0">
+      <item path="framework/readJson.cpp" ex="false" tool="1" flavor2="4">
         <ccTool flags="0">
+          <incDir>
+            <pElem>C:/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+            <pElem>framework</pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="framework/vector2.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="framework/vector3.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
         </ccTool>
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/msys/1.0/X11R6/include</pElem>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
             <pElem>tools/Box2D</pElem>
             <pElem></pElem>
           </incDir>

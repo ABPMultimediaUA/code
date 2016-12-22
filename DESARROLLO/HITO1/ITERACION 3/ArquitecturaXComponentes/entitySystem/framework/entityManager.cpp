@@ -49,12 +49,17 @@ int entityManager::generarID(){
     return 0;
 }
 
-void entityManager::addEntity(){
-    entidades->add(this->crearEntidad());
+void entityManager::addEntity(const char* t){
+    entidades->add(this->crearEntidad(t));
 }
 
-gameEntity* entityManager::crearEntidad(){
-    return new gameEntity(this->generarID()); 
+unsigned short entityManager::addEntityR(const char* t){
+    entidades->add(this->crearEntidad(t));
+    return entidades->at(entidades->size()-1)->getID();
+}
+
+gameEntity* entityManager::crearEntidad(const char* t){
+    return new gameEntity(this->generarID(),t); 
 }
 
 void entityManager::addComponentToEntity(gameEntity* ge,componente* co){
@@ -96,7 +101,7 @@ bool entityManager::existEntity(gameEntity *g){
 
 gameEntity* entityManager::getEntity(unsigned int e){
     for(unsigned short i = 0; i<entidades->size();i++){
-        if(*entidades->at(i)->getID() == e){
+        if(entidades->at(i)->getID() == e){
             return entidades->at(i);
         }
     }

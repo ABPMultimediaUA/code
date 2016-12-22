@@ -16,31 +16,29 @@
 #include <typeinfo>
 
 velocityComponent::velocityComponent() : componente(typeid(velocityComponent).name()) {
-    velocidad = new vector2();
+    velocidad.setXY(0.0f,0.0f);
 }
 
 velocityComponent::velocityComponent(const velocityComponent& orig) : componente(typeid(velocityComponent).name()) {
-    velocidad = new vector2();
     velocidad = orig.velocidad;
 }
 
-velocityComponent::velocityComponent(vector2 *v) : componente(typeid(velocityComponent).name()) {
-    velocidad = v;
+velocityComponent::velocityComponent(vector2 v) : componente(typeid(velocityComponent).name()) {
+    velocidad.setXY(v.getX(), v.getY());
 }
 
 velocityComponent::~velocityComponent() {
-    delete velocidad;
     std::cout<<"Borrado Componente velocidad"<<std::endl;
 }
 
 void velocityComponent::setVelocidad(float x,float y){
-    velocidad->setXY(x, y);
+    velocidad.setXY(x, y);
 }
 
 void velocityComponent::setVelocidad(vector2 v){
-    *velocidad = v;
+    velocidad.setXY(v.getX(), v.getY());
 }
 
 vector2 velocityComponent::getVelocidad(){
-    return *velocidad;
+    return velocidad;
 }

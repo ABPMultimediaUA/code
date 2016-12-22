@@ -23,7 +23,7 @@ public:
     rotarSystem(const rotarSystem& orig);
     rotarSystem(entityManager*);
     virtual ~rotarSystem();
-    void update(float);
+    void update(facadeMotorGrafico*);
 private:
 
 };

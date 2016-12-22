@@ -19,6 +19,8 @@
 #include "../components/handleMoverComponent.h"
 #include "../components/velocityComponent.h"
 #include "../components/renderComponent.h"
+#include "../../facade/facadeColision.h"
+#include "../components/colisionComponent.h"
 
 moveSystem::moveSystem() : system() {
 }
@@ -32,53 +34,56 @@ moveSystem::moveSystem(entityManager* eM) : system(eM) {
 moveSystem::~moveSystem() {
 }
 
-void moveSystem::update(float dt){
+void moveSystem::update(facadeColision* fC, facadeMotorGrafico* fMG){
     std::vector< std::pair<gameEntity*,componente*> > v = this->getEntityManager()->getAllComponentType(typeid(transformComponent).name());
     for (unsigned short i = 0; i < v.size(); ++i){
-        if(*v.at(i).first->getID() == 1){
+        if(v.at(i).first->getID() == 1){
             handleMoverComponent* hanMov = dynamic_cast<handleMoverComponent*>(this->getEntityManager()->getComponentOffEntity(v.at(i).first, typeid(handleMoverComponent).name()));
+            colisionComponent* colCom = dynamic_cast<colisionComponent*>(this->getEntityManager()->getComponentOffEntity(v.at(i).first, typeid(colisionComponent).name()));
             if(hanMov->getLastDirr() != 9){
                 velocityComponent* velCom = dynamic_cast<velocityComponent*>(this->getEntityManager()->getComponentOffEntity(v.at(i).first, typeid(velocityComponent).name()));
                 transformComponent* traCom = dynamic_cast<transformComponent*>(v.at(i).second);
-                std::cout<<"============== JUGADOR =============="<<std::endl;
-                std::cout<<"Posicion Jugador: X = "<<traCom->getPosicion().getX()<<" Y = "<<traCom->getPosicion().getY()<<" Z = "<<traCom->getPosicion().getZ()<<" dt: "<<dt<<std::endl;
+                vector3 vec;
                 switch(hanMov->getLastDirr()){
                     case 0:
-                        std::cout<<"Entra 0"<<std::endl;
-                        traCom->setPosicion(traCom->getPosicion().getX()+(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ());
+                        vec = fC->moveEntity2D0(colCom->getPosCol(),velCom->getVelocidad());
+                        traCom->setPosicion(vec.getX(),vec.getY(),vec.getZ());
                         break;
                     case 1:
-                        std::cout<<"Entra 1"<<std::endl;
-                        traCom->setPosicion(traCom->getPosicion().getX()-(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ());
+                        vec = fC->moveEntity2D1(colCom->getPosCol(),velCom->getVelocidad());
+                        traCom->setPosicion(vec.getX(),vec.getY(),vec.getZ());
                         break;
                     case 2:
-                        std::cout<<"Entra 2"<<std::endl;
-                        traCom->setPosicion(traCom->getPosicion().getX(), traCom->getPosicion().getY(), traCom->getPosicion().getZ()+(dt*velCom->getVelocidad().getY()));
+                        vec = fC->moveEntity2D2(colCom->getPosCol(),velCom->getVelocidad());
+                        traCom->setPosicion(vec.getX(),vec.getY(),vec.getZ());
                         break;
                     case 3:
-                        std::cout<<"Entra 3"<<std::endl;
-                        traCom->setPosicion(traCom->getPosicion().getX(), traCom->getPosicion().getY(), traCom->getPosicion().getZ()-(dt*velCom->getVelocidad().getY()));
+                        vec = fC->moveEntity2D3(colCom->getPosCol(),velCom->getVelocidad());
+                        traCom->setPosicion(vec.getX(),vec.getY(),vec.getZ());
                         break;
                     case 4:
-                        std::cout<<"Entra 4"<<std::endl;
-                        traCom->setPosicion(traCom->getPosicion().getX()+(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ()+(dt*velCom->getVelocidad().getY()));
+                        vec = fC->moveEntity2D4(colCom->getPosCol(),velCom->getVelocidad());
+                        traCom->setPosicion(vec.getX(),vec.getY(),vec.getZ());
                         break;
                     case 5:
-                        std::cout<<"Entra 5"<<std::endl;
-                        traCom->setPosicion(traCom->getPosicion().getX()+(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ()-(dt*velCom->getVelocidad().getY()));
+                        vec = fC->moveEntity2D5(colCom->getPosCol(),velCom->getVelocidad());
+                        traCom->setPosicion(vec.getX(),vec.getY(),vec.getZ());
                         break;
                     case 6:
-                        std::cout<<"Entra 6"<<std::endl;
-                        traCom->setPosicion(traCom->getPosicion().getX()-(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ()-(dt*velCom->getVelocidad().getY()));
+                        vec = fC->moveEntity2D6(colCom->getPosCol(),velCom->getVelocidad());
+                        traCom->setPosicion(vec.getX(),vec.getY(),vec.getZ());
                         break;
                     case 7:
-                        std::cout<<"Entra 7"<<std::endl;
-                        traCom->setPosicion(traCom->getPosicion().getX()-(dt*velCom->getVelocidad().getX()), traCom->getPosicion().getY(), traCom->getPosicion().getZ()+(dt*velCom->getVelocidad().getY()));
+                        vec = fC->moveEntity2D7(colCom->getPosCol(),velCom->getVelocidad());
+                        traCom->setPosicion(vec.getX(),vec.getY(),vec.getZ());
                         break;
                 }
                 renderComponent* renCom = dynamic_cast<renderComponent*>(this->getEntityManager()->getComponentOffEntity(v.at(i).first, typeid(renderComponent).name()));
-                std::cout<<"Nueva Posicion Jugador: X = "<<traCom->getPosicion().getX()<<" Y = "<<traCom->getPosicion().getY()<<" Z = "<<traCom->getPosicion().getZ()<<" dt: "<<dt<<std::endl;
-                renCom->getMaya()->setPosicionMaya(*v.at(i).first->getID(), traCom->getPosicion());
+                fMG->setPosicionMaya(renCom->getPosMaya(), traCom->getPosicion());
+                traCom->setModificado(true);
+            }
+            else{
+                fC->setEntity2DVelocity(colCom->getPosCol(), vector2(0.0f, 0.0f));
             }
         }
     }

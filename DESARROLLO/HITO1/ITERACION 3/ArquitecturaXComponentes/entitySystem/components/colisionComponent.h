@@ -16,15 +16,18 @@
 
 #include "componente.h"
 #include "../../facade/Entity2D.h"
+#include "../../facade/facadeColision.h"
 
 class colisionComponent : public componente{
 public:
     colisionComponent();
     colisionComponent(const colisionComponent& orig);
-    colisionComponent(facadeColision*,vector3);
+    colisionComponent(facadeColision*, vector3);
+    colisionComponent(facadeColision*, vector3, vector3, bool);
     virtual ~colisionComponent();
+    unsigned long getPosCol();
 private:
-    unsigned short id;
+    unsigned long pos;
 };
 
 #endif /* COLISIONCOMPONENT_H */

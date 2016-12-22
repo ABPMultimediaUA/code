@@ -25,9 +25,8 @@ public:
     void setXY(float,float);
     float getX();
     float getY();
-    void getXY(float*,float*);
 private:
-    float *x,*y;
+    float x,y;
 };
 
 #endif /* VECTOR2_H */

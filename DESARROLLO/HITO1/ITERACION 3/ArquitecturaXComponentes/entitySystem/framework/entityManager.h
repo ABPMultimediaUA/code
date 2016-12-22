@@ -27,14 +27,15 @@ public:
     entityManager(const entityManager& orig);
     virtual ~entityManager();
     int generarID();
-    gameEntity* crearEntidad();
+    gameEntity* crearEntidad(const char*);
     void addComponentToEntity(gameEntity*,componente*);
     componente* getComponentOffEntity(gameEntity*, const char*);
     std::vector<componente*> getAllEntityComponent(gameEntity*);
     void borrarEntity(gameEntity*);
     bool existEntity(gameEntity*);
     gameEntity* getEntity(unsigned int);
-    void addEntity();
+    void addEntity(const char*);
+    unsigned short addEntityR(const char*);
     void printAllEntitysID();
     void printAllEntitysAndComponents();
     std::vector< std::pair<gameEntity*,componente*> > getAllComponentType(const char*);

@@ -27,9 +27,8 @@ public:
     float getX();
     float getY();
     float getZ();
-    void getXYZ(float*, float*, float*);
 private:
-    float *x,*y,*z;
+    float x,y,z;
 };
 
 #endif /* VECTOR3_H */
