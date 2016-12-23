@@ -1,0 +1,10 @@
+Se trata de un prototipo de la máquina de estados de la IA. En ella podemos ver un cubo con las texturas de una cara, el cual es el personaje que manejamos, y un cubo con texturas verdes, que es el enemigo. A continución explico las instrucciones para el manejo:
+
+-Las teclas A, S, D y W corresponden a las direcciones de desplazamiento del personaje.
+-Con el ratón gira el personaje en dos dimensiones.
+-Tecla J: el enemigo persigue al jugador en un eje.
+-Tecla K: el enemigo huye del jugador.
+-Tecla L: el enemigo va hacia un punto determinado.
+-Tecla P: el enemigo patrulla de un punto a otro en bucle.
+-Tecla O: el enemigo patrulla más deprisa de un punto a otro en bucle.
+-Tecla B: entra al Behaviour Tree. Aquí de momento sólo muestra por consola los nodos del árbol en los que entra.
