@@ -36,8 +36,8 @@ int main() {
             createDevice(video::EDT_OPENGL, dimension2d<u32>(ANCHO, LARGO), 16,
             false, false, false, &teclado);
 
-    
-    
+
+
     if (!device)
         return 1;
 
@@ -45,13 +45,13 @@ int main() {
     //creamos el mundo 2D
     b2Vec2 gravity(0.0f, 0.0f);
     b2World *world = new b2World(gravity);
-    
+
     //creamos el manejador de colisiones y lo seteamos al mundo
     MiContactListener* contactListenerInstance = new MiContactListener();
     MyContactFilter* filtroContact = new MyContactFilter();
     world->SetContactListener(contactListenerInstance);
     world->SetContactFilter(filtroContact);
-    
+
     device->setWindowCaption(L"Movimiento del personaje");
 
     IVideoDriver* driver = device->getVideoDriver();
@@ -132,9 +132,9 @@ int main() {
                                 cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
                  //   cam->actualizarCamara(0, dt);
-              
-            } 
-               
+
+            }
+
             else if (teclado.isKeyDown(irr::KEY_KEY_A)) {
 
                 pers->moverPersonaje(1, dt);
@@ -182,20 +182,20 @@ int main() {
             }
             if (teclado.GetMouseState().LeftButtonDown && pers->getDisparo() == false) {
                 //tiempoDisparo += dt;
-                
+
                 //pers -> disparar(dt,ok);
                 //disparo = true;
                 //Bala *bullet = new Bala(smgr, driver, world, pers, vector2df(teclado.GetMouseState().Position.X, teclado.GetMouseState().Position.Y));
                 //listaBalas.push_back(bullet);
                 //  }
                 // }
-                
+
                 if(pers->getCargador() >= 0){
                     pers->disparar(smgr, driver, world, dt, vector2df(mousePosition.X, mousePosition.Y));
 
                 }
             }
-            
+
 
             if(pers->getDisparo() == true){
                 pers->setTiempoDisparo(pers->getTiempoDisparo()+dt);
@@ -204,16 +204,16 @@ int main() {
                     pers->setTiempoDisparo(0);
                 }
             }
-            
-            
-            
+
+
+
              if (ok) {
-    
+
                  pers->actualizarLista(dt);
-               
+
             }
-            
-            
+
+
             then = now;
 
             driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
