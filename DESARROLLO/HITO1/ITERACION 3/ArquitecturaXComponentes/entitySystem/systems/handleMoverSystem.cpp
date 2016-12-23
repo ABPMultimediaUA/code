@@ -12,9 +12,8 @@
  */
 
 #include <typeinfo>
-#include <iostream>
-
 #include "handleMoverSystem.h"
+#include "../../facade/facadeMotorGrafico.h"
 #include "../components/handleMoverComponent.h"
 
 handleMoverSystem::handleMoverSystem() : system() {

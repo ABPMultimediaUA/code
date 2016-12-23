@@ -12,6 +12,8 @@
  */
 
 #include "renderComponent.h"
+#include "../../facade/facadeMotorGrafico.h"
+#include "../../framework/vector3G.h"
 #include <iostream>
 #include <typeinfo>
 
@@ -32,11 +34,11 @@ renderComponent::~renderComponent() {
     std::cout<<"Borrado Componente render"<<std::endl;
 }
 
-renderComponent::renderComponent(unsigned short t, facadeMotorGrafico *fMG, const char *textura, vector3 vp) : componente(typeid(renderComponent).name()) {
+renderComponent::renderComponent(unsigned short t, facadeMotorGrafico *fMG, const char *textura, vector3G vp) : componente(typeid(renderComponent).name()) {
     posMaya = fMG->addMaya(t,textura,vp);
 }
 
-void renderComponent::crearMaya(unsigned short t, facadeMotorGrafico *fMG, const char *textura, vector3 vp){
+void renderComponent::crearMaya(unsigned short t, facadeMotorGrafico *fMG, const char *textura, vector3G vp){
     posMaya = fMG->addMaya(t,textura,vp);
 }
 

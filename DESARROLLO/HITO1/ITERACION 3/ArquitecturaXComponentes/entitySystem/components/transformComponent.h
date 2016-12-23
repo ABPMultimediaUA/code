@@ -15,29 +15,29 @@
 #define TRANSFORMCOMPONENT_H
 
 #include "componente.h"
-#include "../../framework/vector3.h"
+#include "../../framework/vector3G.h"
 
 class transformComponent : public componente {
 public:
     transformComponent();
     transformComponent(const transformComponent& orig);
-    transformComponent(vector3, vector3, vector3);
+    transformComponent(vector3G, vector3G, vector3G);
     virtual ~transformComponent();
-    vector3 getPosicion();
-    vector3 getRotacion();
-    vector3 getEscala();
+    vector3G getPosicion();
+    vector3G getRotacion();
+    vector3G getEscala();
     bool getModificado();
     void setPosicion(float, float, float);
-    void setPosicion(vector3);
+    void setPosicion(vector3G);
     void setRotacion(float, float, float);
-    void setRotacion(vector3);
+    void setRotacion(vector3G);
     void setEscala(float, float, float);
-    void setEscala(vector3);
+    void setEscala(vector3G);
     void setModificado(bool);
 private:
-    vector3 posicion;
-    vector3 rotacion;
-    vector3 escala;
+    vector3G posicion;
+    vector3G rotacion;
+    vector3G escala;
     bool modificado;
 };
 

@@ -14,12 +14,14 @@
 #ifndef ENTITYMANAGER_H
 #define ENTITYMANAGER_H
 
-#include "diccionarioEnCo.h"
-#include "gameEntity.h"
-#include "../components/componente.h"
-#include "vectorEntity.h"
-#include "diccionarioEnCo.h"
 #include <vector>
+
+class vectorEntity;
+class componente;
+class gameEntity;
+class diccionarioEnCo;
+class facadeMotorGrafico;
+class facadeColision;
 
 class entityManager {
 public:
@@ -31,7 +33,7 @@ public:
     void addComponentToEntity(gameEntity*,componente*);
     componente* getComponentOffEntity(gameEntity*, const char*);
     std::vector<componente*> getAllEntityComponent(gameEntity*);
-    void borrarEntity(gameEntity*);
+    void borrarEntity(gameEntity*, facadeColision*, facadeMotorGrafico*);
     bool existEntity(gameEntity*);
     gameEntity* getEntity(unsigned int);
     void addEntity(const char*);

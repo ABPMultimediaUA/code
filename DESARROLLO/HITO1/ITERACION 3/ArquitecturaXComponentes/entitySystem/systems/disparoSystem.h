@@ -15,9 +15,9 @@
 #define DISPAROSYSTEM_H
 
 #include "system.h"
-#include "../../facade/facadeMotorGrafico.h"
-#include "../../facade/facadeColision.h"
-#include "../../framework/gameClock.h"
+class facadeMotorGrafico;
+class facadeColision;
+class gameClock;
 
 class disparoSystem : public system {
 public:
@@ -26,9 +26,8 @@ public:
     disparoSystem(const disparoSystem& orig);
     virtual ~disparoSystem();
     void update(facadeColision*, facadeMotorGrafico*, gameClock*);
-    void createBullet(facadeColision*, facadeMotorGrafico*);
+    void createBullet(facadeColision*, facadeMotorGrafico*, gameClock*);
 private:
-    unsigned long numBalas;
     bool disparado;
     double time;
 };

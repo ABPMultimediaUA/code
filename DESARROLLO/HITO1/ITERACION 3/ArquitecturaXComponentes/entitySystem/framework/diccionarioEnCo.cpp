@@ -12,6 +12,8 @@
  */
 
 #include "diccionarioEnCo.h"
+#include "gameEntity.h"
+#include "../components/componente.h"
 #include <typeinfo>
 #include <string.h>
 #include <iostream>
@@ -39,6 +41,10 @@ componente* diccionarioEnCo::getComponent(gameEntity* g, const char* s){
     }
     std::cerr<<"Error: Componente no existe"<<std::endl;
     return 0;
+}
+
+void diccionarioEnCo::deleteAllComponents(gameEntity* e) {
+    dicc->erase(e);
 }
 
 vector<componente*> diccionarioEnCo::getComponents(gameEntity* g){

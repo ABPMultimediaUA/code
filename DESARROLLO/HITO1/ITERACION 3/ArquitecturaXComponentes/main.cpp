@@ -10,10 +10,12 @@
  * 
  * Created on 1 de noviembre de 2016, 1:47
  */
-#include <iostream>
+
 #include <typeinfo>
+#include "facade/facadeColision.h"
 #include "facade/facadeMotorGrafico.h"
-#include "framework/vector3.h"
+#include "framework/vector3G.h"
+#include "framework/vector2G.h"
 #include "framework/gameClock.h"
 #include "entitySystem/framework/entityManager.h"
 #include "entitySystem/components/camaraComponent.h"
@@ -21,16 +23,15 @@
 #include "entitySystem/components/velocityComponent.h"
 #include "entitySystem/components/playerComponent.h"
 #include "entitySystem/components/renderComponent.h"
-#include "entitySystem/systems/handleMoverSystem.h"
+#include "entitySystem/components/colisionComponent.h"
+#include "entitySystem/components/cargadorComponent.h"
 #include "entitySystem/components/handleMoverComponent.h"
+#include "entitySystem/systems/handleMoverSystem.h"
 #include "entitySystem/systems/camaraSystem.h"
 #include "entitySystem/systems/moveSystem.h"
 #include "entitySystem/systems/rotarSystem.h"
-#include "entitySystem/components/colisionComponent.h"
 #include "entitySystem/systems/disparoSystem.h"
-#include "entitySystem/components/cargadorComponent.h"
-
-#define kUpdateTimePS15 1000/15
+#include "entitySystem/systems/accionsSystem.h"
 
 int main(){
     facadeMotorGrafico *fMG = new facadeMotorGrafico(640,480);
@@ -46,20 +47,21 @@ int main(){
     moveSystem *mS = new moveSystem(eM);
     rotarSystem *rS = new rotarSystem(eM);
     disparoSystem *dS = new disparoSystem(eM);
+    accionsSystem *aS = new accionsSystem(eM);
     
     //Jugador 1
-    eM->addEntity("Jugador");
+    eM->addEntity("Player");
     eM->addComponentToEntity(eM->getEntity(1), new handleMoverComponent());
-    eM->addComponentToEntity(eM->getEntity(1), new transformComponent(vector3(0, 0, 0), vector3(0, 0, 0), vector3(0, 0, 0)));
-    eM->addComponentToEntity(eM->getEntity(1), new velocityComponent(vector2(100.0f,100.0f)));
-    eM->addComponentToEntity(eM->getEntity(1), new colisionComponent(fC,vector3(0, 0, 0)));
-    eM->addComponentToEntity(eM->getEntity(1), new renderComponent(1, fMG, "resources/texture/life/bruce.jpg", vector3(0, 0, 0)));
+    eM->addComponentToEntity(eM->getEntity(1), new transformComponent(vector3G(0, 0, 0), vector3G(0, 0, 0), vector3G(0, 0, 0)));
+    eM->addComponentToEntity(eM->getEntity(1), new velocityComponent(vector2G(100.0f,100.0f)));
+    eM->addComponentToEntity(eM->getEntity(1), new colisionComponent(fC,vector3G(0, 0, 0)));
+    eM->addComponentToEntity(eM->getEntity(1), new renderComponent(1, fMG, "resources/texture/life/bruce.jpg", vector3G(0, 0, 0)));
     eM->addComponentToEntity(eM->getEntity(1), new cargadorComponent(30));
     //Camara 2
-    eM->addEntity("Camara");
-    eM->addComponentToEntity(eM->getEntity(2), new camaraComponent(fMG, eM->getEntity(2)->getID(), new vector3(0, 70, -40), new vector3(0, 5, 0)));
-    eM->addComponentToEntity(eM->getEntity(2), new transformComponent(vector3(0, 70, -40),vector3(0, 0, 0),vector3(0, 0, 0)));
-    eM->addComponentToEntity(eM->getEntity(2), new velocityComponent(vector2(100.0f,100.0f)));
+    eM->addEntity("Camera");
+    eM->addComponentToEntity(eM->getEntity(2), new camaraComponent(fMG, vector3G(0, 70, -40), vector3G(0, 5, 0)));
+    eM->addComponentToEntity(eM->getEntity(2), new transformComponent(vector3G(0, 70, -40),vector3G(0, 0, 0),vector3G(0, 0, 0)));
+    eM->addComponentToEntity(eM->getEntity(2), new velocityComponent(vector2G(100.0f,100.0f)));
     
     fMG->addStaticTextProva();
     gameClock *clock = new gameClock();
@@ -75,13 +77,14 @@ int main(){
             hMS->update(fMG);
             rS->update(fMG);
             dS->update(fC, fMG, clock);
+            aS->update(fMG);
             /*****************/
             /*    update    */
             /***************/
             dt = (clock->getTime() - time)/1000.f;
             fC->setWorldStep(dt);
-            mS->update(fC, fMG);
-            cS->update(2);
+            mS->update(fC, fMG, clock);
+            cS->update(2, fMG);
             /*****************/
             /*    Render    */
             /***************/

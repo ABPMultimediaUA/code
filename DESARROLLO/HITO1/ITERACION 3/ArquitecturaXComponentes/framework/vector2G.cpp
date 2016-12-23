@@ -11,43 +11,43 @@
  * Created on 2 de diciembre de 2016, 4:06
  */
 
-#include "vector2.h"
+#include "vector2G.h"
 
-vector2::vector2() {
+vector2G::vector2G() {
     x=0.0f;
     y=0.0f;
 }
 
-vector2::vector2(const vector2& orig) {
+vector2G::vector2G(const vector2G& orig) {
     x = orig.x;
     y = orig.y;
 }
 
-vector2::vector2(float XX, float YY) {
+vector2G::vector2G(float XX, float YY) {
     x = XX;
     y = YY;
 }
 
-vector2::~vector2() {
+vector2G::~vector2G() {
 }
 
-void vector2::setX(float XX){
+void vector2G::setX(float XX){
     x = XX;
 }
 
-void vector2::setY(float YY){
+void vector2G::setY(float YY){
     y = YY;
 }
 
-void vector2::setXY(float XX, float YY){
+void vector2G::setXY(float XX, float YY){
     x = XX;
     y = YY;
 }
 
-float vector2::getX(){
+float vector2G::getX(){
     return x;
 }
 
-float vector2::getY(){
+float vector2G::getY(){
     return y;
 }

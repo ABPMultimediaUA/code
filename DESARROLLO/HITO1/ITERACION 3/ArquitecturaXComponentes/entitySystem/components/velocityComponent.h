@@ -15,19 +15,19 @@
 #define VELOCITYCOMPONENT_H
 
 #include "componente.h"
-#include "../../framework/vector2.h"
+#include "../../framework/vector2G.h"
 
 class velocityComponent : public componente {
 public:
     velocityComponent();
     velocityComponent(const velocityComponent& orig);
-    velocityComponent(vector2);
+    velocityComponent(vector2G);
     virtual ~velocityComponent();
     void setVelocidad(float,float);
-    void setVelocidad(vector2);
-    vector2 getVelocidad();
+    void setVelocidad(vector2G);
+    vector2G getVelocidad();
 private:
-    vector2 velocidad;
+    vector2G velocidad;
 };
 
 #endif /* VELOCITYCOMPONENT_H */

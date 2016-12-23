@@ -15,7 +15,7 @@
 #define ROTARSYSTEM_H
 
 #include "system.h"
-#include "../../facade/facadeMotorGrafico.h"
+class facadeMotorGrafico;
 
 class rotarSystem : public system {
 public:

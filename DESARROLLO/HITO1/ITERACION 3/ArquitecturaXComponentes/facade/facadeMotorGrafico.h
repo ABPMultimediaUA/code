@@ -16,9 +16,9 @@
 
 #include <irrlicht.h>
 #include <map>
-#include "../framework/vector3.h"
 #include "CAppReceiver.h"
-#include "../entitySystem/framework/entityManager.h"
+class vector3G;
+class entityManager;
 
 using namespace irr;
 using namespace core;
@@ -26,7 +26,6 @@ using namespace scene;
 using namespace video;
 using namespace io;
 using namespace gui;
-using namespace std;
 
 #ifdef _IRR_WINDOWS_
 #pragma comment(lib, "Irrlicht.lib")
@@ -52,9 +51,8 @@ public:
     void yield();
     void drop();
     void close();
-    int addMaya(unsigned short,const char*, vector3);
-    int addCamera(int, vector3*, vector3*);
-    vector3 getCameraFoco(int*);
+    unsigned long addMaya(unsigned short,const char*, vector3G);
+    unsigned short addCamera(vector3G, vector3G);
     void borrarPorIDCamara(int);
     void borrarPorIDMaya(int);
     bool deviceOK();
@@ -62,24 +60,25 @@ public:
     void inicarMayas();
     void render(int,int,int,int);
     unsigned short teclaPulsada();
-    void setFocoandPoscionCamara(int,vector3,vector3);
+    void setFocoandPoscionCamara(int,vector3G,vector3G);
     unsigned short getCamaraActiva();
-    void setPosicionMaya(int, vector3);
-    vector3 getMousePosition();
-    void setRotationMaya(int,vector3);
+    void setPosicionMaya(int, vector3G);
+    vector3G getMousePosition();
+    void setRotationMaya(int,vector3G);
     bool getClickIZQ();
     void accionPulsada(entityManager*);
+    vector3G getNormalize2(vector3G);
 private:
     IrrlichtDevice *device; //ventana del Juego
     IVideoDriver *driver;
     ISceneManager *smgr; //grafo de la escena(controlador)
     IGUIEnvironment *guienv; //hacer intrerfaces de usuario
-    std::map<int,IMeshSceneNode*> *mayas; //Mayas de los Objetos de la scena
-    std::map<int,ICameraSceneNode*> *camaras; //Camaras de la scena
+    std::map<int,IMeshSceneNode*>* mayas; //Mayas de los Objetos de la scena
+    std::map<int,ICameraSceneNode*>* camaras; //Camaras de la scena
     ISceneNode *node; //Para el movimiento y captura del raton
-    CAppReceiver *teclado;
+    CAppReceiver teclado;
     unsigned long posMaya;
-    unsigned long posCamara;
+    unsigned short posCamara;
 };
 
 #endif /* FACADEMOTORGRAFICO_H */

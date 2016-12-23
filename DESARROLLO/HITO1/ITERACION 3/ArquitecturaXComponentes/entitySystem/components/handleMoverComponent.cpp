@@ -12,7 +12,6 @@
  */
 
 #include <typeinfo>
-
 #include "handleMoverComponent.h"
 
 handleMoverComponent::handleMoverComponent() : componente(typeid(handleMoverComponent).name()) {

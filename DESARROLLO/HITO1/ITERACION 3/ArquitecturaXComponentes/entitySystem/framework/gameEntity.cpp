@@ -25,9 +25,12 @@ gameEntity::gameEntity(int _id, const char* t){
     tipo = t;
 }
 
-gameEntity::~gameEntity() {
-}
+gameEntity::~gameEntity() {}
 
 int gameEntity::getID(){
     return id;
+}
+
+const char* gameEntity::getTipo(){
+    return tipo;
 }

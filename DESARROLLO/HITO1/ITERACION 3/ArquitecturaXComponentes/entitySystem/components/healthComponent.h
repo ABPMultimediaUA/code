@@ -14,7 +14,9 @@
 #ifndef HEALTHCOMPONENT_H
 #define HEALTHCOMPONENT_H
 
-class healthComponent {
+#include "componente.h"
+
+class healthComponent : public componente {
 public:
     healthComponent();
     healthComponent(const healthComponent& orig);

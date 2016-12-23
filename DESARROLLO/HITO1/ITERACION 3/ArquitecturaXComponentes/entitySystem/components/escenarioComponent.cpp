@@ -12,7 +12,6 @@
  */
 
 #include <typeinfo>
-
 #include "escenarioComponent.h"
 
 escenarioComponent::escenarioComponent() : componente(typeid(escenarioComponent).name()) {

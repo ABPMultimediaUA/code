@@ -12,6 +12,7 @@
  */
 #include <iostream>
 #include "Entity2D.h"
+#include "../framework/vector3G.h"
 
 #define FILTRO_PERSONAJE 1
 #define FILTRO_PARED 2
@@ -20,7 +21,7 @@
 #define FILTRO_DISPAROENE 5
 
 //hacer diferentes constructores para los distintos objetos
-Entity2D::Entity2D(b2World *world, vector3 pos) {
+Entity2D::Entity2D(b2World *world, vector3G pos) {
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.getX(), pos.getZ());
     bodyShape.SetAsBox(10, 10);
@@ -33,7 +34,7 @@ Entity2D::Entity2D(b2World *world, vector3 pos) {
     iden = 0;
 }
 
-Entity2D::Entity2D(b2World* world, vector3 pos, vector3 rot, vector3 escala){
+Entity2D::Entity2D(b2World* world, vector3G pos, vector3G rot, vector3G escala){
     bodyDef.type = b2_staticBody;
     bodyDef.position.Set(pos.getX(), pos.getZ());
     
@@ -57,7 +58,7 @@ Entity2D::Entity2D(b2World* world, vector3 pos, vector3 rot, vector3 escala){
     iden = 1;
 }
 
-Entity2D::Entity2D(b2World* world, vector3 pos, vector3 rot, vector3 escala, bool sensor){
+Entity2D::Entity2D(b2World* world, vector3G pos, vector3G rot, vector3G escala, bool sensor){
     bodyDef.type = b2_staticBody;
     bodyDef.position.Set(pos.getX(), pos.getZ());
     
@@ -81,7 +82,7 @@ Entity2D::Entity2D(b2World* world, vector3 pos, vector3 rot, vector3 escala, boo
     iden = 2;
 }
 
-Entity2D::Entity2D(b2World* world, vector3 pos, vector3 rot, bool vivo){
+Entity2D::Entity2D(b2World* world, vector3G pos, vector3G rot, bool vivo){
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.getX(), pos.getZ());
     bodyShape.SetAsBox(2, 2);
@@ -99,8 +100,6 @@ Entity2D::Entity2D(const Entity2D& orig) {
 }
 
 Entity2D::~Entity2D() {
-    std::cout<<"ID DE LA ENTITY "<<iden<<std::endl;
-    std::cout<<"MUERO ENTITY2D"<<std::endl;
     body->GetWorld()->DestroyBody(body); //así se tienen que borrar los objetos, no vale con la copia del puntero   
 }
 

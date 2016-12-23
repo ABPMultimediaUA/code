@@ -14,7 +14,16 @@
 #include <typeinfo>
 #include <iostream>
 #include <string.h>
+#include "gameEntity.h"
+#include "diccionarioEnCo.h"
 #include "entityManager.h"
+#include "vectorEntity.h"
+#include "../../facade/facadeColision.h"
+#include "../../facade/facadeMotorGrafico.h"
+#include "../components/camaraComponent.h"
+#include "../components/colisionComponent.h"
+#include "../components/renderComponent.h"
+#include "../components/componente.h"
 
 entityManager::entityManager() {
     idMasBajaUsada = new unsigned short();
@@ -79,10 +88,20 @@ std::vector<componente*> entityManager::getAllEntityComponent(gameEntity* ge){
     return dicc->getComponents(ge);
 }
 
-void entityManager::borrarEntity(gameEntity* ge){
+void entityManager::borrarEntity(gameEntity* ge, facadeColision* fC, facadeMotorGrafico* fMG){
     if(ge){
-        for(unsigned short i = 0; i<entidades->size() && entidades->at(i)->getID() == ge->getID();i++){
-            entidades->remove(i);
+        for(unsigned short i = 0; i<entidades->size();i++){
+            if(entidades->at(i) != 0 && entidades->at(i)->getID() == ge->getID()){
+                if(strcmp(ge->getTipo(), "Player") == 0 || strcmp(ge->getTipo(), "Bullet") == 0){
+                    fMG->borrarPorIDMaya( dynamic_cast<renderComponent*>( getComponentOffEntity(ge, typeid(renderComponent).name() ) )->getPosMaya() );
+                    fC->deleteEntity2d(dynamic_cast<colisionComponent*>(getComponentOffEntity(ge, typeid(colisionComponent).name()))->getPosCol());
+                }
+                else if(strcmp(ge->getTipo(), "Camera") == 0){
+                    fMG->borrarPorIDCamara(dynamic_cast<camaraComponent*>(getComponentOffEntity(ge, typeid(camaraComponent).name()))->getPosCamara());
+                }
+                dicc->deleteAllComponents(ge);
+                entidades->remove(i);
+            }
         }
     }
 }
@@ -90,7 +109,7 @@ void entityManager::borrarEntity(gameEntity* ge){
 bool entityManager::existEntity(gameEntity *g){
     if(g){
         for(unsigned short i = 0; i<entidades->size();i++){
-            if(entidades->at(i)->getID() == g->getID()){
+            if(entidades->at(i) != 0 && entidades->at(i)->getID() == g->getID()){
                 return true;
             }
         }
@@ -101,7 +120,7 @@ bool entityManager::existEntity(gameEntity *g){
 
 gameEntity* entityManager::getEntity(unsigned int e){
     for(unsigned short i = 0; i<entidades->size();i++){
-        if(entidades->at(i)->getID() == e){
+        if(entidades->at(i) != 0 && entidades->at(i)->getID() == e){
             return entidades->at(i);
         }
     }

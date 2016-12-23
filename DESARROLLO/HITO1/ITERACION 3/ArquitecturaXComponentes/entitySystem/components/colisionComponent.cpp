@@ -12,8 +12,10 @@
  */
 
 #include <typeinfo>
-
 #include "colisionComponent.h"
+#include "../../facade/Entity2D.h"
+#include "../../facade/facadeColision.h"
+#include "../../framework/vector3G.h"
 
 colisionComponent::colisionComponent() : componente(typeid(colisionComponent).name()) {
 }
@@ -21,11 +23,11 @@ colisionComponent::colisionComponent() : componente(typeid(colisionComponent).na
 colisionComponent::colisionComponent(const colisionComponent& orig) : componente(typeid(colisionComponent).name()) {
 }
 
-colisionComponent::colisionComponent(facadeColision* fC, vector3 v) : componente(typeid(colisionComponent).name()) {
+colisionComponent::colisionComponent(facadeColision* fC, vector3G v) : componente(typeid(colisionComponent).name()) {
     pos = fC->newEntity2D(v);
 }
 
-colisionComponent::colisionComponent(facadeColision* fC, vector3 v, vector3 r, bool s) : componente(typeid(colisionComponent).name()) {
+colisionComponent::colisionComponent(facadeColision* fC, vector3G v, vector3G r, bool s) : componente(typeid(colisionComponent).name()) {
     pos = fC->newEntity2D(v,r,s);
 }
 

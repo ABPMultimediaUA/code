@@ -14,11 +14,11 @@
 #ifndef DICCIONARIOENCO_H
 #define DICCIONARIOENCO_H
 
-#include "gameEntity.h"
-#include "../components/componente.h"
 #include <map>
 #include <vector>
 
+class gameEntity;
+class componente;
 
 class diccionarioEnCo {
 public:
@@ -27,6 +27,7 @@ public:
     virtual ~diccionarioEnCo();
     componente* getComponent(gameEntity*, const char*);
     std::vector<componente*> getComponents(gameEntity*);
+    void deleteAllComponents(gameEntity*);
     unsigned short size();
     bool add(gameEntity*, componente*);
     void remove(gameEntity*, componente*);

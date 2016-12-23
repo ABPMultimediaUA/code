@@ -15,17 +15,17 @@
 #define RENDERCOMPONENT_H
 
 #include "componente.h"
-#include "../../facade/facadeMotorGrafico.h"
-#include "../../framework/vector3.h"
+class facadeMotorGrafico;
+class vector3G;
 
 class renderComponent : public componente {
 public:
     renderComponent();
     renderComponent(const renderComponent& orig);
-    renderComponent(unsigned short, facadeMotorGrafico*, const char*, vector3);
+    renderComponent(unsigned short, facadeMotorGrafico*, const char*, vector3G);
     virtual ~renderComponent();
     void setMaya(facadeMotorGrafico*);
-    void crearMaya(unsigned short, facadeMotorGrafico*, const char*, vector3);
+    void crearMaya(unsigned short, facadeMotorGrafico*, const char*, vector3G);
     int getPosMaya();
 private:
     int posMaya;

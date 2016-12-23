@@ -35,7 +35,7 @@ transformComponent::transformComponent(const transformComponent& orig) : compone
     modificado = orig.modificado;
 }
 
-transformComponent::transformComponent(vector3 vp, vector3 vr, vector3 ve) : componente(typeid(transformComponent).name()) {
+transformComponent::transformComponent(vector3G vp, vector3G vr, vector3G ve) : componente(typeid(transformComponent).name()) {
     posicion.setX(vp.getX());
     posicion.setY(vp.getY());
     posicion.setZ(vp.getZ());
@@ -52,15 +52,15 @@ transformComponent::~transformComponent() {
     std::cout<<"Borrado Componente de transformar"<<std::endl;
 }
 
-vector3 transformComponent::getPosicion(){
+vector3G transformComponent::getPosicion(){
     return posicion;
 }
 
-vector3 transformComponent::getRotacion(){
+vector3G transformComponent::getRotacion(){
     return rotacion;
 }
 
-vector3 transformComponent::getEscala(){
+vector3G transformComponent::getEscala(){
     return escala;
 }
 
@@ -72,7 +72,7 @@ void transformComponent::setPosicion(float x, float y,float z){
     posicion.setXYZ(x, y, z);
 }
 
-void transformComponent::setPosicion(vector3 v){
+void transformComponent::setPosicion(vector3G v){
     posicion.setX(v.getX());
     posicion.setY(v.getY());
     posicion.setZ(v.getZ());
@@ -82,7 +82,7 @@ void transformComponent::setRotacion(float x, float y, float z){
     rotacion.setXYZ(x, y, z);
 }
 
-void transformComponent::setRotacion(vector3 v){
+void transformComponent::setRotacion(vector3G v){
     rotacion.setX(v.getX());
     rotacion.setY(v.getY());
     rotacion.setZ(v.getZ());
@@ -92,7 +92,7 @@ void transformComponent::setEscala(float x, float y, float z){
     escala.setXYZ(x, y, z);
 }
 
-void transformComponent::setEscala(vector3 v){
+void transformComponent::setEscala(vector3G v){
     escala.setX(v.getX());
     escala.setY(v.getY());
     escala.setZ(v.getZ());

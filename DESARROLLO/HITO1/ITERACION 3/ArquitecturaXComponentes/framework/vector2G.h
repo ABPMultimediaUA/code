@@ -11,15 +11,15 @@
  * Created on 2 de diciembre de 2016, 4:06
  */
 
-#ifndef VECTOR2_H
-#define VECTOR2_H
+#ifndef VECTOR2G_H
+#define VECTOR2G_H
 
-class vector2 {
+class vector2G {
 public:
-    vector2();
-    vector2(const vector2& orig);
-    vector2(float,float);
-    virtual ~vector2();
+    vector2G();
+    vector2G(const vector2G& orig);
+    vector2G(float,float);
+    virtual ~vector2G();
     void setX(float);
     void setY(float);
     void setXY(float,float);
@@ -29,5 +29,5 @@ private:
     float x,y;
 };
 
-#endif /* VECTOR2_H */
+#endif /* VECTOR2G_H */
 

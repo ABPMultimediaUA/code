@@ -13,7 +13,7 @@
 
 #include <iostream>
 #include "RayCastCallback.h"
-#include "../facade/Entity2D.h"
+#include "Entity2D.h"
 
 RayCastCallback::RayCastCallback() {
     distancia = 0;

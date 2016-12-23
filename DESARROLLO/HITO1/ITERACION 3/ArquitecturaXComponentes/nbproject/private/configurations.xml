@@ -23,6 +23,8 @@
         <df name="framework">
         </df>
         <df name="systems">
+          <in>accionsSystem.cpp</in>
+          <in>accionsSystem.h</in>
           <in>camaraSystem.cpp</in>
           <in>camaraSystem.h</in>
           <in>disparoSystem.cpp</in>
@@ -38,6 +40,8 @@
         <in>CAppReceiver.h</in>
         <in>Entity2D.cpp</in>
         <in>Entity2D.h</in>
+        <in>RayCastCallback.cpp</in>
+        <in>RayCastCallback.h</in>
         <in>facadeColision.cpp</in>
         <in>facadeColision.h</in>
         <in>facadeMotorGrafico.cpp</in>
@@ -48,16 +52,14 @@
         <in>MiContactListener.h</in>
         <in>MyContactFilter.cpp</in>
         <in>MyContactFilter.h</in>
-        <in>RayCastCallback.cpp</in>
-        <in>RayCastCallback.h</in>
         <in>gameClock.cpp</in>
         <in>gameClock.h</in>
         <in>readJson.cpp</in>
         <in>readJson.h</in>
-        <in>vector2.cpp</in>
-        <in>vector2.h</in>
-        <in>vector3.cpp</in>
-        <in>vector3.h</in>
+        <in>vector2G.cpp</in>
+        <in>vector2G.h</in>
+        <in>vector3G.cpp</in>
+        <in>vector3G.h</in>
       </df>
       <df name="resources">
         <df name="stage">

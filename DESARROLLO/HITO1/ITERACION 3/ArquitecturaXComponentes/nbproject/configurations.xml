@@ -16,6 +16,8 @@
           <in>playerComponent.cpp</in>
         </df>
         <df name="systems">
+          <in>accionsSystem.cpp</in>
+          <in>accionsSystem.h</in>
           <in>camaraSystem.cpp</in>
           <in>disparoSystem.cpp</in>
           <in>disparoSystem.h</in>
@@ -34,8 +36,8 @@
         <in>MyContactFilter.cpp</in>
         <in>gameClock.cpp</in>
         <in>readJson.cpp</in>
-        <in>vector2.cpp</in>
-        <in>vector3.cpp</in>
+        <in>vector2G.cpp</in>
+        <in>vector3G.cpp</in>
       </df>
     </df>
     <logicalFolder name="f2" displayName="Header" projectFiles="true">
@@ -298,6 +300,16 @@
         <ccTool flags="0">
         </ccTool>
       </item>
+      <item path="entitySystem/systems/accionsSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/systems/accionsSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="entitySystem/systems/camaraSystem.cpp"
             ex="false"
             tool="1"
@@ -427,7 +439,7 @@
           </incDir>
         </ccTool>
       </item>
-      <item path="framework/vector2.cpp" ex="false" tool="1" flavor2="0">
+      <item path="framework/vector2G.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
             <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
@@ -436,7 +448,7 @@
           </incDir>
         </ccTool>
       </item>
-      <item path="framework/vector3.cpp" ex="false" tool="1" flavor2="0">
+      <item path="framework/vector3G.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
             <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>

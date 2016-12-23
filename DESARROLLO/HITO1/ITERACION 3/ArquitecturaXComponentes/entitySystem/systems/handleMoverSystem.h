@@ -15,7 +15,7 @@
 #define HANDLEMOVERSYSTEM_H
 
 #include "system.h"
-#include "../../facade/facadeMotorGrafico.h"
+class facadeMotorGrafico;
 
 class handleMoverSystem : public system {
 public:

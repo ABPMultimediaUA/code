@@ -15,7 +15,8 @@
 #define CAMARASYSTEM_H
 
 #include "system.h"
-#include "../framework/entityManager.h"
+class entityManager;
+class facadeMotorGrafico;
 
 class camaraSystem : public system {
 public:
@@ -23,7 +24,7 @@ public:
     camaraSystem(const camaraSystem& orig);
     camaraSystem(entityManager*);
     virtual ~camaraSystem();
-    void update(unsigned int);
+    void update(unsigned int, facadeMotorGrafico*);
 private:
 
 };

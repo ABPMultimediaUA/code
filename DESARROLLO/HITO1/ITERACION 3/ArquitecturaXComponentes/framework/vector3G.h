@@ -5,21 +5,21 @@
  */
 
 /* 
- * File:   vector3.h
+ * File:   vector3G.h
  * Author: elcuc_000
  *
  * Created on 2 de diciembre de 2016, 2:23
  */
 
-#ifndef VECTOR3_H
-#define VECTOR3_H
+#ifndef VECTOR3G_H
+#define VECTOR3G_H
 
-class vector3 {
+class vector3G {
 public:
-    vector3();
-    vector3(const vector3& orig);
-    vector3(float, float, float);
-    virtual ~vector3();
+    vector3G();
+    vector3G(const vector3G& orig);
+    vector3G(float, float, float);
+    virtual ~vector3G();
     void setX(float);
     void setY(float);
     void setZ(float);
@@ -31,5 +31,5 @@ private:
     float x,y,z;
 };
 
-#endif /* VECTOR3_H */
+#endif /* VECTOR3G_H */
 

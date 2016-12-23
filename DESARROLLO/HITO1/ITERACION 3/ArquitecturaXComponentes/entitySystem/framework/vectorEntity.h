@@ -14,7 +14,7 @@
 #ifndef VECTORENTITY_H
 #define VECTORENTITY_H
 
-#include "gameEntity.h"
+class gameEntity;
 
 class vectorEntity {
 public:

@@ -15,27 +15,27 @@
 #define BALACOMPONENT_H
 
 #include "componente.h"
-#include "../../framework/vector3.h"
-#include "../../framework/vector2.h"
+#include "../../framework/vector3G.h"
+class vector2G;
 
 class balaComponent : public componente {
 public:
     balaComponent();
-    balaComponent(float, vector3);
+    balaComponent(unsigned long, vector3G);
     balaComponent(const balaComponent& orig);
     virtual ~balaComponent();
-    float getTiempoDisparo();
-    vector2 getVelocidad();
+    unsigned long getTiempoDisparo();
+    vector2G getVelocidad();
     bool getVivo();
-    vector3 getPosFinal();
-    void setTiempoDisparo(float);
-    void setVelocidad(vector2);
-    void setPosFinal(vector3);
+    vector3G getPosFinal();
+    void setTiempoDisparo(unsigned long);
+    void setVelocidad(vector2G);
+    void setPosFinal(vector3G);
     void setVivo(bool);
 private:
-    float tiempoDisparo;
+    unsigned long tiempoDisparo;
     bool vivo;
-    vector3 posFinal;
+    vector3G posFinal;
 };
 
 #endif /* BALACOMPONENT_H */

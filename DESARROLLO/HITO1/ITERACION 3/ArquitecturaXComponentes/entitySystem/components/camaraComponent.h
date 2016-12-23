@@ -15,29 +15,27 @@
 #define CAMARACOMPONENT_H
 
 #include "componente.h"
-#include "../../framework/vector3.h"
-#include "../../facade/facadeMotorGrafico.h"
+#include "../../framework/vector3G.h"
+class facadeMotorGrafico;
 
 class camaraComponent : public componente {
 public:
     camaraComponent();
     camaraComponent(const camaraComponent& orig);
-    camaraComponent(facadeMotorGrafico*, int, vector3*, vector3*);
+    camaraComponent(facadeMotorGrafico*, vector3G, vector3G);
     virtual ~camaraComponent();
-    void setFoco(vector3*);
+    void setFoco(vector3G);
     void setFoco(float,float,float);
-    void setCamara(facadeMotorGrafico*);
-    vector3 getFoco();
+    vector3G getFoco();
     float getFocoX();
     float getFocoY();
     float getFocoZ();
-    facadeMotorGrafico* getCamara();
-    void setFoco(int*);
-    void crearCamara(int, vector3*, vector3*);
+    void setFoco(int);
+    void crearCamara(facadeMotorGrafico*, vector3G, vector3G);
+    unsigned short getPosCamara();
 private:
-    vector3 *foco;
-    facadeMotorGrafico *camara;
-    int posCamara;
+    vector3G foco;
+    unsigned short posCamara;
 };
 
 #endif /* CAMARACOMPONENT_H */

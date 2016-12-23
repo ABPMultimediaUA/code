@@ -5,61 +5,61 @@
  */
 
 /* 
- * File:   vector3.cpp
+ * File:   vector3G.cpp
  * Author: elcuc_000
  * 
  * Created on 2 de diciembre de 2016, 2:23
  */
 #include <iostream>
-#include "vector3.h"
+#include "vector3G.h"
 
-vector3::vector3() {
+vector3G::vector3G() {
     x=0.0f;
     y=0.0f;
     z=0.0f;
 }
 
-vector3::vector3(const vector3& orig) {
+vector3G::vector3G(const vector3G& orig) {
     x = orig.x;
     y = orig.y;
     z = orig.z;
 }
 
-vector3::vector3(float XX, float YY, float ZZ){
+vector3G::vector3G(float XX, float YY, float ZZ){
     x=XX;
     y=YY;
     z=ZZ;
 }
 
-vector3::~vector3() {
+vector3G::~vector3G() {
 }
 
-void vector3::setX(float XX){
+void vector3G::setX(float XX){
     x = XX;
 }
 
-void vector3::setY(float YY){
+void vector3G::setY(float YY){
     y = YY;
 }
 
-void vector3::setZ(float ZZ){
+void vector3G::setZ(float ZZ){
     z = ZZ;
 }
 
-void vector3::setXYZ(float XX, float YY ,float ZZ){
+void vector3G::setXYZ(float XX, float YY ,float ZZ){
     x = XX;
     y = YY;
     z = ZZ;
 }
 
-float vector3::getX(){
+float vector3G::getX(){
     return x;
 }
 
-float vector3::getY(){
+float vector3G::getY(){
     return y;
 }
 
-float vector3::getZ(){
+float vector3G::getZ(){
     return z;
 }

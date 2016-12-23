@@ -15,15 +15,15 @@
 #define ENTITY2D_H
 
 #include <Box2D.h>
-#include "../framework/vector3.h"
+class vector3G;
 //#include "../framework/RayCastCallback.h"
 
 class Entity2D {
 public:
-    Entity2D(b2World*, vector3);
-    Entity2D(b2World*, vector3, vector3, vector3);
-    Entity2D(b2World*, vector3, vector3, vector3, bool);
-    Entity2D(b2World*, vector3, vector3, bool);
+    Entity2D(b2World*, vector3G);
+    Entity2D(b2World*, vector3G, vector3G, vector3G);
+    Entity2D(b2World*, vector3G, vector3G, vector3G, bool);
+    Entity2D(b2World*, vector3G, vector3G, bool);
     Entity2D(const Entity2D& orig);
     virtual ~Entity2D();
     //float rayCast(int modo);

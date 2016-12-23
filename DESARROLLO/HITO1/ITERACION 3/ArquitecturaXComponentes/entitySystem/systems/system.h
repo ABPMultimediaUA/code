@@ -16,14 +16,12 @@
 
 #include "../framework/entityManager.h"
 
-
 class system {
 public:
     system();
     system(const system& orig);
-    system(entityManager *);
+    system(entityManager*);
     virtual ~system();
-    void update(float);
     entityManager* getEntityManager();
 private:
     entityManager *eManager;

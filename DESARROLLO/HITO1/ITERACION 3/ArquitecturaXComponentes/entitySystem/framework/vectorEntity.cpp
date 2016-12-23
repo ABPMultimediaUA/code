@@ -13,6 +13,7 @@
 
 #include <iostream>
 #include "vectorEntity.h"
+#include "gameEntity.h"
 
 vectorEntity::vectorEntity() {
     t = new unsigned short;
@@ -33,7 +34,9 @@ vectorEntity::vectorEntity(const vectorEntity& orig) {
 
 vectorEntity::~vectorEntity() {
     for(unsigned short i; i<*t; i++){
-        delete vE[i];
+        if(vE[i]){
+            delete vE[i];
+        }
     }
     delete t;
     delete u;
@@ -74,7 +77,8 @@ void vectorEntity::add(gameEntity* gE){
 }
 
 bool vectorEntity::remove(unsigned short p){
-    if(p<=*u){
+    if(p<*u && vE[p]){
+        delete vE[p]; 
         vE[p] = 0;
         return true;
     }
@@ -88,8 +92,10 @@ unsigned short vectorEntity::size(){
 }
 
 void vectorEntity::printAllEntitysID(){
-    std::cout<<"Print Entitys ID"<<std::endl;
+    std::cout<<"===============  Print Entitys ID  ==============="<<std::endl;
     for(unsigned short i = 0; i < (*u); i++){
-        std::cout<<"vE["<<i<<"]->getID() = "<<vE[i]->getID()<<std::endl;
+        if(vE[i]){
+            std::cout<<"vE["<<i<<"]->getID() = "<<vE[i]->getID()<<std::endl;
+        }
     }
 }

@@ -23,7 +23,7 @@ velocityComponent::velocityComponent(const velocityComponent& orig) : componente
     velocidad = orig.velocidad;
 }
 
-velocityComponent::velocityComponent(vector2 v) : componente(typeid(velocityComponent).name()) {
+velocityComponent::velocityComponent(vector2G v) : componente(typeid(velocityComponent).name()) {
     velocidad.setXY(v.getX(), v.getY());
 }
 
@@ -35,10 +35,10 @@ void velocityComponent::setVelocidad(float x,float y){
     velocidad.setXY(x, y);
 }
 
-void velocityComponent::setVelocidad(vector2 v){
+void velocityComponent::setVelocidad(vector2G v){
     velocidad.setXY(v.getX(), v.getY());
 }
 
-vector2 velocityComponent::getVelocidad(){
+vector2G velocityComponent::getVelocidad(){
     return velocidad;
 }

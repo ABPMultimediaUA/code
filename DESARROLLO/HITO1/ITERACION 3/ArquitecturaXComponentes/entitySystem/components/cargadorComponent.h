@@ -24,8 +24,12 @@ public:
     virtual ~cargadorComponent();
     void setCargador(unsigned short);
     unsigned short getCargador();
+    void disparoPP();
+    unsigned short getDisparo();
+    void cargar();
 private:
     unsigned short cargador;
+    unsigned short disparo;
 };
 
 #endif /* CARGADORCOMPONENT_H */

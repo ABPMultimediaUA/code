@@ -16,12 +16,13 @@
 
 #include <Box2D.h>
 #include <map>
-#include "../framework/MiContactListener.h"
-#include "../framework/MyContactFilter.h"
-#include "../entitySystem/framework/gameEntity.h"
-#include "../framework/vector2.h"
-#include "../framework/vector3.h"
-#include "Entity2D.h"
+
+class MiContactListener;
+class MyContactFilter;
+class gameEntity;
+class vector2G;
+class vector3G;
+class Entity2D;
 
 class facadeColision {
 public:
@@ -29,17 +30,19 @@ public:
     facadeColision(const facadeColision& orig);
     virtual ~facadeColision();
     void setWorldStep(float);
-    unsigned long newEntity2D(vector3);
-    unsigned long newEntity2D(vector3,vector3,bool);
-    vector3 moveEntity2D0(int,vector2);
-    vector3 moveEntity2D1(int,vector2);
-    vector3 moveEntity2D2(int,vector2);
-    vector3 moveEntity2D3(int,vector2);
-    vector3 moveEntity2D4(int,vector2);
-    vector3 moveEntity2D5(int,vector2);
-    vector3 moveEntity2D6(int,vector2);
-    vector3 moveEntity2D7(int,vector2);
-    void setEntity2DVelocity(int,vector2);
+    unsigned long newEntity2D(vector3G);
+    unsigned long newEntity2D(vector3G,vector3G,bool);
+    vector3G moveEntity2D0(int,vector2G);
+    vector3G moveEntity2D1(int,vector2G);
+    vector3G moveEntity2D2(int,vector2G);
+    vector3G moveEntity2D3(int,vector2G);
+    vector3G moveEntity2D4(int,vector2G);
+    vector3G moveEntity2D5(int,vector2G);
+    vector3G moveEntity2D6(int,vector2G);
+    vector3G moveEntity2D7(int,vector2G);
+    vector3G moveEntity2DB(int,vector2G);
+    void setEntity2DVelocity(int,vector2G);
+    void deleteEntity2d(int);
 private:
     b2World* world;
     MiContactListener* contactListenerInstance;

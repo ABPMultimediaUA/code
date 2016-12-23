@@ -29,9 +29,6 @@ system::~system(){
     std::cout<<"Sistema eleminado"<<std::endl;
 }
 
-void system::update(float dt){
-}
-
 entityManager* system::getEntityManager(){
     return eManager;
 }
