@@ -22,15 +22,42 @@ Selector::Selector(const Selector& orig) {
 Selector::~Selector() {
 }
 
-bool Selector::Ejecutar(){
-    bool result;
+Nodo::Estado Selector::Ejecutar(){
+    Estado result;
+    
+    if(e==EXE){
+        std::cout<<"Un nodo hijo estaba ejecutando algo. Voy a ver si ha terminado..."<<std::endl;
+        for(std::vector<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
+        result=(*it)->GetEstado();
+        if(result==EXE){
+            result=(*it)->Ejecutar();
+            if(result==EXE){
+                std::cout<<"Sigue ejecutando. Espero"<<std::endl;
+                return result;
+            }
+            else{
+                std::cout<<"Ya ha terminado"<<std::endl;
+                e=result;
+                return result;
+            }
+        }
+        
+    }
+    }
+    
     
      std::cout<<"Entro en bucle Selector"<<std::endl;
     for(std::vector<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
         result=(*it)->Ejecutar();
         
-        if(result){
+        if(result==OK){
             return result;//verdadero
+        }
+        
+         if(result==EXE){
+            e=EXE;
+            std::cout<<"Un nodo hijo está ejecutando algo"<<std::endl;
+            return result;//Ejecutando
         }
     }
     

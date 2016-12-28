@@ -23,7 +23,7 @@ public:
     Secuencia(const Secuencia& orig);
     virtual ~Secuencia();
     std::vector<Nodo*> hijos;
-    virtual bool Ejecutar();
+    virtual Estado Ejecutar();
     virtual void Anyadir(Nodo* n);
 private:
 

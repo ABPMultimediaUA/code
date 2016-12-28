@@ -23,7 +23,8 @@ Nodo1::Nodo1(const Nodo1& orig) {
 Nodo1::~Nodo1() {
 }
 
-bool Nodo1::Ejecutar(){
-     std::cout<<"Este es el nodo 1."<<std::endl;
-     return true;
+Nodo::Estado Nodo1::Ejecutar(){
+     std::cout<<"Este es el nodo 1. Estoy ejecutando algo"<<std::endl;
+     e=EXE;
+     return EXE;
 }

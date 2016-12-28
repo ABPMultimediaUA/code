@@ -23,21 +23,48 @@ Secuencia::~Secuencia() {
 }
 
 
-bool Secuencia::Ejecutar(){
-    bool result;
+Nodo::Estado Secuencia::Ejecutar(){
+    Estado result;
+    
+    if(e==EXE){
+        std::cout<<"Un nodo hijo estaba ejecutando algo. Voy a ver si ha terminado..."<<std::endl;
+        for(std::vector<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
+        result=(*it)->GetEstado();
+        if(result==EXE){
+            result=(*it)->Ejecutar();
+            if(result==EXE){
+                std::cout<<"Sigue ejecutando. Espero"<<std::endl;
+                return result;
+            }
+            else{
+                std::cout<<"Ya ha terminado"<<std::endl;
+                e=result;
+                return result;
+            }
+        }
+        
+    }
+    }
     
      std::cout<<"Entro en bucle Secuencia"<<std::endl;
     for(std::vector<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
         result=(*it)->Ejecutar();
         
-        if(!result){
+        if(result==NO){
             return result;//falso
+        }
+        
+        if(result==EXE){
+            e=EXE;
+            std::cout<<"Un nodo hijo está ejecutando algo"<<std::endl;
+            return result;//Ejecutando
         }
     }
     
     return result;//verdadero
+
 }
 
-void Secuencia::Anyadir(Nodo* n){
+void Secuencia::Anyadir (Nodo* n){
     hijos.push_back(n);
 }

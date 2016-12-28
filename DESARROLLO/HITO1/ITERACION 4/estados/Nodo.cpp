@@ -26,7 +26,7 @@ Nodo::Nodo(const Nodo& orig) {
 Nodo::~Nodo() {
 }
 
-bool Nodo::Ejecutar(){
+Nodo::Estado Nodo::Ejecutar(){
     /*
      //std::cout<<"El nodo funciona."<<std::endl;
     bool result;
@@ -52,4 +52,19 @@ bool Nodo::Ejecutar(){
 
 void Nodo::Anyadir(Nodo* n){
    // hijos.push_front(n);
+}
+
+void Nodo::CambioEstado(int est){
+    switch(est){
+        case 0: e=NO;
+        break;
+        case 1: e=OK;
+        break;
+        case 2: e=EXE;
+        break;
+    }
+}
+
+Nodo::Estado Nodo::GetEstado(){
+return e;
 }

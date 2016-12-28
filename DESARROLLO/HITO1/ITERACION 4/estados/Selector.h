@@ -23,7 +23,7 @@ public:
     Selector(const Selector& orig);
     virtual ~Selector();
     std::vector<Nodo*> hijos;
-    virtual bool Ejecutar();
+    virtual Estado Ejecutar();
     virtual void Anyadir(Nodo* n);
 private:
 

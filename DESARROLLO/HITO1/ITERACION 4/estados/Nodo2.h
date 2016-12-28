@@ -22,7 +22,7 @@ public:
     Nodo2();
     Nodo2(const Nodo2& orig);
     virtual ~Nodo2();
-    virtual bool Ejecutar();
+    virtual Estado Ejecutar();
 private:
 
 };

@@ -25,8 +25,12 @@ public:
     Nodo();
     Nodo (const Nodo& orig);
     virtual ~Nodo();
-    virtual bool Ejecutar();
     virtual void Anyadir(Nodo* n);
+    typedef enum{OK, NO, EXE} Estado;
+    virtual Estado Ejecutar();
+    Estado e;
+    virtual void CambioEstado (int est);
+    virtual Estado GetEstado ();
     
 private:
 
