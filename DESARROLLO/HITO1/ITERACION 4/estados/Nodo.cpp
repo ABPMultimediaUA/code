@@ -26,7 +26,7 @@ Nodo::Nodo(const Nodo& orig) {
 Nodo::~Nodo() {
 }
 
-Nodo::Estado Nodo::Ejecutar(){
+Nodo::Estado Nodo::Ejecutar(Enemigo* ene){
     /*
      //std::cout<<"El nodo funciona."<<std::endl;
     bool result;

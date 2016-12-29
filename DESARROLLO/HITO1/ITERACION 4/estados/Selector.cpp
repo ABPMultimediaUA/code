@@ -22,7 +22,7 @@ Selector::Selector(const Selector& orig) {
 Selector::~Selector() {
 }
 
-Nodo::Estado Selector::Ejecutar(){
+Nodo::Estado Selector::Ejecutar(Enemigo* ene){
     Estado result;
     
     if(e==EXE){
@@ -30,7 +30,7 @@ Nodo::Estado Selector::Ejecutar(){
         for(std::vector<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
         result=(*it)->GetEstado();
         if(result==EXE){
-            result=(*it)->Ejecutar();
+            result=(*it)->Ejecutar(ene);
             if(result==EXE){
                 std::cout<<"Sigue ejecutando. Espero"<<std::endl;
                 return result;
@@ -48,7 +48,7 @@ Nodo::Estado Selector::Ejecutar(){
     
      std::cout<<"Entro en bucle Selector"<<std::endl;
     for(std::vector<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
-        result=(*it)->Ejecutar();
+        result=(*it)->Ejecutar(ene);
         
         if(result==OK){
             return result;//verdadero

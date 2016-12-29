@@ -20,6 +20,8 @@
 #include <memory>
 #include <vector>
 
+class Enemigo;
+
 class Nodo {
 public:
     Nodo();
@@ -27,7 +29,7 @@ public:
     virtual ~Nodo();
     virtual void Anyadir(Nodo* n);
     typedef enum{OK, NO, EXE} Estado;
-    virtual Estado Ejecutar();
+    virtual Estado Ejecutar(Enemigo* ene);
     Estado e;
     virtual void CambioEstado (int est);
     virtual Estado GetEstado ();

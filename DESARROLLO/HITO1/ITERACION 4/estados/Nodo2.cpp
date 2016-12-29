@@ -23,7 +23,7 @@ Nodo2::Nodo2(const Nodo2& orig) {
 Nodo2::~Nodo2() {
 }
 
-Nodo::Estado Nodo2::Ejecutar(){
+Nodo::Estado Nodo2::Ejecutar(Enemigo* ene){
      std::cout<<"Este es el nodo 2."<<std::endl;
      return OK;
 }

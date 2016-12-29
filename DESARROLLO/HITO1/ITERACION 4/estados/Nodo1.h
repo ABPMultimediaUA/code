@@ -22,7 +22,7 @@ public:
     Nodo1();
     Nodo1(const Nodo1& orig);
     virtual ~Nodo1();
-    virtual Estado Ejecutar();
+    virtual Estado Ejecutar(Enemigo* ene);
 private:
 
 };

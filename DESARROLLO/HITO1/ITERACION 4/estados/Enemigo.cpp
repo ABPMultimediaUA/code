@@ -383,5 +383,5 @@ void Enemigo::PatrullarCorriendo(){
 
 void Enemigo::Tree(){
     Nodo::Estado result;
-    result=this->tarea->Ejecutar();
+    result=this->tarea->Ejecutar(this);
 }

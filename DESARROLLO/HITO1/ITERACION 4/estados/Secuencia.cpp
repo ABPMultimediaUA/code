@@ -23,7 +23,7 @@ Secuencia::~Secuencia() {
 }
 
 
-Nodo::Estado Secuencia::Ejecutar(){
+Nodo::Estado Secuencia::Ejecutar(Enemigo* ene){
     Estado result;
     
     if(e==EXE){
@@ -31,7 +31,7 @@ Nodo::Estado Secuencia::Ejecutar(){
         for(std::vector<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
         result=(*it)->GetEstado();
         if(result==EXE){
-            result=(*it)->Ejecutar();
+            result=(*it)->Ejecutar(ene);
             if(result==EXE){
                 std::cout<<"Sigue ejecutando. Espero"<<std::endl;
                 return result;
@@ -48,7 +48,7 @@ Nodo::Estado Secuencia::Ejecutar(){
     
      std::cout<<"Entro en bucle Secuencia"<<std::endl;
     for(std::vector<Nodo*>::iterator it=this->hijos.begin();it!=this->hijos.end();it++) {
-        result=(*it)->Ejecutar();
+        result=(*it)->Ejecutar(ene);
         
         if(result==NO){
             return result;//falso

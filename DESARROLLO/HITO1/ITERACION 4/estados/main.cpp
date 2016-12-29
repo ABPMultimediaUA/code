@@ -66,8 +66,8 @@ int main() {
     Nodo2 *n2=new Nodo2();
     Secuencia *ns=new Secuencia();
     //Selector *nsr= new Selector();
-    ns->Anyadir(n1);
     ns->Anyadir(n2);
+    ns->Anyadir(n1);
     //n->Anyadir(nsr);
     
     //std::cout<<n->hijos.size()<<std::endl;
