@@ -27,6 +27,14 @@ MyContactFilter::~MyContactFilter() {
 
 bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB){
     
+    
+    /*#define FILTRO_PERSONAJE 1
+#define FILTRO_PARED 2
+#define FILTRO_PUERTA 3
+#define FILTRO_DISPAROPERS 4
+#define FILTRO_DISPAROENE 5
+#define FILTRO_ENEMIGO 6*/
+    
     if(fixtureA != NULL && fixtureB != NULL){
     
     const b2Filter& f1 = fixtureA->GetFilterData();
@@ -34,8 +42,9 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB){
     bool colision = false;
  
     
-    if(f1.groupIndex == 1){
-        if((f2.groupIndex == 2 || f2.groupIndex == 3 || f2.groupIndex == 5)){
+    if(f1.groupIndex == 1 || f2.groupIndex == 1){
+        if(f2.groupIndex == 2 || f2.groupIndex == 3 || f2.groupIndex == 5 ||f2.groupIndex == 6 ||
+                f1.groupIndex == 2 || f1.groupIndex == 3 || f1.groupIndex == 5 ||f1.groupIndex == 6){
             std::cout<<"ENTRO CON 1"<<std::endl;
            // colision = (f1.maskBits & f2.categoryBits) != 0 && (f1.categoryBits & f2.maskBits) != 0;
                     colision = true;
@@ -44,7 +53,8 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB){
         }
     }
     else if(f1.groupIndex == 4 || f2.groupIndex == 4){
-        if(f1.groupIndex == 2 || f1.groupIndex == 3 || f1.groupIndex == 5 || f2.groupIndex == 2 || f2.groupIndex == 3 || f2.groupIndex == 5){
+        if(f1.groupIndex == 2 || f1.groupIndex == 3 || f1.groupIndex == 5 || f1.groupIndex == 6 
+                || f2.groupIndex == 2 || f2.groupIndex == 3 || f2.groupIndex == 5 || f2.groupIndex == 6){
                         std::cout<<"ENTRO CON 4"<<std::endl;
 
 //             colision = (f1.maskBits & f2.categoryBits) != 0 && (f1.categoryBits & f2.maskBits) != 0;

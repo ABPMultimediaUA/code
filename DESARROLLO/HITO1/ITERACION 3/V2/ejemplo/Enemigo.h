@@ -13,7 +13,7 @@
 
 #include <irrlicht.h>
 #include <iostream>
-#include <Box2D.h>
+#include "Entity2D.h"
 #include "Personaje.h"
 #include "CAppReceiver.h"
 
@@ -38,7 +38,7 @@ using namespace gui;
 
 class Enemigo {
 public:
-    Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
+    Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion);
     Enemigo(const Enemigo& orig);
     virtual ~Enemigo();
     vector3df getPos();
@@ -62,10 +62,7 @@ private:
     float velRapida;
     int estPatrulla;
     vector3df pos;
-    b2Body *body;
-    b2BodyDef bodyDef;
-    b2PolygonShape bodyShape;
-    b2MassData md;
+    Entity2D *entity;
 
 };
 

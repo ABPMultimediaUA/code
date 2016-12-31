@@ -20,13 +20,13 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
+Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion) {
     
     maya = smgr -> addCubeSceneNode(10); //preguntar a Miguel Angel
     
     if (maya) {
     
-        maya -> setPosition(vector3df(0, 10, 40));
+        maya -> setPosition(posicion);//vector3df(0, 10, 40)
         maya->getMaterial(0).EmissiveColor.set(0,128,0,20);
         //primer parametro del setVertexColors es de la maya que quieres cambiar el color y con su getMesh se consigue
         // smgr -> getMeshManipulator()->setVertexColors(cube->getMesh(), SColor(0, 0, 255, 128));//lus, R, G, B
@@ -37,22 +37,10 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
     vel = 20.0f;
     velRapida = 30.0f;
     pos = maya->getPosition();
-    bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(0, 0);
-    bodyShape.SetAsBox(10, 10);
-    body = world->CreateBody(&bodyDef);
-    body -> CreateFixture(&bodyShape, 1.0f);
+    entity = new Entity2D(world, pos, true);
     estado=4;
     estPatrulla=0;
-    /* md.mass = 2.0;
-     md.center = b2Vec2(5.0,5.0);
-     md.I = 1.0;
-     body->SetMassData(&md);*/
-
-    /*std::cout<<"Tam X: "<<maya->getScale().X<<std::endl;
-    std::cout<<"Tam Y: "<<maya->getScale().Y<<std::endl;
-    std::cout<<"Tam Z: "<<maya->getScale().Z<<std::endl;
-    std::cout<<"Pos X: "<<pos.X<<" Pos Y: "<<pos.Y<<" Pos Z: "<<pos.Z<<std::endl;*/
+  
 
     
 }
@@ -64,7 +52,10 @@ Enemigo::~Enemigo() {
 }
 
 void Enemigo::mover(int modo, f32 dt) {
-
+//std::cout<<"//////////////////////////////////////////"<<std::endl;
+//            std::cout<<""<<std::endl;
+//            std::cout<<"POS ENE ANTES"<<std::endl;
+//                 std::cout<<"Pos 3D X: "<<pos.X<<" Pos 3D Y: "<<pos.Y<<" Pos 3D Z: "<<pos.Z<<std::endl;
 
     switch (modo) {
 
@@ -74,8 +65,8 @@ void Enemigo::mover(int modo, f32 dt) {
                std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
             // body->ApplyForceToCenter(b2Vec2(5.0,0.0), true);
 
-            body->SetLinearVelocity(b2Vec2(vel, 0.0f));
-            pos.X = body->GetPosition().x;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
+            pos.X = entity->getCuerpo2D()->GetPosition().x;
 
             /* std::cout<<"Des"<<std::endl;
               std::cout<<"Pos X: "<<pos.X<<std::endl;
@@ -89,8 +80,8 @@ void Enemigo::mover(int modo, f32 dt) {
               std::cout<<"Pos X: "<<pos.X<<std::endl;
               std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
 
-            body->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-            pos.X = body->GetPosition().x;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+            pos.X = entity->getCuerpo2D()->GetPosition().x;
 
             /*std::cout<<"Des"<<std::endl;
              std::cout<<"Pos X: "<<pos.X<<std::endl;
@@ -104,8 +95,8 @@ void Enemigo::mover(int modo, f32 dt) {
               std::cout<<"Pos Z: "<<pos.Z<<std::endl;
               std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
 
-            body->SetLinearVelocity(b2Vec2(0.0f, vel));
-            pos.Z = body->GetPosition().y;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
+            pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
             /*  std::cout<<"Des"<<std::endl;
               std::cout<<"Pos Z: "<<pos.Z<<std::endl;
@@ -119,8 +110,8 @@ void Enemigo::mover(int modo, f32 dt) {
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
              std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
 
-            body->SetLinearVelocity(b2Vec2(0.0f, -vel));
-            pos.Z = body->GetPosition().y;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
+            pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
             /* std::cout<<"Des"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
@@ -129,7 +120,13 @@ void Enemigo::mover(int modo, f32 dt) {
 
             break;
 
-           
+//            std::cout<<"//////////////////////////////////////////"<<std::endl;
+//            std::cout<<""<<std::endl;
+//            std::cout<<"POS ENE DESPUES"<<std::endl;
+//           std::cout<<"Pos 3D X: "<<pos.X<<" Pos 3D Y: "<<pos.Y<<" Pos 3D Z: "<<pos.Z<<std::endl;
+
+
+   
 
     }
 
@@ -148,8 +145,8 @@ void Enemigo::moverRapido(int modo, f32 dt) {
                std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
             // body->ApplyForceToCenter(b2Vec2(5.0,0.0), true);
 
-            body->SetLinearVelocity(b2Vec2(velRapida, 0.0f));
-            pos.X = body->GetPosition().x;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velRapida, 0.0f));
+            pos.X = entity->getCuerpo2D()->GetPosition().x;
 
             /* std::cout<<"Des"<<std::endl;
               std::cout<<"Pos X: "<<pos.X<<std::endl;
@@ -163,8 +160,8 @@ void Enemigo::moverRapido(int modo, f32 dt) {
               std::cout<<"Pos X: "<<pos.X<<std::endl;
               std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
 
-            body->SetLinearVelocity(b2Vec2(-velRapida, 0.0f));
-            pos.X = body->GetPosition().x;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velRapida, 0.0f));
+            pos.X = entity->getCuerpo2D()->GetPosition().x;
 
             /*std::cout<<"Des"<<std::endl;
              std::cout<<"Pos X: "<<pos.X<<std::endl;
@@ -178,8 +175,8 @@ void Enemigo::moverRapido(int modo, f32 dt) {
               std::cout<<"Pos Z: "<<pos.Z<<std::endl;
               std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
 
-            body->SetLinearVelocity(b2Vec2(0.0f, velRapida));
-            pos.Z = body->GetPosition().y;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velRapida));
+            pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
             /*  std::cout<<"Des"<<std::endl;
               std::cout<<"Pos Z: "<<pos.Z<<std::endl;
@@ -193,8 +190,8 @@ void Enemigo::moverRapido(int modo, f32 dt) {
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
              std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
 
-            body->SetLinearVelocity(b2Vec2(0.0f, -velRapida));
-            pos.Z = body->GetPosition().y;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velRapida));
+            pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
             /* std::cout<<"Des"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
@@ -225,7 +222,7 @@ float Enemigo::getVel() {
 
 void Enemigo::setVelocidad() {
 
-    body->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
 
 }
 

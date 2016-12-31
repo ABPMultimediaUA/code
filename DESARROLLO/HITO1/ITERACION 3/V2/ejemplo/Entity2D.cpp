@@ -19,6 +19,7 @@
 #define FILTRO_PUERTA 3
 #define FILTRO_DISPAROPERS 4
 #define FILTRO_DISPAROENE 5
+#define FILTRO_ENEMIGO 6
 
 
 #define FILTRO_PUERTAABIERTA 15
@@ -26,12 +27,14 @@
 
 
 //hacer diferentes constructores para los distintos objetos
+//constructor personaje
 Entity2D::Entity2D(b2World *world, vector3df pos) {
     
     
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
     bodyShape.SetAsBox(10, 10);
+    
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     
@@ -39,7 +42,9 @@ Entity2D::Entity2D(b2World *world, vector3df pos) {
     filtro.groupIndex = FILTRO_PERSONAJE;
     body->GetFixtureList()->SetFilterData(filtro);
     iden = 0;
+    
 }
+//constructir pared
 
 Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala){
        //  std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
@@ -74,6 +79,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     iden = 1;
 }
 
+//constructir puerta
 Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta){
         bodyDef.type = b2_staticBody;
     bodyDef.position.Set(pos.X, pos.Z);
@@ -111,7 +117,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
      
   }
 }
-
+//constructor bala
 Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo){
     
     bodyDef.type = b2_dynamicBody;
@@ -127,6 +133,23 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo){
     body->GetFixtureList()->SetFilterData(filtro);
     
 }
+
+//constructor enemigo
+Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo) {
+    
+    
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.position.Set(pos.X, pos.Z);
+    bodyShape.SetAsBox(10, 10);
+    body = world->CreateBody(&bodyDef);
+    body -> CreateFixture(&bodyShape, 1.0f);
+    vivo = true;
+    body->SetUserData(this);
+    filtro.groupIndex = FILTRO_ENEMIGO;
+    body->GetFixtureList()->SetFilterData(filtro);
+    iden = 4;
+}
+
 
 Entity2D::Entity2D(const Entity2D& orig) {
 }

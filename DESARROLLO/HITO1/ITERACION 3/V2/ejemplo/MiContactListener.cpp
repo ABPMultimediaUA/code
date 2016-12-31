@@ -70,6 +70,7 @@ void MiContactListener::BeginContact(b2Contact* contact){
                 std::cout<<"Personaje"<<std::endl;
 
         }*/
+            
             std::cout<<"///////////////////////////////////"<<std::endl;
             std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
             std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;

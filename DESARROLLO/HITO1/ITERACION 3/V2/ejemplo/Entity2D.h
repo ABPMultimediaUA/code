@@ -31,6 +31,8 @@ public:
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta);
     Entity2D(b2World* world, vector3df pos, vector3df rot,  bool vivo);
+    Entity2D(b2World *world, vector3df pos, bool vivo);
+
     Entity2D(const Entity2D& orig);
     virtual ~Entity2D();
     float rayCast(int modo);
