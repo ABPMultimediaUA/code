@@ -49,7 +49,6 @@ public:
     void mover(int modo, f32 dt);
     void moverRapido(int modo, f32 dt);
     void setVelocidad();
-    void rotar(vector3df raton);
     void Cambiar(int nuevo);
     void Perseguir(Personaje *pers);
     void Alejarse (Personaje *pers);

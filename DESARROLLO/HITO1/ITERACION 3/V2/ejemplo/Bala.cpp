@@ -42,7 +42,7 @@ Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df 
     
     posInicial = posPers;
     
-    entity = new Entity2D(world, pos, maya->getRotation(), true);
+    entity = new Entity2D(world, pos, maya->getRotation(), true, this);
     
 }
 

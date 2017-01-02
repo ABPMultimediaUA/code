@@ -28,7 +28,7 @@
 
 //hacer diferentes constructores para los distintos objetos
 //constructor personaje
-Entity2D::Entity2D(b2World *world, vector3df pos) {
+Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers) {
     
     
     bodyDef.type = b2_dynamicBody;
@@ -42,11 +42,12 @@ Entity2D::Entity2D(b2World *world, vector3df pos) {
     filtro.groupIndex = FILTRO_PERSONAJE;
     body->GetFixtureList()->SetFilterData(filtro);
     iden = 0;
+    objeto3D = dirPers;
     
 }
 //constructir pared
 
-Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala){
+Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirPared){
        //  std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
 
     bodyDef.type = b2_staticBody;
@@ -66,7 +67,6 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
 
     }
     
-   
     
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
@@ -75,7 +75,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     filtro.groupIndex = FILTRO_PARED;
     body->GetFixtureList()->SetFilterData(filtro);
    
-    
+    objeto3D = dirPared;
     iden = 1;
 }
 
@@ -101,7 +101,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
 
     }
    
-    puerta = dirPuerta;
+    objeto3D = dirPuerta;
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     body->GetFixtureList()->SetSensor(sensor);
@@ -118,7 +118,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
   }
 }
 //constructor bala
-Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo){
+Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala){
     
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
@@ -131,11 +131,12 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo){
     live = vivo;
     filtro.groupIndex = FILTRO_DISPAROPERS;
     body->GetFixtureList()->SetFilterData(filtro);
+    objeto3D = dirBala;
     
 }
 
 //constructor enemigo
-Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo) {
+Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo) {
     
     
     bodyDef.type = b2_dynamicBody;
@@ -148,6 +149,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo) {
     filtro.groupIndex = FILTRO_ENEMIGO;
     body->GetFixtureList()->SetFilterData(filtro);
     iden = 4;
+    objeto3D = dirEnemigo;
 }
 
 
@@ -314,6 +316,6 @@ void Entity2D::setLive(bool x){
     live = x;
 }
 
-void* Entity2D::getPuerta(){
-    return puerta;
+void* Entity2D::getObjeto3D(){
+    return objeto3D;
 }

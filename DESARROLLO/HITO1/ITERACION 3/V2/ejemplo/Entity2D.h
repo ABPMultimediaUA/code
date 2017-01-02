@@ -27,11 +27,11 @@ using namespace gui;
 
 class Entity2D {
 public:
-    Entity2D(b2World *world, vector3df pos);
-    Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala);
+    Entity2D(b2World *world, vector3df pos, void* dirPers);
+    Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirPared);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta);
-    Entity2D(b2World* world, vector3df pos, vector3df rot,  bool vivo);
-    Entity2D(b2World *world, vector3df pos, bool vivo);
+    Entity2D(b2World* world, vector3df pos, vector3df rot,  bool vivo, void* dirBala);
+    Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo);
 
     Entity2D(const Entity2D& orig);
     virtual ~Entity2D();
@@ -42,7 +42,7 @@ public:
     int getIDEN();
     bool getLive();
     void setLive(bool x);
-    void* getPuerta();
+    void* getObjeto3D();
     void destruirFixture();
     void crearFixture();
     
@@ -56,7 +56,7 @@ private:
     b2Filter filtro;
     int iden;
     bool live;
-    void* puerta;
+    void* objeto3D;
   
 };
 

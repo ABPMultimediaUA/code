@@ -37,7 +37,7 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
     vel = 20.0f;
     velRapida = 30.0f;
     pos = maya->getPosition();
-    entity = new Entity2D(world, pos, true);
+    entity = new Entity2D(world, pos, true, this);
     estado=4;
     estPatrulla=0;
   
@@ -226,17 +226,7 @@ void Enemigo::setVelocidad() {
 
 }
 
-void Enemigo::rotar(vector3df raton) {
 
-
-    float angulo;
-
-    angulo = atan2f(raton.X - pos.X, raton.Y - pos.Z)*180 / 3.14;
-
-    maya->setRotation(vector3df(0, angulo + 90, 0));
-
-    //    line3df linea = getRay
-}
 
 void Enemigo::Cambiar(int nuevo){
   
