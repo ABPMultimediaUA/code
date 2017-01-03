@@ -60,6 +60,6 @@ void Pared::setEscala(vector3df newEscala){
 void Pared::setFisica(b2World* world){
      //std::cout<<"CREO PARED! "<<std::endl;
 
-    entity = new Entity2D(world, pos, rot, escal);
+    entity = new Entity2D(world, pos, rot, escal, this);
     
 }

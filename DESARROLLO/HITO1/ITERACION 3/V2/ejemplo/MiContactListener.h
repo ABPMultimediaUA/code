@@ -14,6 +14,9 @@
 #ifndef MICONTACTLISTENER_H
 #define MICONTACTLISTENER_H
 
+#include "Entity2D.h"
+
+
 class MiContactListener : public b2ContactListener {
 public:
     MiContactListener();
@@ -28,6 +31,10 @@ public:
     virtual void PreSolve(b2Contact* contact, const b2Manifold* oldManifold);
     // Podemos obtener el impulso aplicado sobre los cuerpos en contacto
     virtual void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse);
+    
+    void actualizarPuerta(Entity2D *entity, int modo);
+    void aplicarImpulso(Entity2D *entity);
+    
 };
 
 
