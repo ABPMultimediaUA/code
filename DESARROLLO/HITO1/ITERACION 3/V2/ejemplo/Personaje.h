@@ -48,29 +48,33 @@ private:
     f32 tiempoDisparo;
     bool disparo;
     std::list<Bala*> listaBalas;
+    int direccion;
 
 public:
     Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
     Personaje(const Personaje& orig);
     virtual ~Personaje();
+    
     vector3df getPos();
-    void setPos(vector3df pos);
-    float getVel();
-    void moverPersonaje(int modo, f32 dt);
-    void setVelocidad();
-    void rotar(vector3df raton);
-    float lanzarRayo(int modo);
     vector3df getRot();
     vector3df getAngulo();
     int getCargador();
-    void setCargador(int newCargador);
-    bool getDisparo();
-    void setDisparo(bool x);
+    float getVel();
     f32 getTiempoDisparo();
-    void setTiempoDisparo(f32 t);
+    float lanzarRayo(int modo);
+    bool getDisparo();
+    int getDireccion();
     
+    void moverPersonaje(int modo, f32 dt);
+    void setVelocidad();
+    void rotar(vector3df raton);
+    void setPos(vector3df pos);
+    void setCargador(int newCargador);  
+    void setDisparo(bool x);
+    void setTiempoDisparo(f32 t);  
     void actualizarLista(f32 dt);
     void disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *world, f32 dt, vector2df posRaton);
+    void actualizarPosicion();
     
 };
 

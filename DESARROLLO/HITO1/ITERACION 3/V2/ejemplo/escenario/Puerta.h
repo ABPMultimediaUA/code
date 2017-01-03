@@ -28,7 +28,7 @@ using namespace gui;
 class Puerta {
 public:
     
-    Puerta(vector3df posicion, vector3df rotacion, vector3df escala);
+    Puerta(vector3df posicion, vector3df rotacion, vector3df escala, IMeshSceneNode *objeto);
     Puerta(const Puerta& orig);
     virtual ~Puerta();
     
@@ -41,13 +41,18 @@ public:
     void setRotacion(vector3df newRot);
     void setEscala(vector3df newEscala);
     void setFisica(b2World *world);
+    void abrirPuerta();
+    void cerrarPuerta();
     
 private:
     
     vector3df pos;
+    vector3df posIni;
     vector3df rot;
     vector3df escal;
     Entity2D *entity;
+    IMeshSceneNode *maya;
+
 };
 
 #endif /* PUERTA_H */

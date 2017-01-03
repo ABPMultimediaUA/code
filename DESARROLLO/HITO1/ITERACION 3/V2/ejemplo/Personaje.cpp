@@ -41,7 +41,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     
     vel = 100.0f;
     pos = maya->getPosition();
-    entity = new Entity2D(world, pos);
+    entity = new Entity2D(world, pos, this);
     cargador = 30;
     tiempoDisparo = 0.0f;
     disparo = false;
@@ -183,6 +183,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 
 
+    direccion = modo;
     setPos(pos);
 }
 
@@ -207,11 +208,23 @@ float Personaje::getVel() {
     return vel;
 }
 
+int Personaje::getDireccion(){
+    return direccion;
+}
+
+void Personaje::actualizarPosicion(){
+    
+    pos.X = entity->getCuerpo2D()->GetPosition().x;
+    pos.Z = entity->getCuerpo2D()->GetPosition().y;
+    
+    setPos(pos);
+
+}
+
 void Personaje::setVelocidad() {
 
     entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
    
-
 }
 
 void Personaje::rotar(vector3df raton) {
