@@ -1,0 +1,6 @@
+W -> arriba
+A -> izquierda
+S -> abajo
+D -> derecha
+Click izq -> disparar
+Mover ratos -> rotar personaje

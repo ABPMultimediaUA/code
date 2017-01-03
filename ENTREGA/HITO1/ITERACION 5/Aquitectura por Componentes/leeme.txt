@@ -1,0 +1,6 @@
+En el ejecutable se crean una serie de entidades y se le añaden sus correspondientes componentes.
+Además se muestra como funcionan los Sistemas que es donde se producen los updates de los valores
+de los componentes.
+
+Tanto los componentes como las entidades se controlan mediante el entityManager que funciona como
+nucleo de busqueda y de enlace de las entidades.

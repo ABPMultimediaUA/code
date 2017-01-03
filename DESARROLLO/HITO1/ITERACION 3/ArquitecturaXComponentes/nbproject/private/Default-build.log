@@ -1,0 +1,1 @@
+g++ -Itools\irrlicht184/include -I/usr/X11R6/include  -Itools\Box2D -O3 -ffast-math main.cpp -o ./MaquinaEstadoXComponentes.exe -Ltools\irrlicht184/lib/Win32-gcc -lIrrlicht -Ltools\Box2D -lBox2D -lopengl32 -lm

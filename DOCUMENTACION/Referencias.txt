@@ -1,0 +1,9 @@
+La mayor parte de los documentos del proyecto se encuentra en:
+
+Entrega->Hito 0
+Entrega->Hito 1->Iteración 1
+Entrega->Hito 1->Iteración 2
+
+La entrega del trabajo de PM (Uso de recursos) está en:
+
+Documentación->Hito 1->Iteración 4

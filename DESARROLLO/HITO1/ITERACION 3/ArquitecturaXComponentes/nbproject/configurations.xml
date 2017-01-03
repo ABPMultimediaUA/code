@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="entitySystem">
+        <df name="components">
+          <in>balaComponent.cpp</in>
+          <in>balaComponent.h</in>
+          <in>cargadorComponent.cpp</in>
+          <in>colisionComponent.cpp</in>
+          <in>componente.cpp</in>
+          <in>escenarioComponent.cpp</in>
+          <in>handleMoverComponent.cpp</in>
+          <in>healthComponent.cpp</in>
+          <in>healthComponent.h</in>
+          <in>playerComponent.cpp</in>
+        </df>
+        <df name="systems">
+          <in>accionsSystem.cpp</in>
+          <in>accionsSystem.h</in>
+          <in>camaraSystem.cpp</in>
+          <in>disparoSystem.cpp</in>
+          <in>disparoSystem.h</in>
+          <in>handleMoverSystem.cpp</in>
+          <in>rotarSystem.cpp</in>
+        </df>
+      </df>
+      <df name="facade">
+        <in>CAppReceiver.cpp</in>
+        <in>Entity2D.cpp</in>
+        <in>facadeColision.cpp</in>
+        <in>facadeMotorGrafico.cpp</in>
+      </df>
+      <df name="framework">
+        <in>MiContactListener.cpp</in>
+        <in>MyContactFilter.cpp</in>
+        <in>gameClock.cpp</in>
+        <in>readJson.cpp</in>
+        <in>vector2G.cpp</in>
+        <in>vector3G.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="f2" displayName="Header" projectFiles="true">
+      <itemPath>entitySystem/facade/CAppReceiver.h</itemPath>
+      <itemPath>entitySystem/framework/camara.h</itemPath>
+      <itemPath>entitySystem/components/camaraComponent.h</itemPath>
+      <itemPath>entitySystem/components/componente.h</itemPath>
+      <itemPath>entitySystem/framework/diccionarioEnCo.h</itemPath>
+      <itemPath>entitySystem/framework/entityManager.h</itemPath>
+      <itemPath>entitySystem/facade/facadeMotorGrafico.h</itemPath>
+      <itemPath>entitySystem/framework/gameEntity.h</itemPath>
+      <itemPath>entitySystem/systems/moveSystem.h</itemPath>
+      <itemPath>entitySystem/framework/personaje.h</itemPath>
+      <itemPath>entitySystem/systems/playerSystem.h</itemPath>
+      <itemPath>entitySystem/components/renderComponent.h</itemPath>
+      <itemPath>entitySystem/components/stateMachineComponent.h</itemPath>
+      <itemPath>entitySystem/systems/system.h</itemPath>
+      <itemPath>entitySystem/components/transformComponent.h</itemPath>
+      <itemPath>entitySystem/framework/vector2.h</itemPath>
+      <itemPath>entitySystem/framework/vector3.h</itemPath>
+      <itemPath>entitySystem/framework/vectorEntity.h</itemPath>
+      <itemPath>entitySystem/components/velocityComponent.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f1" displayName="Source" projectFiles="true">
+      <itemPath>entitySystem/facade/CAppReceiver.cpp</itemPath>
+      <itemPath>entitySystem/framework/camara.cpp</itemPath>
+      <itemPath>entitySystem/components/camaraComponent.cpp</itemPath>
+      <itemPath>entitySystem/framework/diccionarioEnCo.cpp</itemPath>
+      <itemPath>entitySystem/framework/entityManager.cpp</itemPath>
+      <itemPath>entitySystem/facade/facadeMotorGrafico.cpp</itemPath>
+      <itemPath>entitySystem/framework/gameEntity.cpp</itemPath>
+      <itemPath>entitySystem/systems/moveSystem.cpp</itemPath>
+      <itemPath>entitySystem/framework/personaje.cpp</itemPath>
+      <itemPath>entitySystem/systems/playerSystem.cpp</itemPath>
+      <itemPath>entitySystem/components/renderComponent.cpp</itemPath>
+      <itemPath>entitySystem/components/stateMachineComponent.cpp</itemPath>
+      <itemPath>entitySystem/systems/system.cpp</itemPath>
+      <itemPath>entitySystem/components/transformComponent.cpp</itemPath>
+      <itemPath>entitySystem/framework/vector2.cpp</itemPath>
+      <itemPath>entitySystem/framework/vector3.cpp</itemPath>
+      <itemPath>entitySystem/framework/vectorEntity.cpp</itemPath>
+      <itemPath>entitySystem/components/velocityComponent.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+    <itemPath>main.cpp</itemPath>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-O3 -ffast-math"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>ArquitecturaXComponentes.exe</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>tools/irrlicht184/include</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="entitySystem/components/balaComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/components/balaComponent.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/components/camaraComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/components/cargadorComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/components/colisionComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/components/componente.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/components/escenarioComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/components/handleMoverComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/components/healthComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/components/healthComponent.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/components/playerComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/components/renderComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/components/stateMachineComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/components/transformComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/components/velocityComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/facade/CAppReceiver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>entitySystem/facade</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="entitySystem/facade/facadeMotorGrafico.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>entitySystem/facade</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="entitySystem/framework/camara.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>entitySystem/framework</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="entitySystem/framework/diccionarioEnCo.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/framework/entityManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/framework/gameEntity.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/framework/personaje.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>entitySystem/framework</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="entitySystem/framework/vector2.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>entitySystem/framework</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="entitySystem/framework/vector3.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>entitySystem/framework</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="entitySystem/framework/vectorEntity.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/systems/accionsSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/systems/accionsSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/systems/camaraSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/systems/disparoSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/systems/disparoSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="entitySystem/systems/handleMoverSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/systems/moveSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/systems/playerSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/systems/rotarSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="entitySystem/systems/system.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <folder path="0/entitySystem">
+        <ccTool>
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/facade">
+        <ccTool>
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="f1">
+        <ccTool>
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="facade/CAppReceiver.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="facade/Entity2D.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="facade/facadeColision.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="facade/facadeMotorGrafico.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="framework/MiContactListener.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="framework/MyContactFilter.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="framework/gameClock.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="framework/readJson.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>C:/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+            <pElem>framework</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="framework/vector2G.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="framework/vector3G.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>tools/Box2D</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

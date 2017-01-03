@@ -31,7 +31,8 @@ using namespace gui;
 
 int main() {
 
+
     Juego *game= new Juego();
-    
+
     return 0;
 }
