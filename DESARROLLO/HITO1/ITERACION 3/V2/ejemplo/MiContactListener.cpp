@@ -15,6 +15,10 @@
 #include "escenario/Puerta.h"
 #include "MiContactListener.h"
 #include "Personaje.h"
+#include "Juego.h"
+#include "CAppReceiver.h"
+
+extern Juego *game;
 
 MiContactListener::MiContactListener() {
 }
@@ -147,11 +151,11 @@ void MiContactListener::BeginContact(b2Contact* contact){
             }
 
             
-            if(entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true){
+            if(entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true && (*game).teclado.isKeyDown(irr::KEY_KEY_I)){
                 actualizarPuerta(entity1, 0);
             }
             
-            else if(entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true){
+            else if(entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true && (*game).teclado.isKeyDown(irr::KEY_KEY_I)){
                 actualizarPuerta(entity2, 0);
             }
     

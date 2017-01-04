@@ -66,14 +66,14 @@ void Puerta::abrirPuerta(){
                     //si tiene rotacion en Y van | sino van -
 
         if(rot.Y ==90){
-            std::cout<<"PUERTS ROTADA"<<std::endl;
+            std::cout<<"PUERTA ROTADA"<<std::endl;
 
             pos.Z -= 80;
                   
         }
         
         else{
-            std::cout<<"PUERTS NO ROTADA"<<std::endl;
+            std::cout<<"PUERTA NO ROTADA"<<std::endl;
 
             pos.X += 80;
         } 
@@ -121,14 +121,14 @@ void Puerta::cerrarPuerta(){
     std::cout<<"CIERRO"<<std::endl;
     
         if(rot.Y ==90){
-            std::cout<<"PUERTS ROTADA"<<std::endl;
+            std::cout<<"PUERTA ROTADA"<<std::endl;
 
             pos.Z += 80;
                   
         }
         
         else{
-            std::cout<<"PUERTS NO ROTADA"<<std::endl;
+            std::cout<<"PUERTA NO ROTADA"<<std::endl;
 
             pos.X -= 80;
         } 

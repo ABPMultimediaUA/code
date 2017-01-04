@@ -13,6 +13,13 @@
 
 #ifndef JUEGO_H
 #define JUEGO_H
+#include "CAppReceiver.h"
+#include "MyContactFilter.h"
+#include "escenario/Escenario.h"
+#include "Enemigo.h"
+#include "readJson.h"
+#include "Camara.h"
+#include <irrlicht.h>
 
 class Juego {
 public:

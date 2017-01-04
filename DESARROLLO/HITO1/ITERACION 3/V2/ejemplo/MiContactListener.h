@@ -15,6 +15,13 @@
 #define MICONTACTLISTENER_H
 
 #include "Entity2D.h"
+#include <irrlicht.h>
+#include <iostream>
+
+#ifdef _IRR_WINDOWS_
+#pragma comment(lib, "Irrlicht.lib")
+#pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
+#endif
 
 
 class MiContactListener : public b2ContactListener {

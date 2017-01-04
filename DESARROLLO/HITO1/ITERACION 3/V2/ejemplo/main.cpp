@@ -29,10 +29,12 @@ using namespace gui;
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
+Juego *game;
+
 int main() {
 
 
-    Juego *game= new Juego();
+    game= new Juego();
 
     return 0;
 }
