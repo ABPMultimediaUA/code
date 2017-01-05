@@ -87,6 +87,10 @@ Juego::Juego(const Juego& orig) {
 Juego::~Juego() {
 }
 
+CAppReceiver Juego::GetTeclado(){
+    return teclado;
+}
+
 void Juego::loopJuego()
 {
     while (device->run()) {
@@ -116,6 +120,10 @@ void Juego::loopJuego()
                 ene->Cambiar(5);
             }
             
+            
+            if(teclado.isKeyDown(irr::KEY_KEY_I)){
+                pers->ModPuerta();
+            }
             
             ene->Update(pers);
             

@@ -45,6 +45,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     cargador = 30;
     tiempoDisparo = 0.0f;
     disparo = false;
+    p=NULL;
     
     
     
@@ -301,6 +302,16 @@ void Personaje::actualizarLista(f32 dt){
          }
     }
 
+}
+void Personaje::ModPuerta(){
+    if(p!=NULL){
+        if(p->abierta){
+            p->cerrarPuerta();
+        }
+        else{
+            p->abrirPuerta();
+        }
+    }
 }
 
     

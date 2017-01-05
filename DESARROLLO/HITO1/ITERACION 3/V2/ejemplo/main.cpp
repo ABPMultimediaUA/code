@@ -30,11 +30,13 @@ using namespace gui;
 #endif
 
 Juego *game;
+CAppReceiver *tecladou;
 
 int main() {
 
 
     game= new Juego();
 
+    *tecladou=game->teclado;
     return 0;
 }

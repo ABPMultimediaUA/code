@@ -44,6 +44,7 @@ public:
     Juego();
     Juego(const Juego& orig);
     virtual ~Juego();
+    CAppReceiver GetTeclado();
 
 };
 

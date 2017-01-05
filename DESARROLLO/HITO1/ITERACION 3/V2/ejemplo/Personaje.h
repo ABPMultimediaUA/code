@@ -18,6 +18,7 @@
 #include <list>
 #include "Bala.h"
 #include "Entity2D.h"
+#include "escenario/Puerta.h"
 
 #ifndef PERSONAJE_H
 #define PERSONAJE_H
@@ -49,6 +50,7 @@ private:
     bool disparo;
     std::list<Bala*> listaBalas;
     int direccion;
+    
 
 public:
     Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
@@ -75,6 +77,8 @@ public:
     void actualizarLista(f32 dt);
     void disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *world, f32 dt, vector2df posRaton);
     void actualizarPosicion();
+    void ModPuerta();
+    Puerta* p=NULL;
     
 };
 

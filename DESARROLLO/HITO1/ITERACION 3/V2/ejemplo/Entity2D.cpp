@@ -95,7 +95,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     }
     
     else{
-         bodyShape.SetAsBox(5*escala.X, 20*escala.Z);
+         bodyShape.SetAsBox(5*escala.X, 40*escala.Z);
          bodyShape2.SetAsBox(5*escala.X, 5*escala.Z);
          
 

@@ -10,17 +10,19 @@
  * 
  * Created on 7 de diciembre de 2016, 11:27
  */
+#include "MiContactListener.h"
 #include <Box2D.h>
 #include <iostream>
 #include "escenario/Puerta.h"
-#include "MiContactListener.h"
 #include "Personaje.h"
 #include "Juego.h"
 #include "CAppReceiver.h"
 
 extern Juego *game;
+extern CAppReceiver *tecladou;
 
 MiContactListener::MiContactListener() {
+    
 }
 
 MiContactListener::MiContactListener(const MiContactListener& orig) {
@@ -29,18 +31,19 @@ MiContactListener::MiContactListener(const MiContactListener& orig) {
 MiContactListener::~MiContactListener() {
 }
 
-void MiContactListener::actualizarPuerta(Entity2D* entity, int modo){
+void MiContactListener::actualizarPuerta(Entity2D* entitypu, Entity2D* entityper, int modo){
                 std::cout<<"ACTUALIZO "<<modo<<std::endl;
-  Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
+  Puerta *puerta = static_cast<Puerta*>(entitypu->getObjeto3D());
+  Personaje *per= static_cast<Personaje*>(entityper->getObjeto3D());
     if(modo == 0){
             //si tiene rotacion en Y van | sino van -
-        puerta->abrirPuerta();
+        per->p=puerta;
             
     }
     
     
     else{
-        puerta->cerrarPuerta();
+        per->p=NULL;
        
     }
     
@@ -112,6 +115,7 @@ void MiContactListener::BeginContact(b2Contact* contact){
        std::cout<<"////////////////////////"<<std::endl;
 
    std::cout<<"COLISION"<<std::endl;
+   
    if(contact != NULL){
     b2Fixture *f1 = contact->GetFixtureA();
     b2Fixture *f2 = contact->GetFixtureB();
@@ -151,14 +155,21 @@ void MiContactListener::BeginContact(b2Contact* contact){
             }
 
             
-            if(entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true && (*game).teclado.isKeyDown(irr::KEY_KEY_I)){
-                actualizarPuerta(entity1, 0);
+            //std::cout<<tecladop.isKeyDown(irr::KEY_KEY_A)<<std::endl;
+            
+            if(entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true){
+                actualizarPuerta(entity1, entity2, 0);
             }
             
-            else if(entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true && (*game).teclado.isKeyDown(irr::KEY_KEY_I)){
-                actualizarPuerta(entity2, 0);
+            
+            
+            else if(entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true){
+                
+                actualizarPuerta(entity2, entity1, 0);
             }
     
+            
+            
     }
    }
 }
@@ -195,11 +206,11 @@ void MiContactListener::EndContact(b2Contact* contact){
 
             
             if(entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true){
-                actualizarPuerta(entity1, 1);
+                actualizarPuerta(entity1, entity2, 1);
             }
             
             else if(entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true){
-                actualizarPuerta(entity2, 1);
+                actualizarPuerta(entity2, entity1, 1);
             }
     
     }

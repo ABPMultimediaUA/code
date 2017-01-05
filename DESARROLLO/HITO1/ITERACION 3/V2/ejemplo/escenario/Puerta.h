@@ -43,6 +43,7 @@ public:
     void setFisica(b2World *world);
     void abrirPuerta();
     void cerrarPuerta();
+    bool abierta;
     
 private:
     

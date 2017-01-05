@@ -20,6 +20,7 @@ Puerta::Puerta(vector3df posicion, vector3df rotacion, vector3df escala, IMeshSc
     escal = escala;
     posIni = posicion;
     maya = objeto;
+    abierta=false;
     
 }
 
@@ -79,6 +80,7 @@ void Puerta::abrirPuerta(){
         } 
    entity->destruirFixture();      
   maya->setPosition(pos);
+  abierta=true;
       //  if(entity->getCuerpo2D()->GetPosition().y >= y){
 //                    std::cout<<"ENTRO nAQUI"<<std::endl;
 //
@@ -134,6 +136,7 @@ void Puerta::cerrarPuerta(){
         } 
    entity->crearFixture();      
   maya->setPosition(pos);
+  abierta=false;
 //    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 50000.0f));
 //            //pos.X = x;
 //            pos.Z = y;
