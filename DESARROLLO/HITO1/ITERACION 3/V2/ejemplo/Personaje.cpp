@@ -46,7 +46,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     tiempoDisparo = 0.0f;
     disparo = false;
     p=NULL;
-    
+    llaves=0;
     
     
     /* md.mass = 2.0;
@@ -305,12 +305,22 @@ void Personaje::actualizarLista(f32 dt){
 }
 void Personaje::ModPuerta(){
     if(p!=NULL){
+        if(p->conllave&&llaves<=0){
+         std::cout<<"Necesitas una llave para abrir esta puerta"<<std::endl;   
+        }
+        else if(llaves>0||!p->conllave){
         if(p->abierta){
             p->cerrarPuerta();
         }
         else{
             p->abrirPuerta();
+            if(p->conllave){
+                std::cout<<"Abres la puerta usando una llave"<<std::endl;   
+                llaves--;
+                p->conllave=false;//esto habra que cambiarlo
+            }
         }
+    }
     }
 }
 

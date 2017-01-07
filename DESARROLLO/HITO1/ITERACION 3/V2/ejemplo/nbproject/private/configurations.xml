@@ -26,6 +26,8 @@
       <in>EstadoJuego.h</in>
       <in>Juego.cpp</in>
       <in>Juego.h</in>
+      <in>LLave.cpp</in>
+      <in>LLave.h</in>
       <in>MiContactListener.cpp</in>
       <in>MiContactListener.h</in>
       <in>MyContactFilter.cpp</in>
@@ -64,6 +66,8 @@
         <gdb_interceptlist>
           <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
         </gdb_interceptlist>
+        <gdb_signals>
+        </gdb_signals>
         <gdb_options>
           <DebugOptions>
           </DebugOptions>

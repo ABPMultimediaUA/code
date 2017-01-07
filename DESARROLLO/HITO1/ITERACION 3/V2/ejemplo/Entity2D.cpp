@@ -20,6 +20,7 @@
 #define FILTRO_DISPAROPERS 4
 #define FILTRO_DISPAROENE 5
 #define FILTRO_ENEMIGO 6
+#define FILTRO_LLAVE 7
 
 
 #define FILTRO_PUERTAABIERTA 15
@@ -77,6 +78,34 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
    
     objeto3D = dirPared;
     iden = 1;
+}
+
+
+//construir llave
+
+Entity2D::Entity2D(b2World* world, void* dirLLave, vector3df pos){
+       //  std::cout<<"CREO LLAVE CON ENTITY! "<<std::endl;
+
+    bodyDef.type = b2_staticBody;
+    bodyDef.position.Set(pos.X, pos.Z);
+    
+    
+    
+    
+         bodyShape.SetAsBox(5, 5);
+
+    
+    
+    
+    body = world->CreateBody(&bodyDef);
+    body -> CreateFixture(&bodyShape, 1.0f);
+    body->SetUserData(this);
+    
+    filtro.groupIndex = FILTRO_LLAVE;
+    body->GetFixtureList()->SetFilterData(filtro);
+   
+    objeto3D = dirLLave;
+    iden = 7;
 }
 
 //constructir puerta

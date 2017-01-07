@@ -17,6 +17,7 @@
 #include "Personaje.h"
 #include "Juego.h"
 #include "CAppReceiver.h"
+#include "LLave.h"
 
 extern Juego *game;
 extern CAppReceiver *tecladou;
@@ -168,7 +169,24 @@ void MiContactListener::BeginContact(b2Contact* contact){
                 actualizarPuerta(entity2, entity1, 0);
             }
     
+            if(entity1->getIDEN() == 7 && entity2->getIDEN() == 0){
+                Personaje *per= static_cast<Personaje*>(entity2->getObjeto3D());
+                LLave *l=static_cast<LLave*>(entity1->getObjeto3D());
+                per->llaves++;
+                l->Actualizar();//IMPORTANTE: REVISAR
+                std::cout<<"El jugador ha cogido la llave"<<std::endl;
+            }
             
+            
+            
+            else if(entity2->getIDEN() == 7 && entity1->getIDEN() == 0){
+                Personaje *per= static_cast<Personaje*>(entity1->getObjeto3D());
+                LLave *l=static_cast<LLave*>(entity2->getObjeto3D());
+                per->llaves++;
+                l->Actualizar();//IMPORTANTE: REVISAR
+                std::cout<<"El jugador ha cogido la llave"<<std::endl;
+                
+            }
             
     }
    }

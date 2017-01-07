@@ -14,6 +14,8 @@
       <in>Entity2D.cpp</in>
       <in>EstadoJuego.cpp</in>
       <in>Juego.cpp</in>
+      <in>LLave.cpp</in>
+      <in>LLave.h</in>
       <in>MiContactListener.cpp</in>
       <in>MyContactFilter.cpp</in>
       <in>Personaje.cpp</in>
@@ -93,6 +95,10 @@
       <item path="Juego.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="LLave.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LLave.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="MiContactListener.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">

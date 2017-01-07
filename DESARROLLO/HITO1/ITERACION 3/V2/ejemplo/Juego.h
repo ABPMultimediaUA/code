@@ -19,6 +19,7 @@
 #include "Enemigo.h"
 #include "readJson.h"
 #include "Camara.h"
+#include "LLave.h"
 #include <irrlicht.h>
 
 class Juego {
@@ -36,6 +37,7 @@ public:
     Personaje *pers;
     Escenario *esce;
     Enemigo *ene;
+    LLave *lla;
     readJson *json;
     Camara *cam;
     

@@ -71,6 +71,8 @@ Juego::Juego() {
     pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
     esce = new Escenario(smgr, driver, world);
     ene = new Enemigo(smgr, driver, world, vector3df(0,10,40));
+    lla= new LLave(smgr,driver,world,vector3df(10,10,50));
+    
     json = new readJson(esce);
     cam = new Camara(smgr, pers->getPos());
     
@@ -122,7 +124,15 @@ void Juego::loopJuego()
             
             
             if(teclado.isKeyDown(irr::KEY_KEY_I)){
+                
                 pers->ModPuerta();
+               
+                
+            }
+            
+            if(lla!=NULL&&!lla->getEntity()->getLive()){
+                delete(lla);
+                lla=NULL;
             }
             
             ene->Update(pers);

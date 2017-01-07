@@ -22,6 +22,12 @@ Puerta::Puerta(vector3df posicion, vector3df rotacion, vector3df escala, IMeshSc
     maya = objeto;
     abierta=false;
     
+    //en el futuro, hay que cambiar el metodo de creacion de puerta
+    //hay que poner un bool más en los parametros, para definir si queremos que la puerta esté cerrada con llave
+    //tambien seria conveniente que la puerta cerrada con llave tenga un color distinto
+    //como esto es un prototipo, pongo que todas las puertas estan cerradas con llave
+    conllave=true;
+    
 }
 
 Puerta::Puerta(const Puerta& orig) {

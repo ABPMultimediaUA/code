@@ -29,6 +29,7 @@ class Entity2D {
 public:
     Entity2D(b2World *world, vector3df pos, void* dirPers);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirPared);
+    Entity2D(b2World* world, void* dirLLave, vector3df pos);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta);
     Entity2D(b2World* world, vector3df pos, vector3df rot,  bool vivo, void* dirBala);
     Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo);

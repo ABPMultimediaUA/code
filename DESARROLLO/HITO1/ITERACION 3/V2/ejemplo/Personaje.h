@@ -79,6 +79,7 @@ public:
     void actualizarPosicion();
     void ModPuerta();
     Puerta* p=NULL;
+    int llaves;
     
 };
 
