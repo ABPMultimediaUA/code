@@ -71,6 +71,8 @@ Juego::Juego() {
     pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
     esce = new Escenario(smgr, driver, world);
     ene = new Enemigo(smgr, driver, world, vector3df(0,10,40));
+    lla= new LLave(smgr,driver,world,vector3df(10,10,50));
+    
     json = new readJson(esce);
     cam = new Camara(smgr, pers->getPos());
     
@@ -87,8 +89,14 @@ Juego::Juego(const Juego& orig) {
 Juego::~Juego() {
 }
 
+CAppReceiver Juego::GetTeclado(){
+    return teclado;
+}
+
 void Juego::loopJuego()
 {
+    int up=300;
+    int i=0;
     while (device->run()) {
 
         if (device->isWindowActive()) {
@@ -116,6 +124,18 @@ void Juego::loopJuego()
                 ene->Cambiar(5);
             }
             
+            i++;
+            if(teclado.isKeyDown(irr::KEY_KEY_I)&&i>up){
+                
+                pers->ModPuerta();
+                i=0;
+                
+            }
+            
+            if(lla!=NULL&&!lla->getEntity()->getLive()){
+                delete(lla);
+                lla=NULL;
+            }
             
             ene->Update(pers);
             

@@ -13,6 +13,14 @@
 
 #ifndef JUEGO_H
 #define JUEGO_H
+#include "CAppReceiver.h"
+#include "MyContactFilter.h"
+#include "escenario/Escenario.h"
+#include "Enemigo.h"
+#include "readJson.h"
+#include "Camara.h"
+#include "LLave.h"
+#include <irrlicht.h>
 
 class Juego {
 public:
@@ -29,6 +37,7 @@ public:
     Personaje *pers;
     Escenario *esce;
     Enemigo *ene;
+    LLave *lla;
     readJson *json;
     Camara *cam;
     
@@ -37,6 +46,7 @@ public:
     Juego();
     Juego(const Juego& orig);
     virtual ~Juego();
+    CAppReceiver GetTeclado();
 
 };
 

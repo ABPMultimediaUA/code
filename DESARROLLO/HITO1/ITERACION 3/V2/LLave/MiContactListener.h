@@ -15,13 +15,32 @@
 #define MICONTACTLISTENER_H
 
 #include "Entity2D.h"
+#include "CAppReceiver.h"
+#include <irrlicht.h>
+#include <iostream>
+#include <Box2D.h>
 
+#ifdef _IRR_WINDOWS_
+#pragma comment(lib, "Irrlicht.lib")
+#pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
+#endif
+
+using namespace irr;
+
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
+
+class Juego;
 
 class MiContactListener : public b2ContactListener {
 public:
     MiContactListener();
     MiContactListener(const MiContactListener& orig);
     ~MiContactListener();
+    Juego* j;
     // Se produce un contacto entre dos cuerpos
     virtual void BeginContact(b2Contact* contact);
     // El contacto entre los cuerpos ha finalizado
@@ -32,7 +51,7 @@ public:
     // Podemos obtener el impulso aplicado sobre los cuerpos en contacto
     virtual void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse);
     
-    void actualizarPuerta(Entity2D *entity, int modo);
+    void actualizarPuerta(Entity2D *entitypu, Entity2D *entityper, int modo);
     void aplicarImpulso(Entity2D *entity);
     
 };

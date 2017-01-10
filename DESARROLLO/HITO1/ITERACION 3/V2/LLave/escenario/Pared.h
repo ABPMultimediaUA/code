@@ -5,17 +5,15 @@
  */
 
 /* 
- * File:   Puerta.h
+ * File:   Pared.h
  * Author: David
  *
- * Created on 15 de diciembre de 2016, 20:03
+ * Created on 1 de diciembre de 2016, 19:35
  */
+
 #include <Box2D.h>
 #include <irrlicht.h>
 #include "../Entity2D.h"
-
-#ifndef PUERTA_H
-#define PUERTA_H
 
 using namespace irr;
 
@@ -25,12 +23,16 @@ using namespace video;
 using namespace io;
 using namespace gui;
 
-class Puerta {
+#ifndef PARED_H
+#define PARED_H
+
+
+
+class Pared {
 public:
-    
-    Puerta(vector3df posicion, vector3df rotacion, vector3df escala, IMeshSceneNode *objeto);
-    Puerta(const Puerta& orig);
-    virtual ~Puerta();
+    Pared(vector3df posicion, vector3df rotacion, vector3df escala);
+    Pared(const Pared& orig);
+    virtual ~Pared();
     
     vector3df getPosicion();
     vector3df getRotacion();
@@ -41,19 +43,21 @@ public:
     void setRotacion(vector3df newRot);
     void setEscala(vector3df newEscala);
     void setFisica(b2World *world);
-    void abrirPuerta();
-    void cerrarPuerta();
     
 private:
     
+   
     vector3df pos;
-    vector3df posIni;
     vector3df rot;
     vector3df escal;
     Entity2D *entity;
-    IMeshSceneNode *maya;
-
+    /*b2Body *body;
+    b2BodyDef bodyDef;
+    b2PolygonShape bodyShape;
+    b2MassData md;*/
+    
+    
 };
 
-#endif /* PUERTA_H */
+#endif /* PARED_H */
 

@@ -30,6 +30,7 @@ LLave::LLave(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3d
     
     pos = maya->getPosition();
     entity = new Entity2D(world, this, pos);
+    entity->setLive(true);
     
 }
 

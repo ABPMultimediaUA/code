@@ -20,6 +20,13 @@ Puerta::Puerta(vector3df posicion, vector3df rotacion, vector3df escala, IMeshSc
     escal = escala;
     posIni = posicion;
     maya = objeto;
+    abierta=false;
+    
+    //en el futuro, hay que cambiar el metodo de creacion de puerta
+    //hay que poner un bool más en los parametros, para definir si queremos que la puerta esté cerrada con llave
+    //tambien seria conveniente que la puerta cerrada con llave tenga un color distinto
+    //como esto es un prototipo, pongo que todas las puertas estan cerradas con llave
+    conllave=true;
     
 }
 
@@ -66,19 +73,20 @@ void Puerta::abrirPuerta(){
                     //si tiene rotacion en Y van | sino van -
 
         if(rot.Y ==90){
-            std::cout<<"PUERTS ROTADA"<<std::endl;
+            std::cout<<"PUERTA ROTADA"<<std::endl;
 
             pos.Z -= 80;
                   
         }
         
         else{
-            std::cout<<"PUERTS NO ROTADA"<<std::endl;
+            std::cout<<"PUERTA NO ROTADA"<<std::endl;
 
             pos.X += 80;
         } 
    entity->destruirFixture();      
   maya->setPosition(pos);
+  abierta=true;
       //  if(entity->getCuerpo2D()->GetPosition().y >= y){
 //                    std::cout<<"ENTRO nAQUI"<<std::endl;
 //
@@ -121,19 +129,20 @@ void Puerta::cerrarPuerta(){
     std::cout<<"CIERRO"<<std::endl;
     
         if(rot.Y ==90){
-            std::cout<<"PUERTS ROTADA"<<std::endl;
+            std::cout<<"PUERTA ROTADA"<<std::endl;
 
             pos.Z += 80;
                   
         }
         
         else{
-            std::cout<<"PUERTS NO ROTADA"<<std::endl;
+            std::cout<<"PUERTA NO ROTADA"<<std::endl;
 
             pos.X -= 80;
         } 
    entity->crearFixture();      
   maya->setPosition(pos);
+  abierta=false;
 //    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 50000.0f));
 //            //pos.X = x;
 //            pos.Z = y;
