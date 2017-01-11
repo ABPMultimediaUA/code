@@ -92,7 +92,6 @@ s32 Menu::run() {
          break;
          case 1:
              std::cout<<this->getNombre()<<std::endl;
-          
              this->nombre="intro";
          break;
          

@@ -31,8 +31,7 @@ int main(int argc, char **argv)
             {
                 manager.getEstadoActivo()->LimpiarEstado();
                 manager.AddEstado(new intro("intro"));
-               manager.CambiaEstado("intro");
-                
+                manager.CambiaEstado("intro");
             }
            device->getVideoDriver()->beginScene(true,true,SColor(255,255,255,255));
            manager.Render();
