@@ -46,6 +46,7 @@ public:
     void cerrarPuerta();
     bool abierta;
     bool conllave;
+     IMeshSceneNode *maya;
     
 private:
     
@@ -54,7 +55,7 @@ private:
     vector3df rot;
     vector3df escal;
     Entity2D *entity;
-    IMeshSceneNode *maya;
+   
 
 };
 

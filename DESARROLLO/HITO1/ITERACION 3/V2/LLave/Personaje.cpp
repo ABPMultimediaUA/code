@@ -317,7 +317,8 @@ void Personaje::ModPuerta(){
             if(p->conllave){
                 std::cout<<"Abres la puerta usando una llave"<<std::endl;   
                 llaves--;
-                p->conllave=false;//esto habra que cambiarlo
+                p->conllave=false;
+                p->maya->getMaterial(0).EmissiveColor.set(0,0,0,128);
             }
         }
     }
