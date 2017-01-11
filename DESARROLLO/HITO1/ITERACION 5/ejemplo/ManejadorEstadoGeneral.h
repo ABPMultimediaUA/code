@@ -21,6 +21,7 @@
 #include <irrlicht.h>
 #include <vector>
 #include "EstadoGeneral.h"
+#include "CAppReceiver.h"
 
 using namespace std;
 using namespace irr;
@@ -34,6 +35,7 @@ class ManejadorEstadoGeneral {
 private:
     IrrlichtDevice* irrlichtDevice;
     vector<EstadoGeneral*> EstadosJuego;
+    CAppReceiver dispositivo;
 private:
     ManejadorEstadoGeneral(void);
     ManejadorEstadoGeneral(const ManejadorEstadoGeneral&);
@@ -61,6 +63,7 @@ public:
     void EmpezarRender(void);
     void AcabarRender(void);
     void Render(void);
+
     
 };
 

@@ -49,3 +49,8 @@
      iDevice->getSceneManager()->addCubeSceneNode(10);
      iDevice->getSceneManager()->drawAll();
  }
+ 
+ void intro::StarUP(IrrlichtDevice* iDevice)
+ {
+     
+ }

@@ -17,6 +17,8 @@
 #include <string>
 #include <irrlicht.h>
 
+#include "CAppReceiver.h"
+
 using namespace std;
 using namespace irr;
 using namespace core;
@@ -30,6 +32,7 @@ protected:
     std::string nombre;
     bool activo;
     bool primero;
+    bool control;
 public:
     EstadoGeneral(void);
     EstadoGeneral(std::string nuevoNombre);
@@ -44,6 +47,8 @@ public:
     virtual void Fuera(void)=0;
     virtual bool OnEvent(const SEvent &event)=0;
     virtual void render(IrrlichtDevice* )=0;
+    virtual void StarUP(IrrlichtDevice*)=0;
+    
 };
 
 #endif /* ESTADOGENERAL_H */

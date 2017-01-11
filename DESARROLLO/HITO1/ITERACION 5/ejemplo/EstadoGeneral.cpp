@@ -55,3 +55,4 @@ void EstadoGeneral::LimpiarEstado()
     activo=false;
     this->Fuera();
 }
+

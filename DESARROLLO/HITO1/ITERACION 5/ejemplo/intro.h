@@ -28,7 +28,8 @@ public:
     void Fuera(void);
     bool OnEvent(const SEvent &event);
     void render(IrrlichtDevice* iDevice);
-    
+    void StarUP(IrrlichtDevice* iDevice);
+
     
 private:
 
