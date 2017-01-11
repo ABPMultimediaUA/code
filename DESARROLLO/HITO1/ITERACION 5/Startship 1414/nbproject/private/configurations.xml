@@ -6,18 +6,6 @@
         <in>Enemigo.cpp</in>
         <in>Enemigo.h</in>
       </df>
-      <df name="escenario">
-        <in>Camara.cpp</in>
-        <in>Camara.h</in>
-        <in>Escenario.cpp</in>
-        <in>Escenario.h</in>
-        <in>Pared.cpp</in>
-        <in>Pared.h</in>
-        <in>Puerta.cpp</in>
-        <in>Puerta.h</in>
-        <in>readJson.cpp</in>
-        <in>readJson.h</in>
-      </df>
       <df name="Escenario">
         <in>Camara.cpp</in>
         <in>Camara.h</in>
