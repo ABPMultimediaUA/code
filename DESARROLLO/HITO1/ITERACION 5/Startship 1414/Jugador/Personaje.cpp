@@ -230,7 +230,7 @@ void Personaje::setVelocidad() {
 void Personaje::rotar(vector3df raton) {
 
  float anguloRaton;
-    anguloRaton = -atan2f(raton.X - 320, raton.Y - 240)*180 / 3.14;
+    anguloRaton = -atan2f(raton.X - 683, raton.Y - 384)*180 / 3.14; //pasar tamanyo pantalla por parametro
 
     //std::cout << "ANGULO: " << anguloRaton << std::endl;
     maya->setRotation(vector3df(0, anguloRaton + 90, 0));

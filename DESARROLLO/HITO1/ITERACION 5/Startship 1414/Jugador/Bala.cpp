@@ -66,7 +66,7 @@ void Bala::mover(f32 tiempo) {
                  
     if(entity != NULL){    
 
-        vector2df direction(posRaton.X - 320, posRaton.Y - 240);
+        vector2df direction(posRaton.X - 683, posRaton.Y - 384); //pasar tamanyo pantalla por parametro
         direction.normalize();
 
 

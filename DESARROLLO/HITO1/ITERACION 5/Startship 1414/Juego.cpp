@@ -15,8 +15,8 @@
 
 #include "Juego.h"
 
-#define ANCHO 640
-#define LARGO 480
+#define ANCHO 1920
+#define LARGO 1080
 
 using namespace irr;
 
@@ -205,6 +205,10 @@ void Juego::Dentro(void)
             //recarga
             if(teclado.isKeyDown(irr::KEY_KEY_R)){
                 pers->setCargador(30);
+            }
+            
+            if(teclado.isKeyDown(irr::KEY_ESCAPE)){
+                 iDevice->closeDevice();
             }
             
             

@@ -34,7 +34,7 @@ void Menu::StarUP(IrrlichtDevice* iDevice)
     tamanyo = vector2df(300, 300);
     botonesMenu.push_back(interfaz->addButton(rect<s32>(tamanyo.X / 3, tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10, tamanyo.X / 3 + tamanyo.X / 3, tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10), NULL, 1, L"JUGAR"));
     botonesMenu.push_back(interfaz->addButton(rect<s32>(tamanyo.X / 3, tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10, tamanyo.X / 3 + tamanyo.X / 3, tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10), NULL, 2, L"SALIR"));
-    img = interfaz->addImage(core::rect<s32>(10,10, 640,480));
+    img = interfaz->addImage(core::rect<s32>(0,0, 1366,768));
     img->setImage(tex);
     img->setScaleImage(true);
     
@@ -71,7 +71,6 @@ s32 Menu::run() {
  {
      if(control==false)
      {
-         std::cout<<control<<std::endl;
          this->StarUP(iDevice);
          control=true;
      }

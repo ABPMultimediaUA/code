@@ -32,7 +32,7 @@ void update(std::string estado)
 
 int main(int argc, char **argv)
 {    
-    if(manager.Inicializar(640, 480, false))
+    if(manager.Inicializar(1366, 768, true))
     { 
         
         manager.AddEstado(new Menu("menu"));

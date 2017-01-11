@@ -18,6 +18,7 @@
 //cuando esten las fisicas hay que hacer una camara con resorte para que sea fluido el movimiento
 Camara::Camara(ISceneManager* smgr, vector3df posPers) {
     
+    
     smgr->addCameraSceneNode(0, vector3df(0,70,-40), posPers);
     
     camara = smgr->getActiveCamera(); 
