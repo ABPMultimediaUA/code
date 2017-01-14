@@ -139,12 +139,12 @@ void MiContactListener::BeginContact(b2Contact* contact){
             std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
             std::cout<<"///////////////////////////////////"<<std::endl;
 
-            if(entity1->getIDEN() == 3 ){
+            if(entity1->getIDEN() == 3 && f2->IsSensor() != true){
                 entity1->setLive(false);
                 
             }
 
-            else if(entity2->getIDEN() == 3){
+            else if(entity2->getIDEN() == 3 && f1->IsSensor() != true){
                 entity2->setLive(false);
             }
             

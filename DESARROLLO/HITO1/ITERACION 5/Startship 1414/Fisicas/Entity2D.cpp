@@ -33,7 +33,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers) {
     
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
-    bodyShape.SetAsBox(10, 10);
+    bodyShape.SetAsBox(6, 6);
     
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
@@ -89,13 +89,13 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
     if(rot.Y == 90){
         
-        bodyShape.SetAsBox(20*escala.Z, 5*escala.X);
+        bodyShape.SetAsBox(50*escala.Z, 5*escala.X);
         bodyShape2.SetAsBox(5*escala.Z, 5*escala.X);
         
     }
     
     else{
-         bodyShape.SetAsBox(5*escala.X, 20*escala.Z);
+         bodyShape.SetAsBox(5*escala.X, 50*escala.Z);
          bodyShape2.SetAsBox(5*escala.X, 5*escala.Z);
          
 
@@ -144,7 +144,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo) {
     
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
-    bodyShape.SetAsBox(10, 10);
+    bodyShape.SetAsBox(6, 6);
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     live = vivo;

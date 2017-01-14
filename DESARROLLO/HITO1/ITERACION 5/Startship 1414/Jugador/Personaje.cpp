@@ -86,7 +86,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
             entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
             pos.X = entity->getCuerpo2D()->GetPosition().x;
-
+            
             /* std::cout<<"Des"<<std::endl;
               std::cout<<"Pos X: "<<pos.X<<std::endl;
               std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/

@@ -52,7 +52,7 @@ int main(int argc, char **argv)
         //cambiar la camara activa smgr->setActiveCamera(camera);
         
         Personaje *pers = new Personaje(smgr,driver, world, vector3df(-100,0,0));
-        Personaje *pers2 = new Personaje(smgr,driver, world, vector3df(100,0,0));
+        Personaje *pers2 = new Personaje(smgr,driver, world, vector3df(80,0,5));
 
         Camara *cam = new Camara(smgr);
    

@@ -27,7 +27,7 @@ ManejadorEstadoGeneral::~ManejadorEstadoGeneral() {
 
 bool ManejadorEstadoGeneral::Inicializar(int width, int heigth, bool fullscreen)
 {
-    irrlichtDevice = createDevice(EDT_OPENGL, dimension2d<u32>(width, heigth), 32,fullscreen,0);
+    irrlichtDevice = createDevice(EDT_OPENGL, dimension2d<u32>(width, heigth), 32,false,0);
     
     if(irrlichtDevice)
     {
