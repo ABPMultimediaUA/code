@@ -45,8 +45,8 @@ int main(int argc, char **argv)
 	IGUIEnvironment* guienv = device->getGUIEnvironment(); //hacer intrerfaces de usuario
 
         b2World *world = new b2World(b2Vec2(0.0f,0.0f));
-        MiContactListener *contactListenerInstance =  new MiContactListener();
-        world->SetContactListener(contactListenerInstance);
+//        MiContactListener *contactListenerInstance =  new MiContactListener();
+//        world->SetContactListener(contactListenerInstance);
 	guienv->addStaticText(L"Ejemplo basico de Irrlicht",
 		rect<s32>(10,10,260,22), true);//metodo para poner algo por pantalla
         //cambiar la camara activa smgr->setActiveCamera(camera);

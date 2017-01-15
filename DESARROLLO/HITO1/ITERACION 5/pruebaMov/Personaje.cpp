@@ -37,7 +37,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 
 
     
-    vel = 200.0f;
+    vel = 50.0f;
     pos = maya->getPosition();
     entity = new Entity2D(world, pos, this);
     cargador = 30;
@@ -75,8 +75,8 @@ void Personaje::moverPersonaje(int modo) {
                std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
             // body->ApplyForceToCenter(b2Vec2(5.0,0.0), true);
 
-            //entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
-            entity->getCuerpo2D()->ApplyForceToCenter(b2Vec2(vel, 0.0f), true);
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
+//            entity->getCuerpo2D()->ApplyForceToCenter(b2Vec2(vel, 0.0f), true);
 
             pos.X = entity->getCuerpo2D()->GetPosition().x;
 
@@ -92,8 +92,8 @@ void Personaje::moverPersonaje(int modo) {
               std::cout<<"Pos X: "<<pos.X<<std::endl;
               std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
 
-            //entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-                        entity->getCuerpo2D()->ApplyForceToCenter(b2Vec2(-vel, 0.0f), true);
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+//                        entity->getCuerpo2D()->ApplyForceToCenter(b2Vec2(-vel, 0.0f), true);
 
             pos.X = entity->getCuerpo2D()->GetPosition().x;
 
