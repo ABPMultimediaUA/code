@@ -135,12 +135,13 @@ void Juego::Dentro(void)
 
             if (teclado.isKeyUp(irr::KEY_KEY_D) || teclado.isKeyUp(irr::KEY_KEY_A) || teclado.isKeyUp(irr::KEY_KEY_W) || teclado.isKeyUp(irr::KEY_KEY_S)) {
                 pers->setVelocidad();
+                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
             }
 
             if (teclado.isKeyDown(irr::KEY_KEY_W) && teclado.isKeyDown(irr::KEY_KEY_D)) {
 
                 pers->moverPersonaje(4, dt);
-                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
                 //cam->actualizarCamara(0, dt);
                 //cam->actualizarCamara(2, dt);

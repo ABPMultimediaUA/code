@@ -144,11 +144,7 @@ void MiContactListener::BeginContact(b2Contact* contact){
            */  
           
   std::cout<<"Sombra: "<<entity1->getIDENSH()<<" Elemento: "<<entity2->getIDEN()<<std::endl;
-            if((entity1->getIDENSH() ==1 && entity2->getIDEN() == 4)){
-                
-                std::cout<<"colisionan1 "<<entity1->getIDENSH()<<" "<<entity2->getIDEN()<<std::endl;
-                contact->SetEnabled(true);
-            }
+
         
             if((entity2->getIDEN()==0 && entity2->getIDEN() == 4)&&(entity2->getIDEN()==4 && entity2->getIDEN() == 0))
             {
@@ -226,10 +222,7 @@ void MiContactListener::EndContact(b2Contact* contact){
                 actualizarPuerta(entity2, 1);
             }
             
-        if((entity1->getIDENSH() ==1 && entity2->getIDEN() == 4)){
-                std::cout<<"colisionan2"<<std::endl;
-                contact->SetEnabled(false);
-            }
+       
         
     }
    }

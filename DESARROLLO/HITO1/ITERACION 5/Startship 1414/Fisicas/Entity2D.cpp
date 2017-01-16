@@ -20,6 +20,7 @@
 #define FILTRO_DISPAROPERS 4
 #define FILTRO_DISPAROENE 5
 #define FILTRO_ENEMIGO 6
+#define FILTRO_SOMB_ENEMIGO 14
 
 
 #define FILTRO_PUERTAABIERTA 15
@@ -190,7 +191,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo,IS
     idenSh=1;
     filtro.groupIndex = FILTRO_ENEMIGO;
     body->GetFixtureList()->SetFilterData(filtro);
-    
+    sombraE->GetFixtureList()->SetFilterData(filtro);
     fisica2=smgr->addCubeSceneNode(10);
     fisica2->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
     fisica2->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING,false);

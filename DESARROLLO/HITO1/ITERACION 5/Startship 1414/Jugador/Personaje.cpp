@@ -225,9 +225,7 @@ int Personaje::getDireccion(){
 void Personaje::actualizarPosicion(){
     
     pos.X = entity->getCuerpo2D()->GetPosition().x;
-    pos.Z = entity->getCuerpo2D()->GetPosition().y;
-    std::cout<<"actualiza Posicion"<<std::endl;
-    
+    pos.Z = entity->getCuerpo2D()->GetPosition().y;    
     
     setPos(pos);
 
@@ -236,6 +234,7 @@ void Personaje::actualizarPosicion(){
 void Personaje::setVelocidad() {
 
     entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+    this->actualizarPosicion();
   // entity->getSombraP2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
 }
 
