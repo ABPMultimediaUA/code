@@ -16,6 +16,7 @@
 #include <string>
 #include "Pared.h"
 #include "../Enemigos/Enemigo.h"
+#include "../Enemigos/CriaAlien.h"
 
 
 

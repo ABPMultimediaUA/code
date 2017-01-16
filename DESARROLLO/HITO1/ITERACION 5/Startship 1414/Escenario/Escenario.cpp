@@ -216,7 +216,8 @@ void Escenario::fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2W
        
         float x = rand()%100;
         float z = rand()%200;
-        Enemigo *ene = new Enemigo(smgr, driver, world, vector3df(x,10,z));
+        CriaAlien *ene =  new CriaAlien(smgr, driver, world, vector3df(x,10,z));
+       
         enemigos.push_back(ene);
     }
     
@@ -259,7 +260,7 @@ void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2Wor
 }
 
 void Escenario::actualizarListaEnemigos(Personaje *pers){
-    
+    /*
        if(!enemigos.empty()){
         for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
             if ((*it) != NULL) {
@@ -279,5 +280,5 @@ void Escenario::actualizarListaEnemigos(Personaje *pers){
                 (*it)->Update(pers);
             }
          }
-    }
+    }*/
 }

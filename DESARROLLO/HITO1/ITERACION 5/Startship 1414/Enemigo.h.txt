@@ -6,7 +6,7 @@
 
 /* 
  * File:   Enemigo.h
- * Author: Iv√°n
+ * Author: Iv·n
  *
  * Created on 29 de noviembre de 2016, 17:52
  */
@@ -22,16 +22,6 @@
 
 #ifndef ENEMIGO_H
 #define ENEMIGO_H
-
-#define CRIA 10
-#define BERSERKER 11
-#define SOLDADO 12
-#define JEFE 13
-
-#define DESCANSAR 0
-#define PATRULLAR 1
-#define ATACAR 2
-
 
 using namespace irr;
 
@@ -51,25 +41,29 @@ public:
     Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion);
     Enemigo(const Enemigo& orig);
     virtual ~Enemigo();
-    
-    virtual void Update(int estado);
-    virtual void Mover(int modo, f32 dt);
-    void setVelocidad();
-    virtual void Patrullar();
-    void setPos(vector3df pos);
-    bool estaVivo();
     vector3df getPos();
+    int estado;
+    void setPos(vector3df pos);
     float getVel();
-
-protected:
+    bool estaVivo();
+    void Update(Personaje *pers);
+    void mover(int modo, f32 dt);
+    void moverRapido(int modo, f32 dt);
+    void setVelocidad();
+    void Cambiar(int nuevo);
+    void Perseguir(Personaje *pers);
+    void Alejarse (Personaje *pers);
+    void Irapunto ();
+    void Patrullar();
+    void PatrullarCorriendo();
+private:
     IMeshSceneNode *maya;
     float vel;
+    float velRapida;
+    int estPatrulla;
     vector3df pos;
     Entity2D *entity;
-    int estadoActual;
-    float vida;
-    float cansancio;
-    int raza;
+
 };
 
 #endif /* ENEMIGO_H */
