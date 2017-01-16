@@ -24,11 +24,16 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
     
 }
 
-Enemigo::Enemigo(const Enemigo& orig) {
-}
+//Enemigo::Enemigo(const Enemigo& orig) {
+//}
 
 Enemigo::~Enemigo() {
-      
+             std::cout<<""<<std::endl;
+
+       std::cout<<"////////////////////////"<<std::endl;
+    std::cout<<"MUERE: "<<maya<<std::endl;
+     maya->getParent()->removeChild(maya);
+    delete(entity);
 }
 
 void Enemigo::Update(int estado)

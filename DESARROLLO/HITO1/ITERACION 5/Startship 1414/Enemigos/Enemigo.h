@@ -49,7 +49,7 @@ using namespace gui;
 class Enemigo {
 public:
     Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion);
-    Enemigo(const Enemigo& orig);
+   // Enemigo(const Enemigo& orig);
     virtual ~Enemigo();
     
     virtual void Update(int estado);

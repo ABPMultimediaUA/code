@@ -255,12 +255,12 @@ void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2Wor
         }
         
       
-        Enemigo *ene = new Enemigo(smgr, driver, world, vector3df(x,10,z));
-        enemigos.push_back(ene);
+//        Enemigo *ene = new Enemigo(smgr, driver, world, vector3df(x,10,z));
+//        enemigos.push_back(ene);
 }
 
 void Escenario::actualizarListaEnemigos(Personaje *pers){
-    /*
+    
        if(!enemigos.empty()){
         for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
             if ((*it) != NULL) {
@@ -274,11 +274,11 @@ void Escenario::actualizarListaEnemigos(Personaje *pers){
                 it++;
         }
         
-        for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end(); it++) {
-            if ((*it) != NULL && (*it)->estaVivo() == true) {
-               // std::cout<<"ENTRO "<<(*it)<<std::endl;
-                (*it)->Update(pers);
-            }
-         }
-    }*/
+//        for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end(); it++) {
+//            if ((*it) != NULL && (*it)->estaVivo() == true) {
+//                std::cout<<"ENTRO "<<(*it)<<std::endl;
+//                (*it)->Update(pers);
+//            }
+//         }
+    }
 }
