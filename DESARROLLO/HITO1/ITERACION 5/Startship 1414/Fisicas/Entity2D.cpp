@@ -34,7 +34,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers,ISceneManager* s
     
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
-    bodyShape.SetAsBox(1.0f, 1.0f);
+    bodyShape.SetAsBox(5.0f, 5.0f);
     md.mass=50.0f;
     md.center=b2Vec2(3,3);
     md.I=0.0f;
@@ -44,25 +44,27 @@ Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers,ISceneManager* s
     body->SetUserData(this);
     body->SetMassData(&md);
     
-     
-    sombraDef.type = b2_kinematicBody;
+     /*
+    sombraDef.type = b2_dynamicBody;
     sombraDef.position.Set(pos.X, pos.Z);
-    sombraShape.SetAsBox(1.0f, 1.0f);
+    sombraShape.SetAsBox(5.0f, 5.0f);
     sombraP= world->CreateBody(&sombraDef);
     sombraP -> CreateFixture(&sombraShape, 1.0f);
     sombraP->GetFixtureList()->SetFriction(10.0f);
     sombraP->SetUserData(this);
-    sombraP->SetMassData(&md);
+    sombraP->SetMassData(&md);*/
      filtro.groupIndex = FILTRO_PERSONAJE;
     body->GetFixtureList()->SetFilterData(filtro);
-    sombraP->GetFixtureList()->SetFilterData(filtro);
+ //   sombraP->GetFixtureList()->SetFilterData(filtro);
     idenSh=0;
-    fisica=smgr->addCubeSceneNode(10);
+    
+    
+   /* fisica=smgr->addCubeSceneNode(10);
     fisica->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
     fisica->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING,false);
     fisica->getMaterial(0).EmissiveColor.set(0,255,10,20);
     fisica->setPosition(vector3df(sombraP->GetPosition().x,10,sombraP->GetPosition().y));
-    
+    */
     iden = 0;
     objeto3D = dirPers;
     
@@ -166,7 +168,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo,IS
     
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set((pos.X), (pos.Z));
-    bodyShape.SetAsBox(1.0f, 1.0f);
+    bodyShape.SetAsBox(5.0f, 5.0f);
     md.mass=50.0f;
     md.center=b2Vec2(3,3);
     md.I=0.0f;
@@ -179,7 +181,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo,IS
     
     sombraDef.type = b2_kinematicBody;
     sombraDef.position.Set(pos.X, pos.Z);
-    sombraShape.SetAsBox(1.0f, 1.0f);
+    sombraShape.SetAsBox(6.0f, 6.0f);
     sombraE= world->CreateBody(&sombraDef);
     sombraE -> CreateFixture(&sombraShape, 1.0f);
     sombraE->GetFixtureList()->SetFriction(10.0f);

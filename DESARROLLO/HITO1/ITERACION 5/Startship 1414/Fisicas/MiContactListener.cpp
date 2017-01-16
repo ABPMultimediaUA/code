@@ -124,7 +124,7 @@ void MiContactListener::BeginContact(b2Contact* contact){
         Entity2D *entity1 = static_cast<Entity2D*>(bodyUserData1);
         Entity2D *entity2 = static_cast<Entity2D*>(bodyUserData2);
 
-        
+            Personaje *pers = static_cast<Personaje*>(entity1->getObjeto3D());
         
        // std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
          //   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
@@ -144,18 +144,17 @@ void MiContactListener::BeginContact(b2Contact* contact){
            */  
           
   std::cout<<"Sombra: "<<entity1->getIDENSH()<<" Elemento: "<<entity2->getIDEN()<<std::endl;
-            if((entity1->getIDENSH() ==0 && entity2->getIDEN() == 4)){
+            if((entity1->getIDENSH() ==1 && entity2->getIDEN() == 4)){
                 
                 std::cout<<"colisionan1 "<<entity1->getIDENSH()<<" "<<entity2->getIDEN()<<std::endl;
                 contact->SetEnabled(true);
             }
-           
-            if((entity1->getIDENSH() ==1 && entity2->getIDEN() == 0))
-            {
-                std::cout<<"colisionan1 "<<entity1->getIDENSH()<<" "<<entity2->getIDEN()<<std::endl;
-                contact->SetEnabled(true);
-            }
         
+            if((entity2->getIDEN()==0 && entity2->getIDEN() == 4)&&(entity2->getIDEN()==4 && entity2->getIDEN() == 0))
+            {
+                
+                pers->setPos(vector3df(entity1->getSombraE2D()->GetPosition().x,10,entity1->getSombraE2D()->GetPosition().y));
+            }
             
             if(entity1->getIDEN() == 3 && f2->IsSensor() != true){
                 entity1->setLive(false);
@@ -227,7 +226,7 @@ void MiContactListener::EndContact(b2Contact* contact){
                 actualizarPuerta(entity2, 1);
             }
             
-        if((entity1->getIDENSH() ==0 && entity2->getIDEN() == 4)||(entity1->getIDENSH() ==1 && entity2->getIDEN() == 0)){
+        if((entity1->getIDENSH() ==1 && entity2->getIDEN() == 4)){
                 std::cout<<"colisionan2"<<std::endl;
                 contact->SetEnabled(false);
             }
