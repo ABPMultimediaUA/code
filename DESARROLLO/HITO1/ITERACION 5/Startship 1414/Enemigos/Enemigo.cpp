@@ -37,7 +37,7 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
     vel = 20.0f;
     velRapida = 30.0f;
     pos = maya->getPosition();
-    entity = new Entity2D(world, pos, true, this);
+    entity = new Entity2D(world, pos, true, this,smgr);
     estado=4;
     estPatrulla=0;
   
@@ -70,10 +70,11 @@ void Enemigo::mover(int modo, f32 dt) {
                std::cout<<"Pos X: "<<pos.X<<std::endl;
                std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
             // body->ApplyForceToCenter(b2Vec2(5.0,0.0), true);
-
-            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
-            pos.X = entity->getCuerpo2D()->GetPosition().x;
-
+ 
+                entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
+                entity->getSombraE2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
+                pos.X = entity->getCuerpo2D()->GetPosition().x;
+        
             /* std::cout<<"Des"<<std::endl;
               std::cout<<"Pos X: "<<pos.X<<std::endl;
               std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
@@ -85,10 +86,11 @@ void Enemigo::mover(int modo, f32 dt) {
             /*  std::cout<<"case 1: Sntes"<<std::endl;
               std::cout<<"Pos X: "<<pos.X<<std::endl;
               std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
-
-            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-            pos.X = entity->getCuerpo2D()->GetPosition().x;
-
+          
+                entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+                entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+                pos.X = entity->getCuerpo2D()->GetPosition().x;
+         
             /*std::cout<<"Des"<<std::endl;
              std::cout<<"Pos X: "<<pos.X<<std::endl;
              std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
@@ -100,10 +102,11 @@ void Enemigo::mover(int modo, f32 dt) {
             /*   std::cout<<"case 2: Sntes"<<std::endl;
               std::cout<<"Pos Z: "<<pos.Z<<std::endl;
               std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
-
-            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
-            pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
+        
+                entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
+                entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
+                pos.Z = entity->getCuerpo2D()->GetPosition().y;
+          
             /*  std::cout<<"Des"<<std::endl;
               std::cout<<"Pos Z: "<<pos.Z<<std::endl;
               std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
@@ -115,10 +118,11 @@ void Enemigo::mover(int modo, f32 dt) {
             /*   std::cout<<"case 3: Sntes"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
              std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
-
-            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
-            pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
+      
+                entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
+                entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
+                pos.Z = entity->getCuerpo2D()->GetPosition().y;
+        
             /* std::cout<<"Des"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
              std::cout<<"Pos2D Z: "<<body->GetPosition().y<<std::endl;*/
@@ -229,7 +233,7 @@ float Enemigo::getVel() {
 void Enemigo::setVelocidad() {
 
     entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-
+    entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
 }
 
 
@@ -254,7 +258,8 @@ void Enemigo::Update(Personaje *pers){
             this->Irapunto();
             break;
         case 4: //patrullar
-            this->Patrullar();
+                this->Patrullar();
+            
             break;
         case 5:
             this->PatrullarCorriendo();

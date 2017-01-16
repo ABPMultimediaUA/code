@@ -28,19 +28,41 @@
 
 //hacer diferentes constructores para los distintos objetos
 //constructor personaje
-Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers) {
+Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers,ISceneManager* smgr) {
+    
     
     
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
-    bodyShape.SetAsBox(6, 6);
-    
+    bodyShape.SetAsBox(1.0f, 1.0f);
+    md.mass=50.0f;
+    md.center=b2Vec2(3,3);
+    md.I=0.0f;
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
-    
+    body->GetFixtureList()->SetFriction(10.0f);
     body->SetUserData(this);
-    filtro.groupIndex = FILTRO_PERSONAJE;
+    body->SetMassData(&md);
+    
+     
+    sombraDef.type = b2_kinematicBody;
+    sombraDef.position.Set(pos.X, pos.Z);
+    sombraShape.SetAsBox(1.0f, 1.0f);
+    sombraP= world->CreateBody(&sombraDef);
+    sombraP -> CreateFixture(&sombraShape, 1.0f);
+    sombraP->GetFixtureList()->SetFriction(10.0f);
+    sombraP->SetUserData(this);
+    sombraP->SetMassData(&md);
+     filtro.groupIndex = FILTRO_PERSONAJE;
     body->GetFixtureList()->SetFilterData(filtro);
+    sombraP->GetFixtureList()->SetFilterData(filtro);
+    idenSh=0;
+    fisica=smgr->addCubeSceneNode(10);
+    fisica->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
+    fisica->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING,false);
+    fisica->getMaterial(0).EmissiveColor.set(0,255,10,20);
+    fisica->setPosition(vector3df(sombraP->GetPosition().x,10,sombraP->GetPosition().y));
+    
     iden = 0;
     objeto3D = dirPers;
     
@@ -139,18 +161,40 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void
 }
 
 //constructor enemigo
-Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo) {
+Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo,ISceneManager* smgr) {
     
     
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(pos.X, pos.Z);
-    bodyShape.SetAsBox(6, 6);
+    bodyDef.position.Set((pos.X), (pos.Z));
+    bodyShape.SetAsBox(1.0f, 1.0f);
+    md.mass=50.0f;
+    md.center=b2Vec2(3,3);
+    md.I=0.0f;
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
     live = vivo;
+     body->GetFixtureList()->SetFriction(10.0f);
     body->SetUserData(this);
+    body->SetMassData(&md);
+    
+    sombraDef.type = b2_kinematicBody;
+    sombraDef.position.Set(pos.X, pos.Z);
+    sombraShape.SetAsBox(1.0f, 1.0f);
+    sombraE= world->CreateBody(&sombraDef);
+    sombraE -> CreateFixture(&sombraShape, 1.0f);
+    sombraE->GetFixtureList()->SetFriction(10.0f);
+    sombraE->SetUserData(this);
+    sombraE->SetMassData(&md);
+    idenSh=1;
     filtro.groupIndex = FILTRO_ENEMIGO;
     body->GetFixtureList()->SetFilterData(filtro);
+    
+    fisica2=smgr->addCubeSceneNode(10);
+    fisica2->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
+    fisica2->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING,false);
+    fisica2->getMaterial(0).EmissiveColor.set(0,100,10,100);
+    fisica2->setPosition(vector3df(sombraE->GetPosition().x,10,sombraE->GetPosition().y));
+   
     iden = 4;
     objeto3D = dirEnemigo;
 }
@@ -304,11 +348,37 @@ void Entity2D::crearFixture(){
 }
 
 b2Body* Entity2D::getCuerpo2D(){
+   
     return body;
+}
+
+
+b2Body* Entity2D::getSombraE2D(){
+  //  std::cout<<"Sombra x: "<<sombra->GetPosition().x<<" Sombra z: "<<sombra->GetPosition().y<<std::endl;
+   //  std::cout<<"Body x: "<<body->GetPosition().x<<" Body z: "<<body->GetPosition().y<<std::endl;
+     if(fisica2!=NULL)
+     {
+        fisica2->setPosition(vector3df(sombraE->GetPosition().x,10, sombraE->GetPosition().y));
+     }
+    return sombraE;
 }
 
 int Entity2D::getIDEN(){
     return iden;
+}
+int Entity2D::getIDENSH(){
+    return idenSh;
+}
+
+b2Body* Entity2D::getSombraP2D(){
+  //  std::cout<<"Sombra x: "<<sombra->GetPosition().x<<" Sombra z: "<<sombra->GetPosition().y<<std::endl;
+   //  std::cout<<"Body x: "<<body->GetPosition().x<<" Body z: "<<body->GetPosition().y<<std::endl;
+     
+     if(fisica!=NULL)
+     {
+        fisica->setPosition(vector3df(sombraP->GetPosition().x,10, sombraP->GetPosition().y));
+     }
+    return sombraP;
 }
 
 bool Entity2D::getLive(){

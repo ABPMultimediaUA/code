@@ -116,7 +116,19 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB){
             else if(f1.groupIndex == 6 || f2.groupIndex == 6){ return false; }
             
         }
-
+        /*
+         if((f1.groupIndex==1&&f2.groupIndex==2)||(f1.groupIndex==2&&f2.groupIndex==1))
+        {
+            std::cout<<"hakuna matata"<<std::endl;
+            return true;
+        }
+        
+        if((f1.groupIndex==1&&f2.groupIndex==6)||(f1.groupIndex==6&&f2.groupIndex==1))
+        {
+            std::cout<<"hakuna matata"<<std::endl;
+            return true;
+        }*/
+        
         if(f1.groupIndex == 6 && f2.groupIndex == 6){ return false; }
         
         return true;

@@ -40,6 +40,7 @@ class Personaje {
 private:
 
     IMeshSceneNode *maya;
+      IMeshSceneNode *shadow;
     float vel;
     vector3df pos;
     Entity2D *entity;

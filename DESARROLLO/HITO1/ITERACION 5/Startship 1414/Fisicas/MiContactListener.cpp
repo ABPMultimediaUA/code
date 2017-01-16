@@ -105,11 +105,11 @@ void MiContactListener::aplicarImpulso(Entity2D* entity){
 }
 
 void MiContactListener::BeginContact(b2Contact* contact){
-       std::cout<<""<<std::endl;
+       //std::cout<<""<<std::endl;
 
-       std::cout<<"////////////////////////"<<std::endl;
+       //std::cout<<"////////////////////////"<<std::endl;
 
-   std::cout<<"COLISION"<<std::endl;
+   //std::cout<<"COLISION"<<std::endl;
    if(contact != NULL){
     b2Fixture *f1 = contact->GetFixtureA();
     b2Fixture *f2 = contact->GetFixtureB();
@@ -124,8 +124,11 @@ void MiContactListener::BeginContact(b2Contact* contact){
         Entity2D *entity1 = static_cast<Entity2D*>(bodyUserData1);
         Entity2D *entity2 = static_cast<Entity2D*>(bodyUserData2);
 
-        std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
-            std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
+        
+        
+       // std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
+         //   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
+            
 
        /* int a = *((int*)b1->GetUserData());
         int b = *((int*)b2->GetUserData());
@@ -133,12 +136,27 @@ void MiContactListener::BeginContact(b2Contact* contact){
                 std::cout<<"Personaje"<<std::endl;
 
         }*/
-            
+         /*   
             std::cout<<"///////////////////////////////////"<<std::endl;
             std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
             std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
             std::cout<<"///////////////////////////////////"<<std::endl;
-
+           */  
+          
+  std::cout<<"Sombra: "<<entity1->getIDENSH()<<" Elemento: "<<entity2->getIDEN()<<std::endl;
+            if((entity1->getIDENSH() ==0 && entity2->getIDEN() == 4)){
+                
+                std::cout<<"colisionan1 "<<entity1->getIDENSH()<<" "<<entity2->getIDEN()<<std::endl;
+                contact->SetEnabled(true);
+            }
+           
+            if((entity1->getIDENSH() ==1 && entity2->getIDEN() == 0))
+            {
+                std::cout<<"colisionan1 "<<entity1->getIDENSH()<<" "<<entity2->getIDEN()<<std::endl;
+                contact->SetEnabled(true);
+            }
+        
+            
             if(entity1->getIDEN() == 3 && f2->IsSensor() != true){
                 entity1->setLive(false);
                 
@@ -171,7 +189,7 @@ void MiContactListener::BeginContact(b2Contact* contact){
 }
 
 void MiContactListener::EndContact(b2Contact* contact){
-        std::cout<<"SALGO"<<std::endl;
+       // std::cout<<"SALGO"<<std::endl;
  if(contact != NULL){
     b2Fixture *f1 = contact->GetFixtureA();
     b2Fixture *f2 = contact->GetFixtureB();
@@ -185,11 +203,11 @@ void MiContactListener::EndContact(b2Contact* contact){
 
         Entity2D *entity1 = static_cast<Entity2D*>(bodyUserData1);
         Entity2D *entity2 = static_cast<Entity2D*>(bodyUserData2);
-
+/*
         std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
             std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
 
-       /* int a = *((int*)b1->GetUserData());
+        int a = *((int*)b1->GetUserData());
         int b = *((int*)b2->GetUserData());
         if(a == 1){
                 std::cout<<"Personaje"<<std::endl;
@@ -199,7 +217,7 @@ void MiContactListener::EndContact(b2Contact* contact){
 //            std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
 //            std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
 //            std::cout<<"///////////////////////////////////"<<std::endl;
-
+          
             
             if(entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true){
                 actualizarPuerta(entity1, 1);
@@ -208,50 +226,89 @@ void MiContactListener::EndContact(b2Contact* contact){
             else if(entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true){
                 actualizarPuerta(entity2, 1);
             }
-    
+            
+        if((entity1->getIDENSH() ==0 && entity2->getIDEN() == 4)||(entity1->getIDENSH() ==1 && entity2->getIDEN() == 0)){
+                std::cout<<"colisionan2"<<std::endl;
+                contact->SetEnabled(false);
+            }
+        
     }
    }
 }
 
 void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* impulse){
     
-//    if(contact != NULL){
-//        
-//        b2Fixture *f1 = contact->GetFixtureA();
-//        b2Fixture *f2 = contact->GetFixtureB();
-// 
-//    if(f1!= NULL && f2!= NULL){
-//        
-//        b2Body *b1 = f1->GetBody();
-//        b2Body *b2 = f2->GetBody();
-//        
-//        void* bodyUserData1 = f1->GetBody()->GetUserData();
-//        void* bodyUserData2 = f2->GetBody()->GetUserData();
-//
-//        Entity2D *entity1 = static_cast<Entity2D*>(bodyUserData1);
-//        Entity2D *entity2 = static_cast<Entity2D*>(bodyUserData2);
-//
-////        std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
-////        std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
-//        
-//        
-//        if(entity1->getIDEN() == 0){
-//            aplicarImpulso(entity1);
-//        }
-//        
-//        else if(entity2->getIDEN() == 0){
-//            aplicarImpulso(entity2);
-//
-//        }
-//        
-//    }
-//        
-//    }
+    if(contact != NULL){
+        
+        b2Fixture *f1 = contact->GetFixtureA();
+        b2Fixture *f2 = contact->GetFixtureB();
+ 
+    if(f1!= NULL && f2!= NULL){
+        
+        b2Body *b1 = f1->GetBody();
+        b2Body *b2 = f2->GetBody();
+        
+        void* bodyUserData1 = f1->GetBody()->GetUserData();
+        void* bodyUserData2 = f2->GetBody()->GetUserData();
+
+        Entity2D *entity1 = static_cast<Entity2D*>(bodyUserData1);
+        Entity2D *entity2 = static_cast<Entity2D*>(bodyUserData2);
+/*
+        std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
+        std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
+        
+        
+        if(entity1->getIDEN() == 0){
+            aplicarImpulso(entity1);
+        }
+        
+        else if(entity2->getIDEN() == 0){
+            aplicarImpulso(entity2);
+
+        }*/
+        
+             
+     
+    }
+        
+    }
     
 }
 
 void MiContactListener::PreSolve(b2Contact* contact, const b2Manifold* oldManifold){
-    
+    if(contact != NULL){
+        
+        b2Fixture *f1 = contact->GetFixtureA();
+        b2Fixture *f2 = contact->GetFixtureB();
+ 
+    if(f1!= NULL && f2!= NULL){
+        
+        b2Body *b1 = f1->GetBody();
+        b2Body *b2 = f2->GetBody();
+        
+        void* bodyUserData1 = f1->GetBody()->GetUserData();
+        void* bodyUserData2 = f2->GetBody()->GetUserData();
+
+        Entity2D *entity1 = static_cast<Entity2D*>(bodyUserData1);
+        Entity2D *entity2 = static_cast<Entity2D*>(bodyUserData2);
+
+    /*     std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
+        std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
+        
+       
+        if(entity1->getIDEN() == 0){
+            aplicarImpulso(entity1);
+        }
+        
+        else if(entity2->getIDEN() == 0){
+            aplicarImpulso(entity2);
+
+        }*/
+        
+   
+    }
+        
+    }
 }
 
 

@@ -27,11 +27,11 @@ using namespace gui;
 
 class Entity2D {
 public:
-    Entity2D(b2World *world, vector3df pos, void* dirPers);
+    Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* smgr);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirPared);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta);
     Entity2D(b2World* world, vector3df pos, vector3df rot,  bool vivo, void* dirBala);
-    Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo);
+    Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo,ISceneManager* smgr);
 
     Entity2D(const Entity2D& orig);
     virtual ~Entity2D();
@@ -40,11 +40,15 @@ public:
     float rayCasting(b2Vec2 inicio, b2Vec2 fin);
     float llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
     int getIDEN();
+    int getIDENSH();
     bool getLive();
     void setLive(bool x);
+
     void* getObjeto3D();
     void destruirFixture();
     void crearFixture();
+    b2Body* getSombraP2D();
+    b2Body* getSombraE2D();
     
 private:
     
@@ -55,7 +59,14 @@ private:
     b2CircleShape bodyCircle;
     b2MassData md;
     b2Filter filtro;
+    b2Body *sombraP;
+    b2Body *sombraE;
+    b2BodyDef sombraDef;
+    b2PolygonShape sombraShape;
+    IMeshSceneNode* fisica;
+    IMeshSceneNode* fisica2;
     int iden;
+    int idenSh;
     bool live;
     void* objeto3D;
   

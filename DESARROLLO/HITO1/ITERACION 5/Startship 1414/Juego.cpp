@@ -110,7 +110,7 @@ void Juego::Dentro(void)
             //float distancia;
             world->Step(dt, 6, 2); //1.0f/60.0f
             world->ClearForces();
-            
+           
 //            if(teclado.isKeyDown(irr::KEY_KEY_J)){
 //                ene->Cambiar(1);
 //            }
@@ -211,11 +211,11 @@ void Juego::Dentro(void)
                  iDevice->closeDevice();
             }
             
-            
+            /*
             if(teclado.isKeyDown(irr::KEY_KEY_Q) && now >= 5.0f){
                 esce->spawnearEnemigo(smgr, driver, world);
                 
-            }
+            }*/
             
             //RATON
             vector3df mousePosition;
