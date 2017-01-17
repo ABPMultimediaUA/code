@@ -58,8 +58,10 @@ float Enemigo::getVel() {
 
 void Enemigo::setVelocidad() {
 
-    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-    entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+    if(entity->getSombraE2D() != NULL){
+        entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+        entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+    }
 }
 
 

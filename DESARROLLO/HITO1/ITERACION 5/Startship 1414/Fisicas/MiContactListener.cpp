@@ -146,12 +146,14 @@ void MiContactListener::BeginContact(b2Contact* contact){
   std::cout<<"Sombra: "<<entity1->getIDENSH()<<" Elemento: "<<entity2->getIDEN()<<std::endl;
 
         
-            if((entity2->getIDEN()==0 && entity2->getIDEN() == 4)&&(entity2->getIDEN()==4 && entity2->getIDEN() == 0))
-            {
-                
-                pers->setPos(vector3df(entity1->getSombraE2D()->GetPosition().x,10,entity1->getSombraE2D()->GetPosition().y));
-            }
-            
+//            if((entity2->getIDEN()==0 && entity2->getIDEN() == 4)&&(entity2->getIDEN()==4 && entity2->getIDEN() == 0))
+//            {
+//                if(entity1->getSombraE2D() != NULL){
+//                    std::cout<<"MEMORIA: "<<entity1->getSombraE2D()<<std::endl;
+//                    pers->setPos(vector3df(entity1->getSombraE2D()->GetPosition().x,10,entity1->getSombraE2D()->GetPosition().y));
+//                }
+//            }
+//            
             if(entity1->getIDEN() == 3 && f2->IsSensor() != true){
                 entity1->setLive(false);
                 

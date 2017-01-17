@@ -210,7 +210,10 @@ Entity2D::~Entity2D() {
     std::cout<<"ID DE LA ENTITY "<<iden<<std::endl;
     std::cout<<"MUERO ENTITY2D"<<std::endl;
     body->GetWorld()->DestroyBody(body); //así se tienen que borrar los objetos, no vale con la copia del puntero
-    //sombraE->GetWorld()->DestroyBody(sombraE);
+    if(sombraE != NULL && fisica2 != NULL){
+        sombraE->GetWorld()->DestroyBody(sombraE);
+        fisica2->getParent()->removeChild(fisica2);
+    }
     //mundo->DestroyBody(body);
 //    body->SetUserData(NULL);
 //    body = NULL;
@@ -360,7 +363,7 @@ b2Body* Entity2D::getCuerpo2D(){
 b2Body* Entity2D::getSombraE2D(){
   //  std::cout<<"Sombra x: "<<sombra->GetPosition().x<<" Sombra z: "<<sombra->GetPosition().y<<std::endl;
    //  std::cout<<"Body x: "<<body->GetPosition().x<<" Body z: "<<body->GetPosition().y<<std::endl;
-     if(fisica2!=NULL)
+     if(fisica2!=NULL && sombraE != NULL)
      {
         fisica2->setPosition(vector3df(sombraE->GetPosition().x,10, sombraE->GetPosition().y));
      }
