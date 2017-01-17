@@ -21,7 +21,12 @@
 #endif
 
 Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion) {
-    
+     napis = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(),L"TEST", video::SColor(255,255,255,255), 0); 
+    //napis a lo mejor estaria bien que estuviese en el .h de enemigo
+    //tambien se tiene que borrar con el destructor
+       napis->setPosition(posicion);
+       
+       smgr->getGUIEnvironment()->drawAll();
 }
 
 //Enemigo::Enemigo(const Enemigo& orig) {
@@ -33,6 +38,7 @@ Enemigo::~Enemigo() {
        std::cout<<"////////////////////////"<<std::endl;
     std::cout<<"MUERE: "<<maya<<std::endl;
      maya->getParent()->removeChild(maya);
+     napis->getParent()->removeChild(napis);
     delete(entity);
 }
 

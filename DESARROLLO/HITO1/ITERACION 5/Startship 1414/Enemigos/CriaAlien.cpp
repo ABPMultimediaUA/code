@@ -20,6 +20,8 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
         maya -> setPosition(posicion);//vector3df(0, 10, 40)
         maya->getMaterial(0).EmissiveColor.set(0,128,0,20);
      }
+    
+  
     vel = 20.0f;
     pos = maya->getPosition();
     entity = new Entity2D(world, pos, true, this,smgr);
@@ -31,6 +33,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 //}
 
 CriaAlien::~CriaAlien() {
+    
      
 }
 
