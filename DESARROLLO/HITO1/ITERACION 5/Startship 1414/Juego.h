@@ -47,6 +47,8 @@ public:
     Camara *cam;
     int lastFPS;
     
+    int estado;
+    
     void loopJuego();
     
     Juego();

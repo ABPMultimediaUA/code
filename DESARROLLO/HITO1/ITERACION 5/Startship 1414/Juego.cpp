@@ -70,7 +70,7 @@ void Juego::StarUP(IrrlichtDevice* iDevice)
     cam = new Camara(smgr, pers->getPos());
     
     then = iDevice->getTimer()->getTime();
-    
+    estado = 0;
 }
 
 
@@ -111,15 +111,17 @@ void Juego::Dentro(void)
             world->Step(dt, 6, 2); //1.0f/60.0f
             world->ClearForces();
            
-//            if(teclado.isKeyDown(irr::KEY_KEY_J)){
-//                ene->Cambiar(1);
-//            }
-//            else if(teclado.isKeyDown(irr::KEY_KEY_K)){
-//                ene->Cambiar(2);
-//            }
-//            else if(teclado.isKeyDown(irr::KEY_KEY_L)){
-//                ene->Cambiar(3);
-//            }
+            if(teclado.isKeyDown(irr::KEY_KEY_J)){
+                estado = 0;
+            }
+            else if(teclado.isKeyDown(irr::KEY_KEY_K)){
+                               estado = 1;
+
+            }
+            else if(teclado.isKeyDown(irr::KEY_KEY_L)){
+                                estado = 2;
+
+            }
 //            else if(teclado.isKeyDown(irr::KEY_KEY_P)){
 //                ene->Cambiar(4);
 //            }
@@ -129,7 +131,7 @@ void Juego::Dentro(void)
             
             
            // ene->Update(pers);
-             esce->actualizarListaEnemigos(pers);
+             esce->actualizarListaEnemigos(estado);
 
             
 

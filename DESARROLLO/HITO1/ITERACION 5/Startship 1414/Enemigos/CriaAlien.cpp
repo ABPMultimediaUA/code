@@ -36,7 +36,24 @@ CriaAlien::~CriaAlien() {
 
 void CriaAlien::Update(int estado)
 {
-    
+    switch(estado){
+        
+        case 0: //descansar
+             estadoActual = estado;
+            maya->getMaterial(0).EmissiveColor.set(0,0,200,10);
+            break;
+            
+        case 1: //patrullar
+            estadoActual = estado;
+            maya->getMaterial(0).EmissiveColor.set(0,15,0,200);
+            break;
+            
+        case 2: //atacar
+             estadoActual = estado;
+            maya->getMaterial(0).EmissiveColor.set(0,255,50,0);
+            break;
+            
+    }
 }
 
 void CriaAlien::Mover(int modo, f32 dt)

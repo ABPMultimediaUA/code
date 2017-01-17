@@ -95,7 +95,7 @@ private:
     void removeListHijos();
     void removeListSubHijos();
     void fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
-    void actualizarListaEnemigos(Personaje *pers);
+    void actualizarListaEnemigos(int estado);
     void spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
 };
 
