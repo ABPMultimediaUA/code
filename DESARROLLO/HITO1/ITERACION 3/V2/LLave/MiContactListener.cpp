@@ -18,6 +18,7 @@
 #include "Juego.h"
 #include "CAppReceiver.h"
 #include "LLave.h"
+#include "Objeto.h"
 
 extern Juego *game;
 extern CAppReceiver *tecladou;
@@ -171,21 +172,28 @@ void MiContactListener::BeginContact(b2Contact* contact){
     
             if(entity1->getIDEN() == 7 && entity2->getIDEN() == 0){
                 Personaje *per= static_cast<Personaje*>(entity2->getObjeto3D());
-                LLave *l=static_cast<LLave*>(entity1->getObjeto3D());
+                Objeto *o=static_cast<Objeto*>(entity1->getObjeto3D());
+                if(o->id==2){
                 per->llaves++;
-                l->Actualizar();//IMPORTANTE: REVISAR
+                o->Actualizar();
                 std::cout<<"El jugador ha cogido la llave"<<std::endl;
+                }
             }
             
             
             
             else if(entity2->getIDEN() == 7 && entity1->getIDEN() == 0){
                 Personaje *per= static_cast<Personaje*>(entity1->getObjeto3D());
-                LLave *l=static_cast<LLave*>(entity2->getObjeto3D());
+                Objeto *o=static_cast<Objeto*>(entity2->getObjeto3D());
+                if(o->id==2){
                 per->llaves++;
-                l->Actualizar();//IMPORTANTE: REVISAR
+                o->Actualizar();
                 std::cout<<"El jugador ha cogido la llave"<<std::endl;
-                
+                }
+                //a base de añadir ifs al id del objeto, se pueden implementar los demás objetos
+                if(o->id==3){
+                    std::cout<<"El jugador ha cogido el objeto 3"<<std::endl;
+                }
             }
             
     }

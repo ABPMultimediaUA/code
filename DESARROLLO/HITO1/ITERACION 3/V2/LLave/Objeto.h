@@ -5,31 +5,36 @@
  */
 
 /* 
- * File:   LLave.h
+ * File:   Objeto.h
  * Author: Iván
  *
- * Created on 7 de enero de 2017, 10:10
+ * Created on 17 de enero de 2017, 12:44
  */
+
+
 
 #include <irrlicht.h>
 #include <iostream>
 #include "Entity2D.h"
-#include "Objeto.h"
 
-#ifndef LLAVE_H
-#define LLAVE_H
+#ifndef OBJETO_H
+#define OBJETO_H
 
-class LLave : public Objeto {
+class Objeto {
 public:
-    LLave(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion);
-    LLave(const LLave& orig);
-    virtual ~LLave();
+    Objeto();//...
+    Objeto(const Objeto& orig);
+    virtual ~Objeto();
     void Actualizar();
-    
+    virtual Entity2D* getEntity();
+    IMeshSceneNode *maya;
+    vector3df pos;
+    Entity2D *entity;
+    int id;
 private:
 
     
 };
 
-#endif /* LLAVE_H */
+#endif /* OBJETO_H */
 

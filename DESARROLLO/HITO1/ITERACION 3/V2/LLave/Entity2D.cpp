@@ -20,7 +20,7 @@
 #define FILTRO_DISPAROPERS 4
 #define FILTRO_DISPAROENE 5
 #define FILTRO_ENEMIGO 6
-#define FILTRO_LLAVE 7
+#define FILTRO_OBJETO 7
 
 
 #define FILTRO_PUERTAABIERTA 15
@@ -101,7 +101,7 @@ Entity2D::Entity2D(b2World* world, void* dirLLave, vector3df pos){
     body -> CreateFixture(&bodyShape, 1.0f);
     body->SetUserData(this);
     
-    filtro.groupIndex = FILTRO_LLAVE;
+    filtro.groupIndex = FILTRO_OBJETO;
     body->GetFixtureList()->SetFilterData(filtro);
    
     objeto3D = dirLLave;

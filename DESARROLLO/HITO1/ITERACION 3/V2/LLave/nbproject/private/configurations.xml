@@ -32,6 +32,8 @@
       <in>MiContactListener.h</in>
       <in>MyContactFilter.cpp</in>
       <in>MyContactFilter.h</in>
+      <in>Objeto.cpp</in>
+      <in>Objeto.h</in>
       <in>Personaje.cpp</in>
       <in>Personaje.h</in>
       <in>RayCastCallback.cpp</in>
