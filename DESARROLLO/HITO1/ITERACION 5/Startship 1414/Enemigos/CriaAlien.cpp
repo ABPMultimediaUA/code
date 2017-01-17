@@ -20,8 +20,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
         maya -> setPosition(posicion);//vector3df(0, 10, 40)
         maya->getMaterial(0).EmissiveColor.set(0,128,0,20);
      }
-    
-  
+
     vel = 20.0f;
     pos = maya->getPosition();
     entity = new Entity2D(world, pos, true, this,smgr);
@@ -43,6 +42,18 @@ void CriaAlien::Update(int estado)
         
         case 0: //descansar
              estadoActual = estado;
+             if(entity->getCuerpo2D()->GetContactList()!=NULL)
+             {
+                
+                if(entity->getCuerpo2D()->GetContactList()->contact->IsEnabled())
+                {
+                    std::cout<<entity->getCuerpo2D()->GetContactList()->contact->IsEnabled()<<std::endl;
+                    vida=vida-50.0;
+                    irr::core::stringw wideString(vida);
+                    GVida->setText(wideString.c_str());
+                }
+             }
+             std::cout<<vida<<std::endl;
             maya->getMaterial(0).EmissiveColor.set(0,0,200,10);
             break;
             

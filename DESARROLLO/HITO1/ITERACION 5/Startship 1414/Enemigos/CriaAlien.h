@@ -25,7 +25,7 @@ public:
     void Mover(int modo, f32 dt);
     void Patrullar();
 private:
-
+    
 };
 
 #endif /* CRIAALIEN_H */

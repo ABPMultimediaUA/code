@@ -70,7 +70,9 @@ protected:
     float vida;
     float cansancio;
     int raza;
-     ITextSceneNode *napis;
+    ITextSceneNode *GVida;
+    ITextSceneNode *RVida;
+    ISceneManager* smgr1;
 };
 
 #endif /* ENEMIGO_H */

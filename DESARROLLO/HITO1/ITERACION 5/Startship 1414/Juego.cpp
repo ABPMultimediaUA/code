@@ -277,7 +277,7 @@ void Juego::Dentro(void)
 
             smgr->drawAll(); //dibuja todo el grafo
 
-            //guienv->drawAll(); //dibujar el GUI
+            guienv->drawAll(); //dibujar el GUI
 
             driver->endScene(); //intercambia buffer
             
