@@ -24,7 +24,10 @@ public:
     void Update(int estado);
     void Mover(int modo, f32 dt);
     void Patrullar();
+    void quitarVida(float damage);
 private:
+    
+    float blindaje;
     
 };
 

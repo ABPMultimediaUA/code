@@ -60,6 +60,9 @@ public:
     bool estaVivo();
     vector3df getPos();
     float getVel();
+    virtual void quitarVida(float damage) = 0;
+    float getVida();
+   
 
 protected:
     IMeshSceneNode *maya;

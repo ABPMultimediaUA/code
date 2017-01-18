@@ -15,6 +15,8 @@
 #include "../Escenario/Puerta.h"
 #include "MiContactListener.h"
 #include "../Jugador/Personaje.h"
+#include "../Enemigos/Enemigo.h"
+
 
 MiContactListener::MiContactListener() {
 }
@@ -42,6 +44,18 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, int modo){
        
     }
     
+}
+
+void MiContactListener::aplicarDamage(Entity2D* entity){
+    
+    Enemigo *ene = static_cast<Enemigo*>(entity->getObjeto3D());
+    
+    if(ene->getVida() > 0.0f){
+        ene->quitarVida(20.0f);
+        if(ene->getVida() <= 0.0f){
+            entity->setLive(false);
+        }
+    }
 }
 
 void MiContactListener::aplicarImpulso(Entity2D* entity){
@@ -124,7 +138,7 @@ void MiContactListener::BeginContact(b2Contact* contact){
         Entity2D *entity1 = static_cast<Entity2D*>(bodyUserData1);
         Entity2D *entity2 = static_cast<Entity2D*>(bodyUserData2);
 
-            Personaje *pers = static_cast<Personaje*>(entity1->getObjeto3D());
+//            Personaje *pers = static_cast<Personaje*>(entity1->getObjeto3D());
         
        // std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
          //   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
@@ -163,14 +177,18 @@ void MiContactListener::BeginContact(b2Contact* contact){
                 entity2->setLive(false);
             }
             
+            //colision de enemigo y bala
+            //3: bala; 4: enemigo
             if(entity1->getIDEN() == 3 && entity2->getIDEN() == 4){
                 entity1->setLive(false);
-                entity2->setLive(false);
+                //entity2->setLive(false);
+                aplicarDamage(entity2);
             }
             
             else if(entity1->getIDEN() == 4 && entity2->getIDEN() == 3){
-                entity1->setLive(false);
+                //entity1->setLive(false);
                 entity2->setLive(false);
+                aplicarDamage(entity1);
             }
             
             if(entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true){

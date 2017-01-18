@@ -26,6 +26,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     entity = new Entity2D(world, pos, true, this,smgr);
     estadoActual=DESCANSAR;
     raza=CRIA;
+    blindaje = 0.0f;
 }
 
 //CriaAlien::CriaAlien(const CriaAlien& orig) {
@@ -42,18 +43,7 @@ void CriaAlien::Update(int estado)
         
         case 0: //descansar
              estadoActual = estado;
-             if(entity->getCuerpo2D()->GetContactList()!=NULL)
-             {
-                
-                if(entity->getCuerpo2D()->GetContactList()->contact->IsEnabled())
-                {
-                    std::cout<<entity->getCuerpo2D()->GetContactList()->contact->IsEnabled()<<std::endl;
-                    vida=vida-50.0;
-                    irr::core::stringw wideString(vida);
-                    GVida->setText(wideString.c_str());
-                }
-             }
-             std::cout<<vida<<std::endl;
+           
             maya->getMaterial(0).EmissiveColor.set(0,0,200,10);
             break;
             
@@ -78,4 +68,15 @@ void CriaAlien::Mover(int modo, f32 dt)
 void CriaAlien::Patrullar()
 {
     
+}
+
+void CriaAlien::quitarVida(float damage){
+
+    std::cout<<"CRIA ALIEN"<<std::endl;
+    
+    vida=vida - (damage - blindaje);
+    irr::core::stringw wideString(vida);
+    GVida->setText(wideString.c_str());
+
+    std::cout<<vida<<std::endl;
 }

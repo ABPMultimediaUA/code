@@ -34,6 +34,7 @@ public:
     
     void actualizarPuerta(Entity2D *entity, int modo);
     void aplicarImpulso(Entity2D *entity);
+    void aplicarDamage(Entity2D *entity);
  
     
 };

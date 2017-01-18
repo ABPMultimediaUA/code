@@ -89,3 +89,9 @@ bool Enemigo::estaVivo() {
         return false;
 
 }
+
+float Enemigo::getVida(){
+    return vida;
+}
+
+
