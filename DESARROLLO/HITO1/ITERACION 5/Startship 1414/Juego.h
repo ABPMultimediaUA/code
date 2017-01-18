@@ -26,7 +26,6 @@
 #include "Escenario/readJson.h"
 #include "Fisicas/MiContactListener.h"
 #include "Fisicas/MyContactFilter.h"
-#include "Enemigos/Enemigo.h"
 
 
 class Juego : public EstadoGeneral{

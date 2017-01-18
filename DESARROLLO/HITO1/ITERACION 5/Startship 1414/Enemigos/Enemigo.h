@@ -76,6 +76,7 @@ protected:
     ITextSceneNode *GVida;
     ITextSceneNode *RVida;
     ISceneManager* smgr1;
+    float blindaje;
 };
 
 #endif /* ENEMIGO_H */

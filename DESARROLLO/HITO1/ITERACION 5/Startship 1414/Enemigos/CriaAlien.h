@@ -26,8 +26,8 @@ public:
     void Patrullar();
     void quitarVida(float damage);
 private:
+
     
-    float blindaje;
     
 };
 

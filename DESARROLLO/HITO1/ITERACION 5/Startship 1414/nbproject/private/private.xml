@@ -11,15 +11,18 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Juego.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Enemigos/CriaAlien.h</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Enemigos/CriaAlien.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Juego.h</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Enemigos/AlienBerserker.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Escenario/Escenario.h</file>
             <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Fisicas/Entity2D.cpp</file>
             <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Enemigos/Enemigo.h</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Enemigos/AlienBerserker.h</file>
             <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Fisicas/MiContactListener.cpp</file>
-            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Enemigos/CriaAlien.h</file>
             <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Enemigos/Enemigo.cpp</file>
             <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Fisicas/Entity2D.h</file>
-            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Enemigos/CriaAlien.cpp</file>
             <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Escenario/Escenario.cpp</file>
-            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Juego.h</file>
         </group>
     </open-files>
 </project-private>

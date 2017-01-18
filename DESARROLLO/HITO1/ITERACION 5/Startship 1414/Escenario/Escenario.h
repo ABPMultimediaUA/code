@@ -10,18 +10,18 @@
  *
  * Created on 17 de noviembre de 2016, 20:08
  */
-#include <irrlicht.h>
-#include <Box2D.h>
-#include <list>
-#include <string>
-#include "Pared.h"
-#include "../Enemigos/Enemigo.h"
-#include "../Enemigos/CriaAlien.h"
 
 
 
 #ifndef ESCENARIO_H
 #define ESCENARIO_H
+
+#include <irrlicht.h>
+#include <Box2D.h>
+#include <list>
+#include <string>
+#include "../Enemigos/Enemigo.h"
+#include "../Enemigos/CriaAlien.h"
 
 
 using namespace irr;

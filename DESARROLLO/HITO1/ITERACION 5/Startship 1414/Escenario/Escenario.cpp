@@ -17,6 +17,9 @@
 #include "Pared.h"
 #include "Puerta.h"
 #include "readJson.h"
+#include "../Enemigos/AlienBerserker.h"
+
+
 
 
 Escenario::Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
@@ -216,11 +219,20 @@ void Escenario::fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2W
        
         float x = rand()%100;
         float z = rand()%200;
+     
+        if( i % 2 == 0){
+        AlienBerserker *alien = new AlienBerserker(smgr,driver, world, vector3df(x,10,z));
+        enemigos.push_back(alien);
+        }  
+        
         CriaAlien *ene =  new CriaAlien(smgr, driver, world, vector3df(x,10,z));
        
         enemigos.push_back(ene);
+        
+     
     }
     
+     
 }
 
 void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World* world){

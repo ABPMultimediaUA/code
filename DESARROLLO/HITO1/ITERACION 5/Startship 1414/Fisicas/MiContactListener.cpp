@@ -48,7 +48,7 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, int modo){
 
 void MiContactListener::aplicarDamage(Entity2D* entity){
     
-    Enemigo *ene = static_cast<Enemigo*>(entity->getObjeto3D());
+    Enemigo *ene = static_cast<Enemigo*>(entity->getObjeto3D()); //mirar el tema de hacer un cast dependiendo de la raza
     
     if(ene->getVida() > 0.0f){
         ene->quitarVida(20.0f);
