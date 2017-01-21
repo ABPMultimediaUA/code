@@ -110,7 +110,7 @@ Entity2D::Entity2D(b2World* world, void* dirLLave, vector3df pos){
 
 //constructir puerta
 Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta){
-        bodyDef.type = b2_staticBody;
+        bodyDef.type = b2_kinematicBody;//...
     bodyDef.position.Set(pos.X, pos.Z);
     b2PolygonShape bodyShape2;
     //si tiene rotacion en Y van | sino van -
@@ -300,10 +300,11 @@ void Entity2D::destruirFixture(){
    for (b2Fixture* f = body->GetFixtureList(); f; f ){
        
        if(f->IsSensor() == false ){
-          
+       
            b2Filter newFilter;
            newFilter.groupIndex = FILTRO_PUERTAABIERTA;
            f->SetFilterData(newFilter);
+           //f->SetSensor(true);
           // b2Fixture* destroyMe = f;
            
           // body->DestroyFixture(destroyMe);
@@ -315,13 +316,13 @@ void Entity2D::destruirFixture(){
 void Entity2D::crearFixture(){
         
    for (b2Fixture* f = body->GetFixtureList(); f; f ){
-       
-       if(f->IsSensor() == false ){
+       b2Filter prueba=f->GetFilterData();
+       if(prueba.groupIndex==FILTRO_PUERTAABIERTA){
           
            b2Filter newFilter;
            newFilter.groupIndex = FILTRO_PUERTA;
            f->SetFilterData(newFilter);
-          // b2Fixture* destroyMe = f;
+           f->SetSensor(false);
            
           // body->DestroyFixture(destroyMe);
        }

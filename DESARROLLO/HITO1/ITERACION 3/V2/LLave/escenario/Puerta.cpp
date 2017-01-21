@@ -21,6 +21,8 @@ Puerta::Puerta(vector3df posicion, vector3df rotacion, vector3df escala, IMeshSc
     posIni = posicion;
     maya = objeto;
     abierta=false;
+    pos.Y+=10;//...
+    maya->setPosition(pos);//...
     
     //en el futuro, hay que cambiar el metodo de creacion de puerta
     //hay que poner un bool más en los parametros, para definir si queremos que la puerta esté cerrada con llave
@@ -85,7 +87,10 @@ void Puerta::abrirPuerta(){
             pos.X += 80;
         } 
    entity->destruirFixture();      
-  maya->setPosition(pos);
+  //maya->setPosition(pos);
+  entity->getCuerpo2D()->ApplyForceToCenter(b2Vec2(10,1),true); 
+  //core::vector3df<float> vec=(entity->getCuerpo2D()->GetPosition().x,0,entity->getCuerpo2D()->GetPosition().y);
+  //maya->setPosition(vec);
   abierta=true;
       //  if(entity->getCuerpo2D()->GetPosition().y >= y){
 //                    std::cout<<"ENTRO nAQUI"<<std::endl;
