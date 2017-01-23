@@ -18,6 +18,9 @@
 #include "../Escenario/readJson.h"
 #include <Math.h>
 
+#define PISTOLA 0
+#define FUSIL 1
+#define ESCOPETA 2
 
 #ifdef _IRR_WINDOWS_
 #pragma comment(lib, "Irrlicht.lib")
@@ -42,12 +45,16 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     vel = 100.0f;
     pos = maya->getPosition();
     entity = new Entity2D(world, pos, this,smgr);
-    cargador = 30;
+    
     tiempoDisparo = 0.0f;
     disparo = false;
     
+    pistola = new Pistola();
+    fusil = new Fusil();
+    escopeta = new Escopeta();
     
-    
+    armaActual = PISTOLA;
+    cargador = pistola->getCargador();
     /* md.mass = 2.0;
      md.center = b2Vec2(5.0,5.0);
      md.I = 1.0;
@@ -268,8 +275,112 @@ f32 Personaje::getTiempoDisparo(){
     return tiempoDisparo;
 }
 
-void Personaje::setCargador(int newCargador){
-    cargador = newCargador;
+float Personaje::getDamage() {
+    
+    switch(armaActual){
+        
+        case 0:
+            return pistola->getDamage();
+            break;
+            
+        case 1:
+            return fusil->getDamage();
+            break;
+            
+        case 2:
+            return escopeta->getDamage();
+            break;
+            
+    }
+}
+
+float Personaje::getTiempoArma() {
+    
+    switch(armaActual){
+        
+        case 0:
+            return pistola->getTiempoDisparo();
+            break;
+            
+        case 1:
+            return fusil->getTiempoDisparo();
+            break;
+            
+        case 2:
+            return escopeta->getTiempoDisparo();
+            break;
+            
+    }
+}
+
+void Personaje::setArmaActual(int newArma) {
+    
+     switch(armaActual){
+        
+        case 0:
+            
+            pistola->setMunicionAcutal(cargador);
+            
+            break;
+            
+        case 1:
+            fusil->setMunicionAcutal(cargador);
+            break;
+            
+        case 2:
+            escopeta->setMunicionAcutal(cargador);
+            break;
+            
+    }
+    armaActual = newArma;
+    
+       switch(armaActual){
+        
+        case 0:
+            std::cout<<"CAMBIO A PISTOLA "<<armaActual<<std::endl;
+            cargador = pistola->getMunicionActual();
+            
+            break;
+            
+        case 1:
+            
+            std::cout<<"CAMBIO A FUSIL "<<armaActual<<std::endl;
+            cargador = fusil->getMunicionActual();
+            
+            break;
+            
+        case 2:
+            
+            std::cout<<"CAMBIO A ESCOPETA "<<armaActual<<std::endl;
+            cargador = escopeta->getMunicionActual();
+            
+            break;
+            
+    }
+}
+
+void Personaje::recargar(){
+    
+    int recarga; 
+    
+    switch(armaActual){
+        
+        case 0:
+            recarga = pistola->getCargador() - cargador;
+            cargador += recarga;
+            break;
+            
+        case 1:
+            recarga = fusil->getCargador() - cargador;
+            cargador += recarga;
+            break;
+            
+        case 2:
+            recarga = escopeta->getCargador() - cargador;
+            cargador += recarga;
+            break;
+            
+    }
 }
 
 void Personaje::setDisparo(bool x){
@@ -282,12 +393,13 @@ void Personaje::setTiempoDisparo(f32 t){
 
 
 void Personaje::disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *world, f32 dt, vector2df posRaton){
-    
+    std::cout<<"CARGADOR: "<<cargador<<std::endl;
     tiempoDisparo += dt;
     disparo = true;
     Bala *bullet = new Bala(smgr, driver, world, pos, posRaton);
     listaBalas.push_back(bullet);
     cargador--;
+    
 }
 
 void Personaje::actualizarLista(f32 dt){

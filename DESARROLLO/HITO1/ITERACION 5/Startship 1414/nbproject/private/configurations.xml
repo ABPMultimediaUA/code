@@ -33,10 +33,18 @@
         <in>RayCastCallback.h</in>
       </df>
       <df name="Jugador">
+        <in>Arma.cpp</in>
+        <in>Arma.h</in>
         <in>Bala.cpp</in>
         <in>Bala.h</in>
+        <in>Escopeta.cpp</in>
+        <in>Escopeta.h</in>
+        <in>Fusil.cpp</in>
+        <in>Fusil.h</in>
         <in>Personaje.cpp</in>
         <in>Personaje.h</in>
+        <in>Pistola.cpp</in>
+        <in>Pistola.h</in>
       </df>
       <df name="Menu">
         <in>Menu.cpp</in>

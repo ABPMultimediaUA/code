@@ -23,8 +23,16 @@
         <in>RayCastCallback.cpp</in>
       </df>
       <df name="Jugador">
+        <in>Arma.cpp</in>
+        <in>Arma.h</in>
         <in>Bala.cpp</in>
+        <in>Escopeta.cpp</in>
+        <in>Escopeta.h</in>
+        <in>Fusil.cpp</in>
+        <in>Fusil.h</in>
         <in>Personaje.cpp</in>
+        <in>Pistola.cpp</in>
+        <in>Pistola.h</in>
       </df>
       <df name="Menu">
         <in>Menu.cpp</in>
@@ -157,13 +165,29 @@
           </incDir>
         </ccTool>
       </item>
+      <item path="Jugador/Arma.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Jugador/Arma.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Jugador/Bala.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
       </item>
+      <item path="Jugador/Escopeta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Jugador/Escopeta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Jugador/Fusil.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Jugador/Fusil.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Jugador/Personaje.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="Jugador/Pistola.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Jugador/Pistola.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ManejadorEstadoGeneral.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">

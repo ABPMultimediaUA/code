@@ -207,13 +207,25 @@ void Juego::Dentro(void)
             }
             //recarga
             if(teclado.isKeyDown(irr::KEY_KEY_R)){
-                pers->setCargador(30);
+                pers->recargar();
             }
             
             if(teclado.isKeyDown(irr::KEY_ESCAPE)){
                  iDevice->closeDevice();
             }
-            
+            //cambio de arma
+             
+             if(teclado.isKeyDown(irr::KEY_KEY_1)){
+                 pers->setArmaActual(0);
+             }
+             
+             else if(teclado.isKeyDown(irr::KEY_KEY_2)){
+                 pers->setArmaActual(1);
+             }
+             
+             else if(teclado.isKeyDown(irr::KEY_KEY_3)){
+                 pers->setArmaActual(2);
+             }
             /*
             if(teclado.isKeyDown(irr::KEY_KEY_Q) && now >= 5.0f){
                 esce->spawnearEnemigo(smgr, driver, world);
@@ -255,7 +267,7 @@ void Juego::Dentro(void)
 
             if(pers->getDisparo() == true){
                 pers->setTiempoDisparo(pers->getTiempoDisparo()+dt);
-                if(pers->getTiempoDisparo() >= 0.2){
+                if(pers->getTiempoDisparo() >= pers->getTiempoArma()){
                     pers->setDisparo(false);
                     pers->setTiempoDisparo(0);
                 }

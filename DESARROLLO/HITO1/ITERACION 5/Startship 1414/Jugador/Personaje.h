@@ -18,6 +18,9 @@
 #include <list>
 #include "Bala.h"
 #include "../Fisicas/Entity2D.h"
+#include "Pistola.h"
+#include "Fusil.h"
+#include "Escopeta.h"
 
 #ifndef PERSONAJE_H
 #define PERSONAJE_H
@@ -40,7 +43,7 @@ class Personaje {
 private:
 
     IMeshSceneNode *maya;
-      IMeshSceneNode *shadow;
+    IMeshSceneNode *shadow;
     float vel;
     vector3df pos;
     Entity2D *entity;
@@ -50,6 +53,10 @@ private:
     bool disparo;
     std::list<Bala*> listaBalas;
     int direccion;
+    int armaActual;
+    Pistola *pistola;
+    Fusil *fusil;
+    Escopeta *escopeta;
 
 public:
     Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
@@ -65,17 +72,20 @@ public:
     float lanzarRayo(int modo);
     bool getDisparo();
     int getDireccion();
+    float getDamage();
+    float getTiempoArma();
     
     void moverPersonaje(int modo, f32 dt);
     void setVelocidad();
     void rotar(vector3df raton);
     void setPos(vector3df pos);
-    void setCargador(int newCargador);  
+    void recargar();  
     void setDisparo(bool x);
     void setTiempoDisparo(f32 t);  
     void actualizarLista(f32 dt);
     void disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *world, f32 dt, vector2df posRaton);
     void actualizarPosicion();
+    void setArmaActual(int newArma);
     
 };
 
