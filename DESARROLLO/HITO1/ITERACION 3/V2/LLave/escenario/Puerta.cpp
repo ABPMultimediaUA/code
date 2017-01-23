@@ -16,19 +16,21 @@
 Puerta::Puerta(vector3df posicion, vector3df rotacion, vector3df escala, IMeshSceneNode *objeto) {
     
     pos = posicion;
+    posIni = posicion;
     rot = rotacion;
     escal = escala;
     posIni = posicion;
     maya = objeto;
     abierta=false;
-    pos.Y+=10;//...
-    maya->setPosition(pos);//...
+    
+   
     
     //en el futuro, hay que cambiar el metodo de creacion de puerta
     //hay que poner un bool más en los parametros, para definir si queremos que la puerta esté cerrada con llave
     //tambien seria conveniente que la puerta cerrada con llave tenga un color distinto
     //como esto es un prototipo, pongo que todas las puertas estan cerradas con llave
     conllave=true;
+    estado=0;
     
 }
 
@@ -77,20 +79,31 @@ void Puerta::abrirPuerta(){
         if(rot.Y ==90){
             std::cout<<"PUERTA ROTADA"<<std::endl;
 
-            pos.Z -= 80;
-                  
+            //pos.Z -= 80;
+              entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0,10));//...    
         }
         
         else{
             std::cout<<"PUERTA NO ROTADA"<<std::endl;
 
-            pos.X += 80;
+            //pos.X += 80;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(10,0));
         } 
-   entity->destruirFixture();      
+   //entity->destruirFixture();      
   //maya->setPosition(pos);
-  entity->getCuerpo2D()->ApplyForceToCenter(b2Vec2(10,1),true); 
-  //core::vector3df<float> vec=(entity->getCuerpo2D()->GetPosition().x,0,entity->getCuerpo2D()->GetPosition().y);
-  //maya->setPosition(vec);
+  //entity->getCuerpo2D()->ApplyForceToCenter(b2Vec2(1000,1000),true); 
+  //entity->getCuerpo2D()->ApplyAngularImpulse(100,true);
+  //entity->getCuerpo2D()->ApplyTorque(100,true);
+  //entity->getCuerpo2D()->ApplyLinearImpulse(b2Vec2(1000,1000),entity->getCuerpo2D()->GetWorldCenter(),true);
+        
+  float xp=entity->getCuerpo2D()->GetPosition().x;
+  float zp=entity->getCuerpo2D()->GetPosition().y;
+  //float prueba[3]= {xp, 0, zp};
+  irr::core::vector3d<float> vec;
+  vec.set(xp,10,zp);
+  maya->setPosition(vec);
+  pos=vec;
+  estado=1;
   abierta=true;
       //  if(entity->getCuerpo2D()->GetPosition().y >= y){
 //                    std::cout<<"ENTRO nAQUI"<<std::endl;
@@ -136,17 +149,25 @@ void Puerta::cerrarPuerta(){
         if(rot.Y ==90){
             std::cout<<"PUERTA ROTADA"<<std::endl;
 
-            pos.Z += 80;
-                  
+            //pos.Z += 80;
+              entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0,-10));//...    
         }
         
         else{
             std::cout<<"PUERTA NO ROTADA"<<std::endl;
 
-            pos.X -= 80;
+            //pos.X -= 80;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-10,0));//...
         } 
-   entity->crearFixture();      
-  maya->setPosition(pos);
+   //entity->crearFixture();  
+float xp=entity->getCuerpo2D()->GetPosition().x;
+  float zp=entity->getCuerpo2D()->GetPosition().y;
+  //float prueba[3]= {xp, 0, zp};
+  irr::core::vector3d<float> vec;
+  vec.set(xp,10,zp);
+  maya->setPosition(vec);    
+  pos=vec;
+  estado=2;
   abierta=false;
 //    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 50000.0f));
 //            //pos.X = x;
@@ -183,4 +204,37 @@ void Puerta::cerrarPuerta(){
 //                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
 //                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 //    
+}
+
+void Puerta::Update(){
+    if(estado==1){//abriendo
+        if(posIni.X+40<pos.X||posIni.Z+40<pos.Z){
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0,0));
+            estado=0;
+        }
+        else{
+            float xp=entity->getCuerpo2D()->GetPosition().x;
+  float zp=entity->getCuerpo2D()->GetPosition().y;
+  //float prueba[3]= {xp, 0, zp};
+  irr::core::vector3d<float> vec;
+  vec.set(xp,10,zp);
+  maya->setPosition(vec);    
+  pos=vec;
+        }
+    }
+    else if(estado==2){//cerrando
+        if(posIni.X>pos.X||posIni.Z>pos.Z){
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0,0));
+            estado=0;
+        }
+        else{
+            float xp=entity->getCuerpo2D()->GetPosition().x;
+  float zp=entity->getCuerpo2D()->GetPosition().y;
+  //float prueba[3]= {xp, 0, zp};
+  irr::core::vector3d<float> vec;
+  vec.set(xp,10,zp);
+  maya->setPosition(vec);    
+  pos=vec;
+        }
+    }
 }

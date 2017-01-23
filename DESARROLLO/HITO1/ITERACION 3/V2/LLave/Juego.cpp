@@ -134,7 +134,7 @@ void Juego::loopJuego()
             rect<s32>(320, 240, 420, 260), true,true);
                 tex->setOverrideColor(video::SColor(255,255,255,255));
                 tex->setBackgroundColor(video::SColor(120,0,0,0));
-                
+                pers->p->Update();
                 
             }
             

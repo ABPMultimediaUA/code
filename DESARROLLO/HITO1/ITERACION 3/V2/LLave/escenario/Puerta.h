@@ -44,9 +44,11 @@ public:
     void setLLave(bool l);
     void abrirPuerta();
     void cerrarPuerta();
+    void Update();
     bool abierta;
     bool conllave;
      IMeshSceneNode *maya;
+     int estado;
     
 private:
     
