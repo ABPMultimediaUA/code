@@ -275,6 +275,11 @@ f32 Personaje::getTiempoDisparo(){
     return tiempoDisparo;
 }
 
+int Personaje::getArmaActual() {
+    return armaActual;
+}
+
+
 float Personaje::getDamage() {
     
     switch(armaActual){
@@ -396,7 +401,7 @@ void Personaje::disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *wor
     std::cout<<"CARGADOR: "<<cargador<<std::endl;
     tiempoDisparo += dt;
     disparo = true;
-    Bala *bullet = new Bala(smgr, driver, world, pos, posRaton);
+    Bala *bullet = new Bala(smgr, driver, world, pos, posRaton, getDamage());
     listaBalas.push_back(bullet);
     cargador--;
     

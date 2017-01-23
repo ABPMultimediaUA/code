@@ -216,15 +216,18 @@ void Juego::Dentro(void)
             //cambio de arma
              
              if(teclado.isKeyDown(irr::KEY_KEY_1)){
+                 if(pers->getArmaActual() != 0)
                  pers->setArmaActual(0);
              }
              
              else if(teclado.isKeyDown(irr::KEY_KEY_2)){
+                 if(pers->getArmaActual() != 1)
                  pers->setArmaActual(1);
              }
              
              else if(teclado.isKeyDown(irr::KEY_KEY_3)){
-                 pers->setArmaActual(2);
+                 if(pers->getArmaActual() != 2)
+                    pers->setArmaActual(2);
              }
             /*
             if(teclado.isKeyDown(irr::KEY_KEY_Q) && now >= 5.0f){

@@ -14,7 +14,7 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posPers, vector2df mousePosition) {
+Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posPers, vector2df mousePosition, float dumug) {
 
     maya = smgr->addSphereSceneNode(2);
 
@@ -28,7 +28,7 @@ Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df 
     }
 
 
-
+    
     pos = maya->getPosition();
 //    bodyDef.type = b2_dynamicBody;
 //    bodyDef.position.Set(pos.X, pos.Z);
@@ -36,12 +36,13 @@ Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df 
 //    body = world->CreateBody(&bodyDef);
 //    body -> CreateFixture(&bodyShape, 1.0f);
 
-    life = true;
+ 
 
     posRaton = vector2df(mousePosition.X, mousePosition.Y);
 
     posInicial = posPers;
 
+    damage = dumug;
     
     entity = new Entity2D(world, pos, maya->getRotation(), true, this);
 
@@ -130,3 +131,8 @@ bool Bala::update() {
 
 
 }
+
+float Bala::getDamage() {
+    return damage;
+}
+

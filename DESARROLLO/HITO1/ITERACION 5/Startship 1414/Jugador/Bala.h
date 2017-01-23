@@ -47,10 +47,11 @@ private:
     vector2df posRaton;
     Entity2D *entity;
     f32 MOVEMENT_SPEED;
-    bool life;
+    float damage;
+    
 
 public:
-    Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posPers, vector2df mousePosition);
+    Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posPers, vector2df mousePosition, float dumug);
     Bala(const Bala& orig);
     virtual ~Bala();
     void setPosition(vector3df);
@@ -60,6 +61,7 @@ public:
     bool estaViva();
     vector3df posInicial;
     bool update();
+    float getDamage();
     
 };
 

@@ -46,12 +46,12 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, int modo){
     
 }
 
-void MiContactListener::aplicarDamage(Entity2D* entity){
+void MiContactListener::aplicarDamage(Entity2D* entity, Entity2D *bala){
     
     Enemigo *ene = static_cast<Enemigo*>(entity->getObjeto3D()); //mirar el tema de hacer un cast dependiendo de la raza
-    
+    Bala *bullet = static_cast<Bala*>(bala->getObjeto3D());
     if(ene->getVida() > 0.0f){
-        ene->quitarVida(20.0f);
+        ene->quitarVida(bullet->getDamage());
         if(ene->getVida() <= 0.0f){
             entity->setLive(false);
         }
@@ -180,15 +180,15 @@ void MiContactListener::BeginContact(b2Contact* contact){
             //colision de enemigo y bala
             //3: bala; 4: enemigo
             if(entity1->getIDEN() == 3 && entity2->getIDEN() == 4){
+                  //entity2->setLive(false);
+                aplicarDamage(entity2, entity1);
                 entity1->setLive(false);
-                //entity2->setLive(false);
-                aplicarDamage(entity2);
             }
             
             else if(entity1->getIDEN() == 4 && entity2->getIDEN() == 3){
-                //entity1->setLive(false);
+                //entity1->setLive(false);              
+                aplicarDamage(entity1, entity2);
                 entity2->setLive(false);
-                aplicarDamage(entity1);
             }
             
             if(entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true){

@@ -74,6 +74,7 @@ public:
     int getDireccion();
     float getDamage();
     float getTiempoArma();
+    int getArmaActual();
     
     void moverPersonaje(int modo, f32 dt);
     void setVelocidad();
