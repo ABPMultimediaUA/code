@@ -40,6 +40,7 @@ void MiContactListener::actualizarPuerta(Entity2D* entitypu, Entity2D* entityper
     if(modo == 0){
             //si tiene rotacion en Y van | sino van -
         per->p=puerta;
+        per->ultp=puerta;
             
     }
     

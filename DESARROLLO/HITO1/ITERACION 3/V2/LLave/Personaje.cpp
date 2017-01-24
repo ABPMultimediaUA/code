@@ -46,6 +46,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     tiempoDisparo = 0.0f;
     disparo = false;
     p=NULL;
+    ultp=NULL;
     llaves=0;
     
     

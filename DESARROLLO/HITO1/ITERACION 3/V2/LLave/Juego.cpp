@@ -138,6 +138,12 @@ void Juego::loopJuego()
                 
             }
             
+            if(pers->ultp!=NULL){
+                if(pers->ultp->estado!=0){
+                    pers->ultp->Update();
+                }
+            }
+            
             
             if(teclado.isKeyDown(irr::KEY_KEY_I)&&i>up){
                 
