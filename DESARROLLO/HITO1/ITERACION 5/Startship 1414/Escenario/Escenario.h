@@ -22,7 +22,7 @@
 #include <string>
 #include "../Enemigos/Enemigo.h"
 #include "../Enemigos/CriaAlien.h"
-
+#include "../Enemigos/Waypoints.h"
 
 using namespace irr;
 

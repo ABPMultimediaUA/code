@@ -144,7 +144,28 @@ void Escenario::removeListSubHijos()
 
 void Escenario::dibujarEscenario(){
 
+     Waypoints *puntos = new Waypoints();
       for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
+          
+          if((*I).nombre=="Cria")
+          {
+             
+               for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T!= (*I).ObjetosEscena.end(); T++)
+               {
+                   
+                   IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f,16,0, -1, 
+                   vector3df(10*((*T).position.x+((*I).position.x)),10*((*T).position.y+((*I).position.y)),10*((*T).position.z+(*I).position.z)),
+                   vector3df((*T).rotation.x+(*I).rotation.x,(*T).rotation.y+(*I).rotation.y,(*T).rotation.z+(*I).rotation.z),
+                   vector3df((*T).escala.x*(*I).escala.x,(*T).escala.y*(*I).escala.y,(*T).escala.z*(*I).escala.z));
+                   objeto->getMaterial(0).EmissiveColor.set(20,200,80,80);
+                   
+                   puntos->creaPuntos((*T).nombre,   vector3df(10*((*T).position.x+((*I).position.x)),10*((*T).position.y+((*I).position.y)),10*((*T).position.z+(*I).position.z)));
+                   puntos->MuestraPuntos();
+                   puntos->creaPesos();
+                   puntos->mostrarPesos();
+               }
+          }
+          
           for (std::list<ElementoHijo>::iterator M = (*I).ObjetosEscena.begin(); M!= (*I).ObjetosEscena.end(); M++) {
                  if((*M).nombre=="Suelo")
                   {
@@ -215,15 +236,15 @@ void Escenario::dibujarEscenario(){
 
 void Escenario::fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2World* world){
     
-    for(int i = 0; i < 5; i++){
+    for(int i = 0; i < 1; i++){
        
         float x = rand()%100;
         float z = rand()%200;
-     
+     /*
         if( i % 2 == 0){
         AlienBerserker *alien = new AlienBerserker(smgr,driver, world, vector3df(x,10,z));
         enemigos.push_back(alien);
-        }  
+        }  */
         
         CriaAlien *ene =  new CriaAlien(smgr, driver, world, vector3df(x,10,z));
        

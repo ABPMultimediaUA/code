@@ -9,6 +9,8 @@
         <in>CriaAlien.h</in>
         <in>Enemigo.cpp</in>
         <in>Enemigo.h</in>
+        <in>Waypoints.cpp</in>
+        <in>Waypoints.h</in>
       </df>
       <df name="Escenario">
         <in>Camara.cpp</in>

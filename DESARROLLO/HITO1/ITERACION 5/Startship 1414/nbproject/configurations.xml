@@ -4,10 +4,10 @@
     <df root="." name="0">
       <df name="Enemigos">
         <in>AlienBerserker.cpp</in>
-        <in>AlienBerserker.h</in>
         <in>CriaAlien.cpp</in>
-        <in>CriaAlien.h</in>
         <in>Enemigo.cpp</in>
+        <in>Waypoints.cpp</in>
+        <in>Waypoints.h</in>
       </df>
       <df name="Escenario">
         <in>Camara.cpp</in>
@@ -24,15 +24,11 @@
       </df>
       <df name="Jugador">
         <in>Arma.cpp</in>
-        <in>Arma.h</in>
         <in>Bala.cpp</in>
         <in>Escopeta.cpp</in>
-        <in>Escopeta.h</in>
         <in>Fusil.cpp</in>
-        <in>Fusil.h</in>
         <in>Personaje.cpp</in>
         <in>Pistola.cpp</in>
-        <in>Pistola.h</in>
       </df>
       <df name="Menu">
         <in>Menu.cpp</in>
@@ -90,7 +86,7 @@
       <item path="CAppReceiver.cpp" ex="false" tool="1" flavor2="4">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
@@ -98,16 +94,20 @@
         </ccTool>
       </item>
       <item path="Enemigos/AlienBerserker.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Enemigos/AlienBerserker.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Enemigos/CriaAlien.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Enemigos/CriaAlien.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Enemigos/Enemigo.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
+      </item>
+      <item path="Enemigos/Waypoints.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Enemigos/Waypoints.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Escenario/Camara.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
@@ -132,7 +132,7 @@
       <item path="EstadoGeneral.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
@@ -158,7 +158,7 @@
       <item path="Juego.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
@@ -166,33 +166,33 @@
         </ccTool>
       </item>
       <item path="Jugador/Arma.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Jugador/Arma.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Jugador/Bala.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
       </item>
       <item path="Jugador/Escopeta.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Jugador/Escopeta.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Jugador/Fusil.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Jugador/Fusil.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Jugador/Personaje.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
       </item>
       <item path="Jugador/Pistola.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Jugador/Pistola.h" ex="false" tool="3" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="ManejadorEstadoGeneral.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
@@ -206,7 +206,7 @@
       <folder path="0/Enemigos">
         <ccTool>
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
@@ -216,7 +216,7 @@
       <folder path="0/Escenario">
         <ccTool>
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
@@ -226,7 +226,7 @@
       <folder path="0/Fisicas">
         <ccTool>
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
@@ -236,7 +236,7 @@
       <folder path="0/Jugador">
         <ccTool>
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
@@ -246,7 +246,7 @@
       <folder path="0/Menu">
         <ccTool>
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
@@ -264,7 +264,7 @@
       <item path="intro.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
@@ -274,7 +274,7 @@
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
-            <pElem>C:/MinGW/msys/1.0/X11R6/include</pElem>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
             <pElem>../Box2D/Box2D</pElem>
             <pElem>../rapidjson</pElem>
             <pElem></pElem>
