@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>Irrlicht.dll</itemPath>
+      <itemPath>bruce.jpg</itemPath>
+      <itemPath>hierba.png</itemPath>
+      <itemPath>libBox2D.dll</itemPath>
+      <itemPath>libstdc++-6.dll</itemPath>
+      <itemPath>pared.bmp</itemPath>
+      <itemPath>suelo.png</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>CAppReceiver.cpp</itemPath>
+      <itemPath>CAppReceiver.h</itemPath>
+      <itemPath>Camara.cpp</itemPath>
+      <itemPath>Camara.h</itemPath>
+      <itemPath>Enemigo.cpp</itemPath>
+      <itemPath>Enemigo.h</itemPath>
+      <itemPath>Escenario.cpp</itemPath>
+      <itemPath>Escenario.h</itemPath>
+      <itemPath>Personaje.cpp</itemPath>
+      <itemPath>Personaje.h</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="CAppReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CAppReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Camara.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Camara.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Enemigo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Enemigo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Escenario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Escenario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Irrlicht.dll" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Personaje.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Personaje.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bruce.jpg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="hierba.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="libBox2D.dll" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="libstdc++-6.dll" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="pared.bmp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="suelo.png" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../irrlicht-1.8.4/include</pElem>
+          </incDir>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <output>../estados/estados.exe</output>
+        </linkerTool>
+      </compileType>
+      <item path="CAppReceiver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CAppReceiver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Camara.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Camara.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Enemigo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Enemigo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Escenario.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Escenario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Irrlicht.dll" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Personaje.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Personaje.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bruce.jpg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="hierba.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="libBox2D.dll" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="libstdc++-6.dll" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="pared.bmp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="suelo.png" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
