@@ -234,7 +234,21 @@ void Juego::Dentro(void)
                 esce->spawnearEnemigo(smgr, driver, world);
                 
             }*/
-            
+             
+             //debug para la subida de las armas
+             
+             if(teclado.isKeyDown(irr::KEY_KEY_I)){
+                 pers->subirCapacidadDeMun();
+             }
+             else if(teclado.isKeyDown(irr::KEY_KEY_O)){
+                 pers->subirCargador();
+             }
+             
+             else if(teclado.isKeyDown(irr::KEY_KEY_P)){
+                 pers->subirNivelDamage();
+             }
+             
+             
             //RATON
             vector3df mousePosition;
             // Create a ray through the mouse cursor.

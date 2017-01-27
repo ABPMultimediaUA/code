@@ -87,6 +87,9 @@ public:
     void disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *world, f32 dt, vector2df posRaton);
     void actualizarPosicion();
     void setArmaActual(int newArma);
+    void subirNivelDamage();
+    void subirCargador();
+    void subirCapacidadDeMun();
     
 };
 

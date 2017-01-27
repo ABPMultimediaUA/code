@@ -21,7 +21,7 @@ Fusil::Fusil(): Arma() {
     capacidadDeMunicion = 360;
     municionActual = 30;
     
-    for(int i = 1; i < 4; ++i){
+    for(int i = 1; i < 4; i++){
         cargadorNiveles[i] = cargadorNiveles[i-1] + 10;
         damageNiveles[i] =  damageNiveles[i-1] +  damageNiveles[i-1] * 0.3;
         totalMunicion[i] = totalMunicion[i-1] + 30;

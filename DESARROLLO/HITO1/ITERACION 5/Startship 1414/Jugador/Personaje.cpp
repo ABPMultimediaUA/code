@@ -431,6 +431,91 @@ void Personaje::actualizarLista(f32 dt){
 
 }
 
+void Personaje::subirCapacidadDeMun() {
     
+       switch(armaActual){
+        
+        case 0:
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<"La pistola sube la municion total"<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            return pistola->subirNivelMunicion();
+            break;
+            
+        case 1:
+               std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<"El fusil sube la municion total"<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            return fusil->subirNivelMunicion();
+            break;
+            
+        case 2:
+               std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<"La escopeta sube la municion total"<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            return escopeta->subirNivelMunicion();
+            break;
+            
+    }
+
+}
+
+void Personaje::subirCargador() {
+    
+       switch(armaActual){
+        
+        case 0:
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<"La pistola sube el cargador"<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            return pistola->subirNivelCargador();
+            break;
+            
+        case 1:
+               std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<"El fusil sube el cargador"<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            return fusil->subirNivelCargador();
+            break;
+            
+        case 2:
+               std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<"La escopeta sube el cargador"<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            return escopeta->subirNivelCargador();
+            break;
+            
+    }
+   
+}
+
+void Personaje::subirNivelDamage() {
+    
+       switch(armaActual){
+        
+        case 0:
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<"La pistola sube el damage"<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            return pistola->subirNivelDamage();
+            break;
+            
+        case 1:
+               std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<"El fusil sube el damage"<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            return fusil->subirNivelDamage();
+            break;
+            
+        case 2:
+               std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout<<"La escopeta sube el damage"<<std::endl;
+            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            return escopeta->subirNivelDamage();
+            break;
+            
+    }
+}
+ 
 
 

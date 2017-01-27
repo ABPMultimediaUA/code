@@ -10,17 +10,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/intro.cpp</file>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Escenario/Escenario.h</file>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Escenario/Escenario.cpp</file>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Enemigos/Waypoints.h</file>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Jugador/Bala.cpp</file>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Escenario/Camara.cpp</file>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Jugador/Personaje.cpp</file>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Enemigos/Waypoints.cpp</file>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Juego.cpp</file>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Menu/Menu.cpp</file>
-            <file>file:/C:/Users/Hector/Desktop/REPOSITORIO/ABP/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/main.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Juego.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Jugador/Arma.h</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Jugador/Arma.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Fisicas/MiContactListener.h</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Fisicas/MiContactListener.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Jugador/Bala.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Jugador/Fusil.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Jugador/Personaje.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Jugador/Personaje.h</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Jugador/Escopeta.cpp</file>
+            <file>file:/C:/Users/David/Documents/GitHub/code/DESARROLLO/HITO1/ITERACION%205/Startship%201414/Jugador/Pistola.cpp</file>
         </group>
     </open-files>
 </project-private>
