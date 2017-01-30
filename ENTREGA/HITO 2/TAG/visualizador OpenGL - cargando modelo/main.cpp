@@ -10,7 +10,8 @@
 #include <glm/gtc/matrix_transform.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
 //#include <string>
 //#include <string.h>
-#include <objloader.hpp>
+#include "objloader.hpp"
+
 
 using namespace glm;
 

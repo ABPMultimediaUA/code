@@ -22,6 +22,8 @@
 					<Add library="glfw3" />
 					<Add library="gdi32" />
 					<Add library="opengl32" />
+					<Add library="..\visualizador OpenGL - cargando modelo\lib-mingw\assimp.lib" />
+					<Add library="..\visualizador OpenGL - cargando modelo\lib-mingw\zlibstatic.lib" />
 					<Add directory="lib-mingw" />
 				</Linker>
 			</Target>
