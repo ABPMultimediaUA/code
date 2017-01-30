@@ -1,6 +1,0 @@
-g++ -IC:\Users\User\Desktop\irrilicht\irrlicht-1.8.4/include -I/usr/X11R6/include  -O3 -ffast-math main.cpp -o ./ejemplo.exe -LC:\Users\User\Desktop\irrilicht\irrlicht-1.8.4/lib/Win32-gcc -lIrrlicht -lopengl32 -lm
-main.cpp:1:22: fatal error: irrlicht.h: No such file or directory
- #include <irrlicht.h>
-                      ^
-compilation terminated.
-make: *** [Makefile:51: all_win32] Error 1
