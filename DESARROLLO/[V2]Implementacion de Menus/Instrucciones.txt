@@ -1,0 +1,27 @@
+//Menú
+
+Contiene:
+	- Botón jugar, para iniciar el juego.	
+
+
+	- Menú de opciones. Contiene:
+		- Checkbox para poder elegir si se quiere el juego en pantalla completa. Si se selecciona la pantalla completa no se puede seleccionar la resolución en la siguiente opción.
+			
+		- Lista de resoluciones para que el jugador elija la resolución que desee.
+
+		- Botón para aplicar los cambios, el juego se cierra. El jugador tendrá que iniciar el juego otra vez. 
+
+		- Botón para volver al menú principal.
+
+	- Opcion controles, para elegir el tipo de controles de movimiento del personaje. Contiene:
+		- Contiene 2 imagenes que muestran los controles usados para el movimiento del personaje con sus respectivos botones para seleccionar el control que se quiera usar. Una vez pulsado una de las 2 opciones el jugador ya puede volver al menú principal y jugar con los controles de movimiento seleccionados sin necesidad de cerrar el juego.
+
+		- Botón para volver al menú principal.
+
+	- Botón salir, para salir del juego.
+
+
+Toda la configuración se guarda en un fichero xml para que cuando el jugador vuelva a jugar sus cambios sigan estando.
+
+El estado de este entregable es del 95% acabado. Ya que también se debe incluir un boton para dejar la configuración a como estaba al principio, osea por defecto, además de añadir más tipos de resoluciones y más variedad a la hora de poder cambiar los controles del movimiento y del juego en general, como cambiar los controles para disparar, recargar, agacharte, etc.
+También es necesario que al aplicar los cambios de video del videojuego el juego se reinicie por si solo.
