@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="Enemigos">
+        <in>AlienBerserker.cpp</in>
+        <in>CriaAlien.cpp</in>
+        <in>Enemigo.cpp</in>
+        <in>Waypoints.cpp</in>
+        <in>Waypoints.h</in>
+      </df>
+      <df name="Escenario">
+        <in>Camara.cpp</in>
+        <in>Escenario.cpp</in>
+        <in>Pared.cpp</in>
+        <in>Puerta.cpp</in>
+        <in>readJson.cpp</in>
+      </df>
+      <df name="Fisicas">
+        <in>Entity2D.cpp</in>
+        <in>MiContactListener.cpp</in>
+        <in>MyContactFilter.cpp</in>
+        <in>RayCastCallback.cpp</in>
+      </df>
+      <df name="Jugador">
+        <in>Arma.cpp</in>
+        <in>Bala.cpp</in>
+        <in>Escopeta.cpp</in>
+        <in>Fusil.cpp</in>
+        <in>Personaje.cpp</in>
+        <in>Pistola.cpp</in>
+      </df>
+      <df name="Menu">
+        <in>Menu.cpp</in>
+      </df>
+      <in>CAppReceiver.cpp</in>
+      <in>EstadoGeneral.cpp</in>
+      <in>Juego.cpp</in>
+      <in>ManejadorEstadoGeneral.cpp</in>
+      <in>game.cpp</in>
+      <in>intro.cpp</in>
+      <in>main.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-O3 -ffast-math"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>Starship1414.exe</executablePath>
+          <ccTool flags="0">
+            <incDir>
+              <pElem>../irrlicht-1.8.4/include</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="CAppReceiver.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="Enemigos/AlienBerserker.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Enemigos/CriaAlien.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Enemigos/Enemigo.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Enemigos/Waypoints.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Enemigos/Waypoints.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Escenario/Camara.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Escenario/Escenario.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Escenario/Pared.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Escenario/Puerta.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Escenario/readJson.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="EstadoGeneral.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="Fisicas/Entity2D.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Fisicas/MiContactListener.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Fisicas/MyContactFilter.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Fisicas/RayCastCallback.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Juego.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="Jugador/Arma.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Jugador/Bala.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Jugador/Escopeta.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Jugador/Fusil.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Jugador/Personaje.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="Jugador/Pistola.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="ManejadorEstadoGeneral.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="Menu/Menu.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <folder path="0/Enemigos">
+        <ccTool>
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/Escenario">
+        <ccTool>
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/Fisicas">
+        <ccTool>
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/Jugador">
+        <ccTool>
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/Menu">
+        <ccTool>
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="game.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../../../../../../usr/X11R6/include</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="intro.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../../../../../../../../usr/X11R6/include</pElem>
+            <pElem>../Box2D/Box2D</pElem>
+            <pElem>../rapidjson</pElem>
+            <pElem></pElem>
+          </incDir>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
