@@ -142,7 +142,7 @@ void Juego::Dentro(void)
             if(pers->p!=NULL){
               //  guienv->addStaticText(L"Pulsa la tecla I para abrir/cerrar la puerta",
             //rect<s32>(pers->getPos().X, pers->getPos().Z, pers->getPos().X+10, pers->getPos().Z+10), false);
-                 IGUIStaticText* tex=guienv->addStaticText(L"Pulsa la tecla I para abrir/cerrar la puerta",
+                 IGUIStaticText* tex=guienv->addStaticText(L"Pulsa la tecla E para abrir/cerrar la puerta",
             rect<s32>(320, 240, 420, 260), true,true);
                 tex->setOverrideColor(video::SColor(255,255,255,255));
                 tex->setBackgroundColor(video::SColor(120,0,0,0));
@@ -157,7 +157,7 @@ void Juego::Dentro(void)
             }
             
             
-            if(teclado.isKeyDown(irr::KEY_KEY_I)&&i>up){
+            if(teclado.isKeyDown(irr::KEY_KEY_E)&&i>up){
                 
                 pers->ModPuerta();
                 i=0;
@@ -290,12 +290,6 @@ void Juego::Dentro(void)
             mousePosition.X = teclado.GetMouseState().Position.X;
             mousePosition.Y = teclado.GetMouseState().Position.Y;
             pers->rotar(mousePosition);
-            if(teclado.isKeyDown(irr::KEY_KEY_E)){
-             std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<""<<std::endl;
-            std::cout<<"POS EPRS"<<std::endl;
-                 std::cout<<"PosX: "<<pers->getPos().X<<"PosZ: "<<pers->getPos().Z<<std::endl;
-            }
             if (teclado.GetMouseState().LeftButtonDown && pers->getDisparo() == false) {
                 //tiempoDisparo += dt;
                 
