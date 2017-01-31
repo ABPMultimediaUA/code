@@ -21,6 +21,9 @@ Puerta::Puerta(vector3df posicion, vector3df rotacion, vector3df escala, IMeshSc
     posIni = posicion;
     maya = objeto;
     abierta = false;
+    conllave=true;
+    estado=0;
+    
     
 }
 
@@ -86,7 +89,7 @@ void Puerta::setFisica(b2World* world){
 }
 
 void Puerta::abrirPuerta(){
-    
+    entity->getCuerpo2D()->SetAwake(true);
         std::cout<<"ABRO"<<std::endl;
                     //si tiene rotacion en Y van | sino van -
 
@@ -94,13 +97,17 @@ void Puerta::abrirPuerta(){
             std::cout<<"PUERTS ROTADA"<<std::endl;
 
             pos.Z -= 80;
-                  
+                   entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0,10));
         }
         
         else{
             std::cout<<"PUERTS NO ROTADA"<<std::endl;
 
             pos.X += 80;
+            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(10,0));
+            
+            
+            std::cout<<entity->getCuerpo2D()->GetLinearVelocity().x<<std::endl;
         } 
    //entity->destruirFixture();      
   //maya->setPosition(pos);
@@ -158,13 +165,14 @@ void Puerta::cerrarPuerta(){
             std::cout<<"PUERTS ROTADA"<<std::endl;
 
             pos.Z += 80;
-                  
+                  entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0,-10));
         }
         
         else{
             std::cout<<"PUERTS NO ROTADA"<<std::endl;
 
             pos.X -= 80;
+             entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-10,0));
         } 
    //entity->crearFixture();      
   //maya->setPosition(pos);
@@ -219,8 +227,10 @@ void Puerta::Update(){
         if(posIni.X+40<pos.X||posIni.Z+40<pos.Z){
             entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0,0));
             estado=0;
+            
         }
         else{
+            //std::cout<<pos.X<<std::endl;
             float xp=entity->getCuerpo2D()->GetPosition().x;
   float zp=entity->getCuerpo2D()->GetPosition().y;
   //float prueba[3]= {xp, 0, zp};

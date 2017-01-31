@@ -157,7 +157,7 @@ void Juego::Dentro(void)
             }
             
             
-            if(teclado.isKeyDown(irr::KEY_KEY_E)&&i>up){
+            if(teclado.isKeyDown(irr::KEY_KEY_Q)&&i>up){
                 
                 pers->ModPuerta();
                 i=0;
