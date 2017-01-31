@@ -103,7 +103,7 @@ void Puerta::abrirPuerta(){
         else{
             std::cout<<"PUERTS NO ROTADA"<<std::endl;
 
-            pos.X += 80;
+            //pos.X += 80;
             entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(10,0));
             
             
