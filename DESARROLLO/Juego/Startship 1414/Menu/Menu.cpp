@@ -92,17 +92,22 @@ s32 Menu::run() {
          case 1:
            
              this->nombre="juego";
+             iDevice->getGUIEnvironment()->clear();
+             control = false;
          break;
          
          case 2:
              iDevice->closeDevice();
              
+             
             
          break;
      }
      
-     this->dibujarMenu();
-     iDevice->getGUIEnvironment()->drawAll();
+     if(control == true){
+        this->dibujarMenu();
+        iDevice->getGUIEnvironment()->drawAll();
+     }
  }
  
   
