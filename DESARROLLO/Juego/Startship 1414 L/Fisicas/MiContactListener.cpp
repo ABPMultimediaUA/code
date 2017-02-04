@@ -124,11 +124,11 @@ void MiContactListener::aplicarImpulso(Entity2D* entity){
 }
 
 void MiContactListener::BeginContact(b2Contact* contact){
-       //std::cout<<""<<std::endl;
+       std::cout<<""<<std::endl;
 
-       //std::cout<<"////////////////////////"<<std::endl;
+       std::cout<<"////////////////////////"<<std::endl;
 
-   //std::cout<<"COLISION"<<std::endl;
+   std::cout<<"COLISION"<<std::endl;
    if(contact != NULL){
     b2Fixture *f1 = contact->GetFixtureA();
     b2Fixture *f2 = contact->GetFixtureB();
@@ -145,8 +145,8 @@ void MiContactListener::BeginContact(b2Contact* contact){
 
 //            Personaje *pers = static_cast<Personaje*>(entity1->getObjeto3D());
         
-       // std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
-         //   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
+        std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
+            std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
             
 
        /* int a = *((int*)b1->GetUserData());
@@ -248,7 +248,7 @@ void MiContactListener::BeginContact(b2Contact* contact){
 }
 
 void MiContactListener::EndContact(b2Contact* contact){
-       // std::cout<<"SALGO"<<std::endl;
+      std::cout<<"SALGO"<<std::endl;
  if(contact != NULL){
     b2Fixture *f1 = contact->GetFixtureA();
     b2Fixture *f2 = contact->GetFixtureB();
@@ -262,10 +262,10 @@ void MiContactListener::EndContact(b2Contact* contact){
 
         Entity2D *entity1 = static_cast<Entity2D*>(bodyUserData1);
         Entity2D *entity2 = static_cast<Entity2D*>(bodyUserData2);
-/*
+
         std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
             std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
-
+/*
         int a = *((int*)b1->GetUserData());
         int b = *((int*)b2->GetUserData());
         if(a == 1){

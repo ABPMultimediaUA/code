@@ -93,7 +93,7 @@ s32 Menu::run() {
            
              this->nombre="juego";
              iDevice->getGUIEnvironment()->clear();
-             
+             control == false;
          break;
          
          case 2:
