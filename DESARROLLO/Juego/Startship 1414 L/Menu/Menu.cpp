@@ -93,7 +93,7 @@ s32 Menu::run() {
            
              this->nombre="juego";
              iDevice->getGUIEnvironment()->clear();
-             control == false;
+             control = false;
          break;
          
          case 2:
@@ -102,9 +102,11 @@ s32 Menu::run() {
             
          break;
      }
-     
-     this->dibujarMenu();
-     iDevice->getGUIEnvironment()->drawAll();
+     if(control == true){
+        this->dibujarMenu();
+        iDevice->getGUIEnvironment()->drawAll();
+    }
+
  }
  
   
