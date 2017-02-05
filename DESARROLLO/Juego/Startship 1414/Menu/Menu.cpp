@@ -7,6 +7,7 @@
 
 
 #include "Menu.h"
+#include "../ManejadorEstadoGeneral.h"
 
 #ifdef _IRR_WINDOWS_
 #pragma comment(lib, "Irrlicht.lib")
@@ -91,7 +92,8 @@ s32 Menu::run() {
          break;
          case 1:
            
-             this->nombre="juego";
+             //this->nombre="juego";
+             manager.CambiaEstado("juego");
              iDevice->getGUIEnvironment()->clear();
              control = false;
          break;

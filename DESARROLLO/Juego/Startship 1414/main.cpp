@@ -36,15 +36,17 @@ int main(int argc, char **argv)
     { 
         
         manager.AddEstado(new Menu("menu"));
+        manager.AddEstado(new Juego("juego"));
         manager.CambiaEstado("menu");
-        std::string estado= manager.getEstadoActivo()->getNombre();
+        
+//        std::string estado= manager.getEstadoActivo()->getNombre();
         while(device->run())
         {
-            if(estado!=manager.getEstadoActivo()->getNombre())
-            {
-                update(manager.getEstadoActivo()->getNombre());
-                estado=manager.getEstadoActivo()->getNombre();
-            }
+//            if(estado!=manager.getEstadoActivo()->getNombre())
+//            {
+//                update(manager.getEstadoActivo()->getNombre());
+//                estado=manager.getEstadoActivo()->getNombre();
+//            }
             
            device->getVideoDriver()->beginScene(true,true,SColor(255,255,255,255));
            manager.Render();
