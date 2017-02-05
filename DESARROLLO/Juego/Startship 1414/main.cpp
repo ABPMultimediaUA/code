@@ -37,7 +37,7 @@ int main(int argc, char **argv)
         
         manager.AddEstado(new Menu("menu"));
         manager.AddEstado(new Juego("juego"));
-        manager.CambiaEstado("menu");
+        manager.CambiaEstado("juego");
         
 //        std::string estado= manager.getEstadoActivo()->getNombre();
         while(device->run())
