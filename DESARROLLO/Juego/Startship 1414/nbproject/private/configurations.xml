@@ -11,6 +11,8 @@
         <in>Enemigo.h</in>
         <in>Waypoints.cpp</in>
         <in>Waypoints.h</in>
+        <in>navmeshes.cpp</in>
+        <in>navmeshes.h</in>
       </df>
       <df name="Escenario">
         <in>Camara.cpp</in>

@@ -8,6 +8,8 @@
         <in>Enemigo.cpp</in>
         <in>Waypoints.cpp</in>
         <in>Waypoints.h</in>
+        <in>navmeshes.cpp</in>
+        <in>navmeshes.h</in>
       </df>
       <df name="Escenario">
         <in>Camara.cpp</in>
@@ -108,6 +110,10 @@
       <item path="Enemigos/Waypoints.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Enemigos/Waypoints.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Enemigos/navmeshes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Enemigos/navmeshes.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Escenario/Camara.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
