@@ -16,21 +16,13 @@
 #ifndef ESCENARIO_H
 #define ESCENARIO_H
 
-#include <irrlicht.h>
+
 #include <Box2D.h>
 #include <list>
 #include <string>
 #include "../Enemigos/Enemigo.h"
-#include "../Enemigos/CriaAlien.h"
-#include "../Enemigos/Waypoints.h"
+#include "Pared.h"
 
-using namespace irr;
-
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
 
 class Escenario {
 
@@ -77,12 +69,13 @@ private:
     b2World *mundo;
     std::list<Enemigo*> enemigos;
     std::list<Pared*> paredes;
+    int tam;
     
     public:
     Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
     Escenario(const Escenario& orig);
     virtual ~Escenario();
-   
+    
     void setPadres(std::string nombre, double t[], double r[], double s[], std::list<Escenario::ElementoHijo> objetos);
     void setHijos(std::string nombre, double t[], double r[], double s[],std::list<Escenario::Elemento> objetos);
     void setSubHijos(std::string nombre, double t[], double r[], double s[]);
@@ -96,6 +89,7 @@ private:
     void actualizarListaEnemigos(int estado);
     void spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
     std::list<Pared*> getParedes();
+    int getTam();
 };
 
 #endif /* ESCENARIO_H */

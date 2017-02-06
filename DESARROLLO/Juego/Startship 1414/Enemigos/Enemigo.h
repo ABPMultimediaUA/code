@@ -11,11 +11,10 @@
  * Created on 29 de noviembre de 2016, 17:52
  */
 
-#include <irrlicht.h>
+
 #include <iostream>
 #include "../Fisicas/Entity2D.h"
-#include "../Jugador/Personaje.h"
-#include "../CAppReceiver.h"
+
 
 
 #ifndef ENEMIGO_H
@@ -31,13 +30,6 @@
 #define ATACAR 2
 
 
-using namespace irr;
-
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
 
 #ifdef _IRR_WINDOWS_
 #pragma comment(lib, "Irrlicht.lib")

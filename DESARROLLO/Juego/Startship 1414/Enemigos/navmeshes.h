@@ -14,24 +14,14 @@
 #ifndef NAVMESHES_H
 #define NAVMESHES_H
 
-#include <irrlicht.h>
-#include <iostream>
-#include <string>
-#include <vector>
-#include <math.h>
-using namespace irr;
 
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
+#include "../Escenario/Escenario.h"
 
 class navmeshes {
     
 public:
     
-    navmeshes();
+    navmeshes(int grid, Escenario* esce);
     navmeshes(const navmeshes& orig);
     virtual ~navmeshes();
     void muestraGrafo();
@@ -40,7 +30,8 @@ public:
 private:
 
     int **matriz;
-    
+    int tamGrid;
+    int tam;
     
 };
 

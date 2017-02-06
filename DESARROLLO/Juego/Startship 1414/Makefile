@@ -4,7 +4,7 @@
 # Nombre del ejecutable que va a ser generado
 Target := Starship1414
 # Lista de ficheros fuente, separados por espacios
-Sources := main.cpp intro.cpp ManejadorEstadoGeneral.cpp EstadoGeneral.cpp Menu/Menu.cpp CAppReceiver.cpp Juego.cpp Enemigos/Enemigo.cpp Enemigos/Waypoints.cpp Enemigos/CriaAlien.cpp Enemigos/AlienBerserker.cpp Escenario/Camara.cpp Escenario/Escenario.cpp Escenario/Pared.cpp Escenario/Puerta.cpp Escenario/readJson.cpp Fisicas/Entity2D.cpp Fisicas/MiContactListener.cpp Fisicas/MyContactFilter.cpp Fisicas/RayCastCallback.cpp Jugador/Bala.cpp Jugador/Personaje.cpp Jugador/Arma.cpp Jugador/Pistola.cpp Jugador/Fusil.cpp Jugador/Escopeta.cpp
+Sources := main.cpp intro.cpp ManejadorEstadoGeneral.cpp EstadoGeneral.cpp Menu/Menu.cpp CAppReceiver.cpp Juego.cpp Enemigos/navmeshes.cpp Enemigos/Enemigo.cpp Enemigos/Waypoints.cpp Enemigos/CriaAlien.cpp Enemigos/AlienBerserker.cpp Escenario/Camara.cpp Escenario/Escenario.cpp Escenario/Pared.cpp Escenario/Puerta.cpp Escenario/readJson.cpp Fisicas/Entity2D.cpp Fisicas/MiContactListener.cpp Fisicas/MyContactFilter.cpp Fisicas/RayCastCallback.cpp Jugador/Bala.cpp Jugador/Personaje.cpp Jugador/Arma.cpp Jugador/Pistola.cpp Jugador/Fusil.cpp Jugador/Escopeta.cpp
 # Lista de ficheros de recursos, separados por espacios windows no hace falta
 Resources := 
 # Ruta del directorio donde tenemos Irrlicht instalado (donde estan los directorios lib e include)

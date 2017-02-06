@@ -15,10 +15,11 @@
 #define CRIAALIEN_H
 
 #include "Enemigo.h"
+#include "navmeshes.h"
 
 class CriaAlien : public Enemigo {
 public:
-    CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion);
+    CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce);
     //CriaAlien(const CriaAlien& orig);
     virtual ~CriaAlien();
     void Update(int estado);
@@ -27,7 +28,7 @@ public:
     void quitarVida(float damage);
 private:
 
-    
+    navmeshes* nav;
     
 };
 

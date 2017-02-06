@@ -11,16 +11,26 @@
  * Created on 17 de noviembre de 2016, 20:08
  */
 
+#include <irrlicht.h>
 #include <stdlib.h>
 #include <time.h>
 #include "Escenario.h"
 #include "Pared.h"
 #include "Puerta.h"
 #include "readJson.h"
+
+#include "../Enemigos/CriaAlien.h"
+#include "../Enemigos/Waypoints.h"
 #include "../Enemigos/AlienBerserker.h"
 
 
+using namespace irr;
 
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
 
 Escenario::Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
     
@@ -106,6 +116,11 @@ std::list<Pared*> Escenario::getParedes() {
     return paredes;
 }
 
+int Escenario::getTam() {
+    return tam;
+}
+
+
 
 void Escenario::muestraEstructura(){
     cout<<"/////////////////////////////////////////////////////"<<endl;
@@ -180,6 +195,7 @@ void Escenario::dibujarEscenario(){
                                   vector3df((*M).rotation.x+(*I).rotation.x,(*M).rotation.y+(*I).rotation.y,(*M).rotation.z+(*I).rotation.z),
                                   vector3df((*M).escala.x*(*I).escala.x,0,(*M).escala.z*(*I).escala.z));
                                  objeto->getMaterial(0).EmissiveColor.set(0,20,20,20);
+                                 tam = 100;
                  }
                  else 
                  {
@@ -200,7 +216,7 @@ void Escenario::dibujarEscenario(){
                                                         objeto);
 
                                          door->setFisica(mundo);
-                                         paredes.push_back(door);
+                                        
 
                                 } 
                                 
@@ -230,6 +246,7 @@ void Escenario::dibujarEscenario(){
                                                     vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
                                          
                                          wall->setFisica(mundo);
+                                          paredes.push_back(wall);
                                 }
                       }
                  }
@@ -252,7 +269,7 @@ void Escenario::fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2W
         enemigos.push_back(alien);
         }  */
         
-        CriaAlien *ene =  new CriaAlien(smgr, driver, world, vector3df(x,10,z));
+        CriaAlien *ene =  new CriaAlien(smgr, driver, world, vector3df(x,10,z), this);
        
         enemigos.push_back(ene);
         

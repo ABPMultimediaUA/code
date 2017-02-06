@@ -12,8 +12,17 @@
  */
 
 #include "Enemigo.h"
-
+#include <irrlicht.h>
 #include <Math.h>
+
+using namespace irr;
+
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
+
 
 #ifdef _IRR_WINDOWS_
 #pragma comment(lib, "Irrlicht.lib")

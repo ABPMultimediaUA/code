@@ -13,7 +13,14 @@
 
 #include "navmeshes.h"
 
-navmeshes::navmeshes() {
+
+
+navmeshes::navmeshes(int grid, Escenario* esce) {
+    
+    tamGrid = grid;
+    tam = esce->getTam();
+    
+    
 }
 
 navmeshes::navmeshes(const navmeshes& orig) {

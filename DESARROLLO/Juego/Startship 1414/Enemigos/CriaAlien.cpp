@@ -13,7 +13,7 @@
 
 #include "CriaAlien.h"
 
-CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion) : Enemigo(smgr, driver, world, posicion){
+CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce) : Enemigo(smgr, driver, world, posicion){
     maya = smgr -> addCubeSceneNode(5); //preguntar a Miguel Angel
      if (maya) 
      {
@@ -27,6 +27,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     estadoActual=DESCANSAR;
     raza=CRIA;
     blindaje = 0.0f;
+    nav = new navmeshes(5, esce);
 }
 
 //CriaAlien::CriaAlien(const CriaAlien& orig) {
