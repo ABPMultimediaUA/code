@@ -9,162 +9,6 @@
   },
   "hierarchy": [
     {
-      "name": "Cria",
-      "components": [
-        {
-          "localPosition": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "localRotation": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "localScale": [
-            1.0,
-            1.0,
-            1.0
-          ],
-          "name": null,
-          "parentName": null,
-          "type": "Transform"
-        }
-      ],
-      "children": [
-        {
-          "name": "waypoint1",
-          "components": [
-            {
-              "localPosition": [
-                0.0,
-                0.367,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "Default-Material"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "waypoint2",
-          "components": [
-            {
-              "localPosition": [
-                -9.96,
-                0.367,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "Default-Material"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "waypoint3",
-          "components": [
-            {
-              "localPosition": [
-                5.32,
-                0.367,
-                12.6
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "Default-Material"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        }
-      ]
-    },
-    {
       "name": "Escenario",
       "components": [
         {
@@ -1026,7 +870,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -0.26,
+                    0.0,
                     0.0,
                     -4.9
                   ],
@@ -1036,7 +880,7 @@
                     0.0
                   ],
                   "localScale": [
-                    5.0,
+                    6.0,
                     2.0,
                     0.3
                   ],
@@ -1109,7 +953,7 @@
               "components": [
                 {
                   "localPosition": [
-                    12.5,
+                    15.0,
                     1.0,
                     5.07
                   ],
@@ -1165,7 +1009,7 @@
               "components": [
                 {
                   "localPosition": [
-                    7.5,
+                    9.0,
                     1.0,
                     15.08
                   ],
@@ -1175,7 +1019,7 @@
                     0.0
                   ],
                   "localScale": [
-                    10.5,
+                    12.5,
                     2.0,
                     0.5
                   ],
@@ -1221,7 +1065,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -8.0,
+                    -9.0,
                     1.0,
                     15.08
                   ],
@@ -1231,7 +1075,7 @@
                     0.0
                   ],
                   "localScale": [
-                    10.5,
+                    12.5,
                     2.0,
                     0.5
                   ],
@@ -1277,7 +1121,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -13.0,
+                    -15.0,
                     1.0,
                     5.0
                   ],
@@ -1329,6 +1173,162 @@
               "children": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Cria",
+      "components": [
+        {
+          "localPosition": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "waypoint1",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.367,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "waypoint2",
+          "components": [
+            {
+              "localPosition": [
+                -9.96,
+                0.367,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "waypoint3",
+          "components": [
+            {
+              "localPosition": [
+                5.32,
+                0.367,
+                12.6
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
         }
       ]
     }
