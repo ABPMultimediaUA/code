@@ -76,6 +76,7 @@ private:
     std::list<Elemento> SubHijos;
     b2World *mundo;
     std::list<Enemigo*> enemigos;
+    std::list<Pared*> paredes;
     
     public:
     Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
@@ -85,9 +86,6 @@ private:
     void setPadres(std::string nombre, double t[], double r[], double s[], std::list<Escenario::ElementoHijo> objetos);
     void setHijos(std::string nombre, double t[], double r[], double s[],std::list<Escenario::Elemento> objetos);
     void setSubHijos(std::string nombre, double t[], double r[], double s[]);
-    void setPosition();
-    void setRotation();
-    void setEscala();
     void muestraEstructura();
     void dibujarEscenario();
     std::list<Escenario::ElementoHijo> getHijos();
@@ -97,6 +95,7 @@ private:
     void fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
     void actualizarListaEnemigos(int estado);
     void spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
+    std::list<Pared*> getParedes();
 };
 
 #endif /* ESCENARIO_H */

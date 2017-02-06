@@ -28,12 +28,18 @@ using namespace io;
 using namespace gui;
 
 class navmeshes {
+    
 public:
+    
     navmeshes();
     navmeshes(const navmeshes& orig);
     virtual ~navmeshes();
+    void muestraGrafo();
+    void setColisiones();
+    
 private:
 
+    int **matriz;
     
     
 };
