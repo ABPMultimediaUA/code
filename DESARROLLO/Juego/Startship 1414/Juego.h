@@ -59,7 +59,11 @@ public:
     void render(IrrlichtDevice* iDevice);
     void StarUP(IrrlichtDevice* iDevice);
     void update(int state);
-
+    void mover(f32 dt);
+    void recargar();
+    void pausa(IrrlichtDevice* iDevice);
+    void cambioarma();
+    void raton(f32 dt);
 
 
 };

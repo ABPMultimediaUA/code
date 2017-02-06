@@ -88,50 +88,9 @@ void Juego::update(int state) {
     estado = state;
 }
 
-void Juego::render(IrrlichtDevice* iDevice) {
-
-    if (control == false) {
-
-
-        this->StarUP(iDevice);
-        control = true;
-    }
-
-    if (iDevice->isWindowActive()) {
-
-
-        const u32 now = iDevice->getTimer()->getTime();
-
-        const f32 dt = (f32) (now - then) / 1000.f;
-        //float distancia;
-        world->Step(dt, 6, 2); //1.0f/60.0f
-        world->ClearForces();
-
-        //            if(teclado.isKeyDown(irr::KEY_KEY_J)){
-        //                estado = 0;
-        //            }
-        //            else if(teclado.isKeyDown(irr::KEY_KEY_K)){
-        //                               estado = 1;
-        //
-        //            }
-        //            else if(teclado.isKeyDown(irr::KEY_KEY_L)){
-        //                                estado = 2;
-        //
-        //            }
-        //            else if(teclado.isKeyDown(irr::KEY_KEY_P)){
-        //                ene->Cambiar(4);
-        //            }
-        //            else if(teclado.isKeyDown(irr::KEY_KEY_O)){
-        //                ene->Cambiar(5);
-        //            }
-
-
-        // ene->Update(pers);
-        //  esce->actualizarListaEnemigos(estado);
-
-
-        if (estado == 0) {
-            if (teclado.isKeyUp(irr::KEY_KEY_D) || teclado.isKeyUp(irr::KEY_KEY_A) || teclado.isKeyUp(irr::KEY_KEY_W) || teclado.isKeyUp(irr::KEY_KEY_S)) {
+void Juego::mover(f32 dt)
+{
+     if (teclado.isKeyUp(irr::KEY_KEY_D) || teclado.isKeyUp(irr::KEY_KEY_A) || teclado.isKeyUp(irr::KEY_KEY_W) || teclado.isKeyUp(irr::KEY_KEY_S)) {
                 pers->setVelocidad();
                 cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
             }
@@ -199,17 +158,27 @@ void Juego::render(IrrlichtDevice* iDevice) {
                 //cam->actualizarCamara(3, dt);
 
             }
-            //recarga
-            if (teclado.isKeyDown(irr::KEY_KEY_R)) {
+}
+
+
+void Juego::recargar()
+{
+     if (teclado.isKeyDown(irr::KEY_KEY_R)) {
                 pers->recargar();
             }
+}
 
-            if (teclado.isKeyDown(irr::KEY_ESCAPE)) {
+void Juego::pausa(IrrlichtDevice* iDevice)
+{
+    if (teclado.isKeyDown(irr::KEY_ESCAPE)) {
                 update(1);
                 menuPausa = new Menu(iDevice, 0);
             }
-            //cambio de arma
+}
 
+void Juego::cambioarma()
+{
+    
             if (teclado.isKeyDown(irr::KEY_KEY_1)) {
                 if (pers->getArmaActual() != 0)
                     pers->setArmaActual(0);
@@ -220,24 +189,11 @@ void Juego::render(IrrlichtDevice* iDevice) {
                 if (pers->getArmaActual() != 2)
                     pers->setArmaActual(2);
             }
-            /*
-            if(teclado.isKeyDown(irr::KEY_KEY_Q) && now >= 5.0f){
-                esce->spawnearEnemigo(smgr, driver, world);
+}
 
-            }*/
-
-            //debug para la subida de las armas
-
-            if (teclado.isKeyDown(irr::KEY_KEY_I)) {
-                pers->subirCapacidadDeMun();
-            } else if (teclado.isKeyDown(irr::KEY_KEY_O)) {
-                pers->subirCargador();
-            } else if (teclado.isKeyDown(irr::KEY_KEY_P)) {
-                pers->subirNivelDamage();
-            }
-
-
-            //RATON
+void Juego::raton(f32 dt)
+{
+     //RATON
             vector3df mousePosition;
             // Create a ray through the mouse cursor.
             line3df ray = smgr->getSceneCollisionManager()->getRayFromScreenCoordinates(teclado.GetMouseState().Position, smgr->getActiveCamera());
@@ -277,28 +233,79 @@ void Juego::render(IrrlichtDevice* iDevice) {
                     pers->setTiempoDisparo(0);
                 }
             }
-
-
-
             if (ok) {
 
                 pers->actualizarLista(dt);
 
             }
+            
 
-            if (estado == 1) {
+
+}
+
+void Juego::render(IrrlichtDevice* iDevice) {
+
+    if (control == false) {
+
+
+        this->StarUP(iDevice);
+        control = true;
+    }
+    std::cout<<estado<<std::endl;
+    if (iDevice->isWindowActive()) {
+
+
+        const u32 now = iDevice->getTimer()->getTime();
+
+        const f32 dt = (f32) (now - then) / 1000.f;
+        //float distancia;
+        world->Step(dt, 6, 2); //1.0f/60.0f
+        world->ClearForces();
+        switch (estado)
+        {
+            case 0: {
+            //mover camara y personaje
+            this->mover(dt);
+            //recarga
+            this->recargar();
+            //pausa
+            this->pausa(iDevice);
+            //cambio de arma
+            this->cambioarma();
+            /*
+            if(teclado.isKeyDown(irr::KEY_KEY_Q) && now >= 5.0f){
+                esce->spawnearEnemigo(smgr, driver, world);
+
+            }*/
+
+            //debug para la subida de las armas
+/*
+            if (teclado.isKeyDown(irr::KEY_KEY_I)) {
+                pers->subirCapacidadDeMun();
+            } else if (teclado.isKeyDown(irr::KEY_KEY_O)) {
+                pers->subirCargador();
+            } else if (teclado.isKeyDown(irr::KEY_KEY_P)) {
+                pers->subirNivelDamage();
+            }
+*/
+
+            this->raton(dt);
+            break;
+            }
+
+            case 1: {
                 s32 pulsado = menuPausa->run();
                 std::cout << "seleccion: " << pulsado << std::endl;
                 if (pulsado != -1) {
 
                     if (pulsado == 1) {
-                        update(1);
+                        update(0);
                     } else if (pulsado == 2)
                         iDevice->closeDevice();
                 }
             }
+        
         }
-
 
         then = now;
 
