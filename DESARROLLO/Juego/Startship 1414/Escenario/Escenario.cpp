@@ -179,8 +179,6 @@ void Escenario::dibujarEscenario(){
                                   vector3df((*M).position.x+(*I).position.x,(*M).position.y+(*I).position.y,(*M).position.z+(*I).position.y),
                                   vector3df((*M).rotation.x+(*I).rotation.x,(*M).rotation.y+(*I).rotation.y,(*M).rotation.z+(*I).rotation.z),
                                   vector3df((*M).escala.x*(*I).escala.x,0,(*M).escala.z*(*I).escala.z));
-                                 
-
                                  objeto->getMaterial(0).EmissiveColor.set(0,20,20,20);
                  }
                  else 
