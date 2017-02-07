@@ -28,6 +28,12 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     raza=CRIA;
     blindaje = 0.0f;
     nav = new navmeshes(5, esce);
+    std::cout<<"GRAFO CON 0"<<std::endl;
+    std::cout<<""<<std::endl;
+    nav->muestraGrafo();
+    std::cout<<"COLISIONES"<<std::endl;
+    std::cout<<""<<std::endl;
+    nav->setColisiones(esce->getParedes());
 }
 
 //CriaAlien::CriaAlien(const CriaAlien& orig) {

@@ -25,7 +25,7 @@ public:
     navmeshes(const navmeshes& orig);
     virtual ~navmeshes();
     void muestraGrafo();
-    void setColisiones();
+    void setColisiones(std::list<Pared*> paredes);
     
 private:
 
