@@ -72,24 +72,32 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
     
     for(std::list<Pared*>::iterator it = paredes.begin(); it != paredes.end(); it++){
         if((*it) != NULL){
-            std::cout<<"POSICION"<<std::endl;
-            std::cout<<"X: "<<(*it)->getPosicion().X<<std::endl;
-            std::cout<<"Y: "<<(*it)->getPosicion().Y<<std::endl;
-            std::cout<<"Z: "<<(*it)->getPosicion().Z<<std::endl;
-            std::cout<<"//////////////////"<<std::endl; 
-            std::cout<<"//////////////////"<<std::endl;
-            std::cout<<"ROTACION"<<std::endl;
-            std::cout<<"X: "<<(*it)->getRotacion().X<<std::endl;
-            std::cout<<"Y: "<<(*it)->getRotacion().Y<<std::endl;
-            std::cout<<"Z: "<<(*it)->getRotacion().Z<<std::endl;
-            std::cout<<"//////////////////"<<std::endl; 
-            std::cout<<"//////////////////"<<std::endl;
-            std::cout<<"ESCALA"<<std::endl;
-            std::cout<<"X: "<<(*it)->getEscala().X<<std::endl;
-            std::cout<<"Y: "<<(*it)->getEscala().Y<<std::endl;
-            std::cout<<"Z: "<<(*it)->getEscala().Z<<std::endl;
-            std::cout<<"//////////////////"<<std::endl; 
-            std::cout<<"//////////////////"<<std::endl;
+//            std::cout<<"POSICION"<<std::endl;
+//            std::cout<<"X: "<<(*it)->getPosicion().X<<std::endl;
+//            std::cout<<"Y: "<<(*it)->getPosicion().Y<<std::endl;
+//            std::cout<<"Z: "<<(*it)->getPosicion().Z<<std::endl;
+//            std::cout<<"//////////////////"<<std::endl; 
+//            std::cout<<"//////////////////"<<std::endl;
+//            std::cout<<"ROTACION"<<std::endl;
+//            std::cout<<"X: "<<(*it)->getRotacion().X<<std::endl;
+//            std::cout<<"Y: "<<(*it)->getRotacion().Y<<std::endl;
+//            std::cout<<"Z: "<<(*it)->getRotacion().Z<<std::endl;
+//            std::cout<<"//////////////////"<<std::endl; 
+//            std::cout<<"//////////////////"<<std::endl;
+//            std::cout<<"ESCALA"<<std::endl;
+//            std::cout<<"X: "<<(*it)->getEscala().X<<std::endl;
+//            std::cout<<"Y: "<<(*it)->getEscala().Y<<std::endl;
+//            std::cout<<"Z: "<<(*it)->getEscala().Z<<std::endl;
+//            std::cout<<"//////////////////"<<std::endl; 
+//            std::cout<<"//////////////////"<<std::endl;
+            
+            if((*it)->getRotacion().Y == 90){
+                
+            }
+            
+            else {
+                
+            }
         }
     }
 

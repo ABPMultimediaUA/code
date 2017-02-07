@@ -63,8 +63,9 @@ void Juego::StarUP(IrrlichtDevice* iDevice) {
     pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
     esce = new Escenario(smgr, driver, world);
     // ene = new Enemigo(smgr, driver, world, vector3df(0,10,40));
-    esce->fabricaDeEnemigos(smgr, driver, world);
     json = new readJson(esce);
+    esce->fabricaDeEnemigos(smgr, driver, world);
+    
     cam = new Camara(smgr, pers->getPos());
 
     then = iDevice->getTimer()->getTime();
@@ -251,7 +252,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
         this->StarUP(iDevice);
         control = true;
     }
-    std::cout<<estado<<std::endl;
+//    std::cout<<estado<<std::endl;
     if (iDevice->isWindowActive()) {
 
 
@@ -295,7 +296,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 
             case 1: {
                 s32 pulsado = menuPausa->run();
-                std::cout << "seleccion: " << pulsado << std::endl;
+//                std::cout << "seleccion: " << pulsado << std::endl;
                 if (pulsado != -1) {
 
                     if (pulsado == 1) {
