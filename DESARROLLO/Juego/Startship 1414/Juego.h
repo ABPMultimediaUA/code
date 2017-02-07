@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   Juego.h
  * Author: Hector
  *
@@ -26,9 +26,9 @@
 #include "Escenario/readJson.h"
 #include "Fisicas/MiContactListener.h"
 #include "Fisicas/MyContactFilter.h"
+#include "Menu/Menu.h"
 
-
-class Juego : public EstadoGeneral{
+class Juego : public EstadoGeneral {
 public:
     CAppReceiver teclado;
     IVideoDriver* driver;
@@ -45,11 +45,11 @@ public:
     readJson *json;
     Camara *cam;
     int lastFPS;
-    
+    Menu *menuPausa;
     int estado;
-    
+
     void loopJuego();
-    
+
     Juego();
     Juego(std::string name);
     virtual ~Juego();
@@ -58,8 +58,12 @@ public:
     bool OnEvent(const SEvent &event);
     void render(IrrlichtDevice* iDevice);
     void StarUP(IrrlichtDevice* iDevice);
-
-
+    void update(int state);
+    void mover(f32 dt);
+    void recargar();
+    void pausa(IrrlichtDevice* iDevice);
+    void cambioarma();
+    void raton(f32 dt);
 
 
 };

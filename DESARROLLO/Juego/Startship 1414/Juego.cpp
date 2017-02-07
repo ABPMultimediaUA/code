@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   Juego.cpp
  * Author: Hector
- * 
+ *
  * Created on 19 de diciembre de 2016, 22:22
  */
 
@@ -31,31 +31,29 @@ using namespace gui;
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-
 Juego::Juego() {
-  
+
 }
 
-Juego::Juego(std::string name) : EstadoGeneral(name){
+Juego::Juego(std::string name) : EstadoGeneral(name) {
 }
 
 Juego::~Juego() {
 }
 
-void Juego::StarUP(IrrlichtDevice* iDevice)
-{
+void Juego::StarUP(IrrlichtDevice* iDevice) {
     iDevice->setEventReceiver(&teclado);
     driver = iDevice->getVideoDriver();
     smgr = iDevice->getSceneManager();
     guienv = iDevice->getGUIEnvironment();
     world = new b2World(gravity);
-    contactListenerInstance =  new MiContactListener();
+    contactListenerInstance = new MiContactListener();
     filtroContact = new MyContactFilter();
     gravity.Set(0.0f, 0.0f);
-    
+
     world->SetContactListener(contactListenerInstance);
     world->SetContactFilter(filtroContact);
-    
+
     iDevice->setWindowCaption(L"Movimiento del personaje");
 
     guienv->addStaticText(L"Movimiento del personaje",
@@ -64,78 +62,35 @@ void Juego::StarUP(IrrlichtDevice* iDevice)
     lastFPS = 0;
     pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
     esce = new Escenario(smgr, driver, world);
-   // ene = new Enemigo(smgr, driver, world, vector3df(0,10,40));
+    // ene = new Enemigo(smgr, driver, world, vector3df(0,10,40));
     esce->fabricaDeEnemigos(smgr, driver, world);
     json = new readJson(esce);
     cam = new Camara(smgr, pers->getPos());
-    
+
     then = iDevice->getTimer()->getTime();
     estado = 0;
 }
 
+void Juego::Dentro(void) {
+    //set up gui
+}
 
-void Juego::Dentro(void)
- {
- 	//set up gui
- }
- 
- void Juego::Fuera(void)
- {
- 	//restore playerdata
- }
- 
- bool Juego::OnEvent(const SEvent &event)
- {
- 	//handle user input
- 	return(false);
- }
- 
- void Juego::render(IrrlichtDevice* iDevice)
- {
-     
-     if(control==false)
-     {  
-         
-         
-         this->StarUP(iDevice);
-         control=true;
-     }
-     
-     if (iDevice->isWindowActive()) {
+void Juego::Fuera(void) {
+    //restore playerdata
+}
 
-        
-            const u32 now = iDevice->getTimer()->getTime();
-             
-            const f32 dt = (f32) (now - then) / 1000.f;
-            //float distancia;
-            world->Step(dt, 6, 2); //1.0f/60.0f
-            world->ClearForces();
-           
-            if(teclado.isKeyDown(irr::KEY_KEY_J)){
-                estado = 0;
-            }
-            else if(teclado.isKeyDown(irr::KEY_KEY_K)){
-                               estado = 1;
+bool Juego::OnEvent(const SEvent &event) {
+    //handle user input
+    return (false);
+}
 
-            }
-            else if(teclado.isKeyDown(irr::KEY_KEY_L)){
-                                estado = 2;
+void Juego::update(int state) {
+    estado = state;
+}
 
-            }
-//            else if(teclado.isKeyDown(irr::KEY_KEY_P)){
-//                ene->Cambiar(4);
-//            }
-//            else if(teclado.isKeyDown(irr::KEY_KEY_O)){
-//                ene->Cambiar(5);
-//            }
-            
-            
-           // ene->Update(pers);
-             esce->actualizarListaEnemigos(estado);
-
-            
-
-            if (teclado.isKeyUp(irr::KEY_KEY_D) || teclado.isKeyUp(irr::KEY_KEY_A) || teclado.isKeyUp(irr::KEY_KEY_W) || teclado.isKeyUp(irr::KEY_KEY_S)) {
+void Juego::mover(f32 dt)
+{
+     if (teclado.isKeyUp(irr::KEY_KEY_D) || teclado.isKeyUp(irr::KEY_KEY_A) || teclado.isKeyUp(irr::KEY_KEY_W) || teclado.isKeyUp(irr::KEY_KEY_S)) {
                 pers->setVelocidad();
                 cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
             }
@@ -150,43 +105,41 @@ void Juego::Dentro(void)
             } else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_D)) {
 
                 pers->moverPersonaje(5, dt);
-                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
-               // cam->actualizarCamara(0, dt);
+                // cam->actualizarCamara(0, dt);
                 //cam->actualizarCamara(3, dt);
 
             } else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_A)) {
 
                 pers->moverPersonaje(6, dt);
-                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
-               // cam->actualizarCamara(1, dt);
-               // cam->actualizarCamara(3, dt);
+                // cam->actualizarCamara(1, dt);
+                // cam->actualizarCamara(3, dt);
 
 
             } else if (teclado.isKeyDown(irr::KEY_KEY_A) && teclado.isKeyDown(irr::KEY_KEY_W)) {
 
                 pers->moverPersonaje(7, dt);
-                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
-               // cam->actualizarCamara(1, dt);
-               // cam->actualizarCamara(2, dt);
+                // cam->actualizarCamara(1, dt);
+                // cam->actualizarCamara(2, dt);
 
 
             }// X + and -
             else if (teclado.isKeyDown(irr::KEY_KEY_D)) {
 
-                    pers->moverPersonaje(0, dt);
-                                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+                pers->moverPersonaje(0, dt);
+                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
-                 //   cam->actualizarCamara(0, dt);
-              
-            } 
-               
-            else if (teclado.isKeyDown(irr::KEY_KEY_A)) {
+                //   cam->actualizarCamara(0, dt);
+
+            } else if (teclado.isKeyDown(irr::KEY_KEY_A)) {
 
                 pers->moverPersonaje(1, dt);
-                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
                 //cam->actualizarCamara(1, dt);
 
@@ -194,62 +147,53 @@ void Juego::Dentro(void)
             else if (teclado.isKeyDown(irr::KEY_KEY_W)) {
 
                 pers->moverPersonaje(2, dt);
-                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
                 //cam->actualizarCamara(2, dt);
             } else if (teclado.isKeyDown(irr::KEY_KEY_S)) {
 
                 pers->moverPersonaje(3, dt);
-                            cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+                cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
                 //cam->actualizarCamara(3, dt);
 
             }
-            //recarga
-            if(teclado.isKeyDown(irr::KEY_KEY_R)){
+}
+
+
+void Juego::recargar()
+{
+     if (teclado.isKeyDown(irr::KEY_KEY_R)) {
                 pers->recargar();
             }
-            
-            if(teclado.isKeyDown(irr::KEY_ESCAPE)){
-                 iDevice->closeDevice();
+}
+
+void Juego::pausa(IrrlichtDevice* iDevice)
+{
+    if (teclado.isKeyDown(irr::KEY_ESCAPE)) {
+                update(1);
+                menuPausa = new Menu(iDevice, 0);
             }
-            //cambio de arma
-             
-             if(teclado.isKeyDown(irr::KEY_KEY_1)){
-                 if(pers->getArmaActual() != 0)
-                 pers->setArmaActual(0);
-             }
-             
-             else if(teclado.isKeyDown(irr::KEY_KEY_2)){
-                 if(pers->getArmaActual() != 1)
-                 pers->setArmaActual(1);
-             }
-             
-             else if(teclado.isKeyDown(irr::KEY_KEY_3)){
-                 if(pers->getArmaActual() != 2)
+}
+
+void Juego::cambioarma()
+{
+    
+            if (teclado.isKeyDown(irr::KEY_KEY_1)) {
+                if (pers->getArmaActual() != 0)
+                    pers->setArmaActual(0);
+            } else if (teclado.isKeyDown(irr::KEY_KEY_2)) {
+                if (pers->getArmaActual() != 1)
+                    pers->setArmaActual(1);
+            } else if (teclado.isKeyDown(irr::KEY_KEY_3)) {
+                if (pers->getArmaActual() != 2)
                     pers->setArmaActual(2);
-             }
-            /*
-            if(teclado.isKeyDown(irr::KEY_KEY_Q) && now >= 5.0f){
-                esce->spawnearEnemigo(smgr, driver, world);
-                
-            }*/
-             
-             //debug para la subida de las armas
-             
-             if(teclado.isKeyDown(irr::KEY_KEY_I)){
-                 pers->subirCapacidadDeMun();
-             }
-             else if(teclado.isKeyDown(irr::KEY_KEY_O)){
-                 pers->subirCargador();
-             }
-             
-             else if(teclado.isKeyDown(irr::KEY_KEY_P)){
-                 pers->subirNivelDamage();
-             }
-             
-             
-            //RATON
+            }
+}
+
+void Juego::raton(f32 dt)
+{
+     //RATON
             vector3df mousePosition;
             // Create a ray through the mouse cursor.
             line3df ray = smgr->getSceneCollisionManager()->getRayFromScreenCoordinates(teclado.GetMouseState().Position, smgr->getActiveCamera());
@@ -259,70 +203,133 @@ void Juego::Dentro(void)
             mousePosition.X = teclado.GetMouseState().Position.X;
             mousePosition.Y = teclado.GetMouseState().Position.Y;
             pers->rotar(mousePosition);
-            if(teclado.isKeyDown(irr::KEY_KEY_E)){
-             std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<""<<std::endl;
-            std::cout<<"POS EPRS"<<std::endl;
-                 std::cout<<"PosX: "<<pers->getPos().X<<"PosZ: "<<pers->getPos().Z<<std::endl;
+            if (teclado.isKeyDown(irr::KEY_KEY_E)) {
+                std::cout << "//////////////////////////////////////////" << std::endl;
+                std::cout << "" << std::endl;
+                std::cout << "POS EPRS" << std::endl;
+                std::cout << "PosX: " << pers->getPos().X << "PosZ: " << pers->getPos().Z << std::endl;
             }
             if (teclado.GetMouseState().LeftButtonDown && pers->getDisparo() == false) {
                 //tiempoDisparo += dt;
-                
+
                 //pers -> disparar(dt,ok);
                 //disparo = true;
                 //Bala *bullet = new Bala(smgr, driver, world, pers, vector2df(teclado.GetMouseState().Position.X, teclado.GetMouseState().Position.Y));
                 //listaBalas.push_back(bullet);
                 //  }
                 // }
-                
-                if(pers->getCargador() >= 0){
+
+                if (pers->getCargador() >= 0) {
                     pers->disparar(smgr, driver, world, dt, vector2df(mousePosition.X, mousePosition.Y));
 
                 }
             }
-            
 
-            if(pers->getDisparo() == true){
-                pers->setTiempoDisparo(pers->getTiempoDisparo()+dt);
-                if(pers->getTiempoDisparo() >= pers->getTiempoArma()){
+
+            if (pers->getDisparo() == true) {
+                pers->setTiempoDisparo(pers->getTiempoDisparo() + dt);
+                if (pers->getTiempoDisparo() >= pers->getTiempoArma()) {
                     pers->setDisparo(false);
                     pers->setTiempoDisparo(0);
                 }
             }
-            
-            
-            
-             if (ok) {
-    
-                 pers->actualizarLista(dt);
-               
+            if (ok) {
+
+                pers->actualizarLista(dt);
+
             }
             
 
-            
-            then = now;
 
-            driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
+}
 
-            smgr->drawAll(); //dibuja todo el grafo
+void Juego::render(IrrlichtDevice* iDevice) {
 
-            guienv->drawAll(); //dibujar el GUI
+    if (control == false) {
 
-            driver->endScene(); //intercambia buffer
-            
-            int fps = driver->getFPS();
-            if (lastFPS != fps)
-            {
-              core::stringw str = L"FPS: ";     
-              str += fps;     
 
-              iDevice->setWindowCaption(str.c_str());
+        this->StarUP(iDevice);
+        control = true;
+    }
+    std::cout<<estado<<std::endl;
+    if (iDevice->isWindowActive()) {
 
-              lastFPS = fps;
+
+        const u32 now = iDevice->getTimer()->getTime();
+
+        const f32 dt = (f32) (now - then) / 1000.f;
+        //float distancia;
+        world->Step(dt, 6, 2); //1.0f/60.0f
+        world->ClearForces();
+        switch (estado)
+        {
+            case 0: {
+            //mover camara y personaje
+            this->mover(dt);
+            //recarga
+            this->recargar();
+            //pausa
+            this->pausa(iDevice);
+            //cambio de arma
+            this->cambioarma();
+            /*
+            if(teclado.isKeyDown(irr::KEY_KEY_Q) && now >= 5.0f){
+                esce->spawnearEnemigo(smgr, driver, world);
+
+            }*/
+
+            //debug para la subida de las armas
+/*
+            if (teclado.isKeyDown(irr::KEY_KEY_I)) {
+                pers->subirCapacidadDeMun();
+            } else if (teclado.isKeyDown(irr::KEY_KEY_O)) {
+                pers->subirCargador();
+            } else if (teclado.isKeyDown(irr::KEY_KEY_P)) {
+                pers->subirNivelDamage();
+            }
+*/
+
+            this->raton(dt);
+            break;
             }
 
-        } else {
-            iDevice->yield();
+            case 1: {
+                s32 pulsado = menuPausa->run();
+                std::cout << "seleccion: " << pulsado << std::endl;
+                if (pulsado != -1) {
+
+                    if (pulsado == 1) {
+                        update(0);
+                    } else if (pulsado == 2)
+                        iDevice->closeDevice();
+                }
+            }
+        
         }
- }
-  
+
+        then = now;
+
+        driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
+
+
+        smgr->drawAll(); //dibuja todo el grafo
+
+        guienv->drawAll(); //dibujar el GUI
+
+        driver->endScene(); //intercambia buffer
+
+        int fps = driver->getFPS();
+        if (lastFPS != fps) {
+            core::stringw str = L"FPS: ";
+            str += fps;
+
+            iDevice->setWindowCaption(str.c_str());
+
+            lastFPS = fps;
+        }
+
+    } else {
+        iDevice->yield();
+    }
+}
+

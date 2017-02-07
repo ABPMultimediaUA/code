@@ -47,6 +47,7 @@ private:
 public:
     Menu(std::string name);
     Menu(const Menu& orig);
+    Menu(IrrlichtDevice* iDevice, int i);
     virtual ~Menu();
     void borrarMenu();
     void dibujarMenu();
