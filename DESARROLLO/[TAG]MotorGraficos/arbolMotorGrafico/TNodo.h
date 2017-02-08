@@ -20,6 +20,7 @@ class TNodo {
 public:
     TNodo();
     TNodo(const TNodo& orig);
+    TNodo(TNodo*);
     virtual ~TNodo();
     int addHijo(TNodo*);
     int removeHijo(TNodo*);

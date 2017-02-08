@@ -16,13 +16,8 @@
 
 class TEntidad {
 public:
-    TEntidad();
-    TEntidad(const TEntidad& orig);
-    virtual ~TEntidad();
-    virtual void beginDraw();
-    virtual void endDraw();
-private:
-    
+    virtual void beginDraw() = 0;
+    virtual void endDraw() = 0;
 };
 
 #endif /* TENTIDAD_H */

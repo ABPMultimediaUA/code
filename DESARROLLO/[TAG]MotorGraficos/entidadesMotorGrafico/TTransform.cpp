@@ -22,3 +22,30 @@ TTransform::TTransform(const TTransform& orig) {
 TTransform::~TTransform() {
 }
 
+void TTransform::identidad() {
+
+}
+
+void TTransform::cargar(glm::mat4) {
+
+}
+
+void TTransform::trasponer() {
+
+}
+
+void TTransform::trasladar(float, float, float) {
+
+}
+
+void TTransform::rotar(float, float, float, float) {
+
+}
+
+void TTransform::beginDraw() {
+
+}
+
+void TTransform::endDraw() {
+
+}

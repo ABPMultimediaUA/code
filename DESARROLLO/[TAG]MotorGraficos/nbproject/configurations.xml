@@ -19,7 +19,6 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>entidadesMotorGrafico/TCamara.cpp</itemPath>
-      <itemPath>entidadesMotorGrafico/TEntidad.cpp</itemPath>
       <itemPath>entidadesMotorGrafico/TLuz.cpp</itemPath>
       <itemPath>entidadesMotorGrafico/TMalla.cpp</itemPath>
       <itemPath>arbolMotorGrafico/TNodo.cpp</itemPath>
@@ -334,8 +333,6 @@
       <item path="entidadesMotorGrafico/TCamara.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="entidadesMotorGrafico/TCamara.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="entidadesMotorGrafico/TEntidad.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="entidadesMotorGrafico/TEntidad.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -1035,8 +1032,6 @@
       <item path="entidadesMotorGrafico/TCamara.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="entidadesMotorGrafico/TCamara.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="entidadesMotorGrafico/TEntidad.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="entidadesMotorGrafico/TEntidad.h" ex="false" tool="3" flavor2="0">
       </item>

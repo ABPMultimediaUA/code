@@ -37,7 +37,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/arbolMotorGrafico/TNodo.o \
 	${OBJECTDIR}/entidadesMotorGrafico/TCamara.o \
-	${OBJECTDIR}/entidadesMotorGrafico/TEntidad.o \
 	${OBJECTDIR}/entidadesMotorGrafico/TLuz.o \
 	${OBJECTDIR}/entidadesMotorGrafico/TMalla.o \
 	${OBJECTDIR}/entidadesMotorGrafico/TTransform.o \
@@ -79,11 +78,6 @@ ${OBJECTDIR}/entidadesMotorGrafico/TCamara.o: entidadesMotorGrafico/TCamara.cpp
 	${MKDIR} -p ${OBJECTDIR}/entidadesMotorGrafico
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/entidadesMotorGrafico/TCamara.o entidadesMotorGrafico/TCamara.cpp
-
-${OBJECTDIR}/entidadesMotorGrafico/TEntidad.o: entidadesMotorGrafico/TEntidad.cpp
-	${MKDIR} -p ${OBJECTDIR}/entidadesMotorGrafico
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/entidadesMotorGrafico/TEntidad.o entidadesMotorGrafico/TEntidad.cpp
 
 ${OBJECTDIR}/entidadesMotorGrafico/TLuz.o: entidadesMotorGrafico/TLuz.cpp
 	${MKDIR} -p ${OBJECTDIR}/entidadesMotorGrafico
