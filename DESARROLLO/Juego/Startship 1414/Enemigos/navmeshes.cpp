@@ -72,7 +72,7 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
     std::cout << "//////////////////" << std::endl;
 
     for (std::list<Pared*>::iterator it = paredes.begin(); it != paredes.end(); it++) {
-        if ((*it) != NULL) {
+        if ((*it) != NULL &&  (*it)->getEscala().Y == 2.0f) {
             //            std::cout<<"POSICION"<<std::endl;
             //            std::cout<<"X: "<<(*it)->getPosicion().X<<std::endl;
             //            std::cout<<"Y: "<<(*it)->getPosicion().Y<<std::endl;
@@ -91,8 +91,13 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
             //            std::cout<<"Z: "<<(*it)->getEscala().Z<<std::endl;
             //            std::cout<<"//////////////////"<<std::endl;
             //            std::cout<<"//////////////////"<<std::endl;
-            int x = (*it)->getPosicion().X, z = (*it)->getPosicion().Z;
+            int x = (*it)->getPosicion().X + tam*0.5, z = (*it)->getPosicion().Z + tam*0.5;
 
+            if(x == 500)
+                x--;
+            if(z == 500)
+                z--;
+            
             //            if (x < 0) {//SI LA X ES NEGATIVA
             //                x += tam;
             //            }
@@ -105,18 +110,27 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
 
             //SI EL OBJETO ESTA ROTADO
             if ((*it)->getRotacion().Y == 90) {//HAY QUE AUMENTAR LAS FILAS Z Y LAS COLUMNAS X SE MANTIENEN
-                std::cout << " fila z " << z << std::endl;
-                std::cout << " columna x " << x << std::endl;
-                std::cout << "  " << std::endl;
-                //            int inicioZ = z - escala * 5;
-                //
-                //            int finZ = (z + escala * 5) - 1;
-                //
-                //            for (inicioZ; inicioZ <= finZ; inicioZ++) {
-                //                matriz[x][inicioZ] = 1;
-                //            }
-            } else {//SI EL OBJETO NO ESTA ROTADO, SE AUMENTAN LAS COLUMNAS Y SE MANTIENEN LAS FILAS
+//                std::cout << " fila z " << z << std::endl;
+//                std::cout << " columna x " << x << std::endl;
+//                std::cout << "  " << std::endl;
+                
+                int inicioZ = z - escala * 5;
 
+                int finZ = (z + escala * 5);
+
+                for (inicioZ; inicioZ < finZ; inicioZ++) {
+                    matriz[inicioZ][x] = 1;
+                }
+                
+            } else {//SI EL OBJETO NO ESTA ROTADO, SE AUMENTAN LAS COLUMNAS Y SE MANTIENEN LAS FILAS
+                
+                int inicioX = x - escala * 5;
+
+                int finX = (x + escala * 5);
+                
+                for (inicioX; inicioX < finX; inicioX++) {
+                    matriz[z][inicioX] = 1;
+                }
             }
         }
     }
