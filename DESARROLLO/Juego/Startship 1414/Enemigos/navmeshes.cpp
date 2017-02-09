@@ -53,7 +53,7 @@ void navmeshes::muestraGrafo() {
 
     for (int i = 0; i < tam; i++) {
         for (int j = 0; j < tam; j++) {
-            std::cout << matriz[i][j] << ", ";
+            //            std::cout << matriz[i][j] << ", ";
             char Cadena[10];
             sprintf(Cadena, "%d", matriz[i][j]);
             fprintf(fp, Cadena);
@@ -61,7 +61,7 @@ void navmeshes::muestraGrafo() {
 
         }
         fprintf(fp, "\n");
-        std::cout << ";" << std::endl;
+        //        std::cout << ";" << std::endl;
     }
     std::cout << "//////////////////" << std::endl;
 }
@@ -92,26 +92,29 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
             //            std::cout<<"//////////////////"<<std::endl;
             //            std::cout<<"//////////////////"<<std::endl;
             int x = (*it)->getPosicion().X, z = (*it)->getPosicion().Z;
-            //            std::cout << " X inicial" << x << std::endl;
-            if (x < 0) {//SI LA X ES NEGATIVA
-                x += tam;
-            }
-            if (z < 0) {//SI LA Z ES NEGATIVA
-                z += tam;
-            }
+
+            //            if (x < 0) {//SI LA X ES NEGATIVA
+            //                x += tam;
+            //            }
+            //
+            //            if (z < 0) {//SI LA Z ES NEGATIVA
+            //                z += tam;}
+
 
             int escala = (*it)->getEscala().X;
 
             //SI EL OBJETO ESTA ROTADO
-            if ((*it)->getRotacion().Y == 90) {//HAY QUE AUMENTAR LAS FILAS Y LAS COLUMNAS SE MANTIENEN
-                int inicioX = (x - escala * 5);
-                //                std::cout << " X " << x << "- escala" << escala << "*5 = " << inicioX << std::endl;
-                int finX = (x + escala * 5) - 1;
-                //                std::cout << "FIN x " << finX << std::endl;
-                //                std::cout << "///////////////////////////////////////////////" << std::endl;
-                for (inicioX; inicioX <= finX; inicioX++) {
-                    matriz[inicioX][z] = 1;
-                }
+            if ((*it)->getRotacion().Y == 90) {//HAY QUE AUMENTAR LAS FILAS Z Y LAS COLUMNAS X SE MANTIENEN
+                std::cout << " fila z " << z << std::endl;
+                std::cout << " columna x " << x << std::endl;
+                std::cout << "  " << std::endl;
+                //            int inicioZ = z - escala * 5;
+                //
+                //            int finZ = (z + escala * 5) - 1;
+                //
+                //            for (inicioZ; inicioZ <= finZ; inicioZ++) {
+                //                matriz[x][inicioZ] = 1;
+                //            }
             } else {//SI EL OBJETO NO ESTA ROTADO, SE AUMENTAN LAS COLUMNAS Y SE MANTIENEN LAS FILAS
 
             }
