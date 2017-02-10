@@ -26,6 +26,7 @@ public:
     void Mover(int modo, f32 dt);
     void Patrullar();
     void quitarVida(float damage);
+    void dibujaGrid(ISceneManager *grid);
 private:
 
     navmeshes* nav;

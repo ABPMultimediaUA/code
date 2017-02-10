@@ -14,7 +14,8 @@
 #ifndef NAVMESHES_H
 #define NAVMESHES_H
 
-
+#include <math.h>
+#include <stdlib.h>
 #include "../Escenario/Escenario.h"
 
 class navmeshes {
@@ -26,10 +27,11 @@ public:
     virtual ~navmeshes();
     void muestraGrafo();
     void setColisiones(std::list<Pared*> paredes);
-    
+    float** getMatriz();
 private:
 
     int **matriz;
+    float **matriz2;
     int tamGrid;
     int tam;
     

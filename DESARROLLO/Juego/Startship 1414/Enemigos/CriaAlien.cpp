@@ -26,7 +26,12 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     estadoActual = DESCANSAR;
     raza = CRIA;
     blindaje = 0.0f;
-    nav = new navmeshes(5, esce);
+    nav = new navmeshes(10, esce);
+    
+    
+    
+    
+    
     std::cout << "GRAFO CON 0" << std::endl;
     std::cout << "" << std::endl;
     //    nav->muestraGrafo();
@@ -34,6 +39,10 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     std::cout << "" << std::endl;
     nav->setColisiones(esce->getParedes());
     nav->muestraGrafo();
+    
+    //dibujaGrid(smgr);
+   
+    
 }
 
 //CriaAlien::CriaAlien(const CriaAlien& orig) {
@@ -42,6 +51,36 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 CriaAlien::~CriaAlien() {
 
 
+}
+
+void CriaAlien::dibujaGrid(ISceneManager *grid)
+{
+     float** matriz  = nav->getMatriz();
+    IMeshSceneNode *maya;
+     for(int i = 0; i<20; i++)
+    {
+        for(int j = 0; j<20; j++)
+        {
+            if(matriz[i][j]==1)
+            {
+            maya=grid->addCubeSceneNode(0.20);
+            maya->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
+            maya->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING,false);
+            maya->getMaterial(0).EmissiveColor.set(0,255,10,20);
+            maya->setPosition(vector3df(10+i,10,10+j));
+         
+            }
+           else
+            {
+                maya=grid->addCubeSceneNode(0.20);
+                maya->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
+                maya->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING,false);
+                maya->getMaterial(0).EmissiveColor.set(0,255,255,255);
+                maya->setPosition(vector3df(10+i,10,10+j));
+            }
+            
+        }
+    }
 }
 
 void CriaAlien::Update(int estado) {
