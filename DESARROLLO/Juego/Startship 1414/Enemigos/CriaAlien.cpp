@@ -26,7 +26,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     estadoActual = DESCANSAR;
     raza = CRIA;
     blindaje = 0.0f;
-    nav = new navmeshes(10, esce);
+    nav = new navmeshes(5, esce);
     
     
     
@@ -38,9 +38,9 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     std::cout << "COLISIONES" << std::endl;
     std::cout << "" << std::endl;
     nav->setColisiones(esce->getParedes());
-    nav->muestraGrafo();
+    //nav->muestraGrafo();
     
-    //dibujaGrid(smgr);
+    dibujaGrid(smgr);
    
     
 }
@@ -57,9 +57,9 @@ void CriaAlien::dibujaGrid(ISceneManager *grid)
 {
      float** matriz  = nav->getMatriz();
     IMeshSceneNode *maya;
-     for(int i = 0; i<20; i++)
+     for(int i = 0; i<100; i++)
     {
-        for(int j = 0; j<20; j++)
+        for(int j = 0; j<100; j++)
         {
             if(matriz[i][j]==1)
             {

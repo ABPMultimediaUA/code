@@ -98,46 +98,108 @@ void navmeshes::muestraGrafo() {
 }
 
 void navmeshes::setColisiones(std::list<Pared*> paredes) {
-
+    int cont = 0;
     std::cout << "MOSTRANDO POSICION Y ESCALA" << std::endl;
     std::cout << "//////////////////" << std::endl;
     for (std::list<Pared*>::iterator it = paredes.begin(); it != paredes.end(); it++) {
-                        std::cout<<"POSICION"<<std::endl;
+                        cont++;
+                        std::cout<<"---POSICION--- "<<cont<<std::endl;
                         std::cout<<"X: "<<(*it)->getPosicion().X<<std::endl;
                        std::cout<<"Y: "<<(*it)->getPosicion().Y<<std::endl;
                         std::cout<<"Z: "<<(*it)->getPosicion().Z<<std::endl;
-                        if((*it)->getPosicion().X<0)
-                        {
-                            float diferencia = abs(250+(*it)->getPosicion().X-1);
-                            std::cout<<"Negativo X"<<diferencia<<std::endl;
-                            float posMatriz=ceil(diferencia/tamGrid);
+     
+                            float diferencia = abs(250+(*it)->getPosicion().X);
+                            std::cout<<"Negativo X "<<diferencia<<std::endl;
+                            float posMatriz;
+                            if(diferencia!=0)
+                            {
+                                 posMatriz=diferencia/tamGrid;
+                            }
+                            else
+                            {
+                                posMatriz=0;
+                            }
                             std::cout<<"Pos Matriz "<<posMatriz<<std::endl;
                             float diferencia2 = 250+(*it)->getPosicion().Z;
-                            std::cout<<"Negativo Y"<<diferencia2<<std::endl;
-                            float posMatriz2=ceil(diferencia2/tamGrid);
-                            std::cout<<"Pos Matriz "<<posMatriz2<<std::endl;
+                            std::cout<<"Negativo Z "<<diferencia2<<std::endl;
+                            float posMatriz2;
+                            if(diferencia2!=0)
+                            {
+                                posMatriz2=diferencia2/tamGrid;
+                            }
+                            else
+                            {
+                                posMatriz2=0;
+                            }
+                            std::cout<<"Pos Matriz "<<posMatriz2-1<<std::endl;
                             std::cout<<"Limite "<<tam/tamGrid<<std::endl;
                             std::cout<<"Escala X "<<(*it)->getEscala().X<<" Escala Y "<<(*it)->getEscala().Y<<" Escala Z "<<(*it)->getEscala().Z<<std::endl;
-                            int x=abs(posMatriz);
-                            int y=abs(posMatriz2);
-                            matriz2[x][y]=1;
-                        }
-                        else
-                        {
-                            float diferencia = 250+(*it)->getPosicion().X-1;
-                            std::cout<<"Positivo X"<<diferencia<<std::endl;
-                            float posMatriz=ceil(diferencia/tamGrid);
-                            std::cout<<"Pos Matriz "<<posMatriz<<std::endl;
-                            float diferencia2 = 250+(*it)->getPosicion().Z;
-                            std::cout<<"Positivo Y"<<diferencia2<<std::endl;
-                            float posMatriz2=ceil(diferencia2/tamGrid);
-                            std::cout<<"Pos Matriz "<<posMatriz2<<std::endl;
-                            std::cout<<"Escala X "<<(*it)->getEscala().X<<" Escala Y "<<(*it)->getEscala().Y<<" Escala Z "<<(*it)->getEscala().Z<<std::endl;
-                            int x=abs(posMatriz)-1;
-                            int y=abs(posMatriz2);
-                            matriz2[x][y]=1;
+                            int x;
                             
-                        }
+                            if(posMatriz==0)
+                            {
+                                x=0;
+                            }
+                            else
+                            {
+                                x=abs(posMatriz-1);
+                            }
+                            
+                            int y;
+                            
+                            if(posMatriz2==0)
+                            {
+                                y=0;
+                            }
+                            else
+                            {
+                                y=abs(posMatriz2-1);
+                            }
+                           
+                            
+                             matriz2[x][y]=1;
+                             if((*it)->getRotacion().Y==90)
+                             {
+                                 
+                                 int escala=((*it)->getEscala().X/2);
+                                  std::cout<<"Escala1 "<<escala<<std::endl;
+                                 escala=escala*10;
+                                  std::cout<<"Escala2 "<<escala<<std::endl;
+                                 escala=escala/tamGrid;
+                                 std::cout<<"Escala3 "<<y+escala<<std::endl;
+                                 for(int i=y+1; i<y+escala+1; i++)
+                                 {
+                                     matriz2[x][i]=1;
+                                 }
+                                 escala=escala-1;
+                                 for(int i=y; i>y-escala-1; i--)
+                                 {
+                                     matriz2[x][i]=1;
+                                 }
+                                 this->muestraGrafo();
+                             }
+                             else if((*it)->getRotacion().Y==0)
+                             {
+                                 
+                                 int escala=((*it)->getEscala().X/2);
+                                  std::cout<<"Escala1 "<<escala<<std::endl;
+                                 escala=escala*10;
+                                  std::cout<<"Escala2 "<<escala<<std::endl;
+                                 escala=escala/tamGrid;
+                                 std::cout<<"Escala3 "<<y+escala<<std::endl;
+                                 for(int i=x+1; i<x+escala+1; i++)
+                                 {
+                                     matriz2[i][y]=1;
+                                 }
+                                 escala=escala-1;
+                                 for(int i=x; i>x-escala-1; i--)
+                                 {
+                                     matriz2[i][y]=1;
+                                 }
+                                 this->muestraGrafo();
+                             }
+                      
+                        
     }
     
 /*
