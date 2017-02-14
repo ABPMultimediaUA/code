@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   Enemigo.h
  * Author: Iván
  *
@@ -14,7 +14,7 @@
 
 #include <iostream>
 #include "../Fisicas/Entity2D.h"
-
+#include "Waypoints.h"
 
 
 #ifndef ENEMIGO_H
@@ -38,10 +38,10 @@
 
 class Enemigo {
 public:
-    Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion);
-   // Enemigo(const Enemigo& orig);
+    Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos);
+    // Enemigo(const Enemigo& orig);
     virtual ~Enemigo();
-    
+
     virtual void Update(int estado);
     virtual void Mover(int modo, f32 dt);
     void setVelocidad();
@@ -52,7 +52,7 @@ public:
     float getVel();
     virtual void quitarVida(float damage) = 0;
     float getVida();
-   
+
 
 protected:
     IMeshSceneNode *maya;
@@ -67,6 +67,7 @@ protected:
     ITextSceneNode *RVida;
     ISceneManager* smgr1;
     float blindaje;
+    Waypoints* waypoints;
 };
 
 #endif /* ENEMIGO_H */

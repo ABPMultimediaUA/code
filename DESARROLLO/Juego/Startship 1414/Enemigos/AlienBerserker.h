@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   AlienBerserker.h
  * Author: David
  *
@@ -17,10 +17,9 @@
 #include "Enemigo.h"
 
 class AlienBerserker : public Enemigo {
-    
 public:
-    AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion);
-   // AlienBerserker(const AlienBerserker& orig);
+    AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos);
+    // AlienBerserker(const AlienBerserker& orig);
     virtual ~AlienBerserker();
     void Update(int estado);
     void Mover(int modo, f32 dt);

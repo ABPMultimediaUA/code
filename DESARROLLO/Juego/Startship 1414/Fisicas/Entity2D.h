@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   Entity2D.h
  * Author: User
  *
@@ -30,12 +30,12 @@ public:
     Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* smgr);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirPared);
     Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta);
-    Entity2D(b2World* world, vector3df pos, vector3df rot,  bool vivo, void* dirBala);
-    Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo,ISceneManager* smgr);
+    Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala);
+    Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, ISceneManager* smgr);
 
     Entity2D(const Entity2D& orig);
     virtual ~Entity2D();
-    float rayCast(int modo);
+    float rayCast(b2Vec2 inicio, b2Vec2 fin);
     b2Body* getCuerpo2D();
     float rayCasting(b2Vec2 inicio, b2Vec2 fin);
     float llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
@@ -49,10 +49,10 @@ public:
     void crearFixture();
     b2Body* getSombraP2D();
     b2Body* getSombraE2D();
-    
+
 private:
-    
-  
+
+
     b2Body *body;
     b2BodyDef bodyDef;
     b2PolygonShape bodyShape;
@@ -69,7 +69,7 @@ private:
     int idenSh;
     bool live;
     void* objeto3D;
-  
+
 };
 
 #endif /* ENTITY2D_H */

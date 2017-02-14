@@ -41,18 +41,18 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
     }
 
 
-    
+
     vel = 100.0f;
     pos = maya->getPosition();
-    entity = new Entity2D(world, pos, this,smgr);
-    
+    entity = new Entity2D(world, pos, this, smgr);
+
     tiempoDisparo = 0.0f;
     disparo = false;
-    
+
     pistola = new Pistola();
     fusil = new Fusil();
     escopeta = new Escopeta();
-    
+
     armaActual = PISTOLA;
     cargador = pistola->getCargador();
     /* md.mass = 2.0;
@@ -77,11 +77,11 @@ Personaje::~Personaje() {
 
 void Personaje::moverPersonaje(int modo, f32 dt) {
 
-//std::cout<<"//////////////////////////////////////////"<<std::endl;
-//            std::cout<<""<<std::endl;
-//            std::cout<<"POS PERS ANTES"<<std::endl;
-//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+    //std::cout<<"//////////////////////////////////////////"<<std::endl;
+    //            std::cout<<""<<std::endl;
+    //            std::cout<<"POS PERS ANTES"<<std::endl;
+    //                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
+    //                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 
     switch (modo) {
 
@@ -90,11 +90,11 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
                std::cout<<"Pos X: "<<pos.X<<std::endl;
                std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
             // body->ApplyForceToCenter(b2Vec2(5.0,0.0), true);
-            
+
             entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
-           // entity->getSombraP2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
+            // entity->getSombraP2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
             pos.X = entity->getCuerpo2D()->GetPosition().x;
-    
+
             /* std::cout<<"Des"<<std::endl;
               std::cout<<"Pos X: "<<pos.X<<std::endl;
               std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
@@ -108,9 +108,9 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
               std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
 
             entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-           //  entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+            //  entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
             pos.X = entity->getCuerpo2D()->GetPosition().x;
-           
+
 
             /*std::cout<<"Des"<<std::endl;
              std::cout<<"Pos X: "<<pos.X<<std::endl;
@@ -127,7 +127,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
             entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
             // entity->getSombraP2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
             pos.Z = entity->getCuerpo2D()->GetPosition().y;
-           
+
 
             /*  std::cout<<"Des"<<std::endl;
               std::cout<<"Pos Z: "<<pos.Z<<std::endl;
@@ -136,15 +136,15 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
             break;
 
         case 3:
-            
+
             /*   std::cout<<"case 3: Sntes"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
              std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
 
             entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
-             //entity->getSombraP2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
+            //entity->getSombraP2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
             pos.Z = entity->getCuerpo2D()->GetPosition().y;
-           
+
             /* std::cout<<"Des"<<std::endl;
              std::cout<<"Pos Z: "<<pos.Z<<std::endl;
              std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
@@ -175,7 +175,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
         case 6:
 
             entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
-           // entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
+            // entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
             pos.X = entity->getCuerpo2D()->GetPosition().x;
             pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
@@ -185,18 +185,18 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
         case 7:
 
             entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, vel));
-         //   entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, vel));
+            //   entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, vel));
             pos.X = entity->getCuerpo2D()->GetPosition().x;
             pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
             break;
 
-    }  
-//    std::cout<<"//////////////////////////////////////////"<<std::endl;
-//            std::cout<<""<<std::endl;
-//            std::cout<<"POS PERS DESPUES"<<std::endl;
-//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+    }
+    //    std::cout<<"//////////////////////////////////////////"<<std::endl;
+    //            std::cout<<""<<std::endl;
+    //            std::cout<<"POS PERS DESPUES"<<std::endl;
+    //                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
+    //                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 
 
 
@@ -205,9 +205,9 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 }
 
 
-float Personaje::lanzarRayo(int modo){
-    return entity->rayCast(modo);
-}
+//float Personaje::lanzarRayo(int modo){
+//    return entity->rayCast(modo);
+//}
 
 vector3df Personaje::getPos() {
     return pos;
@@ -225,15 +225,15 @@ float Personaje::getVel() {
     return vel;
 }
 
-int Personaje::getDireccion(){
+int Personaje::getDireccion() {
     return direccion;
 }
 
-void Personaje::actualizarPosicion(){
-    
+void Personaje::actualizarPosicion() {
+
     pos.X = entity->getCuerpo2D()->GetPosition().x;
-    pos.Z = entity->getCuerpo2D()->GetPosition().y;    
-    
+    pos.Z = entity->getCuerpo2D()->GetPosition().y;
+
     setPos(pos);
 
 }
@@ -242,12 +242,12 @@ void Personaje::setVelocidad() {
 
     entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
     this->actualizarPosicion();
-  // entity->getSombraP2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+    // entity->getSombraP2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
 }
 
 void Personaje::rotar(vector3df raton) {
 
- float anguloRaton;
+    float anguloRaton;
     anguloRaton = -atan2f(raton.X - 683, raton.Y - 384)*180 / 3.14; //pasar tamanyo pantalla por parametro
 
     //std::cout << "ANGULO: " << anguloRaton << std::endl;
@@ -262,16 +262,15 @@ vector3df Personaje::getAngulo() {
     return angulo;
 }
 
-
-bool Personaje::getDisparo(){
+bool Personaje::getDisparo() {
     return disparo;
 }
 
-int Personaje::getCargador(){
+int Personaje::getCargador() {
     return cargador;
 }
 
-f32 Personaje::getTiempoDisparo(){
+f32 Personaje::getTiempoDisparo() {
     return tiempoDisparo;
 }
 
@@ -279,136 +278,134 @@ int Personaje::getArmaActual() {
     return armaActual;
 }
 
-
 float Personaje::getDamage() {
-    
-    switch(armaActual){
-        
+
+    switch (armaActual) {
+
         case 0:
             return pistola->getDamage();
             break;
-            
+
         case 1:
             return fusil->getDamage();
             break;
-            
+
         case 2:
             return escopeta->getDamage();
             break;
-            
+
     }
 }
 
 float Personaje::getTiempoArma() {
-    
-    switch(armaActual){
-        
+
+    switch (armaActual) {
+
         case 0:
             return pistola->getTiempoDisparo();
             break;
-            
+
         case 1:
             return fusil->getTiempoDisparo();
             break;
-            
+
         case 2:
             return escopeta->getTiempoDisparo();
             break;
-            
+
     }
 }
 
 void Personaje::setArmaActual(int newArma) {
-    
-     switch(armaActual){
-        
+
+    switch (armaActual) {
+
         case 0:
-            
+
             pistola->setMunicionAcutal(cargador);
-            
+
             break;
-            
+
         case 1:
             fusil->setMunicionAcutal(cargador);
             break;
-            
+
         case 2:
             escopeta->setMunicionAcutal(cargador);
             break;
-            
+
     }
     armaActual = newArma;
-    
-       switch(armaActual){
-        
+
+    switch (armaActual) {
+
         case 0:
-            std::cout<<"CAMBIO A PISTOLA "<<armaActual<<std::endl;
+            std::cout << "CAMBIO A PISTOLA " << armaActual << std::endl;
             cargador = pistola->getMunicionActual();
-            
+
             break;
-            
+
         case 1:
-            
-            std::cout<<"CAMBIO A FUSIL "<<armaActual<<std::endl;
+
+            std::cout << "CAMBIO A FUSIL " << armaActual << std::endl;
             cargador = fusil->getMunicionActual();
-            
+
             break;
-            
+
         case 2:
-            
-            std::cout<<"CAMBIO A ESCOPETA "<<armaActual<<std::endl;
+
+            std::cout << "CAMBIO A ESCOPETA " << armaActual << std::endl;
             cargador = escopeta->getMunicionActual();
-            
+
             break;
-            
+
     }
 }
 
-void Personaje::recargar(){
-    
-    int recarga; 
-    
-    switch(armaActual){
-        
+void Personaje::recargar() {
+
+    int recarga;
+
+    switch (armaActual) {
+
         case 0:
             recarga = pistola->getCargador() - cargador;
             cargador += recarga;
             break;
-            
+
         case 1:
             recarga = fusil->getCargador() - cargador;
             cargador += recarga;
             break;
-            
+
         case 2:
             recarga = escopeta->getCargador() - cargador;
             cargador += recarga;
             break;
-            
+
     }
 }
 
-void Personaje::setDisparo(bool x){
+void Personaje::setDisparo(bool x) {
     disparo = x;
 }
 
-void Personaje::setTiempoDisparo(f32 t){
+void Personaje::setTiempoDisparo(f32 t) {
     tiempoDisparo = t;
 }
 
-
-void Personaje::disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *world, f32 dt, vector2df posRaton){
-    std::cout<<"CARGADOR: "<<cargador<<std::endl;
+void Personaje::disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *world, f32 dt, vector2df posRaton) {
+    std::cout << "CARGADOR: " << cargador << std::endl;
     tiempoDisparo += dt;
     disparo = true;
     Bala *bullet = new Bala(smgr, driver, world, pos, posRaton, getDamage());
     listaBalas.push_back(bullet);
     cargador--;
-    
+
 }
 
-void Personaje::actualizarLista(f32 dt){
-    if(!listaBalas.empty()){
+void Personaje::actualizarLista(f32 dt) {
+    if (!listaBalas.empty()) {
         for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end();) {
             if ((*it) != NULL) {
                 if (!(*it)->estaViva()) {
@@ -426,96 +423,96 @@ void Personaje::actualizarLista(f32 dt){
                 (*it)->mover(dt);
                 //(*it)->update();
             }
-         }
+        }
     }
 
 }
 
 void Personaje::subirCapacidadDeMun() {
-    
-       switch(armaActual){
-        
+
+    switch (armaActual) {
+
         case 0:
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<"La pistola sube la municion total"<<std::endl;
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
+            std::cout << "La pistola sube la municion total" << std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
             return pistola->subirNivelMunicion();
             break;
-            
+
         case 1:
-               std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<"El fusil sube la municion total"<<std::endl;
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
+            std::cout << "El fusil sube la municion total" << std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
             return fusil->subirNivelMunicion();
             break;
-            
+
         case 2:
-               std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<"La escopeta sube la municion total"<<std::endl;
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
+            std::cout << "La escopeta sube la municion total" << std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
             return escopeta->subirNivelMunicion();
             break;
-            
+
     }
 
 }
 
 void Personaje::subirCargador() {
-    
-       switch(armaActual){
-        
+
+    switch (armaActual) {
+
         case 0:
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<"La pistola sube el cargador"<<std::endl;
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
+            std::cout << "La pistola sube el cargador" << std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
             return pistola->subirNivelCargador();
             break;
-            
+
         case 1:
-               std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<"El fusil sube el cargador"<<std::endl;
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
+            std::cout << "El fusil sube el cargador" << std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
             return fusil->subirNivelCargador();
             break;
-            
+
         case 2:
-               std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<"La escopeta sube el cargador"<<std::endl;
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
+            std::cout << "La escopeta sube el cargador" << std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
             return escopeta->subirNivelCargador();
             break;
-            
+
     }
-   
+
 }
 
 void Personaje::subirNivelDamage() {
-    
-       switch(armaActual){
-        
+
+    switch (armaActual) {
+
         case 0:
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<"La pistola sube el damage"<<std::endl;
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
+            std::cout << "La pistola sube el damage" << std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
             return pistola->subirNivelDamage();
             break;
-            
+
         case 1:
-               std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<"El fusil sube el damage"<<std::endl;
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
+            std::cout << "El fusil sube el damage" << std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
             return fusil->subirNivelDamage();
             break;
-            
+
         case 2:
-               std::cout<<"//////////////////////////////////////////"<<std::endl;
-            std::cout<<"La escopeta sube el damage"<<std::endl;
-            std::cout<<"//////////////////////////////////////////"<<std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
+            std::cout << "La escopeta sube el damage" << std::endl;
+            std::cout << "//////////////////////////////////////////" << std::endl;
             return escopeta->subirNivelDamage();
             break;
-            
+
     }
 }
- 
+
 
 

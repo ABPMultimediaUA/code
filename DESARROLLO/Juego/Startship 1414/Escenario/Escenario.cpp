@@ -167,9 +167,7 @@ void Escenario::dibujarEscenario() {
                 objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);
 
                 puntos->creaPuntos((*T).nombre, vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)));
-                puntos->MuestraPuntos();
-                puntos->creaPesos();
-                puntos->mostrarPesos();
+
             }
         }
 
@@ -200,9 +198,7 @@ void Escenario::dibujarEscenario() {
                         door->setFisica(mundo);
 
 
-                    }
-
-                        //                                if((*I).nombre=="Escenario"){
+                    }//                                if((*I).nombre=="Escenario"){
                         //                                      IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
                         //                                          vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)),10*((*N).position.y+((*M).position.y+(*I).position.y)),10*((*N).position.z+(*M).position.z+(*I).position.z)),
                         //                                          vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
@@ -236,9 +232,11 @@ void Escenario::dibujarEscenario() {
 
 
     }
+
+    fabricaDeEnemigos(puntos);
 }
 
-void Escenario::fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2World* world) {
+void Escenario::fabricaDeEnemigos(Waypoints* puntos) {
 
     for (int i = 0; i < 1; i++) {
 
@@ -250,7 +248,7 @@ void Escenario::fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2W
            enemigos.push_back(alien);
            }  */
 
-        CriaAlien *ene = new CriaAlien(smgr, driver, world, vector3df(x, 10, z), this);
+        CriaAlien *ene = new CriaAlien(SM, VD, mundo, vector3df(x, 10, z), this, puntos);
 
         enemigos.push_back(ene);
 
@@ -271,8 +269,7 @@ void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2Wor
 
         if (z > x) {
             z = -z;
-        }
-        else {
+        } else {
             x = -x;
         }
 
@@ -281,8 +278,7 @@ void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2Wor
 
         if (z > x) {
             x = -x;
-        }
-        else {
+        } else {
             z = -z;
         }
 

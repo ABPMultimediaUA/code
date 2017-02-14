@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   Waypoints.h
  * Author: Hector
  *
@@ -14,37 +14,30 @@
 #ifndef WAYPOINTS_H
 #define WAYPOINTS_H
 
-#include <irrlicht.h>
+
 #include <iostream>
 #include <string>
 #include <vector>
 #include <math.h>
-using namespace irr;
-
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
+#include "../Fisicas/Entity2D.h"
 
 class Waypoints {
-    
-    typedef struct 	
-    { 
+
+    typedef struct {
         std::string nombre;
         vector3df pos;
     } Nodo;
- 
-  
- 
+
+
+
 public:
     Waypoints();
     Waypoints(const Waypoints& orig);
     virtual ~Waypoints();
-    
+
     void MuestraPuntos();
     void creaPuntos(std::string nombre, vector3df posicion);
-    void creaPesos();
+    void creaPesos(Entity2D *entity);
     void mostrarPesos();
 private:
     std::string nombre;

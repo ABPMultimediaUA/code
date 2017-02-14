@@ -1,9 +1,9 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "escena basica", "Assembly-CSharp.csproj", "{D0BEEB24-A5DC-D6B6-DAB5-7850A91D6EB1}"
+# Visual Studio 2008
+
+Project("{DA5324C7-7ECE-097D-0A4D-C6AA80D318FC}") = "escena basica", "Assembly-CSharp.csproj", "{D0BEEB24-A5DC-D6B6-DAB5-7850A91D6EB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "escena basica", "Assembly-CSharp-Editor.csproj", "{53CBADC0-C75A-2F08-6386-93F2598CA054}"
+Project("{DA5324C7-7ECE-097D-0A4D-C6AA80D318FC}") = "escena basica", "Assembly-CSharp-Editor.csproj", "{53CBADC0-C75A-2F08-6386-93F2598CA054}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

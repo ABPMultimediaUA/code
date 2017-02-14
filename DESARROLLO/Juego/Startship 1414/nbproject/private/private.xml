@@ -7,11 +7,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/REPOSITORIO/code/DESARROLLO/Juego/Startship%201414/Enemigos/navmeshes.h</file>
-            <file>file:/D:/REPOSITORIO/code/DESARROLLO/Juego/Startship%201414/Escenario/Escenario.cpp</file>
-            <file>file:/D:/REPOSITORIO/code/DESARROLLO/Juego/Startship%201414/Enemigos/CriaAlien.h</file>
-            <file>file:/D:/REPOSITORIO/code/DESARROLLO/Juego/Startship%201414/Enemigos/CriaAlien.cpp</file>
-            <file>file:/D:/REPOSITORIO/code/DESARROLLO/Juego/Startship%201414/Enemigos/navmeshes.cpp</file>
+            <file>file:/C:/Users/Samuel/Documents/GitHub/code/DESARROLLO/Juego/Startship%201414/Enemigos/CriaAlien.cpp</file>
+            <file>file:/C:/Users/Samuel/Documents/GitHub/code/DESARROLLO/Juego/Startship%201414/Enemigos/Waypoints.cpp</file>
+            <file>file:/C:/Users/Samuel/Documents/GitHub/code/DESARROLLO/Juego/Startship%201414/Fisicas/Entity2D.h</file>
+            <file>file:/C:/Users/Samuel/Documents/GitHub/code/DESARROLLO/Juego/Startship%201414/Jugador/Personaje.cpp</file>
+            <file>file:/C:/Users/Samuel/Documents/GitHub/code/DESARROLLO/Juego/Startship%201414/Enemigos/Enemigo.cpp</file>
+            <file>file:/C:/Users/Samuel/Documents/GitHub/code/DESARROLLO/Juego/Startship%201414/Fisicas/Entity2D.cpp</file>
+            <file>file:/C:/Users/Samuel/Documents/GitHub/code/DESARROLLO/Juego/Startship%201414/Escenario/Escenario.h</file>
+            <file>file:/C:/Users/Samuel/Documents/GitHub/code/DESARROLLO/Juego/Startship%201414/Escenario/Escenario.cpp</file>
+            <file>file:/C:/Users/Samuel/Documents/GitHub/code/DESARROLLO/Juego/Startship%201414/Enemigos/Enemigo.h</file>
         </group>
     </open-files>
 </project-private>
