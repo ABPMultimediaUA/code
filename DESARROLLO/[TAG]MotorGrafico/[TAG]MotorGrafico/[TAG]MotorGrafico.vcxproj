@@ -113,9 +113,11 @@
   <ItemGroup>
     <ClInclude Include="TEntidad.h" />
     <ClInclude Include="TNodo.h" />
+    <ClInclude Include="TTransform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TNodo.cpp" />
+    <ClCompile Include="TTransform.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

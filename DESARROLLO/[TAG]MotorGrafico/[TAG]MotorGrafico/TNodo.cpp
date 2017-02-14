@@ -70,7 +70,7 @@ void TNodo::draw()
 		this->entidad->beginDraw();
 	}
 	for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {
-		it->draw();
+		(*it)->draw();
 	}
 	if (this->entidad) {
 		this->entidad->endDraw();
