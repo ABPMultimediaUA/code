@@ -7,16 +7,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/entidadesMotorGrafico/TCamara.h</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/entidadesMotorGrafico/TTransform.h</file>
             <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/arbolMotorGrafico/TNodo.h</file>
             <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/arbolMotorGrafico/TNodo.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/entidadesMotorGrafico/TTransform.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/entidadesMotorGrafico/TLuz.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/entidadesMotorGrafico/TCamara.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/entidadesMotorGrafico/TMalla.h</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/entidadesMotorGrafico/TMalla.cpp</file>
-            <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/entidadesMotorGrafico/TLuz.h</file>
             <file>file:/D:/Documents/GitHub/code/DESARROLLO/%5BTAG%5DMotorGraficos/entidadesMotorGrafico/TEntidad.h</file>
         </group>
     </open-files>
