@@ -1,0 +1,46 @@
+﻿  vector3G.cpp
+  vector2G.cpp
+  readJson.cpp
+  MyContactFilter.cpp
+  MiContactListener.cpp
+  main.cpp
+  gameClock.cpp
+  RayCastCallback.cpp
+  facadeMotorGrafico.cpp
+d:\repositorio\code\desarrollo\componentesvs\componentes\facade\facademotorgrafico.cpp(203): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
+d:\repositorio\code\desarrollo\componentesvs\componentes\facade\facademotorgrafico.cpp(204): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
+  facadeColision.cpp
+  Entity2D.cpp
+  CAppReceiver.cpp
+  system.cpp
+  rotarSystem.cpp
+d:\repositorio\code\desarrollo\componentesvs\componentes\entitysystem\systems\rotarsystem.cpp(37): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  playerSystem.cpp
+  moveSystem.cpp
+  handleMoverSystem.cpp
+  disparoSystem.cpp
+  camaraSystem.cpp
+  accionsSystem.cpp
+  Generando código...
+  Compilando...
+  vectorEntity.cpp
+  gameEntity.cpp
+  entityManager.cpp
+  diccionarioEnCo.cpp
+  velocityComponent.cpp
+  transformComponent.cpp
+  stateMachineComponent.cpp
+  renderComponent.cpp
+  playerComponent.cpp
+  healthComponent.cpp
+  handleMoverComponent.cpp
+  escenarioComponent.cpp
+  componente.cpp
+  colisionComponent.cpp
+  cargadorComponent.cpp
+  camaraComponent.cpp
+  balaComponent.cpp
+d:\repositorio\code\desarrollo\componentesvs\componentes\entitysystem\components\balacomponent.cpp(20): warning C4244: '=': conversión de 'float' a 'unsigned long'; posible pérdida de datos
+  Generando código...
+  Componentes.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\ComponentesVS\Debug\Componentes.exe
+  Componentes.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\ComponentesVS\Debug\Componentes.pdb (Full PDB)
