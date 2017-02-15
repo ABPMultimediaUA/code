@@ -27,13 +27,15 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     raza = CRIA;
     blindaje = 0.0f;
     nav = new navmeshes(5, esce);
+        waypoints = puntos;
+    waypoints->creaPesos(entity);
 
 
 
 
 
-    std::cout << "GRAFO CON 0" << std::endl;
-    std::cout << "" << std::endl;
+//    std::cout << "GRAFO CON 0" << std::endl;
+//    std::cout << "" << std::endl;
     //    nav->muestraGrafo();
     std::cout << "COLISIONES" << std::endl;
     std::cout << "" << std::endl;

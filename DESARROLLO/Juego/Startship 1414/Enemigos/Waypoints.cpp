@@ -44,6 +44,11 @@ void Waypoints::creaPuntos(std::string nombre, vector3df posicion) {
     Way.pos = posicion;
 
     puntos.push_back(Way);
+                    std::cout<<"///////////////////////"<<std::endl;
+
+    std::cout<<"TAM: "<<puntos.size()<<std::endl;
+                    std::cout<<"///////////////////////"<<std::endl;
+
 }
 
 void Waypoints::creaPesos(Entity2D *entity) {
@@ -62,11 +67,17 @@ void Waypoints::creaPesos(Entity2D *entity) {
             if (puntos[i].nombre != puntos[j].nombre) {
 
                 float f = entity->rayCasting(b2Vec2(puntos[i].pos.X, puntos[i].pos.Z), b2Vec2(puntos[j].pos.X, puntos[j].pos.Z));
+                std::cout<<"///////////////////////"<<std::endl;
+                std::cout<<puntos[i].nombre<<std::endl;
+                std::cout<<"I: "<<i<<"J: "<<j<<std::endl;
+                std::cout<<puntos[j].nombre<<std::endl;
+
                 std::cout << "F = " << f << std::endl;
                 weightX = pow((puntos[j].pos.X - puntos[i].pos.X), 2);
                 weightZ = pow(puntos[j].pos.Z - puntos[i].pos.Z, 2);
                 weight = weightX + weightZ;
                 weight = sqrt(weight);
+                std::cout<<"PESO: "<<weight<<std::endl;
                 pesos[i][j] = weight;
 
             }

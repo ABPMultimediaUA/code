@@ -41,8 +41,7 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
     smgr1 = smgr;
     smgr->getGUIEnvironment()->clear();
 
-    waypoints = puntos;
-    waypoints->creaPesos(entity);
+
 }
 
 //Enemigo::Enemigo(const Enemigo& orig) {
