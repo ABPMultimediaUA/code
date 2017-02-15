@@ -9,6 +9,721 @@
   },
   "hierarchy": [
     {
+      "name": "Waypoints",
+      "components": [
+        {
+          "localPosition": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "Punto1",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.5,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto2",
+          "components": [
+            {
+              "localPosition": [
+                -0.4,
+                0.5,
+                29.8
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto3",
+          "components": [
+            {
+              "localPosition": [
+                -50.1,
+                0.5,
+                29.9
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto4",
+          "components": [
+            {
+              "localPosition": [
+                -89.8,
+                0.5,
+                29.6
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto5",
+          "components": [
+            {
+              "localPosition": [
+                -89.9,
+                0.5,
+                -0.2
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto6",
+          "components": [
+            {
+              "localPosition": [
+                -59.7,
+                0.5,
+                -6.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto7",
+          "components": [
+            {
+              "localPosition": [
+                -116.9,
+                0.5,
+                -1.5
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto8",
+          "components": [
+            {
+              "localPosition": [
+                -89.2,
+                0.5,
+                -29.2
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto9",
+          "components": [
+            {
+              "localPosition": [
+                -59.5,
+                0.5,
+                -29.9
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto10",
+          "components": [
+            {
+              "localPosition": [
+                -74.8,
+                0.5,
+                -55.2
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto11",
+          "components": [
+            {
+              "localPosition": [
+                48.5,
+                0.5,
+                -0.1
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto12",
+          "components": [
+            {
+              "localPosition": [
+                49.8,
+                0.5,
+                27.6
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto13",
+          "components": [
+            {
+              "localPosition": [
+                95.6,
+                0.5,
+                27.2
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto14",
+          "components": [
+            {
+              "localPosition": [
+                47.1,
+                0.5,
+                -36.9
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto15",
+          "components": [
+            {
+              "localPosition": [
+                9.4,
+                0.5,
+                -49.4
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Punto16",
+          "components": [
+            {
+              "localPosition": [
+                99.0,
+                0.5,
+                -40.4
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
       "name": "Escenario",
       "components": [
         {
