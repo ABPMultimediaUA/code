@@ -1,0 +1,7 @@
+﻿  navmeshes.cpp
+c:\users\hector\documents\visual studio 2015\projects\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(145): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\hector\documents\visual studio 2015\projects\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(156): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\hector\documents\visual studio 2015\projects\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(164): warning C4244: 'inicializando': conversión de 'irr::f32' a 'int'; posible pérdida de datos
+c:\users\hector\documents\visual studio 2015\projects\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(184): warning C4244: 'inicializando': conversión de 'irr::f32' a 'int'; posible pérdida de datos
+  Starship1414VS.vcxproj -> c:\users\hector\documents\visual studio 2015\Projects\Starship1414VS\Debug\Starship1414VS.exe
+  Starship1414VS.vcxproj -> c:\users\hector\documents\visual studio 2015\Projects\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
