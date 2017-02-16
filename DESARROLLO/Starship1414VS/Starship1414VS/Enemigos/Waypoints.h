@@ -15,18 +15,12 @@
 #ifndef WAYPOINTS_H
 #define WAYPOINTS_H
 
-#include <irrlicht.h>
+
 #include <iostream>
 #include <string>
 #include <vector>
 #include <math.h>
-using namespace irr;
-
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
+#include "../Fisicas/Entity2D.h"
 
 class Waypoints {
 
@@ -45,6 +39,7 @@ public:
 
 	void MuestraPuntos();
 	void creaPuntos(std::string nombre, vector3df posicion);
+	void creaPesos(Entity2D * entity);
 	void creaPesos();
 	void mostrarPesos();
 private:

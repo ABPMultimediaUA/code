@@ -15,7 +15,7 @@
 
 #include <iostream>
 #include "../Fisicas/Entity2D.h"
-
+#include "Waypoints.h"
 
 
 #ifndef ENEMIGO_H
@@ -39,7 +39,7 @@
 
 class Enemigo {
 public:
-	Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion);
+	Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos);
 	// Enemigo(const Enemigo& orig);
 	virtual ~Enemigo();
 
@@ -68,6 +68,7 @@ protected:
 	ITextSceneNode *RVida;
 	ISceneManager* smgr1;
 	float blindaje;
+	Waypoints *waypoints;
 };
 
 #endif /* ENEMIGO_H */

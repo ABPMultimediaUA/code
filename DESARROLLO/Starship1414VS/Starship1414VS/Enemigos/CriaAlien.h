@@ -20,7 +20,7 @@
 
 class CriaAlien : public Enemigo {
 public:
-	CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce);
+	CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos);
 	//CriaAlien(const CriaAlien& orig);
 	virtual ~CriaAlien();
 	void Update(int estado);
