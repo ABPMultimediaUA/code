@@ -1,2 +1,10 @@
-﻿  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
+﻿  Waypoints.cpp
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(27): warning C4018: '<': no coinciden signed/unsigned
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(36): warning C4018: '<': no coinciden signed/unsigned
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(62): warning C4018: '<': no coinciden signed/unsigned
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(65): warning C4018: '<': no coinciden signed/unsigned
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(67): warning C4018: '<': no coinciden signed/unsigned
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(94): warning C4018: '<': no coinciden signed/unsigned
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(95): warning C4018: '<': no coinciden signed/unsigned
+  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

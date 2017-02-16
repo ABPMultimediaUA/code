@@ -13,6 +13,8 @@
 
 #include "Waypoints.h"
 
+
+
 Waypoints::Waypoints() {
 
 }
@@ -65,13 +67,15 @@ void Waypoints::creaPesos(Entity2D *entity) {
         for (int j = 0; j < puntos.size(); j++) {
             pesos[i][j] = 0;
             if (puntos[i].nombre != puntos[j].nombre) {
+				
 
+				
                 float f = entity->rayCasting(b2Vec2(puntos[i].pos.X, puntos[i].pos.Z), b2Vec2(puntos[j].pos.X, puntos[j].pos.Z));
                 std::cout<<"///////////////////////"<<std::endl;
                 std::cout<<puntos[i].nombre<<std::endl;
                 std::cout<<"I: "<<i<<"J: "<<j<<std::endl;
                 std::cout<<puntos[j].nombre<<std::endl;
-
+				
                 std::cout << "F = " << f << std::endl;
                 weightX = pow((puntos[j].pos.X - puntos[i].pos.X), 2);
                 weightZ = pow(puntos[j].pos.Z - puntos[i].pos.Z, 2);
