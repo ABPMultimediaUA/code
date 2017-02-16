@@ -192,7 +192,7 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
 				matriz2[i][y] = 1;
 			}
 			escala = escala - 1;
-			for (int i = x; i>x - escala ; i--)//mirar for (int i = x; i>x - escala -1; i--)
+			for (int i = x; i>x - escala ; i--)
 			{
 				matriz2[i][y] = 1;
 			}
