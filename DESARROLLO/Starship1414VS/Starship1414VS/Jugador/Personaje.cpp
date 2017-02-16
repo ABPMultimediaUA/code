@@ -205,9 +205,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 }
 
 
-float Personaje::lanzarRayo(int modo) {
-	return entity->rayCast(modo);
-}
+
 
 vector3df Personaje::getPos() {
 	return pos;

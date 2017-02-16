@@ -82,6 +82,7 @@ public:
 	void setSubHijos(std::string nombre, double t[], double r[], double s[]);
 	void muestraEstructura();
 	void dibujarEscenario();
+	void fabricaDeEnemigos(Waypoints * puntos);
 	std::list<Escenario::ElementoHijo> getHijos();
 	std::list<Escenario::Elemento> getSubHijos();
 	void removeListHijos();

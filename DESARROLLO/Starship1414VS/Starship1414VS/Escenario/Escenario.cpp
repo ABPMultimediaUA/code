@@ -168,8 +168,8 @@ void Escenario::dibujarEscenario() {
 
 				puntos->creaPuntos((*T).nombre, vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)));
 				puntos->MuestraPuntos();
-				puntos->creaPesos();
-				puntos->mostrarPesos();
+				//puntos->creaPesos();
+				//puntos->mostrarPesos();
 			}
 		}
 
@@ -237,9 +237,11 @@ void Escenario::dibujarEscenario() {
 
 
 	}
+	fabricaDeEnemigos(puntos);
+
 }
 
-void Escenario::fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2World* world) {
+void Escenario::fabricaDeEnemigos(Waypoints* puntos) {
 
 	for (int i = 0; i < 1; i++) {
 
@@ -251,7 +253,7 @@ void Escenario::fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2W
 		enemigos.push_back(alien);
 		}  */
 
-		CriaAlien *ene = new CriaAlien(smgr, driver, world, vector3df(x, 10, z), this);
+		CriaAlien *ene = new CriaAlien(SM, VD, mundo, vector3df(x, 10, z), this, puntos);
 
 		enemigos.push_back(ene);
 

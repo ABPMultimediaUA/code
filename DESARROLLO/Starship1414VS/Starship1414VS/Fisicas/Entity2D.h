@@ -36,10 +36,11 @@ public:
 
 	Entity2D(const Entity2D& orig);
 	virtual ~Entity2D();
+	float rayCast(b2Vec2 inicio, b2Vec2 fin);
 	float rayCast(int modo);
 	b2Body* getCuerpo2D();
 	float rayCasting(b2Vec2 inicio, b2Vec2 fin);
-	float llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
+	void llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
 	int getIDEN();
 	int getIDENSH();
 	bool getLive();

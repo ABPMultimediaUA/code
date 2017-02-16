@@ -70,7 +70,6 @@ public:
 	int getCargador();
 	float getVel();
 	f32 getTiempoDisparo();
-	float lanzarRayo(int modo);
 	bool getDisparo();
 	int getDireccion();
 	float getDamage();

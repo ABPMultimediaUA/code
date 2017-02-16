@@ -64,7 +64,7 @@ void Juego::StarUP(IrrlichtDevice* iDevice) {
 	esce = new Escenario(smgr, driver, world);
 	// ene = new Enemigo(smgr, driver, world, vector3df(0,10,40));
 	json = new readJson(esce);
-	esce->fabricaDeEnemigos(smgr, driver, world);
+	//esce->fabricaDeEnemigos(smgr, driver, world);
 
 	cam = new Camara(smgr, pers->getPos());
 

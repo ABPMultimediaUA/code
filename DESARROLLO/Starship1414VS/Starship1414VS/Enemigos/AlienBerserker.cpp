@@ -13,7 +13,7 @@
 
 #include "AlienBerserker.h"
 
-AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion) : Enemigo(smgr, driver, world, posicion)
+AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints *puntos) : Enemigo(smgr, driver, world, posicion, puntos)
 {
 
 	maya = smgr->addCubeSceneNode(10); //preguntar a Miguel Angel

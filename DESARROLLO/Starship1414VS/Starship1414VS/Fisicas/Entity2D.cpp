@@ -308,7 +308,7 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
 
 }
 
-float Entity2D::llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin) {
+void Entity2D::llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin) {
     body->GetWorld()->RayCast(callback, inicio, fin);
 
 }

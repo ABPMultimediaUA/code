@@ -61,18 +61,18 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
     for (int i = 0; i < 100; i++) {
         for (int j = 0; j < 100; j++) {
             if (matriz[i][j] == 1) {
-                maya = grid->addCubeSceneNode(0.20);
+                maya = grid->addCubeSceneNode(5);
                 maya->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
                 maya->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
                 maya->getMaterial(0).EmissiveColor.set(0, 255, 10, 20);
-                maya->setPosition(vector3df(10 + i, 10, 10 + j));
+                maya->setPosition(vector3df(5*i-245, 5, 5 * j - 245));
 
             } else {
-                maya = grid->addCubeSceneNode(0.20);
+                maya = grid->addCubeSceneNode(5);
                 maya->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
                 maya->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
                 maya->getMaterial(0).EmissiveColor.set(0, 255, 255, 255);
-                maya->setPosition(vector3df(10 + i, 10, 10 + j));
+                maya->setPosition(vector3df(5 * i - 245, 10, 5 * j - 245));
             }
 
         }
