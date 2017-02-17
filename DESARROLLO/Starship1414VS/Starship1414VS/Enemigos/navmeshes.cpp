@@ -176,7 +176,7 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
 			{
 				matriz2[x][i] = 1;
 			}
-			this->muestraGrafo();
+			//this->muestraGrafo();
 		}
 		else if ((*it)->getRotacion().Y == 0)
 		{
@@ -196,7 +196,7 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
 			{
 				matriz2[i][y] = 1;
 			}
-			this->muestraGrafo();
+			//this->muestraGrafo();
 		}
 
 

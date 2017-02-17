@@ -40,13 +40,14 @@ public:
 	void MuestraPuntos();
 	void creaPuntos(std::string nombre, vector3df posicion);
 	void creaPesos(Entity2D * entity);
-	void creaPesos();
 	void mostrarPesos();
+	void setTamDelMapa(int tam);
 private:
 	std::string nombre;
 	Nodo Way;
 	std::vector<Nodo> puntos;
 	float **pesos;
+	int tamDelMapa;
 };
 
 #endif /* WAYPOINTS_H */

@@ -290,10 +290,10 @@ float Entity2D::rayCast(b2Vec2 inicio, b2Vec2 fin) {
     //        }
     //    }
 
-//    std::cout << "Soy rayo1: " << rayo1 << std::endl;
+	  std::cout << "Soy rayo1: " << rayo1 << std::endl;
 //    std::cout << "Soy rayo2: " << rayo2 << std::endl;
 //    //////////////////////////////////////////
-//    std::cout << resultado << std::endl;
+	  std::cout << resultado << std::endl;
 //    //////////////////////////////////////////
 
     return resultado;
@@ -304,7 +304,16 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
     RayCastCallback *callback = new RayCastCallback();
     llamarCallBack(callback, inicio, fin);
 
-    return callback->getDistancia();
+	if(callback->getEntidadChocada() != 1) {
+		std::cout << "//////////////////////////////////////////" << std::endl;
+		std::cout << "SOY ALGO DISTINTO A UNA PARED" << std::endl;
+
+		return 0.0f;
+	}
+
+	else {
+		return callback->getDistancia();
+	}
 
 }
 

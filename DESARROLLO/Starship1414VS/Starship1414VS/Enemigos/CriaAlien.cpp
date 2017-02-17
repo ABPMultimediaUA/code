@@ -14,7 +14,10 @@
 #include "CriaAlien.h"
 
 CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos) {
-    maya = smgr -> addCubeSceneNode(5); //preguntar a Miguel Angel
+    
+	//seria mejor que se le pasara las cosas necesarias del escenario que todo el escenario entero
+	//para hacer el tema de los navmesehses y los waypoints
+	maya = smgr -> addCubeSceneNode(5); //preguntar a Miguel Angel
     if (maya) {
         maya -> setPosition(posicion); //vector3df(0, 10, 40)
         maya->getMaterial(0).EmissiveColor.set(0, 128, 0, 20);
@@ -30,7 +33,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
         waypoints = puntos;
     waypoints->creaPesos(entity);
 
-
+	waypoints->mostrarPesos();
 
 
 

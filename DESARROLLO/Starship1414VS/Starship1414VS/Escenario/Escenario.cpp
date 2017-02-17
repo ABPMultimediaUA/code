@@ -237,6 +237,7 @@ void Escenario::dibujarEscenario() {
 
 
 	}
+	puntos->setTamDelMapa(tam);
 	fabricaDeEnemigos(puntos);
 
 }

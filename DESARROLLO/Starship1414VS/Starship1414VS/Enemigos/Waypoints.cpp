@@ -66,21 +66,47 @@ void Waypoints::creaPesos(Entity2D *entity) {
 
         for (int j = 0; j < puntos.size(); j++) {
             pesos[i][j] = 0;
+
             if (puntos[i].nombre != puntos[j].nombre) {
 				
+				//si nos devuelve f = 0 significa que ha chocado contra algo que no es una pared
+				//o contra nada entonces se le asigna el valor de la distancia
+				//sino, (choca contra una pared) se le pondria -1 (no llega a ese waypoint)
+				//se deberia limiar el uso de raycast usando un filtro para el peso que si
+				//supera X valor (tamDelMapa / 4 por ejemplo) no haga el raycast y se le asigne
+				// -1
+				float f = -1;
+				weightX = pow((puntos[j].pos.X - puntos[i].pos.X), 2);
+				weightZ = pow(puntos[j].pos.Z - puntos[i].pos.Z, 2);
+				weight = weightX + weightZ;
+				weight = sqrt(weight);
+				/*std::cout << "///////////////////////" << std::endl;
 
-				
-                float f = entity->rayCasting(b2Vec2(puntos[i].pos.X, puntos[i].pos.Z), b2Vec2(puntos[j].pos.X, puntos[j].pos.Z));
+				std::cout << "PESO ANTES DEL FILTRO: " << weight << std::endl;
+				std::cout << "///////////////////////" << std::endl;*/
+
+
+
+				if(weight <=tamDelMapa * 0.4 ) {
+					 f = entity->rayCasting(b2Vec2(puntos[i].pos.X, puntos[i].pos.Z), b2Vec2(puntos[j].pos.X, puntos[j].pos.Z));
+
+					 if(f != 0.0f) {
+						 weight = -1;
+					 }
+
+				}
+
+				else {
+					weight = -1;
+				}
+
                 std::cout<<"///////////////////////"<<std::endl;
                 std::cout<<puntos[i].nombre<<std::endl;
                 std::cout<<"I: "<<i<<"J: "<<j<<std::endl;
                 std::cout<<puntos[j].nombre<<std::endl;
 				
                 std::cout << "F = " << f << std::endl;
-                weightX = pow((puntos[j].pos.X - puntos[i].pos.X), 2);
-                weightZ = pow(puntos[j].pos.Z - puntos[i].pos.Z, 2);
-                weight = weightX + weightZ;
-                weight = sqrt(weight);
+              
                 std::cout<<"PESO: "<<weight<<std::endl;
                 pesos[i][j] = weight;
 
@@ -100,3 +126,9 @@ void Waypoints::mostrarPesos() {
         }
     }
 }
+
+
+void Waypoints::setTamDelMapa(int tam) {
+	tamDelMapa = tam;
+}
+
