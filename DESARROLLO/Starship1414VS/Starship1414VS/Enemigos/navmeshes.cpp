@@ -20,6 +20,7 @@ navmeshes::navmeshes(int grid, Escenario* esce) {
 
 	matriz = new int*[tam];
 	matriz2 = new float*[tam / grid];
+	matriz3 = new char*[tam / grid];
 
 	for (int i = 0; i < tam; i++) {
 		matriz[i] = new int[tam];
@@ -27,6 +28,10 @@ navmeshes::navmeshes(int grid, Escenario* esce) {
 
 	for (int i = 0; i < tam / grid; i++) {
 		matriz2[i] = new float[tam / grid];
+	}
+
+	for (int i = 0; i < tam / grid; i++) {
+		matriz3[i] = new char[tam / grid];
 	}
 
 	for (int i = 0; i < tam; i++) {
@@ -40,6 +45,13 @@ navmeshes::navmeshes(int grid, Escenario* esce) {
 		for (int j = 0; j < tam / grid; j++) {
 
 			matriz2[i][j] = 0;
+		}
+	}
+
+	for (int i = 0; i < tam / grid; i++) {
+		for (int j = 0; j < tam / grid; j++) {
+
+			matriz3[i][j] = 'o';
 		}
 	}
 
@@ -198,8 +210,8 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
 			}
 			//this->muestraGrafo();
 		}
-
-
+		this->marchingSquare();
+		this->dibujarSquare();
 	}
 
 	/*
@@ -275,4 +287,229 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
 float** navmeshes::getMatriz()
 {
 	return matriz2;
+}
+
+void navmeshes::marchingSquare()
+{
+	for(int i = 0; i<tam/tamGrid; i++)
+	{
+		for (int j=0; j<tam/tamGrid; j++)
+		{
+			if (matriz2[i][j]==1)
+			{
+				if (i==0 && j==0) //EsquinaSupIzq
+				{ 
+				
+					if (matriz2[i][j]==1&&matriz2[i][j+1]==1&&matriz2[i+1][j]==1&& matriz2[i + 1][j+1] == 0) //caso 13
+					{
+						matriz3[i][j] = '<';
+					}
+				}
+				
+				else if (i==tam/tamGrid-1&&j==tam/tamGrid-1)//EsquinaInfDer
+				{
+					if (matriz2[i][j] == 1 && matriz2[i][j - 1] == 1 && matriz2[i - 1][j] == 1 && matriz2[i - 1][j - 1] == 0) //caso 14
+					{
+						matriz3[i][j] = '>';
+					}
+				}
+
+				else if (i==0&&j==tam/tamGrid-1)//EsquinaSupDer
+				{
+					//std::cout << "entra" << std::endl;
+					
+					if (matriz2[i][j] == 1 && matriz2[i][j - 1] == 1 && matriz2[i + 1][j] == 1 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						
+						matriz3[i][j] = '>';
+					}
+				}	
+
+				else if (i == tam / tamGrid - 1 && j == 0)//EsquinaInfIzq
+				{
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i - 1][j] == 1 && matriz2[i - 1][j + 1] == 0) //caso 13
+					{
+
+						matriz3[i][j] = '<';
+					}
+				}
+				
+				else if (i==0)//primera fila
+				{
+					if (matriz2[i][j] == 1 && matriz2[i][j+1] == 1 && matriz2[i][j - 1] == 1 && matriz2[i+1][j] == 0 && matriz2[i + 1][j+1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '-';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i][j - 1] == 1 && matriz2[i + 1][j] == 0 && matriz2[i + 1][j + 1] == 0 && matriz2[i + 1][j - 1] == 1) //caso 13
+					{
+						matriz3[i][j] = '-';
+					}
+				}
+
+				else if (j==0)//primera columna
+				{
+					if (matriz2[i][j] == 1 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 1 && matriz2[i - 1][j + 1] == 0 && matriz2[i][j + 1] == 0 && matriz2[i + 1][j + 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 1 && matriz2[i - 1][j + 1] == 1 && matriz2[i][j + 1] == 0 && matriz2[i + 1][j + 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 1 && matriz2[i - 1][j + 1] == 0 && matriz2[i][j + 1] == 0 && matriz2[i + 1][j + 1] == 1) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+				}
+				else if (j == tam / tamGrid - 1) //ultima columna Der
+				{
+					if (matriz2[i][j] == 1 && matriz2[i + 1][j] == 1 && matriz2[i-1][j] == 1 && matriz2[i - 1][j-1] == 0 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 1 && matriz2[i - 1][j - 1] == 1 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 1 && matriz2[i - 1][j - 1] == 0 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j - 1] == 1) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+				}
+				
+				
+				else if (i == tam / tamGrid - 1)//ultima fila
+				{
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i][j - 1] == 1 && matriz2[i - 1][j] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '-';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i][j - 1] == 1 && matriz2[i - 1][j] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 1) //caso 13
+					{
+						matriz3[i][j] = '-';
+					}
+				}
+
+				else
+				{
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 0 && matriz2[i][j - 1] == 1 && matriz2[i + 1][j] == 0 && matriz2[i - 1][j] == 1 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						
+						matriz3[i][j] = '>';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 0 && matriz2[i][j - 1] == 1 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 0 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+
+						matriz3[i][j] = '>';
+					}
+				
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j] == 0 && matriz2[i - 1][j] == 1 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+
+						matriz3[i][j] = '<';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j+1] == 0 && matriz2[i][j - 1] == 0 && matriz2[i+1][j] == 1 && matriz2[i-1][j] == 1 && matriz2[i+1][j + 1] == 0 && matriz2[i-1][j + 1] == 0 && matriz2[i-1][j - 1] == 0 && matriz2[i+1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 0 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 1 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 1) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 0 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 1 && matriz2[i + 1][j + 1] == 1 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 0 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 1 && matriz2[i + 1][j + 1] == 1 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 0 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 1 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 1 && matriz2[i - 1][j - 1] == 1 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 0 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j] == 1 && matriz2[i - 1][j] == 0 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 0 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j] == 0 && matriz2[i - 1][j] == 1 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '|';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i][j - 1] == 1 && matriz2[i + 1][j] == 0 && matriz2[i - 1][j] == 0 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '-';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i][j - 1] == 1 && matriz2[i + 1][j] == 0 && matriz2[i - 1][j] == 0 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 1 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						
+						matriz3[i][j] = '-';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i][j - 1] == 1 && matriz2[i + 1][j] == 0 && matriz2[i - 1][j] == 0 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 1 && matriz2[i + 1][j - 1] == 1) //caso 13
+					{
+
+						matriz3[i][j] = '-';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i][j - 1] == 1 && matriz2[i + 1][j] == 0 && matriz2[i - 1][j] == 0 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 1 && matriz2[i + 1][j - 1] == 1) //caso 13
+					{
+						matriz3[i][j] = '-';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i][j - 1] == 1 && matriz2[i + 1][j] == 0 && matriz2[i - 1][j] == 0 && matriz2[i + 1][j + 1] == 1 && matriz2[i - 1][j + 1] == 1 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '-';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 0 && matriz2[i][j - 1] == 1 && matriz2[i + 1][j] == 0 && matriz2[i - 1][j] == 0 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '-';
+					}
+
+					if (matriz2[i][j] == 1 && matriz2[i][j + 1] == 1 && matriz2[i][j - 1] == 0 && matriz2[i + 1][j] == 0 && matriz2[i - 1][j] == 0 && matriz2[i + 1][j + 1] == 0 && matriz2[i - 1][j + 1] == 0 && matriz2[i - 1][j - 1] == 0 && matriz2[i + 1][j - 1] == 0) //caso 13
+					{
+						matriz3[i][j] = '-';
+					}
+					
+
+
+					
+
+				}
+
+
+			}
+		}
+	}
+}
+
+
+void navmeshes::dibujarSquare()
+{
+	for (int i = 0; i < tam / tamGrid; i++) {
+		for (int j = 0; j < tam / tamGrid; j++) {
+			std::cout << matriz3[i][j];
+			if (j == (tam / tamGrid) - 1)
+			{
+				std::cout << "" << std::endl;
+			}
+		}
+	}
 }

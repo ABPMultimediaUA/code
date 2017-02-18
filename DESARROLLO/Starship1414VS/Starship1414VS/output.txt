@@ -95,14 +95,64 @@ X: 0
 Y: 10
 Z: -250
 Negativo X 250
-Pos Matriz 50
+Pos Matriz 25
 Negativo Z 0
 Pos Matriz -1
-Limite 100
+Limite 50
 Escala X 50 Escala Y 2 Escala Z 0.5
 Escala1 25
 Escala2 250
-Escala3 50
+Escala3 25
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
 ---POSICION--- 2
 X: -250
 Y: 10
@@ -110,160 +160,812 @@ Z: 0
 Negativo X 0
 Pos Matriz 0
 Negativo Z 250
-Pos Matriz 49
-Limite 100
+Pos Matriz 24
+Limite 50
 Escala X 50 Escala Y 2 Escala Z 0.5
 Escala1 25
 Escala2 250
-Escala3 99
+Escala3 49
+<------------------------------------------------o
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
 ---POSICION--- 3
 X: 250
 Y: 10
 Z: 0
 Negativo X 500
-Pos Matriz 100
+Pos Matriz 50
 Negativo Z 250
-Pos Matriz 49
-Limite 100
+Pos Matriz 24
+Limite 50
 Escala X 50 Escala Y 2 Escala Z 0.5
 Escala1 25
 Escala2 250
-Escala3 99
+Escala3 49
+<------------------------------------------------o
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+|ooooooooooooooooooooooooooooooooooooooooooooooooo
+<------------------------------------------------o
 ---POSICION--- 4
 X: 0
 Y: 10
 Z: 250
 Negativo X 250
-Pos Matriz 50
+Pos Matriz 25
 Negativo Z 500
-Pos Matriz 99
-Limite 100
+Pos Matriz 49
+Limite 50
 Escala X 50 Escala Y 2 Escala Z 0.5
 Escala1 25
 Escala2 250
-Escala3 149
+Escala3 74
+<------------------------------------------------>
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+<------------------------------------------------>
 ---POSICION--- 5
 X: 150
 Y: 10
 Z: 150
 Negativo X 400
-Pos Matriz 80
+Pos Matriz 40
 Negativo Z 400
-Pos Matriz 79
-Limite 100
+Pos Matriz 39
+Limite 50
 Escala X 20 Escala Y 2 Escala Z 0.5
 Escala1 10
 Escala2 100
-Escala3 99
+Escala3 49
+<------------------------------------------------>
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|ooooooooooooooooooooooooooooo-------------------|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+<------------------------------------------------>
 ---POSICION--- 6
 X: 133.4
 Y: 7
 Z: 235
 Negativo X 383.4
-Pos Matriz 76.68
+Pos Matriz 38.34
 Negativo Z 485
-Pos Matriz 96
-Limite 100
+Pos Matriz 47.5
+Limite 50
 Escala X 3 Escala Y 2.5 Escala Z 3
 Escala1 1
 Escala2 10
-Escala3 98
+Escala3 48
+<------------------------------------------------>
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooo|o|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|ooooooooooooooooooooooooooooo-------------------|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+<------------------------------------------------>
 ---POSICION--- 7
 X: 106
 Y: 7
 Z: -235
 Negativo X 356
-Pos Matriz 71.2
+Pos Matriz 35.6
 Negativo Z 15
-Pos Matriz 2
-Limite 100
+Pos Matriz 0.5
+Limite 50
 Escala X 3 Escala Y 1.5 Escala Z 3
 Escala1 1
 Escala2 10
-Escala3 4
+Escala3 1
+<------------------------------------------------>
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooo|o|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|ooooooooooooooooooooooooooooo-------------------|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+<------------------------------------------------>
 ---POSICION--- 8
 X: -151.3
 Y: 10
 Z: 100.3
 Negativo X 98.7
-Pos Matriz 19.74
+Pos Matriz 9.87
 Negativo Z 350.3
-Pos Matriz 69.06
-Limite 100
+Pos Matriz 34.03
+Limite 50
 Escala X 20 Escala Y 2 Escala Z 0.5
 Escala1 10
 Escala2 100
-Escala3 89
+Escala3 44
+<------------------------------------------------>
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooo|o|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|ooooooooooooooooooooooooooooo-------------------|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+<------------------------------------------------>
 ---POSICION--- 9
 X: -50
 Y: 10
 Z: 148.8
 Negativo X 200
-Pos Matriz 40
+Pos Matriz 20
 Negativo Z 398.8
-Pos Matriz 78.76
-Limite 100
+Pos Matriz 38.88
+Limite 50
 Escala X 10.2 Escala Y 2 Escala Z 0.5
 Escala1 5
 Escala2 50
-Escala3 88
+Escala3 43
+<------------------------------------------------>
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo<---------ooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooo|o|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|ooooooooooooooooooooooooooooo-------------------|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+<------------------------------------------------>
 ---POSICION--- 10
 X: 150
 Y: 10
 Z: -149.3
 Negativo X 400
-Pos Matriz 80
+Pos Matriz 40
 Negativo Z 100.7
-Pos Matriz 19.14
-Limite 100
+Pos Matriz 9.07
+Limite 50
 Escala X 20 Escala Y 2 Escala Z 0.5
 Escala1 10
 Escala2 100
-Escala3 39
+Escala3 19
+<------------------------------------------------>
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo<---------ooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooo|o|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|-------------------oooooooooo-------------------|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+<------------------------------------------------>
 ---POSICION--- 11
 X: 90
 Y: 10
 Z: -49.2
 Negativo X 340
-Pos Matriz 68
+Pos Matriz 34
 Negativo Z 200.8
-Pos Matriz 39.16
-Limite 100
+Pos Matriz 19.08
+Limite 50
 Escala X 12.5 Escala Y 2 Escala Z 0.5
 Escala1 6
 Escala2 60
-Escala3 51
+Escala3 25
+<------------------------------------------------>
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo<---------ooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooo|o|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|------------------>oooooooooo-------------------|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+<------------------------------------------------>
 ---POSICION--- 12
 X: -90
 Y: 10
 Z: -49.2
 Negativo X 160
-Pos Matriz 32
+Pos Matriz 16
 Negativo Z 200.8
-Pos Matriz 39.16
-Limite 100
+Pos Matriz 19.08
+Limite 50
 Escala X 12.5 Escala Y 2 Escala Z 0.5
 Escala1 6
 Escala2 60
-Escala3 51
+Escala3 25
+<------------------------------------------------>
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo<---------ooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooo|o|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|------------------>oooooooooo-------------------|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+<------------------------------------------------>
 ---POSICION--- 13
 X: -150
 Y: 10
 Z: -150
 Negativo X 100
-Pos Matriz 20
+Pos Matriz 10
 Negativo Z 100
-Pos Matriz 19
-Limite 100
+Pos Matriz 9
+Limite 50
 Escala X 20 Escala Y 2 Escala Z 0.5
 Escala1 10
 Escala2 100
-Escala3 39
+Escala3 19
+<------------------------------------------------>
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|-------------------oooooooooooooo|oooooooooooooo|
+|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
+|oooooooooooooooooo|oooooooooooooo<---------ooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|oooooooooooooooooo|ooooooooooooooooooooooooooo|o|
+|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
+|------------------>oooooooooo-------------------|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooooo|
+<------------------------------------------------>
+//////////////////
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+//////////////////
 Irrlicht Engine version 1.8.4
- (Build 9200)
+Professional Edition  (Build 9200)
 Using renderer: OpenGL 4.5.0
-GeForce GT 720M/PCIe/SSE2: NVIDIA Corporation
+GeForce GTX 1060 3GB/PCIe/SSE2: NVIDIA Corporation
 OpenGL driver version is 1.2 or better.
 GLSL version: 4.5
-Resizing window (1366 745)
-Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
+Resizing window (1366 768)
+Loaded texture: D:/REPOSITORIO/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg

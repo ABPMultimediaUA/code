@@ -1,10 +1,7 @@
-﻿  Waypoints.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(27): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(36): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(62): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(65): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(67): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(120): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(121): warning C4018: '<': no coinciden signed/unsigned
-  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
-  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
+﻿  navmeshes.cpp
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(157): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(168): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(176): warning C4244: 'inicializando': conversión de 'irr::f32' a 'int'; posible pérdida de datos
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(196): warning C4244: 'inicializando': conversión de 'irr::f32' a 'int'; posible pérdida de datos
+  Starship1414VS.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
+  Starship1414VS.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
