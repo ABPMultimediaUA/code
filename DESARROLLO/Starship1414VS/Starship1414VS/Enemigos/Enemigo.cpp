@@ -40,6 +40,7 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
     RVida->setPosition(vector3df(posicion.X - 8, posicion.Y, posicion.Z));
     smgr1 = smgr;
     smgr->getGUIEnvironment()->clear();
+	puntoIni.nombre, puntoFin.nombre = "indefinido"; //hecho para que solo se calcule una vez los nodos
 
 
 }

@@ -15,6 +15,7 @@
 
 
 
+
 Waypoints::Waypoints() {
 
 }
@@ -44,12 +45,10 @@ void Waypoints::MuestraPuntos() {
 void Waypoints::creaPuntos(std::string nombre, vector3df posicion) {
     Way.nombre = nombre;
     Way.pos = posicion;
+	Way.lugar = puntos.size();
 
     puntos.push_back(Way);
-                    std::cout<<"///////////////////////"<<std::endl;
-
-    std::cout<<"TAM: "<<puntos.size()<<std::endl;
-                    std::cout<<"///////////////////////"<<std::endl;
+ 
 
 }
 
@@ -132,3 +131,18 @@ void Waypoints::setTamDelMapa(int tam) {
 	tamDelMapa = tam;
 }
 
+
+float** Waypoints::getMatriz() {
+	return pesos;
+}
+
+
+std::vector<struct Waypoints::Nodo> Waypoints::getNodos() {
+	return puntos;
+}
+
+struct Waypoints::Nodo Waypoints::getNodoX(int x) {
+
+	return puntos.at(x);
+
+}

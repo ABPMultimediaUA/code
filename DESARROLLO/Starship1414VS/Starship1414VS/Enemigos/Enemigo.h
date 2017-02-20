@@ -16,6 +16,7 @@
 #include <iostream>
 #include "../Fisicas/Entity2D.h"
 #include "Waypoints.h"
+#include "AStar.h"
 
 
 #ifndef ENEMIGO_H
@@ -56,6 +57,14 @@ public:
 
 
 protected:
+	typedef struct
+	{
+		std::string nombre;
+		vector3df pos;
+		int lugar;
+		
+	} Nodo;
+
 	IMeshSceneNode *maya;
 	float vel;
 	vector3df pos;
@@ -69,6 +78,8 @@ protected:
 	ISceneManager* smgr1;
 	float blindaje;
 	Waypoints *waypoints;
+	AStar *path;
+	Nodo puntoIni, puntoFin;
 };
 
 #endif /* ENEMIGO_H */

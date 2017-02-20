@@ -37,13 +37,16 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 
 
 
+
+
 //    std::cout << "GRAFO CON 0" << std::endl;
 //    std::cout << "" << std::endl;
     //    nav->muestraGrafo();
-    std::cout << "COLISIONES" << std::endl;
-    std::cout << "" << std::endl;
+  //  std::cout << "COLISIONES" << std::endl;
+   // std::cout << "" << std::endl;
     nav->setColisiones(esce->getParedes());
-    nav->muestraGrafo();
+    //nav->muestraGrafo();
+	path = new AStar(waypoints);
 
     // dibujaGrid(smgr);
 
@@ -82,7 +85,7 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
     }
 }
 
-void CriaAlien::Update(int estado) {
+void CriaAlien::Update(int estado) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
     switch (estado) {
 
         case 0: //descansar

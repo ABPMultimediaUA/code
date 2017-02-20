@@ -51,6 +51,14 @@ I: 1J: 0
 waypoint1
 F = 0
 PESO: 99.6
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 4
+Posicion de la Entity X: 25Y: 112
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 SOY ALGO DISTINTO A UNA PARED
 ///////////////////////
@@ -75,6 +83,14 @@ I: 2J: 0
 waypoint1
 F = 0
 PESO: 136.771
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 4
+Posicion de la Entity X: 25Y: 112
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 SOY ALGO DISTINTO A UNA PARED
 ///////////////////////
@@ -962,10 +978,10 @@ Escala3 19
 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
 //////////////////
 Irrlicht Engine version 1.8.4
-Professional Edition  (Build 9200)
+ (Build 9200)
 Using renderer: OpenGL 4.5.0
-GeForce GTX 1060 3GB/PCIe/SSE2: NVIDIA Corporation
+GeForce GT 720M/PCIe/SSE2: NVIDIA Corporation
 OpenGL driver version is 1.2 or better.
 GLSL version: 4.5
-Resizing window (1366 768)
-Loaded texture: D:/REPOSITORIO/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
+Resizing window (1366 745)
+Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg

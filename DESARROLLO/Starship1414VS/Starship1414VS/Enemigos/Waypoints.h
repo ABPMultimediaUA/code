@@ -24,12 +24,20 @@
 
 class Waypoints {
 
+	//cambiar a una clase
 	typedef struct
 	{
 		std::string nombre;
 		vector3df pos;
+		int lugar;
 	} Nodo;
 
+private:
+
+	Nodo Way;
+	std::vector<Nodo> puntos;
+	float **pesos;
+	int tamDelMapa;
 
 
 public:
@@ -42,12 +50,13 @@ public:
 	void creaPesos(Entity2D * entity);
 	void mostrarPesos();
 	void setTamDelMapa(int tam);
-private:
-	std::string nombre;
-	Nodo Way;
-	std::vector<Nodo> puntos;
-	float **pesos;
-	int tamDelMapa;
+	float** getMatriz();
+	std::vector<Nodo> getNodos();
+	Nodo getNodoX(int x);
+
+
+
+
 };
 
 #endif /* WAYPOINTS_H */

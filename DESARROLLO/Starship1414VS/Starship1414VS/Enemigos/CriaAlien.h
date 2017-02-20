@@ -18,6 +18,7 @@
 #include "Enemigo.h"
 #include "navmeshes.h"
 
+
 class CriaAlien : public Enemigo {
 public:
 	CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos);

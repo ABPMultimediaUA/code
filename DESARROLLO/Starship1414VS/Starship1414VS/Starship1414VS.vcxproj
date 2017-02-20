@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Enemigos\AStar.cpp" />
     <ClCompile Include="CAppReceiver.cpp" />
     <ClCompile Include="Enemigos\AlienBerserker.cpp" />
     <ClCompile Include="Enemigos\CriaAlien.cpp" />
@@ -183,6 +184,7 @@
     <ClCompile Include="Menu\Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Enemigos\AStar.h" />
     <ClInclude Include="CAppReceiver.h" />
     <ClInclude Include="Enemigos\AlienBerserker.h" />
     <ClInclude Include="Enemigos\CriaAlien.h" />

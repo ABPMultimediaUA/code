@@ -1,7 +1,15 @@
-﻿  navmeshes.cpp
-d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(157): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(168): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(176): warning C4244: 'inicializando': conversión de 'irr::f32' a 'int'; posible pérdida de datos
-d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(196): warning C4244: 'inicializando': conversión de 'irr::f32' a 'int'; posible pérdida de datos
-  Starship1414VS.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
-  Starship1414VS.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
+﻿  CriaAlien.cpp
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(49): error C2664: 'AStar::AStar(const AStar &)': el argumento 2 no puede convertirse de 'std::vector<Waypoints::Nodo,std::allocator<_Ty>>' a 'std::vector<AStar::Nodo,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=Waypoints::Nodo
+          ]
+          and
+          [
+              _Ty=AStar::Nodo
+          ]
+  c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(49): note: No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(74): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(81): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
+  AStar.cpp
+  Generando código...
