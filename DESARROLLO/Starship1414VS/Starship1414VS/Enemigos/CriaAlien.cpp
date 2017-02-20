@@ -37,7 +37,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	//    nav->muestraGrafo();
 	std::cout << "COLISIONES" << std::endl;
 	std::cout << "" << std::endl;
-	nav->setColisiones(esce->getParedes());
+	//nav->setColisiones(esce->getParedes());
 	//nav->muestraGrafo();
 
 	dibujaGrid(smgr);
