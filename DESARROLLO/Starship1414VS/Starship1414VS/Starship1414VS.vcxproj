@@ -182,6 +182,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ManejadorEstadoGeneral.cpp" />
     <ClCompile Include="Menu\Menu.cpp" />
+    <ClCompile Include="Enemigos\Nodo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Enemigos\AStar.h" />
@@ -212,6 +213,7 @@
     <ClInclude Include="Jugador\Pistola.h" />
     <ClInclude Include="ManejadorEstadoGeneral.h" />
     <ClInclude Include="Menu\Menu.h" />
+    <ClInclude Include="Enemigos\Nodo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

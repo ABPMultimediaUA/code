@@ -1,14 +1,11 @@
 #include "AStar.h"
+#include "Nodo.h"
 #include <math.h>
 
 
-AStar::AStar(Waypoints *waypoint)
+AStar::AStar()
 {
-	matriz = waypoint->getMatriz();
 	
-	for(int i = 0; waypoint->getNodos().size; i++) {
-		puntos.push_back(waypoint->getNodos().at(i));
-	}
 
 }
 

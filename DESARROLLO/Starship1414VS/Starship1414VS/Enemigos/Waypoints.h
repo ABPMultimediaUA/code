@@ -19,23 +19,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <math.h>
 #include "../Fisicas/Entity2D.h"
+
+class Nodo;
 
 class Waypoints {
 
-	//cambiar a una clase
-	typedef struct
-	{
-		std::string nombre;
-		vector3df pos;
-		int lugar;
-	} Nodo;
-
 private:
 
-	Nodo Way;
-	std::vector<Nodo> puntos;
+	std::vector<Nodo*> puntos;
 	float **pesos;
 	int tamDelMapa;
 
@@ -51,8 +43,8 @@ public:
 	void mostrarPesos();
 	void setTamDelMapa(int tam);
 	float** getMatriz();
-	std::vector<Nodo> getNodos();
-	Nodo getNodoX(int x);
+	std::vector<Nodo*> getNodos();
+	Nodo* getNodoX(int x);
 
 
 

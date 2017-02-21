@@ -46,7 +46,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
    // std::cout << "" << std::endl;
     nav->setColisiones(esce->getParedes());
     //nav->muestraGrafo();
-	path = new AStar(waypoints);
+	path = new AStar();
 
     // dibujaGrid(smgr);
 

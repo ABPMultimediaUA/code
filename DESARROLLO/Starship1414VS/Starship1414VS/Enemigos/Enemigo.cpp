@@ -11,9 +11,11 @@
  * Created on 29 de noviembre de 2016, 17:52
  */
 
-#include "Enemigo.h"
+
 #include <irrlicht.h>
 #include <Math.h>
+#include "Enemigo.h"
+#include "Nodo.h"
 
 using namespace irr;
 
@@ -40,7 +42,8 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
     RVida->setPosition(vector3df(posicion.X - 8, posicion.Y, posicion.Z));
     smgr1 = smgr;
     smgr->getGUIEnvironment()->clear();
-	puntoIni.nombre, puntoFin.nombre = "indefinido"; //hecho para que solo se calcule una vez los nodos
+	//puntoIni.nombre, puntoFin.nombre = "indefinido"; //hecho para que solo se calcule una vez los nodos
+	
 
 
 }

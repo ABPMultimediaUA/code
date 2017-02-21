@@ -4,7 +4,8 @@
 #include <string>
 #include <vector>
 #include <irrlicht.h>
-#include "Waypoints.h"
+
+class Nodo;
 using namespace irr;
 
 using namespace core;
@@ -12,24 +13,15 @@ using namespace core;
 
 class AStar
 {
-	typedef struct
-	{
-		std::string nombre;
-		vector3df pos;
-		int lugar;
-	} Nodo;
-
 
 public:
-	AStar(Waypoints *waypoint);
+	AStar();
 	~AStar();
-
-
 
 private:
 
 	float** matriz;
-	std::vector<Nodo> puntos;
+	std::vector<Nodo*> puntos;
 
 
 };

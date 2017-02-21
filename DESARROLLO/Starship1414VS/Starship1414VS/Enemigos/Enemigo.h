@@ -22,6 +22,8 @@
 #ifndef ENEMIGO_H
 #define ENEMIGO_H
 
+class Nodo;
+
 #define CRIA 10
 #define BERSERKER 11
 #define SOLDADO 12
@@ -57,13 +59,7 @@ public:
 
 
 protected:
-	typedef struct
-	{
-		std::string nombre;
-		vector3df pos;
-		int lugar;
-		
-	} Nodo;
+	
 
 	IMeshSceneNode *maya;
 	float vel;
@@ -79,7 +75,7 @@ protected:
 	float blindaje;
 	Waypoints *waypoints;
 	AStar *path;
-	Nodo puntoIni, puntoFin;
+	Nodo *puntoIni, *puntoFin;
 };
 
 #endif /* ENEMIGO_H */
