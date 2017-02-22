@@ -320,7 +320,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 
 		driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
 
-
+		esce->actualizarListaEnemigos();
 		smgr->drawAll(); //dibuja todo el grafo
 
 		guienv->drawAll(); //dibujar el GUI

@@ -18,22 +18,6 @@ I: 0J: 1
 waypoint2
 F = 0
 PESO: 99.6
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 4
-Posicion de la Entity X: 53Y: 127
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 4
-Posicion de la Entity X: 53Y: 127
-//////////////////////////////////////////
-
 //////////////////////////////////////////
 SOY ALGO DISTINTO A UNA PARED
 ///////////////////////
@@ -58,22 +42,6 @@ I: 1J: 0
 waypoint1
 F = 0
 PESO: 99.6
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 4
-Posicion de la Entity X: 53Y: 127
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 4
-Posicion de la Entity X: 53Y: 127
-//////////////////////////////////////////
-
 //////////////////////////////////////////
 SOY ALGO DISTINTO A UNA PARED
 ///////////////////////
@@ -126,56 +94,6 @@ Escala X 50 Escala Y 2 Escala Z 0.5
 Escala1 25
 Escala2 250
 Escala3 25
-oooooooooooooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooooo
 ---POSICION--- 2
 X: -250
 Y: 10
@@ -189,56 +107,6 @@ Escala X 50 Escala Y 2 Escala Z 0.5
 Escala1 25
 Escala2 250
 Escala3 49
-<------------------------------------------------o
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooooo
 ---POSICION--- 3
 X: 250
 Y: 10
@@ -252,56 +120,6 @@ Escala X 50 Escala Y 2 Escala Z 0.5
 Escala1 25
 Escala2 250
 Escala3 49
-<------------------------------------------------o
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-|ooooooooooooooooooooooooooooooooooooooooooooooooo
-<------------------------------------------------o
 ---POSICION--- 4
 X: 0
 Y: 10
@@ -315,56 +133,6 @@ Escala X 50 Escala Y 2 Escala Z 0.5
 Escala1 25
 Escala2 250
 Escala3 74
-<------------------------------------------------>
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-<------------------------------------------------>
 ---POSICION--- 5
 X: 150
 Y: 10
@@ -378,56 +146,6 @@ Escala X 20 Escala Y 2 Escala Z 0.5
 Escala1 10
 Escala2 100
 Escala3 49
-<------------------------------------------------>
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|ooooooooooooooooooooooooooooo-------------------|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-<------------------------------------------------>
 ---POSICION--- 6
 X: 133.4
 Y: 7
@@ -441,56 +159,6 @@ Escala X 3 Escala Y 2.5 Escala Z 3
 Escala1 1
 Escala2 10
 Escala3 48
-<------------------------------------------------>
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooo|o|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|ooooooooooooooooooooooooooooo-------------------|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-<------------------------------------------------>
 ---POSICION--- 7
 X: 106
 Y: 7
@@ -504,56 +172,6 @@ Escala X 3 Escala Y 1.5 Escala Z 3
 Escala1 1
 Escala2 10
 Escala3 1
-<------------------------------------------------>
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooo|o|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|ooooooooooooooooooooooooooooo-------------------|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-<------------------------------------------------>
 ---POSICION--- 8
 X: -151.3
 Y: 10
@@ -567,56 +185,6 @@ Escala X 20 Escala Y 2 Escala Z 0.5
 Escala1 10
 Escala2 100
 Escala3 44
-<------------------------------------------------>
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooo|o|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|ooooooooooooooooooooooooooooo-------------------|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-<------------------------------------------------>
 ---POSICION--- 9
 X: -50
 Y: 10
@@ -630,56 +198,6 @@ Escala X 10.2 Escala Y 2 Escala Z 0.5
 Escala1 5
 Escala2 50
 Escala3 43
-<------------------------------------------------>
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo<---------ooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooo|o|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|ooooooooooooooooooooooooooooo-------------------|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-<------------------------------------------------>
 ---POSICION--- 10
 X: 150
 Y: 10
@@ -693,56 +211,6 @@ Escala X 20 Escala Y 2 Escala Z 0.5
 Escala1 10
 Escala2 100
 Escala3 19
-<------------------------------------------------>
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo<---------ooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooo|o|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|-------------------oooooooooo-------------------|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-<------------------------------------------------>
 ---POSICION--- 11
 X: 90
 Y: 10
@@ -756,56 +224,6 @@ Escala X 12.5 Escala Y 2 Escala Z 0.5
 Escala1 6
 Escala2 60
 Escala3 25
-<------------------------------------------------>
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo<---------ooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooo|o|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|------------------>oooooooooo-------------------|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-<------------------------------------------------>
 ---POSICION--- 12
 X: -90
 Y: 10
@@ -819,56 +237,6 @@ Escala X 12.5 Escala Y 2 Escala Z 0.5
 Escala1 6
 Escala2 60
 Escala3 25
-<------------------------------------------------>
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo<---------ooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooo|o|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|------------------>oooooooooo-------------------|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-<------------------------------------------------>
 ---POSICION--- 13
 X: -150
 Y: 10
@@ -882,61 +250,11 @@ Escala X 20 Escala Y 2 Escala Z 0.5
 Escala1 10
 Escala2 100
 Escala3 19
-<------------------------------------------------>
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|-------------------oooooooooooooo|oooooooooooooo|
-|ooooooooooooooooooooooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo|oooooooooooooo|
-|oooooooooooooooooo|oooooooooooooo<---------ooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|oooooooooooooooooo|ooooooooooooooooooooooooooo|o|
-|oooooooooooooooooo|ooooooooooooooooooooooooooooo|
-|------------------>oooooooooo-------------------|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-|oooooooooooooooooooooooooooooooooooooooooooooooo|
-<------------------------------------------------>
 Irrlicht Engine version 1.8.4
- (Build 9200)
+Professional Edition  (Build 9200)
 Using renderer: OpenGL 4.5.0
-GeForce GT 720M/PCIe/SSE2: NVIDIA Corporation
+GeForce GTX 970/PCIe/SSE2: NVIDIA Corporation
 OpenGL driver version is 1.2 or better.
 GLSL version: 4.5
-Resizing window (1366 745)
-Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
+Resizing window (1366 768)
+Loaded texture: C:/Users/David/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg

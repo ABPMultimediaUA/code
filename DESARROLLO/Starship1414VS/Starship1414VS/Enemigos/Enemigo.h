@@ -46,7 +46,7 @@ public:
 	// Enemigo(const Enemigo& orig);
 	virtual ~Enemigo();
 
-	virtual void Update(int estado);
+	virtual void Update();
 	virtual void Mover(int modo, f32 dt);
 	void setVelocidad();
 	virtual void Patrullar();

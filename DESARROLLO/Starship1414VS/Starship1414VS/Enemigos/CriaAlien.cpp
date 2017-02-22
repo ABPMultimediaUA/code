@@ -46,7 +46,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
    // std::cout << "" << std::endl;
     nav->setColisiones(esce->getParedes());
     //nav->muestraGrafo();
-	path = new AStar();
+	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
 
     // dibujaGrid(smgr);
 
@@ -85,22 +85,22 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
     }
 }
 
-void CriaAlien::Update(int estado) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
-    switch (estado) {
+void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
+    switch (estadoActual) {
 
         case 0: //descansar
-            estadoActual = estado;
+           // estadoActual = estado;
 
             maya->getMaterial(0).EmissiveColor.set(0, 0, 200, 10);
             break;
 
         case 1: //patrullar
-            estadoActual = estado;
+           // estadoActual = estado;
             maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
             break;
 
         case 2: //atacar
-            estadoActual = estado;
+            //estadoActual = estado;
             maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 0);
             break;
 

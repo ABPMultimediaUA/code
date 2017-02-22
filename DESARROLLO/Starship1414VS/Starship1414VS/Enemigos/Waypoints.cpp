@@ -49,7 +49,8 @@ void Waypoints::creaPuntos(std::string nombre, vector3df posicion) {
 
     puntos.push_back(way);
  
-
+	
+		
 }
 
 void Waypoints::creaPesos(Entity2D *entity) {

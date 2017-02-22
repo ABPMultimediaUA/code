@@ -210,8 +210,8 @@ void navmeshes::setColisiones(std::list<Pared*> paredes) {
 			}
 			//this->muestraGrafo();
 		}
-		this->marchingSquare();
-		this->dibujarSquare();
+	/*	this->marchingSquare();
+		this->dibujarSquare();*/
 	}
 
 	/*

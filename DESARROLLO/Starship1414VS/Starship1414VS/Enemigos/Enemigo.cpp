@@ -43,7 +43,8 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
     smgr1 = smgr;
     smgr->getGUIEnvironment()->clear();
 	//puntoIni.nombre, puntoFin.nombre = "indefinido"; //hecho para que solo se calcule una vez los nodos
-	
+	puntoIni = NULL;
+	puntoFin = NULL;
 
 
 }
@@ -59,10 +60,14 @@ Enemigo::~Enemigo() {
     maya->getParent()->removeChild(maya);
     GVida->getParent()->removeChild(GVida);
     RVida->getParent()->removeChild(RVida);
+	delete(waypoints);
+	delete(path);
+	/*delete(puntoIni);
+	delete(puntoFin);*/
     delete(entity);
 }
 
-void Enemigo::Update(int estado) {
+void Enemigo::Update() {
 }
 
 void Enemigo::Mover(int modo, f32 dt) {

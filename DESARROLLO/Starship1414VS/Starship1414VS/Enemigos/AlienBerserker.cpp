@@ -38,23 +38,23 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 AlienBerserker::~AlienBerserker() {
 }
 
-void AlienBerserker::Update(int estado)
+void AlienBerserker::Update()
 {
-	switch (estado) {
+	switch (estadoActual) {
 
 	case 0: //descansar
-		estadoActual = estado;
+		//estadoActual = estado;
 
 		maya->getMaterial(0).EmissiveColor.set(0, 0, 200, 150);
 		break;
 
 	case 1: //patrullar
-		estadoActual = estado;
+		//estadoActual = estado;
 		maya->getMaterial(0).EmissiveColor.set(0, 125, 0, 200);
 		break;
 
 	case 2: //atacar
-		estadoActual = estado;
+		//estadoActual = estado;
 		maya->getMaterial(0).EmissiveColor.set(0, 255, 175, 0);
 		break;
 

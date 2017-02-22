@@ -298,7 +298,7 @@ void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2Wor
 	//        enemigos.push_back(ene);
 }
 
-void Escenario::actualizarListaEnemigos(int estado) {
+void Escenario::actualizarListaEnemigos() {
 
 	if (!enemigos.empty()) {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
@@ -318,7 +318,7 @@ void Escenario::actualizarListaEnemigos(int estado) {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end(); it++) {
 			if ((*it) != NULL && (*it)->estaVivo() == true) {
 
-				(*it)->Update(estado);
+				(*it)->Update();
 			}
 		}
 	}

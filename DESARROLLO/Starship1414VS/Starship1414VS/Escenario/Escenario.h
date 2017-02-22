@@ -87,8 +87,7 @@ public:
 	std::list<Escenario::Elemento> getSubHijos();
 	void removeListHijos();
 	void removeListSubHijos();
-	void fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
-	void actualizarListaEnemigos(int estado);
+	void actualizarListaEnemigos();
 	void spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
 	std::list<Pared*> getParedes();
 	int getTam();
