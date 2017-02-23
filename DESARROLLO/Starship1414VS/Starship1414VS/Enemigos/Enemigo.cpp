@@ -43,8 +43,9 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
     smgr1 = smgr;
     smgr->getGUIEnvironment()->clear();
 	//puntoIni.nombre, puntoFin.nombre = "indefinido"; //hecho para que solo se calcule una vez los nodos
-	puntoIni = NULL;
-	puntoFin = NULL;
+	puntoIni = nullptr;
+	puntoFin = nullptr;
+	
 
 
 }
@@ -110,6 +111,11 @@ bool Enemigo::estaVivo() {
 
 float Enemigo::getVida() {
     return vida;
+}
+
+void Enemigo::quitarVida(float damage) {
+
+
 }
 
 

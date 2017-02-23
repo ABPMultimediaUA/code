@@ -12,6 +12,8 @@
  */
 
 #include "CriaAlien.h"
+#include "Nodo.h"
+
 
 CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos) {
     
@@ -86,21 +88,46 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
 }
 
 void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
-    switch (estadoActual) {
+	int posNodo = 0;
+	switch (estadoActual) {
 
-        case 0: //descansar
-           // estadoActual = estado;
-
+        case DESCANSAR: //descansar
+          
+			
+				
+			posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
+			puntoIni = waypoints->getNodoX(posNodo);
+			std::cout << std::endl;
+			std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
+			
             maya->getMaterial(0).EmissiveColor.set(0, 0, 200, 10);
+			estadoActual = PATRULLAR;
             break;
 
-        case 1: //patrullar
-           // estadoActual = estado;
+        case PATRULLAR: //patrullar
+          
             maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
+			if(puntoFin == nullptr) {
+
+				posNodo = path->buscarWaypointMasCorto(posNodo);
+				puntoFin = waypoints->getNodoX(posNodo);
+				std::cout << std::endl;
+				std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;
+			}
+
+			else {
+				
+				/*std::cout << std::endl;
+				std::cout << "A MOVERSE" << std::endl;*/
+			}
+
+			/*std::cout << std::endl;
+			std::cout << "PATRULLO PREMO!" << std::endl;
+			std::cout << std::endl;*/
             break;
 
-        case 2: //atacar
-            //estadoActual = estado;
+        case ATACAR: //atacar
+           
             maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 0);
             break;
 

@@ -31,7 +31,9 @@ class Nodo;
 
 #define DESCANSAR 0
 #define PATRULLAR 1
-#define ATACAR 2
+#define ALERTA 2
+#define ATACAR 3
+
 
 
 
