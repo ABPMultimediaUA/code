@@ -2,15 +2,24 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
+      <df name=".vs">
+        <df name="ArquitecturaXComponentes vs">
+          <df name="v15">
+          </df>
+        </df>
+      </df>
       <df name="entitySystem">
         <df name="components">
           <in>balaComponent.cpp</in>
           <in>balaComponent.h</in>
+          <in>camaraComponent.cpp</in>
+          <in>camaraComponent.h</in>
           <in>cargadorComponent.cpp</in>
           <in>cargadorComponent.h</in>
           <in>colisionComponent.cpp</in>
           <in>colisionComponent.h</in>
           <in>componente.cpp</in>
+          <in>componente.h</in>
           <in>escenarioComponent.cpp</in>
           <in>escenarioComponent.h</in>
           <in>handleMoverComponent.cpp</in>
@@ -19,8 +28,24 @@
           <in>healthComponent.h</in>
           <in>playerComponent.cpp</in>
           <in>playerComponent.h</in>
+          <in>renderComponent.cpp</in>
+          <in>renderComponent.h</in>
+          <in>stateMachineComponent.cpp</in>
+          <in>stateMachineComponent.h</in>
+          <in>transformComponent.cpp</in>
+          <in>transformComponent.h</in>
+          <in>velocityComponent.cpp</in>
+          <in>velocityComponent.h</in>
         </df>
         <df name="framework">
+          <in>diccionarioEnCo.cpp</in>
+          <in>diccionarioEnCo.h</in>
+          <in>entityManager.cpp</in>
+          <in>entityManager.h</in>
+          <in>gameEntity.cpp</in>
+          <in>gameEntity.h</in>
+          <in>vectorEntity.cpp</in>
+          <in>vectorEntity.h</in>
         </df>
         <df name="systems">
           <in>accionsSystem.cpp</in>
@@ -31,8 +56,14 @@
           <in>disparoSystem.h</in>
           <in>handleMoverSystem.cpp</in>
           <in>handleMoverSystem.h</in>
+          <in>moveSystem.cpp</in>
+          <in>moveSystem.h</in>
+          <in>playerSystem.cpp</in>
+          <in>playerSystem.h</in>
           <in>rotarSystem.cpp</in>
           <in>rotarSystem.h</in>
+          <in>system.cpp</in>
+          <in>system.h</in>
         </df>
       </df>
       <df name="facade">
@@ -204,113 +235,6 @@
             <df name="Win32-VisualStudio">
             </df>
             <df name="Win64-VisualStudio">
-            </df>
-          </df>
-          <df name="doc">
-            <df name="docu">
-              <df name="search">
-              </df>
-            </df>
-            <df name="html">
-              <df name="search">
-              </df>
-            </df>
-          </df>
-          <df name="examples">
-            <df name="01.HelloWorld">
-              <in>main.cpp</in>
-            </df>
-            <df name="02.Quake3Map">
-              <in>main.cpp</in>
-            </df>
-            <df name="03.CustomSceneNode">
-              <in>main.cpp</in>
-            </df>
-            <df name="04.Movement">
-              <in>main.cpp</in>
-            </df>
-            <df name="05.UserInterface">
-              <in>main.cpp</in>
-            </df>
-            <df name="06.2DGraphics">
-              <in>main.cpp</in>
-            </df>
-            <df name="07.Collision">
-              <in>main.cpp</in>
-            </df>
-            <df name="08.SpecialFX">
-              <in>main.cpp</in>
-            </df>
-            <df name="09.Meshviewer">
-              <in>main.cpp</in>
-              <in>resource.h</in>
-            </df>
-            <df name="10.Shaders">
-              <in>main.cpp</in>
-            </df>
-            <df name="11.PerPixelLighting">
-              <in>main.cpp</in>
-            </df>
-            <df name="12.TerrainRendering">
-              <in>main.cpp</in>
-            </df>
-            <df name="13.RenderToTexture">
-              <in>main.cpp</in>
-            </df>
-            <df name="14.Win32Window">
-              <in>main.cpp</in>
-            </df>
-            <df name="15.LoadIrrFile">
-              <in>main.cpp</in>
-            </df>
-            <df name="16.Quake3MapShader">
-              <in>main.cpp</in>
-            </df>
-            <df name="17.HelloWorld_Mobile">
-              <in>main.cpp</in>
-            </df>
-            <df name="18.SplitScreen">
-              <in>main.cpp</in>
-            </df>
-            <df name="19.MouseAndJoystick">
-              <in>main.cpp</in>
-            </df>
-            <df name="20.ManagedLights">
-              <in>main.cpp</in>
-            </df>
-            <df name="21.Quake3Explorer">
-              <in>main.cpp</in>
-              <in>q3factory.cpp</in>
-              <in>q3factory.h</in>
-              <in>sound.cpp</in>
-              <in>sound.h</in>
-            </df>
-            <df name="22.MaterialViewer">
-              <in>main.cpp</in>
-            </df>
-            <df name="23.SMeshHandling">
-              <in>main.cpp</in>
-            </df>
-            <df name="24.CursorControl">
-              <in>main.cpp</in>
-            </df>
-            <df name="25.XmlHandling">
-              <df name=".objs">
-              </df>
-              <in>main.cpp</in>
-            </df>
-            <df name="26.OcclusionQuery">
-              <in>main.cpp</in>
-            </df>
-            <df name="BuildAllExamples.MacOSX">
-            </df>
-            <df name="Demo">
-              <in>CDemo.cpp</in>
-              <in>CDemo.h</in>
-              <in>CMainMenu.cpp</in>
-              <in>CMainMenu.h</in>
-              <in>main.cpp</in>
-              <in>resource.h</in>
             </df>
           </df>
           <df name="include">
@@ -498,10 +422,6 @@
             <in>vector3d.h</in>
           </df>
           <df name="lib">
-            <df name="Linux">
-            </df>
-            <df name="MacOSX">
-            </df>
             <df name="Win32-gcc">
             </df>
             <df name="Win32-visualstudio">

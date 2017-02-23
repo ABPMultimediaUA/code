@@ -70,6 +70,7 @@ private:
 	int idenSh;
 	bool live;
 	void* objeto3D;
+	IMeshSceneNode* radioAtaque;
 
 };
 

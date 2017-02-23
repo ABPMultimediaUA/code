@@ -1,0 +1,10 @@
+﻿  glm.cpp
+d:\documentos\github\code\desarrollo\[tag]graphicengine\[tag]graphicengine\tools\glm\detail\glm.cpp(4): fatal error C1083: No se puede abrir el archivo incluir: 'glm/glm.hpp': No such file or directory
+  dummy.cpp
+  main.cpp
+  TTransform.cpp
+  TNodo.cpp
+  TMalla.cpp
+  TLuz.cpp
+  TCamara.cpp
+  Generando código...

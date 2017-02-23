@@ -197,6 +197,11 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, I
 	fisica2->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
 	fisica2->getMaterial(0).EmissiveColor.set(0, 100, 10, 100);
 	fisica2->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
+	this->radioAtaque = smgr->addSphereSceneNode(100);
+	this->radioAtaque->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
+	this->radioAtaque->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
+	this->radioAtaque->getMaterial(0).EmissiveColor.set(50, 200, 20, 200);
+	this->radioAtaque->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
 
 	iden = 4;
 	objeto3D = dirEnemigo;
