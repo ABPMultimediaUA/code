@@ -21,6 +21,7 @@ public:
 	void desapilar();
 	void beginDraw();
 	void endDraw();
+
 private:
 	glm::mat4 matriz;
 	static std::stack<glm::mat4> pilaMatrices;
