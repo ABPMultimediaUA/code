@@ -49,7 +49,7 @@ public:
 	virtual ~Enemigo();
 
 	virtual void Update();
-	virtual void Mover(int modo, f32 dt);
+	virtual void Mover(int modo);
 	void setVelocidad();
 	virtual void Patrullar();
 	void setPos(vector3df pos);
@@ -78,6 +78,8 @@ protected:
 	Waypoints *waypoints;
 	AStar *path;
 	Nodo *puntoIni, *puntoFin;
+	int dir, posNodo;
+	
 };
 
 #endif /* ENEMIGO_H */

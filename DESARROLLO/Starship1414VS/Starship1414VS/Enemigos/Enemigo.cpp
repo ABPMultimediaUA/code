@@ -45,7 +45,7 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
 	//puntoIni.nombre, puntoFin.nombre = "indefinido"; //hecho para que solo se calcule una vez los nodos
 	puntoIni = nullptr;
 	puntoFin = nullptr;
-	
+	dir = -1;
 
 
 }
@@ -71,7 +71,7 @@ Enemigo::~Enemigo() {
 void Enemigo::Update() {
 }
 
-void Enemigo::Mover(int modo, f32 dt) {
+void Enemigo::Mover(int modo) {
 
 }
 

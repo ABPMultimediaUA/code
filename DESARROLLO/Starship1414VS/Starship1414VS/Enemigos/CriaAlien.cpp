@@ -88,20 +88,40 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
 }
 
 void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
-	int posNodo = 0;
+	
+	
 	switch (estadoActual) {
 
         case DESCANSAR: //descansar
           
+			maya->getMaterial(0).EmissiveColor.set(0, 0, 200, 10);
 			
+			if (puntoIni == nullptr) {
+				posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
+				puntoIni = waypoints->getNodoX(posNodo);	
 				
-			posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
-			puntoIni = waypoints->getNodoX(posNodo);
-			std::cout << std::endl;
+				std::cout << std::endl;
 			std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
+			std::cout << "POS NODO: " << posNodo << std::endl;
+			}
+		
+            
 			
-            maya->getMaterial(0).EmissiveColor.set(0, 0, 200, 10);
-			estadoActual = PATRULLAR;
+			
+				dir = path->getDireccion(pos, puntoIni->getPosicion());
+				/*std::cout << std::endl;
+				std::cout << "DIR: " << dir << std::endl;
+				std::cout << std::endl;*/
+
+				this->Mover(dir);
+
+				if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
+					estadoActual = PATRULLAR;
+					dir = -1;
+					this->setVelocidad();
+					
+				}
+
             break;
 
         case PATRULLAR: //patrullar
@@ -113,12 +133,27 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
 				puntoFin = waypoints->getNodoX(posNodo);
 				std::cout << std::endl;
 				std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;
+				
 			}
 
 			else {
+				maya->getMaterial(0).EmissiveColor.set(0, 15, 150, 200);
+
 				
-				/*std::cout << std::endl;
-				std::cout << "A MOVERSE" << std::endl;*/
+				dir = path->getDireccion(pos, puntoFin->getPosicion());
+				this->Mover(dir);
+				if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
+					dir = -1;
+					this->setVelocidad();
+					puntoIni = puntoFin;
+					puntoFin = nullptr;
+					
+					/*posNodo = path->buscarWaypointMasCorto(posNodo);
+					puntoFin = waypoints->getNodoX(posNodo);*/
+
+				}
+				
+
 			}
 
 			/*std::cout << std::endl;
@@ -134,7 +169,126 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
     }
 }
 
-void CriaAlien::Mover(int modo, f32 dt) {
+void CriaAlien::Mover(int modo) {
+
+	switch (modo) {
+
+	case 0:
+		/* std::cout<<"case 0: Sntes"<<std::endl;
+		std::cout<<"Pos X: "<<pos.X<<std::endl;
+		std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
+		// body->ApplyForceToCenter(b2Vec2(5.0,0.0), true);
+
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
+		 entity->getSombraE2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
+		pos.X = entity->getCuerpo2D()->GetPosition().x;
+
+		/* std::cout<<"Des"<<std::endl;
+		std::cout<<"Pos X: "<<pos.X<<std::endl;
+		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
+
+		break;
+
+	case 1:
+
+		/*  std::cout<<"case 1: Sntes"<<std::endl;
+		std::cout<<"Pos X: "<<pos.X<<std::endl;
+		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
+
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+		  entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+		pos.X = entity->getCuerpo2D()->GetPosition().x;
+
+
+		/*std::cout<<"Des"<<std::endl;
+		std::cout<<"Pos X: "<<pos.X<<std::endl;
+		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
+
+		break;
+
+	case 2:
+
+		/*   std::cout<<"case 2: Sntes"<<std::endl;
+		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
+		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
+
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
+		 entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
+		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+
+
+		/*  std::cout<<"Des"<<std::endl;
+		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
+		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
+
+		break;
+
+	case 3:
+
+		/*   std::cout<<"case 3: Sntes"<<std::endl;
+		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
+		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
+
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
+		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
+		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+
+		/* std::cout<<"Des"<<std::endl;
+		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
+		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
+
+
+		break;
+
+		//W+D
+	case 4:
+
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, vel));
+		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(vel, vel));
+		pos.X = entity->getCuerpo2D()->GetPosition().x;
+		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+
+
+		break;
+
+		//D+S
+	case 5:
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, -vel));
+		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(vel, -vel));
+		pos.X = entity->getCuerpo2D()->GetPosition().x;
+		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		break;
+
+		//A+S
+	case 6:
+
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
+		 entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
+		pos.X = entity->getCuerpo2D()->GetPosition().x;
+		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+
+		break;
+
+		//A+W
+	case 7:
+
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, vel));
+		 entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, vel));
+		pos.X = entity->getCuerpo2D()->GetPosition().x;
+		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+
+		break;
+
+	}
+	//    std::cout<<"//////////////////////////////////////////"<<std::endl;
+	//            std::cout<<""<<std::endl;
+	//            std::cout<<"POS PERS DESPUES"<<std::endl;
+	//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
+	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+
+
+	setPos(pos);
+
 
 }
 

@@ -61,7 +61,7 @@ void AlienBerserker::Update()
 	}
 }
 
-void AlienBerserker::Mover(int modo, f32 dt)
+void AlienBerserker::Mover(int modo)
 {
 
 }

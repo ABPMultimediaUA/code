@@ -18,8 +18,9 @@ public:
 	AStar(float** matrix, int tam);
 	~AStar();
 	int buscarWaypointCercano(const vector3df &posEne, const std::vector<Nodo*> &vecNodos);
-	int buscarWaypointMasCorto(int posNodoIni);
-	int getDireccion(vector3df posEne, vector3df posNodo); //ver hacia donde tiene que ir
+	int buscarWaypointMasCorto(const int &posNodoIni);
+	int getDireccion(const vector3df &posEne, const vector3df &posNodo); //ver hacia donde tiene que ir
+	bool estoyEnElNodo(const vector3df &posEne, const vector3df &posNodo);
 	
 
 private:
