@@ -87,7 +87,7 @@ void Waypoints::creaPesos(Entity2D *entity) {
 
 
 
-				if(weight <=tamDelMapa * 0.4 ) {
+				if(weight <=tamDelMapa * 0.01 ) {
 					 f = entity->rayCasting(b2Vec2(puntos[i]->getPosicion().X, puntos[i]->getPosicion().Z), b2Vec2(puntos[j]->getPosicion().X, puntos[j]->getPosicion().Z));
 
 					 if(f != 0.0f) {

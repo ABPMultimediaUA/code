@@ -71,6 +71,7 @@ private:
 	std::list<Enemigo*> enemigos;
 	std::list<Pared*> paredes;
 	int tam;
+	Entity2D *entity;
 
 public:
 	Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world);

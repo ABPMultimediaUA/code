@@ -31,9 +31,9 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     estadoActual = DESCANSAR;
     raza = CRIA;
     blindaje = 0.0f;
-    nav = new navmeshes(10, esce);
+   // nav = new navmeshes(10, esce);
         waypoints = puntos;
-    waypoints->creaPesos(entity);
+   // waypoints->creaPesos(entity);
 
 	waypoints->mostrarPesos();
 
@@ -46,7 +46,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     //    nav->muestraGrafo();
   //  std::cout << "COLISIONES" << std::endl;
    // std::cout << "" << std::endl;
-    nav->setColisiones(esce->getParedes());
+   // nav->setColisiones(esce->getParedes());
     //nav->muestraGrafo();
 	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
 
@@ -121,7 +121,7 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
 					this->setVelocidad();
 					
 				}
-
+				
             break;
 
         case PATRULLAR: //patrullar

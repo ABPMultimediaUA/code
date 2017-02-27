@@ -1,21 +1,5 @@
 ﻿  CriaAlien.cpp
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(76): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(83): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
-  Generando código...
-  Compilando...
-  Enemigo.cpp
-  Generando código...
-  Omitiendo... (no se detectaron cambios relevantes)
-  main.cpp
-  Personaje.cpp
-  Bala.cpp
-  Juego.cpp
-  MyContactFilter.cpp
-  MiContactListener.cpp
-  Entity2D.cpp
-  readJson.cpp
-  Escenario.cpp
-  navmeshes.cpp
-  AlienBerserker.cpp
-  Starship1414VS.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
-  Starship1414VS.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(76): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(83): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
+  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
+  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

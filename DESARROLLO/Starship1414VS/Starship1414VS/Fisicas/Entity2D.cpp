@@ -13,6 +13,7 @@
 #include <iostream>
 #include "Entity2D.h"
 #include "../Enemigos/Enemigo.h"
+#include "RayCastCallback.h"
 
 #define FILTRO_PERSONAJE 1
 #define FILTRO_PARED 2
@@ -29,6 +30,31 @@
 
 //hacer diferentes constructores para los distintos objetos
 //constructor personaje
+
+Entity2D::Entity2D(b2World * world)
+{
+
+	bodyDef.type = b2_dynamicBody;
+	bodyDef.position.Set(-99999999, -99999999);
+	bodyShape.SetAsBox(5.0f, 5.0f);
+	md.mass = 50.0f;
+	md.center = b2Vec2(3, 3);
+	md.I = 0.0f;
+	body = world->CreateBody(&bodyDef);
+	body->CreateFixture(&bodyShape, 1.0f);
+	body->GetFixtureList()->SetFriction(10.0f);
+	body->SetUserData(this);
+	body->SetMassData(&md);
+	body->GetFixtureList()->SetSensor(true);
+	filtro.groupIndex = FILTRO_PUERTAABIERTA;
+	body->GetFixtureList()->SetFilterData(filtro);
+
+
+
+	iden = 0;
+	objeto3D = 0;
+
+}
 
 Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* smgr) {
 

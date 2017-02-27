@@ -1,31 +1,99 @@
--<-<-<-<-<-<-<-<-<-<-<-<
-waypoint1 1
--<-<-<-<-<-<-<-<-<-<-<-<
--<-<-<-<-<-<-<-<-<-<-<-<
-waypoint1 2
-waypoint2 2
--<-<-<-<-<-<-<-<-<-<-<-<
--<-<-<-<-<-<-<-<-<-<-<-<
-waypoint1 3
-waypoint2 3
-waypoint3 3
--<-<-<-<-<-<-<-<-<-<-<-<
 //////////////////////////////////////////
 SOY ALGO DISTINTO A UNA PARED
 ///////////////////////
-waypoint1
+Punto1
 I: 0J: 1
-waypoint2
+Punto2
 F = 0
-PESO: 99.6
-//////////////////////////////////////////
-SOY ALGO DISTINTO A UNA PARED
+PESO: 298.027
 ///////////////////////
-waypoint1
+Punto1
 I: 0J: 2
-waypoint3
+Punto3
+F = -1
+PESO: -1
+///////////////////////
+Punto1
+I: 0J: 3
+Punto4
+F = -1
+PESO: -1
+///////////////////////
+Punto1
+I: 0J: 4
+Punto5
+F = -1
+PESO: -1
+///////////////////////
+Punto1
+I: 0J: 5
+Punto6
+F = -1
+PESO: -1
+///////////////////////
+Punto1
+I: 0J: 6
+Punto7
+F = -1
+PESO: -1
+///////////////////////
+Punto1
+I: 0J: 7
+Punto8
+F = -1
+PESO: -1
+///////////////////////
+Punto1
+I: 0J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto1
+I: 0J: 9
+Punto10
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto1
+I: 0J: 10
+Punto11
 F = 0
-PESO: 136.771
+PESO: 485.001
+///////////////////////
+Punto1
+I: 0J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto1
+I: 0J: 12
+Punto13
+F = -1
+PESO: -1
+///////////////////////
+Punto1
+I: 0J: 13
+Punto14
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto1
+I: 0J: 14
+Punto15
+F = 0
+PESO: 502.864
+///////////////////////
+Punto1
+I: 0J: 15
+Punto16
+F = -1
+PESO: -1
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -37,19 +105,925 @@ Posicion de la Entity X: 0Y: 0
 //////////////////////////////////////////
 SOY ALGO DISTINTO A UNA PARED
 ///////////////////////
-waypoint2
+Punto2
 I: 1J: 0
-waypoint1
+Punto1
 F = 0
-PESO: 99.6
+PESO: 298.027
 //////////////////////////////////////////
 SOY ALGO DISTINTO A UNA PARED
 ///////////////////////
-waypoint2
+Punto2
 I: 1J: 2
-waypoint3
+Punto3
 F = 0
-PESO: 198.05
+PESO: 497.001
+///////////////////////
+Punto2
+I: 1J: 3
+Punto4
+F = -1
+PESO: -1
+///////////////////////
+Punto2
+I: 1J: 4
+Punto5
+F = -1
+PESO: -1
+///////////////////////
+Punto2
+I: 1J: 5
+Punto6
+F = -1
+PESO: -1
+///////////////////////
+Punto2
+I: 1J: 6
+Punto7
+F = -1
+PESO: -1
+///////////////////////
+Punto2
+I: 1J: 7
+Punto8
+F = -1
+PESO: -1
+///////////////////////
+Punto2
+I: 1J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto2
+I: 1J: 9
+Punto10
+F = -1
+PESO: -1
+///////////////////////
+Punto2
+I: 1J: 10
+Punto11
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto2
+I: 1J: 11
+Punto12
+F = 0
+PESO: 502.482
+///////////////////////
+Punto2
+I: 1J: 12
+Punto13
+F = -1
+PESO: -1
+///////////////////////
+Punto2
+I: 1J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto2
+I: 1J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto2
+I: 1J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto3
+I: 2J: 0
+Punto1
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto3
+I: 2J: 1
+Punto2
+F = 0
+PESO: 497.001
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto3
+I: 2J: 3
+Punto4
+F = 0
+PESO: 397.011
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto3
+I: 2J: 4
+Punto5
+F = 0
+PESO: 499.004
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto3
+I: 2J: 5
+Punto6
+F = 0
+PESO: 371.614
+///////////////////////
+Punto3
+I: 2J: 6
+Punto7
+F = -1
+PESO: -1
+///////////////////////
+Punto3
+I: 2J: 7
+Punto8
+F = -1
+PESO: -1
+///////////////////////
+Punto3
+I: 2J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto3
+I: 2J: 9
+Punto10
+F = -1
+PESO: -1
+///////////////////////
+Punto3
+I: 2J: 10
+Punto11
+F = -1
+PESO: -1
+///////////////////////
+Punto3
+I: 2J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto3
+I: 2J: 12
+Punto13
+F = -1
+PESO: -1
+///////////////////////
+Punto3
+I: 2J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto3
+I: 2J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto3
+I: 2J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 0
+Punto1
+F = -1
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 1
+Punto2
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto4
+I: 3J: 2
+Punto3
+F = 0
+PESO: 397.011
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto4
+I: 3J: 4
+Punto5
+F = 0
+PESO: 298.002
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto4
+I: 3J: 5
+Punto6
+F = 0
+PESO: 466.194
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 2
+Posicion de la Entity X: -1250Y: -20
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -1110Y: 140
+//////////////////////////////////////////
+
+///////////////////////
+Punto4
+I: 3J: 6
+Punto7
+F = 0.477492
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 7
+Punto8
+F = -1
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 9
+Punto10
+F = -1
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 10
+Punto11
+F = -1
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 12
+Punto13
+F = -1
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto4
+I: 3J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto5
+I: 4J: 0
+Punto1
+F = -1
+PESO: -1
+///////////////////////
+Punto5
+I: 4J: 1
+Punto2
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto5
+I: 4J: 2
+Punto3
+F = 0
+PESO: 499.004
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto5
+I: 4J: 3
+Punto4
+F = 0
+PESO: 298.002
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto5
+I: 4J: 5
+Punto6
+F = 0
+PESO: 307.519
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 2
+Posicion de la Entity X: -1250Y: -20
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto5
+I: 4J: 6
+Punto7
+F = 0
+PESO: 270.313
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto5
+I: 4J: 7
+Punto8
+F = 0
+PESO: 290.084
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto5
+I: 4J: 8
+Punto9
+F = 0
+PESO: 425
+///////////////////////
+Punto5
+I: 4J: 9
+Punto10
+F = -1
+PESO: -1
+///////////////////////
+Punto5
+I: 4J: 10
+Punto11
+F = -1
+PESO: -1
+///////////////////////
+Punto5
+I: 4J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto5
+I: 4J: 12
+Punto13
+F = -1
+PESO: -1
+///////////////////////
+Punto5
+I: 4J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto5
+I: 4J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto5
+I: 4J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto6
+I: 5J: 0
+Punto1
+F = -1
+PESO: -1
+///////////////////////
+Punto6
+I: 5J: 1
+Punto2
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto6
+I: 5J: 2
+Punto3
+F = 0
+PESO: 371.614
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto6
+I: 5J: 3
+Punto4
+F = 0
+PESO: 466.194
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto6
+I: 5J: 4
+Punto5
+F = 0
+PESO: 307.519
+///////////////////////
+Punto6
+I: 5J: 6
+Punto7
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto6
+I: 5J: 7
+Punto8
+F = 0
+PESO: 375.299
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto6
+I: 5J: 8
+Punto9
+F = 0
+PESO: 239.008
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto6
+I: 5J: 9
+Punto10
+F = 0
+PESO: 514.65
+///////////////////////
+Punto6
+I: 5J: 10
+Punto11
+F = -1
+PESO: -1
+///////////////////////
+Punto6
+I: 5J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto6
+I: 5J: 12
+Punto13
+F = -1
+PESO: -1
+///////////////////////
+Punto6
+I: 5J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto6
+I: 5J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto6
+I: 5J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto7
+I: 6J: 0
+Punto1
+F = -1
+PESO: -1
+///////////////////////
+Punto7
+I: 6J: 1
+Punto2
+F = -1
+PESO: -1
+///////////////////////
+Punto7
+I: 6J: 2
+Punto3
+F = -1
+PESO: -1
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -1110Y: 140
+//////////////////////////////////////////
+
+///////////////////////
+Punto7
+I: 6J: 3
+Punto4
+F = 0.474277
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto7
+I: 6J: 4
+Punto5
+F = 0
+PESO: 270.313
+///////////////////////
+Punto7
+I: 6J: 5
+Punto6
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto7
+I: 6J: 7
+Punto8
+F = 0
+PESO: 391.737
+///////////////////////
+Punto7
+I: 6J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto7
+I: 6J: 9
+Punto10
+F = -1
+PESO: -1
+///////////////////////
+Punto7
+I: 6J: 10
+Punto11
+F = -1
+PESO: -1
+///////////////////////
+Punto7
+I: 6J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto7
+I: 6J: 12
+Punto13
+F = -1
+PESO: -1
+///////////////////////
+Punto7
+I: 6J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto7
+I: 6J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto7
+I: 6J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto8
+I: 7J: 0
+Punto1
+F = -1
+PESO: -1
+///////////////////////
+Punto8
+I: 7J: 1
+Punto2
+F = -1
+PESO: -1
+///////////////////////
+Punto8
+I: 7J: 2
+Punto3
+F = -1
+PESO: -1
+///////////////////////
+Punto8
+I: 7J: 3
+Punto4
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto8
+I: 7J: 4
+Punto5
+F = 0
+PESO: 290.084
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto8
+I: 7J: 5
+Punto6
+F = 0
+PESO: 375.299
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 2
+Posicion de la Entity X: -1250Y: -20
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto8
+I: 7J: 6
+Punto7
+F = 0
+PESO: 391.737
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto8
+I: 7J: 8
+Punto9
+F = 0
+PESO: 297.082
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto8
+I: 7J: 9
+Punto10
+F = 0
+PESO: 297.214
+///////////////////////
+Punto8
+I: 7J: 10
+Punto11
+F = -1
+PESO: -1
+///////////////////////
+Punto8
+I: 7J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto8
+I: 7J: 12
+Punto13
+F = -1
+PESO: -1
+///////////////////////
+Punto8
+I: 7J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto8
+I: 7J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto8
+I: 7J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto9
+I: 8J: 0
+Punto1
+F = -1
+PESO: -1
+///////////////////////
+Punto9
+I: 8J: 1
+Punto2
+F = -1
+PESO: -1
+///////////////////////
+Punto9
+I: 8J: 2
+Punto3
+F = -1
+PESO: -1
+///////////////////////
+Punto9
+I: 8J: 3
+Punto4
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto9
+I: 8J: 4
+Punto5
+F = 0
+PESO: 425
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto9
+I: 8J: 5
+Punto6
+F = 0
+PESO: 239.008
+///////////////////////
+Punto9
+I: 8J: 6
+Punto7
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto9
+I: 8J: 7
+Punto8
+F = 0
+PESO: 297.082
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto9
+I: 8J: 9
+Punto10
+F = 0
+PESO: 295.665
+///////////////////////
+Punto9
+I: 8J: 10
+Punto11
+F = -1
+PESO: -1
+///////////////////////
+Punto9
+I: 8J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto9
+I: 8J: 12
+Punto13
+F = -1
+PESO: -1
+///////////////////////
+Punto9
+I: 8J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto9
+I: 8J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto9
+I: 8J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto10
+I: 9J: 0
+Punto1
+F = -1
+PESO: -1
+///////////////////////
+Punto10
+I: 9J: 1
+Punto2
+F = -1
+PESO: -1
+///////////////////////
+Punto10
+I: 9J: 2
+Punto3
+F = -1
+PESO: -1
+///////////////////////
+Punto10
+I: 9J: 3
+Punto4
+F = -1
+PESO: -1
+///////////////////////
+Punto10
+I: 9J: 4
+Punto5
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto10
+I: 9J: 5
+Punto6
+F = 0
+PESO: 514.65
+///////////////////////
+Punto10
+I: 9J: 6
+Punto7
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto10
+I: 9J: 7
+Punto8
+F = 0
+PESO: 297.214
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto10
+I: 9J: 8
+Punto9
+F = 0
+PESO: 295.665
+///////////////////////
+Punto10
+I: 9J: 10
+Punto11
+F = -1
+PESO: -1
+///////////////////////
+Punto10
+I: 9J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto10
+I: 9J: 12
+Punto13
+F = -1
+PESO: -1
+///////////////////////
+Punto10
+I: 9J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto10
+I: 9J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto10
+I: 9J: 15
+Punto16
+F = -1
+PESO: -1
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -61,256 +1035,636 @@ Posicion de la Entity X: 0Y: 0
 //////////////////////////////////////////
 SOY ALGO DISTINTO A UNA PARED
 ///////////////////////
-waypoint3
-I: 2J: 0
-waypoint1
+Punto11
+I: 10J: 0
+Punto1
 F = 0
-PESO: 136.771
+PESO: 485.001
+///////////////////////
+Punto11
+I: 10J: 1
+Punto2
+F = -1
+PESO: -1
+///////////////////////
+Punto11
+I: 10J: 2
+Punto3
+F = -1
+PESO: -1
+///////////////////////
+Punto11
+I: 10J: 3
+Punto4
+F = -1
+PESO: -1
+///////////////////////
+Punto11
+I: 10J: 4
+Punto5
+F = -1
+PESO: -1
+///////////////////////
+Punto11
+I: 10J: 5
+Punto6
+F = -1
+PESO: -1
+///////////////////////
+Punto11
+I: 10J: 6
+Punto7
+F = -1
+PESO: -1
+///////////////////////
+Punto11
+I: 10J: 7
+Punto8
+F = -1
+PESO: -1
+///////////////////////
+Punto11
+I: 10J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto11
+I: 10J: 9
+Punto10
+F = -1
+PESO: -1
 //////////////////////////////////////////
 SOY ALGO DISTINTO A UNA PARED
 ///////////////////////
-waypoint3
-I: 2J: 1
-waypoint2
+Punto11
+I: 10J: 11
+Punto12
 F = 0
-PESO: 198.05
+PESO: 277.305
+///////////////////////
+Punto11
+I: 10J: 12
+Punto13
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto11
+I: 10J: 13
+Punto14
+F = 0
+PESO: 368.266
+///////////////////////
+Punto11
+I: 10J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto11
+I: 10J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto12
+I: 11J: 0
+Punto1
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto12
+I: 11J: 1
+Punto2
+F = 0
+PESO: 502.482
+///////////////////////
+Punto12
+I: 11J: 2
+Punto3
+F = -1
+PESO: -1
+///////////////////////
+Punto12
+I: 11J: 3
+Punto4
+F = -1
+PESO: -1
+///////////////////////
+Punto12
+I: 11J: 4
+Punto5
+F = -1
+PESO: -1
+///////////////////////
+Punto12
+I: 11J: 5
+Punto6
+F = -1
+PESO: -1
+///////////////////////
+Punto12
+I: 11J: 6
+Punto7
+F = -1
+PESO: -1
+///////////////////////
+Punto12
+I: 11J: 7
+Punto8
+F = -1
+PESO: -1
+///////////////////////
+Punto12
+I: 11J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto12
+I: 11J: 9
+Punto10
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto12
+I: 11J: 10
+Punto11
+F = 0
+PESO: 277.305
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 2
+Posicion de la Entity X: 850Y: 275
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 2
+Posicion de la Entity X: 850Y: 275
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto12
+I: 11J: 12
+Punto13
+F = 0
+PESO: 458.017
+///////////////////////
+Punto12
+I: 11J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto12
+I: 11J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto12
+I: 11J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 0
+Punto1
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 1
+Punto2
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 2
+Punto3
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 3
+Punto4
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 4
+Punto5
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 5
+Punto6
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 6
+Punto7
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 7
+Punto8
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 9
+Punto10
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 10
+Punto11
+F = -1
+PESO: -1
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 2
+Posicion de la Entity X: 850Y: 275
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 2
+Posicion de la Entity X: 850Y: 275
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto13
+I: 12J: 11
+Punto12
+F = 0
+PESO: 458.017
+///////////////////////
+Punto13
+I: 12J: 13
+Punto14
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 14
+Punto15
+F = -1
+PESO: -1
+///////////////////////
+Punto13
+I: 12J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 0
+Punto1
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 1
+Punto2
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 2
+Punto3
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 3
+Punto4
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 4
+Punto5
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 5
+Punto6
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 6
+Punto7
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 7
+Punto8
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 9
+Punto10
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto14
+I: 13J: 10
+Punto11
+F = 0
+PESO: 368.266
+///////////////////////
+Punto14
+I: 13J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto14
+I: 13J: 12
+Punto13
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto14
+I: 13J: 14
+Punto15
+F = 0
+PESO: 397.183
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto14
+I: 13J: 15
+Punto16
+F = 0
+PESO: 520.179
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 0
+Posicion de la Entity X: 0Y: 0
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto15
+I: 14J: 0
+Punto1
+F = 0
+PESO: 502.864
+///////////////////////
+Punto15
+I: 14J: 1
+Punto2
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 2
+Punto3
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 3
+Punto4
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 4
+Punto5
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 5
+Punto6
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 6
+Punto7
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 7
+Punto8
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 9
+Punto10
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 10
+Punto11
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto15
+I: 14J: 12
+Punto13
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto15
+I: 14J: 13
+Punto14
+F = 0
+PESO: 397.183
+///////////////////////
+Punto15
+I: 14J: 15
+Punto16
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 0
+Punto1
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 1
+Punto2
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 2
+Punto3
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 3
+Punto4
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 4
+Punto5
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 5
+Punto6
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 6
+Punto7
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 7
+Punto8
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 8
+Punto9
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 9
+Punto10
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 10
+Punto11
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 11
+Punto12
+F = -1
+PESO: -1
+///////////////////////
+Punto16
+I: 15J: 12
+Punto13
+F = -1
+PESO: -1
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+Punto16
+I: 15J: 13
+Punto14
+F = 0
+PESO: 520.179
+///////////////////////
+Punto16
+I: 15J: 14
+Punto15
+F = -1
+PESO: -1
 ///////////////////////////////
-(0, 99.6, 136.771, )
-(99.6, 0, 198.05, )
-(136.771, 198.05, 0, )
+(0, 298.027, -1, -1, -1, -1, -1, -1, -1, -1, 485.001, -1, -1, -1, 502.864, -1, )
+(298.027, 0, 497.001, -1, -1, -1, -1, -1, -1, -1, -1, 502.482, -1, -1, -1, -1, )
+(-1, 497.001, 0, 397.011, 499.004, 371.614, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, )
+(-1, -1, 397.011, 0, 298.002, 466.194, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, )
+(-1, -1, 499.004, 298.002, 0, 307.519, 270.313, 290.084, 425, -1, -1, -1, -1, -1, -1, -1, )
+(-1, -1, 371.614, 466.194, 307.519, 0, -1, 375.299, 239.008, 514.65, -1, -1, -1, -1, -1, -1, )
+(-1, -1, -1, -1, 270.313, -1, 0, 391.737, -1, -1, -1, -1, -1, -1, -1, -1, )
+(-1, -1, -1, -1, 290.084, 375.299, 391.737, 0, 297.082, 297.214, -1, -1, -1, -1, -1, -1, )
+(-1, -1, -1, -1, 425, 239.008, -1, 297.082, 0, 295.665, -1, -1, -1, -1, -1, -1, )
+(-1, -1, -1, -1, -1, 514.65, -1, 297.214, 295.665, 0, -1, -1, -1, -1, -1, -1, )
+(485.001, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 277.305, -1, 368.266, -1, -1, )
+(-1, 502.482, -1, -1, -1, -1, -1, -1, -1, -1, 277.305, 0, 458.017, -1, -1, -1, )
+(-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 458.017, 0, -1, -1, -1, )
+(-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 368.266, -1, -1, 0, 397.183, 520.179, )
+(502.864, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 397.183, 0, -1, )
+(-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 520.179, -1, 0, )
 ///////////////////////////////
-MOSTRANDO POSICION Y ESCALA
-//////////////////
----POSICION--- 1
-X: 0
-Y: 10
-Z: -250
-Negativo X 250
-Pos Matriz 25
-Negativo Z 0
-Pos Matriz -1
-Limite 50
-Escala X 50 Escala Y 2 Escala Z 0.5
-Escala1 25
-Escala2 250
-Escala3 25
----POSICION--- 2
-X: -250
-Y: 10
-Z: 0
-Negativo X 0
-Pos Matriz 0
-Negativo Z 250
-Pos Matriz 24
-Limite 50
-Escala X 50 Escala Y 2 Escala Z 0.5
-Escala1 25
-Escala2 250
-Escala3 49
----POSICION--- 3
-X: 250
-Y: 10
-Z: 0
-Negativo X 500
-Pos Matriz 50
-Negativo Z 250
-Pos Matriz 24
-Limite 50
-Escala X 50 Escala Y 2 Escala Z 0.5
-Escala1 25
-Escala2 250
-Escala3 49
----POSICION--- 4
-X: 0
-Y: 10
-Z: 250
-Negativo X 250
-Pos Matriz 25
-Negativo Z 500
-Pos Matriz 49
-Limite 50
-Escala X 50 Escala Y 2 Escala Z 0.5
-Escala1 25
-Escala2 250
-Escala3 74
----POSICION--- 5
-X: 150
-Y: 10
-Z: 150
-Negativo X 400
-Pos Matriz 40
-Negativo Z 400
-Pos Matriz 39
-Limite 50
-Escala X 20 Escala Y 2 Escala Z 0.5
-Escala1 10
-Escala2 100
-Escala3 49
----POSICION--- 6
-X: 133.4
-Y: 7
-Z: 235
-Negativo X 383.4
-Pos Matriz 38.34
-Negativo Z 485
-Pos Matriz 47.5
-Limite 50
-Escala X 3 Escala Y 2.5 Escala Z 3
-Escala1 1
-Escala2 10
-Escala3 48
----POSICION--- 7
-X: 106
-Y: 7
-Z: -235
-Negativo X 356
-Pos Matriz 35.6
-Negativo Z 15
-Pos Matriz 0.5
-Limite 50
-Escala X 3 Escala Y 1.5 Escala Z 3
-Escala1 1
-Escala2 10
-Escala3 1
----POSICION--- 8
-X: -151.3
-Y: 10
-Z: 100.3
-Negativo X 98.7
-Pos Matriz 9.87
-Negativo Z 350.3
-Pos Matriz 34.03
-Limite 50
-Escala X 20 Escala Y 2 Escala Z 0.5
-Escala1 10
-Escala2 100
-Escala3 44
----POSICION--- 9
-X: -50
-Y: 10
-Z: 148.8
-Negativo X 200
-Pos Matriz 20
-Negativo Z 398.8
-Pos Matriz 38.88
-Limite 50
-Escala X 10.2 Escala Y 2 Escala Z 0.5
-Escala1 5
-Escala2 50
-Escala3 43
----POSICION--- 10
-X: 150
-Y: 10
-Z: -149.3
-Negativo X 400
-Pos Matriz 40
-Negativo Z 100.7
-Pos Matriz 9.07
-Limite 50
-Escala X 20 Escala Y 2 Escala Z 0.5
-Escala1 10
-Escala2 100
-Escala3 19
----POSICION--- 11
-X: 90
-Y: 10
-Z: -49.2
-Negativo X 340
-Pos Matriz 34
-Negativo Z 200.8
-Pos Matriz 19.08
-Limite 50
-Escala X 12.5 Escala Y 2 Escala Z 0.5
-Escala1 6
-Escala2 60
-Escala3 25
----POSICION--- 12
-X: -90
-Y: 10
-Z: -49.2
-Negativo X 160
-Pos Matriz 16
-Negativo Z 200.8
-Pos Matriz 19.08
-Limite 50
-Escala X 12.5 Escala Y 2 Escala Z 0.5
-Escala1 6
-Escala2 60
-Escala3 25
----POSICION--- 13
-X: -150
-Y: 10
-Z: -150
-Negativo X 100
-Pos Matriz 10
-Negativo Z 100
-Pos Matriz 9
-Limite 50
-Escala X 20 Escala Y 2 Escala Z 0.5
-Escala1 10
-Escala2 100
-Escala3 19
-POS WAYPOINT INI: 2
+POS WAYPOINT INI: 0
 
-NOMBRE: waypoint3
-POS NODO: 2
-///////////////////////
-MATRIZ: 136.771
-MINIMO ANTES: 1e+07
-MINIMO DESPUES: 136.771
-I: 0
-///////////////////////
-///////////////////////
-MATRIZ: 198.05
-///////////////////////
-MATRIZ: 0
-POS WAYPOINT MAS CERCANO: 0
-
-NOMBRE DEL DESTINO: waypoint1
-///////////////////////
-MATRIZ: 0
-///////////////////////
-MATRIZ: 99.6
-MINIMO ANTES: 1e+07
-MINIMO DESPUES: 99.6
-I: 1
-///////////////////////
-///////////////////////
-MATRIZ: 136.771
-POS WAYPOINT MAS CERCANO: 1
-
-NOMBRE DEL DESTINO: waypoint2
-///////////////////////
-MATRIZ: 99.6
-MINIMO ANTES: 1e+07
-MINIMO DESPUES: 99.6
-I: 0
-///////////////////////
-///////////////////////
-MATRIZ: 0
-///////////////////////
-MATRIZ: 198.05
-POS WAYPOINT MAS CERCANO: 0
-
-NOMBRE DEL DESTINO: waypoint1
-///////////////////////
-MATRIZ: 0
-///////////////////////
-MATRIZ: 99.6
-MINIMO ANTES: 1e+07
-MINIMO DESPUES: 99.6
-I: 1
-///////////////////////
-///////////////////////
-MATRIZ: 136.771
-POS WAYPOINT MAS CERCANO: 1
-
-NOMBRE DEL DESTINO: waypoint2
+NOMBRE: Punto1
+POS NODO: 0
 Irrlicht Engine version 1.8.4
-Professional Edition  (Build 9200)
+ (Build 9200)
 Using renderer: OpenGL 4.5.0
-GeForce GTX 970/PCIe/SSE2: NVIDIA Corporation
+GeForce GT 720M/PCIe/SSE2: NVIDIA Corporation
 OpenGL driver version is 1.2 or better.
 GLSL version: 4.5
-Resizing window (1366 768)
-Loaded texture: C:/Users/David/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
+Resizing window (1366 745)
+Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
