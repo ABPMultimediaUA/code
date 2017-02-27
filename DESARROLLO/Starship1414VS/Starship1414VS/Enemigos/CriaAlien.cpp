@@ -25,7 +25,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
         maya->getMaterial(0).EmissiveColor.set(0, 128, 0, 20);
     }
 
-    vel = 20.0f;
+    vel = 50.0f;
     pos = maya->getPosition();
     entity = new Entity2D(world, pos, true, this, smgr);
     estadoActual = DESCANSAR;

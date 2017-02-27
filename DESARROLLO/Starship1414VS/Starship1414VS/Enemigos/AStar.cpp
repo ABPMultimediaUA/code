@@ -56,7 +56,7 @@ int AStar::buscarWaypointMasCorto(const int &posNodoIni)
 	for(int i = 0; i < tamMatrix; i++) {
 		std::cout << "///////////////////////" << std::endl;
 		std::cout << "MATRIZ: " << matriz[posNodoIni][i] << std::endl;
-		if(matriz[posNodoIni][i] != 0 && matriz[posNodoIni][i] < min) {
+		if(matriz[posNodoIni][i] != 0 && matriz[posNodoIni][i] != -1 && matriz[posNodoIni][i] < min) {
 			
 			std::cout << "MINIMO ANTES: " << min << std::endl;
 			

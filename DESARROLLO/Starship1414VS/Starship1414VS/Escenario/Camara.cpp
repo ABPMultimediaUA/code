@@ -19,7 +19,7 @@
 Camara::Camara(ISceneManager* smgr, vector3df posPers) {
 
 
-	smgr->addCameraSceneNode(0, vector3df(0, 70, -40), posPers);
+	smgr->addCameraSceneNode(0, vector3df(0, 90, -60), posPers);
 
 	camara = smgr->getActiveCamera();
 	posicion = camara->getPosition();
@@ -50,7 +50,7 @@ void Camara::actualizarCamara(vector3df posPers, vector3df rotPers, f32 dt) {
 	//    std::cout<<"X: "<<vecRel.X<<" Y: "<<vecRel.Y<<" Z: "<<vecRel.Z<<std::endl;
 	//    //vector3df newPos = (posPers + vecRel)*vel*dt;
 
-	vector3df newPos = newPos.set(posPers.X, 70, posPers.Z - 40);
+	vector3df newPos = newPos.set(posPers.X, 90, posPers.Z - 60);
 	//newPos.X = (posPers.X + vecRel.X);
 
 	// newPos.Z = (posPers.Z + vecRel.Z);
