@@ -1,16 +1,17 @@
 #include "TTransform.h"
-#include "..\tools\glm\vec3.hpp"
-#include "..\tools\glm\gtc\matrix_transform.hpp"
+#include <glm\vec3.hpp>
+#include <glm\gtc\matrix_transform.hpp>
+#include <iostream>
 
+std::stack<glm::mat4> TTransform::pilaMatrices;
+glm::mat4 TTransform::matrizActual;
 
-TTransform::TTransform()
-{
-
-}
+TTransform::TTransform(){}
 
 
 TTransform::~TTransform()
 {
+	std::cout << "TTransform destroyed" << std::endl;
 }
 
 glm::mat4 TTransform::identidad()
@@ -30,14 +31,17 @@ glm::mat4 TTransform::trasponer(glm::mat4 &m)
 
 void TTransform::trasladar(glm::mat4& m, float x, float y, float z)
 {
+	glm::translate(m, glm::vec3(x,y,z));
 }
 
 void TTransform::escalar(glm::mat4& m, float x, float y, float z)
 {
+	glm::scale(m, glm::vec3(x, y, z));
 }
 
-void TTransform::rotar(glm::mat4& m, float x, float y, float z, float r)
+void TTransform::rotar(glm::mat4& m, float r, float x, float y, float z)
 {
+	glm::rotate(m, r, glm::vec3(x, y, z));
 }
 
 glm::mat4 TTransform::multiplicarMatriz(const glm::mat4 &m1, const glm::mat4 &m2)

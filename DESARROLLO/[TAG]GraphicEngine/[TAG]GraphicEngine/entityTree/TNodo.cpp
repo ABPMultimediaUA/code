@@ -2,32 +2,55 @@
 #include <iostream>
 #include "TEntidad.h"
 
+int TNodo::id = 0;
+
 TNodo::TNodo()
 {
 	padre = nullptr;
 	entidad = nullptr;
+	idN = id++;
+}
+
+TNodo::TNodo(TEntidad *e)
+{
+	padre = nullptr;
+	if (e != nullptr) {
+		entidad = e;
+	}
+	else {
+		entidad = nullptr;
+	}
+	idN = id++;
 }
 
 
 TNodo::~TNodo()
 {
-	std::cout << "Nodo eliminado" << std::endl;
-	delete entidad;
-	for (std::vector<TNodo*>::iterator it = hijos.begin(); it != hijos.end(); ++it)
-	{
-		delete *it;
+	if(entidad != nullptr){
+		delete entidad;
+		entidad = nullptr;
 	}
+	/*if (hijos.size() > 0) {
+		for (std::vector<TNodo*>::iterator it = hijos.begin(); it != hijos.end(); ++it)
+		{
+			if(*it != nullptr){
+				delete *it;
+				hijos.erase(it);
+			}
+		}
+	}*/
+	std::cout << "Nodo eliminado" << std::endl;
 }
 
-int TNodo::addHijo(TNodo* n)
+bool TNodo::addHijo(TNodo* n)
 {
 	if (n != nullptr)
 	{
 		this->hijos.push_back(n);
 		n->setPadre(this);
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
 void TNodo::setPadre(TNodo* n)
@@ -64,8 +87,14 @@ TNodo* TNodo::getPadre()
 	return this->padre;
 }
 
+int TNodo::getID()
+{
+	return idN;
+}
+
 void TNodo::draw()
 {
+	std::cout << "Se dibuja nodo: " << idN<<std::endl;
 	if (this->entidad) {
 		this->entidad->beginDraw();
 	}
