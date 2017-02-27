@@ -117,6 +117,11 @@
     <ClCompile Include="entityTree\TNodo.cpp" />
     <ClCompile Include="entityTree\TTransform.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="resourceManager\TGestorRecursos.cpp" />
+    <ClCompile Include="resourceManager\TRecurso.cpp" />
+    <ClCompile Include="resourceManager\TRecursoMalla.cpp" />
+    <ClCompile Include="resourceManager\TRecursoMaterial.cpp" />
+    <ClCompile Include="resourceManager\TRecursoTextura.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="entityTree\TCamara.h" />
@@ -125,6 +130,7 @@
     <ClInclude Include="entityTree\TMalla.h" />
     <ClInclude Include="entityTree\TNodo.h" />
     <ClInclude Include="entityTree\TTransform.h" />
+    <ClInclude Include="resourceManager\TGestorRecursos.h" />
     <ClInclude Include="tools\glm\common.hpp" />
     <ClInclude Include="tools\glm\exponential.hpp" />
     <ClInclude Include="tools\glm\ext.hpp" />
@@ -148,6 +154,10 @@
     <ClInclude Include="tools\glm\vec3.hpp" />
     <ClInclude Include="tools\glm\vec4.hpp" />
     <ClInclude Include="tools\glm\vector_relational.hpp" />
+    <ClInclude Include="resourceManager\TRecurso.h" />
+    <ClInclude Include="resourceManager\TRecursoMalla.h" />
+    <ClInclude Include="resourceManager\TRecursoMaterial.h" />
+    <ClInclude Include="resourceManager\TRecursoTextura.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="tools\glm\CMakeLists.txt" />
