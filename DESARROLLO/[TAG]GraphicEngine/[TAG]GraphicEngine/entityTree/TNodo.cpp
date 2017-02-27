@@ -30,15 +30,15 @@ TNodo::~TNodo()
 		delete entidad;
 		entidad = nullptr;
 	}
-	/*if (hijos.size() > 0) {
+	if (hijos.size() > 0) {
 		for (std::vector<TNodo*>::iterator it = hijos.begin(); it != hijos.end(); ++it)
 		{
 			if(*it != nullptr){
 				delete *it;
-				hijos.erase(it);
 			}
 		}
-	}*/
+		hijos.erase(hijos.begin(), hijos.end());
+	}
 	std::cout << "Nodo eliminado" << std::endl;
 }
 

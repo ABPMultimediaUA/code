@@ -4,6 +4,7 @@
 #include "entityTree\TCamara.h";
 #include "entityTree\TLuz.h";
 #include "entityTree\TMalla.h";
+#include <vector>
 
 
 int main() {
@@ -26,6 +27,8 @@ int main() {
 	origen.draw();
 	std::cout << "Nodos Fin draw" << std::endl;
 	origen.~TNodo();
+	nodos.erase(nodos.begin(),nodos.end());
+	std::cout << nodos.size() << std::endl;
 	system("PAUSE");
 	return 0;
 }
