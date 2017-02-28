@@ -1,9 +1,9 @@
 #include <iostream>
-#include "entityTree\TNodo.h";
-#include "entityTree\TTransform.h";
-#include "entityTree\TCamara.h";
-#include "entityTree\TLuz.h";
-#include "entityTree\TMalla.h";
+#include "entityTree\TNodo.h"
+#include "entityTree\TTransform.h"
+#include "entityTree\TCamara.h"
+#include "entityTree\TLuz.h"
+#include "entityTree\TMalla.h"
 #include <vector>
 
 

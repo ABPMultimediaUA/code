@@ -156,4 +156,14 @@
   <ItemGroup>
     <Text Include="tools\glm\CMakeLists.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="glfw3.dll" />
+    <None Include="assimp-vc140-mt.dll" />
+    <None Include="lib\assimp-vc140-mt.exp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\assimp-vc140-mt.lib" />
+    <Library Include="lib\glfw3.lib" />
+    <Library Include="lib\glfw3dll.lib" />
+  </ItemGroup>
 </Project>
