@@ -3102,6 +3102,7 @@ MATRIZ: -1
 POS WAYPOINT MAS CERCANO: 11
 
 NOMBRE DEL DESTINO: Punto12
+Sombra: 0 Elemento: 4
 ///////////////////////
 MATRIZ: -1
 ///////////////////////
@@ -3265,7 +3266,20 @@ MATRIZ: -1
 POS WAYPOINT MAS CERCANO: 8
 
 NOMBRE DEL DESTINO: Punto9
-Sombra: 0 Elemento: 4
+Sombra: 0 Elemento: 2
+ACTUALIZO 0
+ABRO
+PUERTS ROTADA
+ACTUALIZO 1
+CIERRO
+PUERTS ROTADA
+Sombra: 0 Elemento: 2
+ACTUALIZO 0
+ABRO
+PUERTS ROTADA
+ACTUALIZO 1
+CIERRO
+PUERTS ROTADA
 ///////////////////////
 MATRIZ: -1
 ///////////////////////
@@ -3323,6 +3337,60 @@ MATRIZ: -1
 POS WAYPOINT MAS CERCANO: 9
 
 NOMBRE DEL DESTINO: Punto10
+Sombra: 0 Elemento: 4
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: 304.291
+MINIMO ANTES: 1e+07
+MINIMO DESPUES: 304.291
+I: 6
+///////////////////////
+///////////////////////
+MATRIZ: 394.645
+///////////////////////
+MATRIZ: 229.02
+MINIMO ANTES: 304.291
+MINIMO DESPUES: 229.02
+I: 8
+///////////////////////
+///////////////////////
+MATRIZ: 0
+///////////////////////
+MATRIZ: 337.405
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+POS WAYPOINT MAS CERCANO: 8
+
+NOMBRE DEL DESTINO: Punto9
 Irrlicht Engine version 1.8.4
  (Build 9200)
 Using renderer: OpenGL 4.5.0
