@@ -15,11 +15,14 @@
 
 #include <iostream>
 #include "../Fisicas/Entity2D.h"
-
+#include "Waypoints.h"
+#include "AStar.h"
 
 
 #ifndef ENEMIGO_H
 #define ENEMIGO_H
+
+class Nodo;
 
 #define CRIA 10
 #define BERSERKER 11
@@ -28,7 +31,9 @@
 
 #define DESCANSAR 0
 #define PATRULLAR 1
-#define ATACAR 2
+#define ALERTA 2
+#define ATACAR 3
+
 
 
 
@@ -39,12 +44,12 @@
 
 class Enemigo {
 public:
-	Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion);
+	Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos);
 	// Enemigo(const Enemigo& orig);
 	virtual ~Enemigo();
 
-	virtual void Update(int estado);
-	virtual void Mover(int modo, f32 dt);
+	virtual void Update();
+	virtual void Mover(int modo);
 	void setVelocidad();
 	virtual void Patrullar();
 	void setPos(vector3df pos);
@@ -56,6 +61,8 @@ public:
 
 
 protected:
+	
+
 	IMeshSceneNode *maya;
 	float vel;
 	vector3df pos;
@@ -68,6 +75,11 @@ protected:
 	ITextSceneNode *RVida;
 	ISceneManager* smgr1;
 	float blindaje;
+	Waypoints *waypoints;
+	AStar *path;
+	Nodo *puntoIni, *puntoFin;
+	int dir, posNodo;
+	
 };
 
 #endif /* ENEMIGO_H */

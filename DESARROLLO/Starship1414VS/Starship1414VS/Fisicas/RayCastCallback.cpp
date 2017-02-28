@@ -42,9 +42,12 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 				std::cout << "//////////////////////////////////////////" << std::endl;
 
 				std::cout << "ID ENTITY " << entity->getIDEN() << std::endl;
-				std::cout << "Posicion de la Entity X: " << entity->getCuerpo2D()->GetPosition().x << "Y: " << entity->getCuerpo2D()->GetPosition().x << std::endl;
+				std::cout << "Posicion de la Entity X: " << entity->getCuerpo2D()->GetPosition().x << "Y: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
 				std::cout << "//////////////////////////////////////////" << std::endl;
 				std::cout << "" << std::endl;
+
+				entidadChocada = entity->getIDEN();
+
 
 				if (fraction < distancia || distancia == 0) {
 					distancia = fraction;
@@ -52,6 +55,8 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 					return fraction;
 
 				}
+
+				
 
 				else {
 					if (distancia == 0) {
@@ -71,4 +76,9 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 float32 RayCastCallback::getDistancia() {
 	return distancia;
 }
+
+int RayCastCallback::getEntidadChocada() {
+	return entidadChocada;
+}
+
 

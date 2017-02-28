@@ -16,7 +16,7 @@
 #define ENTITY2D_H
 #include <Box2D\Box2D.h>
 #include <irrlicht.h>
-#include "RayCastCallback.h"
+class RayCastCallback;
 
 using namespace irr;
 
@@ -28,6 +28,7 @@ using namespace gui;
 
 class Entity2D {
 public:
+	Entity2D(b2World *world);
 	Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* smgr);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirPared);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta);
@@ -36,10 +37,10 @@ public:
 
 	Entity2D(const Entity2D& orig);
 	virtual ~Entity2D();
-	float rayCast(int modo);
+	float rayCast(b2Vec2 inicio, b2Vec2 fin);
 	b2Body* getCuerpo2D();
 	float rayCasting(b2Vec2 inicio, b2Vec2 fin);
-	float llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
+	void llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
 	int getIDEN();
 	int getIDENSH();
 	bool getLive();
@@ -70,7 +71,6 @@ private:
 	int idenSh;
 	bool live;
 	void* objeto3D;
-	IMeshSceneNode* radioAtaque;
 
 };
 

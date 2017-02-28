@@ -64,7 +64,7 @@ void Juego::StarUP(IrrlichtDevice* iDevice) {
 	esce = new Escenario(smgr, driver, world);
 	// ene = new Enemigo(smgr, driver, world, vector3df(0,10,40));
 	json = new readJson(esce);
-	esce->fabricaDeEnemigos(smgr, driver, world);
+	//esce->fabricaDeEnemigos(smgr, driver, world);
 
 	cam = new Camara(smgr, pers->getPos());
 
@@ -320,7 +320,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 
 		driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
 
-
+		esce->actualizarListaEnemigos();
 		smgr->drawAll(); //dibuja todo el grafo
 
 		guienv->drawAll(); //dibujar el GUI

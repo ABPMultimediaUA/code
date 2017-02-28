@@ -12,19 +12,12 @@
 * Created on 15 de diciembre de 2016, 20:03
 */
 #include <Box2D\Box2D.h>
-#include <irrlicht.h>
 #include "../Fisicas/Entity2D.h"
 
 #ifndef PUERTA_H
 #define PUERTA_H
 
-using namespace irr;
 
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
 
 class Puerta {
 public:

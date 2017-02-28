@@ -15,27 +15,21 @@
 #ifndef WAYPOINTS_H
 #define WAYPOINTS_H
 
-#include <irrlicht.h>
+
 #include <iostream>
 #include <string>
 #include <vector>
-#include <math.h>
-using namespace irr;
+#include "../Fisicas/Entity2D.h"
 
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
+class Nodo;
 
 class Waypoints {
 
-	typedef struct
-	{
-		std::string nombre;
-		vector3df pos;
-	} Nodo;
+private:
 
+	std::vector<Nodo*> puntos;
+	float **pesos;
+	int tamDelMapa;
 
 
 public:
@@ -45,13 +39,16 @@ public:
 
 	void MuestraPuntos();
 	void creaPuntos(std::string nombre, vector3df posicion);
-	void creaPesos();
+	void creaPesos(Entity2D * entity);
 	void mostrarPesos();
-private:
-	std::string nombre;
-	Nodo Way;
-	std::vector<Nodo> puntos;
-	float **pesos;
+	void setTamDelMapa(int tam);
+	float** getMatriz();
+	std::vector<Nodo*> getNodos();
+	Nodo* getNodoX(int x);
+
+
+
+
 };
 
 #endif /* WAYPOINTS_H */

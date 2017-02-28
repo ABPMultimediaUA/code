@@ -18,13 +18,14 @@
 #include "Enemigo.h"
 #include "navmeshes.h"
 
+
 class CriaAlien : public Enemigo {
 public:
-	CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce);
+	CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos);
 	//CriaAlien(const CriaAlien& orig);
 	virtual ~CriaAlien();
-	void Update(int estado);
-	void Mover(int modo, f32 dt);
+	void Update();
+	void Mover(int modo);
 	void Patrullar();
 	void quitarVida(float damage);
 	void dibujaGrid(ISceneManager *grid);

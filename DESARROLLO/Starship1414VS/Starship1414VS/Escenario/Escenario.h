@@ -71,6 +71,7 @@ private:
 	std::list<Enemigo*> enemigos;
 	std::list<Pared*> paredes;
 	int tam;
+	Entity2D *entity;
 
 public:
 	Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
@@ -82,12 +83,12 @@ public:
 	void setSubHijos(std::string nombre, double t[], double r[], double s[]);
 	void muestraEstructura();
 	void dibujarEscenario();
+	void fabricaDeEnemigos(Waypoints * puntos);
 	std::list<Escenario::ElementoHijo> getHijos();
 	std::list<Escenario::Elemento> getSubHijos();
 	void removeListHijos();
 	void removeListSubHijos();
-	void fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
-	void actualizarListaEnemigos(int estado);
+	void actualizarListaEnemigos();
 	void spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
 	std::list<Pared*> getParedes();
 	int getTam();

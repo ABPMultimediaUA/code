@@ -38,12 +38,14 @@ Escenario::Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 	VD = driver;
 	mundo = world;
 	srand(time(NULL));
+	entity = new Entity2D(world);
 }
 
 Escenario::Escenario(const Escenario& orig) {
 }
 
 Escenario::~Escenario() {
+	delete(entity);
 }
 
 void Escenario::setPadres(std::string nombre, double t[], double r[], double s[], std::list<Escenario::ElementoHijo> objetos) {
@@ -156,7 +158,7 @@ void Escenario::dibujarEscenario() {
 	Waypoints *puntos = new Waypoints();
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
-		if ((*I).nombre == "Cria") {
+		if ((*I).nombre == "Waypoints") {
 
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
@@ -167,9 +169,9 @@ void Escenario::dibujarEscenario() {
 				objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);
 
 				puntos->creaPuntos((*T).nombre, vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)));
-				puntos->MuestraPuntos();
-				puntos->creaPesos();
-				puntos->mostrarPesos();
+				//puntos->MuestraPuntos();
+				//puntos->creaPesos();
+				//puntos->mostrarPesos();
 			}
 		}
 
@@ -180,7 +182,7 @@ void Escenario::dibujarEscenario() {
 					vector3df((*M).rotation.x + (*I).rotation.x, (*M).rotation.y + (*I).rotation.y, (*M).rotation.z + (*I).rotation.z),
 					vector3df((*M).escala.x * (*I).escala.x, 0, (*M).escala.z * (*I).escala.z));
 				objeto->getMaterial(0).EmissiveColor.set(0, 20, 20, 20);
-				tam = 500;
+				tam = objeto->getScale().X * objeto->getScale().Z * 100;
 			}
 			else {
 				for (std::list<Elemento>::iterator N = (*M).ObjetosEscena.begin(); N != (*M).ObjetosEscena.end(); N++) {
@@ -237,9 +239,13 @@ void Escenario::dibujarEscenario() {
 
 
 	}
+	puntos->setTamDelMapa(tam);
+	puntos->creaPesos(entity);
+	fabricaDeEnemigos(puntos);
+
 }
 
-void Escenario::fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2World* world) {
+void Escenario::fabricaDeEnemigos(Waypoints* puntos) {
 
 	for (int i = 0; i < 1; i++) {
 
@@ -251,7 +257,7 @@ void Escenario::fabricaDeEnemigos(ISceneManager* smgr, IVideoDriver* driver, b2W
 		enemigos.push_back(alien);
 		}  */
 
-		CriaAlien *ene = new CriaAlien(smgr, driver, world, vector3df(x, 10, z), this);
+		CriaAlien *ene = new CriaAlien(SM, VD, mundo, vector3df(x, 10, z), this, puntos);
 
 		enemigos.push_back(ene);
 
@@ -295,7 +301,7 @@ void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2Wor
 	//        enemigos.push_back(ene);
 }
 
-void Escenario::actualizarListaEnemigos(int estado) {
+void Escenario::actualizarListaEnemigos() {
 
 	if (!enemigos.empty()) {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
@@ -315,7 +321,7 @@ void Escenario::actualizarListaEnemigos(int estado) {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end(); it++) {
 			if ((*it) != NULL && (*it)->estaVivo() == true) {
 
-				(*it)->Update(estado);
+				(*it)->Update();
 			}
 		}
 	}

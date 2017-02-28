@@ -28,11 +28,14 @@ public:
 	virtual ~navmeshes();
 	void muestraGrafo();
 	void setColisiones(std::list<Pared*> paredes);
+	void marchingSquare();
 	float** getMatriz();
+	void dibujarSquare();
 private:
 
 	int **matriz;
 	float **matriz2;
+	char **matriz3;
 	int tamGrid;
 	int tam;
 

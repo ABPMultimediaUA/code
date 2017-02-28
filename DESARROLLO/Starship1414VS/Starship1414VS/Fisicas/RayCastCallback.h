@@ -25,9 +25,11 @@ public:
 	virtual ~RayCastCallback();
 	float32 ReportFixture(b2Fixture* fixture, const b2Vec2& point, const b2Vec2& normal, float32 fraction);
 	float32 getDistancia();
+	int getEntidadChocada();
 private:
 
 	float32 distancia;
+	int entidadChocada;
 };
 
 #endif /* RAYCASTCALLBACK_H */
