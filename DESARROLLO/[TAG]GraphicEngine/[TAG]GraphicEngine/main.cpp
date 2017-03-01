@@ -5,6 +5,10 @@
 #include "entityTree\TLuz.h"
 #include "entityTree\TMalla.h"
 #include <vector>
+#define GLEW_STATIC
+#include <GL\glew.h>
+#include <GLFW\glfw3.h>
+
 
 
 int main() {
@@ -29,6 +33,33 @@ int main() {
 	origen.~TNodo();
 	nodos.erase(nodos.begin(),nodos.end());
 	std::cout << nodos.size() << std::endl;
-	system("PAUSE");
+	glfwInit();
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+	GLFWwindow* window = glfwCreateWindow(800,600,"SpaceShip 1414", nullptr, nullptr);
+	if (window == nullptr) {
+		std::cerr << "Error al crear ventana GFLW" << std::endl;
+		glfwTerminate();
+		return -1;
+	}
+	glfwMakeContextCurrent(window);
+	glewExperimental = GL_TRUE;
+	if (glewInit() != GLEW_OK) {
+		std::cerr << "Error al inicializar GLEW" << std::endl;
+		return -1;
+	}
+	int width, height;
+	glfwGetFramebufferSize(window, &width, &height);
+	glViewport(0, 0, width, height);
+	while (!glfwWindowShouldClose(window))
+	{
+		glfwPollEvents();
+		glClearColor(0.2f,0.3f,0.3f,1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
+		glfwSwapBuffers(window);
+	}
+	glfwTerminate();
 	return 0;
 }

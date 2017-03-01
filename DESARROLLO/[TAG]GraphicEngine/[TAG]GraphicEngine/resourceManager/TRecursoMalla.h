@@ -6,5 +6,7 @@ class TRecursoMalla :
 public:
 	TRecursoMalla();
 	~TRecursoMalla();
+	bool cargarFichero(char*);
+	void draw();
 };
 
