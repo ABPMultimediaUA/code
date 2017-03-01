@@ -1,2 +1,2 @@
-﻿  main.cpp
-LINK : fatal error LNK1104: no se puede abrir el archivo 'assimp-vc140-mt.obj'
+﻿  [TAG]GraphicEngine.vcxproj -> D:\Documents\GitHub\code\DESARROLLO\[TAG]GraphicEngine\x64\Debug\[TAG]GraphicEngine.exe
+  [TAG]GraphicEngine.vcxproj -> D:\Documents\GitHub\code\DESARROLLO\[TAG]GraphicEngine\x64\Debug\[TAG]GraphicEngine.pdb (Partial PDB)
