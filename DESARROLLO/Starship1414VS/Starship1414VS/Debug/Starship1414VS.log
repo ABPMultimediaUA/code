@@ -1,5 +1,25 @@
-﻿  CriaAlien.cpp
+﻿  AStar.cpp
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\astar.cpp(28): warning C4018: '<': no coinciden signed/unsigned
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\astar.cpp(141): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Generando código...
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\astar.cpp(136): warning C4715: 'AStar::getDireccion': no todas las rutas de acceso de control devuelven un valor
+  Compilando...
+  Enemigo.cpp
+  CriaAlien.cpp
 c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(77): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
 c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(84): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
+  Generando código...
+  Omitiendo... (no se detectaron cambios relevantes)
+  main.cpp
+  Personaje.cpp
+  Bala.cpp
+  Juego.cpp
+  MyContactFilter.cpp
+  MiContactListener.cpp
+  Entity2D.cpp
+  readJson.cpp
+  Escenario.cpp
+  navmeshes.cpp
+  AlienBerserker.cpp
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

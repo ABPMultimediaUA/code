@@ -8,7 +8,7 @@ AStar::AStar(float** matrix, int tam)
 {
 	matriz = matrix;
 	tamMatrix = tam;
-	
+	actualX, actualZ, anteriorX, anteriorZ = 0.0f;
 }
 
 
@@ -80,6 +80,12 @@ int AStar::getDireccion(const vector3df &posEne, const vector3df &posNodo)
 	float xE, zE, xN, zN, vX, vZ;
 	xE = posEne.X;	zE = posEne.Z;	xN = posNodo.X; zN = posNodo.Z;
 	vX = xN - xE;	vZ = zN - zE;
+	actualX = vX; actualZ = vZ;
+
+	this->calcularAnguloDeRotacion();
+
+	anteriorX = actualX;
+	anteriorZ = actualZ;
 
 
 	if (vX < 0) {
@@ -124,6 +130,9 @@ int AStar::getDireccion(const vector3df &posEne, const vector3df &posNodo)
 		}
 	}
 
+
+	
+
 }
 
 bool AStar::estoyEnElNodo(const vector3df &posEne, const vector3df &posNodo)
@@ -140,6 +149,35 @@ bool AStar::estoyEnElNodo(const vector3df &posEne, const vector3df &posNodo)
 	
 
 	return false;
+}
+
+void AStar::calcularAnguloDeRotacion()
+{
+	float elem1 = actualX * anteriorX + actualZ * anteriorZ;
+	float mod1, mod2;
+	mod1 = powf(actualX, 2) + powf(actualZ, 2);
+	mod2 = powf(anteriorX, 2) + powf(anteriorZ, 2);
+	mod1 = sqrtf(mod1);
+	mod2 = sqrtf(mod2);
+
+	angulo = elem1 / (mod1 * mod2);
+
+	angulo = acosf(angulo);
+
+	if (isnan(angulo) == 1) {
+		angulo = 0.0f;
+	}
+
+	std::cout << std::endl;
+	std::cout << "ANGULO: " << angulo << "º" << std::endl;
+	std::cout << std::endl;
+	
+}
+
+float AStar::getAnguloDeRotacion()
+{
+
+	return angulo;
 }
 
 

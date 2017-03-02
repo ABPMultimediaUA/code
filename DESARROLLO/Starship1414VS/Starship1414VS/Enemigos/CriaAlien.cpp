@@ -181,7 +181,7 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
 
 void CriaAlien::Mover(int modo) {
 
-	rot.Y = 0.0f;
+	//rot.Y = 0.0f;
 
 	switch (modo) {
 
@@ -199,7 +199,7 @@ void CriaAlien::Mover(int modo) {
 		std::cout<<"Pos X: "<<pos.X<<std::endl;
 		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
 		
-		rot.Y = 90.0f;
+		//rot.Y = 90.0f;
 		
 		break;
 
@@ -218,7 +218,7 @@ void CriaAlien::Mover(int modo) {
 		std::cout<<"Pos X: "<<pos.X<<std::endl;
 		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
 
-		rot.Y = -90.0f;
+		//rot.Y = -90.0f;
 
 		break;
 
@@ -252,7 +252,7 @@ void CriaAlien::Mover(int modo) {
 		/* std::cout<<"Des"<<std::endl;
 		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
 		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
-		rot.Y = 180.0f;
+		//rot.Y = 180.0f;
 
 		break;
 
@@ -264,7 +264,7 @@ void CriaAlien::Mover(int modo) {
 		pos.X = entity->getCuerpo2D()->GetPosition().x;
 		pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
-		rot.Y = 45.0f;
+		//rot.Y = 45.0f;
 		break;
 
 		//D+S
@@ -274,7 +274,7 @@ void CriaAlien::Mover(int modo) {
 		pos.X = entity->getCuerpo2D()->GetPosition().x;
 		pos.Z = entity->getCuerpo2D()->GetPosition().y;
 		break;
-		rot.Y = 135.0f;
+		//rot.Y = 135.0f;
 		//A+S
 	case 6:
 
@@ -284,7 +284,7 @@ void CriaAlien::Mover(int modo) {
 		pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 		break;
-		rot.Y = -135.0f;
+		//rot.Y = -135.0f;
 		//A+W
 	case 7:
 
@@ -293,7 +293,7 @@ void CriaAlien::Mover(int modo) {
 		pos.X = entity->getCuerpo2D()->GetPosition().x;
 		pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
-		rot.Y = -45.0f;
+		//rot.Y = -45.0f;
 
 		break;
 
@@ -306,7 +306,7 @@ void CriaAlien::Mover(int modo) {
 
 
 	setPos(pos);
-	maya->setRotation(rot);
+	//maya->setRotation(rot);
 
 }
 
