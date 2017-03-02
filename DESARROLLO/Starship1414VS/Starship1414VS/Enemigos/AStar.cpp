@@ -81,11 +81,6 @@ int AStar::getDireccion(const vector3df &posEne, const vector3df &posNodo)
 	xE = posEne.X;	zE = posEne.Z;	xN = posNodo.X; zN = posNodo.Z;
 	vX = xN - xE;	vZ = zN - zE;
 
-	/*if (vX > 0 && vZ == 0) {
-		return 0;
-	}
-
-	else if(vX < 0 &&)*/
 
 	if (vX < 0) {
 

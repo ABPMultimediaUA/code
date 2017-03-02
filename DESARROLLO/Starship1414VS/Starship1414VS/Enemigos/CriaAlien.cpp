@@ -27,6 +27,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 
     vel = 50.0f;
     pos = maya->getPosition();
+	rot = maya->getRotation();
     entity = new Entity2D(world, pos, true, this, smgr);
     estadoActual = DESCANSAR;
     raza = CRIA;
@@ -109,9 +110,9 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
 			
 			
 				dir = path->getDireccion(pos, puntoIni->getPosicion());
-				/*std::cout << std::endl;
+				std::cout << std::endl;
 				std::cout << "DIR: " << dir << std::endl;
-				std::cout << std::endl;*/
+				std::cout << std::endl;
 
 				this->Mover(dir);
 
@@ -141,6 +142,9 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
 
 				
 				dir = path->getDireccion(pos, puntoFin->getPosicion());
+				std::cout << std::endl;
+				std::cout << "DIR: " << dir << std::endl;
+				std::cout << std::endl;
 				this->Mover(dir);
 				if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
 					dir = -1;
@@ -166,10 +170,18 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
             maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 0);
             break;
 
+
+		case ROTACION:
+			maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
+
+
+			break;
     }
 }
 
 void CriaAlien::Mover(int modo) {
+
+	rot.Y = 0.0f;
 
 	switch (modo) {
 
@@ -186,7 +198,9 @@ void CriaAlien::Mover(int modo) {
 		/* std::cout<<"Des"<<std::endl;
 		std::cout<<"Pos X: "<<pos.X<<std::endl;
 		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
-
+		
+		rot.Y = 90.0f;
+		
 		break;
 
 	case 1:
@@ -203,6 +217,8 @@ void CriaAlien::Mover(int modo) {
 		/*std::cout<<"Des"<<std::endl;
 		std::cout<<"Pos X: "<<pos.X<<std::endl;
 		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
+
+		rot.Y = -90.0f;
 
 		break;
 
@@ -236,7 +252,7 @@ void CriaAlien::Mover(int modo) {
 		/* std::cout<<"Des"<<std::endl;
 		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
 		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
-
+		rot.Y = 180.0f;
 
 		break;
 
@@ -248,7 +264,7 @@ void CriaAlien::Mover(int modo) {
 		pos.X = entity->getCuerpo2D()->GetPosition().x;
 		pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
-
+		rot.Y = 45.0f;
 		break;
 
 		//D+S
@@ -258,7 +274,7 @@ void CriaAlien::Mover(int modo) {
 		pos.X = entity->getCuerpo2D()->GetPosition().x;
 		pos.Z = entity->getCuerpo2D()->GetPosition().y;
 		break;
-
+		rot.Y = 135.0f;
 		//A+S
 	case 6:
 
@@ -268,7 +284,7 @@ void CriaAlien::Mover(int modo) {
 		pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 		break;
-
+		rot.Y = -135.0f;
 		//A+W
 	case 7:
 
@@ -276,6 +292,8 @@ void CriaAlien::Mover(int modo) {
 		 entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, vel));
 		pos.X = entity->getCuerpo2D()->GetPosition().x;
 		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+
+		rot.Y = -45.0f;
 
 		break;
 
@@ -288,7 +306,7 @@ void CriaAlien::Mover(int modo) {
 
 
 	setPos(pos);
-
+	maya->setRotation(rot);
 
 }
 

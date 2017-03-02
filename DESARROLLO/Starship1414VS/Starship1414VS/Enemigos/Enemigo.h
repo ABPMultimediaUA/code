@@ -33,7 +33,7 @@ class Nodo;
 #define PATRULLAR 1
 #define ALERTA 2
 #define ATACAR 3
-
+#define ROTACION 4
 
 
 
@@ -65,7 +65,7 @@ protected:
 
 	IMeshSceneNode *maya;
 	float vel;
-	vector3df pos;
+	vector3df pos, rot;
 	Entity2D *entity;
 	int estadoActual;
 	float vida;
