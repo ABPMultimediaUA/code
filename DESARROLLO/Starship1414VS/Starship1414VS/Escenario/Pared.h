@@ -11,24 +11,19 @@
 *
 * Created on 1 de diciembre de 2016, 19:35
 */
-
 #include <Box2D\Box2D.h>
 #include <irrlicht.h>
-#include "../Fisicas/Entity2D.h"
 
 using namespace irr;
 
 using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
+
 
 #ifndef PARED_H
 #define PARED_H
 
 
-
+class Entity2D;
 class Pared {
 public:
 	Pared(vector3df posicion, vector3df rotacion, vector3df escala);

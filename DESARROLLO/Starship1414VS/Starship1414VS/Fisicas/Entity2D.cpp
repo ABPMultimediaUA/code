@@ -228,6 +228,30 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, I
     objeto3D = dirEnemigo;
 }
 
+
+//constructor de objeto
+Entity2D::Entity2D(b2World * world, vector3df pos, vector3df rot, vector3df escala, void * dirObjeto, int tipo)
+{
+	bodyDef.type = b2_staticBody;
+	bodyDef.position.Set(pos.X, pos.Z);
+	b2PolygonShape bodyShape2;
+
+	bodyShape.SetAsBox(30 * escala.X, 5 * escala.Z);
+	bodyShape2.SetAsBox(5 * escala.X, 5 * escala.Z);
+	body = world->CreateBody(&bodyDef);
+	body->CreateFixture(&bodyShape, 1.0f);
+
+	body->SetUserData(this);
+	body->GetFixtureList()->SetSensor(true);
+
+	body->CreateFixture(&bodyShape2, 1.0f);
+	//filtro.groupIndex = FILTRO_PARED;
+	//body->GetFixtureList()->SetFilterData(filtro);
+
+	objeto3D = dirObjeto;
+	iden = 5;
+}
+
 Entity2D::Entity2D(const Entity2D& orig) {
 }
 

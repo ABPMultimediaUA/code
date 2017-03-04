@@ -12,6 +12,7 @@
 */
 #include <iostream>
 #include "Pared.h"
+#include "../Fisicas/Entity2D.h"
 
 
 Pared::Pared(vector3df posicion, vector3df rotacion, vector3df escala) {

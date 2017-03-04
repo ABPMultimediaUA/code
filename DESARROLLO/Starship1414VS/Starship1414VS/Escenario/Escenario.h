@@ -24,6 +24,8 @@
 #include "../Enemigos/Enemigo.h"
 #include "Pared.h"
 
+class Terminal;
+
 
 class Escenario {
 

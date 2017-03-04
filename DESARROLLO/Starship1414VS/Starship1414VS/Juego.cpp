@@ -211,12 +211,12 @@ void Juego::raton(f32 dt)
 	mousePosition.X = teclado.GetMouseState().Position.X;
 	mousePosition.Y = teclado.GetMouseState().Position.Y;
 	pers->rotar(mousePosition);
-	if (teclado.isKeyDown(irr::KEY_KEY_E)) {
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "" << std::endl;
-		std::cout << "POS EPRS" << std::endl;
-		std::cout << "PosX: " << pers->getPos().X << "PosZ: " << pers->getPos().Z << std::endl;
-	}
+	//if (teclado.isKeyDown(irr::KEY_KEY_E)) {
+	//	std::cout << "//////////////////////////////////////////" << std::endl;
+	//	std::cout << "" << std::endl;
+	//	std::cout << "POS EPRS" << std::endl;
+	//	std::cout << "PosX: " << pers->getPos().X << "PosZ: " << pers->getPos().Z << std::endl;
+	//}
 	if (teclado.GetMouseState().LeftButtonDown && pers->getDisparo() == false) {
 		//tiempoDisparo += dt;
 
@@ -286,6 +286,16 @@ void Juego::render(IrrlichtDevice* iDevice) {
 
 			}*/
 
+			if(teclado.isKeyDown(irr::KEY_KEY_E) && pers->getTeclaE() == false) {
+				std::cout << "CAMBIO ESTADO TRUE" << std::endl;
+				pers->setTeclaE(true);
+			}
+
+			if(!teclado.isKeyDown(irr::KEY_KEY_E) && pers->getTeclaE() == true) {
+				std::cout << "CAMBIO ESTADO FALSE" << std::endl;
+				pers->setTeclaE(false);
+			}
+
 			//debug para la subida de las armas
 			/*
 			if (teclado.isKeyDown(irr::KEY_KEY_I)) {
@@ -320,7 +330,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 
 		driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
 
-		esce->actualizarListaEnemigos();
+		//esce->actualizarListaEnemigos();
 		smgr->drawAll(); //dibuja todo el grafo
 
 		guienv->drawAll(); //dibujar el GUI

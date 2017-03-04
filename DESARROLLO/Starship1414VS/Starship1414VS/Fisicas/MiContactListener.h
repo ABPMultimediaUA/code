@@ -15,7 +15,7 @@
 #ifndef MICONTACTLISTENER_H
 #define MICONTACTLISTENER_H
 
-#include "Entity2D.h"
+class Entity2D;
 
 
 class MiContactListener : public b2ContactListener {
@@ -36,6 +36,7 @@ public:
 	void actualizarPuerta(Entity2D *entity, int modo);
 	void aplicarImpulso(Entity2D *entity);
 	void aplicarDamage(Entity2D *entity, Entity2D *bala);
+	void activarTerminar(Entity2D *pers, Entity2D *terminal);
 
 
 };

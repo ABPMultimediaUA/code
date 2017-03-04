@@ -168,9 +168,9 @@ void AStar::calcularAnguloDeRotacion()
 		angulo = 0.0f;
 	}
 
-	std::cout << std::endl;
-	std::cout << "ANGULO: " << angulo << "º" << std::endl;
-	std::cout << std::endl;
+	//std::cout << std::endl;
+	//std::cout << "ANGULO: " << angulo << "º" << std::endl;
+	//std::cout << std::endl;
 	
 }
 

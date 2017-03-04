@@ -16,6 +16,8 @@
 #include "MiContactListener.h"
 #include "../Jugador/Personaje.h"
 #include "../Enemigos/Enemigo.h"
+#include "Entity2D.h"
+#include "../Escenario/Terminal.h"
 
 
 MiContactListener::MiContactListener() {
@@ -55,6 +57,25 @@ void MiContactListener::aplicarDamage(Entity2D* entity, Entity2D *bala) {
 		if (ene->getVida() <= 0.0f) {
 			entity->setLive(false);
 		}
+	}
+}
+
+void MiContactListener::activarTerminar(Entity2D * pers, Entity2D * terminal)
+{
+	Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
+	Terminal *ter = static_cast<Terminal*>(terminal->getObjeto3D());
+	if(personaje->getTeclaE() == true) {
+
+		if(ter->getEstado() == false) {
+			ter->cambiarEstado(true);
+			ter->cambiarColor();
+		}
+
+		else {
+			ter->cambiarEstado(false);
+			ter->cambiarColor();
+		}
+
 	}
 }
 
@@ -199,6 +220,16 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				actualizarPuerta(entity2, 0);
 			}
 
+
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
+				std::cout << "JASJAOSJAOS" << std::endl;
+				this->activarTerminar(entity1, entity2);
+			}
+
+		/*	else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 5 && f1->IsSensor() == true) {
+				std::cout << "HOLA PAPITO 2" << std::endl;
+			}*/
+
 		}
 	}
 }
@@ -279,7 +310,10 @@ void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* im
 
 			}*/
 
-
+			//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
+			//	std::cout << "JASJAOSJAOS" << std::endl;
+			//	this->activarTerminar(entity1, entity2);
+			//}
 
 		}
 

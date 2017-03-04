@@ -48,6 +48,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 
 	tiempoDisparo = 0.0f;
 	disparo = false;
+	teclaE = false;
 
 	pistola = new Pistola();
 	fusil = new Fusil();
@@ -277,6 +278,11 @@ int Personaje::getArmaActual() {
 	return armaActual;
 }
 
+bool Personaje::getTeclaE()
+{
+	return teclaE;
+}
+
 
 float Personaje::getDamage() {
 
@@ -458,6 +464,11 @@ void Personaje::subirCapacidadDeMun() {
 
 	}
 
+}
+
+void Personaje::setTeclaE(bool x)
+{
+	teclaE = x;
 }
 
 void Personaje::subirCargador() {
