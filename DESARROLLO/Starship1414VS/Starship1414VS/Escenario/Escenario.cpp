@@ -267,19 +267,21 @@ void Escenario::dibujarEscenario() {
 
 void Escenario::fabricaDeEnemigos(Waypoints* puntos) {
 
-	for (int i = 0; i < 1; i++) {
+	for (int i = 0; i < 5; i++) {
 
 		float x = rand() % 100;
 		float z = rand() % 200;
-		/*
+		
 		if( i % 2 == 0){
-		AlienBerserker *alien = new AlienBerserker(smgr,driver, world, vector3df(x,10,z));
-		enemigos.push_back(alien);
-		}  */
-
-		CriaAlien *ene = new CriaAlien(SM, VD, mundo, vector3df(x, 10, z), this, puntos);
-
-		enemigos.push_back(ene);
+			AlienBerserker *alien = new AlienBerserker(SM, VD, mundo, vector3df(x, 10, z), this, puntos);
+			enemigos.push_back(alien);
+		}  
+		else
+		{
+			CriaAlien *ene = new CriaAlien(SM, VD, mundo, vector3df(x, 10, z), this, puntos);
+			enemigos.push_back(ene);
+		}
+	
 
 
 	}
