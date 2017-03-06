@@ -137,3 +137,8 @@ float Bala::getDamage() {
 	return damage;
 }
 
+
+Entity2D* Bala::getEntity()
+{
+	return entity;
+}

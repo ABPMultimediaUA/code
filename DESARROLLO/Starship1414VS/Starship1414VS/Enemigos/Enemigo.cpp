@@ -118,4 +118,7 @@ void Enemigo::quitarVida(float damage) {
 
 }
 
-
+Entity2D* Enemigo::getEntity()
+{
+	return entity;
+}

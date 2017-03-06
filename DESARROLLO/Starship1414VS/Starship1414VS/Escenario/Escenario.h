@@ -23,6 +23,8 @@
 #include <string>
 #include "../Enemigos/Enemigo.h"
 #include "Pared.h"
+class Personaje;
+class Juego;
 
 class Terminal;
 
@@ -74,9 +76,11 @@ private:
 	std::list<Pared*> paredes;
 	int tam;
 	Entity2D *entity;
+	Juego *jue;
+	Personaje *pers;
 
 public:
-	Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
+	Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world, Juego* game);
 	Escenario(const Escenario& orig);
 	virtual ~Escenario();
 
@@ -94,6 +98,10 @@ public:
 	void spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
 	std::list<Pared*> getParedes();
 	int getTam();
+	void cambiaEstado(std::string mensaje);
+	void actualizarEstadoPersonaje();
+	void eleminarEnemigos();
+	Personaje* getPersonaje();
 };
 
 #endif /* ESCENARIO_H */

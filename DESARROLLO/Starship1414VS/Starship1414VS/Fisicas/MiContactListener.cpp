@@ -21,6 +21,7 @@
 
 
 MiContactListener::MiContactListener() {
+	terActivado = false;
 }
 
 MiContactListener::MiContactListener(const MiContactListener& orig) {
@@ -60,23 +61,39 @@ void MiContactListener::aplicarDamage(Entity2D* entity, Entity2D *bala) {
 	}
 }
 
-void MiContactListener::activarTerminar(Entity2D * pers, Entity2D * terminal)
+void MiContactListener::activarTerminar(Entity2D * pers, Entity2D * terminal, bool actTer)
 {
+	
 	Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
 	Terminal *ter = static_cast<Terminal*>(terminal->getObjeto3D());
-	if(personaje->getTeclaE() == true) {
+	if (actTer==true)
+	{
+		if (terActivado==false)
+		{
+			if (personaje->getTeclaE() == true) {
 
-		if(ter->getEstado() == false) {
-			ter->cambiarEstado(true);
-			ter->cambiarColor();
+				if (ter->getEstado() == false) {
+					ter->cambiarEstado(true);
+					ter->cambiarColor();
+					pers->setLive(false);
+					terActivado=true;
+				}
+
+			}
 		}
+		else
+		{
+			/* DESACTIVACIÓN POR DELTA TIME
+			if (personaje->getTeclaE() == true) {
 
-		else {
-			ter->cambiarEstado(false);
-			ter->cambiarColor();
+				ter->cambiarEstado(false);
+				ter->cambiarColor();
+				terActivado = false;
+
+			}*/
 		}
-
 	}
+
 }
 
 void MiContactListener::aplicarImpulso(Entity2D* entity) {
@@ -221,6 +238,7 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			}
 
 
+
 			/*if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
 				std::cout << "JASJAOSJAOS" << std::endl;
 				this->activarTerminar(entity1, entity2);
@@ -274,6 +292,7 @@ void MiContactListener::EndContact(b2Contact* contact) {
 			}
 
 
+			
 
 		}
 	}
@@ -313,15 +332,18 @@ void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* im
 			aplicarImpulso(entity2);
 
 			}*/
-			std::cout << "///////////////////////////////////" << std::endl;
-			std::cout << "POSICION DE LA ENTITY 2" << std::endl;
-			std::cout << "POS X: " << entity2->getCuerpo2D()->GetPosition().x << " POS Y: " << entity2->getCuerpo2D()->GetPosition().y << std::endl;
-			std::cout << "///////////////////////////////////" << std::endl;
 
-			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
-				std::cout << "JASJAOSJAOS" << std::endl;
-				this->activarTerminar(entity1, entity2);
+
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5)
+			{
+				this->activarTerminar(entity1, entity2, true);
+
 			}
+	
+			/*if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
+				
+				this->activarTerminar(entity1, entity2);
+			}*/
 
 		}
 

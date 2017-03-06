@@ -60,6 +60,7 @@ private:
 	Fusil *fusil;
 	Escopeta *escopeta;
 
+
 public:
 	Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
 	Personaje(const Personaje& orig);
@@ -93,7 +94,9 @@ public:
 	void subirCargador();
 	void subirCapacidadDeMun();
 	void setTeclaE(bool x);
-
+	bool getVivo();
+	Entity2D* getEntity();
+	void destroyBalas();
 };
 
 

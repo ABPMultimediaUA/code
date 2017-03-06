@@ -1,7 +1,8 @@
 #include "Terminal.h"
 #include "../Fisicas/Entity2D.h"
+#include "Escenario.h"
 
-Terminal::Terminal(vector3df posicion, vector3df rotacion, vector3df escala, b2World * world, IMeshSceneNode* nodo)
+Terminal::Terminal(vector3df posicion, vector3df rotacion, vector3df escala, b2World * world, IMeshSceneNode* nodo, Escenario* esce)
 {
 	pos = posicion;
 	rot = rotacion;
@@ -9,6 +10,7 @@ Terminal::Terminal(vector3df posicion, vector3df rotacion, vector3df escala, b2W
 	node = nodo;
 	activado = false;
 	entity = new Entity2D(world, posicion, rotacion, escala, this, 5);
+	escena = esce;
 }
 
 Terminal::~Terminal()
@@ -43,8 +45,8 @@ void Terminal::cambiarEstado(bool x)
 void Terminal::cambiarColor()
 {
 	if(activado == true) {
-
 		node->getMaterial(0).EmissiveColor.set(20, 20, 255, 80);
+		escena->cambiaEstado("menu");
 	}
 
 	else{

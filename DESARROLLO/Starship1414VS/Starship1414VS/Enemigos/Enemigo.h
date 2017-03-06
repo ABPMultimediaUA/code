@@ -58,7 +58,7 @@ public:
 	float getVel();
 	virtual void quitarVida(float damage) = 0;
 	float getVida();
-
+	Entity2D*  getEntity();
 
 protected:
 	

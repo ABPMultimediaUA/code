@@ -15,6 +15,7 @@
 
 #include "Juego.h"
 
+
 #define ANCHO 1920
 #define LARGO 1080
 
@@ -60,8 +61,9 @@ void Juego::StarUP(IrrlichtDevice* iDevice) {
 		rect<s32>(10, 10, 260, 22), true); //metodo para poner algo por pantalla
 										   //cambiar la camara activa smgr->setActiveCamera(camera);
 	lastFPS = 0;
-	pers = new Personaje(smgr, driver, world); //el cubo que se crea es de 10x10x10 10px = 1m
-	esce = new Escenario(smgr, driver, world);
+	 //el cubo que se crea es de 10x10x10 10px = 1m
+	esce = new Escenario(smgr, driver, world,this);
+	pers = esce->getPersonaje();
 	// ene = new Enemigo(smgr, driver, world, vector3df(0,10,40));
 	json = new readJson(esce);
 	//esce->fabricaDeEnemigos(smgr, driver, world);
@@ -70,6 +72,7 @@ void Juego::StarUP(IrrlichtDevice* iDevice) {
 
 	then = iDevice->getTimer()->getTime();
 	estado = 0;
+	para = false;
 }
 
 void Juego::Dentro(void) {
@@ -252,7 +255,7 @@ void Juego::raton(f32 dt)
 }
 
 void Juego::render(IrrlichtDevice* iDevice) {
-
+	
 	if (control == false) {
 
 
@@ -323,6 +326,19 @@ void Juego::render(IrrlichtDevice* iDevice) {
 					iDevice->closeDevice();
 			}
 		}
+		case 2:
+		{
+			std::cout << estado << std::endl;
+			if (para==false)
+			{
+				para = true;
+				std::cout << "maaaaaaaaatao" << std::endl;
+				esce->eleminarEnemigos();
+				
+			}
+			
+		 //pers->getEntity()->setLive(false);
+		}
 
 		}
 
@@ -331,6 +347,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 		driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
 
 		//esce->actualizarListaEnemigos();
+		esce->actualizarEstadoPersonaje();
 		smgr->drawAll(); //dibuja todo el grafo
 
 		guienv->drawAll(); //dibujar el GUI
@@ -346,10 +363,28 @@ void Juego::render(IrrlichtDevice* iDevice) {
 
 			lastFPS = fps;
 		}
+		
 
 	}
 	else {
 		iDevice->yield();
+	}
+}
+
+void Juego::destroyNew()
+{
+
+}
+
+void Juego::cambioEstado(std::string est)
+{
+	if (est=="menu")
+	{
+	
+		estado = 2;
+		/*manager.CambiaEstado("menu");
+		device->getGUIEnvironment()->clear();
+		device->getSceneManager()->clear();*/
 	}
 }
 

@@ -50,7 +50,6 @@ Entity2D::Entity2D(b2World * world)
 	body->GetFixtureList()->SetFilterData(filtro);
 
 
-
 	iden = 0;
 	objeto3D = 0;
 
@@ -71,7 +70,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* 
     body->GetFixtureList()->SetFriction(10.0f);
     body->SetUserData(this);
     body->SetMassData(&md);
-
+	live = true;
     /*
    sombraDef.type = b2_dynamicBody;
    sombraDef.position.Set(pos.X, pos.Z);
@@ -237,7 +236,7 @@ Entity2D::Entity2D(b2World * world, vector3df pos, vector3df rot, vector3df esca
 	b2PolygonShape bodyShape2;
 
 	bodyShape.SetAsBox(30 * escala.X, 5 * escala.Z);
-	bodyShape2.SetAsBox(5 * escala.X, 5 * escala.Z);
+	bodyShape2.SetAsBox(7 * escala.X, 7 * escala.Z);
 	body = world->CreateBody(&bodyDef);
 	body->CreateFixture(&bodyShape, 1.0f);
 
