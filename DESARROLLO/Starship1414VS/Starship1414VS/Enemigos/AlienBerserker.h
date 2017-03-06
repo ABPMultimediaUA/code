@@ -16,12 +16,11 @@
 #define ALIENBERSERKER_H
 
 #include "Enemigo.h"
-#include "navmeshes.h"
 
 class AlienBerserker : public Enemigo {
 
 public:
-	AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos);
+	AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos);
 	// AlienBerserker(const AlienBerserker& orig);
 	virtual ~AlienBerserker();
 	void Update();
