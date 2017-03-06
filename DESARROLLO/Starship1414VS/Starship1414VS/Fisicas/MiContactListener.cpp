@@ -171,12 +171,12 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			std::cout<<"Personaje"<<std::endl;
 
 			}*/
-			/*
+			
 			std::cout<<"///////////////////////////////////"<<std::endl;
 			std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
 			std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
 			std::cout<<"///////////////////////////////////"<<std::endl;
-			*/
+			
 
 			std::cout << "Sombra: " << entity1->getIDENSH() << " Elemento: " << entity2->getIDEN() << std::endl;
 
@@ -221,10 +221,10 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			}
 
 
-			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
+			/*if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
 				std::cout << "JASJAOSJAOS" << std::endl;
 				this->activarTerminar(entity1, entity2);
-			}
+			}*/
 
 		/*	else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 5 && f1->IsSensor() == true) {
 				std::cout << "HOLA PAPITO 2" << std::endl;
@@ -280,7 +280,11 @@ void MiContactListener::EndContact(b2Contact* contact) {
 }
 
 void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* impulse) {
+	//std::cout<<""<<std::endl;
 
+	//std::cout<<"////////////////////////"<<std::endl;
+
+	//std::cout<<"COLISION"<<std::endl;
 	if (contact != NULL) {
 
 		b2Fixture *f1 = contact->GetFixtureA();
@@ -309,11 +313,15 @@ void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* im
 			aplicarImpulso(entity2);
 
 			}*/
+			std::cout << "///////////////////////////////////" << std::endl;
+			std::cout << "POSICION DE LA ENTITY 2" << std::endl;
+			std::cout << "POS X: " << entity2->getCuerpo2D()->GetPosition().x << " POS Y: " << entity2->getCuerpo2D()->GetPosition().y << std::endl;
+			std::cout << "///////////////////////////////////" << std::endl;
 
-			//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
-			//	std::cout << "JASJAOSJAOS" << std::endl;
-			//	this->activarTerminar(entity1, entity2);
-			//}
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
+				std::cout << "JASJAOSJAOS" << std::endl;
+				this->activarTerminar(entity1, entity2);
+			}
 
 		}
 
