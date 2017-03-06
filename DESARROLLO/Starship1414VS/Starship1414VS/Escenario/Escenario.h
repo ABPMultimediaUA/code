@@ -102,6 +102,8 @@ public:
 	void actualizarEstadoPersonaje();
 	void eleminarEnemigos();
 	Personaje* getPersonaje();
+	void destroyPared();
+	void destroyEntityPared();
 };
 
 #endif /* ESCENARIO_H */

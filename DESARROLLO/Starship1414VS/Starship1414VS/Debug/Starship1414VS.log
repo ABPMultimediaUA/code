@@ -1,34 +1,3 @@
-﻿  Escenario.cpp
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(42): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(170): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(171): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(172): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(175): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(187): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(188): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(189): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(192): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(193): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(194): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(204): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(205): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(206): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(208): warning C4244: '=': conversión de 'irr::f32' a 'int'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(216): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(217): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(218): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(221): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(222): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(223): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(247): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(248): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(249): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(251): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(252): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(253): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(275): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(276): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(297): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\hector\desktop\repositorio\abp\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(298): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+﻿  MiContactListener.cpp
   Starship1414VS.vcxproj -> C:\Users\Hector\Desktop\REPOSITORIO\ABP\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
   Starship1414VS.vcxproj -> C:\Users\Hector\Desktop\REPOSITORIO\ABP\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

@@ -30,6 +30,7 @@
 #include "Fisicas/MyContactFilter.h"
 #include "Menu/Menu.h"
 
+class ManejadorEstadoGeneral;
 
 
 class Juego : public EstadoGeneral {

@@ -77,12 +77,14 @@ void MiContactListener::activarTerminar(Entity2D * pers, Entity2D * terminal, bo
 					ter->cambiarColor();
 					pers->setLive(false);
 					terActivado=true;
+					personaje->setTeclaE(false);
 				}
 
 			}
 		}
 		else
 		{
+			ter->cambiarColor();
 			/* DESACTIVACIÓN POR DELTA TIME
 			if (personaje->getTeclaE() == true) {
 

@@ -76,7 +76,7 @@ Personaje::~Personaje() {
 	std::cout << "POS PERS ANTES" << std::endl;
 	listaBalas.clear();
 	delete(entity);
-	maya->getParent()->removeChild(maya);
+//	maya->getParent()->removeChild(maya);
 	//delete(pistola);
 	//delete(fusil);
 	//delete(escopeta);

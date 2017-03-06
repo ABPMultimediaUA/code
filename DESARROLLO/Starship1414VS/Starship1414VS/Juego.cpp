@@ -14,7 +14,7 @@
 
 
 #include "Juego.h"
-
+#include "ManejadorEstadoGeneral.h"
 
 #define ANCHO 1920
 #define LARGO 1080
@@ -333,8 +333,11 @@ void Juego::render(IrrlichtDevice* iDevice) {
 			{
 				para = true;
 				std::cout << "maaaaaaaaatao" << std::endl;
+				esce->destroyPared();
 				esce->eleminarEnemigos();
-				
+				control = false;
+				smgr->clear();
+				manager.CambiaEstado("menu");
 			}
 			
 		 //pers->getEntity()->setLive(false);

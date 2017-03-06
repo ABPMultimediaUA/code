@@ -339,6 +339,24 @@ void Escenario::actualizarEstadoPersonaje()
 }
 
 
+void Escenario::destroyPared() {
+
+	if (!paredes.empty()) {
+		for (std::list<Pared*>::iterator it = paredes.begin(); it != paredes.end();) {
+			if ((*it) != NULL) {
+				
+					delete(*it);
+					it = paredes.erase(it);
+				
+			}
+			else
+				it++;
+		}
+
+	}
+}
+
+
 void Escenario::actualizarListaEnemigos() {
 
 	if (!enemigos.empty()) {
