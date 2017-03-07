@@ -326,6 +326,7 @@ void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2Wor
 
 void Escenario::actualizarEstadoPersonaje()
 {
+	//cambiar el NULL por nullptr
 	if (pers!=NULL)
 	{
 		std::cout <<"pers"<<pers << std::endl;
