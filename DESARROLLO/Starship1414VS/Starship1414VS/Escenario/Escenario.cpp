@@ -18,7 +18,9 @@
 #include "Pared.h"
 #include "Puerta.h"
 #include "readJson.h"
-
+#include "Terminal.h"
+#include "../Juego.h"
+#include "../Jugador/Personaje.h"
 #include "../Enemigos/CriaAlien.h"
 #include "../Enemigos/Waypoints.h"
 #include "../Enemigos/AlienBerserker.h"
@@ -32,13 +34,15 @@ using namespace video;
 using namespace io;
 using namespace gui;
 
-Escenario::Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
+Escenario::Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world, Juego* game) {
 
 	SM = smgr;
 	VD = driver;
 	mundo = world;
 	srand(time(NULL));
 	entity = new Entity2D(world);
+	jue = game;
+	pers = new Personaje(smgr, driver, world);
 }
 
 Escenario::Escenario(const Escenario& orig) {
@@ -175,6 +179,25 @@ void Escenario::dibujarEscenario() {
 			}
 		}
 
+		if((*I).nombre == "FinalPosibles") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+
+				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
+					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
+					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
+				objeto->getMaterial(0).EmissiveColor.set(20, 255, 0, 80);
+
+				Terminal *terminal = new Terminal(vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)), 
+					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z), 
+					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z), mundo, objeto,this);
+				
+			}
+
+		}
+
+
 		for (std::list<ElementoHijo>::iterator M = (*I).ObjetosEscena.begin(); M != (*I).ObjetosEscena.end(); M++) {
 			if ((*M).nombre == "Suelo") {
 				IMeshSceneNode *objeto = SM->addCubeSceneNode(100.0f, 0, -1,
@@ -301,6 +324,39 @@ void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2Wor
 	//        enemigos.push_back(ene);
 }
 
+void Escenario::actualizarEstadoPersonaje()
+{
+	if (pers!=NULL)
+	{
+		std::cout <<"pers"<<pers << std::endl;
+		if (pers->getVivo() == false)
+		{		
+			delete(pers);
+			pers = NULL;
+		}
+	}
+	
+}
+
+
+void Escenario::destroyPared() {
+
+	if (!paredes.empty()) {
+		for (std::list<Pared*>::iterator it = paredes.begin(); it != paredes.end();) {
+			if ((*it) != NULL) {
+				
+					delete(*it);
+					it = paredes.erase(it);
+				
+			}
+			else
+				it++;
+		}
+
+	}
+}
+
+
 void Escenario::actualizarListaEnemigos() {
 
 	if (!enemigos.empty()) {
@@ -325,4 +381,36 @@ void Escenario::actualizarListaEnemigos() {
 			}
 		}
 	}
+}
+
+void Escenario::cambiaEstado(std::string mensaje)
+{
+	jue->cambioEstado(mensaje);
+}
+
+Personaje* Escenario::getPersonaje()
+{
+	return pers;
+}
+
+void Escenario::eleminarEnemigos()
+{
+	
+	if (!enemigos.empty()) {
+		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
+			if ((*it) != NULL) {
+
+				if ((*it)->estaVivo()) {
+					(*it)->getEntity()->setLive(false);
+				}
+				else
+					it++;
+			}
+			else
+				it++;
+		}
+		
+	}
+
+	
 }

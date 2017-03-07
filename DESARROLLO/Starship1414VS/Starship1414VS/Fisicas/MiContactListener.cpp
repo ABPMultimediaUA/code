@@ -16,9 +16,12 @@
 #include "MiContactListener.h"
 #include "../Jugador/Personaje.h"
 #include "../Enemigos/Enemigo.h"
+#include "Entity2D.h"
+#include "../Escenario/Terminal.h"
 
 
 MiContactListener::MiContactListener() {
+	terActivado = false;
 }
 
 MiContactListener::MiContactListener(const MiContactListener& orig) {
@@ -56,6 +59,43 @@ void MiContactListener::aplicarDamage(Entity2D* entity, Entity2D *bala) {
 			entity->setLive(false);
 		}
 	}
+}
+
+void MiContactListener::activarTerminar(Entity2D * pers, Entity2D * terminal, bool actTer)
+{
+	
+	Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
+	Terminal *ter = static_cast<Terminal*>(terminal->getObjeto3D());
+	if (actTer==true)
+	{
+		if (terActivado==false)
+		{
+			if (personaje->getTeclaE() == true) {
+
+				if (ter->getEstado() == false) {
+					ter->cambiarEstado(true);
+					ter->cambiarColor();
+					pers->setLive(false);
+					terActivado=true;
+					personaje->setTeclaE(false);
+				}
+
+			}
+		}
+		else
+		{
+			ter->cambiarColor();
+			/* DESACTIVACIÓN POR DELTA TIME
+			if (personaje->getTeclaE() == true) {
+
+				ter->cambiarEstado(false);
+				ter->cambiarColor();
+				terActivado = false;
+
+			}*/
+		}
+	}
+
 }
 
 void MiContactListener::aplicarImpulso(Entity2D* entity) {
@@ -150,12 +190,12 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			std::cout<<"Personaje"<<std::endl;
 
 			}*/
-			/*
+			
 			std::cout<<"///////////////////////////////////"<<std::endl;
 			std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
 			std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
 			std::cout<<"///////////////////////////////////"<<std::endl;
-			*/
+			
 
 			std::cout << "Sombra: " << entity1->getIDENSH() << " Elemento: " << entity2->getIDEN() << std::endl;
 
@@ -198,6 +238,17 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true) {
 				actualizarPuerta(entity2, 0);
 			}
+
+
+
+			/*if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
+				std::cout << "JASJAOSJAOS" << std::endl;
+				this->activarTerminar(entity1, entity2);
+			}*/
+
+		/*	else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 5 && f1->IsSensor() == true) {
+				std::cout << "HOLA PAPITO 2" << std::endl;
+			}*/
 
 		}
 	}
@@ -243,13 +294,18 @@ void MiContactListener::EndContact(b2Contact* contact) {
 			}
 
 
+			
 
 		}
 	}
 }
 
 void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* impulse) {
+	//std::cout<<""<<std::endl;
 
+	//std::cout<<"////////////////////////"<<std::endl;
+
+	//std::cout<<"COLISION"<<std::endl;
 	if (contact != NULL) {
 
 		b2Fixture *f1 = contact->GetFixtureA();
@@ -280,6 +336,16 @@ void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* im
 			}*/
 
 
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5)
+			{
+				this->activarTerminar(entity1, entity2, true);
+
+			}
+	
+			/*if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
+				
+				this->activarTerminar(entity1, entity2);
+			}*/
 
 		}
 

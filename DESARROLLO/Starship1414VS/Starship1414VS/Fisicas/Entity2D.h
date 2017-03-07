@@ -34,6 +34,7 @@ public:
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala);
 	Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, ISceneManager* smgr);
+	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirObjeto, int tipo);
 
 	Entity2D(const Entity2D& orig);
 	virtual ~Entity2D();

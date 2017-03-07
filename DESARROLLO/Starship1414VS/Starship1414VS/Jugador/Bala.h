@@ -63,7 +63,7 @@ public:
 	vector3df posInicial;
 	bool update();
 	float getDamage();
-
+	Entity2D* Bala::getEntity();
 };
 
 

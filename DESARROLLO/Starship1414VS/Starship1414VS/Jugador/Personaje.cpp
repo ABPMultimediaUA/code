@@ -48,6 +48,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 
 	tiempoDisparo = 0.0f;
 	disparo = false;
+	teclaE = false;
 
 	pistola = new Pistola();
 	fusil = new Fusil();
@@ -65,14 +66,20 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 	std::cout<<"Tam Z: "<<maya->getScale().Z<<std::endl;
 	std::cout<<"Pos X: "<<pos.X<<" Pos Y: "<<pos.Y<<" Pos Z: "<<pos.Z<<std::endl;*/
 
-
 }
 
 Personaje::Personaje(const Personaje& orig) {
 }
 
 Personaje::~Personaje() {
-	//delete(entity);
+	//this->destroyBalas();
+	std::cout << "POS PERS ANTES" << std::endl;
+	listaBalas.clear();
+	delete(entity);
+//	maya->getParent()->removeChild(maya);
+	//delete(pistola);
+	//delete(fusil);
+	//delete(escopeta);
 }
 
 void Personaje::moverPersonaje(int modo, f32 dt) {
@@ -277,6 +284,11 @@ int Personaje::getArmaActual() {
 	return armaActual;
 }
 
+bool Personaje::getTeclaE()
+{
+	return teclaE;
+}
+
 
 float Personaje::getDamage() {
 
@@ -405,6 +417,25 @@ void Personaje::disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *wor
 
 }
 
+void Personaje::destroyBalas() {
+	if (!listaBalas.empty()) {
+		for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end();) {
+			if ((*it) != NULL) {
+				if (!(*it)->estaViva()) {
+
+					(*it)->getEntity()->setLive(false);
+				}
+				else
+					it++;
+			}
+			else
+				it++;
+		}
+	}
+
+}
+
+
 void Personaje::actualizarLista(f32 dt) {
 	if (!listaBalas.empty()) {
 		for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end();) {
@@ -458,6 +489,11 @@ void Personaje::subirCapacidadDeMun() {
 
 	}
 
+}
+
+void Personaje::setTeclaE(bool x)
+{
+	teclaE = x;
 }
 
 void Personaje::subirCargador() {
@@ -517,5 +553,16 @@ void Personaje::subirNivelDamage() {
 	}
 }
 
+bool Personaje::getVivo()
+{
 
+	if (entity != NULL)
+		return entity->getLive();
+	else
+		return false;
+}
 
+Entity2D* Personaje::getEntity()
+{
+	return entity;
+}

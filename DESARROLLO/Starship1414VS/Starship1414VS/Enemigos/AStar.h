@@ -21,13 +21,15 @@ public:
 	int buscarWaypointMasCorto(const int &posNodoIni);
 	int getDireccion(const vector3df &posEne, const vector3df &posNodo); //ver hacia donde tiene que ir
 	bool estoyEnElNodo(const vector3df &posEne, const vector3df &posNodo);
+	void calcularAnguloDeRotacion();
+	float getAnguloDeRotacion();
 	
 
 private:
 
 	float** matriz;
 	int tamMatrix;
-	
+	float actualX, actualZ, anteriorX, anteriorZ, angulo;
 
 
 };

@@ -38,9 +38,9 @@
           "components": [
             {
               "localPosition": [
-                -160.4,
+                -160.0,
                 0.3,
-                9.7
+                10.0
               ],
               "localRotation": [
                 0.0,
@@ -81,9 +81,9 @@
           "components": [
             {
               "localPosition": [
-                -140.3,
+                -140.0,
                 0.3,
-                9.6
+                10.0
               ],
               "localRotation": [
                 0.0,
@@ -124,7 +124,7 @@
           "components": [
             {
               "localPosition": [
-                -160.2,
+                -160.0,
                 0.3,
                 -10.0
               ],
@@ -167,7 +167,7 @@
           "components": [
             {
               "localPosition": [
-                -139.9,
+                -140.0,
                 0.3,
                 -10.0
               ],
@@ -210,9 +210,9 @@
           "components": [
             {
               "localPosition": [
-                -130.4,
+                -130.0,
                 0.3,
-                -0.2
+                0.0
               ],
               "localRotation": [
                 0.0,
@@ -4152,6 +4152,380 @@
       ]
     },
     {
+      "name": "FinalPosibles",
+      "components": [
+        {
+          "localPosition": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "Terminal",
+          "components": [
+            {
+              "localPosition": [
+                7.46,
+                2.02,
+                62.34
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                0.5,
+                2.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Cube",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "New Material 1"
+              ],
+              "type": "MeshRenderer"
+            },
+            {
+              "center": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "type": "BoxCollider"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Terminal (1)",
+          "components": [
+            {
+              "localPosition": [
+                26.49,
+                2.02,
+                62.34
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                0.5,
+                2.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Cube",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "New Material 1"
+              ],
+              "type": "MeshRenderer"
+            },
+            {
+              "center": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "size": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "type": "BoxCollider"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "SpawnsEnemigos",
+      "components": [
+        {
+          "localPosition": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "SpwanEnemigo",
+          "components": [
+            {
+              "localPosition": [
+                18.9,
+                0.0,
+                10.8
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "SpwanEnemigo (1)",
+          "components": [
+            {
+              "localPosition": [
+                45.5,
+                0.0,
+                -2.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "SpwanEnemigo (2)",
+          "components": [
+            {
+              "localPosition": [
+                -22.2,
+                0.0,
+                31.6
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "SpwanEnemigo (3)",
+          "components": [
+            {
+              "localPosition": [
+                -58.4,
+                0.0,
+                32.7
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "SpwanEnemigo (4)",
+          "components": [
+            {
+              "localPosition": [
+                -77.4,
+                0.0,
+                11.3
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "SpwanEnemigo (5)",
+          "components": [
+            {
+              "localPosition": [
+                -72.3,
+                0.0,
+                -23.4
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "SpwanEnemigo (6)",
+          "components": [
+            {
+              "localPosition": [
+                64.8,
+                0.0,
+                -37.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "SpwanEnemigo (7)",
+          "components": [
+            {
+              "localPosition": [
+                81.2,
+                0.0,
+                -54.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
       "name": "Habitacion3",
       "components": [
         {
@@ -4511,32 +4885,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "FinalNivel1",
-      "components": [
-        {
-          "localPosition": [
-            24.0,
-            0.0,
-            60.0
-          ],
-          "localRotation": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "localScale": [
-            74.0,
-            2.0,
-            0.500000238
-          ],
-          "name": null,
-          "parentName": null,
-          "type": "Transform"
-        }
-      ],
-      "children": []
     },
     {
       "name": "Habitacion2",
@@ -5611,7 +5959,7 @@
           "localPosition": [
             -170.0,
             0.0,
-            8.0
+            0.0
           ],
           "localRotation": [
             0.0,
@@ -5990,32 +6338,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "FinalNivel",
-      "components": [
-        {
-          "localPosition": [
-            3.0,
-            0.0,
-            60.0
-          ],
-          "localRotation": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "localScale": [
-            74.0,
-            2.0,
-            0.500000238
-          ],
-          "name": null,
-          "parentName": null,
-          "type": "Transform"
-        }
-      ],
-      "children": []
     }
   ]
 }

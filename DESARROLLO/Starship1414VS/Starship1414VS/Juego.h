@@ -22,13 +22,16 @@
 #include <IrrlichtDevice.h>
 #include <iostream>
 #include "CAppReceiver.h"
-#include "Jugador/Personaje.h"
+#include "Jugador\Personaje.h"
 #include "Escenario/Escenario.h"
 #include "Escenario/Camara.h"
 #include "Escenario/readJson.h"
 #include "Fisicas/MiContactListener.h"
 #include "Fisicas/MyContactFilter.h"
 #include "Menu/Menu.h"
+
+class ManejadorEstadoGeneral;
+
 
 class Juego : public EstadoGeneral {
 public:
@@ -66,6 +69,9 @@ public:
 	void pausa(IrrlichtDevice* iDevice);
 	void cambioarma();
 	void raton(f32 dt);
+	void cambioEstado(std::string est);
+	void destroyNew();
+	bool para;
 
 
 };

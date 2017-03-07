@@ -47,6 +47,7 @@ void Menu::StarUP(IrrlichtDevice* iDevice) {
 }
 
 void Menu::borrarMenu() {
+	
 	if (!botonesMenu.empty()) {
 		for (std::vector<IGUIButton*>::iterator it = botonesMenu.begin(); it != botonesMenu.end(); ++it) {
 			(*it)->remove();
@@ -56,18 +57,20 @@ void Menu::borrarMenu() {
 }
 
 void Menu::dibujarMenu() {
-	borrarMenu();
+	
 	botonesMenu.push_back(interfaz->addButton(rect<s32>(tamanyo.X / 3, tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10, tamanyo.X / 3 + tamanyo.X / 3, tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10), NULL, 1, L"JUGAR"));
 	botonesMenu.push_back(interfaz->addButton(rect<s32>(tamanyo.X / 3, tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10, tamanyo.X / 3 + tamanyo.X / 3, tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10 + tamanyo.Y / 10), NULL, 2, L"SALIR"));
 }
 
 s32 Menu::run() {
+
+	
 	if (!botonesMenu.empty()) {
 		for (std::vector<IGUIButton*>::iterator it = botonesMenu.begin(); it != botonesMenu.end(); ++it) {
 
 			if ((*it)->isPressed()) {
 				std::cout << (*it)->getID() << std::endl;
-				borrarMenu();
+				//borrarMenu();
 				return (*it)->getID();
 			}
 		}
@@ -95,6 +98,7 @@ void Menu::render(IrrlichtDevice* iDevice) {
 	case 1:
 
 		//this->nombre="juego";
+		borrarMenu();
 		manager.CambiaEstado("juego");
 		iDevice->getGUIEnvironment()->clear();
 		control = false;

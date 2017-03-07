@@ -52,12 +52,14 @@ private:
 	int cargador;
 	f32 tiempoDisparo;
 	bool disparo;
+	bool teclaE;
 	std::list<Bala*> listaBalas;
 	int direccion;
 	int armaActual;
 	Pistola *pistola;
 	Fusil *fusil;
 	Escopeta *escopeta;
+
 
 public:
 	Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
@@ -75,6 +77,7 @@ public:
 	float getDamage();
 	float getTiempoArma();
 	int getArmaActual();
+	bool getTeclaE();
 
 	void moverPersonaje(int modo, f32 dt);
 	void setVelocidad();
@@ -90,7 +93,10 @@ public:
 	void subirNivelDamage();
 	void subirCargador();
 	void subirCapacidadDeMun();
-
+	void setTeclaE(bool x);
+	bool getVivo();
+	Entity2D* getEntity();
+	void destroyBalas();
 };
 
 
