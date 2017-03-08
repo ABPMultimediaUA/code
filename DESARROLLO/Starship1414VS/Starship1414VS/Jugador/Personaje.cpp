@@ -42,7 +42,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 
 
 
-	vel = 100.0f;
+	vel = 300.0f;
 	pos = maya->getPosition();
 	entity = new Entity2D(world, pos, this, smgr);
 

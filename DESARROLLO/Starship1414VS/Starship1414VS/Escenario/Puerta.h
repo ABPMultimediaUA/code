@@ -38,6 +38,7 @@ public:
 	void setAbierta(bool x);
 	void abrirPuerta();
 	void cerrarPuerta();
+	void Update();
 
 private:
 

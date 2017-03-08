@@ -26,6 +26,7 @@
 #include "../Enemigos/AlienBerserker.h"
 
 
+
 using namespace irr;
 
 using namespace core;
@@ -224,7 +225,7 @@ void Escenario::dibujarEscenario() {
 							objeto);
 
 						door->setFisica(mundo);
-
+						puertas.push_back(door);
 
 					}
 
@@ -329,7 +330,6 @@ void Escenario::actualizarEstadoPersonaje()
 	//cambiar el NULL por nullptr
 	if (pers!=NULL)
 	{
-		std::cout <<"pers"<<pers << std::endl;
 		if (pers->getVivo() == false)
 		{		
 			delete(pers);
@@ -357,6 +357,18 @@ void Escenario::destroyPared() {
 	}
 }
 
+void Escenario::actualizarEstadoPuerta()
+{
+	if (!puertas.empty())
+	{
+		for (std::list<Puerta*>::iterator it = puertas.begin(); it != puertas.end(); it++) {
+			if ((*it) != NULL) {
+
+			//	(*it)->Update();
+			}
+		}
+	}
+}
 
 void Escenario::actualizarListaEnemigos() {
 

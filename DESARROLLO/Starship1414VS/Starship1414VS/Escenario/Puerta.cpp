@@ -75,16 +75,24 @@ void Puerta::abrirPuerta() {
 	//si tiene rotacion en Y van | sino van -
 
 	if (rot.Y == 90) {
-		std::cout << "PUERTS ROTADA" << std::endl;
-
-		pos.Z -= 80;
-
+		//std::cout << "ENTRO PUERTA" << std::endl;
+			//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -80.0f));
+				
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 	}
 
 	else {
-		std::cout << "PUERTS NO ROTADA" << std::endl;
 
-		pos.X += 80;
+		for (int i=0; i<2;i++)
+		{
+			std::cout << "ENTRO PUERTA" << std::endl;
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(10.0f, 0.0f));
+			pos.X = entity->getCuerpo2D()->GetPosition().x;
+			maya->setPosition(pos);
+		}
+		//  entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+		
+
 	}
 	entity->destruirFixture();
 	maya->setPosition(pos);
@@ -178,4 +186,9 @@ void Puerta::cerrarPuerta() {
 	//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
 	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 	//    
+}
+
+void Puerta::Update()
+{
+
 }

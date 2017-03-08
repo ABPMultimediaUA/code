@@ -131,7 +131,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
 //constructir puerta
 
 Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta) {
-    bodyDef.type = b2_staticBody;
+    bodyDef.type = b2_kinematicBody;
     bodyDef.position.Set(pos.X, pos.Z);
     b2PolygonShape bodyShape2;
     //si tiene rotacion en Y van | sino van -

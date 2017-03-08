@@ -42,7 +42,7 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, int modo) {
 
 
 	else if (modo == 1 && puerta->getAbierta() == true) {
-		puerta->cerrarPuerta();
+		//puerta->cerrarPuerta();
 		puerta->setAbierta(false);
 
 	}
