@@ -17,7 +17,10 @@
 #ifndef PUERTA_H
 #define PUERTA_H
 
-
+#define ABRIENDO 1
+#define ABIERTA 2
+#define CERRADA 3
+#define CERRANDO 0
 
 class Puerta {
 public:
@@ -49,7 +52,8 @@ private:
 	Entity2D *entity;
 	IMeshSceneNode *maya;
 	bool abierta;
-
+	int estadoActual;
+	float limiteApX;
 };
 
 #endif /* PUERTA_H */

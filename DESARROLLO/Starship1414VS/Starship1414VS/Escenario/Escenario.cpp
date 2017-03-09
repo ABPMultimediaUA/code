@@ -364,7 +364,7 @@ void Escenario::actualizarEstadoPuerta()
 		for (std::list<Puerta*>::iterator it = puertas.begin(); it != puertas.end(); it++) {
 			if ((*it) != NULL) {
 
-			//	(*it)->Update();
+				(*it)->Update();
 			}
 		}
 	}

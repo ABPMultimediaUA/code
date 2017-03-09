@@ -21,7 +21,8 @@ Puerta::Puerta(vector3df posicion, vector3df rotacion, vector3df escala, IMeshSc
 	posIni = posicion;
 	maya = objeto;
 	abierta = false;
-
+	estadoActual = CERRADA;
+	limiteApX = this->getPosicion().X + (this->getEscala().X / 2);
 }
 
 Puerta::Puerta(const Puerta& orig) {
@@ -59,7 +60,7 @@ void Puerta::setEscala(vector3df newEscala) {
 }
 
 void Puerta::setAbierta(bool x) {
-	abierta = x;
+	estadoActual=x;
 }
 
 void Puerta::setFisica(b2World* world) {
@@ -74,21 +75,28 @@ void Puerta::abrirPuerta() {
 	std::cout << "ABRO" << std::endl;
 	//si tiene rotacion en Y van | sino van -
 
+
 	if (rot.Y == 90) {
-		//std::cout << "ENTRO PUERTA" << std::endl;
-			//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -80.0f));
-				
-		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
-	}
-
-	else {
-
-		for (int i=0; i<2;i++)
+		for (int i = 0; i<2; i++)
 		{
 			std::cout << "ENTRO PUERTA" << std::endl;
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(10.0f, 0.0f));
 			pos.X = entity->getCuerpo2D()->GetPosition().x;
 			maya->setPosition(pos);
+		}
+	}
+
+	else {
+		std::cout << "ABRO " << limiteApX <<"  "<<entity->getCuerpo2D()->GetPosition().x <<std::endl;
+		if (limiteApX+70>entity->getCuerpo2D()->GetPosition().x)
+		{
+			std::cout << "ENTRO PUERTA" << std::endl;
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(30.0f, 0.0f));
+			pos.X = entity->getCuerpo2D()->GetPosition().x;
+		}
+		else
+		{
+			estadoActual = ABIERTA;
 		}
 		//  entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
 		
@@ -190,5 +198,25 @@ void Puerta::cerrarPuerta() {
 
 void Puerta::Update()
 {
+	switch (estadoActual) {
+	case CERRADA:
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+		pos.X = entity->getCuerpo2D()->GetPosition().x;
+		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		maya->setPosition(pos);
+		break;
+	case ABRIENDO:
+		this->abrirPuerta();
+		break;
+	case ABIERTA:
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+		pos.X = entity->getCuerpo2D()->GetPosition().x;
+		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		maya->setPosition(pos);
+		break;
+	case CERRANDO:
+		this->cerrarPuerta();
+		break;
 
+	}
 }

@@ -35,14 +35,14 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, int modo) {
 	Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
 	if (modo == 0 && puerta->getAbierta() == false) {
 		//si tiene rotacion en Y van | sino van -
-		puerta->abrirPuerta();
+
 		puerta->setAbierta(true);
 
 	}
 
 
 	else if (modo == 1 && puerta->getAbierta() == true) {
-		//puerta->cerrarPuerta();
+
 		puerta->setAbierta(false);
 
 	}
