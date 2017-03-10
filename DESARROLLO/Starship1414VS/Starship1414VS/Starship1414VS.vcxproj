@@ -182,6 +182,8 @@
     <ClCompile Include="Jugador\Pistola.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ManejadorEstadoGeneral.cpp" />
+    <ClCompile Include="MaquinaEstados\FSM\Estado.cpp" />
+    <ClCompile Include="MaquinaEstados\FSM\MaquinaEstados.cpp" />
     <ClCompile Include="Menu\Menu.cpp" />
     <ClCompile Include="Enemigos\Nodo.cpp" />
   </ItemGroup>
@@ -213,6 +215,8 @@
     <ClInclude Include="Jugador\Personaje.h" />
     <ClInclude Include="Jugador\Pistola.h" />
     <ClInclude Include="ManejadorEstadoGeneral.h" />
+    <ClInclude Include="MaquinaEstados\FSM\Estado.h" />
+    <ClInclude Include="MaquinaEstados\FSM\MaquinaEstados.h" />
     <ClInclude Include="Menu\Menu.h" />
     <ClInclude Include="Enemigos\Nodo.h" />
     <ClInclude Include="Escenario\Terminal.h" />

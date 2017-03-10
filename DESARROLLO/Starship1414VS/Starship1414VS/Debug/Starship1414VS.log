@@ -1,3 +1,12 @@
-﻿  Puerta.cpp
-  Starship1414VS.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
-  Starship1414VS.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
+﻿  Estado.cpp
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.cpp(5): error C2955: 'Estado': el uso de clase plantilla requiere una lista de argumentos de plantilla
+  d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.h(6): note: vea la declaración de 'Estado'
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.cpp(5): error C2039: '{ctor}': no es un miembro de 'Estado'
+  d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.h(6): note: vea la declaración de 'Estado'
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.cpp(5): error C2059: error de sintaxis: ')'
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.cpp(6): error C2143: error de sintaxis: falta ';' delante de '{'
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.cpp(6): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.cpp(10): error C2955: 'Estado': el uso de clase plantilla requiere una lista de argumentos de plantilla
+  d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.h(6): note: vea la declaración de 'Estado'
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.cpp(11): error C2509: '{dtor}': función miembro no declarada en 'Estado'
+  d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\maquinaestados\fsm\estado.h(6): note: vea la declaración de 'Estado'

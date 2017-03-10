@@ -17,10 +17,9 @@
 #ifndef PUERTA_H
 #define PUERTA_H
 
-#define ABRIENDO 1
-#define ABIERTA 2
-#define CERRADA 3
-#define CERRANDO 0
+#define ABIERTA 1
+#define ESTATICO 2
+#define CERRADA 0
 
 class Puerta {
 public:
@@ -33,7 +32,7 @@ public:
 	vector3df getRotacion();
 	vector3df getEscala();
 	bool getAbierta();
-
+	bool getTotalAbierta();
 	void setPosicion(vector3df newPos);
 	void setRotacion(vector3df newRot);
 	void setEscala(vector3df newEscala);
@@ -42,6 +41,7 @@ public:
 	void abrirPuerta();
 	void cerrarPuerta();
 	void Update();
+	void UpdateEstado();
 
 private:
 
@@ -51,9 +51,11 @@ private:
 	vector3df escal;
 	Entity2D *entity;
 	IMeshSceneNode *maya;
-	bool abierta;
+	bool abierta=false;
 	int estadoActual;
 	float limiteApX;
+	float limiteApZ;
+	bool abrir;
 };
 
 #endif /* PUERTA_H */

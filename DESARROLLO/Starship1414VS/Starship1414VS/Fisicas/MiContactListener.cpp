@@ -32,16 +32,18 @@ MiContactListener::~MiContactListener() {
 
 void MiContactListener::actualizarPuerta(Entity2D* entity, int modo) {
 	std::cout << "ACTUALIZO " << modo << std::endl;
-	Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
-	if (modo == 0 && puerta->getAbierta() == false) {
-		//si tiene rotacion en Y van | sino van -
 
+	Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
+
+	if (modo == 0&& puerta->getTotalAbierta() == false) {
+		//si tiene rotacion en Y van | sino van -
+		std::cout << "ostias " << puerta->getTotalAbierta() << std::endl;
 		puerta->setAbierta(true);
 
 	}
 
 
-	else if (modo == 1 && puerta->getAbierta() == true) {
+	else if (modo == 1 && puerta->getTotalAbierta() == true) {
 
 		puerta->setAbierta(false);
 
@@ -283,13 +285,15 @@ void MiContactListener::EndContact(b2Contact* contact) {
 			//            std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
 			//            std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
 			//            std::cout<<"///////////////////////////////////"<<std::endl;
-
+		
 
 			if (entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true) {
+				
 				actualizarPuerta(entity1, 1);
 			}
 
 			else if (entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true) {
+				std::cout << "lalal " << std::endl;
 				actualizarPuerta(entity2, 1);
 			}
 
