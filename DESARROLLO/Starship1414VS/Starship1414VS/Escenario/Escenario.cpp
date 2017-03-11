@@ -224,7 +224,7 @@ void Escenario::dibujarEscenario() {
 							vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z),
 							objeto);
 
-						door->setFisica(mundo);
+						door->setFisica(mundo,SM);
 						puertas.push_back(door);
 
 					}

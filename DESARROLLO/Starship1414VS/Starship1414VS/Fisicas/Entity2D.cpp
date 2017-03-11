@@ -130,7 +130,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
 
 //constructir puerta
 
-Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta) {
+Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta, ISceneManager* smgr) {
     bodyDef.type = b2_kinematicBody;
     bodyDef.position.Set(pos.X, pos.Z);
     b2PolygonShape bodyShape2;
@@ -139,14 +139,20 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
     if (rot.Y == 90) {
 
-        bodyShape.SetAsBox(50 * escala.Z, 5 * escala.X);
+        bodyShape.SetAsBox(100 * escala.Z, 5 * escala.X);
         bodyShape2.SetAsBox(5 * escala.Z, 5 * escala.X);
+		fisica2 = smgr->addCubeSceneNode(2);
+		fisica2->setScale(vector3df(100 * escala.Z,0, 5*escala.X));
+	
+		
 
     } else {
-        bodyShape.SetAsBox(5 * escala.X, 50 * escala.Z);
+        bodyShape.SetAsBox(5 * escala.X, 100 * escala.Z);
         bodyShape2.SetAsBox(5 * escala.X, 5 * escala.Z);
-
-
+		fisica2 = smgr->addCubeSceneNode(2);
+		fisica2->setScale(vector3df(5*escala.X,0, 100* escala.Z));
+	
+	
     }
 
     objeto3D = dirPuerta;
@@ -156,6 +162,12 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     //std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
     body->SetUserData(this);
     body->CreateFixture(&bodyShape2, 1.0f);
+	fisica2->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
+	fisica2->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
+	fisica2->getMaterial(0).EmissiveColor.set(0, 10, 50, 40);
+	fisica2->setPosition(vector3df(body->GetPosition().x, 10, body->GetPosition().y));
+
+	
 
     filtro.groupIndex = FILTRO_PUERTA;
     //    body->GetFixtureList()->SetFilterData(filtro);

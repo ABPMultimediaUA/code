@@ -21,6 +21,10 @@
 #define ESTATICO 2
 #define CERRADA 0
 
+class Entity2D;
+class MaquinaEstados;
+class Estados;
+
 class Puerta {
 public:
 
@@ -36,8 +40,10 @@ public:
 	void setPosicion(vector3df newPos);
 	void setRotacion(vector3df newRot);
 	void setEscala(vector3df newEscala);
-	void setFisica(b2World *world);
-	void setAbierta(bool x);
+	void setDetectado(bool x);
+	void setFisica(b2World *world , ISceneManager* smgr);
+	void setAbierta();
+	void setCerrada();
 	void abrirPuerta();
 	void cerrarPuerta();
 	void Update();
@@ -56,6 +62,7 @@ private:
 	float limiteApX;
 	float limiteApZ;
 	bool abrir;
+	bool detectado;
 };
 
 #endif /* PUERTA_H */

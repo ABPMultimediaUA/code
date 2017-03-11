@@ -111,7 +111,7 @@
     <ClCompile Include="MaquinaEstados\FSM\MaquinaEstados.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="MaquinaEstados\FSM\Estado.cpp">
+    <ClCompile Include="MaquinaEstados\FSM\Estados.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
@@ -209,7 +209,7 @@
     <ClInclude Include="MaquinaEstados\FSM\MaquinaEstados.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="MaquinaEstados\FSM\Estado.h">
+    <ClInclude Include="MaquinaEstados\FSM\Estados.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
