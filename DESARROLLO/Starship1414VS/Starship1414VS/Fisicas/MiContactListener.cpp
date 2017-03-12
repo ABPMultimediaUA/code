@@ -37,15 +37,15 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, int modo) {
 
 	if (modo == 0) {
 		//si tiene rotacion en Y van | sino van -
-		puerta->setDetectado(true);
-
-	}
+		puerta->setDetectado(true,entity->getId());
+		puerta->UpdateEstado();
+	}	
 
 
 	else if (modo == 1 ) {
 		std::cout << "cerrar123" << std::endl;
-		puerta->setDetectado(false);
-
+		puerta->setDetectado(false,entity->getId());
+		puerta->UpdateEstado();
 	}
 
 }

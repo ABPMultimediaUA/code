@@ -159,7 +159,7 @@ void Escenario::removeListSubHijos() {
 }
 
 void Escenario::dibujarEscenario() {
-
+	int num = 0;
 	Waypoints *puntos = new Waypoints();
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
@@ -209,24 +209,25 @@ void Escenario::dibujarEscenario() {
 				tam = objeto->getScale().X * objeto->getScale().Z * 100;
 			}
 			else {
+			
 				for (std::list<Elemento>::iterator N = (*M).ObjetosEscena.begin(); N != (*M).ObjetosEscena.end(); N++) {
-
+					
 					if ((*M).nombre == "Puertas") {
 						//puertas
 						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 							vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
 							vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
 							vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
-						objeto->getMaterial(0).EmissiveColor.set(0, 0, 128, 0);
+						objeto->getMaterial(0).EmissiveColor.set(0, 20+num*5, 5*num+60, 50-num);
 
-						Puerta *door = new Puerta(vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
 							vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
 							vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z),
 							objeto);
 
-						door->setFisica(mundo,SM);
+						door->setFisica(mundo,SM,num);
 						puertas.push_back(door);
-
+						num++;
 					}
 
 					//                                if((*I).nombre=="Escenario"){
@@ -362,11 +363,14 @@ void Escenario::actualizarEstadoPuerta()
 	if (!puertas.empty())
 	{
 		for (std::list<Puerta*>::iterator it = puertas.begin(); it != puertas.end(); it++) {
-			if ((*it) != NULL) {
-
-				(*it)->Update();
+			if ((*it) != NULL ) {
+			
+					(*it)->Update();
+				
 			}
+		
 		}
+
 	}
 }
 

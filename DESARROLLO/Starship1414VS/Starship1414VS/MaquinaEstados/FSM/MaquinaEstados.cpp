@@ -4,6 +4,7 @@
 
 MaquinaEstados::MaquinaEstados()
 {
+
 }
 
 
@@ -24,27 +25,33 @@ void MaquinaEstados::addEstado(Estados * nombreEstados, bool activo)
 
 void MaquinaEstados::cambiaEstado(const std::string nombre)
 {
-	for (std::size_t i= 0; i<listaEstados.size(); i++)
+	if (!listaEstados.empty())
 	{
-		if (nombre==listaEstados[i]->getEstado())
+		for (std::size_t i = 0; i < listaEstados.size(); i++)
 		{
-
-			if (listaEstados[i]->getEstadoActivo()!=NULL)
+			if (nombre == listaEstados[i]->getEstado())
 			{
-				this->getEstadoActivo()->limpiarEstado();
+
+				if (listaEstados[i]->getEstadoActivo() != NULL)
+				{
+					this->getEstadoActivo()->limpiarEstado();
+				}
+				listaEstados[i]->inicializarEstado();
 			}
-			listaEstados[i]->inicializarEstado();
 		}
 	}
 }
 
 Estados * MaquinaEstados::getEstadoActivo()
 {
-	for(std::size_t i=0; i<listaEstados.size(); i++)
+	if (!listaEstados.empty())
 	{
-		if(listaEstados[i]->getEstadoActivo())
+		for (std::size_t i = 0; i < listaEstados.size(); i++)
 		{
-			return listaEstados[i];
+			if (listaEstados[i]->getEstadoActivo())
+			{
+				return listaEstados[i];
+			}
 		}
 	}
 	return NULL;
@@ -52,12 +59,14 @@ Estados * MaquinaEstados::getEstadoActivo()
 
 Estados * MaquinaEstados::getEstado(const std::string nombre)
 {
-
-	for (std::size_t i = 0; i<listaEstados.size(); i++)
+	if (!listaEstados.empty())
 	{
-		if (listaEstados[i]->getEstado()==nombre)
+		for (std::size_t i = 0; i < listaEstados.size(); i++)
 		{
-			return listaEstados[i];
+			if (listaEstados[i]->getEstado() == nombre)
+			{
+				return listaEstados[i];
+			}
 		}
 	}
 	return NULL;
