@@ -23,10 +23,12 @@
 #include <string>
 #include "../Enemigos/Enemigo.h"
 #include "Pared.h"
+
 class Personaje;
 class Juego;
 class Puerta;
 class Terminal;
+class Objetos;
 
 
 class Escenario {

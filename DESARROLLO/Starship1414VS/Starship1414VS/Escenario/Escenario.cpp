@@ -24,6 +24,7 @@
 #include "../Enemigos/CriaAlien.h"
 #include "../Enemigos/Waypoints.h"
 #include "../Enemigos/AlienBerserker.h"
+#include "ObjConsumables\Objetos.h"
 
 
 
