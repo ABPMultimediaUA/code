@@ -49,7 +49,8 @@ private:
 	vector3df pos;
 	Entity2D *entity;
 	vector3df angulo;
-	int cargador;
+	int cargador; //cargador actual del arma en uso
+	int municionTotal; //balas totales que tiene el jugador del arma actual
 	f32 tiempoDisparo;
 	bool disparo;
 	bool teclaE;
@@ -70,6 +71,7 @@ public:
 	vector3df getRot();
 	vector3df getAngulo();
 	int getCargador();
+	int getMunicionActual();
 	float getVel();
 	f32 getTiempoDisparo();
 	bool getDisparo();
@@ -84,15 +86,19 @@ public:
 	void rotar(vector3df raton);
 	void setPos(vector3df pos);
 	void recargar();
+	void cogerMunicion(int municionCogida); 
+	
 	void setDisparo(bool x);
 	void setTiempoDisparo(f32 t);
 	void actualizarLista(f32 dt);
 	void disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *world, f32 dt, vector2df posRaton);
 	void actualizarPosicion();
 	void setArmaActual(int newArma);
+
 	void subirNivelDamage();
 	void subirCargador();
 	void subirCapacidadDeMun();
+
 	void setTeclaE(bool x);
 	bool getVivo();
 	Entity2D* getEntity();

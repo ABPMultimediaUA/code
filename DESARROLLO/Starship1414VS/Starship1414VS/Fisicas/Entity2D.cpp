@@ -232,22 +232,47 @@ Entity2D::Entity2D(b2World * world, vector3df pos, vector3df rot, vector3df esca
 {
 	bodyDef.type = b2_staticBody;
 	bodyDef.position.Set(pos.X, pos.Z);
-	b2PolygonShape bodyShape2;
+	
 
-	bodyShape.SetAsBox(30 * escala.X, 5 * escala.Z);
-	bodyShape2.SetAsBox(7 * escala.X, 7 * escala.Z);
 	body = world->CreateBody(&bodyDef);
-	body->CreateFixture(&bodyShape, 1.0f);
+	
+
+	if(tipo == 5) {
+
+		b2PolygonShape bodyShape2;
+
+		bodyShape.SetAsBox(30 * escala.X, 5 * escala.Z);
+		bodyShape2.SetAsBox(7 * escala.X, 7 * escala.Z);
+		
+	
+		body->CreateFixture(&bodyShape2, 1.0f);
+	}
+
+	else {
+
+		bodyShape.SetAsBox(5 * escala.X, 5 * escala.Z);
+
+	}
 
 	body->SetUserData(this);
+	body->CreateFixture(&bodyShape, 1.0f);	
 	body->GetFixtureList()->SetSensor(true);
 
-	body->CreateFixture(&bodyShape2, 1.0f);
+	
 	//filtro.groupIndex = FILTRO_PARED;
 	//body->GetFixtureList()->SetFilterData(filtro);
 
 	objeto3D = dirObjeto;
 	iden = 5;
+	id = tipo;
+
+	/*
+	0: botiquin
+	1: llave
+	2: municion de pistola
+	3:   " " de subfusil
+	4:   " " de escopeta	
+	*/
 }
 
 Entity2D::Entity2D(const Entity2D& orig) {

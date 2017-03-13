@@ -42,7 +42,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 
 
 
-	vel = 300.0f;
+	vel = 100.0f;
 	pos = maya->getPosition();
 	entity = new Entity2D(world, pos, this, smgr);
 
@@ -276,6 +276,11 @@ int Personaje::getCargador() {
 	return cargador;
 }
 
+int Personaje::getMunicionActual()
+{
+	return municionTotal;
+}
+
 f32 Personaje::getTiempoDisparo() {
 	return tiempoDisparo;
 }
@@ -330,6 +335,8 @@ float Personaje::getTiempoArma() {
 
 void Personaje::setArmaActual(int newArma) {
 
+	//habria que poner tambien el de total de municion del arma actual (llamar al seter)
+	//y devolver tambien el cargador total del arma
 	switch (armaActual) {
 
 	case 0:
@@ -376,6 +383,7 @@ void Personaje::setArmaActual(int newArma) {
 
 void Personaje::recargar() {
 
+	//restar de la recarga al total de balas que se tiene actualmente
 	int recarga;
 
 	switch (armaActual) {
@@ -396,6 +404,13 @@ void Personaje::recargar() {
 		break;
 
 	}
+}
+
+//cuando colisione contra una caja de municion se le suma hasta el maximo de cargador del arma
+//hay que distinguir a que arma tiene que subir
+void Personaje::cogerMunicion(int municionCogida)
+{
+	//usar armaActual para el switch
 }
 
 void Personaje::setDisparo(bool x) {

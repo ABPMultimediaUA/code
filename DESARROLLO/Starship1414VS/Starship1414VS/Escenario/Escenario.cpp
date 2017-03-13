@@ -25,6 +25,10 @@
 #include "../Enemigos/Waypoints.h"
 #include "../Enemigos/AlienBerserker.h"
 #include "ObjConsumables\Objetos.h"
+#include "ObjConsumables\TiposDeMunicion\MunicionEscopeta.h"
+#include "ObjConsumables\TiposDeMunicion\MunicionPistola.h"
+#include "ObjConsumables\TiposDeMunicion\MunicionSubfusil.h"
+
 
 
 
@@ -265,6 +269,35 @@ void Escenario::dibujarEscenario() {
 
 
 	}
+	/*vector3df(100, 5, 0);
+	vector3df(100, 5, 20);
+	vector3df(100, 5, 40);*/
+
+	//creacion de la municion de prueba que habra que transladar
+
+	IMeshSceneNode *municion = SM->addCubeSceneNode(1.5f);
+	municion->setPosition(vector3df(100, 5, 0));
+	municion->getMaterial(0).EmissiveColor.set(0, 128, 0, 0);
+	MunicionPistola *pistola = new MunicionPistola(municion->getPosition(), municion->getRotation(),
+		municion->getScale(), 2, municion, 2, 7);
+	pistola->setFisica(mundo);
+
+	IMeshSceneNode *municion1 = SM->addCubeSceneNode(1.5f);
+	municion1->setPosition(vector3df(100, 5, 20));
+	municion1->getMaterial(0).EmissiveColor.set(0, 0, 128, 0);
+	MunicionSubfusil *subfusil = new MunicionSubfusil(municion1->getPosition(), municion1->getRotation(),
+		municion1->getScale(), 3, municion1, 3, 15);
+	subfusil->setFisica(mundo);
+
+
+	IMeshSceneNode *municion2 = SM->addCubeSceneNode(1.5f);
+	municion2->setPosition(vector3df(100, 5, 40));
+	municion2->getMaterial(0).EmissiveColor.set(0, 0, 0, 128);
+	MunicionEscopeta *escopeta = new MunicionEscopeta(municion2->getPosition(), municion2->getRotation(),
+		municion2->getScale(), 4, municion2, 4, 2);
+	escopeta->setFisica(mundo);
+
+
 	puntos->setTamDelMapa(tam);
 	puntos->creaPesos(entity);
 	fabricaDeEnemigos(puntos);

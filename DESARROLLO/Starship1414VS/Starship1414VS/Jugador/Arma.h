@@ -25,9 +25,11 @@ public:
 	void subirNivelCargador();
 	void subirNivelDamage();
 	void subirNivelMunicion();
+	//metodos usados por el personaje para guardar en el arma el cargador actual
+	//y el total de dicha municion
 	void setCapacidadDeMun(int cap);
 	void setMunicionAcutal(int newMun);
-
+	// end
 	float getTiempoDisparo();
 	int getNivelCargador();
 	int getNivelDamage();

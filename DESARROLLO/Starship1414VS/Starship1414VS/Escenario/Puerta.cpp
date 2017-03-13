@@ -310,7 +310,7 @@ void Puerta::Update()
 	{
 		this->cerrarPuerta();
 	}
-	std::cout << Maquina->getEstadoActivo()->getEstado() << " COMPLETA: " << abierta << " id: " << id << " idEn: " << entity->getId() << " Detect: " << idDetect << std::endl;
+	//std::cout << Maquina->getEstadoActivo()->getEstado() << " COMPLETA: " << abierta << " id: " << id << " idEn: " << entity->getId() << " Detect: " << idDetect << std::endl;
 	
 	
 	if (BLOQUEADA->getEstadoActivo())
