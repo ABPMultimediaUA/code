@@ -17,5 +17,8 @@ public:
 private:
 	GLuint VBO, VAO, EBO;
 	GLuint shaderProgram;
+	GLuint vertexShader;
+	GLint success;
+	GLuint fragmentShader;
 };
 

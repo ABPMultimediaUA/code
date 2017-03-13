@@ -4,7 +4,7 @@
 #include "entityTree\TCamara.h"
 #include "entityTree\TLuz.h"
 #include "entityTree\TMalla.h"
-#include "resourceManager\TRecursoTriangle.h"
+#include "entityTree\TTriangle.h"
 #include <vector>
 #define GLEW_STATIC
 #include <GL\glew.h>
@@ -17,29 +17,6 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 const GLuint WIDTH = 800, HEIGHT = 600;
 
 int main() {
-
-	TNodo origen(nullptr);
-	std::vector<TNodo*> nodos;
-	nodos.push_back(new TNodo(new TTransform()));
-	nodos.push_back(new TNodo(new TTransform()));
-	nodos.push_back(new TNodo(new TMalla()));
-	nodos.push_back(new TNodo(new TLuz()));
-	nodos.push_back(new TNodo(new TTransform()));
-	nodos.push_back(new TNodo(new TCamara()));
-	std::cout << "Nodos Creados correctamente" << std::endl;
-	origen.addHijo(nodos.at(1));
-	nodos.at(1)->addHijo(nodos.at(0));
-	nodos.at(0)->addHijo(nodos.at(2));
-	nodos.at(1)->addHijo(nodos.at(3));
-	origen.addHijo(nodos.at(4));
-	nodos.at(4)->addHijo(nodos.at(5));
-	std::cout << "Nodos Enlazados correctamente" << std::endl;
-	origen.draw();
-	std::cout << "Nodos Fin draw" << std::endl;
-	origen.~TNodo();
-	nodos.erase(nodos.begin(),nodos.end());
-	std::cout << nodos.size() << std::endl;
-
 	//Inicio de GLFW para cargar una ventana
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
@@ -70,8 +47,23 @@ int main() {
 	glfwGetFramebufferSize(window, &width, &height);
 	glViewport(0, 0, width, height);
 
-	//cargar recurso triangulo
-	TRecursoTriangle tri;
+	//cargar arbol
+	TNodo origen(nullptr);
+	std::vector<TNodo*> nodos;
+	nodos.push_back(new TNodo(new TTransform()));
+	nodos.push_back(new TNodo(new TTransform()));
+	nodos.push_back(new TNodo(new TTriangle()));
+	nodos.push_back(new TNodo(new TLuz()));
+	nodos.push_back(new TNodo(new TTransform()));
+	nodos.push_back(new TNodo(new TCamara()));
+	std::cout << "Nodos Creados correctamente" << std::endl;
+	origen.addHijo(nodos.at(1));
+	nodos.at(1)->addHijo(nodos.at(0));
+	nodos.at(0)->addHijo(nodos.at(2));
+	nodos.at(1)->addHijo(nodos.at(3));
+	origen.addHijo(nodos.at(4));
+	nodos.at(4)->addHijo(nodos.at(5));
+	std::cout << "Nodos Enlazados correctamente" << std::endl;
 
 	//bucle del juego
 	while (!glfwWindowShouldClose(window))
@@ -85,14 +77,18 @@ int main() {
 		glClear(GL_COLOR_BUFFER_BIT);
 		
 		//dibujo el triangulo
-		tri.draw();
+		origen.draw();
+		std::cout << "Nodos Fin draw" << std::endl;
 
 		//Pinta el buffer en pantalla
 		glfwSwapBuffers(window);
 	}
 
 	//Para cerrar todo lo relacionado con GLFW
-	tri.borrarCuadrado();
+
+	origen.~TNodo();
+	nodos.erase(nodos.begin(), nodos.end());
+	std::cout << nodos.size() << std::endl;
 	glfwTerminate();
 	return 0;
 }
