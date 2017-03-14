@@ -3049,63 +3049,2933 @@ PESO: -1
 (-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 412.099, 0, -1, )
 (-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 467.428, 199.123, -1, -1, -1, -1, -1, 0, )
 ///////////////////////////////
+POS WAYPOINT INI: 12
 
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 60 POS Y: 20
-///////////////////////////////////
-Sombra: 0 Elemento: 4
+NOMBRE: Punto13
+POS NODO: 12
 
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 5
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 100 POS Y: 40
-///////////////////////////////////
-Sombra: 0 Elemento: 5
+DIR: 4
 
-////////////////////////
-AUMENTAR MUNICION DE ESCOPETA
-////////////////////////
 
-ID DE LA ENTITY 5
-MUERO ENTITY2D
+DIR: 4
 
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 5
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 100 POS Y: 20
-///////////////////////////////////
-Sombra: 0 Elemento: 5
 
-////////////////////////
-AUMENTAR MUNICION DE SUBFUSIL
-////////////////////////
+DIR: 4
 
-ID DE LA ENTITY 5
-MUERO ENTITY2D
 
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 5
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 100 POS Y: 0
-///////////////////////////////////
-Sombra: 0 Elemento: 5
+DIR: 4
 
-////////////////////////
-AUMENTAR MUNICION DE PISTOLA
-////////////////////////
 
-ID DE LA ENTITY 5
-MUERO ENTITY2D
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 5
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 5
+
+
+DIR: 5
+
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: 398.005
+MINIMO ANTES: 1e+07
+MINIMO DESPUES: 398.005
+I: 11
+///////////////////////
+///////////////////////
+MATRIZ: 0
+///////////////////////
+MATRIZ: 402.011
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: 416.203
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+POS WAYPOINT MAS CERCANO: 11
+
+NOMBRE DEL DESTINO: Punto12
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
 Irrlicht Engine version 1.8.4
  (Build 9200)
 Using renderer: OpenGL 4.5.0
