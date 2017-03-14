@@ -123,6 +123,7 @@
     <ClCompile Include="entityTree\TNodo.cpp" />
     <ClCompile Include="entityTree\TTransform.cpp" />
     <ClCompile Include="entityTree\TTriangle.cpp" />
+    <ClCompile Include="frameWork\mesh.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="resourceManager\TGestorRecursos.cpp" />
     <ClCompile Include="resourceManager\TRecurso.cpp" />
@@ -139,6 +140,7 @@
     <ClInclude Include="entityTree\TNodo.h" />
     <ClInclude Include="entityTree\TTransform.h" />
     <ClInclude Include="entityTree\TTriangle.h" />
+    <ClInclude Include="frameWork\mesh.h" />
     <ClInclude Include="resourceManager\TGestorRecursos.h" />
     <ClInclude Include="resourceManager\TRecursoTriangle.h" />
     <ClInclude Include="tools\glm\common.hpp" />
@@ -180,6 +182,8 @@
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\assimp-vc140-mt.lib" />
+    <Library Include="lib\glew32.lib" />
+    <Library Include="lib\glew32s.lib" />
     <Library Include="lib\glfw3.lib" />
     <Library Include="lib\glfw3dll.lib" />
   </ItemGroup>
