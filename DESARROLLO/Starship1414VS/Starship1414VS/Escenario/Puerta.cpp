@@ -12,16 +12,29 @@
 */
 #include <iostream>
 #include "Puerta.h"
+#include "../MaquinaEstados/FSM/Estados.h"
+#include "../MaquinaEstados/FSM/MaquinaEstados.h"
 
-Puerta::Puerta(vector3df posicion, vector3df rotacion, vector3df escala, IMeshSceneNode *objeto) {
-
+Puerta::Puerta(int ident, vector3df posicion, vector3df rotacion, vector3df escala, IMeshSceneNode *objeto){
+	id = ident;
 	pos = posicion;
 	rot = rotacion;
 	escal = escala;
 	posIni = posicion;
 	maya = objeto;
 	abierta = false;
+	limiteApX = this->getPosicion().X + (this->getEscala().X / 2);
+	limiteApZ = this->getPosicion().Z + (this->getEscala().Z / 2);
+	CERRADA = new Estados("CERRADA");
+	ABIERTA = new Estados("ABIERTA");
+	BLOQUEADA = new Estados("BLOQUEADA");
+	Maquina = new MaquinaEstados();
+	Maquina->addEstado(CERRADA);
+	Maquina->addEstado(ABIERTA);
+	Maquina->addEstado(BLOQUEADA, true);
 
+	detectado = false;
+	idDetect = -1;
 }
 
 Puerta::Puerta(const Puerta& orig) {
@@ -42,8 +55,12 @@ vector3df Puerta::getEscala() {
 	return escal;
 }
 
-bool Puerta::getAbierta() {
+bool Puerta::getTotalAbierta() {
 	return abierta;
+}
+
+bool Puerta::getAbierta() {
+	return abrir;
 }
 
 void Puerta::setPosicion(vector3df newPos) {
@@ -58,36 +75,112 @@ void Puerta::setEscala(vector3df newEscala) {
 	escal = newEscala;
 }
 
-void Puerta::setAbierta(bool x) {
-	abierta = x;
+void Puerta::setDetectado(bool x,int ident)
+{
+
+		detectado = x;
+		idDetect = ident;
+	
 }
 
-void Puerta::setFisica(b2World* world) {
+void Puerta::setAbierta() {
+	if (detectado==true)
+	{
+		Maquina->cambiaEstado("ABIERTA");
+	}
+	
+}
+
+void Puerta::setCerrada()
+{
+	if (detectado==false)
+	{
+		Maquina->cambiaEstado("CERRADA");
+	}
+}
+
+void Puerta::UpdateEstado()
+{
+	if (detectado == true && id == idDetect)
+	{
+		Maquina->cambiaEstado("ABIERTA");
+	}
+
+	if (detectado == false && abierta == true)
+	{
+		Maquina->cambiaEstado("CERRADA");
+	}
+
+
+}
+
+bool Puerta::getDetectado()
+{
+	return detectado;
+}
+
+std::string Puerta::getEstado()
+{
+	return Maquina->getEstadoActivo()->getEstado();
+}
+
+
+void Puerta::setFisica(b2World* world , ISceneManager* smgr,int ident) {
 	//std::cout<<"CREO PARED! "<<std::endl;
 
-	entity = new Entity2D(world, pos, rot, escal, true, this);
+	entity = new Entity2D(world, pos, rot, escal, true, this,smgr,ident);
 
 }
 
 void Puerta::abrirPuerta() {
 
-	std::cout << "ABRO" << std::endl;
+
 	//si tiene rotacion en Y van | sino van -
 
+
 	if (rot.Y == 90) {
-		std::cout << "PUERTS ROTADA" << std::endl;
 
-		pos.Z -= 80;
+		if (limiteApZ + 70>entity->getCuerpo2D()->GetPosition().y)
+		{
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 20.0f));
+			pos.Z = entity->getCuerpo2D()->GetPosition().y;
+			maya->setPosition(pos);
 
+		}
+		else
+		{
+			abierta = true;
+			std::cout << detectado << std::endl;
+			if (detectado == false)
+			{
+				Maquina->cambiaEstado("CERRADA");
+			}
+		}
 	}
 
 	else {
-		std::cout << "PUERTS NO ROTADA" << std::endl;
+		
+		if (limiteApX+70>entity->getCuerpo2D()->GetPosition().x)
+		{
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(20.0f, 0.0f));
+			pos.X = entity->getCuerpo2D()->GetPosition().x;
+			maya->setPosition(pos);
+		}
+		else
+		{
+			abierta = true;
+			std::cout << detectado << std::endl;
+			if (detectado == false)
+			{
+				Maquina->cambiaEstado("CERRADA");
+			}
+		}
+		//  entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+		
 
-		pos.X += 80;
 	}
-	entity->destruirFixture();
-	maya->setPosition(pos);
+
+
 	//  if(entity->getCuerpo2D()->GetPosition().y >= y){
 	//                    std::cout<<"ENTRO nAQUI"<<std::endl;
 	//
@@ -127,22 +220,46 @@ void Puerta::abrirPuerta() {
 }
 
 void Puerta::cerrarPuerta() {
-	std::cout << "CIERRO" << std::endl;
+
+
 
 	if (rot.Y == 90) {
-		std::cout << "PUERTS ROTADA" << std::endl;
 
-		pos.Z += 80;
-
+		if (limiteApZ-5<entity->getCuerpo2D()->GetPosition().y)
+		{
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, -20.0f));
+			pos.Z = entity->getCuerpo2D()->GetPosition().y;
+			maya->setPosition(pos);
+		}
+		else
+		{
+			abierta = false;
+			
+			//manejador.cambiaEstado("BLOQUEADA");
+		}
 	}
 
 	else {
-		std::cout << "PUERTS NO ROTADA" << std::endl;
+		
+		if (limiteApX-5<entity->getCuerpo2D()->GetPosition().x)
+		{
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-20.0f, 0.0f));
+			pos.X = entity->getCuerpo2D()->GetPosition().x;
+			maya->setPosition(pos);
+		}
+		else
+		{
+			abierta = false;
+			
+	//		manejador.cambiaEstado("BLOQUEADA");
 
-		pos.X -= 80;
+		}
+		//  entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
+
+
 	}
-	entity->crearFixture();
-	maya->setPosition(pos);
+
+
 	//    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 50000.0f));
 	//            //pos.X = x;
 	//            pos.Z = y;
@@ -178,4 +295,27 @@ void Puerta::cerrarPuerta() {
 	//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
 	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 	//    
+}
+
+void Puerta::Update()
+{
+	
+
+	if (ABIERTA->getEstadoActivo()&&id==idDetect)
+	{
+		this->abrirPuerta();
+	}
+
+	if (CERRADA->getEstadoActivo()&&id==idDetect)
+	{
+		this->cerrarPuerta();
+	}
+	//std::cout << Maquina->getEstadoActivo()->getEstado() << " COMPLETA: " << abierta << " id: " << id << " idEn: " << entity->getId() << " Detect: " << idDetect << std::endl;
+	
+	
+	if (BLOQUEADA->getEstadoActivo())
+	{
+		
+	}
+
 }

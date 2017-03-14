@@ -23,10 +23,12 @@
 #include <string>
 #include "../Enemigos/Enemigo.h"
 #include "Pared.h"
+
 class Personaje;
 class Juego;
-
+class Puerta;
 class Terminal;
+class Objetos;
 
 
 class Escenario {
@@ -74,6 +76,8 @@ private:
 	b2World *mundo;
 	std::list<Enemigo*> enemigos;
 	std::list<Pared*> paredes;
+	std::list<Puerta*> puertas;
+	std::list<Objetos*> objConsumables;
 	int tam;
 	Entity2D *entity;
 	Juego *jue;
@@ -100,10 +104,11 @@ public:
 	int getTam();
 	void cambiaEstado(std::string mensaje);
 	void actualizarEstadoPersonaje();
+	void actualizarEstadoPuerta();
+	void actualizarObjetosConsumables();
 	void eleminarEnemigos();
 	Personaje* getPersonaje();
 	void destroyPared();
-	void destroyEntityPared();
 };
 
 #endif /* ESCENARIO_H */

@@ -31,7 +31,7 @@ public:
 	Entity2D(b2World *world);
 	Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* smgr);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirPared);
-	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta);
+	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta, ISceneManager* smgr, int ident);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala);
 	Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, ISceneManager* smgr);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirObjeto, int tipo);
@@ -52,6 +52,7 @@ public:
 	void crearFixture();
 	b2Body* getSombraP2D();
 	b2Body* getSombraE2D();
+	int getId();
 
 private:
 
@@ -70,6 +71,7 @@ private:
 	IMeshSceneNode* fisica2;
 	int iden;
 	int idenSh;
+	int id;
 	bool live;
 	void* objeto3D;
 

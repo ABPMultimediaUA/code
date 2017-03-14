@@ -108,6 +108,33 @@
     <ClCompile Include="Escenario\Terminal.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="MaquinaEstados\FSM\MaquinaEstados.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="MaquinaEstados\FSM\Estados.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\ObjConsumables\Llave.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\ObjConsumables\Objetos.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\ObjConsumables\Municion.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\ObjConsumables\Botiquines.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionPistola.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionSubfusil.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionEscopeta.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Enemigos\AlienBerserker.h">
@@ -198,6 +225,33 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Escenario\Terminal.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="MaquinaEstados\FSM\MaquinaEstados.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="MaquinaEstados\FSM\Estados.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\ObjConsumables\Llave.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\ObjConsumables\Objetos.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\ObjConsumables\Municion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\ObjConsumables\Botiquines.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionPistola.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionSubfusil.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionEscopeta.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

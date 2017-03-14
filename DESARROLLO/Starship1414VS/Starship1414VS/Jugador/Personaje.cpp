@@ -56,6 +56,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 
 	armaActual = PISTOLA;
 	cargador = pistola->getCargador();
+	municionTotal = pistola->getCapacidadDeMun();
 	/* md.mass = 2.0;
 	md.center = b2Vec2(5.0,5.0);
 	md.I = 1.0;
@@ -276,6 +277,12 @@ int Personaje::getCargador() {
 	return cargador;
 }
 
+//aqui
+int Personaje::getMunicionActual()
+{
+	return municionTotal;
+}
+
 f32 Personaje::getTiempoDisparo() {
 	return tiempoDisparo;
 }
@@ -330,23 +337,38 @@ float Personaje::getTiempoArma() {
 
 void Personaje::setArmaActual(int newArma) {
 
+	//habria que poner tambien el de total de municion del arma actual (llamar al seter)
+	//y devolver tambien el cargador total del arma
 	switch (armaActual) {
 
 	case 0:
 
 		pistola->setMunicionAcutal(cargador);
+		pistola->setCapacidadDeMun(municionTotal);
 
 		break;
 
 	case 1:
+
 		fusil->setMunicionAcutal(cargador);
+		fusil->setCapacidadDeMun(municionTotal);
+
 		break;
 
 	case 2:
+
 		escopeta->setMunicionAcutal(cargador);
+		escopeta->setCapacidadDeMun(municionTotal);
 		break;
 
 	}
+
+	std::cout << "" << std::endl;
+	std::cout << "ARMA: "<<armaActual << std::endl;
+	std::cout << "MUNICION TOTAL: " << municionTotal << std::endl;
+	std::cout << "" << std::endl;
+
+
 	armaActual = newArma;
 
 	switch (armaActual) {
@@ -354,6 +376,7 @@ void Personaje::setArmaActual(int newArma) {
 	case 0:
 		std::cout << "CAMBIO A PISTOLA " << armaActual << std::endl;
 		cargador = pistola->getMunicionActual();
+		municionTotal = pistola->getCapacidadDeMun();
 
 		break;
 
@@ -361,6 +384,8 @@ void Personaje::setArmaActual(int newArma) {
 
 		std::cout << "CAMBIO A FUSIL " << armaActual << std::endl;
 		cargador = fusil->getMunicionActual();
+		municionTotal = fusil->getCapacidadDeMun();
+
 
 		break;
 
@@ -368,34 +393,113 @@ void Personaje::setArmaActual(int newArma) {
 
 		std::cout << "CAMBIO A ESCOPETA " << armaActual << std::endl;
 		cargador = escopeta->getMunicionActual();
+		municionTotal = escopeta->getCapacidadDeMun();
+
 
 		break;
 
+	
+
 	}
+		std::cout << "" << std::endl;
+		std::cout << "ARMA CAMBIADA: " << armaActual << std::endl;
+		std::cout << "MUNICION TOTAL: " << municionTotal << std::endl;
+		std::cout << "" << std::endl;
 }
 
 void Personaje::recargar() {
 
+	//restar de la recarga al total de balas que se tiene actualmente
 	int recarga;
 
 	switch (armaActual) {
 
 	case 0:
 		recarga = pistola->getCargador() - cargador;
-		cargador += recarga;
+	
 		break;
 
 	case 1:
 		recarga = fusil->getCargador() - cargador;
-		cargador += recarga;
+
 		break;
 
 	case 2:
 		recarga = escopeta->getCargador() - cargador;
-		cargador += recarga;
+
 		break;
 
 	}
+
+
+	cargador += recarga;
+	municionTotal -= recarga;
+}
+
+//cuando colisione contra una caja de municion se le suma hasta el maximo de cargador del arma
+//hay que distinguir a que arma tiene que subir
+void Personaje::cogerMunicion(int municionCogida, int arma)
+{
+	//usar armaActual para el switch
+	//municionTotal += municionCogida;
+	int auxMunicion;
+
+	switch(arma) {
+
+	case 0:
+
+		auxMunicion = pistola->getCapacidadDeMun();
+		auxMunicion += municionCogida;
+		
+		if(auxMunicion > pistola->getTotalMunicion()) {
+			auxMunicion = pistola->getTotalMunicion();
+		}
+
+		pistola->setCapacidadDeMun(auxMunicion);
+
+		if(arma == armaActual) {
+			municionTotal = auxMunicion;
+		}
+
+
+		break;
+
+	case 1:
+
+		auxMunicion = fusil->getCapacidadDeMun();
+		auxMunicion += municionCogida;
+
+		if (auxMunicion > fusil->getTotalMunicion()) {
+			auxMunicion = fusil->getTotalMunicion();
+		}
+
+		fusil->setCapacidadDeMun(auxMunicion);
+
+		if (arma == armaActual) {
+			municionTotal = auxMunicion;
+		}
+
+		break;
+
+	case 2:
+
+		auxMunicion = escopeta->getCapacidadDeMun();
+		auxMunicion += municionCogida;
+
+		if (auxMunicion > escopeta->getTotalMunicion()) {
+			auxMunicion = escopeta->getTotalMunicion();
+		}
+
+		escopeta->setCapacidadDeMun(auxMunicion);
+
+		if (arma == armaActual) {
+			municionTotal = auxMunicion;
+		}
+
+		break;
+
+	}
+
 }
 
 void Personaje::setDisparo(bool x) {

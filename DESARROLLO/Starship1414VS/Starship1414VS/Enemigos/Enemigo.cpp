@@ -58,7 +58,8 @@ Enemigo::~Enemigo() {
 
     std::cout << "////////////////////////" << std::endl;
     std::cout << "MUERE: " << maya << std::endl;
-    maya->getParent()->removeChild(maya);
+
+	maya->getParent()->removeChild(maya);
     GVida->getParent()->removeChild(GVida);
     RVida->getParent()->removeChild(RVida);
 	delete(waypoints);

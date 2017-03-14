@@ -36,9 +36,14 @@ public:
 	virtual void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse);
 
 	void actualizarPuerta(Entity2D *entity, int modo);
-	void aplicarImpulso(Entity2D *entity);
+
 	void aplicarDamage(Entity2D *entity, Entity2D *bala);
 	void activarTerminar(Entity2D *pers, Entity2D *terminal, bool actTer);
+	void gestionarObjeto(Entity2D *pers, Entity2D *objeto, int tipo);
+	void aumentarMunicionPistola(Entity2D *pers, Entity2D *munPistola);
+	void aumentarMunicionSubfusil(Entity2D *pers, Entity2D *munSubfisul);
+	void aumentarMunicionEscopeta(Entity2D *pers, Entity2D *munEscopeta);
+
 
 
 };

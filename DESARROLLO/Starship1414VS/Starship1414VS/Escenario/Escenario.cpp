@@ -24,6 +24,12 @@
 #include "../Enemigos/CriaAlien.h"
 #include "../Enemigos/Waypoints.h"
 #include "../Enemigos/AlienBerserker.h"
+#include "ObjConsumables\Objetos.h"
+#include "ObjConsumables\TiposDeMunicion\MunicionEscopeta.h"
+#include "ObjConsumables\TiposDeMunicion\MunicionPistola.h"
+#include "ObjConsumables\TiposDeMunicion\MunicionSubfusil.h"
+
+
 
 
 using namespace irr;
@@ -158,7 +164,7 @@ void Escenario::removeListSubHijos() {
 }
 
 void Escenario::dibujarEscenario() {
-
+	int num = 0;
 	Waypoints *puntos = new Waypoints();
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
@@ -208,24 +214,25 @@ void Escenario::dibujarEscenario() {
 				tam = objeto->getScale().X * objeto->getScale().Z * 100;
 			}
 			else {
+			
 				for (std::list<Elemento>::iterator N = (*M).ObjetosEscena.begin(); N != (*M).ObjetosEscena.end(); N++) {
-
+					
 					if ((*M).nombre == "Puertas") {
 						//puertas
 						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 							vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
 							vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
 							vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
-						objeto->getMaterial(0).EmissiveColor.set(0, 0, 128, 0);
+						objeto->getMaterial(0).EmissiveColor.set(0, 20+num*5, 5*num+60, 50-num);
 
-						Puerta *door = new Puerta(vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
 							vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
 							vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z),
 							objeto);
 
-						door->setFisica(mundo);
-
-
+						door->setFisica(mundo,SM,num);
+						puertas.push_back(door);
+						num++;
 					}
 
 					//                                if((*I).nombre=="Escenario"){
@@ -262,6 +269,38 @@ void Escenario::dibujarEscenario() {
 
 
 	}
+	/*vector3df(100, 5, 0);
+	vector3df(100, 5, 20);
+	vector3df(100, 5, 40);*/
+
+	//creacion de la municion de prueba que habra que transladar
+
+	IMeshSceneNode *municion = SM->addCubeSceneNode(1.5f);
+	municion->setPosition(vector3df(100, 5, 0));
+	municion->getMaterial(0).EmissiveColor.set(0, 128, 0, 0);
+	MunicionPistola *pistola = new MunicionPistola(municion->getPosition(), municion->getRotation(),
+		municion->getScale(), 2, municion, 2, 7);
+	pistola->setFisica(mundo);
+	
+	IMeshSceneNode *municion1 = SM->addCubeSceneNode(1.5f);
+	municion1->setPosition(vector3df(100, 5, 20));
+	municion1->getMaterial(0).EmissiveColor.set(0, 0, 128, 0);
+	MunicionSubfusil *subfusil = new MunicionSubfusil(municion1->getPosition(), municion1->getRotation(),
+		municion1->getScale(), 3, municion1, 3, 15);
+	subfusil->setFisica(mundo);
+
+
+	IMeshSceneNode *municion2 = SM->addCubeSceneNode(1.5f);
+	municion2->setPosition(vector3df(100, 5, 40));
+	municion2->getMaterial(0).EmissiveColor.set(0, 0, 0, 128);
+	MunicionEscopeta *escopeta = new MunicionEscopeta(municion2->getPosition(), municion2->getRotation(),
+		municion2->getScale(), 4, municion2, 4, 2);
+	escopeta->setFisica(mundo);
+
+	objConsumables.push_back(pistola);
+	objConsumables.push_back(subfusil);
+	objConsumables.push_back(escopeta);
+
 	puntos->setTamDelMapa(tam);
 	puntos->creaPesos(entity);
 	fabricaDeEnemigos(puntos);
@@ -329,7 +368,6 @@ void Escenario::actualizarEstadoPersonaje()
 	//cambiar el NULL por nullptr
 	if (pers!=NULL)
 	{
-		std::cout <<"pers"<<pers << std::endl;
 		if (pers->getVivo() == false)
 		{		
 			delete(pers);
@@ -357,6 +395,42 @@ void Escenario::destroyPared() {
 	}
 }
 
+void Escenario::actualizarEstadoPuerta()
+{
+	if (!puertas.empty())
+	{
+		for (std::list<Puerta*>::iterator it = puertas.begin(); it != puertas.end(); it++) {
+			if ((*it) != NULL ) {
+			
+					(*it)->Update();
+				
+			}
+		
+		}
+
+	}
+}
+
+void Escenario::actualizarObjetosConsumables()
+{
+
+	if (!objConsumables.empty()) {
+		for (std::list<Objetos*>::iterator it = objConsumables.begin(); it != objConsumables.end();) {
+			if ((*it) != NULL) {
+				if (!(*it)->getVivo() ) {
+
+					delete(*it);
+					it = objConsumables.erase(it);
+				}
+				else
+					it++;
+			}
+			else
+				it++;
+		}
+
+	}
+}
 
 void Escenario::actualizarListaEnemigos() {
 
