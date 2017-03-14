@@ -1,5 +1,5 @@
 #include "TRecursoMalla.h"
-
+#include "..\frameWork\mesh.h"
 
 
 TRecursoMalla::TRecursoMalla()
