@@ -173,9 +173,15 @@ void Juego::mover(f32 dt)
 void Juego::recargar()
 {
 	//comprobar que si no tienes balas no puedes recargar mas
-	if (teclado.isKeyDown(irr::KEY_KEY_R)) {
+	if (teclado.isKeyDown(irr::KEY_KEY_R) && pers->getMunicionActual() > 0) {
 		pers->recargar();
+
+		if(pers->getMunicionActual() < 0) {
+			std::cout << "No puedes recagar, no te quedan balas" << std::endl;
+		}	
 	}
+	
+
 }
 
 void Juego::pausa(IrrlichtDevice* iDevice)

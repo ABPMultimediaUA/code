@@ -18,7 +18,7 @@ Escopeta::Escopeta() : Arma() {
 	cargadorNiveles[0] = 5;
 	damageNiveles[0] = 8;
 	totalMunicion[0] = 35;
-	capacidadDeMunicion = 35;
+	capacidadDeMunicion = 0;
 	municionActual = 5;
 
 	for (int i = 1; i < 4; i++) {

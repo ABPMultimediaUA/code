@@ -86,7 +86,7 @@ public:
 	void rotar(vector3df raton);
 	void setPos(vector3df pos);
 	void recargar();
-	void cogerMunicion(int municionCogida); 
+	void cogerMunicion(int municionCogida, int arma); 
 	
 	void setDisparo(bool x);
 	void setTiempoDisparo(f32 t);

@@ -18,7 +18,7 @@ Pistola::Pistola() : Arma() {
 	cargadorNiveles[0] = 7;
 	damageNiveles[0] = 20;
 	totalMunicion[0] = 56;
-	capacidadDeMunicion = 56;
+	capacidadDeMunicion = 0;
 	municionActual = 7;
 
 	for (int i = 1; i < 4; i++) {

@@ -151,6 +151,7 @@ void MiContactListener::aumentarMunicionPistola(Entity2D * pers, Entity2D * munP
 	Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
 	MunicionPistola *mun = static_cast<MunicionPistola*>(munPistola->getObjeto3D());
 
+	personaje->cogerMunicion(mun->getMunicion(), 0);
 
 }
 
@@ -163,6 +164,11 @@ void MiContactListener::aumentarMunicionSubfusil(Entity2D * pers, Entity2D * mun
 
 	std::cout << "////////////////////////" << std::endl;
 	std::cout << "" << std::endl;
+
+	Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
+	MunicionSubfusil *mun = static_cast<MunicionSubfusil*>(munSubfisul->getObjeto3D());
+
+	personaje->cogerMunicion(mun->getMunicion(), 1);
 }
 
 void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * munEscopeta)
@@ -174,6 +180,11 @@ void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * mun
 
 	std::cout << "////////////////////////" << std::endl;
 	std::cout << "" << std::endl;
+
+	Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
+	MunicionEscopeta *mun = static_cast<MunicionEscopeta*>(munEscopeta->getObjeto3D());
+
+	personaje->cogerMunicion(mun->getMunicion(), 2);
 }
 
 

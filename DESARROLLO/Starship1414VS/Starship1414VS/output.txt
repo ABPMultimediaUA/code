@@ -3049,32 +3049,55 @@ PESO: -1
 (-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 412.099, 0, -1, )
 (-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 467.428, 199.123, -1, -1, -1, -1, -1, 0, )
 ///////////////////////////////
-CARGADOR: 7
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 3
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 846.505 POS Y: -80.1951
-///////////////////////////////////
-Sombra: 0 Elemento: 3
-MUERO BALA
-ID DE LA ENTITY 3
-MUERO ENTITY2D
 
 ////////////////////////
 ENTIDAD 1: 0
 ENTIDAD 2: 5
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 100 POS Y: 0
+POS X: 100 POS Y: 40
 ///////////////////////////////////
 Sombra: 0 Elemento: 5
 
 ////////////////////////
-AUMENTAR MUNICION DE PISTOLA
+AUMENTAR MUNICION DE ESCOPETA
 ////////////////////////
+
+
+ARMA: 0
+MUNICION TOTAL: 0
+
+CAMBIO A ESCOPETA 2
+
+ARMA CAMBIADA: 2
+MUNICION TOTAL: 2
+
+
+ARMA: 2
+MUNICION TOTAL: 2
+
+CAMBIO A PISTOLA 0
+
+ARMA CAMBIADA: 0
+MUNICION TOTAL: 0
+
+
+ARMA: 0
+MUNICION TOTAL: 0
+
+CAMBIO A FUSIL 1
+
+ARMA CAMBIADA: 1
+MUNICION TOTAL: 0
+
+
+ARMA: 1
+MUNICION TOTAL: 0
+
+CAMBIO A ESCOPETA 2
+
+ARMA CAMBIADA: 2
+MUNICION TOTAL: 2
 
 
 ////////////////////////
@@ -3091,18 +3114,13 @@ AUMENTAR MUNICION DE SUBFUSIL
 ////////////////////////
 
 
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 5
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 100 POS Y: 40
-///////////////////////////////////
-Sombra: 0 Elemento: 5
+ARMA: 2
+MUNICION TOTAL: 2
 
-////////////////////////
-AUMENTAR MUNICION DE ESCOPETA
-////////////////////////
+CAMBIO A FUSIL 1
+
+ARMA CAMBIADA: 1
+MUNICION TOTAL: 15
 
 Irrlicht Engine version 1.8.4
  (Build 9200)

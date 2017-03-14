@@ -37,6 +37,7 @@ public:
 	int getCapacidadDeMun();
 	float getDamage();
 	int getCargador();
+	int getTotalMunicion();
 	int getMunicionActual();
 
 
