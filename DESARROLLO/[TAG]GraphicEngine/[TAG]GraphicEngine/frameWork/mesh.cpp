@@ -67,7 +67,7 @@ std::vector<Texture> mesh::getTextures()
 
 void mesh::Draw()
 {
-	/*GLuint diffuseNr = 1;
+	GLuint diffuseNr = 1;
 	GLuint specularNr = 1;
 	for (GLuint i = 0; i < this->textures.size(); i++)
 	{
@@ -90,5 +90,5 @@ void mesh::Draw()
 	// Draw mesh
 	glBindVertexArray(this->VAO);
 	glDrawElements(GL_TRIANGLES, this->indices.size(), GL_UNSIGNED_INT, 0);
-	glBindVertexArray(0);*/
+	glBindVertexArray(0);
 }

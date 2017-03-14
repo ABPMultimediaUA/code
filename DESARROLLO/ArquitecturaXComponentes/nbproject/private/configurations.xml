@@ -622,7 +622,6 @@
                 <in>trees.c</in>
                 <in>trees.h</in>
                 <in>uncompr.c</in>
-                <in>zconf.h</in>
                 <in>zlib.h</in>
                 <in>zutil.c</in>
                 <in>zutil.h</in>
