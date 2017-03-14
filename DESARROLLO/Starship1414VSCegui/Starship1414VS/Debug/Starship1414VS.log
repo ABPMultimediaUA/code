@@ -1,0 +1,7 @@
+﻿  Juego.cpp
+c:\users\samuel\desktop\starship1414vs\starship1414vs\librerias\cegui\include\cegui\propertyhelper.h(52): warning C4005: 'snprintf': redefinición de macro
+  c:\users\samuel\desktop\starship1414vs\starship1414vs\librerias\irrlicht-1.8.4\include\irrtypes.h(122): note: vea la definición anterior de 'snprintf'
+c:\users\samuel\desktop\starship1414vs\starship1414vs\juego.cpp(223): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\desktop\starship1414vs\starship1414vs\juego.cpp(224): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
+  Starship1414VS.vcxproj -> C:\Users\Samuel\Desktop\Starship1414VS\Debug\Starship1414VS.exe
+  Starship1414VS.vcxproj -> C:\Users\Samuel\Desktop\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

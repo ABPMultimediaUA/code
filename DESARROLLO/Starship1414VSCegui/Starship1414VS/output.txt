@@ -1,0 +1,265 @@
+-<-<-<-<-<-<-<-<-<-<-<-<
+waypoint1 1
+-<-<-<-<-<-<-<-<-<-<-<-<
+-<-<-<-<-<-<-<-<-<-<-<-<
+waypoint1 2
+waypoint2 2
+-<-<-<-<-<-<-<-<-<-<-<-<
+-<-<-<-<-<-<-<-<-<-<-<-<
+waypoint1 3
+waypoint2 3
+waypoint3 3
+-<-<-<-<-<-<-<-<-<-<-<-<
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+waypoint1
+I: 0J: 1
+waypoint2
+F = 0
+PESO: 99.6
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+waypoint1
+I: 0J: 2
+waypoint3
+F = 0
+PESO: 136.771
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 0
+Posicion de la Entity X: 0Y: 0
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+waypoint2
+I: 1J: 0
+waypoint1
+F = 0
+PESO: 99.6
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+waypoint2
+I: 1J: 2
+waypoint3
+F = 0
+PESO: 198.05
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 0
+Posicion de la Entity X: 0Y: 0
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+waypoint3
+I: 2J: 0
+waypoint1
+F = 0
+PESO: 136.771
+//////////////////////////////////////////
+SOY ALGO DISTINTO A UNA PARED
+///////////////////////
+waypoint3
+I: 2J: 1
+waypoint2
+F = 0
+PESO: 198.05
+///////////////////////////////
+(0, 99.6, 136.771, )
+(99.6, 0, 198.05, )
+(136.771, 198.05, 0, )
+///////////////////////////////
+MOSTRANDO POSICION Y ESCALA
+//////////////////
+---POSICION--- 1
+X: 0
+Y: 10
+Z: -250
+Negativo X 250
+Pos Matriz 25
+Negativo Z 0
+Pos Matriz -1
+Limite 50
+Escala X 50 Escala Y 2 Escala Z 0.5
+Escala1 25
+Escala2 250
+Escala3 25
+---POSICION--- 2
+X: -250
+Y: 10
+Z: 0
+Negativo X 0
+Pos Matriz 0
+Negativo Z 250
+Pos Matriz 24
+Limite 50
+Escala X 50 Escala Y 2 Escala Z 0.5
+Escala1 25
+Escala2 250
+Escala3 49
+---POSICION--- 3
+X: 250
+Y: 10
+Z: 0
+Negativo X 500
+Pos Matriz 50
+Negativo Z 250
+Pos Matriz 24
+Limite 50
+Escala X 50 Escala Y 2 Escala Z 0.5
+Escala1 25
+Escala2 250
+Escala3 49
+---POSICION--- 4
+X: 0
+Y: 10
+Z: 250
+Negativo X 250
+Pos Matriz 25
+Negativo Z 500
+Pos Matriz 49
+Limite 50
+Escala X 50 Escala Y 2 Escala Z 0.5
+Escala1 25
+Escala2 250
+Escala3 74
+---POSICION--- 5
+X: 150
+Y: 10
+Z: 150
+Negativo X 400
+Pos Matriz 40
+Negativo Z 400
+Pos Matriz 39
+Limite 50
+Escala X 20 Escala Y 2 Escala Z 0.5
+Escala1 10
+Escala2 100
+Escala3 49
+---POSICION--- 6
+X: 133.4
+Y: 7
+Z: 235
+Negativo X 383.4
+Pos Matriz 38.34
+Negativo Z 485
+Pos Matriz 47.5
+Limite 50
+Escala X 3 Escala Y 2.5 Escala Z 3
+Escala1 1
+Escala2 10
+Escala3 48
+---POSICION--- 7
+X: 106
+Y: 7
+Z: -235
+Negativo X 356
+Pos Matriz 35.6
+Negativo Z 15
+Pos Matriz 0.5
+Limite 50
+Escala X 3 Escala Y 1.5 Escala Z 3
+Escala1 1
+Escala2 10
+Escala3 1
+---POSICION--- 8
+X: -151.3
+Y: 10
+Z: 100.3
+Negativo X 98.7
+Pos Matriz 9.87
+Negativo Z 350.3
+Pos Matriz 34.03
+Limite 50
+Escala X 20 Escala Y 2 Escala Z 0.5
+Escala1 10
+Escala2 100
+Escala3 44
+---POSICION--- 9
+X: -50
+Y: 10
+Z: 148.8
+Negativo X 200
+Pos Matriz 20
+Negativo Z 398.8
+Pos Matriz 38.88
+Limite 50
+Escala X 10.2 Escala Y 2 Escala Z 0.5
+Escala1 5
+Escala2 50
+Escala3 43
+---POSICION--- 10
+X: 150
+Y: 10
+Z: -149.3
+Negativo X 400
+Pos Matriz 40
+Negativo Z 100.7
+Pos Matriz 9.07
+Limite 50
+Escala X 20 Escala Y 2 Escala Z 0.5
+Escala1 10
+Escala2 100
+Escala3 19
+---POSICION--- 11
+X: 90
+Y: 10
+Z: -49.2
+Negativo X 340
+Pos Matriz 34
+Negativo Z 200.8
+Pos Matriz 19.08
+Limite 50
+Escala X 12.5 Escala Y 2 Escala Z 0.5
+Escala1 6
+Escala2 60
+Escala3 25
+---POSICION--- 12
+X: -90
+Y: 10
+Z: -49.2
+Negativo X 160
+Pos Matriz 16
+Negativo Z 200.8
+Pos Matriz 19.08
+Limite 50
+Escala X 12.5 Escala Y 2 Escala Z 0.5
+Escala1 6
+Escala2 60
+Escala3 25
+---POSICION--- 13
+X: -150
+Y: 10
+Z: -150
+Negativo X 100
+Pos Matriz 10
+Negativo Z 100
+Pos Matriz 9
+Limite 50
+Escala X 20 Escala Y 2 Escala Z 0.5
+Escala1 10
+Escala2 100
+Escala3 19
+POS WAYPOINT INI: 2
+
+NOMBRE: waypoint3
+POS NODO: 2
+Irrlicht Engine version 1.8.4
+ (Build 9200)
+Using renderer: OpenGL 4.0.0
+Intel(R) HD Graphics 4000: Intel
+OpenGL driver version is 1.2 or better.
+GLSL version: 4.0
+Resizing window (1366 745)
+Loaded texture: C:/Users/Samuel/Desktop/Starship1414VS/Starship1414VS/textura/bruce.jpg
+PNG warning: iCCP: known incorrect sRGB profile
