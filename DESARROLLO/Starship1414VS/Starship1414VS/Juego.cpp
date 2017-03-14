@@ -172,9 +172,16 @@ void Juego::mover(f32 dt)
 
 void Juego::recargar()
 {
-	if (teclado.isKeyDown(irr::KEY_KEY_R)) {
+	//comprobar que si no tienes balas no puedes recargar mas
+	if (teclado.isKeyDown(irr::KEY_KEY_R) && pers->getMunicionActual() > 0) {
 		pers->recargar();
+
+		if(pers->getMunicionActual() < 0) {
+			std::cout << "No puedes recagar, no te quedan balas" << std::endl;
+		}	
 	}
+	
+
 }
 
 void Juego::pausa(IrrlichtDevice* iDevice)
@@ -229,7 +236,7 @@ void Juego::raton(f32 dt)
 		//listaBalas.push_back(bullet);
 		//  }
 		// }
-
+		
 		if (pers->getCargador() >= 0) {
 			pers->disparar(smgr, driver, world, dt, vector2df(mousePosition.X, mousePosition.Y));
 
@@ -350,6 +357,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 		driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
 
 		//esce->actualizarListaEnemigos();
+		esce->actualizarEstadoPuerta();
 		esce->actualizarEstadoPersonaje();
 		smgr->drawAll(); //dibuja todo el grafo
 

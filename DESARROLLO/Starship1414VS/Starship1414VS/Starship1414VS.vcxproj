@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Escenario\ObjConsumables\Botiquines.cpp" />
     <ClCompile Include="Enemigos\AStar.cpp" />
     <ClCompile Include="CAppReceiver.cpp" />
     <ClCompile Include="Enemigos\AlienBerserker.cpp" />
@@ -162,11 +163,16 @@
     <ClCompile Include="Enemigos\Waypoints.cpp" />
     <ClCompile Include="Escenario\Camara.cpp" />
     <ClCompile Include="Escenario\Escenario.cpp" />
+    <ClCompile Include="Escenario\ObjConsumables\Llave.cpp" />
+    <ClCompile Include="Escenario\ObjConsumables\Municion.cpp" />
+    <ClCompile Include="Escenario\ObjConsumables\Objetos.cpp" />
+    <ClCompile Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionSubfusil.cpp" />
     <ClCompile Include="Escenario\Pared.cpp" />
     <ClCompile Include="Escenario\Puerta.cpp" />
     <ClCompile Include="Escenario\readJson.cpp" />
     <ClCompile Include="Escenario\Terminal.cpp" />
     <ClCompile Include="EstadoGeneral.cpp" />
+    <ClCompile Include="MaquinaEstados\FSM\Estados.cpp" />
     <ClCompile Include="Fisicas\Entity2D.cpp" />
     <ClCompile Include="Fisicas\MiContactListener.cpp" />
     <ClCompile Include="Fisicas\MyContactFilter.cpp" />
@@ -182,10 +188,14 @@
     <ClCompile Include="Jugador\Pistola.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ManejadorEstadoGeneral.cpp" />
+    <ClCompile Include="MaquinaEstados\FSM\MaquinaEstados.cpp" />
     <ClCompile Include="Menu\Menu.cpp" />
     <ClCompile Include="Enemigos\Nodo.cpp" />
+    <ClCompile Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionPistola.cpp" />
+    <ClCompile Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionEscopeta.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Escenario\ObjConsumables\Botiquines.h" />
     <ClInclude Include="Enemigos\AStar.h" />
     <ClInclude Include="CAppReceiver.h" />
     <ClInclude Include="Enemigos\AlienBerserker.h" />
@@ -195,6 +205,10 @@
     <ClInclude Include="Enemigos\Waypoints.h" />
     <ClInclude Include="Escenario\Camara.h" />
     <ClInclude Include="Escenario\Escenario.h" />
+    <ClInclude Include="Escenario\ObjConsumables\Llave.h" />
+    <ClInclude Include="Escenario\ObjConsumables\Municion.h" />
+    <ClInclude Include="Escenario\ObjConsumables\Objetos.h" />
+    <ClInclude Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionSubfusil.h" />
     <ClInclude Include="Escenario\Pared.h" />
     <ClInclude Include="Escenario\Puerta.h" />
     <ClInclude Include="Escenario\readJson.h" />
@@ -213,9 +227,13 @@
     <ClInclude Include="Jugador\Personaje.h" />
     <ClInclude Include="Jugador\Pistola.h" />
     <ClInclude Include="ManejadorEstadoGeneral.h" />
+    <ClInclude Include="MaquinaEstados\FSM\Estados.h" />
+    <ClInclude Include="MaquinaEstados\FSM\MaquinaEstados.h" />
     <ClInclude Include="Menu\Menu.h" />
     <ClInclude Include="Enemigos\Nodo.h" />
     <ClInclude Include="Escenario\Terminal.h" />
+    <ClInclude Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionPistola.h" />
+    <ClInclude Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionEscopeta.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

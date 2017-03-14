@@ -49,6 +49,11 @@ int Arma::getCargador() {
 	return cargadorNiveles[nivelCargador];
 }
 
+int Arma::getTotalMunicion()
+{
+	return totalMunicion[nivelMunicion];
+}
+
 float Arma::getDamage() {
 	return damageNiveles[nivelDamage];
 }
