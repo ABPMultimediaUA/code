@@ -16,6 +16,10 @@ Objetos::Objetos(const vector3df & posicion, const vector3df & rotacion, const v
 
 Objetos::~Objetos() {
 
+	maya->getParent()->removeChild(maya);
+	delete(entity);
+
+
 }
 
 vector3df Objetos::getPos()
@@ -41,4 +45,8 @@ int Objetos::getID()
 void Objetos::setFisica(b2World * world)
 {
 
+}
+
+bool Objetos::getVivo() {
+	return entity->getLive();
 }

@@ -281,7 +281,7 @@ void Escenario::dibujarEscenario() {
 	MunicionPistola *pistola = new MunicionPistola(municion->getPosition(), municion->getRotation(),
 		municion->getScale(), 2, municion, 2, 7);
 	pistola->setFisica(mundo);
-
+	
 	IMeshSceneNode *municion1 = SM->addCubeSceneNode(1.5f);
 	municion1->setPosition(vector3df(100, 5, 20));
 	municion1->getMaterial(0).EmissiveColor.set(0, 0, 128, 0);
@@ -297,6 +297,9 @@ void Escenario::dibujarEscenario() {
 		municion2->getScale(), 4, municion2, 4, 2);
 	escopeta->setFisica(mundo);
 
+	objConsumables.push_back(pistola);
+	objConsumables.push_back(subfusil);
+	objConsumables.push_back(escopeta);
 
 	puntos->setTamDelMapa(tam);
 	puntos->creaPesos(entity);
@@ -403,6 +406,27 @@ void Escenario::actualizarEstadoPuerta()
 				
 			}
 		
+		}
+
+	}
+}
+
+void Escenario::actualizarObjetosConsumables()
+{
+
+	if (!objConsumables.empty()) {
+		for (std::list<Objetos*>::iterator it = objConsumables.begin(); it != objConsumables.end();) {
+			if ((*it) != NULL) {
+				if (!(*it)->getVivo() ) {
+
+					delete(*it);
+					it = objConsumables.erase(it);
+				}
+				else
+					it++;
+			}
+			else
+				it++;
 		}
 
 	}

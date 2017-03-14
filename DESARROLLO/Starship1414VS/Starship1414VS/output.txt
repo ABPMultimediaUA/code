@@ -3052,6 +3052,15 @@ PESO: -1
 
 ////////////////////////
 ENTIDAD 1: 0
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 60 POS Y: 20
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 0
 ENTIDAD 2: 5
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
@@ -3063,42 +3072,8 @@ Sombra: 0 Elemento: 5
 AUMENTAR MUNICION DE ESCOPETA
 ////////////////////////
 
-
-ARMA: 0
-MUNICION TOTAL: 0
-
-CAMBIO A ESCOPETA 2
-
-ARMA CAMBIADA: 2
-MUNICION TOTAL: 2
-
-
-ARMA: 2
-MUNICION TOTAL: 2
-
-CAMBIO A PISTOLA 0
-
-ARMA CAMBIADA: 0
-MUNICION TOTAL: 0
-
-
-ARMA: 0
-MUNICION TOTAL: 0
-
-CAMBIO A FUSIL 1
-
-ARMA CAMBIADA: 1
-MUNICION TOTAL: 0
-
-
-ARMA: 1
-MUNICION TOTAL: 0
-
-CAMBIO A ESCOPETA 2
-
-ARMA CAMBIADA: 2
-MUNICION TOTAL: 2
-
+ID DE LA ENTITY 5
+MUERO ENTITY2D
 
 ////////////////////////
 ENTIDAD 1: 0
@@ -3113,15 +3088,24 @@ Sombra: 0 Elemento: 5
 AUMENTAR MUNICION DE SUBFUSIL
 ////////////////////////
 
+ID DE LA ENTITY 5
+MUERO ENTITY2D
 
-ARMA: 2
-MUNICION TOTAL: 2
+////////////////////////
+ENTIDAD 1: 0
+ENTIDAD 2: 5
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 100 POS Y: 0
+///////////////////////////////////
+Sombra: 0 Elemento: 5
 
-CAMBIO A FUSIL 1
+////////////////////////
+AUMENTAR MUNICION DE PISTOLA
+////////////////////////
 
-ARMA CAMBIADA: 1
-MUNICION TOTAL: 15
-
+ID DE LA ENTITY 5
+MUERO ENTITY2D
 Irrlicht Engine version 1.8.4
  (Build 9200)
 Using renderer: OpenGL 4.5.0

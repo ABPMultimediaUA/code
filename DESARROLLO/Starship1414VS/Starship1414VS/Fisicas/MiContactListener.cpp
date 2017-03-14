@@ -136,6 +136,7 @@ void MiContactListener::gestionarObjeto(Entity2D * pers, Entity2D * objeto, int 
 	default:
 		break;
 	}
+	objeto->setLive(false);
 }
 
 void MiContactListener::aumentarMunicionPistola(Entity2D * pers, Entity2D * munPistola)
@@ -152,6 +153,7 @@ void MiContactListener::aumentarMunicionPistola(Entity2D * pers, Entity2D * munP
 	MunicionPistola *mun = static_cast<MunicionPistola*>(munPistola->getObjeto3D());
 
 	personaje->cogerMunicion(mun->getMunicion(), 0);
+//	munPistola->setLive(false);
 
 }
 
@@ -169,6 +171,7 @@ void MiContactListener::aumentarMunicionSubfusil(Entity2D * pers, Entity2D * mun
 	MunicionSubfusil *mun = static_cast<MunicionSubfusil*>(munSubfisul->getObjeto3D());
 
 	personaje->cogerMunicion(mun->getMunicion(), 1);
+	//munSubfisul->setLive(false);
 }
 
 void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * munEscopeta)
@@ -185,6 +188,7 @@ void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * mun
 	MunicionEscopeta *mun = static_cast<MunicionEscopeta*>(munEscopeta->getObjeto3D());
 
 	personaje->cogerMunicion(mun->getMunicion(), 2);
+//	munEscopeta->setLive(false);
 }
 
 

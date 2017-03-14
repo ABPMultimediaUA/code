@@ -359,6 +359,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 		//esce->actualizarListaEnemigos();
 		esce->actualizarEstadoPuerta();
 		esce->actualizarEstadoPersonaje();
+		esce->actualizarObjetosConsumables();
 		smgr->drawAll(); //dibuja todo el grafo
 
 		guienv->drawAll(); //dibujar el GUI

@@ -265,6 +265,7 @@ Entity2D::Entity2D(b2World * world, vector3df pos, vector3df rot, vector3df esca
 	objeto3D = dirObjeto;
 	iden = 5;
 	id = tipo;
+	live = true;
 
 	/*
 	0: botiquin

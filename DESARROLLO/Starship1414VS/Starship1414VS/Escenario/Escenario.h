@@ -77,6 +77,7 @@ private:
 	std::list<Enemigo*> enemigos;
 	std::list<Pared*> paredes;
 	std::list<Puerta*> puertas;
+	std::list<Objetos*> objConsumables;
 	int tam;
 	Entity2D *entity;
 	Juego *jue;
@@ -104,6 +105,7 @@ public:
 	void cambiaEstado(std::string mensaje);
 	void actualizarEstadoPersonaje();
 	void actualizarEstadoPuerta();
+	void actualizarObjetosConsumables();
 	void eleminarEnemigos();
 	Personaje* getPersonaje();
 	void destroyPared();

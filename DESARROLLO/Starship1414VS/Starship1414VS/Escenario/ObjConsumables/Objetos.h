@@ -21,6 +21,8 @@ public:
 	int getID();
 	virtual void setFisica(b2World *world);
 
+	bool getVivo();
+
 protected:
 
 	vector3df pos;
