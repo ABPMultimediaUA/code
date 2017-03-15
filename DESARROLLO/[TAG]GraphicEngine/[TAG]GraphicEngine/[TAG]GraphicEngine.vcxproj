@@ -124,6 +124,7 @@
     <ClCompile Include="entityTree\TTransform.cpp" />
     <ClCompile Include="entityTree\TTriangle.cpp" />
     <ClCompile Include="frameWork\mesh.cpp" />
+    <ClCompile Include="frameWork\shader.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="resourceManager\TGestorRecursos.cpp" />
     <ClCompile Include="resourceManager\TRecurso.cpp" />
@@ -141,6 +142,7 @@
     <ClInclude Include="entityTree\TTransform.h" />
     <ClInclude Include="entityTree\TTriangle.h" />
     <ClInclude Include="frameWork\mesh.h" />
+    <ClInclude Include="frameWork\shader.h" />
     <ClInclude Include="resourceManager\TGestorRecursos.h" />
     <ClInclude Include="resourceManager\TRecursoTriangle.h" />
     <ClInclude Include="tools\glm\common.hpp" />

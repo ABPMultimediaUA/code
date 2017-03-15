@@ -1,7 +1,7 @@
 #include "mesh.h"
 #include <iostream>
 #include <sstream>
-
+#include "shader.h"
 
 
 mesh::mesh()
@@ -65,7 +65,7 @@ std::vector<Texture> mesh::getTextures()
 	return this->textures;
 }
 
-void mesh::Draw()
+void mesh::Draw(shader s)
 {
 	GLuint diffuseNr = 1;
 	GLuint specularNr = 1;
@@ -82,7 +82,7 @@ void mesh::Draw()
 			ss << specularNr++; // Transfer GLuint to stream
 		number = ss.str();
 
-		glUniform1f(glGetUniformLocation(shader.Program, ("material." + name + number).c_str()), i);
+		glUniform1f(glGetUniformLocation(s.getProgram(), ("material." + name + number).c_str()), i);
 		glBindTexture(GL_TEXTURE_2D, this->textures[i].id);
 	}
 	glActiveTexture(GL_TEXTURE0);

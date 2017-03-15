@@ -5,6 +5,8 @@
 #include <glm\vec3.hpp>
 #include <GL\glew.h>
 
+class shader;
+
 struct Vertex {
 	glm::vec3 Position;
 	glm::vec3 Normal;
@@ -14,6 +16,7 @@ struct Vertex {
 struct Texture {
 	GLuint id;
 	std::string type;
+	aiString path;
 };
 
 class mesh
@@ -26,7 +29,7 @@ public:
 	std::vector<Vertex> getVertices();
 	std::vector<GLuint> getIndices();
 	std::vector<Texture> getTextures();
-	void Draw();
+	void Draw(shader);
 private:
 	GLuint VAO, VBO, EBO;
 	std::vector<Vertex> vertices;
