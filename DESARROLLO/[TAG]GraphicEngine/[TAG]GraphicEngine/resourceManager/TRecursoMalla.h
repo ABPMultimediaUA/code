@@ -1,7 +1,9 @@
 #pragma once
 #include "TRecurso.h"
+#include <vector>
 class mesh;
 class shader;
+struct Texture;
 
 class TRecursoMalla :
 	public TRecurso
@@ -17,5 +19,6 @@ private:
 	std::string directorio;
 	mesh* malla;
 	shader* sombreado;
+	std::vector<Texture>* textures_loaded;
 };
 

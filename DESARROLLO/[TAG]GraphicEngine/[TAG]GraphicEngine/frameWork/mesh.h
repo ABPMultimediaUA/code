@@ -4,6 +4,7 @@
 #include <glm\vec2.hpp>
 #include <glm\vec3.hpp>
 #include <GL\glew.h>
+#include <assimp\types.h>
 
 class shader;
 
@@ -16,6 +17,7 @@ struct Vertex {
 struct Texture {
 	GLuint id;
 	std::string type;
+	aiString path;
 };
 
 class mesh

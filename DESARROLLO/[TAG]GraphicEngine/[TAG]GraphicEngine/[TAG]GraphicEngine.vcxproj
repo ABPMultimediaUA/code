@@ -87,7 +87,7 @@
       <AdditionalIncludeDirectories>$(ProjectDir)tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-mt.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-mt.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -174,6 +174,7 @@
     <ClInclude Include="resourceManager\TRecursoTextura.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="models\Nanosuit\LICENSE.txt" />
     <Text Include="tools\glm\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +182,11 @@
     <None Include="glew32.dll" />
     <None Include="glfw3.dll" />
     <None Include="lib\assimp-vc140-mt.exp" />
+    <None Include="models\Nanosuit\nanosuit.3ds" />
+    <None Include="models\Nanosuit\nanosuit.blend" />
+    <None Include="models\Nanosuit\nanosuit.mtl" />
+    <None Include="models\Nanosuit\nanosuit2.3ds" />
+    <None Include="models\Nanosuit\nanosuit2.c4d" />
     <None Include="Shader\basicoFragmentShader.frag" />
     <None Include="Shader\basicoVertexShader.vs" />
   </ItemGroup>
@@ -190,6 +196,53 @@
     <Library Include="lib\glew32s.lib" />
     <Library Include="lib\glfw3.lib" />
     <Library Include="lib\glfw3dll.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="models\Nanosuit\arm_dif.png" />
+    <Image Include="models\Nanosuit\arm_showroom_ddn.png" />
+    <Image Include="models\Nanosuit\arm_showroom_spec.png" />
+    <Image Include="models\Nanosuit\back.jpg" />
+    <Image Include="models\Nanosuit\body_dif.png" />
+    <Image Include="models\Nanosuit\body_showroom_ddn.png" />
+    <Image Include="models\Nanosuit\body_showroom_spec.png" />
+    <Image Include="models\Nanosuit\front.jpg" />
+    <Image Include="models\Nanosuit\glass_ddn.png" />
+    <Image Include="models\Nanosuit\glass_dif.png" />
+    <Image Include="models\Nanosuit\hand_dif.png" />
+    <Image Include="models\Nanosuit\hand_showroom_ddn.png" />
+    <Image Include="models\Nanosuit\hand_showroom_spec.png" />
+    <Image Include="models\Nanosuit\helmet_diff.png" />
+    <Image Include="models\Nanosuit\helmet_showroom_ddn.png" />
+    <Image Include="models\Nanosuit\helmet_showroom_spec.png" />
+    <Image Include="models\Nanosuit\leg_dif.png" />
+    <Image Include="models\Nanosuit\leg_showroom_ddn.png" />
+    <Image Include="models\Nanosuit\leg_showroom_spec.png" />
+    <Image Include="models\Nanosuit\nanosuit2.jpg" />
+    <Image Include="models\Nanosuit\perpective.jpg" />
+    <Image Include="models\Nanosuit\tex\arm_dif.png" />
+    <Image Include="models\Nanosuit\tex\arm_showroom_ddn.png" />
+    <Image Include="models\Nanosuit\tex\arm_showroom_spec.png" />
+    <Image Include="models\Nanosuit\tex\body_dif.png" />
+    <Image Include="models\Nanosuit\tex\body_showroom_ddn.png" />
+    <Image Include="models\Nanosuit\tex\body_showroom_spec.png" />
+    <Image Include="models\Nanosuit\tex\cell_arm_alpha.png" />
+    <Image Include="models\Nanosuit\tex\cell_body_alpha.png" />
+    <Image Include="models\Nanosuit\tex\cell_ddn.png" />
+    <Image Include="models\Nanosuit\tex\cell_hand_alpha.png" />
+    <Image Include="models\Nanosuit\tex\cell_helmet_alpha.png" />
+    <Image Include="models\Nanosuit\tex\cell_leg_alpha.png" />
+    <Image Include="models\Nanosuit\tex\glass_ddn.png" />
+    <Image Include="models\Nanosuit\tex\glass_dif.png" />
+    <Image Include="models\Nanosuit\tex\hand_dif.png" />
+    <Image Include="models\Nanosuit\tex\hand_showroom_ddn.png" />
+    <Image Include="models\Nanosuit\tex\hand_showroom_spec.png" />
+    <Image Include="models\Nanosuit\tex\helmet_dif.png" />
+    <Image Include="models\Nanosuit\tex\helmet_showroom_ddn.png" />
+    <Image Include="models\Nanosuit\tex\helmet_showroom_spec.png" />
+    <Image Include="models\Nanosuit\tex\leg_dif.png" />
+    <Image Include="models\Nanosuit\tex\leg_showroom_ddn.png" />
+    <Image Include="models\Nanosuit\tex\leg_showroom_spec.png" />
+    <Image Include="models\Nanosuit\wallpap.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

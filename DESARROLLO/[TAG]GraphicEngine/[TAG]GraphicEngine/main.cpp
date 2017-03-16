@@ -60,8 +60,8 @@ int main() {
 	std::vector<TNodo*> nodos;
 	nodos.push_back(new TNodo(new TTransform()));
 	nodos.push_back(new TNodo(new TTransform()));
-	//nodos.push_back(new TNodo(new TMalla("../models/Nanosuit/nanosuit.obj", &shaderB)));
-	nodos.push_back(new TNodo(new TMalla("../models/Nanosuit/nanosuit.obj")));
+	nodos.push_back(new TNodo(new TMalla("../models/Nanosuit/nanosuit.obj", &shaderB)));
+	//nodos.push_back(new TNodo(new TMalla("../models/Nanosuit/nanosuit.obj")));
 	nodos.push_back(new TNodo(new TLuz()));
 	nodos.push_back(new TNodo(new TTransform()));
 	nodos.push_back(new TNodo(new TCamara()));

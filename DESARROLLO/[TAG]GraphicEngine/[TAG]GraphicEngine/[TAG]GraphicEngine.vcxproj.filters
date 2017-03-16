@@ -179,6 +179,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="tools\glm\CMakeLists.txt" />
+    <Text Include="models\Nanosuit\LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="glfw3.dll" />
@@ -187,6 +188,11 @@
     <None Include="glew32.dll" />
     <None Include="Shader\basicoFragmentShader.frag" />
     <None Include="Shader\basicoVertexShader.vs" />
+    <None Include="models\Nanosuit\nanosuit2.3ds" />
+    <None Include="models\Nanosuit\nanosuit2.c4d" />
+    <None Include="models\Nanosuit\nanosuit.blend" />
+    <None Include="models\Nanosuit\nanosuit.mtl" />
+    <None Include="models\Nanosuit\nanosuit.3ds" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\assimp-vc140-mt.lib" />
@@ -194,5 +200,142 @@
     <Library Include="lib\glfw3dll.lib" />
     <Library Include="lib\glew32.lib" />
     <Library Include="lib\glew32s.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="models\Nanosuit\wallpap.jpg">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\back.jpg">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\front.jpg">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\nanosuit2.jpg">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\perpective.jpg">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\leg_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\arm_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\arm_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\arm_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\body_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\body_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\body_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_arm_alpha.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_body_alpha.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_hand_alpha.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_helmet_alpha.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_leg_alpha.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\glass_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\glass_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\hand_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\hand_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\hand_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\helmet_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\helmet_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\helmet_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\leg_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\leg_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\arm_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\arm_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\arm_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\body_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\body_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\body_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\glass_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\glass_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\hand_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\hand_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\hand_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\helmet_diff.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\helmet_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\helmet_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\leg_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\leg_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\leg_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
   </ItemGroup>
 </Project>
