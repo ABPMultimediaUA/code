@@ -34,7 +34,7 @@
 Entity2D::Entity2D(b2World * world)
 {
 
-	bodyDef.type = b2_dynamicBody;
+	bodyDef.type = b2_staticBody;
 	bodyDef.position.Set(-99999999, -99999999);
 	bodyShape.SetAsBox(5.0f, 5.0f);
 	md.mass = 50.0f;
@@ -62,12 +62,12 @@ Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* 
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
     bodyShape.SetAsBox(5.0f, 5.0f);
-    md.mass = 50.0f;
+    md.mass = 1.0f;
     md.center = b2Vec2(3, 3);
     md.I = 0.0f;
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
-    body->GetFixtureList()->SetFriction(10.0f);
+    body->GetFixtureList()->SetFriction(0.0f);
     body->SetUserData(this);
     body->SetMassData(&md);
 	live = true;

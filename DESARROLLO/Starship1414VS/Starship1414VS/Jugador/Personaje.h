@@ -54,12 +54,14 @@ private:
 	f32 tiempoDisparo;
 	bool disparo;
 	bool teclaE;
+	bool impulso = false;
 	std::list<Bala*> listaBalas;
 	int direccion;
 	int armaActual;
 	Pistola *pistola;
 	Fusil *fusil;
 	Escopeta *escopeta;
+	float temporizador;
 
 
 public:
@@ -80,6 +82,16 @@ public:
 	float getTiempoArma();
 	int getArmaActual();
 	bool getTeclaE();
+	bool getImpulso();
+	void setImpulso(bool x);
+
+	void iniciarTiempoImpulso();
+
+	void disminuirTem();
+
+	float getTemporizador();
+
+	
 
 	void moverPersonaje(int modo, f32 dt);
 	void setVelocidad();

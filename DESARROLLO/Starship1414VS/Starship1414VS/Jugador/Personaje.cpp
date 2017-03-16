@@ -207,7 +207,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 
 
-
+	
 	direccion = modo;
 	setPos(pos);
 }
@@ -294,6 +294,32 @@ int Personaje::getArmaActual() {
 bool Personaje::getTeclaE()
 {
 	return teclaE;
+}
+
+bool Personaje::getImpulso()
+{
+	return impulso;
+}
+
+void Personaje::setImpulso(bool x)
+{
+	impulso = x;
+}
+
+void Personaje::iniciarTiempoImpulso() {
+
+	temporizador = 5.0f;
+
+}
+
+void Personaje::disminuirTem() {
+	
+	temporizador -= 0.5f;
+}
+
+float Personaje::getTemporizador() {
+
+	return temporizador;
 }
 
 

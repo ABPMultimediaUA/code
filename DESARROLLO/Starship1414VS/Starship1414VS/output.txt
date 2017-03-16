@@ -3055,57 +3055,57 @@ ENTIDAD 1: 0
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 60 POS Y: 20
+POS X: 82 POS Y: 82
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
+//////////////////////////////////////////
+
+POS PERS ANTES
+Pos 3D X: 70.8143Pos 3D Z: 83.3143
+Pos 2D X: 70.995Pos 2D Z: 83.3143
+//////////////////////////////////////////
+
+POS PERS DESPUES
+Pos 3D X: 70.8143Pos 3D Z: 83.3143
+Pos 2D X: 70.995Pos 2D Z: 83.3143
 
 ////////////////////////
 ENTIDAD 1: 0
-ENTIDAD 2: 5
+ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 100 POS Y: 40
+POS X: 82 POS Y: 82
 ///////////////////////////////////
-Sombra: 0 Elemento: 5
+Sombra: 0 Elemento: 4
+//////////////////////////////////////////
 
-////////////////////////
-AUMENTAR MUNICION DE ESCOPETA
-////////////////////////
+POS PERS ANTES
+Pos 3D X: 70.7851Pos 3D Z: 83.3143
+Pos 2D X: 70.995Pos 2D Z: 83.3143
+//////////////////////////////////////////
 
-ID DE LA ENTITY 5
-MUERO ENTITY2D
+POS PERS DESPUES
+Pos 3D X: 70.7851Pos 3D Z: 83.3143
+Pos 2D X: 70.995Pos 2D Z: 83.3143
 
 ////////////////////////
 ENTIDAD 1: 0
-ENTIDAD 2: 5
+ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 100 POS Y: 20
+POS X: 82 POS Y: 82
 ///////////////////////////////////
-Sombra: 0 Elemento: 5
+Sombra: 0 Elemento: 4
+//////////////////////////////////////////
 
-////////////////////////
-AUMENTAR MUNICION DE SUBFUSIL
-////////////////////////
+POS PERS ANTES
+Pos 3D X: 70.8851Pos 3D Z: 83.3143
+Pos 2D X: 70.995Pos 2D Z: 83.3143
+//////////////////////////////////////////
 
-ID DE LA ENTITY 5
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 5
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 100 POS Y: 0
-///////////////////////////////////
-Sombra: 0 Elemento: 5
-
-////////////////////////
-AUMENTAR MUNICION DE PISTOLA
-////////////////////////
-
-ID DE LA ENTITY 5
-MUERO ENTITY2D
+POS PERS DESPUES
+Pos 3D X: 70.8851Pos 3D Z: 83.3143
+Pos 2D X: 70.995Pos 2D Z: 83.3143
 Irrlicht Engine version 1.8.4
  (Build 9200)
 Using renderer: OpenGL 4.5.0

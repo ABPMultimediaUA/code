@@ -94,15 +94,18 @@ void Juego::update(int state) {
 
 void Juego::mover(f32 dt)
 {
-	if (teclado.isKeyUp(irr::KEY_KEY_D) || teclado.isKeyUp(irr::KEY_KEY_A) || teclado.isKeyUp(irr::KEY_KEY_W) || teclado.isKeyUp(irr::KEY_KEY_S)) {
+	cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+	if(pers->getImpulso() == false) {
+
+	if (!teclado.isKeyDown(irr::KEY_KEY_D) || !teclado.isKeyDown(irr::KEY_KEY_A) || !teclado.isKeyDown(irr::KEY_KEY_W) || !teclado.isKeyDown(irr::KEY_KEY_S)) {
 		pers->setVelocidad();
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 	}
 
 	if (teclado.isKeyDown(irr::KEY_KEY_W) && teclado.isKeyDown(irr::KEY_KEY_D)) {
 
 		pers->moverPersonaje(4, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+		
+		//cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		//cam->actualizarCamara(0, dt);
 		//cam->actualizarCamara(2, dt);
@@ -110,7 +113,7 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_D)) {
 
 		pers->moverPersonaje(5, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+		//cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		// cam->actualizarCamara(0, dt);
 		//cam->actualizarCamara(3, dt);
@@ -119,7 +122,7 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_A)) {
 
 		pers->moverPersonaje(6, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+		//cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		// cam->actualizarCamara(1, dt);
 		// cam->actualizarCamara(3, dt);
@@ -129,7 +132,7 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_A) && teclado.isKeyDown(irr::KEY_KEY_W)) {
 
 		pers->moverPersonaje(7, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+		//cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		// cam->actualizarCamara(1, dt);
 		// cam->actualizarCamara(2, dt);
@@ -139,7 +142,7 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_D)) {
 
 		pers->moverPersonaje(0, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+	//	cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		//   cam->actualizarCamara(0, dt);
 
@@ -147,7 +150,7 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_A)) {
 
 		pers->moverPersonaje(1, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+	//	cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		//cam->actualizarCamara(1, dt);
 
@@ -155,18 +158,31 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_W)) {
 
 		pers->moverPersonaje(2, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+		//cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		//cam->actualizarCamara(2, dt);
 	}
 	else if (teclado.isKeyDown(irr::KEY_KEY_S)) {
 
 		pers->moverPersonaje(3, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+	//	cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		//cam->actualizarCamara(3, dt);
 
 	}
+	
+	}
+	else {
+		pers->disminuirTem();
+		if(pers->getTemporizador() == 0.0f) {
+			pers->setImpulso(false);
+
+		}
+
+	}
+
+	pers->actualizarPosicion();
+	cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 }
 
 
@@ -279,6 +295,9 @@ void Juego::render(IrrlichtDevice* iDevice) {
 		//float distancia;
 		world->Step(dt, 6, 2); //1.0f/60.0f
 		world->ClearForces();
+		
+
+
 		switch (estado)
 		{
 		case 0: {

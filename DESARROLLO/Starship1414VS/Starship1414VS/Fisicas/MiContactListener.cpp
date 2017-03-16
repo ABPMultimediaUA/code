@@ -192,6 +192,97 @@ void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * mun
 }
 
 
+void aplicarKnockBack(Entity2D *pers, b2Body *bodyPers) {
+
+	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
+	int dir = p->getDireccion();
+	float vel = 5000.0f;
+	//std::cout << "VELOSIDAD X: " << vel.x << "VELOSIDAD Y: " << vel.y << std::endl;
+
+	std::cout << "//////////////////////////////////////////" << std::endl;
+	std::cout << "" << std::endl;
+	std::cout << "POS PERS ANTES" << std::endl;
+	std::cout << "Pos 3D X: " << p->getPos().X << "Pos 3D Z: " << p->getPos().Z << std::endl;
+	std::cout << "Pos 2D X: " << bodyPers->GetPosition().x << "Pos 2D Z: " << bodyPers->GetPosition().y << std::endl;
+	p->setImpulso(true);
+	p->iniciarTiempoImpulso();
+	switch (dir) {
+
+	case 0:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, 0.0f), true);
+
+	break;
+
+	case 1:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, 0.0f), true);
+
+
+	break;
+
+	case 2:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(0.0f, -vel), true);
+
+
+	break;
+
+	case 3:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(0.0f, vel), true);
+
+	break;
+
+	case 4:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, -vel), true);
+
+
+	break;
+
+	case 5:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, vel), true);
+
+
+	break;
+
+	case 6:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, vel), true);
+
+
+	break;
+
+	case 7:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, -vel), true);
+
+
+	break;
+
+
+
+
+	}
+
+
+	//p->actualizarPosicion();
+
+	    std::cout<<"//////////////////////////////////////////"<<std::endl;
+	            std::cout<<""<<std::endl;
+	            std::cout<<"POS PERS DESPUES"<<std::endl;
+	                 std::cout<<"Pos 3D X: "<<p->getPos().X<<"Pos 3D Z: "<< p->getPos().Z<<std::endl;
+	                 std::cout<<"Pos 2D X: "<<bodyPers->GetPosition().x<<"Pos 2D Z: "<< bodyPers->GetPosition().y<<std::endl;
+
+
+}
+
+
+
+
+
 void MiContactListener::BeginContact(b2Contact* contact) {
 	std::cout<<""<<std::endl;
 
@@ -333,6 +424,13 @@ void MiContactListener::EndContact(b2Contact* contact) {
 				actualizarPuerta(entity2, 1);
 			}
 
+			//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
+			//	//aplicarKnockBack(entity1, b1);
+			//	Personaje *p = static_cast<Personaje*>(entity1->getObjeto3D());
+			//	p->setImpulso(false);
+
+			//}
+
 
 			
 
@@ -423,10 +521,17 @@ void MiContactListener::PreSolve(b2Contact* contact, const b2Manifold* oldManifo
 
 			}*/
 
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
+				aplicarKnockBack(entity1, b1);
+
+			}
 
 		}
 
 	}
 }
+
+
+
 
 
