@@ -13,7 +13,7 @@ public:
 	void borrarCuadrado();
 	bool cargarShaders();
 	void cargarCuadrado();
-	bool cargarFichero(char*);
+	bool cargarFichero(std::string);
 private:
 	GLuint VBO, VAO, EBO;
 	GLuint shaderProgram;

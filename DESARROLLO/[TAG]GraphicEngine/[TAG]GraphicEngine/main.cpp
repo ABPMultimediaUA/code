@@ -5,10 +5,15 @@
 #include "entityTree\TLuz.h"
 #include "entityTree\TMalla.h"
 #include "entityTree\TTriangle.h"
+
 #include <vector>
+
+#ifndef GLEW_STATIC
 #define GLEW_STATIC
-#include <GL\glew.h>
+#include <GL/glew.h>
+#endif
 #include <GLFW\glfw3.h>
+#include "framework\shader.h"
 
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
@@ -46,13 +51,17 @@ int main() {
 	int width, height;
 	glfwGetFramebufferSize(window, &width, &height);
 	glViewport(0, 0, width, height);
+	glEnable(GL_DEPTH_TEST);
+
+	shader shaderB("Shader/basicoVertexShader.vs", "Shader/basicoFragmentShader.frag");
 
 	//cargar arbol
 	TNodo origen(nullptr);
 	std::vector<TNodo*> nodos;
 	nodos.push_back(new TNodo(new TTransform()));
 	nodos.push_back(new TNodo(new TTransform()));
-	nodos.push_back(new TNodo(new TTriangle()));
+	//nodos.push_back(new TNodo(new TMalla("../models/Nanosuit/nanosuit.obj", &shaderB)));
+	nodos.push_back(new TNodo(new TMalla("../models/Nanosuit/nanosuit.obj")));
 	nodos.push_back(new TNodo(new TLuz()));
 	nodos.push_back(new TNodo(new TTransform()));
 	nodos.push_back(new TNodo(new TCamara()));
@@ -74,8 +83,9 @@ int main() {
 		//Render
 		//limpia el buffer
 		glClearColor(0.5f,0.8f,0.4f,1.0f);
-		glClear(GL_COLOR_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		
+		shaderB.Use();
 		//dibujo el triangulo
 		origen.draw();
 		std::cout << "Nodos Fin draw" << std::endl;

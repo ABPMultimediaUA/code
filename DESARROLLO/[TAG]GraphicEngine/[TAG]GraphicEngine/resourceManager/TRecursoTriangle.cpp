@@ -129,7 +129,7 @@ void TRecursoTriangle::cargarCuadrado()
 	}
 }
 
-bool TRecursoTriangle::cargarFichero(char * sdd)
+bool TRecursoTriangle::cargarFichero(std::string)
 {
 	return false;
 }

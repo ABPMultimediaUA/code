@@ -185,6 +185,8 @@
     <None Include="assimp-vc140-mt.dll" />
     <None Include="lib\assimp-vc140-mt.exp" />
     <None Include="glew32.dll" />
+    <None Include="Shader\basicoFragmentShader.frag" />
+    <None Include="Shader\basicoVertexShader.vs" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\assimp-vc140-mt.lib" />

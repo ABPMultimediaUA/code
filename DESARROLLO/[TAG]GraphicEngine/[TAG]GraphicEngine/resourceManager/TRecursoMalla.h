@@ -1,6 +1,5 @@
 #pragma once
 #include "TRecurso.h"
-#include <string>
 class mesh;
 class shader;
 
@@ -13,9 +12,10 @@ public:
 	~TRecursoMalla();
 	bool cargarFichero(std::string);
 	void draw();
+	void setShader(shader*);
 private:
 	std::string directorio;
-	mesh malla;
-	shader sombreado;
+	mesh* malla;
+	shader* sombreado;
 };
 

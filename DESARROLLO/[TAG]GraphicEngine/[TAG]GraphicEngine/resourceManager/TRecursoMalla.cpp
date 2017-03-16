@@ -9,7 +9,7 @@
 
 
 
-GLint TextureFromFile(const char* path, std::string directory)
+/*GLint TextureFromFile(const char* path, std::string directory)
 {
 	//Generate texture ID and load texture data 
 	std::string filename = std::string(path);
@@ -31,7 +31,7 @@ GLint TextureFromFile(const char* path, std::string directory)
 	glBindTexture(GL_TEXTURE_2D, 0);
 	SOIL_free_image_data(image);
 	return textureID;
-}
+}*/
 
 TRecursoMalla::TRecursoMalla()
 {
@@ -93,18 +93,19 @@ bool TRecursoMalla::cargarFichero(std::string path)
 		}
 	}
 	std::vector<Texture> textures;
-	if(aimesh->mMaterialIndex >= 0)
+	/*if(aimesh->mMaterialIndex >= 0)
 	{
 		aiMaterial* material = scene->mMaterials[aimesh->mMaterialIndex];
 		std::vector<Texture> diffuseMaps = this->loadMaterialTextures(material, aiTextureType_DIFFUSE, "texture_diffuse");
 		textures.insert(textures.end(), diffuseMaps.begin(), diffuseMaps.end());
 		std::vector<Texture> specularMaps = this->loadMaterialTextures(material, aiTextureType_SPECULAR, "texture_specular");
 		textures.insert(textures.end(), specularMaps.begin(), specularMaps.end());
-	}
+	}*/
+	this->malla = new mesh(vertices, indices, textures);
 	return true;
 }
 
-std::vector<Texture> TRecursoMalla::loadMaterialTextures(aiMaterial * mat, aiTextureType type, std::string typeName)
+/*std::vector<Texture> TRecursoMalla::loadMaterialTextures(aiMaterial * mat, aiTextureType type, std::string typeName)
 {
 	std::vector<Texture> textures;
 	for (GLuint i = 0; i < mat->GetTextureCount(type); i++)
@@ -132,9 +133,14 @@ std::vector<Texture> TRecursoMalla::loadMaterialTextures(aiMaterial * mat, aiTex
 		}
 	}
 	return textures;
-}
+}*/
 
 void TRecursoMalla::draw()
 {
-	this->malla.Draw(this->sombreado);
+	this->malla->Draw(*this->sombreado);
+}
+
+void TRecursoMalla::setShader(shader* s)
+{
+	this->sombreado = s;
 }

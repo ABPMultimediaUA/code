@@ -9,7 +9,7 @@ shader::shader()
 {
 }
 
-shader::shader(const GLchar * vertexPath, const GLchar * fragmentPath)
+shader::shader(const GLchar* vertexPath, const GLchar* fragmentPath)
 {
 	std::string vertexCode;
 	std::string fragmentCode;
