@@ -17,18 +17,30 @@
 #ifndef ESCENARIO_H
 #define ESCENARIO_H
 
-
+#include <iostream>
+#include <irrlicht.h>
 #include <Box2D\Box2D.h>
 #include <list>
 #include <string>
-#include "../Enemigos/Enemigo.h"
-#include "Pared.h"
+
 
 class Personaje;
 class Juego;
 class Puerta;
 class Terminal;
 class Objetos;
+class Pared;
+class Enemigo;
+class Entity2D;
+class Waypoints;
+
+using namespace irr;
+
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
 
 
 class Escenario {

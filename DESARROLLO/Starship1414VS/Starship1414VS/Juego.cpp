@@ -14,6 +14,15 @@
 
 
 #include "Juego.h"
+#include "Jugador\Personaje.h"
+#include "Escenario/Escenario.h"
+#include "Escenario/Camara.h"
+#include "Escenario/readJson.h"
+#include "Fisicas/MiContactListener.h"
+#include "Fisicas/MyContactFilter.h"
+#include "Menu/Menu.h"
+#include "EstadoGeneral.h"
+
 #include "ManejadorEstadoGeneral.h"
 
 #define ANCHO 1920

@@ -16,8 +16,10 @@
 #define CRIAALIEN_H
 
 #include "Enemigo.h"
-#include "navmeshes.h"
 
+class navmeshes;
+class AStar;
+class Escenario;
 
 class CriaAlien : public Enemigo {
 public:

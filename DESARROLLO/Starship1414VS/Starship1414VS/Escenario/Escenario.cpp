@@ -11,7 +11,6 @@
 * Created on 17 de noviembre de 2016, 20:08
 */
 
-#include <irrlicht.h>
 #include <stdlib.h>
 #include <time.h>
 #include "Escenario.h"
@@ -24,21 +23,14 @@
 #include "../Enemigos/CriaAlien.h"
 #include "../Enemigos/Waypoints.h"
 #include "../Enemigos/AlienBerserker.h"
+#include "../Enemigos/Enemigo.h"
+#include "Pared.h"
 #include "ObjConsumables\Objetos.h"
 #include "ObjConsumables\TiposDeMunicion\MunicionEscopeta.h"
 #include "ObjConsumables\TiposDeMunicion\MunicionPistola.h"
 #include "ObjConsumables\TiposDeMunicion\MunicionSubfusil.h"
+#include "../Fisicas/Entity2D.h"
 
-
-
-
-using namespace irr;
-
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
 
 Escenario::Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world, Juego* game) {
 

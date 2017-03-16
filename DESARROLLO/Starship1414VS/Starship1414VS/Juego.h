@@ -21,17 +21,19 @@
 #include <irrlicht.h>
 #include <IrrlichtDevice.h>
 #include <iostream>
+#include <list>
 #include "CAppReceiver.h"
-#include "Jugador\Personaje.h"
-#include "Escenario/Escenario.h"
-#include "Escenario/Camara.h"
-#include "Escenario/readJson.h"
-#include "Fisicas/MiContactListener.h"
-#include "Fisicas/MyContactFilter.h"
-#include "Menu/Menu.h"
+
 
 class ManejadorEstadoGeneral;
-
+class Enemigo;
+class Personaje;
+class Escenario;
+class Camara;
+class readJson;
+class MiContactListener;
+class MyContactFilter;
+class Menu;
 
 class Juego : public EstadoGeneral {
 public:

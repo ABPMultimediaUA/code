@@ -13,7 +13,9 @@
 
 #include "CriaAlien.h"
 #include "Nodo.h"
-
+#include "navmeshes.h"
+#include "AStar.h"
+#include "../Escenario/Escenario.h"
 
 CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos) {
     

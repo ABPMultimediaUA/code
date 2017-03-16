@@ -12,6 +12,9 @@
 */
 
 #include "navmeshes.h"
+#include "../Escenario/Escenario.h"
+#include "../Escenario/Pared.h"
+
 
 navmeshes::navmeshes(int grid, Escenario* esce) {
 
