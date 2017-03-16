@@ -13,9 +13,12 @@
 
 
 #include "Personaje.h"
-#include "../Escenario/Camara.h"
+#include "Bala.h"
+#include "Pistola.h"
+#include "Fusil.h"
+#include "Escopeta.h"
 #include "../Fisicas/Entity2D.h"
-#include "../Escenario/readJson.h"
+#include "../Juego.h"
 #include <Math.h>
 
 #define PISTOLA 0
@@ -27,7 +30,7 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
+Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world, Juego* j) {
 
 	maya = smgr->addCubeSceneNode(10); //se crea de tamanyo 10x10x10
 
@@ -43,9 +46,10 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 
 
 	vel = 100.0f;
+	vida = 100.0f;
 	pos = maya->getPosition();
 	entity = new Entity2D(world, pos, this, smgr);
-
+	game = j;
 	tiempoDisparo = 0.0f;
 	disparo = false;
 	teclaE = false;
@@ -57,15 +61,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 	armaActual = PISTOLA;
 	cargador = pistola->getCargador();
 	municionTotal = pistola->getCapacidadDeMun();
-	/* md.mass = 2.0;
-	md.center = b2Vec2(5.0,5.0);
-	md.I = 1.0;
-	body->SetMassData(&md);*/
 
-	/*std::cout<<"Tam X: "<<maya->getScale().X<<std::endl;
-	std::cout<<"Tam Y: "<<maya->getScale().Y<<std::endl;
-	std::cout<<"Tam Z: "<<maya->getScale().Z<<std::endl;
-	std::cout<<"Pos X: "<<pos.X<<" Pos Y: "<<pos.Y<<" Pos Z: "<<pos.Z<<std::endl;*/
 
 }
 
@@ -305,6 +301,22 @@ void Personaje::setImpulso(bool x)
 {
 	impulso = x;
 }
+
+void Personaje::quitarVida(float damage)
+{
+	vida -= damage;
+}
+
+float Personaje::getVida()
+{
+	return vida;
+}
+
+void Personaje::pasarMensaje() {
+
+	game->cambioEstado("menu");
+}
+
 
 void Personaje::iniciarTiempoImpulso() {
 

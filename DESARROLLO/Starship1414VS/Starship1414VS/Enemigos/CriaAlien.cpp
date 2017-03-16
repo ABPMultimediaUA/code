@@ -32,11 +32,13 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     estadoActual = DESCANSAR;
     raza = CRIA;
     blindaje = 0.0f;
+	damageChoque = 10.0f;
    // nav = new navmeshes(10, esce);
         waypoints = puntos;
    // waypoints->creaPesos(entity);
 
 	waypoints->mostrarPesos();
+
 
 
 

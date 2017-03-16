@@ -29,6 +29,7 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 	estadoActual = DESCANSAR;
 	raza = BERSERKER;
 	blindaje = 5.0f;
+	damageChoque = 15.0f;
 
 }
 

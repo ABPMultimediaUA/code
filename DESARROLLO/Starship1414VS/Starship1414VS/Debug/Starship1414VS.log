@@ -1,6 +1,6 @@
 ﻿  Personaje.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(257): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(343): warning C4715: 'Personaje::getDamage': no todas las rutas de acceso de control devuelven un valor
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(362): warning C4715: 'Personaje::getTiempoArma': no todas las rutas de acceso de control devuelven un valor
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(253): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(355): warning C4715: 'Personaje::getDamage': no todas las rutas de acceso de control devuelven un valor
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(374): warning C4715: 'Personaje::getTiempoArma': no todas las rutas de acceso de control devuelven un valor
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

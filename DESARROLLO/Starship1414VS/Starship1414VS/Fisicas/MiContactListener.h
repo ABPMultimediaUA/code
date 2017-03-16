@@ -16,7 +16,7 @@
 #define MICONTACTLISTENER_H
 
 class Entity2D;
-
+class Bala;
 
 class MiContactListener : public b2ContactListener {
 private:

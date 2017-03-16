@@ -123,3 +123,8 @@ Entity2D* Enemigo::getEntity()
 {
 	return entity;
 }
+
+float Enemigo::getDamageChoque()
+{
+	return damageChoque;
+}

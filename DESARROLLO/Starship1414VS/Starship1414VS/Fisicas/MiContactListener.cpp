@@ -21,7 +21,7 @@
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionSubfusil.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionEscopeta.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionPistola.h"
-
+#include "../Jugador/Bala.h"
 
 
 MiContactListener::MiContactListener() {
@@ -192,20 +192,31 @@ void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * mun
 }
 
 
-void aplicarKnockBack(Entity2D *pers, b2Body *bodyPers) {
+void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 
 	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
+	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 	int dir = p->getDireccion();
 	float vel = 5000.0f;
 	//std::cout << "VELOSIDAD X: " << vel.x << "VELOSIDAD Y: " << vel.y << std::endl;
 
-	std::cout << "//////////////////////////////////////////" << std::endl;
+/*	std::cout << "//////////////////////////////////////////" << std::endl;
 	std::cout << "" << std::endl;
 	std::cout << "POS PERS ANTES" << std::endl;
 	std::cout << "Pos 3D X: " << p->getPos().X << "Pos 3D Z: " << p->getPos().Z << std::endl;
 	std::cout << "Pos 2D X: " << bodyPers->GetPosition().x << "Pos 2D Z: " << bodyPers->GetPosition().y << std::endl;
+	*/
+
+	std::cout << "//////////////////////////////////////////" << std::endl;
+	std::cout << "" << std::endl;
+	std::cout << "VIDA: " <<p->getVida()<< std::endl;
+	std::cout << "" << std::endl;
+	std::cout << "//////////////////////////////////////////" << std::endl;
+
 	p->setImpulso(true);
 	p->iniciarTiempoImpulso();
+	p->quitarVida(e->getDamageChoque());
+
 	switch (dir) {
 
 	case 0:
@@ -270,12 +281,15 @@ void aplicarKnockBack(Entity2D *pers, b2Body *bodyPers) {
 
 	//p->actualizarPosicion();
 
-	    std::cout<<"//////////////////////////////////////////"<<std::endl;
+	/*    std::cout<<"//////////////////////////////////////////"<<std::endl;
 	            std::cout<<""<<std::endl;
 	            std::cout<<"POS PERS DESPUES"<<std::endl;
 	                 std::cout<<"Pos 3D X: "<<p->getPos().X<<"Pos 3D Z: "<< p->getPos().Z<<std::endl;
 	                 std::cout<<"Pos 2D X: "<<bodyPers->GetPosition().x<<"Pos 2D Z: "<< bodyPers->GetPosition().y<<std::endl;
-
+*/
+	if(p->getVida() <= 0.0f) {
+		p->pasarMensaje();
+	}
 
 }
 
@@ -522,7 +536,7 @@ void MiContactListener::PreSolve(b2Contact* contact, const b2Manifold* oldManifo
 			}*/
 
 			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
-				aplicarKnockBack(entity1, b1);
+				aplicarKnockBack(entity1, entity2, b1);
 
 			}
 

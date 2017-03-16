@@ -80,11 +80,11 @@ private:
 	std::list<Objetos*> objConsumables;
 	int tam;
 	Entity2D *entity;
-	Juego *jue;
+	 Juego *jue;
 	Personaje *pers;
 
 public:
-	Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world, Juego* game);
+	Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world,  Juego* game);
 	Escenario(const Escenario& orig);
 	virtual ~Escenario();
 

@@ -48,7 +48,7 @@ Escenario::Escenario(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	srand(time(NULL));
 	entity = new Entity2D(world);
 	jue = game;
-	pers = new Personaje(smgr, driver, world);
+	pers = new Personaje(smgr, driver, world, game);
 }
 
 Escenario::Escenario(const Escenario& orig) {
@@ -460,7 +460,7 @@ void Escenario::actualizarListaEnemigos() {
 
 void Escenario::cambiaEstado(std::string mensaje)
 {
-	jue->cambioEstado(mensaje);
+	 jue->cambioEstado(mensaje);
 }
 
 Personaje* Escenario::getPersonaje()
