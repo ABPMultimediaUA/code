@@ -12,6 +12,12 @@
 */
 
 #include "AlienBerserker.h"
+#include "Nodo.h"
+#include "navmeshes.h"
+#include "AStar.h"
+#include "../Escenario/Escenario.h"
+#include "../Fisicas/Entity2D.h"
+#include "Waypoints.h"
 
 AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos)
 {

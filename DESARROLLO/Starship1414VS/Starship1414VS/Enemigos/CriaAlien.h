@@ -18,7 +18,6 @@
 #include "Enemigo.h"
 
 class navmeshes;
-class AStar;
 class Escenario;
 
 class CriaAlien : public Enemigo {

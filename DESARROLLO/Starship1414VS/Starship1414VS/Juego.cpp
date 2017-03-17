@@ -253,15 +253,9 @@ void Juego::raton(f32 dt)
 	//	std::cout << "PosX: " << pers->getPos().X << "PosZ: " << pers->getPos().Z << std::endl;
 	//}
 	if (teclado.GetMouseState().LeftButtonDown && pers->getDisparo() == false) {
-		//tiempoDisparo += dt;
 
-		//pers -> disparar(dt,ok);
-		//disparo = true;
-		//Bala *bullet = new Bala(smgr, driver, world, pers, vector2df(teclado.GetMouseState().Position.X, teclado.GetMouseState().Position.Y));
-		//listaBalas.push_back(bullet);
-		//  }
-		// }
 		
+		//mirar esta parte para el enemigo vaya disparando (posiblemente sea en el callback de colisiones
 		if (pers->getCargador() >= 0) {
 			pers->disparar(smgr, driver, world, dt, vector2df(mousePosition.X, mousePosition.Y));
 

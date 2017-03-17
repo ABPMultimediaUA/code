@@ -14,15 +14,24 @@
 
 
 #include <iostream>
-#include "../Fisicas/Entity2D.h"
-#include "Waypoints.h"
-#include "AStar.h"
+#include <irrlicht.h>
+#include <Box2D\Box2D.h>
 
+using namespace irr;
+
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
 
 #ifndef ENEMIGO_H
 #define ENEMIGO_H
 
 class Nodo;
+class AStar;
+class Waypoints;
+class Entity2D;
 
 #define CRIA 10
 #define BERSERKER 11

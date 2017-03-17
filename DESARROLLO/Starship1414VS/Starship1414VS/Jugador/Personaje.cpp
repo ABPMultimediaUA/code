@@ -97,7 +97,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
 		// entity->getSombraP2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
 
 		/* std::cout<<"Des"<<std::endl;
 		std::cout<<"Pos X: "<<pos.X<<std::endl;
@@ -113,7 +113,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
 		//  entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
 
 
 		/*std::cout<<"Des"<<std::endl;
@@ -130,7 +130,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
 		// entity->getSombraP2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 
 		/*  std::cout<<"Des"<<std::endl;
@@ -147,7 +147,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
 		//entity->getSombraP2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 		/* std::cout<<"Des"<<std::endl;
 		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
@@ -161,8 +161,8 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, vel));
 		//entity->getSombraP2D()->SetLinearVelocity(b2Vec2(vel, vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 
 		break;
@@ -171,8 +171,8 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 	case 5:
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, -vel));
 		//entity->getSombraP2D()->SetLinearVelocity(b2Vec2(vel, -vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 		break;
 
 		//A+S
@@ -180,8 +180,8 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
 		// entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 		break;
 
@@ -190,8 +190,8 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, vel));
 		//   entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 		break;
 
@@ -203,7 +203,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 
 
-	
+	actualizarPosicion();
 	direccion = modo;
 	setPos(pos);
 }

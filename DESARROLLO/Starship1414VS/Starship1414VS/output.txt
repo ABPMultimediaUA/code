@@ -3049,98 +3049,6 @@ PESO: -1
 (-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 412.099, 0, -1, )
 (-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 467.428, 199.123, -1, -1, -1, -1, -1, 0, )
 ///////////////////////////////
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 1
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -70 POS Y: -270
-///////////////////////////////////
-Sombra: 0 Elemento: 1
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 45 POS Y: 180
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-//////////////////////////////////////////
-
-VIDA: 100
-
-//////////////////////////////////////////
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 45 POS Y: 180
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-//////////////////////////////////////////
-
-VIDA: 90
-
-//////////////////////////////////////////
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 40 POS Y: 510
-///////////////////////////////////
-Sombra: 0 Elemento: 2
-ACTUALIZO 0
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 45.6068 POS Y: 510
-///////////////////////////////////
-Sombra: 0 Elemento: 2
-lalal 
-ACTUALIZO 1
-cerrar123
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 1
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 0 POS Y: 580
-///////////////////////////////////
-Sombra: 0 Elemento: 1
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 5
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 74.6 POS Y: 623.4
-///////////////////////////////////
-Sombra: 0 Elemento: 5
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 5
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 74.6 POS Y: 623.4
-///////////////////////////////////
-Sombra: 0 Elemento: 5
-CAMBIO ESTADO TRUE
-2
-maaaaaaaaatao
-POS PERS ANTES
-ID DE LA ENTITY 0
-MUERO ENTITY2D
 Irrlicht Engine version 1.8.4
  (Build 9200)
 Using renderer: OpenGL 4.5.0
@@ -3149,4 +3057,3 @@ OpenGL driver version is 1.2 or better.
 GLSL version: 4.5
 Resizing window (1366 745)
 Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
-Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/CARTEL.jpg
