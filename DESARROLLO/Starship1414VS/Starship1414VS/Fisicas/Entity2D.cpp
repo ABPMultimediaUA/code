@@ -166,7 +166,7 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
 }
 //constructor bala
 
-Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala) {
+Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala, int tipo) {
 
 
     bodyDef.type = b2_dynamicBody;
@@ -178,10 +178,20 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void
     body -> CreateFixture(&bodyCircle, 1.0f);
     body ->SetBullet(true);
     body->SetUserData(this);
-    iden = 3;
     live = vivo;
-    filtro.groupIndex = FILTRO_DISPAROPERS;
-    body->GetFixtureList()->SetFilterData(filtro);
+	if (tipo == 1) {
+		filtro.groupIndex = FILTRO_DISPAROPERS;
+		body->GetFixtureList()->SetFilterData(filtro);
+		iden = 3;
+	}
+	else {
+
+		filtro.groupIndex = FILTRO_DISPAROENE;
+		body->GetFixtureList()->SetFilterData(filtro);
+		iden = 6;
+
+	}
+
     objeto3D = dirBala;
 
 }
@@ -194,29 +204,38 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, I
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set((pos.X), (pos.Z));
     bodyShape.SetAsBox(5.0f, 5.0f);
-    md.mass = 50.0f;
-    md.center = b2Vec2(3, 3);
-    md.I = 0.0f;
+	bodyCircle.m_p.Set(0, 0);
+	bodyCircle.m_radius = 70; 
+
     body = world->CreateBody(&bodyDef);
+	body->CreateFixture(&bodyCircle, 1.0f);
+	body->GetFixtureList()->SetSensor(true);
     body -> CreateFixture(&bodyShape, 1.0f);
     live = vivo;
-    body->GetFixtureList()->SetFriction(10.0f);
+   
     body->SetUserData(this);
-    body->SetMassData(&md);
+    
 
     sombraDef.type = b2_kinematicBody;
     sombraDef.position.Set(pos.X, pos.Z);
     sombraShape.SetAsBox(6.0f, 6.0f);
     sombraE = world->CreateBody(&sombraDef);
     sombraE -> CreateFixture(&sombraShape, 1.0f);
-    sombraE->GetFixtureList()->SetFriction(10.0f);
+	
+    //sombraE->GetFixtureList()->SetFriction(10.0f);
     sombraE->SetUserData(this);
     sombraE->SetMassData(&md);
     idenSh = 1;
     filtro.groupIndex = FILTRO_ENEMIGO;
-    body->GetFixtureList()->SetFilterData(filtro);
-    sombraE->GetFixtureList()->SetFilterData(filtro);
-    fisica2 = smgr->addCubeSceneNode(10);
+	for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
+		f->SetFilterData(filtro);
+
+	}
+  
+	sombraE->GetFixtureList()->SetFilterData(filtro);
+
+    fisica2 = smgr->addSphereSceneNode(70);
+	//smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
     fisica2->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
     fisica2->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
     fisica2->getMaterial(0).EmissiveColor.set(0, 100, 10, 100);

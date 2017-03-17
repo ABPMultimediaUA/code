@@ -378,7 +378,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 
 		driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
 
-		//esce->actualizarListaEnemigos();
+		esce->actualizarListaEnemigos();
 		esce->actualizarEstadoPuerta();
 		esce->actualizarEstadoPersonaje();
 		esce->actualizarObjetosConsumables();

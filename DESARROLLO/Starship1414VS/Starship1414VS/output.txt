@@ -3049,11 +3049,173 @@ PESO: -1
 (-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 412.099, 0, -1, )
 (-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 467.428, 199.123, -1, -1, -1, -1, -1, 0, )
 ///////////////////////////////
+
+////////////////////////
+ENTIDAD 1: 5
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 61 POS Y: 74
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 5
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 61 POS Y: 74
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.505 POS Y: 9.94262
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.505 POS Y: 9.94586
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.505 POS Y: 9.99346
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.505 POS Y: 10.0636
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.505 POS Y: 10.076
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.505 POS Y: 9.96351
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.505 POS Y: 10.0163
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.505 POS Y: 10.0422
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.4986 POS Y: 9.99435
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.497 POS Y: 9.98081
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.4971 POS Y: 9.98474
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -66.4959 POS Y: 9.98594
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
 Irrlicht Engine version 1.8.4
- (Build 9200)
+Professional Edition  (Build 9200)
 Using renderer: OpenGL 4.5.0
-GeForce GT 720M/PCIe/SSE2: NVIDIA Corporation
+GeForce GTX 970/PCIe/SSE2: NVIDIA Corporation
 OpenGL driver version is 1.2 or better.
 GLSL version: 4.5
-Resizing window (1366 745)
-Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
+Resizing window (1366 768)
+Loaded texture: C:/Users/David/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg

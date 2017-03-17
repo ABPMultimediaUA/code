@@ -294,6 +294,19 @@ void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 }
 
 
+void dispararEnemigo(Entity2D *pers, Entity2D *enemigo) {
+
+	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
+	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
+
+	p->getPos();
+
+	e->setPosJugador(p->getPos().X, p->getPos().Z);
+	e->setEstado(3);
+
+}
+
+
 
 
 
@@ -356,6 +369,21 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				entity2->setLive(false);
 			}
 
+			if (entity1->getIDEN() == 6 && f2->IsSensor() != true) {
+				entity1->setLive(false);
+
+			}
+
+			else if (entity2->getIDEN() == 6 && f1->IsSensor() != true) {
+				entity2->setLive(false);
+			}
+
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
+				std::cout << "HOLAAAAAAAAAAA 1" << std::endl;
+
+			}
+
+
 			//colision de enemigo y bala
 			//3: bala; 4: enemigo
 			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 4) {
@@ -369,6 +397,20 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				aplicarDamage(entity1, entity2);
 				entity2->setLive(false);
 			}
+
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6) {
+				//entity2->setLive(false);
+				
+				entity2->setLive(false);
+			}
+
+			else if (entity1->getIDEN() == 6 && entity2->getIDEN() == 0) {
+				//entity1->setLive(false);              
+				
+				entity1->setLive(false);
+			}
+
+			//metodo para que quite vida al personaje
 
 			if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true) {
 				actualizarPuerta(entity1, 0);
@@ -445,6 +487,12 @@ void MiContactListener::EndContact(b2Contact* contact) {
 
 			//}
 
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
+				std::cout << "ADIOS 1" << std::endl;
+				Enemigo *e = static_cast<Enemigo*>(entity2->getObjeto3D());
+				e->setEstado(1);
+
+			}
 
 			
 
@@ -498,6 +546,13 @@ void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* im
 				
 				this->activarTerminar(entity1, entity2);
 			}*/
+
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 ) {
+				std::cout << "A DISPARAR!" << std::endl;
+				dispararEnemigo(entity1, entity2);
+
+			}
+
 
 		}
 

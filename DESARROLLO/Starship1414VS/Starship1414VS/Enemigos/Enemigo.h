@@ -16,6 +16,7 @@
 #include <iostream>
 #include <irrlicht.h>
 #include <Box2D\Box2D.h>
+#include <list>
 
 using namespace irr;
 
@@ -32,6 +33,7 @@ class Nodo;
 class AStar;
 class Waypoints;
 class Entity2D;
+class Bala;
 
 #define CRIA 10
 #define BERSERKER 11
@@ -69,6 +71,19 @@ public:
 	float getVida();
 	Entity2D*  getEntity();
 	float getDamageChoque();
+	void setEstado(int num);
+
+	void setDisparo(bool x);
+	void aumentarTiempoDisparo(float t);
+	void resetTiempoDisparo();
+	float getTiempoDisparo();
+	bool getDisparado();
+	void disparar(float dt);
+	void actualizarLista();
+	void setPosJugador(float x, float y);
+
+
+
 
 protected:
 	
@@ -84,6 +99,8 @@ protected:
 	ITextSceneNode *GVida;
 	ITextSceneNode *RVida;
 	ISceneManager* smgr1;
+	IVideoDriver* VD;
+	b2World* mundo;
 	float blindaje;
 	Waypoints *waypoints;
 	AStar *path;
@@ -91,6 +108,14 @@ protected:
 	int dir, posNodo;
 	float damageChoque;
 	
+
+	std::list<Bala*> listaBalas;
+	bool disparado;
+	float tiempoDisparo;
+	vector2df posJugador;
+	float damageBala;
+
+
 };
 
 #endif /* ENEMIGO_H */

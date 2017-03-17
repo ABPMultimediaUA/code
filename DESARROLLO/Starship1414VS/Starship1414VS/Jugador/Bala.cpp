@@ -14,7 +14,7 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posPers, vector2df mousePosition, float dumug) {
+Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posPers, vector2df mousePosition, float dumug, int tipo) {
 
 	maya = smgr->addSphereSceneNode(2);
 
@@ -44,7 +44,14 @@ Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df 
 
 	damage = dumug;
 
-	entity = new Entity2D(world, pos, maya->getRotation(), true, this);
+	if (tipo == 1) {
+		entity = new Entity2D(world, pos, maya->getRotation(), true, this, tipo);
+	}
+	else {
+		maya->getMaterial(0).EmissiveColor.set(0, 0, 140, 255);
+		entity = new Entity2D(world, pos, maya->getRotation(), true, this, tipo);
+
+	}
 
 }
 
@@ -83,19 +90,30 @@ void Bala::mover(f32 tiempo) {
 
 		pos = maya->getPosition();
 
-		//        float v1 = direction.X * 200.0f * tiempo;
-		//        float v2 = -direction.Y * 200.0f * tiempo;
-		//
-		//        float x = maya->getPosition().X + v1;
-		//        float y = maya->getPosition().Z + v2;
-		//
-		//        maya->setPosition(vector3df(x, 10, y));
-		//        pos = maya->getPosition();
-		//            std::cout<<"//////////////////////////////////////////"<<std::endl;
-		//                std::cout<<""<<std::endl;
-		//                std::cout<<"POS BALA DESPUES"<<std::endl;
-		//                     std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-		//                     std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+	}
+}
+
+
+void Bala::moverEnemigoDisparo() {
+
+	if (entity != NULL) {
+
+		vector2df direction(posRaton.X - pos.X - 683, posRaton.Y - pos.Z - -384); //pasar tamanyo pantalla por parametro
+		direction.normalize();
+
+
+		float v1 = direction.X * 200.0f;
+		float v2 = -direction.Y * 200.0f;
+
+		float x = entity->getCuerpo2D()->GetPosition().x + v1;
+		float y = entity->getCuerpo2D()->GetPosition().y + v2;
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(v1, v2));
+
+		maya->setPosition(vector3df(entity->getCuerpo2D()->GetPosition().x, 10, entity->getCuerpo2D()->GetPosition().y));
+		// maya->setPosition(vector3df(x, 10, y));
+
+		pos = maya->getPosition();
+
 	}
 }
 

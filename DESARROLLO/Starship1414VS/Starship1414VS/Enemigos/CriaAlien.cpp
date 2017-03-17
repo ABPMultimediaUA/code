@@ -26,14 +26,14 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	maya = smgr -> addCubeSceneNode(5); //preguntar a Miguel Angel
     if (maya) {
         maya -> setPosition(posicion); //vector3df(0, 10, 40)
-        maya->getMaterial(0).EmissiveColor.set(0, 128, 0, 20);
+        maya->getMaterial(0).EmissiveColor.set(0, 0, 0, 20);
     }
 
     vel = 50.0f;
     pos = maya->getPosition();
 	rot = maya->getRotation();
     entity = new Entity2D(world, pos, true, this, smgr);
-    estadoActual = DESCANSAR;
+    estadoActual = ATACAR;
     raza = CRIA;
     blindaje = 0.0f;
 	damageChoque = 10.0f;
@@ -43,8 +43,9 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 
 	waypoints->mostrarPesos();
 
-
-
+	disparado = false;
+	posJugador.X, posJugador.Y = 0.0f;
+	damageBala = 10.0f;
 
 
 
@@ -174,6 +175,22 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
         case ATACAR: //atacar
            
             maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 0);
+
+			if (disparado == false) {
+
+				this->disparar(0.1f); //donde crea la bala
+
+			}
+
+
+			if ( disparado == true) {
+				this->aumentarTiempoDisparo(0.1f);
+				if (this->getTiempoDisparo() >= 30.0f) {
+					this->setDisparo(false);
+					this->resetTiempoDisparo();
+				}
+			}
+
             break;
 
 
@@ -183,6 +200,9 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
 
 			break;
     }
+
+	this->actualizarLista();
+
 }
 
 void CriaAlien::Mover(int modo) {

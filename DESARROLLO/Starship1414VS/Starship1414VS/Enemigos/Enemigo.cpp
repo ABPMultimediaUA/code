@@ -19,6 +19,7 @@
 #include "../Fisicas/Entity2D.h"
 #include "Waypoints.h"
 #include "AStar.h"
+#include "../Jugador/Bala.h"
 
 
 
@@ -38,6 +39,8 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
     GVida->setPosition(posicion);
     RVida->setPosition(vector3df(posicion.X - 8, posicion.Y, posicion.Z));
     smgr1 = smgr;
+	mundo = world;
+	VD = driver;
     smgr->getGUIEnvironment()->clear();
 	//puntoIni.nombre, puntoFin.nombre = "indefinido"; //hecho para que solo se calcule una vez los nodos
 	puntoIni = nullptr;
@@ -124,4 +127,75 @@ Entity2D* Enemigo::getEntity()
 float Enemigo::getDamageChoque()
 {
 	return damageChoque;
+}
+
+void Enemigo::setEstado(int num)
+{
+	estadoActual = num;
+}
+
+void Enemigo::setDisparo(bool x)
+{
+	disparado = x;
+}
+
+void Enemigo::aumentarTiempoDisparo(float t)
+{
+	tiempoDisparo += t;
+}
+
+void Enemigo::resetTiempoDisparo()
+{
+	tiempoDisparo = 0.0f;
+}
+
+float Enemigo::getTiempoDisparo()
+{
+	return tiempoDisparo;
+}
+
+bool Enemigo::getDisparado()
+{
+	return disparado;
+}
+
+void Enemigo::disparar(float dt)
+{
+	tiempoDisparo += dt;
+	disparado = true;
+	Bala *bullet = new Bala(smgr1, VD, mundo, pos, posJugador, damageBala, 2);
+	listaBalas.push_back(bullet);
+
+}
+
+void Enemigo::actualizarLista()
+{
+	if (!listaBalas.empty()) {
+		for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end();) {
+			if ((*it) != NULL) {
+				if (!(*it)->estaViva()) {
+
+					delete(*it);
+					it = listaBalas.erase(it);
+				}
+				else
+					it++;
+			}
+			else
+				it++;
+		}
+
+		for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end(); it++) {
+			if ((*it) != NULL && (*it)->estaViva() == true) {
+				(*it)->moverEnemigoDisparo();
+				//(*it)->update();
+			}
+		}
+	}
+}
+
+void Enemigo::setPosJugador(float x, float y)
+{
+	posJugador.X = x;
+	posJugador.Y = y;
 }
