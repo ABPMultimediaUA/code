@@ -97,8 +97,9 @@ void Bala::mover(f32 tiempo) {
 void Bala::moverEnemigoDisparo() {
 
 	if (entity != NULL) {
+		//posraton en este metodo es la posicion del jugador
 
-		vector2df direction(posRaton.X - pos.X - 683, posRaton.Y - pos.Z - -384); //pasar tamanyo pantalla por parametro
+		vector2df direction(posRaton.X  - 683, posRaton.Y  - 384); //pasar tamanyo pantalla por parametro
 		direction.normalize();
 
 

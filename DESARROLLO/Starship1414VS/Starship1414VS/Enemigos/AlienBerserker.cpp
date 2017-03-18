@@ -45,7 +45,7 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 AlienBerserker::~AlienBerserker() {
 }
 
-void AlienBerserker::Update()
+void AlienBerserker::Update(f32 dt)
 {
 	switch (estadoActual) {
 

@@ -69,7 +69,7 @@ Enemigo::~Enemigo() {
     delete(entity);
 }
 
-void Enemigo::Update() {
+void Enemigo::Update(f32 dt) {
 }
 
 void Enemigo::Mover(int modo) {

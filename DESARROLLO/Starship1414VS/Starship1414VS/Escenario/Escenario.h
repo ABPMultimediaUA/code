@@ -110,7 +110,7 @@ public:
 	std::list<Escenario::Elemento> getSubHijos();
 	void removeListHijos();
 	void removeListSubHijos();
-	void actualizarListaEnemigos();
+	void actualizarListaEnemigos(f32 dt);
 	void spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
 	std::list<Pared*> getParedes();
 	int getTam();

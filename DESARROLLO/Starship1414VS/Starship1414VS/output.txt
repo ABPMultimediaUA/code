@@ -3049,31 +3049,17118 @@ PESO: -1
 (-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 412.099, 0, -1, )
 (-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 467.428, 199.123, -1, -1, -1, -1, -1, 0, )
 ///////////////////////////////
+POS WAYPOINT INI: 12
+
+NOMBRE: Punto13
+POS NODO: 12
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 4
+
+
+DIR: 4
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: 398.005
+MINIMO ANTES: 1e+07
+MINIMO DESPUES: 398.005
+I: 11
+///////////////////////
+///////////////////////
+MATRIZ: 0
+///////////////////////
+MATRIZ: 402.011
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: 416.203
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+///////////////////////
+MATRIZ: -1
+POS WAYPOINT MAS CERCANO: 11
+
+NOMBRE DEL DESTINO: Punto12
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
 
 ////////////////////////
-ENTIDAD 1: 5
+ENTIDAD 1: 0
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 61 POS Y: 74
+POS X: 92.0657 POS Y: 199.969
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
+A DISPARAR!
+ADIOS 1
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
 
 ////////////////////////
-ENTIDAD 1: 5
+ENTIDAD 1: 1
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -446.505 POS Y: 418.597
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+
+DIR: 6
+
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+////////////////////////
+ENTIDAD 1: 0
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 61 POS Y: 74
+POS X: 10.2147 POS Y: 199.919
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
+A DISPARAR!
 
 ////////////////////////
 ENTIDAD 1: 1
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -66.505 POS Y: 9.94262
+POS X: -446.505 POS Y: 418.597
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 MUERO BALA
@@ -3085,7 +20172,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -66.505 POS Y: 9.94586
+POS X: -446.505 POS Y: 418.597
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 MUERO BALA
@@ -3097,7 +20184,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -66.505 POS Y: 9.99346
+POS X: -446.505 POS Y: 364.84
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 MUERO BALA
@@ -3109,7 +20196,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -66.505 POS Y: 10.0636
+POS X: -446.505 POS Y: 364.84
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 MUERO BALA
@@ -3121,7 +20208,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -66.505 POS Y: 10.076
+POS X: -446.505 POS Y: 364.84
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 MUERO BALA
@@ -3133,7 +20220,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -66.505 POS Y: 9.96351
+POS X: -446.505 POS Y: 364.84
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 MUERO BALA
@@ -3145,7 +20232,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -66.505 POS Y: 10.0163
+POS X: -446.505 POS Y: 364.84
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 MUERO BALA
@@ -3157,60 +20244,5743 @@ ENTIDAD 1: 1
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -66.505 POS Y: 10.0422
+POS X: -446.505 POS Y: 364.84
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 MUERO BALA
 ID DE LA ENTITY 6
 MUERO ENTITY2D
+ADIOS 1
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
 
 ////////////////////////
 ENTIDAD 1: 1
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -66.4986 POS Y: 9.99435
+POS X: -446.505 POS Y: 364.84
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
+
+DIR: 6
+
 MUERO BALA
 ID DE LA ENTITY 6
 MUERO ENTITY2D
 
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -66.497 POS Y: 9.98081
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
+DIR: 6
 
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -66.4971 POS Y: 9.98474
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
 
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -66.4959 POS Y: 9.98594
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 7
+
+
+DIR: 6
+
+
+DIR: 6
+
 Irrlicht Engine version 1.8.4
 Professional Edition  (Build 9200)
 Using renderer: OpenGL 4.5.0

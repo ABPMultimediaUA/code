@@ -23,7 +23,7 @@ public:
 	AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos);
 	// AlienBerserker(const AlienBerserker& orig);
 	virtual ~AlienBerserker();
-	void Update();
+	void Update(f32 dt);
 	void Mover(int modo);
 	void Patrullar();
 	void quitarVida(float damage);

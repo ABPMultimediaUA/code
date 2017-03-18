@@ -33,7 +33,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     pos = maya->getPosition();
 	rot = maya->getRotation();
     entity = new Entity2D(world, pos, true, this, smgr);
-    estadoActual = ATACAR;
+    estadoActual = DESCANSAR;
     raza = CRIA;
     blindaje = 0.0f;
 	damageChoque = 10.0f;
@@ -44,7 +44,8 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	waypoints->mostrarPesos();
 
 	disparado = false;
-	posJugador.X, posJugador.Y = 0.0f;
+	posJugador.X  = -30.0f;
+	posJugador.Y = -90.0f;
 	damageBala = 10.0f;
 
 
@@ -95,7 +96,7 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
     }
 }
 
-void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
+void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
 	
 	
 	switch (estadoActual) {
@@ -178,18 +179,20 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
 
 			if (disparado == false) {
 
-				this->disparar(0.1f); //donde crea la bala
+				this->disparar(dt); //donde crea la bala
 
 			}
 
 
 			if ( disparado == true) {
-				this->aumentarTiempoDisparo(0.1f);
-				if (this->getTiempoDisparo() >= 30.0f) {
+				this->aumentarTiempoDisparo(dt);
+				if (this->getTiempoDisparo() >= 0.7f) {
 					this->setDisparo(false);
 					this->resetTiempoDisparo();
 				}
 			}
+
+			this->setVelocidad();
 
             break;
 
@@ -202,6 +205,8 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
     }
 
 	this->actualizarLista();
+	
+
 
 }
 

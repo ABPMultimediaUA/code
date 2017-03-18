@@ -25,7 +25,7 @@ public:
 	CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos);
 	//CriaAlien(const CriaAlien& orig);
 	virtual ~CriaAlien();
-	void Update();
+	void Update(f32 dt);
 	void Mover(int modo);
 	void Patrullar();
 	void quitarVida(float damage);

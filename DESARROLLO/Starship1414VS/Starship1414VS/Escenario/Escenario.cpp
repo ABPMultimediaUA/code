@@ -424,7 +424,7 @@ void Escenario::actualizarObjetosConsumables()
 	}
 }
 
-void Escenario::actualizarListaEnemigos() {
+void Escenario::actualizarListaEnemigos(f32 dt) {
 
 	if (!enemigos.empty()) {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
@@ -444,7 +444,7 @@ void Escenario::actualizarListaEnemigos() {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end(); it++) {
 			if ((*it) != NULL && (*it)->estaVivo() == true) {
 
-				(*it)->Update();
+				(*it)->Update(dt);
 			}
 		}
 	}

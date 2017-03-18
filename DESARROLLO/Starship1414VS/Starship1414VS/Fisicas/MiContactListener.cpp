@@ -379,20 +379,21 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			}
 
 			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
-				std::cout << "HOLAAAAAAAAAAA 1" << std::endl;
+				std::cout << "A DISPARAR!" << std::endl;
+				dispararEnemigo(entity1, entity2);
 
 			}
 
 
 			//colision de enemigo y bala
 			//3: bala; 4: enemigo
-			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 4) {
+			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 4 && f2->IsSensor() == false) {
 				//entity2->setLive(false);
 				aplicarDamage(entity2, entity1);
 				entity1->setLive(false);
 			}
 
-			else if (entity1->getIDEN() == 4 && entity2->getIDEN() == 3) {
+			else if (entity1->getIDEN() == 4 && entity2->getIDEN() == 3 && f1->IsSensor() == false) {
 				//entity1->setLive(false);              
 				aplicarDamage(entity1, entity2);
 				entity2->setLive(false);
