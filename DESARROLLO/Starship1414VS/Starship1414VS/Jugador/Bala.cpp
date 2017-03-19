@@ -81,8 +81,8 @@ void Bala::mover(f32 tiempo) {
 		float v1 = direction.X * 200.0f;
 		float v2 = -direction.Y * 200.0f;
 
-		float x = entity->getCuerpo2D()->GetPosition().x + v1;
-		float y = entity->getCuerpo2D()->GetPosition().y + v2;
+		//float x = entity->getCuerpo2D()->GetPosition().x + v1;
+		//float y = entity->getCuerpo2D()->GetPosition().y + v2;
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(v1, v2));
 
 		maya->setPosition(vector3df(entity->getCuerpo2D()->GetPosition().x, 10, entity->getCuerpo2D()->GetPosition().y));
@@ -99,15 +99,13 @@ void Bala::moverEnemigoDisparo() {
 	if (entity != NULL) {
 		//posraton en este metodo es la posicion del jugador
 
-		vector2df direction(posRaton.X  - 683, posRaton.Y  - 384); //pasar tamanyo pantalla por parametro
+		vector2df direction(posRaton.X - posInicial.X, posRaton.Y - posInicial.Z); //pasar tamanyo pantalla por parametro
 		direction.normalize();
 
 
 		float v1 = direction.X * 200.0f;
-		float v2 = -direction.Y * 200.0f;
+		float v2 = direction.Y * 200.0f;
 
-		float x = entity->getCuerpo2D()->GetPosition().x + v1;
-		float y = entity->getCuerpo2D()->GetPosition().y + v2;
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(v1, v2));
 
 		maya->setPosition(vector3df(entity->getCuerpo2D()->GetPosition().x, 10, entity->getCuerpo2D()->GetPosition().y));

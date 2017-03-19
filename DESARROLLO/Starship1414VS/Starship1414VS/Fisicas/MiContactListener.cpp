@@ -22,6 +22,7 @@
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionEscopeta.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionPistola.h"
 #include "../Jugador/Bala.h"
+#include "../Enemigos/Nodo.h"
 
 
 MiContactListener::MiContactListener() {
@@ -304,6 +305,24 @@ void dispararEnemigo(Entity2D *pers, Entity2D *enemigo) {
 	e->setPosJugador(p->getPos().X, p->getPos().Z);
 	e->setEstado(3);
 
+	//std::cout << std::endl;
+	//std::cout <<"CALLBACK"<< std::endl;
+
+	//std::cout << "POS X: " << p->getPos().X<<"POS Z: " << p->getPos().Z<< std::endl;
+	//std::cout << std::endl;
+
+}
+
+void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
+	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
+
+	if (e->getNodoInicio() == nullptr || e->getNodoFin() == nullptr) {
+		e->setEstado(0);
+	}
+
+	else if (e->getNodoFin() != nullptr) {
+		e->setEstado(1);
+	}
 }
 
 
@@ -490,8 +509,7 @@ void MiContactListener::EndContact(b2Contact* contact) {
 
 			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
 				std::cout << "ADIOS 1" << std::endl;
-				Enemigo *e = static_cast<Enemigo*>(entity2->getObjeto3D());
-				e->setEstado(1);
+				gestionarCambioDeEstadoEnemigo(entity2);
 
 			}
 

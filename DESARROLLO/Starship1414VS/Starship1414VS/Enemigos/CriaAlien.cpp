@@ -44,8 +44,8 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	waypoints->mostrarPesos();
 
 	disparado = false;
-	posJugador.X  = -30.0f;
-	posJugador.Y = -90.0f;
+	//posJugador.X  = -30.0f;
+	//posJugador.Y = -90.0f;
 	damageBala = 10.0f;
 
 
@@ -109,18 +109,18 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 				posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
 				puntoIni = waypoints->getNodoX(posNodo);	
 				
-				std::cout << std::endl;
-			std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
-			std::cout << "POS NODO: " << posNodo << std::endl;
+			//	std::cout << std::endl;
+			//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
+			//std::cout << "POS NODO: " << posNodo << std::endl;
 			}
 		
             
 			
 			
 				dir = path->getDireccion(pos, puntoIni->getPosicion());
-				std::cout << std::endl;
+			/*	std::cout << std::endl;
 				std::cout << "DIR: " << dir << std::endl;
-				std::cout << std::endl;
+				std::cout << std::endl;*/
 
 				this->Mover(dir);
 
@@ -140,8 +140,8 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 				posNodo = path->buscarWaypointMasCorto(posNodo);
 				puntoFin = waypoints->getNodoX(posNodo);
-				std::cout << std::endl;
-				std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;
+				/*std::cout << std::endl;
+				std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;*/
 				
 			}
 
@@ -150,9 +150,9 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 				
 				dir = path->getDireccion(pos, puntoFin->getPosicion());
-				std::cout << std::endl;
+			/*	std::cout << std::endl;
 				std::cout << "DIR: " << dir << std::endl;
-				std::cout << std::endl;
+				std::cout << std::endl;*/
 				this->Mover(dir);
 				if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
 					dir = -1;
@@ -176,6 +176,10 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
         case ATACAR: //atacar
            
             maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 0);
+	/*		std::cout << std::endl;
+			std::cout << "CRIA ALIEN" << std::endl;
+			std::cout << "POS X: " << posJugador.X << "POS Y(Z): " << posJugador.Y << std::endl;
+			std::cout << std::endl;*/
 
 			if (disparado == false) {
 

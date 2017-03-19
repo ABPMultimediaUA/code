@@ -198,4 +198,20 @@ void Enemigo::setPosJugador(float x, float y)
 {
 	posJugador.X = x;
 	posJugador.Y = y;
+
+	std::cout << std::endl;
+	std::cout << "SET ENEMIGO" << std::endl;
+	std::cout << "POS X: " << posJugador.X << "POS Y(Z): " << posJugador.Y << std::endl;
+	std::cout << std::endl;
+
+}
+
+Nodo * Enemigo::getNodoInicio()
+{
+	return puntoIni;
+}
+
+Nodo * Enemigo::getNodoFin()
+{
+	return puntoFin;
 }

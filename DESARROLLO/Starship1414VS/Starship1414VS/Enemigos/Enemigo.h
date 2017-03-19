@@ -81,6 +81,8 @@ public:
 	void disparar(float dt);
 	void actualizarLista();
 	void setPosJugador(float x, float y);
+	Nodo* getNodoInicio();
+	Nodo* getNodoFin();
 
 
 
