@@ -40,18 +40,22 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, int modo) {
 
 	Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
 
-	if (modo == 0) {
+	if (modo == 0 && puerta->getEstado() != "BLOQLLAVE" ) {
 		//si tiene rotacion en Y van | sino van -
 		puerta->setDetectado(true,entity->getId());
 		puerta->UpdateEstado();
 	}	
 
 
-	else if (modo == 1 ) {
+	else if (modo == 1 && puerta->getEstado() != "BLOQLLAVE") {
 		std::cout << "cerrar123" << std::endl;
 		puerta->setDetectado(false,entity->getId());
 		puerta->UpdateEstado();
 	}
+
+	//se deberia hacer un if para ver si el jugador tiene o no la llave asociada a la puerta
+	//con la que ha colisionado. Tambien se deberia pasar al jugador para gestionar las
+	//llaves que ha cogido
 
 }
 
