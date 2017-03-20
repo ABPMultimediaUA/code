@@ -14,11 +14,14 @@ AStar::AStar(float** matrix, int tam)
 
 AStar::~AStar()
 {
-	for (int i = 0; i < tamMatrix; i++) {
-		delete[] matriz[i];
-	}
+	//for (int i = 0; i < tamMatrix; i++) {
+	//	delete[] matriz[i];
+	//}
 
-	delete[] matriz;
+	//delete[] matriz;
+	matriz = nullptr;
+
+
 }
 
 int AStar::buscarWaypointCercano(const vector3df &posEne, const std::vector<Nodo*> &vecNodos)

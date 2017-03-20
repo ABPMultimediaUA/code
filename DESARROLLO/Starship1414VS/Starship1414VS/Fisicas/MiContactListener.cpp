@@ -288,7 +288,7 @@ void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 	                 std::cout<<"Pos 3D X: "<<p->getPos().X<<"Pos 3D Z: "<< p->getPos().Z<<std::endl;
 	                 std::cout<<"Pos 2D X: "<<bodyPers->GetPosition().x<<"Pos 2D Z: "<< bodyPers->GetPosition().y<<std::endl;
 */
-	if(p->getVida() <= 0.0f) {
+	if(p->getVida() <= 0.0f && pers->getLive() != false) {
 		p->pasarMensaje();
 	}
 
@@ -332,8 +332,8 @@ void quitarVidaJugador(Entity2D *jugador, Entity2D *bala) {
 	Bala *bullet = static_cast<Bala*>(bala->getObjeto3D());
 	if (j->getVida() > 0.0f) {
 		j->quitarVida(bullet->getDamage());
-		if (j->getVida() <= 0.0f) {
-			//jugador->setLive(false);
+		if (j->getVida() <= 0.0f && jugador->getLive() != false) {
+			jugador->setLive(false);
 			j->pasarMensaje();
 		}
 	}

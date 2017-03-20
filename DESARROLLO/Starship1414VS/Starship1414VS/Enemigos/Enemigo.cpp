@@ -59,7 +59,7 @@ Enemigo::~Enemigo() {
     std::cout << "////////////////////////" << std::endl;
     std::cout << "MUERE: " << maya << std::endl;
 	listaBalas.clear();
-
+	estadoActual = -1;
 	maya->getParent()->removeChild(maya);
     GVida->getParent()->removeChild(GVida);
     RVida->getParent()->removeChild(RVida);

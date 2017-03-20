@@ -374,10 +374,13 @@ void Juego::render(IrrlichtDevice* iDevice) {
 
 		}
 
+		if(control == true) {
+
 		then = now;
 
 		driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
 
+		
 		esce->actualizarListaEnemigos(dt);
 		esce->actualizarEstadoPuerta();
 		esce->actualizarEstadoPersonaje();
@@ -398,6 +401,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 			lastFPS = fps;
 		}
 		
+		}
 
 	}
 	else {

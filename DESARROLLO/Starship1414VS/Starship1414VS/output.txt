@@ -3051,11 +3051,14 @@ PESO: -1
 ///////////////////////////////
 
 ////////////////////////
+VIVO: 051656B0
+
+////////////////////////
 ENTIDAD 1: 0
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 18.05 POS Y: 200.178
+POS X: 27.15 POS Y: 199.578
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 A DISPARAR!
@@ -3065,7 +3068,7 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.2701 POS Y: 151.509
+POS X: 24.3111 POS Y: 154.162
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 
@@ -3081,7 +3084,7 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.7107 POS Y: 151.263
+POS X: 23.0528 POS Y: 153.967
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 
@@ -3097,7 +3100,7 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.7109 POS Y: 151.213
+POS X: 23.0511 POS Y: 153.805
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 
@@ -3113,7 +3116,7 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.7126 POS Y: 150.746
+POS X: 23.0491 POS Y: 153.614
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 
@@ -3129,7 +3132,7 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.713 POS Y: 150.633
+POS X: 23.047 POS Y: 153.416
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 
@@ -3145,7 +3148,7 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.7136 POS Y: 150.454
+POS X: 23.045 POS Y: 153.216
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 
@@ -3161,7 +3164,7 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.7149 POS Y: 150.108
+POS X: 23.0415 POS Y: 152.864
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 
@@ -3177,7 +3180,7 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.7163 POS Y: 149.72
+POS X: 23.0376 POS Y: 152.475
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 
@@ -3193,7 +3196,7 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.7187 POS Y: 149.02
+POS X: 23.0323 POS Y: 151.926
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 
@@ -3209,7 +3212,7 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.7187 POS Y: 149.002
+POS X: 23.0295 POS Y: 151.639
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
 
@@ -3218,6 +3221,12 @@ VIDA ANTES: 10
 VIDA DESPUES: 0
 2
 maaaaaaaaatao
-
-////////////////////////
-MUERE: 04D24DA0
+Irrlicht Engine version 1.8.4
+ (Build 9200)
+Using renderer: OpenGL 4.5.0
+GeForce GT 720M/PCIe/SSE2: NVIDIA Corporation
+OpenGL driver version is 1.2 or better.
+GLSL version: 4.5
+Resizing window (1366 745)
+Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
+Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/CARTEL.jpg

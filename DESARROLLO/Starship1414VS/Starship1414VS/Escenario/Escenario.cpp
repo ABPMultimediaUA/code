@@ -358,12 +358,12 @@ void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2Wor
 void Escenario::actualizarEstadoPersonaje()
 {
 	//cambiar el NULL por nullptr
-	if (pers!=NULL)
+	if (pers!=nullptr)
 	{
 		if (pers->getVivo() == false)
 		{		
 			delete(pers);
-			pers = NULL;
+			pers = nullptr;
 		}
 	}
 	
@@ -430,7 +430,7 @@ void Escenario::actualizarListaEnemigos(f32 dt) {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
 			if ((*it) != NULL) {
 				if (!(*it)->estaVivo()) {
-
+					std::cout << "HOLAAAAAA :D" << std::endl;
 					delete(*it);
 					it = enemigos.erase(it);
 				}

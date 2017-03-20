@@ -60,6 +60,10 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
 
     // dibujaGrid(smgr);
+	std::cout << "" << std::endl;
+
+	std::cout << "////////////////////////" << std::endl;
+	std::cout << "VIVO: " << maya << std::endl;
 
 
 }
