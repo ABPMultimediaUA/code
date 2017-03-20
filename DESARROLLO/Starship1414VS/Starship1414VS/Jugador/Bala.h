@@ -48,10 +48,11 @@ private:
 	vector2df posRaton;
 	Entity2D *entity;
 	float damage;
-
+	float vel;
 
 public:
-	Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posPers, vector2df mousePosition, float dumug, int tipo);
+
+	Bala(ISceneManager * smgr, IVideoDriver * driver, b2World * world, vector3df posPers, vector2df mousePosition, float dumug, int tipo, float velocidad);
 	Bala(const Bala& orig);
 	virtual ~Bala();
 	void setPosition(vector3df);

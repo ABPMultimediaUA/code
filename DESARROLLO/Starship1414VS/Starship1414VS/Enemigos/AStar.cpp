@@ -77,6 +77,25 @@ int AStar::buscarWaypointMasCorto(const int &posNodoIni)
 	return pos;
 }
 
+int AStar::buscarWaypointNoRepetido(const int & posWaypointRep, const int & posNodoActual)
+{
+	float min = 10000000;
+	int pos;
+	for (int i = 0; i < tamMatrix; i++) {
+
+		if (i != posWaypointRep && matriz[posNodoActual][i] != 0 && matriz[posNodoActual][i] != -1 && matriz[posNodoActual][i] < min) {
+
+			min = matriz[posNodoActual][i];
+			pos = i;
+
+		}
+
+	}
+
+
+	return pos;
+}
+
 //devuelve la direccion a donde se tiene que dirigir el enemigo
 int AStar::getDireccion(const vector3df &posEne, const vector3df &posNodo)
 {

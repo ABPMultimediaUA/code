@@ -3051,73 +3051,66 @@ PESO: -1
 ///////////////////////////////
 
 ////////////////////////
-VIVO: 044F5798
-CAMBIO ESTADO TRUE
-CAMBIO ESTADO FALSE
+VIVO: 036B5058
 
 ////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 2
+ENTIDAD 1: 2
+ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 40 POS Y: 510
+POS X: -596.087 POS Y: 9.05054
 ///////////////////////////////////
-Sombra: 0 Elemento: 2
+Sombra: 0 Elemento: 4
+ACTUALIZO 0
+
+CACA
+
+////////////////////////
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -1150 POS Y: -6.34948
+///////////////////////////////////
+Sombra: 0 Elemento: 4
 ACTUALIZO 0
 
 ////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 2
+ENTIDAD 1: 2
+ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 40 POS Y: 510
+POS X: -1178.7 POS Y: -0.149479
 ///////////////////////////////////
-Sombra: 0 Elemento: 2
+Sombra: 0 Elemento: 4
 
 ////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 2
+ENTIDAD 1: 1
+ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 40 POS Y: 510
+POS X: -1198.59 POS Y: 0.150522
 ///////////////////////////////////
-Sombra: 0 Elemento: 2
+Sombra: 0 Elemento: 4
 
 ////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 2
+ENTIDAD 1: 2
+ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 40 POS Y: 510
+POS X: -1215.04 POS Y: -0.699478
 ///////////////////////////////////
-Sombra: 0 Elemento: 2
+Sombra: 0 Elemento: 4
+ACTUALIZO 0
 
 ////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 1
+ENTIDAD 1: 2
+ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 80 POS Y: 580
+POS X: -1243.49 POS Y: -0.144956
 ///////////////////////////////////
-Sombra: 0 Elemento: 1
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 40 POS Y: 510
-///////////////////////////////////
-Sombra: 0 Elemento: 2
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 40 POS Y: 510
-///////////////////////////////////
-Sombra: 0 Elemento: 2
+Sombra: 0 Elemento: 4
 Irrlicht Engine version 1.8.4
  (Build 9200)
 Using renderer: OpenGL 4.5.0

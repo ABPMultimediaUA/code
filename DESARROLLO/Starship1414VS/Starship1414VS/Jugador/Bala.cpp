@@ -14,7 +14,7 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posPers, vector2df mousePosition, float dumug, int tipo) {
+Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posPers, vector2df mousePosition, float dumug, int tipo, float velocidad) {
 
 	maya = smgr->addSphereSceneNode(2);
 
@@ -28,7 +28,7 @@ Bala::Bala(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df 
 	}
 
 
-
+	vel = velocidad;
 	pos = maya->getPosition();
 	//    bodyDef.type = b2_dynamicBody;
 	//    bodyDef.position.Set(pos.X, pos.Z);
@@ -78,8 +78,8 @@ void Bala::mover(f32 tiempo) {
 		direction.normalize();
 
 
-		float v1 = direction.X * 200.0f;
-		float v2 = -direction.Y * 200.0f;
+		float v1 = direction.X * vel;
+		float v2 = -direction.Y * vel;
 
 		//float x = entity->getCuerpo2D()->GetPosition().x + v1;
 		//float y = entity->getCuerpo2D()->GetPosition().y + v2;
@@ -103,8 +103,8 @@ void Bala::moverEnemigoDisparo() {
 		direction.normalize();
 
 
-		float v1 = direction.X * 200.0f;
-		float v2 = direction.Y * 200.0f;
+		float v1 = direction.X * vel;
+		float v2 = direction.Y * vel;
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(v1, v2));
 

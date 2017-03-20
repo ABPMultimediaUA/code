@@ -169,7 +169,7 @@ void Enemigo::disparar(float dt)
 {
 	tiempoDisparo += dt;
 	disparado = true;
-	Bala *bullet = new Bala(smgr1, VD, mundo, pos, posJugador, damageBala, 2);
+	Bala *bullet = new Bala(smgr1, VD, mundo, pos, posJugador, damageBala, 2, 300.0f);
 	listaBalas.push_back(bullet);
 
 }

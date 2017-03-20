@@ -107,12 +107,13 @@ protected:
 	float blindaje;
 	Waypoints *waypoints;
 	AStar *path;
-	Nodo *puntoIni, *puntoFin;
+	Nodo *puntoIni, *puntoFin, *nodoAnterior;
 	int dir, posNodo;
 	float damageChoque;
 	
 
 	std::list<Bala*> listaBalas;
+	//std::list<Nodo*> recorrido;
 	bool disparado;
 	float tiempoDisparo;
 	vector2df posJugador;

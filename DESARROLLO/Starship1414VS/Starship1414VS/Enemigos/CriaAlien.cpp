@@ -102,7 +102,7 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
 
 void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
 	
-	
+	//crear metodos para todos los estados
 	switch (estadoActual) {
 
         case DESCANSAR: //descansar
@@ -130,6 +130,7 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 				if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
 					estadoActual = PATRULLAR;
+			
 					dir = -1;
 					this->setVelocidad();
 					
@@ -139,42 +140,8 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
         case PATRULLAR: //patrullar
           
-            maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
-			if(puntoFin == nullptr) {
-
-				posNodo = path->buscarWaypointMasCorto(posNodo);
-				puntoFin = waypoints->getNodoX(posNodo);
-				/*std::cout << std::endl;
-				std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;*/
-				
-			}
-
-			else {
-				maya->getMaterial(0).EmissiveColor.set(0, 15, 150, 200);
-
-				
-				dir = path->getDireccion(pos, puntoFin->getPosicion());
-			/*	std::cout << std::endl;
-				std::cout << "DIR: " << dir << std::endl;
-				std::cout << std::endl;*/
-				this->Mover(dir);
-				if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
-					dir = -1;
-					this->setVelocidad();
-					puntoIni = puntoFin;
-					puntoFin = nullptr;
-					
-					/*posNodo = path->buscarWaypointMasCorto(posNodo);
-					puntoFin = waypoints->getNodoX(posNodo);*/
-
-				}
-				
-
-			}
-
-			/*std::cout << std::endl;
-			std::cout << "PATRULLO PREMO!" << std::endl;
-			std::cout << std::endl;*/
+			this->Patrullar();
+           
             break;
 
         case ATACAR: //atacar
@@ -350,6 +317,55 @@ void CriaAlien::Mover(int modo) {
 }
 
 void CriaAlien::Patrullar() {
+
+	maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
+	if (puntoFin == nullptr) {
+
+		posNodo = path->buscarWaypointMasCorto(posNodo);
+		puntoFin = waypoints->getNodoX(posNodo);
+		
+		if(nodoAnterior == puntoFin) {
+
+			std::cout << std::endl;
+			std::cout << "CACA" << std::endl;
+			posNodo = path->buscarWaypointNoRepetido(puntoFin->getLugarDelNodo(), puntoIni->getLugarDelNodo());
+			puntoFin = waypoints->getNodoX(posNodo);
+
+		}
+
+		/*std::cout << std::endl;
+		std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;*/
+
+	}
+
+	else {
+	
+
+
+		dir = path->getDireccion(pos, puntoFin->getPosicion());
+		/*	std::cout << std::endl;
+		std::cout << "DIR: " << dir << std::endl;
+		std::cout << std::endl;*/
+		this->Mover(dir);
+		if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
+			dir = -1;
+			this->setVelocidad();
+		
+			nodoAnterior = puntoIni;
+			puntoIni = puntoFin;
+			puntoFin = nullptr;
+
+			/*posNodo = path->buscarWaypointMasCorto(posNodo);
+			puntoFin = waypoints->getNodoX(posNodo);*/
+
+		}
+
+
+	}
+
+	/*std::cout << std::endl;
+	std::cout << "PATRULLO PREMO!" << std::endl;
+	std::cout << std::endl;*/
 
 }
 
