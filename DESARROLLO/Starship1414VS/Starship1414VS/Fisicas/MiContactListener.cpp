@@ -302,7 +302,7 @@ void dispararEnemigo(Entity2D *pers, Entity2D *enemigo) {
 
 	p->getPos();
 
-	e->setPosJugador(p->getPos().X, p->getPos().Z);
+	//e->setPosJugador(p->getPos().X, p->getPos().Z);
 	e->setEstado(3);
 
 	//std::cout << std::endl;
@@ -326,7 +326,19 @@ void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 }
 
 
+void quitarVidaJugador(Entity2D *jugador, Entity2D *bala) {
 
+	Personaje *j = static_cast<Personaje*>(jugador->getObjeto3D()); //mirar el tema de hacer un cast dependiendo de la raza
+	Bala *bullet = static_cast<Bala*>(bala->getObjeto3D());
+	if (j->getVida() > 0.0f) {
+		j->quitarVida(bullet->getDamage());
+		if (j->getVida() <= 0.0f) {
+			//jugador->setLive(false);
+			j->pasarMensaje();
+		}
+	}
+
+}
 
 
 void MiContactListener::BeginContact(b2Contact* contact) {
@@ -389,11 +401,14 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			}
 
 			if (entity1->getIDEN() == 6 && f2->IsSensor() != true) {
+				quitarVidaJugador(entity2, entity1);
 				entity1->setLive(false);
 
 			}
 
 			else if (entity2->getIDEN() == 6 && f1->IsSensor() != true) {
+
+				quitarVidaJugador(entity1, entity2);
 				entity2->setLive(false);
 			}
 

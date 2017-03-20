@@ -58,6 +58,7 @@ Enemigo::~Enemigo() {
 
     std::cout << "////////////////////////" << std::endl;
     std::cout << "MUERE: " << maya << std::endl;
+	listaBalas.clear();
 
 	maya->getParent()->removeChild(maya);
     GVida->getParent()->removeChild(GVida);
@@ -134,6 +135,11 @@ void Enemigo::setEstado(int num)
 	estadoActual = num;
 }
 
+int Enemigo::getEstado()
+{
+	return estadoActual;
+}
+
 void Enemigo::setDisparo(bool x)
 {
 	disparado = x;
@@ -199,10 +205,10 @@ void Enemigo::setPosJugador(float x, float y)
 	posJugador.X = x;
 	posJugador.Y = y;
 
-	std::cout << std::endl;
-	std::cout << "SET ENEMIGO" << std::endl;
-	std::cout << "POS X: " << posJugador.X << "POS Y(Z): " << posJugador.Y << std::endl;
-	std::cout << std::endl;
+	//std::cout << std::endl;
+	//std::cout << "SET ENEMIGO" << std::endl;
+	//std::cout << "POS X: " << posJugador.X << "POS Y(Z): " << posJugador.Y << std::endl;
+	//std::cout << std::endl;
 
 }
 

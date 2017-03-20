@@ -72,6 +72,7 @@ public:
 	Entity2D*  getEntity();
 	float getDamageChoque();
 	void setEstado(int num);
+	int getEstado();
 
 	void setDisparo(bool x);
 	void aumentarTiempoDisparo(float t);

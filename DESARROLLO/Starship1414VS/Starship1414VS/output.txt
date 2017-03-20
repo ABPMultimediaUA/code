@@ -3055,23 +3055,23 @@ ENTIDAD 1: 0
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 38.3641 POS Y: 126.365
+POS X: 18.05 POS Y: 200.178
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 A DISPARAR!
 
-SET ENEMIGO
-POS X: 17.9142POS Y(Z): 53.1139
-
-
 ////////////////////////
 ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 26.0041 POS Y: 82.0916
+POS X: 19.2701 POS Y: 151.509
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
+
+VIDA ANTES: 100
+
+VIDA DESPUES: 90
 MUERO BALA
 ID DE LA ENTITY 6
 MUERO ENTITY2D
@@ -3081,9 +3081,13 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 27.6154 POS Y: 87.8634
+POS X: 19.7107 POS Y: 151.263
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
+
+VIDA ANTES: 90
+
+VIDA DESPUES: 80
 MUERO BALA
 ID DE LA ENTITY 6
 MUERO ENTITY2D
@@ -3093,18 +3097,127 @@ ENTIDAD 1: 0
 ENTIDAD 2: 6
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 21.1414 POS Y: 64.6733
+POS X: 19.7109 POS Y: 151.213
 ///////////////////////////////////
 Sombra: 0 Elemento: 6
+
+VIDA ANTES: 80
+
+VIDA DESPUES: 70
 MUERO BALA
 ID DE LA ENTITY 6
 MUERO ENTITY2D
-ADIOS 1
-Irrlicht Engine version 1.8.4
-Professional Edition  (Build 9200)
-Using renderer: OpenGL 4.5.0
-GeForce GTX 970/PCIe/SSE2: NVIDIA Corporation
-OpenGL driver version is 1.2 or better.
-GLSL version: 4.5
-Resizing window (1366 768)
-Loaded texture: C:/Users/David/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
+
+////////////////////////
+ENTIDAD 1: 0
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 19.7126 POS Y: 150.746
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+
+VIDA ANTES: 70
+
+VIDA DESPUES: 60
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 0
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 19.713 POS Y: 150.633
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+
+VIDA ANTES: 60
+
+VIDA DESPUES: 50
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 0
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 19.7136 POS Y: 150.454
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+
+VIDA ANTES: 50
+
+VIDA DESPUES: 40
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 0
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 19.7149 POS Y: 150.108
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+
+VIDA ANTES: 40
+
+VIDA DESPUES: 30
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 0
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 19.7163 POS Y: 149.72
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+
+VIDA ANTES: 30
+
+VIDA DESPUES: 20
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 0
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 19.7187 POS Y: 149.02
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+
+VIDA ANTES: 20
+
+VIDA DESPUES: 10
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 0
+ENTIDAD 2: 6
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 19.7187 POS Y: 149.002
+///////////////////////////////////
+Sombra: 0 Elemento: 6
+
+VIDA ANTES: 10
+
+VIDA DESPUES: 0
+2
+maaaaaaaaatao
+
+////////////////////////
+MUERE: 04D24DA0

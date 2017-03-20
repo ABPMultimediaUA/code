@@ -444,7 +444,12 @@ void Escenario::actualizarListaEnemigos(f32 dt) {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end(); it++) {
 			if ((*it) != NULL && (*it)->estaVivo() == true) {
 
+				if((*it)->getEstado() == 3) {
+					(*it)->setPosJugador(pers->getPos().X, pers->getPos().Z);
+				}
+
 				(*it)->Update(dt);
+
 			}
 		}
 	}

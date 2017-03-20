@@ -304,7 +304,13 @@ void Personaje::setImpulso(bool x)
 
 void Personaje::quitarVida(float damage)
 {
-	vida -= damage;
+	std::cout << std::endl;
+	std::cout <<"VIDA ANTES: "<<vida<< std::endl;
+
+	vida = vida - damage;
+
+	std::cout << std::endl;
+	std::cout << "VIDA DESPUES: " << vida << std::endl;
 }
 
 float Personaje::getVida()
