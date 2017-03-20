@@ -3051,176 +3051,38 @@ PESO: -1
 ///////////////////////////////
 
 ////////////////////////
-VIVO: 051656B0
+VIVO: 04494DA0
 
 ////////////////////////
-ENTIDAD 1: 0
+ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 27.15 POS Y: 199.578
+POS X: 1 POS Y: 126
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
-A DISPARAR!
+CARGADOR: 7
 
 ////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
+ENTIDAD 1: 2
+ENTIDAD 2: 3
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 24.3111 POS Y: 154.162
+POS X: 36.6284 POS Y: 479.426
 ///////////////////////////////////
-Sombra: 0 Elemento: 6
+Sombra: 0 Elemento: 3
 
-VIDA ANTES: 100
-
-VIDA DESPUES: 90
+////////////////////////
+ENTIDAD 1: 2
+ENTIDAD 2: 3
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 36.6284 POS Y: 507.505
+///////////////////////////////////
+Sombra: 0 Elemento: 3
 MUERO BALA
-ID DE LA ENTITY 6
+ID DE LA ENTITY 3
 MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 23.0528 POS Y: 153.967
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-
-VIDA ANTES: 90
-
-VIDA DESPUES: 80
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 23.0511 POS Y: 153.805
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-
-VIDA ANTES: 80
-
-VIDA DESPUES: 70
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 23.0491 POS Y: 153.614
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-
-VIDA ANTES: 70
-
-VIDA DESPUES: 60
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 23.047 POS Y: 153.416
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-
-VIDA ANTES: 60
-
-VIDA DESPUES: 50
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 23.045 POS Y: 153.216
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-
-VIDA ANTES: 50
-
-VIDA DESPUES: 40
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 23.0415 POS Y: 152.864
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-
-VIDA ANTES: 40
-
-VIDA DESPUES: 30
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 23.0376 POS Y: 152.475
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-
-VIDA ANTES: 30
-
-VIDA DESPUES: 20
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 23.0323 POS Y: 151.926
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-
-VIDA ANTES: 20
-
-VIDA DESPUES: 10
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 23.0295 POS Y: 151.639
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-
-VIDA ANTES: 10
-
-VIDA DESPUES: 0
-2
-maaaaaaaaatao
 Irrlicht Engine version 1.8.4
  (Build 9200)
 Using renderer: OpenGL 4.5.0
@@ -3229,4 +3091,3 @@ OpenGL driver version is 1.2 or better.
 GLSL version: 4.5
 Resizing window (1366 745)
 Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
-Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/CARTEL.jpg

@@ -1,7 +1,4 @@
-﻿  Juego.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\juego.cpp(246): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\juego.cpp(247): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
-  Enemigo.cpp
-  Generando código...
+﻿  Entity2D.cpp
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\fisicas\entity2d.cpp(38): warning C4305: 'argumento': truncamiento de 'int' a 'float32'
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

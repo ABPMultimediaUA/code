@@ -52,6 +52,7 @@ public:
 	void crearFixture();
 	b2Body* getSombraP2D();
 	b2Body* getSombraE2D();
+	b2Body* getPuertaBody();
 	int getId();
 
 private:
@@ -65,6 +66,7 @@ private:
 	b2Filter filtro;
 	b2Body *sombraP;
 	b2Body *sombraE;
+	b2Body *puertaBody;
 	b2BodyDef sombraDef;
 	b2PolygonShape sombraShape;
 	IMeshSceneNode* fisica;

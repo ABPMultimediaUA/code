@@ -390,23 +390,34 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			//                    pers->setPos(vector3df(entity1->getSombraE2D()->GetPosition().x,10,entity1->getSombraE2D()->GetPosition().y));
 			//                }
 			//            }
-			//            
-			if (entity1->getIDEN() == 3 && f2->IsSensor() != true) {
+			//   
+
+			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 2 && f2->IsSensor() != true) {
 				entity1->setLive(false);
 
 			}
 
-			else if (entity2->getIDEN() == 3 && f1->IsSensor() != true) {
+			else if (entity2->getIDEN() == 3 && entity1->getIDEN() == 2 && f1->IsSensor() != true) {
 				entity2->setLive(false);
 			}
 
-			if (entity1->getIDEN() == 6 && f2->IsSensor() != true) {
+
+			if (entity1->getIDEN() == 6 && entity2->getIDEN() == 2 && f2->IsSensor() != true) {
+				entity1->setLive(false);
+
+			}
+
+			else if (entity2->getIDEN() == 6 && entity1->getIDEN() == 2 && f1->IsSensor() != true) {
+				entity2->setLive(false);
+			}
+
+			if (entity1->getIDEN() == 6 && entity2->getIDEN() == 0) {
 				quitarVidaJugador(entity2, entity1);
 				entity1->setLive(false);
 
 			}
 
-			else if (entity2->getIDEN() == 6 && f1->IsSensor() != true) {
+			else if (entity2->getIDEN() == 6 && entity1->getIDEN() == 0) {
 
 				quitarVidaJugador(entity1, entity2);
 				entity2->setLive(false);

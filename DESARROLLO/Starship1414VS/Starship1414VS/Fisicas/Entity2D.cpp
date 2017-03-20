@@ -149,20 +149,27 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     }
 
     objeto3D = dirPuerta;
-    body = world->CreateBody(&bodyDef);
-    body -> CreateFixture(&bodyShape, 1.0f);
-    body->GetFixtureList()->SetSensor(sensor);
+    puertaBody = world->CreateBody(&bodyDef);
+	puertaBody-> CreateFixture(&bodyShape, 1.0f);
+	puertaBody->GetFixtureList()->SetSensor(sensor);
+	
     //std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
-    body->SetUserData(this);
-    body->CreateFixture(&bodyShape2, 1.0f);
+	puertaBody->SetUserData(this);
 
+	body = world->CreateBody(&bodyDef);
+    body->CreateFixture(&bodyShape2, 1.0f);
+	body->SetUserData(this);
     filtro.groupIndex = FILTRO_PUERTA;
     //    body->GetFixtureList()->SetFilterData(filtro);
     iden = 2;
-    for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
+ /*   for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
         f->SetFilterData(filtro);
 
-    }
+    }*/
+	body->GetFixtureList()->SetFilterData(filtro);
+	puertaBody->GetFixtureList()->SetFilterData(filtro);
+
+
 }
 //constructor bala
 
@@ -306,6 +313,10 @@ Entity2D::~Entity2D() {
         sombraE->GetWorld()->DestroyBody(sombraE);
         fisica2->getParent()->removeChild(fisica2);
     }
+
+	if(puertaBody != NULL) {
+		puertaBody->GetWorld()->DestroyBody(puertaBody);
+	}
     //mundo->DestroyBody(body);
     //    body->SetUserData(NULL);
     //    body = NULL;
@@ -461,6 +472,11 @@ b2Body* Entity2D::getSombraE2D() {
         fisica2->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
     }
     return sombraE;
+}
+
+b2Body * Entity2D::getPuertaBody()
+{
+	return puertaBody;
 }
 
 int Entity2D::getId()
