@@ -157,10 +157,1159 @@ void Escenario::removeListSubHijos() {
 
 void Escenario::dibujarEscenario() {
 	int num = 0;
+	tam = 0;
 	Waypoints *puntos = new Waypoints();
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
-		if ((*I).nombre == "Waypoints") {
+		if ((*I).nombre == "HANGAR") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Ventanas") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 103, 103, 103);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 0, 0, 0);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 255, 255, 255);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "SALA_ESPERA") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 123, 124, 50);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 23, 79, 74);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "SALA_GENERADOR") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 176, 120, 0);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 4, 17, 38);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "HALL") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 38, 18, 0);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 98, 46, 113);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "SALA_MANTENIMIENTO") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 58, 64, 23);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 77, 35, 35);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "CANTINA") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 3, 32, 13);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 255, 164, 0);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "COMISARIA") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 117, 50, 234);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 0, 0, 0);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "VESTUARIO") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 20, 72, 109);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 77, 118, 31);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "CELDA") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 0, 0, 0);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 49, 0, 0);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "ARSENAL") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 255, 0, 0);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 10, 4, 84);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "PASILLO_1") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 19, 19, 19);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 96, 110, 174);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "PASILLO_2") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 19, 19, 19);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 96, 110, 174);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "PASILLO_3") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 19, 19, 19);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 96, 110, 174);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "PASILLO_4") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 19, 19, 19);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 96, 110, 174);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "PASILLO_5") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 19, 19, 19);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 96, 110, 174);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "PASILLO_6") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 19, 19, 19);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 96, 110, 174);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "ALMACEN_1") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 73, 73, 73);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 10, 37, 56);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "ALMACEN_2") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 73, 73, 73);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 10, 37, 56);
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "ALMACEN_3") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto, "ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 73, 73, 73);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 10, 37, 56);
+
+					}
+				}
+			}
+		}
+
+		if ((*I).nombre == "ALMACEN_4") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				if ((*T).nombre == "Puerta") {
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
+
+						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+							objeto,"ABIERTA");
+
+						door->setFisica(mundo, SM, num);
+						puertas.push_back(door);
+						num++;
+					}
+
+				}
+
+
+				if ((*T).nombre == "Paredes") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(20, 73, 73, 73);
+						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+
+						wall->setFisica(mundo);
+						paredes.push_back(wall);
+					}
+				}
+
+				if ((*T).nombre == "Suelo") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+							vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+						objeto->getMaterial(0).EmissiveColor.set(0, 10, 37, 56);
+
+					}
+				}
+			}
+		}
+		if ((*I).nombre == "WAYPOINTS") {
 
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
@@ -177,87 +1326,96 @@ void Escenario::dibujarEscenario() {
 			}
 		}
 
-		if((*I).nombre == "FinalPosibles") {
+		if ((*I).nombre == "TAM") {
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
-					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
-					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
-					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
-				objeto->getMaterial(0).EmissiveColor.set(20, 255, 0, 80);
-
-				Terminal *terminal = new Terminal(vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)), 
-					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z), 
-					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z), mundo, objeto,this);
-				
-			}
+			tam = (*I).escala.x* (*I).escala.z * 100;
 
 		}
 
 
-		for (std::list<ElementoHijo>::iterator M = (*I).ObjetosEscena.begin(); M != (*I).ObjetosEscena.end(); M++) {
-			if ((*M).nombre == "Suelo") {
-				IMeshSceneNode *objeto = SM->addCubeSceneNode(100.0f, 0, -1,
-					vector3df((*M).position.x + (*I).position.x, (*M).position.y + (*I).position.y, (*M).position.z + (*I).position.y),
-					vector3df((*M).rotation.x + (*I).rotation.x, (*M).rotation.y + (*I).rotation.y, (*M).rotation.z + (*I).rotation.z),
-					vector3df((*M).escala.x * (*I).escala.x, 0, (*M).escala.z * (*I).escala.z));
-				objeto->getMaterial(0).EmissiveColor.set(0, 20, 20, 20);
-				tam = objeto->getScale().X * objeto->getScale().Z * 100;
-			}
-			else {
-			
-				for (std::list<Elemento>::iterator N = (*M).ObjetosEscena.begin(); N != (*M).ObjetosEscena.end(); N++) {
-					
-					if ((*M).nombre == "Puertas") {
-						//puertas
-						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
-							vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
-							vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
-							vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
-						objeto->getMaterial(0).EmissiveColor.set(0, 20+num*5, 5*num+60, 50-num);
 
-						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
-							vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
-							vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z),
-							objeto, (*N).nombre);
+		//if((*I).nombre == "FinalPosibles") {
 
-						door->setFisica(mundo,SM,num);
-						puertas.push_back(door);
-						num++;
-					}
+		//	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-					//                                if((*I).nombre=="Escenario"){
-					//                                      IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
-					//                                          vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)),10*((*N).position.y+((*M).position.y+(*I).position.y)),10*((*N).position.z+(*M).position.z+(*I).position.z)),
-					//                                          vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
-					//                                          vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
-					//                                         objeto->getMaterial(0).EmissiveColor.set(20,80,80,80);
-					//                                         Pared *wall = new Pared(vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)), 10*((*N).position.y+((*M).position.y+(*I).position.y)), 10*((*N).position.z+(*M).position.z+(*I).position.z)),
-					//                                                    vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
-					//                                                    vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
-					//
-					//                                         wall->setFisica(mundo);
-					//                                }
-					else {
-						//paredes y objetos
+		//		IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+		//			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
+		//			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
+		//			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
+		//		objeto->getMaterial(0).EmissiveColor.set(20, 255, 0, 80);
 
-						IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
-							vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
-							vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
-							vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
-						objeto->getMaterial(0).EmissiveColor.set(20, 80, 80, 80);
-						Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
-							vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
-							vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
+		//		Terminal *terminal = new Terminal(vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)), 
+		//			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z), 
+		//			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z), mundo, objeto,this);
+		//		
+		//	}
 
-						wall->setFisica(mundo);
-						paredes.push_back(wall);
-					}
-				}
-			}
+		//}
 
-		}
+
+		//for (std::list<ElementoHijo>::iterator M = (*I).ObjetosEscena.begin(); M != (*I).ObjetosEscena.end(); M++) {
+		//	if ((*M).nombre == "Suelo") {
+		//		IMeshSceneNode *objeto = SM->addCubeSceneNode(100.0f, 0, -1,
+		//			vector3df((*M).position.x + (*I).position.x, (*M).position.y + (*I).position.y, (*M).position.z + (*I).position.y),
+		//			vector3df((*M).rotation.x + (*I).rotation.x, (*M).rotation.y + (*I).rotation.y, (*M).rotation.z + (*I).rotation.z),
+		//			vector3df((*M).escala.x * (*I).escala.x, 0, (*M).escala.z * (*I).escala.z));
+		//		objeto->getMaterial(0).EmissiveColor.set(0, 20, 20, 20);
+		//		tam = objeto->getScale().X * objeto->getScale().Z * 100;
+		//	}
+		//	else {
+		//	
+		//		for (std::list<Elemento>::iterator N = (*M).ObjetosEscena.begin(); N != (*M).ObjetosEscena.end(); N++) {
+		//			
+		//			if ((*M).nombre == "Puertas") {
+		//				//puertas
+		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+		//					vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
+		//					vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
+		//					vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
+		//				objeto->getMaterial(0).EmissiveColor.set(0, 20+num*5, 5*num+60, 50-num);
+
+		//				Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
+		//					vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
+		//					vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z),
+		//					objeto);
+
+		//				door->setFisica(mundo,SM,num);
+		//				puertas.push_back(door);
+		//				num++;
+		//			}
+
+		//			//                                if((*I).nombre=="Escenario"){
+		//			//                                      IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+		//			//                                          vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)),10*((*N).position.y+((*M).position.y+(*I).position.y)),10*((*N).position.z+(*M).position.z+(*I).position.z)),
+		//			//                                          vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
+		//			//                                          vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
+		//			//                                         objeto->getMaterial(0).EmissiveColor.set(20,80,80,80);
+		//			//                                         Pared *wall = new Pared(vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)), 10*((*N).position.y+((*M).position.y+(*I).position.y)), 10*((*N).position.z+(*M).position.z+(*I).position.z)),
+		//			//                                                    vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
+		//			//                                                    vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
+		//			//
+		//			//                                         wall->setFisica(mundo);
+		//			//                                }
+		//			else {
+		//				//paredes y objetos
+
+		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+		//					vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
+		//					vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
+		//					vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
+		//				objeto->getMaterial(0).EmissiveColor.set(20, 80, 80, 80);
+		//				Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
+		//					vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
+		//					vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
+
+		//				wall->setFisica(mundo);
+		//				paredes.push_back(wall);
+		//			}
+		//		}
+		//	}
+
+		//}
 
 
 	}
@@ -273,7 +1431,7 @@ void Escenario::dibujarEscenario() {
 	MunicionPistola *pistola = new MunicionPistola(municion->getPosition(), municion->getRotation(),
 		municion->getScale(), 2, municion, 2, 7);
 	pistola->setFisica(mundo);
-	
+
 	IMeshSceneNode *municion1 = SM->addCubeSceneNode(1.5f);
 	municion1->setPosition(vector3df(100, 5, 20));
 	municion1->getMaterial(0).EmissiveColor.set(0, 0, 128, 0);
@@ -292,10 +1450,11 @@ void Escenario::dibujarEscenario() {
 	objConsumables.push_back(pistola);
 	objConsumables.push_back(subfusil);
 	objConsumables.push_back(escopeta);
-
+	std::cout << "-------------------------------------->" << tam << std::endl;
 	puntos->setTamDelMapa(tam);
 	puntos->creaPesos(entity);
 	fabricaDeEnemigos(puntos);
+
 
 }
 
