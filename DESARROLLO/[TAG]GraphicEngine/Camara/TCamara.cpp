@@ -1,13 +1,6 @@
 #include "TCamara.h"
 #include <iostream>
 
-enum Camera_Movement {
-	ADELANTE,
-	ATRAS,
-	IZQ,
-	DER
-};
-
 //Valores por defecto de la camara
 const GLfloat YAW = -90.0f;
 const GLfloat PITCH = 0.0f;

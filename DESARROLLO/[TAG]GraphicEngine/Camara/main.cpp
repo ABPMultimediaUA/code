@@ -116,8 +116,8 @@ int main() {
 		// Crear transformationes de camara
 		glm::mat4 view;
 		view = camara->GetViewMatrix();
-		GLfloat zoom = camara->getZoom
-		glm::mat4 projection = glm::perspective(zoom, camara, (GLfloat)WIDTH / (GLfloat)HEIGHT, 0.1f, 100.0f);
+		GLfloat zoom = camara->getZoom;
+		glm::mat4 projection = glm::perspective(zoom, (GLfloat)WIDTH / (GLfloat)HEIGHT, 0.1f, 100.0f);
 		// Get the uniform locations
 		GLint modelLoc = glGetUniformLocation(coordShader.getProgram, "model");
 		GLint viewLoc = glGetUniformLocation(coordShader.getProgram, "view");
@@ -155,13 +155,13 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 void Do_Movement()
 {
 	if (keys[GLFW_KEY_W])
-		camara.procesarTeclado(ADELANTE, deltaTime);
+		camara->procesarTeclado(ADELANTE, deltaTime);
 	if (keys[GLFW_KEY_S])
-		camara.procesarTeclado(ATRAS, deltaTime);
+		camara->procesarTeclado(ATRAS, deltaTime);
 	if (keys[GLFW_KEY_A])
-		camara.procesarTeclado(IZQ, deltaTime);
+		camara->procesarTeclado(IZQ, deltaTime);
 	if (keys[GLFW_KEY_D])
-		camara.procesarTeclado(DER, deltaTime);
+		camara->procesarTeclado(DER, deltaTime);
 }
 
 void mouse_callback(GLFWwindow* window, double xpos, double ypos)
@@ -179,11 +179,11 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos)
 	lastX = xpos;
 	lastY = ypos;
 
-	camara.ProcessMouseMovement(xoffset, yoffset);
+	camara->procesarMovimientoRaton(xoffset, yoffset, true);
 }
 
 
-void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+/*void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
 	camara.ProcessMouseScroll(yoffset);
-}
+}*/
