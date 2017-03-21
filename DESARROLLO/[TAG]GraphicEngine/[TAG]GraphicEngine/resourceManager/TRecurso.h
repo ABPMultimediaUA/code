@@ -4,13 +4,13 @@ class TRecurso
 {
 public:
 	TRecurso();
-	TRecurso(char*);
+	TRecurso(std::string);
 	~TRecurso();
 	char* getNombre();
-	void setNombre(char*);
-	virtual bool cargarFichero(std::string) = 0;
+	void setNombre(std::string);
+	virtual bool cargarFichero(const std::string&) = 0;
 	virtual void draw() = 0;
 private:
-	char* nombre;
+	std::string nombre;
 };
 

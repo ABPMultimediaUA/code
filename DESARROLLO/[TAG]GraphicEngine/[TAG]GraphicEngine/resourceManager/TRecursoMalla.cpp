@@ -1,24 +1,13 @@
 #include "TRecursoMalla.h"
-#include "..\frameWork\mesh.h"
-#include "..\frameWork\shader.h"
-#include <assimp\Importer.hpp>
-#include <assimp\scene.h>
-#include <assimp\postprocess.h>
-#include <SOIL\SOIL.h>
+#include "TRecursoTextura.h"
 #include <iostream>
-//#include <vector>
+#include <assimp\Importer.hpp>
+#include <assimp\postprocess.h>
 
 
-std::vector<Texture> loadMaterialTextures(aiMaterial*, aiTextureType, std::string, std::vector<Texture>*, std::string);
-GLint TextureFromFile(const char*, std::string);
 
 TRecursoMalla::TRecursoMalla()
 {
-}
-
-TRecursoMalla::TRecursoMalla(std::string path)
-{
-	this->cargarFichero(path);
 }
 
 
@@ -26,129 +15,168 @@ TRecursoMalla::~TRecursoMalla()
 {
 }
 
-bool TRecursoMalla::cargarFichero(std::string path)
+bool TRecursoMalla::cargarFichero(const std::string &n)
 {
-	Assimp::Importer importer;
-	const aiScene* scene = importer.ReadFile(path, aiProcess_TransformUVCoords | aiProcess_FlipUVs);
-	if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
-	{
-		std::cout << "Error cargar modelo codigo assimp: " << importer.GetErrorString() << std::endl;
-		system("PAUSE");
-		exit(1);
-		return false;
-	}
-	this->directorio = path.substr(0, path.find_last_of('/'));
+	bool Ret = false;
+	Assimp::Importer Importer;
 
-	std::cout << scene->mNumMeshes << std::endl;
-	aiMesh* aimesh = scene->mMeshes[scene->mRootNode->mMeshes[0]];
+	const aiScene* pScene = Importer.ReadFile(n.c_str(), aiProcess_Triangulate | aiProcess_GenSmoothNormals | aiProcess_FlipUVs | aiProcess_JoinIdenticalVertices);
 
-	std::vector<Vertex> vertices;
-	for(GLuint i = 0; i < aimesh->mNumVertices; i++)
-	{
-		Vertex vertex;
-		vertex.Position.x = aimesh->mVertices[i].x;
-		vertex.Position.y = aimesh->mVertices[i].y;
-		vertex.Position.z = aimesh->mVertices[i].z;
-		vertex.Normal.x = aimesh->mNormals[i].x;
-		vertex.Normal.y = aimesh->mNormals[i].y;
-		vertex.Normal.z = aimesh->mNormals[i].z;
-		if (aimesh->mTextureCoords[0])
-		{
-			glm::vec2 vec;
-			vertex.TexCoords.x = aimesh->mTextureCoords[0][i].x;
-			vertex.TexCoords.y = aimesh->mTextureCoords[0][i].y;
-		}
-		else
-		{
-			vertex.TexCoords = glm::vec2(0.0f, 0.0f);
-		}
-		vertices.push_back(vertex);
+	if (pScene) {
+		Ret = InitFromScene(pScene, n);
 	}
-	std::vector<GLuint> indices;
-	for (GLuint i = 0; i < aimesh->mNumFaces; i++)
-	{
-		aiFace face = aimesh->mFaces[i];
-		for (GLuint j = 0; j < face.mNumIndices; j++)
-		{
-			indices.push_back(face.mIndices[j]);
-		}
+	else {
+		std::cout<<"Error parsing" + n +": "+Importer.GetErrorString()<<std::endl;
 	}
-	std::vector<Texture> textures;
-	if(aimesh->mMaterialIndex >= 0)
-	{
-		aiMaterial* material = scene->mMaterials[aimesh->mMaterialIndex];
-		this->textures_loaded = new std::vector<Texture>();
-		std::vector<Texture> diffuseMaps = loadMaterialTextures(material, aiTextureType_DIFFUSE, "texture_diffuse", this->textures_loaded, this->directorio);
-		textures.insert(textures.end(), diffuseMaps.begin(), diffuseMaps.end());
-		std::vector<Texture> specularMaps = loadMaterialTextures(material, aiTextureType_SPECULAR, "texture_specular", this->textures_loaded, this->directorio);
-		textures.insert(textures.end(), specularMaps.begin(), specularMaps.end());
-	}
-	this->malla = new mesh(vertices, indices, textures);
-	std::cout << "FinCargaMalla" << std::endl;
-	system("PAUSE");
-	return true;
-}
 
-std::vector<Texture> loadMaterialTextures(aiMaterial * mat, aiTextureType type, std::string typeName, std::vector<Texture>* textures_loaded, std::string directorio)
-{
-	std::vector<Texture> textures;
-	for (GLuint i = 0; i < mat->GetTextureCount(type); i++)
-	{
-		aiString str;
-		mat->GetTexture(type, i, &str);
-		GLboolean skip = false;
-		for (GLuint j = 0; j < textures_loaded->size(); j++)
-		{
-			if (std::strcmp((*textures_loaded)[j].path.C_Str(), str.C_Str()) == 0)
-			{
-				textures.push_back((*textures_loaded)[j]);
-				skip = true;
-				break;
-			}
-		}
-		if (!skip)
-		{
-			Texture texture;
-			texture.id = TextureFromFile(str.C_Str(), directorio);
-			texture.type = typeName;
-			texture.path = str;
-			textures.push_back(texture);
-			textures_loaded->push_back(texture);
-		}
-	}
-	return textures;
+	return Ret;
 }
 
 void TRecursoMalla::draw()
 {
-	this->malla->Draw(*this->sombreado);
+	glEnableVertexAttribArray(0);
+	glEnableVertexAttribArray(1);
+	glEnableVertexAttribArray(2);
+
+	for (unsigned int i = 0; i < m_Entries.size(); i++) {
+		glBindBuffer(GL_ARRAY_BUFFER, m_Entries[i].VB);
+		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), 0);
+		glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (const GLvoid*)12);
+		glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (const GLvoid*)20);
+
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_Entries[i].IB);
+
+		const unsigned int MaterialIndex = m_Entries[i].MaterialIndex;
+
+		if (MaterialIndex < m_Textures.size() && m_Textures[MaterialIndex]) {
+			m_Textures[MaterialIndex]->Bind(GL_TEXTURE0);
+		}
+
+		glDrawElements(GL_TRIANGLES, m_Entries[i].NumIndices, GL_UNSIGNED_INT, 0);
+	}
+
+	glDisableVertexAttribArray(0);
+	glDisableVertexAttribArray(1);
+	glDisableVertexAttribArray(2);
 }
 
-void TRecursoMalla::setShader(shader* s)
+bool TRecursoMalla::InitFromScene(const aiScene * pScene, const std::string & Filename)
 {
-	this->sombreado = s;
+	m_Entries.resize(pScene->mNumMeshes);
+	m_Textures.resize(pScene->mNumMaterials);
+
+	for (std::size_t i = 0; i < m_Entries.size(); i++) {
+		const aiMesh* paiMesh = pScene->mMeshes[i];
+		InitMesh(i, paiMesh);
+	}
+
+	return InitMaterials(pScene, Filename);
 }
 
-GLint TextureFromFile(const char* path, std::string directory)
+void TRecursoMalla::InitMesh(unsigned int Index, const aiMesh * paiMesh)
 {
-//Generate texture ID and load texture data
-std::string filename = std::string(path);
-filename = directory + '/' + filename;
-GLuint textureID;
-glGenTextures(1, &textureID);
-int width, height;
-unsigned char* image = SOIL_load_image(filename.c_str(), &width, &height, 0, SOIL_LOAD_RGB);
-// Assign texture to ID
-glBindTexture(GL_TEXTURE_2D, textureID);
-glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
-glGenerateMipmap(GL_TEXTURE_2D);
+	m_Entries[Index].MaterialIndex = paiMesh->mMaterialIndex;
 
-// Parameters
-glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-glBindTexture(GL_TEXTURE_2D, 0);
-SOIL_free_image_data(image);
-return textureID;
+	std::vector<Vertex> Vertices;
+	std::vector<GLuint> Indices;
+	const aiVector3D Zero3D(0.0f, 0.0f, 0.0f);
+
+	for (unsigned int i = 0; i < paiMesh->mNumVertices; i++) {
+		const aiVector3D* pPos = &(paiMesh->mVertices[i]);
+		const aiVector3D* pNormal = &(paiMesh->mNormals[i]);
+		const aiVector3D* pTexCoord = paiMesh->HasTextureCoords(0) ? &(paiMesh->mTextureCoords[0][i]) : &Zero3D;
+
+		Vertex v;
+		v.Position = glm::vec3(pPos->x, pPos->y, pPos->z);
+		v.TexCoords = glm::vec2(pTexCoord->x, pTexCoord->y);
+		v.Normal =glm::vec3(pNormal->x, pNormal->y, pNormal->z);
+
+		Vertices.push_back(v);
+	}
+	for (unsigned int i = 0; i < paiMesh->mNumFaces; i++) {
+		const aiFace& Face = paiMesh->mFaces[i];
+		assert(Face.mNumIndices == 3);
+		Indices.push_back(Face.mIndices[0]);
+		Indices.push_back(Face.mIndices[1]);
+		Indices.push_back(Face.mIndices[2]);
+	}
+	m_Entries[Index].Init(Vertices, Indices);
+}
+
+bool TRecursoMalla::InitMaterials(const aiScene * pScene, const std::string & Filename)
+{
+	std::string::size_type SlashIndex = Filename.find_last_of("/");
+	std::string Dir;
+
+	if (SlashIndex == std::string::npos) {
+		Dir = ".";
+	}
+	else if (SlashIndex == 0) {
+		Dir = "/";
+	}
+	else {
+		Dir = Filename.substr(0, SlashIndex);
+	}
+
+	bool Ret = true;
+
+	for (unsigned int i = 0; i < pScene->mNumMaterials; i++) {
+		const aiMaterial* pMaterial = pScene->mMaterials[i];
+		m_Textures[i] = NULL;
+		if (pMaterial->GetTextureCount(aiTextureType_DIFFUSE) > 0) {
+			aiString Path;
+
+			if (pMaterial->GetTexture(aiTextureType_DIFFUSE, 0, &Path, NULL, NULL, NULL, NULL, NULL) == AI_SUCCESS) {
+				std::string FullPath = Dir + "/" + Path.data;
+				m_Textures[i] = new TRecursoTextura(GL_TEXTURE_2D, FullPath.c_str());
+
+				if (!m_Textures[i]->Load()) {
+					printf("Error loading texture '%s'\n", FullPath.c_str());
+					delete m_Textures[i];
+					m_Textures[i] = NULL;
+					Ret = false;
+				}
+			}
+		}
+		if (!m_Textures[i]) {
+			m_Textures[i] = new TRecursoTextura(GL_TEXTURE_2D, "../Content/white.png");
+			Ret = m_Textures[i]->Load();
+		}
+	}
+
+	return Ret;
+}
+
+TRecursoMalla::MeshEntry::MeshEntry()
+{
+	VB = INVALID_MESH_VALUE;
+	IB = INVALID_MESH_VALUE;
+	NumIndices = 0;
+	MaterialIndex = INVALID_MATERIAL;
+}
+
+TRecursoMalla::MeshEntry::~MeshEntry()
+{
+	if (VB != INVALID_MESH_VALUE)
+	{
+		glDeleteBuffers(1, &VB);
+	}
+
+	if (IB != INVALID_MESH_VALUE)
+	{
+		glDeleteBuffers(1, &IB);
+	}
+}
+
+bool TRecursoMalla::MeshEntry::Init(const std::vector<Vertex>& Vertices, const std::vector<GLuint>& Indices)
+{
+	NumIndices = Indices.size();
+
+	glGenBuffers(1, &VB);
+	glBindBuffer(GL_ARRAY_BUFFER, VB);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * Vertices.size(), &Vertices[0], GL_STATIC_DRAW);
+
+	glGenBuffers(1, &IB);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IB);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(unsigned int) * NumIndices, &Indices[0], GL_STATIC_DRAW);
 }

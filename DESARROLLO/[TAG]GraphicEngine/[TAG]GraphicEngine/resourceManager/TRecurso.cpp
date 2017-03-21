@@ -4,7 +4,7 @@ TRecurso::TRecurso()
 {
 }
 
-TRecurso::TRecurso(char *n)
+TRecurso::TRecurso(std::string n)
 {
 	this->nombre = n;
 }
@@ -13,12 +13,13 @@ TRecurso::~TRecurso()
 {
 }
 
-char * TRecurso::getNombre()
+std::string TRecurso::getNombre()
 {
 	return this->nombre;
 }
 
-void TRecurso::setNombre(char *n)
+
+void TRecurso::setNombre(std::string n)
 {
 	this->nombre = n; 
 }

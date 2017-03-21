@@ -39,13 +39,7 @@
     <ClCompile Include="resourceManager\TRecurso.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="resourceManager\TRecursoMalla.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
     <ClCompile Include="resourceManager\TRecursoMaterial.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
-    <ClCompile Include="resourceManager\TRecursoTextura.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
     <ClCompile Include="entityTree\TTriangle.cpp">
@@ -58,6 +52,9 @@
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
     <ClCompile Include="frameWork\shader.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="resourceManager\TRecursoMalla.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
@@ -155,13 +152,7 @@
     <ClInclude Include="resourceManager\TRecurso.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="resourceManager\TRecursoMalla.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="resourceManager\TRecursoMaterial.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="resourceManager\TRecursoTextura.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="entityTree\TTriangle.h">
@@ -176,16 +167,16 @@
     <ClInclude Include="frameWork\shader.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="resourceManager\TRecursoMalla.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="tools\glm\CMakeLists.txt" />
     <Text Include="models\Nanosuit\LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="glfw3.dll" />
-    <None Include="assimp-vc140-mt.dll" />
     <None Include="lib\assimp-vc140-mt.exp" />
-    <None Include="glew32.dll" />
     <None Include="Shader\basicoFragmentShader.frag" />
     <None Include="Shader\basicoVertexShader.vs" />
     <None Include="models\Nanosuit\nanosuit2.3ds" />

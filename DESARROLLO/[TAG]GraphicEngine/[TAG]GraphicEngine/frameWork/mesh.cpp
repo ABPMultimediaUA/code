@@ -1,6 +1,7 @@
 #include "mesh.h"
 #include <iostream>
 #include <sstream>
+#include "texture.h"
 #include "shader.h"
 
 
@@ -8,7 +9,7 @@ mesh::mesh()
 {
 }
 
-mesh::mesh(std::vector<Vertex> ve, std::vector<GLuint> in, std::vector<Texture> te)
+mesh::mesh(std::vector<Vertex> ve, std::vector<GLuint> in, std::vector<texture> te)
 {
 	this->vertices = vertices;
 	this->indices = indices;
@@ -60,7 +61,7 @@ std::vector<GLuint> mesh::getIndices()
 	return this->indices;
 }
 
-std::vector<Texture> mesh::getTextures()
+std::vector<texture> mesh::getTextures()
 {
 	return this->textures;
 }
@@ -75,7 +76,7 @@ void mesh::Draw(shader s)
 										  // Retrieve texture number (the N in diffuse_textureN)
 		std::stringstream ss;
 		std::string number;
-		std::string name = this->textures[i].type;
+		std::string name = this->textures[i].getType();
 		if (name == "texture_diffuse")
 			ss << diffuseNr++; // Transfer GLuint to stream
 		else if (name == "texture_specular")
@@ -83,7 +84,7 @@ void mesh::Draw(shader s)
 		number = ss.str();
 
 		glUniform1f(glGetUniformLocation(s.getProgram(), ("material." + name + number).c_str()), i);
-		glBindTexture(GL_TEXTURE_2D, this->textures[i].id);
+		glBindTexture(GL_TEXTURE_2D, this->textures[i].getID());
 	}
 	glActiveTexture(GL_TEXTURE0);
 

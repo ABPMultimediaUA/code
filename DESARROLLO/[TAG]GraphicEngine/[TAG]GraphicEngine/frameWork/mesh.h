@@ -3,10 +3,13 @@
 #include <vector>
 #include <glm\vec2.hpp>
 #include <glm\vec3.hpp>
-#include <GL\glew.h>
-#include <assimp\types.h>
+#ifndef GLEW_STATIC
+#define GLEW_STATIC
+#include <GL/glew.h>
+#endif
 
 class shader;
+class texture;
 
 struct Vertex {
 	glm::vec3 Position;
@@ -14,28 +17,21 @@ struct Vertex {
 	glm::vec2 TexCoords;
 };
 
-struct Texture {
-	GLuint id;
-	std::string type;
-	aiString path;
-};
-
 class mesh
 {
 public:
 	mesh();
-	mesh(std::vector<Vertex>, std::vector<GLuint>, std::vector<Texture>);
+	mesh(std::vector<Vertex>, std::vector<GLuint>, std::vector<texture>);
 	~mesh();
 	void setupMesh();
 	std::vector<Vertex> getVertices();
 	std::vector<GLuint> getIndices();
-	std::vector<Texture> getTextures();
+	std::vector<texture> getTextures();
 	void Draw(shader);
 private:
 	GLuint VAO, VBO, EBO;
 	std::vector<Vertex> vertices;
 	std::vector<GLuint> indices;
-	std::vector<Texture> textures;
-	
+	std::vector<texture> textures;
 };
 
