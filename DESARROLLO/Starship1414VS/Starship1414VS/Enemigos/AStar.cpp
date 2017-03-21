@@ -14,11 +14,14 @@ AStar::AStar(float** matrix, int tam)
 
 AStar::~AStar()
 {
-	for (int i = 0; i < tamMatrix; i++) {
-		delete[] matriz[i];
-	}
+	//for (int i = 0; i < tamMatrix; i++) {
+	//	delete[] matriz[i];
+	//}
 
-	delete[] matriz;
+	//delete[] matriz;
+	matriz = nullptr;
+
+
 }
 
 int AStar::buscarWaypointCercano(const vector3df &posEne, const std::vector<Nodo*> &vecNodos)
@@ -45,7 +48,7 @@ int AStar::buscarWaypointCercano(const vector3df &posEne, const std::vector<Nodo
 
 
 	}
-	std::cout << "POS WAYPOINT INI: " <<pos<< std::endl;
+	//std::cout << "POS WAYPOINT INI: " <<pos<< std::endl;
 	return pos;
 }
 
@@ -54,22 +57,41 @@ int AStar::buscarWaypointMasCorto(const int &posNodoIni)
 	float min = 10000000;
 	int pos;
 	for(int i = 0; i < tamMatrix; i++) {
-		std::cout << "///////////////////////" << std::endl;
-		std::cout << "MATRIZ: " << matriz[posNodoIni][i] << std::endl;
+		/*std::cout << "///////////////////////" << std::endl;
+		std::cout << "MATRIZ: " << matriz[posNodoIni][i] << std::endl;*/
 		if(matriz[posNodoIni][i] != 0 && matriz[posNodoIni][i] != -1 && matriz[posNodoIni][i] < min) {
 			
-			std::cout << "MINIMO ANTES: " << min << std::endl;
+			//std::cout << "MINIMO ANTES: " << min << std::endl;
 			
 
 			min = matriz[posNodoIni][i];
 			pos = i;
-			std::cout << "MINIMO DESPUES: " << min << std::endl;
+			/*std::cout << "MINIMO DESPUES: " << min << std::endl;
 			std::cout << "I: " << i << std::endl;
-			std::cout << "///////////////////////" << std::endl;
+			std::cout << "///////////////////////" << std::endl;*/
 		}
 
 	}
-	std::cout << "POS WAYPOINT MAS CERCANO: " << pos << std::endl;
+	//std::cout << "POS WAYPOINT MAS CERCANO: " << pos << std::endl;
+
+	return pos;
+}
+
+int AStar::buscarWaypointNoRepetido(const int & posWaypointRep, const int & posNodoActual)
+{
+	float min = 10000000;
+	int pos;
+	for (int i = 0; i < tamMatrix; i++) {
+
+		if (i != posWaypointRep && matriz[posNodoActual][i] != 0 && matriz[posNodoActual][i] != -1 && matriz[posNodoActual][i] < min) {
+
+			min = matriz[posNodoActual][i];
+			pos = i;
+
+		}
+
+	}
+
 
 	return pos;
 }

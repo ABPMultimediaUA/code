@@ -1,93 +1,334 @@
-﻿  main.cpp
-  MaquinaEstados.cpp
-  Estados.cpp
-  Pistola.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\pistola.cpp(26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-  Personaje.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(257): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-  Fusil.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\fusil.cpp(26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-  Escopeta.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\escopeta.cpp(26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-  Bala.cpp
-  Arma.cpp
-  Juego.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\juego.cpp(221): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\juego.cpp(222): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
-  RayCastCallback.cpp
-  MyContactFilter.cpp
-  MiContactListener.cpp
-  Entity2D.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\fisicas\entity2d.cpp(38): warning C4305: 'argumento': truncamiento de 'int' a 'float32'
-  readJson.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\readjson.cpp(22): warning C4005: '_CRT_SECURE_NO_DEPRECATE': redefinición de macro
-  c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\readjson.cpp(22): note: argumentos de la línea de comandos: vea la definición anterior de '_CRT_SECURE_NO_DEPRECATE'
-  Terminal.cpp
-  Puerta.cpp
-  Pared.cpp
-  MunicionSubfusil.cpp
-  MunicionPistola.cpp
-  Generando código...
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(317): warning C4715: 'Personaje::getDamage': no todas las rutas de acceso de control devuelven un valor
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(336): warning C4715: 'Personaje::getTiempoArma': no todas las rutas de acceso de control devuelven un valor
-  Compilando...
-  MunicionEscopeta.cpp
-  Objetos.cpp
-  Municion.cpp
-  Llave.cpp
-  Botiquines.cpp
+﻿  Juego.cpp
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\juego.cpp(246): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\juego.cpp(247): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
   Escenario.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(48): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(176): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(177): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(178): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(42): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(173): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(174): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(175): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(179): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(180): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
 c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(181): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(193): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(194): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(195): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(196): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(197): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
 c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(198): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(199): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
 c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(200): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(210): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(211): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(212): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(214): warning C4244: '=': conversión de 'irr::f32' a 'int'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(223): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(224): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(225): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(228): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(229): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(230): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(201): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(202): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(215): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(216): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(217): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(219): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(220): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(221): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(232): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(233): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(234): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(249): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(250): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(251): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
 c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(254): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
 c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(255): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
 c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(256): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(258): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(259): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(260): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(314): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(315): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(336): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(337): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-  Camara.cpp
-  navmeshes.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(157): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(168): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(176): warning C4244: 'inicializando': conversión de 'irr::f32' a 'int'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\navmeshes.cpp(196): warning C4244: 'inicializando': conversión de 'irr::f32' a 'int'; posible pérdida de datos
-  Waypoints.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(29): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(38): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(62): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(65): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(67): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(123): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(126): warning C4018: '<': no coinciden signed/unsigned
-  Enemigo.cpp
-  CriaAlien.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(77): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(84): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
-  AlienBerserker.cpp
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(271): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(272): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(273): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(275): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(276): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(277): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(288): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(289): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(290): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(305): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(306): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(307): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(311): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(312): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(313): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(328): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(329): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(330): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(332): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(333): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(334): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(345): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(346): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(347): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(362): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(363): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(364): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(368): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(369): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(370): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(385): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(386): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(387): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(389): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(390): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(391): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(402): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(403): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(404): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(419): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(420): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(421): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(425): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(426): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(427): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(442): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(443): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(444): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(446): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(447): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(448): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(459): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(460): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(461): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(476): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(477): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(478): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(482): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(483): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(484): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(499): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(500): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(501): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(503): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(504): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(505): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(516): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(517): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(518): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(533): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(534): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(535): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(538): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(539): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(540): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(555): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(556): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(557): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(559): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(560): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(561): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(572): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(573): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(574): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(589): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(590): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(591): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(595): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(596): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(597): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(612): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(613): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(614): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(616): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(617): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(618): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(629): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(630): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(631): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(646): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(647): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(648): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(651): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(652): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(653): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(668): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(669): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(670): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(672): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(673): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(674): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(685): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(686): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(687): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(702): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(703): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(704): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(707): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(708): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(709): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(724): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(725): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(726): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(728): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(729): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(730): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(741): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(742): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(743): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(758): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(759): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(760): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(763): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(764): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(765): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(780): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(781): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(782): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(784): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(785): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(786): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(797): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(798): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(799): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(814): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(815): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(816): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(819): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(820): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(821): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(836): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(837): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(838): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(840): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(841): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(842): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(853): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(854): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(855): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(870): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(871): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(872): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(876): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(877): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(878): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(893): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(894): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(895): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(897): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(898): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(899): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(910): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(911): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(912): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(927): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(928): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(929): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(933): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(934): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(935): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(950): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(951): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(952): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(954): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(955): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(956): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(967): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(968): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(969): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(984): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(985): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(986): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(990): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(991): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(992): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1007): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1008): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1009): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1011): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1012): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1013): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1024): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1025): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1026): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1041): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1042): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1043): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1047): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1048): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1049): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1064): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1065): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1066): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1068): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1069): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1070): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1081): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1082): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1083): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1098): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1099): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1100): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1103): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1104): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1105): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1120): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1121): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1122): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1124): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1125): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1126): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1137): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1138): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1139): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1154): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1155): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1156): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1160): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1161): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1162): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1177): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1178): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1179): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1181): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1182): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1183): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1194): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1195): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1196): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1210): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1211): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1212): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1215): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1216): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1217): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1232): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1233): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1234): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1236): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1237): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1238): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1249): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1250): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1251): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1266): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1267): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1268): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1271): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1272): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1273): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1288): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1289): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1290): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1292): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1293): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1294): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1305): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1306): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1307): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1319): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1320): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1321): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1324): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1334): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1351): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1352): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1353): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1369): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1370): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1371): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1390): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1391): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1392): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1409): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1410): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1411): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1477): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1510): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\escenario\escenario.cpp(1511): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
   Generando código...
-  LINK : no se encontró C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

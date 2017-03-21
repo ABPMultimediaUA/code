@@ -46,6 +46,11 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 				std::cout << "//////////////////////////////////////////" << std::endl;
 				std::cout << "" << std::endl;
 
+				//hay que mirar si el objeto con el que choca el rayo es una puerta
+				//que esta cerrada con llave no puede llegar a ese waypoint el enemigo
+				//como su fuese una pared u otro objeto
+
+
 				entidadChocada = entity->getIDEN();
 
 

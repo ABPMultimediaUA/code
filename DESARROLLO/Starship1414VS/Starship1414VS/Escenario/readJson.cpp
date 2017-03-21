@@ -28,7 +28,7 @@ using namespace std;
 
 readJson::readJson(Escenario *e) {
 
-	leerArchivo("../nivelPrueba.json");
+	leerArchivo("../Puente.json");
 	esce = e;
 	crearPared();
 }

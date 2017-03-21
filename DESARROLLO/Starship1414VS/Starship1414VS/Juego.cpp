@@ -14,6 +14,15 @@
 
 
 #include "Juego.h"
+#include "Jugador\Personaje.h"
+#include "Escenario/Escenario.h"
+#include "Escenario/Camara.h"
+#include "Escenario/readJson.h"
+#include "Fisicas/MiContactListener.h"
+#include "Fisicas/MyContactFilter.h"
+#include "Menu/Menu.h"
+#include "EstadoGeneral.h"
+
 #include "ManejadorEstadoGeneral.h"
 
 #define ANCHO 1920
@@ -94,15 +103,18 @@ void Juego::update(int state) {
 
 void Juego::mover(f32 dt)
 {
-	if (teclado.isKeyUp(irr::KEY_KEY_D) || teclado.isKeyUp(irr::KEY_KEY_A) || teclado.isKeyUp(irr::KEY_KEY_W) || teclado.isKeyUp(irr::KEY_KEY_S)) {
+	cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+	if(pers->getImpulso() == false) {
+
+	if (!teclado.isKeyDown(irr::KEY_KEY_D) || !teclado.isKeyDown(irr::KEY_KEY_A) || !teclado.isKeyDown(irr::KEY_KEY_W) || !teclado.isKeyDown(irr::KEY_KEY_S)) {
 		pers->setVelocidad();
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 	}
 
 	if (teclado.isKeyDown(irr::KEY_KEY_W) && teclado.isKeyDown(irr::KEY_KEY_D)) {
 
 		pers->moverPersonaje(4, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+		
+		//cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		//cam->actualizarCamara(0, dt);
 		//cam->actualizarCamara(2, dt);
@@ -110,7 +122,7 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_D)) {
 
 		pers->moverPersonaje(5, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+		//cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		// cam->actualizarCamara(0, dt);
 		//cam->actualizarCamara(3, dt);
@@ -119,7 +131,7 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_S) && teclado.isKeyDown(irr::KEY_KEY_A)) {
 
 		pers->moverPersonaje(6, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+		//cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		// cam->actualizarCamara(1, dt);
 		// cam->actualizarCamara(3, dt);
@@ -129,7 +141,7 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_A) && teclado.isKeyDown(irr::KEY_KEY_W)) {
 
 		pers->moverPersonaje(7, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+		//cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		// cam->actualizarCamara(1, dt);
 		// cam->actualizarCamara(2, dt);
@@ -139,7 +151,7 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_D)) {
 
 		pers->moverPersonaje(0, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+	//	cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		//   cam->actualizarCamara(0, dt);
 
@@ -147,7 +159,7 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_A)) {
 
 		pers->moverPersonaje(1, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+	//	cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		//cam->actualizarCamara(1, dt);
 
@@ -155,18 +167,31 @@ void Juego::mover(f32 dt)
 	else if (teclado.isKeyDown(irr::KEY_KEY_W)) {
 
 		pers->moverPersonaje(2, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+		//cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		//cam->actualizarCamara(2, dt);
 	}
 	else if (teclado.isKeyDown(irr::KEY_KEY_S)) {
 
 		pers->moverPersonaje(3, dt);
-		cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
+	//	cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 
 		//cam->actualizarCamara(3, dt);
 
 	}
+	
+	}
+	else {
+		pers->disminuirTem();
+		if(pers->getTemporizador() == 0.0f) {
+			pers->setImpulso(false);
+
+		}
+
+	}
+
+	pers->actualizarPosicion();
+	cam->actualizarCamara(pers->getPos(), pers->getRot(), dt);
 }
 
 
@@ -228,15 +253,9 @@ void Juego::raton(f32 dt)
 	//	std::cout << "PosX: " << pers->getPos().X << "PosZ: " << pers->getPos().Z << std::endl;
 	//}
 	if (teclado.GetMouseState().LeftButtonDown && pers->getDisparo() == false) {
-		//tiempoDisparo += dt;
 
-		//pers -> disparar(dt,ok);
-		//disparo = true;
-		//Bala *bullet = new Bala(smgr, driver, world, pers, vector2df(teclado.GetMouseState().Position.X, teclado.GetMouseState().Position.Y));
-		//listaBalas.push_back(bullet);
-		//  }
-		// }
 		
+		//mirar esta parte para el enemigo vaya disparando (posiblemente sea en el callback de colisiones
 		if (pers->getCargador() >= 0) {
 			pers->disparar(smgr, driver, world, dt, vector2df(mousePosition.X, mousePosition.Y));
 
@@ -279,6 +298,9 @@ void Juego::render(IrrlichtDevice* iDevice) {
 		//float distancia;
 		world->Step(dt, 6, 2); //1.0f/60.0f
 		world->ClearForces();
+		
+
+
 		switch (estado)
 		{
 		case 0: {
@@ -352,11 +374,14 @@ void Juego::render(IrrlichtDevice* iDevice) {
 
 		}
 
+		if(control == true) {
+
 		then = now;
 
 		driver->beginScene(true, true, SColor(255, 100, 101, 140)); //se usa para hacer el render
 
-		esce->actualizarListaEnemigos();
+		
+		esce->actualizarListaEnemigos(dt);
 		esce->actualizarEstadoPuerta();
 		esce->actualizarEstadoPersonaje();
 		esce->actualizarObjetosConsumables();
@@ -376,6 +401,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 			lastFPS = fps;
 		}
 		
+		}
 
 	}
 	else {

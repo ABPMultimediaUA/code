@@ -34,7 +34,7 @@
 Entity2D::Entity2D(b2World * world)
 {
 
-	bodyDef.type = b2_dynamicBody;
+	bodyDef.type = b2_staticBody;
 	bodyDef.position.Set(-99999999, -99999999);
 	bodyShape.SetAsBox(5.0f, 5.0f);
 	md.mass = 50.0f;
@@ -62,12 +62,12 @@ Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* 
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
     bodyShape.SetAsBox(5.0f, 5.0f);
-    md.mass = 50.0f;
+    md.mass = 1.0f;
     md.center = b2Vec2(3, 3);
     md.I = 0.0f;
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);
-    body->GetFixtureList()->SetFriction(10.0f);
+    body->GetFixtureList()->SetFriction(0.0f);
     body->SetUserData(this);
     body->SetMassData(&md);
 	live = true;
@@ -139,34 +139,41 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
-    if (rot.Y == 90) {
+    if (escala.Z != 1) {
 
-        bodyShape.SetAsBox(100 * escala.Z, 5 * escala.X);
+        bodyShape.SetAsBox(20 * escala.Z, 5 * escala.X);
         bodyShape2.SetAsBox(5 * escala.Z, 5 * escala.X);	
     } else {
-        bodyShape.SetAsBox(5 * escala.X, 100 * escala.Z);
+        bodyShape.SetAsBox(5 * escala.X, 20 * escala.Z);
         bodyShape2.SetAsBox(5 * escala.X, 5 * escala.Z);	
     }
 
     objeto3D = dirPuerta;
-    body = world->CreateBody(&bodyDef);
-    body -> CreateFixture(&bodyShape, 1.0f);
-    body->GetFixtureList()->SetSensor(sensor);
+    puertaBody = world->CreateBody(&bodyDef);
+	puertaBody-> CreateFixture(&bodyShape, 1.0f);
+	puertaBody->GetFixtureList()->SetSensor(sensor);
+	
     //std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
-    body->SetUserData(this);
-    body->CreateFixture(&bodyShape2, 1.0f);
+	puertaBody->SetUserData(this);
 
+	body = world->CreateBody(&bodyDef);
+    body->CreateFixture(&bodyShape2, 1.0f);
+	body->SetUserData(this);
     filtro.groupIndex = FILTRO_PUERTA;
     //    body->GetFixtureList()->SetFilterData(filtro);
     iden = 2;
-    for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
+ /*   for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
         f->SetFilterData(filtro);
 
-    }
+    }*/
+	body->GetFixtureList()->SetFilterData(filtro);
+	puertaBody->GetFixtureList()->SetFilterData(filtro);
+
+
 }
 //constructor bala
 
-Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala) {
+Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala, int tipo) {
 
 
     bodyDef.type = b2_dynamicBody;
@@ -178,10 +185,20 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void
     body -> CreateFixture(&bodyCircle, 1.0f);
     body ->SetBullet(true);
     body->SetUserData(this);
-    iden = 3;
     live = vivo;
-    filtro.groupIndex = FILTRO_DISPAROPERS;
-    body->GetFixtureList()->SetFilterData(filtro);
+	if (tipo == 1) {
+		filtro.groupIndex = FILTRO_DISPAROPERS;
+		body->GetFixtureList()->SetFilterData(filtro);
+		iden = 3;
+	}
+	else {
+
+		filtro.groupIndex = FILTRO_DISPAROENE;
+		body->GetFixtureList()->SetFilterData(filtro);
+		iden = 6;
+
+	}
+
     objeto3D = dirBala;
 
 }
@@ -194,29 +211,38 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, I
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set((pos.X), (pos.Z));
     bodyShape.SetAsBox(5.0f, 5.0f);
-    md.mass = 50.0f;
-    md.center = b2Vec2(3, 3);
-    md.I = 0.0f;
+	bodyCircle.m_p.Set(0, 0);
+	bodyCircle.m_radius = 70; 
+
     body = world->CreateBody(&bodyDef);
+	body->CreateFixture(&bodyCircle, 1.0f);
+	body->GetFixtureList()->SetSensor(true);
     body -> CreateFixture(&bodyShape, 1.0f);
     live = vivo;
-    body->GetFixtureList()->SetFriction(10.0f);
+   
     body->SetUserData(this);
-    body->SetMassData(&md);
+    
 
     sombraDef.type = b2_kinematicBody;
     sombraDef.position.Set(pos.X, pos.Z);
     sombraShape.SetAsBox(6.0f, 6.0f);
     sombraE = world->CreateBody(&sombraDef);
     sombraE -> CreateFixture(&sombraShape, 1.0f);
-    sombraE->GetFixtureList()->SetFriction(10.0f);
+	
+    //sombraE->GetFixtureList()->SetFriction(10.0f);
     sombraE->SetUserData(this);
     sombraE->SetMassData(&md);
     idenSh = 1;
     filtro.groupIndex = FILTRO_ENEMIGO;
-    body->GetFixtureList()->SetFilterData(filtro);
-    sombraE->GetFixtureList()->SetFilterData(filtro);
-    fisica2 = smgr->addCubeSceneNode(10);
+	for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
+		f->SetFilterData(filtro);
+
+	}
+  
+	sombraE->GetFixtureList()->SetFilterData(filtro);
+
+    fisica2 = smgr->addSphereSceneNode(70);
+	//smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
     fisica2->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
     fisica2->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
     fisica2->getMaterial(0).EmissiveColor.set(0, 100, 10, 100);
@@ -287,6 +313,10 @@ Entity2D::~Entity2D() {
         sombraE->GetWorld()->DestroyBody(sombraE);
         fisica2->getParent()->removeChild(fisica2);
     }
+
+	if(puertaBody != NULL) {
+		puertaBody->GetWorld()->DestroyBody(puertaBody);
+	}
     //mundo->DestroyBody(body);
     //    body->SetUserData(NULL);
     //    body = NULL;
@@ -442,6 +472,11 @@ b2Body* Entity2D::getSombraE2D() {
         fisica2->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
     }
     return sombraE;
+}
+
+b2Body * Entity2D::getPuertaBody()
+{
+	return puertaBody;
 }
 
 int Entity2D::getId()

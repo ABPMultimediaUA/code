@@ -13,9 +13,12 @@
 
 
 #include "Personaje.h"
-#include "../Escenario/Camara.h"
+#include "Bala.h"
+#include "Pistola.h"
+#include "Fusil.h"
+#include "Escopeta.h"
 #include "../Fisicas/Entity2D.h"
-#include "../Escenario/readJson.h"
+#include "../Juego.h"
 #include <Math.h>
 
 #define PISTOLA 0
@@ -27,7 +30,7 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) {
+Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world, Juego* j) {
 
 	maya = smgr->addCubeSceneNode(10); //se crea de tamanyo 10x10x10
 
@@ -43,9 +46,10 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 
 
 	vel = 100.0f;
+	vida = 100.0f;
 	pos = maya->getPosition();
 	entity = new Entity2D(world, pos, this, smgr);
-
+	game = j;
 	tiempoDisparo = 0.0f;
 	disparo = false;
 	teclaE = false;
@@ -57,15 +61,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world) 
 	armaActual = PISTOLA;
 	cargador = pistola->getCargador();
 	municionTotal = pistola->getCapacidadDeMun();
-	/* md.mass = 2.0;
-	md.center = b2Vec2(5.0,5.0);
-	md.I = 1.0;
-	body->SetMassData(&md);*/
 
-	/*std::cout<<"Tam X: "<<maya->getScale().X<<std::endl;
-	std::cout<<"Tam Y: "<<maya->getScale().Y<<std::endl;
-	std::cout<<"Tam Z: "<<maya->getScale().Z<<std::endl;
-	std::cout<<"Pos X: "<<pos.X<<" Pos Y: "<<pos.Y<<" Pos Z: "<<pos.Z<<std::endl;*/
 
 }
 
@@ -101,7 +97,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
 		// entity->getSombraP2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
 
 		/* std::cout<<"Des"<<std::endl;
 		std::cout<<"Pos X: "<<pos.X<<std::endl;
@@ -117,7 +113,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
 		//  entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
 
 
 		/*std::cout<<"Des"<<std::endl;
@@ -134,7 +130,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
 		// entity->getSombraP2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 
 		/*  std::cout<<"Des"<<std::endl;
@@ -151,7 +147,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
 		//entity->getSombraP2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 		/* std::cout<<"Des"<<std::endl;
 		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
@@ -165,8 +161,8 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, vel));
 		//entity->getSombraP2D()->SetLinearVelocity(b2Vec2(vel, vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 
 		break;
@@ -175,8 +171,8 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 	case 5:
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, -vel));
 		//entity->getSombraP2D()->SetLinearVelocity(b2Vec2(vel, -vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 		break;
 
 		//A+S
@@ -184,8 +180,8 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
 		// entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 		break;
 
@@ -194,8 +190,8 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, vel));
 		//   entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
+		//pos.X = entity->getCuerpo2D()->GetPosition().x;
+		//pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 		break;
 
@@ -207,7 +203,7 @@ void Personaje::moverPersonaje(int modo, f32 dt) {
 	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 
 
-
+	actualizarPosicion();
 	direccion = modo;
 	setPos(pos);
 }
@@ -294,6 +290,54 @@ int Personaje::getArmaActual() {
 bool Personaje::getTeclaE()
 {
 	return teclaE;
+}
+
+bool Personaje::getImpulso()
+{
+	return impulso;
+}
+
+void Personaje::setImpulso(bool x)
+{
+	impulso = x;
+}
+
+void Personaje::quitarVida(float damage)
+{
+	std::cout << std::endl;
+	std::cout <<"VIDA ANTES: "<<vida<< std::endl;
+
+	vida = vida - damage;
+
+	std::cout << std::endl;
+	std::cout << "VIDA DESPUES: " << vida << std::endl;
+}
+
+float Personaje::getVida()
+{
+	return vida;
+}
+
+void Personaje::pasarMensaje() {
+
+	game->cambioEstado("menu");
+}
+
+
+void Personaje::iniciarTiempoImpulso() {
+
+	temporizador = 5.0f;
+
+}
+
+void Personaje::disminuirTem() {
+	
+	temporizador -= 0.5f;
+}
+
+float Personaje::getTemporizador() {
+
+	return temporizador;
 }
 
 
@@ -515,7 +559,7 @@ void Personaje::disparar(ISceneManager* smgr, IVideoDriver* driver, b2World *wor
 	std::cout << "CARGADOR: " << cargador << std::endl;
 	tiempoDisparo += dt;
 	disparo = true;
-	Bala *bullet = new Bala(smgr, driver, world, pos, posRaton, getDamage());
+	Bala *bullet = new Bala(smgr, driver, world, pos, posRaton, getDamage(), 1, 300.0f);
 	listaBalas.push_back(bullet);
 	cargador--;
 

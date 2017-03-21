@@ -14,8 +14,12 @@
 #include "Puerta.h"
 #include "../MaquinaEstados/FSM/Estados.h"
 #include "../MaquinaEstados/FSM/MaquinaEstados.h"
+#include "../Fisicas/Entity2D.h"
 
-Puerta::Puerta(int ident, vector3df posicion, vector3df rotacion, vector3df escala, IMeshSceneNode *objeto){
+#define VEL 200.0f
+
+Puerta::Puerta(int ident, vector3df posicion, vector3df rotacion, vector3df escala, IMeshSceneNode *objeto, std::string llave){
+	
 	id = ident;
 	pos = posicion;
 	rot = rotacion;
@@ -28,11 +32,13 @@ Puerta::Puerta(int ident, vector3df posicion, vector3df rotacion, vector3df esca
 	CERRADA = new Estados("CERRADA");
 	ABIERTA = new Estados("ABIERTA");
 	BLOQUEADA = new Estados("BLOQUEADA");
+	BLOQLLAVE = new Estados("BLOQLLAVE");
 	Maquina = new MaquinaEstados();
 	Maquina->addEstado(CERRADA);
 	Maquina->addEstado(ABIERTA);
 	Maquina->addEstado(BLOQUEADA, true);
-
+	Maquina->addEstado(BLOQLLAVE); //dependiendo de que string se le pase se inicia en un estado o otro
+	llaveAsociada = llave;
 	detectado = false;
 	idDetect = -1;
 }
@@ -124,6 +130,11 @@ std::string Puerta::getEstado()
 	return Maquina->getEstadoActivo()->getEstado();
 }
 
+std::string Puerta::getLlaveAsociada()
+{
+	return llaveAsociada;
+}
+
 
 void Puerta::setFisica(b2World* world , ISceneManager* smgr,int ident) {
 	//std::cout<<"CREO PARED! "<<std::endl;
@@ -138,11 +149,11 @@ void Puerta::abrirPuerta() {
 	//si tiene rotacion en Y van | sino van -
 
 
-	if (rot.Y == 90) {
+	if (escal.Z != 1) {
 
 		if (limiteApZ + 70>entity->getCuerpo2D()->GetPosition().y)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 20.0f));
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, VEL));
 			pos.Z = entity->getCuerpo2D()->GetPosition().y;
 			maya->setPosition(pos);
 
@@ -151,6 +162,7 @@ void Puerta::abrirPuerta() {
 		{
 			abierta = true;
 			std::cout << detectado << std::endl;
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
 			if (detectado == false)
 			{
 				Maquina->cambiaEstado("CERRADA");
@@ -162,7 +174,7 @@ void Puerta::abrirPuerta() {
 		
 		if (limiteApX+70>entity->getCuerpo2D()->GetPosition().x)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(20.0f, 0.0f));
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(VEL, 0.0f));
 			pos.X = entity->getCuerpo2D()->GetPosition().x;
 			maya->setPosition(pos);
 		}
@@ -170,6 +182,8 @@ void Puerta::abrirPuerta() {
 		{
 			abierta = true;
 			std::cout << detectado << std::endl;
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+
 			if (detectado == false)
 			{
 				Maquina->cambiaEstado("CERRADA");
@@ -181,60 +195,25 @@ void Puerta::abrirPuerta() {
 	}
 
 
-	//  if(entity->getCuerpo2D()->GetPosition().y >= y){
-	//                    std::cout<<"ENTRO nAQUI"<<std::endl;
-	//
-	//            entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -50000.0f));
-	//            
-	//            //pos.X = x;
-	//            pos.Z = y;
-	//            maya->setPosition(pos);
-	//        //}
-
-
-	//        switch(modo){
-	//            
-	//            case 0:
-	//                        std::cout<<"ABRO: 0"<<std::endl;
-	//
-	//                    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -50000.0f));
-	//                    pos.X = entity->getCuerpo2D()->GetPosition().x;
-	//                    pos.Z = entity->getCuerpo2D()->GetPosition().y;
-	//                    maya->setPosition(pos);
-	//                            
-	//                break;
-	//                
-	//            case 1:
-	//                
-	//                break;
-	//                
-	//        }
-
-
-
-	//            std::cout<<"//////////////////////////////////////////"<<std::endl;
-	//            std::cout<<""<<std::endl;
-	//            std::cout<<"POS PUERTA"<<std::endl;
-	//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 }
 
 void Puerta::cerrarPuerta() {
 
 
 
-	if (rot.Y == 90) {
+	if (escal.Z != 1) {
 
 		if (limiteApZ-5<entity->getCuerpo2D()->GetPosition().y)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, -20.0f));
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, -VEL));
 			pos.Z = entity->getCuerpo2D()->GetPosition().y;
 			maya->setPosition(pos);
 		}
 		else
 		{
 			abierta = false;
-			
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+
 			//manejador.cambiaEstado("BLOQUEADA");
 		}
 	}
@@ -243,14 +222,15 @@ void Puerta::cerrarPuerta() {
 		
 		if (limiteApX-5<entity->getCuerpo2D()->GetPosition().x)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-20.0f, 0.0f));
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-VEL, 0.0f));
 			pos.X = entity->getCuerpo2D()->GetPosition().x;
 			maya->setPosition(pos);
 		}
 		else
 		{
 			abierta = false;
-			
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+
 	//		manejador.cambiaEstado("BLOQUEADA");
 
 		}
@@ -260,41 +240,6 @@ void Puerta::cerrarPuerta() {
 	}
 
 
-	//    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 50000.0f));
-	//            //pos.X = x;
-	//            pos.Z = y;
-	//            maya->setPosition(pos);
-	//        
-	//    std::cout<<"//////////////////////////////////////////"<<std::endl;
-	//            std::cout<<""<<std::endl;
-	//            std::cout<<"POS PUERTA"<<std::endl;
-	//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
-
-	//            switch(modo){
-	//            
-	//            case 0:
-	//                   std::cout<<"Cierro: 0"<<std::endl;
-	//
-	//                    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -50000.0f));
-	//                    pos.X = entity->getCuerpo2D()->GetPosition().x;
-	//                    pos.Z = entity->getCuerpo2D()->GetPosition().y;
-	//                    maya->setPosition(pos);
-	//                            
-	//                break;
-	//                
-	//            case 1:
-	//                
-	//                break;
-	//                
-	//        }
-	//    
-	//            std::cout<<"//////////////////////////////////////////"<<std::endl;
-	//            std::cout<<""<<std::endl;
-	//            std::cout<<"POS PUERTA"<<std::endl;
-	//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
-	//    
 }
 
 void Puerta::Update()

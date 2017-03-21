@@ -12,6 +12,12 @@
 */
 
 #include "AlienBerserker.h"
+#include "Nodo.h"
+#include "navmeshes.h"
+#include "AStar.h"
+#include "../Escenario/Escenario.h"
+#include "../Fisicas/Entity2D.h"
+#include "Waypoints.h"
 
 AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos)
 {
@@ -29,6 +35,7 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 	estadoActual = DESCANSAR;
 	raza = BERSERKER;
 	blindaje = 5.0f;
+	damageChoque = 15.0f;
 
 }
 
@@ -38,7 +45,7 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 AlienBerserker::~AlienBerserker() {
 }
 
-void AlienBerserker::Update()
+void AlienBerserker::Update(f32 dt)
 {
 	switch (estadoActual) {
 

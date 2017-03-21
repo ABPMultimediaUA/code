@@ -21,7 +21,8 @@
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionSubfusil.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionEscopeta.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionPistola.h"
-
+#include "../Jugador/Bala.h"
+#include "../Enemigos/Nodo.h"
 
 
 MiContactListener::MiContactListener() {
@@ -39,18 +40,22 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, int modo) {
 
 	Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
 
-	if (modo == 0) {
+	if (modo == 0 && puerta->getEstado() != "BLOQLLAVE" ) {
 		//si tiene rotacion en Y van | sino van -
 		puerta->setDetectado(true,entity->getId());
 		puerta->UpdateEstado();
 	}	
 
 
-	else if (modo == 1 ) {
+	else if (modo == 1 && puerta->getEstado() != "BLOQLLAVE") {
 		std::cout << "cerrar123" << std::endl;
 		puerta->setDetectado(false,entity->getId());
 		puerta->UpdateEstado();
 	}
+
+	//se deberia hacer un if para ver si el jugador tiene o no la llave asociada a la puerta
+	//con la que ha colisionado. Tambien se deberia pasar al jugador para gestionar las
+	//llaves que ha cogido
 
 }
 
@@ -192,6 +197,154 @@ void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * mun
 }
 
 
+void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
+
+	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
+	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
+	int dir = p->getDireccion();
+	float vel = 5000.0f;
+	//std::cout << "VELOSIDAD X: " << vel.x << "VELOSIDAD Y: " << vel.y << std::endl;
+
+/*	std::cout << "//////////////////////////////////////////" << std::endl;
+	std::cout << "" << std::endl;
+	std::cout << "POS PERS ANTES" << std::endl;
+	std::cout << "Pos 3D X: " << p->getPos().X << "Pos 3D Z: " << p->getPos().Z << std::endl;
+	std::cout << "Pos 2D X: " << bodyPers->GetPosition().x << "Pos 2D Z: " << bodyPers->GetPosition().y << std::endl;
+	*/
+
+	std::cout << "//////////////////////////////////////////" << std::endl;
+	std::cout << "" << std::endl;
+	std::cout << "VIDA: " <<p->getVida()<< std::endl;
+	std::cout << "" << std::endl;
+	std::cout << "//////////////////////////////////////////" << std::endl;
+
+	p->setImpulso(true);
+	p->iniciarTiempoImpulso();
+	p->quitarVida(e->getDamageChoque());
+
+	switch (dir) {
+
+	case 0:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, 0.0f), true);
+
+	break;
+
+	case 1:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, 0.0f), true);
+
+
+	break;
+
+	case 2:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(0.0f, -vel), true);
+
+
+	break;
+
+	case 3:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(0.0f, vel), true);
+
+	break;
+
+	case 4:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, -vel), true);
+
+
+	break;
+
+	case 5:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, vel), true);
+
+
+	break;
+
+	case 6:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, vel), true);
+
+
+	break;
+
+	case 7:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, -vel), true);
+
+
+	break;
+
+
+
+
+	}
+
+
+	//p->actualizarPosicion();
+
+	/*    std::cout<<"//////////////////////////////////////////"<<std::endl;
+	            std::cout<<""<<std::endl;
+	            std::cout<<"POS PERS DESPUES"<<std::endl;
+	                 std::cout<<"Pos 3D X: "<<p->getPos().X<<"Pos 3D Z: "<< p->getPos().Z<<std::endl;
+	                 std::cout<<"Pos 2D X: "<<bodyPers->GetPosition().x<<"Pos 2D Z: "<< bodyPers->GetPosition().y<<std::endl;
+*/
+	if(p->getVida() <= 0.0f && pers->getLive() != false) {
+		p->pasarMensaje();
+	}
+
+}
+
+
+void dispararEnemigo(Entity2D *pers, Entity2D *enemigo) {
+
+	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
+	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
+
+	p->getPos();
+
+	//e->setPosJugador(p->getPos().X, p->getPos().Z);
+	e->setEstado(3);
+
+	//std::cout << std::endl;
+	//std::cout <<"CALLBACK"<< std::endl;
+
+	//std::cout << "POS X: " << p->getPos().X<<"POS Z: " << p->getPos().Z<< std::endl;
+	//std::cout << std::endl;
+
+}
+
+void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
+	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
+
+	if (e->getNodoInicio() == nullptr || e->getNodoFin() == nullptr) {
+		e->setEstado(0);
+	}
+
+	else if (e->getNodoFin() != nullptr) {
+		e->setEstado(1);
+	}
+}
+
+
+void quitarVidaJugador(Entity2D *jugador, Entity2D *bala) {
+
+	Personaje *j = static_cast<Personaje*>(jugador->getObjeto3D()); //mirar el tema de hacer un cast dependiendo de la raza
+	Bala *bullet = static_cast<Bala*>(bala->getObjeto3D());
+	if (j->getVida() > 0.0f) {
+		j->quitarVida(bullet->getDamage());
+		if (j->getVida() <= 0.0f && jugador->getLive() != false) {
+			jugador->setLive(false);
+			j->pasarMensaje();
+		}
+	}
+
+}
+
+
 void MiContactListener::BeginContact(b2Contact* contact) {
 	std::cout<<""<<std::endl;
 
@@ -241,29 +394,84 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			//                    pers->setPos(vector3df(entity1->getSombraE2D()->GetPosition().x,10,entity1->getSombraE2D()->GetPosition().y));
 			//                }
 			//            }
-			//            
-			if (entity1->getIDEN() == 3 && f2->IsSensor() != true) {
+			//   
+
+			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 2 && f2->IsSensor() != true) {
 				entity1->setLive(false);
 
 			}
 
-			else if (entity2->getIDEN() == 3 && f1->IsSensor() != true) {
+			else if (entity2->getIDEN() == 3 && entity1->getIDEN() == 2 && f1->IsSensor() != true) {
 				entity2->setLive(false);
 			}
 
+
+			if (entity1->getIDEN() == 6 && entity2->getIDEN() == 2 && f2->IsSensor() != true) {
+				entity1->setLive(false);
+
+			}
+
+			else if (entity2->getIDEN() == 6 && entity1->getIDEN() == 2 && f1->IsSensor() != true) {
+				entity2->setLive(false);
+			}
+
+			if((entity1->getIDEN() == 3 || entity1->getIDEN() == 6) && entity2->getIDEN() == 1) {
+				entity1->setLive(false);
+
+			}
+
+			else if ((entity2->getIDEN() == 3 || entity2->getIDEN() == 6) && entity1->getIDEN() == 1) {
+				entity2->setLive(false);
+
+			}
+
+
+			if (entity1->getIDEN() == 6 && entity2->getIDEN() == 0) {
+				quitarVidaJugador(entity2, entity1);
+				entity1->setLive(false);
+
+			}
+
+			else if (entity2->getIDEN() == 6 && entity1->getIDEN() == 0) {
+
+				quitarVidaJugador(entity1, entity2);
+				entity2->setLive(false);
+			}
+
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
+				std::cout << "A DISPARAR!" << std::endl;
+				dispararEnemigo(entity1, entity2);
+
+			}
+
+
 			//colision de enemigo y bala
 			//3: bala; 4: enemigo
-			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 4) {
+			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 4 && f2->IsSensor() == false) {
 				//entity2->setLive(false);
 				aplicarDamage(entity2, entity1);
 				entity1->setLive(false);
 			}
 
-			else if (entity1->getIDEN() == 4 && entity2->getIDEN() == 3) {
+			else if (entity1->getIDEN() == 4 && entity2->getIDEN() == 3 && f1->IsSensor() == false) {
 				//entity1->setLive(false);              
 				aplicarDamage(entity1, entity2);
 				entity2->setLive(false);
 			}
+
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6) {
+				//entity2->setLive(false);
+				
+				entity2->setLive(false);
+			}
+
+			else if (entity1->getIDEN() == 6 && entity2->getIDEN() == 0) {
+				//entity1->setLive(false);              
+				
+				entity1->setLive(false);
+			}
+
+			//metodo para que quite vida al personaje
 
 			if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true) {
 				actualizarPuerta(entity1, 0);
@@ -333,6 +541,18 @@ void MiContactListener::EndContact(b2Contact* contact) {
 				actualizarPuerta(entity2, 1);
 			}
 
+			//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
+			//	//aplicarKnockBack(entity1, b1);
+			//	Personaje *p = static_cast<Personaje*>(entity1->getObjeto3D());
+			//	p->setImpulso(false);
+
+			//}
+
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
+				std::cout << "ADIOS 1" << std::endl;
+				gestionarCambioDeEstadoEnemigo(entity2);
+
+			}
 
 			
 
@@ -387,6 +607,13 @@ void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* im
 				this->activarTerminar(entity1, entity2);
 			}*/
 
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 ) {
+				std::cout << "A DISPARAR!" << std::endl;
+				dispararEnemigo(entity1, entity2);
+
+			}
+
+
 		}
 
 	}
@@ -423,10 +650,17 @@ void MiContactListener::PreSolve(b2Contact* contact, const b2Manifold* oldManifo
 
 			}*/
 
+			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
+				aplicarKnockBack(entity1, entity2, b1);
+
+			}
 
 		}
 
 	}
 }
+
+
+
 
 

@@ -12,18 +12,16 @@
  */
 
 
-#include <irrlicht.h>
+
 #include <Math.h>
 #include "Enemigo.h"
 #include "Nodo.h"
+#include "../Fisicas/Entity2D.h"
+#include "Waypoints.h"
+#include "AStar.h"
+#include "../Jugador/Bala.h"
 
-using namespace irr;
 
-using namespace core;
-using namespace scene;
-using namespace video;
-using namespace io;
-using namespace gui;
 
 
 #ifdef _IRR_WINDOWS_
@@ -41,6 +39,8 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
     GVida->setPosition(posicion);
     RVida->setPosition(vector3df(posicion.X - 8, posicion.Y, posicion.Z));
     smgr1 = smgr;
+	mundo = world;
+	VD = driver;
     smgr->getGUIEnvironment()->clear();
 	//puntoIni.nombre, puntoFin.nombre = "indefinido"; //hecho para que solo se calcule una vez los nodos
 	puntoIni = nullptr;
@@ -58,7 +58,8 @@ Enemigo::~Enemigo() {
 
     std::cout << "////////////////////////" << std::endl;
     std::cout << "MUERE: " << maya << std::endl;
-
+	listaBalas.clear();
+	estadoActual = -1;
 	maya->getParent()->removeChild(maya);
     GVida->getParent()->removeChild(GVida);
     RVida->getParent()->removeChild(RVida);
@@ -69,7 +70,7 @@ Enemigo::~Enemigo() {
     delete(entity);
 }
 
-void Enemigo::Update() {
+void Enemigo::Update(f32 dt) {
 }
 
 void Enemigo::Mover(int modo) {
@@ -122,4 +123,101 @@ void Enemigo::quitarVida(float damage) {
 Entity2D* Enemigo::getEntity()
 {
 	return entity;
+}
+
+float Enemigo::getDamageChoque()
+{
+	return damageChoque;
+}
+
+void Enemigo::setEstado(int num)
+{
+	estadoActual = num;
+}
+
+int Enemigo::getEstado()
+{
+	return estadoActual;
+}
+
+void Enemigo::setDisparo(bool x)
+{
+	disparado = x;
+}
+
+void Enemigo::aumentarTiempoDisparo(float t)
+{
+	tiempoDisparo += t;
+}
+
+void Enemigo::resetTiempoDisparo()
+{
+	tiempoDisparo = 0.0f;
+}
+
+float Enemigo::getTiempoDisparo()
+{
+	return tiempoDisparo;
+}
+
+bool Enemigo::getDisparado()
+{
+	return disparado;
+}
+
+void Enemigo::disparar(float dt)
+{
+	tiempoDisparo += dt;
+	disparado = true;
+	Bala *bullet = new Bala(smgr1, VD, mundo, pos, posJugador, damageBala, 2, 300.0f);
+	listaBalas.push_back(bullet);
+
+}
+
+void Enemigo::actualizarLista()
+{
+	if (!listaBalas.empty()) {
+		for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end();) {
+			if ((*it) != NULL) {
+				if (!(*it)->estaViva()) {
+
+					delete(*it);
+					it = listaBalas.erase(it);
+				}
+				else
+					it++;
+			}
+			else
+				it++;
+		}
+
+		for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end(); it++) {
+			if ((*it) != NULL && (*it)->estaViva() == true) {
+				(*it)->moverEnemigoDisparo();
+				//(*it)->update();
+			}
+		}
+	}
+}
+
+void Enemigo::setPosJugador(float x, float y)
+{
+	posJugador.X = x;
+	posJugador.Y = y;
+
+	//std::cout << std::endl;
+	//std::cout << "SET ENEMIGO" << std::endl;
+	//std::cout << "POS X: " << posJugador.X << "POS Y(Z): " << posJugador.Y << std::endl;
+	//std::cout << std::endl;
+
+}
+
+Nodo * Enemigo::getNodoInicio()
+{
+	return puntoIni;
+}
+
+Nodo * Enemigo::getNodoFin()
+{
+	return puntoFin;
 }

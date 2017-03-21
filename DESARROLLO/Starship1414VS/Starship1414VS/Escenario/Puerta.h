@@ -11,8 +11,15 @@
 *
 * Created on 15 de diciembre de 2016, 20:03
 */
+#include <irrlicht.h>
 #include <Box2D\Box2D.h>
-#include "../Fisicas/Entity2D.h"
+
+using namespace irr;
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
 
 #ifndef PUERTA_H
 #define PUERTA_H
@@ -25,7 +32,7 @@ class Estados;
 class Puerta {
 public:
 
-	Puerta(int ident, vector3df posicion, vector3df rotacion, vector3df escala, IMeshSceneNode *objeto);
+	Puerta(int ident, vector3df posicion, vector3df rotacion, vector3df escala, IMeshSceneNode *objeto, std::string llave);
 	Puerta(const Puerta& orig);
 	virtual ~Puerta();
 
@@ -47,6 +54,7 @@ public:
 	void UpdateEstado();
 	bool getDetectado();
 	std::string getEstado();
+	std::string getLlaveAsociada();
 
 private:
 	int id;
@@ -67,6 +75,8 @@ private:
 	Estados* ABIERTA;
 	Estados* CERRADA;
 	Estados* BLOQUEADA;
+	Estados* BLOQLLAVE;
+	std::string llaveAsociada;
 };
 
 #endif /* PUERTA_H */

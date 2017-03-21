@@ -13,7 +13,11 @@
 
 #include "CriaAlien.h"
 #include "Nodo.h"
-
+#include "navmeshes.h"
+#include "AStar.h"
+#include "../Escenario/Escenario.h"
+#include "../Fisicas/Entity2D.h"
+#include "Waypoints.h"
 
 CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos) {
     
@@ -22,7 +26,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	maya = smgr -> addCubeSceneNode(5); //preguntar a Miguel Angel
     if (maya) {
         maya -> setPosition(posicion); //vector3df(0, 10, 40)
-        maya->getMaterial(0).EmissiveColor.set(0, 128, 0, 20);
+        maya->getMaterial(0).EmissiveColor.set(0, 0, 0, 20);
     }
 
     vel = 50.0f;
@@ -32,13 +36,17 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     estadoActual = DESCANSAR;
     raza = CRIA;
     blindaje = 0.0f;
+	damageChoque = 10.0f;
    // nav = new navmeshes(10, esce);
         waypoints = puntos;
    // waypoints->creaPesos(entity);
 
 	waypoints->mostrarPesos();
 
-
+	disparado = false;
+	//posJugador.X  = -30.0f;
+	//posJugador.Y = -90.0f;
+	damageBala = 10.0f;
 
 
 
@@ -52,6 +60,10 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
 
     // dibujaGrid(smgr);
+	std::cout << "" << std::endl;
+
+	std::cout << "////////////////////////" << std::endl;
+	std::cout << "VIVO: " << maya << std::endl;
 
 
 }
@@ -88,9 +100,9 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
     }
 }
 
-void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
+void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
 	
-	
+	//crear metodos para todos los estados
 	switch (estadoActual) {
 
         case DESCANSAR: //descansar
@@ -101,23 +113,24 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
 				posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
 				puntoIni = waypoints->getNodoX(posNodo);	
 				
-				std::cout << std::endl;
-			std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
-			std::cout << "POS NODO: " << posNodo << std::endl;
+			//	std::cout << std::endl;
+			//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
+			//std::cout << "POS NODO: " << posNodo << std::endl;
 			}
 		
             
 			
 			
 				dir = path->getDireccion(pos, puntoIni->getPosicion());
-				std::cout << std::endl;
+			/*	std::cout << std::endl;
 				std::cout << "DIR: " << dir << std::endl;
-				std::cout << std::endl;
+				std::cout << std::endl;*/
 
 				this->Mover(dir);
 
 				if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
 					estadoActual = PATRULLAR;
+			
 					dir = -1;
 					this->setVelocidad();
 					
@@ -127,47 +140,35 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
 
         case PATRULLAR: //patrullar
           
-            maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
-			if(puntoFin == nullptr) {
-
-				posNodo = path->buscarWaypointMasCorto(posNodo);
-				puntoFin = waypoints->getNodoX(posNodo);
-				std::cout << std::endl;
-				std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;
-				
-			}
-
-			else {
-				maya->getMaterial(0).EmissiveColor.set(0, 15, 150, 200);
-
-				
-				dir = path->getDireccion(pos, puntoFin->getPosicion());
-				std::cout << std::endl;
-				std::cout << "DIR: " << dir << std::endl;
-				std::cout << std::endl;
-				this->Mover(dir);
-				if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
-					dir = -1;
-					this->setVelocidad();
-					puntoIni = puntoFin;
-					puntoFin = nullptr;
-					
-					/*posNodo = path->buscarWaypointMasCorto(posNodo);
-					puntoFin = waypoints->getNodoX(posNodo);*/
-
-				}
-				
-
-			}
-
-			/*std::cout << std::endl;
-			std::cout << "PATRULLO PREMO!" << std::endl;
-			std::cout << std::endl;*/
+			this->Patrullar();
+           
             break;
 
         case ATACAR: //atacar
            
             maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 0);
+	/*		std::cout << std::endl;
+			std::cout << "CRIA ALIEN" << std::endl;
+			std::cout << "POS X: " << posJugador.X << "POS Y(Z): " << posJugador.Y << std::endl;
+			std::cout << std::endl;*/
+
+			if (disparado == false) {
+
+				this->disparar(dt); //donde crea la bala
+
+			}
+
+
+			if ( disparado == true) {
+				this->aumentarTiempoDisparo(dt);
+				if (this->getTiempoDisparo() >= 0.7f) {
+					this->setDisparo(false);
+					this->resetTiempoDisparo();
+				}
+			}
+
+			this->setVelocidad();
+
             break;
 
 
@@ -177,6 +178,11 @@ void CriaAlien::Update() { //cambiar a que no se le pase nada y que en el estado
 
 			break;
     }
+
+	this->actualizarLista();
+	
+
+
 }
 
 void CriaAlien::Mover(int modo) {
@@ -311,6 +317,55 @@ void CriaAlien::Mover(int modo) {
 }
 
 void CriaAlien::Patrullar() {
+
+	maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
+	if (puntoFin == nullptr) {
+
+		posNodo = path->buscarWaypointMasCorto(posNodo);
+		puntoFin = waypoints->getNodoX(posNodo);
+		
+		if(nodoAnterior == puntoFin) {
+
+			std::cout << std::endl;
+			std::cout << "CACA" << std::endl;
+			posNodo = path->buscarWaypointNoRepetido(puntoFin->getLugarDelNodo(), puntoIni->getLugarDelNodo());
+			puntoFin = waypoints->getNodoX(posNodo);
+
+		}
+
+		/*std::cout << std::endl;
+		std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;*/
+
+	}
+
+	else {
+	
+
+
+		dir = path->getDireccion(pos, puntoFin->getPosicion());
+		/*	std::cout << std::endl;
+		std::cout << "DIR: " << dir << std::endl;
+		std::cout << std::endl;*/
+		this->Mover(dir);
+		if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
+			dir = -1;
+			this->setVelocidad();
+		
+			nodoAnterior = puntoIni;
+			puntoIni = puntoFin;
+			puntoFin = nullptr;
+
+			/*posNodo = path->buscarWaypointMasCorto(posNodo);
+			puntoFin = waypoints->getNodoX(posNodo);*/
+
+		}
+
+
+	}
+
+	/*std::cout << std::endl;
+	std::cout << "PATRULLO PREMO!" << std::endl;
+	std::cout << std::endl;*/
 
 }
 

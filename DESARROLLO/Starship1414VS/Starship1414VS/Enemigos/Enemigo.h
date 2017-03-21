@@ -14,15 +14,26 @@
 
 
 #include <iostream>
-#include "../Fisicas/Entity2D.h"
-#include "Waypoints.h"
-#include "AStar.h"
+#include <irrlicht.h>
+#include <Box2D\Box2D.h>
+#include <list>
 
+using namespace irr;
+
+using namespace core;
+using namespace scene;
+using namespace video;
+using namespace io;
+using namespace gui;
 
 #ifndef ENEMIGO_H
 #define ENEMIGO_H
 
 class Nodo;
+class AStar;
+class Waypoints;
+class Entity2D;
+class Bala;
 
 #define CRIA 10
 #define BERSERKER 11
@@ -48,7 +59,7 @@ public:
 	// Enemigo(const Enemigo& orig);
 	virtual ~Enemigo();
 
-	virtual void Update();
+	virtual void Update(f32 dt);
 	virtual void Mover(int modo);
 	void setVelocidad();
 	virtual void Patrullar();
@@ -59,6 +70,23 @@ public:
 	virtual void quitarVida(float damage) = 0;
 	float getVida();
 	Entity2D*  getEntity();
+	float getDamageChoque();
+	void setEstado(int num);
+	int getEstado();
+
+	void setDisparo(bool x);
+	void aumentarTiempoDisparo(float t);
+	void resetTiempoDisparo();
+	float getTiempoDisparo();
+	bool getDisparado();
+	void disparar(float dt);
+	void actualizarLista();
+	void setPosJugador(float x, float y);
+	Nodo* getNodoInicio();
+	Nodo* getNodoFin();
+
+
+
 
 protected:
 	
@@ -74,12 +102,24 @@ protected:
 	ITextSceneNode *GVida;
 	ITextSceneNode *RVida;
 	ISceneManager* smgr1;
+	IVideoDriver* VD;
+	b2World* mundo;
 	float blindaje;
 	Waypoints *waypoints;
 	AStar *path;
-	Nodo *puntoIni, *puntoFin;
+	Nodo *puntoIni, *puntoFin, *nodoAnterior;
 	int dir, posNodo;
+	float damageChoque;
 	
+
+	std::list<Bala*> listaBalas;
+	//std::list<Nodo*> recorrido;
+	bool disparado;
+	float tiempoDisparo;
+	vector2df posJugador;
+	float damageBala;
+
+
 };
 
 #endif /* ENEMIGO_H */

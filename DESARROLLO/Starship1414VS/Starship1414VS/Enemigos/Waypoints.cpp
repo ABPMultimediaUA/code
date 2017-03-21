@@ -14,6 +14,7 @@
 #include "Waypoints.h"
 #include <math.h>
 #include "Nodo.h"
+#include "../Fisicas/Entity2D.h"
 
 
 

@@ -17,15 +17,17 @@
 #include <iostream>
 #include <Box2D\Box2D.h>
 #include <list>
-#include "Bala.h"
-#include "../Fisicas/Entity2D.h"
-#include "Pistola.h"
-#include "Fusil.h"
-#include "Escopeta.h"
+
 
 #ifndef PERSONAJE_H
 #define PERSONAJE_H
 
+class Bala;
+class Pistola;
+class Fusil;
+class Escopeta;
+class Entity2D;
+class Juego;
 
 using namespace irr;
 
@@ -54,16 +56,20 @@ private:
 	f32 tiempoDisparo;
 	bool disparo;
 	bool teclaE;
+	bool impulso = false;
 	std::list<Bala*> listaBalas;
 	int direccion;
 	int armaActual;
 	Pistola *pistola;
 	Fusil *fusil;
 	Escopeta *escopeta;
+	float temporizador;
+	float vida;
+	Juego *game;
 
 
 public:
-	Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
+	Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world, Juego *j);
 	Personaje(const Personaje& orig);
 	virtual ~Personaje();
 
@@ -80,6 +86,20 @@ public:
 	float getTiempoArma();
 	int getArmaActual();
 	bool getTeclaE();
+	bool getImpulso();
+	void setImpulso(bool x);
+	void quitarVida(float damage);
+	float getVida();
+
+	void pasarMensaje();
+
+	void iniciarTiempoImpulso();
+
+	void disminuirTem();
+
+	float getTemporizador();
+
+	
 
 	void moverPersonaje(int modo, f32 dt);
 	void setVelocidad();

@@ -32,7 +32,7 @@ public:
 	Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* smgr);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirPared);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta, ISceneManager* smgr, int ident);
-	Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala);
+	Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala, int tipo);
 	Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, ISceneManager* smgr);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirObjeto, int tipo);
 
@@ -52,6 +52,7 @@ public:
 	void crearFixture();
 	b2Body* getSombraP2D();
 	b2Body* getSombraE2D();
+	b2Body* getPuertaBody();
 	int getId();
 
 private:
@@ -65,6 +66,7 @@ private:
 	b2Filter filtro;
 	b2Body *sombraP;
 	b2Body *sombraE;
+	b2Body *puertaBody;
 	b2BodyDef sombraDef;
 	b2PolygonShape sombraShape;
 	IMeshSceneNode* fisica;

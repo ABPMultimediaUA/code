@@ -15,10 +15,13 @@
 #ifndef NAVMESHES_H
 #define NAVMESHES_H
 
+#include <iostream>
 #include <math.h>
 #include <stdlib.h>
-#include "../Escenario/Escenario.h"
+#include <list>
 
+class Escenario;
+class Pared;
 class navmeshes {
 
 public:

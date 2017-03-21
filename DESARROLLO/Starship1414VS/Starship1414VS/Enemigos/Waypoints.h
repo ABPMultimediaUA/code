@@ -16,12 +16,17 @@
 #define WAYPOINTS_H
 
 
+#include <irrlicht.h>
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../Fisicas/Entity2D.h"
 
+
+class Entity2D;
 class Nodo;
+
+using namespace irr;
+using namespace core;
 
 class Waypoints {
 
