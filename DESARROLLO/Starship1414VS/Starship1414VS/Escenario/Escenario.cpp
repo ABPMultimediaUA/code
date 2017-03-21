@@ -26,6 +26,8 @@
 #include "../Enemigos/Enemigo.h"
 #include "Pared.h"
 #include "ObjConsumables\Objetos.h"
+#include "ObjConsumables\Botiquines.h"
+#include "ObjConsumables\Llave.h"
 #include "ObjConsumables\TiposDeMunicion\MunicionEscopeta.h"
 #include "ObjConsumables\TiposDeMunicion\MunicionPistola.h"
 #include "ObjConsumables\TiposDeMunicion\MunicionSubfusil.h"
@@ -1333,89 +1335,91 @@ void Escenario::dibujarEscenario() {
 
 		}
 
+		/*
+		0: botiquin
+		1: llave
+		2: municion de pistola
+		3:   " " de subfusil
+		4:   " " de escopeta
+		*/
+
+		if((*I).nombre == "BOTIQUINES") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+
+				IMeshSceneNode *objeto = SM->addCubeSceneNode(2.0f, 0, -1,
+					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
+					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
+					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
+				objeto->getMaterial(0).EmissiveColor.set(20, 255, 0, 0);
+
+				Botiquines *bot = new Botiquines(objeto->getPosition(), objeto->getRotation(), objeto->getScale(), 0, objeto);
+
+				bot->setFisica(mundo);
+				objConsumables.push_back(bot);
+
+			}
+		}
+
+		if ((*I).nombre == "MUNICION_PISTOLA") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+
+				IMeshSceneNode *municion = SM->addCubeSceneNode(1.5f, 0, -1,
+					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
+					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
+					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
+				municion->getMaterial(0).EmissiveColor.set(0, 128, 0, 128);
+
+				MunicionPistola *pistola = new MunicionPistola(municion->getPosition(), municion->getRotation(),
+					municion->getScale(), 2, municion, 2, 7);
+				pistola->setFisica(mundo);
+
+				objConsumables.push_back(pistola);
+
+			}
+		}
 
 
-		//if((*I).nombre == "FinalPosibles") {
+		
+		if ((*I).nombre == "MUNICION_ESCOPETA") {
 
-		//	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-		//		IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
-		//			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
-		//			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
-		//			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
-		//		objeto->getMaterial(0).EmissiveColor.set(20, 255, 0, 80);
+				IMeshSceneNode *municion = SM->addCubeSceneNode(1.5f, 0, -1,
+					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
+					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
+					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
+				municion->getMaterial(0).EmissiveColor.set(0, 0, 0, 128);
 
-		//		Terminal *terminal = new Terminal(vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)), 
-		//			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z), 
-		//			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z), mundo, objeto,this);
-		//		
-		//	}
+				MunicionEscopeta *escopeta = new MunicionEscopeta(municion->getPosition(), municion->getRotation(),
+					municion->getScale(), 4, municion, 4, 2);
+				escopeta->setFisica(mundo);
 
-		//}
+				objConsumables.push_back(escopeta);
 
+			}
+		}
 
-		//for (std::list<ElementoHijo>::iterator M = (*I).ObjetosEscena.begin(); M != (*I).ObjetosEscena.end(); M++) {
-		//	if ((*M).nombre == "Suelo") {
-		//		IMeshSceneNode *objeto = SM->addCubeSceneNode(100.0f, 0, -1,
-		//			vector3df((*M).position.x + (*I).position.x, (*M).position.y + (*I).position.y, (*M).position.z + (*I).position.y),
-		//			vector3df((*M).rotation.x + (*I).rotation.x, (*M).rotation.y + (*I).rotation.y, (*M).rotation.z + (*I).rotation.z),
-		//			vector3df((*M).escala.x * (*I).escala.x, 0, (*M).escala.z * (*I).escala.z));
-		//		objeto->getMaterial(0).EmissiveColor.set(0, 20, 20, 20);
-		//		tam = objeto->getScale().X * objeto->getScale().Z * 100;
-		//	}
-		//	else {
-		//	
-		//		for (std::list<Elemento>::iterator N = (*M).ObjetosEscena.begin(); N != (*M).ObjetosEscena.end(); N++) {
-		//			
-		//			if ((*M).nombre == "Puertas") {
-		//				//puertas
-		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
-		//					vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
-		//					vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
-		//					vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
-		//				objeto->getMaterial(0).EmissiveColor.set(0, 20+num*5, 5*num+60, 50-num);
+		if ((*I).nombre == "LLAVES") {
 
-		//				Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
-		//					vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
-		//					vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z),
-		//					objeto);
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-		//				door->setFisica(mundo,SM,num);
-		//				puertas.push_back(door);
-		//				num++;
-		//			}
+				IMeshSceneNode *objeto = SM->addCubeSceneNode(1.5f, 0, -1,
+					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
+					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
+					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
+				objeto->getMaterial(0).EmissiveColor.set(0, 128, 0, 0);
 
-		//			//                                if((*I).nombre=="Escenario"){
-		//			//                                      IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
-		//			//                                          vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)),10*((*N).position.y+((*M).position.y+(*I).position.y)),10*((*N).position.z+(*M).position.z+(*I).position.z)),
-		//			//                                          vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
-		//			//                                          vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
-		//			//                                         objeto->getMaterial(0).EmissiveColor.set(20,80,80,80);
-		//			//                                         Pared *wall = new Pared(vector3df(10*((*N).position.x+((*M).position.x+(*I).position.x)), 10*((*N).position.y+((*M).position.y+(*I).position.y)), 10*((*N).position.z+(*M).position.z+(*I).position.z)),
-		//			//                                                    vector3df((*N).rotation.x+(*M).rotation.x+(*I).rotation.x,(*N).rotation.y+(*M).rotation.y+(*I).rotation.y,(*N).rotation.z+(*M).rotation.z+(*I).rotation.z),
-		//			//                                                    vector3df(((*N).escala.x*(*M).escala.x*(*I).escala.x),(*N).escala.y*(*M).escala.y*(*I).escala.y,(*N).escala.z*(*M).escala.z*(*I).escala.z));
-		//			//
-		//			//                                         wall->setFisica(mundo);
-		//			//                                }
-		//			else {
-		//				//paredes y objetos
+				Llave *llave = new Llave(objeto->getPosition(), objeto->getRotation(),
+					objeto->getScale(), 1, objeto, (*I).nombre);
+				llave->setFisica(mundo);
 
-		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
-		//					vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
-		//					vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
-		//					vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
-		//				objeto->getMaterial(0).EmissiveColor.set(20, 80, 80, 80);
-		//				Pared *wall = new Pared(vector3df(10 * ((*N).position.x + ((*M).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*M).position.y + (*I).position.y)), 10 * ((*N).position.z + (*M).position.z + (*I).position.z)),
-		//					vector3df((*N).rotation.x + (*M).rotation.x + (*I).rotation.x, (*N).rotation.y + (*M).rotation.y + (*I).rotation.y, (*N).rotation.z + (*M).rotation.z + (*I).rotation.z),
-		//					vector3df(((*N).escala.x * (*M).escala.x * (*I).escala.x), (*N).escala.y * (*M).escala.y * (*I).escala.y, (*N).escala.z * (*M).escala.z * (*I).escala.z));
+				objConsumables.push_back(llave);
 
-		//				wall->setFisica(mundo);
-		//				paredes.push_back(wall);
-		//			}
-		//		}
-		//	}
+			}
+		}
 
-		//}
 
 
 	}
@@ -1425,55 +1429,74 @@ void Escenario::dibujarEscenario() {
 
 	//creacion de la municion de prueba que habra que transladar
 
-	IMeshSceneNode *municion = SM->addCubeSceneNode(1.5f);
-	municion->setPosition(vector3df(100, 5, 0));
-	municion->getMaterial(0).EmissiveColor.set(0, 128, 0, 0);
-	MunicionPistola *pistola = new MunicionPistola(municion->getPosition(), municion->getRotation(),
-		municion->getScale(), 2, municion, 2, 7);
-	pistola->setFisica(mundo);
+	//IMeshSceneNode *municion = SM->addCubeSceneNode(1.5f);
+	//municion->setPosition(vector3df(100, 5, 0));
+	//municion->getMaterial(0).EmissiveColor.set(0, 128, 0, 0);
+	//MunicionPistola *pistola = new MunicionPistola(municion->getPosition(), municion->getRotation(),
+	//	municion->getScale(), 2, municion, 2, 7);
+	//pistola->setFisica(mundo);
 
-	IMeshSceneNode *municion1 = SM->addCubeSceneNode(1.5f);
-	municion1->setPosition(vector3df(100, 5, 20));
-	municion1->getMaterial(0).EmissiveColor.set(0, 0, 128, 0);
-	MunicionSubfusil *subfusil = new MunicionSubfusil(municion1->getPosition(), municion1->getRotation(),
-		municion1->getScale(), 3, municion1, 3, 15);
-	subfusil->setFisica(mundo);
+	//IMeshSceneNode *municion1 = SM->addCubeSceneNode(1.5f);
+	//municion1->setPosition(vector3df(100, 5, 20));
+	//municion1->getMaterial(0).EmissiveColor.set(0, 0, 128, 0);
+	//MunicionSubfusil *subfusil = new MunicionSubfusil(municion1->getPosition(), municion1->getRotation(),
+	//	municion1->getScale(), 3, municion1, 3, 15);
+	//subfusil->setFisica(mundo);
 
 
-	IMeshSceneNode *municion2 = SM->addCubeSceneNode(1.5f);
-	municion2->setPosition(vector3df(100, 5, 40));
-	municion2->getMaterial(0).EmissiveColor.set(0, 0, 0, 128);
-	MunicionEscopeta *escopeta = new MunicionEscopeta(municion2->getPosition(), municion2->getRotation(),
-		municion2->getScale(), 4, municion2, 4, 2);
-	escopeta->setFisica(mundo);
+	//IMeshSceneNode *municion2 = SM->addCubeSceneNode(1.5f);
+	//municion2->setPosition(vector3df(100, 5, 40));
+	//municion2->getMaterial(0).EmissiveColor.set(0, 0, 0, 128);
+	//MunicionEscopeta *escopeta = new MunicionEscopeta(municion2->getPosition(), municion2->getRotation(),
+	//	municion2->getScale(), 4, municion2, 4, 2);
+	//escopeta->setFisica(mundo);
 
-	objConsumables.push_back(pistola);
-	objConsumables.push_back(subfusil);
-	objConsumables.push_back(escopeta);
+	//objConsumables.push_back(pistola);
+	//objConsumables.push_back(subfusil);
+	//objConsumables.push_back(escopeta);
 	std::cout << "-------------------------------------->" << tam << std::endl;
 	puntos->setTamDelMapa(tam);
 	puntos->creaPesos(entity);
 	fabricaDeEnemigos(puntos);
 
 
+
+
 }
 
 void Escenario::fabricaDeEnemigos(Waypoints* puntos) {
 
-	for (int i = 0; i < 1; i++) {
+	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
-		float x = rand() % 100;
-		float z = rand() % 200;
-		/*
-		if( i % 2 == 0){
-		AlienBerserker *alien = new AlienBerserker(smgr,driver, world, vector3df(x,10,z));
-		enemigos.push_back(alien);
-		}  */
+		if ((*I).nombre == "CRIAS_ALIENS") {
 
-		CriaAlien *ene = new CriaAlien(SM, VD, mundo, vector3df(x, 10, z), this, puntos);
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-		enemigos.push_back(ene);
 
+				CriaAlien *ene = new CriaAlien(SM, VD, mundo,
+					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z))
+					, this, puntos);
+
+				enemigos.push_back(ene);
+
+			}
+
+		}
+
+		//else if ((*I).nombre == "ALIENS_BERSERKER") {
+
+		//	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+
+
+		//		AlienBerserker *ene = new AlienBerserker(SM, VD, mundo,
+		//			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z))
+		//			, this, puntos);
+
+		//		enemigos.push_back(ene);
+
+		//	}
+
+		//}
 
 	}
 

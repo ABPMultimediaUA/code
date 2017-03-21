@@ -16,6 +16,8 @@
 #include "../MaquinaEstados/FSM/MaquinaEstados.h"
 #include "../Fisicas/Entity2D.h"
 
+#define VEL 200.0f
+
 Puerta::Puerta(int ident, vector3df posicion, vector3df rotacion, vector3df escala, IMeshSceneNode *objeto, std::string llave){
 	
 	id = ident;
@@ -34,8 +36,8 @@ Puerta::Puerta(int ident, vector3df posicion, vector3df rotacion, vector3df esca
 	Maquina = new MaquinaEstados();
 	Maquina->addEstado(CERRADA);
 	Maquina->addEstado(ABIERTA);
-	Maquina->addEstado(BLOQUEADA);
-	Maquina->addEstado(BLOQLLAVE, true); //dependiendo de que string se le pase se inicia en un estado o otro
+	Maquina->addEstado(BLOQUEADA, true);
+	Maquina->addEstado(BLOQLLAVE); //dependiendo de que string se le pase se inicia en un estado o otro
 	llaveAsociada = llave;
 	detectado = false;
 	idDetect = -1;
@@ -147,11 +149,11 @@ void Puerta::abrirPuerta() {
 	//si tiene rotacion en Y van | sino van -
 
 
-	if (rot.Y == 90) {
+	if (escal.Z != 1) {
 
 		if (limiteApZ + 70>entity->getCuerpo2D()->GetPosition().y)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 20.0f));
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, VEL));
 			pos.Z = entity->getCuerpo2D()->GetPosition().y;
 			maya->setPosition(pos);
 
@@ -172,7 +174,7 @@ void Puerta::abrirPuerta() {
 		
 		if (limiteApX+70>entity->getCuerpo2D()->GetPosition().x)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(20.0f, 0.0f));
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(VEL, 0.0f));
 			pos.X = entity->getCuerpo2D()->GetPosition().x;
 			maya->setPosition(pos);
 		}
@@ -199,11 +201,11 @@ void Puerta::cerrarPuerta() {
 
 
 
-	if (rot.Y == 90) {
+	if (escal.Z != 1) {
 
 		if (limiteApZ-5<entity->getCuerpo2D()->GetPosition().y)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, -20.0f));
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, -VEL));
 			pos.Z = entity->getCuerpo2D()->GetPosition().y;
 			maya->setPosition(pos);
 		}
@@ -220,7 +222,7 @@ void Puerta::cerrarPuerta() {
 		
 		if (limiteApX-5<entity->getCuerpo2D()->GetPosition().x)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-20.0f, 0.0f));
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-VEL, 0.0f));
 			pos.X = entity->getCuerpo2D()->GetPosition().x;
 			maya->setPosition(pos);
 		}

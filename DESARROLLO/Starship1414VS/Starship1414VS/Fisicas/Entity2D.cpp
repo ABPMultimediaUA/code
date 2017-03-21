@@ -139,12 +139,12 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
-    if (rot.Y == 90) {
+    if (escala.Z != 1) {
 
-        bodyShape.SetAsBox(100 * escala.Z, 5 * escala.X);
+        bodyShape.SetAsBox(20 * escala.Z, 5 * escala.X);
         bodyShape2.SetAsBox(5 * escala.Z, 5 * escala.X);	
     } else {
-        bodyShape.SetAsBox(5 * escala.X, 100 * escala.Z);
+        bodyShape.SetAsBox(5 * escala.X, 20 * escala.Z);
         bodyShape2.SetAsBox(5 * escala.X, 5 * escala.Z);	
     }
 

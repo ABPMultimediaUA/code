@@ -415,6 +415,17 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				entity2->setLive(false);
 			}
 
+			if((entity1->getIDEN() == 3 || entity1->getIDEN() == 6) && entity2->getIDEN() == 1) {
+				entity1->setLive(false);
+
+			}
+
+			else if ((entity2->getIDEN() == 3 || entity2->getIDEN() == 6) && entity1->getIDEN() == 1) {
+				entity2->setLive(false);
+
+			}
+
+
 			if (entity1->getIDEN() == 6 && entity2->getIDEN() == 0) {
 				quitarVidaJugador(entity2, entity1);
 				entity1->setLive(false);
