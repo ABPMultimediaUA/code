@@ -39,9 +39,6 @@
     <ClCompile Include="resourceManager\TRecurso.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="resourceManager\TRecursoMaterial.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
     <ClCompile Include="entityTree\TTriangle.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
@@ -55,6 +52,9 @@
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
     <ClCompile Include="resourceManager\TRecursoMalla.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="resourceManager\TRecursoTextura.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
@@ -152,9 +152,6 @@
     <ClInclude Include="resourceManager\TRecurso.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="resourceManager\TRecursoMaterial.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="entityTree\TTriangle.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -168,6 +165,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="resourceManager\TRecursoMalla.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resourceManager\TRecursoTextura.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

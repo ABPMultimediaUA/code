@@ -91,7 +91,7 @@
       <AdditionalIncludeDirectories>$(ProjectDir)tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-mt.lib;glew32s.lib;SOIL.lib;CORE_RL_Magick++_;CORE_RL_MagickCore_;CORE_RL_MagickWand_;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-mt.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -119,7 +119,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-mt.lib;glew32s.lib;SOIL.lib;CORE_RL_Magick++_;CORE_RL_MagickCore_;CORE_RL_MagickWand_;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-mt.lib;glew32s.lib;SOIL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -135,7 +135,7 @@
     <ClCompile Include="resourceManager\TGestorRecursos.cpp" />
     <ClCompile Include="resourceManager\TRecurso.cpp" />
     <ClCompile Include="resourceManager\TRecursoMalla.cpp" />
-    <ClCompile Include="resourceManager\TRecursoMaterial.cpp" />
+    <ClCompile Include="resourceManager\TRecursoTextura.cpp" />
     <ClCompile Include="resourceManager\TRecursoTriangle.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +150,7 @@
     <ClInclude Include="frameWork\shader.h" />
     <ClInclude Include="resourceManager\TGestorRecursos.h" />
     <ClInclude Include="resourceManager\TRecursoMalla.h" />
+    <ClInclude Include="resourceManager\TRecursoTextura.h" />
     <ClInclude Include="resourceManager\TRecursoTriangle.h" />
     <ClInclude Include="tools\glm\common.hpp" />
     <ClInclude Include="tools\glm\exponential.hpp" />
@@ -175,7 +176,6 @@
     <ClInclude Include="tools\glm\vec4.hpp" />
     <ClInclude Include="tools\glm\vector_relational.hpp" />
     <ClInclude Include="resourceManager\TRecurso.h" />
-    <ClInclude Include="resourceManager\TRecursoMaterial.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="models\Nanosuit\LICENSE.txt" />

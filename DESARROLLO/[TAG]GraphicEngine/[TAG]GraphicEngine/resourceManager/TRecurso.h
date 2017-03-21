@@ -6,7 +6,7 @@ public:
 	TRecurso();
 	TRecurso(std::string);
 	~TRecurso();
-	char* getNombre();
+	std::string getNombre();
 	void setNombre(std::string);
 	virtual bool cargarFichero(const std::string&) = 0;
 	virtual void draw() = 0;
