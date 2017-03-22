@@ -1593,6 +1593,936 @@
       ]
     },
     {
+      "name": "WAYPOINTS_ZONA1",
+      "components": [
+        {
+          "localPosition": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "Waypoint-1",
+          "components": [
+            {
+              "localPosition": [
+                4.8,
+                0.0,
+                13.79
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (1)",
+          "components": [
+            {
+              "localPosition": [
+                -8.1,
+                0.0,
+                13.93
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (2)",
+          "components": [
+            {
+              "localPosition": [
+                -8.09,
+                0.0,
+                -0.34
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (3)",
+          "components": [
+            {
+              "localPosition": [
+                -7.92,
+                0.0,
+                -17.8
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (4)",
+          "components": [
+            {
+              "localPosition": [
+                5.21,
+                0.0,
+                -10.27
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (5)",
+          "components": [
+            {
+              "localPosition": [
+                4.61,
+                0.0,
+                31.93
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (6)",
+          "components": [
+            {
+              "localPosition": [
+                11.15,
+                0.0,
+                36.71
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (7)",
+          "components": [
+            {
+              "localPosition": [
+                -7.56,
+                0.0,
+                -31.94
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (9)",
+          "components": [
+            {
+              "localPosition": [
+                -3.59,
+                0.0,
+                -56.9
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (10)",
+          "components": [
+            {
+              "localPosition": [
+                -29.83,
+                0.0,
+                -57.03
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (11)",
+          "components": [
+            {
+              "localPosition": [
+                -52.44,
+                0.0,
+                -56.45
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (12)",
+          "components": [
+            {
+              "localPosition": [
+                -52.6,
+                0.0,
+                -17.4
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (13)",
+          "components": [
+            {
+              "localPosition": [
+                -3.51,
+                0.0,
+                -70.18
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (14)",
+          "components": [
+            {
+              "localPosition": [
+                -3.43,
+                0.0,
+                -84.05
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (15)",
+          "components": [
+            {
+              "localPosition": [
+                10.02,
+                0.0,
+                -70.12
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (16)",
+          "components": [
+            {
+              "localPosition": [
+                10.19,
+                0.0,
+                -50.27
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (17)",
+          "components": [
+            {
+              "localPosition": [
+                19.73,
+                0.0,
+                -84.23
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (18)",
+          "components": [
+            {
+              "localPosition": [
+                -30.12,
+                0.0,
+                -41.76
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (19)",
+          "components": [
+            {
+              "localPosition": [
+                -39.77,
+                0.0,
+                -30.22
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (20)",
+          "components": [
+            {
+              "localPosition": [
+                -29.9,
+                0.0,
+                -15.76
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (21)",
+          "components": [
+            {
+              "localPosition": [
+                -19.99,
+                0.0,
+                -30.01
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
       "name": "ALMACEN_1",
       "components": [
         {
@@ -4518,6 +5448,678 @@
       ]
     },
     {
+      "name": "WAYPOINTS_ZONA4",
+      "components": [
+        {
+          "localPosition": [
+            -83.7,
+            1.0,
+            27.0
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "Waypoint-1",
+          "components": [
+            {
+              "localPosition": [
+                -8.14,
+                0.0,
+                0.59
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (1)",
+          "components": [
+            {
+              "localPosition": [
+                -18.9,
+                0.0,
+                0.4
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (2)",
+          "components": [
+            {
+              "localPosition": [
+                -31.5,
+                0.0,
+                9.4
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (3)",
+          "components": [
+            {
+              "localPosition": [
+                -31.2,
+                0.0,
+                -7.2
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (4)",
+          "components": [
+            {
+              "localPosition": [
+                7.8,
+                0.0,
+                0.44
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (5)",
+          "components": [
+            {
+              "localPosition": [
+                -0.52,
+                0.0,
+                -8.42
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (6)",
+          "components": [
+            {
+              "localPosition": [
+                -0.17,
+                0.0,
+                9.72
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (7)",
+          "components": [
+            {
+              "localPosition": [
+                18.98,
+                0.0,
+                0.04
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (8)",
+          "components": [
+            {
+              "localPosition": [
+                -0.85,
+                0.0,
+                20.13
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (9)",
+          "components": [
+            {
+              "localPosition": [
+                -11.32,
+                0.0,
+                26.95
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (10)",
+          "components": [
+            {
+              "localPosition": [
+                -0.89,
+                0.0,
+                32.84
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (11)",
+          "components": [
+            {
+              "localPosition": [
+                21.09,
+                0.0,
+                27.77
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (12)",
+          "components": [
+            {
+              "localPosition": [
+                9.51,
+                0.0,
+                27.53
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (13)",
+          "components": [
+            {
+              "localPosition": [
+                20.87,
+                0.0,
+                43.56
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (14)",
+          "components": [
+            {
+              "localPosition": [
+                -0.73,
+                0.0,
+                43.56
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Vestuario"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
       "name": "PASILLO_1",
       "components": [
         {
@@ -5186,6 +6788,807 @@
       ]
     },
     {
+      "name": "WAYPOINTS_ZONA2",
+      "components": [
+        {
+          "localPosition": [
+            -30.0,
+            1.0,
+            40.0
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "Waypoint-1",
+          "components": [
+            {
+              "localPosition": [
+                -9.83,
+                0.0,
+                16.82
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (1)",
+          "components": [
+            {
+              "localPosition": [
+                10.23,
+                0.0,
+                17.05
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (2)",
+          "components": [
+            {
+              "localPosition": [
+                10.3,
+                0.0,
+                -9.69
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (3)",
+          "components": [
+            {
+              "localPosition": [
+                -1.7,
+                0.0,
+                -9.87
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (4)",
+          "components": [
+            {
+              "localPosition": [
+                0.26,
+                0.0,
+                3.98
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (5)",
+          "components": [
+            {
+              "localPosition": [
+                -10.16,
+                0.0,
+                -1.84
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (6)",
+          "components": [
+            {
+              "localPosition": [
+                -1.32,
+                0.0,
+                -24.26
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (7)",
+          "components": [
+            {
+              "localPosition": [
+                9.77,
+                0.0,
+                -24.76
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (8)",
+          "components": [
+            {
+              "localPosition": [
+                -22.4,
+                0.0,
+                17.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (9)",
+          "components": [
+            {
+              "localPosition": [
+                -22.3,
+                0.0,
+                -20.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (10)",
+          "components": [
+            {
+              "localPosition": [
+                -22.71,
+                0.0,
+                31.61
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (11)",
+          "components": [
+            {
+              "localPosition": [
+                -22.95,
+                0.0,
+                47.61
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (12)",
+          "components": [
+            {
+              "localPosition": [
+                -0.06,
+                0.0,
+                47.4
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (13)",
+          "components": [
+            {
+              "localPosition": [
+                21.5,
+                0.0,
+                9.3
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (14)",
+          "components": [
+            {
+              "localPosition": [
+                21.11,
+                0.0,
+                31.53
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (15)",
+          "components": [
+            {
+              "localPosition": [
+                21.54,
+                0.0,
+                -10.23
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (16)",
+          "components": [
+            {
+              "localPosition": [
+                -22.36,
+                0.0,
+                -2.24
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (17)",
+          "components": [
+            {
+              "localPosition": [
+                -1.1,
+                0.0,
+                31.8
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
       "name": "BOTIQUINES",
       "components": [
         {
@@ -5215,9 +7618,9 @@
           "components": [
             {
               "localPosition": [
-                58.0,
+                58.24,
                 0.0,
-                41.0
+                40.29
               ],
               "localRotation": [
                 0.0,
@@ -5310,6 +7713,850 @@
               "name": null,
               "parentName": null,
               "type": "Transform"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "WAYPOINTS_ZONA3",
+      "components": [
+        {
+          "localPosition": [
+            -91.1,
+            1.0,
+            -38.3
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "Waypoint-1",
+          "components": [
+            {
+              "localPosition": [
+                -9.83,
+                0.0,
+                16.82
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (1)",
+          "components": [
+            {
+              "localPosition": [
+                21.1,
+                0.0,
+                16.6
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (2)",
+          "components": [
+            {
+              "localPosition": [
+                19.9,
+                0.0,
+                -11.9
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (3)",
+          "components": [
+            {
+              "localPosition": [
+                -23.3,
+                0.0,
+                -12.1
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (4)",
+          "components": [
+            {
+              "localPosition": [
+                -23.7,
+                0.0,
+                3.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (5)",
+          "components": [
+            {
+              "localPosition": [
+                -24.2,
+                0.0,
+                16.8
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (6)",
+          "components": [
+            {
+              "localPosition": [
+                -24.34,
+                0.0,
+                30.57
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (7)",
+          "components": [
+            {
+              "localPosition": [
+                0.83,
+                0.0,
+                31.1
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (8)",
+          "components": [
+            {
+              "localPosition": [
+                18.2,
+                0.0,
+                31.27
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (9)",
+          "components": [
+            {
+              "localPosition": [
+                31.2,
+                0.0,
+                31.7
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (10)",
+          "components": [
+            {
+              "localPosition": [
+                31.1,
+                0.0,
+                44.2
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (11)",
+          "components": [
+            {
+              "localPosition": [
+                49.5,
+                0.0,
+                38.2
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (12)",
+          "components": [
+            {
+              "localPosition": [
+                67.01,
+                0.0,
+                38.67
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (13)",
+          "components": [
+            {
+              "localPosition": [
+                17.8,
+                0.0,
+                45.8
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (14)",
+          "components": [
+            {
+              "localPosition": [
+                -5.5,
+                0.0,
+                45.4
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (15)",
+          "components": [
+            {
+              "localPosition": [
+                -37.55,
+                0.0,
+                45.04
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (16)",
+          "components": [
+            {
+              "localPosition": [
+                -36.9,
+                0.0,
+                18.2
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (17)",
+          "components": [
+            {
+              "localPosition": [
+                -37.71,
+                0.0,
+                79.97
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (18)",
+          "components": [
+            {
+              "localPosition": [
+                -37.8,
+                0.0,
+                112.5
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
             }
           ],
           "children": []
@@ -8439,1581 +11686,6 @@
       ]
     },
     {
-      "name": "WAYPOINTS",
-      "components": [
-        {
-          "localPosition": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "localRotation": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "localScale": [
-            1.0,
-            1.0,
-            1.0
-          ],
-          "name": null,
-          "parentName": null,
-          "type": "Transform"
-        }
-      ],
-      "children": [
-        {
-          "name": "Waypoint-1",
-          "components": [
-            {
-              "localPosition": [
-                -80.0,
-                1.0,
-                53.5
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-2",
-          "components": [
-            {
-              "localPosition": [
-                -25.0,
-                1.0,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-3",
-          "components": [
-            {
-              "localPosition": [
-                -115.0,
-                1.0,
-                -7.5
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-5",
-          "components": [
-            {
-              "localPosition": [
-                -7.0,
-                1.0,
-                -40.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-6",
-          "components": [
-            {
-              "localPosition": [
-                -75.0,
-                1.0,
-                -25.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-8",
-          "components": [
-            {
-              "localPosition": [
-                0.0,
-                1.0,
-                -80.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-9",
-          "components": [
-            {
-              "localPosition": [
-                -115.0,
-                1.0,
-                -45.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-10",
-          "components": [
-            {
-              "localPosition": [
-                15.0,
-                1.0,
-                -50.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-11",
-          "components": [
-            {
-              "localPosition": [
-                8.0,
-                1.0,
-                -32.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-12",
-          "components": [
-            {
-              "localPosition": [
-                -52.0,
-                1.0,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-13",
-          "components": [
-            {
-              "localPosition": [
-                -63.0,
-                1.0,
-                6.5
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-14",
-          "components": [
-            {
-              "localPosition": [
-                -63.0,
-                1.0,
-                -7.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-15",
-          "components": [
-            {
-              "localPosition": [
-                -80.0,
-                1.0,
-                72.5
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-16",
-          "components": [
-            {
-              "localPosition": [
-                0.0,
-                1.0,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-17",
-          "components": [
-            {
-              "localPosition": [
-                -30.0,
-                1.0,
-                -56.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-18",
-          "components": [
-            {
-              "localPosition": [
-                -52.5,
-                1.0,
-                87.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-20",
-          "components": [
-            {
-              "localPosition": [
-                8.5,
-                1.0,
-                32.5
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-21",
-          "components": [
-            {
-              "localPosition": [
-                -128.0,
-                1.0,
-                6.5
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-25",
-          "components": [
-            {
-              "localPosition": [
-                -8.5,
-                1.0,
-                70.5
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-26",
-          "components": [
-            {
-              "localPosition": [
-                -7.0,
-                1.0,
-                -56.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-27",
-          "components": [
-            {
-              "localPosition": [
-                -52.0,
-                1.0,
-                -56.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-28",
-          "components": [
-            {
-              "localPosition": [
-                -52.0,
-                1.0,
-                -24.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-29",
-          "components": [
-            {
-              "localPosition": [
-                -75.0,
-                1.0,
-                -45.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-30",
-          "components": [
-            {
-              "localPosition": [
-                -128.0,
-                1.0,
-                -20.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-35",
-          "components": [
-            {
-              "localPosition": [
-                -30.0,
-                1.0,
-                -30.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-36",
-          "components": [
-            {
-              "localPosition": [
-                -65.0,
-                1.0,
-                27.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-39",
-          "components": [
-            {
-              "localPosition": [
-                -52.0,
-                1.0,
-                70.5
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-41",
-          "components": [
-            {
-              "localPosition": [
-                -52.0,
-                1.0,
-                57.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-42",
-          "components": [
-            {
-              "localPosition": [
-                -52.0,
-                1.0,
-                20.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-43",
-          "components": [
-            {
-              "localPosition": [
-                -8.5,
-                1.0,
-                87.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-44",
-          "components": [
-            {
-              "localPosition": [
-                -40.0,
-                1.0,
-                57.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-46",
-          "components": [
-            {
-              "localPosition": [
-                -85.0,
-                1.0,
-                27.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-48",
-          "components": [
-            {
-              "localPosition": [
-                -31.5,
-                1.0,
-                30.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-49",
-          "components": [
-            {
-              "localPosition": [
-                -25.0,
-                1.0,
-                15.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-50",
-          "components": [
-            {
-              "localPosition": [
-                -128.5,
-                1.0,
-                69.8
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-51",
-          "components": [
-            {
-              "localPosition": [
-                -110.0,
-                1.0,
-                27.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "S_Arsenal"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        }
-      ]
-    },
-    {
       "name": "SALA_ESPERA",
       "components": [
         {
@@ -11143,9 +12815,9 @@
           "components": [
             {
               "localPosition": [
-                56.09,
+                56.79,
                 0.0,
-                -39.07
+                -38.85
               ],
               "localRotation": [
                 0.0,
@@ -12483,7 +14155,7 @@
       ],
       "children": [
         {
-          "name": "GameObject",
+          "name": "zona3",
           "components": [
             {
               "localPosition": [
@@ -12509,7 +14181,7 @@
           "children": []
         },
         {
-          "name": "GameObject (1)",
+          "name": "zona4",
           "components": [
             {
               "localPosition": [
@@ -12535,7 +14207,7 @@
           "children": []
         },
         {
-          "name": "GameObject (2)",
+          "name": "zona3",
           "components": [
             {
               "localPosition": [
@@ -13804,7 +15476,7 @@
       ],
       "children": [
         {
-          "name": "GameObject",
+          "name": "zona3",
           "components": [
             {
               "localPosition": [
@@ -13830,7 +15502,7 @@
           "children": []
         },
         {
-          "name": "GameObject (1)",
+          "name": "zona1",
           "components": [
             {
               "localPosition": [
@@ -13856,7 +15528,7 @@
           "children": []
         },
         {
-          "name": "GameObject (2)",
+          "name": "zona1",
           "components": [
             {
               "localPosition": [
@@ -13882,13 +15554,39 @@
           "children": []
         },
         {
-          "name": "GameObject (3)",
+          "name": "zona3",
           "components": [
             {
               "localPosition": [
-                71.4,
+                -41.4,
                 0.0,
-                -80.9
+                -58.6
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "zona2",
+          "components": [
+            {
+              "localPosition": [
+                13.0,
+                0.0,
+                74.3
               ],
               "localRotation": [
                 0.0,

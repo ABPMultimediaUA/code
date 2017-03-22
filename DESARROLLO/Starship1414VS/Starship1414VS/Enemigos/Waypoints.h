@@ -45,6 +45,7 @@ public:
 	void MuestraPuntos();
 	void creaPuntos(std::string nombre, vector3df posicion);
 	void creaPesos(Entity2D * entity);
+	void crearMatriz();
 	void mostrarPesos();
 	void setTamDelMapa(int tam);
 	float** getMatriz();

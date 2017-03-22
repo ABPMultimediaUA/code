@@ -33,7 +33,7 @@ public:
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirPared);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, bool sensor, void* dirPuerta, ISceneManager* smgr, int ident);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void* dirBala, int tipo);
-	Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, ISceneManager* smgr);
+	Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, ISceneManager* smgr, unsigned int raza);
 	Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escala, void* dirObjeto, int tipo);
 
 	Entity2D(const Entity2D& orig);

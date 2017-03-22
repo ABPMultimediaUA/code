@@ -471,13 +471,13 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				entity1->setLive(false);
 			}
 
-			//metodo para que quite vida al personaje
+			
 
-			if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true) {
+			if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true && f2->IsSensor() != true) {
 				actualizarPuerta(entity1, 0);
 			}
 
-			else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true) {
+			else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true && f1->IsSensor() != true) {
 				actualizarPuerta(entity2, 0);
 			}
 

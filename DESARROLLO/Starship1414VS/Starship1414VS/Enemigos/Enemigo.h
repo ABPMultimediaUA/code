@@ -40,12 +40,12 @@ class Bala;
 #define SOLDADO 12
 #define JEFE 13
 
-#define DESCANSAR 0
+#define BUSCARPUNTO 0
 #define PATRULLAR 1
 #define ALERTA 2
 #define ATACAR 3
 #define ROTACION 4
-
+#define DESCANSAR 5
 
 
 #ifdef _IRR_WINDOWS_
@@ -60,9 +60,11 @@ public:
 	virtual ~Enemigo();
 
 	virtual void Update(f32 dt);
-	virtual void Mover(int modo);
+	void Mover(int modo);
 	void setVelocidad();
 	virtual void Patrullar();
+	virtual void Atacar(f32 dt);
+	virtual void BuscarWaypoint();
 	void setPos(vector3df pos);
 	bool estaVivo();
 	vector3df getPos();

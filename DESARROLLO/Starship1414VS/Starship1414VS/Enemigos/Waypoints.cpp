@@ -55,14 +55,17 @@ void Waypoints::creaPuntos(std::string nombre, vector3df posicion) {
 }
 
 void Waypoints::creaPesos(Entity2D *entity) {
-    pesos = new float*[puntos.size()];
+  
     float weightX = 0;
     float weightZ = 0;
     float weight = 0;
 
-    for (int i = 0; i < puntos.size(); i++) {
-        pesos[i] = new float[puntos.size()];
-    }
+	//pesos = new float*[puntos.size()];
+ //   for (int i = 0; i < puntos.size(); i++) {
+ //       pesos[i] = new float[puntos.size()];
+ //   }
+
+
     for (int i = 0; i < puntos.size(); i++) {
 
         for (int j = 0; j < puntos.size(); j++) {
@@ -101,19 +104,32 @@ void Waypoints::creaPesos(Entity2D *entity) {
 					weight = -1;
 				}
 
-                std::cout<<"///////////////////////"<<std::endl;
-                std::cout<< puntos[i]->getNombre()<<std::endl;
-                std::cout<<"I: "<<i<<"J: "<<j<<std::endl;
-                std::cout<< puntos[j]->getNombre() <<std::endl;
+                //std::cout<<"///////////////////////"<<std::endl;
+                //std::cout<< puntos[i]->getNombre()<<std::endl;
+                //std::cout<<"I: "<<i<<"J: "<<j<<std::endl;
+                //std::cout<< puntos[j]->getNombre() <<std::endl;
 				
-                std::cout << "F = " << f << std::endl;
+                //std::cout << "F = " << f << std::endl;
               
-                std::cout<<"PESO: "<<weight<<std::endl;
+                //std::cout<<"PESO: "<<weight<<std::endl;
+
                 pesos[i][j] = weight;
 
             }
         }
     }
+
+}
+
+void Waypoints::crearMatriz()
+{
+
+	pesos = new float*[puntos.size()];
+	pesos[0] = new float[puntos.size()*puntos.size()];
+
+	for (std::size_t i = 1; i < puntos.size(); i++) {
+		pesos[i] = pesos[0] + puntos.size() * i;
+	}
 
 }
 

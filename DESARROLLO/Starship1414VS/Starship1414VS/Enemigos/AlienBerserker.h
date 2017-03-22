@@ -24,8 +24,9 @@ public:
 	// AlienBerserker(const AlienBerserker& orig);
 	virtual ~AlienBerserker();
 	void Update(f32 dt);
-	void Mover(int modo);
 	void Patrullar();
+	void Atacar(f32 dt);
+	void BuscarWaypoint();
 	void quitarVida(float damage);
 private:
 

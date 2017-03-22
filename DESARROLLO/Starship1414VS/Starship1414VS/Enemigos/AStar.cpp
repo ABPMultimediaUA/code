@@ -80,7 +80,7 @@ int AStar::buscarWaypointMasCorto(const int &posNodoIni)
 int AStar::buscarWaypointNoRepetido(const int & posWaypointRep, const int & posNodoActual)
 {
 	float min = 10000000;
-	int pos;
+	int pos = -1;
 	for (int i = 0; i < tamMatrix; i++) {
 
 		if (i != posWaypointRep && matriz[posNodoActual][i] != 0 && matriz[posNodoActual][i] != -1 && matriz[posNodoActual][i] < min) {
@@ -90,6 +90,10 @@ int AStar::buscarWaypointNoRepetido(const int & posWaypointRep, const int & posN
 
 		}
 
+	}
+
+	if (pos == -1) {
+		pos = posWaypointRep;
 	}
 
 
