@@ -5,9 +5,12 @@
 #define GLEW_STATIC
 #include <GL/glew.h>
 #endif
-#include <assimp\mesh.h>
+#include <assimp\scene.h>
 #include <glm\vec3.hpp>
 #include <glm\vec2.hpp>
+#include <vector>
+#include <map>
+#include <memory>
 
 class TRecursoMalla :
 	public TRecurso
@@ -22,7 +25,6 @@ class TRecursoMalla :
 		void init(const aiMesh*);
 	private:
 		TRecursoMalla* model;
-		std::vector<glm::vec3> vertex;
 		std::vector<glm::vec3> vertex;
 		std::vector<glm::vec3> normal;
 		std::vector<glm::vec2> uv;
@@ -43,9 +45,15 @@ class TRecursoMalla :
 public:
 	TRecursoMalla();
 	~TRecursoMalla();
-	bool cargarFichero(const std::string&);
+	bool cargarFichero(std::string);
 	void draw();
+	void draw(GLuint);
 private:
-
+	std::string directory;
+	const aiScene* scene;
+	std::map<std::string, GLuint> textures;
+	std::vector<std::shared_ptr<Mesh>> meshes;
+	
+	void processNode(const aiNode*, const aiScene*);
 };
 

@@ -10,7 +10,6 @@ class TMalla :
 public:
 	TMalla();
 	TMalla(std::string);
-	TMalla(std::string path, shader* s);
 	~TMalla();
 	void cargarMalla(std::string);
 	void beginDraw();

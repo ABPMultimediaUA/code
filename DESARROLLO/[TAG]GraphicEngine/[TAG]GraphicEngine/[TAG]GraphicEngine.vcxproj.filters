@@ -45,12 +45,6 @@
     <ClCompile Include="resourceManager\TRecursoTriangle.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="frameWork\mesh.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
-    <ClCompile Include="frameWork\shader.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
     <ClCompile Include="resourceManager\TRecursoMalla.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
@@ -156,12 +150,6 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="resourceManager\TRecursoTriangle.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="frameWork\mesh.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="frameWork\shader.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="resourceManager\TRecursoMalla.h">

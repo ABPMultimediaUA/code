@@ -8,7 +8,7 @@ public:
 	~TRecurso();
 	std::string getNombre();
 	void setNombre(std::string);
-	virtual bool cargarFichero(const std::string&) = 0;
+	virtual bool cargarFichero(std::string) = 0;
 	virtual void draw() = 0;
 private:
 	std::string nombre;

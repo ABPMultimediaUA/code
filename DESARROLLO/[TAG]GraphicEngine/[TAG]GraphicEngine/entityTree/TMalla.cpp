@@ -12,12 +12,6 @@ TMalla::TMalla(std::string path)
 	this->cargarMalla(path);
 }
 
-TMalla::TMalla(std::string path, shader* s)
-{
-	this->cargarMalla(path);
-	this->malla->setShader(s);
-}
-
 TMalla::~TMalla()
 {
 	std::cout << "TMalla Destroyed" << std::endl;
@@ -27,7 +21,8 @@ void TMalla::cargarMalla(std::string path)
 {
 	if(this->malla == nullptr)
 	{
-		this->malla = new TRecursoMalla(path);
+		this->malla = new TRecursoMalla();
+		this->malla->cargarFichero(path);
 	}
 	else
 	{
