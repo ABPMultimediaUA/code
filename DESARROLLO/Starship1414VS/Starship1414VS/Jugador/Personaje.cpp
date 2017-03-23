@@ -19,7 +19,9 @@
 #include "Escopeta.h"
 #include "../Fisicas/Entity2D.h"
 #include "../Juego.h"
+#include "Inventario.h"
 #include <Math.h>
+#include "../Escenario/ObjConsumables/Botiquines.h"
 
 #define PISTOLA 0
 #define FUSIL 1
@@ -61,7 +63,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	armaActual = PISTOLA;
 	cargador = pistola->getCargador();
 	municionTotal = pistola->getCapacidadDeMun();
-
+	inv = new Inventario();
 
 }
 
@@ -313,6 +315,20 @@ void Personaje::quitarVida(float damage)
 	std::cout << "VIDA DESPUES: " << vida << std::endl;
 }
 
+void Personaje::curar(float recup)
+{
+	vida += recup;
+}
+
+void Personaje::usarBotiquin()
+{
+	Botiquines *bot = static_cast<Botiquines*>(inv->usarObjeto(0));
+
+
+
+	
+}
+
 float Personaje::getVida()
 {
 	return vida;
@@ -338,6 +354,11 @@ void Personaje::disminuirTem() {
 float Personaje::getTemporizador() {
 
 	return temporizador;
+}
+
+Inventario * Personaje::getInventario()
+{
+	return inv;
 }
 
 

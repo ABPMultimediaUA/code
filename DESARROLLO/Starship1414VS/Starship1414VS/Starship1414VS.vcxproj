@@ -172,6 +172,7 @@
     <ClCompile Include="Escenario\readJson.cpp" />
     <ClCompile Include="Escenario\Terminal.cpp" />
     <ClCompile Include="EstadoGeneral.cpp" />
+    <ClCompile Include="Jugador\Inventario.cpp" />
     <ClCompile Include="MaquinaEstados\FSM\Estados.cpp" />
     <ClCompile Include="Fisicas\Entity2D.cpp" />
     <ClCompile Include="Fisicas\MiContactListener.cpp" />
@@ -224,6 +225,7 @@
     <ClInclude Include="Jugador\Bala.h" />
     <ClInclude Include="Jugador\Escopeta.h" />
     <ClInclude Include="Jugador\Fusil.h" />
+    <ClInclude Include="Jugador\Inventario.h" />
     <ClInclude Include="Jugador\Personaje.h" />
     <ClInclude Include="Jugador\Pistola.h" />
     <ClInclude Include="ManejadorEstadoGeneral.h" />

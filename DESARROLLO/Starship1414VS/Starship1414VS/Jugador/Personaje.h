@@ -28,6 +28,7 @@ class Fusil;
 class Escopeta;
 class Entity2D;
 class Juego;
+class Inventario;
 
 using namespace irr;
 
@@ -66,6 +67,7 @@ private:
 	float temporizador;
 	float vida;
 	Juego *game;
+	Inventario *inv;
 
 
 public:
@@ -89,6 +91,8 @@ public:
 	bool getImpulso();
 	void setImpulso(bool x);
 	void quitarVida(float damage);
+	void curar(float recup);
+	void usarBotiquin();
 	float getVida();
 
 	void pasarMensaje();
@@ -98,7 +102,7 @@ public:
 	void disminuirTem();
 
 	float getTemporizador();
-
+	Inventario* getInventario();
 	
 
 	void moverPersonaje(int modo, f32 dt);

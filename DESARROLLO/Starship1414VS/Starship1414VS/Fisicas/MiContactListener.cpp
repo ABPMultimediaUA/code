@@ -18,6 +18,9 @@
 #include "../Enemigos/Enemigo.h"
 #include "Entity2D.h"
 #include "../Escenario/Terminal.h"
+#include "../Jugador/Inventario.h"
+#include "../Escenario/ObjConsumables/Botiquines.h"
+#include "../Escenario/ObjConsumables/Llave.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionSubfusil.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionEscopeta.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionPistola.h"
@@ -110,16 +113,15 @@ void MiContactListener::activarTerminar(Entity2D * pers, Entity2D * terminal, bo
 
 void MiContactListener::gestionarObjeto(Entity2D * pers, Entity2D * objeto, int tipo)
 {
+
 	switch (tipo)
 	{
-	case 0:
+		//para copiar el objeto
+		/*A *temClass = new A(10);
+A *myClass01 = new A(*temClass);
+A *myclass02 = new A(*temClass);
+*/
 
-		break;
-
-	case 1:
-
-
-		break;
 
 	case 2:
 
@@ -139,6 +141,7 @@ void MiContactListener::gestionarObjeto(Entity2D * pers, Entity2D * objeto, int 
 
 
 	default:
+		addObjetoAlInventario(pers, objeto, tipo);
 		break;
 	}
 	objeto->setLive(false);
@@ -194,6 +197,23 @@ void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * mun
 
 	personaje->cogerMunicion(mun->getMunicion(), 2);
 //	munEscopeta->setLive(false);
+}
+
+void MiContactListener::addObjetoAlInventario(Entity2D * pers, Entity2D * objeto, int tipo)
+{
+	Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
+
+	if(tipo == 0) {
+
+		Botiquines *bot = new Botiquines(*static_cast<Botiquines*>(objeto->getObjeto3D()));
+		
+		personaje->getInventario()->addObjeto(bot);
+	}
+
+	else {
+
+	}
+
 }
 
 
@@ -482,7 +502,7 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			}
 
 
-
+			//if de los objetos consumables
 			if (entity1->getIDEN() == 0 
 				&& entity2->getIDEN() == 5 
 				&& entity2->getId() != 5
