@@ -12,6 +12,7 @@ public:
 	void setPerspectiva(float, float, float, float, float, float);
 	void setParalela(float, float, float, float, float, float);
 	void beginDraw();
+	void beginDraw(unsigned int) override;
 	void endDraw();
 private:
 	bool esPerspectiva;

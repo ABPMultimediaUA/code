@@ -12,6 +12,7 @@ public:
 	void setIntensidad(glm::vec3);
 	glm::vec3 getIntensidad();
 	void beginDraw();
+	void beginDraw(unsigned int) override;
 	void endDraw();
 private:
 	glm::vec3 intensidad;

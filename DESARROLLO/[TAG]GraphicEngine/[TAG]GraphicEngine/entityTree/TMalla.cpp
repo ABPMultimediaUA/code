@@ -36,6 +36,11 @@ void TMalla::beginDraw()
 	this->malla->draw();
 }
 
+void TMalla::beginDraw(unsigned int p)
+{
+	this->malla->draw(p);
+}
+
 void TMalla::endDraw()
 {
 }

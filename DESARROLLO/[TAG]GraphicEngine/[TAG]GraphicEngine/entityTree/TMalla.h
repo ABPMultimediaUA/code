@@ -12,8 +12,9 @@ public:
 	TMalla(std::string);
 	~TMalla();
 	void cargarMalla(std::string);
-	void beginDraw();
-	void endDraw();
+	void beginDraw() override;
+	void beginDraw(unsigned int) override;
+	void endDraw() override;
 private:
 	TRecursoMalla* malla;
 };

@@ -38,6 +38,10 @@ void TCamara::beginDraw()
 {
 }
 
+void TCamara::beginDraw(unsigned int)
+{
+}
+
 void TCamara::endDraw()
 {
 }

@@ -51,6 +51,15 @@
     <ClCompile Include="resourceManager\TRecursoTextura.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="framework\openGLShader.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\openGLWindow.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="resourceManager\TRecursoCamera.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="entityTree\TCamara.h">
@@ -158,10 +167,21 @@
     <ClInclude Include="resourceManager\TRecursoTextura.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="framework\openGLShader.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\openGLWindow.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resourceManager\TRecursoCamera.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="tools\glm\CMakeLists.txt" />
     <Text Include="models\Nanosuit\LICENSE.txt" />
+    <Text Include="Shader\directional.vertex_shader" />
+    <Text Include="Shader\directional.fragment_shader" />
   </ItemGroup>
   <ItemGroup>
     <None Include="lib\assimp-vc140-mt.exp" />
@@ -172,6 +192,8 @@
     <None Include="models\Nanosuit\nanosuit.blend" />
     <None Include="models\Nanosuit\nanosuit.mtl" />
     <None Include="models\Nanosuit\nanosuit.3ds" />
+    <None Include="Shader\directionalFragmentShader.frag" />
+    <None Include="Shader\directionalVertexShader.vs" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\assimp-vc140-mt.lib" />

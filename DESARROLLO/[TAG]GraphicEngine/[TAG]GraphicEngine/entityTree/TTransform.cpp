@@ -71,6 +71,12 @@ void TTransform::beginDraw()
 	multiplicarMatriz(matrizActual,matriz);
 }
 
+void TTransform::beginDraw(unsigned int)
+{
+	apilar(matrizActual);
+	multiplicarMatriz(matrizActual, matriz);
+}
+
 void TTransform::endDraw()
 {
 	desapilar();

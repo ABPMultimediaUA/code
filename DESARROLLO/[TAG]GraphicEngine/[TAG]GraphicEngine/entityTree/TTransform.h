@@ -20,6 +20,7 @@ public:
 	void apilar(glm::mat4);
 	void desapilar();
 	void beginDraw();
+	void beginDraw(unsigned int);
 	void endDraw();
 
 private:

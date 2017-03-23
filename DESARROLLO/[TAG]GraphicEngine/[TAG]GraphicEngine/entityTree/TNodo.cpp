@@ -105,3 +105,17 @@ void TNodo::draw()
 		this->entidad->endDraw();
 	}
 }
+
+void TNodo::draw(unsigned int p)
+{
+	std::cout << "Se dibuja nodo: " << idN << std::endl;
+	if (this->entidad) {
+		this->entidad->beginDraw(p);
+	}
+	for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {
+		(*it)->draw(p);
+	}
+	if (this->entidad) {
+		this->entidad->endDraw();
+	}
+}

@@ -45,8 +45,8 @@ class TRecursoMalla :
 public:
 	TRecursoMalla();
 	~TRecursoMalla();
-	bool cargarFichero(std::string);
-	void draw();
+	bool cargarFichero(std::string) override;
+	void draw() override;
 	void draw(GLuint);
 private:
 	std::string directory;

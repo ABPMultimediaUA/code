@@ -15,6 +15,7 @@ public:
 	TNodo* getPadre();
 	int getID();
 	void draw();
+	void draw(unsigned int);
 private:
 	static int id;
 	TEntidad* entidad;

@@ -1,116 +1,140 @@
 #include <iostream>
+
+
+#include <vector>
+#include "framework\openGLShader.h"
+#include "framework\openGLWindow.h"
+#include <glm\gtc\matrix_inverse.hpp>
+#include <glm\gtc\matrix_transform.hpp>
+#include <glm\gtc\type_ptr.hpp>
 #include "entityTree\TNodo.h"
 #include "entityTree\TTransform.h"
 #include "entityTree\TCamara.h"
 #include "entityTree\TLuz.h"
 #include "entityTree\TMalla.h"
-#include "entityTree\TTriangle.h"
-
-#include <vector>
-
-#ifndef GLEW_STATIC
-#define GLEW_STATIC
-#include <GL/glew.h>
-#endif
-#include <GLFW\glfw3.h>
-//#include "framework\shader.h"
-
-
-void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
+//#include "entityTree\TTriangle.h"
+#include "resourceManager\TRecursoCamera.h"
 
 //variables constante para las dimenciones de la ventana
 const GLuint WIDTH = 800, HEIGHT = 600;
 
-int main() {
-	//Inicio de GLFW para cargar una ventana
-	glfwInit();
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+class MotorGrafico : public openGLWindow
+{
+public:
+	MotorGrafico();
+	~MotorGrafico();
 
-	//Se crea una ventana
-	GLFWwindow* window = glfwCreateWindow(WIDTH,HEIGHT,"SpaceShip 1414", nullptr, nullptr);
-	if (window == nullptr) {
-		std::cerr << "Error al crear ventana GFLW" << std::endl;
-		glfwTerminate();
-		return -1;
-	}
-	glfwMakeContextCurrent(window);
-
-	//Callback de GLFW para teclado
-	glfwSetKeyCallback(window, key_callback);
-
-	//funcion para que GLEW use lo mas nuevo en su codigo
-	glewExperimental = GL_TRUE;
-	if (glewInit() != GLEW_OK) {
-		std::cerr << "Error al inicializar GLEW" << std::endl;
-		return -1;
-	}
-	//define las dimenciones del viewport
-	int width, height;
-	glfwGetFramebufferSize(window, &width, &height);
-	glViewport(0, 0, width, height);
-	glEnable(GL_DEPTH_TEST);
-
-	//shader shaderB("Shader/basicoVertexShader.vs", "Shader/basicoFragmentShader.frag");
-
-	//cargar arbol
-	TNodo origen(nullptr);
+private:
+	void onstart() override;
+	void onrender(double) override;
+	void luzDirectional(openGLShader&, double);
+	void onkey(int, int, int, int) override;
+	void cargarArbolEscena();
+	void vaciarArbolEscena();
+	openGLShader dir_shader;
+	TRecursoCamera camera;
+	glm::vec3 luz_direction;
+	TNodo origen;
 	std::vector<TNodo*> nodos;
-	nodos.push_back(new TNodo(new TTransform()));
-	nodos.push_back(new TNodo(new TTransform()));
-	nodos.push_back(new TNodo(new TMalla("models/Nanosuit/nanosuit.obj")));
-	//nodos.push_back(new TNodo(new TMalla("../models/Nanosuit/nanosuit.obj")));
-	nodos.push_back(new TNodo(new TLuz()));
-	nodos.push_back(new TNodo(new TTransform()));
-	nodos.push_back(new TNodo(new TCamara()));
-	std::cout << "Nodos Creados correctamente" << std::endl;
-	origen.addHijo(nodos.at(1));
-	nodos.at(1)->addHijo(nodos.at(0));
-	nodos.at(0)->addHijo(nodos.at(2));
-	nodos.at(1)->addHijo(nodos.at(3));
-	origen.addHijo(nodos.at(4));
-	nodos.at(4)->addHijo(nodos.at(5));
-	std::cout << "Nodos Enlazados correctamente" << std::endl;
+};
 
-	//bucle del juego
-	while (!glfwWindowShouldClose(window))
-	{
-		//para los eventos
-		glfwPollEvents();
-
-		//Render
-		//limpia el buffer
-		glClearColor(0.5f,0.8f,0.4f,1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		
-		//shaderB.Use();
-		//dibujo el triangulo
-		origen.draw();
-		std::cout << "Nodos Fin draw" << std::endl;
-
-		//Pinta el buffer en pantalla
-		glfwSwapBuffers(window);
-	}
-
-	//Para cerrar todo lo relacionado con GLFW
-
-	origen.~TNodo();
-	nodos.erase(nodos.begin(), nodos.end());
-	std::cout << nodos.size() << std::endl;
-	glfwTerminate();
-	return 0;
+MotorGrafico::MotorGrafico() : luz_direction{ 0, 10, 10 }, origen(nullptr)
+{
 }
 
-void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
+MotorGrafico::~MotorGrafico()
 {
-	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+	vaciarArbolEscena();
+}
+
+void MotorGrafico::onstart()
+{
+	glEnable(GL_DEPTH_TEST);
+	glClearColor(0.0f, 0.5f, 0.5f, 1.0f);
+
+	camera.setWindow(this->window);
+	dir_shader.compile("Shaders/directional.vertex_shader", "Shaders/directional.fragment_shader");
+	//model.init("model/test.assbin");
+	cargarArbolEscena();
+
+	// ocultar el cursor y ubicarlo en el centro de la ventana
+	glfwSetInputMode(this->window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+	glfwSetCursorPos(this->window, 1280 / 2, 720 / 2);
+}
+
+void MotorGrafico::onrender(double time)
+{
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	luzDirectional(dir_shader, time);
+}
+
+void MotorGrafico::luzDirectional(openGLShader & shader, double time)
+{
+	shader.use();
+
+	glm::mat4 Model;
+
+	glm::mat4 MV = camera.getViewMatrix() * Model;
+	glm::mat4 MVP = camera.getProjectionMatrix() * MV;
+	glm::mat3 N = glm::inverseTranspose(glm::mat3(MV));
+
+	glUniformMatrix4fv(shader.getUniformLocation("mvp_matrix"), 1, GL_FALSE, glm::value_ptr(MVP));
+	glUniformMatrix4fv(shader.getUniformLocation("mv_matrix"), 1, GL_FALSE, glm::value_ptr(MV));
+	glUniformMatrix3fv(shader.getUniformLocation("n_matrix"), 1, GL_FALSE, glm::value_ptr(N));
+
+	// direccion de la luz
+	glm::vec3 lightDirEyeSpace = glm::vec3(MV * glm::vec4(luz_direction, 0));
+
+	glUniform3fv(shader.getUniformLocation("light.direction"), 1, glm::value_ptr(lightDirEyeSpace));
+	glUniform3fv(shader.getUniformLocation("light.ambient"), 1, glm::value_ptr(glm::vec3(0.1f)));
+	glUniform3fv(shader.getUniformLocation("light.diffuse"), 1, glm::value_ptr(glm::vec3(1.0f)));
+	glUniform3fv(shader.getUniformLocation("light.specular"), 1, glm::value_ptr(glm::vec3(1.0f)));
+
+	this->origen.draw(shader.getProgram());
+
+	shader.unUse();
+}
+
+void MotorGrafico::onkey(int key, int scancode, int action, int mods)
+{
+	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) { glfwSetWindowShouldClose(window, GL_TRUE); }
+	if (key == GLFW_KEY_LEFT)							{ luz_direction.x += 0.1f; }
+	if (key == GLFW_KEY_RIGHT)							{ luz_direction.x -= 0.1f; }
+	if (key == GLFW_KEY_UP)								{ luz_direction.y += 0.1f; }
+	if (key == GLFW_KEY_DOWN)							{ luz_direction.y -= 0.1f; }
+		
+}
+
+void MotorGrafico::cargarArbolEscena()
+{
+	this->nodos.push_back(new TNodo(new TTransform()));
+	this->nodos.push_back(new TNodo(new TTransform()));
+	this->nodos.push_back(new TNodo(new TMalla("models/Nanosuit/nanosuit.obj")));
+	this->nodos.push_back(new TNodo(new TLuz()));
+	this->nodos.push_back(new TNodo(new TTransform()));
+	this->nodos.push_back(new TNodo(new TCamara()));
+	std::cout << "Nodos Creados correctamente" << std::endl;
+	this->origen.addHijo(this->nodos.at(1));
+	this->nodos.at(1)->addHijo(this->nodos.at(0));
+	this->nodos.at(0)->addHijo(this->nodos.at(2));
+	this->nodos.at(1)->addHijo(this->nodos.at(3));
+	this->origen.addHijo(this->nodos.at(4));
+	nodos.at(4)->addHijo(nodos.at(5));
+	std::cout << "Nodos Enlazados correctamente" << std::endl;
+}
+
+void MotorGrafico::vaciarArbolEscena()
+{
+	this->nodos.erase(nodos.begin(), nodos.end());
+}
+
+int main() {
+	MotorGrafico motorApp;
+
+	if (motorApp.init("Motor Grafico SpaceShip 1414", WIDTH, HEIGHT)) 
 	{
-		glfwSetWindowShouldClose(window, GL_TRUE);
+		motorApp.info();
+		motorApp.run();
 	}
-	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-	{
-		std::cout << "Se ha pulsado la tecla espacio" << std::endl;
-	}
+	return 0;
 }

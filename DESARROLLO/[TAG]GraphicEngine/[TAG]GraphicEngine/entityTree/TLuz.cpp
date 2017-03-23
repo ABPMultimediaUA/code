@@ -30,6 +30,10 @@ void TLuz::beginDraw()
 {
 }
 
+void TLuz::beginDraw(unsigned int)
+{
+}
+
 void TLuz::endDraw()
 {
 }

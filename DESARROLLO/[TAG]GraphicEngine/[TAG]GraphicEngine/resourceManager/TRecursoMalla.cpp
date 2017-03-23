@@ -52,28 +52,34 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla)
 	normal.reserve(malla->mNumVertices);
 	indices.reserve(3 * malla->mNumFaces);
 
-	for (unsigned int i = 0; i < malla->mNumVertices; i++) {
-
+	for (unsigned int i = 0; i < malla->mNumVertices; i++)
+	{
 		// Obtener la posicion de cada vertice
 		const aiVector3D* pos = &(malla->mVertices[i]);
 		vertex.push_back(glm::vec3(pos->x, pos->y, pos->z));
 
 		// Obtener las coordenadas de textura
-		if (malla->HasTextureCoords(0)) {
+		if (malla->HasTextureCoords(0))
+		{
 			const aiVector3D* UVW = &(malla->mTextureCoords[0][i]);
 			uv.push_back(glm::vec2(UVW->x, UVW->y));
 		}
-		else uv.push_back(glm::vec2(0, 0));
+		else
+		{
+			uv.push_back(glm::vec2(0, 0));
+		}
 
 		// Obtener los vectores normales
-		if (malla->HasNormals()) {
+		if (malla->HasNormals()) 
+		{
 			const aiVector3D* n = &(malla->mNormals[i]);
 			normal.push_back(glm::vec3(n->x, n->y, n->z));
 		}
 	}
 
 	// Obtener los indices
-	for (unsigned int i = 0; i < malla->mNumFaces; i++) {
+	for (unsigned int i = 0; i < malla->mNumFaces; i++) 
+	{
 		indices.push_back(malla->mFaces[i].mIndices[0]);
 		indices.push_back(malla->mFaces[i].mIndices[1]);
 		indices.push_back(malla->mFaces[i].mIndices[2]);
@@ -83,26 +89,15 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla)
 		// obtener el material correspondiente a este Mesh
 		const aiMaterial* material = model->scene->mMaterials[malla->mMaterialIndex];
 
-		if (material->Get(AI_MATKEY_SHININESS, shininess) != AI_SUCCESS) shininess = 128.0;
-		if (material->Get(AI_MATKEY_SHININESS_STRENGTH, shininess_strength) != AI_SUCCESS) shininess_strength = 1.0;
+		if (material->Get(AI_MATKEY_SHININESS, shininess) != AI_SUCCESS)                     { shininess = 128.0;        }
+		if (material->Get(AI_MATKEY_SHININESS_STRENGTH, shininess_strength) != AI_SUCCESS)   { shininess_strength = 1.0; }
 
 		aiColor4D diffuse, ambient, specular, emisive;
 
-		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_DIFFUSE, &diffuse) == AI_SUCCESS) {
-			aiColorToFloat(diffuse, color_diffuse);
-		}
-
-		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_SPECULAR, &specular) == AI_SUCCESS) {
-			aiColorToFloat(specular, color_specular);
-		}
-
-		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_AMBIENT, &ambient) == AI_SUCCESS) {
-			aiColorToFloat(ambient, color_ambient);
-		}
-
-		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_EMISSIVE, &emisive) == AI_SUCCESS) {
-			aiColorToFloat(emisive, color_emissive);
-		}
+		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_DIFFUSE, &diffuse) == AI_SUCCESS)   { aiColorToFloat(diffuse, color_diffuse);   }
+		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_SPECULAR, &specular) == AI_SUCCESS) { aiColorToFloat(specular, color_specular); }
+		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_AMBIENT, &ambient) == AI_SUCCESS)   { aiColorToFloat(ambient, color_ambient);   }
+		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_EMISSIVE, &emisive) == AI_SUCCESS)  { aiColorToFloat(emisive, color_emissive);  }
 	}
 }
 
@@ -147,7 +142,7 @@ void TRecursoMalla::Mesh::create()
 
 	// buffer de indices
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffer[3]);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), &indices[0], GL_STATIC_DRAW);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint), &indices[0], GL_STATIC_DRAW);
 
 	// desactivar el VAO
 	glBindVertexArray(0);
@@ -190,18 +185,21 @@ void TRecursoMalla::draw()
 
 void TRecursoMalla::draw(GLuint program)
 {
-	for (auto& m : meshes) m->draw(program);
+	for (auto& m : meshes) { m->draw(program); }
 }
 
 void TRecursoMalla::processNode(const aiNode * nodo, const aiScene * malla)
 {
 	// obtener los mesh de esta escena
-	for (unsigned int i = 0; i < nodo->mNumMeshes; i++) {
+	for (unsigned int i = 0; i < nodo->mNumMeshes; i++) 
+	{
 		std::shared_ptr<Mesh> malla(new Mesh(scene->mMeshes[nodo->mMeshes[i]], this));
 		meshes.push_back(malla);
 	}
 
 	// procesar los hijos del nodo
 	for (unsigned int i = 0; i < nodo->mNumChildren; i++)
+	{
 		this->processNode(nodo->mChildren[i], scene);
+	}
 }
