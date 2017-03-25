@@ -173,6 +173,7 @@
     <ClCompile Include="Escenario\Terminal.cpp" />
     <ClCompile Include="EstadoGeneral.cpp" />
     <ClCompile Include="Jugador\Inventario.cpp" />
+    <ClCompile Include="Enemigos\LogicaDifusa.cpp" />
     <ClCompile Include="MaquinaEstados\FSM\Estados.cpp" />
     <ClCompile Include="Fisicas\Entity2D.cpp" />
     <ClCompile Include="Fisicas\MiContactListener.cpp" />
@@ -228,6 +229,7 @@
     <ClInclude Include="Jugador\Inventario.h" />
     <ClInclude Include="Jugador\Personaje.h" />
     <ClInclude Include="Jugador\Pistola.h" />
+    <ClInclude Include="Enemigos\LogicaDifusa.h" />
     <ClInclude Include="ManejadorEstadoGeneral.h" />
     <ClInclude Include="MaquinaEstados\FSM\Estados.h" />
     <ClInclude Include="MaquinaEstados\FSM\MaquinaEstados.h" />
