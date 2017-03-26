@@ -12,6 +12,7 @@
 */
 #include <Box2D\Box2D.h>
 #include <iostream>
+#include <math.h>
 #include "../Escenario/Puerta.h"
 #include "MiContactListener.h"
 #include "../Jugador/Personaje.h"
@@ -141,7 +142,7 @@ A *myclass02 = new A(*temClass);
 
 
 	default:
-		addObjetoAlInventario(pers, objeto, tipo);
+		//addObjetoAlInventario(pers, objeto, tipo);
 		break;
 	}
 	objeto->setLive(false);
@@ -334,6 +335,18 @@ void dispararEnemigo(Entity2D *pers, Entity2D *enemigo) {
 
 	//std::cout << "POS X: " << p->getPos().X<<"POS Z: " << p->getPos().Z<< std::endl;
 	//std::cout << std::endl;
+
+	float pesoX = powf(p->getPos().X - e->getPos().X, 2);
+	float pesoZ = powf(p->getPos().Z - e->getPos().Z, 2);
+	float peso = sqrtf((pesoX + pesoZ));
+
+	std::cout << std::endl;
+	std::cout <<"DISTANCIA ENTRE ENEMIGO Y JUGADOR"<< std::endl;
+
+	std::cout <<"DISTANCIA: "<<peso << std::endl;
+	std::cout << std::endl;
+	
+
 
 }
 

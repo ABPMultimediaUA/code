@@ -33,7 +33,7 @@ Objetos* Inventario::usarObjeto(int tipo)
 		}
 
 	}
-
+	return nullptr;
 }
 
 void Inventario::mostrarInventario()
