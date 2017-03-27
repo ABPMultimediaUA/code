@@ -1,8 +1,35 @@
 
 
 
-#include <math.h>
 #include "LogicaDifusa.h"
+
+//funciones matematicas
+
+float min2valores(float x, float y) {
+	
+	if (x > y) {
+		return y;
+	}
+
+	else {
+		return x;
+	}
+}
+
+
+
+float max2valores(float x, float y) {
+
+	if (x > y) {
+		return x;
+	}
+
+	else {
+		return y;
+	}
+
+}
+
 
 
 
@@ -38,18 +65,153 @@ void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, cons
 void LogicaDifusa::baseDeConocimiento()
 {
 	float aux;
+
 	//accion escapar
 	if(resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[0] > 0.0f) {
-		escapar = fminf(resultadosDePos[0], resultadosVidaEnemigo[0]);
+
+		escapar = min2valores(resultadosDePos[0], resultadosVidaEnemigo[0]);	
 	}
+
 
 	if (resultadosDePos[1] > 0.0f && resultadosVidaEnemigo[0] > 0.0f) {
 		if(escapar > 0.0f) {
-			aux = fminf(resultadosDePos[1], resultadosVidaEnemigo[0]);
-			escapar = fmax(escapar, aux);
+			aux = min2valores(resultadosDePos[1], resultadosVidaEnemigo[0]);
+			escapar = max2valores(escapar, aux);
 		}
 		else {
-			escapar = fminf(resultadosDePos[1], resultadosVidaEnemigo[0]);
+			escapar = min2valores(resultadosDePos[1], resultadosVidaEnemigo[0]);
+
+		}
+
+	}
+
+	if (resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[1] > 0.0f) {
+
+		if (disparar > 0.0f) {
+			aux = min2valores(resultadosDePos[0], resultadosVidaEnemigo[1]);
+			escapar = max2valores(escapar, aux);
+		}
+
+		else {
+			escapar = min2valores(resultadosDePos[0], resultadosVidaEnemigo[1]);
+
+		}
+	}
+
+	//accion disparar
+
+	if (resultadosDePos[2] > 0.0f && resultadosVidaEnemigo[0] > 0.0f) {
+		
+		disparar = min2valores(resultadosDePos[2], resultadosVidaEnemigo[0]);
+
+	}
+
+
+
+	if (resultadosDePos[1] > 0.0f && resultadosVidaEnemigo[1] > 0.0f) {
+
+		if (disparar > 0.0f) {
+			aux = min2valores(resultadosDePos[1], resultadosVidaEnemigo[1]);
+			disparar = max2valores(disparar, aux);
+		}
+
+		else {
+			disparar = min2valores(resultadosDePos[1], resultadosVidaEnemigo[1]);
+
+		}
+
+	}
+
+	if (resultadosDePos[2] > 0.0f && resultadosVidaEnemigo[1] > 0.0f) {
+
+		if (disparar > 0.0f) {
+			aux = min2valores(resultadosDePos[2], resultadosVidaEnemigo[1]);
+			disparar = max2valores(disparar, aux);
+		}
+
+		else {
+			disparar = min2valores(resultadosDePos[2], resultadosVidaEnemigo[1]);
+
+		}
+
+	}
+
+	if (resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[2] > 0.0f) {
+
+		if (disparar > 0.0f) {
+			aux = min2valores(resultadosDePos[0], resultadosVidaEnemigo[2]);
+			disparar = max2valores(disparar, aux);
+		}
+
+		else {
+			disparar = min2valores(resultadosDePos[0], resultadosVidaEnemigo[2]);
+
+		}
+
+	}
+
+	if (resultadosDePos[1] > 0.0f && resultadosVidaEnemigo[2] > 0.0f) {
+
+		if (disparar > 0.0f) {
+			aux = min2valores(resultadosDePos[1], resultadosVidaEnemigo[2]);
+			disparar = max2valores(disparar, aux);
+		}
+
+		else {
+			disparar = min2valores(resultadosDePos[1], resultadosVidaEnemigo[2]);
+
+		}
+
+	}
+
+	if (resultadosDePos[2] > 0.0f && resultadosVidaEnemigo[2] > 0.0f) {
+
+		if (disparar > 0.0f) {
+			aux = min2valores(resultadosDePos[2], resultadosVidaEnemigo[2]);
+			disparar = max2valores(disparar, aux);
+		}
+
+		else {
+			disparar = min2valores(resultadosDePos[2], resultadosVidaEnemigo[2]);
+
+		}
+
+	}
+
+	if (resultadosDePos[2] > 0.0f && resultadosVidaEnemigo[3] > 0.0f) {
+
+		if (disparar > 0.0f) {
+			aux = min2valores(resultadosDePos[2], resultadosVidaEnemigo[3]);
+			disparar = max2valores(disparar, aux);
+		}
+
+		else {
+			disparar = min2valores(resultadosDePos[2], resultadosVidaEnemigo[3]);
+
+		}
+
+	}
+
+
+	//accion cuerpo a cuerpo
+
+	if (resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[3] > 0.0f) {
+
+		cqc = min2valores(resultadosDePos[0], resultadosVidaEnemigo[3]);
+
+	}
+
+
+
+	if (resultadosDePos[1] > 0.0f && resultadosVidaEnemigo[3] > 0.0f) {
+
+		if (cqc > 0.0f) {
+			aux = min2valores(resultadosDePos[0], resultadosVidaEnemigo[3]);
+			cqc = max2valores(cqc, aux);
+		}
+
+		else {
+			cqc = min2valores(resultadosDePos[1], resultadosVidaEnemigo[2]);
 
 		}
 
@@ -59,6 +221,20 @@ void LogicaDifusa::baseDeConocimiento()
 
 void LogicaDifusa::desfusificador()
 {
+	//se decide el estado que sera
+
+	if (escapar > disparar && escapar > cqc) {
+		estadoDecidido = 6;
+	}
+
+	else if (disparar > escapar && disparar > cqc) {
+		estadoDecidido = 3;
+	}
+
+	else if(cqc > disparar && cqc > escapar) {
+		estadoDecidido = 7;
+	}
+
 }
 
 void LogicaDifusa::sistemaDeInferencia()
@@ -254,4 +430,9 @@ void LogicaDifusa::reiniciarArrays() {
 	cqc = 0.0f;
 	disparar = 0.0f;
 
+}
+
+int LogicaDifusa::getEstadoDecidido()
+{
+	return estadoDecidido;
 }

@@ -331,9 +331,9 @@ void dispararEnemigo(Entity2D *pers, Entity2D *enemigo) {
 
 	p->getPos();
 	e->setPesoMaximoLogicaDifusa(peso);
-	//e->setPosJugador(p->getPos().X, p->getPos().Z);
-	e->setEstado(3);
-
+	e->setPosJugador(p->getPos().X, p->getPos().Z);
+	//e->setEstado(3);
+	e->iniLogicaDifusa();
 	//std::cout << std::endl;
 	//std::cout <<"CALLBACK"<< std::endl;
 

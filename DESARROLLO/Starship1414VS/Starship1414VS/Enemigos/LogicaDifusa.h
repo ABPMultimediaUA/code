@@ -21,6 +21,8 @@ public:
 	void condiccionesDeLaDistancia();
 	void setPesoMaximo(float x);
 	void reiniciarArrays();
+	int getEstadoDecidido();
+
 
 private:
 
@@ -30,6 +32,7 @@ private:
 	float escapar;
 	float disparar;
 	float cqc;
+	int estadoDecidido;
 	//float vidaJugador;
 	vector2df posJugador;
 	vector3df posEnemigo;

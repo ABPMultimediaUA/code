@@ -363,3 +363,10 @@ void Enemigo::setPesoMaximoLogicaDifusa(float x)
 {
 	logica->setPesoMaximo(x);
 }
+
+void Enemigo::iniLogicaDifusa()
+{
+	setVelocidad();
+	logica->fusificador(vida, pos, posJugador);
+	estadoActual = logica->getEstadoDecidido();
+}

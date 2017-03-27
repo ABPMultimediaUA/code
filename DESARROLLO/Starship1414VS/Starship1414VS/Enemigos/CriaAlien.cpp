@@ -19,6 +19,7 @@
 #include "../Fisicas/Entity2D.h"
 #include "Waypoints.h"
 
+
 CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos) {
     
 	//seria mejor que se le pasara las cosas necesarias del escenario que todo el escenario entero
@@ -121,6 +122,7 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
         case ATACAR: //atacar
           
 			Atacar(dt);
+			iniLogicaDifusa();
 
             break;
 
@@ -130,12 +132,46 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 
 			break;
+
+		case ESCAPAR:
+
+			maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
+			iniLogicaDifusa();
+
+			break;
+
+		case CUERPOACUERPO:
+
+			maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
+			vector3df posPlayer;
+			posPlayer.X = posJugador.X;
+			posPlayer.Y = 0.0f;
+			posPlayer.Z = posJugador.Y;
+			dir = path->getDireccion(pos, posPlayer);
+
+
+			this->Mover(dir);
+			if (path->estoyEnElNodo(pos, posPlayer)) {
+				dir = -1;
+				this->setVelocidad();
+
+	
+
+				/*posNodo = path->buscarWaypointMasCorto(posNodo);
+				puntoFin = waypoints->getNodoX(posNodo);*/
+
+			}
+
+			
+			iniLogicaDifusa();
+
+			break;
+
     }
 
 	this->actualizarLista();
 	GVida->setPosition(pos);
 	RVida->setPosition(vector3df(pos.X - 8, pos.Y, pos.Z));
-	
 
 
 }

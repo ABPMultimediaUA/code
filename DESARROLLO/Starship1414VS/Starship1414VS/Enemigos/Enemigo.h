@@ -47,6 +47,8 @@ class LogicaDifusa;
 #define ATACAR 3
 #define ROTACION 4
 #define DESCANSAR 5
+#define ESCAPAR 6
+#define CUERPOACUERPO 7
 
 
 #ifdef _IRR_WINDOWS_
@@ -88,7 +90,7 @@ public:
 	Nodo* getNodoInicio();
 	Nodo* getNodoFin();
 	void setPesoMaximoLogicaDifusa(float x);
-
+	void iniLogicaDifusa();
 
 
 protected:
