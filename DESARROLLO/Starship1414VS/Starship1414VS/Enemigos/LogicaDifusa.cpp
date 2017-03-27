@@ -271,13 +271,13 @@ void LogicaDifusa::condiccionesDeLaVidaEnemigo()
 	if (vidaEnemigo > limt1) {
 
 		if (vidaEnemigo < vidaMax) {
-			resultadosVidaEnemigo[0] = (vidaEnemigo - limt1) / (vidaMax - limt1); //100 - 75
+			resultadosVidaEnemigo[3] = (vidaEnemigo - limt1) / (vidaMax - limt1); //100 - 75
 		}
 
 		else {
 			std::cout << "CACACACCACACCAAC" << std::endl;
 
-			resultadosVidaEnemigo[0] = 1.0f;
+			resultadosVidaEnemigo[3] = 1.0f;
 		}
 	}
 
@@ -286,11 +286,11 @@ void LogicaDifusa::condiccionesDeLaVidaEnemigo()
 	if (vidaEnemigo > limt2 && vidaEnemigo < limt3) {
 
 		if (vidaEnemigo <= ptoM) {
-			resultadosVidaEnemigo[1] = (vidaEnemigo - limt2) / (ptoM - limt2); //65 - 45
+			resultadosVidaEnemigo[2] = (vidaEnemigo - limt2) / (ptoM - limt2); //65 - 45
 		}
 
 		else {
-			resultadosVidaEnemigo[1] = 2.0f - (vidaEnemigo - limt2) / (ptoM - limt2);
+			resultadosVidaEnemigo[2] = 2.0f - (vidaEnemigo - limt2) / (ptoM - limt2);
 		}
 	}
 
@@ -298,11 +298,11 @@ void LogicaDifusa::condiccionesDeLaVidaEnemigo()
 	if (vidaEnemigo > limt4 && vidaEnemigo < limt5) {
 
 		if (vidaEnemigo <= ptoB) {
-			resultadosVidaEnemigo[2] = (vidaEnemigo - limt4) / (ptoB - limt4);//40 - 25
+			resultadosVidaEnemigo[1] = (vidaEnemigo - limt4) / (ptoB - limt4);//40 - 25
 		}
 
 		else {
-			resultadosVidaEnemigo[2] = 2.0f - (vidaEnemigo - limt4) / (ptoB - limt4);
+			resultadosVidaEnemigo[1] = 2.0f - (vidaEnemigo - limt4) / (ptoB - limt4);
 
 		}
 	}
@@ -311,12 +311,12 @@ void LogicaDifusa::condiccionesDeLaVidaEnemigo()
 	if (vidaEnemigo < limt6) {
 
 		if (vidaEnemigo > limt7) {
-			resultadosVidaEnemigo[3] = -(vidaEnemigo - limt7) / (limt7 - limt6); //10 - 35
+			resultadosVidaEnemigo[0] = -(vidaEnemigo - limt7) / (limt7 - limt6); //10 - 35
 		}
 
 		else {
 
-			resultadosVidaEnemigo[3] = 1.0f;
+			resultadosVidaEnemigo[0] = 1.0f;
 		}
 	}
 }
@@ -383,11 +383,11 @@ void LogicaDifusa::condiccionesDeLaDistancia()
 		if (peso > limt1) {
 	
 			if (peso < disMax) {
-				resultadosDePos[0] = (peso - limt1) / (disMax - limt1); //100 - 75
+				resultadosDePos[2] = (peso - limt1) / (disMax - limt1); //100 - 75
 			}
 	
 			else {
-				resultadosDePos[0] = 1.0f;
+				resultadosDePos[2] = 1.0f;
 			}
 		}
 	
@@ -409,11 +409,11 @@ void LogicaDifusa::condiccionesDeLaDistancia()
 		if (peso < limt4) {
 	
 			if (peso > 0.0f) {
-				resultadosDePos[2] = - (peso) / (-limt4); //no se si se deberia poner un menos ?
+				resultadosDePos[0] = - (peso) / (-limt4); //no se si se deberia poner un menos ?
 			}
 	
 			else {
-				resultadosDePos[2] = 1.0f;
+				resultadosDePos[0] = 1.0f;
 			}
 		}
 }
