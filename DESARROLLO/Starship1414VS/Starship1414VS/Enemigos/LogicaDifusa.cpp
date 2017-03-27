@@ -52,7 +52,6 @@ void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, cons
 	vidaEnemigo = vidaE;
 	posEnemigo = posE;
 	posJugador = posJ;
-	
 	reiniciarArrays();
 
 	//fuzzyficacion de variables (?)
@@ -222,16 +221,22 @@ void LogicaDifusa::baseDeConocimiento()
 void LogicaDifusa::desfusificador()
 {
 	//se decide el estado que sera
+	std::cout << "VALORES" << std::endl;
+	std::cout << "ESCAPAR: " << escapar << std::endl;
+	std::cout << "DISPARAR: " << disparar << std::endl;
+	std::cout << "CQC: " << cqc << std::endl;
+	std::cout << "/////////////////////" << std::endl;
 
-	if (escapar > disparar && escapar > cqc) {
+
+	if (escapar >= disparar && escapar >= cqc) {
 		estadoDecidido = 6;
 	}
 
-	else if (disparar > escapar && disparar > cqc) {
+	else if (disparar >= escapar && disparar >= cqc) {
 		estadoDecidido = 3;
 	}
 
-	else if(cqc > disparar && cqc > escapar) {
+	else if(cqc >= disparar && cqc >= escapar) {
 		estadoDecidido = 7;
 	}
 
@@ -240,6 +245,7 @@ void LogicaDifusa::desfusificador()
 void LogicaDifusa::sistemaDeInferencia()
 {
 	baseDeConocimiento();
+	desfusificador();
 }
 
 void LogicaDifusa::condiccionesDeLaVidaEnemigo()
@@ -259,6 +265,9 @@ void LogicaDifusa::condiccionesDeLaVidaEnemigo()
 	float limt6 = vidaMax * 0.35f;
 	float limt7 = vidaMax * 0.10f;
 
+	//aqui esta el fallo
+	//se cambia aqui el orden de los arrays o en la base de conocimiento
+
 	if (vidaEnemigo > limt1) {
 
 		if (vidaEnemigo < vidaMax) {
@@ -266,6 +275,8 @@ void LogicaDifusa::condiccionesDeLaVidaEnemigo()
 		}
 
 		else {
+			std::cout << "CACACACCACACCAAC" << std::endl;
+
 			resultadosVidaEnemigo[0] = 1.0f;
 		}
 	}
@@ -304,6 +315,7 @@ void LogicaDifusa::condiccionesDeLaVidaEnemigo()
 		}
 
 		else {
+
 			resultadosVidaEnemigo[3] = 1.0f;
 		}
 	}
