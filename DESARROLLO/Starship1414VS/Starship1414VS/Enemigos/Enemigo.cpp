@@ -20,6 +20,7 @@
 #include "Waypoints.h"
 #include "AStar.h"
 #include "../Jugador/Bala.h"
+#include "LogicaDifusa.h"
 
 
 
@@ -46,6 +47,8 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
 	puntoIni = nullptr;
 	puntoFin = nullptr;
 	dir = -1;
+
+	logica = new LogicaDifusa(vida);
 
 
 }
@@ -354,4 +357,9 @@ Nodo * Enemigo::getNodoInicio()
 Nodo * Enemigo::getNodoFin()
 {
 	return puntoFin;
+}
+
+void Enemigo::setPesoMaximoLogicaDifusa(float x)
+{
+	logica->setPesoMaximo(x);
 }

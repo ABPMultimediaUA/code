@@ -34,6 +34,7 @@ class AStar;
 class Waypoints;
 class Entity2D;
 class Bala;
+class LogicaDifusa;
 
 #define CRIA 10
 #define BERSERKER 11
@@ -86,7 +87,7 @@ public:
 	void setPosJugador(float x, float y);
 	Nodo* getNodoInicio();
 	Nodo* getNodoFin();
-
+	void setPesoMaximoLogicaDifusa(float x);
 
 
 
@@ -108,6 +109,7 @@ protected:
 	b2World* mundo;
 	float blindaje;
 	Waypoints *waypoints;
+	LogicaDifusa *logica;
 	AStar *path;
 	Nodo *puntoIni, *puntoFin, *nodoAnterior;
 	int dir, posNodo;

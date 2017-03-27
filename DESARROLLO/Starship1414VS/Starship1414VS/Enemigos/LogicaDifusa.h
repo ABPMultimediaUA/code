@@ -12,7 +12,7 @@ class LogicaDifusa
 public:
 	LogicaDifusa(const float &vidaM);
 	~LogicaDifusa();
-	void fusificador(const float &vidaE, const vector3df &posE, const vector3df &posJ); //es quien aplica la grafica con las condicciones
+	void fusificador(const float &vidaE, const vector3df &posE, const vector2df &posJ); //es quien aplica la grafica con las condicciones
 	void baseDeConocimiento();
 	void desfusificador();
 	void sistemaDeInferencia(); //llama a la base del conocimiento para aplicar las leyes
@@ -26,9 +26,12 @@ private:
 
 	float vidaEnemigo;
 	float vidaMax;
-	float posMax;
+	float disMax;
+	float escapar;
+	float disparar;
+	float cqc;
 	//float vidaJugador;
-	vector3df posJugador;
+	vector2df posJugador;
 	vector3df posEnemigo;
 	float resultadosVidaEnemigo[4];
 	//float resultadosVidaJugador[3];

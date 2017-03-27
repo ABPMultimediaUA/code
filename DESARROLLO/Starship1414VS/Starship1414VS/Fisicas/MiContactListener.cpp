@@ -325,8 +325,12 @@ void dispararEnemigo(Entity2D *pers, Entity2D *enemigo) {
 	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
 	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 
-	p->getPos();
+	float pesoX = powf(p->getPos().X - e->getPos().X, 2);
+	float pesoZ = powf(p->getPos().Z - e->getPos().Z, 2);
+	float peso = sqrtf((pesoX + pesoZ));
 
+	p->getPos();
+	e->setPesoMaximoLogicaDifusa(peso);
 	//e->setPosJugador(p->getPos().X, p->getPos().Z);
 	e->setEstado(3);
 
@@ -336,9 +340,7 @@ void dispararEnemigo(Entity2D *pers, Entity2D *enemigo) {
 	//std::cout << "POS X: " << p->getPos().X<<"POS Z: " << p->getPos().Z<< std::endl;
 	//std::cout << std::endl;
 
-	float pesoX = powf(p->getPos().X - e->getPos().X, 2);
-	float pesoZ = powf(p->getPos().Z - e->getPos().Z, 2);
-	float peso = sqrtf((pesoX + pesoZ));
+	
 
 	std::cout << std::endl;
 	std::cout <<"DISTANCIA ENTRE ENEMIGO Y JUGADOR"<< std::endl;

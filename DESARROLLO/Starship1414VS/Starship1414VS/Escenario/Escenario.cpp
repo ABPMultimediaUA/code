@@ -1744,7 +1744,7 @@ void Escenario::actualizarListaEnemigos(f32 dt) {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
 			if ((*it) != NULL) {
 				if (!(*it)->estaVivo()) {
-					std::cout << "HOLAAAAAA :D" << std::endl;
+					//std::cout << "HOLAAAAAA :D" << std::endl;
 					delete(*it);
 					it = enemigos.erase(it);
 				}

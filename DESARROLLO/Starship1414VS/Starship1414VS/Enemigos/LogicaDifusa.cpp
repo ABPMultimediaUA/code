@@ -1,32 +1,17 @@
 
 
 
+#include <math.h>
 #include "LogicaDifusa.h"
 
-
-/*
--Rango vida leyenda
-
-0 ----> alto 100 - 80
-1 ----> media 80 - 50
-2 ----> baja 50 - 30
-3 ----> huir 30 - 10
-
-
-
--Rango distancia leyenda
-
-0 ----> lejos 
-1 ----> media
-2 ----> corta
-
-*/
 
 
 LogicaDifusa::LogicaDifusa(const float &vidaM)
 {
 	vidaMax = vidaM;
-
+	escapar = 0.0f;
+	cqc = 0.0f;
+	disparar = 0.0f;
 }
 
 
@@ -34,7 +19,7 @@ LogicaDifusa::~LogicaDifusa()
 {
 }
 
-void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, const vector3df & posJ)
+void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, const vector2df & posJ)
 {
 	//vidaJugador = vidaJ;
 	vidaEnemigo = vidaE;
@@ -42,6 +27,8 @@ void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, cons
 	posJugador = posJ;
 	
 	reiniciarArrays();
+
+	//fuzzyficacion de variables (?)
 	condiccionesDeLaVidaEnemigo();
 	condiccionesDeLaDistancia();
 	sistemaDeInferencia();
@@ -50,6 +37,23 @@ void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, cons
 
 void LogicaDifusa::baseDeConocimiento()
 {
+	float aux;
+	//accion escapar
+	if(resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[0] > 0.0f) {
+		escapar = fminf(resultadosDePos[0], resultadosVidaEnemigo[0]);
+	}
+
+	if (resultadosDePos[1] > 0.0f && resultadosVidaEnemigo[0] > 0.0f) {
+		if(escapar > 0.0f) {
+			aux = fminf(resultadosDePos[1], resultadosVidaEnemigo[0]);
+			escapar = fmax(escapar, aux);
+		}
+		else {
+			escapar = fminf(resultadosDePos[1], resultadosVidaEnemigo[0]);
+
+		}
+
+	}
 
 }
 
@@ -173,11 +177,62 @@ void LogicaDifusa::condiccionesDeLaVidaEnemigo()
 
 void LogicaDifusa::condiccionesDeLaDistancia()
 {
+	
+	float pesoX = powf(posJugador.X - posEnemigo.X, 2);
+	float pesoZ = powf(posJugador.Y - posEnemigo.Z, 2);
+	float peso = sqrtf((pesoX + pesoZ));
+
+	float limt1 = disMax * 0.7f;
+
+	float limt2 = disMax * 0.8f;
+	float limt3 = disMax * 0.15f;
+	float ptoM = disMax * 0.5f;
+
+	float limt4 = disMax * 0.35f;
+
+
+		//distancia alta
+		if (peso > limt1) {
+	
+			if (peso < disMax) {
+				resultadosDePos[0] = (peso - limt1) / (disMax - limt1); //100 - 75
+			}
+	
+			else {
+				resultadosDePos[0] = 1.0f;
+			}
+		}
+	
+	
+		//distancia media
+		if (peso > limt3 && peso < limt2) {
+	
+			if (disMax <= ptoM) {
+				resultadosDePos[1] = (peso - limt3) / (ptoM - limt3); //65 - 45
+			}
+	
+			else {
+				resultadosDePos[1] = 2.0f - (peso - limt3) / (ptoM - limt3);
+			}
+		}
+	
+	
+		//distancia baja
+		if (peso < limt4) {
+	
+			if (peso > 0.0f) {
+				resultadosDePos[2] = - (peso) / (-limt4); //no se si se deberia poner un menos ?
+			}
+	
+			else {
+				resultadosDePos[2] = 1.0f;
+			}
+		}
 }
 
 void LogicaDifusa::setPesoMaximo(float x)
 {
-	posMax = x;
+	disMax = x;
 }
 
 void LogicaDifusa::reiniciarArrays() {
@@ -195,5 +250,8 @@ void LogicaDifusa::reiniciarArrays() {
 
 	}
 
+	escapar = 0.0f;
+	cqc = 0.0f;
+	disparar = 0.0f;
 
 }
