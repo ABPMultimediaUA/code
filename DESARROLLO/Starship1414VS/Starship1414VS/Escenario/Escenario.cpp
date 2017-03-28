@@ -1758,7 +1758,8 @@ void Escenario::actualizarListaEnemigos(f32 dt) {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end(); it++) {
 			if ((*it) != NULL && (*it)->estaVivo() == true) {
 
-				if((*it)->getEstado() == 3) {
+				//estados que usan / necesitan de la logica difusa
+				if((*it)->getEstado() == 3 || (*it)->getEstado() == 6 || (*it)->getEstado() == 7) {
 					(*it)->setPosJugador(pers->getPos().X, pers->getPos().Z);
 				}
 

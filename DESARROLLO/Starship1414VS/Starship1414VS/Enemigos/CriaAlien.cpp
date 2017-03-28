@@ -30,7 +30,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
         maya->getMaterial(0).EmissiveColor.set(0, 0, 0, 20);
     }
 
-    vel = 50.0f;
+    vel = 35.0f;
     pos = maya->getPosition();
 	rot = maya->getRotation();
     

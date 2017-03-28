@@ -68,7 +68,15 @@ void LogicaDifusa::baseDeConocimiento()
 	//accion escapar
 	if(resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[0] > 0.0f) {
 
-		escapar = min2valores(resultadosDePos[0], resultadosVidaEnemigo[0]);	
+		if (escapar > 0.0f) {
+			aux = min2valores(resultadosDePos[0], resultadosVidaEnemigo[0]);
+			escapar = max2valores(escapar, aux);
+		}
+
+		else {
+			escapar = min2valores(resultadosDePos[0], resultadosVidaEnemigo[0]);	
+		}
+
 	}
 
 
@@ -86,7 +94,7 @@ void LogicaDifusa::baseDeConocimiento()
 
 	if (resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[1] > 0.0f) {
 
-		if (disparar > 0.0f) {
+		if (escapar > 0.0f) {
 			aux = min2valores(resultadosDePos[0], resultadosVidaEnemigo[1]);
 			escapar = max2valores(escapar, aux);
 		}
@@ -177,19 +185,6 @@ void LogicaDifusa::baseDeConocimiento()
 
 	}
 
-	if (resultadosDePos[2] > 0.0f && resultadosVidaEnemigo[3] > 0.0f) {
-
-		if (disparar > 0.0f) {
-			aux = min2valores(resultadosDePos[2], resultadosVidaEnemigo[3]);
-			disparar = max2valores(disparar, aux);
-		}
-
-		else {
-			disparar = min2valores(resultadosDePos[2], resultadosVidaEnemigo[3]);
-
-		}
-
-	}
 
 
 	//accion cuerpo a cuerpo
@@ -216,29 +211,45 @@ void LogicaDifusa::baseDeConocimiento()
 
 	}
 
+	if (resultadosDePos[2] > 0.0f && resultadosVidaEnemigo[3] > 0.0f) {
+
+		if (cqc > 0.0f) {
+			aux = min2valores(resultadosDePos[2], resultadosVidaEnemigo[3]);
+			cqc = max2valores(cqc, aux);
+		}
+
+		else {
+			cqc = min2valores(resultadosDePos[2], resultadosVidaEnemigo[3]);
+
+		}
+
+	}
+
 }
 
 void LogicaDifusa::desfusificador()
 {
-	//se decide el estado que sera
-	std::cout << "VALORES" << std::endl;
-	std::cout << "ESCAPAR: " << escapar << std::endl;
-	std::cout << "DISPARAR: " << disparar << std::endl;
-	std::cout << "CQC: " << cqc << std::endl;
-	std::cout << "/////////////////////" << std::endl;
 
 
-	if (escapar >= disparar && escapar >= cqc) {
+
+	if (escapar > disparar && escapar > cqc) {
 		estadoDecidido = 6;
 	}
 
-	else if (disparar >= escapar && disparar >= cqc) {
+	else if (disparar > escapar && disparar > cqc) {
 		estadoDecidido = 3;
 	}
 
-	else if(cqc >= disparar && cqc >= escapar) {
+	else if(cqc > disparar && cqc > escapar) {
 		estadoDecidido = 7;
 	}
+
+	//se decide el estado que sera
+	//std::cout << "VALORES" << std::endl;
+	//std::cout << "ESCAPAR: " << escapar << std::endl;
+	//std::cout << "DISPARAR: " << disparar << std::endl;
+	//std::cout << "CQC: " << cqc << std::endl;
+	//std::cout << "/////////////////////" << std::endl;
 
 }
 
@@ -275,8 +286,6 @@ void LogicaDifusa::condiccionesDeLaVidaEnemigo()
 		}
 
 		else {
-			std::cout << "CACACACCACACCAAC" << std::endl;
-
 			resultadosVidaEnemigo[3] = 1.0f;
 		}
 	}

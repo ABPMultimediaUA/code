@@ -366,16 +366,16 @@ void Enemigo::setPesoMaximoLogicaDifusa(float x)
 
 void Enemigo::iniLogicaDifusa()
 {
-	std::cout << std::endl;
-	std::cout << "ESTADO ANTES: " << std::endl;
-	std::cout << estadoActual << std::endl;
-	std::cout << std::endl;
-	setVelocidad();
+	//std::cout << std::endl;
+	//std::cout << "ESTADO ANTES: " << std::endl;
+	//std::cout << estadoActual << std::endl;
+	//std::cout << std::endl;
+	
 	logica->fusificador(vida, pos, posJugador);
 	estadoActual = logica->getEstadoDecidido();
 
-	std::cout << std::endl;
-	std::cout << "ESTADO DESPUES: " << std::endl;
-	std::cout << estadoActual << std::endl;
-	std::cout << std::endl;
+	//std::cout << std::endl;
+	//std::cout << "ESTADO DESPUES: " << std::endl;
+	//std::cout << estadoActual << std::endl;
+	//std::cout << std::endl;
 }
