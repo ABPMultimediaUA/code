@@ -27,11 +27,10 @@ Waypoints::Waypoints(const Waypoints& orig) {
 
 Waypoints::~Waypoints() {
 
-    for (int i = 0; i < puntos.size(); i++) {
-        delete[] pesos[i];
-    }
+  
+	delete[] pesos[0];
+	delete[] pesos;
 
-    delete[] pesos;
 }
 
 void Waypoints::MuestraPuntos() {
@@ -130,6 +129,16 @@ void Waypoints::crearMatriz()
 	for (std::size_t i = 1; i < puntos.size(); i++) {
 		pesos[i] = pesos[0] + puntos.size() * i;
 	}
+
+
+	//int tam = puntos.size();
+	//
+	//pesos = new float*[tam];
+
+	//for (int i = 0; i < tam; i++) {
+	//	pesos[i] = new float[tam];
+	//}
+
 
 }
 

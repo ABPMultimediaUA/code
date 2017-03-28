@@ -68,6 +68,7 @@ Enemigo::~Enemigo() {
     RVida->getParent()->removeChild(RVida);
 	delete(waypoints);
 	delete(path);
+	delete(logica);
 	/*delete(puntoIni);
 	delete(puntoFin);*/
     delete(entity);

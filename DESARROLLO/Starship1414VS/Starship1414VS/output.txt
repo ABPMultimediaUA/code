@@ -4577,7 +4577,7 @@ SOY ALGO DISTINTO A UNA PARED
 ///////////////////////////////
 
 ////////////////////////
-VIVO: 04D9EFA0
+VIVO: 05E9EA30
 ///////////////////////////////
 (0, 129.008, 191.261, -1, 240.635, 181.41, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, )
 (129.008, 0, 142.7, 317.305, 276.188, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, )
@@ -4603,7 +4603,7 @@ VIVO: 04D9EFA0
 ///////////////////////////////
 
 ////////////////////////
-VIVO: 04D9EA30
+VIVO: 05E9EFA0
 ///////////////////////////////
 (0, 129.008, 191.261, -1, 240.635, 181.41, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, )
 (129.008, 0, 142.7, 317.305, 276.188, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, )
@@ -4629,7 +4629,7 @@ VIVO: 04D9EA30
 ///////////////////////////////
 
 ////////////////////////
-VIVO: 04D9E778
+VIVO: 05E9EB18
 ///////////////////////////////
 (0, 309.308, -1, 319.031, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 289.061, -1, -1, -1, -1, )
 (309.308, 0, 285.253, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, )
@@ -4653,7 +4653,7 @@ VIVO: 04D9E778
 ///////////////////////////////
 
 ////////////////////////
-VIVO: 04D9F170
+VIVO: 05E9EDD0
 ///////////////////////////////
 (0, 200.613, -1, 279.008, 163.301, 186.629, -1, -1, 125.713, -1, -1, -1, -1, -1, -1, -1, -1, -1, )
 (200.613, 0, 267.401, 294.451, 164.385, 277.954, -1, -1, 326.3, -1, -1, -1, -1, -1, -1, -1, -1, -1, )
@@ -4676,7 +4676,7 @@ VIVO: 04D9F170
 ///////////////////////////////
 
 ////////////////////////
-VIVO: 04DA00D8
+VIVO: 05E9EEB8
 
 ////////////////////////
 ENTIDAD 1: 1
@@ -4926,7 +4926,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -416.996 POS Y: 92.9958
+POS X: -417.311 POS Y: 93.3108
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -4935,7 +4935,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -381.227 POS Y: -354.773
+POS X: -380.099 POS Y: -355.901
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -4944,7 +4944,16 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -390.012 POS Y: -345.988
+POS X: -390.039 POS Y: -345.961
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -416.261 POS Y: 68.9507
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -4953,7 +4962,7 @@ ENTIDAD 1: 5
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -954.774 POS Y: -232.226
+POS X: -954.734 POS Y: -232.266
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -4962,7 +4971,7 @@ ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -415.505 POS Y: 69.4681
+POS X: -416.086 POS Y: 57.4357
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -4971,7 +4980,43 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -811.114 POS Y: 367.446
+POS X: -811.213 POS Y: 366.986
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -1299.97 POS Y: -200.966
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -819.031 POS Y: 367.126
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -415.841 POS Y: 41.2308
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -1289.95 POS Y: -200.826
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -4980,52 +5025,7 @@ ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -415.575 POS Y: 57.8481
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -1300.01 POS Y: -201.006
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -818.993 POS Y: 367.046
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -416.135 POS Y: 42.3782
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -415.645 POS Y: 40.8382
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -1289.95 POS Y: -201.106
+POS X: -483.432 POS Y: 716.315
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5034,16 +5034,7 @@ ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -484.455 POS Y: 716.133
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -415.995 POS Y: 27.7482
+POS X: -484.342 POS Y: 716.035
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5052,7 +5043,16 @@ ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -489.25 POS Y: 715.748
+POS X: -488.962 POS Y: 715.895
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -416.156 POS Y: 27.3358
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5061,7 +5061,7 @@ ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -490.125 POS Y: 716.203
+POS X: -489.837 POS Y: 716.07
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5070,7 +5070,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -416.205 POS Y: 16.4783
+POS X: -415.701 POS Y: 17.1509
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5079,17 +5079,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -510.11 POS Y: 716.518
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-CARGADOR: 7
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -512.699 POS Y: 716.308
+POS X: -509.996 POS Y: 716.21
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5098,25 +5088,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -514.135 POS Y: 716.553
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 4
-ENTIDAD 2: 3
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -39.0952 POS Y: 75.4064
-///////////////////////////////////
-Sombra: 1 Elemento: 3
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -520.015 POS Y: 716.063
+POS X: -512.271 POS Y: 716.245
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5125,7 +5097,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -1000.05 POS Y: -214.906
+POS X: -513.391 POS Y: 716.315
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5134,7 +5106,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -523.795 POS Y: 710.813
+POS X: -520.181 POS Y: 716.175
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5143,46 +5115,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -524.215 POS Y: 710.043
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 3
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 31.5977 POS Y: 223.166
-///////////////////////////////////
-Sombra: 0 Elemento: 3
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -523.725 POS Y: 707.383
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 3
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 35.5872 POS Y: 231.505
-///////////////////////////////////
-Sombra: 0 Elemento: 3
-MUERO BALA
-ID DE LA ENTITY 3
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -523.62 POS Y: 700.698
+POS X: -1000.01 POS Y: -214.705
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5191,7 +5124,16 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -523.97 POS Y: 699.858
+POS X: -523.751 POS Y: 710.855
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -523.751 POS Y: 709.805
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5200,7 +5142,34 @@ ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -845.352 POS Y: 390.086
+POS X: -523.891 POS Y: 707.425
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -523.961 POS Y: 700.705
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -523.961 POS Y: 699.935
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -845.608 POS Y: 389.987
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 ACTUALIZO 0
@@ -5210,26 +5179,16 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -383.796 POS Y: 3.94826
+POS X: -383.957 POS Y: 3.81589
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -382.956 POS Y: 3.59826
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-CARGADOR: 6
 
 ////////////////////////
 ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -380.016 POS Y: 3.45826
+POS X: -379.793 POS Y: 3.43089
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 ACTUALIZO 0
@@ -5239,48 +5198,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -999.091 POS Y: -204.986
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 4
-ENTIDAD 2: 3
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -61.9323 POS Y: 70.6
-///////////////////////////////////
-Sombra: 1 Elemento: 3
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -60.1316 POS Y: 139.748
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 4
-ENTIDAD 2: 3
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -63.5008 POS Y: 132.165
-///////////////////////////////////
-Sombra: 1 Elemento: 3
-CRIA ALIEN
-80
-MUERO BALA
-ID DE LA ENTITY 3
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -364.512 POS Y: 3.21327
+POS X: -999.407 POS Y: -204.985
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5289,7 +5207,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -363.322 POS Y: 3.63327
+POS X: -60.1239 POS Y: 139.265
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5298,7 +5216,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -362.342 POS Y: 3.84327
+POS X: -363.658 POS Y: 3.53589
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5307,7 +5225,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -523.935 POS Y: 669.442
+POS X: -362.783 POS Y: 3.71089
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5316,7 +5234,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -70.1766 POS Y: 139.363
+POS X: -523.926 POS Y: 669.591
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5325,7 +5243,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -989.072 POS Y: -194.966
+POS X: -70.0289 POS Y: 139.58
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5334,7 +5252,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -523.865 POS Y: 666.502
+POS X: -523.926 POS Y: 666.721
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5343,7 +5261,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -523.9 POS Y: 663.177
+POS X: -989.409 POS Y: -194.985
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5352,7 +5270,25 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -524.32 POS Y: 658.697
+POS X: -523.821 POS Y: 663.676
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -524.171 POS Y: 662.976
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -524.311 POS Y: 658.566
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5363,7 +5299,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -523.795 POS Y: 657.262
+POS X: -523.961 POS Y: 657.866
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5372,18 +5308,47 @@ ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -523.97 POS Y: 654.917
+POS X: -523.926 POS Y: 654.961
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 ACTUALIZO 0
-CARGADOR: 5
 
 ////////////////////////
 ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -523.9 POS Y: 653.517
+POS X: -523.856 POS Y: 653.561
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -301.073 POS Y: -413.508
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+CARGADOR: 7
+
+////////////////////////
+ENTIDAD 1: 4
+ENTIDAD 2: 3
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -80.8555 POS Y: 52.3771
+///////////////////////////////////
+Sombra: 1 Elemento: 3
+
+CACA
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -81.1941 POS Y: 122.605
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5392,7 +5357,76 @@ ENTIDAD 1: 4
 ENTIDAD 2: 3
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -80.4783 POS Y: 60.4067
+POS X: -83.3286 POS Y: 109.259
+///////////////////////////////////
+Sombra: 1 Elemento: 3
+CRIA ALIEN
+80
+MUERO BALA
+ID DE LA ENTITY 3
+MUERO ENTITY2D
+
+////////////////////////
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -523.716 POS Y: 632.702
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -81.1591 POS Y: 112.91
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -298.203 POS Y: -427.087
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -80.8091 POS Y: 112.21
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -298.273 POS Y: -434.437
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+CARGADOR: 6
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -298.168 POS Y: -438.112
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 4
+ENTIDAD 2: 3
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -81.0727 POS Y: 30.7723
 ///////////////////////////////////
 Sombra: 1 Elemento: 3
 
@@ -5401,7 +5435,16 @@ ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -301.395 POS Y: -413.396
+POS X: -523.856 POS Y: 615.832
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -298.203 POS Y: -444.446
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5410,7 +5453,7 @@ ENTIDAD 1: 4
 ENTIDAD 2: 3
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -86.1898 POS Y: 116.189
+POS X: -83.5475 POS Y: 87.6943
 ///////////////////////////////////
 Sombra: 1 Elemento: 3
 CRIA ALIEN
@@ -5424,18 +5467,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -81.0967 POS Y: 122.353
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-CACA
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -523.69 POS Y: 632.586
+POS X: -523.821 POS Y: 612.297
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5444,26 +5476,62 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -81.0617 POS Y: 112.308
+POS X: -524.346 POS Y: 610.722
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
 ////////////////////////
-ENTIDAD 1: 2
+ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -298.665 POS Y: -427.045
+POS X: -298.168 POS Y: -448.051
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
-CARGADOR: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -81.0891 POS Y: 86.7297
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -80.9141 POS Y: 85.8546
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -80.8791 POS Y: 85.1196
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+CARGADOR: 5
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -80.7391 POS Y: 83.7896
+///////////////////////////////////
+Sombra: 0 Elemento: 4
 
 ////////////////////////
 ENTIDAD 1: 4
 ENTIDAD 2: 3
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -78.9251 POS Y: 38.4171
+POS X: -80.6311 POS Y: 10.0909
 ///////////////////////////////////
 Sombra: 1 Elemento: 3
 
@@ -5472,16 +5540,7 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -298.28 POS Y: -434.57
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -298.385 POS Y: -437.825
+POS X: -523.751 POS Y: 596.127
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5490,7 +5549,7 @@ ENTIDAD 1: 4
 ENTIDAD 2: 3
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -83.2041 POS Y: 93.6363
+POS X: -81.8475 POS Y: 65.8435
 ///////////////////////////////////
 Sombra: 1 Elemento: 3
 CRIA ALIEN
@@ -5500,66 +5559,48 @@ ID DE LA ENTITY 3
 MUERO ENTITY2D
 
 ////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -523.681 POS Y: 589.757
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
 ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -523.795 POS Y: 615.891
+POS X: -81.1241 POS Y: 66.9545
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -845.368 POS Y: 452.748
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+CARGADOR: 4
 
 ////////////////////////
 ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -298.385 POS Y: -444.755
+POS X: -966.035 POS Y: -145.005
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -523.725 POS Y: 612.671
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -298.14 POS Y: -448.22
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -81.1317 POS Y: 87.1078
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -80.8516 POS Y: 85.4278
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-CARGADOR: 3
 
 ////////////////////////
 ENTIDAD 1: 4
 ENTIDAD 2: 3
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -77.2275 POS Y: 6.79366
+POS X: -80.6245 POS Y: -11.109
 ///////////////////////////////////
 Sombra: 1 Elemento: 3
 
@@ -5568,7 +5609,34 @@ ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -523.796 POS Y: 589.71
+POS X: -523.716 POS Y: 573.903
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -80.7741 POS Y: 55.5445
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -524.031 POS Y: 572.818
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -80.9491 POS Y: 53.8295
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5577,7 +5645,16 @@ ENTIDAD 1: 2
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -845.392 POS Y: 451.288
+POS X: -81.1941 POS Y: 53.5845
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -81.1591 POS Y: 52.4995
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
 
@@ -5586,7 +5663,7 @@ ENTIDAD 1: 4
 ENTIDAD 2: 3
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -80.0167 POS Y: 61.9347
+POS X: -81.8444 POS Y: 44.8017
 ///////////////////////////////////
 Sombra: 1 Elemento: 3
 CRIA ALIEN
@@ -5596,270 +5673,59 @@ ID DE LA ENTITY 3
 MUERO ENTITY2D
 
 ////////////////////////
-ENTIDAD 1: 0
+ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -80.5367 POS Y: 68.0327
+POS X: -521.616 POS Y: 568.443
 ///////////////////////////////////
 Sombra: 0 Elemento: 4
-A DISPARAR!
-
-DISTANCIA ENTRE ENEMIGO Y JUGADOR
-DISTANCIA: 74.3329
-
 
 ////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
+ENTIDAD 1: 1
+ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -77.7462 POS Y: 18.1346
+POS X: -520.741 POS Y: 568.268
 ///////////////////////////////////
-Sombra: 0 Elemento: 6
+Sombra: 0 Elemento: 4
 
-VIDA ANTES: 100
+////////////////////////
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -519.586 POS Y: 568.093
+///////////////////////////////////
+Sombra: 0 Elemento: 4
+CARGADOR: 3
 
-VIDA DESPUES: 90
+////////////////////////
+ENTIDAD 1: 4
+ENTIDAD 2: 3
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -80.7445 POS Y: -33.5103
+///////////////////////////////////
+Sombra: 1 Elemento: 3
+
+CACA
+
+CACA
+
+////////////////////////
+ENTIDAD 1: 4
+ENTIDAD 2: 3
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -81.9815 POS Y: 23.1852
+///////////////////////////////////
+Sombra: 1 Elemento: 3
+CRIA ALIEN
+0
 MUERO BALA
-ID DE LA ENTITY 6
+ID DE LA ENTITY 3
 MUERO ENTITY2D
 
 ////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -965.994 POS Y: -145.005
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -523.096 POS Y: 574.24
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -524.076 POS Y: 572.769
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -524.006 POS Y: 570.179
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -520.996 POS Y: 568.289
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -520.051 POS Y: 568.114
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-CACA
-
-CACA
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -500.661 POS Y: 568.114
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -492.576 POS Y: 568.989
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -491.071 POS Y: 567.974
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -479.941 POS Y: 568.114
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-ACTUALIZO 0
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -275.229 POS Y: -0.741734
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 0
-ENTIDAD 2: 6
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -35.3808 POS Y: 39.1298
-///////////////////////////////////
-Sombra: 0 Elemento: 6
-
-VIDA ANTES: 90
-
-VIDA DESPUES: 80
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -298 POS Y: -545.239
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -1147.67 POS Y: -369.225
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -1148.37 POS Y: -368.525
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -284.224 POS Y: -1.40673
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -284.924 POS Y: -0.706734
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -297.93 POS Y: -555.179
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -297.93 POS Y: -555.179
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -294.339 POS Y: -1.16173
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -1147.81 POS Y: -356.555
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -295.144 POS Y: -0.916734
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -1148.33 POS Y: -356.03
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-ADIOS 1
-
-////////////////////////
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -81.4467 POS Y: 67.1227
-///////////////////////////////////
-Sombra: 0 Elemento: 4
-
-CACA
-Irrlicht Engine version 1.8.4
- (Build 9200)
-Using renderer: OpenGL 4.5.0
-GeForce GT 720M/PCIe/SSE2: NVIDIA Corporation
-OpenGL driver version is 1.2 or better.
-GLSL version: 4.5
-Resizing window (1366 745)
-Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
+MUERE: 05E9EFA0
