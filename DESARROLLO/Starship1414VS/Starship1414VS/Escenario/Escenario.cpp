@@ -1482,7 +1482,7 @@ void Escenario::dibujarEscenario() {
 					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
 					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
 					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
-				objeto->getMaterial(0).EmissiveColor.set(0, 128, 0, 0);
+				objeto->getMaterial(0).EmissiveColor.set(0, 128, 128, 128);
 
 				Llave *llave = new Llave(objeto->getPosition(), objeto->getRotation(),
 					objeto->getScale(), 1, objeto, (*I).nombre);

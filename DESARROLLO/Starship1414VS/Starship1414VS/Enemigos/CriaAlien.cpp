@@ -187,8 +187,11 @@ void CriaAlien::Patrullar() {
 	if (puntoFin == nullptr) {
 
 		posNodo = path->buscarWaypointMasCorto(posNodo);
-		puntoFin = waypoints->getNodoX(posNodo);
-		
+
+		if (posNodo != -1) {
+			puntoFin = waypoints->getNodoX(posNodo);
+		}
+
 		if(nodoAnterior == puntoFin) {
 
 		
@@ -202,7 +205,7 @@ void CriaAlien::Patrullar() {
 
 	}
 
-	else {
+	else if(puntoFin != nullptr) {
 	
 
 
@@ -265,7 +268,9 @@ void CriaAlien::BuscarWaypoint()
 
 	if (puntoIni == nullptr) {
 		posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
-		puntoIni = waypoints->getNodoX(posNodo);
+
+		if(posNodo != -1)
+			puntoIni = waypoints->getNodoX(posNodo);
 
 		//	std::cout << std::endl;
 		//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
@@ -274,20 +279,21 @@ void CriaAlien::BuscarWaypoint()
 
 
 
+	if (puntoIni != nullptr) {
+		dir = path->getDireccion(pos, puntoIni->getPosicion());
+		/*	std::cout << std::endl;
+		std::cout << "DIR: " << dir << std::endl;
+		std::cout << std::endl;*/
 
-	dir = path->getDireccion(pos, puntoIni->getPosicion());
-	/*	std::cout << std::endl;
-	std::cout << "DIR: " << dir << std::endl;
-	std::cout << std::endl;*/
+		this->Mover(dir);
 
-	this->Mover(dir);
+		if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
+			estadoActual = PATRULLAR;
 
-	if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
-		estadoActual = PATRULLAR;
+			dir = -1;
+			this->setVelocidad();
 
-		dir = -1;
-		this->setVelocidad();
-
+		}
 	}
 }
 

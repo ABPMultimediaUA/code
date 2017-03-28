@@ -27,7 +27,7 @@ AStar::~AStar()
 int AStar::buscarWaypointCercano(const vector3df &posEne, const std::vector<Nodo*> &vecNodos)
 {
 	float min = 10000000;
-	int pos;
+	int pos = -1;
 	for(int i = 0; i < vecNodos.size(); i++) {
 		float xi, zi, xf, zf, peso;
 		float pesoX, pesoZ;
@@ -55,8 +55,9 @@ int AStar::buscarWaypointCercano(const vector3df &posEne, const std::vector<Nodo
 int AStar::buscarWaypointMasCorto(const int &posNodoIni)
 {
 	float min = 10000000.0f;
-	int pos;
-	for(int i = 0; i < tamMatrix; i++) {
+	int pos = -1;
+
+	for(int i = 0; i < tamMatrix ; i++) { 
 		/*std::cout << "///////////////////////" << std::endl;
 		std::cout << "MATRIZ: " << matriz[posNodoIni][i] << std::endl;*/
 		if(matriz[posNodoIni][i] != 0 && matriz[posNodoIni][i] != -1 && matriz[posNodoIni][i] < min) {
