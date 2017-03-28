@@ -10,7 +10,7 @@ public:
 	void setNombre(std::string);
 	virtual bool cargarFichero(std::string) = 0;
 	virtual void draw() = 0;
-private:
+protected:
 	std::string nombre;
 };
 

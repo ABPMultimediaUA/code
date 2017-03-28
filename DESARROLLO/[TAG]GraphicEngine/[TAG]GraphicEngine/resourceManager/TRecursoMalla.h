@@ -44,12 +44,12 @@ class TRecursoMalla :
 
 public:
 	TRecursoMalla();
+	TRecursoMalla(std::string);
 	~TRecursoMalla();
 	bool cargarFichero(std::string) override;
 	void draw() override;
 	void draw(GLuint);
 private:
-	std::string directory;
 	const aiScene* scene;
 	std::map<std::string, GLuint> textures;
 	std::vector<std::shared_ptr<Mesh>> meshes;

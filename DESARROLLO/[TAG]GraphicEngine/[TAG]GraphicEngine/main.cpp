@@ -1,6 +1,4 @@
 #include <iostream>
-
-
 #include <vector>
 #include "framework\openGLShader.h"
 #include "framework\openGLWindow.h"
@@ -12,11 +10,11 @@
 #include "entityTree\TCamara.h"
 #include "entityTree\TLuz.h"
 #include "entityTree\TMalla.h"
-//#include "entityTree\TTriangle.h"
+#include "resourceManager\TGestorRecursos.h"
 #include "resourceManager\TRecursoCamera.h"
 
 //variables constante para las dimenciones de la ventana
-const GLuint WIDTH = 800, HEIGHT = 600;
+const GLuint WIDTH = 1920, HEIGHT = 1024;
 
 class MotorGrafico : public openGLWindow
 {
@@ -36,9 +34,11 @@ private:
 	glm::vec3 luz_direction;
 	TNodo origen;
 	std::vector<TNodo*> nodos;
+	TGestorRecursos gestor;
+
 };
 
-MotorGrafico::MotorGrafico() : luz_direction{ 0, 10, 10 }, origen(nullptr)
+MotorGrafico::MotorGrafico() : luz_direction{ 0, 10, 10 }, origen(nullptr), gestor()
 {
 }
 
@@ -109,7 +109,7 @@ void MotorGrafico::cargarArbolEscena()
 {
 	this->nodos.push_back(new TNodo(new TTransform()));
 	this->nodos.push_back(new TNodo(new TTransform()));
-	this->nodos.push_back(new TNodo(new TMalla("models/Nanosuit/nanosuit.obj")));
+	this->nodos.push_back(new TNodo(new TMalla("models/Nanosuit/nanosuit.obj", gestor)));
 	this->nodos.push_back(new TNodo(new TLuz()));
 	this->nodos.push_back(new TNodo(new TTransform()));
 	this->nodos.push_back(new TNodo(new TCamara()));

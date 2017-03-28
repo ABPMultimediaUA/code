@@ -152,15 +152,20 @@ TRecursoMalla::TRecursoMalla()
 {
 }
 
+TRecursoMalla::TRecursoMalla(std::string n)
+{
+	this->cargarFichero(n);
+}
+
 TRecursoMalla::~TRecursoMalla() 
 {
 }
 
 bool TRecursoMalla::cargarFichero(std::string n)
 {
-	this->setNombre(n);
 	size_t index = n.find_last_of("\\/");
-	directory = index == std::string::npos ? "" : n.substr(0, index);
+	nombre = index == std::string::npos ? "" : n.substr(index+1);
+	std::cout <<"Recurso nombre: "<< nombre << std::endl;
 
 	Assimp::Importer importer;
 	scene = importer.ReadFile(n, aiProcess_Triangulate | aiProcess_FlipUVs);

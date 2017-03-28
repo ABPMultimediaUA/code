@@ -1,6 +1,7 @@
 #include "TMalla.h"
 #include <iostream>
 #include "../resourceManager/TRecursoMalla.h"
+#include "../resourceManager/TGestorRecursos.h"
 
 TMalla::TMalla()
 {
@@ -8,6 +9,10 @@ TMalla::TMalla()
 }
 
 TMalla::TMalla(std::string path)
+{
+	this->cargarMalla(path);
+}
+TMalla::TMalla(std::string path, TGestorRecursos& gestor)
 {
 	this->cargarMalla(path);
 }
@@ -30,6 +35,10 @@ void TMalla::cargarMalla(std::string path)
 	}
 }
 
+void TMalla::cargarMalla(std::string path, TGestorRecursos& gestor)
+{
+	this->malla = static_cast<TRecursoMalla*>(gestor.getRecurso(path,1));
+}
 
 void TMalla::beginDraw()
 {
