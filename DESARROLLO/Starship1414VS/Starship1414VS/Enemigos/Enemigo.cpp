@@ -72,6 +72,8 @@ Enemigo::~Enemigo() {
 	/*delete(puntoIni);
 	delete(puntoFin);*/
     delete(entity);
+	puntoFin = nullptr;
+	puntoIni = nullptr;
 }
 
 void Enemigo::Update(f32 dt) {

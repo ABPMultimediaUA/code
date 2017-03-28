@@ -54,7 +54,7 @@ int AStar::buscarWaypointCercano(const vector3df &posEne, const std::vector<Nodo
 
 int AStar::buscarWaypointMasCorto(const int &posNodoIni)
 {
-	float min = 10000000;
+	float min = 10000000.0f;
 	int pos;
 	for(int i = 0; i < tamMatrix; i++) {
 		/*std::cout << "///////////////////////" << std::endl;

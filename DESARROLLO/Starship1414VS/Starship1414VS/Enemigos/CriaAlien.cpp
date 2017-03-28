@@ -191,8 +191,7 @@ void CriaAlien::Patrullar() {
 		
 		if(nodoAnterior == puntoFin) {
 
-			std::cout << std::endl;
-			std::cout << "CACA" << std::endl;
+		
 			posNodo = path->buscarWaypointNoRepetido(puntoFin->getLugarDelNodo(), puntoIni->getLugarDelNodo());
 			puntoFin = waypoints->getNodoX(posNodo);
 

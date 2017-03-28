@@ -1,8 +1,5 @@
-﻿  Waypoints.cpp
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(42): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(72): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(74): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(155): warning C4018: '<': no coinciden signed/unsigned
-c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\waypoints.cpp(158): warning C4018: '<': no coinciden signed/unsigned
+﻿  CriaAlien.cpp
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(91): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
+c:\users\user\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(98): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
   Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

@@ -27,7 +27,6 @@ Waypoints::Waypoints(const Waypoints& orig) {
 
 Waypoints::~Waypoints() {
 
-  
 	delete[] pesos[0];
 	delete[] pesos;
 
