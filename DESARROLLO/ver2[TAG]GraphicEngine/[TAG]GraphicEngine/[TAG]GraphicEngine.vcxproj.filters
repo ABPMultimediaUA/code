@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de código fuente">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="entityTree\TCamara.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="entityTree\TLuz.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="entityTree\TMalla.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="entityTree\TNodo.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="entityTree\TTransform.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="resourceManager\TGestorRecursos.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="resourceManager\TRecurso.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="entityTree\TTriangle.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="resourceManager\TRecursoTriangle.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="resourceManager\TRecursoMalla.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="resourceManager\TRecursoTextura.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\openGLShader.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\openGLWindow.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="resourceManager\TRecursoCamera.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="TMotorTAG.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="entityTree\TCamara.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="entityTree\TEntidad.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="entityTree\TLuz.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="entityTree\TMalla.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="entityTree\TNodo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="entityTree\TTransform.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\common.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\exponential.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\ext.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\fwd.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\geometric.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\glm.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\integer.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\mat2x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\mat2x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\mat2x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\mat3x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\mat3x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\mat3x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\mat4x2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\mat4x3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\mat4x4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\matrix.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\packing.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\trigonometric.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\vec2.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\vec3.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\vec4.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\glm\vector_relational.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resourceManager\TGestorRecursos.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resourceManager\TRecurso.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="entityTree\TTriangle.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resourceManager\TRecursoTriangle.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resourceManager\TRecursoMalla.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resourceManager\TRecursoTextura.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\openGLShader.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\openGLWindow.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="resourceManager\TRecursoCamera.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="TMotorTAG.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="tools\glm\CMakeLists.txt" />
+    <Text Include="models\Nanosuit\LICENSE.txt" />
+    <Text Include="Shader\directional.vertex_shader" />
+    <Text Include="Shader\directional.fragment_shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\assimp-vc140-mt.exp" />
+    <None Include="Shader\basicoFragmentShader.frag" />
+    <None Include="Shader\basicoVertexShader.vs" />
+    <None Include="models\Nanosuit\nanosuit2.3ds" />
+    <None Include="models\Nanosuit\nanosuit2.c4d" />
+    <None Include="models\Nanosuit\nanosuit.blend" />
+    <None Include="models\Nanosuit\nanosuit.mtl" />
+    <None Include="models\Nanosuit\nanosuit.3ds" />
+    <None Include="Shader\directionalFragmentShader.frag" />
+    <None Include="Shader\directionalVertexShader.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\assimp-vc140-mt.lib" />
+    <Library Include="lib\glfw3.lib" />
+    <Library Include="lib\glfw3dll.lib" />
+    <Library Include="lib\glew32.lib" />
+    <Library Include="lib\glew32s.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="models\Nanosuit\wallpap.jpg">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\back.jpg">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\front.jpg">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\nanosuit2.jpg">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\perpective.jpg">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\leg_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\arm_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\arm_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\arm_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\body_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\body_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\body_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_arm_alpha.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_body_alpha.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_hand_alpha.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_helmet_alpha.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\cell_leg_alpha.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\glass_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\glass_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\hand_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\hand_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\hand_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\helmet_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\helmet_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\helmet_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\leg_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\tex\leg_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\arm_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\arm_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\arm_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\body_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\body_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\body_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\glass_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\glass_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\hand_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\hand_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\hand_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\helmet_diff.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\helmet_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\helmet_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\leg_dif.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\leg_showroom_ddn.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="models\Nanosuit\leg_showroom_spec.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
