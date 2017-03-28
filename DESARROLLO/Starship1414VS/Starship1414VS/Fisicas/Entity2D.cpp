@@ -141,11 +141,11 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
     if (escala.Z != 1) {
 
-        bodyShape.SetAsBox(20 * escala.Z, 5 * escala.X);
-        bodyShape2.SetAsBox(5 * escala.Z, 5 * escala.X);	
+        bodyShape.SetAsBox(15 * escala.X, 2.5 * escala.Z);
+        bodyShape2.SetAsBox(2.5 * escala.X, 2.5 * escala.Z);	
     } else {
-        bodyShape.SetAsBox(5 * escala.X, 20 * escala.Z);
-        bodyShape2.SetAsBox(5 * escala.X, 5 * escala.Z);	
+        bodyShape.SetAsBox(2.5 * escala.X, 15 * escala.Z);
+        bodyShape2.SetAsBox(2.5 * escala.X, 2.5 * escala.Z);	
     }
 
     objeto3D = dirPuerta;
@@ -205,12 +205,20 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, bool vivo, void
 
 //constructor enemigo
 
-Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, ISceneManager* smgr) {
+Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, ISceneManager* smgr, unsigned int raza) {
 
 
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set((pos.X), (pos.Z));
-    bodyShape.SetAsBox(5.0f, 5.0f);
+
+	if (raza == 10) {
+		bodyShape.SetAsBox(5.0f, 5.0f);
+	}
+
+	else if (raza == 11) {
+		bodyShape.SetAsBox(10.0f, 10.0f);
+	}
+
 	bodyCircle.m_p.Set(0, 0);
 	bodyCircle.m_radius = 70; 
 

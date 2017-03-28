@@ -12,12 +12,16 @@
 */
 #include <Box2D\Box2D.h>
 #include <iostream>
+#include <math.h>
 #include "../Escenario/Puerta.h"
 #include "MiContactListener.h"
 #include "../Jugador/Personaje.h"
 #include "../Enemigos/Enemigo.h"
 #include "Entity2D.h"
 #include "../Escenario/Terminal.h"
+#include "../Jugador/Inventario.h"
+#include "../Escenario/ObjConsumables/Botiquines.h"
+#include "../Escenario/ObjConsumables/Llave.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionSubfusil.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionEscopeta.h"
 #include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionPistola.h"
@@ -110,16 +114,15 @@ void MiContactListener::activarTerminar(Entity2D * pers, Entity2D * terminal, bo
 
 void MiContactListener::gestionarObjeto(Entity2D * pers, Entity2D * objeto, int tipo)
 {
+
 	switch (tipo)
 	{
-	case 0:
+		//para copiar el objeto
+		/*A *temClass = new A(10);
+A *myClass01 = new A(*temClass);
+A *myclass02 = new A(*temClass);
+*/
 
-		break;
-
-	case 1:
-
-
-		break;
 
 	case 2:
 
@@ -139,6 +142,7 @@ void MiContactListener::gestionarObjeto(Entity2D * pers, Entity2D * objeto, int 
 
 
 	default:
+		//addObjetoAlInventario(pers, objeto, tipo);
 		break;
 	}
 	objeto->setLive(false);
@@ -194,6 +198,23 @@ void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * mun
 
 	personaje->cogerMunicion(mun->getMunicion(), 2);
 //	munEscopeta->setLive(false);
+}
+
+void MiContactListener::addObjetoAlInventario(Entity2D * pers, Entity2D * objeto, int tipo)
+{
+	Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
+
+	if(tipo == 0) {
+
+		Botiquines *bot = new Botiquines(*static_cast<Botiquines*>(objeto->getObjeto3D()));
+		
+		personaje->getInventario()->addObjeto(bot);
+	}
+
+	else {
+
+	}
+
 }
 
 
@@ -304,16 +325,30 @@ void dispararEnemigo(Entity2D *pers, Entity2D *enemigo) {
 	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
 	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 
+	float pesoX = powf(p->getPos().X - e->getPos().X, 2);
+	float pesoZ = powf(p->getPos().Z - e->getPos().Z, 2);
+	float peso = sqrtf((pesoX + pesoZ));
+
 	p->getPos();
-
-	//e->setPosJugador(p->getPos().X, p->getPos().Z);
-	e->setEstado(3);
-
+	e->setPesoMaximoLogicaDifusa(peso);
+	e->setPosJugador(p->getPos().X, p->getPos().Z);
+	//e->setEstado(3);
+	e->iniLogicaDifusa();
 	//std::cout << std::endl;
 	//std::cout <<"CALLBACK"<< std::endl;
 
 	//std::cout << "POS X: " << p->getPos().X<<"POS Z: " << p->getPos().Z<< std::endl;
 	//std::cout << std::endl;
+
+	
+
+	std::cout << std::endl;
+	std::cout <<"DISTANCIA ENTRE ENEMIGO Y JUGADOR"<< std::endl;
+
+	std::cout <<"DISTANCIA: "<<peso << std::endl;
+	std::cout << std::endl;
+	
+
 
 }
 
@@ -471,18 +506,18 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				entity1->setLive(false);
 			}
 
-			//metodo para que quite vida al personaje
+			
 
-			if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true) {
+			if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true && f2->IsSensor() != true) {
 				actualizarPuerta(entity1, 0);
 			}
 
-			else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true) {
+			else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true && f1->IsSensor() != true) {
 				actualizarPuerta(entity2, 0);
 			}
 
 
-
+			//if de los objetos consumables
 			if (entity1->getIDEN() == 0 
 				&& entity2->getIDEN() == 5 
 				&& entity2->getId() != 5

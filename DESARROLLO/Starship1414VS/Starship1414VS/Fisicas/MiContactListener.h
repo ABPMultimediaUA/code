@@ -43,6 +43,7 @@ public:
 	void aumentarMunicionPistola(Entity2D *pers, Entity2D *munPistola);
 	void aumentarMunicionSubfusil(Entity2D *pers, Entity2D *munSubfisul);
 	void aumentarMunicionEscopeta(Entity2D *pers, Entity2D *munEscopeta);
+	void addObjetoAlInventario(Entity2D *pers, Entity2D *objeto, int tipo);
 
 
 

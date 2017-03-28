@@ -161,7 +161,7 @@ void Puerta::abrirPuerta() {
 		else
 		{
 			abierta = true;
-			std::cout << detectado << std::endl;
+			//std::cout << detectado << std::endl;
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
 			if (detectado == false)
 			{
@@ -181,7 +181,7 @@ void Puerta::abrirPuerta() {
 		else
 		{
 			abierta = true;
-			std::cout << detectado << std::endl;
+			//std::cout << detectado << std::endl;
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
 
 			if (detectado == false)

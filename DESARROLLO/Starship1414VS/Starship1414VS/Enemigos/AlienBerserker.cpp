@@ -31,12 +31,21 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 
 	vel = 20.0f;
 	pos = maya->getPosition();
-	entity = new Entity2D(world, pos, true, this, smgr);
-	estadoActual = DESCANSAR;
+	
+	estadoActual = BUSCARPUNTO;
 	raza = BERSERKER;
 	blindaje = 5.0f;
 	damageChoque = 15.0f;
+	entity = new Entity2D(world, pos, true, this, smgr, raza);
 
+	waypoints = puntos;
+	// waypoints->creaPesos(entity);
+
+	waypoints->mostrarPesos();
+	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
+
+	disparado = false;
+	damageBala = 20.0f;
 }
 
 //AlienBerserker::AlienBerserker(const AlienBerserker& orig) {
@@ -47,35 +56,156 @@ AlienBerserker::~AlienBerserker() {
 
 void AlienBerserker::Update(f32 dt)
 {
+
+	//crear metodos para todos los estados
 	switch (estadoActual) {
 
-	case 0: //descansar
-		//estadoActual = estado;
+	case BUSCARPUNTO:
 
-		maya->getMaterial(0).EmissiveColor.set(0, 0, 200, 150);
+		BuscarWaypoint();
+
 		break;
 
-	case 1: //patrullar
-		//estadoActual = estado;
-		maya->getMaterial(0).EmissiveColor.set(0, 125, 0, 200);
+	case PATRULLAR: //patrullar
+
+		Patrullar();
+
 		break;
 
-	case 2: //atacar
-		//estadoActual = estado;
-		maya->getMaterial(0).EmissiveColor.set(0, 255, 175, 0);
+	case ATACAR: //atacar
+
+		Atacar(dt);
+
 		break;
 
+
+	case ROTACION:
+		maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
+
+
+		break;
 	}
+
+	this->actualizarLista();
+	GVida->setPosition(pos);
+	RVida->setPosition(vector3df(pos.X - 8, pos.Y, pos.Z));
+
 }
 
-void AlienBerserker::Mover(int modo)
-{
-
-}
+//void AlienBerserker::Mover(int modo)
+//{
+//
+//}
 
 void AlienBerserker::Patrullar()
 {
+	//maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
+	if (puntoFin == nullptr) {
 
+		posNodo = path->buscarWaypointMasCorto(posNodo);
+		puntoFin = waypoints->getNodoX(posNodo);
+
+		if (nodoAnterior == puntoFin) {
+
+			std::cout << std::endl;
+			std::cout << "CACA" << std::endl;
+			posNodo = path->buscarWaypointNoRepetido(puntoFin->getLugarDelNodo(), puntoIni->getLugarDelNodo());
+			puntoFin = waypoints->getNodoX(posNodo);
+
+		}
+
+		/*std::cout << std::endl;
+		std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;*/
+
+	}
+
+	else {
+
+
+
+		dir = path->getDireccion(pos, puntoFin->getPosicion());
+		/*	std::cout << std::endl;
+		std::cout << "DIR: " << dir << std::endl;
+		std::cout << std::endl;*/
+		this->Mover(dir);
+		if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
+			dir = -1;
+			this->setVelocidad();
+
+			nodoAnterior = puntoIni;
+			puntoIni = puntoFin;
+			puntoFin = nullptr;
+
+			/*posNodo = path->buscarWaypointMasCorto(posNodo);
+			puntoFin = waypoints->getNodoX(posNodo);*/
+
+		}
+
+
+	}
+
+	/*std::cout << std::endl;
+	std::cout << "PATRULLO PREMO!" << std::endl;
+	std::cout << std::endl;*/
+}
+
+void AlienBerserker::Atacar(f32 dt)
+{
+	//maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 0);
+	/*		std::cout << std::endl;
+	std::cout << "CRIA ALIEN" << std::endl;
+	std::cout << "POS X: " << posJugador.X << "POS Y(Z): " << posJugador.Y << std::endl;
+	std::cout << std::endl;*/
+
+	if (disparado == false) {
+
+		this->disparar(dt); //donde crea la bala
+
+	}
+
+
+	if (disparado == true) {
+		this->aumentarTiempoDisparo(dt);
+		if (this->getTiempoDisparo() >= 0.7f) {
+			this->setDisparo(false);
+			this->resetTiempoDisparo();
+		}
+	}
+
+	this->setVelocidad();
+}
+
+
+void AlienBerserker::BuscarWaypoint()
+{
+	//maya->getMaterial(0).EmissiveColor.set(0, 0, 200, 10);
+
+	if (puntoIni == nullptr) {
+		posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
+		puntoIni = waypoints->getNodoX(posNodo);
+
+		//	std::cout << std::endl;
+		//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
+		//std::cout << "POS NODO: " << posNodo << std::endl;
+	}
+
+
+
+
+	dir = path->getDireccion(pos, puntoIni->getPosicion());
+	/*	std::cout << std::endl;
+	std::cout << "DIR: " << dir << std::endl;
+	std::cout << std::endl;*/
+
+	this->Mover(dir);
+
+	if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
+		estadoActual = PATRULLAR;
+
+		dir = -1;
+		this->setVelocidad();
+
+	}
 }
 
 void AlienBerserker::quitarVida(float damage) {

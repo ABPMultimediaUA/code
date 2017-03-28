@@ -26,8 +26,9 @@ public:
 	//CriaAlien(const CriaAlien& orig);
 	virtual ~CriaAlien();
 	void Update(f32 dt);
-	void Mover(int modo);
 	void Patrullar();
+	void Atacar(f32 dt);
+	void BuscarWaypoint();
 	void quitarVida(float damage);
 	void dibujaGrid(ISceneManager *grid);
 private:

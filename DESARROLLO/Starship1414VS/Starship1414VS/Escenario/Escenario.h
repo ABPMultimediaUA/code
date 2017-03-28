@@ -21,6 +21,7 @@
 #include <irrlicht.h>
 #include <Box2D\Box2D.h>
 #include <list>
+#include <vector>
 #include <string>
 
 
@@ -90,6 +91,7 @@ private:
 	std::list<Pared*> paredes;
 	std::list<Puerta*> puertas;
 	std::list<Objetos*> objConsumables;
+	std::vector<Waypoints*> waypoints;
 	int tam;
 	Entity2D *entity;
 	 Juego *jue;
@@ -105,7 +107,7 @@ public:
 	void setSubHijos(std::string nombre, double t[], double r[], double s[]);
 	void muestraEstructura();
 	void dibujarEscenario();
-	void fabricaDeEnemigos(Waypoints * puntos);
+	void fabricaDeEnemigos();
 	std::list<Escenario::ElementoHijo> getHijos();
 	std::list<Escenario::Elemento> getSubHijos();
 	void removeListHijos();

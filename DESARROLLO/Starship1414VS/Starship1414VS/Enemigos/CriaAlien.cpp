@@ -19,6 +19,7 @@
 #include "../Fisicas/Entity2D.h"
 #include "Waypoints.h"
 
+
 CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos) {
     
 	//seria mejor que se le pasara las cosas necesarias del escenario que todo el escenario entero
@@ -29,14 +30,15 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
         maya->getMaterial(0).EmissiveColor.set(0, 0, 0, 20);
     }
 
-    vel = 50.0f;
+    vel = 35.0f;
     pos = maya->getPosition();
 	rot = maya->getRotation();
-    entity = new Entity2D(world, pos, true, this, smgr);
-    estadoActual = DESCANSAR;
+    
+    estadoActual = BUSCARPUNTO;
     raza = CRIA;
     blindaje = 0.0f;
 	damageChoque = 10.0f;
+	entity = new Entity2D(world, pos, true, this, smgr, raza);
    // nav = new navmeshes(10, esce);
         waypoints = puntos;
    // waypoints->creaPesos(entity);
@@ -105,69 +107,22 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 	//crear metodos para todos los estados
 	switch (estadoActual) {
 
-        case DESCANSAR: //descansar
+        case BUSCARPUNTO: 
           
-			maya->getMaterial(0).EmissiveColor.set(0, 0, 200, 10);
-			
-			if (puntoIni == nullptr) {
-				posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
-				puntoIni = waypoints->getNodoX(posNodo);	
-				
-			//	std::cout << std::endl;
-			//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
-			//std::cout << "POS NODO: " << posNodo << std::endl;
-			}
-		
-            
-			
-			
-				dir = path->getDireccion(pos, puntoIni->getPosicion());
-			/*	std::cout << std::endl;
-				std::cout << "DIR: " << dir << std::endl;
-				std::cout << std::endl;*/
-
-				this->Mover(dir);
-
-				if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
-					estadoActual = PATRULLAR;
-			
-					dir = -1;
-					this->setVelocidad();
-					
-				}
+			BuscarWaypoint();
 				
             break;
 
         case PATRULLAR: //patrullar
           
-			this->Patrullar();
+			Patrullar();
            
             break;
 
         case ATACAR: //atacar
-           
-            maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 0);
-	/*		std::cout << std::endl;
-			std::cout << "CRIA ALIEN" << std::endl;
-			std::cout << "POS X: " << posJugador.X << "POS Y(Z): " << posJugador.Y << std::endl;
-			std::cout << std::endl;*/
-
-			if (disparado == false) {
-
-				this->disparar(dt); //donde crea la bala
-
-			}
-
-
-			if ( disparado == true) {
-				this->aumentarTiempoDisparo(dt);
-				if (this->getTiempoDisparo() >= 0.7f) {
-					this->setDisparo(false);
-					this->resetTiempoDisparo();
-				}
-			}
-
-			this->setVelocidad();
+          
+			Atacar(dt);
+			iniLogicaDifusa();
 
             break;
 
@@ -177,144 +132,54 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 
 			break;
+
+		case ESCAPAR:
+
+			maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
+			iniLogicaDifusa();
+
+			break;
+
+		case CUERPOACUERPO:
+
+			maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
+			vector3df posPlayer;
+			posPlayer.X = posJugador.X;
+			posPlayer.Y = 0.0f;
+			posPlayer.Z = posJugador.Y;
+			dir = path->getDireccion(pos, posPlayer);
+
+
+			this->Mover(dir);
+			if (path->estoyEnElNodo(pos, posPlayer)) {
+				dir = -1;
+				this->setVelocidad();
+
+	
+
+				/*posNodo = path->buscarWaypointMasCorto(posNodo);
+				puntoFin = waypoints->getNodoX(posNodo);*/
+
+			}
+
+			
+			iniLogicaDifusa();
+
+			break;
+
     }
 
 	this->actualizarLista();
-	
+	GVida->setPosition(pos);
+	RVida->setPosition(vector3df(pos.X - 8, pos.Y, pos.Z));
 
 
 }
 
-void CriaAlien::Mover(int modo) {
-
-	//rot.Y = 0.0f;
-
-	switch (modo) {
-
-	case 0:
-		/* std::cout<<"case 0: Sntes"<<std::endl;
-		std::cout<<"Pos X: "<<pos.X<<std::endl;
-		std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
-		// body->ApplyForceToCenter(b2Vec2(5.0,0.0), true);
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
-		 entity->getSombraE2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-
-		/* std::cout<<"Des"<<std::endl;
-		std::cout<<"Pos X: "<<pos.X<<std::endl;
-		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
-		
-		//rot.Y = 90.0f;
-		
-		break;
-
-	case 1:
-
-		/*  std::cout<<"case 1: Sntes"<<std::endl;
-		std::cout<<"Pos X: "<<pos.X<<std::endl;
-		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-		  entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
+/*void CriaAlien::Mover(int modo) {
 
 
-		/*std::cout<<"Des"<<std::endl;
-		std::cout<<"Pos X: "<<pos.X<<std::endl;
-		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
-
-		//rot.Y = -90.0f;
-
-		break;
-
-	case 2:
-
-		/*   std::cout<<"case 2: Sntes"<<std::endl;
-		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
-		 entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
-
-		/*  std::cout<<"Des"<<std::endl;
-		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
-
-		break;
-
-	case 3:
-
-		/*   std::cout<<"case 3: Sntes"<<std::endl;
-		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
-		/* std::cout<<"Des"<<std::endl;
-		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
-		//rot.Y = 180.0f;
-
-		break;
-
-		//W+D
-	case 4:
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, vel));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(vel, vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
-		//rot.Y = 45.0f;
-		break;
-
-		//D+S
-	case 5:
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, -vel));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(vel, -vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-		break;
-		//rot.Y = 135.0f;
-		//A+S
-	case 6:
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
-		 entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
-		break;
-		//rot.Y = -135.0f;
-		//A+W
-	case 7:
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, vel));
-		 entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
-		//rot.Y = -45.0f;
-
-		break;
-
-	}
-	//    std::cout<<"//////////////////////////////////////////"<<std::endl;
-	//            std::cout<<""<<std::endl;
-	//            std::cout<<"POS PERS DESPUES"<<std::endl;
-	//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
-
-
-	setPos(pos);
-	//maya->setRotation(rot);
-
-}
+}*/
 
 void CriaAlien::Patrullar() {
 
@@ -367,6 +232,64 @@ void CriaAlien::Patrullar() {
 	std::cout << "PATRULLO PREMO!" << std::endl;
 	std::cout << std::endl;*/
 
+}
+
+void CriaAlien::Atacar(f32 dt)
+{
+	maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 0);
+	/*		std::cout << std::endl;
+	std::cout << "CRIA ALIEN" << std::endl;
+	std::cout << "POS X: " << posJugador.X << "POS Y(Z): " << posJugador.Y << std::endl;
+	std::cout << std::endl;*/
+
+	if (disparado == false) {
+
+		this->disparar(dt); //donde crea la bala
+
+	}
+
+
+	if (disparado == true) {
+		this->aumentarTiempoDisparo(dt);
+		if (this->getTiempoDisparo() >= 0.7f) {
+			this->setDisparo(false);
+			this->resetTiempoDisparo();
+		}
+	}
+
+	this->setVelocidad();
+}
+
+void CriaAlien::BuscarWaypoint()
+{
+	maya->getMaterial(0).EmissiveColor.set(0, 0, 200, 10);
+
+	if (puntoIni == nullptr) {
+		posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
+		puntoIni = waypoints->getNodoX(posNodo);
+
+		//	std::cout << std::endl;
+		//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
+		//std::cout << "POS NODO: " << posNodo << std::endl;
+	}
+
+
+
+
+	dir = path->getDireccion(pos, puntoIni->getPosicion());
+	/*	std::cout << std::endl;
+	std::cout << "DIR: " << dir << std::endl;
+	std::cout << std::endl;*/
+
+	this->Mover(dir);
+
+	if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
+		estadoActual = PATRULLAR;
+
+		dir = -1;
+		this->setVelocidad();
+
+	}
 }
 
 void CriaAlien::quitarVida(float damage) {
