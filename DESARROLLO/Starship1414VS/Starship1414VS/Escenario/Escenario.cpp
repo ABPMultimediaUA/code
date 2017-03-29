@@ -1485,7 +1485,7 @@ void Escenario::dibujarEscenario() {
 				objeto->getMaterial(0).EmissiveColor.set(0, 128, 128, 128);
 
 				Llave *llave = new Llave(objeto->getPosition(), objeto->getRotation(),
-					objeto->getScale(), 1, objeto, (*I).nombre);
+					objeto->getScale(), 1, objeto, (*T).nombre);
 				llave->setFisica(mundo);
 
 				objConsumables.push_back(llave);

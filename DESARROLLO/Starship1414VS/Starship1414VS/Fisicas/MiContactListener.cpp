@@ -142,7 +142,7 @@ A *myclass02 = new A(*temClass);
 
 
 	default:
-		//addObjetoAlInventario(pers, objeto, tipo);
+		addObjetoAlInventario(pers, objeto, tipo);
 		break;
 	}
 	objeto->setLive(false);
@@ -212,7 +212,9 @@ void MiContactListener::addObjetoAlInventario(Entity2D * pers, Entity2D * objeto
 	}
 
 	else {
+		Llave *llave = new Llave(*static_cast<Llave*>(objeto->getObjeto3D()));
 
+		personaje->getInventario()->addObjeto(llave);
 	}
 
 }
