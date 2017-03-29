@@ -66,7 +66,7 @@ Enemigo::~Enemigo() {
 	maya->getParent()->removeChild(maya);
     GVida->getParent()->removeChild(GVida);
     RVida->getParent()->removeChild(RVida);
-	delete(waypoints);
+	//delete(waypoints);
 	delete(path);
 	delete(logica);
 	/*delete(puntoIni);

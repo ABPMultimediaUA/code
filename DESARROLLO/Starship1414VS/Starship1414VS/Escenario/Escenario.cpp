@@ -1535,6 +1535,7 @@ void Escenario::dibujarEscenario() {
 
 	fabricaDeEnemigos();
 
+	//destroyWaypoints();
 
 
 
@@ -1632,42 +1633,25 @@ void Escenario::fabricaDeEnemigos() {
 
 	}
 
-
 }
 
-void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World* world) {
+void Escenario::destroyWaypoints() {
 
-	std::cout << "SPAWN ENEMIGO" << std::endl;
+	if (!waypoints.empty()) {
+		for (std::vector<Waypoints*>::iterator it = waypoints.begin(); it != waypoints.end();) {
+			if ((*it) != NULL) {
 
-	float x = rand() % 230;
-	float z = rand() % 230;
+				delete(*it);
+				it = waypoints.erase(it);
 
-	if (enemigos.size() % 2 == 0) {
-
-		if (z > x) {
-			z = -z;
-		}
-		else {
-			x = -x;
+			}
+			else
+				it++;
 		}
 
 	}
-	else {
-
-
-		if (z > x) {
-			x = -x;
-		}
-		else {
-			z = -z;
-		}
-
-	}
-
-
-	//        Enemigo *ene = new Enemigo(smgr, driver, world, vector3df(x,10,z));
-	//        enemigos.push_back(ene);
 }
+
 
 void Escenario::actualizarEstadoPersonaje()
 {

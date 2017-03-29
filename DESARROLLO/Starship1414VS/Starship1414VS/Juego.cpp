@@ -364,6 +364,7 @@ void Juego::render(IrrlichtDevice* iDevice) {
 				std::cout << "maaaaaaaaatao" << std::endl;
 				esce->destroyPared();
 				esce->eleminarEnemigos();
+				esce->destroyWaypoints();
 				control = false;
 				smgr->clear();
 				manager.CambiaEstado("menu");

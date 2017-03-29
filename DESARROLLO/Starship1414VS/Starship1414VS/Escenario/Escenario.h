@@ -108,12 +108,13 @@ public:
 	void muestraEstructura();
 	void dibujarEscenario();
 	void fabricaDeEnemigos();
+	void destroyWaypoints();
 	std::list<Escenario::ElementoHijo> getHijos();
 	std::list<Escenario::Elemento> getSubHijos();
 	void removeListHijos();
 	void removeListSubHijos();
 	void actualizarListaEnemigos(f32 dt);
-	void spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world);
+
 	std::list<Pared*> getParedes();
 	int getTam();
 	void cambiaEstado(std::string mensaje);

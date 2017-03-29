@@ -40,7 +40,9 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	damageChoque = 10.0f;
 	entity = new Entity2D(world, pos, true, this, smgr, raza);
    // nav = new navmeshes(10, esce);
-        waypoints = puntos;
+	//Botiquines *bot = new Botiquines(*static_cast<Botiquines*>(objeto->getObjeto3D()));
+	
+	waypoints = puntos;
    // waypoints->creaPesos(entity);
 
 	waypoints->mostrarPesos();
@@ -62,10 +64,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
 
     // dibujaGrid(smgr);
-	std::cout << "" << std::endl;
 
-	std::cout << "////////////////////////" << std::endl;
-	std::cout << "VIVO: " << maya << std::endl;
 
 
 }

@@ -23,6 +23,7 @@ Waypoints::Waypoints() {
 }
 
 Waypoints::Waypoints(const Waypoints& orig) {
+
 }
 
 Waypoints::~Waypoints() {
