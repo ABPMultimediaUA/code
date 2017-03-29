@@ -16,6 +16,7 @@ public:
 	void addObjeto(Objetos*);
 	Objetos* usarObjeto(int);
 	void mostrarInventario();
+	void deleteObj(Objetos *obj);
 
 
 private:

@@ -225,7 +225,7 @@ void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
 	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 	int dir = p->getDireccion();
-	float vel = 5000.0f;
+	float vel = 50000.0f;
 	//std::cout << "VELOSIDAD X: " << vel.x << "VELOSIDAD Y: " << vel.y << std::endl;
 
 /*	std::cout << "//////////////////////////////////////////" << std::endl;
@@ -404,8 +404,8 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			//            Personaje *pers = static_cast<Personaje*>(entity1->getObjeto3D());
 
-			 std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
-			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
+		/*	 std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
+			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;*/
 
 
 			/* int a = *((int*)b1->GetUserData());
@@ -415,13 +415,13 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			}*/
 			
-			std::cout<<"///////////////////////////////////"<<std::endl;
+		/**	std::cout<<"///////////////////////////////////"<<std::endl;
 			std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
 			std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
 			std::cout<<"///////////////////////////////////"<<std::endl;
 			
 
-			std::cout << "Sombra: " << entity1->getIDENSH() << " Elemento: " << entity2->getIDEN() << std::endl;
+			std::cout << "Sombra: " << entity1->getIDENSH() << " Elemento: " << entity2->getIDEN() << std::endl;**/
 
 
 			//            if((entity2->getIDEN()==0 && entity2->getIDEN() == 4)&&(entity2->getIDEN()==4 && entity2->getIDEN() == 0))

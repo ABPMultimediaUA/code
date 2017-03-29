@@ -280,6 +280,32 @@ void Juego::raton(f32 dt)
 
 }
 
+void Juego::accionesDeTeclado() {
+
+	if (teclado.isKeyDown(irr::KEY_KEY_E) && pers->getTeclaE() == false) {
+		std::cout << "CAMBIO ESTADO TRUE" << std::endl;
+		pers->setTeclaE(true);
+	}
+
+	if (!teclado.isKeyDown(irr::KEY_KEY_E) && pers->getTeclaE() == true) {
+		std::cout << "CAMBIO ESTADO FALSE" << std::endl;
+		pers->setTeclaE(false);
+	}
+
+	if (teclado.isKeyDown(irr::KEY_KEY_Q) && pers->getTeclaQ() == false) {
+		std::cout << "CAMBIO ESTADO TRUE" << std::endl;
+		pers->setTeclaQ(true);
+		pers->usarBotiquin();
+	}
+
+	if (!teclado.isKeyDown(irr::KEY_KEY_Q) && pers->getTeclaQ() == true) {
+		std::cout << "CAMBIO ESTADO FALSE" << std::endl;
+		pers->setTeclaQ(false);
+	}
+
+}
+
+
 void Juego::render(IrrlichtDevice* iDevice) {
 	
 	if (control == false) {
@@ -312,21 +338,16 @@ void Juego::render(IrrlichtDevice* iDevice) {
 			this->pausa(iDevice);
 			//cambio de arma
 			this->cambioarma();
+			
+			accionesDeTeclado();
+
 			/*
 			if(teclado.isKeyDown(irr::KEY_KEY_Q) && now >= 5.0f){
 			esce->spawnearEnemigo(smgr, driver, world);
 
 			}*/
 
-			if(teclado.isKeyDown(irr::KEY_KEY_E) && pers->getTeclaE() == false) {
-				std::cout << "CAMBIO ESTADO TRUE" << std::endl;
-				pers->setTeclaE(true);
-			}
-
-			if(!teclado.isKeyDown(irr::KEY_KEY_E) && pers->getTeclaE() == true) {
-				std::cout << "CAMBIO ESTADO FALSE" << std::endl;
-				pers->setTeclaE(false);
-			}
+		
 
 			//debug para la subida de las armas
 			/*

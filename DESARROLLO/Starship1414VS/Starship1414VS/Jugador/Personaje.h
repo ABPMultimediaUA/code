@@ -57,6 +57,7 @@ private:
 	f32 tiempoDisparo;
 	bool disparo;
 	bool teclaE;
+	bool teclaQ;
 	bool impulso = false;
 	std::list<Bala*> listaBalas;
 	int direccion;
@@ -66,8 +67,13 @@ private:
 	Escopeta *escopeta;
 	float temporizador;
 	float vida;
+	float vidaMax;
 	Juego *game;
 	Inventario *inv;
+
+
+	ITextSceneNode *GVida;
+	ITextSceneNode *RVida;
 
 
 public:
@@ -88,6 +94,7 @@ public:
 	float getTiempoArma();
 	int getArmaActual();
 	bool getTeclaE();
+	bool getTeclaQ();
 	bool getImpulso();
 	void setImpulso(bool x);
 	void quitarVida(float damage);
@@ -119,11 +126,12 @@ public:
 	void actualizarPosicion();
 	void setArmaActual(int newArma);
 
-	void subirNivelDamage();
+	/*void subirNivelDamage();
 	void subirCargador();
-	void subirCapacidadDeMun();
+	void subirCapacidadDeMun();*/
 
 	void setTeclaE(bool x);
+	void setTeclaQ(bool x);
 	bool getVivo();
 	Entity2D* getEntity();
 	void destroyBalas();

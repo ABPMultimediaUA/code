@@ -47,14 +47,18 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 
 
 
+
 	vel = 100.0f;
 	vida = 100.0f;
+	vidaMax = vida;
 	pos = maya->getPosition();
 	entity = new Entity2D(world, pos, this, smgr);
 	game = j;
 	tiempoDisparo = 0.0f;
+
 	disparo = false;
 	teclaE = false;
+	teclaQ = false;
 
 	pistola = new Pistola();
 	fusil = new Fusil();
@@ -65,6 +69,13 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	municionTotal = pistola->getCapacidadDeMun();
 	inv = new Inventario();
 
+	irr::core::stringw wideString(vida);
+	GVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), wideString.c_str(), video::SColor(255, 255, 0, 0), 0);
+	RVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), L"Vida: ", video::SColor(255, 255, 0, 0), 0);
+	//napis a lo mejor estaria bien que estuviese en el .h de enemigo
+	//tambien se tiene que borrar con el destructor
+	GVida->setPosition(pos);
+	RVida->setPosition(vector3df(pos.X - 8, pos.Y, pos.Z));
 }
 
 Personaje::Personaje(const Personaje& orig) {
@@ -75,10 +86,13 @@ Personaje::~Personaje() {
 	std::cout << "POS PERS ANTES" << std::endl;
 	listaBalas.clear();
 	delete(entity);
+	//GVida->getParent()->removeChild(GVida);
+	//RVida->getParent()->removeChild(RVida);
 //	maya->getParent()->removeChild(maya);
-	//delete(pistola);
-	//delete(fusil);
-	//delete(escopeta);
+	delete(pistola);
+	delete(fusil);
+	delete(escopeta);
+	destroyBalas();
 }
 
 void Personaje::moverPersonaje(int modo, f32 dt) {
@@ -239,6 +253,8 @@ void Personaje::actualizarPosicion() {
 	pos.Z = entity->getCuerpo2D()->GetPosition().y;
 
 	setPos(pos);
+	GVida->setPosition(pos);
+	RVida->setPosition(vector3df(pos.X - 8, pos.Y, pos.Z));
 
 }
 
@@ -294,6 +310,11 @@ bool Personaje::getTeclaE()
 	return teclaE;
 }
 
+bool Personaje::getTeclaQ()
+{
+	return teclaQ;
+}
+
 bool Personaje::getImpulso()
 {
 	return impulso;
@@ -310,6 +331,8 @@ void Personaje::quitarVida(float damage)
 	std::cout <<"VIDA ANTES: "<<vida<< std::endl;
 
 	vida = vida - damage;
+	irr::core::stringw wideString(vida);
+	GVida->setText(wideString.c_str());
 
 	std::cout << std::endl;
 	std::cout << "VIDA DESPUES: " << vida << std::endl;
@@ -318,12 +341,46 @@ void Personaje::quitarVida(float damage)
 void Personaje::curar(float recup)
 {
 	vida += recup;
+	irr::core::stringw wideString(vida);
+	GVida->setText(wideString.c_str());
 }
 
 void Personaje::usarBotiquin()
 {
-	Botiquines *bot = static_cast<Botiquines*>(inv->usarObjeto(0));
 
+	Botiquines *bot = static_cast<Botiquines*>(inv->usarObjeto(0));
+	
+	if (bot != nullptr) {
+
+
+		float dif = vidaMax - vida;
+
+		if (dif >= bot->getVida()) {
+			curar(bot->getVida());
+			inv->deleteObj(bot);
+		}
+
+		else if(vida != vidaMax) {
+			curar(dif);
+			inv->deleteObj(bot);
+
+		}
+
+		else {
+			std::cout << std::endl;
+			std::cout << "TIENES LA VIDA MAX " << std::endl;
+			std::cout << std::endl;
+		}
+
+		
+	}
+
+	else {
+		std::cout << std::endl;
+		std::cout << "NO TIENES BOTIQUINES " << std::endl;
+		std::cout << std::endl;
+
+	}
 
 
 	
@@ -342,7 +399,7 @@ void Personaje::pasarMensaje() {
 
 void Personaje::iniciarTiempoImpulso() {
 
-	temporizador = 5.0f;
+	temporizador = 8.0f;
 
 }
 
@@ -631,96 +688,18 @@ void Personaje::actualizarLista(f32 dt) {
 
 }
 
-void Personaje::subirCapacidadDeMun() {
-
-	switch (armaActual) {
-
-	case 0:
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "La pistola sube la municion total" << std::endl;
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		return pistola->subirNivelMunicion();
-		break;
-
-	case 1:
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "El fusil sube la municion total" << std::endl;
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		return fusil->subirNivelMunicion();
-		break;
-
-	case 2:
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "La escopeta sube la municion total" << std::endl;
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		return escopeta->subirNivelMunicion();
-		break;
-
-	}
-
-}
 
 void Personaje::setTeclaE(bool x)
 {
 	teclaE = x;
 }
 
-void Personaje::subirCargador() {
-
-	switch (armaActual) {
-
-	case 0:
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "La pistola sube el cargador" << std::endl;
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		return pistola->subirNivelCargador();
-		break;
-
-	case 1:
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "El fusil sube el cargador" << std::endl;
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		return fusil->subirNivelCargador();
-		break;
-
-	case 2:
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "La escopeta sube el cargador" << std::endl;
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		return escopeta->subirNivelCargador();
-		break;
-
-	}
-
+void Personaje::setTeclaQ(bool x)
+{
+	teclaQ = x;
 }
 
-void Personaje::subirNivelDamage() {
 
-	switch (armaActual) {
-
-	case 0:
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "La pistola sube el damage" << std::endl;
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		return pistola->subirNivelDamage();
-		break;
-
-	case 1:
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "El fusil sube el damage" << std::endl;
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		return fusil->subirNivelDamage();
-		break;
-
-	case 2:
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "La escopeta sube el damage" << std::endl;
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		return escopeta->subirNivelDamage();
-		break;
-
-	}
-}
 
 bool Personaje::getVivo()
 {

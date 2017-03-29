@@ -16,10 +16,18 @@ Objetos::Objetos(const vector3df & posicion, const vector3df & rotacion, const v
 
 Objetos::~Objetos() {
 
-	maya->getParent()->removeChild(maya);
-	delete(entity);
 
 
+}
+
+void Objetos::destroyEntidades()
+{
+	if (maya != nullptr && entity != nullptr) {
+		maya->getParent()->removeChild(maya);
+		delete(entity);
+	}
+	maya = nullptr;
+	entity = nullptr;
 }
 
 vector3df Objetos::getPos()

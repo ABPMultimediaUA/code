@@ -1709,7 +1709,7 @@ void Escenario::actualizarObjetosConsumables()
 			if ((*it) != NULL) {
 				if (!(*it)->getVivo() ) {
 
-					delete(*it);
+					(*it)->destroyEntidades();
 					it = objConsumables.erase(it);
 				}
 				else

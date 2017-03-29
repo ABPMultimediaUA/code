@@ -16,6 +16,7 @@ class Objetos
 public:
 	Objetos(const vector3df &posicion, const vector3df &rotacion, const vector3df &escala, const int &identificacion, IMeshSceneNode *nodo);
 	~Objetos();
+	void destroyEntidades();
 	vector3df getPos();
 	vector3df getRot();
 	vector3df getEscala();

@@ -71,6 +71,7 @@ public:
 	void pausa(IrrlichtDevice* iDevice);
 	void cambioarma();
 	void raton(f32 dt);
+	void accionesDeTeclado();
 	void cambioEstado(std::string est);
 	void destroyNew();
 	bool para;
