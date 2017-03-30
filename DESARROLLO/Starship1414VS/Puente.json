@@ -5054,145 +5054,6 @@
               "children": []
             },
             {
-              "name": "Puerta_Doble",
-              "components": [
-                {
-                  "localPosition": [
-                    -24.5,
-                    3.0,
-                    -5.5
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                }
-              ],
-              "children": [
-                {
-                  "name": "Puerta-CERRADA",
-                  "components": [
-                    {
-                      "localPosition": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
-                      "localRotation": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
-                      "localScale": [
-                        5.0,
-                        1.0,
-                        1.0
-                      ],
-                      "name": null,
-                      "parentName": null,
-                      "type": "Transform"
-                    },
-                    {
-                      "mesh": "unity default resources_Cube",
-                      "enabled": true,
-                      "castShadows": true,
-                      "receiveShadows": true,
-                      "lightmapIndex": -1,
-                      "lightmapTilingOffset": [
-                        1.0,
-                        1.0,
-                        0.0,
-                        0.0
-                      ],
-                      "materials": [
-                        "P_Puerta_C"
-                      ],
-                      "type": "MeshRenderer"
-                    },
-                    {
-                      "center": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
-                      "size": [
-                        1.0,
-                        1.0,
-                        1.0
-                      ],
-                      "type": "BoxCollider"
-                    }
-                  ],
-                  "children": []
-                },
-                {
-                  "name": "Puerta-CERRADA",
-                  "components": [
-                    {
-                      "localPosition": [
-                        5.0,
-                        0.0,
-                        0.0
-                      ],
-                      "localRotation": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
-                      "localScale": [
-                        5.0,
-                        1.0,
-                        1.0
-                      ],
-                      "name": null,
-                      "parentName": null,
-                      "type": "Transform"
-                    },
-                    {
-                      "mesh": "unity default resources_Cube",
-                      "enabled": true,
-                      "castShadows": true,
-                      "receiveShadows": true,
-                      "lightmapIndex": -1,
-                      "lightmapTilingOffset": [
-                        1.0,
-                        1.0,
-                        0.0,
-                        0.0
-                      ],
-                      "materials": [
-                        "P_Puerta_C"
-                      ],
-                      "type": "MeshRenderer"
-                    },
-                    {
-                      "center": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
-                      "size": [
-                        1.0,
-                        1.0,
-                        1.0
-                      ],
-                      "type": "BoxCollider"
-                    }
-                  ],
-                  "children": []
-                }
-              ]
-            },
-            {
               "name": "Puerta-5",
               "components": [
                 {
@@ -5424,6 +5285,145 @@
                   ],
                   "materials": [
                     "S_Pasillo3"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Puerta_Doble",
+          "components": [
+            {
+              "localPosition": [
+                -24.5,
+                3.0,
+                -5.5
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                6.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "Puerta-CERRADA",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    5.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_Puerta_C"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Puerta-CERRADA",
+              "components": [
+                {
+                  "localPosition": [
+                    5.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    5.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_Puerta_C"
                   ],
                   "type": "MeshRenderer"
                 },
@@ -12759,7 +12759,7 @@
       ],
       "children": [
         {
-          "name": "LlaveAscensor",
+          "name": "Ascensor",
           "components": [
             {
               "localPosition": [
@@ -12785,7 +12785,7 @@
           "children": []
         },
         {
-          "name": "LlaveAlmacen_3",
+          "name": "Almacen_3",
           "components": [
             {
               "localPosition": [
@@ -12811,7 +12811,7 @@
           "children": []
         },
         {
-          "name": "LlaveGenerador",
+          "name": "Sala_Generador",
           "components": [
             {
               "localPosition": [
@@ -12837,13 +12837,39 @@
           "children": []
         },
         {
-          "name": "LlaveComisaria",
+          "name": "Comisaria",
           "components": [
             {
               "localPosition": [
                 -75.9,
                 0.0,
                 -57.4
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Hall",
+          "components": [
+            {
+              "localPosition": [
+                35.9,
+                0.0,
+                21.1
               ],
               "localRotation": [
                 0.0,

@@ -25,19 +25,29 @@ void Inventario::addObjeto(Objetos * obj)
 
 Objetos* Inventario::usarObjeto(int tipo)
 {
-	Objetos* obj = nullptr;
-
+	
 	for(std::size_t i = 0; i < inventary.size(); i++) {
 
-		if(tipo == 0) {
+		if(inventary[i]->getID() == tipo) {
 			 
 			return inventary[i];
 		}
-		
-		else {
 
-			return inventary[i];
 
+	}
+	return nullptr;
+}
+
+Llave * Inventario::buscaLlave(std::string nomLlave)
+{
+	for (std::size_t i = 0; i < inventary.size(); i++) {
+
+		Llave *key = static_cast<Llave*>(inventary[i]);
+
+		if (key->getNombreHabitacion().compare(nomLlave) == 0) {
+
+
+			return key;
 		}
 
 	}

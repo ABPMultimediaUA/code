@@ -39,10 +39,13 @@ MiContactListener::MiContactListener(const MiContactListener& orig) {
 MiContactListener::~MiContactListener() {
 }
 
-void MiContactListener::actualizarPuerta(Entity2D* entity, int modo) {
-	std::cout << "ACTUALIZO " << modo << std::endl;
+void MiContactListener::actualizarPuerta(Entity2D* entity, Entity2D *pers, int modo) {
+	std::cout << "ACTUALIZO " << modo << std::endl; 
 
 	Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
+
+	/*if (pers->getIDEN() == 0)
+		Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());*/
 
 	if (modo == 0 && puerta->getEstado() != "BLOQLLAVE" ) {
 		//si tiene rotacion en Y van | sino van -
@@ -60,6 +63,23 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, int modo) {
 	//se deberia hacer un if para ver si el jugador tiene o no la llave asociada a la puerta
 	//con la que ha colisionado. Tambien se deberia pasar al jugador para gestionar las
 	//llaves que ha cogido
+
+	else if(puerta->getEstado() == "BLOQLLAVE" && pers->getIDEN() == 0){
+
+		Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
+		if(p->getTeclaE() == true) {
+			Llave *llave = p->getInventario()->buscaLlave(puerta->getLlaveAsociada());
+
+			if(llave != nullptr) {
+				puerta->setDetectado(true, entity->getId());
+
+				puerta->UpdateEstado();
+
+
+			}
+		}
+
+	}
 
 }
 
@@ -511,11 +531,11 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			
 
 			if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true && f2->IsSensor() != true) {
-				actualizarPuerta(entity1, 0);
+				actualizarPuerta(entity1, entity2, 0);
 			}
 
 			else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true && f1->IsSensor() != true) {
-				actualizarPuerta(entity2, 0);
+				actualizarPuerta(entity2, entity1, 0);
 			}
 
 
@@ -570,12 +590,12 @@ void MiContactListener::EndContact(b2Contact* contact) {
 
 			if (entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true) {
 				
-				actualizarPuerta(entity1, 1);
+				actualizarPuerta(entity1, entity2, 1);
 			}
 
 			else if (entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true) {
 				std::cout << "lalal " << std::endl;
-				actualizarPuerta(entity2, 1);
+				actualizarPuerta(entity2, entity1, 1);
 			}
 
 			//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
@@ -644,11 +664,11 @@ void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* im
 				this->activarTerminar(entity1, entity2);
 			}*/
 
-			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 ) {
-				std::cout << "A DISPARAR!" << std::endl;
-				dispararEnemigo(entity1, entity2);
+			//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 ) {
+			//	std::cout << "A DISPARAR!" << std::endl;
+			//	dispararEnemigo(entity1, entity2);
 
-			}
+			//}
 
 
 		}
