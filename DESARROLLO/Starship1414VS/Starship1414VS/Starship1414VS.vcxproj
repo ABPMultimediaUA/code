@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Enemigos\BehaivorTree.cpp" />
     <ClCompile Include="Escenario\ObjConsumables\Botiquines.cpp" />
     <ClCompile Include="Enemigos\AStar.cpp" />
     <ClCompile Include="CAppReceiver.cpp" />
@@ -197,6 +198,7 @@
     <ClCompile Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionEscopeta.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Enemigos\BehaivorTree.h" />
     <ClInclude Include="Escenario\ObjConsumables\Botiquines.h" />
     <ClInclude Include="Enemigos\AStar.h" />
     <ClInclude Include="CAppReceiver.h" />
