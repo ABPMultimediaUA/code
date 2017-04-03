@@ -141,7 +141,10 @@
     <ClCompile Include="Enemigos\LogicaDifusa.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="Enemigos\BehaivorTree.cpp">
+    <ClCompile Include="Enemigos\BehaviorTree\Tick.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemigos\BehaviorTree\BehaivorTree.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
@@ -269,7 +272,10 @@
     <ClInclude Include="Enemigos\LogicaDifusa.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Enemigos\BehaivorTree.h">
+    <ClInclude Include="Enemigos\BehaviorTree\Tick.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemigos\BehaviorTree\BehaivorTree.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
