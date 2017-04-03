@@ -33,14 +33,20 @@ void BehaivorTree::tick()
 
 }
 
-void BehaivorTree::addNode(Node * hijo, Node * padre)
+void BehaivorTree::addNode(Node * hijo, Node * padre, std::size_t hijos)
 {
 	if(root == nullptr) {
 		
-		arbol[contNodos] = hijo;
+		arbol.push_back(hijo);
 		root = hijo;
 		hijo->setID(contNodos);
 		contNodos++;
+
+		for (std::size_t i = 0; i < hijos; i++) {
+			hijo->crearHijos(contNodos);
+			contNodos++;
+		}
+		
 	}
 
 	else {
@@ -180,4 +186,17 @@ void Node::setID(int n_ID)
 void Node::setEstado(Status s)
 {
 	estado = s;
+}
+
+void Node::crearHijos(int cont)
+{
+	//habria que ver alguna manera de distinguir que tipo de nodo queremos crear
+	//si es alguno normal o de algun tipo en concreto
+
+	//ver si traerse el bucle aqui para aumentar el contador del arbol
+	//y que lo devuelva cuando acabe para que se guarde otra vez
+
+	Node *n = new Node();
+	n->setID(cont);
+	nodosHijos.push_back(n);
 }

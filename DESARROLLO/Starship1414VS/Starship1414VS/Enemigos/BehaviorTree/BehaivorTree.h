@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include <map>
+#include <list>
 
 
 class Tick;
@@ -25,6 +25,7 @@ public:
 	Status getEstado();
 	void setID(int n_ID);
 	void setEstado(Status s);
+	void crearHijos(int cont);
 	virtual Task* create() = 0;
 	virtual void destroy(Task*) = 0;
 
@@ -35,7 +36,7 @@ private:
 	std::string accion;
 	std::string tipoTask;
 	Status estado;
-	//lista de sus nodos hijos
+	std::list<Node*> nodosHijos;
 };
 
 class Task {
@@ -62,14 +63,14 @@ public:
 	BehaivorTree();
 	~BehaivorTree();
 	void tick();
-	void addNode(Node *hijo, Node *padre);
+	void addNode(Node *hijo, Node *padre, std::size_t hijos);
 	void imprimirArbol();
 
 
 private:
 
 	//lista de nodos
-	std::map<int, Node*> arbol;
+	std::list<Node*> arbol;
 	Node *root;
 	int contNodos;
 	
