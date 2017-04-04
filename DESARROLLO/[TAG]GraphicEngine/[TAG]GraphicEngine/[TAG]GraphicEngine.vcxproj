@@ -130,6 +130,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="entityTree\TCamara.cpp" />
+    <ClCompile Include="entityTree\TEntidad.cpp" />
     <ClCompile Include="entityTree\TLuz.cpp" />
     <ClCompile Include="entityTree\TMalla.cpp" />
     <ClCompile Include="entityTree\TNodo.cpp" />

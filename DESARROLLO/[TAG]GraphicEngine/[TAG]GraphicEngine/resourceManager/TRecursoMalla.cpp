@@ -5,7 +5,7 @@
 #include <glm\gtc\type_ptr.hpp>
 #include <iostream>
 
-TRecursoMalla::Mesh::Mesh(const aiMesh *ma, TRecursoMalla *mo) : buffer{ 0 }, vao{ 0 }
+TRecursoMalla::Mesh::Mesh(const aiMesh *ma, TRecursoMalla *mo) : buffer{ 0 }, vao(0)
 {
 	this->model = mo;
 	load(ma);

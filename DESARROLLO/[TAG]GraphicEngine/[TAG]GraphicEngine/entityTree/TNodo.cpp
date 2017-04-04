@@ -26,7 +26,10 @@ TNodo::TNodo(TEntidad *e)
 TNodo::TNodo(TNodo *p, TEntidad *e)
 {
 	if (p != nullptr) {
-		padre = p;
+		if (!p->addHijo(this))
+		{
+			padre = nullptr;
+		}
 	}
 	else {
 		padre = nullptr;

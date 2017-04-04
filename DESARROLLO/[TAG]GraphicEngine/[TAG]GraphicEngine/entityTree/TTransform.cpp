@@ -1,10 +1,10 @@
 #include "TTransform.h"
 #include <glm\vec3.hpp>
 #include <glm\gtc\matrix_transform.hpp>
+#include <glm\gtx\string_cast.hpp>
 #include <iostream>
 
 std::stack<glm::mat4> TTransform::pilaMatrices;
-glm::mat4 TTransform::matrizActual;
 
 TTransform::TTransform() : matriz(1.0f)
 {
@@ -33,22 +33,29 @@ glm::mat4 TTransform::trasponer()
 
 void TTransform::trasladar(float x, float y, float z)
 {
-	glm::translate(matriz, glm::vec3(x,y,z));
+	matriz = glm::translate(matriz, glm::vec3(x,y,z));
+	std::cout << "MatrizTrasladado: " << glm::to_string(matriz) << std::endl;
 }
 
 void TTransform::escalar(float x, float y, float z)
 {
-	glm::scale(matriz, glm::vec3(x, y, z));
+	matriz = glm::scale(matriz, glm::vec3(x, y, z));
+	std::cout << "MatrizEscalado: " << glm::to_string(matriz) << std::endl;
 }
 
 void TTransform::rotar(float r, float x, float y, float z)
 {
-	glm::rotate(matriz, r, glm::vec3(x, y, z));
+	matriz = glm::rotate(matriz, r, glm::vec3(x, y, z));
+	std::cout << "MatrizRotacion: " << glm::to_string(matriz) << std::endl;
 }
 
 glm::mat4 TTransform::multiplicarMatriz(const glm::mat4 &m1, const glm::mat4 &m2)
 {
-	return m1 * m2;
+	std::cout << "M1: " << glm::to_string(m1) << std::endl;
+	std::cout << "M2: " << glm::to_string(m2) << std::endl;
+	glm::mat4 mul = m1 * m2;
+	std::cout <<"Mul: " << glm::to_string(mul) << std::endl;
+	return mul;
 }
 
 glm::vec4 TTransform::multiplicarVector(const glm::mat4& m, float x, float y, float z)
@@ -76,7 +83,8 @@ void TTransform::beginDraw()
 void TTransform::beginDraw(unsigned int a)
 {
 	apilar(matrizActual);
-	multiplicarMatriz(matrizActual, matriz);
+	matrizActual = multiplicarMatriz(matrizActual, matriz);
+	std::cout << "MatrizActual: " << glm::to_string(matrizActual) << std::endl;
 }
 
 void TTransform::endDraw()

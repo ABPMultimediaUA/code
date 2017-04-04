@@ -1,8 +1,6 @@
 #pragma once
 #include "TEntidad.h"
 #include <stack>
-#include <glm\mat4x4.hpp>
-
 class TTransform :
 	public TEntidad
 {
@@ -26,6 +24,5 @@ public:
 private:
 	glm::mat4 matriz;
 	static std::stack<glm::mat4> pilaMatrices;
-	static glm::mat4 matrizActual;
 };
 

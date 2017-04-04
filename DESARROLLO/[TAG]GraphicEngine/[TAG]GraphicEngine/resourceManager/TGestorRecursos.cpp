@@ -4,7 +4,7 @@
 #include "TRecursoTextura.h"
 
 
-TGestorRecursos::TGestorRecursos()
+TGestorRecursos::TGestorRecursos() : recursos()
 {
 }
 

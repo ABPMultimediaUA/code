@@ -54,6 +54,9 @@
     <ClCompile Include="framework\TGraphicEngine.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="entityTree\TEntidad.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="entityTree\TCamara.h">

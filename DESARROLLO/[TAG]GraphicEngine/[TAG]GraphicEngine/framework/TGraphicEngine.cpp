@@ -68,7 +68,6 @@ void TGraphicEngine::onstart()
 	glClearColor(0.0f, 0.5f, 0.5f, 1.0f);
 
 	registro->setWindow(this->window);
-	//camera.setWindow(this->window);
 	dir_shader.compile("Shader/directional.vertex_shader", "Shader/directional.fragment_shader");
 	//model.init("model/test.assbin");
 
