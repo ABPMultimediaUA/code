@@ -19,6 +19,7 @@
 
 class navmeshes;
 class Escenario;
+class BehaivorTree;
 
 class CriaAlien : public Enemigo {
 public:
@@ -34,6 +35,7 @@ public:
 private:
 
 	navmeshes* nav;
+	BehaivorTree *tree;
 
 };
 

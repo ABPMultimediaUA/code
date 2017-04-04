@@ -18,6 +18,7 @@
 #include "../Escenario/Escenario.h"
 #include "../Fisicas/Entity2D.h"
 #include "Waypoints.h"
+#include "BehaviorTree\BehaivorTree.h"
 
 
 CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos) {
@@ -44,10 +45,8 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	
 	waypoints = puntos;
    // waypoints->creaPesos(entity);
-	std::cout << "CRIA" << std::endl;
-	std::cout << "----- TAM" << waypoints->getTamMapa() << std::endl;
-	waypoints->mostrarPesos();
-
+	//waypoints->mostrarPesos();
+	tree = new BehaivorTree();
 	disparado = false;
 	//posJugador.X  = -30.0f;
 	//posJugador.Y = -90.0f;
@@ -65,8 +64,18 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
 
     // dibujaGrid(smgr);
-
-
+	Node* n = new Node("root", "selector");
+	tree->addNode(n, NULL);
+	Node * a = new Node("relax", "selector");
+	tree->addNode(a, n);
+	Node *b = new Node("jugadorPercibido", "selector");
+	tree->addNode(b, a);
+	a = new Node("alerta", "selector");
+	tree->addNode(a, n);
+	a = new Node("combate", "secuencia");
+	tree->addNode(a, n);
+	
+	tree->imprimirArbol();
 
 }
 

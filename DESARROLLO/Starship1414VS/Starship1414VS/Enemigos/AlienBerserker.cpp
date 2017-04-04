@@ -41,7 +41,7 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 	waypoints = puntos;
 	// waypoints->creaPesos(entity);
 
-	waypoints->mostrarPesos();
+	//waypoints->mostrarPesos();
 	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
 
 	disparado = false;

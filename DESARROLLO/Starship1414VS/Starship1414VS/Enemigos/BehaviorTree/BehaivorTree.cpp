@@ -1,4 +1,4 @@
-
+#include <string>
 #include "BehaivorTree.h"
 #include "Tick.h"
 
@@ -33,25 +33,25 @@ void BehaivorTree::tick()
 
 }
 
-void BehaivorTree::addNode(Node * hijo, Node * padre, std::size_t hijos)
+void BehaivorTree::addNode(Node * hijo, Node *padre)
 {
-	if(root == nullptr && padre == nullptr) {
+	if(padre == NULL) {
 		
-		arbol.push_back(hijo);
+		std::cout << "Entra root" << std::endl;
 		root = hijo;
 		hijo->setID(contNodos);
 		contNodos++;
 
-		for (std::size_t i = 0; i < hijos; i++) {
-			hijo->crearHijos(contNodos, hijo);
-			contNodos++;
-		}
+		//for (std::size_t i = 0; i < hijos; i++) {
+		//	hijo->crearHijos(contNodos, hijo);
+		//	contNodos++;
+		//}
 		
 	}
 
 	else {
-
-
+		std::cout << "Entra hijo" << std::endl;
+		padre->addNodo(hijo);
 		
 	}
 
@@ -59,6 +59,26 @@ void BehaivorTree::addNode(Node * hijo, Node * padre, std::size_t hijos)
 
 void BehaivorTree::imprimirArbol()
 {
+	std::cout << "---------ROOT: " << root->getListaHijos().size() << std::endl;
+	
+
+	if (root != NULL) {
+
+	for(std::size_t i = 0; i<root->getListaHijos().size(); i++) {
+		
+			std::cout <<"NOMBRE: "<< root->getListaHijos()[i]->getAccion() << std::endl;
+			if(root->getListaHijos()[i]->getListaHijos().empty() == false) {
+				//muestras sus hijos
+				for (std::size_t j = 0; j<root->getListaHijos()[i]->getListaHijos().size(); j++) {
+					std::cout << "NOMBRE HIJOS: " << root->getListaHijos()[i]->getListaHijos()[j]->getAccion()<< std::endl;
+
+				}
+
+			}
+
+		}
+	}
+
 }
 
 
@@ -193,14 +213,17 @@ void Node::setEstado(Status s)
 	estado = s;
 }
 
-void Node::setPadre(Node * p)
-{
-	padre = p;
-}
+
 
 void Node::update()
 {
 
+}
+
+void Node::addNodo(Node * n)
+{
+	
+	nodosHijos.push_back(n);
 }
 
 void Node::crearHijos(int cont, Node *p)
@@ -215,4 +238,9 @@ void Node::crearHijos(int cont, Node *p)
 	//n->setID(cont);
 	//n->setPadre(p);
 	//nodosHijos.push_back(n);
+}
+
+std::vector<Node*> Node::getListaHijos()
+{
+	return nodosHijos;
 }

@@ -61,13 +61,8 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 
 					Puerta *p = static_cast<Puerta*>(entity->getObjeto3D());
 
-					std::cout << "------ ESTADO: " << p->getEstado() << std::endl;
-
 					if (p->getEstado() == "BLOQLLAVE") {
 						x = true;
-						std::cout << "------- BOOL: " << x << std::endl;
-
-						std::cout << "------- DISTANCIA: " << fraction << std::endl;
 						distancia = fraction;
 						return fraction;
 					}
