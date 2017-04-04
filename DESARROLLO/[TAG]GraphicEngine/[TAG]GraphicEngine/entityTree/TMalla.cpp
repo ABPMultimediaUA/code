@@ -12,9 +12,10 @@ TMalla::TMalla(std::string path)
 {
 	this->cargarMalla(path);
 }
-TMalla::TMalla(std::string path, TGestorRecursos& gestor)
+
+TMalla::TMalla(std::string path, TGestorRecursos* gestor)
 {
-	this->cargarMalla(path);
+	this->cargarMalla(path, gestor);
 }
 
 TMalla::~TMalla()
@@ -35,9 +36,9 @@ void TMalla::cargarMalla(std::string path)
 	}
 }
 
-void TMalla::cargarMalla(std::string path, TGestorRecursos& gestor)
+void TMalla::cargarMalla(std::string path, TGestorRecursos* gestor)
 {
-	this->malla = static_cast<TRecursoMalla*>(gestor.getRecurso(path,1));
+	this->malla = static_cast<TRecursoMalla*>(gestor->getRecurso(path,1));
 }
 
 void TMalla::beginDraw()

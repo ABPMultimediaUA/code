@@ -1,7 +1,6 @@
 #include "TGestorRecursos.h"
 #include "TRecurso.h"
 #include "TRecursoMalla.h"
-#include "TRecursoCamera.h"
 #include "TRecursoTextura.h"
 
 
@@ -16,7 +15,7 @@ TGestorRecursos::~TGestorRecursos()
 	{
 		delete (*it);
 	}
-	recursos.erase(recursos.begin, recursos.end);
+	recursos.erase(recursos.begin(), recursos.end());
 }
 
 TRecurso * TGestorRecursos::getRecurso(std::string nombre, int tipo)
@@ -40,10 +39,6 @@ TRecurso * TGestorRecursos::getRecurso(std::string nombre, int tipo)
 			recursos.push_back(rec);
 			break;
 		case 2:
-			rec = new TRecursoCamera();
-			recursos.push_back(rec);
-			break;
-		case 3:
 			//rec = new TRecursoTextura();
 			//recursos.push_back(rec);
 			break;

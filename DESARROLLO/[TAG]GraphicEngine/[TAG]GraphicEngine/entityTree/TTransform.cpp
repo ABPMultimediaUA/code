@@ -6,7 +6,9 @@
 std::stack<glm::mat4> TTransform::pilaMatrices;
 glm::mat4 TTransform::matrizActual;
 
-TTransform::TTransform(){}
+TTransform::TTransform() : matriz(1.0f)
+{
+}
 
 
 TTransform::~TTransform()
@@ -16,7 +18,7 @@ TTransform::~TTransform()
 
 glm::mat4 TTransform::identidad()
 {
-	return glm::mat4();
+	return glm::mat4(1.0f);
 }
 
 void TTransform::cargar(glm::mat4 &m)
@@ -24,24 +26,24 @@ void TTransform::cargar(glm::mat4 &m)
 	this->matriz = m;
 }
 
-glm::mat4 TTransform::trasponer(glm::mat4 &m)
+glm::mat4 TTransform::trasponer()
 {
-	return glm::transpose(m);
+	return glm::transpose(matriz);
 }
 
-void TTransform::trasladar(glm::mat4& m, float x, float y, float z)
+void TTransform::trasladar(float x, float y, float z)
 {
-	glm::translate(m, glm::vec3(x,y,z));
+	glm::translate(matriz, glm::vec3(x,y,z));
 }
 
-void TTransform::escalar(glm::mat4& m, float x, float y, float z)
+void TTransform::escalar(float x, float y, float z)
 {
-	glm::scale(m, glm::vec3(x, y, z));
+	glm::scale(matriz, glm::vec3(x, y, z));
 }
 
-void TTransform::rotar(glm::mat4& m, float r, float x, float y, float z)
+void TTransform::rotar(float r, float x, float y, float z)
 {
-	glm::rotate(m, r, glm::vec3(x, y, z));
+	glm::rotate(matriz, r, glm::vec3(x, y, z));
 }
 
 glm::mat4 TTransform::multiplicarMatriz(const glm::mat4 &m1, const glm::mat4 &m2)
@@ -71,7 +73,7 @@ void TTransform::beginDraw()
 	multiplicarMatriz(matrizActual,matriz);
 }
 
-void TTransform::beginDraw(unsigned int)
+void TTransform::beginDraw(unsigned int a)
 {
 	apilar(matrizActual);
 	multiplicarMatriz(matrizActual, matriz);

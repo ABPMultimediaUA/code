@@ -11,10 +11,11 @@ public:
 	~TLuz();
 	void setIntensidad(glm::vec3);
 	glm::vec3 getIntensidad();
-	void beginDraw();
+	void beginDraw() override;
 	void beginDraw(unsigned int) override;
 	void endDraw();
 private:
 	glm::vec3 intensidad;
+	bool activa;
 };
 

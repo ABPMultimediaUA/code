@@ -134,16 +134,14 @@
     <ClCompile Include="entityTree\TMalla.cpp" />
     <ClCompile Include="entityTree\TNodo.cpp" />
     <ClCompile Include="entityTree\TTransform.cpp" />
-    <ClCompile Include="entityTree\TTriangle.cpp" />
     <ClCompile Include="framework\openGLShader.cpp" />
     <ClCompile Include="framework\openGLWindow.cpp" />
+    <ClCompile Include="framework\TGraphicEngine.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="resourceManager\TGestorRecursos.cpp" />
     <ClCompile Include="resourceManager\TRecurso.cpp" />
-    <ClCompile Include="resourceManager\TRecursoCamera.cpp" />
     <ClCompile Include="resourceManager\TRecursoMalla.cpp" />
     <ClCompile Include="resourceManager\TRecursoTextura.cpp" />
-    <ClCompile Include="resourceManager\TRecursoTriangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="entityTree\TCamara.h" />
@@ -152,14 +150,12 @@
     <ClInclude Include="entityTree\TMalla.h" />
     <ClInclude Include="entityTree\TNodo.h" />
     <ClInclude Include="entityTree\TTransform.h" />
-    <ClInclude Include="entityTree\TTriangle.h" />
     <ClInclude Include="framework\openGLShader.h" />
     <ClInclude Include="framework\openGLWindow.h" />
+    <ClInclude Include="framework\TGraphicEngine.h" />
     <ClInclude Include="resourceManager\TGestorRecursos.h" />
-    <ClInclude Include="resourceManager\TRecursoCamera.h" />
     <ClInclude Include="resourceManager\TRecursoMalla.h" />
     <ClInclude Include="resourceManager\TRecursoTextura.h" />
-    <ClInclude Include="resourceManager\TRecursoTriangle.h" />
     <ClInclude Include="tools\glm\common.hpp" />
     <ClInclude Include="tools\glm\exponential.hpp" />
     <ClInclude Include="tools\glm\ext.hpp" />

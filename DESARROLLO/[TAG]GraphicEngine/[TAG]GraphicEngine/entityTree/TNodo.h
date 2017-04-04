@@ -7,11 +7,13 @@ class TNodo
 public:
 	TNodo();
 	TNodo(TEntidad*);
+	TNodo(TNodo*, TEntidad*);
 	~TNodo();
 	bool addHijo(TNodo*);
 	void setPadre(TNodo*);
 	int removeHijo(TNodo*);
 	bool setEntidad(TEntidad*);
+	TEntidad* getEntidad();
 	TNodo* getPadre();
 	int getID();
 	void draw();

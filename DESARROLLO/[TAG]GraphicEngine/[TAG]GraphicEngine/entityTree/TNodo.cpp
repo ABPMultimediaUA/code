@@ -23,6 +23,23 @@ TNodo::TNodo(TEntidad *e)
 	idN = id++;
 }
 
+TNodo::TNodo(TNodo *p, TEntidad *e)
+{
+	if (p != nullptr) {
+		padre = p;
+	}
+	else {
+		padre = nullptr;
+	}
+	if (e != nullptr) {
+		entidad = e;
+	}
+	else {
+		entidad = nullptr;
+	}
+	idN = id++;
+}
+
 
 TNodo::~TNodo()
 {
@@ -80,6 +97,11 @@ bool TNodo::setEntidad(TEntidad* e)
 		return true;
 	}
 	return false;
+}
+
+TEntidad* TNodo::getEntidad()
+{
+	return this->entidad;
 }
 
 TNodo* TNodo::getPadre()

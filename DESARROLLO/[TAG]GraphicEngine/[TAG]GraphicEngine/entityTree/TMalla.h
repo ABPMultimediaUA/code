@@ -11,10 +11,10 @@ class TMalla :
 public:
 	TMalla();
 	TMalla(std::string);
-	TMalla(std::string, TGestorRecursos&);
+	TMalla(std::string, TGestorRecursos*);
 	~TMalla();
 	void cargarMalla(std::string);
-	void cargarMalla(std::string, TGestorRecursos&);
+	void cargarMalla(std::string, TGestorRecursos*);
 	void beginDraw() override;
 	void beginDraw(unsigned int) override;
 	void endDraw() override;

@@ -39,12 +39,6 @@
     <ClCompile Include="resourceManager\TRecurso.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="entityTree\TTriangle.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
-    <ClCompile Include="resourceManager\TRecursoTriangle.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
     <ClCompile Include="resourceManager\TRecursoMalla.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
@@ -57,7 +51,7 @@
     <ClCompile Include="framework\openGLWindow.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="resourceManager\TRecursoCamera.cpp">
+    <ClCompile Include="framework\TGraphicEngine.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
@@ -155,12 +149,6 @@
     <ClInclude Include="resourceManager\TRecurso.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="entityTree\TTriangle.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="resourceManager\TRecursoTriangle.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="resourceManager\TRecursoMalla.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -173,7 +161,7 @@
     <ClInclude Include="framework\openGLWindow.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="resourceManager\TRecursoCamera.h">
+    <ClInclude Include="framework\TGraphicEngine.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
