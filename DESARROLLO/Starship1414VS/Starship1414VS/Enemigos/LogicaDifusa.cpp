@@ -143,19 +143,6 @@ void LogicaDifusa::baseDeConocimiento()
 
 	}
 
-	if (resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[2] > 0.0f) {
-
-		if (disparar > 0.0f) {
-			aux = min2valores(resultadosDePos[0], resultadosVidaEnemigo[2]);
-			disparar = max2valores(disparar, aux);
-		}
-
-		else {
-			disparar = min2valores(resultadosDePos[0], resultadosVidaEnemigo[2]);
-
-		}
-
-	}
 
 	if (resultadosDePos[1] > 0.0f && resultadosVidaEnemigo[2] > 0.0f) {
 
@@ -192,6 +179,20 @@ void LogicaDifusa::baseDeConocimiento()
 	if (resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[3] > 0.0f) {
 
 		cqc = min2valores(resultadosDePos[0], resultadosVidaEnemigo[3]);
+
+	}
+
+	if (resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[2] > 0.0f) {
+
+		if (cqc > 0.0f) {
+			aux = min2valores(resultadosDePos[0], resultadosVidaEnemigo[2]);
+			cqc = max2valores(cqc, aux);
+		}
+
+		else {
+			cqc = min2valores(resultadosDePos[0], resultadosVidaEnemigo[2]);
+
+		}
 
 	}
 

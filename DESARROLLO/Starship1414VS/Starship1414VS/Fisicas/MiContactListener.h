@@ -35,7 +35,7 @@ public:
 	// Podemos obtener el impulso aplicado sobre los cuerpos en contacto
 	virtual void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse);
 
-	void actualizarPuerta(Entity2D *entity, int modo);
+	void actualizarPuerta(Entity2D *entity, Entity2D *pers, int modo);
 
 	void aplicarDamage(Entity2D *entity, Entity2D *bala);
 	void activarTerminar(Entity2D *pers, Entity2D *terminal, bool actTer);

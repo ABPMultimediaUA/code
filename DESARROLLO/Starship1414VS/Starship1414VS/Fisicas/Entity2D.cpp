@@ -141,11 +141,11 @@ Entity2D::Entity2D(b2World* world, vector3df pos, vector3df rot, vector3df escal
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
     if (escala.Z != 1) {
 
-        bodyShape.SetAsBox(15 * escala.X, 2.5 * escala.Z);
-        bodyShape2.SetAsBox(2.5 * escala.X, 2.5 * escala.Z);	
+        bodyShape.SetAsBox(15 * escala.X, 5 * escala.Z);
+        bodyShape2.SetAsBox(5 * escala.X, 5 * escala.Z);	
     } else {
-        bodyShape.SetAsBox(2.5 * escala.X, 15 * escala.Z);
-        bodyShape2.SetAsBox(2.5 * escala.X, 2.5 * escala.Z);	
+        bodyShape.SetAsBox(5 * escala.X, 15 * escala.Z);
+        bodyShape2.SetAsBox(5 * escala.X, 5 * escala.Z);	
     }
 
     objeto3D = dirPuerta;
@@ -416,12 +416,22 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
     RayCastCallback *callback = new RayCastCallback();
     llamarCallBack(callback, inicio, fin);
 
+	if(callback->getEntidadChocada() == 2 && callback->getEsPuertaCerrada() == true) {
+		std::cout << "----- RESULT: " << callback->getDistancia() << std::endl;
+		return callback->getDistancia();
+	}
+
+		
+
+
 	if(callback->getEntidadChocada() != 1) {
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "SOY ALGO DISTINTO A UNA PARED" << std::endl;
 
 		return 0.0f;
 	}
+
+
+
+	
 
 	else {
 		return callback->getDistancia();

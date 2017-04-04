@@ -23,11 +23,11 @@ Waypoints::Waypoints() {
 }
 
 Waypoints::Waypoints(const Waypoints& orig) {
+
 }
 
 Waypoints::~Waypoints() {
 
-  
 	delete[] pesos[0];
 	delete[] pesos;
 
@@ -93,6 +93,8 @@ void Waypoints::creaPesos(Entity2D *entity) {
 				if(weight <=tamDelMapa * 0.01 ) {
 					 f = entity->rayCasting(b2Vec2(puntos[i]->getPosicion().X, puntos[i]->getPosicion().Z), b2Vec2(puntos[j]->getPosicion().X, puntos[j]->getPosicion().Z));
 
+					 //std::cout<<"-------- F: "<<f<<std::endl;
+
 					 if(f != 0.0f) {
 						 weight = -1;
 					 }
@@ -129,15 +131,6 @@ void Waypoints::crearMatriz()
 	for (std::size_t i = 1; i < puntos.size(); i++) {
 		pesos[i] = pesos[0] + puntos.size() * i;
 	}
-
-
-	//int tam = puntos.size();
-	//
-	//pesos = new float*[tam];
-
-	//for (int i = 0; i < tam; i++) {
-	//	pesos[i] = new float[tam];
-	//}
 
 
 }
@@ -180,4 +173,9 @@ Nodo* Waypoints::getNodoX(int x) {
 
 	return puntos.at(x);
 
+}
+
+int Waypoints::getTamMapa()
+{
+	return puntos.size();
 }

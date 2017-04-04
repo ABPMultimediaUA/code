@@ -36,8 +36,18 @@ Puerta::Puerta(int ident, vector3df posicion, vector3df rotacion, vector3df esca
 	Maquina = new MaquinaEstados();
 	Maquina->addEstado(CERRADA);
 	Maquina->addEstado(ABIERTA);
-	Maquina->addEstado(BLOQUEADA, true);
-	Maquina->addEstado(BLOQLLAVE); //dependiendo de que string se le pase se inicia en un estado o otro
+
+	if(llave != "ABIERTA") {
+		Maquina->addEstado(BLOQUEADA);
+		Maquina->addEstado(BLOQLLAVE, true);
+	}
+
+	else {
+		Maquina->addEstado(BLOQUEADA, true);
+	}
+
+	
+	 //dependiendo de que string se le pase se inicia en un estado o otro
 	llaveAsociada = llave;
 	detectado = false;
 	idDetect = -1;
@@ -109,6 +119,9 @@ void Puerta::UpdateEstado()
 {
 	if (detectado == true && id == idDetect)
 	{
+		if (Maquina->getEstadoActivo()->getEstado() == "BLOQLLAVE")
+			maya->getMaterial(0).EmissiveColor.set(0, 0, 180, 0);
+
 		Maquina->cambiaEstado("ABIERTA");
 	}
 

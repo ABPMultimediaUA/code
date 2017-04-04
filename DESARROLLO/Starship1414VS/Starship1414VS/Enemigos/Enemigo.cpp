@@ -66,12 +66,14 @@ Enemigo::~Enemigo() {
 	maya->getParent()->removeChild(maya);
     GVida->getParent()->removeChild(GVida);
     RVida->getParent()->removeChild(RVida);
-	delete(waypoints);
+	//delete(waypoints);
 	delete(path);
 	delete(logica);
 	/*delete(puntoIni);
 	delete(puntoFin);*/
     delete(entity);
+	puntoFin = nullptr;
+	puntoIni = nullptr;
 }
 
 void Enemigo::Update(f32 dt) {

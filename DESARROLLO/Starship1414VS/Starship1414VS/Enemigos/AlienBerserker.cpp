@@ -75,6 +75,7 @@ void AlienBerserker::Update(f32 dt)
 	case ATACAR: //atacar
 
 		Atacar(dt);
+		iniLogicaDifusa();
 
 		break;
 
@@ -82,6 +83,41 @@ void AlienBerserker::Update(f32 dt)
 	case ROTACION:
 		maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
 
+
+		break;
+
+
+	case ESCAPAR:
+
+		maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
+		iniLogicaDifusa();
+
+		break;
+
+	case CUERPOACUERPO:
+
+		maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
+		vector3df posPlayer;
+		posPlayer.X = posJugador.X;
+		posPlayer.Y = 0.0f;
+		posPlayer.Z = posJugador.Y;
+		dir = path->getDireccion(pos, posPlayer);
+
+
+		this->Mover(dir);
+		if (path->estoyEnElNodo(pos, posPlayer)) {
+			dir = -1;
+			this->setVelocidad();
+
+
+
+			/*posNodo = path->buscarWaypointMasCorto(posNodo);
+			puntoFin = waypoints->getNodoX(posNodo);*/
+
+		}
+
+
+		iniLogicaDifusa();
 
 		break;
 	}
@@ -99,16 +135,17 @@ void AlienBerserker::Update(f32 dt)
 
 void AlienBerserker::Patrullar()
 {
-	//maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
 	if (puntoFin == nullptr) {
 
 		posNodo = path->buscarWaypointMasCorto(posNodo);
-		puntoFin = waypoints->getNodoX(posNodo);
+
+		if (posNodo != -1) {
+			puntoFin = waypoints->getNodoX(posNodo);
+		}
 
 		if (nodoAnterior == puntoFin) {
 
-			std::cout << std::endl;
-			std::cout << "CACA" << std::endl;
+
 			posNodo = path->buscarWaypointNoRepetido(puntoFin->getLugarDelNodo(), puntoIni->getLugarDelNodo());
 			puntoFin = waypoints->getNodoX(posNodo);
 
@@ -119,7 +156,7 @@ void AlienBerserker::Patrullar()
 
 	}
 
-	else {
+	else if (puntoFin != nullptr) {
 
 
 
@@ -182,7 +219,9 @@ void AlienBerserker::BuscarWaypoint()
 
 	if (puntoIni == nullptr) {
 		posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
-		puntoIni = waypoints->getNodoX(posNodo);
+
+		if (posNodo != -1)
+			puntoIni = waypoints->getNodoX(posNodo);
 
 		//	std::cout << std::endl;
 		//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
@@ -191,20 +230,21 @@ void AlienBerserker::BuscarWaypoint()
 
 
 
+	if (puntoIni != nullptr) {
+		dir = path->getDireccion(pos, puntoIni->getPosicion());
+		/*	std::cout << std::endl;
+		std::cout << "DIR: " << dir << std::endl;
+		std::cout << std::endl;*/
 
-	dir = path->getDireccion(pos, puntoIni->getPosicion());
-	/*	std::cout << std::endl;
-	std::cout << "DIR: " << dir << std::endl;
-	std::cout << std::endl;*/
+		this->Mover(dir);
 
-	this->Mover(dir);
+		if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
+			estadoActual = PATRULLAR;
 
-	if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
-		estadoActual = PATRULLAR;
+			dir = -1;
+			this->setVelocidad();
 
-		dir = -1;
-		this->setVelocidad();
-
+		}
 	}
 }
 

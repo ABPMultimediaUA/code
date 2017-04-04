@@ -183,15 +183,33 @@ void Escenario::dibujarEscenario() {
 							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
 						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
 
+						if((*N).nombre == "Puerta-CERRADA") {
 
-						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
-							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
-							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
-							objeto, "ABIERTA");
+							objeto->getMaterial(0).EmissiveColor.set(0, 255, 0, 0);
 
-						door->setFisica(mundo, SM, num);
-						puertas.push_back(door);
-						num++;
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, (*I).nombre);
+
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+
+						}
+
+						else {
+
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, "ABIERTA");
+
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+						}
+
 					}
 
 				}
@@ -316,14 +334,32 @@ void Escenario::dibujarEscenario() {
 						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
 
 
-						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
-							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
-							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
-							objeto, "ABIERTA");
+						if ((*N).nombre == "Puerta-CERRADA") {
+							objeto->getMaterial(0).EmissiveColor.set(0, 255, 0, 0);
 
-						door->setFisica(mundo, SM, num);
-						puertas.push_back(door);
-						num++;
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, (*I).nombre);
+
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+
+						}
+
+						else {
+
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, "ABIERTA");
+
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+						}
+
 					}
 
 				}
@@ -372,15 +408,32 @@ void Escenario::dibujarEscenario() {
 							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
 						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
 
+						if ((*N).nombre == "Puerta-CERRADA") {
+							objeto->getMaterial(0).EmissiveColor.set(0, 255, 0, 0);
 
-						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
-							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
-							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
-							objeto, "ABIERTA");
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, (*I).nombre);
 
-						door->setFisica(mundo, SM, num);
-						puertas.push_back(door);
-						num++;
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+
+						}
+
+						else {
+
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, "ABIERTA");
+
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+						}
+
 					}
 
 				}
@@ -599,15 +652,32 @@ void Escenario::dibujarEscenario() {
 							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
 						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
 
+						if ((*N).nombre == "Puerta-CERRADA") {
+							objeto->getMaterial(0).EmissiveColor.set(0, 255, 0, 0);
 
-						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
-							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
-							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
-							objeto, "ABIERTA");
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, "Comisaria");
 
-						door->setFisica(mundo, SM, num);
-						puertas.push_back(door);
-						num++;
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+
+						}
+
+						else {
+
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, "ABIERTA");
+
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+						}
+
 					}
 
 				}
@@ -880,15 +950,32 @@ void Escenario::dibujarEscenario() {
 							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
 						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
 
+						if ((*N).nombre == "Puerta-CERRADA") {
+							objeto->getMaterial(0).EmissiveColor.set(0, 255, 0, 0);
 
-						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
-							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
-							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
-							objeto, "ABIERTA");
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, "Almacen_3");
 
-						door->setFisica(mundo, SM, num);
-						puertas.push_back(door);
-						num++;
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+
+						}
+
+						else {
+
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, "ABIERTA");
+
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+						}
+
 					}
 
 				}
@@ -995,14 +1082,32 @@ void Escenario::dibujarEscenario() {
 						objeto->getMaterial(0).EmissiveColor.set(0, 20 + num * 5, 5 * num + 60, 50 - num);
 
 
-						Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
-							vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
-							vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
-							objeto, "ABIERTA");
+						if ((*N).nombre == "Puerta-CERRADA") {
+							objeto->getMaterial(0).EmissiveColor.set(0, 255, 0, 0);
 
-						door->setFisica(mundo, SM, num);
-						puertas.push_back(door);
-						num++;
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, "Comisaria");
+
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+
+						}
+
+						else {
+
+							Puerta *door = new Puerta(num, vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+								vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+								vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+								objeto, "ABIERTA");
+
+							door->setFisica(mundo, SM, num);
+							puertas.push_back(door);
+							num++;
+						}
+
 					}
 
 				}
@@ -1482,10 +1587,10 @@ void Escenario::dibujarEscenario() {
 					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
 					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
 					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
-				objeto->getMaterial(0).EmissiveColor.set(0, 128, 0, 0);
+				objeto->getMaterial(0).EmissiveColor.set(0, 128, 128, 128);
 
 				Llave *llave = new Llave(objeto->getPosition(), objeto->getRotation(),
-					objeto->getScale(), 1, objeto, (*I).nombre);
+					objeto->getScale(), 1, objeto, (*T).nombre);
 				llave->setFisica(mundo);
 
 				objConsumables.push_back(llave);
@@ -1528,13 +1633,13 @@ void Escenario::dibujarEscenario() {
 	//objConsumables.push_back(subfusil);
 	//objConsumables.push_back(escopeta);
 	std::cout << "-------------------------------------->" << tam << std::endl;
-	zona1->setTamDelMapa(tam); zona2->setTamDelMapa(tam); zona3->setTamDelMapa(tam); zona4->setTamDelMapa(tam);
-	zona1->crearMatriz(); zona2->crearMatriz(); zona3->crearMatriz(); zona4->crearMatriz();
-	zona1->creaPesos(entity); zona2->creaPesos(entity); zona3->creaPesos(entity); zona4->creaPesos(entity);
+
 	waypoints.push_back(zona1); waypoints.push_back(zona2); waypoints.push_back(zona3); waypoints.push_back(zona4);
 
+	inicializarWaypoints();
 	fabricaDeEnemigos();
 
+	//destroyWaypoints();
 
 
 
@@ -1632,42 +1737,25 @@ void Escenario::fabricaDeEnemigos() {
 
 	}
 
-
 }
 
-void Escenario::spawnearEnemigo(ISceneManager* smgr, IVideoDriver* driver, b2World* world) {
+void Escenario::destroyWaypoints() {
 
-	std::cout << "SPAWN ENEMIGO" << std::endl;
+	if (!waypoints.empty()) {
+		for (std::vector<Waypoints*>::iterator it = waypoints.begin(); it != waypoints.end();) {
+			if ((*it) != NULL) {
 
-	float x = rand() % 230;
-	float z = rand() % 230;
+				delete(*it);
+				it = waypoints.erase(it);
 
-	if (enemigos.size() % 2 == 0) {
-
-		if (z > x) {
-			z = -z;
-		}
-		else {
-			x = -x;
+			}
+			else
+				it++;
 		}
 
 	}
-	else {
-
-
-		if (z > x) {
-			x = -x;
-		}
-		else {
-			z = -z;
-		}
-
-	}
-
-
-	//        Enemigo *ene = new Enemigo(smgr, driver, world, vector3df(x,10,z));
-	//        enemigos.push_back(ene);
 }
+
 
 void Escenario::actualizarEstadoPersonaje()
 {
@@ -1725,7 +1813,7 @@ void Escenario::actualizarObjetosConsumables()
 			if ((*it) != NULL) {
 				if (!(*it)->getVivo() ) {
 
-					delete(*it);
+					(*it)->destroyEntidades();
 					it = objConsumables.erase(it);
 				}
 				else
@@ -1736,6 +1824,17 @@ void Escenario::actualizarObjetosConsumables()
 		}
 
 	}
+}
+
+void Escenario::inicializarWaypoints()
+{
+	for (std::size_t i = 0; i < waypoints.size(); i++) {
+		waypoints.at(i)->setTamDelMapa(tam);
+		waypoints.at(i)->crearMatriz();
+		waypoints.at(i)->creaPesos(entity);
+
+	}
+
 }
 
 void Escenario::actualizarListaEnemigos(f32 dt) {

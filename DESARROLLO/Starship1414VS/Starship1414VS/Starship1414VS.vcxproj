@@ -153,6 +153,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Enemigos\BehaviorTree\BehaivorTree.cpp" />
+    <ClCompile Include="Enemigos\BehaviorTree\Tick.cpp" />
     <ClCompile Include="Escenario\ObjConsumables\Botiquines.cpp" />
     <ClCompile Include="Enemigos\AStar.cpp" />
     <ClCompile Include="CAppReceiver.cpp" />
@@ -197,6 +199,8 @@
     <ClCompile Include="Escenario\ObjConsumables\TiposDeMunicion\MunicionEscopeta.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Enemigos\BehaviorTree\BehaivorTree.h" />
+    <ClInclude Include="Enemigos\BehaviorTree\Tick.h" />
     <ClInclude Include="Escenario\ObjConsumables\Botiquines.h" />
     <ClInclude Include="Enemigos\AStar.h" />
     <ClInclude Include="CAppReceiver.h" />
