@@ -44,7 +44,8 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	
 	waypoints = puntos;
    // waypoints->creaPesos(entity);
-
+	std::cout << "CRIA" << std::endl;
+	std::cout << "----- TAM" << waypoints->getTamMapa() << std::endl;
 	waypoints->mostrarPesos();
 
 	disparado = false;

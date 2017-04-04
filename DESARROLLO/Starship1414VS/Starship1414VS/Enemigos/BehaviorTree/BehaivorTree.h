@@ -9,6 +9,7 @@ class Tick;
 enum Status {
 
 	BH_INVALID,
+	BH_READY,
 	BH_SUCCESS,
 	BH_FAILURE,
 	BH_RUNNING,
@@ -19,41 +20,45 @@ class Node {
 
 public:
 
+	Node();
 	Node(std::string n_accion, std::string n_task);
 	std::string getAccion();
 	std::string getTipoTask();
 	Status getEstado();
 	void setID(int n_ID);
 	void setEstado(Status s);
-	void crearHijos(int cont);
-	virtual Task* create() = 0;
-	virtual void destroy(Task*) = 0;
+	void setPadre(Node *p);
+	virtual void update();
+	void crearHijos(int cont, Node *p);
+	//virtual Task* create() = 0;
+	//virtual void destroy(Task*) = 0;
 
 	virtual ~Node() {}
 
-private:
+protected:
 	int ID;
 	std::string accion;
 	std::string tipoTask;
 	Status estado;
 	std::list<Node*> nodosHijos;
+	Node *padre;
 };
 
-class Task {
-
-public:
-	Task(Node *node);
-	~Task();
-	virtual Status update() = 0;
-	virtual void onInicializar();
-	virtual void onTerminar(Status);
-
-
-protected:
-	Node *nodo;
-
-
-};
+//class Task {
+//
+//public:
+//	Task(Node *node);
+//	~Task();
+//	virtual Status update() = 0;
+//	virtual void onInicializar();
+//	virtual void onTerminar(Status);
+//
+//
+//protected:
+//	Node *nodo;
+//
+//
+//};
 
 class BehaivorTree
 {
@@ -76,70 +81,43 @@ private:
 	
 };
 
-//debug para el arbol
-//struct NockBehavior
-//{
-//	int inicializarLlamada;
-//	int terminarLlamada;
-//	int updateLlamada;
-//	Status estadoRetornado;
-//	Status estadoTerminado;
+
+
+//class Composite : public Node {
 //
-//	NockBehavior() {
-//
-//	}
-//
-//	virtual void onInicializar() override {
-//		++inicializarLlamada;
-//	}
-//
-//	virtual void onTerminar(Status s) override{
-//		++terminarLlamada;
-//		estadoTerminado = s;
-//	}
-//
-//	virtual Status update() override {
-//		++updateLlamada;
-//		return estadoRetornado;
-//	}
+//protected:
+//	 std::vector<Node*> nodes;
+//	
 //};
-//
-//TEST(StarterKit1, TaskInicializar) {
-//
-//}
 
-
-
-class Composite : public Node {
-
-protected:
-	 std::vector<Node*> nodes;
-	
-};
-
-class Sequence : public Task {
+class Sequence : public Node {
 
 public:
 
-	Sequence(Composite *node);
-	Composite* getNode();
+	Sequence();
+	Node* getNode();
 	virtual void onInicializar();
-	virtual Status update();
+	void update();
 
 
 
-protected:
+private:
 
-	std::vector<Node*>::iterator hijoActual;
-	BehaivorTree *arbolActual;
+	std::list<Node*>::iterator hijoActual;
+	
 };
 
-class Selector : public Composite {
+class Selector : public Node {
 
-protected:
 
-	virtual void onInicializar();
-	virtual Status update();
-	std::vector<BehaivorTree*>::iterator hijoActual;
+public:
+
+	Selector();
+	~Selector();
+	void update();
+
+private:
+
+	std::list<BehaivorTree*>::iterator hijoActual;
 
 };

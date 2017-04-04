@@ -51,7 +51,7 @@ public:
 	float** getMatriz();
 	std::vector<Nodo*> getNodos();
 	Nodo* getNodoX(int x);
-
+	int getTamMapa();
 
 
 

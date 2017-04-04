@@ -416,12 +416,22 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
     RayCastCallback *callback = new RayCastCallback();
     llamarCallBack(callback, inicio, fin);
 
+	if(callback->getEntidadChocada() == 2 && callback->getEsPuertaCerrada() == true) {
+		std::cout << "----- RESULT: " << callback->getDistancia() << std::endl;
+		return callback->getDistancia();
+	}
+
+		
+
+
 	if(callback->getEntidadChocada() != 1) {
-		std::cout << "//////////////////////////////////////////" << std::endl;
-		std::cout << "SOY ALGO DISTINTO A UNA PARED" << std::endl;
 
 		return 0.0f;
 	}
+
+
+
+	
 
 	else {
 		return callback->getDistancia();

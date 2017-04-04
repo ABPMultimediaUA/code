@@ -26,10 +26,13 @@ public:
 	float32 ReportFixture(b2Fixture* fixture, const b2Vec2& point, const b2Vec2& normal, float32 fraction);
 	float32 getDistancia();
 	int getEntidadChocada();
+	bool getEsPuertaCerrada();
+
 private:
 
 	float32 distancia;
 	int entidadChocada;
+	bool x;
 };
 
 #endif /* RAYCASTCALLBACK_H */

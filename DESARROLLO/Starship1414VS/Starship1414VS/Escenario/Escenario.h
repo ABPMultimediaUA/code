@@ -121,6 +121,7 @@ public:
 	void actualizarEstadoPersonaje();
 	void actualizarEstadoPuerta();
 	void actualizarObjetosConsumables();
+	void inicializarWaypoints();
 	void eleminarEnemigos();
 	Personaje* getPersonaje();
 	void destroyPared();

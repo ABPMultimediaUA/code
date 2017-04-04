@@ -12,8 +12,10 @@
 */
 
 #include <iostream>
+#include <string>
 #include "RayCastCallback.h"
 #include "Entity2D.h"
+#include "../Escenario/Puerta.h"
 
 RayCastCallback::RayCastCallback() {
 	distancia = 0;
@@ -35,14 +37,16 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 
 	if (fraction != 0) {
 		void* bodyUserData = fixture->GetBody()->GetUserData();
-
-		if (bodyUserData) {
+		
+		if (bodyUserData && fixture->IsSensor() == false) {
 			if (static_cast<Entity2D*>(bodyUserData)) {
 				Entity2D *entity = static_cast<Entity2D*>(bodyUserData);
+				
+				x = false;
 				std::cout << "//////////////////////////////////////////" << std::endl;
 
 				std::cout << "ID ENTITY " << entity->getIDEN() << std::endl;
-				std::cout << "Posicion de la Entity X: " << entity->getCuerpo2D()->GetPosition().x << "Y: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
+				std::cout << "Posicion de la Entity X: " << entity->getCuerpo2D()->GetPosition().x << " Y: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
 				std::cout << "//////////////////////////////////////////" << std::endl;
 				std::cout << "" << std::endl;
 
@@ -53,14 +57,35 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 
 				entidadChocada = entity->getIDEN();
 
+				if (entidadChocada == 2) {
 
-				if (fraction < distancia || distancia == 0) {
+					Puerta *p = static_cast<Puerta*>(entity->getObjeto3D());
+
+					std::cout << "------ ESTADO: " << p->getEstado() << std::endl;
+
+					if (p->getEstado() == "BLOQLLAVE") {
+						x = true;
+						std::cout << "------- BOOL: " << x << std::endl;
+
+						std::cout << "------- DISTANCIA: " << fraction << std::endl;
+						distancia = fraction;
+						return fraction;
+					}
+
+				}
+
+
+				distancia = fraction;
+				return fraction;
+
+				
+
+		/*		if (fraction < distancia || distancia == 0) {
 					distancia = fraction;
 
 					return fraction;
 
 				}
-
 				
 
 				else {
@@ -69,13 +94,13 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 					}
 
 					return -1;
-				}
+				}*/
 
 			}
 		}
 	}
 
-	return distancia;
+	return 0.0f;
 }
 
 float32 RayCastCallback::getDistancia() {
@@ -84,6 +109,11 @@ float32 RayCastCallback::getDistancia() {
 
 int RayCastCallback::getEntidadChocada() {
 	return entidadChocada;
+}
+
+bool RayCastCallback::getEsPuertaCerrada()
+{
+	return x;
 }
 
 

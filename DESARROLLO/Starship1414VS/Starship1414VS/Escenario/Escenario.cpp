@@ -1633,11 +1633,10 @@ void Escenario::dibujarEscenario() {
 	//objConsumables.push_back(subfusil);
 	//objConsumables.push_back(escopeta);
 	std::cout << "-------------------------------------->" << tam << std::endl;
-	zona1->setTamDelMapa(tam); zona2->setTamDelMapa(tam); zona3->setTamDelMapa(tam); zona4->setTamDelMapa(tam);
-	zona1->crearMatriz(); zona2->crearMatriz(); zona3->crearMatriz(); zona4->crearMatriz();
-	zona1->creaPesos(entity); zona2->creaPesos(entity); zona3->creaPesos(entity); zona4->creaPesos(entity);
+
 	waypoints.push_back(zona1); waypoints.push_back(zona2); waypoints.push_back(zona3); waypoints.push_back(zona4);
 
+	inicializarWaypoints();
 	fabricaDeEnemigos();
 
 	//destroyWaypoints();
@@ -1825,6 +1824,17 @@ void Escenario::actualizarObjetosConsumables()
 		}
 
 	}
+}
+
+void Escenario::inicializarWaypoints()
+{
+	for (std::size_t i = 0; i < waypoints.size(); i++) {
+		waypoints.at(i)->setTamDelMapa(tam);
+		waypoints.at(i)->crearMatriz();
+		waypoints.at(i)->creaPesos(entity);
+
+	}
+
 }
 
 void Escenario::actualizarListaEnemigos(f32 dt) {

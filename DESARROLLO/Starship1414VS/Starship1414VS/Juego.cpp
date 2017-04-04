@@ -72,6 +72,7 @@ void Juego::StarUP(IrrlichtDevice* iDevice) {
 	lastFPS = 0;
 	 //el cubo que se crea es de 10x10x10 10px = 1m
 	esce = new Escenario(smgr, driver, world,this);
+
 	pers = esce->getPersonaje();
 	// ene = new Enemigo(smgr, driver, world, vector3df(0,10,40));
 	json = new readJson(esce);
