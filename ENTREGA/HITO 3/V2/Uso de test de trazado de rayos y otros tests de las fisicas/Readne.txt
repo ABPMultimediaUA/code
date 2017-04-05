@@ -1,0 +1,1 @@
+El raycasting de Box2D se usa para saber si de un waypoint a otro waypoint existe algún objeto. Si existe dicho objeto, se evalua si es una pared o una puerta cerrada para que el enemigo no pueda llegar a ese waypoint.

@@ -1,0 +1,1 @@
+Los distintos power-ups que tiene el jugador son las mejoras de nivel de las armas, siendo mejorable el daño, aumentar el tamaño del cargador y la capacidad de munición. Está hecha la lógica, pero no se ha conectado aún con la interfáz de la tienda.
