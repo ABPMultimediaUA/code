@@ -1,6 +1,8 @@
 #pragma once
 #include <vector>
+#include <glm\mat4x4.hpp>
 class TEntidad;
+class openGLShader;
 
 class TNodo
 {
@@ -17,7 +19,7 @@ public:
 	TNodo* getPadre();
 	int getID();
 	void draw();
-	void draw(unsigned int);
+	void draw(openGLShader&, const glm::mat4&, const glm::mat4&);
 private:
 	static int id;
 	TEntidad* entidad;

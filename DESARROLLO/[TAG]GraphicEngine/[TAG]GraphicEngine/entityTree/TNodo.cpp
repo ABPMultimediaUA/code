@@ -1,6 +1,7 @@
 #include "TNodo.h"
 #include <iostream>
 #include "TEntidad.h"
+#include "..\framework\openGLShader.h"
 
 int TNodo::id = 0;
 
@@ -131,14 +132,14 @@ void TNodo::draw()
 	}
 }
 
-void TNodo::draw(unsigned int p)
+void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro)
 {
 	std::cout << "Se dibuja nodo: " << idN << std::endl;
 	if (this->entidad) {
-		this->entidad->beginDraw(p);
+		this->entidad->beginDraw(s,w,pro);
 	}
 	for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {
-		(*it)->draw(p);
+		(*it)->draw(s,w,pro);
 	}
 	if (this->entidad) {
 		this->entidad->endDraw();

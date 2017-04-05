@@ -2,7 +2,6 @@
 #include "TEntidad.h"
 #include <string>
 class TRecursoMalla;
-class shader;
 class TGestorRecursos;
 
 class TMalla :
@@ -16,7 +15,7 @@ public:
 	void cargarMalla(std::string);
 	void cargarMalla(std::string, TGestorRecursos*);
 	void beginDraw() override;
-	void beginDraw(unsigned int) override;
+	void beginDraw(openGLShader&, const glm::mat4&, const glm::mat4&) override;
 	void endDraw() override;
 private:
 	TRecursoMalla* malla;

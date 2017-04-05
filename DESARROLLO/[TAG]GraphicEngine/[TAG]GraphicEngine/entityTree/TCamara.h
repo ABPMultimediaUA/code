@@ -21,21 +21,25 @@ public:
 	void setPerspectiva(float, float, float, float, float, float);
 	void setParalela(float, float, float, float, float, float);
 	void setWindow(GLFWwindow*);
-	glm::mat4 getViewMatrix();
+	//glm::mat4 getViewMatrix();
+	void setView(glm::mat4);
+	glm::mat4 getView();
 	glm::mat4 getProjectionMatrix();
-	glm::vec3 getPosition();
 	void beginDraw() override;
-	void beginDraw(unsigned int) override;
+	void beginDraw(openGLShader&, const glm::mat4&, const glm::mat4&) override;
 	void endDraw() override;
+	void activar();
+	void desactivar();
+	bool getActiva();
 private:
+	bool activa;
 	bool esPerspectiva;
-	glm::vec3 p1, p2;
-	void checkMouse();
+	glm::vec3 front, up;
+	glm::mat4 view;
+	/*void checkMouse();
 	void chechKeys();
 	inline bool isKeyPress(int);
-	float yaw, pitch;
-	glm::vec3 cameraPos, cameraFront, cameraUp;
-	GLfloat cameraSpeed, mouseSensitive;
+	GLfloat cameraSpeed, mouseSensitive;*/
 	GLFWwindow* window;
 };
 

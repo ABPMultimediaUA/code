@@ -136,7 +136,6 @@
     <ClCompile Include="entityTree\TNodo.cpp" />
     <ClCompile Include="entityTree\TTransform.cpp" />
     <ClCompile Include="framework\openGLShader.cpp" />
-    <ClCompile Include="framework\openGLWindow.cpp" />
     <ClCompile Include="framework\TGraphicEngine.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="resourceManager\TGestorRecursos.cpp" />
@@ -152,7 +151,6 @@
     <ClInclude Include="entityTree\TNodo.h" />
     <ClInclude Include="entityTree\TTransform.h" />
     <ClInclude Include="framework\openGLShader.h" />
-    <ClInclude Include="framework\openGLWindow.h" />
     <ClInclude Include="framework\TGraphicEngine.h" />
     <ClInclude Include="resourceManager\TGestorRecursos.h" />
     <ClInclude Include="resourceManager\TRecursoMalla.h" />

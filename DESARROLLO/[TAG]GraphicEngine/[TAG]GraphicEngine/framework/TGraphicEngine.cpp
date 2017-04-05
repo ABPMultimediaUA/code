@@ -12,7 +12,7 @@
 #include "..\entityTree\TMalla.h"
 
 
-TGraphicEngine::TGraphicEngine() : luz_direction{ 0, 10, 10 }, dir_shader()
+TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces()
 {
 	escena = new TNodo(nullptr);
 	gestorRecursos = new TGestorRecursos();
@@ -20,6 +20,10 @@ TGraphicEngine::TGraphicEngine() : luz_direction{ 0, 10, 10 }, dir_shader()
 
 TGraphicEngine::~TGraphicEngine()
 {
+	delete escena;
+	escena = nullptr;
+	delete gestorRecursos;
+	gestorRecursos = nullptr;
 	std::cout << "Facade Destroted" << std::endl;
 }
 
@@ -33,14 +37,25 @@ TTransform * TGraphicEngine::crearTransform()
 	return new TTransform();
 }
 
-TCamara * TGraphicEngine::crearCamara()
+TCamara * TGraphicEngine::crearCamara(bool pe, float xu, float yu, float zu, float xf, float yf, float zf, bool a)
 {
-	return new TCamara();
+	TCamara* c = new TCamara(pe, xu, yu, zu, xf, yf, zf);
+	if (a) 
+	{
+		c->activar();
+	}
+	return c;
 }
 
-TLuz * TGraphicEngine::crearLuz()
+TLuz * TGraphicEngine::crearLuz(float x, float y, float z, bool a)
 {
-	return new TLuz();
+	TLuz* l = new TLuz(x, y, z);
+	if (a)
+	{
+		l->activar();
+	}
+
+	return l;
 }
 
 TMalla * TGraphicEngine::crearMalla(std::string fichero)
@@ -53,13 +68,94 @@ TNodo * TGraphicEngine::nodoRaiz()
 	return escena;
 }
 
-void TGraphicEngine::setCamaraRegistro(TCamara *c)
+GLFWwindow * TGraphicEngine::getGLFWwindow()
 {
-	registro = c;
+	return window;
 }
 
-void TGraphicEngine::draw()
+bool TGraphicEngine::init(std::string title, int width, int height, bool full_screen)
 {
+	aspect_ratio = static_cast<float>(width) / static_cast<float>(height);
+
+	glfwSetErrorCallback(error_callback);
+
+	if (!glfwInit()) return false;
+
+	window = glfwCreateWindow(width, height, title.c_str(), full_screen ? glfwGetPrimaryMonitor() : NULL, NULL);
+	if (!window)
+	{
+		glfwTerminate();
+		return false;
+	}
+
+	glfwMakeContextCurrent(window);
+	glfwSwapInterval(1);
+
+	glfwSetKeyCallback(window, key_callback);
+	glfwSetWindowCloseCallback(window, close_callback);
+	glfwSetFramebufferSizeCallback(window, resize_callback);
+	glfwSetCursorPosCallback(window, mouse_callback);
+
+	if (glewInit() != GLEW_OK) {
+		glfwTerminate();
+		return false;
+	}
+
+	glfwSetWindowUserPointer(window, this);
+
+	return true;
+}
+
+void TGraphicEngine::run()
+{
+	onstart();
+	glfwSetTime(0.0);
+
+	while (!glfwWindowShouldClose(window))
+	{
+		double seconds = glfwGetTime();
+		draw(seconds);
+
+		glfwSwapBuffers(window);
+		glfwPollEvents();
+	}
+
+	glfwDestroyWindow(window);
+	glfwTerminate();
+}
+
+void TGraphicEngine::info()
+{
+	std::cout << "Vendor: " << glGetString(GL_VENDOR) << std::endl;
+	std::cout << "Renderer: " << glGetString(GL_RENDERER) << std::endl;
+	std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
+	std::cout << "GLSL: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl << std::endl;
+}
+
+void TGraphicEngine::addRegistroLuz(TNodo* l)
+{
+	if (l)
+	{
+		registroLuces.push_back(l);
+	}
+}
+
+void TGraphicEngine::addRegistroCamara(TNodo * c)
+{
+	if (c)
+	{
+		registroCamaras.push_back(c);
+	}
+}
+
+void TGraphicEngine::draw(double time)
+{
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	shader.use();
+	camaraActivada();
+	luzActivada();
+	this->escena->draw(shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
+	shader.unUse();
 }
 
 void TGraphicEngine::onstart()
@@ -67,54 +163,96 @@ void TGraphicEngine::onstart()
 	glEnable(GL_DEPTH_TEST);
 	glClearColor(0.0f, 0.5f, 0.5f, 1.0f);
 
-	registro->setWindow(this->window);
-	dir_shader.compile("Shader/directional.vertex_shader", "Shader/directional.fragment_shader");
-	//model.init("model/test.assbin");
+	shader.compile("Shader/directional.vertex_shader", "Shader/directional.fragment_shader");
 
 	// ocultar el cursor y ubicarlo en el centro de la ventana
 	glfwSetInputMode(this->window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	glfwSetCursorPos(this->window, 1280 / 2, 720 / 2);
 }
 
-void TGraphicEngine::onrender(double time)
+void TGraphicEngine::onstop()
 {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	luzDirectional(dir_shader, time);
-}
-
-void TGraphicEngine::luzDirectional(openGLShader & shader, double time)
-{
-	shader.use();
-
-	glm::mat4 Model;
-
-	glm::mat4 MV = registro->getViewMatrix() * Model;
-	glm::mat4 MVP = registro->getProjectionMatrix() * MV;
-	glm::mat3 N = glm::inverseTranspose(glm::mat3(MV));
-
-	glUniformMatrix4fv(shader.getUniformLocation("mvp_matrix"), 1, GL_FALSE, glm::value_ptr(MVP));
-	glUniformMatrix4fv(shader.getUniformLocation("mv_matrix"), 1, GL_FALSE, glm::value_ptr(MV));
-	glUniformMatrix3fv(shader.getUniformLocation("n_matrix"), 1, GL_FALSE, glm::value_ptr(N));
-
-	// direccion de la luz
-	glm::vec3 lightDirEyeSpace = glm::vec3(MV * glm::vec4(luz_direction, 0));
-
-	glUniform3fv(shader.getUniformLocation("light.direction"), 1, glm::value_ptr(lightDirEyeSpace));
-	glUniform3fv(shader.getUniformLocation("light.ambient"), 1, glm::value_ptr(glm::vec3(0.1f)));
-	glUniform3fv(shader.getUniformLocation("light.diffuse"), 1, glm::value_ptr(glm::vec3(1.0f)));
-	glUniform3fv(shader.getUniformLocation("light.specular"), 1, glm::value_ptr(glm::vec3(1.0f)));
-
-	this->escena->draw(shader.getProgram());
-
-	shader.unUse();
 }
 
 void TGraphicEngine::onkey(int key, int scancode, int action, int mods)
 {
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) { glfwSetWindowShouldClose(window, GL_TRUE); }
-	if (key == GLFW_KEY_LEFT) { luz_direction.x += 0.1f; }
+	/*if (key == GLFW_KEY_LEFT) { luz_direction.x += 0.1f; }
 	if (key == GLFW_KEY_RIGHT) { luz_direction.x -= 0.1f; }
 	if (key == GLFW_KEY_UP) { luz_direction.y += 0.1f; }
 	if (key == GLFW_KEY_DOWN) { luz_direction.y -= 0.1f; }
+	if (key == GLFW_KEY_R) { luz_direction.y -= 0.1f; }*/
+}
 
+void TGraphicEngine::onmouse(double xpos, double ypos)
+{
+}
+
+void TGraphicEngine::onresize(int width, int height)
+{
+	aspect_ratio = std::max(0.0f, width / (float)height);
+	glViewport(0, 0, width, height);
+}
+
+void TGraphicEngine::camaraActivada()
+{
+	for (size_t i = 0; i < registroCamaras.size(); i++) {
+		if (static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->getActiva())
+		{
+			glm::mat4 t = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getEntidad())->getMatriz();
+			glm::mat4 e = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getPadre()->getEntidad())->getMatriz();
+			glm::mat4 r = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
+			static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView((r*e)*t);
+			camaraActiva = static_cast<TCamara*>(registroCamaras.at(i)->getEntidad());
+			camaraActiva->setWindow(this->window);
+			break;
+		}
+	}
+}
+
+void TGraphicEngine::luzActivada()
+{
+	for (size_t i = 0; i < registroLuces.size(); i++) {
+		if (static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->getActiva())
+		{
+			glm::mat4 t = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getEntidad())->getMatriz();
+			glm::mat4 e = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getEntidad())->getMatriz();
+			glm::mat4 r = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
+			static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->renderLuz((r*e)*t, shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
+		}
+	}
+}
+
+void TGraphicEngine::error_callback(int error, const char * description)
+{
+	std::cerr << "Error: " << error << ", " << description << std::endl << std::endl;
+}
+
+void TGraphicEngine::close_callback(GLFWwindow *window)
+{
+	TGraphicEngine* win_app = getTGraphicEngineApp(window);
+	win_app->onstop();
+}
+
+void TGraphicEngine::key_callback(GLFWwindow * window, int key, int scancode, int action, int mods)
+{
+	TGraphicEngine* win_app = getTGraphicEngineApp(window);
+	win_app->onkey(key, scancode, action, mods);
+}
+
+void TGraphicEngine::resize_callback(GLFWwindow * window, int width, int height)
+{
+	TGraphicEngine* win_app = getTGraphicEngineApp(window);
+	win_app->onresize(width, height);
+}
+
+void TGraphicEngine::mouse_callback(GLFWwindow * window, double xpos, double ypos)
+{
+	TGraphicEngine* win_app = getTGraphicEngineApp(window);
+	win_app->onmouse(xpos, ypos);
+}
+
+inline TGraphicEngine * TGraphicEngine::getTGraphicEngineApp(GLFWwindow * window)
+{
+	return static_cast<TGraphicEngine*>(glfwGetWindowUserPointer(window));
 }

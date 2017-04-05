@@ -2,6 +2,10 @@
 #include <iostream>
 #include "../resourceManager/TRecursoMalla.h"
 #include "../resourceManager/TGestorRecursos.h"
+#include "..\framework\openGLShader.h"
+#include <glm\gtc\matrix_inverse.hpp>
+#include <glm\gtc\type_ptr.hpp>
+#include <glm\mat3x3.hpp>
 
 TMalla::TMalla()
 {
@@ -46,9 +50,16 @@ void TMalla::beginDraw()
 	this->malla->draw();
 }
 
-void TMalla::beginDraw(unsigned int p)
+void TMalla::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
 {
-	this->malla->draw(p);
+	glm::mat4 MV = view * matrizActual;
+	glm::mat4 MVP = proyection * MV;
+	glm::mat3 N = glm::inverseTranspose(glm::mat3(MV));
+
+	glUniformMatrix4fv(shader.getUniformLocation("mvp_matrix"), 1, GL_FALSE, glm::value_ptr(MVP));
+	glUniformMatrix4fv(shader.getUniformLocation("mv_matrix"), 1, GL_FALSE, glm::value_ptr(MV));
+	glUniformMatrix3fv(shader.getUniformLocation("n_matrix"), 1, GL_FALSE, glm::value_ptr(N));
+	this->malla->draw(shader.getProgram());
 }
 
 void TMalla::endDraw()

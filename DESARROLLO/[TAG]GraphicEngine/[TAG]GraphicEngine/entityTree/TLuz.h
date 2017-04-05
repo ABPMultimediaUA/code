@@ -7,13 +7,17 @@ class TLuz :
 {
 public:
 	TLuz();
-	TLuz(glm::vec3);
+	TLuz(float,float, float);
 	~TLuz();
-	void setIntensidad(glm::vec3);
+	void setIntensidad(float, float, float);
 	glm::vec3 getIntensidad();
 	void beginDraw() override;
-	void beginDraw(unsigned int) override;
-	void endDraw();
+	void beginDraw(openGLShader&, const glm::mat4&, const glm::mat4&) override;
+	void endDraw() override;
+	void activar();
+	void desactivar();
+	bool getActiva();
+	void renderLuz(const glm::mat4&, openGLShader&, const glm::mat4&, const glm::mat4&);
 private:
 	glm::vec3 intensidad;
 	bool activa;

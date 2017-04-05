@@ -3,6 +3,7 @@
 #include <glm\gtc\matrix_transform.hpp>
 #include <glm\gtx\string_cast.hpp>
 #include <iostream>
+#include "..\framework\openGLShader.h"
 
 std::stack<glm::mat4> TTransform::pilaMatrices;
 
@@ -26,35 +27,38 @@ void TTransform::cargar(glm::mat4 &m)
 	this->matriz = m;
 }
 
-glm::mat4 TTransform::trasponer()
+glm::mat4 TTransform::trasponer(glm::mat4 &m)
 {
-	return glm::transpose(matriz);
+	return glm::transpose(m);
+}
+
+glm::mat4 TTransform::invertir(glm::mat4 &m)
+{
+	return glm::inverse(m);
 }
 
 void TTransform::trasladar(float x, float y, float z)
 {
-	matriz = glm::translate(matriz, glm::vec3(x,y,z));
+	matriz = matriz*glm::translate(glm::mat4(1.0f), glm::vec3(x,y,z));
 	std::cout << "MatrizTrasladado: " << glm::to_string(matriz) << std::endl;
 }
 
 void TTransform::escalar(float x, float y, float z)
 {
-	matriz = glm::scale(matriz, glm::vec3(x, y, z));
+	matriz = matriz*glm::scale(glm::mat4(1.0f), glm::vec3(x, y, z));
 	std::cout << "MatrizEscalado: " << glm::to_string(matriz) << std::endl;
 }
 
 void TTransform::rotar(float r, float x, float y, float z)
 {
-	matriz = glm::rotate(matriz, r, glm::vec3(x, y, z));
+	matriz = matriz*glm::rotate(glm::mat4(1.0f), r, glm::vec3(x, y, z));
 	std::cout << "MatrizRotacion: " << glm::to_string(matriz) << std::endl;
 }
 
 glm::mat4 TTransform::multiplicarMatriz(const glm::mat4 &m1, const glm::mat4 &m2)
 {
-	std::cout << "M1: " << glm::to_string(m1) << std::endl;
-	std::cout << "M2: " << glm::to_string(m2) << std::endl;
+	std::cout << "Pre MatrizActual: " << glm::to_string(matrizActual) << std::endl;
 	glm::mat4 mul = m1 * m2;
-	std::cout <<"Mul: " << glm::to_string(mul) << std::endl;
 	return mul;
 }
 
@@ -80,14 +84,19 @@ void TTransform::beginDraw()
 	multiplicarMatriz(matrizActual,matriz);
 }
 
-void TTransform::beginDraw(unsigned int a)
+void TTransform::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
 {
 	apilar(matrizActual);
 	matrizActual = multiplicarMatriz(matrizActual, matriz);
-	std::cout << "MatrizActual: " << glm::to_string(matrizActual) << std::endl;
+	std::cout << "Post MatrizActual: " << glm::to_string(matrizActual) << std::endl;
 }
 
 void TTransform::endDraw()
 {
 	desapilar();
+}
+
+glm::mat4 TTransform::getMatriz()
+{
+	return matriz;
 }
