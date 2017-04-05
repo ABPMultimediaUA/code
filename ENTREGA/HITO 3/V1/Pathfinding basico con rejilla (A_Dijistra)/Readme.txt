@@ -1,0 +1,1 @@
+Se ha emplementado un sistema de pathfinding para el enemigo que busca el nodo más cercano a su punto de aparición para luego ir buscando el siguiente punto más cercano. Por ahora no tiene una ruta definida y se va moviendo entre los distintos waypoints creados en el mapa. Los nodos que sigue el enemigo están pintados en el mapa.

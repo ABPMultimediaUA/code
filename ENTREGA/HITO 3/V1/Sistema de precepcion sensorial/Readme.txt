@@ -1,0 +1,1 @@
+Se le ha añadido al enemigo un sensor de tipo vista para que sea capaz de detectar al jugador y poder cambiar de estados. Cuando el enemigo ha visto al jugador sabrá donde se encuentra exactamente hasta que le pierda de vista. Una vez le ha perdido de vista, el enemigo vuelve a su estado de patrulla. Este sensor está representado como una esfera de visión.
