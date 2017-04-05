@@ -1,0 +1,101 @@
+﻿  Nodo.cpp
+  Menu.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\librerias\cegui\include\cegui\propertyhelper.h(52): warning C4005: 'snprintf': redefinición de macro
+  c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\librerias\irrlicht-1.8.4\include\irrtypes.h(122): note: vea la definición anterior de 'snprintf'
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\menu\menu.cpp(120): warning C4244: 'argumento': conversión de 'irr::f32' a 'irr::s32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\menu\menu.cpp(121): warning C4244: 'argumento': conversión de 'irr::f32' a 'irr::s32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\menu\menu.cpp(139): warning C4244: 'argumento': conversión de 'irr::f32' a 'irr::s32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\menu\menu.cpp(140): warning C4244: 'argumento': conversión de 'irr::f32' a 'irr::s32'; posible pérdida de datos
+  GUI.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\librerias\cegui\include\cegui\propertyhelper.h(52): warning C4005: 'snprintf': redefinición de macro
+  c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\librerias\irrlicht-1.8.4\include\irrtypes.h(122): note: vea la definición anterior de 'snprintf'
+  ManejadorEstadoGeneral.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\manejadorestadogeneral.cpp(74): warning C4018: '<': no coinciden signed/unsigned
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\manejadorestadogeneral.cpp(92): warning C4018: '<': no coinciden signed/unsigned
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\manejadorestadogeneral.cpp(105): warning C4018: '<': no coinciden signed/unsigned
+  main.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\librerias\cegui\include\cegui\propertyhelper.h(52): warning C4005: 'snprintf': redefinición de macro
+  c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\librerias\irrlicht-1.8.4\include\irrtypes.h(122): note: vea la definición anterior de 'snprintf'
+  Pistola.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\jugador\pistola.cpp(26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  Personaje.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\jugador\personaje.cpp(249): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  Fusil.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\jugador\fusil.cpp(26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  Escopeta.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\jugador\escopeta.cpp(26): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  Bala.cpp
+  Arma.cpp
+  Juego.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\librerias\cegui\include\cegui\propertyhelper.h(52): warning C4005: 'snprintf': redefinición de macro
+  c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\librerias\irrlicht-1.8.4\include\irrtypes.h(122): note: vea la definición anterior de 'snprintf'
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\juego.cpp(223): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\juego.cpp(224): warning C4244: '=': conversión de 'const irr::s32' a 'irr::f32'; posible pérdida de datos
+  intro.cpp
+  game.cpp
+  RayCastCallback.cpp
+  MyContactFilter.cpp
+  MiContactListener.cpp
+  Entity2D.cpp
+  EstadoGeneral.cpp
+  readJson.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\readjson.cpp(22): warning C4005: '_CRT_SECURE_NO_DEPRECATE': redefinición de macro
+  c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\readjson.cpp(22): note: argumentos de la línea de comandos: vea la definición anterior de '_CRT_SECURE_NO_DEPRECATE'
+  Generando código...
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\jugador\personaje.cpp(298): warning C4715: 'Personaje::getDamage': no todas las rutas de acceso de control devuelven un valor
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\jugador\personaje.cpp(317): warning C4715: 'Personaje::getTiempoArma': no todas las rutas de acceso de control devuelven un valor
+  Compilando...
+  Puerta.cpp
+  Pared.cpp
+  Escenario.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(40): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(164): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(165): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(166): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(169): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(179): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(180): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(181): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(191): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(192): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(193): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(196): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(197): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(198): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(222): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(223): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(224): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(226): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(227): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(228): warning C4244: 'argumento': conversión de 'double' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(249): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(250): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(271): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\escenario\escenario.cpp(272): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+  Camara.cpp
+  Waypoints.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\waypoints.cpp(29): warning C4018: '<': no coinciden signed/unsigned
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\waypoints.cpp(38): warning C4018: '<': no coinciden signed/unsigned
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\waypoints.cpp(62): warning C4018: '<': no coinciden signed/unsigned
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\waypoints.cpp(65): warning C4018: '<': no coinciden signed/unsigned
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\waypoints.cpp(67): warning C4018: '<': no coinciden signed/unsigned
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\waypoints.cpp(123): warning C4018: '<': no coinciden signed/unsigned
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\waypoints.cpp(126): warning C4018: '<': no coinciden signed/unsigned
+  navmeshes.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\navmeshes.cpp(157): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\navmeshes.cpp(168): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\navmeshes.cpp(176): warning C4244: 'inicializando': conversión de 'irr::f32' a 'int'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\navmeshes.cpp(196): warning C4244: 'inicializando': conversión de 'irr::f32' a 'int'; posible pérdida de datos
+  Enemigo.cpp
+  CriaAlien.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\criaalien.cpp(76): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\criaalien.cpp(83): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
+  AlienBerserker.cpp
+  CAppReceiver.cpp
+  AStar.cpp
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\astar.cpp(28): warning C4018: '<': no coinciden signed/unsigned
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\astar.cpp(137): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Generando código...
+c:\users\samuel\documents\github\code\entrega\hito 3\v2\integracion de libreria gui\starship1414vscegui\starship1414vs\enemigos\astar.cpp(132): warning C4715: 'AStar::getDireccion': no todas las rutas de acceso de control devuelven un valor
+  Starship1414VS.vcxproj -> C:\Users\Samuel\Documents\GitHub\code\ENTREGA\HITO 3\V2\Integracion de libreria GUI\Starship1414VSCegui\Debug\Starship1414VS.exe
+  Starship1414VS.vcxproj -> C:\Users\Samuel\Documents\GitHub\code\ENTREGA\HITO 3\V2\Integracion de libreria GUI\Starship1414VSCegui\Debug\Starship1414VS.pdb (Full PDB)
