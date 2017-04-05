@@ -66,16 +66,63 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     // dibujaGrid(smgr);
 	Node* n = new Node("root", "selector");
 	tree->addNode(n, NULL);
+
 	Node * a = new Node("relax", "selector");
 	tree->addNode(a, n);
-	Node *b = new Node("jugadorPercibido", "selector");
+	Node *b = new Node("jugadorPercibido", "condicion");
 	tree->addNode(b, a);
+	b = new Node("estoyCansado", "condicion");
+	tree->addNode(b, a);
+	b = new Node("patrullar", "secuencia");
+	tree->addNode(b, a);
+	Node *c = new Node("buscarWaypoint", "accion");
+	tree->addNode(c, b);
+	c = new Node("moverWaypoint", "accion");
+	tree->addNode(c, b);
+	c = new Node("pararMirar", "accion");
+	tree->addNode(c, b);
+
 	a = new Node("alerta", "selector");
 	tree->addNode(a, n);
+	b = new Node("jugadorVisualizado", "condicion");
+	tree->addNode(b, a);
+	b = new Node("ultimo4Waypoints", "accion");
+	tree->addNode(b, a);
+
 	a = new Node("combate", "secuencia");
 	tree->addNode(a, n);
-	
-	tree->imprimirArbol();
+	b = new Node("moral", "selector");
+	tree->addNode(b, a);
+	c = new Node("alta", "selector");
+	tree->addNode(c, b);
+	Node *d = new Node("vidaAlta", "secuencia");
+	tree->addNode(d, c);
+	Node *e = new Node("arañar", "accion");
+	tree->addNode(e, d);
+	d = new Node("vidaMedia", "selector");
+	tree->addNode(d, c);
+	e = new Node("cerca", "secuencia");
+	tree->addNode(e, d);
+	Node *f = new Node("arañar", "accion");
+	tree->addNode(f, e);
+	e = new Node("lejos", "secuencia");
+	tree->addNode(e, d);
+	f = new Node("cubrir", "accion");
+	tree->addNode(f, e);
+	c = new Node("baja", "selector");
+	tree->addNode(c, b);
+	d = new Node("vidaMedia", "secuencia");
+	tree->addNode(d, c);
+	e = new Node("cubrir", "accion");
+	tree->addNode(e, d);
+	d = new Node("vidaBaja", "secuencia");
+	tree->addNode(d, c);
+	e = new Node("huir", "accion");
+	tree->addNode(e, d);
+
+
+	std::cout<< tree->Update()<<std::endl;
+//	tree->imprimirArbol();
 
 }
 

@@ -1,6 +1,5 @@
 #include <string>
 #include "BehaivorTree.h"
-#include "Tick.h"
 
 
 //==========BEHAVIOR TREE===========
@@ -17,27 +16,36 @@ BehaivorTree::~BehaivorTree()
 {
 }
 
-
-
-void BehaivorTree::tick()
+Status BehaivorTree::Update()
 {
-	Tick *BT_tick = new Tick();
+	Status estadoNodo;
+	bool salida = false;
+//	std::cout << root->getListaHijos().size() << std::endl;
 	
-	BT_tick->setTree(this);
+	for (int i=0; i<root->getListaHijos().size()&&salida==false; i++)
+	{
+		estadoNodo = root->getListaHijos()[i]->getEstado();
+		std::cout << root->getListaHijos()[i]->getAccion()<<" "<<i << std::endl;
+		if (estadoNodo== BH_INVALID || estadoNodo == BH_FAILURE || estadoNodo == BH_SUCCESS)
+		{
+			salida = true;
+		}
 
-	//root->ejecutar();
+		if (estadoNodo == BH_READY && !root->getListaHijos().empty())
+		{
+			estadoNodo = root->getListaHijos()[i]->Update();
+		}
 
-	Node *nodoActual = BT_tick->getVector().at(0);
+	}
 	
-
-
+	return estadoNodo;
 }
 
 void BehaivorTree::addNode(Node * hijo, Node *padre)
 {
 	if(padre == NULL) {
 		
-		std::cout << "Entra root" << std::endl;
+		//std::cout << "Entra root" << std::endl;
 		root = hijo;
 		hijo->setID(contNodos);
 		contNodos++;
@@ -50,13 +58,13 @@ void BehaivorTree::addNode(Node * hijo, Node *padre)
 	}
 
 	else {
-		std::cout << "Entra hijo" << std::endl;
+		//std::cout << "Entra hijo" << std::endl;
 		padre->addNodo(hijo);
 		
 	}
 
 }
-
+/*
 void BehaivorTree::imprimirArbol()
 {
 	std::cout << "---------ROOT: " << root->getListaHijos().size() << std::endl;
@@ -79,7 +87,100 @@ void BehaivorTree::imprimirArbol()
 		}
 	}
 
+}*/
+
+
+//=================== NODE =======================
+
+Node::Node()
+{
 }
+
+Node::Node(std::string n_accion, std::string n_task)
+{
+	ID = NULL;
+	accion = n_accion;
+	tipoTask = n_task;
+	setEstado(BH_READY);
+}
+
+std::string Node::getAccion()
+{
+	return accion;
+}
+
+std::string Node::getTipoTask()
+{
+	return tipoTask;
+}
+
+Status Node::getEstado()
+{
+	return estado;
+}
+
+void Node::setID(int n_ID)
+{
+	ID = n_ID;
+}
+
+void Node::setEstado(Status s)
+{
+	estado = s;
+}
+
+void Node::addNodo(Node * n)
+{
+
+	nodosHijos.push_back(n);
+}
+
+Status Node::Update()
+{
+	Status estadoNodo=BH_SUCCESS;
+	bool salida = false;
+
+	//std::cout << this->getListaHijos().size() << std::endl;
+	
+	for (int i = 0; i<this->getListaHijos().size() && salida == false; i++)
+	{
+		estadoNodo = this->getListaHijos()[i]->getEstado();
+		std::cout <<"--->"<< this->getListaHijos()[i]->getAccion()<<" "<< this->getListaHijos()[i]->getTipoTask() <<std::endl;
+		if (estadoNodo == BH_INVALID || estadoNodo == BH_FAILURE || estadoNodo == BH_SUCCESS)
+		{
+			salida = true;
+		
+		}
+
+		if (estadoNodo == BH_READY&&!this->getListaHijos().empty())
+		{
+			estadoNodo=this->getListaHijos()[i]->Update();
+		}
+		
+	}
+
+	return estadoNodo;
+}
+
+void Node::crearHijos(int cont, Node *p)
+{
+	//habria que ver alguna manera de distinguir que tipo de nodo queremos crear
+	//si es alguno normal o de algun tipo en concreto
+
+	//ver si traerse el bucle aqui para aumentar el contador del arbol
+	//y que lo devuelva cuando acabe para que se guarde otra vez
+
+	//Node *n = new Node();
+	//n->setID(cont);
+	//n->setPadre(p);
+	//nodosHijos.push_back(n);
+}
+
+std::vector<Node*> Node::getListaHijos()
+{
+	return nodosHijos;
+}
+
 
 
 
@@ -173,74 +274,3 @@ void BehaivorTree::imprimirArbol()
 //}
 
 
-
-//=================== NODE =======================
-
-Node::Node()
-{
-}
-
-Node::Node(std::string n_accion, std::string n_task)
-{
-	ID = NULL;
-	accion = n_accion;
-	tipoTask = n_task;
-	setEstado(BH_READY);
-}
-
-std::string Node::getAccion()
-{
-	return accion;
-}
-
-std::string Node::getTipoTask()
-{
-	return tipoTask;
-}
-
-Status Node::getEstado()
-{
-	return estado;
-}
-
-void Node::setID(int n_ID)
-{
-	ID = n_ID;
-}
-
-void Node::setEstado(Status s)
-{
-	estado = s;
-}
-
-
-
-void Node::update()
-{
-
-}
-
-void Node::addNodo(Node * n)
-{
-	
-	nodosHijos.push_back(n);
-}
-
-void Node::crearHijos(int cont, Node *p)
-{
-	//habria que ver alguna manera de distinguir que tipo de nodo queremos crear
-	//si es alguno normal o de algun tipo en concreto
-
-	//ver si traerse el bucle aqui para aumentar el contador del arbol
-	//y que lo devuelva cuando acabe para que se guarde otra vez
-
-	//Node *n = new Node();
-	//n->setID(cont);
-	//n->setPadre(p);
-	//nodosHijos.push_back(n);
-}
-
-std::vector<Node*> Node::getListaHijos()
-{
-	return nodosHijos;
-}

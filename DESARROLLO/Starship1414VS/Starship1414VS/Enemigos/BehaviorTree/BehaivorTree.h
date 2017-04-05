@@ -29,8 +29,8 @@ public:
 	void setID(int n_ID);
 	void setEstado(Status s);
 	void setPadre(Node *p);
-	virtual void update();
 	void addNodo(Node *n);
+	Status Update();
 	void crearHijos(int cont, Node *p);
 	std::vector<Node*> getListaHijos();
 	//virtual Task* create() = 0;
@@ -70,7 +70,7 @@ public:
 
 	BehaivorTree();
 	~BehaivorTree();
-	void tick();
+	Status Update();
 	void addNode(Node *hijo, Node *padre);
 	void imprimirArbol();
 

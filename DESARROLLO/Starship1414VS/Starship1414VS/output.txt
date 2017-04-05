@@ -3706,76 +3706,136 @@ ID ENTITY 1
 Posicion de la Entity X: -825 Y: 640
 //////////////////////////////////////////
 
-Entra root
-Entra hijo
-Entra hijo
-Entra hijo
-Entra hijo
----------ROOT: 3
-NOMBRE: relax
-NOMBRE HIJOS: jugadorPercibido
-NOMBRE: alerta
-NOMBRE: combate
-Entra root
-Entra hijo
-Entra hijo
-Entra hijo
-Entra hijo
----------ROOT: 3
-NOMBRE: relax
-NOMBRE HIJOS: jugadorPercibido
-NOMBRE: alerta
-NOMBRE: combate
-Entra root
-Entra hijo
-Entra hijo
-Entra hijo
-Entra hijo
----------ROOT: 3
-NOMBRE: relax
-NOMBRE HIJOS: jugadorPercibido
-NOMBRE: alerta
-NOMBRE: combate
-Entra root
-Entra hijo
-Entra hijo
-Entra hijo
-Entra hijo
----------ROOT: 3
-NOMBRE: relax
-NOMBRE HIJOS: jugadorPercibido
-NOMBRE: alerta
-NOMBRE: combate
-Entra root
-Entra hijo
-Entra hijo
-Entra hijo
-Entra hijo
----------ROOT: 3
-NOMBRE: relax
-NOMBRE HIJOS: jugadorPercibido
-NOMBRE: alerta
-NOMBRE: combate
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
+relax 0
+--->jugadorPercibido condicion
+--->estoyCansado condicion
+--->patrullar secuencia
+--->buscarWaypoint accion
+--->moverWaypoint accion
+--->pararMirar accion
+alerta 1
+--->jugadorVisualizado condicion
+--->ultimo4Waypoints accion
+combate 2
+--->moral selector
+--->alta selector
+--->vidaAlta secuencia
+--->arañar accion
+--->vidaMedia selector
+--->cerca secuencia
+--->arañar accion
+--->lejos secuencia
+--->cubrir accion
+--->baja selector
+--->vidaMedia secuencia
+--->cubrir accion
+--->vidaBaja secuencia
+--->huir accion
+2
+relax 0
+--->jugadorPercibido condicion
+--->estoyCansado condicion
+--->patrullar secuencia
+--->buscarWaypoint accion
+--->moverWaypoint accion
+--->pararMirar accion
+alerta 1
+--->jugadorVisualizado condicion
+--->ultimo4Waypoints accion
+combate 2
+--->moral selector
+--->alta selector
+--->vidaAlta secuencia
+--->arañar accion
+--->vidaMedia selector
+--->cerca secuencia
+--->arañar accion
+--->lejos secuencia
+--->cubrir accion
+--->baja selector
+--->vidaMedia secuencia
+--->cubrir accion
+--->vidaBaja secuencia
+--->huir accion
+2
+relax 0
+--->jugadorPercibido condicion
+--->estoyCansado condicion
+--->patrullar secuencia
+--->buscarWaypoint accion
+--->moverWaypoint accion
+--->pararMirar accion
+alerta 1
+--->jugadorVisualizado condicion
+--->ultimo4Waypoints accion
+combate 2
+--->moral selector
+--->alta selector
+--->vidaAlta secuencia
+--->arañar accion
+--->vidaMedia selector
+--->cerca secuencia
+--->arañar accion
+--->lejos secuencia
+--->cubrir accion
+--->baja selector
+--->vidaMedia secuencia
+--->cubrir accion
+--->vidaBaja secuencia
+--->huir accion
+2
+relax 0
+--->jugadorPercibido condicion
+--->estoyCansado condicion
+--->patrullar secuencia
+--->buscarWaypoint accion
+--->moverWaypoint accion
+--->pararMirar accion
+alerta 1
+--->jugadorVisualizado condicion
+--->ultimo4Waypoints accion
+combate 2
+--->moral selector
+--->alta selector
+--->vidaAlta secuencia
+--->arañar accion
+--->vidaMedia selector
+--->cerca secuencia
+--->arañar accion
+--->lejos secuencia
+--->cubrir accion
+--->baja selector
+--->vidaMedia secuencia
+--->cubrir accion
+--->vidaBaja secuencia
+--->huir accion
+2
+relax 0
+--->jugadorPercibido condicion
+--->estoyCansado condicion
+--->patrullar secuencia
+--->buscarWaypoint accion
+--->moverWaypoint accion
+--->pararMirar accion
+alerta 1
+--->jugadorVisualizado condicion
+--->ultimo4Waypoints accion
+combate 2
+--->moral selector
+--->alta selector
+--->vidaAlta secuencia
+--->arañar accion
+--->vidaMedia selector
+--->cerca secuencia
+--->arañar accion
+--->lejos secuencia
+--->cubrir accion
+--->baja selector
+--->vidaMedia secuencia
+--->cubrir accion
+--->vidaBaja secuencia
+--->huir accion
+2
 
 ////////////////////////
 
@@ -3837,10 +3897,10 @@ NOMBRE: combate
 
 ////////////////////////
 Irrlicht Engine version 1.8.4
- (Build 9200)
+Professional Edition  (Build 9200)
 Using renderer: OpenGL 4.5.0
-GeForce GT 720M/PCIe/SSE2: NVIDIA Corporation
+GeForce GTX 1060 3GB/PCIe/SSE2: NVIDIA Corporation
 OpenGL driver version is 1.2 or better.
 GLSL version: 4.5
-Resizing window (1366 745)
-Loaded texture: C:/Users/User/Documents/GitHub/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
+Resizing window (1366 768)
+Loaded texture: D:/REPOSITORIO/code/DESARROLLO/Starship1414VS/Starship1414VS/textura/bruce.jpg
