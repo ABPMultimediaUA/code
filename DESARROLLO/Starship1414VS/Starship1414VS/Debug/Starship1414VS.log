@@ -1,5 +1,3 @@
-﻿  BehaivorTree.cpp
-d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\behaviortree\behaivortree.cpp(25): warning C4018: '<': no coinciden signed/unsigned
-d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\behaviortree\behaivortree.cpp(145): warning C4018: '<': no coinciden signed/unsigned
-  Starship1414VS.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
-  Starship1414VS.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
+﻿  AlienBerserker.cpp
+  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
+  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

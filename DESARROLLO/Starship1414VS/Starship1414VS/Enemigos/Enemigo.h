@@ -102,7 +102,6 @@ protected:
 	Entity2D *entity;
 	int estadoActual;
 	float vida;
-	float cansancio;
 	int raza;
 	ITextSceneNode *GVida;
 	ITextSceneNode *RVida;
@@ -116,7 +115,8 @@ protected:
 	Nodo *puntoIni, *puntoFin, *nodoAnterior;
 	int dir, posNodo;
 	float damageChoque;
-	
+	int moral;
+	int resistencia;
 
 	std::list<Bala*> listaBalas;
 	//std::list<Nodo*> recorrido;

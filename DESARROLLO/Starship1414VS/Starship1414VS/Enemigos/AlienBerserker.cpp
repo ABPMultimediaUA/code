@@ -18,6 +18,8 @@
 #include "../Escenario/Escenario.h"
 #include "../Fisicas/Entity2D.h"
 #include "Waypoints.h"
+#include "LogicaDifusa.h"
+
 
 AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos)
 {
@@ -30,6 +32,7 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 	}
 
 	vel = 20.0f;
+	vida = 100.0f;
 	pos = maya->getPosition();
 	
 	estadoActual = BUSCARPUNTO;
@@ -38,7 +41,21 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 	damageChoque = 15.0f;
 	entity = new Entity2D(world, pos, true, this, smgr, raza);
 
+	irr::core::stringw wideString(vida);
+	GVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), wideString.c_str(), video::SColor(255, 255, 0, 0), 0);
+	RVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), L"Vida: ", video::SColor(255, 255, 0, 0), 0);
+	//napis a lo mejor estaria bien que estuviese en el .h de enemigo
+	//tambien se tiene que borrar con el destructor
+	GVida->setPosition(posicion);
+	RVida->setPosition(vector3df(posicion.X - 64, posicion.Y, posicion.Z));
+
+	smgr->getGUIEnvironment()->clear();
+
+	resistencia = 120;
+	moral = 80;
+
 	waypoints = puntos;
+	logica = new LogicaDifusa(vida, moral, resistencia);
 	// waypoints->creaPesos(entity);
 
 	//waypoints->mostrarPesos();

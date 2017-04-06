@@ -31,24 +31,17 @@
 #endif
 
 Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos) {
-    vida = 100.0f;
-    irr::core::stringw wideString(vida);
-    GVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), wideString.c_str(), video::SColor(255, 255, 0, 0), 0);
-    RVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), L"Vida: ", video::SColor(255, 255, 0, 0), 0);
-    //napis a lo mejor estaria bien que estuviese en el .h de enemigo
-    //tambien se tiene que borrar con el destructor
-    GVida->setPosition(posicion);
-    RVida->setPosition(vector3df(posicion.X - 8, posicion.Y, posicion.Z));
-    smgr1 = smgr;
+    
+
+
+	smgr1 = smgr;
 	mundo = world;
 	VD = driver;
-    smgr->getGUIEnvironment()->clear();
-	//puntoIni.nombre, puntoFin.nombre = "indefinido"; //hecho para que solo se calcule una vez los nodos
 	puntoIni = nullptr;
 	puntoFin = nullptr;
 	dir = -1;
 
-	logica = new LogicaDifusa(vida);
+
 
 
 }
@@ -374,7 +367,7 @@ void Enemigo::iniLogicaDifusa()
 	//std::cout << estadoActual << std::endl;
 	//std::cout << std::endl;
 	
-	logica->fusificador(vida, pos, posJugador);
+	logica->fusificador(vida, pos, posJugador, moral, resistencia);
 	estadoActual = logica->getEstadoDecidido();
 
 	//std::cout << std::endl;

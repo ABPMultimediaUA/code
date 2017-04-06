@@ -33,9 +33,11 @@ float max2valores(float x, float y) {
 
 
 
-LogicaDifusa::LogicaDifusa(const float &vidaM)
+LogicaDifusa::LogicaDifusa(const float &vidaM, const int moralM, const int resistM)
 {
 	vidaMax = vidaM;
+	moralMax = moralM;
+	resistMax = resistM;
 	escapar = 0.0f;
 	cqc = 0.0f;
 	disparar = 0.0f;
@@ -46,12 +48,14 @@ LogicaDifusa::~LogicaDifusa()
 {
 }
 
-void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, const vector2df & posJ)
+void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, const vector2df & posJ, const int n_moral, const int n_resist)
 {
 	//vidaJugador = vidaJ;
 	vidaEnemigo = vidaE;
 	posEnemigo = posE;
 	posJugador = posJ;
+	resist = n_resist;
+	moral = n_moral;
 	reiniciarArrays();
 
 	//fuzzyficacion de variables (?)

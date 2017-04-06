@@ -19,6 +19,7 @@
 #include "../Fisicas/Entity2D.h"
 #include "Waypoints.h"
 #include "BehaviorTree\BehaivorTree.h"
+#include "LogicaDifusa.h"
 
 
 CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos) {
@@ -34,16 +35,32 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     vel = 35.0f;
     pos = maya->getPosition();
 	rot = maya->getRotation();
+	vida = 100.0f;
+
+
+	irr::core::stringw wideString(vida);
+	GVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), wideString.c_str(), video::SColor(255, 255, 0, 0), 0);
+	RVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), L"Vida: ", video::SColor(255, 255, 0, 0), 0);
+	//napis a lo mejor estaria bien que estuviese en el .h de enemigo
+	//tambien se tiene que borrar con el destructor
+	GVida->setPosition(posicion);
+	RVida->setPosition(vector3df(posicion.X - 64, posicion.Y, posicion.Z));
+
+	smgr->getGUIEnvironment()->clear();
     
     estadoActual = BUSCARPUNTO;
     raza = CRIA;
     blindaje = 0.0f;
 	damageChoque = 10.0f;
+	moral = 50;
+	resistencia = 50;
+	
 	entity = new Entity2D(world, pos, true, this, smgr, raza);
    // nav = new navmeshes(10, esce);
 	//Botiquines *bot = new Botiquines(*static_cast<Botiquines*>(objeto->getObjeto3D()));
 	
 	waypoints = puntos;
+	logica = new LogicaDifusa(vida, moral, resistencia);
    // waypoints->creaPesos(entity);
 	//waypoints->mostrarPesos();
 	tree = new BehaivorTree();
