@@ -432,6 +432,110 @@ void LogicaDifusa::condiccionesDeLaDistancia()
 		}
 }
 
+void LogicaDifusa::condiccionesDeLaMoral()
+{
+
+	float limt1 = moralMax * 0.7f;
+
+	float limt2 = moralMax * 0.8f;
+	float limt3 = moralMax * 0.15f;
+	float ptoM = moralMax * 0.5f;
+
+	float limt4 = moralMax * 0.35f;
+
+
+	//distancia alta
+	if (moral > limt1) {
+
+		if (moral < moralMax) {
+			resultadosDeMoral[2] = (moral - limt1) / (moralMax - limt1); //100 - 75
+		}
+
+		else {
+			resultadosDeMoral[2] = 1.0f;
+		}
+	}
+
+
+	//distancia media
+	if (moral > limt3 && moral < limt2) {
+
+		if (disMax <= ptoM) {
+			resultadosDeMoral[1] = (moral - limt3) / (ptoM - limt3); //65 - 45
+		}
+
+		else {
+			resultadosDeMoral[1] = 2.0f - (moral - limt3) / (ptoM - limt3);
+		}
+	}
+
+
+	//distancia baja
+	if (moral < limt4) {
+
+		if (moral > 0.0f) {
+			resultadosDeMoral[0] = -(moral) / (-limt4); //no se si se deberia poner un menos ?
+		}
+
+		else {
+			resultadosDeMoral[0] = 1.0f;
+		}
+	}
+
+}
+
+void LogicaDifusa::condiccionesDeLaResistencia()
+{
+
+	float limt1 = resistMax * 0.7f;
+
+	float limt2 = resistMax * 0.8f;
+	float limt3 = resistMax * 0.15f;
+	float ptoM = resistMax * 0.5f;
+
+	float limt4 = resistMax * 0.35f;
+
+
+	//distancia alta
+	if (resist > limt1) {
+
+		if (resist < resistMax) {
+			resultadosDeResistencia[2] = (resist - limt1) / (resistMax - limt1); //100 - 75
+		}
+
+		else {
+			resultadosDeResistencia[2] = 1.0f;
+		}
+	}
+
+
+	//distancia media
+	if (resist > limt3 && resist < limt2) {
+
+		if (disMax <= ptoM) {
+			resultadosDeResistencia[1] = (resist - limt3) / (ptoM - limt3); //65 - 45
+		}
+
+		else {
+			resultadosDeResistencia[1] = 2.0f - (resist - limt3) / (ptoM - limt3);
+		}
+	}
+
+
+	//distancia baja
+	if (resist < limt4) {
+
+		if (resist > 0.0f) {
+			resultadosDeResistencia[0] = -(resist) / (-limt4); //no se si se deberia poner un menos ?
+		}
+
+		else {
+			resultadosDeResistencia[0] = 1.0f;
+		}
+	}
+
+}
+
 void LogicaDifusa::setPesoMaximo(float x)
 {
 	disMax = x;

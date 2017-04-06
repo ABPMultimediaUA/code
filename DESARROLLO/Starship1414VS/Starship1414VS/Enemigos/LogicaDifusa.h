@@ -36,6 +36,8 @@ private:
 	float escapar;
 	float disparar;
 	float cqc;
+	float f_moral;
+	float f_resist;
 	int estadoDecidido;
 	//float vidaJugador;
 	float vidaEnemigo;
@@ -46,7 +48,9 @@ private:
 	float resultadosVidaEnemigo[4];
 	//float resultadosVidaJugador[3];
 	float resultadosDePos[3];
-	int resultConocimiento;
+	float resultadosDeMoral[3];
+	float resultadosDeMoral[3];
+	float resultadosDeResistencia[3];
 
 
 
