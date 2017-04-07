@@ -54,6 +54,24 @@
     <ClCompile Include="entityTree\TEntidad.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="Escenario\Camara.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\Escenario.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\Pared.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\Puerta.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\readJson.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Escenario\Terminal.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="entityTree\TCamara.h">
@@ -161,6 +179,24 @@
     <ClInclude Include="framework\TGraphicEngine.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="Escenario\Camara.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\Escenario.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\Pared.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\Puerta.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\readJson.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenario\Terminal.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="tools\glm\CMakeLists.txt" />
@@ -179,6 +215,7 @@
     <None Include="models\Nanosuit\nanosuit.3ds" />
     <None Include="Shader\directionalFragmentShader.frag" />
     <None Include="Shader\directionalVertexShader.vs" />
+    <None Include="resource\levels\Puente.json" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\assimp-vc140-mt.lib" />

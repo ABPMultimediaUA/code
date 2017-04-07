@@ -89,6 +89,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(ProjectDir)tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-mt.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -135,6 +136,12 @@
     <ClCompile Include="entityTree\TMalla.cpp" />
     <ClCompile Include="entityTree\TNodo.cpp" />
     <ClCompile Include="entityTree\TTransform.cpp" />
+    <ClCompile Include="Escenario\Camara.cpp" />
+    <ClCompile Include="Escenario\Escenario.cpp" />
+    <ClCompile Include="Escenario\Pared.cpp" />
+    <ClCompile Include="Escenario\Puerta.cpp" />
+    <ClCompile Include="Escenario\readJson.cpp" />
+    <ClCompile Include="Escenario\Terminal.cpp" />
     <ClCompile Include="framework\openGLShader.cpp" />
     <ClCompile Include="framework\TGraphicEngine.cpp" />
     <ClCompile Include="main.cpp" />
@@ -150,6 +157,12 @@
     <ClInclude Include="entityTree\TMalla.h" />
     <ClInclude Include="entityTree\TNodo.h" />
     <ClInclude Include="entityTree\TTransform.h" />
+    <ClInclude Include="Escenario\Camara.h" />
+    <ClInclude Include="Escenario\Escenario.h" />
+    <ClInclude Include="Escenario\Pared.h" />
+    <ClInclude Include="Escenario\Puerta.h" />
+    <ClInclude Include="Escenario\readJson.h" />
+    <ClInclude Include="Escenario\Terminal.h" />
     <ClInclude Include="framework\openGLShader.h" />
     <ClInclude Include="framework\TGraphicEngine.h" />
     <ClInclude Include="resourceManager\TGestorRecursos.h" />
@@ -193,6 +206,7 @@
     <None Include="models\Nanosuit\nanosuit.mtl" />
     <None Include="models\Nanosuit\nanosuit2.3ds" />
     <None Include="models\Nanosuit\nanosuit2.c4d" />
+    <None Include="resource\levels\Puente.json" />
     <None Include="Shader\basicoFragmentShader.frag" />
     <None Include="Shader\basicoVertexShader.vs" />
     <None Include="Shader\directionalFragmentShader.frag" />

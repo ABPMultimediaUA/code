@@ -4,6 +4,8 @@
 #include "entityTree\TNodo.h"
 #include "entityTree\TMalla.h"
 #include "entityTree\TLuz.h"
+#include "Escenario\Escenario.h"
+#include "Escenario\readJson.h"
 
 //variables constante para las dimenciones de la ventana
 const GLuint WIDTH = 1920, HEIGHT = 1024;
@@ -18,7 +20,8 @@ int main() {
 		TTransform *transfRC = motorApp.crearTransform();
 		TTransform *transfEC = motorApp.crearTransform();
 		TTransform *transfTC = motorApp.crearTransform();
-		transfTC->trasladar(0, 0, 35);
+		transfRC->rotar(1, 1, 0.45, 1);
+		transfTC->trasladar(0, 300, 900);
 		TNodo* nodoTransfRC = motorApp.crearNodo(motorApp.nodoRaiz(), transfRC);
 		TNodo* nodoTransfEC = motorApp.crearNodo(nodoTransfRC, transfEC);
 		TNodo* nodoTransfTC = motorApp.crearNodo(nodoTransfEC, transfTC);
@@ -36,6 +39,8 @@ int main() {
 		TNodo* nodoLuz = motorApp.crearNodo(nodoTransfTL, motorApp.crearLuz(0.0f,10.0f,10.0f, true));
 		motorApp.addRegistroLuz(nodoLuz);
 
+		Escenario scene(&motorApp);
+		readJson leeScene(&scene);
 		//Luz2
 		/*TTransform *transfRL2 = motorApp.crearTransform();
 		TTransform *transfEL2 = motorApp.crearTransform();
@@ -48,13 +53,13 @@ int main() {
 		motorApp.addRegistroLuz(nodoLuz2);*/
 
 		//Malla
-		TTransform *transfRM1 = motorApp.crearTransform();
+		/*TTransform *transfRM1 = motorApp.crearTransform();
 		TTransform *transfEM1 = motorApp.crearTransform();
 		TTransform *transfTM1 = motorApp.crearTransform();
 		TNodo* nodoTransfRM1 = motorApp.crearNodo(motorApp.nodoRaiz(), transfRM1);
 		TNodo* nodoTransfEM1 = motorApp.crearNodo(nodoTransfRM1, transfEM1);
 		TNodo* nodoTransfTM1 = motorApp.crearNodo(nodoTransfEM1, transfTM1);
-		TNodo* nodoMalla1 = motorApp.crearNodo(nodoTransfTM1, motorApp.crearMalla("models/Nanosuit/nanosuit.obj"));
+		TNodo* nodoMalla1 = motorApp.crearNodo(nodoTransfTM1, motorApp.crearMalla("resource/models/Nanosuit/nanosuit.obj"));
 
 		//Malla2
 		TTransform *transfRM2 = motorApp.crearTransform();
@@ -65,7 +70,7 @@ int main() {
 		TNodo* nodoTransfRM2 = motorApp.crearNodo(motorApp.nodoRaiz(), transfRM2);
 		TNodo* nodoTransfEM2 = motorApp.crearNodo(nodoTransfRM2, transfEM2);
 		TNodo* nodoTransfTM2 = motorApp.crearNodo(nodoTransfEM2, transfTM2);
-		TNodo* nodoMalla2 = motorApp.crearNodo(nodoTransfTM2, motorApp.crearMalla("models/Nanosuit/nanosuit.obj"));
+		TNodo* nodoMalla2 = motorApp.crearNodo(nodoTransfTM2, motorApp.crearMalla("resource/models/Nanosuit/nanosuit.obj"));
 		transfRM2->rotar(-3.1416, 1, 1, 1);
 
 		//Malla3
@@ -77,7 +82,7 @@ int main() {
 		TNodo* nodoTransfRM = motorApp.crearNodo(motorApp.nodoRaiz(), transfRM);
 		TNodo* nodoTransfEM = motorApp.crearNodo(nodoTransfRM, transfEM);
 		TNodo* nodoTransfTM = motorApp.crearNodo(nodoTransfEM, transfTM);
-		TNodo* nodoMalla = motorApp.crearNodo(nodoTransfTM, motorApp.crearMalla("models/StreetEnvironment/Street environment_V01.obj"));
+		TNodo* nodoMalla = motorApp.crearNodo(nodoTransfTM, motorApp.crearMalla("resource/models/StreetEnvironment/Street environment_V01.obj"));*/
 
 		motorApp.run();
 	}
