@@ -20,6 +20,8 @@
 #include "Waypoints.h"
 #include "LogicaDifusa.h"
 
+#define RESISTMAX 120
+#define VELMAX 30
 
 AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos)
 {
@@ -31,7 +33,7 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 		maya->getMaterial(0).EmissiveColor.set(0, 0, 230, 20);
 	}
 
-	vel = 20.0f;
+	vel = VELMAX;
 	vida = 100.0f;
 	pos = maya->getPosition();
 	
@@ -51,7 +53,7 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 
 	smgr->getGUIEnvironment()->clear();
 
-	resistencia = 120;
+	resistencia = RESISTMAX;
 	moral = 80;
 
 	waypoints = puntos;
@@ -86,6 +88,11 @@ void AlienBerserker::Update(f32 dt)
 	case PATRULLAR: //patrullar
 
 		Patrullar();
+		if (vel < VELMAX * 0.5f) {
+			setVelocidad();
+			estadoActual = DESCANSAR;
+
+		}
 
 		break;
 
@@ -99,6 +106,21 @@ void AlienBerserker::Update(f32 dt)
 
 	case ROTACION:
 		maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
+
+
+		break;
+
+	case DESCANSAR:
+
+		setVelocidad();
+		recuperarResistencia();
+		if (resistencia >= RESISTMAX * 0.75) {
+
+			vel = VELMAX;
+			estadoActual = PATRULLAR;
+
+
+		}
 
 
 		break;
@@ -274,5 +296,16 @@ void AlienBerserker::quitarVida(float damage) {
 	GVida->setText(wideString.c_str());
 
 	std::cout << vida << std::endl;
+}
+
+void AlienBerserker::recuperarResistencia()
+{
+
+	maya->getMaterial(0).EmissiveColor.set(0, 250, 200, 10);
+
+	vida += 0.001f;
+	resistencia += 0.001f;
+	irr::core::stringw wideString(vida);
+	GVida->setText(wideString.c_str());
 }
 

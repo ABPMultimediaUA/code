@@ -73,6 +73,8 @@ public:
 	vector3df getPos();
 	float getVel();
 	virtual void quitarVida(float damage) = 0;
+	virtual void recuperarResistencia() = 0;
+
 	float getVida();
 	Entity2D*  getEntity();
 	float getDamageChoque();
@@ -91,6 +93,7 @@ public:
 	Nodo* getNodoFin();
 	void setPesoMaximoLogicaDifusa(float x);
 	void iniLogicaDifusa();
+
 
 
 protected:
@@ -115,8 +118,8 @@ protected:
 	Nodo *puntoIni, *puntoFin, *nodoAnterior;
 	int dir, posNodo;
 	float damageChoque;
-	int moral;
-	int resistencia;
+	float moral;
+	float resistencia;
 
 	std::list<Bala*> listaBalas;
 	//std::list<Nodo*> recorrido;

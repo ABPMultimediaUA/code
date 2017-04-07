@@ -370,8 +370,10 @@ void Enemigo::iniLogicaDifusa()
 	logica->fusificador(vida, pos, posJugador, moral, resistencia);
 	estadoActual = logica->getEstadoDecidido();
 
-	//std::cout << std::endl;
-	//std::cout << "ESTADO DESPUES: " << std::endl;
-	//std::cout << estadoActual << std::endl;
-	//std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << "ESTADO DESPUES: " << std::endl;
+	std::cout << estadoActual << std::endl;
+	std::cout << std::endl;
 }
+
+

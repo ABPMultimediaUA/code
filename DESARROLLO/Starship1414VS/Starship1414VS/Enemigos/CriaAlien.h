@@ -31,6 +31,7 @@ public:
 	void Atacar(f32 dt);
 	void BuscarWaypoint();
 	void quitarVida(float damage);
+	void recuperarResistencia();
 	void dibujaGrid(ISceneManager *grid);
 private:
 

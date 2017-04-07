@@ -3904,52 +3904,456 @@ combate 2
 ////////////////////////
 
 ////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
 A DISPARAR!
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
 
 DISTANCIA ENTRE ENEMIGO Y JUGADOR
-DISTANCIA: 74.9313
+DISTANCIA: 76.9122
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+
+////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
 
 
 ////////////////////////
 
 ////////////////////////
+RAUX!: 2
 
-////////////////////////
+ESTADO DESPUES: 
+7
 
-////////////////////////
+RAUX!: 2
 
-////////////////////////
+ESTADO DESPUES: 
+7
 
-////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
 CARGADOR: 7
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
 
 ////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
 
 ////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
 
 ////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
 
 ////////////////////////
+RAUX!: 2
 
-////////////////////////
+ESTADO DESPUES: 
+7
 
-////////////////////////
-MUERO BALA
-ID DE LA ENTITY 3
-MUERO ENTITY2D
-CARGADOR: 6
-
-////////////////////////
-
-////////////////////////
 
 ////////////////////////
 CRIA ALIEN
@@ -3957,17 +4361,1559 @@ CRIA ALIEN
 MUERO BALA
 ID DE LA ENTITY 3
 MUERO ENTITY2D
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+
+////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+
+////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+
+////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+
+////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+
+////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+CARGADOR: 6
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+
+////////////////////////
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+RAUX!: 2
+
+ESTADO DESPUES: 
+7
+
+
+////////////////////////
+CRIA ALIEN
+60
+MUERO BALA
+ID DE LA ENTITY 3
+MUERO ENTITY2D
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 
 ////////////////////////
 
-////////////////////////
+VIDA ANTES: 100
+
+VIDA DESPUES: 90
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 CARGADOR: 5
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+
+////////////////////////
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+
+////////////////////////
+CRIA ALIEN
+40
+MUERO BALA
+ID DE LA ENTITY 3
+MUERO ENTITY2D
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+
+////////////////////////
+
+VIDA ANTES: 90
+
+VIDA DESPUES: 80
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+MUERO BALA
+ID DE LA ENTITY 6
+MUERO ENTITY2D
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+ADIOS 1
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
 
 ////////////////////////
 
@@ -3975,8 +5921,79 @@ CARGADOR: 5
 ACTUALIZO 0
 
 ////////////////////////
+
+////////////////////////
+
+////////////////////////
+ACTUALIZO 0
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+ACTUALIZO 0
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+CARGADOR: 4
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+MUERO BALA
+ID DE LA ENTITY 3
+MUERO ENTITY2D
+
+////////////////////////
+CARGADOR: 3
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
 CRIA ALIEN
-60
+20
 MUERO BALA
 ID DE LA ENTITY 3
 MUERO ENTITY2D
@@ -3986,38 +6003,1151 @@ MUERO ENTITY2D
 ////////////////////////
 
 ////////////////////////
+A DISPARAR!
+RAUX!: 1
 
-VIDA ANTES: 100
+ESTADO DESPUES: 
+3
 
-VIDA DESPUES: 90
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 75.6572
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
 
 ////////////////////////
 ACTUALIZO 0
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
 
 ////////////////////////
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
 
 ////////////////////////
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 
 ////////////////////////
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 ADIOS 1
 
 ////////////////////////
 
 ////////////////////////
-
-////////////////////////
-
-////////////////////////
-ACTUALIZO 0
 
 ////////////////////////
 
@@ -4027,64 +7157,1297 @@ ACTUALIZO 0
 
 ////////////////////////
 A DISPARAR!
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 
 DISTANCIA ENTRE ENEMIGO Y JUGADOR
-DISTANCIA: 75.3621
+DISTANCIA: 75.4141
 
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 
 ////////////////////////
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+3
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
 
 ////////////////////////
-
-VIDA ANTES: 90
-
-VIDA DESPUES: 80
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-//////////////////////////////////////////
-
-VIDA: 80
-
-//////////////////////////////////////////
 
 VIDA ANTES: 80
 
 VIDA DESPUES: 70
+RAUX!: 1
 
-////////////////////////
+ESTADO DESPUES: 
+6
 
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
 MUERO BALA
 ID DE LA ENTITY 6
 MUERO ENTITY2D
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
 
 ////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+ACTUALIZO 0
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+ACTUALIZO 0
+
+////////////////////////
+ACTUALIZO 0
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+CARGADOR: 2
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+RAUX!: 1
+
+ESTADO DESPUES: 
+6
+
+
+////////////////////////
+CRIA ALIEN
+0.225876
+MUERO BALA
+ID DE LA ENTITY 3
+MUERO ENTITY2D
+RAUX!: 0
+
+ESTADO DESPUES: 
+5
+
 
 ////////////////////////
 
@@ -4094,11 +8457,18 @@ ADIOS 1
 ////////////////////////
 
 ////////////////////////
+A DISPARAR!
+RAUX!: 0
+
+ESTADO DESPUES: 
+5
+
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 76.2765
+
 
 ////////////////////////
-MUERO BALA
-ID DE LA ENTITY 6
-MUERO ENTITY2D
 
 ////////////////////////
 
@@ -4107,7 +8477,82 @@ MUERO ENTITY2D
 ////////////////////////
 
 ////////////////////////
-ACTUALIZO 0
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
+
+////////////////////////
 Irrlicht Engine version 1.8.4
  (Build 9200)
 Using renderer: OpenGL 4.5.0

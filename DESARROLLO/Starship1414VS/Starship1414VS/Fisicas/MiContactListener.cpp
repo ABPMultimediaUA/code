@@ -381,8 +381,12 @@ void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 		e->setEstado(0);
 	}
 
-	else if (e->getNodoFin() != nullptr) {
+	else if (e->getNodoFin() != nullptr && e->getEstado() != 5) {
 		e->setEstado(1);
+	}
+
+	else if(e->getEstado() == 5) {
+		e->setEstado(5);
 	}
 }
 

@@ -21,6 +21,10 @@
 #include "BehaviorTree\BehaivorTree.h"
 #include "LogicaDifusa.h"
 
+#define RESISTMAX 50
+#define VELMAX 35
+
+
 
 CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos) {
     
@@ -32,7 +36,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
         maya->getMaterial(0).EmissiveColor.set(0, 0, 0, 20);
     }
 
-    vel = 35.0f;
+    vel = VELMAX;
     pos = maya->getPosition();
 	rot = maya->getRotation();
 	vida = 100.0f;
@@ -52,8 +56,8 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
     raza = CRIA;
     blindaje = 0.0f;
 	damageChoque = 10.0f;
-	moral = 50;
-	resistencia = 50;
+	moral = 50.0f;
+	resistencia = RESISTMAX;
 	
 	entity = new Entity2D(world, pos, true, this, smgr, raza);
    // nav = new navmeshes(10, esce);
@@ -178,7 +182,10 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
 void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
 	
 	//crear metodos para todos los estados
+
 	switch (estadoActual) {
+
+		
 
         case BUSCARPUNTO: 
           
@@ -189,7 +196,13 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
         case PATRULLAR: //patrullar
           
 			Patrullar();
-           
+			//iniLogicaDifusa();
+			if (vel < VELMAX * 0.5f) {
+				setVelocidad();
+				estadoActual = DESCANSAR;
+
+			}
+
             break;
 
         case ATACAR: //atacar
@@ -199,6 +212,21 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
             break;
 
+
+		case DESCANSAR:
+
+			setVelocidad();
+			recuperarResistencia();
+			if (resistencia >= RESISTMAX * 0.75) {
+
+				vel = VELMAX;
+				estadoActual = PATRULLAR;
+				
+
+			}
+				
+
+			break;
 
 		case ROTACION:
 			maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
@@ -375,8 +403,30 @@ void CriaAlien::quitarVida(float damage) {
     std::cout << "CRIA ALIEN" << std::endl;
 
     vida = vida - (damage - blindaje);
+	moral = moral - (damage * 0.35 - blindaje);
+	if (moral < 0.0f)
+		moral = 0.0f;
+
+	resistencia = resistencia - damage * 0.35;
+
+	vel = vel - resistencia * 0.15f;
+
+	if (resistencia < 0.0f)
+		resistencia = 0.0f;
+
     irr::core::stringw wideString(vida);
     GVida->setText(wideString.c_str());
 
     std::cout << vida << std::endl;
+}
+
+void CriaAlien::recuperarResistencia()
+{
+	maya->getMaterial(0).EmissiveColor.set(0, 250, 200, 10);
+
+	vida += 0.001f;
+	resistencia += 0.001f;
+	irr::core::stringw wideString(vida);
+	GVida->setText(wideString.c_str());
+	
 }
