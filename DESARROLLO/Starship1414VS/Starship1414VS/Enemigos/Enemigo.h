@@ -17,6 +17,7 @@
 #include <irrlicht.h>
 #include <Box2D\Box2D.h>
 #include <list>
+#include <vector>
 
 using namespace irr;
 
@@ -50,6 +51,9 @@ class LogicaDifusa;
 #define ESCAPAR 6
 #define CUERPOACUERPO 7
 
+//el enemigo deberia tener un estado que sea
+//siguiendo al lider o algo para aplicar el flocking
+
 
 #ifdef _IRR_WINDOWS_
 #pragma comment(lib, "Irrlicht.lib")
@@ -64,10 +68,12 @@ public:
 
 	virtual void Update(f32 dt);
 	void Mover(int modo);
+	void newMover(vector3df u);
 	void setVelocidad();
 	virtual void Patrullar();
 	virtual void Atacar(f32 dt);
 	virtual void BuscarWaypoint();
+	virtual void CQC() = 0;
 	void setPos(vector3df pos);
 	bool estaVivo();
 	vector3df getPos();
@@ -101,7 +107,7 @@ protected:
 
 	IMeshSceneNode *maya;
 	float vel;
-	vector3df pos, rot;
+	vector3df pos, rot, vectorUnitario;
 	Entity2D *entity;
 	int estadoActual;
 	float vida;
@@ -122,7 +128,7 @@ protected:
 	float resistencia;
 
 	std::list<Bala*> listaBalas;
-	//std::list<Nodo*> recorrido;
+	std::vector<Nodo*> recorrido; //maximo 4 nodos
 	bool disparado;
 	float tiempoDisparo;
 	vector2df posJugador;

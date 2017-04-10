@@ -202,6 +202,19 @@ void Enemigo::Mover(int modo) {
 
 }
 
+void Enemigo::newMover(vector3df u)
+{
+	vector3df v = vel * u;
+	b2Vec2 vec;
+	vec.Set(v.X, v.Z);
+	entity->getCuerpo2D()->SetLinearVelocity(vec);
+	entity->getSombraE2D()->SetLinearVelocity(vec);
+
+	pos.X = entity->getCuerpo2D()->GetPosition().x;
+	pos.Z = entity->getCuerpo2D()->GetPosition().y;
+	setPos(pos);
+}
+
 vector3df Enemigo::getPos() {
     return pos;
 }

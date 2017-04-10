@@ -27,6 +27,7 @@ public:
 	//CriaAlien(const CriaAlien& orig);
 	virtual ~CriaAlien();
 	void Update(f32 dt);
+	void CQC();
 	void Patrullar();
 	void Atacar(f32 dt);
 	void BuscarWaypoint();

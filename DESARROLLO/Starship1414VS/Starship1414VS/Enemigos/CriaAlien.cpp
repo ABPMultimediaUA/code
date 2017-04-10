@@ -208,7 +208,6 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
         case ATACAR: //atacar
           
 			Atacar(dt);
-			iniLogicaDifusa();
 
             break;
 
@@ -243,28 +242,7 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 		case CUERPOACUERPO:
 
-			maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
-			vector3df posPlayer;
-			posPlayer.X = posJugador.X;
-			posPlayer.Y = 0.0f;
-			posPlayer.Z = posJugador.Y;
-			dir = path->getDireccion(pos, posPlayer);
-
-
-			this->Mover(dir);
-			if (path->estoyEnElNodo(pos, posPlayer)) {
-				dir = -1;
-				this->setVelocidad();
-
-	
-
-				/*posNodo = path->buscarWaypointMasCorto(posNodo);
-				puntoFin = waypoints->getNodoX(posNodo);*/
-
-			}
-
-			
-			iniLogicaDifusa();
+			CQC();
 
 			break;
 
@@ -282,6 +260,35 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 }*/
 
+void CriaAlien::CQC() {
+	maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
+	vector3df posPlayer;
+	posPlayer.X = posJugador.X;
+	posPlayer.Y = 0.0f;
+	posPlayer.Z = posJugador.Y;
+	//dir = path->getDireccion(pos, posPlayer);
+	//this->Mover(dir);
+
+	vectorUnitario = path->getVectorDeDireccion(pos, posPlayer);
+	newMover(vectorUnitario);
+
+
+	if (path->estoyEnElNodo(pos, posPlayer)) {
+		dir = -1;
+		this->setVelocidad();
+
+
+
+		/*posNodo = path->buscarWaypointMasCorto(posNodo);
+		puntoFin = waypoints->getNodoX(posNodo);*/
+
+	}
+
+
+	iniLogicaDifusa();
+
+}
+
 void CriaAlien::Patrullar() {
 
 	maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
@@ -291,6 +298,9 @@ void CriaAlien::Patrullar() {
 
 		if (posNodo != -1) {
 			puntoFin = waypoints->getNodoX(posNodo);
+			vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
+
+
 		}
 
 		if(nodoAnterior == puntoFin) {
@@ -298,6 +308,8 @@ void CriaAlien::Patrullar() {
 		
 			posNodo = path->buscarWaypointNoRepetido(puntoFin->getLugarDelNodo(), puntoIni->getLugarDelNodo());
 			puntoFin = waypoints->getNodoX(posNodo);
+			vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
+
 
 		}
 
@@ -310,11 +322,9 @@ void CriaAlien::Patrullar() {
 	
 
 
-		dir = path->getDireccion(pos, puntoFin->getPosicion());
-		/*	std::cout << std::endl;
-		std::cout << "DIR: " << dir << std::endl;
-		std::cout << std::endl;*/
-		this->Mover(dir);
+		//dir = path->getDireccion(pos, puntoFin->getPosicion());
+		//this->Mover(dir);
+		newMover(vectorUnitario);
 		if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
 			dir = -1;
 			this->setVelocidad();
@@ -361,6 +371,8 @@ void CriaAlien::Atacar(f32 dt)
 	}
 
 	this->setVelocidad();
+	iniLogicaDifusa();
+
 }
 
 void CriaAlien::BuscarWaypoint()
@@ -370,8 +382,10 @@ void CriaAlien::BuscarWaypoint()
 	if (puntoIni == nullptr) {
 		posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
 
-		if(posNodo != -1)
+		if(posNodo != -1) {
 			puntoIni = waypoints->getNodoX(posNodo);
+			vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
+		}
 
 		//	std::cout << std::endl;
 		//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
@@ -381,12 +395,13 @@ void CriaAlien::BuscarWaypoint()
 
 
 	if (puntoIni != nullptr) {
-		dir = path->getDireccion(pos, puntoIni->getPosicion());
+		//dir = path->getDireccion(pos, puntoIni->getPosicion());
 		/*	std::cout << std::endl;
 		std::cout << "DIR: " << dir << std::endl;
 		std::cout << std::endl;*/
 
-		this->Mover(dir);
+	//	this->Mover(dir);
+		newMover(vectorUnitario);
 
 		if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
 			estadoActual = PATRULLAR;

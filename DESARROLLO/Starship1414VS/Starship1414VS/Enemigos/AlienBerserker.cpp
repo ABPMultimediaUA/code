@@ -135,28 +135,7 @@ void AlienBerserker::Update(f32 dt)
 
 	case CUERPOACUERPO:
 
-		maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
-		vector3df posPlayer;
-		posPlayer.X = posJugador.X;
-		posPlayer.Y = 0.0f;
-		posPlayer.Z = posJugador.Y;
-		dir = path->getDireccion(pos, posPlayer);
-
-
-		this->Mover(dir);
-		if (path->estoyEnElNodo(pos, posPlayer)) {
-			dir = -1;
-			this->setVelocidad();
-
-
-
-			/*posNodo = path->buscarWaypointMasCorto(posNodo);
-			puntoFin = waypoints->getNodoX(posNodo);*/
-
-		}
-
-
-		iniLogicaDifusa();
+		CQC();
 
 		break;
 	}
@@ -249,6 +228,33 @@ void AlienBerserker::Atacar(f32 dt)
 	}
 
 	this->setVelocidad();
+}
+
+void AlienBerserker::CQC()
+{
+
+	maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
+	vector3df posPlayer;
+	posPlayer.X = posJugador.X;
+	posPlayer.Y = 0.0f;
+	posPlayer.Z = posJugador.Y;
+	dir = path->getDireccion(pos, posPlayer);
+
+
+	this->Mover(dir);
+	if (path->estoyEnElNodo(pos, posPlayer)) {
+		dir = -1;
+		this->setVelocidad();
+
+
+
+		/*posNodo = path->buscarWaypointMasCorto(posNodo);
+		puntoFin = waypoints->getNodoX(posNodo);*/
+
+	}
+
+
+	iniLogicaDifusa();
 }
 
 
