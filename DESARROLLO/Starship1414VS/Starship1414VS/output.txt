@@ -2006,38 +2006,6 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 1
-Posicion de la Entity X: -1090 Y: -290
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -1075 Y: -210
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -1075 Y: -210
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -1075 Y: -210
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
 Posicion de la Entity X: -830 Y: -130
 //////////////////////////////////////////
 
@@ -2047,17 +2015,6 @@ ENTRO AL CALLBACK
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: -830 Y: -130
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -1075 Y: -210
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2129,7 +2086,29 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 2
-Posicion de la Entity X: -1175 Y: -285
+Posicion de la Entity X: -1145.3 Y: -285
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 2
+Posicion de la Entity X: -1145.3 Y: -285
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 2
+Posicion de la Entity X: -1145.3 Y: -285
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2140,7 +2119,7 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 1
-Posicion de la Entity X: -1090 Y: -290
+Posicion de la Entity X: -1075 Y: -210
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2148,18 +2127,7 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 2
-Posicion de la Entity X: -1175 Y: -285
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -1125 Y: -285
+Posicion de la Entity X: -1145.3 Y: -285
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2180,24 +2148,8 @@ ENTRO AL CALLBACK
 //////////////////////////////////////////
 
 //////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -1075 Y: -210
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -1085 Y: -200
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
 ID ENTITY 2
-Posicion de la Entity X: -1175 Y: -285
+Posicion de la Entity X: -1145.3 Y: -285
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2208,7 +2160,7 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 2
-Posicion de la Entity X: -1175 Y: -285
+Posicion de la Entity X: -1145.3 Y: -285
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2228,6 +2180,14 @@ ENTRO AL CALLBACK
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: -1085 Y: -200
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -1225 Y: -135
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2243,6 +2203,14 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 1
+Posicion de la Entity X: -1225 Y: -135
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
 Posicion de la Entity X: -1215 Y: -150
 //////////////////////////////////////////
 
@@ -2267,7 +2235,7 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 2
-Posicion de la Entity X: -1125 Y: -285
+Posicion de la Entity X: -1145.3 Y: -285
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2310,7 +2278,18 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 1
+Posicion de la Entity X: -1225 Y: -135
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
 Posicion de la Entity X: -1215 Y: -150
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2373,6 +2352,118 @@ ENTRO AL CALLBACK
 //////////////////////////////////////////
 
 //////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -1075 Y: -210
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -830 Y: -130
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -890 Y: -120
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -960 Y: 20
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -955 Y: -20
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -960 Y: 20
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -955 Y: -20
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -890 Y: -120
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -830 Y: -130
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -890 Y: -120
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -830 Y: -130
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -890 Y: -120
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -830 Y: -130
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -890 Y: -120
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
 ID ENTITY 2
 Posicion de la Entity X: -690 Y: -70
 //////////////////////////////////////////
@@ -2380,7 +2471,23 @@ Posicion de la Entity X: -690 Y: -70
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
------ RESULT: 0.683899
+----- RESULT: 0.407407
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -685 Y: 0
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -955 Y: -20
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2427,81 +2534,6 @@ ENTRO AL CALLBACK
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: -890 Y: -120
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -830 Y: -130
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -890 Y: -120
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -690 Y: -70
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
------ RESULT: 0.261538
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -690 Y: -70
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
------ RESULT: 0.108626
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -960 Y: 20
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -955 Y: -20
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -960 Y: 20
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -955 Y: -20
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2523,20 +2555,13 @@ Posicion de la Entity X: -690 Y: -70
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
------ RESULT: 0.283174
+----- RESULT: 0.530864
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
 //////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -690 Y: -70
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
------ RESULT: 0.661538
-ENTRO AL CALLBACK 
+ID ENTITY 1
+Posicion de la Entity X: -685 Y: 0
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2550,6 +2575,11 @@ Posicion de la Entity X: -625 Y: -120
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -685 Y: 0
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2561,19 +2591,7 @@ Posicion de la Entity X: -690 Y: 70
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
------ RESULT: 0.639098
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -690 Y: -70
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
------ RESULT: 0.859425
+----- RESULT: 0.515152
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2585,18 +2603,6 @@ Posicion de la Entity X: -360 Y: 0
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -690 Y: 70
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
------ RESULT: 0.84858
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2635,6 +2641,19 @@ Posicion de la Entity X: -960 Y: 20
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -685 Y: 0
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -960 Y: 20
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2646,22 +2665,7 @@ Posicion de la Entity X: -690 Y: 70
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
------ RESULT: 0.285714
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -690 Y: 70
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
------ RESULT: 0.119874
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
+----- RESULT: 0.424242
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2691,7 +2695,7 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 1
-Posicion de la Entity X: -1215 Y: -150
+Posicion de la Entity X: -960 Y: 20
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2700,38 +2704,6 @@ ENTRO AL CALLBACK
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: -1225 Y: -135
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -1225 Y: -135
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -1075 Y: -210
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -1085 Y: -200
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -1215 Y: -150
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2763,7 +2735,7 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 1
-Posicion de la Entity X: -1215 Y: -150
+Posicion de la Entity X: -1225 Y: -135
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2779,7 +2751,15 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 1
-Posicion de la Entity X: -1215 Y: -150
+Posicion de la Entity X: -1225 Y: -135
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -890 Y: -120
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2795,7 +2775,10 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 1
-Posicion de la Entity X: -1215 Y: -150
+Posicion de la Entity X: -1075 Y: -210
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -2803,7 +2786,31 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 1
-Posicion de la Entity X: -1225 Y: -135
+Posicion de la Entity X: -830 Y: -130
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -830 Y: -130
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -960 Y: 20
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -830 Y: -130
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
@@ -3836,8279 +3843,240 @@ combate 2
 --->vidaBaja secuencia
 --->huir accion
 2
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
 ACTUALIZO 0
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
-
-////////////////////////
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 4
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 13
 A DISPARAR!
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
 
 DISTANCIA ENTRE ENEMIGO Y JUGADOR
-DISTANCIA: 75.3253
+DISTANCIA: 74.4328
 
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
 ACTUALIZO 0
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
+ID PUERTA: 10
 ACTUALIZO 0
-RAUX!: 2
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ADIOS 1
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 10
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 5
+///////////
+LLAVE
+///////////
+HAB: Almacen_3
+ESTADO: 1
+
+///////////
+NADA :D 
+///////////
+ID DE LA ENTITY 5
+MUERO ENTITY2D
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+ACTUALIZO 0
+ID PUERTA: 10
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 10
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 4
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 0
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 2
+cerrar123
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 74.891
+
+ACTUALIZO 0
+ID PUERTA: 0
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 0
+cerrar123
+ADIOS 1
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 9
+cerrar123
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 75.3938
 
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-
-////////////////////////
 //////////////////////////////////////////
 
 VIDA: 100
@@ -12118,146 +4086,1010 @@ VIDA: 100
 VIDA ANTES: 100
 
 VIDA DESPUES: 90
-//////////////////////////////////////////
+ADIOS 1
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+CAMBIO ESTADO TRUE
+ACTUALIZO 0
+ID PUERTA: 8
+-----NOMBRE LLAVE: Almacen_3
+------ ENTONTRADOOOO
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+CAMBIO ESTADO FALSE
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 8
+cerrar123
+///////////
+LLAVE
+///////////
+HAB: Almacen_3
+ESTADO: 221
 
-VIDA: 90
+///////////
+LLAVE
+///////////
+HAB: SALA_GENERADOR
+ESTADO: 1
 
-//////////////////////////////////////////
+///////////
+NADA :D 
+///////////
+ID DE LA ENTITY 5
+MUERO ENTITY2D
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+ACTUALIZO 0
+ID PUERTA: 8
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 8
+cerrar123
+A DISPARAR!
 
-VIDA ANTES: 90
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 76.3953
 
-VIDA DESPUES: 80
-//////////////////////////////////////////
+ADIOS 1
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+ACTUALIZO 0
+ID PUERTA: 9
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 9
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 0
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 0
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+A DISPARAR!
 
-VIDA: 80
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 75.9927
 
-//////////////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 2
+cerrar123
+ADIOS 1
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 4
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 5
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 5
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 6
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 6
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+CAMBIO ESTADO TRUE
+ACTUALIZO 0
+ID PUERTA: 18
+-----NOMBRE LLAVE: SALA_GENERADOR
+------ ENTONTRADOOOO
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+CAMBIO ESTADO FALSE
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 18
+cerrar123
+///////////
+LLAVE
+///////////
+HAB: Almacen_3
+ESTADO: 221
 
-VIDA ANTES: 80
+///////////
+LLAVE
+///////////
+HAB: SALA_GENERADOR
+ESTADO: 221
 
-VIDA DESPUES: 70
-//////////////////////////////////////////
+///////////
+LLAVE
+///////////
+HAB: HALL
+ESTADO: 1
 
-VIDA: 70
+///////////
+NADA :D 
+///////////
+ID DE LA ENTITY 5
+MUERO ENTITY2D
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 18
+ACTUALIZO 0
+ID PUERTA: 1
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 18
+cerrar123
+A DISPARAR!
 
-//////////////////////////////////////////
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 75.8158
 
-VIDA ANTES: 70
+ADIOS 1
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 6
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 6
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 5
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 4
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+ACTUALIZO 0
+ID PUERTA: 2
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 2
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 0
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 0
+cerrar123
+A DISPARAR!
 
-VIDA DESPUES: 60
-//////////////////////////////////////////
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 76.0774
 
-VIDA: 60
+ADIOS 1
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+CAMBIO ESTADO TRUE
+ACTUALIZO 0
+ID PUERTA: 20
+-----NOMBRE LLAVE: HALL
+------ ENTONTRADOOOO
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+CAMBIO ESTADO FALSE
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+ACTUALIZO 0
+ID PUERTA: 20
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 20
+cerrar123
+ACTUALIZO 0
+ID PUERTA: 1
+A DISPARAR!
 
-//////////////////////////////////////////
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 75.8302
 
-VIDA ANTES: 60
-
-VIDA DESPUES: 50
-//////////////////////////////////////////
-
-VIDA: 50
-
-//////////////////////////////////////////
-
-VIDA ANTES: 50
-
-VIDA DESPUES: 40
-RAUX!: 2
-
-ESTADO DESPUES: 
-7
-
-//////////////////////////////////////////
-
-VIDA: 40
-
-//////////////////////////////////////////
-
-VIDA ANTES: 40
-
-VIDA DESPUES: 30
-//////////////////////////////////////////
-
-VIDA: 30
-
-//////////////////////////////////////////
-
-VIDA ANTES: 30
-
-VIDA DESPUES: 20
-//////////////////////////////////////////
-
-VIDA: 20
-
-//////////////////////////////////////////
-
-VIDA ANTES: 20
-
-VIDA DESPUES: 10
-//////////////////////////////////////////
-
-VIDA: 10
-
-//////////////////////////////////////////
-
-VIDA ANTES: 10
-
-VIDA DESPUES: 0
-//////////////////////////////////////////
-
-VIDA: 0
-
-//////////////////////////////////////////
-
-VIDA ANTES: 0
-
-VIDA DESPUES: -10
-//////////////////////////////////////////
-
-VIDA: -10
-
-//////////////////////////////////////////
-
-VIDA ANTES: -10
-
-VIDA DESPUES: -20
-//////////////////////////////////////////
-
-VIDA: -20
-
-//////////////////////////////////////////
-
-VIDA ANTES: -20
-
-VIDA DESPUES: -30
-//////////////////////////////////////////
-
-VIDA: -30
-
-//////////////////////////////////////////
-
-VIDA ANTES: -30
-
-VIDA DESPUES: -40
-//////////////////////////////////////////
-
-VIDA: -40
-
-//////////////////////////////////////////
-
-VIDA ANTES: -40
-
-VIDA DESPUES: -50
-//////////////////////////////////////////
-
-VIDA: -50
-
-//////////////////////////////////////////
-
-VIDA ANTES: -50
-
-VIDA DESPUES: -60
+ADIOS 1
+ACTUALIZO 0
+ID PUERTA: 15
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 15
+cerrar123
+CAMBIO ESTADO TRUE
+CAMBIO ESTADO FALSE
+ACTUALIZO 0
+ID PUERTA: 15
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 15
+cerrar123
+CAMBIO ESTADO TRUE
 2
 maaaaaaaaatao
 Irrlicht Engine version 1.8.4

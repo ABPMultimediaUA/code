@@ -270,7 +270,7 @@ void CriaAlien::CQC() {
 	//this->Mover(dir);
 
 	vectorUnitario = path->getVectorDeDireccion(pos, posPlayer);
-	newMover(vectorUnitario);
+	Mover(vectorUnitario);
 
 
 	if (path->estoyEnElNodo(pos, posPlayer)) {
@@ -298,7 +298,6 @@ void CriaAlien::Patrullar() {
 
 		if (posNodo != -1) {
 			puntoFin = waypoints->getNodoX(posNodo);
-			vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
 
 
 		}
@@ -308,7 +307,6 @@ void CriaAlien::Patrullar() {
 		
 			posNodo = path->buscarWaypointNoRepetido(puntoFin->getLugarDelNodo(), puntoIni->getLugarDelNodo());
 			puntoFin = waypoints->getNodoX(posNodo);
-			vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
 
 
 		}
@@ -324,7 +322,9 @@ void CriaAlien::Patrullar() {
 
 		//dir = path->getDireccion(pos, puntoFin->getPosicion());
 		//this->Mover(dir);
-		newMover(vectorUnitario);
+		vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
+
+		Mover(vectorUnitario);
 		if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
 			dir = -1;
 			this->setVelocidad();
@@ -384,7 +384,6 @@ void CriaAlien::BuscarWaypoint()
 
 		if(posNodo != -1) {
 			puntoIni = waypoints->getNodoX(posNodo);
-			vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
 		}
 
 		//	std::cout << std::endl;
@@ -401,7 +400,9 @@ void CriaAlien::BuscarWaypoint()
 		std::cout << std::endl;*/
 
 	//	this->Mover(dir);
-		newMover(vectorUnitario);
+		vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
+
+		Mover(vectorUnitario);
 
 		if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
 			estadoActual = PATRULLAR;

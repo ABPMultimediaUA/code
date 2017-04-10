@@ -243,7 +243,6 @@ void LogicaDifusa::desfusificador()
 
 	rAux = getEstadoDelCansancio();
 
-	std::cout << "RAUX!: " << rAux << std::endl;
 
 	if(rAux > 0) {
 

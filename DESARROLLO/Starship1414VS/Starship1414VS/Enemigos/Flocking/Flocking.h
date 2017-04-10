@@ -21,9 +21,9 @@ private:
 public:
 	Flocking();
 	~Flocking();
-	void cohesion(Entity2D entity);
-	void alineacion();
-	void separacion();
+	void cohesion(Entity2D entity); //1º
+	void alineacion(); //3º
+	void separacion(); //2º
 	bool getLider();
 	void addEntity(Entity2D *e);
 	void removeEntity(Entity2D *e);

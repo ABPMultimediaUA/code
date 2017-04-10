@@ -153,12 +153,15 @@ void AlienBerserker::Update(f32 dt)
 
 void AlienBerserker::Patrullar()
 {
+	//maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
 	if (puntoFin == nullptr) {
 
 		posNodo = path->buscarWaypointMasCorto(posNodo);
 
 		if (posNodo != -1) {
 			puntoFin = waypoints->getNodoX(posNodo);
+
+
 		}
 
 		if (nodoAnterior == puntoFin) {
@@ -166,6 +169,7 @@ void AlienBerserker::Patrullar()
 
 			posNodo = path->buscarWaypointNoRepetido(puntoFin->getLugarDelNodo(), puntoIni->getLugarDelNodo());
 			puntoFin = waypoints->getNodoX(posNodo);
+
 
 		}
 
@@ -178,11 +182,11 @@ void AlienBerserker::Patrullar()
 
 
 
-		dir = path->getDireccion(pos, puntoFin->getPosicion());
-		/*	std::cout << std::endl;
-		std::cout << "DIR: " << dir << std::endl;
-		std::cout << std::endl;*/
-		this->Mover(dir);
+		//dir = path->getDireccion(pos, puntoFin->getPosicion());
+		//this->Mover(dir);
+		vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
+
+		Mover(vectorUnitario);
 		if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
 			dir = -1;
 			this->setVelocidad();
@@ -202,6 +206,7 @@ void AlienBerserker::Patrullar()
 	/*std::cout << std::endl;
 	std::cout << "PATRULLO PREMO!" << std::endl;
 	std::cout << std::endl;*/
+
 }
 
 void AlienBerserker::Atacar(f32 dt)
@@ -233,15 +238,18 @@ void AlienBerserker::Atacar(f32 dt)
 void AlienBerserker::CQC()
 {
 
-	maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
+	//maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
 	vector3df posPlayer;
 	posPlayer.X = posJugador.X;
 	posPlayer.Y = 0.0f;
 	posPlayer.Z = posJugador.Y;
-	dir = path->getDireccion(pos, posPlayer);
+	//dir = path->getDireccion(pos, posPlayer);
+	//this->Mover(dir);
+
+	vectorUnitario = path->getVectorDeDireccion(pos, posPlayer);
+	Mover(vectorUnitario);
 
 
-	this->Mover(dir);
 	if (path->estoyEnElNodo(pos, posPlayer)) {
 		dir = -1;
 		this->setVelocidad();
@@ -255,6 +263,7 @@ void AlienBerserker::CQC()
 
 
 	iniLogicaDifusa();
+
 }
 
 
@@ -265,8 +274,9 @@ void AlienBerserker::BuscarWaypoint()
 	if (puntoIni == nullptr) {
 		posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
 
-		if (posNodo != -1)
+		if (posNodo != -1) {
 			puntoIni = waypoints->getNodoX(posNodo);
+		}
 
 		//	std::cout << std::endl;
 		//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
@@ -276,12 +286,15 @@ void AlienBerserker::BuscarWaypoint()
 
 
 	if (puntoIni != nullptr) {
-		dir = path->getDireccion(pos, puntoIni->getPosicion());
+		//dir = path->getDireccion(pos, puntoIni->getPosicion());
 		/*	std::cout << std::endl;
 		std::cout << "DIR: " << dir << std::endl;
 		std::cout << std::endl;*/
 
-		this->Mover(dir);
+		//	this->Mover(dir);
+		vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
+
+		Mover(vectorUnitario);
 
 		if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
 			estadoActual = PATRULLAR;

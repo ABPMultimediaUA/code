@@ -67,8 +67,7 @@ public:
 	virtual ~Enemigo();
 
 	virtual void Update(f32 dt);
-	void Mover(int modo);
-	void newMover(vector3df u);
+	void Mover(vector3df u);
 	void setVelocidad();
 	virtual void Patrullar();
 	virtual void Atacar(f32 dt);
