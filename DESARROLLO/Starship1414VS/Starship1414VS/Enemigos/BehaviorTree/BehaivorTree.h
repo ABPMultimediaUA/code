@@ -1,7 +1,8 @@
 #pragma once
 
 #include <iostream>
-#include <list>
+#include <vector>
+
 
 
 class Tick;
@@ -28,8 +29,10 @@ public:
 	void setID(int n_ID);
 	void setEstado(Status s);
 	void setPadre(Node *p);
-	virtual void update();
+	void addNodo(Node *n);
+	Status Update();
 	void crearHijos(int cont, Node *p);
+	std::vector<Node*> getListaHijos();
 	//virtual Task* create() = 0;
 	//virtual void destroy(Task*) = 0;
 
@@ -40,8 +43,8 @@ protected:
 	std::string accion;
 	std::string tipoTask;
 	Status estado;
-	std::list<Node*> nodosHijos;
-	Node *padre;
+	std::vector<Node*> nodosHijos;
+
 };
 
 //class Task {
@@ -67,15 +70,15 @@ public:
 
 	BehaivorTree();
 	~BehaivorTree();
-	void tick();
-	void addNode(Node *hijo, Node *padre, std::size_t hijos);
+	Status Update();
+	void addNode(Node *hijo, Node *padre);
 	void imprimirArbol();
 
 
 private:
 
 	//lista de nodos
-	std::list<Node*> arbol;
+	std::vector<Node*> arbol;
 	Node *root;
 	int contNodos;
 	
@@ -103,7 +106,7 @@ public:
 
 private:
 
-	std::list<Node*>::iterator hijoActual;
+	std::vector<Node*>::iterator hijoActual;
 	
 };
 
@@ -118,6 +121,6 @@ public:
 
 private:
 
-	std::list<BehaivorTree*>::iterator hijoActual;
+	std::vector<BehaivorTree*>::iterator hijoActual;
 
 };

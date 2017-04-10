@@ -21,9 +21,11 @@ public:
 	int buscarWaypointMasCorto(const int &posNodoIni);
 	int buscarWaypointNoRepetido(const int &posWaypointRep, const int &posNodoActual);
 	int getDireccion(const vector3df &posEne, const vector3df &posNodo); //ver hacia donde tiene que ir
+	vector3df getVectorDeDireccion(const vector3df &posEne, const vector3df &posNodo);
 	bool estoyEnElNodo(const vector3df &posEne, const vector3df &posNodo);
 	void calcularAnguloDeRotacion();
 	float getAnguloDeRotacion();
+	
 	
 
 private:

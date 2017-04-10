@@ -19,6 +19,7 @@
 
 class navmeshes;
 class Escenario;
+class BehaivorTree;
 
 class CriaAlien : public Enemigo {
 public:
@@ -26,14 +27,17 @@ public:
 	//CriaAlien(const CriaAlien& orig);
 	virtual ~CriaAlien();
 	void Update(f32 dt);
+	void CQC();
 	void Patrullar();
 	void Atacar(f32 dt);
 	void BuscarWaypoint();
 	void quitarVida(float damage);
+	void recuperarResistencia();
 	void dibujaGrid(ISceneManager *grid);
 private:
 
 	navmeshes* nav;
+	BehaivorTree *tree;
 
 };
 

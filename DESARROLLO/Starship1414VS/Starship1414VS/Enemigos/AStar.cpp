@@ -162,6 +162,13 @@ int AStar::getDireccion(const vector3df &posEne, const vector3df &posNodo)
 
 }
 
+vector3df AStar::getVectorDeDireccion(const vector3df & posEne, const vector3df & posNodo)
+{
+	vector3df result = posNodo - posEne;
+	
+	return result.normalize();
+}
+
 bool AStar::estoyEnElNodo(const vector3df &posEne, const vector3df &posNodo)
 {
 	int xE, zE, xN, zN;

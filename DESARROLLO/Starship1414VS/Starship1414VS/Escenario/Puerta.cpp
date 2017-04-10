@@ -259,12 +259,12 @@ void Puerta::Update()
 {
 	
 
-	if (ABIERTA->getEstadoActivo()&&id==idDetect)
+	if (ABIERTA->getEstadoActivo())
 	{
 		this->abrirPuerta();
 	}
 
-	if (CERRADA->getEstadoActivo()&&id==idDetect)
+	if (CERRADA->getEstadoActivo())
 	{
 		this->cerrarPuerta();
 	}

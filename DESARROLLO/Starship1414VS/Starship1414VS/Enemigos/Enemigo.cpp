@@ -31,24 +31,17 @@
 #endif
 
 Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos) {
-    vida = 100.0f;
-    irr::core::stringw wideString(vida);
-    GVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), wideString.c_str(), video::SColor(255, 255, 0, 0), 0);
-    RVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), L"Vida: ", video::SColor(255, 255, 0, 0), 0);
-    //napis a lo mejor estaria bien que estuviese en el .h de enemigo
-    //tambien se tiene que borrar con el destructor
-    GVida->setPosition(posicion);
-    RVida->setPosition(vector3df(posicion.X - 8, posicion.Y, posicion.Z));
-    smgr1 = smgr;
+    
+
+
+	smgr1 = smgr;
 	mundo = world;
 	VD = driver;
-    smgr->getGUIEnvironment()->clear();
-	//puntoIni.nombre, puntoFin.nombre = "indefinido"; //hecho para que solo se calcule una vez los nodos
 	puntoIni = nullptr;
 	puntoFin = nullptr;
 	dir = -1;
 
-	logica = new LogicaDifusa(vida);
+
 
 
 }
@@ -79,134 +72,18 @@ Enemigo::~Enemigo() {
 void Enemigo::Update(f32 dt) {
 }
 
-void Enemigo::Mover(int modo) {
-	//rot.Y = 0.0f;
 
-	switch (modo) {
+void Enemigo::Mover(vector3df u)
+{
+	vector3df v = vel * u;
+	b2Vec2 vec;
+	vec.Set(v.X, v.Z);
+	entity->getCuerpo2D()->SetLinearVelocity(vec);
+	entity->getSombraE2D()->SetLinearVelocity(vec);
 
-	case 0:
-		/* std::cout<<"case 0: Sntes"<<std::endl;
-		std::cout<<"Pos X: "<<pos.X<<std::endl;
-		std::cout<<"Pos2D X: "<<body->GetPosition().x<<std::endl;*/
-		// body->ApplyForceToCenter(b2Vec2(5.0,0.0), true);
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(vel, 0.0f));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-
-		/* std::cout<<"Des"<<std::endl;
-		std::cout<<"Pos X: "<<pos.X<<std::endl;
-		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
-
-		//rot.Y = 90.0f;
-
-		break;
-
-	case 1:
-
-		/*  std::cout<<"case 1: Sntes"<<std::endl;
-		std::cout<<"Pos X: "<<pos.X<<std::endl;
-		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-
-
-		/*std::cout<<"Des"<<std::endl;
-		std::cout<<"Pos X: "<<pos.X<<std::endl;
-		std::cout<<"Pos2D X: "<<entity->getBody2D->GetPosition().x<<std::endl;*/
-
-		//rot.Y = -90.0f;
-
-		break;
-
-	case 2:
-
-		/*   std::cout<<"case 2: Sntes"<<std::endl;
-		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, vel));
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
-
-		/*  std::cout<<"Des"<<std::endl;
-		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
-
-		break;
-
-	case 3:
-
-		/*   std::cout<<"case 3: Sntes"<<std::endl;
-		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, -vel));
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
-		/* std::cout<<"Des"<<std::endl;
-		std::cout<<"Pos Z: "<<pos.Z<<std::endl;
-		std::cout<<"Pos2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
-		//rot.Y = 180.0f;
-
-		break;
-
-		//W+D
-	case 4:
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, vel));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(vel, vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
-		//rot.Y = 45.0f;
-		break;
-
-		//D+S
-	case 5:
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(vel, -vel));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(vel, -vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-		break;
-		//rot.Y = 135.0f;
-		//A+S
-	case 6:
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, -vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
-		break;
-		//rot.Y = -135.0f;
-		//A+W
-	case 7:
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-vel, vel));
-		entity->getSombraE2D()->SetLinearVelocity(b2Vec2(-vel, vel));
-		pos.X = entity->getCuerpo2D()->GetPosition().x;
-		pos.Z = entity->getCuerpo2D()->GetPosition().y;
-
-		//rot.Y = -45.0f;
-
-		break;
-
-	}
-	//    std::cout<<"//////////////////////////////////////////"<<std::endl;
-	//            std::cout<<""<<std::endl;
-	//            std::cout<<"POS PERS DESPUES"<<std::endl;
-	//                 std::cout<<"Pos 3D X: "<<pos.X<<"Pos 3D Z: "<<pos.Z<<std::endl;
-	//                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
-
-
+	pos.X = entity->getCuerpo2D()->GetPosition().x;
+	pos.Z = entity->getCuerpo2D()->GetPosition().y;
 	setPos(pos);
-	//maya->setRotation(rot);
-
 }
 
 vector3df Enemigo::getPos() {
@@ -374,7 +251,7 @@ void Enemigo::iniLogicaDifusa()
 	//std::cout << estadoActual << std::endl;
 	//std::cout << std::endl;
 	
-	logica->fusificador(vida, pos, posJugador);
+	logica->fusificador(vida, pos, posJugador, moral, resistencia);
 	estadoActual = logica->getEstadoDecidido();
 
 	//std::cout << std::endl;
@@ -382,3 +259,5 @@ void Enemigo::iniLogicaDifusa()
 	//std::cout << estadoActual << std::endl;
 	//std::cout << std::endl;
 }
+
+

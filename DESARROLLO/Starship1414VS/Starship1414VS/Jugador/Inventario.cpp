@@ -42,15 +42,21 @@ Llave * Inventario::buscaLlave(std::string nomLlave)
 {
 	for (std::size_t i = 0; i < inventary.size(); i++) {
 
+		//1 llave
+		if(inventary.at(i)->getID() == 1) {
+
 		Llave *key = static_cast<Llave*>(inventary[i]);
 
-		if (key->getNombreHabitacion().compare(nomLlave) == 0) {
+			if (key->getNombreHabitacion().compare(nomLlave) == 0) {
 
+				std::cout << "------ ENTONTRADOOOO" << std::endl;
 
-			return key;
+				return key;
+			}
+
 		}
-
 	}
+
 	return nullptr;
 }
 
@@ -92,9 +98,17 @@ void Inventario::mostrarInventario()
 void Inventario::deleteObj(Objetos * obj)
 {
 
-
 	for (std::vector<Objetos*>::iterator it = inventary.begin(); it != inventary.end();) {
 		if ((*it)!= NULL && (*it) == obj) {
+
+			std::cout << "///////////" << std::endl;
+			std::cout << "IT: "<<(*it)->getID() << std::endl;
+			std::cout << "///////////" << std::endl;
+
+			std::cout << "///////////" << std::endl;
+			std::cout << "OBJ: " << obj->getID() << std::endl;
+			std::cout << "///////////" << std::endl;
+
 			delete(*it);
 			it = inventary.erase(it);
 			mostrarInventario();

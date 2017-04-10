@@ -33,12 +33,16 @@ float max2valores(float x, float y) {
 
 
 
-LogicaDifusa::LogicaDifusa(const float &vidaM)
+LogicaDifusa::LogicaDifusa(const float &vidaM, const float moralM, const float resistM)
 {
 	vidaMax = vidaM;
+	moralMax = moralM;
+	resistMax = resistM;
 	escapar = 0.0f;
 	cqc = 0.0f;
 	disparar = 0.0f;
+	disMax = 0.0f;
+
 }
 
 
@@ -46,17 +50,20 @@ LogicaDifusa::~LogicaDifusa()
 {
 }
 
-void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, const vector2df & posJ)
+void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, const vector2df & posJ, const float n_moral, const float n_resist)
 {
 	//vidaJugador = vidaJ;
 	vidaEnemigo = vidaE;
 	posEnemigo = posE;
 	posJugador = posJ;
+	resist = n_resist;
+	moral = n_moral;
 	reiniciarArrays();
-
 	//fuzzyficacion de variables (?)
 	condiccionesDeLaVidaEnemigo();
 	condiccionesDeLaDistancia();
+	condiccionesDeLaMoral();
+	condiccionesDeLaResistencia();
 	sistemaDeInferencia();
 
 }
@@ -64,6 +71,8 @@ void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, cons
 void LogicaDifusa::baseDeConocimiento()
 {
 	float aux;
+	int m_estado = getEstadoDeLaMoral();
+
 
 	//accion escapar
 	if(resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[0] > 0.0f) {
@@ -230,19 +239,28 @@ void LogicaDifusa::baseDeConocimiento()
 
 void LogicaDifusa::desfusificador()
 {
+	int rAux = 0;
+
+	rAux = getEstadoDelCansancio();
 
 
+	if(rAux > 0) {
 
-	if (escapar > disparar && escapar > cqc) {
-		estadoDecidido = 6;
+		if (escapar > disparar && escapar > cqc ) {
+			estadoDecidido = 6;
+		}
+
+		else if (disparar > escapar && disparar > cqc) {
+			estadoDecidido = 3;
+		}
+
+		else if(cqc > disparar && cqc > escapar) {
+			estadoDecidido = 7;
+		}
 	}
 
-	else if (disparar > escapar && disparar > cqc) {
-		estadoDecidido = 3;
-	}
-
-	else if(cqc > disparar && cqc > escapar) {
-		estadoDecidido = 7;
+	else {
+		estadoDecidido = 5;
 	}
 
 	//se decide el estado que sera
@@ -331,47 +349,6 @@ void LogicaDifusa::condiccionesDeLaVidaEnemigo()
 	}
 }
 
-//void LogicaDifusa::condiccionesDeLaVidaJugador()
-//{
-//
-//	//vida alta
-//	if (vidaJugador > 70.0f) {
-//
-//		if (vidaJugador < 100.0f) {
-//			resultadosVidaJugador[0] = (vidaJugador - 70.0f) / 30.0f; //100 - 75
-//		}
-//
-//		else {
-//			resultadosVidaJugador[0] = 1.0f;
-//		}
-//	}
-//
-//
-//	//vida media
-//	if (vidaJugador > 35.0f && vidaJugador < 85.0f) {
-//
-//		if (vidaJugador <= 55.0f) {
-//			resultadosVidaJugador[1] = (vidaJugador - 35.0f) / 20.0f; //65 - 45
-//		}
-//
-//		else {
-//			resultadosVidaJugador[1] = 2.0f - (vidaJugador - 35.0f) / 20.0f;
-//		}
-//	}
-//
-//
-//	//huir
-//	if (vidaJugador < 30.0f) {
-//
-//		if (vidaJugador > 10.0f) {
-//			resultadosVidaJugador[2] = -(vidaJugador - 10.0f) / (-20.0f); //no se si se deberia poner un menos ?
-//		}
-//
-//		else {
-//			resultadosVidaJugador[2] = 1.0f;
-//		}
-//	}
-//}
 
 void LogicaDifusa::condiccionesDeLaDistancia()
 {
@@ -428,6 +405,109 @@ void LogicaDifusa::condiccionesDeLaDistancia()
 		}
 }
 
+void LogicaDifusa::condiccionesDeLaMoral()
+{
+
+	float limt1 = moralMax * 0.7f;
+
+	float limt2 = moralMax * 0.8f;
+	float limt3 = moralMax * 0.15f;
+	float ptoM = moralMax * 0.5f;
+
+	float limt4 = moralMax * 0.35f;
+
+
+	//distancia alta
+	if (moral > limt1) {
+
+		if (moral < moralMax) {
+			resultadosDeMoral[2] = (moral - limt1) / (moralMax - limt1); //100 - 75
+		}
+
+		else {
+			resultadosDeMoral[2] = 1.0f;
+		}
+	}
+
+
+	//distancia media
+	if (moral > limt3 && moral < limt2) {
+
+		if (disMax <= ptoM) {
+			resultadosDeMoral[1] = (moral - limt3) / (ptoM - limt3); //65 - 45
+		}
+
+		else {
+			resultadosDeMoral[1] = 2.0f - (moral - limt3) / (ptoM - limt3);
+		}
+	}
+
+
+	//distancia baja
+	if (moral < limt4) {
+
+		if (moral > 0.0f) {
+			resultadosDeMoral[0] = -(moral) / (-limt4); //no se si se deberia poner un menos ?
+		}
+
+		else {
+			resultadosDeMoral[0] = 1.0f;
+		}
+	}
+
+}
+
+void LogicaDifusa::condiccionesDeLaResistencia()
+{
+
+	float limt1 = resistMax * 0.7f;
+
+	float limt2 = resistMax * 0.8f;
+	float limt3 = resistMax * 0.4f;
+	float ptoM = resistMax * 0.6f;
+
+	float limt4 = resistMax * 0.55f;
+
+
+	//distancia alta
+	if (resist > limt1) {
+		if (resist < resistMax) {
+			resultadosDeResistencia[2] = (resist - limt1) / (resistMax - limt1); //100 - 75
+		}
+
+		else {
+			resultadosDeResistencia[2] = 1.0f;
+		}
+	}
+
+
+	//distancia media
+	if (resist > limt3 && resist < limt2) {
+
+		if (disMax <= ptoM) {
+			resultadosDeResistencia[1] = (resist - limt3) / (ptoM - limt3); //65 - 45
+		}
+
+		else {
+			resultadosDeResistencia[1] = 2.0f - (resist - limt3) / (ptoM - limt3);
+		}
+	}
+
+
+	//distancia baja
+	if (resist < limt4) {
+
+		if (resist > 0.0f) {
+			resultadosDeResistencia[0] = -(resist) / (-limt4); //no se si se deberia poner un menos ?
+		}
+
+		else {
+			resultadosDeResistencia[0] = 1.0f;
+		}
+	}
+
+}
+
 void LogicaDifusa::setPesoMaximo(float x)
 {
 	disMax = x;
@@ -445,16 +525,91 @@ void LogicaDifusa::reiniciarArrays() {
 
 		//resultadosVidaJugador[i] = 0.0f;
 		resultadosDePos[i] = 0.0f;
+		resultadosDeMoral[i] = 0.0f;
+		resultadosDeResistencia[i] = 0.0f;
 
 	}
 
 	escapar = 0.0f;
 	cqc = 0.0f;
 	disparar = 0.0f;
+	nResist = 0.0f;
+	nMoral = 0.0f;
+
 
 }
 
 int LogicaDifusa::getEstadoDecidido()
 {
 	return estadoDecidido;
+}
+
+int LogicaDifusa::getEstadoDelCansancio()
+{
+	int estado = -1;
+
+	if (resultadosDeResistencia[0] > resultadosDeResistencia[1]
+		&& resultadosDeResistencia[0] > resultadosDeResistencia[2]) {
+
+		nResist = resultadosDeResistencia[0];
+		//estadoDecidido = descansar;
+		estado = 0;
+
+	}
+
+	else if (resultadosDeResistencia[1] > resultadosDeResistencia[0]
+		&& resultadosDeResistencia[1] > resultadosDeResistencia[2]) {
+
+		nResist = resultadosDeResistencia[1];
+		//estadoDecidido = descansar;
+		estado = 1;
+
+	}
+
+
+	else if (resultadosDeResistencia[2] > resultadosDeResistencia[1]
+		&& resultadosDeResistencia[2] > resultadosDeResistencia[0]) {
+
+		nResist = resultadosDeResistencia[2];
+		//estadoDecidido = descansar;
+		estado = 2;
+
+	}
+
+	return estado;
+}
+
+int LogicaDifusa::getEstadoDeLaMoral()
+{
+	int estado = -1;
+
+	if (resultadosDeMoral[0] > resultadosDeMoral[1]
+		&& resultadosDeMoral[0] > resultadosDeMoral[2]) {
+
+		nMoral = resultadosDeMoral[0];
+		//estadoDecidido = descansar;
+		estado = 0;
+
+	}
+
+	else if (resultadosDeMoral[1] > resultadosDeMoral[0]
+		&& resultadosDeMoral[1] > resultadosDeMoral[2]) {
+
+		nMoral = resultadosDeMoral[1];
+		//estadoDecidido = descansar;
+		estado = 1;
+
+	}
+
+
+	else if (resultadosDeMoral[2] > resultadosDeMoral[1]
+		&& resultadosDeMoral[2] > resultadosDeMoral[0]) {
+
+		nMoral = resultadosDeMoral[2];
+		//estadoDecidido = descansar;
+		estado = 2;
+
+	}
+
+	return estado;
 }

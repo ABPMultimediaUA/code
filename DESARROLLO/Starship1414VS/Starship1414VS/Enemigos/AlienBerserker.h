@@ -26,8 +26,12 @@ public:
 	void Update(f32 dt);
 	void Patrullar();
 	void Atacar(f32 dt);
+	void CQC();
 	void BuscarWaypoint();
 	void quitarVida(float damage);
+	void recuperarResistencia();
+
+
 private:
 
 };

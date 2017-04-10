@@ -16,7 +16,7 @@ Objetos::Objetos(const vector3df & posicion, const vector3df & rotacion, const v
 
 Objetos::~Objetos() {
 
-
+	//destroyEntidades();
 
 }
 

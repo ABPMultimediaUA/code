@@ -18,6 +18,10 @@
 #include "../Escenario/Escenario.h"
 #include "../Fisicas/Entity2D.h"
 #include "Waypoints.h"
+#include "LogicaDifusa.h"
+
+#define RESISTMAX 120
+#define VELMAX 30
 
 AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos)
 {
@@ -29,7 +33,8 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 		maya->getMaterial(0).EmissiveColor.set(0, 0, 230, 20);
 	}
 
-	vel = 20.0f;
+	vel = VELMAX;
+	vida = 100.0f;
 	pos = maya->getPosition();
 	
 	estadoActual = BUSCARPUNTO;
@@ -38,10 +43,24 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 	damageChoque = 15.0f;
 	entity = new Entity2D(world, pos, true, this, smgr, raza);
 
+	irr::core::stringw wideString(vida);
+	GVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), wideString.c_str(), video::SColor(255, 255, 0, 0), 0);
+	RVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), L"Vida: ", video::SColor(255, 255, 0, 0), 0);
+	//napis a lo mejor estaria bien que estuviese en el .h de enemigo
+	//tambien se tiene que borrar con el destructor
+	GVida->setPosition(posicion);
+	RVida->setPosition(vector3df(posicion.X - 64, posicion.Y, posicion.Z));
+
+	smgr->getGUIEnvironment()->clear();
+
+	resistencia = RESISTMAX;
+	moral = 80;
+
 	waypoints = puntos;
+	logica = new LogicaDifusa(vida, moral, resistencia);
 	// waypoints->creaPesos(entity);
 
-	waypoints->mostrarPesos();
+	//waypoints->mostrarPesos();
 	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
 
 	disparado = false;
@@ -69,6 +88,11 @@ void AlienBerserker::Update(f32 dt)
 	case PATRULLAR: //patrullar
 
 		Patrullar();
+		if (vel < VELMAX * 0.5f) {
+			setVelocidad();
+			estadoActual = DESCANSAR;
+
+		}
 
 		break;
 
@@ -86,6 +110,21 @@ void AlienBerserker::Update(f32 dt)
 
 		break;
 
+	case DESCANSAR:
+
+		setVelocidad();
+		recuperarResistencia();
+		if (resistencia >= RESISTMAX * 0.75) {
+
+			vel = VELMAX;
+			estadoActual = PATRULLAR;
+
+
+		}
+
+
+		break;
+
 
 	case ESCAPAR:
 
@@ -96,28 +135,7 @@ void AlienBerserker::Update(f32 dt)
 
 	case CUERPOACUERPO:
 
-		maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
-		vector3df posPlayer;
-		posPlayer.X = posJugador.X;
-		posPlayer.Y = 0.0f;
-		posPlayer.Z = posJugador.Y;
-		dir = path->getDireccion(pos, posPlayer);
-
-
-		this->Mover(dir);
-		if (path->estoyEnElNodo(pos, posPlayer)) {
-			dir = -1;
-			this->setVelocidad();
-
-
-
-			/*posNodo = path->buscarWaypointMasCorto(posNodo);
-			puntoFin = waypoints->getNodoX(posNodo);*/
-
-		}
-
-
-		iniLogicaDifusa();
+		CQC();
 
 		break;
 	}
@@ -135,12 +153,15 @@ void AlienBerserker::Update(f32 dt)
 
 void AlienBerserker::Patrullar()
 {
+	//maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
 	if (puntoFin == nullptr) {
 
 		posNodo = path->buscarWaypointMasCorto(posNodo);
 
 		if (posNodo != -1) {
 			puntoFin = waypoints->getNodoX(posNodo);
+
+
 		}
 
 		if (nodoAnterior == puntoFin) {
@@ -148,6 +169,7 @@ void AlienBerserker::Patrullar()
 
 			posNodo = path->buscarWaypointNoRepetido(puntoFin->getLugarDelNodo(), puntoIni->getLugarDelNodo());
 			puntoFin = waypoints->getNodoX(posNodo);
+
 
 		}
 
@@ -160,11 +182,11 @@ void AlienBerserker::Patrullar()
 
 
 
-		dir = path->getDireccion(pos, puntoFin->getPosicion());
-		/*	std::cout << std::endl;
-		std::cout << "DIR: " << dir << std::endl;
-		std::cout << std::endl;*/
-		this->Mover(dir);
+		//dir = path->getDireccion(pos, puntoFin->getPosicion());
+		//this->Mover(dir);
+		vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
+
+		Mover(vectorUnitario);
 		if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
 			dir = -1;
 			this->setVelocidad();
@@ -184,6 +206,7 @@ void AlienBerserker::Patrullar()
 	/*std::cout << std::endl;
 	std::cout << "PATRULLO PREMO!" << std::endl;
 	std::cout << std::endl;*/
+
 }
 
 void AlienBerserker::Atacar(f32 dt)
@@ -212,6 +235,37 @@ void AlienBerserker::Atacar(f32 dt)
 	this->setVelocidad();
 }
 
+void AlienBerserker::CQC()
+{
+
+	//maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
+	vector3df posPlayer;
+	posPlayer.X = posJugador.X;
+	posPlayer.Y = 0.0f;
+	posPlayer.Z = posJugador.Y;
+	//dir = path->getDireccion(pos, posPlayer);
+	//this->Mover(dir);
+
+	vectorUnitario = path->getVectorDeDireccion(pos, posPlayer);
+	Mover(vectorUnitario);
+
+
+	if (path->estoyEnElNodo(pos, posPlayer)) {
+		dir = -1;
+		this->setVelocidad();
+
+
+
+		/*posNodo = path->buscarWaypointMasCorto(posNodo);
+		puntoFin = waypoints->getNodoX(posNodo);*/
+
+	}
+
+
+	iniLogicaDifusa();
+
+}
+
 
 void AlienBerserker::BuscarWaypoint()
 {
@@ -220,8 +274,9 @@ void AlienBerserker::BuscarWaypoint()
 	if (puntoIni == nullptr) {
 		posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
 
-		if (posNodo != -1)
+		if (posNodo != -1) {
 			puntoIni = waypoints->getNodoX(posNodo);
+		}
 
 		//	std::cout << std::endl;
 		//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
@@ -231,12 +286,15 @@ void AlienBerserker::BuscarWaypoint()
 
 
 	if (puntoIni != nullptr) {
-		dir = path->getDireccion(pos, puntoIni->getPosicion());
+		//dir = path->getDireccion(pos, puntoIni->getPosicion());
 		/*	std::cout << std::endl;
 		std::cout << "DIR: " << dir << std::endl;
 		std::cout << std::endl;*/
 
-		this->Mover(dir);
+		//	this->Mover(dir);
+		vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
+
+		Mover(vectorUnitario);
 
 		if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
 			estadoActual = PATRULLAR;
@@ -257,5 +315,16 @@ void AlienBerserker::quitarVida(float damage) {
 	GVida->setText(wideString.c_str());
 
 	std::cout << vida << std::endl;
+}
+
+void AlienBerserker::recuperarResistencia()
+{
+
+	maya->getMaterial(0).EmissiveColor.set(0, 250, 200, 10);
+
+	vida += 0.001f;
+	resistencia += 0.001f;
+	irr::core::stringw wideString(vida);
+	GVida->setText(wideString.c_str());
 }
 

@@ -18,6 +18,12 @@
 #include "../Escenario/Escenario.h"
 #include "../Fisicas/Entity2D.h"
 #include "Waypoints.h"
+#include "BehaviorTree\BehaivorTree.h"
+#include "LogicaDifusa.h"
+
+#define RESISTMAX 50
+#define VELMAX 35
+
 
 
 CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos) : Enemigo(smgr, driver, world, posicion, puntos) {
@@ -30,24 +36,38 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
         maya->getMaterial(0).EmissiveColor.set(0, 0, 0, 20);
     }
 
-    vel = 35.0f;
+    vel = VELMAX;
     pos = maya->getPosition();
 	rot = maya->getRotation();
+	vida = 100.0f;
+
+
+	irr::core::stringw wideString(vida);
+	GVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), wideString.c_str(), video::SColor(255, 255, 0, 0), 0);
+	RVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), L"Vida: ", video::SColor(255, 255, 0, 0), 0);
+	//napis a lo mejor estaria bien que estuviese en el .h de enemigo
+	//tambien se tiene que borrar con el destructor
+	GVida->setPosition(posicion);
+	RVida->setPosition(vector3df(posicion.X - 64, posicion.Y, posicion.Z));
+
+	smgr->getGUIEnvironment()->clear();
     
     estadoActual = BUSCARPUNTO;
     raza = CRIA;
     blindaje = 0.0f;
 	damageChoque = 10.0f;
+	moral = 50.0f;
+	resistencia = RESISTMAX;
+	
 	entity = new Entity2D(world, pos, true, this, smgr, raza);
    // nav = new navmeshes(10, esce);
 	//Botiquines *bot = new Botiquines(*static_cast<Botiquines*>(objeto->getObjeto3D()));
 	
 	waypoints = puntos;
+	logica = new LogicaDifusa(vida, moral, resistencia);
    // waypoints->creaPesos(entity);
-	std::cout << "CRIA" << std::endl;
-	std::cout << "----- TAM" << waypoints->getTamMapa() << std::endl;
-	waypoints->mostrarPesos();
-
+	//waypoints->mostrarPesos();
+	tree = new BehaivorTree();
 	disparado = false;
 	//posJugador.X  = -30.0f;
 	//posJugador.Y = -90.0f;
@@ -65,8 +85,65 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
 
     // dibujaGrid(smgr);
+	Node* n = new Node("root", "selector");
+	tree->addNode(n, NULL);
+
+	Node * a = new Node("relax", "selector");
+	tree->addNode(a, n);
+	Node *b = new Node("jugadorPercibido", "condicion");
+	tree->addNode(b, a);
+	b = new Node("estoyCansado", "condicion");
+	tree->addNode(b, a);
+	b = new Node("patrullar", "secuencia");
+	tree->addNode(b, a);
+	Node *c = new Node("buscarWaypoint", "accion");
+	tree->addNode(c, b);
+	c = new Node("moverWaypoint", "accion");
+	tree->addNode(c, b);
+	c = new Node("pararMirar", "accion");
+	tree->addNode(c, b);
+
+	a = new Node("alerta", "selector");
+	tree->addNode(a, n);
+	b = new Node("jugadorVisualizado", "condicion");
+	tree->addNode(b, a);
+	b = new Node("ultimo4Waypoints", "accion");
+	tree->addNode(b, a);
+
+	a = new Node("combate", "secuencia");
+	tree->addNode(a, n);
+	b = new Node("moral", "selector");
+	tree->addNode(b, a);
+	c = new Node("alta", "selector");
+	tree->addNode(c, b);
+	Node *d = new Node("vidaAlta", "secuencia");
+	tree->addNode(d, c);
+	Node *e = new Node("arañar", "accion");
+	tree->addNode(e, d);
+	d = new Node("vidaMedia", "selector");
+	tree->addNode(d, c);
+	e = new Node("cerca", "secuencia");
+	tree->addNode(e, d);
+	Node *f = new Node("arañar", "accion");
+	tree->addNode(f, e);
+	e = new Node("lejos", "secuencia");
+	tree->addNode(e, d);
+	f = new Node("cubrir", "accion");
+	tree->addNode(f, e);
+	c = new Node("baja", "selector");
+	tree->addNode(c, b);
+	d = new Node("vidaMedia", "secuencia");
+	tree->addNode(d, c);
+	e = new Node("cubrir", "accion");
+	tree->addNode(e, d);
+	d = new Node("vidaBaja", "secuencia");
+	tree->addNode(d, c);
+	e = new Node("huir", "accion");
+	tree->addNode(e, d);
 
 
+	std::cout<< tree->Update()<<std::endl;
+//	tree->imprimirArbol();
 
 }
 
@@ -105,7 +182,10 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
 void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
 	
 	//crear metodos para todos los estados
+
 	switch (estadoActual) {
+
+		
 
         case BUSCARPUNTO: 
           
@@ -116,16 +196,36 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
         case PATRULLAR: //patrullar
           
 			Patrullar();
-           
+			//iniLogicaDifusa();
+			if (vel < VELMAX * 0.5f) {
+				setVelocidad();
+				estadoActual = DESCANSAR;
+
+			}
+
             break;
 
         case ATACAR: //atacar
           
 			Atacar(dt);
-			iniLogicaDifusa();
 
             break;
 
+
+		case DESCANSAR:
+
+			setVelocidad();
+			recuperarResistencia();
+			if (resistencia >= RESISTMAX * 0.75) {
+
+				vel = VELMAX;
+				estadoActual = PATRULLAR;
+				
+
+			}
+				
+
+			break;
 
 		case ROTACION:
 			maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
@@ -142,28 +242,7 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 		case CUERPOACUERPO:
 
-			maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
-			vector3df posPlayer;
-			posPlayer.X = posJugador.X;
-			posPlayer.Y = 0.0f;
-			posPlayer.Z = posJugador.Y;
-			dir = path->getDireccion(pos, posPlayer);
-
-
-			this->Mover(dir);
-			if (path->estoyEnElNodo(pos, posPlayer)) {
-				dir = -1;
-				this->setVelocidad();
-
-	
-
-				/*posNodo = path->buscarWaypointMasCorto(posNodo);
-				puntoFin = waypoints->getNodoX(posNodo);*/
-
-			}
-
-			
-			iniLogicaDifusa();
+			CQC();
 
 			break;
 
@@ -181,6 +260,35 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 }*/
 
+void CriaAlien::CQC() {
+	maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
+	vector3df posPlayer;
+	posPlayer.X = posJugador.X;
+	posPlayer.Y = 0.0f;
+	posPlayer.Z = posJugador.Y;
+	//dir = path->getDireccion(pos, posPlayer);
+	//this->Mover(dir);
+
+	vectorUnitario = path->getVectorDeDireccion(pos, posPlayer);
+	Mover(vectorUnitario);
+
+
+	if (path->estoyEnElNodo(pos, posPlayer)) {
+		dir = -1;
+		this->setVelocidad();
+
+
+
+		/*posNodo = path->buscarWaypointMasCorto(posNodo);
+		puntoFin = waypoints->getNodoX(posNodo);*/
+
+	}
+
+
+	iniLogicaDifusa();
+
+}
+
 void CriaAlien::Patrullar() {
 
 	maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
@@ -190,6 +298,8 @@ void CriaAlien::Patrullar() {
 
 		if (posNodo != -1) {
 			puntoFin = waypoints->getNodoX(posNodo);
+
+
 		}
 
 		if(nodoAnterior == puntoFin) {
@@ -197,6 +307,7 @@ void CriaAlien::Patrullar() {
 		
 			posNodo = path->buscarWaypointNoRepetido(puntoFin->getLugarDelNodo(), puntoIni->getLugarDelNodo());
 			puntoFin = waypoints->getNodoX(posNodo);
+
 
 		}
 
@@ -209,11 +320,11 @@ void CriaAlien::Patrullar() {
 	
 
 
-		dir = path->getDireccion(pos, puntoFin->getPosicion());
-		/*	std::cout << std::endl;
-		std::cout << "DIR: " << dir << std::endl;
-		std::cout << std::endl;*/
-		this->Mover(dir);
+		//dir = path->getDireccion(pos, puntoFin->getPosicion());
+		//this->Mover(dir);
+		vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
+
+		Mover(vectorUnitario);
 		if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
 			dir = -1;
 			this->setVelocidad();
@@ -260,6 +371,8 @@ void CriaAlien::Atacar(f32 dt)
 	}
 
 	this->setVelocidad();
+	iniLogicaDifusa();
+
 }
 
 void CriaAlien::BuscarWaypoint()
@@ -269,8 +382,9 @@ void CriaAlien::BuscarWaypoint()
 	if (puntoIni == nullptr) {
 		posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
 
-		if(posNodo != -1)
+		if(posNodo != -1) {
 			puntoIni = waypoints->getNodoX(posNodo);
+		}
 
 		//	std::cout << std::endl;
 		//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
@@ -280,12 +394,15 @@ void CriaAlien::BuscarWaypoint()
 
 
 	if (puntoIni != nullptr) {
-		dir = path->getDireccion(pos, puntoIni->getPosicion());
+		//dir = path->getDireccion(pos, puntoIni->getPosicion());
 		/*	std::cout << std::endl;
 		std::cout << "DIR: " << dir << std::endl;
 		std::cout << std::endl;*/
 
-		this->Mover(dir);
+	//	this->Mover(dir);
+		vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
+
+		Mover(vectorUnitario);
 
 		if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
 			estadoActual = PATRULLAR;
@@ -302,8 +419,30 @@ void CriaAlien::quitarVida(float damage) {
     std::cout << "CRIA ALIEN" << std::endl;
 
     vida = vida - (damage - blindaje);
+	moral = moral - (damage * 0.35 - blindaje);
+	if (moral < 0.0f)
+		moral = 0.0f;
+
+	resistencia = resistencia - damage * 0.35;
+
+	vel = vel - resistencia * 0.15f;
+
+	if (resistencia < 0.0f)
+		resistencia = 0.0f;
+
     irr::core::stringw wideString(vida);
     GVida->setText(wideString.c_str());
 
     std::cout << vida << std::endl;
+}
+
+void CriaAlien::recuperarResistencia()
+{
+	maya->getMaterial(0).EmissiveColor.set(0, 250, 200, 10);
+
+	vida += 0.001f;
+	resistencia += 0.001f;
+	irr::core::stringw wideString(vida);
+	GVida->setText(wideString.c_str());
+	
 }

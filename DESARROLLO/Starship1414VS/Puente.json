@@ -7749,9 +7749,9 @@
           "components": [
             {
               "localPosition": [
-                -9.83,
+                5.1,
                 0.0,
-                16.82
+                2.3
               ],
               "localRotation": [
                 0.0,
@@ -8050,7 +8050,7 @@
           "components": [
             {
               "localPosition": [
-                0.83,
+                -7.3,
                 0.0,
                 31.1
               ],
@@ -8093,7 +8093,7 @@
           "components": [
             {
               "localPosition": [
-                18.2,
+                15.0,
                 0.0,
                 31.27
               ],
@@ -8308,7 +8308,7 @@
           "components": [
             {
               "localPosition": [
-                17.8,
+                14.6,
                 0.0,
                 45.8
               ],
@@ -8351,7 +8351,7 @@
           "components": [
             {
               "localPosition": [
-                -5.5,
+                -7.7,
                 0.0,
                 45.4
               ],
@@ -8526,6 +8526,92 @@
                 -37.8,
                 0.0,
                 112.5
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (19)",
+          "components": [
+            {
+              "localPosition": [
+                -2.9,
+                0.0,
+                17.8
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "P_Puerta_A"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (20)",
+          "components": [
+            {
+              "localPosition": [
+                0.6,
+                0.0,
+                -11.9
               ],
               "localRotation": [
                 0.0,
@@ -11682,6 +11768,89 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "Terminal",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "Cube",
+              "components": [
+                {
+                  "localPosition": [
+                    -123.22,
+                    3.48,
+                    73.92
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    0.5,
+                    3.0,
+                    2.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "Default-Material"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -12759,7 +12928,7 @@
       ],
       "children": [
         {
-          "name": "Ascensor",
+          "name": "ASCENSOR",
           "components": [
             {
               "localPosition": [
@@ -12811,13 +12980,13 @@
           "children": []
         },
         {
-          "name": "Sala_Generador",
+          "name": "SALA_GENERADOR",
           "components": [
             {
               "localPosition": [
-                56.79,
+                58.06,
                 0.0,
-                -38.85
+                -35.48
               ],
               "localRotation": [
                 0.0,
@@ -12837,13 +13006,13 @@
           "children": []
         },
         {
-          "name": "Comisaria",
+          "name": "COMISARIA",
           "components": [
             {
               "localPosition": [
                 -75.9,
                 0.0,
-                -57.4
+                -50.3
               ],
               "localRotation": [
                 0.0,
@@ -12863,7 +13032,7 @@
           "children": []
         },
         {
-          "name": "Hall",
+          "name": "HALL",
           "components": [
             {
               "localPosition": [
@@ -13905,7 +14074,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -117.5,
+                    -114.53,
                     3.0,
                     -28.5
                   ],
@@ -13915,63 +14084,7 @@
                     0.0
                   ],
                   "localScale": [
-                    5.0,
-                    6.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Puerta_A2"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Puerta-2",
-              "components": [
-                {
-                  "localPosition": [
-                    -112.5,
-                    3.0,
-                    -28.5
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    5.0,
+                    10.0,
                     6.0,
                     1.0
                   ],
