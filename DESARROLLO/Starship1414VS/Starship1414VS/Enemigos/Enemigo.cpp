@@ -76,6 +76,7 @@ void Enemigo::Update(f32 dt) {
 void Enemigo::Mover(vector3df u)
 {
 	vector3df v = vel * u;
+	vecVel = v;
 	b2Vec2 vec;
 	vec.Set(v.X, v.Z);
 	entity->getCuerpo2D()->SetLinearVelocity(vec);
@@ -88,6 +89,11 @@ void Enemigo::Mover(vector3df u)
 
 vector3df Enemigo::getPos() {
     return pos;
+}
+
+vector3df Enemigo::getVectorVel()
+{
+	return vecVel;
 }
 
 void Enemigo::setPos(vector3df pos) {

@@ -76,6 +76,7 @@ public:
 	void setPos(vector3df pos);
 	bool estaVivo();
 	vector3df getPos();
+	vector3df getVectorVel();
 	float getVel();
 	virtual void quitarVida(float damage) = 0;
 	virtual void recuperarResistencia() = 0;
@@ -106,6 +107,7 @@ protected:
 
 	IMeshSceneNode *maya;
 	float vel;
+	vector3df vecVel;
 	vector3df pos, rot, vectorUnitario;
 	Entity2D *entity;
 	int estadoActual;
