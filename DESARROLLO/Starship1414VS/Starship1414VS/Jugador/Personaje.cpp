@@ -48,7 +48,7 @@ Personaje::Personaje(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 
 
 
-	vel = 1000.0f;
+	vel = 300.0f;
 	vida = 100.0f;
 	vidaMax = vida;
 	pos = maya->getPosition();

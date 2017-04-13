@@ -3,10 +3,14 @@
 #include "Flocking.h"
 #include "../../Fisicas/Entity2D.h"
 #include "../Enemigo.h"
+#include <math.h>
 
 Flocking::Flocking(bool x)
 {
 	lider = x;
+	escala = 0.5f;
+	distanciaSeparacion = 50.0f / 10.0f;
+	distanciaSeparacion = powf(distanciaSeparacion, 2);
 }
 
 
@@ -14,15 +18,19 @@ Flocking::~Flocking()
 {
 }
 
+//estos metodos se les pasa por parametro la entity
+//que quiere meterse en el flocking
+
 vector3df Flocking::cohesion(Entity2D * entity)
 {
+
 	vector3df vectorU(0,0,0);
 	vector3df centroMasas(0, 0, 0);
 	vector3df pos(0, 0, 0);
 	vector3df posE(entity->getCuerpo2D()->GetPosition().x,
 		0,
 		entity->getCuerpo2D()->GetPosition().y);
-
+	
 	for (std::size_t i = 0; i < vecindario.size(); i++) {
 
 		if (vecindario.at(i) != entity){
@@ -77,6 +85,34 @@ vector3df Flocking::alineacion(Entity2D * entity)
 
 vector3df Flocking::separacion(Entity2D * entity)
 {
+	vector3df vectorU(0, 0, 0);
+	vector3df pos(0, 0, 0);
+	vector3df posE(entity->getCuerpo2D()->GetPosition().x,
+		0,
+		entity->getCuerpo2D()->GetPosition().y);
+	
+	for (std::size_t i = 0; i < vecindario.size(); i++) {
+
+		if (vecindario[i] != entity) {
+			pos.set(vecindario.at(i)->getCuerpo2D()->GetPosition().x,
+				0,
+				vecindario.at(i)->getCuerpo2D()->GetPosition().y);
+			if (distanciaAlCuadrado(pos, posE) < distanciaSeparacion) {
+
+				vector3df handing = posE - pos;
+
+				float dis = powf(handing.X, 2) + powf(handing.Z, 2);
+
+				float scale = dis / sqrtf(distanciaSeparacion);
+
+				vectorU = handing.normalize() / scale;
+			}
+
+
+		}
+
+	}
+	return vectorU;
 	
 }
 
@@ -110,4 +146,17 @@ vector3df Flocking::media(vector3df v, int cont)
 
 	return v;
 	
+}
+
+float Flocking::distanciaAlCuadrado(vector3df u, vector3df v)
+{
+	float dis;
+	float x = u.X - v.X;
+	float z = u.Z - v.Z;
+
+	dis = powf(x, 2) + powf(z, 2);
+
+	return dis;
+
+
 }

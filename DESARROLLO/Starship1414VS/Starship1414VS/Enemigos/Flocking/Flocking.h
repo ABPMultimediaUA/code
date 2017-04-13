@@ -6,6 +6,8 @@
 #include <vector3d.h>
 
 
+using namespace irr;
+using namespace core;
 
 class Entity2D;
 
@@ -16,6 +18,8 @@ private:
 
 	bool lider;
 	std::vector<Entity2D*> vecindario; //vector con las entities que hay en el flock
+	float escala;
+	float distanciaSeparacion;
 	
 
 public:
@@ -28,6 +32,7 @@ public:
 	void addEntity(Entity2D *e);
 	void removeEntity(Entity2D *e);
 	vector3df media(vector3df v, int cont);
+	float distanciaAlCuadrado(vector3df u, vector3df v);
 
 };
 
