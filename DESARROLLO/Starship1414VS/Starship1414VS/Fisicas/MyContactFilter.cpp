@@ -108,7 +108,7 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB) {
 		//colision entre bala y personaje
 		if ((f1.groupIndex == 1 && f2.groupIndex == 4) || (f1.groupIndex == 4 && f2.groupIndex == 1)) { return false; }
 		if ((f1.groupIndex == 6 && f2.groupIndex == 5) || (f1.groupIndex == 5 && f2.groupIndex == 6)) { return false; }
-		if (f1.groupIndex == f2.groupIndex ) { return false; }
+	//	if (f1.groupIndex == f2.groupIndex ) { return false; }
 
 		//colisiones de la puerta abierta
 		if (f1.groupIndex == 15 || f2.groupIndex == 15) {
@@ -119,20 +119,9 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB) {
 
 
 		}
-		/*
-		if((f1.groupIndex==1&&f2.groupIndex==2)||(f1.groupIndex==2&&f2.groupIndex==1))
-		{
-		std::cout<<"hakuna matata"<<std::endl;
-		return true;
-		}
 
-		if((f1.groupIndex==1&&f2.groupIndex==6)||(f1.groupIndex==6&&f2.groupIndex==1))
-		{
-		std::cout<<"hakuna matata"<<std::endl;
-		return true;
-		}*/
 
-		if (f1.groupIndex == 6 && f2.groupIndex == 6) { return false; }
+		//if (f1.groupIndex == 6 && f2.groupIndex == 6) { return false; }
 
 		return true;
 

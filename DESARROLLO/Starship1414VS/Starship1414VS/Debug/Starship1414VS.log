@@ -1,6 +1,7 @@
-﻿  Personaje.cpp
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(271): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(439): warning C4715: 'Personaje::getDamage': no todas las rutas de acceso de control devuelven un valor
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\jugador\personaje.cpp(458): warning C4715: 'Personaje::getTiempoArma': no todas las rutas de acceso de control devuelven un valor
+﻿  CriaAlien.cpp
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(177): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(184): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(473): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(477): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
   Starship1414VS.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
   Starship1414VS.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

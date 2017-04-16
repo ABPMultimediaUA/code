@@ -342,57 +342,60 @@ void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 	                 std::cout<<"Pos 2D X: "<<bodyPers->GetPosition().x<<"Pos 2D Z: "<< bodyPers->GetPosition().y<<std::endl;
 */
 	if(p->getVida() <= 0.0f && pers->getLive() != false) {
-		p->pasarMensaje();
+		//p->pasarMensaje();
 	}
 
 }
 
 
-void dispararEnemigo(Entity2D *pers, Entity2D *enemigo) {
+void atacarJugador(Entity2D *pers, Entity2D *enemigo) {
 
 	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
 	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 
-	float pesoX = powf(p->getPos().X - e->getPos().X, 2);
-	float pesoZ = powf(p->getPos().Z - e->getPos().Z, 2);
-	float peso = sqrtf((pesoX + pesoZ));
+	if (e->getVista() == false) {
+		float pesoX = powf(p->getPos().X - e->getPos().X, 2);
+		float pesoZ = powf(p->getPos().Z - e->getPos().Z, 2);
+		float peso = sqrtf((pesoX + pesoZ));
 
-	p->getPos();
-	e->setPesoMaximoLogicaDifusa(peso);
-	e->setPosJugador(p->getPos().X, p->getPos().Z);
-	//e->setEstado(3);
-	e->iniLogicaDifusa();
-	//std::cout << std::endl;
-	//std::cout <<"CALLBACK"<< std::endl;
+		p->getPos();
+		e->setPesoMaximoLogicaDifusa(peso);
+		e->setPosJugador(p->getPos().X, p->getPos().Z);
+		//e->setEstado(3);
+		e->iniLogicaDifusa();
+		//std::cout << std::endl;
+		//std::cout <<"CALLBACK"<< std::endl;
 
-	//std::cout << "POS X: " << p->getPos().X<<"POS Z: " << p->getPos().Z<< std::endl;
-	//std::cout << std::endl;
+		//std::cout << "POS X: " << p->getPos().X<<"POS Z: " << p->getPos().Z<< std::endl;
+		//std::cout << std::endl;
 
-	
 
-	std::cout << std::endl;
-	std::cout <<"DISTANCIA ENTRE ENEMIGO Y JUGADOR"<< std::endl;
 
-	std::cout <<"DISTANCIA: "<<peso << std::endl;
-	std::cout << std::endl;
-	
+		std::cout << std::endl;
+		std::cout << "DISTANCIA ENTRE ENEMIGO Y JUGADOR" << std::endl;
 
+		std::cout << "DISTANCIA: " << peso << std::endl;
+		std::cout << std::endl;
+
+	}
 
 }
 
 void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 
-	if (e->getNodoInicio() == nullptr || e->getNodoFin() == nullptr) {
-		e->setEstado(0);
-	}
+	if (e->getVista() == false) {
+		if (e->getNodoInicio() == nullptr || e->getNodoFin() == nullptr) {
+			e->setEstado(0);
+		}
 
-	else if (e->getNodoFin() != nullptr && e->getEstado() != 5) {
-		e->setEstado(1);
-	}
+		else if (e->getNodoFin() != nullptr && e->getEstado() != 5) {
+			e->setEstado(1);
+		}
 
-	else if(e->getEstado() == 5) {
-		e->setEstado(5);
+		else if (e->getEstado() == 5) {
+			e->setEstado(5);
+		}
 	}
 }
 
@@ -404,13 +407,46 @@ void quitarVidaJugador(Entity2D *jugador, Entity2D *bala) {
 	if (j->getVida() > 0.0f) {
 		j->quitarVida(bullet->getDamage());
 		if (j->getVida() <= 0.0f && jugador->getLive() != false) {
-			jugador->setLive(false);
-			j->pasarMensaje();
+		/*	jugador->setLive(false);
+			j->pasarMensaje();*/
 		}
 	}
 
 }
 
+
+void paredDetectada(Entity2D *ene, bool x) {
+
+	Enemigo *e = static_cast<Enemigo*>(ene->getObjeto3D());
+
+	e->setVista(x);
+
+}
+
+
+void empezarFlocking(Entity2D *e1, Entity2D *e2) {
+
+
+
+	Enemigo *ene1 = static_cast<Enemigo*>(e1->getObjeto3D());
+	Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
+
+	if (ene1->getLider()) {
+		ene2->setEstado(8);
+		ene2->setGrupoFlocking(e1);
+		ene2->setGrupoFlocking(e2);
+	}
+
+	else if(ene2->getLider()) {
+		ene1->setEstado(8);
+		ene1->setGrupoFlocking(e1);
+		ene1->setGrupoFlocking(e2);
+
+	}
+
+
+
+}
 
 void MiContactListener::BeginContact(b2Contact* contact) {
 	//std::cout<<""<<std::endl;
@@ -463,6 +499,27 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			//            }
 			//   
 
+
+			//tema flocking
+
+			if ((entity1->getIDEN() == 4 && f1->IsSensor()) && entity2->getIDEN() == 4) {
+				empezarFlocking(entity1, entity2);
+			}
+
+			else if ((entity2->getIDEN() == 4 && f2->IsSensor()) && entity1->getIDEN() == 4) {
+				empezarFlocking(entity2, entity1);
+
+			}
+			
+			//cuando el sensor de vista detecta una pared o puerta
+			if (entity1->getIDEN() == 4 && f1->IsSensor() && (entity2->getIDEN() == 1 || entity2->getIDEN() == 2)) {
+				paredDetectada(entity1, true);
+			}
+
+			else if (entity2->getIDEN() == 4 && f2->IsSensor() && (entity1->getIDEN() == 1 || entity1->getIDEN() == 2)) {
+				paredDetectada(entity2, true);
+			}
+
 			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 2 && f2->IsSensor() != true) {
 				entity1->setLive(false);
 
@@ -507,7 +564,7 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
 				std::cout << "A DISPARAR!" << std::endl;
-				dispararEnemigo(entity1, entity2);
+				atacarJugador(entity1, entity2);
 
 			}
 
@@ -598,6 +655,15 @@ void MiContactListener::EndContact(b2Contact* contact) {
 			//            std::cout<<"///////////////////////////////////"<<std::endl;
 		
 
+			if (entity1->getIDEN() == 4 && f1->IsSensor() && (entity2->getIDEN() == 1 || entity2->getIDEN() == 2)) {
+				paredDetectada(entity1, false);
+			}
+
+			else if (entity2->getIDEN() == 4 && f2->IsSensor() && (entity1->getIDEN() == 1 || entity1->getIDEN() == 2)) {
+				paredDetectada(entity2, false);
+			}
+
+
 			if (entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true) {
 				std::cout << "lalal 1" << std::endl;
 
@@ -615,6 +681,16 @@ void MiContactListener::EndContact(b2Contact* contact) {
 			//	p->setImpulso(false);
 
 			//}
+
+			if ((entity1->getIDEN() == 4 && f1->IsSensor()) && entity2->getIDEN() == 4) {
+				gestionarCambioDeEstadoEnemigo(entity1);
+			}
+
+			else if ((entity2->getIDEN() == 4 && f2->IsSensor()) && entity1->getIDEN() == 4) {
+				gestionarCambioDeEstadoEnemigo(entity2);
+
+			}
+
 
 			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
 				std::cout << "ADIOS 1" << std::endl;

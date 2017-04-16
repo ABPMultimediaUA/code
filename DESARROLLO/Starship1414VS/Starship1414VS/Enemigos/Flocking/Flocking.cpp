@@ -121,6 +121,10 @@ bool Flocking::getLider()
 	return lider;
 }
 
+void Flocking::setLider(bool x) {
+	lider = x;
+}
+
 void Flocking::addEntity(Entity2D * e)
 {
 	vecindario.push_back(e);

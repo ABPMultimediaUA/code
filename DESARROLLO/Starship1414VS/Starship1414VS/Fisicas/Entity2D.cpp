@@ -220,7 +220,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, I
 	}
 
 	bodyCircle.m_p.Set(0, 0);
-	bodyCircle.m_radius = 70; 
+	bodyCircle.m_radius = 45; 
 
     body = world->CreateBody(&bodyDef);
 	body->CreateFixture(&bodyCircle, 1.0f);
@@ -242,14 +242,16 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, I
     sombraE->SetMassData(&md);
     idenSh = 1;
     filtro.groupIndex = FILTRO_ENEMIGO;
+
 	for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
 		f->SetFilterData(filtro);
 
 	}
-  
+	
+	filtro.groupIndex = FILTRO_PUERTAABIERTA;
 	sombraE->GetFixtureList()->SetFilterData(filtro);
 
-    fisica2 = smgr->addSphereSceneNode(70);
+    fisica2 = smgr->addSphereSceneNode(45);
 	//smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
     fisica2->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
     fisica2->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);

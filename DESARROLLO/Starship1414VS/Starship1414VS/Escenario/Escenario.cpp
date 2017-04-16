@@ -1755,6 +1755,12 @@ void Escenario::fabricaDeEnemigos() {
 
 	}
 
+
+	CriaAlien *e = new CriaAlien(SM, VD, mundo,
+		vector3df(50, 10, -5)
+		, this, waypoints.at(0));
+	e->setLider(true);
+	enemigos.push_back(e);
 }
 
 void Escenario::destroyWaypoints() {

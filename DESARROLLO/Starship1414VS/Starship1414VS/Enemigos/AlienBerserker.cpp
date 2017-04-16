@@ -19,6 +19,7 @@
 #include "../Fisicas/Entity2D.h"
 #include "Waypoints.h"
 #include "LogicaDifusa.h"
+#include "Flocking\Flocking.h"
 
 #define RESISTMAX 120
 #define VELMAX 30
@@ -62,6 +63,7 @@ AlienBerserker::AlienBerserker(ISceneManager* smgr, IVideoDriver* driver, b2Worl
 
 	//waypoints->mostrarPesos();
 	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
+	floc = new Flocking(false);
 
 	disparado = false;
 	damageBala = 20.0f;

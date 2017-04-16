@@ -36,6 +36,7 @@ class Waypoints;
 class Entity2D;
 class Bala;
 class LogicaDifusa;
+class Flocking;
 
 #define CRIA 10
 #define BERSERKER 11
@@ -50,6 +51,7 @@ class LogicaDifusa;
 #define DESCANSAR 5
 #define ESCAPAR 6
 #define CUERPOACUERPO 7
+#define FLOCKING 8
 
 //el enemigo deberia tener un estado que sea
 //siguiendo al lider o algo para aplicar el flocking
@@ -100,6 +102,11 @@ public:
 	void setPesoMaximoLogicaDifusa(float x);
 	void iniLogicaDifusa();
 
+	bool getVista();
+	void setVista(bool x);
+	bool getLider();
+
+	void setGrupoFlocking(Entity2D * e);
 
 
 protected:
@@ -121,12 +128,16 @@ protected:
 	float blindaje;
 	Waypoints *waypoints;
 	LogicaDifusa *logica;
+	Flocking *floc;
+
 	AStar *path;
 	Nodo *puntoIni, *puntoFin, *nodoAnterior;
 	int dir, posNodo;
 	float damageChoque;
 	float moral;
 	float resistencia;
+	bool vista;
+
 
 	std::list<Bala*> listaBalas;
 	std::vector<Nodo*> recorrido; //maximo 4 nodos

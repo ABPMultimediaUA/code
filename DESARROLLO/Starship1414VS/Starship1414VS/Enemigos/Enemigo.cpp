@@ -21,6 +21,7 @@
 #include "AStar.h"
 #include "../Jugador/Bala.h"
 #include "LogicaDifusa.h"
+#include "Flocking\Flocking.h"
 
 
 
@@ -40,7 +41,7 @@ Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vect
 	puntoIni = nullptr;
 	puntoFin = nullptr;
 	dir = -1;
-
+	vista = false;
 
 
 
@@ -59,11 +60,12 @@ Enemigo::~Enemigo() {
 	maya->getParent()->removeChild(maya);
     GVida->getParent()->removeChild(GVida);
     RVida->getParent()->removeChild(RVida);
-	//delete(waypoints);
+
 	delete(path);
 	delete(logica);
 	/*delete(puntoIni);
 	delete(puntoFin);*/
+	delete(floc);
     delete(entity);
 	puntoFin = nullptr;
 	puntoIni = nullptr;
@@ -266,4 +268,22 @@ void Enemigo::iniLogicaDifusa()
 	//std::cout << std::endl;
 }
 
+bool Enemigo::getVista()
+{
+	return vista;
+}
 
+void Enemigo::setVista(bool x)
+{
+	vista = x;
+}
+
+bool Enemigo::getLider()
+{
+	return floc->getLider();
+}
+
+
+void Enemigo::setGrupoFlocking(Entity2D *e) {
+	floc->addEntity(e);
+}

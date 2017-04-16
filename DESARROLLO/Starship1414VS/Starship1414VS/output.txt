@@ -3713,144 +3713,80 @@ ID ENTITY 1
 Posicion de la Entity X: -825 Y: 640
 //////////////////////////////////////////
 
-relax 0
---->jugadorPercibido condicion
---->estoyCansado condicion
---->patrullar secuencia
---->buscarWaypoint accion
---->moverWaypoint accion
---->pararMirar accion
-alerta 1
---->jugadorVisualizado condicion
---->ultimo4Waypoints accion
-combate 2
---->moral selector
---->alta selector
---->vidaAlta secuencia
---->arañar accion
---->vidaMedia selector
---->cerca secuencia
---->arañar accion
---->lejos secuencia
---->cubrir accion
---->baja selector
---->vidaMedia secuencia
---->cubrir accion
---->vidaBaja secuencia
---->huir accion
-2
-relax 0
---->jugadorPercibido condicion
---->estoyCansado condicion
---->patrullar secuencia
---->buscarWaypoint accion
---->moverWaypoint accion
---->pararMirar accion
-alerta 1
---->jugadorVisualizado condicion
---->ultimo4Waypoints accion
-combate 2
---->moral selector
---->alta selector
---->vidaAlta secuencia
---->arañar accion
---->vidaMedia selector
---->cerca secuencia
---->arañar accion
---->lejos secuencia
---->cubrir accion
---->baja selector
---->vidaMedia secuencia
---->cubrir accion
---->vidaBaja secuencia
---->huir accion
-2
-relax 0
---->jugadorPercibido condicion
---->estoyCansado condicion
---->patrullar secuencia
---->buscarWaypoint accion
---->moverWaypoint accion
---->pararMirar accion
-alerta 1
---->jugadorVisualizado condicion
---->ultimo4Waypoints accion
-combate 2
---->moral selector
---->alta selector
---->vidaAlta secuencia
---->arañar accion
---->vidaMedia selector
---->cerca secuencia
---->arañar accion
---->lejos secuencia
---->cubrir accion
---->baja selector
---->vidaMedia secuencia
---->cubrir accion
---->vidaBaja secuencia
---->huir accion
-2
-relax 0
---->jugadorPercibido condicion
---->estoyCansado condicion
---->patrullar secuencia
---->buscarWaypoint accion
---->moverWaypoint accion
---->pararMirar accion
-alerta 1
---->jugadorVisualizado condicion
---->ultimo4Waypoints accion
-combate 2
---->moral selector
---->alta selector
---->vidaAlta secuencia
---->arañar accion
---->vidaMedia selector
---->cerca secuencia
---->arañar accion
---->lejos secuencia
---->cubrir accion
---->baja selector
---->vidaMedia secuencia
---->cubrir accion
---->vidaBaja secuencia
---->huir accion
-2
-relax 0
---->jugadorPercibido condicion
---->estoyCansado condicion
---->patrullar secuencia
---->buscarWaypoint accion
---->moverWaypoint accion
---->pararMirar accion
-alerta 1
---->jugadorVisualizado condicion
---->ultimo4Waypoints accion
-combate 2
---->moral selector
---->alta selector
---->vidaAlta secuencia
---->arañar accion
---->vidaMedia selector
---->cerca secuencia
---->arañar accion
---->lejos secuencia
---->cubrir accion
---->baja selector
---->vidaMedia secuencia
---->cubrir accion
---->vidaBaja secuencia
---->huir accion
-2
-ACTUALIZO 0
-ID PUERTA: 4
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 4
-cerrar123
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 50.2494
+
+ADIOS 1
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 51.7746
+
+ADIOS 1
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 49.9036
+
 ACTUALIZO 0
 ID PUERTA: 13
+ADIOS 1
+ACTUALIZO 0
+ID PUERTA: 0
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 49.6203
+
+ACTUALIZO 0
+ID PUERTA: 5
+ADIOS 1
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 51.9152
+
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 49.933
+
+ADIOS 1
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 50.6963
+
+ADIOS 1
+ADIOS 1
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 51.7973
+
+ADIOS 1
+ACTUALIZO 0
+ID PUERTA: 6
+ACTUALIZO 0
+ID PUERTA: 0
+A DISPARAR!
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 51.1799
+
+ACTUALIZO 0
+ID PUERTA: 1
+ADIOS 1
+ACTUALIZO 0
+ID PUERTA: 1
+ACTUALIZO 0
+ID PUERTA: 1
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 1
+cerrar123
 Irrlicht Engine version 1.8.4
 Professional Edition  (Build 9200)
 Using renderer: OpenGL 4.5.0

@@ -20,6 +20,7 @@
 #include "Waypoints.h"
 #include "BehaviorTree\BehaivorTree.h"
 #include "LogicaDifusa.h"
+#include "Flocking\Flocking.h"
 
 #define RESISTMAX 50
 #define VELMAX 35
@@ -69,8 +70,7 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	//waypoints->mostrarPesos();
 	tree = new BehaivorTree();
 	disparado = false;
-	//posJugador.X  = -30.0f;
-	//posJugador.Y = -90.0f;
+
 	damageBala = 10.0f;
 
 
@@ -83,8 +83,25 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
    // nav->setColisiones(esce->getParedes());
     //nav->muestraGrafo();
 	path = new AStar(waypoints->getMatriz(), waypoints->getNodos().size());
-
+	floc = new Flocking(false);
     // dibujaGrid(smgr);
+	//crearArbol();
+	time = 0.0f;
+
+}
+
+//CriaAlien::CriaAlien(const CriaAlien& orig) {
+//}
+
+CriaAlien::~CriaAlien() {
+
+	delete(tree);
+	//delete(nav);
+
+}
+
+void CriaAlien::crearArbol() {
+
 	Node* n = new Node("root", "selector");
 	tree->addNode(n, NULL);
 
@@ -142,16 +159,8 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	tree->addNode(e, d);
 
 
-	std::cout<< tree->Update()<<std::endl;
-//	tree->imprimirArbol();
-
-}
-
-//CriaAlien::CriaAlien(const CriaAlien& orig) {
-//}
-
-CriaAlien::~CriaAlien() {
-
+	std::cout << tree->Update() << std::endl;
+	//	tree->imprimirArbol();
 
 }
 
@@ -177,6 +186,10 @@ void CriaAlien::dibujaGrid(ISceneManager *grid) {
 
         }
     }
+}
+
+void CriaAlien::setLider(bool c) {
+	floc->setLider(c);
 }
 
 void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
@@ -246,6 +259,12 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 			break;
 
+		case FLOCKING:
+
+			emepzarFlocking(dt);
+
+			break;
+
     }
 
 	this->actualizarLista();
@@ -261,6 +280,7 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 }*/
 
 void CriaAlien::CQC() {
+
 	maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
 	vector3df posPlayer;
 	posPlayer.X = posJugador.X;
@@ -286,6 +306,37 @@ void CriaAlien::CQC() {
 
 
 	iniLogicaDifusa();
+
+}
+
+void CriaAlien::emepzarFlocking(f32 dt) {
+
+	maya->getMaterial(0).EmissiveColor.set(0, 125, 50, 175);
+	vector3df u;
+	//vector3df v(0, 0, 0);
+
+	u = floc->cohesion(entity);
+	Mover(u);
+	u = floc->separacion(entity);
+	Mover(u);
+	u = floc->alineacion(entity);
+	Mover(u);
+	
+
+
+	//if (time > 5.0) {
+
+		//u = floc->alineacion(entity);
+		//vectorUnitario += u;
+		//u = floc->cohesion(entity);
+		//vectorUnitario = u;
+		//u = floc->separacion(entity);
+		//vectorUnitario += u;
+		//time = 0.0f;
+	//}
+	//time += dt;
+	//Mover(u);
+
 
 }
 
