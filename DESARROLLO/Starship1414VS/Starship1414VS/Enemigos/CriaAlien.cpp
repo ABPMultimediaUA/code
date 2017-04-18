@@ -192,6 +192,8 @@ void CriaAlien::setLider(bool c) {
 	floc->setLider(c);
 }
 
+
+
 void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
 	
 	//crear metodos para todos los estados
@@ -314,15 +316,22 @@ void CriaAlien::emepzarFlocking(f32 dt) {
 	maya->getMaterial(0).EmissiveColor.set(0, 125, 50, 175);
 	vector3df u;
 	//vector3df v(0, 0, 0);
+	 if (time < 1.0) {
 
-	u = floc->cohesion(entity);
-	Mover(u);
-	u = floc->separacion(entity);
-	Mover(u);
-	u = floc->alineacion(entity);
-	Mover(u);
+		u = floc->cohesion(entity);
+		Mover(u);
+	 
+	 }
+
+	 else {
+		u = floc->separacion(entity);
+		Mover(u);
+		u = floc->alineacion(entity);
+		Mover(u);
 	
+	 }
 
+	 time += dt;
 
 	//if (time > 5.0) {
 

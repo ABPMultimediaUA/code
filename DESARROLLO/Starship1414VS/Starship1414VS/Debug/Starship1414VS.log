@@ -1,7 +1,3 @@
-﻿  CriaAlien.cpp
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(177): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(184): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(473): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(477): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-  Starship1414VS.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
-  Starship1414VS.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
+﻿  MiContactListener.cpp
+  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
+  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

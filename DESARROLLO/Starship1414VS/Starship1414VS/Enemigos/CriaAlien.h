@@ -37,11 +37,12 @@ public:
 	void recuperarResistencia();
 	void dibujaGrid(ISceneManager *grid);
 	void setLider(bool c);
+
+	
 private:
 
 	navmeshes* nav;
 	BehaivorTree *tree;
-	f32 time;
 
 };
 

@@ -180,6 +180,10 @@ void Enemigo::resetTiempoDisparo()
 	tiempoDisparo = 0.0f;
 }
 
+void Enemigo::setTime(f32 t) {
+	time = t;
+}
+
 float Enemigo::getTiempoDisparo()
 {
 	return tiempoDisparo;

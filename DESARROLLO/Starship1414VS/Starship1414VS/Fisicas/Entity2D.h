@@ -72,7 +72,7 @@ private:
 	IMeshSceneNode* fisica;
 	IMeshSceneNode* fisica2;
 	int iden;
-	int idenSh;
+	int idenSh = -1;
 	int id;
 	bool live;
 	void* objeto3D;

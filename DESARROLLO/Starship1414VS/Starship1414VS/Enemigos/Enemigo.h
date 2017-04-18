@@ -92,6 +92,7 @@ public:
 	void setDisparo(bool x);
 	void aumentarTiempoDisparo(float t);
 	void resetTiempoDisparo();
+	void setTime(f32 t);
 	float getTiempoDisparo();
 	bool getDisparado();
 	void disparar(float dt);
@@ -145,6 +146,7 @@ protected:
 	float tiempoDisparo;
 	vector2df posJugador;
 	float damageBala;
+	f32 time;
 
 
 };

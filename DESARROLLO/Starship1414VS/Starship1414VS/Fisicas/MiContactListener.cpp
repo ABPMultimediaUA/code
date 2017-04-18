@@ -397,6 +397,8 @@ void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 			e->setEstado(5);
 		}
 	}
+
+	e->setTime(0.0f);
 }
 
 
@@ -502,11 +504,11 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			//tema flocking
 
-			if ((entity1->getIDEN() == 4 && f1->IsSensor()) && entity2->getIDEN() == 4) {
+			if ((entity1->getIDEN() == 4 && f1->IsSensor()) && entity2->getIDEN() == 4 && !f2->IsSensor() ) {
 				empezarFlocking(entity1, entity2);
 			}
 
-			else if ((entity2->getIDEN() == 4 && f2->IsSensor()) && entity1->getIDEN() == 4) {
+			else if ((entity2->getIDEN() == 4 && f2->IsSensor()) && entity1->getIDEN() == 4 && !f1->IsSensor()) {
 				empezarFlocking(entity2, entity1);
 
 			}
