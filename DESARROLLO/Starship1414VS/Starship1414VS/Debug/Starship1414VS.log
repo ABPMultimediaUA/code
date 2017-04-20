@@ -1,3 +1,5 @@
-﻿  MiContactListener.cpp
-  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
-  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
+﻿  Enemigo.cpp
+c:\users\hector\desktop\abp\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(101): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\hector\desktop\abp\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(143): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  Starship1414VS.vcxproj -> C:\Users\Hector\Desktop\ABP\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
+  Starship1414VS.vcxproj -> C:\Users\Hector\Desktop\ABP\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

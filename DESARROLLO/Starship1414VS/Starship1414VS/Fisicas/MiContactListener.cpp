@@ -385,7 +385,7 @@ void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 
 	if (e->getVista() == false) {
-		if (e->getNodoInicio() == nullptr || e->getNodoFin() == nullptr) {
+		if (e->getNodoInicio() == nullptr || e->getNodoFin() == nullptr || e->getEstado() == 8) {
 			e->setEstado(0);
 		}
 
@@ -396,6 +396,8 @@ void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 		else if (e->getEstado() == 5) {
 			e->setEstado(5);
 		}
+
+		
 	}
 
 	e->setTime(0.0f);

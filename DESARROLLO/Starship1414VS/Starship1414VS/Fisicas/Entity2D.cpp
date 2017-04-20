@@ -258,6 +258,13 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, I
     fisica2->getMaterial(0).EmissiveColor.set(0, 100, 10, 100);
     fisica2->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
 
+	//direccion = smgr->addCubeSceneNode(5);
+	////smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
+	//direccion->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
+	//direccion->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
+	//direccion->getMaterial(0).EmissiveColor.set(0, 140, 50, 100);
+	//direccion->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y+5));
+
     iden = 4;
     objeto3D = dirEnemigo;
 }
@@ -424,11 +431,19 @@ b2Body* Entity2D::getCuerpo2D() {
     return body;
 }
 
+void Entity2D::getRotarDireccion() {
+	float ang = -atan2f(body->GetPosition().x, body->GetPosition().y) * 180 / 3.14;
+	//direccion->setRotation(vector3df(0,ang,0));
+	
+}
+
 b2Body* Entity2D::getSombraE2D() {
     //  std::cout<<"Sombra x: "<<sombra->GetPosition().x<<" Sombra z: "<<sombra->GetPosition().y<<std::endl;
     //  std::cout<<"Body x: "<<body->GetPosition().x<<" Body z: "<<body->GetPosition().y<<std::endl;
     if (fisica2 != NULL && sombraE != NULL) {
         fisica2->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
+	//	direccion->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y+5));
+		
     }
     return sombraE;
 }

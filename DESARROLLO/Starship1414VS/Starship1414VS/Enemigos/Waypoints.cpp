@@ -164,6 +164,12 @@ float** Waypoints::getMatriz() {
 	return pesos;
 }
 
+float Waypoints::getPeso(const int i, const int j) {
+
+	return pesos[i][j];
+
+}
+
 
 std::vector<Nodo*> Waypoints::getNodos() {
 	return puntos;

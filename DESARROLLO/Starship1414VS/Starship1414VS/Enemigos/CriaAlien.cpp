@@ -23,7 +23,7 @@
 #include "Flocking\Flocking.h"
 
 #define RESISTMAX 50
-#define VELMAX 35
+#define VELMAX 55
 
 
 
@@ -280,37 +280,6 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 
 }*/
-
-void CriaAlien::CQC() {
-
-	maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
-	vector3df posPlayer;
-	posPlayer.X = posJugador.X;
-	posPlayer.Y = 0.0f;
-	posPlayer.Z = posJugador.Y;
-	//dir = path->getDireccion(pos, posPlayer);
-	//this->Mover(dir);
-
-	vectorUnitario = path->getVectorDeDireccion(pos, posPlayer);
-	Mover(vectorUnitario);
-
-
-	if (path->estoyEnElNodo(pos, posPlayer)) {
-		dir = -1;
-		this->setVelocidad();
-
-
-
-		/*posNodo = path->buscarWaypointMasCorto(posNodo);
-		puntoFin = waypoints->getNodoX(posNodo);*/
-
-	}
-
-
-	iniLogicaDifusa();
-
-}
-
 void CriaAlien::emepzarFlocking(f32 dt) {
 
 	maya->getMaterial(0).EmissiveColor.set(0, 125, 50, 175);
@@ -349,11 +318,45 @@ void CriaAlien::emepzarFlocking(f32 dt) {
 
 }
 
+void CriaAlien::CQC() {
+
+	maya->getMaterial(0).EmissiveColor.set(0, 10, 250, 150);
+	vector3df posPlayer;
+	posPlayer.X = posJugador.X;
+	posPlayer.Y = 0.0f;
+	posPlayer.Z = posJugador.Y;
+	//dir = path->getDireccion(pos, posPlayer);
+	//this->Mover(dir);
+
+	//vectorUnitario = path->getVectorDeDireccion(pos, posPlayer);
+	vectorUnitario = seek(posPlayer);
+
+	Mover(vectorUnitario);
+
+
+	if (path->estoyEnElNodo(pos, posPlayer)) {
+		dir = -1;
+		this->setVelocidad();
+
+
+
+		/*posNodo = path->buscarWaypointMasCorto(posNodo);
+		puntoFin = waypoints->getNodoX(posNodo);*/
+
+	}
+
+
+	iniLogicaDifusa();
+
+}
+
+
+
 void CriaAlien::Patrullar() {
 
 	maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
 	if (puntoFin == nullptr) {
-
+	
 		posNodo = path->buscarWaypointMasCorto(posNodo);
 
 		if (posNodo != -1) {
@@ -376,27 +379,53 @@ void CriaAlien::Patrullar() {
 
 	}
 
-	else if(puntoFin != nullptr) {
-	
+	else if (puntoFin != nullptr) {
 
 
-		//dir = path->getDireccion(pos, puntoFin->getPosicion());
-		//this->Mover(dir);
-		vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
 
-		Mover(vectorUnitario);
-		if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
-			dir = -1;
-			this->setVelocidad();
-		
-			nodoAnterior = puntoIni;
-			puntoIni = puntoFin;
-			puntoFin = nullptr;
+		//vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
 
-			/*posNodo = path->buscarWaypointMasCorto(posNodo);
-			puntoFin = waypoints->getNodoX(posNodo);*/
 
+		//Mover(vectorUnitario);
+
+		if (puntoFin != nullptr)
+		{
+		if (path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 30.0f) {
+
+			vectorUnitario = arrive(puntoFin->getPosicion(), rapido);
+			//Mover(vectorUnitario);
+			if (path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 10.0f 
+				|| path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 20.0f)
+			{
+
+				dir = -1;
+				this->setVelocidad();
+
+				nodoAnterior = puntoIni;
+				puntoIni = puntoFin;
+				puntoFin = nullptr;
+			}
 		}
+
+		else {
+
+			vectorUnitario = seek(puntoFin->getPosicion());
+		}
+	}
+
+		//if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
+
+		//	dir = -1;
+		//	this->setVelocidad();
+		//
+		//	nodoAnterior = puntoIni;
+		//	puntoIni = puntoFin;
+		//	puntoFin = nullptr;
+
+		//	/*posNodo = path->buscarWaypointMasCorto(posNodo);
+		//	puntoFin = waypoints->getNodoX(posNodo);*/
+
+		//}
 
 
 	}
@@ -404,6 +433,7 @@ void CriaAlien::Patrullar() {
 	/*std::cout << std::endl;
 	std::cout << "PATRULLO PREMO!" << std::endl;
 	std::cout << std::endl;*/
+	Mover(vectorUnitario);
 
 }
 
@@ -454,13 +484,9 @@ void CriaAlien::BuscarWaypoint()
 
 
 	if (puntoIni != nullptr) {
-		//dir = path->getDireccion(pos, puntoIni->getPosicion());
-		/*	std::cout << std::endl;
-		std::cout << "DIR: " << dir << std::endl;
-		std::cout << std::endl;*/
 
-	//	this->Mover(dir);
-		vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
+		//vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
+		vectorUnitario = seek(puntoIni->getPosicion());
 
 		Mover(vectorUnitario);
 

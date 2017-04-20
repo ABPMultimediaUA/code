@@ -62,7 +62,15 @@ class Flocking;
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
+enum Deceleracion
+{
+	rapido = 1,
+	normal = 2,
+	lento = 3
+};
+
 class Enemigo {
+
 public:
 	Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos);
 	// Enemigo(const Enemigo& orig);
@@ -102,6 +110,10 @@ public:
 	Nodo* getNodoFin();
 	void setPesoMaximoLogicaDifusa(float x);
 	void iniLogicaDifusa();
+
+	vector3df seek(const vector3df target);
+
+	vector3df arrive(const vector3df target, Deceleracion dec);
 
 	bool getVista();
 	void setVista(bool x);

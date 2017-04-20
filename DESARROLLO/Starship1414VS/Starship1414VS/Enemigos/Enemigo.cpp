@@ -77,16 +77,94 @@ void Enemigo::Update(f32 dt) {
 
 void Enemigo::Mover(vector3df u)
 {
-	vector3df v = vel * u;
-	vecVel = v;
+	//vector3df v = vel * u;
+	//vecVel = v;
 	b2Vec2 vec;
-	vec.Set(v.X, v.Z);
+	
+	vec.Set(u.X, u.Z);
 	entity->getCuerpo2D()->SetLinearVelocity(vec);
 	entity->getSombraE2D()->SetLinearVelocity(vec);
 
 	pos.X = entity->getCuerpo2D()->GetPosition().x;
 	pos.Z = entity->getCuerpo2D()->GetPosition().y;
+
 	setPos(pos);
+}
+
+vector3df Enemigo::seek(const vector3df target)
+{
+	vector3df desireVelocity(0, 0, 0);
+
+	desireVelocity = target - pos;
+
+	desireVelocity = desireVelocity.normalize() * 55;
+	float desireAngle = atan2f(-target.X, target.Z) * 180 / 3.14;
+	maya->setRotation(vector3df(0, desireAngle - 90, 0));
+
+	return desireVelocity;
+
+}
+
+vector3df Enemigo::arrive(const vector3df target, Deceleracion dec) {
+
+	vector3df vecDecel(0, 0, 0);
+	vector3df toTarget;
+
+	toTarget = target - pos;
+
+	float dis, x , y;
+
+	x = powf(toTarget.X, 2);
+	y = powf(toTarget.Z, 2);
+
+	dis = x + y;
+
+	dis = sqrtf(dis);
+
+	float timeTarget = 0.25;
+
+	if (dis<5.0f)
+	{
+		return vector3df(0,0,0);
+	}
+
+	 toTarget /= timeTarget;
+	 x = powf(toTarget.X, 2);
+	 y = powf(toTarget.Z, 2);
+	 dis = x + y;
+	 dis = sqrtf(dis);
+
+	if (dis >55)
+	{
+		toTarget=toTarget.normalize();
+		toTarget *= 55;
+	}
+
+	float desireAngle = atan2f(-target.X, target.Z) * 180 / 3.14;
+	maya->setRotation(vector3df(0, desireAngle - 90, 0));
+
+
+	//if (dis > 0.0f) {
+
+	//	const float deceleracionTweaker = 0.3f;
+
+	//	float velocidad = dis / ((float) dec * deceleracionTweaker);
+	//	velocidad /= 5;
+	//	std::cout << "VEL: " << vel << std::endl;
+	//	std::cout << "VEL1: " << velocidad << std::endl;
+	//	std::cout << "Dis: " << dis << std::endl;
+
+
+	//	velocidad = fminf(velocidad, vel);
+
+	//	vecDecel = toTarget * velocidad / dis;
+
+	//	return vecDecel-vel;
+	//	//return vector3df(0, 0, 0);
+	//}
+	//std::cout << "fuera"<< std::endl;
+	return toTarget;
+
 }
 
 vector3df Enemigo::getPos() {
@@ -271,6 +349,8 @@ void Enemigo::iniLogicaDifusa()
 	//std::cout << estadoActual << std::endl;
 	//std::cout << std::endl;
 }
+
+
 
 bool Enemigo::getVista()
 {

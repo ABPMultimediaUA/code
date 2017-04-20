@@ -40,6 +40,7 @@ public:
 	virtual ~Entity2D();
 	float rayCast(b2Vec2 inicio, b2Vec2 fin);
 	b2Body* getCuerpo2D();
+	void getRotarDireccion();
 	float rayCasting(b2Vec2 inicio, b2Vec2 fin);
 	void llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin);
 	int getIDEN();
@@ -71,6 +72,7 @@ private:
 	b2PolygonShape sombraShape;
 	IMeshSceneNode* fisica;
 	IMeshSceneNode* fisica2;
+	IMeshSceneNode* direccion;
 	int iden;
 	int idenSh = -1;
 	int id;
