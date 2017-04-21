@@ -185,90 +185,62 @@ Kinematic Enemigo::arrive(const vector3df target) {
 
 	Mover();
 
-	//if (distancia<5.0f)
-	//{
-	//	
-	//}
-	//
-	//if (distancia>10.0f)
-	//{
-	//	targetSpeed =5;
-	//}
-	//else
-	//{
-	//	targetSpeed = 5 * distancia / 10.0f;
-	//}
-	//targetDirection = direccion;
-	//targetDirection = targetDirection.normalize();
-	//targetDirection *= targetSpeed;
-	//targetDirection = targetDirection - pos /= timeTarget;
-
-	//if (targetDirection.getLength()>maxAcceleration)
-	//{
-	//	targetDirection = targetDirection.normalize();
-	//	targetDirection *= maxAcceleration;
-	//}
-
-
 	
-	
-	//vector3df vecDecel(0, 0, 0);
-	//vector3df toTarget;
-
-	//toTarget = target - pos;
-
-	//float dis, x , y;
-
-	//x = powf(toTarget.X, 2);
-	//y = powf(toTarget.Z, 2);
-
-	//dis = x + y;
-
-	//dis = sqrtf(dis);
-
-	//float timeTarget = 0.25;
-
-	//if (dis<5.0f)
-	//{
-	//	return vector3df(0,0,0);
-	//}
-
-	// toTarget /= timeTarget;
-	// x = powf(toTarget.X, 2);
-	// y = powf(toTarget.Z, 2);
-	// dis = x + y;
-	// dis = sqrtf(dis);
-
-	//if (dis >55)
-	//{
-	//	toTarget=toTarget.normalize();
-	//	toTarget *= 55;
-	//}
-
-	//float desireAngle = atan2f(-target.X, target.Z) * 180 / 3.14;
-	//maya->setRotation(vector3df(0, desireAngle - 90, 0));
-
-
-	//if (dis > 0.0f) {
-
-	//	const float deceleracionTweaker = 0.3f;
-
-	//	float velocidad = dis / ((float) dec * deceleracionTweaker);
-	//	velocidad /= 5;
-	//	std::cout << "VEL: " << vel << std::endl;
-	//	std::cout << "VEL1: " << velocidad << std::endl;
-	//	std::cout << "Dis: " << dis << std::endl;
-
-
-	//	velocidad = fminf(velocidad, vel);
-
-	//	vecDecel = toTarget * velocidad / dis;
-
-	//	return vecDecel-vel;
-	//	//return vector3df(0, 0, 0);
-	//}
-	//std::cout << "fuera"<< std::endl;
 	return st;
+
+}
+
+void Enemigo::align(const vector3df target){
+
+
+	float targetRotation;
+	float timeTarget = 0.1;
+
+	float maxAngularAcceleration = MULTIVEL * 2.5;
+	float maxRotation = 135.0f;
+	float desireAngle = atan2f(-target.X, target.Z) * 180 / 3.14;
+	float rotationSize;
+	float rotation = desireAngle - st.orientacion;
+	rotationSize = abs(rotation);
+
+	if (rotationSize < 5.0f) //target radio
+	{
+		//deberia se nulo
+		targetRotation = 0.0f;
+	}
+
+	if (rotationSize > 40.0f) //slow radio
+	{
+		targetRotation = maxRotation;
+	}
+
+	else
+	{
+		targetRotation = maxRotation * rotationSize / 10.0f;
+	}
+
+
+	targetRotation *= rotation / rotationSize;
+
+
+
+	sto.angular = targetRotation - st.rotacion;
+	sto.angular = sto.angular /= timeTarget;
+
+	float angularAcceleration = abs(sto.angular);
+
+
+
+	//esto da la curva
+	if (angularAcceleration > maxAngularAcceleration)
+	{
+		sto.angular /= angularAcceleration;
+		sto.angular *= maxAngularAcceleration;
+	}
+
+	sto.angular = 0;
+	
+	maya->setRotation(vector3df(0, sto.angular, 0));
 
 }
 

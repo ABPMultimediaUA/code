@@ -146,6 +146,8 @@ public:
 
 	Kinematic arrive(const vector3df target);
 
+	void align(const vector3df target);
+
 	bool getVista();
 	void setVista(bool x);
 	bool getLider();

@@ -408,7 +408,7 @@ void CriaAlien::Patrullar() {
 
 		if (path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 30.0f) {
 
-		//	arrive(puntoFin->getPosicion(), rapido);
+			arrive(puntoFin->getPosicion());
 			//Mover(vectorUnitario);
 			if (path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 10.0f
 				|| path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 20.0f)
