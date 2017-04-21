@@ -53,7 +53,7 @@ class Flocking;
 #define CUERPOACUERPO 7
 #define FLOCKING 8
 
-#define MULTIVEL 10
+#define MULTIVEL 25
 //el enemigo deberia tener un estado que sea
 //siguiendo al lider o algo para aplicar el flocking
 

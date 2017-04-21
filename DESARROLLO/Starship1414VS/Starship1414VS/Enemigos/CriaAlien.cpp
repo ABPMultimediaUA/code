@@ -205,7 +205,7 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 	
 	//crear metodos para todos los estados
 
-	setPos(st.posicion);
+
 	st.update(sto, dt);
 
 	switch (estadoActual) {
@@ -502,9 +502,9 @@ void CriaAlien::BuscarWaypoint()
 
 		//vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
 
+		std::cout << "DISTANSIA QUE ME FUMO PARA LLEGAR AL NODO: " << path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) << std::endl;
 
-
-		if (path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) < 30.0f) {
+		if (path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) < 40.0f) {
 
 			//arrive(puntoIni->getPosicion(), rapido);
 			//Mover(vectorUnitario);

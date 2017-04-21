@@ -236,7 +236,7 @@ void LogicaDifusa::baseDeConocimiento()
 	if (resultadosDePos[1] > 0.0f && resultadosVidaEnemigo[3] > 0.0f) {
 
 		if (cqc > 0.0f) {
-			aux = min2valores(resultadosDePos[0], resultadosVidaEnemigo[3]);
+			aux = min2valores(resultadosDePos[1], resultadosVidaEnemigo[3]);
 			cqc = max2valores(cqc, aux);
 		}
 

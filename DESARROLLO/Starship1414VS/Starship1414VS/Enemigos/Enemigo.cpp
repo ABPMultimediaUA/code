@@ -119,7 +119,7 @@ Kinematic Enemigo::seek(const vector3df target)
 */
 
 	
-	float maxAcceleration = MULTIVEL * 5;
+	float maxAcceleration = MULTIVEL * 10;
 //	std::cout << "target  " << target.X << " " << target.Z << std::endl;
 	sto.linear = target - st.posicion;
 	//std::cout << "linear  " << sto.linear.X << " " << sto.linear.Z << std::endl;
