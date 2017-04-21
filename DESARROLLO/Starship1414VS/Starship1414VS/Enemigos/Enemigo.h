@@ -63,14 +63,6 @@ class Flocking;
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-enum Deceleracion
-{
-	rapido = 1,
-	normal = 2,
-	lento = 3
-};
-
-
 
 
 typedef struct
@@ -91,6 +83,7 @@ typedef struct
 		posicion += velocidad*dt;
 		orientacion += rotacion*dt;
 		posicion.Y = 10;
+		st.linear.Y = 10;
 		velocidad += st.linear*dt;
 		rotacion += st.angular*dt;
 
@@ -101,6 +94,8 @@ typedef struct
 		}
 
 		//std::cout <<"copon: "<< posicion.X << " " << posicion.Z << std::endl;
+
+
 	}
 
 } Kinematic;
@@ -149,7 +144,7 @@ public:
 
 	Kinematic seek(const vector3df target);
 
-	Kinematic arrive(const vector3df target, Deceleracion dec);
+	Kinematic arrive(const vector3df target);
 
 	bool getVista();
 	void setVista(bool x);

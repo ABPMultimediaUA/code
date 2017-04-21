@@ -406,12 +406,12 @@ void CriaAlien::Patrullar() {
 
 		//Mover(vectorUnitario);
 
-		if (path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 30.0f) {
+		if (path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 30.0f) {
 
 		//	arrive(puntoFin->getPosicion(), rapido);
 			//Mover(vectorUnitario);
-			if (path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 10.0f 
-				|| path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 20.0f)
+			if (path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 10.0f
+				|| path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 20.0f)
 			{
 
 				dir = -1;
@@ -485,7 +485,7 @@ void CriaAlien::BuscarWaypoint()
 	maya->getMaterial(0).EmissiveColor.set(0, 0, 200, 10);
 
 	if (puntoIni == nullptr) {
-		posNodo = path->buscarWaypointCercano(pos, waypoints->getNodos());
+		posNodo = path->buscarWaypointCercano(st.posicion, waypoints->getNodos());
 
 		if(posNodo != -1) {
 			puntoIni = waypoints->getNodoX(posNodo);
@@ -502,15 +502,19 @@ void CriaAlien::BuscarWaypoint()
 
 		//vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
 
+	//	std::cout << "DISTANSIA QUE ME FUMO PARA LLEGAR AL NODO: " << path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) << std::endl;
+
+		if (path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 50.0f) {
+
+			arrive(puntoIni->getPosicion());
 		std::cout << "DISTANSIA QUE ME FUMO PARA LLEGAR AL NODO: " << path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) << std::endl;
 
-		if (path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) < 40.0f) {
-
-			//arrive(puntoIni->getPosicion(), rapido);
 			//Mover(vectorUnitario);
-			if (path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) < 10.0f
-				|| path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) < 20.0f)
+			if (path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 10.0f
+				|| path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 20.0f
+				|| path->estoyEnElNodo(st.posicion, puntoIni->getPosicion()))
 			{
+		
 					estadoActual = PATRULLAR;
 
 					dir = -1;

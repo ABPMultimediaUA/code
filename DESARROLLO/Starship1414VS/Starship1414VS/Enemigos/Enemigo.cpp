@@ -93,12 +93,10 @@ void Enemigo::Mover()
 	
 
 	b2Vec2 vec;
-	//setPos(st.posicion);
 
 	vec.Set(st.velocidad.X, st.velocidad.Z);
 	entity->getCuerpo2D()->SetLinearVelocity(vec);
 	entity->getSombraE2D()->SetLinearVelocity(vec);
-	//setPos(st.posicion);
 	st.posicion.X = entity->getCuerpo2D()->GetPosition().x;
 	st.posicion.Z = entity->getCuerpo2D()->GetPosition().y;
 
@@ -136,7 +134,7 @@ Kinematic Enemigo::seek(const vector3df target)
 
 }
 
-Kinematic Enemigo::arrive(const vector3df target, Deceleracion dec) {
+Kinematic Enemigo::arrive(const vector3df target) {
 
 	vector3df direction;
 	float distance;
@@ -144,17 +142,22 @@ Kinematic Enemigo::arrive(const vector3df target, Deceleracion dec) {
 	vector3df targetVelocity;
 	float timeTarget = 0.1;
 	direction = target - st.posicion;
-	distance = direction.getLength();
-	float maxAcceleration = 2.5;
-	if (distance<5.0f)
+	//distance = direction.getLength();
+	distance = sqrtf(powf(direction.X, 2) + powf(direction.Z, 2));
+
+	float maxAcceleration = MULTIVEL * 10;
+
+	if (distance < 5.0f)
 	{
 		//deberia se nulo
+		targetSpeed = 0.0f;
 	}
 
-	if (distance>10.0f)
+	if (distance > 40.0f)
 	{
 		targetSpeed = 55;
 	}
+
 	else
 	{
 		targetSpeed = 55 * distance / 10.0f;
@@ -167,7 +170,12 @@ Kinematic Enemigo::arrive(const vector3df target, Deceleracion dec) {
 	sto.linear = targetVelocity - st.velocidad;
 	sto.linear = sto.linear /= timeTarget;
 
-	if (sto.linear.getLength()>maxAcceleration)
+	float distancia = sqrtf(powf(sto.linear.X, 2) + powf(sto.linear.Z, 2));
+
+	std::cout << "DISTANCIA SIN Y: " << distancia << std::endl;
+
+	//esto da la curva
+	if (distancia > maxAcceleration)
 	{
 		sto.linear=sto.linear.normalize();
 		sto.linear *= maxAcceleration;
@@ -175,7 +183,7 @@ Kinematic Enemigo::arrive(const vector3df target, Deceleracion dec) {
 
 	sto.angular = 0;
 
-	
+	Mover();
 
 	//if (distancia<5.0f)
 	//{
