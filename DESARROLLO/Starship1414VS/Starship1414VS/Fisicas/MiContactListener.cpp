@@ -353,7 +353,7 @@ void atacarJugador(Entity2D *pers, Entity2D *enemigo) {
 	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
 	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 
-	if (e->getVista() == false) {
+	//if (e->getVista() == false) {
 		float pesoX = powf(p->getPos().X - e->getPos().X, 2);
 		float pesoZ = powf(p->getPos().Z - e->getPos().Z, 2);
 		float peso = sqrtf((pesoX + pesoZ));
@@ -377,14 +377,14 @@ void atacarJugador(Entity2D *pers, Entity2D *enemigo) {
 		std::cout << "DISTANCIA: " << peso << std::endl;
 		std::cout << std::endl;
 
-	}
+	//}
 
 }
 
 void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 
-	if (e->getVista() == false) {
+	//if (e->getVista() == false) {
 		if (e->getNodoInicio() == nullptr || e->getNodoFin() == nullptr || e->getEstado() == 8) {
 			e->setEstado(0);
 		}
@@ -397,8 +397,14 @@ void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 			e->setEstado(5);
 		}
 
+		else if (e->getEstado() == 8) {
+			if (e->getNodoInicio() != nullptr) {
+				e->setEstado(1);
+			}
+		}
+
 		
-	}
+	//}
 
 	e->setTime(0.0f);
 }
@@ -524,6 +530,8 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				paredDetectada(entity2, true);
 			}
 
+
+			//colisiones con las distintas balas y las paredes = 1 y puertas = 2 de ID balaPlayer = 3 balaEne = 6
 			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 2 && f2->IsSensor() != true) {
 				entity1->setLive(false);
 
@@ -543,16 +551,20 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				entity2->setLive(false);
 			}
 
+
 			if((entity1->getIDEN() == 3 || entity1->getIDEN() == 6) && entity2->getIDEN() == 1) {
 				entity1->setLive(false);
 
 			}
+
 
 			else if ((entity2->getIDEN() == 3 || entity2->getIDEN() == 6) && entity1->getIDEN() == 1) {
 				entity2->setLive(false);
 
 			}
 
+
+			//bala de enemigo = 6 choca contra el jugador = 0
 
 			if (entity1->getIDEN() == 6 && entity2->getIDEN() == 0) {
 				quitarVidaJugador(entity2, entity1);
@@ -566,9 +578,17 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				entity2->setLive(false);
 			}
 
+			//el enemigo = 4 detecta al jugador = 0
+
 			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
 				std::cout << "A DISPARAR!" << std::endl;
 				atacarJugador(entity1, entity2);
+
+			}
+
+			else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 4 && f1->IsSensor() == true) {
+				std::cout << "A DISPARAR!" << std::endl;
+				atacarJugador(entity2, entity1);
 
 			}
 
@@ -587,6 +607,7 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				entity2->setLive(false);
 			}
 
+			//cuando la bala de enemigo = 6 choca contra el jugador = 0
 			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6) {
 				//entity2->setLive(false);
 				

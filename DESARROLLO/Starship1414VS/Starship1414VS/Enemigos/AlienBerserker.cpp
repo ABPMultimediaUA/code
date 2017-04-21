@@ -250,6 +250,7 @@ void AlienBerserker::CQC()
 
 	vectorUnitario = path->getVectorDeDireccion(pos, posPlayer);
 
+	seek(posPlayer);
 
 
 	if (path->estoyEnElNodo(pos, posPlayer)) {

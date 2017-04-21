@@ -71,7 +71,7 @@ void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, cons
 void LogicaDifusa::baseDeConocimiento()
 {
 	float aux;
-	int m_estado = getEstadoDeLaMoral();
+	int m_estado = getEstadoDeLaMoral(); //el estado de la moral se quedo por implementar
 
 
 	//accion escapar
@@ -264,11 +264,11 @@ void LogicaDifusa::desfusificador()
 	}
 
 	//se decide el estado que sera
-	//std::cout << "VALORES" << std::endl;
-	//std::cout << "ESCAPAR: " << escapar << std::endl;
-	//std::cout << "DISPARAR: " << disparar << std::endl;
-	//std::cout << "CQC: " << cqc << std::endl;
-	//std::cout << "/////////////////////" << std::endl;
+	std::cout << "VALORES" << std::endl;
+	std::cout << "ESCAPAR: " << escapar << std::endl;
+	std::cout << "DISPARAR: " << disparar << std::endl;
+	std::cout << "CQC: " << cqc << std::endl;
+	std::cout << "/////////////////////" << std::endl;
 
 }
 

@@ -93,11 +93,12 @@ void Enemigo::Mover()
 	
 
 	b2Vec2 vec;
+	//setPos(st.posicion);
 
-	vec.Set(st.posicion.X, st.posicion.Z);
+	vec.Set(st.velocidad.X, st.velocidad.Z);
 	entity->getCuerpo2D()->SetLinearVelocity(vec);
 	entity->getSombraE2D()->SetLinearVelocity(vec);
-
+	//setPos(st.posicion);
 	st.posicion.X = entity->getCuerpo2D()->GetPosition().x;
 	st.posicion.Z = entity->getCuerpo2D()->GetPosition().y;
 
@@ -118,10 +119,10 @@ Kinematic Enemigo::seek(const vector3df target)
 */
 
 	
-	float maxAcceleration = 10;
-	std::cout << "target  " << target.X << " " << target.Z << std::endl;
+	float maxAcceleration = MULTIVEL * 5;
+//	std::cout << "target  " << target.X << " " << target.Z << std::endl;
 	sto.linear = target - st.posicion;
-	std::cout << "linear  " << sto.linear.X << " " << sto.linear.Z << std::endl;
+	//std::cout << "linear  " << sto.linear.X << " " << sto.linear.Z << std::endl;
 	sto.linear = sto.linear.normalize();
 	sto.linear *= maxAcceleration;
 
@@ -273,6 +274,7 @@ vector3df Enemigo::getVectorVel()
 }
 
 void Enemigo::setPos(vector3df pos) {
+
     maya->setPosition(pos);
 }
 
@@ -432,18 +434,18 @@ void Enemigo::setPesoMaximoLogicaDifusa(float x)
 
 void Enemigo::iniLogicaDifusa()
 {
-	//std::cout << std::endl;
-	//std::cout << "ESTADO ANTES: " << std::endl;
-	//std::cout << estadoActual << std::endl;
-	//std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << "ESTADO ANTES: " << std::endl;
+	std::cout << estadoActual << std::endl;
+	std::cout << std::endl;
 	
 	logica->fusificador(vida, st.posicion, posJugador, moral, resistencia);
 	estadoActual = logica->getEstadoDecidido();
 
-	//std::cout << std::endl;
-	//std::cout << "ESTADO DESPUES: " << std::endl;
-	//std::cout << estadoActual << std::endl;
-	//std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << "ESTADO DESPUES: " << std::endl;
+	std::cout << estadoActual << std::endl;
+	std::cout << std::endl;
 }
 
 

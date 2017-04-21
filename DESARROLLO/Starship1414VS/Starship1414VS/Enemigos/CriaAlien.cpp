@@ -205,7 +205,8 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 	
 	//crear metodos para todos los estados
 
-	st.update(sto,dt);
+	setPos(st.posicion);
+	st.update(sto, dt);
 
 	switch (estadoActual) {
 
@@ -214,6 +215,8 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
         case BUSCARPUNTO: 
           
 			BuscarWaypoint();
+			//st.update(sto, dt);
+
 				
             break;
 
@@ -226,6 +229,8 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 				estadoActual = DESCANSAR;
 
 			}
+		//	st.update(sto, dt);
+
 
             break;
 
@@ -267,17 +272,23 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 		case CUERPOACUERPO:
 
 			CQC();
+			//st.update(sto, dt);
+
 
 			break;
 
 		case FLOCKING:
 
 			emepzarFlocking(dt);
+			//st.update(sto, dt);
+
 
 			break;
 
     }
 
+	setPos(st.posicion);
+	entity->getSombraE2D();
 	this->actualizarLista();
 	GVida->setPosition(st.posicion);
 	RVida->setPosition(vector3df(st.posicion.X - 8, st.posicion.Y, st.posicion.Z));
@@ -395,11 +406,9 @@ void CriaAlien::Patrullar() {
 
 		//Mover(vectorUnitario);
 
-		if (puntoFin != nullptr)
-		{
 		if (path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 30.0f) {
 
-	//	arrive(puntoFin->getPosicion(), rapido);
+		//	arrive(puntoFin->getPosicion(), rapido);
 			//Mover(vectorUnitario);
 			if (path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 10.0f 
 				|| path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 20.0f)
@@ -417,7 +426,7 @@ void CriaAlien::Patrullar() {
 		else {
 			seek(puntoFin->getPosicion());
 		}
-	}
+	
 
 		//if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
 
@@ -492,16 +501,34 @@ void CriaAlien::BuscarWaypoint()
 	if (puntoIni != nullptr) {
 
 		//vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
-		seek(puntoIni->getPosicion());
 
 
-		if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
-			estadoActual = PATRULLAR;
 
-			dir = -1;
-			this->setVelocidad();
+		if (path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) < 30.0f) {
 
+			//arrive(puntoIni->getPosicion(), rapido);
+			//Mover(vectorUnitario);
+			if (path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) < 10.0f
+				|| path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) < 20.0f)
+			{
+					estadoActual = PATRULLAR;
+
+					dir = -1;
+					this->setVelocidad();
+	
+			}
 		}
+
+		else {
+			seek(puntoIni->getPosicion());
+		}
+		//if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
+		//	estadoActual = PATRULLAR;
+
+		//	dir = -1;
+		//	this->setVelocidad();
+
+		//}
 	}
 }
 

@@ -53,6 +53,7 @@ class Flocking;
 #define CUERPOACUERPO 7
 #define FLOCKING 8
 
+#define MULTIVEL 10
 //el enemigo deberia tener un estado que sea
 //siguiendo al lider o algo para aplicar el flocking
 
@@ -89,17 +90,17 @@ typedef struct
 	{
 		posicion += velocidad*dt;
 		orientacion += rotacion*dt;
-
+		posicion.Y = 10;
 		velocidad += st.linear*dt;
 		rotacion += st.angular*dt;
 
 		if (velocidad.getLength() > 5)
 		{
 			velocidad = velocidad.normalize();
-			velocidad *= 5;
+			velocidad *= MULTIVEL;
 		}
 
-		std::cout <<"copon: "<< posicion.X << " " << posicion.Z << std::endl;
+		//std::cout <<"copon: "<< posicion.X << " " << posicion.Z << std::endl;
 	}
 
 } Kinematic;

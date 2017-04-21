@@ -49,7 +49,7 @@ Entity2D::Entity2D(b2World * world)
 	body->GetFixtureList()->SetFilterData(filtro);
 
 
-	iden = 0;
+	iden = -1;
 	objeto3D = 0;
 
 }
