@@ -1,7 +1,5 @@
-﻿  CriaAlien.cpp
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(184): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(191): warning C4244: 'argumento': conversión de 'int' a 'irr::f32'; posible pérdida de datos
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(544): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\criaalien.cpp(548): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+﻿  Enemigo.cpp
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(127): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(143): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   Starship1414VS.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
   Starship1414VS.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
