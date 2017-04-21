@@ -42,6 +42,13 @@ CriaAlien::CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, 
 	rot = maya->getRotation();
 	vida = 100.0f;
 
+	st.posicion = posicion;
+	st.orientacion = 0;
+	st.rotacion = 0;
+	st.velocidad = vector3df(0, 0, 0);
+
+	sto.angular = 0;
+	sto.linear = vector3df(0, 0, 0);
 
 	irr::core::stringw wideString(vida);
 	GVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), wideString.c_str(), video::SColor(255, 255, 0, 0), 0);
@@ -198,6 +205,8 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 	
 	//crear metodos para todos los estados
 
+	st.update(sto,dt);
+
 	switch (estadoActual) {
 
 		
@@ -270,8 +279,8 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
     }
 
 	this->actualizarLista();
-	GVida->setPosition(pos);
-	RVida->setPosition(vector3df(pos.X - 8, pos.Y, pos.Z));
+	GVida->setPosition(st.posicion);
+	RVida->setPosition(vector3df(st.posicion.X - 8, st.posicion.Y, st.posicion.Z));
 
 
 }
@@ -288,15 +297,15 @@ void CriaAlien::emepzarFlocking(f32 dt) {
 	 if (time < 1.0) {
 
 		u = floc->cohesion(entity);
-		Mover(u);
+
 	 
 	 }
 
 	 else {
 		u = floc->separacion(entity);
-		Mover(u);
+
 		u = floc->alineacion(entity);
-		Mover(u);
+
 	
 	 }
 
@@ -329,9 +338,7 @@ void CriaAlien::CQC() {
 	//this->Mover(dir);
 
 	//vectorUnitario = path->getVectorDeDireccion(pos, posPlayer);
-	vectorUnitario = seek(posPlayer);
-
-	Mover(vectorUnitario);
+	seek(posPlayer);
 
 
 	if (path->estoyEnElNodo(pos, posPlayer)) {
@@ -392,7 +399,7 @@ void CriaAlien::Patrullar() {
 		{
 		if (path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 30.0f) {
 
-			vectorUnitario = arrive(puntoFin->getPosicion(), rapido);
+	//	arrive(puntoFin->getPosicion(), rapido);
 			//Mover(vectorUnitario);
 			if (path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 10.0f 
 				|| path->distanciaEntreElNodoYEne(pos, puntoFin->getPosicion()) < 20.0f)
@@ -408,8 +415,7 @@ void CriaAlien::Patrullar() {
 		}
 
 		else {
-
-			vectorUnitario = seek(puntoFin->getPosicion());
+			seek(puntoFin->getPosicion());
 		}
 	}
 
@@ -433,7 +439,7 @@ void CriaAlien::Patrullar() {
 	/*std::cout << std::endl;
 	std::cout << "PATRULLO PREMO!" << std::endl;
 	std::cout << std::endl;*/
-	Mover(vectorUnitario);
+
 
 }
 
@@ -486,9 +492,8 @@ void CriaAlien::BuscarWaypoint()
 	if (puntoIni != nullptr) {
 
 		//vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
-		vectorUnitario = seek(puntoIni->getPosicion());
+		seek(puntoIni->getPosicion());
 
-		Mover(vectorUnitario);
 
 		if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
 			estadoActual = PATRULLAR;

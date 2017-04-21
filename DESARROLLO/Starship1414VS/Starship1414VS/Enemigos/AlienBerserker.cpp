@@ -188,7 +188,7 @@ void AlienBerserker::Patrullar()
 		//this->Mover(dir);
 		vectorUnitario = path->getVectorDeDireccion(pos, puntoFin->getPosicion());
 
-		Mover(vectorUnitario);
+		
 		if (path->estoyEnElNodo(pos, puntoFin->getPosicion())) {
 			dir = -1;
 			this->setVelocidad();
@@ -249,7 +249,7 @@ void AlienBerserker::CQC()
 	//this->Mover(dir);
 
 	vectorUnitario = path->getVectorDeDireccion(pos, posPlayer);
-	Mover(vectorUnitario);
+
 
 
 	if (path->estoyEnElNodo(pos, posPlayer)) {
@@ -296,7 +296,6 @@ void AlienBerserker::BuscarWaypoint()
 		//	this->Mover(dir);
 		vectorUnitario = path->getVectorDeDireccion(pos, puntoIni->getPosicion());
 
-		Mover(vectorUnitario);
 
 		if (path->estoyEnElNodo(pos, puntoIni->getPosicion())) {
 			estadoActual = PATRULLAR;

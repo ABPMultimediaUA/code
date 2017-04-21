@@ -69,6 +69,41 @@ enum Deceleracion
 	lento = 3
 };
 
+
+
+
+typedef struct
+{
+	vector3df linear;
+	float angular;
+} Steering;
+
+typedef struct
+{
+	vector3df posicion;
+	float orientacion;
+	vector3df velocidad;
+	float rotacion;
+
+	void update(Steering st, f32 dt)
+	{
+		posicion += velocidad*dt;
+		orientacion += rotacion*dt;
+
+		velocidad += st.linear*dt;
+		rotacion += st.angular*dt;
+
+		if (velocidad.getLength() > 5)
+		{
+			velocidad = velocidad.normalize();
+			velocidad *= 5;
+		}
+
+		std::cout <<"copon: "<< posicion.X << " " << posicion.Z << std::endl;
+	}
+
+} Kinematic;
+
 class Enemigo {
 
 public:
@@ -77,7 +112,7 @@ public:
 	virtual ~Enemigo();
 
 	virtual void Update(f32 dt);
-	void Mover(vector3df u);
+	void Mover();
 	void setVelocidad();
 	virtual void Patrullar();
 	virtual void Atacar(f32 dt);
@@ -111,9 +146,9 @@ public:
 	void setPesoMaximoLogicaDifusa(float x);
 	void iniLogicaDifusa();
 
-	vector3df seek(const vector3df target);
+	Kinematic seek(const vector3df target);
 
-	vector3df arrive(const vector3df target, Deceleracion dec);
+	Kinematic arrive(const vector3df target, Deceleracion dec);
 
 	bool getVista();
 	void setVista(bool x);
@@ -150,7 +185,8 @@ protected:
 	float moral;
 	float resistencia;
 	bool vista;
-
+	Kinematic st;
+	Steering sto;
 
 	std::list<Bala*> listaBalas;
 	std::vector<Nodo*> recorrido; //maximo 4 nodos

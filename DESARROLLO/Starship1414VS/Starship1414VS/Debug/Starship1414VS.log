@@ -1,5 +1,6 @@
 ﻿  Enemigo.cpp
-c:\users\hector\desktop\abp\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(101): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-c:\users\hector\desktop\abp\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(143): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-  Starship1414VS.vcxproj -> C:\Users\Hector\Desktop\ABP\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
-  Starship1414VS.vcxproj -> C:\Users\Hector\Desktop\ABP\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(128): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+d:\repositorio\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(144): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+cl : Línea de comandos warning D9028: error de recompilación mínimo, revirtiendo a la compilación normal
+  Starship1414VS.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
+  Starship1414VS.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
