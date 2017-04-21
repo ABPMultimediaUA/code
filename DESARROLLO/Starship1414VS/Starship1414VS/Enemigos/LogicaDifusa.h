@@ -29,7 +29,8 @@ public:
 
 private:
 
-	
+	void mostrarArrays();
+
 	float vidaMax;
 	float disMax;
 	float moralMax;

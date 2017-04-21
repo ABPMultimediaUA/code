@@ -523,11 +523,11 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			
 			//cuando el sensor de vista detecta una pared o puerta
 			if (entity1->getIDEN() == 4 && f1->IsSensor() && (entity2->getIDEN() == 1 || entity2->getIDEN() == 2)) {
-				paredDetectada(entity1, true);
+				//paredDetectada(entity1, true);
 			}
 
 			else if (entity2->getIDEN() == 4 && f2->IsSensor() && (entity1->getIDEN() == 1 || entity1->getIDEN() == 2)) {
-				paredDetectada(entity2, true);
+				//paredDetectada(entity2, true);
 			}
 
 
