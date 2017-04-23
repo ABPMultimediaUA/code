@@ -436,27 +436,52 @@ void paredDetectada(Entity2D *ene, bool x) {
 
 void empezarFlocking(Entity2D *e1, Entity2D *e2) {
 
-
-
 	Enemigo *ene1 = static_cast<Enemigo*>(e1->getObjeto3D());
 	Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
 
 	if (ene1->getLider()) {
-		ene2->setEstado(8);
-		ene2->setGrupoFlocking(e1);
-		ene2->setGrupoFlocking(e2);
+	//	ene2->setEstado(8);
+
 	}
 
 	else if(ene2->getLider()) {
-		ene1->setEstado(8);
-		ene1->setGrupoFlocking(e1);
-		ene1->setGrupoFlocking(e2);
+		//ene1->setEstado(8);
+	
 
 	}
 
+		ene1->setGrupoFlocking(e1);
+		ene1->setGrupoFlocking(e2);
+		ene2->setGrupoFlocking(e1);
+		ene2->setGrupoFlocking(e2);
+
+}
+
+
+void eliminarEntityDelVecindario(Entity2D *e1, Entity2D *e2) {
+
+	Enemigo *ene1 = static_cast<Enemigo*>(e1->getObjeto3D());
+	Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
+
+
+	ene1->deleteEntity(e1);
+	ene1->deleteEntity(e2);
+	ene2->deleteEntity(e1);
+	ene2->deleteEntity(e2);
 
 
 }
+
+
+void evitarColisionEntreEnemigos(Entity2D *e1, Entity2D *e2) {
+
+	Enemigo *ene1 = static_cast<Enemigo*>(e1->getObjeto3D());
+	Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
+
+	ene1->collisionAvoidance(ene2);
+	//ene1->Mover();
+}
+
 
 void MiContactListener::BeginContact(b2Contact* contact) {
 	//std::cout<<""<<std::endl;
@@ -512,12 +537,16 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			//tema flocking
 
-			if ((entity1->getIDEN() == 4 && f1->IsSensor()) && entity2->getIDEN() == 4 && !f2->IsSensor() ) {
+			if (entity1->getIDEN() == 4 && f1->IsSensor() && entity2->getIDEN() == 4 && !f2->IsSensor() ) {
 				empezarFlocking(entity1, entity2);
+				evitarColisionEntreEnemigos(entity1, entity2);
+				
 			}
 
-			else if ((entity2->getIDEN() == 4 && f2->IsSensor()) && entity1->getIDEN() == 4 && !f1->IsSensor()) {
+			else if (entity2->getIDEN() == 4 && f2->IsSensor() && entity1->getIDEN() == 4 && !f1->IsSensor()) {
 				empezarFlocking(entity2, entity1);
+				evitarColisionEntreEnemigos(entity2, entity1);
+
 
 			}
 			
@@ -720,6 +749,16 @@ void MiContactListener::EndContact(b2Contact* contact) {
 			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
 				std::cout << "ADIOS 1" << std::endl;
 				gestionarCambioDeEstadoEnemigo(entity2);
+
+			}
+
+
+			if ((entity1->getIDEN() == 4 && f1->IsSensor()) && entity2->getIDEN() == 4 && !f2->IsSensor()) {
+				eliminarEntityDelVecindario(entity1, entity2);
+			}
+
+			else if ((entity2->getIDEN() == 4 && f2->IsSensor()) && entity1->getIDEN() == 4 && !f1->IsSensor()) {
+				eliminarEntityDelVecindario(entity2, entity1);
 
 			}
 

@@ -127,7 +127,10 @@ Kinematic Enemigo::seek(const vector3df target)
 	float desireAngle = atan2f(-target.X, target.Z) * 180 / 3.14;
 	maya->setRotation(vector3df(0, desireAngle - 90, 0));
 
+	align(target);
+
 	sto.angular = 0;
+	
 	Mover();
 
 	return st;
@@ -172,7 +175,7 @@ Kinematic Enemigo::arrive(const vector3df target) {
 
 	float distancia = sqrtf(powf(sto.linear.X, 2) + powf(sto.linear.Z, 2));
 
-	std::cout << "DISTANCIA SIN Y: " << distancia << std::endl;
+	//std::cout << "DISTANCIA SIN Y: " << distancia << std::endl;
 
 	//esto da la curva
 	if (distancia > maxAcceleration)
@@ -238,11 +241,80 @@ void Enemigo::align(const vector3df target){
 		sto.angular *= maxAngularAcceleration;
 	}
 
-	sto.angular = 0;
+	//sto.linear = 0;
 	
 	maya->setRotation(vector3df(0, sto.angular, 0));
 
 }
+
+void Enemigo::collisionAvoidance(Enemigo *e) {
+
+	
+	float maxAcceleration = MULTIVEL * 2.5;
+	float radio = 5.0f;
+	float distance;
+	float minSeparation;
+	vector3df posRel = e->st.posicion - this->st.posicion;
+	vector3df velRel = e->st.velocidad - this->st.velocidad;
+
+	float speedRel;
+
+	float x = powf(velRel.X, 2);
+	float y = powf(velRel.Z, 2);
+
+	speedRel = sqrtf(x + y);
+
+	posRel.Y = 10;
+	velRel.Y = 10;
+
+	float time = (posRel.getLength() * velRel.getLength()) / (speedRel * speedRel);
+
+	std::cout << "TIME: " << time << std::endl;
+
+
+	x = powf(posRel.X, 2);
+	y = powf(posRel.Z, 2);
+
+	distance = sqrtf(x + y);
+
+	minSeparation = abs(distance - speedRel * time);
+	std::cout << "MINSEP: " << minSeparation << std::endl;
+	std::cout << "RADIO: " << 2 * radio << std::endl;
+
+
+	if (minSeparation > 2 * radio) {
+
+		std::cout << "ENTRO" << std::endl;
+		if (minSeparation >= 0 || distance > 2 * radio) {
+
+			std::cout << "ENTRO" << std::endl;
+
+			posRel = posRel + velRel * time;
+
+			std::cout << "POSREL" << std::endl;
+			std::cout << "X: " << posRel.X << std::endl;
+			std::cout << "Y: " << posRel.Y << std::endl;
+			std::cout << "Z: " << posRel.Z << std::endl;
+
+
+
+		}
+
+		posRel = posRel.normalize();
+
+		//this->sto.linear = posRel * maxAcceleration;
+		sto.linear = vector3df(0, 0, 0);
+
+		std::cout << sto.linear.X << std::endl;
+		std::cout << sto.linear.Y << std::endl;
+		std::cout << sto.linear.Z << std::endl;
+
+
+		/*this->Mover();*/
+	}
+
+}
+
 
 vector3df Enemigo::getPos() {
     return pos;
@@ -448,4 +520,8 @@ bool Enemigo::getLider()
 
 void Enemigo::setGrupoFlocking(Entity2D *e) {
 	floc->addEntity(e);
+}
+
+void Enemigo::deleteEntity(Entity2D *e) {
+	floc->removeEntity(e);
 }

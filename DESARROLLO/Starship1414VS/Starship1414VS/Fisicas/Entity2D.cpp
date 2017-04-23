@@ -346,7 +346,7 @@ float Entity2D::rayCast(b2Vec2 inicio, b2Vec2 fin) {
     float resultado = 0;
     float rayo1, rayo2 = 0;
 
-
+	
     rayo1 = rayCasting(inicio, fin);
 
 

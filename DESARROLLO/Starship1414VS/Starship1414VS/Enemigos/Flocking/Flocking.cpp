@@ -142,6 +142,8 @@ void Flocking::removeEntity(Entity2D * e)
 
 }
 
+
+
 vector3df Flocking::media(vector3df v, int cont)
 {
 

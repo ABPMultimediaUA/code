@@ -148,11 +148,16 @@ public:
 
 	void align(const vector3df target);
 
+	void collisionAvoidance(Enemigo * e);
+
+
 	bool getVista();
 	void setVista(bool x);
 	bool getLider();
 
 	void setGrupoFlocking(Entity2D * e);
+
+	void deleteEntity(Entity2D * e);
 
 
 protected:

@@ -507,7 +507,7 @@ void CriaAlien::BuscarWaypoint()
 		if (path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 50.0f) {
 
 			arrive(puntoIni->getPosicion());
-		std::cout << "DISTANSIA QUE ME FUMO PARA LLEGAR AL NODO: " << path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) << std::endl;
+		//std::cout << "DISTANSIA QUE ME FUMO PARA LLEGAR AL NODO: " << path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) << std::endl;
 
 			//Mover(vectorUnitario);
 			if (path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 10.0f
