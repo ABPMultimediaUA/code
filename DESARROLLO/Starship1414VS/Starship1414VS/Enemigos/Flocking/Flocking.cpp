@@ -116,6 +116,105 @@ vector3df Flocking::separacion(Entity2D * entity)
 	
 }
 
+vector3df Flocking::colisionAvoidance(Entity2D *e) {
+
+	float maxAcceleration = MULTIVEL * 2.5;
+	float radio = 5.0f;
+	float distance;
+	float minSeparation;
+
+	vector3df posE(e->getCuerpo2D()->GetPosition().x,
+		0,
+		e->getCuerpo2D()->GetPosition().y);
+
+	vector3df velE(e->getCuerpo2D()->GetLinearVelocity().x,
+		0,
+		e->getCuerpo2D()->GetLinearVelocity().y);
+
+	vector3df pos, vel;
+	/*vector3df posRel = e->st.posicion - this->st.posicion;
+	vector3df velRel = e->st.velocidad - this->st.velocidad;*/
+
+	vector3df posRel(0,0,0);
+	vector3df velRel;
+
+	float speedRel;
+
+	for (std::size_t i = 0; i < vecindario.size(); i++) {
+
+		if (vecindario[i] != e) {
+
+			pos.set(vecindario.at(i)->getCuerpo2D()->GetPosition().x,
+				0,
+				vecindario.at(i)->getCuerpo2D()->GetPosition().y);
+
+
+			vel.set(vecindario.at(i)->getCuerpo2D()->GetLinearVelocity().x,
+				0,
+				vecindario.at(i)->getCuerpo2D()->GetLinearVelocity().y);
+
+			posRel = pos - posE;
+			velRel = vel - velE;
+
+
+			float x = powf(velRel.X, 2);
+			float y = powf(velRel.Z, 2);
+
+			speedRel = sqrtf(x + y);
+
+			posRel.Y = 10;
+			velRel.Y = 10;
+
+			float time = (posRel.getLength() * velRel.getLength()) / (speedRel * speedRel);
+
+			std::cout << "TIME: " << time << std::endl;
+
+
+			x = powf(posRel.X, 2);
+			y = powf(posRel.Z, 2);
+
+			distance = sqrtf(x + y);
+
+			minSeparation = abs(distance - speedRel * time);
+			std::cout << "MINSEP: " << minSeparation << std::endl;
+			std::cout << "RADIO: " << 2 * radio << std::endl;
+
+
+			if (minSeparation > 2 * radio) {
+
+				std::cout << "ENTRO" << std::endl;
+				if (minSeparation >= 0 || distance > 2 * radio) {
+
+					std::cout << "ENTRO" << std::endl;
+
+					posRel = posRel + velRel * time;
+
+					std::cout << "POSREL" << std::endl;
+					std::cout << "X: " << posRel.X << std::endl;
+					std::cout << "Y: " << posRel.Y << std::endl;
+					std::cout << "Z: " << posRel.Z << std::endl;
+
+
+
+				}
+
+				posRel = posRel.normalize();
+
+				//this->sto.linear = posRel * maxAcceleration;
+
+
+
+				//return posRel;
+
+
+			}
+		}
+	
+	}
+
+	return posRel;
+}
+
 bool Flocking::getLider()
 {
 	return lider;
@@ -141,7 +240,6 @@ void Flocking::removeEntity(Entity2D * e)
 	}
 
 }
-
 
 
 vector3df Flocking::media(vector3df v, int cont)

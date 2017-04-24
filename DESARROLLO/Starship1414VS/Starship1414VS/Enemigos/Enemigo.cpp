@@ -247,72 +247,12 @@ void Enemigo::align(const vector3df target){
 
 }
 
-void Enemigo::collisionAvoidance(Enemigo *e) {
+void Enemigo::collisionAvoidance() {
 
-	
-	float maxAcceleration = MULTIVEL * 2.5;
-	float radio = 5.0f;
-	float distance;
-	float minSeparation;
-	vector3df posRel = e->st.posicion - this->st.posicion;
-	vector3df velRel = e->st.velocidad - this->st.velocidad;
+	vector3df vecU = floc->colisionAvoidance(entity);
 
-	float speedRel;
-
-	float x = powf(velRel.X, 2);
-	float y = powf(velRel.Z, 2);
-
-	speedRel = sqrtf(x + y);
-
-	posRel.Y = 10;
-	velRel.Y = 10;
-
-	float time = (posRel.getLength() * velRel.getLength()) / (speedRel * speedRel);
-
-	std::cout << "TIME: " << time << std::endl;
-
-
-	x = powf(posRel.X, 2);
-	y = powf(posRel.Z, 2);
-
-	distance = sqrtf(x + y);
-
-	minSeparation = abs(distance - speedRel * time);
-	std::cout << "MINSEP: " << minSeparation << std::endl;
-	std::cout << "RADIO: " << 2 * radio << std::endl;
-
-
-	if (minSeparation > 2 * radio) {
-
-		std::cout << "ENTRO" << std::endl;
-		if (minSeparation >= 0 || distance > 2 * radio) {
-
-			std::cout << "ENTRO" << std::endl;
-
-			posRel = posRel + velRel * time;
-
-			std::cout << "POSREL" << std::endl;
-			std::cout << "X: " << posRel.X << std::endl;
-			std::cout << "Y: " << posRel.Y << std::endl;
-			std::cout << "Z: " << posRel.Z << std::endl;
-
-
-
-		}
-
-		posRel = posRel.normalize();
-
-		//this->sto.linear = posRel * maxAcceleration;
-		sto.linear = vector3df(0, 0, 0);
-
-		std::cout << sto.linear.X << std::endl;
-		std::cout << sto.linear.Y << std::endl;
-		std::cout << sto.linear.Z << std::endl;
-
-
-		/*this->Mover();*/
-	}
-
+	sto.linear = vector3df(0, 0, 0);
+	/*this->Mover();*/
 }
 
 

@@ -148,7 +148,7 @@ public:
 
 	void align(const vector3df target);
 
-	void collisionAvoidance(Enemigo * e);
+	void collisionAvoidance();
 
 
 	bool getVista();

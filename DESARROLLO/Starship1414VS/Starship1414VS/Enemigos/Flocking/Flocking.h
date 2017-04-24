@@ -28,6 +28,7 @@ public:
 	vector3df cohesion(Entity2D *entity); //1º
 	vector3df alineacion(Entity2D *entity); //3º
 	vector3df separacion(Entity2D *entity); //2º
+	vector3df colisionAvoidance(Entity2D * e);
 	bool getLider();
 	void setLider(bool x);
 	void addEntity(Entity2D *e);
