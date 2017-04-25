@@ -452,8 +452,13 @@ void empezarFlocking(Entity2D *e1, Entity2D *e2) {
 
 		ene1->setGrupoFlocking(e1);
 		ene1->setGrupoFlocking(e2);
-		ene2->setGrupoFlocking(e1);
+
 		ene2->setGrupoFlocking(e2);
+		ene2->setGrupoFlocking(e1);
+
+		ene1->setVista(true);
+		ene2->setVista(true);
+
 
 }
 
@@ -463,12 +468,16 @@ void eliminarEntityDelVecindario(Entity2D *e1, Entity2D *e2) {
 	Enemigo *ene1 = static_cast<Enemigo*>(e1->getObjeto3D());
 	Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
 
+	std::cout << "ME MARCHO" << std::endl;
 
 	ene1->deleteEntity(e1);
 	ene1->deleteEntity(e2);
-	ene2->deleteEntity(e1);
+	
 	ene2->deleteEntity(e2);
+	ene2->deleteEntity(e1);
 
+	ene1->setVista(false);
+	ene2->setVista(false);
 
 }
 
@@ -478,7 +487,7 @@ void evitarColisionEntreEnemigos(Entity2D *e1, Entity2D *e2) {
 	Enemigo *ene1 = static_cast<Enemigo*>(e1->getObjeto3D());
 	Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
 
-	ene1->collisionAvoidance(ene2);
+	//ene1->collisionAvoidance(ene2);
 	//ene1->Mover();
 }
 
@@ -552,11 +561,11 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			
 			//cuando el sensor de vista detecta una pared o puerta
 			if (entity1->getIDEN() == 4 && f1->IsSensor() && (entity2->getIDEN() == 1 || entity2->getIDEN() == 2)) {
-				//paredDetectada(entity1, true);
+				paredDetectada(entity1, true);
 			}
 
 			else if (entity2->getIDEN() == 4 && f2->IsSensor() && (entity1->getIDEN() == 1 || entity1->getIDEN() == 2)) {
-				//paredDetectada(entity2, true);
+				paredDetectada(entity2, true);
 			}
 
 
@@ -753,11 +762,11 @@ void MiContactListener::EndContact(b2Contact* contact) {
 			}
 
 
-			if ((entity1->getIDEN() == 4 && f1->IsSensor()) && entity2->getIDEN() == 4 && !f2->IsSensor()) {
+			if (entity1->getIDEN() == 4 && f1->IsSensor() && entity2->getIDEN() == 4 && !f2->IsSensor()) {
 				eliminarEntityDelVecindario(entity1, entity2);
 			}
 
-			else if ((entity2->getIDEN() == 4 && f2->IsSensor()) && entity1->getIDEN() == 4 && !f1->IsSensor()) {
+			else if (entity2->getIDEN() == 4 && f2->IsSensor() && entity1->getIDEN() == 4 && !f1->IsSensor()) {
 				eliminarEntityDelVecindario(entity2, entity1);
 
 			}

@@ -204,9 +204,15 @@ void CriaAlien::setLider(bool c) {
 void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
 	
 	//crear metodos para todos los estados
+	if (vista == true) {
+		floc->colisionAvoidance(entity);
 
+	}
 
 	st.update(sto, dt);
+	
+
+
 
 	switch (estadoActual) {
 
@@ -368,11 +374,12 @@ void CriaAlien::CQC() {
 
 }
 
-
-
 void CriaAlien::Patrullar() {
 
 	maya->getMaterial(0).EmissiveColor.set(0, 15, 0, 200);
+
+
+
 	if (puntoFin == nullptr) {
 	
 		posNodo = path->buscarWaypointMasCorto(posNodo);

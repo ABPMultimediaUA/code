@@ -247,12 +247,19 @@ void Enemigo::align(const vector3df target){
 
 }
 
-void Enemigo::collisionAvoidance() {
+void Enemigo::collisionAvoidance(vector3df vecU) {
 
-	vector3df vecU = floc->colisionAvoidance(entity);
+	float maxAcceleration = MULTIVEL * 0.5f;
 
-	sto.linear = vector3df(0, 0, 0);
-	/*this->Mover();*/
+
+	sto.linear = vecU * maxAcceleration;
+	std::cout<<"--> "<< sto.linear.X<<" "<< sto.linear.Z<<std::endl;
+	Mover();
+}
+
+void Enemigo::obstacleAvoidance()
+{
+
 }
 
 

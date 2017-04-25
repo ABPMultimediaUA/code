@@ -116,22 +116,32 @@ vector3df Flocking::separacion(Entity2D * entity)
 	
 }
 
-vector3df Flocking::colisionAvoidance(Entity2D *e) {
+void Flocking::colisionAvoidance(Entity2D *e) {
 
-	float maxAcceleration = MULTIVEL * 2.5;
 	float radio = 5.0f;
 	float distance;
 	float minSeparation;
+	float shortestTime = INT_MAX;
 
-	vector3df posE(e->getCuerpo2D()->GetPosition().x,
-		0,
-		e->getCuerpo2D()->GetPosition().y);
+	Entity2D *firstEntity = nullptr;
+	float fisrtMinSeparation = -1.0f;
+	float fisrtDistance;
+	vector3df fisrtRelPos, fisrtRelVel;
 
-	vector3df velE(e->getCuerpo2D()->GetLinearVelocity().x,
-		0,
-		e->getCuerpo2D()->GetLinearVelocity().y);
 
+		vector3df posE(e->getCuerpo2D()->GetPosition().x,
+			0,
+			e->getCuerpo2D()->GetPosition().y);
+
+		vector3df velE(e->getCuerpo2D()->GetLinearVelocity().x,
+			0,
+			e->getCuerpo2D()->GetLinearVelocity().y);
+	
 	vector3df pos, vel;
+	std::cout << "VEL-E" << std::endl;
+	std::cout << "X: " << velE.X<< std::endl;
+	std::cout << "Z: " << velE.Z <<std::endl;
+
 	/*vector3df posRel = e->st.posicion - this->st.posicion;
 	vector3df velRel = e->st.velocidad - this->st.velocidad;*/
 
@@ -142,7 +152,9 @@ vector3df Flocking::colisionAvoidance(Entity2D *e) {
 
 	for (std::size_t i = 0; i < vecindario.size(); i++) {
 
-		if (vecindario[i] != e) {
+		if (vecindario[i] != e && vecindario[i]!=nullptr ) {
+
+
 
 			pos.set(vecindario.at(i)->getCuerpo2D()->GetPosition().x,
 				0,
@@ -153,6 +165,11 @@ vector3df Flocking::colisionAvoidance(Entity2D *e) {
 				0,
 				vecindario.at(i)->getCuerpo2D()->GetLinearVelocity().y);
 
+
+			std::cout << "----VEL" << std::endl;
+			std::cout << "X: " << vel.X << std::endl;
+			std::cout << "Z: " << vel.Z << std::endl;
+
 			posRel = pos - posE;
 			velRel = vel - velE;
 
@@ -162,57 +179,90 @@ vector3df Flocking::colisionAvoidance(Entity2D *e) {
 
 			speedRel = sqrtf(x + y);
 
-			posRel.Y = 10;
-			velRel.Y = 10;
 
 			float time = (posRel.getLength() * velRel.getLength()) / (speedRel * speedRel);
 
 			std::cout << "TIME: " << time << std::endl;
-
+			std::cout << "shortestTime: " << shortestTime << std::endl;
 
 			x = powf(posRel.X, 2);
 			y = powf(posRel.Z, 2);
 
 			distance = sqrtf(x + y);
 
-			minSeparation = abs(distance - speedRel * time);
+			minSeparation = abs( distance - speedRel * shortestTime);
 			std::cout << "MINSEP: " << minSeparation << std::endl;
 			std::cout << "RADIO: " << 2 * radio << std::endl;
 
 
 			if (minSeparation > 2 * radio) {
 
-				std::cout << "ENTRO" << std::endl;
-				if (minSeparation >= 0 || distance > 2 * radio) {
+				if (time > 0.0f && time < shortestTime) {
+					shortestTime = time;
+					firstEntity = vecindario[i];
+					fisrtMinSeparation = minSeparation;
+					fisrtDistance = distance;
+					fisrtRelPos = posRel;
+					fisrtRelVel = velRel;
 
-					std::cout << "ENTRO" << std::endl;
+				}
+				std::cout << "ENTRO CHINGON " << firstEntity << std::endl;
+				if (firstEntity == nullptr) {
 
-					posRel = posRel + velRel * time;
+					static_cast<Enemigo*>(e->getObjeto3D())->collisionAvoidance(vector3df(0, 0, 0));
 
-					std::cout << "POSREL" << std::endl;
+				}
+				else
+				{
+					if (fisrtMinSeparation <= 0.0f || distance < 2 * radio) {
+
+						//std::cout << "ENTRO" << std::endl;
+
+						vector3df posF(firstEntity->getCuerpo2D()->GetPosition().x,
+							0,
+							firstEntity->getCuerpo2D()->GetPosition().y);
+
+
+
+							posRel = posF - posE;
+
+									std::cout << "POSREL1" << std::endl;
+									std::cout << "X: " << posRel.X << std::endl;
+									std::cout << "Y: " << posRel.Y << std::endl;
+									std::cout << "Z: " << posRel.Z << std::endl;
+
+
+
+					}
+
+					else {
+
+						posRel = fisrtRelPos + fisrtRelVel * shortestTime;
+
+						
+					}
+
+					posRel = posRel.normalize();
+
+					std::cout << "POSREL2" << std::endl;
 					std::cout << "X: " << posRel.X << std::endl;
 					std::cout << "Y: " << posRel.Y << std::endl;
 					std::cout << "Z: " << posRel.Z << std::endl;
 
+					if(i % 2 == 0)
+						static_cast<Enemigo*>(e->getObjeto3D())->collisionAvoidance(posRel);
+
+					else
+						static_cast<Enemigo*>(e->getObjeto3D())->collisionAvoidance(-posRel);
 
 
 				}
-
-				posRel = posRel.normalize();
-
-				//this->sto.linear = posRel * maxAcceleration;
-
-
-
-				//return posRel;
-
-
 			}
 		}
 	
 	}
 
-	return posRel;
+	
 }
 
 bool Flocking::getLider()
