@@ -166,9 +166,9 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 				vecindario.at(i)->getCuerpo2D()->GetLinearVelocity().y);
 
 
-			std::cout << "----VEL" << std::endl;
-			std::cout << "X: " << vel.X << std::endl;
-			std::cout << "Z: " << vel.Z << std::endl;
+			//std::cout << "----VEL" << std::endl;
+			//std::cout << "X: " << vel.X << std::endl;
+			//std::cout << "Z: " << vel.Z << std::endl;
 
 			posRel = pos - posE;
 			velRel = vel - velE;
@@ -182,8 +182,8 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 
 			float time = (posRel.getLength() * velRel.getLength()) / (speedRel * speedRel);
 
-			std::cout << "TIME: " << time << std::endl;
-			std::cout << "shortestTime: " << shortestTime << std::endl;
+			//std::cout << "TIME: " << time << std::endl;
+			//std::cout << "shortestTime: " << shortestTime << std::endl;
 
 			x = powf(posRel.X, 2);
 			y = powf(posRel.Z, 2);
@@ -191,8 +191,8 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 			distance = sqrtf(x + y);
 
 			minSeparation = abs( distance - speedRel * shortestTime);
-			std::cout << "MINSEP: " << minSeparation << std::endl;
-			std::cout << "RADIO: " << 2 * radio << std::endl;
+			//std::cout << "MINSEP: " << minSeparation << std::endl;
+			//std::cout << "RADIO: " << 2 * radio << std::endl;
 
 
 			if (minSeparation > 2 * radio) {
@@ -206,7 +206,7 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 					fisrtRelVel = velRel;
 
 				}
-				std::cout << "ENTRO CHINGON " << firstEntity << std::endl;
+				//std::cout << "ENTRO CHINGON " << firstEntity << std::endl;
 				if (firstEntity == nullptr) {
 
 					static_cast<Enemigo*>(e->getObjeto3D())->collisionAvoidance(vector3df(0, 0, 0));
@@ -265,6 +265,23 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 	
 }
 
+
+void Flocking::cambiarEstadoSequito(Entity2D *e, int estado)
+{
+
+	for (std::size_t i = 0; i < vecindario.size(); i++) {
+
+		 Enemigo *en = static_cast<Enemigo*>(e->getObjeto3D());
+
+		 if(en->getLider() != true) {
+			 en->setEstado(estado);
+		 }
+
+		
+	}
+}
+
+
 bool Flocking::getLider()
 {
 	return lider;
@@ -314,3 +331,4 @@ float Flocking::distanciaAlCuadrado(vector3df u, vector3df v)
 
 
 }
+

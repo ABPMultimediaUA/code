@@ -272,9 +272,9 @@ void LogicaDifusa::baseDeConocimiento()
 void LogicaDifusa::desfusificador()
 {
 	int rAux = 0;
-
+	int mAux = 0;
 	rAux = getEstadoDelCansancio();
-
+	mAux = getEstadoDeLaMoral();
 	//std::cout << "ESTADO: " << rAux << std::endl;
 	//mostrarArrays();
 
@@ -293,7 +293,8 @@ void LogicaDifusa::desfusificador()
 		}
 	}
 
-	else {
+
+	else if(mAux > 1){
 		estadoDecidido = 5;
 	}
 

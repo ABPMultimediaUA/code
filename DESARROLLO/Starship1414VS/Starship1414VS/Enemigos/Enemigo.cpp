@@ -249,16 +249,45 @@ void Enemigo::align(const vector3df target){
 
 void Enemigo::collisionAvoidance(vector3df vecU) {
 
-	float maxAcceleration = MULTIVEL * 0.5f;
+	float maxAcceleration = MULTIVEL * 1.25f;
 
 
 	sto.linear = vecU * maxAcceleration;
-	std::cout<<"--> "<< sto.linear.X<<" "<< sto.linear.Z<<std::endl;
+//	std::cout<<"--> "<< sto.linear.X<<" "<< sto.linear.Z<<std::endl;
 	Mover();
 }
 
 void Enemigo::obstacleAvoidance()
 {
+
+	float look = 150.0f;
+
+	vector3df target(0, 0, 0);
+	vector3df rayVector = st.velocidad;
+	rayVector = rayVector.normalize();
+
+	rayVector *= look;
+
+	//std::cout << "RAYVECTOR" << std::endl;
+	//std::cout << "X: " << rayVector.X << std::endl;
+	//std::cout << "Y: " << rayVector.Y << std::endl;
+	//std::cout << "Z: " << rayVector.Z << std::endl;
+	//std::cout << "////////////////////////////" << std::endl;
+	//std::cout << "POS ACTUAL" << std::endl;
+	//std::cout << "X: " << st.posicion.X << std::endl;
+	//std::cout << "Y: " << st.posicion.Y << std::endl;
+	//std::cout << "Z: " << st.posicion.Z << std::endl;
+	
+	if(rayVector.X!=0&& rayVector.Z!=0)
+	{
+		entity->rayCasting(b2Vec2(st.posicion.X, st.posicion.Z), b2Vec2(rayVector.X, rayVector.Z));
+		std::cout << "PUNTO DE CHOQUE" << std::endl;
+		std::cout << "X: " << entity->getPuntoDeChoque().X << std::endl;
+		std::cout << "Y: " << entity->getPuntoDeChoque().Y << std::endl;
+		std::cout << "Z: " << entity->getPuntoDeChoque().Z << std::endl;
+		target = entity->getPuntoDeChoque() + entity->getNormal() ;
+	}
+
 
 }
 
@@ -286,6 +315,11 @@ void Enemigo::setVelocidad() {
     if (entity->getSombraE2D() != NULL) {
         entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
         entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+		setPos(st.posicion);
+		st.velocidad = vector3df(0, 0, 0);
+		sto.linear = vector3df(0, 0, 0);
+		sto.angular = 0.0f;
+
     }
 }
 

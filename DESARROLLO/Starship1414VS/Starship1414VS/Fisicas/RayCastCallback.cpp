@@ -43,6 +43,10 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 				Entity2D *entity = static_cast<Entity2D*>(bodyUserData);
 				
 				x = false;
+
+				punto = point;
+				nor = normal;
+
 				std::cout << "//////////////////////////////////////////" << std::endl;
 
 				std::cout << "ID ENTITY " << entity->getIDEN() << std::endl;
@@ -109,6 +113,16 @@ int RayCastCallback::getEntidadChocada() {
 bool RayCastCallback::getEsPuertaCerrada()
 {
 	return x;
+}
+
+b2Vec2 RayCastCallback::getNormal()
+{
+	return nor;
+}
+
+b2Vec2 RayCastCallback::getPuntoDeChoque()
+{
+	return punto;
 }
 
 

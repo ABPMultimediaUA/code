@@ -27,12 +27,16 @@ public:
 	float32 getDistancia();
 	int getEntidadChocada();
 	bool getEsPuertaCerrada();
+	b2Vec2 getNormal();
+	b2Vec2 getPuntoDeChoque();
 
 private:
 
 	float32 distancia;
 	int entidadChocada;
 	bool x;
+	b2Vec2 punto;
+	b2Vec2 nor;
 };
 
 #endif /* RAYCASTCALLBACK_H */

@@ -56,6 +56,9 @@ public:
 	b2Body* getPuertaBody();
 	int getId();
 
+	vector3df getNormal();
+	vector3df getPuntoDeChoque();
+
 private:
 
 
@@ -73,11 +76,14 @@ private:
 	IMeshSceneNode* fisica;
 	IMeshSceneNode* fisica2;
 	IMeshSceneNode* direccion;
+
 	int iden;
 	int idenSh = -1;
 	int id;
 	bool live;
 	void* objeto3D;
+	b2Vec2 normal;
+	b2Vec2 puntoDeChoque;
 
 };
 

@@ -204,15 +204,14 @@ void CriaAlien::setLider(bool c) {
 void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
 	
 	//crear metodos para todos los estados
-	if (vista == true) {
+
+	if (vista == true && estadoActual != FLOCKING && floc->getLider() != true) {
 		floc->colisionAvoidance(entity);
 
 	}
 
 	st.update(sto, dt);
 	
-
-
 
 	switch (estadoActual) {
 
@@ -221,6 +220,7 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
         case BUSCARPUNTO: 
           
 			BuscarWaypoint();
+
 			//st.update(sto, dt);
 
 				
@@ -236,7 +236,9 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 			}
 		//	st.update(sto, dt);
-
+			if(floc->getLider()) {
+				floc->cambiarEstadoSequito(entity, FLOCKING);
+			}
 
             break;
 
@@ -310,21 +312,30 @@ void CriaAlien::emepzarFlocking(f32 dt) {
 
 	maya->getMaterial(0).EmissiveColor.set(0, 125, 50, 175);
 	vector3df u;
+	float maxAngularAcceleration = MULTIVEL * 2.5;
+
 	//vector3df v(0, 0, 0);
-	 if (time < 1.0) {
+	 if (time < 1.5f) {
 
 		u = floc->cohesion(entity);
+		sto.linear = u * maxAngularAcceleration;
+		Mover();
 
-	 
 	 }
 
 	 else {
+
 		u = floc->separacion(entity);
+		sto.linear = u * maxAngularAcceleration;
+		Mover();
 
 		u = floc->alineacion(entity);
-
+		sto.linear = u * maxAngularAcceleration;
+		Mover();
 	
 	 }
+
+	 
 
 	 time += dt;
 
@@ -422,7 +433,7 @@ void CriaAlien::Patrullar() {
 			{
 
 				dir = -1;
-				this->setVelocidad();
+				//this->setVelocidad();
 
 				nodoAnterior = puntoIni;
 				puntoIni = puntoFin;
@@ -525,7 +536,7 @@ void CriaAlien::BuscarWaypoint()
 					estadoActual = PATRULLAR;
 
 					dir = -1;
-					this->setVelocidad();
+					//this->setVelocidad();
 	
 			}
 		}

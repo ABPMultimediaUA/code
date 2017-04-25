@@ -429,7 +429,8 @@ void paredDetectada(Entity2D *ene, bool x) {
 
 	Enemigo *e = static_cast<Enemigo*>(ene->getObjeto3D());
 
-	e->setVista(x);
+	//e->setVista(x);
+	e->obstacleAvoidance();
 
 }
 
@@ -440,14 +441,15 @@ void empezarFlocking(Entity2D *e1, Entity2D *e2) {
 	Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
 
 	if (ene1->getLider()) {
-	//	ene2->setEstado(8);
+		//ene2->iniLogicaDifusa();
+		//hay que hacer un metodo que me diga su estado de la moral
+		//para ver si tiene que activar el flocking o no
 
 	}
 
 	else if(ene2->getLider()) {
-		//ene1->setEstado(8);
+		//ene1->iniLogicaDifusa();
 	
-
 	}
 
 		ene1->setGrupoFlocking(e1);
@@ -516,7 +518,7 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 		/*	 std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
 			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;*/
-
+		
 
 			/* int a = *((int*)b1->GetUserData());
 			int b = *((int*)b2->GetUserData());

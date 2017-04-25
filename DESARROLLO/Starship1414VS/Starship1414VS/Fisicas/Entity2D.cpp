@@ -58,7 +58,6 @@ Entity2D::Entity2D(b2World * world)
 Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* smgr) {
 
 
-
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.X, pos.Z);
     bodyShape.SetAsBox(5.0f, 5.0f);
@@ -364,6 +363,9 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
     RayCastCallback *callback = new RayCastCallback();
     llamarCallBack(callback, inicio, fin);
 
+	normal = callback->getNormal();
+	puntoDeChoque = callback->getPuntoDeChoque();
+
 	if(callback->getEntidadChocada() == 2 && callback->getEsPuertaCerrada() == true) {
 		std::cout << "----- RESULT: " << callback->getDistancia() << std::endl;
 		return callback->getDistancia();
@@ -456,6 +458,16 @@ b2Body * Entity2D::getPuertaBody()
 int Entity2D::getId()
 {
 	return id;
+}
+
+vector3df Entity2D::getNormal()
+{
+	return vector3df(normal.x, 0, normal.y);
+}
+
+vector3df Entity2D::getPuntoDeChoque()
+{
+	return vector3df(puntoDeChoque.x, 0, puntoDeChoque.y);
 }
 
 int Entity2D::getIDEN() {

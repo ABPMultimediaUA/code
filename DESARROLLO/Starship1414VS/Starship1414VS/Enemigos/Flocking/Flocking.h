@@ -36,5 +36,7 @@ public:
 	vector3df media(vector3df v, int cont);
 	float distanciaAlCuadrado(vector3df u, vector3df v);
 
+	void cambiarEstadoSequito(Entity2D * e, int estado);
+
 };
 
