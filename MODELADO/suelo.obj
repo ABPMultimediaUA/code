@@ -1,6 +1,6 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
-mtllib pasillo.mtl
+mtllib suelo.mtl
 g default
 v 52.315746 13.094514 -72.415749
 v 52.315746 13.132183 -72.393692
