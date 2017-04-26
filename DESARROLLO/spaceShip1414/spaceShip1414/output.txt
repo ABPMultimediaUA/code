@@ -1,0 +1,30 @@
+Vendor: NVIDIA Corporation
+Renderer: GeForce GTX 780 Ti/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 376.53
+GLSL: 4.50 NVIDIA
+
+Recurso nombre: nanosuit.obj
+Recurso nombre: Street environment_V01.obj
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Facade Destroted
+shader Destroyed
