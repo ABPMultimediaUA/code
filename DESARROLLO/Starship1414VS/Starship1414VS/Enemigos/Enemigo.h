@@ -155,6 +155,10 @@ public:
 
 	bool getVista();
 	void setVista(bool x);
+	bool getEsquivarPared();
+	void setEsquivarPared(bool x);
+	bool getVision();
+	void setVision(bool x);
 	bool getLider();
 
 	void setGrupoFlocking(Entity2D * e);
@@ -189,7 +193,10 @@ protected:
 	float damageChoque;
 	float moral;
 	float resistencia;
-	bool vista;
+	bool vista; //usado para esquivar enemigos
+	bool esquivarPared;
+	bool vision;
+	//hay que crear booleanos para ver si tiene que esquivar un muro, enemigo o si puede verte
 	Kinematic st;
 	Steering sto;
 

@@ -1,3 +1,8 @@
-﻿  RayCastCallback.cpp
-  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
-  Starship1414VS.vcxproj -> C:\Users\User\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)
+﻿  Enemigo.cpp
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(127): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(146): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(200): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(204): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\david\documents\github\code\desarrollo\starship1414vs\starship1414vs\enemigos\enemigo.cpp(265): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  Starship1414VS.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.exe
+  Starship1414VS.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\Starship1414VS\Debug\Starship1414VS.pdb (Full PDB)

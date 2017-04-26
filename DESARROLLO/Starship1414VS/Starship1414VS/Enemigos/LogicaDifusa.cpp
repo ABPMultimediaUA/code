@@ -295,7 +295,7 @@ void LogicaDifusa::desfusificador()
 
 
 	else if(mAux > 1){
-		estadoDecidido = 5;
+		estadoDecidido = 5; //tiene que decirle al enemigo que  huya para buscar al lider y active el flocking
 	}
 
 	//se decide el estado que sera

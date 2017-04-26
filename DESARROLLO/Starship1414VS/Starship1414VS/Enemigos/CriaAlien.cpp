@@ -210,6 +210,10 @@ void CriaAlien::Update(f32 dt) { //cambiar a que no se le pase nada y que en el 
 
 	}
 
+	if (esquivarPared) {
+		obstacleAvoidance();
+	}
+
 	st.update(sto, dt);
 	
 

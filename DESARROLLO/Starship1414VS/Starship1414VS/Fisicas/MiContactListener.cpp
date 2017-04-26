@@ -430,7 +430,8 @@ void paredDetectada(Entity2D *ene, bool x) {
 	Enemigo *e = static_cast<Enemigo*>(ene->getObjeto3D());
 
 	//e->setVista(x);
-	e->obstacleAvoidance();
+	e->setEsquivarPared(x);
+	//e->obstacleAvoidance();
 
 }
 

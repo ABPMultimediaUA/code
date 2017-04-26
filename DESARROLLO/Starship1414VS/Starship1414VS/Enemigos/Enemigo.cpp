@@ -260,7 +260,9 @@ void Enemigo::collisionAvoidance(vector3df vecU) {
 void Enemigo::obstacleAvoidance()
 {
 
-	float look = 150.0f;
+	float look = 50.0f;
+	float avoidDistance = 70.0f; //cuanto mayor es el numero mas rapido esquivan
+	float lim = -4.31602000;
 	std::cout << "OBSTACLE!!" << std::endl;
 	vector3df target(0, 0, 0);
 	vector3df rayVector = st.velocidad;
@@ -278,17 +280,19 @@ void Enemigo::obstacleAvoidance()
 	//std::cout << "Y: " << st.posicion.Y << std::endl;
 	//std::cout << "Z: " << st.posicion.Z << std::endl;
 	
-	if(rayVector.X!=0&& rayVector.Z!=0)
+	if(rayVector.X!=0 && rayVector.Z!=0)
 	{
-		entity->rayCasting(b2Vec2(st.posicion.X, st.posicion.Z), b2Vec2(rayVector.X + st.posicion.X, rayVector.Z + st.posicion.Z));
+		float distansia = entity->rayCasting(b2Vec2(st.posicion.X, st.posicion.Z), b2Vec2(rayVector.X + st.posicion.X, rayVector.Z + st.posicion.Z));
 		
-		if(entity->getPuntoDeChoque().X != -4.31602E8 && entity->getPuntoDeChoque().Z != -4.31602E8) {
+		if(distansia != 0.0f) {
 		
-			std::cout << "PUNTO DE CHOQUE" << std::endl;
+			std::cout << "PUNTO DE CHOQUE "<<this << std::endl;
 			std::cout << "X: " << entity->getPuntoDeChoque().X << std::endl;
 			std::cout << "Y: " << entity->getPuntoDeChoque().Y << std::endl;
 			std::cout << "Z: " << entity->getPuntoDeChoque().Z << std::endl;
-			target = entity->getPuntoDeChoque() + entity->getNormal() ;
+			target = entity->getPuntoDeChoque() + entity->getNormal() * avoidDistance;
+
+			seek(target);
 		}
 
 	}
@@ -496,6 +500,26 @@ bool Enemigo::getVista()
 void Enemigo::setVista(bool x)
 {
 	vista = x;
+}
+
+bool Enemigo::getEsquivarPared()
+{
+	return esquivarPared;
+}
+
+void Enemigo::setEsquivarPared(bool x)
+{
+	esquivarPared = x;
+}
+
+bool Enemigo::getVision()
+{
+	return vision;
+}
+
+void Enemigo::setVision(bool x)
+{
+	vision = x;
 }
 
 bool Enemigo::getLider()

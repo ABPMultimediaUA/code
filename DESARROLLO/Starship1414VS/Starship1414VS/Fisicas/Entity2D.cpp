@@ -362,19 +362,19 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
 
     RayCastCallback *callback = new RayCastCallback();
     llamarCallBack(callback, inicio, fin);
-
+	float dis;
 	normal = callback->getNormal();
 	puntoDeChoque = callback->getPuntoDeChoque();
 
 	if(callback->getEntidadChocada() == 2 && callback->getEsPuertaCerrada() == true) {
-		std::cout << "----- RESULT: " << callback->getDistancia() << std::endl;
+		std::cout << "----- RESULT: " << callback->getDistancia() + 1.0f << std::endl;
 		return callback->getDistancia();
 	}
 
 		
 
 
-	if(callback->getEntidadChocada() != 1) {
+	else if(callback->getEntidadChocada() != 1) {
 
 		return 0.0f;
 	}
