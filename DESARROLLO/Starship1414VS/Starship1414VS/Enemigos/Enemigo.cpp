@@ -261,7 +261,7 @@ void Enemigo::obstacleAvoidance()
 {
 
 	float look = 150.0f;
-
+	std::cout << "OBSTACLE!!" << std::endl;
 	vector3df target(0, 0, 0);
 	vector3df rayVector = st.velocidad;
 	rayVector = rayVector.normalize();
@@ -281,11 +281,16 @@ void Enemigo::obstacleAvoidance()
 	if(rayVector.X!=0&& rayVector.Z!=0)
 	{
 		entity->rayCasting(b2Vec2(st.posicion.X, st.posicion.Z), b2Vec2(rayVector.X + st.posicion.X, rayVector.Z + st.posicion.Z));
-		std::cout << "PUNTO DE CHOQUE" << std::endl;
-		std::cout << "X: " << entity->getPuntoDeChoque().X << std::endl;
-		std::cout << "Y: " << entity->getPuntoDeChoque().Y << std::endl;
-		std::cout << "Z: " << entity->getPuntoDeChoque().Z << std::endl;
-		target = entity->getPuntoDeChoque() + entity->getNormal() ;
+		
+		if(entity->getPuntoDeChoque().X != -4.31602E8 && entity->getPuntoDeChoque().Z != -4.31602E8) {
+		
+			std::cout << "PUNTO DE CHOQUE" << std::endl;
+			std::cout << "X: " << entity->getPuntoDeChoque().X << std::endl;
+			std::cout << "Y: " << entity->getPuntoDeChoque().Y << std::endl;
+			std::cout << "Z: " << entity->getPuntoDeChoque().Z << std::endl;
+			target = entity->getPuntoDeChoque() + entity->getNormal() ;
+		}
+
 	}
 
 

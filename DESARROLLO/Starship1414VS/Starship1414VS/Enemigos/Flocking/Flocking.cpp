@@ -138,9 +138,9 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 			e->getCuerpo2D()->GetLinearVelocity().y);
 	
 	vector3df pos, vel;
-	std::cout << "VEL-E" << std::endl;
-	std::cout << "X: " << velE.X<< std::endl;
-	std::cout << "Z: " << velE.Z <<std::endl;
+	//std::cout << "VEL-E" << std::endl;
+	//std::cout << "X: " << velE.X<< std::endl;
+	//std::cout << "Z: " << velE.Z <<std::endl;
 
 	/*vector3df posRel = e->st.posicion - this->st.posicion;
 	vector3df velRel = e->st.velocidad - this->st.velocidad;*/
@@ -226,10 +226,10 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 
 							posRel = posF - posE;
 
-									std::cout << "POSREL1" << std::endl;
-									std::cout << "X: " << posRel.X << std::endl;
-									std::cout << "Y: " << posRel.Y << std::endl;
-									std::cout << "Z: " << posRel.Z << std::endl;
+									//std::cout << "POSREL1" << std::endl;
+									//std::cout << "X: " << posRel.X << std::endl;
+									//std::cout << "Y: " << posRel.Y << std::endl;
+									//std::cout << "Z: " << posRel.Z << std::endl;
 
 
 
@@ -244,10 +244,10 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 
 					posRel = posRel.normalize();
 
-					std::cout << "POSREL2" << std::endl;
-					std::cout << "X: " << posRel.X << std::endl;
-					std::cout << "Y: " << posRel.Y << std::endl;
-					std::cout << "Z: " << posRel.Z << std::endl;
+					//std::cout << "POSREL2" << std::endl;
+					//std::cout << "X: " << posRel.X << std::endl;
+					//std::cout << "Y: " << posRel.Y << std::endl;
+					//std::cout << "Z: " << posRel.Z << std::endl;
 
 					if(i % 2 == 0)
 						static_cast<Enemigo*>(e->getObjeto3D())->collisionAvoidance(posRel);

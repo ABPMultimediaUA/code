@@ -58,9 +58,19 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 				//que esta cerrada con llave no puede llegar a ese waypoint el enemigo
 				//como su fuese una pared u otro objeto
 
+				std::cout << "RAY DE CHOQUE" << std::endl;
+				std::cout << "X: " << punto.x << std::endl;
+				std::cout << "Y: " << punto.y << std::endl;
+			//	std::cout << "Z: " << entity->getPuntoDeChoque().Z << std::endl;
 
+			
 				entidadChocada = entity->getIDEN();
-
+				//if (punto.x <= -4.31602E8 && punto.y <= -4.31602E8) {
+				////if (entidadChocada == 0) {
+				//	std::cout << "HOOOOLIIIIIIS" << std::endl;
+				//	punto = b2Vec2(0,0);
+				//	nor = b2Vec2(0, 0);
+				//}
 				if (entidadChocada == 2) {
 
 					Puerta *p = static_cast<Puerta*>(entity->getObjeto3D());
@@ -72,6 +82,8 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 					}
 
 				}
+
+			
 
 
 				distancia = fraction;
@@ -98,7 +110,8 @@ float32 RayCastCallback::ReportFixture(b2Fixture* fixture, const b2Vec2& point, 
 			}
 		}
 	}
-
+	punto = point;
+	nor = normal;
 	return 0.0f;
 }
 
