@@ -280,7 +280,7 @@ void Enemigo::obstacleAvoidance()
 	
 	if(rayVector.X!=0&& rayVector.Z!=0)
 	{
-		entity->rayCasting(b2Vec2(st.posicion.X, st.posicion.Z), b2Vec2(rayVector.X, rayVector.Z));
+		entity->rayCasting(b2Vec2(st.posicion.X, st.posicion.Z), b2Vec2(rayVector.X + st.posicion.X, rayVector.Z + st.posicion.Z));
 		std::cout << "PUNTO DE CHOQUE" << std::endl;
 		std::cout << "X: " << entity->getPuntoDeChoque().X << std::endl;
 		std::cout << "Y: " << entity->getPuntoDeChoque().Y << std::endl;
