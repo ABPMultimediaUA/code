@@ -26,14 +26,19 @@ public:
 	CriaAlien(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Escenario* esce, Waypoints* puntos);
 	//CriaAlien(const CriaAlien& orig);
 	virtual ~CriaAlien();
+	void crearArbol();
 	void Update(f32 dt);
 	void CQC();
+	void emepzarFlocking(f32 dt);
 	void Patrullar();
 	void Atacar(f32 dt);
 	void BuscarWaypoint();
 	void quitarVida(float damage);
 	void recuperarResistencia();
 	void dibujaGrid(ISceneManager *grid);
+	void setLider(bool c);
+
+	
 private:
 
 	navmeshes* nav;

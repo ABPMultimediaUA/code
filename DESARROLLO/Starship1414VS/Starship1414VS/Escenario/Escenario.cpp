@@ -1746,7 +1746,7 @@ void Escenario::fabricaDeEnemigos() {
 					AlienBerserker *ene = new AlienBerserker(SM, VD, mundo,
 						vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z))
 						, waypoints.at(3));
-
+				
 					enemigos.push_back(ene);
 				}
 			}
@@ -1755,6 +1755,12 @@ void Escenario::fabricaDeEnemigos() {
 
 	}
 
+
+	CriaAlien *e = new CriaAlien(SM, VD, mundo,
+		vector3df(50, 10, -5)
+		, this, waypoints.at(0));
+	e->setLider(true);
+	enemigos.push_back(e);
 }
 
 void Escenario::destroyWaypoints() {
@@ -1879,7 +1885,6 @@ void Escenario::actualizarListaEnemigos(f32 dt) {
 				if((*it)->getEstado() == 3 || (*it)->getEstado() == 6 || (*it)->getEstado() == 7) {
 					(*it)->setPosJugador(pers->getPos().X, pers->getPos().Z);
 				}
-
 				(*it)->Update(dt);
 
 			}

@@ -16,6 +16,7 @@
 #include "MyContactFilter.h"
 #include "../Escenario/readJson.h"
 
+
 MyContactFilter::MyContactFilter() {
 }
 
@@ -104,11 +105,14 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB) {
 		const b2Filter& f1 = fixtureA->GetFilterData();
 		const b2Filter& f2 = fixtureB->GetFilterData();
 
+		//Entity2D *e1 = static_cast<Entity2D*>(fixtureA->GetUserData());
+		//Entity2D *e2 = static_cast<Entity2D*>(fixtureB->GetUserData());
+
 
 		//colision entre bala y personaje
 		if ((f1.groupIndex == 1 && f2.groupIndex == 4) || (f1.groupIndex == 4 && f2.groupIndex == 1)) { return false; }
 		if ((f1.groupIndex == 6 && f2.groupIndex == 5) || (f1.groupIndex == 5 && f2.groupIndex == 6)) { return false; }
-		if (f1.groupIndex == f2.groupIndex ) { return false; }
+	//	if (f1.groupIndex == f2.groupIndex ) { return false; }
 
 		//colisiones de la puerta abierta
 		if (f1.groupIndex == 15 || f2.groupIndex == 15) {
@@ -119,20 +123,9 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB) {
 
 
 		}
-		/*
-		if((f1.groupIndex==1&&f2.groupIndex==2)||(f1.groupIndex==2&&f2.groupIndex==1))
-		{
-		std::cout<<"hakuna matata"<<std::endl;
-		return true;
-		}
 
-		if((f1.groupIndex==1&&f2.groupIndex==6)||(f1.groupIndex==6&&f2.groupIndex==1))
-		{
-		std::cout<<"hakuna matata"<<std::endl;
-		return true;
-		}*/
 
-		if (f1.groupIndex == 6 && f2.groupIndex == 6) { return false; }
+		//if (e1->getIDENSH() == 1 && e2->getIDENSH() == 1) { return false; }
 
 		return true;
 

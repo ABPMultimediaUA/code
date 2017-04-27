@@ -49,6 +49,7 @@ public:
 	void mostrarPesos();
 	void setTamDelMapa(int tam);
 	float** getMatriz();
+	float getPeso(const int i, const int j);
 	std::vector<Nodo*> getNodos();
 	Nodo* getNodoX(int x);
 	int getTamMapa();

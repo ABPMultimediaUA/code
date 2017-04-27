@@ -185,6 +185,28 @@ bool AStar::estoyEnElNodo(const vector3df &posEne, const vector3df &posNodo)
 	return false;
 }
 
+
+float AStar::distanciaEntreElNodoYEne(const vector3df posEne, const vector3df posWaypoint) {
+
+
+	float dis, x, y;
+
+	x = posWaypoint.X - posEne.X;
+	y = posWaypoint.Z - posEne.Z;
+
+	x = powf(x, 2);
+	y = powf(y, 2);
+
+	dis = x + y;
+
+	dis = sqrtf(dis);
+
+	return dis;
+
+
+
+}
+
 void AStar::calcularAnguloDeRotacion()
 {
 	float elem1 = actualX * anteriorX + actualZ * anteriorZ;

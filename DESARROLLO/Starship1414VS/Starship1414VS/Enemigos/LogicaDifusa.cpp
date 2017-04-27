@@ -59,6 +59,18 @@ void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, cons
 	resist = n_resist;
 	moral = n_moral;
 	reiniciarArrays();
+
+	//std::cout << "DATOS" << std::endl;
+
+	//std::cout << "VIDAENEMIGO: " << vidaEnemigo << std::endl;
+	//std::cout << "POS ENEMIGO" << std::endl;
+	//std::cout << "X: " << posEnemigo.X << " Y: " << posEnemigo.Y << " Z: " << posEnemigo.Z << std::endl;
+	//std::cout << "POS JUGADOR" << std::endl;
+	//std::cout << "X: " << posJugador.X << " Y: " << posJugador.Y << std::endl;
+	//std::cout << "RESIST: " << resist << std::endl;
+	//std::cout << "MORAL: " << moral << std::endl;
+
+
 	//fuzzyficacion de variables (?)
 	condiccionesDeLaVidaEnemigo();
 	condiccionesDeLaDistancia();
@@ -71,7 +83,9 @@ void LogicaDifusa::fusificador(const float & vidaE, const vector3df & posE, cons
 void LogicaDifusa::baseDeConocimiento()
 {
 	float aux;
-	int m_estado = getEstadoDeLaMoral();
+	int m_estado = getEstadoDeLaMoral(); //el estado de la moral se quedo por implementar
+
+
 
 
 	//accion escapar
@@ -118,8 +132,14 @@ void LogicaDifusa::baseDeConocimiento()
 
 	if (resultadosDePos[2] > 0.0f && resultadosVidaEnemigo[0] > 0.0f) {
 		
-		disparar = min2valores(resultadosDePos[2], resultadosVidaEnemigo[0]);
+		if (disparar > 0.0f) {
+			aux = min2valores(resultadosDePos[2], resultadosVidaEnemigo[0]);
+			disparar = max2valores(disparar, aux);
+		}
 
+		else {
+			disparar = min2valores(resultadosDePos[2], resultadosVidaEnemigo[0]);
+		}
 	}
 
 
@@ -187,8 +207,14 @@ void LogicaDifusa::baseDeConocimiento()
 
 	if (resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[3] > 0.0f) {
 
-		cqc = min2valores(resultadosDePos[0], resultadosVidaEnemigo[3]);
+		if (cqc > 0.0f) {
+			aux = min2valores(resultadosDePos[0], resultadosVidaEnemigo[3]);
+			cqc = max2valores(cqc, aux);
+		}
 
+		else {
+			cqc = min2valores(resultadosDePos[0], resultadosVidaEnemigo[3]);
+		}
 	}
 
 	if (resultadosDePos[0] > 0.0f && resultadosVidaEnemigo[2] > 0.0f) {
@@ -210,12 +236,12 @@ void LogicaDifusa::baseDeConocimiento()
 	if (resultadosDePos[1] > 0.0f && resultadosVidaEnemigo[3] > 0.0f) {
 
 		if (cqc > 0.0f) {
-			aux = min2valores(resultadosDePos[0], resultadosVidaEnemigo[3]);
+			aux = min2valores(resultadosDePos[1], resultadosVidaEnemigo[3]);
 			cqc = max2valores(cqc, aux);
 		}
 
 		else {
-			cqc = min2valores(resultadosDePos[1], resultadosVidaEnemigo[2]);
+			cqc = min2valores(resultadosDePos[1], resultadosVidaEnemigo[3]);
 
 		}
 
@@ -235,14 +261,22 @@ void LogicaDifusa::baseDeConocimiento()
 
 	}
 
+
+	//std::cout << "VALORES" << std::endl;
+	//std::cout << "ESCAPAR: " << escapar << std::endl;
+	//std::cout << "DISPARAR: " << disparar << std::endl;
+	//std::cout << "CQC: " << cqc << std::endl;
+	//std::cout << "/////////////////////" << std::endl;
 }
 
 void LogicaDifusa::desfusificador()
 {
 	int rAux = 0;
-
+	int mAux = 0;
 	rAux = getEstadoDelCansancio();
-
+	mAux = getEstadoDeLaMoral();
+	//std::cout << "ESTADO: " << rAux << std::endl;
+	//mostrarArrays();
 
 	if(rAux > 0) {
 
@@ -259,16 +293,13 @@ void LogicaDifusa::desfusificador()
 		}
 	}
 
-	else {
-		estadoDecidido = 5;
+
+	else if(mAux > 1){
+		estadoDecidido = 5; //tiene que decirle al enemigo que  huya para buscar al lider y active el flocking
 	}
 
 	//se decide el estado que sera
-	//std::cout << "VALORES" << std::endl;
-	//std::cout << "ESCAPAR: " << escapar << std::endl;
-	//std::cout << "DISPARAR: " << disparar << std::endl;
-	//std::cout << "CQC: " << cqc << std::endl;
-	//std::cout << "/////////////////////" << std::endl;
+
 
 }
 
@@ -536,6 +567,25 @@ void LogicaDifusa::reiniciarArrays() {
 	nResist = 0.0f;
 	nMoral = 0.0f;
 
+
+}
+
+void LogicaDifusa::mostrarArrays() {
+
+	for (std::size_t i = 0; i < 4; i++) {
+
+		std::cout << "VIDA ENE:" << " " << i << " " << resultadosVidaEnemigo[i] << std::endl;
+
+	}
+
+	for (std::size_t i = 0; i < 3; i++) {
+
+		//resultadosVidaJugador[i] = 0.0f;
+		std::cout << "POS ENE:" << " " << i << " " << resultadosDePos[i] << std::endl;
+		std::cout << "MORAL ENE:" << " " << i << " " << resultadosDeMoral[i] << std::endl;
+		std::cout << "RESIST ENE:" << " " << i << " " << resultadosDeResistencia[i] << std::endl;
+
+	}
 
 }
 
