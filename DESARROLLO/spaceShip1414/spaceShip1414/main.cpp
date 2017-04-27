@@ -56,11 +56,22 @@ int main() {
 		TTransform *transfEM = motorApp.crearTransform();
 		TTransform *transfTM = motorApp.crearTransform();
 		transfEM->escalar(0.8, 0.8, 0.8);
-		transfTM->trasladar(0, 0, 0);
+		transfTM->trasladar(10, -10, 10);
 		TNodo* nodoTransfRM = motorApp.crearNodo(motorApp.nodoRaiz(), transfRM);
 		TNodo* nodoTransfEM = motorApp.crearNodo(nodoTransfRM, transfEM);
 		TNodo* nodoTransfTM = motorApp.crearNodo(nodoTransfEM, transfTM);
 		TNodo* nodoMalla = motorApp.crearNodo(nodoTransfTM, motorApp.crearMalla("resourse/models/StreetEnvironment/Street environment_V01.obj"));
+
+		TTransform *transfRM1 = motorApp.crearTransform();
+		TTransform *transfEM1 = motorApp.crearTransform();
+		TTransform *transfTM1 = motorApp.crearTransform();
+		transfEM1->escalar(1,1,1);
+		transfTM1->trasladar(10, 10,0);
+		TNodo* nodoTransfRM1 = motorApp.crearNodo(motorApp.nodoRaiz(), transfRM1);
+		TNodo* nodoTransfEM1 = motorApp.crearNodo(nodoTransfRM1, transfEM1);
+		TNodo* nodoTransfTM1 = motorApp.crearNodo(nodoTransfEM1, transfTM1);
+		TNodo* nodoMalla1 = motorApp.crearNodo(nodoTransfTM1, motorApp.crearMalla("resourse/models/untitled.obj"));
+
 
 		motorApp.run();
 	}

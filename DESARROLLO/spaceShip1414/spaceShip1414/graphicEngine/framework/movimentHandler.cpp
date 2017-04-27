@@ -37,9 +37,9 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos)
 	GLfloat xoffset = ((width / 2.0f) - static_cast<float>(xpos)) * mouseSensitive;
 	GLfloat yoffset = ((height / 2.0f) - static_cast<float>(ypos)) * mouseSensitive;
 	if (activo) {
-		jugador->setYaw(jugador->getYaw() + xoffset);
-		jugador->setPitch(jugador->getPitch() + yoffset);
-		jugador->Rotation()->rotarYPR(jugador->getPitch(), 0.0f, jugador->getYaw());
+		jugador->setYaw(jugador->getYaw() + xoffset );
+		jugador->setPitch( yoffset);
+		jugador->Rotation()->rotarYPR(jugador->getYaw(), jugador->getPitch(), 0.0f);
 	}
 	else {
 		glfwSetCursorPos(window, width / 2.0, height / 2.0);
