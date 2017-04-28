@@ -28,8 +28,10 @@ public:
 	void beginDraw(openGLShader&, const glm::mat4&, const glm::mat4&) override;
 	void endDraw() override;
 	void activar();
+	glm::vec3 mover();
 	void desactivar();
 	bool getActiva();
+	void chechKeys();
 private:
 	bool tipo;
 	bool activa;
@@ -37,7 +39,7 @@ private:
 	glm::vec3 front, up;
 	glm::mat4 view;
 	void checkMouse();
-	void chechKeys();
+
 	inline bool isKeyPress(int);
 	GLfloat cameraSpeed, mouseSensitive;
 	GLFWwindow* window;

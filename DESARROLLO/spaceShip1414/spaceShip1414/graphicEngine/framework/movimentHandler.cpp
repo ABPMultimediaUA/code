@@ -2,7 +2,9 @@
 #include <iostream>
 #include "../entityTree/TTransform.h"
 #include "../../player.h"
+#include "../../Camara.h"
 #include "../TGraphicEngine.h"
+#include "../entityTree/TCamara.h"
 
 
 movimentHandler::movimentHandler() : activo{ false }, mouseSensitive{ 0.015f }
@@ -16,16 +18,25 @@ movimentHandler::~movimentHandler()
 
 void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int action, int mods, double deltaTime, TGraphicEngine* motor)
 {
-		if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) { glfwSetWindowShouldClose(window, GL_TRUE); }
+	
+	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) { glfwSetWindowShouldClose(window, GL_TRUE); }
 	if (activo) {
 		if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { this->activo = false; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);}
 		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) { jugador->Translation()->trasladar(0, 0, -jugador->getVelocity()); }
 		if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {	jugador->Translation()->trasladar(0, 0, jugador->getVelocity());  }
 		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) { jugador->Translation()->trasladar(-jugador->getVelocity(), 0, 0); }
 		if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) { jugador->Translation()->trasladar(jugador->getVelocity(), 0, 0);  }
+
+
 	}
 	else {
 		if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { this->activo = true; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);}
+		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) { camara->Translation()->trasladar(0, 0, -camara->getVelocity()); }
+		if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) { camara->Translation()->trasladar(0, 0, camara->getVelocity()); }
+		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) { camara->Translation()->trasladar(-camara->getVelocity(), 0, 0); }
+		if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) { camara->Translation()->trasladar(camara->getVelocity(), 0, 0); }
+		
+
 	}
 }
 
@@ -53,6 +64,12 @@ void movimentHandler::setMouseSensitive(float mS)
 
 void movimentHandler::setPlayer(player * j)
 {
-	jugador = j;
+	jugador = j; 
+	activo = true;
+}
+
+void movimentHandler::setCamara(Camara * cam)
+{
+	camara = cam;
 	activo = true;
 }

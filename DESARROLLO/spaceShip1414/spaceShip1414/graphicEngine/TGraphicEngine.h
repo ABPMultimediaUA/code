@@ -22,6 +22,7 @@ class TLuz;
 class TMalla;
 class movimentHandler;
 class player;
+class Camara;
 
 class TGraphicEngine
 {
@@ -43,9 +44,12 @@ public:
 	void addRegistroCamara(TNodo*);
 	movimentHandler* getMovimentHandler();
 	void setPlayerMove(player*);
+	void setCameraMove(Camara * j);
 	double getLastTime();
 	void setLastTime(double);
+	TCamara * getCamaraActiva();
 	void cambiarCamaraActiva(bool);
+	glm::vec3 moverCamara();
 private:
 	void onstart();
 	void onstop();

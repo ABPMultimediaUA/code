@@ -103,6 +103,8 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 	glfwSetFramebufferSizeCallback(window, resize_callback);
 	glfwSetCursorPosCallback(window, mouse_callback);
 
+
+
 	if (glewInit() != GLEW_OK) {
 		glfwTerminate();
 		return false;
@@ -120,6 +122,7 @@ void TGraphicEngine::run()
 
 	while (!glfwWindowShouldClose(window))
 	{
+
 		draw(getLastTime());
 
 		glfwSwapBuffers(window);
@@ -164,6 +167,11 @@ void TGraphicEngine::setPlayerMove(player * j)
 	move->setPlayer(j);
 }
 
+void TGraphicEngine::setCameraMove(Camara * j)
+{
+	move->setCamara(j);
+}
+
 double TGraphicEngine::getLastTime()
 {
 	return lastTime;
@@ -174,17 +182,36 @@ void TGraphicEngine::setLastTime(double t)
 	lastTime = t;
 }
 
+TCamara* TGraphicEngine::getCamaraActiva()
+{
+	return camaraActiva;
+}
+
 void TGraphicEngine::cambiarCamaraActiva(bool m)
 {
 	if (m) {
 		static_cast<TCamara*>(registroCamaras.at(0)->getEntidad())->activar();
 		static_cast<TCamara*>(registroCamaras.at(1)->getEntidad())->desactivar();
+		camaraActiva = static_cast<TCamara*>(registroCamaras.at(0)->getEntidad());
+		camaraActiva->setWindow(window);
 	}
 	else {
 		static_cast<TCamara*>(registroCamaras.at(1)->getEntidad())->activar();
 		static_cast<TCamara*>(registroCamaras.at(0)->getEntidad())->desactivar();
+		camaraActiva = static_cast<TCamara*>(registroCamaras.at(1)->getEntidad());
+		camaraActiva->setWindow(window);
 	}
 }
+
+glm::vec3 TGraphicEngine::moverCamara()
+{
+
+	std::cout << "hle" << std::endl;
+	camaraActiva->setWindow(window);
+	return camaraActiva->mover();
+}
+
+
 
 void TGraphicEngine::draw(double time)
 {

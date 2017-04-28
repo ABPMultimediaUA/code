@@ -3,7 +3,7 @@
 #include "graphicEngine\entityTree\TTransform.h"
 #include "graphicEngine\entityTree\TNodo.h"
 #include "graphicEngine\entityTree\TMalla.h"
-
+#include "graphicEngine\entityTree\TCamara.h"
 
 
 player::player(TGraphicEngine * motorApp) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }

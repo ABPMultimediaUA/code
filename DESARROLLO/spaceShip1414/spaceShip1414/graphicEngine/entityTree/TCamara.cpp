@@ -45,7 +45,7 @@ void TCamara::setParalela(float xu, float yu, float zu, float xf, float yf, floa
 
 void TCamara::setWindow(GLFWwindow * ventana)
 {
-	this->window = ventana;
+	window = ventana;
 }
 
 void TCamara::setView(glm::mat4 v)
@@ -55,6 +55,7 @@ void TCamara::setView(glm::mat4 v)
 
 glm::mat4 TCamara::getView()
 {
+	chechKeys();
 	if (!tipo) {
 		return view;
 	}
@@ -105,6 +106,12 @@ void TCamara::activar()
 	activa = true;
 }
 
+glm::vec3 TCamara::mover()
+{
+	chechKeys();
+	return cameraPos;
+}
+
 void TCamara::desactivar()
 {
 	activa = false;
@@ -133,6 +140,7 @@ void TCamara::checkMouse()
 
 void TCamara::chechKeys()
 {
+
 	if (isKeyPress(GLFW_KEY_W)) { cameraPos += cameraSpeed * front; }
 	if (isKeyPress(GLFW_KEY_S)) { cameraPos -= cameraSpeed * front; }
 	if (isKeyPress(GLFW_KEY_A)) { cameraPos -= glm::normalize(glm::cross(front, up)) * cameraSpeed; }

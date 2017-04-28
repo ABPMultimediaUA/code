@@ -93,6 +93,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(ProjectDir)tools;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>Box2D.lib;opengl32.lib;glfw3.lib;assimp-vc140-mt.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -125,6 +126,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camara.cpp" />
+    <ClCompile Include="Escenario.cpp" />
     <ClCompile Include="graphicEngine\entityTree\TCamara.cpp" />
     <ClCompile Include="graphicEngine\entityTree\TEntidad.cpp" />
     <ClCompile Include="graphicEngine\entityTree\TLuz.cpp" />
@@ -139,7 +142,9 @@
     <ClCompile Include="graphicEngine\resourceManager\TRecursoMalla.cpp" />
     <ClCompile Include="graphicEngine\resourceManager\TRecursoTextura.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pared.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="readJson.cpp" />
     <ClCompile Include="tools\Box2D\Collision\b2BroadPhase.cpp" />
     <ClCompile Include="tools\Box2D\Collision\b2CollideCircle.cpp" />
     <ClCompile Include="tools\Box2D\Collision\b2CollideEdge.cpp" />
@@ -191,6 +196,8 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camara.h" />
+    <ClInclude Include="Escenario.h" />
     <ClInclude Include="graphicEngine\entityTree\TCamara.h" />
     <ClInclude Include="graphicEngine\entityTree\TEntidad.h" />
     <ClInclude Include="graphicEngine\entityTree\TLuz.h" />
@@ -204,7 +211,9 @@
     <ClInclude Include="graphicEngine\resourceManager\TRecurso.h" />
     <ClInclude Include="graphicEngine\resourceManager\TRecursoMalla.h" />
     <ClInclude Include="graphicEngine\resourceManager\TRecursoTextura.h" />
+    <ClInclude Include="Pared.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="readJson.h" />
     <ClInclude Include="tools\assimp\ai_assert.h" />
     <ClInclude Include="tools\assimp\anim.h" />
     <ClInclude Include="tools\assimp\camera.h" />
@@ -297,6 +306,7 @@
     <ClInclude Include="tools\GL\wglew.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resourse\levels\Puente.json" />
     <None Include="tools\assimp\color4.inl" />
     <None Include="tools\assimp\material.inl" />
     <None Include="tools\assimp\matrix3x3.inl" />

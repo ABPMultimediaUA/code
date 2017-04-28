@@ -1,6 +1,7 @@
 #pragma once
 class TTransform;
 class TGraphicEngine;
+class TCamara;
 class player
 {
 public:

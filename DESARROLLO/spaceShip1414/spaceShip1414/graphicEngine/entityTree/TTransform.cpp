@@ -102,5 +102,6 @@ void TTransform::endDraw()
 
 glm::mat4 TTransform::getMatriz()
 {
+	std::cout<< glm::to_string(matriz) << std::endl;
 	return matriz;
 }
