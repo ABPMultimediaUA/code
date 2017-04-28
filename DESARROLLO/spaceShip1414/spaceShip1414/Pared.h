@@ -5,7 +5,7 @@ class TCamara;
 class Pared
 {
 public:
-	Pared(TGraphicEngine * motorApp);
+	Pared(TGraphicEngine * motorApp,glm::vec3 tras, glm::vec3 rot, glm::vec3 sca);
 	~Pared();
 	float getVelocity();
 	float getYaw();

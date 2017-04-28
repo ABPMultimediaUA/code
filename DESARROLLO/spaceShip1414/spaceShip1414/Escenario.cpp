@@ -181,6 +181,8 @@ void Escenario::dibujarEscenario() {
 
 		if ((*I).nombre == "HANGAR") {
 
+			Pared * wall = new Pared(engine, glm::vec3((*I).position.x, (*I).position.y, (*I).position.z),glm::vec3((*I).rotation.x, (*I).rotation.y, (*I).rotation.z), glm::vec3((*I).escala.x, (*I).escala.y, (*I).escala.z));
+
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 				/*if ((*T).nombre == "Puerta") {
 
@@ -248,11 +250,11 @@ void Escenario::dibujarEscenario() {
 				if ((*T).nombre == "Paredes") {
 					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 						
-							Pared * wall = new Pared(engine);
+						/*	Pared * wall = new Pared(engine);
 							wall->Translation()->trasladar(((*N).position.x + (*T).position.x + (*I).position.x),0, -((*N).position.z + (*T).position.z + (*I).position.z));
 							wall->Scale()->escalar(((*N).escala.x * (*T).escala.x * (*I).escala.x), 1, -((*N).escala.z * (*T).escala.z * (*I).escala.z));
 							wall->Scale()->getMatriz();
-							std::cout << "-----------------------" << std::endl;
+							std::cout << "-----------------------" << std::endl;*/
 						//	transfEM1->escalar(((*N).escala.x * (*T).escala.x * (*I).escala.x) , ((*N).escala.y * (*T).escala.y * (*I).escala.y) , -((*N).escala.z * (*T).escala.z * (*I).escala.z) );
 						///*	transfTM1->trasladar(((*N).position.x + ((*T).position.x + (*I).position.x)), 0, -((*N).position.z + (*T).position.z + (*I).position.z) / 5);*/
 						//	transfTM1->trasladar(((*N).position.x + (*T).position.x + (*I).position.x)/5, 0, 0);

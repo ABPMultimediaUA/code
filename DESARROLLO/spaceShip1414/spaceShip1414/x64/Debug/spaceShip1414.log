@@ -1,3 +1,4 @@
-﻿  movimentHandler.cpp
-  spaceShip1414.vcxproj -> C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.exe
-  spaceShip1414.vcxproj -> C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)
+﻿  Pared.cpp
+d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\pared.cpp(16): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  spaceShip1414.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.exe
+  spaceShip1414.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)
