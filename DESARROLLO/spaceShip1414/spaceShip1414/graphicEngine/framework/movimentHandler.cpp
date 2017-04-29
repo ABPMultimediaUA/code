@@ -31,10 +31,11 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 	}
 	else {
 		if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { this->activo = true; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);}
-		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) { camara->Translation()->trasladar(0, 0, -camara->getVelocity()); }
-		if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) { camara->Translation()->trasladar(0, 0, camara->getVelocity()); }
-		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) { camara->Translation()->trasladar(-camara->getVelocity(), 0, 0); }
-		if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) { camara->Translation()->trasladar(camara->getVelocity(), 0, 0); }
+		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0,camara->getVelocity(), 0); }
+		if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0, -camara->getVelocity(),0); }
+		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) { camara->getTransformacion()->trasladar(-camara->getVelocity(), 0, 0); }
+		if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) { camara->getTransformacion()->trasladar(camara->getVelocity(), 0, 0); }
+		if (glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0, 0, camara->getVelocity()); }
 		
 
 	}

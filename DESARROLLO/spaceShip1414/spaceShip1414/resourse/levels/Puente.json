@@ -13,9 +13,9 @@
       "components": [
         {
           "localPosition": [
-            -28.5,
             0.0,
-            -18.5
+            0.0,
+            0.0
           ],
           "localRotation": [
             0.0,
@@ -38,9 +38,9 @@
           "components": [
             {
               "localPosition": [
+                -28.5,
                 0.0,
-                0.0,
-                0.0
+                -18.5
               ],
               "localRotation": [
                 0.0,
@@ -401,9 +401,9 @@
           "components": [
             {
               "localPosition": [
+                -28.5,
                 0.0,
-                0.0,
-                0.0
+                -18.5
               ],
               "localRotation": [
                 0.0,
@@ -484,9 +484,9 @@
           "components": [
             {
               "localPosition": [
+                -28.5,
                 0.0,
-                0.0,
-                0.0
+                -18.5
               ],
               "localRotation": [
                 0.0,
@@ -2527,7 +2527,7 @@
       "components": [
         {
           "localPosition": [
-            1.0,
+            0.0,
             0.0,
             0.0
           ],
@@ -2552,7 +2552,7 @@
           "components": [
             {
               "localPosition": [
-                10.0,
+                11.0,
                 0.0,
                 -50.0
               ],
@@ -3027,7 +3027,7 @@
           "components": [
             {
               "localPosition": [
-                10.0,
+                11.0,
                 0.0,
                 -50.0
               ],
@@ -3631,62 +3631,6 @@
               "children": []
             },
             {
-              "name": "Pared-3",
-              "components": [
-                {
-                  "localPosition": [
-                    -35.0,
-                    3.0,
-                    -63.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    46.0,
-                    6.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Pasillo3"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
               "name": "Pared-4",
               "components": [
                 {
@@ -4141,9 +4085,9 @@
       "components": [
         {
           "localPosition": [
-            -8.0,
             0.0,
-            -44.0
+            0.0,
+            0.0
           ],
           "localRotation": [
             0.0,
@@ -4166,9 +4110,9 @@
           "components": [
             {
               "localPosition": [
+                -8.0,
                 0.0,
-                0.0,
-                0.0
+                -44.0
               ],
               "localRotation": [
                 0.0,
@@ -4921,9 +4865,9 @@
           "components": [
             {
               "localPosition": [
+                -8.0,
                 0.0,
-                0.0,
-                0.0
+                -44.0
               ],
               "localRotation": [
                 0.0,
@@ -5116,9 +5060,9 @@
           "components": [
             {
               "localPosition": [
+                -8.0,
                 0.0,
-                0.0,
-                0.0
+                -44.0
               ],
               "localRotation": [
                 0.0,
@@ -5311,9 +5255,9 @@
           "components": [
             {
               "localPosition": [
-                -24.5,
+                -32.5,
                 3.0,
-                -5.5
+                -49.5
               ],
               "localRotation": [
                 0.0,
@@ -9770,9 +9714,9 @@
       "components": [
         {
           "localPosition": [
-            11.0,
             0.0,
-            -50.0
+            0.0,
+            0.0
           ],
           "localRotation": [
             0.0,
@@ -9795,9 +9739,9 @@
           "components": [
             {
               "localPosition": [
-                -10.0,
+                1.0,
                 0.0,
-                50.0
+                0.0
               ],
               "localRotation": [
                 0.0,
@@ -9878,9 +9822,9 @@
           "components": [
             {
               "localPosition": [
-                -10.0,
+                1.0,
                 0.0,
-                50.0
+                0.0
               ],
               "localRotation": [
                 0.0,

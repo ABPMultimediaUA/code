@@ -53,7 +53,7 @@ void TTransform::escalar(float x, float y, float z)
 void TTransform::rotar(float r, float x, float y, float z)
 {
 	matriz = matriz*glm::rotate(glm::mat4(1.0f), r, glm::vec3(x, y, z));
-	std::cout << "MatrizRotacion: " << glm::to_string(matriz) << std::endl;
+
 }
 
 void TTransform::rotarYPR(float yaw, float pitch, float roll = 0.0f)
@@ -86,7 +86,7 @@ void TTransform::desapilar()
 void TTransform::beginDraw()
 {
 	apilar(matrizActual);
-	multiplicarMatriz(matrizActual,matriz);
+	matrizActual = multiplicarMatriz(matrizActual,matriz);
 }
 
 void TTransform::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
@@ -102,6 +102,6 @@ void TTransform::endDraw()
 
 glm::mat4 TTransform::getMatriz()
 {
-	std::cout<< glm::to_string(matriz) << std::endl;
+	//std::cout<< glm::to_string(matriz) << std::endl;
 	return matriz;
 }

@@ -8,15 +8,15 @@
 
 Camara::Camara(TGraphicEngine * motorApp) : velocity{ 5.0f }, yaw{ 0 }, pitch{ 0 }
 {
-	rotation = motorApp->crearTransform();
-	scale = motorApp->crearTransform();
-	translation = motorApp->crearTransform();
-	scale->escalar(0.1, 0.1, 0.1);
-	translation->trasladar(0, 0, 0);
-	TNodo* nodoTransfRC2 = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
-	TNodo* nodoTransfEC2 = motorApp->crearNodo(nodoTransfRC2, scale);
-	TNodo* nodoTransfTC2 = motorApp->crearNodo(nodoTransfEC2, translation);
-	TNodo* nodoCamara = motorApp->crearNodo(nodoTransfTC2, motorApp->crearCamara(true, 45.f, 0.1f, 1000.f, 0.0f, 0.0f, 0.0f, true));
+	Transform = motorApp->crearTransform();
+	Transform->rotar(0, 1.0f, 0.0f, 0.0f);
+	Transform->rotar(0, 0.0f, 1.0f, 0.0f);
+	Transform->rotar(0, 0.0f, 0.0f, 1.0f);
+	Transform->trasladar(0, 0, 0);
+	Transform->escalar(1, 1, 1);
+
+	TNodo* nodoTrans = motorApp->crearNodo(motorApp->nodoRaiz(), Transform);
+	TNodo* nodoCamara = motorApp->crearNodo(nodoTrans, motorApp->crearCamara(true, 45.0f, 0.1f, 1000.f, 0.0f, 0.0f, 0.0f, true));
 	motorApp->addRegistroCamara(nodoCamara);
 
 	motorApp->setCameraMove(this);
@@ -42,19 +42,9 @@ float Camara::getPitch()
 	return pitch;
 }
 
-TTransform * Camara::Rotation()
+TTransform * Camara::getTransformacion()
 {
-	return rotation;
-}
-
-TTransform * Camara::Scale()
-{
-	return scale;
-}
-
-TTransform * Camara::Translation()
-{
-	return translation;
+	return Transform;
 }
 
 void Camara::setVelocity(float v)

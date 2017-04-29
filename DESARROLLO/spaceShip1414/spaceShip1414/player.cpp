@@ -16,7 +16,7 @@ player::player(TGraphicEngine * motorApp) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0
 	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
 	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
 	TNodo* nodoTransfTM = motorApp->crearNodo(nodoTransfEM, translation);
-	TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Nanosuit/nanosuit.obj"));
+	//TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Nanosuit/nanosuit.obj"));
 	motorApp->setPlayerMove(this);
 }
 

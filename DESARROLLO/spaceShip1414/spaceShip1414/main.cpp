@@ -21,13 +21,11 @@ int main() {
 		//camara
 
 		Camara cam(&motorApp);
-		cam.Rotation()->rotar(0.0f, 1.0f, 0.0f, 0.0f);
-		cam.Translation()->trasladar(0,10,120);
-		
+		cam.getTransformacion()->rotar(0.0f, 1.0f, 0.0f, 0.0f);
+		cam.getTransformacion()->trasladar(0, 10, 20);
 		Camara cam2(&motorApp);
-		cam2.Rotation()->rotar(-45.0f, 1.0f, 0.0f, 0.0f);
-		cam2.Translation()->trasladar(0, 0, 20);
-
+		cam2.getTransformacion()->rotar(80.0f, 1.0f, 0.0f, 0.0f);
+		cam2.getTransformacion()->trasladar(0, 0, 100);
 
 
 		//Luz1

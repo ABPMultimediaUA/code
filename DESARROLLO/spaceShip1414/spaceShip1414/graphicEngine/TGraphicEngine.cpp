@@ -251,9 +251,7 @@ void TGraphicEngine::camaraActivada()
 		if (static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->getActiva())
 		{
 			glm::mat4 t = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getEntidad())->getMatriz();
-			glm::mat4 e = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getPadre()->getEntidad())->getMatriz();
-			glm::mat4 r = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
-			static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView((r*e)*t);
+			static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView((t));
 			camaraActiva = static_cast<TCamara*>(registroCamaras.at(i)->getEntidad());
 			camaraActiva->setWindow(this->window);
 			break;
@@ -267,9 +265,7 @@ void TGraphicEngine::luzActivada()
 		if (static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->getActiva())
 		{
 			glm::mat4 t = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getEntidad())->getMatriz();
-			glm::mat4 e = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getEntidad())->getMatriz();
-			glm::mat4 r = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
-			static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->renderLuz((r*e)*t, shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
+			static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->renderLuz((t), shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
 		}
 	}
 }
