@@ -14,22 +14,35 @@
 Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 rot, glm::vec3 sca) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
 {
 
-	/*rotation = motorApp->crearTransform();
+	rotation = motorApp->crearTransform();
 	scale = motorApp->crearTransform();
 	translation = motorApp->crearTransform();
-	scale->escalar(0.1, 0.1, 0.1);
-	translation->trasladar(1, 0, 1);
+	translation->trasladar(0.0f, 0.0f, 0.0f);
+	scale->escalar(sca.x, sca.y, sca.z);
+	translation->trasladar(0.0f, 0.0f, 0.0f);
+
+	rotation->rotar(rot.x, 1.0f, 0.0f, 0.0f);
+	rotation->rotar(rot.y, 0.0f, 1.0f, 0.0f);
+	rotation->rotar(rot.z, 0.0f, 0.0f, 1.0f);
+
+	
+	translation->trasladar(0.0f, 0.0f, 0.0f);
+
+	translation->trasladar(tras.x, tras.y, tras.z);
 	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
 	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
 	TNodo* nodoTransfTM = motorApp->crearNodo(nodoTransfEM, translation);
 	TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/untitled.obj"));
-*/
+
 
 
 }
 
 Pared::~Pared()
 {
+	//delete(scale);
+	//delete(rotation);
+	//delete(translation);
 }
 
 

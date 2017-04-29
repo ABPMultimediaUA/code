@@ -1,8 +1,15 @@
 #pragma once
+
+#include <glm\vec3.hpp>
+#include <glm\gtc\matrix_transform.hpp>
+#include <glm\gtx\string_cast.hpp>
+#include <glm\gtx\euler_angles.hpp>
+
 class TTransform;
 class TGraphicEngine;
 class TCamara;
 class Pared
+
 {
 public:
 	Pared(TGraphicEngine * motorApp,glm::vec3 tras, glm::vec3 rot, glm::vec3 sca);

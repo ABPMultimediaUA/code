@@ -181,7 +181,6 @@ void Escenario::dibujarEscenario() {
 
 		if ((*I).nombre == "HANGAR") {
 
-			Pared * wall = new Pared(engine, glm::vec3((*I).position.x, (*I).position.y, (*I).position.z),glm::vec3((*I).rotation.x, (*I).rotation.y, (*I).rotation.z), glm::vec3((*I).escala.x, (*I).escala.y, (*I).escala.z));
 
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 				/*if ((*T).nombre == "Puerta") {
@@ -250,6 +249,25 @@ void Escenario::dibujarEscenario() {
 				if ((*T).nombre == "Paredes") {
 					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 						
+						float tx, ty, tz, rx, ry, rz, ex, ey, ez;
+
+						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+
+						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+						ry = ((*I).rotation.y + (*T).rotation.y + (*I).rotation.y);
+						rz = ((*I).rotation.z + (*T).rotation.z + (*I).rotation.z);
+
+						ex = ((*I).escala.x + (*T).escala.x + (*I).escala.x) * 0.5;
+						ey = ((*I).escala.y + (*T).escala.y + (*I).escala.y) * 0.5;
+						ez = ((*I).escala.z + (*T).escala.z + (*I).escala.z) * 0.5;
+
+						Pared * wall = new Pared(engine, glm::vec3(tx,ty,-tz),
+							glm::vec3(rx,ry,rz),
+							glm::vec3(ex,ey,ez));
+
+
 						/*	Pared * wall = new Pared(engine);
 							wall->Translation()->trasladar(((*N).position.x + (*T).position.x + (*I).position.x),0, -((*N).position.z + (*T).position.z + (*I).position.z));
 							wall->Scale()->escalar(((*N).escala.x * (*T).escala.x * (*I).escala.x), 1, -((*N).escala.z * (*T).escala.z * (*I).escala.z));
