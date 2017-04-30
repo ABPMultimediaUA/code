@@ -3,9 +3,18 @@ Renderer: GeForce GT 650M/PCIe/SSE2
 OpenGL Version: 4.5.0 NVIDIA 376.54
 GLSL: 4.50 NVIDIA
 
+Recurso nombre: nanosuit.obj
+cas
+cas
+cas
+cas
+cas
+cas
+cas
 Recurso nombre: untitled.obj
+cas
 -------------------------------------->32680
-Nodo eliminado
+TIME: 0.0349615
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado

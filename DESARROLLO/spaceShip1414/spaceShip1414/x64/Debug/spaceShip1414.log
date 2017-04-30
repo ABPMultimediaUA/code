@@ -1,2 +1,11 @@
-﻿  spaceShip1414.vcxproj -> C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.exe
-  spaceShip1414.vcxproj -> C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)
+﻿  TRecursoMalla.cpp
+c:\users\hector\desktop\abp\code\desarrollo\spaceship1414\spaceship1414\graphicengine\resourcemanager\trecursomalla.cpp(24): warning C4267: 'argumento': conversión de 'size_t' a 'GLsizei'; posible pérdida de datos
+c:\users\hector\desktop\abp\code\desarrollo\spaceship1414\spaceship1414\graphicengine\resourcemanager\trecursomalla.cpp(38): warning C4267: 'argumento': conversión de 'size_t' a 'GLsizei'; posible pérdida de datos
+  TGestorRecursos.cpp
+c:\users\hector\desktop\abp\code\desarrollo\spaceship1414\spaceship1414\graphicengine\resourcemanager\tgestorrecursos.cpp(42): error C2259: 'TRecursoTextura': no se puede crear una instancia de una clase abstract
+  c:\users\hector\desktop\abp\code\desarrollo\spaceship1414\spaceship1414\graphicengine\resourcemanager\tgestorrecursos.cpp(42): note: debido a los siguientes miembros:
+  c:\users\hector\desktop\abp\code\desarrollo\spaceship1414\spaceship1414\graphicengine\resourcemanager\tgestorrecursos.cpp(42): note: 'bool TRecurso::cargarFichero(std::string)': es abstracto
+  c:\users\hector\desktop\abp\code\desarrollo\spaceship1414\spaceship1414\graphicengine\resourcemanager\trecurso.h(11): note: vea la declaración de 'TRecurso::cargarFichero'
+  c:\users\hector\desktop\abp\code\desarrollo\spaceship1414\spaceship1414\graphicengine\resourcemanager\tgestorrecursos.cpp(42): note: 'void TRecurso::draw(void)': es abstracto
+  c:\users\hector\desktop\abp\code\desarrollo\spaceship1414\spaceship1414\graphicengine\resourcemanager\trecurso.h(12): note: vea la declaración de 'TRecurso::draw'
+  Generando código...

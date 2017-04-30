@@ -119,10 +119,15 @@ void TGraphicEngine::run()
 {
 	onstart();
 	glfwSetTime(0.0);
+	lastTime = 0.0;
+	double currentFrame = glfwGetTime();
+	double last = currentFrame;
 
 	while (!glfwWindowShouldClose(window))
 	{
-
+		currentFrame = glfwGetTime();
+		deltaTime = (currentFrame - last);
+		last = currentFrame;
 		draw(getLastTime());
 
 		glfwSwapBuffers(window);
@@ -175,6 +180,11 @@ void TGraphicEngine::setCameraMove(Camara * j)
 double TGraphicEngine::getLastTime()
 {
 	return lastTime;
+}
+
+double TGraphicEngine::getDT()
+{
+	return deltaTime;
 }
 
 void TGraphicEngine::setLastTime(double t)

@@ -563,5 +563,11 @@
       <Filter>Archivos de encabezado</Filter>
     </None>
     <None Include="resourse\levels\Puente.json" />
+    <None Include="graphicEngine\Shader\basicoFragmentShader.frag" />
+    <None Include="graphicEngine\Shader\basicoVertexShader.vs" />
+    <None Include="graphicEngine\Shader\directional.fragment_shader" />
+    <None Include="graphicEngine\Shader\directional.vertex_shader" />
+    <None Include="graphicEngine\Shader\directionalFragmentShader.frag" />
+    <None Include="graphicEngine\Shader\directionalVertexShader.vs" />
   </ItemGroup>
 </Project>

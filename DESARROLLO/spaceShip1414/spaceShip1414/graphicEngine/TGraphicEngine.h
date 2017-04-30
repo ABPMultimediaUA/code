@@ -46,6 +46,7 @@ public:
 	void setPlayerMove(player*);
 	void setCameraMove(Camara * j);
 	double getLastTime();
+	double getDT();
 	void setLastTime(double);
 	TCamara * getCamaraActiva();
 	void cambiarCamaraActiva(bool);
@@ -77,5 +78,6 @@ private:
 	float aspect_ratio;
 	movimentHandler* move;
 	double lastTime;
+	double deltaTime;
 };
 
