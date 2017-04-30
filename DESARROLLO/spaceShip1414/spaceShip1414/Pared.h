@@ -15,15 +15,12 @@ class Pared
 public:
 	Pared(TGraphicEngine * motorApp,glm::vec3 tras, glm::vec3 rot, glm::vec3 sca);
 	~Pared();
-	TNodo* addMalla(TNodo*father);
-	TNodo* addNodo(TNodo*father, glm::vec3 tras, glm::vec3 rot, glm::vec3 sca);
 	float getVelocity();
 	float getYaw();
 	float getPitch();
 	TTransform* Rotation();
 	TTransform* Scale();
 	TTransform* Translation();
-	TTransform* Transform;
 	void setVelocity(float);
 	void setYaw(float);
 	void setPitch(float);
@@ -34,7 +31,5 @@ private:
 	TTransform *rotation;
 	TTransform *scale;
 	TTransform *translation;
-	TGraphicEngine *motor;
-	TNodo *padre;
 };
 

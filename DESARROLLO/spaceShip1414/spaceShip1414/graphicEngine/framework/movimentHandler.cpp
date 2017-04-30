@@ -8,6 +8,7 @@
 #include "../../Camara.h"
 #include "../TGraphicEngine.h"
 #include "../entityTree/TCamara.h"
+#include <math.h>
 
 
 movimentHandler::movimentHandler() : activo{ false }, mouseSensitive{ 0.015f }
@@ -49,11 +50,27 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 	}
 	else {
 		if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { this->activo = true; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);}
-		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0,camara->getVelocity(), 0); }
-		if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0, -camara->getVelocity(),0); }
-		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) { camara->getTransformacion()->trasladar(-camara->getVelocity(), 0, 0); }
-		if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) { camara->getTransformacion()->trasladar(camara->getVelocity(), 0, 0); }
+		if (glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0,camara->getVelocity(), 0); }
+		if (glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0, -camara->getVelocity(),0); }
+		if (glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS) { camara->getTransformacion()->trasladar(-camara->getVelocity(), 0, 0); }
+		if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { camara->getTransformacion()->trasladar(camara->getVelocity(), 0, 0); }
 		if (glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0, 0, camara->getVelocity()); }
+		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z + jugador->getVelocity() * dt);
+			jugador->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
+		}
+		if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getVelocity() * dt - jugador->getPos().z);
+			jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
+		}
+		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+			jugador->setPos(jugador->getPos().x - jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
+			jugador->Translation()->trasladar(-jugador->getVelocity() * dt, 0.0, 0.0);
+		}
+		if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
+			jugador->setPos(jugador->getPos().x + jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
+			jugador->Translation()->trasladar(jugador->getVelocity() * dt, 0.0, 0.0);
+		}
 		
 
 	}
@@ -64,24 +81,30 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos)
 	int width, height;
 	glfwGetWindowSize(window, &width, &height);
 
-	GLfloat xoffset = ((width / 2.0f) - static_cast<float>(xpos)) * mouseSensitive;
-	GLfloat yoffset = ((height / 2.0f) - static_cast<float>(ypos)) * mouseSensitive;
-	if (activo) {
-		jugador->setYaw(jugador->getYaw() + xoffset);
-		jugador->setPitch(jugador->getPitch() + xoffset);
-		jugador->Translation()->rotarYPR(jugador->getYaw(), 0.0f, 0.0f);
+	float anguloRaton;
+	//GLfloat xoffset = (static_cast<float>(xpos) * mouseSensitive-(width / 2.0f));
+	//GLfloat yoffset = (static_cast<float>(ypos) * mouseSensitive - (width / 2.0f));
+	////if (activo) {
 
+		anguloRaton = abs(atan2f(ypos - height/2, xpos - width / 2) /3.14*180);
+		std::cout <<xpos<<" "<< width << " " <<ypos<<" "<< height<<" "<<anguloRaton << std::endl;
+		jugador->Rotation()->rotar(anguloRaton,0.0f, 1.0f, 0.0f);
 
+		//jugador->setYaw(jugador->getYaw() + xoffset);
+		//jugador->setPitch(jugador->getPitch() + yoffset);
+		//jugador->Translation()->rotarYPR(jugador->getYaw(), 0.0f, 0.0f);
+
+		/*
 		front.x = cos(glm::radians(jugador->getYaw())) * cos(glm::radians(jugador->getPitch()));
 		front.y = sin(glm::radians(jugador->getYaw()));
 		front.z = sin(glm::radians(jugador->getYaw())) * cos(glm::radians(jugador->getPitch()));
 		front = glm::normalize(front);
 
-		jugador->setRot(0.0f, jugador->getYaw(), 0.0f);
-	}
-	else {
-		glfwSetCursorPos(window, width / 2.0, height / 2.0);
-	}
+		jugador->setRot(0.0f, jugador->getYaw(), 0.0f);*/
+	//}
+	//else {
+	//	glfwSetCursorPos(window, width / 2.0, height / 2.0);
+	//}
 }
 
 void movimentHandler::setMouseSensitive(float mS)
