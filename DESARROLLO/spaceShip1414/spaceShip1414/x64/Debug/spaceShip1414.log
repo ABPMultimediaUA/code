@@ -1,21 +1,2 @@
-﻿  movimentHandler.cpp
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(33): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(34): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(37): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(38): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(41): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(42): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(45): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(46): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(59): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(60): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(63): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(64): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(67): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(68): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(71): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(72): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(89): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\graphicengine\framework\movimenthandler.cpp(89): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-  spaceShip1414.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.exe
-  spaceShip1414.vcxproj -> D:\REPOSITORIO\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)
+﻿  spaceShip1414.vcxproj -> D:\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.exe
+  spaceShip1414.vcxproj -> D:\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)

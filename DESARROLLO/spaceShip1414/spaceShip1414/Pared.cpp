@@ -24,11 +24,9 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 rot, glm::vec3
 	translation->trasladar(tras.x, tras.y, tras.z);
 
 	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
-	TNodo* nodoTransfTM = motorApp->crearNodo(nodoTransfRM, translation);
-	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfTM, scale);
-	TNodo* nodoMalla = motorApp->crearNodo(nodoTransfEM, motorApp->crearMalla("resourse/models/untitled.obj"));
-
-
+	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
+	TNodo* nodoTransfTM = motorApp->crearNodo(nodoTransfEM, translation);
+	TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/untitled.obj"));
 
 }
 

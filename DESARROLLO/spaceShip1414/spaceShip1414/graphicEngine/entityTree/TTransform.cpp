@@ -41,19 +41,19 @@ glm::mat4 TTransform::invertir(glm::mat4 &m)
 
 void TTransform::trasladar(float x, float y, float z)
 {
-	matriz = matriz*glm::translate(glm::mat4(1.0f), glm::vec3(x,y,z));
+	matriz = glm::translate(matriz, glm::vec3(x,y,z));
 	//std::cout << "MatrizTrasladado: " << glm::to_string(matriz) << std::endl;
 }
 
 void TTransform::escalar(float x, float y, float z)
 {
-	matriz = matriz*glm::scale(glm::mat4(1.0f), glm::vec3(x, y, z));
+	matriz = glm::scale(matriz, glm::vec3(x, y, z));
 }
 
 void TTransform::rotar(float r, float x, float y, float z)
 {
-	matriz = matriz*glm::rotate(glm::mat4(1.0f), r, glm::vec3(x, y, z));
-
+	matriz = glm::rotate(matriz, r, glm::vec3(x, y, z));
+	std::cout << "MatrizRotacion: " << glm::to_string(matriz) << std::endl;
 }
 
 void TTransform::rotarYPR(float yaw, float pitch, float roll = 0.0f)
@@ -63,8 +63,7 @@ void TTransform::rotarYPR(float yaw, float pitch, float roll = 0.0f)
 
 glm::mat4 TTransform::multiplicarMatriz(const glm::mat4 &m1, const glm::mat4 &m2)
 {
-	glm::mat4 mul = m1 * m2;
-	return mul;
+	return m1 * m2;
 }
 
 glm::vec4 TTransform::multiplicarVector(const glm::mat4& m, float x, float y, float z)
@@ -86,13 +85,13 @@ void TTransform::desapilar()
 void TTransform::beginDraw()
 {
 	apilar(matrizActual);
-	matrizActual = multiplicarMatriz(matrizActual,matriz);
+	multiplicarMatriz(matriz,matrizActual);
 }
 
 void TTransform::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
 {
 	apilar(matrizActual);
-	matrizActual = multiplicarMatriz(matrizActual, matriz);
+	matrizActual = multiplicarMatriz(matriz, matrizActual);
 }
 
 void TTransform::endDraw()
@@ -102,6 +101,5 @@ void TTransform::endDraw()
 
 glm::mat4 TTransform::getMatriz()
 {
-	//std::cout<< glm::to_string(matriz) << std::endl;
 	return matriz;
 }
