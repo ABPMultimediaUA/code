@@ -1,2 +1,11 @@
-﻿  spaceShip1414.vcxproj -> D:\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.exe
-  spaceShip1414.vcxproj -> D:\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)
+﻿  RayCastCallback.cpp
+  Entity2D.cpp
+c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\fisicas\entity2d.cpp(37): warning C4305: 'argumento': truncamiento de 'int' a 'float32'
+c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\fisicas\entity2d.cpp(365): warning C4101: 'dis': variable local sin referencia
+c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\fisicas\entity2d.cpp(437): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  Generando código...
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+LINK : warning LNK4098: la biblioteca predeterminada'LIBCMT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+glew32s.lib(glew.obj) : warning LNK4099: no se encontr¾ PDB 'vc120.pdb' con 'glew32s.lib(glew.obj)' o en 'C:\Users\David\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\vc120.pdb'; se vincularß el objeto sin tener en cuenta informaci¾n de depuraci¾n
+  spaceShip1414.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.exe
+  spaceShip1414.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)

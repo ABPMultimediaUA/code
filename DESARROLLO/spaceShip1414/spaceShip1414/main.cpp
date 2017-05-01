@@ -24,7 +24,7 @@ int main() {
 		cam.getTransformacion()->rotar(0.0f, 1.0f, 0.0f, 0.0f);
 		cam.getTransformacion()->trasladar(0, 10, 20);
 		Camara cam2(&motorApp);
-		cam2.getTransformacion()->rotar(80.0f, 1.0f, 0.0f, 0.0f);
+		cam2.getTransformacion()->rotar(0.0f, 1.0f, 0.0f, 0.0f);
 		cam2.getTransformacion()->trasladar(0, 0, 100);
 
 

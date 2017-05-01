@@ -30,12 +30,12 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 	if (activo) {
 		if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { this->activo = false; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);}
 		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
-			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z + jugador->getVelocity() * dt);
-			jugador->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
+			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z - jugador->getVelocity() * dt);
+			jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
 		}
 		if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getVelocity() * dt - jugador->getPos().z);
-			jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
+			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getVelocity() * dt + jugador->getPos().z);
+			jugador->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
 		}
 		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x - jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
