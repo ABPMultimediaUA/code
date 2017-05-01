@@ -23,6 +23,7 @@ public:
 	int getDireccion(const vector3df &posEne, const vector3df &posNodo); //ver hacia donde tiene que ir
 	vector3df getVectorDeDireccion(const vector3df &posEne, const vector3df &posNodo);
 	bool estoyEnElNodo(const vector3df &posEne, const vector3df &posNodo);
+	float distanciaEntreElNodoYEne(const vector3df posEne, const vector3df posWaypoint);
 	void calcularAnguloDeRotacion();
 	float getAnguloDeRotacion();
 	

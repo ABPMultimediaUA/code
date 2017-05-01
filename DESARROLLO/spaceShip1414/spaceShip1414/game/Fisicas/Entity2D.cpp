@@ -29,7 +29,6 @@
 
 
 //hacer diferentes constructores para los distintos objetos
-//constructor personaje
 
 Entity2D::Entity2D(b2World * world)
 {
@@ -50,13 +49,13 @@ Entity2D::Entity2D(b2World * world)
 	body->GetFixtureList()->SetFilterData(filtro);
 
 
-	iden = 0;
+	iden = -1;
 	objeto3D = 0;
 
 }
+//constructor personaje
 
 Entity2D::Entity2D(b2World *world, vector3df pos, void* dirPers, ISceneManager* smgr) {
-
 
 
     bodyDef.type = b2_dynamicBody;
@@ -220,7 +219,7 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, I
 	}
 
 	bodyCircle.m_p.Set(0, 0);
-	bodyCircle.m_radius = 70; 
+	bodyCircle.m_radius = 45; 
 
     body = world->CreateBody(&bodyDef);
 	body->CreateFixture(&bodyCircle, 1.0f);
@@ -242,19 +241,28 @@ Entity2D::Entity2D(b2World *world, vector3df pos, bool vivo, void* dirEnemigo, I
     sombraE->SetMassData(&md);
     idenSh = 1;
     filtro.groupIndex = FILTRO_ENEMIGO;
+
 	for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
 		f->SetFilterData(filtro);
 
 	}
-  
+	
+	filtro.groupIndex = FILTRO_PUERTAABIERTA;
 	sombraE->GetFixtureList()->SetFilterData(filtro);
 
-    fisica2 = smgr->addSphereSceneNode(70);
+    fisica2 = smgr->addSphereSceneNode(45);
 	//smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
     fisica2->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
     fisica2->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
     fisica2->getMaterial(0).EmissiveColor.set(0, 100, 10, 100);
     fisica2->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
+
+	//direccion = smgr->addCubeSceneNode(5);
+	////smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
+	//direccion->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
+	//direccion->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
+	//direccion->getMaterial(0).EmissiveColor.set(0, 140, 50, 100);
+	//direccion->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y+5));
 
     iden = 4;
     objeto3D = dirEnemigo;
@@ -336,71 +344,10 @@ float Entity2D::rayCast(b2Vec2 inicio, b2Vec2 fin) {
 
     float resultado = 0;
     float rayo1, rayo2 = 0;
-    //    switch (modo) {
-    //
-    //            //D: 0 -> x++ al punto final hay que sumarle a la X
-    //        case 0:
-    //            std::cout << "TIPO ENTITY: " << this->iden << std::endl;
-    //            std::cout << "Posicion X: " << body->GetPosition().x << "Y: " << body->GetPosition().y << std::endl;
-    //            std::cout << "//////////////////////////////////////////" << std::endl;
-    //            std::cout << "" << std::endl;
 
+	
     rayo1 = rayCasting(inicio, fin);
 
-    // rayo2 = rayCasting(b2Vec2(body->GetPosition().x, body->GetPosition().y),
-    //  b2Vec2(body->GetPosition().x+500.0f, body->GetPosition().y));
-    //
-    //            break;
-    //
-    //            //A: 1 -> x-- al punto final hay que restarle a la X
-    //        case 1:
-    //
-    //            break;
-    //
-    //            //W: 2 -> z++ al punto final hay que sumarle en Z (la y en 2D)
-    //        case 2:
-    //
-    //            break;
-    //
-    //            //S: 3 -> z-- al punto final hay que restarle en Z (la y en 2D)
-    //        case 3:
-    //
-    //            break;
-    //
-    //            //W+D: 4 -> x++ y z++ al punto final hay que sumarle en ambas coordenadas
-    //        case 4:
-    //
-    //            break;
-    //
-    //            //S+D: 5 -> x++ y z-- al punto final hay que restarle en Z (Y) y sumarle en X
-    //        case 5:
-    //
-    //            break;
-    //
-    //            //S+A: 6 -> x-- y z-- al punto final hay que restarle en ambas coordenadas
-    //        case 6:
-    //
-    //            break;
-    //
-    //            //A+W: 7 -> x-- y z++ al punto final hay que restarle en X y sumarle en Z(Y)
-    //        case 7:
-    //
-    //            break;
-    //    }
-    //
-    //    if (rayo1 != 0 && rayo2 != 0) {
-    //        if (rayo1 < rayo2) {
-    //            resultado = rayo1;
-    //        } else {
-    //            resultado = rayo2;
-    //        }
-    //    } else {
-    //        if (rayo1 > rayo2) {
-    //            resultado = rayo1;
-    //        } else {
-    //            resultado = rayo2;
-    //        }
-    //    }
 
 	  std::cout << "Soy rayo1: " << rayo1 << std::endl;
 //    std::cout << "Soy rayo2: " << rayo2 << std::endl;
@@ -415,16 +362,19 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
 
     RayCastCallback *callback = new RayCastCallback();
     llamarCallBack(callback, inicio, fin);
+	float dis;
+	normal = callback->getNormal();
+	puntoDeChoque = callback->getPuntoDeChoque();
 
 	if(callback->getEntidadChocada() == 2 && callback->getEsPuertaCerrada() == true) {
-		std::cout << "----- RESULT: " << callback->getDistancia() << std::endl;
+		std::cout << "----- RESULT: " << callback->getDistancia() + 1.0f << std::endl;
 		return callback->getDistancia();
 	}
 
 		
 
 
-	if(callback->getEntidadChocada() != 1) {
+	else if(callback->getEntidadChocada() != 1) {
 
 		return 0.0f;
 	}
@@ -483,11 +433,19 @@ b2Body* Entity2D::getCuerpo2D() {
     return body;
 }
 
+void Entity2D::getRotarDireccion() {
+	float ang = -atan2f(body->GetPosition().x, body->GetPosition().y) * 180 / 3.14;
+	//direccion->setRotation(vector3df(0,ang,0));
+	
+}
+
 b2Body* Entity2D::getSombraE2D() {
     //  std::cout<<"Sombra x: "<<sombra->GetPosition().x<<" Sombra z: "<<sombra->GetPosition().y<<std::endl;
     //  std::cout<<"Body x: "<<body->GetPosition().x<<" Body z: "<<body->GetPosition().y<<std::endl;
     if (fisica2 != NULL && sombraE != NULL) {
         fisica2->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
+	//	direccion->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y+5));
+		
     }
     return sombraE;
 }
@@ -500,6 +458,16 @@ b2Body * Entity2D::getPuertaBody()
 int Entity2D::getId()
 {
 	return id;
+}
+
+vector3df Entity2D::getNormal()
+{
+	return vector3df(normal.x, 0, normal.y);
+}
+
+vector3df Entity2D::getPuntoDeChoque()
+{
+	return vector3df(puntoDeChoque.x, 0, puntoDeChoque.y);
 }
 
 int Entity2D::getIDEN() {

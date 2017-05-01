@@ -34,7 +34,7 @@ Menu::Menu(IrrlichtDevice* iDevice, int i) {
 void Menu::StarUP(IrrlichtDevice* iDevice) {
 	interfaz = iDevice->getGUIEnvironment();
 	ITexture* tex;
-	tex = iDevice->getVideoDriver()->getTexture("resourse/image/CARTEL.jpg");
+	tex = iDevice->getVideoDriver()->getTexture("textura/CARTEL.jpg");
 	IGUIImage* img;
 	estado = 0;
 	tamanyo = vector2df(300, 300);
