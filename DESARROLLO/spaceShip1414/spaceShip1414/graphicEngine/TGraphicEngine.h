@@ -23,6 +23,7 @@ class TMalla;
 class movimentHandler;
 class player;
 class Camara;
+class Mundo;
 
 class TGraphicEngine
 {
@@ -38,7 +39,7 @@ public:
 	TNodo* nodoRaiz();
 	GLFWwindow* getGLFWwindow();
 	bool init(std::string, int width = 1024, int height = 720, bool full_screen = false);
-	void run();
+	void run(Mundo * world);
 	void info();
 	void addRegistroLuz(TNodo*);
 	void addRegistroCamara(TNodo*);

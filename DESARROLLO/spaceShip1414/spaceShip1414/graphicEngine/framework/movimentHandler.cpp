@@ -28,10 +28,11 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) { glfwSetWindowShouldClose(window, GL_TRUE); }
 	if (activo) {
-		if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { this->activo = false; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);}
+		if (glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS) { this->activo = false; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);}
 		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z - jugador->getVelocity() * dt);
 			jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
+
 		}
 		if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getVelocity() * dt + jugador->getPos().z);
@@ -49,29 +50,36 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 
 	}
 	else {
-		if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { this->activo = true; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);}
-		if (glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0,camara->getVelocity(), 0); }
-		if (glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0, -camara->getVelocity(),0); }
-		if (glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS) { camara->getTransformacion()->trasladar(-camara->getVelocity(), 0, 0); }
-		if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { camara->getTransformacion()->trasladar(camara->getVelocity(), 0, 0); }
-		if (glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS) { camara->getTransformacion()->trasladar(0, 0, camara->getVelocity()); }
+	
+		if (glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS) { this->activo = true; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);}
+		if (glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS) { camara->Translation()->trasladar(0,camara->getVelocity(), 0); }
+		if (glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS) { camara->Translation()->trasladar(0, -camara->getVelocity(),0); }
+		if (glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS) { camara->Translation()->trasladar(-camara->getVelocity(), 0, 0); }
+		if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { camara->Translation()->trasladar(camara->getVelocity(), 0, 0); }
+		if (glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS) { camara->Translation()->trasladar(0, 0, camara->getVelocity()); }
 		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z + jugador->getVelocity() * dt);
 			jugador->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
+			camara->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
+
 		}
 		if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getVelocity() * dt - jugador->getPos().z);
 			jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
+			camara->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
 		}
 		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x - jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
 			jugador->Translation()->trasladar(-jugador->getVelocity() * dt, 0.0, 0.0);
+			camara->Translation()->trasladar(-jugador->getVelocity() * dt, 0.0, 0.0);
 		}
 		if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x + jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
 			jugador->Translation()->trasladar(jugador->getVelocity() * dt, 0.0, 0.0);
+			camara->Translation()->trasladar(jugador->getVelocity() * dt, 0.0, 0.0);
 		}
 		
+		motor->getCamaraActiva()->chechKeys();
 
 	}
 }

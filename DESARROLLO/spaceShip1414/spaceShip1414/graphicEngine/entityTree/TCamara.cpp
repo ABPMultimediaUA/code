@@ -34,6 +34,7 @@ void TCamara::setPerspectiva(float xu, float yu, float zu, float xf, float yf, f
 	this->esPerspectiva = true;
 	this->front = glm::vec3(xf, yf, zf);
 	this->up = glm::vec3(xu, yu, zu);
+	cameraSpeed = 5.0f;
 }
 
 void TCamara::setParalela(float xu, float yu, float zu, float xf, float yf, float zf)
@@ -72,6 +73,8 @@ glm::mat4 TCamara::getView()
 		return glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
 	}
 }
+
+
 
 glm::mat4 TCamara::getProjectionMatrix()
 {
@@ -141,7 +144,7 @@ void TCamara::checkMouse()
 void TCamara::chechKeys()
 {
 
-	if (isKeyPress(GLFW_KEY_W)) { cameraPos += cameraSpeed * front; }
+	if (isKeyPress(GLFW_KEY_W)) { cameraPos += cameraSpeed * front;}
 	if (isKeyPress(GLFW_KEY_S)) { cameraPos -= cameraSpeed * front; }
 	if (isKeyPress(GLFW_KEY_A)) { cameraPos -= glm::normalize(glm::cross(front, up)) * cameraSpeed; }
 	if (isKeyPress(GLFW_KEY_D)) { cameraPos += glm::normalize(glm::cross(front, up)) * cameraSpeed; }

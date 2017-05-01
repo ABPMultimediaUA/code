@@ -6,26 +6,34 @@
 #include "graphicEngine\entityTree\TCamara.h"
 
 
+
 Camara::Camara(TGraphicEngine * motorApp) : velocity{ 5.0f }, yaw{ 0 }, pitch{ 0 }
 {
-	Transform = motorApp->crearTransform();
-	Transform->rotar(0, 1.0f, 0.0f, 0.0f);
-	Transform->rotar(0, 0.0f, 1.0f, 0.0f);
-	Transform->rotar(0, 0.0f, 0.0f, 1.0f);
-	Transform->trasladar(0, 0, 0);
-	Transform->escalar(1, 1, 1);
+	translation = motorApp->crearTransform();
+	rotation = motorApp->crearTransform();
+	scale = motorApp->crearTransform();
+	translation->trasladar(0, 0, 0);
+	rotation->rotar(0.0f, 1.0f, 0.0f, 0.0f);
+	rotation->rotar(0.0f, 0.0f, 1.0f, 0.0f);
+	rotation->rotar(0.0f, 0.0f, 0.0f, 1.0f);
+	scale->escalar(1, 1, 1);
 
-	TNodo* nodoTrans = motorApp->crearNodo(motorApp->nodoRaiz(), Transform);
-	TNodo* nodoCamara = motorApp->crearNodo(nodoTrans, motorApp->crearCamara(true, 45.0f, 0.1f, 1000.f, 0.0f, 0.0f, 0.0f, true));
-	motorApp->addRegistroCamara(nodoCamara);
+	TNodo* nodoTransfRC = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
+	TNodo* nodoTransfEC = motorApp->crearNodo(nodoTransfRC, scale);
+	TNodo* nodoTransfTC = motorApp->crearNodo(nodoTransfEC, translation);
+	TNodo* nodoCamara = motorApp->crearNodo(nodoTransfTC, motorApp->crearCamara(true, 45.f, 0.1f, 2000.f, 10.0f, 10.0f, 10.0f, true));
 
 	motorApp->setCameraMove(this);
+	motorApp->addRegistroCamara(nodoCamara);
+
+
 }
 
 
 Camara::~Camara()
 {
 }
+
 
 float Camara::getVelocity()
 {
@@ -42,10 +50,21 @@ float Camara::getPitch()
 	return pitch;
 }
 
-TTransform * Camara::getTransformacion()
+TTransform * Camara::Rotation()
 {
-	return Transform;
+	return rotation;
 }
+
+TTransform * Camara::Scale()
+{
+	return scale;
+}
+
+TTransform * Camara::Translation()
+{
+	return translation;
+}
+
 
 void Camara::setVelocity(float v)
 {

@@ -130,6 +130,7 @@
     <ClCompile Include="Escenario.cpp" />
     <ClCompile Include="Fisicas\Entity2D.cpp" />
     <ClCompile Include="Fisicas\MiContactListener.cpp" />
+    <ClCompile Include="Fisicas\Mundo.cpp" />
     <ClCompile Include="Fisicas\MyContactFilter.cpp" />
     <ClCompile Include="Fisicas\RayCastCallback.cpp" />
     <ClCompile Include="graphicEngine\entityTree\TCamara.cpp" />
@@ -204,6 +205,7 @@
     <ClInclude Include="Escenario.h" />
     <ClInclude Include="Fisicas\Entity2D.h" />
     <ClInclude Include="Fisicas\MiContactListener.h" />
+    <ClInclude Include="Fisicas\Mundo.h" />
     <ClInclude Include="Fisicas\MyContactFilter.h" />
     <ClInclude Include="Fisicas\RayCastCallback.h" />
     <ClInclude Include="graphicEngine\entityTree\TCamara.h" />

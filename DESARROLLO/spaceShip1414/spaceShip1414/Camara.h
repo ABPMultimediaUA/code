@@ -2,6 +2,7 @@
 class TTransform;
 class TGraphicEngine;
 
+
 class Camara
 {
 public:
@@ -11,7 +12,9 @@ public:
 	float getVelocity();
 	float getYaw();
 	float getPitch();
-	TTransform * getTransformacion();
+	TTransform * Rotation();
+	TTransform * Scale();
+	TTransform * Translation();
 	void setVelocity(float);
 	void setYaw(float);
 	void setPitch(float);
@@ -19,7 +22,8 @@ private:
 	float velocity;
 	float yaw;
 	float pitch;
-
-	TTransform *Transform;
+	TTransform *rotation;
+	TTransform *scale;
+	TTransform *translation;
 };
 
