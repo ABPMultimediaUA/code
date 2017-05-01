@@ -55,12 +55,12 @@ Entity2D::Entity2D(b2World * world)
 }
 //constructor personaje
 
-Entity2D::Entity2D(b2World *world, glm::vec3 pos, void* dirPers) {
+Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) {
 
 
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.x, pos.z);
-    bodyShape.SetAsBox(5.0f, 5.0f);
+    bodyShape.SetAsBox(15.0f, 15.0f);
     md.mass = 1.0f;
     md.center = b2Vec2(3, 3);
     md.I = 0.0f;

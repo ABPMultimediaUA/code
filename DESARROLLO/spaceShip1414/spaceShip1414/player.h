@@ -1,12 +1,16 @@
 #pragma once
 #include <glm\vec3.hpp>
+
 class TTransform;
 class TGraphicEngine;
 class TCamara;
+class Entity2D;
+class Mundo;
+
 class player
 {
 public:
-	player(TGraphicEngine*);
+	player(TGraphicEngine*, Mundo*);
 	~player();
 	float getVelocity();
 	float getYaw();
@@ -23,6 +27,7 @@ public:
 	void setPos(float x, float y, float z);
 	void setRot(float x, float y, float z);
 	void setScale(float x, float y, float z);
+	void actualizarFisicas(int n);
 private:
 	float velocity;
 	float yaw;
@@ -33,5 +38,6 @@ private:
 	glm::vec3 pos;
 	glm::vec3 rot;
 	glm::vec3 escale;
+	Entity2D *entity;
 };
 

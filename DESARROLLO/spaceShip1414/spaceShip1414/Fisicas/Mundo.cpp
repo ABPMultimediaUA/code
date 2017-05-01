@@ -33,3 +33,13 @@ b2World * Mundo::getWorldBox2D()
 {
 	return world;
 }
+
+void Mundo::stepBox2D(double dt, int t, int s)
+{
+	world->Step(dt, t, s);
+}
+
+void Mundo::clearForcesBox2D()
+{
+	world->ClearForces();
+}

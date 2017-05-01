@@ -129,8 +129,10 @@ void TGraphicEngine::run(Mundo * world)
 		currentFrame = glfwGetTime();
 		deltaTime = (currentFrame - last);
 		last = currentFrame;
-		world->getWorldBox2D()->Step(deltaTime, 6, 2); //1.0f/60.0f
-		world->getWorldBox2D()->ClearForces();
+
+		world->stepBox2D(deltaTime, 6, 2);
+		world->clearForcesBox2D();
+
 		draw(getLastTime());
 
 		glfwSwapBuffers(window);

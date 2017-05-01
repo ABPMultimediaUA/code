@@ -15,6 +15,7 @@
 #include <time.h>
 #include "Escenario.h"
 #include "Pared.h"
+#include "Fisicas\Mundo.h"
 //#include "Pared.h"
 //#include "Puerta.h"
 #include "readJson.h"
@@ -35,11 +36,12 @@
 #include "../Fisicas/Entity2D.h"*/
 
 
-Escenario::Escenario(TGraphicEngine * motorApp/*,b2World *world, Juego* game*/) {
+Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m/*,b2World *world, Juego* game*/) {
 
 	/*SM = smgr;
 	VD = driver;*/
 	engine = motorApp;
+	mundo = m;
 	//mundo = world;
 	srand(time(NULL));
 	//entity = new Entity2D(world);
@@ -116,9 +118,9 @@ std::list<Escenario::Elemento> Escenario::getSubHijos() {
 //	return paredes;
 //}
 
-//int Escenario::getTam() {
-//	return tam;
-//}
+int Escenario::getTam() {
+	return tam;
+}
 
 void Escenario::muestraEstructura() {
 	cout << "/////////////////////////////////////////////////////" << endl;
@@ -269,6 +271,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx*2,ty*2,-tz*2),
 							glm::vec3(rx,ry,-rz),
 							-glm::vec3(ex,ey, ez));
+
+						wall->setFisicas(mundo);
 					
 						}
 						//IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
@@ -361,6 +365,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -453,6 +459,7 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
 
 		////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
@@ -545,6 +552,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -617,6 +626,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -689,6 +700,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -761,6 +774,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -850,6 +865,9 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+
+						wall->setFisicas(mundo);
+
 		////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -922,6 +940,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -994,6 +1014,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -1066,6 +1088,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		//					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		//					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -1138,6 +1162,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		//					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		//					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -1228,6 +1254,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		//					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		//					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -1301,6 +1329,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		//					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		//					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -1392,6 +1422,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		//					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		//					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -1483,6 +1515,7 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
 
 		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		//					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
@@ -1557,6 +1590,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		//					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		//					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -1631,6 +1666,7 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
 
 		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		//					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
@@ -1702,6 +1738,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		//					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		//					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -1774,6 +1812,8 @@ void Escenario::dibujarEscenario() {
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							-glm::vec3(ex, ey, ez));
+						wall->setFisicas(mundo);
+
 		//				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
 		//					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
 		//					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
@@ -2243,6 +2283,8 @@ void Escenario::actualizarListaEnemigos(/*f32 dt*/) {
 	//	}
 	//}
 }
+
+
 
 void Escenario::cambiaEstado(std::string mensaje)
 {

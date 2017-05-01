@@ -11,6 +11,8 @@ public:
 	~Mundo();
 	void init();
 	b2World* getWorldBox2D();
+	void stepBox2D(double dt, int t, int s);
+	void clearForcesBox2D();
 
 private:
 

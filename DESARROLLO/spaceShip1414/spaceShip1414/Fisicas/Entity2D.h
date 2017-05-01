@@ -23,7 +23,7 @@ class RayCastCallback;
 class Entity2D {
 public:
 	Entity2D(b2World *world);
-	Entity2D(b2World *world, glm::vec3  pos, void* dirPers);
+	Entity2D(b2World *world, glm::vec3  pos, glm::vec3 rot, void* dirPers);
 	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, glm::vec3  escala, void* dirPared);
 	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, glm::vec3  escala, bool sensor, void* dirPuerta, int ident);
 	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, bool vivo, void* dirBala, int tipo);

@@ -1,4 +1,6 @@
 #include "Pared.h"
+#include "Fisicas\Entity2D.h"
+#include "Fisicas\Mundo.h"
 #include "graphicEngine\TGraphicEngine.h"
 #include "graphicEngine\entityTree\TTransform.h"
 #include "graphicEngine\entityTree\TNodo.h"
@@ -11,7 +13,7 @@
 
 
 
-Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 rot, glm::vec3 sca) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
+Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
 {
 
 	rotation = motorApp->crearTransform();
@@ -22,6 +24,10 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 rot, glm::vec3
 	rotation->rotar(rot.y, 0.0f, 1.0f, 0.0f);
 	rotation->rotar(rot.z, 0.0f, 0.0f, 1.0f);
 	translation->trasladar(tras.x, tras.y, tras.z);
+
+	pos = tras;
+	rot = r;
+	escala = sca;
 
 	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
 	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
@@ -81,4 +87,24 @@ void Pared::setYaw(float y)
 void Pared::setPitch(float p)
 {
 	pitch = p;
+}
+
+void Pared::setFisicas(Mundo *m)
+{
+	entity = new Entity2D(m->getWorldBox2D(), pos, rot, escala, this);
+}
+
+glm::vec3 Pared::getPos()
+{
+	return pos;
+}
+
+glm::vec3 Pared::getRot()
+{
+	return rot;
+}
+
+glm::vec3 Pared::getEscala()
+{
+	return escala;
 }

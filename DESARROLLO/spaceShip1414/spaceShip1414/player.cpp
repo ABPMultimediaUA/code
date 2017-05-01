@@ -4,9 +4,12 @@
 #include "graphicEngine\entityTree\TNodo.h"
 #include "graphicEngine\entityTree\TMalla.h"
 #include "graphicEngine\entityTree\TCamara.h"
+#include "../Fisicas/Entity2D.h"
+#include "../Fisicas/Mundo.h"
+
 #include <iostream>
 
-player::player(TGraphicEngine * motorApp) : velocity{ 50.0f }, yaw{ 0 }, pitch{ 0 }
+player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 50.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	translation = motorApp->crearTransform();
 	rotation = motorApp->crearTransform();
@@ -16,6 +19,12 @@ player::player(TGraphicEngine * motorApp) : velocity{ 50.0f }, yaw{ 0 }, pitch{ 
 	rotation->rotar(0.0f, 0.0f, 1.0f, 0.0f);
 	rotation->rotar(0.0f, 0.0f, 0.0f, 1.0f);
 	scale->escalar(1,1,1);
+
+	pos = glm::vec3(0, 0, 0);
+	rot = glm::vec3(0, 0, 0);
+	escale = glm::vec3(1, 1, 1);
+
+	entity = new Entity2D(m->getWorldBox2D(), pos, rot, this);
 
 	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
 	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
@@ -29,6 +38,9 @@ player::player(TGraphicEngine * motorApp) : velocity{ 50.0f }, yaw{ 0 }, pitch{ 
 
 player::~player()
 {
+
+	delete(entity);
+
 }
 
 float player::getVelocity()
@@ -119,6 +131,37 @@ void player::setRot(float x, float y, float z)
 void player::setScale(float x, float y, float z)
 {
 	escale.x = x; escale.y = y; escale.z = z;
+
+}
+
+void player::actualizarFisicas(int n)
+{
+
+	if (n == -1) {
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+
+	}
+
+	if (n == 0) {
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
+	}
+
+	if (n == 1) {
+
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
+
+
+	}
+
+	if (n == 2) {
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
+
+	}
+
+
+	if (n == 3) {
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
+	}
 
 }
 

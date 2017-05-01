@@ -19,6 +19,7 @@ int main() {
 	if (motorApp.init("Motor Grafico SpaceShip 1414", WIDTH, HEIGHT))
 	{
 		motorApp.info();
+		Mundo * world = new Mundo();
 
 		//camara
 
@@ -53,7 +54,7 @@ int main() {
 		motorApp.addRegistroLuz(nodoLuz);
 		
 		//Malla
-		player jugador(&motorApp);
+		player jugador(&motorApp, world);
 
 		//Malla3
 	/*	TTransform *transfRM = motorApp.crearTransform();
@@ -75,8 +76,7 @@ int main() {
 		TNodo* nodoTransfEM1 = motorApp.crearNodo(nodoTransfRM1, transfEM1);
 		TNodo* nodoTransfTM1 = motorApp.crearNodo(nodoTransfEM1, transfTM1);
 		TNodo* nodoMalla1 = motorApp.crearNodo(nodoTransfTM1, motorApp.crearMalla("resourse/models/untitled.obj"));*/
-		Mundo * world= new Mundo();
-		Escenario *scene = new Escenario(&motorApp);
+		Escenario *scene = new Escenario(&motorApp, world);
 		readJson *json = new readJson(scene);
 		
 	

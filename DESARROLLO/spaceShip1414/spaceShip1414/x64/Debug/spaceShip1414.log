@@ -1,4 +1,6 @@
-﻿  TGraphicEngine.cpp
-c:\users\hector\desktop\abp\code\desarrollo\spaceship1414\spaceship1414\graphicengine\tgraphicengine.cpp(132): warning C4244: 'argumento': conversión de 'double' a 'float32'; posible pérdida de datos
-  spaceShip1414.vcxproj -> C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.exe
-  spaceShip1414.vcxproj -> C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)
+﻿  Entity2D.cpp
+c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\fisicas\entity2d.cpp(37): warning C4305: 'argumento': truncamiento de 'int' a 'float32'
+c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\fisicas\entity2d.cpp(365): warning C4101: 'dis': variable local sin referencia
+c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\fisicas\entity2d.cpp(437): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  spaceShip1414.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.exe
+  spaceShip1414.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)

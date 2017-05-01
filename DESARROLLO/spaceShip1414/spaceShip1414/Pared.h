@@ -9,11 +9,14 @@ class TTransform;
 class TGraphicEngine;
 class TCamara;
 class TNodo;
+class Entity2D;
+class Mundo;
+
 class Pared
 
 {
 public:
-	Pared(TGraphicEngine * motorApp,glm::vec3 tras, glm::vec3 rot, glm::vec3 sca);
+	Pared(TGraphicEngine * motorApp,glm::vec3 tras, glm::vec3 r, glm::vec3 sca);
 	~Pared();
 	float getVelocity();
 	float getYaw();
@@ -24,6 +27,12 @@ public:
 	void setVelocity(float);
 	void setYaw(float);
 	void setPitch(float);
+	void setFisicas(Mundo *);
+	glm::vec3 getPos();
+	glm::vec3 getRot();
+	glm::vec3 getEscala();
+
+
 private:
 	float velocity;
 	float yaw;
@@ -31,5 +40,10 @@ private:
 	TTransform *rotation;
 	TTransform *scale;
 	TTransform *translation;
+	glm::vec3 pos;
+	glm::vec3 rot;
+	glm::vec3 escala;
+
+	Entity2D *entity;
 };
 
