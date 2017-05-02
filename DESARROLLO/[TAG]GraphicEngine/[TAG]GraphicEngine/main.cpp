@@ -52,19 +52,22 @@ int main() {
 		motorApp.addRegistroLuz(nodoLuz);
 		
 		player jugador(&motorApp);
+		TNodo* camara = motorApp.addCamara(2,true, true, motorApp.getPadreX(jugador.getNodo()));
+		motorApp.rotar(camara, -0.3f, 1, 0, 0);
+		motorApp.trasladar(camara, 0, 10, 40);
 
 		//camara
-		TTransform *transfRC3 = motorApp.crearTransform();
-		TTransform *transfEC3 = motorApp.crearTransform();
-		TTransform *transfTC3 = motorApp.crearTransform();
-		transfTC3->trasladar(0, 10, 40);
-		transfRC3->rotar(-0.3, 1, 0, 0);
-		//TNodo* nodoTransfRC3 = motorApp.crearNodo(motorApp.nodoRaiz(), transfRC3);
-		TNodo* nodoTransfRC3 = motorApp.crearNodo(jugador.getNodoTrans(), transfRC3);
-		TNodo* nodoTransfEC3 = motorApp.crearNodo(nodoTransfRC3, transfEC3);
-		TNodo* nodoTransfTC3 = motorApp.crearNodo(nodoTransfEC3, transfTC3);
-		TNodo* nodoCamara3 = motorApp.crearNodo(nodoTransfTC3, motorApp.crearCamaraS(true, 45.f, 0.1f, 1000.f, 0.0f, 10.0f, 10.0f, true));
-		motorApp.addRegistroCamara(nodoCamara3);
+		//TTransform *transfRC3 = motorApp.crearTransform();
+		//TTransform *transfEC3 = motorApp.crearTransform();
+		//TTransform *transfTC3 = motorApp.crearTransform();
+		//transfTC3->trasladar(0, 10, 40);
+		//transfRC3->rotar(-0.3, 1, 0, 0);
+		////TNodo* nodoTransfRC3 = motorApp.crearNodo(motorApp.nodoRaiz(), transfRC3);
+		//TNodo* nodoTransfRC3 = motorApp.crearNodo(motorApp.getPadreX(jugador.getNodo()), transfRC3);
+		//TNodo* nodoTransfEC3 = motorApp.crearNodo(nodoTransfRC3, transfEC3);
+		//TNodo* nodoTransfTC3 = motorApp.crearNodo(nodoTransfEC3, transfTC3);
+		//TNodo* nodoCamara3 = motorApp.crearNodo(nodoTransfTC3, motorApp.crearCamaraS(true, 45.f, 0.1f, 1000.f, 0.0f, 10.0f, 10.0f, true));
+		//motorApp.addRegistroCamara(nodoCamara3);
 
 		//Malla
 		//player jugador(&motorApp, transfTC3);
@@ -73,7 +76,7 @@ int main() {
 		TTransform *transfRM = motorApp.crearTransform();
 		TTransform *transfEM = motorApp.crearTransform();
 		TTransform *transfTM = motorApp.crearTransform();
-		transfEM->escalar(0.8, 0.8, 0.8);
+		transfEM->escalar(0.8f, 0.8f, 0.8f);
 		transfTM->trasladar(0, 0, 0);
 		TNodo* nodoTransfRM = motorApp.crearNodo(motorApp.nodoRaiz(), transfRM);
 		TNodo* nodoTransfEM = motorApp.crearNodo(nodoTransfRM, transfEM);

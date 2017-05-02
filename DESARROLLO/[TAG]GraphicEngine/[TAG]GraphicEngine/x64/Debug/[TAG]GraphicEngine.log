@@ -1,4 +1,1 @@
-﻿  movimentHandler.cpp
-c:\users\elcuc_000\desktop\[tag]graphicengine\[tag]graphicengine\framework\movimenthandler.cpp(46): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-  [TAG]GraphicEngine.vcxproj -> C:\Users\elcuc_000\Desktop\[TAG]GraphicEngine\x64\Debug\[TAG]GraphicEngine.exe
-  [TAG]GraphicEngine.vcxproj -> C:\Users\elcuc_000\Desktop\[TAG]GraphicEngine\x64\Debug\[TAG]GraphicEngine.pdb (Partial PDB)
+﻿

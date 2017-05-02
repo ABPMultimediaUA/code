@@ -21,7 +21,7 @@ TRecursoMalla::Mesh::~Mesh()
 void TRecursoMalla::Mesh::draw()
 {
 	glBindVertexArray(vao);
-	glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, NULL);
+	glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, NULL);
 	glBindVertexArray(0);
 }
 
@@ -35,7 +35,7 @@ void TRecursoMalla::Mesh::draw(GLuint program)
 	glUniform1f(glGetUniformLocation(program, "material.shininess_strength"), shininess_strength);
 
 	glBindVertexArray(vao);
-	glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, NULL);
+	glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(indices.size()), GL_UNSIGNED_INT, NULL);
 	glBindVertexArray(0);
 }
 

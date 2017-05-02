@@ -8,31 +8,9 @@
 
 player::player(TGraphicEngine * motorApp) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
 {
-	rotation = motorApp->crearTransform();
-	scale = motorApp->crearTransform();
-	translation = motorApp->crearTransform();
-	scale->escalar(0.1, 0.1, 0.1);
-	translation->trasladar(0, 0, 0);
-	TNodo* nodoRotation = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
-	TNodo* nodoScale = motorApp->crearNodo(nodoRotation, scale);
-	TNodo* nodoTranslation = motorApp->crearNodo(nodoScale, translation);
-	translationNodo = nodoTranslation;
-	TNodo* nodoMalla = motorApp->crearNodo(nodoTranslation, motorApp->crearMalla("models/Nanosuit/nanosuit.obj"));
-	motorApp->setPlayerMove(this);
-}
-
-player::player(TGraphicEngine * motorApp, TTransform *camara) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
-{
-	tCamara = camara;
-	rotation = motorApp->crearTransform();
-	scale = motorApp->crearTransform();
-	translation = motorApp->crearTransform();
-	scale->escalar(0.1, 0.1, 0.1);
-	translation->trasladar(0, 0, 0);
-	TNodo* nodoRotation = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
-	TNodo* nodoScale = motorApp->crearNodo(nodoRotation, scale);
-	TNodo* nodoTranslation = motorApp->crearNodo(nodoScale, translation);
-	TNodo* nodoMalla = motorApp->crearNodo(nodoTranslation, motorApp->crearMalla("models/Nanosuit/nanosuit.obj"));
+	nodo = motorApp->addMalla("models/Nanosuit/nanosuit.obj");
+	motorApp->escalar(nodo, 0.1f, 0.1f, 0.1f);
+	motorApp->trasladar(nodo, 0, 0, 0);
 	motorApp->setPlayerMove(this);
 }
 
@@ -55,25 +33,24 @@ float player::getPitch()
 	return pitch;
 }
 
-TTransform * player::Rotation()
+void player::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
 {
-	return rotation;
+	motorApp->rotar(nodo, a, x, y, z);
 }
 
-TTransform * player::Scale()
+void player::rotationYPR(TGraphicEngine * motorApp, float y, float p, float r)
 {
-	return scale;
+	motorApp->rotarYPR(nodo, y, p, r);
 }
 
-TTransform * player::Translation()
+void player::scale(TGraphicEngine * motorApp, float x, float y, float z)
 {
-	return translation;
+	motorApp->escalar(nodo, x, y, z);
 }
 
-void player::Translation(float x, float y, float z)
+void player::translation(TGraphicEngine * motorApp, float x, float y, float z)
 {
-	translation->trasladar(x, y, z);
-	tCamara->trasladar(x, y, z);
+	motorApp->trasladar(nodo, x, y, z);
 }
 
 void player::setVelocity(float v)
@@ -91,7 +68,7 @@ void player::setPitch(float p)
 	pitch = p;
 }
 
-TNodo * player::getNodoTrans()
+TNodo* player::getNodo()
 {
-	return translationNodo;
+	return nodo;
 }

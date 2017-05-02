@@ -196,6 +196,115 @@ void TGraphicEngine::cambiarCamaraActiva(char m)
 	}
 }
 
+TNodo * TGraphicEngine::addMalla(std::string path, TNodo * nodoPadre)
+{
+	TTransform * rotation = crearTransform();
+	TTransform * scale = crearTransform();
+	TTransform * translation = crearTransform();
+	TNodo* nodoRotation;
+	if (nodoPadre == nullptr) 
+	{
+		nodoRotation = crearNodo(nodoRaiz(), rotation);
+	}
+	else
+	{
+		nodoRotation = crearNodo(nodoPadre, rotation);
+	}
+	TNodo* nodoScale = crearNodo(nodoRotation, scale);
+	TNodo* nodoTranslation = crearNodo(nodoScale, translation);
+	TNodo* nodoMalla;
+	if (path.empty())
+	{
+		nodoMalla = crearNodo(nodoTranslation, crearMalla("resourse/models/box.obj"));
+	}
+	else 
+	{
+		nodoMalla = crearNodo(nodoTranslation, crearMalla(path));
+	}
+	return nodoMalla;
+}
+
+TNodo * TGraphicEngine::addCamara(char tipo, bool per, bool act, TNodo * nodoPadre)
+{
+	TTransform *transfRC = crearTransform();
+	TTransform *transfEC = crearTransform();
+	TTransform *transfTC = crearTransform();
+	TNodo* nodoTransfRC = crearNodo(nodoPadre, transfRC);
+	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
+	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
+	TNodo* nodoCamara;
+	if (tipo == 2) {
+		nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(per, 45.f, 0.1f, 1000.f, 0.0f, 10.0f, 10.0f, act));
+	}
+	else if(tipo == 1) {
+		nodoCamara = crearNodo(nodoTransfTC, crearCamara(per, 45.f, 0.1f, 1000.f, 0.0f, 10.0f, 10.0f, act));
+	}
+	else 
+	{
+		nodoCamara = crearNodo(nodoTransfTC, crearCamara());
+	}
+	addRegistroCamara(nodoCamara);
+	return nodoCamara;
+}
+
+TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre)
+{
+	TTransform *transfRL = crearTransform();
+	TTransform *transfEL = crearTransform();
+	TTransform *transfTL = crearTransform();
+	transfTL->trasladar(0, 100, 10);
+	TNodo* nodoTransfRL;
+	if (nodoPadre == nullptr)
+	{
+		nodoTransfRL = crearNodo(nodoRaiz(), transfRL);
+	}
+	else
+	{
+		nodoTransfRL = crearNodo(nodoPadre, transfRL);
+	}
+	
+	TNodo* nodoTransfEL = crearNodo(nodoTransfRL, transfEL);
+	TNodo* nodoTransfTL = crearNodo(nodoTransfEL, transfTL);
+	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.0f, 10.0f, 10.0f, true));
+	addRegistroLuz(nodoLuz);
+	return nodoLuz;
+}
+
+void TGraphicEngine::trasladar(TNodo * nodo, float x, float y, float z)
+{
+	TTransform * t = static_cast<TTransform*>(nodo->getPadre()->getEntidad());
+	t->trasladar(x, y, z);
+}
+
+void TGraphicEngine::rotar(TNodo * nodo, float a, float x, float y, float z)
+{
+	TTransform * r = static_cast<TTransform*>(nodo->getPadre()->getPadre()->getPadre()->getEntidad());
+	r->rotar(a, x, y, z);
+}
+
+void TGraphicEngine::rotarYPR(TNodo * nodo, float y, float p, float r)
+{
+	TTransform * ro = static_cast<TTransform*>(nodo->getPadre()->getPadre()->getPadre()->getEntidad());
+	ro->rotarYPR(y, p, r);
+}
+
+void TGraphicEngine::escalar(TNodo * nodo, float x, float y, float z)
+{
+	TTransform * e = static_cast<TTransform*>(nodo->getPadre()->getPadre()->getEntidad());
+	e->escalar(x, y, z);
+}
+
+TNodo * TGraphicEngine::getPadreX(TNodo * hijo, char padre)
+{
+	if (padre == 0 || hijo->getPadre() == nullptr) {
+		return hijo->getPadre();
+	}
+	else
+	{
+		return getPadreX(hijo->getPadre(), padre-1);
+	}
+}
+
 void TGraphicEngine::draw(double time)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -294,7 +403,7 @@ void TGraphicEngine::resize_callback(GLFWwindow * window, int width, int height)
 void TGraphicEngine::mouse_callback(GLFWwindow * window, double xpos, double ypos)
 {
 	TGraphicEngine* win_app = getTGraphicEngineApp(window);
-	win_app->getMovimentHandler()->onMouse(window, xpos, ypos);
+	win_app->getMovimentHandler()->onMouse(window, xpos, ypos, win_app);
 }
 
 inline TGraphicEngine * TGraphicEngine::getTGraphicEngineApp(GLFWwindow * window)

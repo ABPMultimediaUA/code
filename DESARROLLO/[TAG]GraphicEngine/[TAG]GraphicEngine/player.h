@@ -11,22 +11,18 @@ public:
 	float getVelocity();
 	float getYaw();
 	float getPitch();
-	TTransform* Rotation();
-	TTransform* Scale();
-	TTransform* Translation();
-	void Translation(float, float, float);
+	void rotation(TGraphicEngine *, float, float, float, float);
+	void rotationYPR(TGraphicEngine *, float, float, float);
+	void scale(TGraphicEngine *, float, float, float);
+	void translation(TGraphicEngine *, float, float, float);
 	void setVelocity(float);
 	void setYaw(float);
 	void setPitch(float);
-	TNodo * getNodoTrans();
+	TNodo* getNodo();
 private:
 	float velocity;
 	float yaw;
 	float pitch;
-	TTransform *rotation;
-	TTransform *scale;
-	TTransform *translation;
-	TTransform *tCamara;
-	TNodo *translationNodo;
+	TNodo *nodo;
 };
 

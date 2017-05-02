@@ -1,157 +1,791 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GTX 780 Ti/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 376.53
+Renderer: GeForce GTX 860M/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 376.54
 GLSL: 4.50 NVIDIA
 
 Recurso nombre: nanosuit.obj
 Recurso nombre: Street environment_V01.obj
-Angulo: -0.064625 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0652692 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0662665 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0674884 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0690665 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.070685 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0719593 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0729342 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.074025 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0751278 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0766847 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0779796 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0789592 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0796159 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0797805 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0801102 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0802754 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0804407 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0806061 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0807717 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0813596 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0822298 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0831362 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0842784 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0844575 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0860102 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0879858 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.088173 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0904265 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0939393 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0982646 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.0986897 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.10314 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.111898 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.122533 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.129705 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.13324 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.135522 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.137168 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.138786 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.139945 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.140957 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.141542 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.142089 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.144106 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.146441 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.14883 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.149288 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.151956 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.154791 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.157865 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.158129 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.160441 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.162527 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.162587 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.163649 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.163705 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.164138 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.164517 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.16457 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.164949 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.165712 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.166674 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.168268 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.170067 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.172268 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.174477 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.176688 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.178294 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.178494 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: -0.180091 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.178893 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.178095 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.177895 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.177496 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.177297 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.176089 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.174858 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.173637 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.172813 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.172613 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.172813 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.173213 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.17339 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.173793 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.174196 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.174398 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.1746 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.174581 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.174378 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.174175 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.173973 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.17377 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.173568 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.173366 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.173164 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.172963 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.171757 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.170558 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.169763 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.16917 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.168579 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.168186 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.167599 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.167165 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.166581 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.166387 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.166145 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.165514 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.164441 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.164248 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.161838 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.15746 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.157197 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.152532 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.15218 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.145897 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.138125 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.128889 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.115871 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.104247 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0955619 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0887172 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0883546 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0827843 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0782115 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0777069 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0747711 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.071679 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.069109 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0689563 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0650523 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0645107 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0636818 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0628157 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0627851 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.062441 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0624024 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.062461 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0626134 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0630092 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0631629 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0628308 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0624436 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0619329 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.0615465 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
-Angulo: 0.061451 Rotation: quat(-0.000000, -0.000000, -0.000000, 1.000000)
+Angulo: -0.0196334 Rotation: 
+Angulo: -0.021525 Rotation: 
+Angulo: -0.0219486 Rotation: 
+Angulo: -0.0227829 Rotation: 
+Angulo: -0.0234656 Rotation: 
+Angulo: -0.026461 Rotation: 
+Angulo: -0.02709 Rotation: 
+Angulo: -0.0288276 Rotation: 
+Angulo: -0.0296531 Rotation: 
+Angulo: -0.0302196 Rotation: 
+Angulo: -0.0316913 Rotation: 
+Angulo: -0.0355408 Rotation: 
+Angulo: -0.0377409 Rotation: 
+Angulo: -0.0405881 Rotation: 
+Angulo: -0.0433196 Rotation: 
+Angulo: -0.047147 Rotation: 
+Angulo: -0.0488943 Rotation: 
+Angulo: -0.0495725 Rotation: 
+Angulo: -0.0505868 Rotation: 
+Angulo: -0.0507426 Rotation: 
+Angulo: -0.0508263 Rotation: 
+Angulo: -0.0509042 Rotation: 
+Angulo: -0.0510263 Rotation: 
+Angulo: -0.0511504 Rotation: 
+Angulo: -0.0513118 Rotation: 
+Angulo: -0.051457 Rotation: 
+Angulo: -0.0516016 Rotation: 
+Angulo: -0.0517699 Rotation: 
+Angulo: -0.0519275 Rotation: 
+Angulo: -0.0522409 Rotation: 
+Angulo: -0.0523725 Rotation: 
+Angulo: -0.0524619 Rotation: 
+Angulo: -0.0526346 Rotation: 
+Angulo: -0.0527601 Rotation: 
+Angulo: -0.0528439 Rotation: 
+Angulo: -0.0528858 Rotation: 
+Angulo: -0.0529278 Rotation: 
+Angulo: -0.0530117 Rotation: 
+Angulo: -0.0533063 Rotation: 
+Angulo: -0.0536017 Rotation: 
+Angulo: -0.0537734 Rotation: 
+Angulo: -0.0542819 Rotation: 
+Angulo: -0.0544518 Rotation: 
+Angulo: -0.0546204 Rotation: 
+Angulo: -0.0546625 Rotation: 
+Angulo: -0.0547891 Rotation: 
+Angulo: 0.0547891 Rotation: 
+Angulo: 0.054747 Rotation: 
+Angulo: 0.054705 Rotation: 
+Angulo: 0.0546629 Rotation: 
+Angulo: 0.0546209 Rotation: 
+Angulo: 0.0545788 Rotation: 
+Angulo: 0.0546629 Rotation: 
+Angulo: 0.054747 Rotation: 
+Angulo: -0.0548311 Rotation: 
+Angulo: -0.0545788 Rotation: 
+Angulo: -0.0544527 Rotation: 
+Angulo: -0.0542833 Rotation: 
+Angulo: -0.0541114 Rotation: 
+Angulo: -0.0540249 Rotation: 
+Angulo: -0.0534156 Rotation: 
+Angulo: -0.0533729 Rotation: 
+Angulo: -0.0530572 Rotation: 
+Angulo: -0.0530143 Rotation: 
+Angulo: -0.0529284 Rotation: 
+Angulo: -0.0529237 Rotation: 
+Angulo: -0.0528278 Rotation: 
+Angulo: -0.0527363 Rotation: 
+Angulo: -0.0526931 Rotation: 
+Angulo: -0.0525957 Rotation: 
+Angulo: -0.0524974 Rotation: 
+Angulo: -0.0523546 Rotation: 
+Angulo: -0.0522479 Rotation: 
+Angulo: -0.0520886 Rotation: 
+Angulo: -0.0519784 Rotation: 
+Angulo: -0.0519114 Rotation: 
+Angulo: -0.0515309 Rotation: 
+Angulo: -0.0513128 Rotation: 
+Angulo: -0.051071 Rotation: 
+Angulo: -0.0507426 Rotation: 
+Angulo: -0.0505792 Rotation: 
+Angulo: -0.0500506 Rotation: 
+Angulo: -0.0498183 Rotation: 
+Angulo: -0.0496898 Rotation: 
+Angulo: -0.0493817 Rotation: 
+Angulo: -0.0491483 Rotation: 
+Angulo: -0.0489601 Rotation: 
+Angulo: -0.0486973 Rotation: 
+Angulo: -0.048355 Rotation: 
+Angulo: -0.04819 Rotation: 
+Angulo: -0.0478536 Rotation: 
+Angulo: -0.0476365 Rotation: 
+Angulo: -0.0475376 Rotation: 
+Angulo: -0.0470567 Rotation: 
+Angulo: -0.0468996 Rotation: 
+Angulo: -0.0463839 Rotation: 
+Angulo: -0.0462725 Rotation: 
+Angulo: -0.0459323 Rotation: 
+Angulo: -0.0456145 Rotation: 
+Angulo: -0.0453116 Rotation: 
+Angulo: -0.0447851 Rotation: 
+Angulo: -0.0444587 Rotation: 
+Angulo: -0.0442539 Rotation: 
+Angulo: -0.0433661 Rotation: 
+Angulo: -0.0428135 Rotation: 
+Angulo: -0.042238 Rotation: 
+Angulo: -0.0417923 Rotation: 
+Angulo: -0.0413854 Rotation: 
+Angulo: -0.0412285 Rotation: 
+Angulo: -0.0410169 Rotation: 
+Angulo: -0.0408022 Rotation: 
+Angulo: -0.0404692 Rotation: 
+Angulo: -0.0403555 Rotation: 
+Angulo: -0.0401239 Rotation: 
+Angulo: -0.0398266 Rotation: 
+Angulo: -0.0396439 Rotation: 
+Angulo: -0.0392687 Rotation: 
+Angulo: -0.0382708 Rotation: 
+Angulo: -0.0379229 Rotation: 
+Angulo: -0.0377281 Rotation: 
+Angulo: -0.0373873 Rotation: 
+Angulo: -0.0371544 Rotation: 
+Angulo: -0.0370571 Rotation: 
+Angulo: -0.0371422 Rotation: 
+Angulo: -0.0372981 Rotation: 
+Angulo: -0.0375771 Rotation: 
+Angulo: -0.0380748 Rotation: 
+Angulo: -0.0386468 Rotation: 
+Angulo: -0.0389657 Rotation: 
+Angulo: -0.0396629 Rotation: 
+Angulo: -0.0406387 Rotation: 
+Angulo: -0.0412526 Rotation: 
+Angulo: -0.0416602 Rotation: 
+Angulo: -0.0445686 Rotation: 
+Angulo: -0.0469518 Rotation: 
+Angulo: -0.0487439 Rotation: 
+Angulo: -0.0532488 Rotation: 
+Angulo: 0.0545667 Rotation: 
+Angulo: 0.0537747 Rotation: 
+Angulo: 0.052757 Rotation: 
+Angulo: 0.0510951 Rotation: 
+Angulo: 0.050673 Rotation: 
+Angulo: 0.0502675 Rotation: 
+Angulo: 0.049812 Rotation: 
+Angulo: 0.0488594 Rotation: 
+Angulo: 0.0475966 Rotation: 
+Angulo: 0.0468299 Rotation: 
+Angulo: 0.0463846 Rotation: 
+Angulo: 0.0454642 Rotation: 
+Angulo: 0.0450817 Rotation: 
+Angulo: 0.0447715 Rotation: 
+Angulo: 0.044619 Rotation: 
+Angulo: 0.0444683 Rotation: 
+Angulo: 0.0441287 Rotation: 
+Angulo: 0.0440456 Rotation: 
+Angulo: 0.0434368 Rotation: 
+Angulo: 0.0432522 Rotation: 
+Angulo: 0.0431283 Rotation: 
+Angulo: 0.0430059 Rotation: 
+Angulo: 0.0428848 Rotation: 
+Angulo: 0.0427858 Rotation: 
+Angulo: 0.0426855 Rotation: 
+Angulo: 0.0425838 Rotation: 
+Angulo: 0.042376 Rotation: 
+Angulo: 0.0424806 Rotation: 
+Angulo: 0.0426855 Rotation: 
+Angulo: 0.0428004 Rotation: 
+Angulo: 0.0429432 Rotation: 
+Angulo: 0.0427893 Rotation: 
+Angulo: 0.0428186 Rotation: 
+Angulo: 0.0427057 Rotation: 
+Angulo: 0.0426899 Rotation: 
+Angulo: 0.0427683 Rotation: 
+Angulo: 0.0428126 Rotation: 
+Angulo: 0.0429625 Rotation: 
+Angulo: 0.0428386 Rotation: 
+Angulo: 0.0428788 Rotation: 
+Angulo: 0.0429862 Rotation: 
+Angulo: 0.0431541 Rotation: 
+Angulo: 0.0432019 Rotation: 
+Angulo: 0.0433993 Rotation: 
+Angulo: 0.0437153 Rotation: 
+Angulo: 0.044112 Rotation: 
+Angulo: 0.0443998 Rotation: 
+Angulo: 0.0451501 Rotation: 
+Angulo: 0.0452908 Rotation: 
+Angulo: 0.045761 Rotation: 
+Angulo: 0.0460517 Rotation: 
+Angulo: 0.0463258 Rotation: 
+Angulo: 0.0468921 Rotation: 
+Angulo: 0.0471294 Rotation: 
+Angulo: 0.0472469 Rotation: 
+Angulo: 0.0474781 Rotation: 
+Angulo: 0.047505 Rotation: 
+Angulo: 0.0475317 Rotation: 
+Angulo: 0.0476182 Rotation: 
+Angulo: 0.0476705 Rotation: 
+Angulo: 0.0477814 Rotation: 
+Angulo: 0.0479407 Rotation: 
+Angulo: 0.0481668 Rotation: 
+Angulo: 0.0484271 Rotation: 
+Angulo: 0.0487288 Rotation: 
+Angulo: 0.0489222 Rotation: 
+Angulo: 0.0490524 Rotation: 
+Angulo: 0.0492155 Rotation: 
+Angulo: 0.0493032 Rotation: 
+Angulo: 0.0494237 Rotation: 
+Angulo: 0.0495253 Rotation: 
+Angulo: 0.0496094 Rotation: 
+Angulo: 0.0497597 Rotation: 
+Angulo: 0.050003 Rotation: 
+Angulo: 0.0502895 Rotation: 
+Angulo: 0.0505931 Rotation: 
+Angulo: 0.0508037 Rotation: 
+Angulo: 0.051207 Rotation: 
+Angulo: 0.0516116 Rotation: 
+Angulo: 0.0523128 Rotation: 
+Angulo: 0.0526789 Rotation: 
+Angulo: 0.0530387 Rotation: 
+Angulo: 0.0535353 Rotation: 
+Angulo: 0.0537833 Rotation: 
+Angulo: 0.0540728 Rotation: 
+Angulo: 0.0546435 Rotation: 
+Angulo: -0.0546911 Rotation: 
+Angulo: -0.0546445 Rotation: 
+Angulo: -0.0545978 Rotation: 
+Angulo: -0.0540384 Rotation: 
+Angulo: -0.0532404 Rotation: 
+Angulo: -0.0521634 Rotation: 
+Angulo: -0.0516048 Rotation: 
+Angulo: -0.0504996 Rotation: 
+Angulo: -0.049705 Rotation: 
+Angulo: -0.0491153 Rotation: 
+Angulo: -0.048717 Rotation: 
+Angulo: -0.0482319 Rotation: 
+Angulo: -0.0480727 Rotation: 
+Angulo: -0.047972 Rotation: 
+Angulo: -0.0479547 Rotation: 
+Angulo: -0.0478536 Rotation: 
+Angulo: -0.0475916 Rotation: 
+Angulo: -0.0474489 Rotation: 
+Angulo: -0.0472024 Rotation: 
+Angulo: -0.0467987 Rotation: 
+Angulo: -0.0459048 Rotation: 
+Angulo: -0.0452753 Rotation: 
+Angulo: -0.0448821 Rotation: 
+Angulo: -0.0438329 Rotation: 
+Angulo: -0.0429281 Rotation: 
+Angulo: -0.0424879 Rotation: 
+Angulo: -0.0422887 Rotation: 
+Angulo: -0.0419291 Rotation: 
+Angulo: -0.041848 Rotation: 
+Angulo: -0.0418211 Rotation: 
+Angulo: -0.041902 Rotation: 
+Angulo: -0.0421981 Rotation: 
+Angulo: -0.0426476 Rotation: 
+Angulo: -0.042941 Rotation: 
+Angulo: -0.043121 Rotation: 
+Angulo: -0.0436473 Rotation: 
+Angulo: -0.0438068 Rotation: 
+Angulo: -0.0441653 Rotation: 
+Angulo: -0.0443883 Rotation: 
+Angulo: -0.0452631 Rotation: 
+Angulo: -0.0459393 Rotation: 
+Angulo: -0.0467195 Rotation: 
+Angulo: -0.0470727 Rotation: 
+Angulo: -0.0479992 Rotation: 
+Angulo: -0.0484324 Rotation: 
+Angulo: -0.0499612 Rotation: 
+Angulo: -0.0512024 Rotation: 
+Angulo: -0.0525083 Rotation: 
+Angulo: -0.0544974 Rotation: 
+Angulo: 0.0540686 Rotation: 
+Angulo: 0.0535459 Rotation: 
+Angulo: 0.0530727 Rotation: 
+Angulo: 0.052649 Rotation: 
+Angulo: 0.0521347 Rotation: 
+Angulo: 0.0518097 Rotation: 
+Angulo: 0.0511208 Rotation: 
+Angulo: 0.0503987 Rotation: 
+Angulo: 0.0497793 Rotation: 
+Angulo: 0.0493015 Rotation: 
+Angulo: 0.0486637 Rotation: 
+Angulo: 0.0483303 Rotation: 
+Angulo: 0.0481654 Rotation: 
+Angulo: 0.0478394 Rotation: 
+Angulo: 0.0475982 Rotation: 
+Angulo: 0.0474174 Rotation: 
+Angulo: 0.0472002 Rotation: 
+Angulo: 0.0467579 Rotation: 
+Angulo: 0.046292 Rotation: 
+Angulo: 0.0460368 Rotation: 
+Angulo: 0.04575 Rotation: 
+Angulo: 0.0452134 Rotation: 
+Angulo: 0.0446448 Rotation: 
+Angulo: 0.0440682 Rotation: 
+Angulo: 0.0433985 Rotation: 
+Angulo: 0.0428501 Rotation: 
+Angulo: 0.0424092 Rotation: 
+Angulo: 0.0422221 Rotation: 
+Angulo: 0.0418328 Rotation: 
+Angulo: 0.041459 Rotation: 
+Angulo: 0.0413136 Rotation: 
+Angulo: 0.0408229 Rotation: 
+Angulo: 0.040295 Rotation: 
+Angulo: 0.0401265 Rotation: 
+Angulo: 0.0395798 Rotation: 
+Angulo: 0.0392896 Rotation: 
+Angulo: 0.0391414 Rotation: 
+Angulo: 0.0390504 Rotation: 
+Angulo: 0.0387152 Rotation: 
+Angulo: 0.0386128 Rotation: 
+Angulo: 0.0383311 Rotation: 
+Angulo: 0.0381553 Rotation: 
+Angulo: 0.0379843 Rotation: 
+Angulo: 0.037744 Rotation: 
+Angulo: 0.0375843 Rotation: 
+Angulo: 0.0374429 Rotation: 
+Angulo: 0.0373049 Rotation: 
+Angulo: 0.0372237 Rotation: 
+Angulo: 0.0370259 Rotation: 
+Angulo: 0.0368102 Rotation: 
+Angulo: 0.0366031 Rotation: 
+Angulo: 0.0363927 Rotation: 
+Angulo: 0.0362795 Rotation: 
+Angulo: 0.0361038 Rotation: 
+Angulo: 0.0359239 Rotation: 
+Angulo: 0.0358519 Rotation: 
+Angulo: 0.0356422 Rotation: 
+Angulo: 0.0355745 Rotation: 
+Angulo: 0.0355362 Rotation: 
+Angulo: 0.0355267 Rotation: 
+Angulo: 0.0355362 Rotation: 
+Angulo: 0.0355745 Rotation: 
+Angulo: 0.0357508 Rotation: 
+Angulo: 0.0358519 Rotation: 
+Angulo: 0.0359866 Rotation: 
+Angulo: 0.0361799 Rotation: 
+Angulo: 0.0363019 Rotation: 
+Angulo: 0.036459 Rotation: 
+Angulo: 0.0366084 Rotation: 
+Angulo: 0.0367408 Rotation: 
+Angulo: 0.0368146 Rotation: 
+Angulo: 0.0369398 Rotation: 
+Angulo: 0.0370551 Rotation: 
+Angulo: 0.0372395 Rotation: 
+Angulo: 0.037334 Rotation: 
+Angulo: 0.0378619 Rotation: 
+Angulo: 0.038184 Rotation: 
+Angulo: 0.0385404 Rotation: 
+Angulo: 0.0389352 Rotation: 
+Angulo: 0.0394873 Rotation: 
+Angulo: 0.0397801 Rotation: 
+Angulo: 0.040404 Rotation: 
+Angulo: 0.0406888 Rotation: 
+Angulo: 0.0416784 Rotation: 
+Angulo: 0.0424018 Rotation: 
+Angulo: 0.0427287 Rotation: 
+Angulo: 0.0434368 Rotation: 
+Angulo: 0.0441344 Rotation: 
+Angulo: 0.0448076 Rotation: 
+Angulo: 0.0453442 Rotation: 
+Angulo: 0.0455855 Rotation: 
+Angulo: 0.0461519 Rotation: 
+Angulo: 0.0466273 Rotation: 
+Angulo: 0.0470782 Rotation: 
+Angulo: 0.0475015 Rotation: 
+Angulo: 0.0478152 Rotation: 
+Angulo: 0.0483759 Rotation: 
+Angulo: 0.0486616 Rotation: 
+Angulo: 0.0490342 Rotation: 
+Angulo: 0.0494123 Rotation: 
+Angulo: 0.0497957 Rotation: 
+Angulo: 0.0500109 Rotation: 
+Angulo: 0.0504896 Rotation: 
+Angulo: 0.0511532 Rotation: 
+Angulo: 0.0518278 Rotation: 
+Angulo: 0.0521459 Rotation: 
+Angulo: 0.0535733 Rotation: 
+Angulo: -0.0547845 Rotation: 
+Angulo: -0.0544112 Rotation: 
+Angulo: -0.0531563 Rotation: 
+Angulo: -0.0524199 Rotation: 
+Angulo: -0.0511532 Rotation: 
+Angulo: -0.0504021 Rotation: 
+Angulo: -0.0500541 Rotation: 
+Angulo: -0.0489509 Rotation: 
+Angulo: -0.0484979 Rotation: 
+Angulo: -0.0478944 Rotation: 
+Angulo: -0.0475404 Rotation: 
+Angulo: -0.0467017 Rotation: 
+Angulo: -0.0461159 Rotation: 
+Angulo: -0.0455855 Rotation: 
+Angulo: -0.0453101 Rotation: 
+Angulo: -0.0448406 Rotation: 
+Angulo: -0.0443868 Rotation: 
+Angulo: -0.0439178 Rotation: 
+Angulo: -0.0436448 Rotation: 
+Angulo: -0.0433781 Rotation: 
+Angulo: -0.0431461 Rotation: 
+Angulo: -0.0428909 Rotation: 
+Angulo: -0.0421604 Rotation: 
+Angulo: -0.0417017 Rotation: 
+Angulo: -0.0414562 Rotation: 
+Angulo: -0.0406029 Rotation: 
+Angulo: -0.0402382 Rotation: 
+Angulo: -0.0395295 Rotation: 
+Angulo: -0.0392798 Rotation: 
+Angulo: -0.0389176 Rotation: 
+Angulo: -0.0386524 Rotation: 
+Angulo: -0.0385345 Rotation: 
+Angulo: -0.0382666 Rotation: 
+Angulo: -0.0378559 Rotation: 
+Angulo: -0.0377812 Rotation: 
+Angulo: -0.0375483 Rotation: 
+Angulo: -0.0373935 Rotation: 
+Angulo: -0.0372293 Rotation: 
+Angulo: -0.037149 Rotation: 
+Angulo: -0.0369966 Rotation: 
+Angulo: -0.0368687 Rotation: 
+Angulo: -0.0367562 Rotation: 
+Angulo: -0.036646 Rotation: 
+Angulo: -0.0365501 Rotation: 
+Angulo: -0.0364211 Rotation: 
+Angulo: -0.0363407 Rotation: 
+Angulo: -0.0363067 Rotation: 
+Angulo: -0.0361838 Rotation: 
+Angulo: -0.036064 Rotation: 
+Angulo: -0.036 Rotation: 
+Angulo: -0.0359472 Rotation: 
+Angulo: -0.0358951 Rotation: 
+Angulo: -0.0358641 Rotation: 
+Angulo: -0.0358129 Rotation: 
+Angulo: -0.0358027 Rotation: 
+Angulo: -0.0358333 Rotation: 
+Angulo: -0.0359263 Rotation: 
+Angulo: -0.0361508 Rotation: 
+Angulo: -0.0363293 Rotation: 
+Angulo: -0.0368184 Rotation: 
+Angulo: -0.0370618 Rotation: 
+Angulo: -0.0374416 Rotation: 
+Angulo: -0.0376855 Rotation: 
+Angulo: -0.0378943 Rotation: 
+Angulo: -0.0380636 Rotation: 
+Angulo: -0.0381738 Rotation: 
+Angulo: -0.0383349 Rotation: 
+Angulo: -0.0384501 Rotation: 
+Angulo: -0.0389146 Rotation: 
+Angulo: -0.0392996 Rotation: 
+Angulo: -0.0395099 Rotation: 
+Angulo: -0.0399704 Rotation: 
+Angulo: -0.0404384 Rotation: 
+Angulo: -0.0409352 Rotation: 
+Angulo: -0.0414134 Rotation: 
+Angulo: -0.0419704 Rotation: 
+Angulo: -0.0428138 Rotation: 
+Angulo: -0.0433664 Rotation: 
+Angulo: -0.0438849 Rotation: 
+Angulo: -0.0441051 Rotation: 
+Angulo: -0.0447565 Rotation: 
+Angulo: -0.0452668 Rotation: 
+Angulo: -0.0457243 Rotation: 
+Angulo: -0.0458679 Rotation: 
+Angulo: -0.0460129 Rotation: 
+Angulo: -0.0461226 Rotation: 
+Angulo: -0.0463813 Rotation: 
+Angulo: -0.046531 Rotation: 
+Angulo: -0.0466063 Rotation: 
+Angulo: -0.046682 Rotation: 
+Angulo: -0.0468726 Rotation: 
+Angulo: -0.0470266 Rotation: 
+Angulo: -0.0473779 Rotation: 
+Angulo: -0.0481409 Rotation: 
+Angulo: -0.0489741 Rotation: 
+Angulo: -0.0491016 Rotation: 
+Angulo: -0.0493586 Rotation: 
+Angulo: -0.049618 Rotation: 
+Angulo: -0.0498798 Rotation: 
+Angulo: -0.0501439 Rotation: 
+Angulo: -0.0503213 Rotation: 
+Angulo: -0.0504549 Rotation: 
+Angulo: -0.0506788 Rotation: 
+Angulo: -0.050904 Rotation: 
+Angulo: -0.0511761 Rotation: 
+Angulo: -0.0513128 Rotation: 
+Angulo: -0.0520955 Rotation: 
+Angulo: -0.0522814 Rotation: 
+Angulo: -0.0527017 Rotation: 
+Angulo: -0.053266 Rotation: 
+Angulo: -0.0536914 Rotation: 
+Angulo: -0.0544983 Rotation: 
+Angulo: 0.0544507 Rotation: 
+Angulo: 0.0537861 Rotation: 
+Angulo: 0.0532188 Rotation: 
+Angulo: 0.0525613 Rotation: 
+Angulo: 0.0521419 Rotation: 
+Angulo: 0.0518178 Rotation: 
+Angulo: 0.05145 Rotation: 
+Angulo: 0.0512216 Rotation: 
+Angulo: 0.050904 Rotation: 
+Angulo: 0.0506788 Rotation: 
+Angulo: 0.0503213 Rotation: 
+Angulo: 0.0501882 Rotation: 
+Angulo: 0.0492727 Rotation: 
+Angulo: 0.0486791 Rotation: 
+Angulo: 0.0482229 Rotation: 
+Angulo: 0.0477358 Rotation: 
+Angulo: 0.0473386 Rotation: 
+Angulo: 0.0471041 Rotation: 
+Angulo: 0.046758 Rotation: 
+Angulo: 0.0460659 Rotation: 
+Angulo: 0.0457396 Rotation: 
+Angulo: 0.0453427 Rotation: 
+Angulo: 0.0452029 Rotation: 
+Angulo: 0.0447698 Rotation: 
+Angulo: 0.0443376 Rotation: 
+Angulo: 0.0433639 Rotation: 
+Angulo: 0.0431844 Rotation: 
+Angulo: 0.0427199 Rotation: 
+Angulo: 0.0422207 Rotation: 
+Angulo: 0.0418231 Rotation: 
+Angulo: 0.0415166 Rotation: 
+Angulo: 0.0413918 Rotation: 
+Angulo: 0.0412688 Rotation: 
+Angulo: 0.0411234 Rotation: 
+Angulo: 0.0409803 Rotation: 
+Angulo: 0.0408155 Rotation: 
+Angulo: 0.0406543 Rotation: 
+Angulo: 0.0402537 Rotation: 
+Angulo: 0.0401032 Rotation: 
+Angulo: 0.0398931 Rotation: 
+Angulo: 0.0397089 Rotation: 
+Angulo: 0.0395292 Rotation: 
+Angulo: 0.0394507 Rotation: 
+Angulo: 0.0392582 Rotation: 
+Angulo: 0.0390155 Rotation: 
+Angulo: 0.0387635 Rotation: 
+Angulo: 0.0385037 Rotation: 
+Angulo: 0.0381408 Rotation: 
+Angulo: 0.0379514 Rotation: 
+Angulo: 0.0377079 Rotation: 
+Angulo: 0.0374598 Rotation: 
+Angulo: 0.0371677 Rotation: 
+Angulo: 0.0370206 Rotation: 
+Angulo: 0.0366885 Rotation: 
+Angulo: 0.0363765 Rotation: 
+Angulo: 0.0360831 Rotation: 
+Angulo: 0.0358172 Rotation: 
+Angulo: 0.0356748 Rotation: 
+Angulo: 0.0354789 Rotation: 
+Angulo: 0.0353099 Rotation: 
+Angulo: 0.0351561 Rotation: 
+Angulo: 0.0350251 Rotation: 
+Angulo: 0.0349065 Rotation: 
+Angulo: 0.0348649 Rotation: 
+Angulo: 0.0347651 Rotation: 
+Angulo: 0.0346831 Rotation: 
+Angulo: 0.0345535 Rotation: 
+Angulo: 0.0345305 Rotation: 
+Angulo: 0.0345228 Rotation: 
+Angulo: 0.0345152 Rotation: 
+Angulo: 0.0345 Rotation: 
+Angulo: 0.0344772 Rotation: 
+Angulo: 0.0344445 Rotation: 
+Angulo: 0.0344146 Rotation: 
+Angulo: 0.0343748 Rotation: 
+Angulo: 0.0343674 Rotation: 
+Angulo: 0.0343896 Rotation: 
+Angulo: 0.0344671 Rotation: 
+Angulo: 0.0345228 Rotation: 
+Angulo: 0.034618 Rotation: 
+Angulo: 0.0347329 Rotation: 
+Angulo: 0.0349766 Rotation: 
+Angulo: 0.0351677 Rotation: 
+Angulo: 0.0353948 Rotation: 
+Angulo: 0.0356332 Rotation: 
+Angulo: 0.0357522 Rotation: 
+Angulo: 0.0359055 Rotation: 
+Angulo: 0.0363067 Rotation: 
+Angulo: 0.0365351 Rotation: 
+Angulo: 0.036831 Rotation: 
+Angulo: 0.0371676 Rotation: 
+Angulo: 0.0376495 Rotation: 
+Angulo: 0.0379793 Rotation: 
+Angulo: 0.0383482 Rotation: 
+Angulo: 0.0386468 Rotation: 
+Angulo: 0.0389704 Rotation: 
+Angulo: 0.0394436 Rotation: 
+Angulo: 0.039829 Rotation: 
+Angulo: 0.0401896 Rotation: 
+Angulo: 0.0405462 Rotation: 
+Angulo: 0.0407196 Rotation: 
+Angulo: 0.040942 Rotation: 
+Angulo: 0.0414026 Rotation: 
+Angulo: 0.0418383 Rotation: 
+Angulo: 0.0420386 Rotation: 
+Angulo: 0.0428778 Rotation: 
+Angulo: 0.0433695 Rotation: 
+Angulo: 0.0437092 Rotation: 
+Angulo: 0.0440271 Rotation: 
+Angulo: 0.0444543 Rotation: 
+Angulo: 0.0448731 Rotation: 
+Angulo: 0.0450979 Rotation: 
+Angulo: 0.0455253 Rotation: 
+Angulo: 0.045916 Rotation: 
+Angulo: 0.0463846 Rotation: 
+Angulo: 0.0468644 Rotation: 
+Angulo: 0.0477269 Rotation: 
+Angulo: 0.0484674 Rotation: 
+Angulo: 0.0493357 Rotation: 
+Angulo: 0.0514116 Rotation: 
+Angulo: 0.0522802 Rotation: 
+Angulo: 0.0525409 Rotation: 
+Angulo: 0.0539901 Rotation: 
+Angulo: 0.0546982 Rotation: 
+Angulo: -0.0542997 Rotation: 
+Angulo: -0.0531969 Rotation: 
+Angulo: -0.0528463 Rotation: 
+Angulo: -0.0517623 Rotation: 
+Angulo: -0.0511227 Rotation: 
+Angulo: -0.050493 Rotation: 
+Angulo: -0.0502442 Rotation: 
+Angulo: -0.0496307 Rotation: 
+Angulo: -0.0490698 Rotation: 
+Angulo: -0.0485209 Rotation: 
+Angulo: -0.0473151 Rotation: 
+Angulo: -0.0471331 Rotation: 
+Angulo: -0.0464927 Rotation: 
+Angulo: -0.0461812 Rotation: 
+Angulo: -0.0460107 Rotation: 
+Angulo: -0.0452822 Rotation: 
+Angulo: -0.0449628 Rotation: 
+Angulo: -0.0447746 Rotation: 
+Angulo: -0.044406 Rotation: 
+Angulo: -0.043671 Rotation: 
+Angulo: -0.0433337 Rotation: 
+Angulo: -0.0430062 Rotation: 
+Angulo: -0.0426883 Rotation: 
+Angulo: -0.0423544 Rotation: 
+Angulo: -0.042204 Rotation: 
+Angulo: -0.041934 Rotation: 
+Angulo: -0.0417899 Rotation: 
+Angulo: -0.0414161 Rotation: 
+Angulo: -0.0411678 Rotation: 
+Angulo: -0.0410352 Rotation: 
+Angulo: -0.0406076 Rotation: 
+Angulo: -0.0404222 Rotation: 
+Angulo: -0.0400637 Rotation: 
+Angulo: -0.0399863 Rotation: 
+Angulo: -0.0398336 Rotation: 
+Angulo: -0.0396655 Rotation: 
+Angulo: -0.0394614 Rotation: 
+Angulo: -0.0392443 Rotation: 
+Angulo: -0.038893 Rotation: 
+Angulo: -0.038636 Rotation: 
+Angulo: -0.0383921 Rotation: 
+Angulo: -0.0381347 Rotation: 
+Angulo: -0.0379208 Rotation: 
+Angulo: -0.0378129 Rotation: 
+Angulo: -0.0376361 Rotation: 
+Angulo: -0.0374909 Rotation: 
+Angulo: -0.0373561 Rotation: 
+Angulo: -0.0371908 Rotation: 
+Angulo: -0.0369464 Rotation: 
+Angulo: -0.0368518 Rotation: 
+Angulo: -0.0365167 Rotation: 
+Angulo: -0.036295 Rotation: 
+Angulo: -0.0361453 Rotation: 
+Angulo: -0.0359055 Rotation: 
+Angulo: -0.0357233 Rotation: 
+Angulo: -0.0355754 Rotation: 
+Angulo: -0.0355174 Rotation: 
+Angulo: -0.035403 Rotation: 
+Angulo: -0.0353842 Rotation: 
+Angulo: -0.0354789 Rotation: 
+Angulo: -0.0356949 Rotation: 
+Angulo: -0.0358797 Rotation: 
+Angulo: -0.0361051 Rotation: 
+Angulo: -0.0363533 Rotation: 
+Angulo: -0.0369162 Rotation: 
+Angulo: -0.037291 Rotation: 
+Angulo: -0.0377228 Rotation: 
+Angulo: -0.0381729 Rotation: 
+Angulo: -0.0386758 Rotation: 
+Angulo: -0.0389426 Rotation: 
+Angulo: -0.0399555 Rotation: 
+Angulo: -0.0404293 Rotation: 
+Angulo: -0.0409799 Rotation: 
+Angulo: -0.0412692 Rotation: 
+Angulo: -0.0418773 Rotation: 
+Angulo: -0.0421698 Rotation: 
+Angulo: -0.0431018 Rotation: 
+Angulo: -0.0437084 Rotation: 
+Angulo: -0.0441849 Rotation: 
+Angulo: -0.0447817 Rotation: 
+Angulo: -0.04516 Rotation: 
+Angulo: -0.0453707 Rotation: 
+Angulo: -0.0459847 Rotation: 
+Angulo: -0.0461328 Rotation: 
+Angulo: -0.0465091 Rotation: 
+Angulo: -0.0468551 Rotation: 
+Angulo: -0.0472475 Rotation: 
+Angulo: -0.0487285 Rotation: 
+Angulo: -0.0489851 Rotation: 
+Angulo: -0.0498595 Rotation: 
+Angulo: -0.0504422 Rotation: 
+Angulo: -0.0507602 Rotation: 
+Angulo: -0.0513581 Rotation: 
+Angulo: -0.0520113 Rotation: 
+Angulo: -0.0526726 Rotation: 
+Angulo: -0.0530057 Rotation: 
+Angulo: -0.0541565 Rotation: 
+Angulo: -0.0545419 Rotation: 
+Angulo: 0.0544455 Rotation: 
+Angulo: 0.0537688 Rotation: 
+Angulo: 0.0530964 Rotation: 
+Angulo: 0.0527143 Rotation: 
+Angulo: 0.0511072 Rotation: 
+Angulo: 0.0502828 Rotation: 
+Angulo: 0.049878 Rotation: 
+Angulo: 0.0485109 Rotation: 
+Angulo: 0.0476998 Rotation: 
+Angulo: 0.0473152 Rotation: 
+Angulo: 0.0469362 Rotation: 
+Angulo: 0.0459304 Rotation: 
+Angulo: 0.0453918 Rotation: 
+Angulo: 0.044754 Rotation: 
+Angulo: 0.0439491 Rotation: 
+Angulo: 0.0434722 Rotation: 
+Angulo: 0.0430669 Rotation: 
+Angulo: 0.042681 Rotation: 
+Angulo: 0.0423066 Rotation: 
+Angulo: 0.0417792 Rotation: 
+Angulo: 0.0414594 Rotation: 
+Angulo: 0.0411488 Rotation: 
+Angulo: 0.0408726 Rotation: 
+Angulo: 0.0404393 Rotation: 
+Angulo: 0.0401627 Rotation: 
+Angulo: 0.0398486 Rotation: 
+Angulo: 0.0395914 Rotation: 
+Angulo: 0.0394204 Rotation: 
+Angulo: 0.0389945 Rotation: 
+Angulo: 0.0387589 Rotation: 
+Angulo: 0.0383255 Rotation: 
+Angulo: 0.0380577 Rotation: 
+Angulo: 0.0377263 Rotation: 
+Angulo: 0.037505 Rotation: 
+Angulo: 0.0372621 Rotation: 
+Angulo: 0.0370153 Rotation: 
+Angulo: 0.036903 Rotation: 
+Angulo: 0.0364668 Rotation: 
+Angulo: 0.0362907 Rotation: 
+Angulo: 0.0361328 Rotation: 
+Angulo: 0.0359698 Rotation: 
+Angulo: 0.0358442 Rotation: 
+Angulo: 0.0357771 Rotation: 
+Angulo: 0.0356462 Rotation: 
+Angulo: 0.0355288 Rotation: 
+Angulo: 0.0354244 Rotation: 
+Angulo: 0.0353225 Rotation: 
+Angulo: 0.0352519 Rotation: 
+Angulo: 0.0351332 Rotation: 
+Angulo: 0.0350078 Rotation: 
+Angulo: 0.0349147 Rotation: 
+Angulo: 0.0348237 Rotation: 
+Angulo: 0.034715 Rotation: 
+Angulo: 0.0346713 Rotation: 
+Angulo: 0.0345915 Rotation: 
+Angulo: 0.0345239 Rotation: 
+Angulo: 0.0344493 Rotation: 
+Angulo: 0.0343681 Rotation: 
+Angulo: 0.0342075 Rotation: 
+Angulo: 0.0341238 Rotation: 
+Angulo: 0.0340752 Rotation: 
+Angulo: 0.0339143 Rotation: 
+Angulo: 0.0337519 Rotation: 
+Angulo: 0.0336282 Rotation: 
+Angulo: 0.0335317 Rotation: 
+Angulo: 0.0334677 Rotation: 
+Angulo: 0.033425 Rotation: 
+Angulo: 0.0333876 Rotation: 
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado

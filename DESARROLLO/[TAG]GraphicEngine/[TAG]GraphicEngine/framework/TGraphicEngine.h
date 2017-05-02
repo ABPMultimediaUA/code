@@ -47,6 +47,14 @@ public:
 	double getLastTime();
 	void setLastTime(double);
 	void cambiarCamaraActiva(char);
+	TNodo * addMalla(std::string path = "", TNodo * nodoPadre = nullptr);
+	TNodo * addCamara(char tipo = 2, bool per = false, bool act = false, TNodo * nodoPadre = nullptr);
+	TNodo * addLuz(TNodo * nodoPadre = nullptr);
+	void trasladar(TNodo *, float, float, float);
+	void rotar(TNodo *, float, float, float, float);
+	void rotarYPR(TNodo *, float, float, float);
+	void escalar(TNodo *, float, float, float);
+	TNodo * getPadreX(TNodo *, char p = 0);
 private:
 	void onstart();
 	void onstop();

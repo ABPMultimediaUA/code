@@ -16,7 +16,7 @@ public:
 	movimentHandler();
 	~movimentHandler();
 	void onKey(GLFWwindow*, int, int, int, int, double, TGraphicEngine*);
-	void onMouse(GLFWwindow*, double, double);
+	void onMouse(GLFWwindow*, double, double, TGraphicEngine*);
 	void setMouseSensitive(float);
 	void setPlayer(player*);
 private:
