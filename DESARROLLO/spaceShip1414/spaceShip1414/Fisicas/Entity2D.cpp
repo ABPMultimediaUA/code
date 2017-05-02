@@ -57,10 +57,17 @@ Entity2D::Entity2D(b2World * world)
 
 Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) {
 
+	int scale = 2;
 
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(0, 0);
-    bodyShape.SetAsBox(0.25f, 0.25f);
+    bodyShape.SetAsBox(scale, scale);
+
+	escalaFixture.x = scale;
+	escalaFixture.y = 0.5;
+	escalaFixture.z = scale;
+
+
     md.mass = 1.0f;
     md.center = b2Vec2(1, 1);
     md.I = 0.0f;
@@ -102,22 +109,22 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
 
     bodyDef.type = b2_staticBody;
     bodyDef.position.Set(pos.x, pos.z);
-
+	int scale = 1;
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     // std::cout<<"PARED: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
     if (rot.y == 90) {
 
-        bodyShape.SetAsBox(5 * escala.z, 5 * escala.x);
-		escalaFixture.x = 5 * escala.z;
+        bodyShape.SetAsBox(scale * escala.z, scale * escala.x);
+		escalaFixture.x = scale * escala.z;
 		escalaFixture.y = 1;
-		escalaFixture.z = 5 * escala.x;
+		escalaFixture.z = scale * escala.x;
 
     } else {
-        bodyShape.SetAsBox(5 * escala.x, 5 * escala.z);
-		escalaFixture.x = 5 * escala.x;
+        bodyShape.SetAsBox(scale * escala.x, scale * escala.z);
+		escalaFixture.x = scale * escala.x;
 		escalaFixture.y = 1;
-		escalaFixture.z = 5 * escala.z;
+		escalaFixture.z = scale * escala.z;
     }
 
 

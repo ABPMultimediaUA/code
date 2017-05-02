@@ -110,7 +110,7 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos)
 	////if (activo) {
 
 		anguloRaton = abs(atan2f(ypos - height/2, xpos - width / 2) /3.14*180);
-		std::cout <<xpos<<" "<< width << " " <<ypos<<" "<< height<<" "<<anguloRaton << std::endl;
+		//std::cout <<xpos<<" "<< width << " " <<ypos<<" "<< height<<" "<<anguloRaton << std::endl;
 		jugador->Rotation()->rotar(anguloRaton,0.0f, 1.0f, 0.0f);
 
 		//jugador->setYaw(jugador->getYaw() + xoffset);

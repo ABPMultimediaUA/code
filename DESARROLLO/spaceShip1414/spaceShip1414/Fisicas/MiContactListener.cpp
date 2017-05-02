@@ -498,11 +498,12 @@ void evitarColisionEntreEnemigos(Entity2D *e1, Entity2D *e2) {
 
 
 void MiContactListener::BeginContact(b2Contact* contact) {
-	//std::cout<<""<<std::endl;
+	std::cout<<""<<std::endl;
 
-	//std::cout<<"////////////////////////"<<std::endl;
+	std::cout<<"////////////////////////"<<std::endl;
 
-	//std::cout<<"COLISION"<<std::endl;
+	std::cout<<"COLISION"<<std::endl;
+
 	if (contact != NULL) {
 		b2Fixture *f1 = contact->GetFixtureA();
 		b2Fixture *f2 = contact->GetFixtureB();
@@ -519,8 +520,8 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			//            Personaje *pers = static_cast<Personaje*>(entity1->getObjeto3D());
 
-		/*	 std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
-			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;*/
+			 std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
+			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
 
 
 			   /* int a = *((int*)b1->GetUserData());
@@ -530,13 +531,18 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			   }*/
 
-			   /**	std::cout<<"///////////////////////////////////"<<std::endl;
+			   std::cout << "///////////////////////////////////" << std::endl;
+			   std::cout << "POSICION DE LA ENTITY 1" << std::endl;
+			   std::cout << "POS X: " << entity1->getCuerpo2D()->GetPosition().x << " POS Y: " << entity1->getCuerpo2D()->GetPosition().y << std::endl;
+			   std::cout << "///////////////////////////////////" << std::endl;
+
+			   	std::cout<<"///////////////////////////////////"<<std::endl;
 				   std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
 				   std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
 				   std::cout<<"///////////////////////////////////"<<std::endl;
 
 
-				   std::cout << "Sombra: " << entity1->getIDENSH() << " Elemento: " << entity2->getIDEN() << std::endl;**/
+				   //std::cout << "Sombra: " << entity1->getIDENSH() << " Elemento: " << entity2->getIDEN() << std::endl
 
 
 				   //            if((entity2->getIDEN()==0 && entity2->getIDEN() == 4)&&(entity2->getIDEN()==4 && entity2->getIDEN() == 0))

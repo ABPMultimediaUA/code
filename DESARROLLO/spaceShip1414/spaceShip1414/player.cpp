@@ -25,9 +25,13 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 50.0f }, yaw{ 0 
 	rot = glm::vec3(0, 0, 0);
 	escale = glm::vec3(2, 7, 2);
 
-	fis = new MallaFisica(motorApp, pos, rot, escale);
 
 	entity = new Entity2D(m->getWorldBox2D(), pos, rot, this);
+	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
+
+	fis = new MallaFisica(motorApp, pos2D, rot, entity->getEscalaFixture());
+
+
 
 	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
 	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
@@ -108,20 +112,20 @@ glm::vec3 player::getScale()
 void player::setPos(float x, float y, float z)
 {
 
-	std::cout << std::endl;
-	std::cout << "POS ANTES: " << std::endl;
-	std::cout << "X: " << pos.x << std::endl;
-	std::cout << "Y: " << pos.y << std::endl;
-	std::cout << "Z: " << pos.z << std::endl;
-	std::cout << std::endl;
+	//std::cout << std::endl;
+	//std::cout << "POS ANTES: " << std::endl;
+	//std::cout << "X: " << pos.x << std::endl;
+	//std::cout << "Y: " << pos.y << std::endl;
+	//std::cout << "Z: " << pos.z << std::endl;
+	//std::cout << std::endl;
 	pos.x = x; pos.y = y; pos.z = z;
 
-	std::cout << std::endl;
-	std::cout << "POS DESPUES: " << std::endl;
-	std::cout << "X: " << pos.x << std::endl;
-	std::cout << "Y: " << pos.y << std::endl;
-	std::cout << "Z: " << pos.z << std::endl;
-	std::cout << std::endl;
+	//std::cout << std::endl;
+	//std::cout << "POS DESPUES: " << std::endl;
+	//std::cout << "X: " << pos.x << std::endl;
+	//std::cout << "Y: " << pos.y << std::endl;
+	//std::cout << "Z: " << pos.z << std::endl;
+	//std::cout << std::endl;
 
 }
 
@@ -138,6 +142,12 @@ void player::setScale(float x, float y, float z)
 
 void player::actualizarFisicas(int n)
 {
+
+	std::cout<<"//////////////////////////////////////////"<<std::endl;
+	            std::cout<<""<<std::endl;
+	            std::cout<<"POS PERS ANTES"<<std::endl;
+	                 std::cout<<"Pos 3D X: "<<pos.x<<"Pos 3D Z: "<<pos.z<<std::endl;
+	                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 
 	if (n == -1) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
@@ -159,7 +169,7 @@ void player::actualizarFisicas(int n)
 	if (n == 2) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
 		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);
-		std::cout <<"-------------------------------<<<"<< entity->getCuerpo2D()->GetLinearVelocity().x << " " << entity->getCuerpo2D()->GetLinearVelocity().y << std::endl;
+		//std::cout <<"-------------------------------<<<"<< entity->getCuerpo2D()->GetLinearVelocity().x << " " << entity->getCuerpo2D()->GetLinearVelocity().y << std::endl;
 	}
 
 
@@ -168,6 +178,12 @@ void player::actualizarFisicas(int n)
 		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);
 	}
 
+
+	std::cout << "//////////////////////////////////////////" << std::endl;
+	std::cout << "" << std::endl;
+	std::cout << "POS PERS DES" << std::endl;
+	std::cout << "Pos 3D X: " << pos.x << "Pos 3D Z: " << pos.z << std::endl;
+	std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
 }
 
 TNodo * player::getNodoTrans()
