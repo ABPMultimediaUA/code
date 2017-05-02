@@ -7,6 +7,7 @@ class TCamara;
 class TNodo;
 class Entity2D;
 class Mundo;
+class MallaFisica;
 
 class player
 {
@@ -42,5 +43,6 @@ private:
 	glm::vec3 escale;
 	Entity2D *entity;
 	TNodo *nodoTransfTM;
+	MallaFisica * fis;
 };
 

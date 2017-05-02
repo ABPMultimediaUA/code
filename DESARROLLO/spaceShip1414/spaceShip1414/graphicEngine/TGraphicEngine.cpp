@@ -12,7 +12,8 @@
 #include "entityTree\TMalla.h"
 #include "framework\movimentHandler.h"
 #include "../Fisicas/Mundo.h"
-
+#include "../Fisicas/Entity2D.h"
+#include "../Pared.h"
 
 TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }
 {
@@ -140,12 +141,15 @@ void TGraphicEngine::run(Mundo * world)
 		currentFrame = glfwGetTime();
 		deltaTime = (currentFrame - last);
 		last = currentFrame;
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		world->stepBox2D(deltaTime, 6, 2);
 		world->clearForcesBox2D();
-
+		/*drawBox(world, 5, 50, 2, 1);*/
+		//drawGround(world);
+		//world->getWorldBox2D()->DrawDebugData();
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 		draw(getLastTime());
-
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
@@ -153,6 +157,42 @@ void TGraphicEngine::run(Mundo * world)
 	glfwDestroyWindow(window);
 	glfwTerminate();
 }
+
+
+void  TGraphicEngine::drawBox(Mundo * world, double x, double y, int w, int h) {
+	b2BodyDef myBodyDef;
+	myBodyDef.type = b2_dynamicBody;
+	myBodyDef.position.Set(x, y);
+	myBodyDef.angle = 0;
+
+	b2Body* dynamicBody = world->getWorldBox2D()->CreateBody(&myBodyDef);
+
+	b2PolygonShape boxShape;
+	boxShape.SetAsBox(w, h);
+
+	b2FixtureDef boxFixtureDef;
+	boxFixtureDef.shape = &boxShape;
+	boxFixtureDef.density = 0.5;
+	dynamicBody->CreateFixture(&boxFixtureDef);
+	//Pared * p = new Pared(this,glm::vec3(0,0,0), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1));
+	//p->setFisicas(world);
+}
+
+void  TGraphicEngine::drawGround(Mundo * world) {
+	b2Body *groundBody;
+	b2Fixture *bottomFixture;
+	b2BodyDef groundBodyDef;
+	groundBodyDef.position.Set(0, 0);
+	groundBody = world->getWorldBox2D()->CreateBody(&groundBodyDef);
+
+	b2EdgeShape groundBox;
+	b2FixtureDef groundBoxDef;
+	groundBoxDef.shape = &groundBox;
+
+	groundBox.Set(b2Vec2(XMIN, YMIN), b2Vec2(XMAX, YMIN));
+	bottomFixture = groundBody->CreateFixture(&groundBoxDef);
+}
+
 
 void TGraphicEngine::info()
 {
@@ -236,7 +276,7 @@ glm::vec3 TGraphicEngine::moverCamara()
 
 void TGraphicEngine::draw(double time)
 {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	shader.use();
 	camaraActivada();
 	luzActivada();

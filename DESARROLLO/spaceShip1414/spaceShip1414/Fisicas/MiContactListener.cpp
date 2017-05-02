@@ -521,173 +521,175 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 		/*	 std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
 			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;*/
-		
-
-			/* int a = *((int*)b1->GetUserData());
-			int b = *((int*)b2->GetUserData());
-			if(a == 1){
-			std::cout<<"Personaje"<<std::endl;
-
-			}*/
-			
-		/**	std::cout<<"///////////////////////////////////"<<std::endl;
-			std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
-			std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
-			std::cout<<"///////////////////////////////////"<<std::endl;
-			
-
-			std::cout << "Sombra: " << entity1->getIDENSH() << " Elemento: " << entity2->getIDEN() << std::endl;**/
 
 
-			//            if((entity2->getIDEN()==0 && entity2->getIDEN() == 4)&&(entity2->getIDEN()==4 && entity2->getIDEN() == 0))
-			//            {
-			//                if(entity1->getSombraE2D() != NULL){
-			//                    std::cout<<"MEMORIA: "<<entity1->getSombraE2D()<<std::endl;
-			//                    pers->setPos(vector3df(entity1->getSombraE2D()->GetPosition().x,10,entity1->getSombraE2D()->GetPosition().y));
-			//                }
-			//            }
-			//   
+			   /* int a = *((int*)b1->GetUserData());
+			   int b = *((int*)b2->GetUserData());
+			   if(a == 1){
+			   std::cout<<"Personaje"<<std::endl;
+
+			   }*/
+
+			   /**	std::cout<<"///////////////////////////////////"<<std::endl;
+				   std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
+				   std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
+				   std::cout<<"///////////////////////////////////"<<std::endl;
 
 
-			//tema flocking
+				   std::cout << "Sombra: " << entity1->getIDENSH() << " Elemento: " << entity2->getIDEN() << std::endl;**/
 
-			if (entity1->getIDEN() == 4 && f1->IsSensor() && entity2->getIDEN() == 4 && !f2->IsSensor() ) {
-				empezarFlocking(entity1, entity2);
-				//evitarColisionEntreEnemigos(entity1, entity2);
-				
+
+				   //            if((entity2->getIDEN()==0 && entity2->getIDEN() == 4)&&(entity2->getIDEN()==4 && entity2->getIDEN() == 0))
+				   //            {
+				   //                if(entity1->getSombraE2D() != NULL){
+				   //                    std::cout<<"MEMORIA: "<<entity1->getSombraE2D()<<std::endl;
+				   //                    pers->setPos(vector3df(entity1->getSombraE2D()->GetPosition().x,10,entity1->getSombraE2D()->GetPosition().y));
+				   //                }
+				   //            }
+				   //   
+
+
+				   //tema flocking
+			if (entity1!=nullptr&&entity2!=nullptr)
+			{
+				if (entity1->getIDEN() == 4 && f1->IsSensor() && entity2->getIDEN() == 4 && !f2->IsSensor()) {
+					empezarFlocking(entity1, entity2);
+					//evitarColisionEntreEnemigos(entity1, entity2);
+
+				}
+
+				else if (entity2->getIDEN() == 4 && f2->IsSensor() && entity1->getIDEN() == 4 && !f1->IsSensor()) {
+					empezarFlocking(entity2, entity1);
+					//evitarColisionEntreEnemigos(entity2, entity1);
+
+
+				}
+
+				//cuando el sensor de vista detecta una pared o puerta
+				if (entity1->getIDEN() == 4 && f1->IsSensor() && (entity2->getIDEN() == 1 || entity2->getIDEN() == 2)) {
+					paredDetectada(entity1, true);
+				}
+
+				else if (entity2->getIDEN() == 4 && f2->IsSensor() && (entity1->getIDEN() == 1 || entity1->getIDEN() == 2)) {
+					paredDetectada(entity2, true);
+				}
+
+
+				//colisiones con las distintas balas y las paredes = 1 y puertas = 2 de ID balaPlayer = 3 balaEne = 6
+				if (entity1->getIDEN() == 3 && entity2->getIDEN() == 2 && f2->IsSensor() != true) {
+					entity1->setLive(false);
+
+				}
+
+				else if (entity2->getIDEN() == 3 && entity1->getIDEN() == 2 && f1->IsSensor() != true) {
+					entity2->setLive(false);
+				}
+
+
+				if (entity1->getIDEN() == 6 && entity2->getIDEN() == 2 && f2->IsSensor() != true) {
+					entity1->setLive(false);
+
+				}
+
+				else if (entity2->getIDEN() == 6 && entity1->getIDEN() == 2 && f1->IsSensor() != true) {
+					entity2->setLive(false);
+				}
+
+
+				if ((entity1->getIDEN() == 3 || entity1->getIDEN() == 6) && entity2->getIDEN() == 1) {
+					entity1->setLive(false);
+
+				}
+
+
+				else if ((entity2->getIDEN() == 3 || entity2->getIDEN() == 6) && entity1->getIDEN() == 1) {
+					entity2->setLive(false);
+
+				}
+
+
+				//bala de enemigo = 6 choca contra el jugador = 0
+
+				if (entity1->getIDEN() == 6 && entity2->getIDEN() == 0) {
+					quitarVidaJugador(entity2, entity1);
+					entity1->setLive(false);
+
+				}
+
+				else if (entity2->getIDEN() == 6 && entity1->getIDEN() == 0) {
+
+					quitarVidaJugador(entity1, entity2);
+					entity2->setLive(false);
+				}
+
+				//el enemigo = 4 detecta al jugador = 0
+
+				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
+					std::cout << "A DISPARAR!" << std::endl;
+					atacarJugador(entity1, entity2);
+
+				}
+
+				else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 4 && f1->IsSensor() == true) {
+					std::cout << "A DISPARAR!" << std::endl;
+					atacarJugador(entity2, entity1);
+
+				}
+
+
+				//colision de enemigo y bala
+				//3: bala; 4: enemigo
+				if (entity1->getIDEN() == 3 && entity2->getIDEN() == 4 && f2->IsSensor() == false) {
+					//entity2->setLive(false);
+					aplicarDamage(entity2, entity1);
+					entity1->setLive(false);
+				}
+
+				else if (entity1->getIDEN() == 4 && entity2->getIDEN() == 3 && f1->IsSensor() == false) {
+					//entity1->setLive(false);              
+					aplicarDamage(entity1, entity2);
+					entity2->setLive(false);
+				}
+
+				//cuando la bala de enemigo = 6 choca contra el jugador = 0
+				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6) {
+					//entity2->setLive(false);
+
+					entity2->setLive(false);
+				}
+
+				else if (entity1->getIDEN() == 6 && entity2->getIDEN() == 0) {
+					//entity1->setLive(false);              
+
+					entity1->setLive(false);
+				}
+
+
+
+				if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true && f2->IsSensor() != true) {
+					actualizarPuerta(entity1, entity2, 0);
+				}
+
+				else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true && f1->IsSensor() != true) {
+					actualizarPuerta(entity2, entity1, 0);
+				}
+
+
+				//if de los objetos consumables
+				if (entity1->getIDEN() == 0
+					&& entity2->getIDEN() == 5
+					&& entity2->getId() != 5
+					&& f2->IsSensor() == true) {
+
+					gestionarObjeto(entity1, entity2, entity2->getId());
+
+				}
+
+				/*	else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 5 && f1->IsSensor() == true) {
+						std::cout << "HOLA PAPITO 2" << std::endl;
+					}*/
+
 			}
-
-			else if (entity2->getIDEN() == 4 && f2->IsSensor() && entity1->getIDEN() == 4 && !f1->IsSensor()) {
-				empezarFlocking(entity2, entity1);
-				//evitarColisionEntreEnemigos(entity2, entity1);
-
-
-			}
-			
-			//cuando el sensor de vista detecta una pared o puerta
-			if (entity1->getIDEN() == 4 && f1->IsSensor() && (entity2->getIDEN() == 1 || entity2->getIDEN() == 2)) {
-				paredDetectada(entity1, true);
-			}
-
-			else if (entity2->getIDEN() == 4 && f2->IsSensor() && (entity1->getIDEN() == 1 || entity1->getIDEN() == 2)) {
-				paredDetectada(entity2, true);
-			}
-
-
-			//colisiones con las distintas balas y las paredes = 1 y puertas = 2 de ID balaPlayer = 3 balaEne = 6
-			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 2 && f2->IsSensor() != true) {
-				entity1->setLive(false);
-
-			}
-
-			else if (entity2->getIDEN() == 3 && entity1->getIDEN() == 2 && f1->IsSensor() != true) {
-				entity2->setLive(false);
-			}
-
-
-			if (entity1->getIDEN() == 6 && entity2->getIDEN() == 2 && f2->IsSensor() != true) {
-				entity1->setLive(false);
-
-			}
-
-			else if (entity2->getIDEN() == 6 && entity1->getIDEN() == 2 && f1->IsSensor() != true) {
-				entity2->setLive(false);
-			}
-
-
-			if((entity1->getIDEN() == 3 || entity1->getIDEN() == 6) && entity2->getIDEN() == 1) {
-				entity1->setLive(false);
-
-			}
-
-
-			else if ((entity2->getIDEN() == 3 || entity2->getIDEN() == 6) && entity1->getIDEN() == 1) {
-				entity2->setLive(false);
-
-			}
-
-
-			//bala de enemigo = 6 choca contra el jugador = 0
-
-			if (entity1->getIDEN() == 6 && entity2->getIDEN() == 0) {
-				quitarVidaJugador(entity2, entity1);
-				entity1->setLive(false);
-
-			}
-
-			else if (entity2->getIDEN() == 6 && entity1->getIDEN() == 0) {
-
-				quitarVidaJugador(entity1, entity2);
-				entity2->setLive(false);
-			}
-
-			//el enemigo = 4 detecta al jugador = 0
-
-			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
-				std::cout << "A DISPARAR!" << std::endl;
-				atacarJugador(entity1, entity2);
-
-			}
-
-			else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 4 && f1->IsSensor() == true) {
-				std::cout << "A DISPARAR!" << std::endl;
-				atacarJugador(entity2, entity1);
-
-			}
-
-
-			//colision de enemigo y bala
-			//3: bala; 4: enemigo
-			if (entity1->getIDEN() == 3 && entity2->getIDEN() == 4 && f2->IsSensor() == false) {
-				//entity2->setLive(false);
-				aplicarDamage(entity2, entity1);
-				entity1->setLive(false);
-			}
-
-			else if (entity1->getIDEN() == 4 && entity2->getIDEN() == 3 && f1->IsSensor() == false) {
-				//entity1->setLive(false);              
-				aplicarDamage(entity1, entity2);
-				entity2->setLive(false);
-			}
-
-			//cuando la bala de enemigo = 6 choca contra el jugador = 0
-			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6) {
-				//entity2->setLive(false);
-				
-				entity2->setLive(false);
-			}
-
-			else if (entity1->getIDEN() == 6 && entity2->getIDEN() == 0) {
-				//entity1->setLive(false);              
-				
-				entity1->setLive(false);
-			}
-
-			
-
-			if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true && f2->IsSensor() != true) {
-				actualizarPuerta(entity1, entity2, 0);
-			}
-
-			else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true && f1->IsSensor() != true) {
-				actualizarPuerta(entity2, entity1, 0);
-			}
-
-
-			//if de los objetos consumables
-			if (entity1->getIDEN() == 0 
-				&& entity2->getIDEN() == 5 
-				&& entity2->getId() != 5
-				&& f2->IsSensor() == true) {
-				
-				gestionarObjeto(entity1, entity2, entity2->getId());
-				
-			}
-
-		/*	else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 5 && f1->IsSensor() == true) {
-				std::cout << "HOLA PAPITO 2" << std::endl;
-			}*/
-
 		}
 	}
 }
@@ -721,63 +723,65 @@ void MiContactListener::EndContact(b2Contact* contact) {
 			//            std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
 			//            std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
 			//            std::cout<<"///////////////////////////////////"<<std::endl;
-		
+			if (entity1 != nullptr&&entity2 != nullptr)
+			{
 
-			if (entity1->getIDEN() == 4 && f1->IsSensor() && (entity2->getIDEN() == 1 || entity2->getIDEN() == 2)) {
-				paredDetectada(entity1, false);
+				if (entity1->getIDEN() == 4 && f1->IsSensor() && (entity2->getIDEN() == 1 || entity2->getIDEN() == 2)) {
+					paredDetectada(entity1, false);
+				}
+
+				else if (entity2->getIDEN() == 4 && f2->IsSensor() && (entity1->getIDEN() == 1 || entity1->getIDEN() == 2)) {
+					paredDetectada(entity2, false);
+				}
+
+
+				if (entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true) {
+					std::cout << "lalal 1" << std::endl;
+
+					actualizarPuerta(entity1, entity2, 1);
+				}
+
+				else if (entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true) {
+					std::cout << "lalal 2" << std::endl;
+					actualizarPuerta(entity2, entity1, 1);
+				}
+
+				//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
+				//	//aplicarKnockBack(entity1, b1);
+				//	Personaje *p = static_cast<Personaje*>(entity1->getObjeto3D());
+				//	p->setImpulso(false);
+
+				//}
+
+				if ((entity1->getIDEN() == 4 && f1->IsSensor()) && entity2->getIDEN() == 4) {
+					gestionarCambioDeEstadoEnemigo(entity1);
+				}
+
+				else if ((entity2->getIDEN() == 4 && f2->IsSensor()) && entity1->getIDEN() == 4) {
+					gestionarCambioDeEstadoEnemigo(entity2);
+
+				}
+
+
+				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
+					std::cout << "ADIOS 1" << std::endl;
+					gestionarCambioDeEstadoEnemigo(entity2);
+
+				}
+
+
+				if (entity1->getIDEN() == 4 && f1->IsSensor() && entity2->getIDEN() == 4 && !f2->IsSensor()) {
+					eliminarEntityDelVecindario(entity1, entity2);
+				}
+
+				else if (entity2->getIDEN() == 4 && f2->IsSensor() && entity1->getIDEN() == 4 && !f1->IsSensor()) {
+					eliminarEntityDelVecindario(entity2, entity1);
+
+				}
+
+
+
 			}
-
-			else if (entity2->getIDEN() == 4 && f2->IsSensor() && (entity1->getIDEN() == 1 || entity1->getIDEN() == 2)) {
-				paredDetectada(entity2, false);
-			}
-
-
-			if (entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true) {
-				std::cout << "lalal 1" << std::endl;
-
-				actualizarPuerta(entity1, entity2, 1);
-			}
-
-			else if (entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true) {
-				std::cout << "lalal 2" << std::endl;
-				actualizarPuerta(entity2, entity1, 1);
-			}
-
-			//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
-			//	//aplicarKnockBack(entity1, b1);
-			//	Personaje *p = static_cast<Personaje*>(entity1->getObjeto3D());
-			//	p->setImpulso(false);
-
-			//}
-
-			if ((entity1->getIDEN() == 4 && f1->IsSensor()) && entity2->getIDEN() == 4) {
-				gestionarCambioDeEstadoEnemigo(entity1);
-			}
-
-			else if ((entity2->getIDEN() == 4 && f2->IsSensor()) && entity1->getIDEN() == 4) {
-				gestionarCambioDeEstadoEnemigo(entity2);
-
-			}
-
-
-			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 && f2->IsSensor() == true) {
-				std::cout << "ADIOS 1" << std::endl;
-				gestionarCambioDeEstadoEnemigo(entity2);
-
-			}
-
-
-			if (entity1->getIDEN() == 4 && f1->IsSensor() && entity2->getIDEN() == 4 && !f2->IsSensor()) {
-				eliminarEntityDelVecindario(entity1, entity2);
-			}
-
-			else if (entity2->getIDEN() == 4 && f2->IsSensor() && entity1->getIDEN() == 4 && !f1->IsSensor()) {
-				eliminarEntityDelVecindario(entity2, entity1);
-
-			}
-
-			
-
 		}
 	}
 }
@@ -809,43 +813,45 @@ void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* im
 
 
 			if(entity1->getIDEN() == 0){
-			
+
 			}
 
 			else if(entity2->getIDEN() == 0){
-		
+
 
 			}*/
 
-
-			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5)
+			if (entity1 != nullptr&&entity2 != nullptr)
 			{
-				this->activarTerminar(entity1, entity2, true);
+				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5)
+				{
+					this->activarTerminar(entity1, entity2, true);
+
+				}
+
+				if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4)) {
+					actualizarPuerta(entity1, entity2, 0);
+				}
+
+				else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4)) {
+					actualizarPuerta(entity2, entity1, 0);
+				}
+
+				/*if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
+
+					this->activarTerminar(entity1, entity2);
+				}*/
+
+				//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 ) {
+				//	std::cout << "A DISPARAR!" << std::endl;
+				//	dispararEnemigo(entity1, entity2);
+
+				//}
+
 
 			}
-
-			if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4)) {
-				actualizarPuerta(entity1, entity2, 0);
-			}
-
-			else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4)) {
-				actualizarPuerta(entity2, entity1, 0);
-			}
-	
-			/*if (entity1->getIDEN() == 0 && entity2->getIDEN() == 5 && f2->IsSensor() == true) {
-				
-				this->activarTerminar(entity1, entity2);
-			}*/
-
-			//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4 ) {
-			//	std::cout << "A DISPARAR!" << std::endl;
-			//	dispararEnemigo(entity1, entity2);
-
-			//}
-
 
 		}
-
 	}
 
 }
@@ -872,21 +878,23 @@ void MiContactListener::PreSolve(b2Contact* contact, const b2Manifold* oldManifo
 
 
 			if(entity1->getIDEN() == 0){
-			
+
 			}
 
 			else if(entity2->getIDEN() == 0){
-			
+
 
 			}*/
+			if (entity1 != nullptr&&entity2 != nullptr)
+			{
+				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
+					aplicarKnockBack(entity1, entity2, b1);
 
-			if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
-				aplicarKnockBack(entity1, entity2, b1);
+				}
 
 			}
 
 		}
-
 	}
 }
 

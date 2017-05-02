@@ -13,6 +13,7 @@
 #include <glm\vec3.hpp>
 #include <glm\mat4x4.hpp>
 #include "framework\openGLShader.h"
+
 class TNodo;
 class TGestorRecursos;
 class TEntidad;
@@ -41,6 +42,8 @@ public:
 	GLFWwindow* getGLFWwindow();
 	bool init(std::string, int width = 1024, int height = 720, bool full_screen = false);
 	void run(Mundo * world);
+	void drawBox(Mundo * world, double x, double y, int w, int h);
+	void drawGround(Mundo * world);
 	void info();
 	void addRegistroLuz(TNodo*);
 	void addRegistroCamara(TNodo*);
@@ -81,5 +84,9 @@ private:
 	movimentHandler* move;
 	double lastTime;
 	double deltaTime;
+	double XMIN = 0;
+	double XMAX = 100;
+	double YMIN;
+	double YMAX;
 };
 

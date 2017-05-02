@@ -6,6 +6,7 @@
 #include "graphicEngine\entityTree\TCamara.h"
 #include "../Fisicas/Entity2D.h"
 #include "../Fisicas/Mundo.h"
+#include "MallaFisica.h"
 
 #include <iostream>
 
@@ -20,9 +21,11 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 50.0f }, yaw{ 0 
 	rotation->rotar(0.0f, 0.0f, 0.0f, 1.0f);
 	scale->escalar(1,1,1);
 
-	pos = glm::vec3(0, 0, 0);
+	pos = glm::vec3(0, 7, 0);
 	rot = glm::vec3(0, 0, 0);
-	escale = glm::vec3(1, 1, 1);
+	escale = glm::vec3(2, 7, 2);
+
+	fis = new MallaFisica(motorApp, pos, rot, escale);
 
 	entity = new Entity2D(m->getWorldBox2D(), pos, rot, this);
 
@@ -31,6 +34,7 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 50.0f }, yaw{ 0 
 	nodoTransfTM = motorApp->crearNodo(nodoTransfEM, translation);
 
 	TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Nanosuit/nanosuit.obj"));
+
 	motorApp->setPlayerMove(this);
 }
 
@@ -137,28 +141,31 @@ void player::actualizarFisicas(int n)
 
 	if (n == -1) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-
+		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);
 	}
 
 	if (n == 0) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
+		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);
 	}
 
 	if (n == 1) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
-
+		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);
 
 	}
 
 	if (n == 2) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
-
+		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);
+		std::cout <<"-------------------------------<<<"<< entity->getCuerpo2D()->GetLinearVelocity().x << " " << entity->getCuerpo2D()->GetLinearVelocity().y << std::endl;
 	}
 
 
 	if (n == 3) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
+		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);
 	}
 
 }
