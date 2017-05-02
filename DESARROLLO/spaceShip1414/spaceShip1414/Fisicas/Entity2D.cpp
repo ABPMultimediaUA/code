@@ -109,10 +109,15 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     if (rot.y == 90) {
 
         bodyShape.SetAsBox(5 * escala.z, 5 * escala.x);
+		escalaFixture.x = 5 * escala.z;
+		escalaFixture.y = 1;
+		escalaFixture.z = 5 * escala.x;
 
     } else {
         bodyShape.SetAsBox(5 * escala.x, 5 * escala.z);
-
+		escalaFixture.x = 5 * escala.x;
+		escalaFixture.y = 1;
+		escalaFixture.z = 5 * escala.z;
     }
 
 
@@ -468,6 +473,11 @@ glm::vec3 Entity2D::getNormal()
 glm::vec3 Entity2D::getPuntoDeChoque()
 {
 	return glm::vec3(puntoDeChoque.x, 0, puntoDeChoque.y);
+}
+
+glm::vec3 Entity2D::getEscalaFixture()
+{
+	return escalaFixture;
 }
 
 int Entity2D::getIDEN() {

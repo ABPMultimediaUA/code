@@ -10,6 +10,7 @@
 #include <glm\gtc\matrix_transform.hpp>
 #include <glm\gtx\string_cast.hpp>
 #include <glm\gtx\euler_angles.hpp>
+#include "MallaFisica.h"
 
 
 
@@ -28,6 +29,9 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	pos = tras;
 	rot = r;
 	escala = sca;
+	motor = motorApp;
+	//sca.y = 1;
+	//fis->Scale()->escalar(sca.x, sca.y, sca.z );
 
 	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
 	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
@@ -92,6 +96,9 @@ void Pared::setPitch(float p)
 void Pared::setFisicas(Mundo *m)
 {
 	entity = new Entity2D(m->getWorldBox2D(), pos, rot, escala, this);
+	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
+	fis = new MallaFisica(motor, pos2D, rot, entity->getEscalaFixture());
+
 }
 
 glm::vec3 Pared::getPos()

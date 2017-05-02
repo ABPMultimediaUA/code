@@ -52,6 +52,7 @@ public:
 
 	glm::vec3  getNormal();
 	glm::vec3  getPuntoDeChoque();
+	glm::vec3 getEscalaFixture();
 
 private:
 
@@ -78,6 +79,7 @@ private:
 	void* objeto3D;
 	b2Vec2 normal;
 	b2Vec2 puntoDeChoque;
+	glm::vec3 escalaFixture;
 
 };
 

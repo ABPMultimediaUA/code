@@ -11,6 +11,8 @@ class TCamara;
 class TNodo;
 class Entity2D;
 class Mundo;
+class MallaFisica;
+class TGraphicEngine;
 
 class Pared
 
@@ -45,5 +47,8 @@ private:
 	glm::vec3 escala;
 
 	Entity2D *entity;
+	MallaFisica * fis;
+	TGraphicEngine *motor;
+
 };
 

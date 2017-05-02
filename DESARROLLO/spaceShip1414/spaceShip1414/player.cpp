@@ -146,26 +146,26 @@ void player::actualizarFisicas(int n)
 
 	if (n == 0) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
-		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);
+		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x * 0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y * 0.016);
 	}
 
 	if (n == 1) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
-		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);
+		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);
 
 	}
 
 	if (n == 2) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
-		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);
+		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);
 		std::cout <<"-------------------------------<<<"<< entity->getCuerpo2D()->GetLinearVelocity().x << " " << entity->getCuerpo2D()->GetLinearVelocity().y << std::endl;
 	}
 
 
 	if (n == 3) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
-		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);
+		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);
 	}
 
 }
