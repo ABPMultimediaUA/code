@@ -10,11 +10,11 @@ TCamara::TCamara() : yaw{ 0 }, pitch{ 0 },
 cameraPos{ 0.0f, 4.5f, 15.0f },
 cameraFront{ 0.0f, 0.0f, -1.0f },
 cameraUp{ 0.0f, 1.0f, 0.0f },
-cameraSpeed{ 0.05f }, mouseSensitive{ 0.15f }, tipo{ true }, activa{ false }
+cameraSpeed{ 0.05f }, mouseSensitive{ 0.15f }, tipo{ 0 }, activa{ false }
 {
 }
 
-TCamara::TCamara(bool p, float x1, float y1, float z1, float x2, float y2, float z2) : tipo{ false }
+TCamara::TCamara(bool p, float x1, float y1, float z1, float x2, float y2, float z2) : tipo{ 1 }
 {
 	if (p) {
 		this->setPerspectiva(x1, y1, z1, x2, y2, z2);
@@ -57,7 +57,7 @@ void TCamara::setView(glm::mat4 v)
 glm::mat4 TCamara::getView()
 {
 	chechKeys();
-	if (!tipo) {
+	if (tipo!=0) {
 		return view;
 	}
 	else {
@@ -78,7 +78,7 @@ glm::mat4 TCamara::getView()
 
 glm::mat4 TCamara::getProjectionMatrix()
 {
-	if (!tipo) {
+	if (tipo!=0) {
 		int width, height;
 		glfwGetWindowSize(window, &width, &height);
 
@@ -123,6 +123,16 @@ void TCamara::desactivar()
 bool TCamara::getActiva()
 {
 	return activa;
+}
+
+char TCamara::getTipo()
+{
+	return tipo;
+}
+
+void TCamara::setTipo(char t)
+{
+	this->tipo = t;
 }
 
 void TCamara::checkMouse()

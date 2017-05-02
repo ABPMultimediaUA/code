@@ -4,10 +4,11 @@
 #include "graphicEngine\entityTree\TNodo.h"
 #include "graphicEngine\entityTree\TMalla.h"
 #include "graphicEngine\entityTree\TCamara.h"
+#include "graphicEngine\entityTree\TNodo.h"
 
 
 
-Camara::Camara(TGraphicEngine * motorApp) : velocity{ 5.0f }, yaw{ 0 }, pitch{ 0 }
+Camara::Camara(TGraphicEngine * motorApp, TNodo * jugador) : velocity{ 5.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	translation = motorApp->crearTransform();
 	rotation = motorApp->crearTransform();
@@ -18,17 +19,29 @@ Camara::Camara(TGraphicEngine * motorApp) : velocity{ 5.0f }, yaw{ 0 }, pitch{ 0
 	rotation->rotar(0.0f, 0.0f, 0.0f, 1.0f);
 	scale->escalar(1, 1, 1);
 
-	TNodo* nodoTransfRC = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
+	TNodo* nodoTransfRC;
+	if (jugador != nullptr)
+	{
+		nodoTransfRC = motorApp->crearNodo(jugador, rotation);
+	}
+	else
+	{
+		nodoTransfRC = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
+	}
 	TNodo* nodoTransfEC = motorApp->crearNodo(nodoTransfRC, scale);
 	TNodo* nodoTransfTC = motorApp->crearNodo(nodoTransfEC, translation);
-	TNodo* nodoCamara = motorApp->crearNodo(nodoTransfTC, motorApp->crearCamara(true, 45.f, 0.1f, 2000.f, 10.0f, 10.0f, 10.0f, true));
+	TNodo* nodoCamara;
 
-	motorApp->setCameraMove(this);
+	if (jugador == nullptr) {
+		motorApp->setCameraMove(this);
+		nodoCamara = motorApp->crearNodo(nodoTransfTC, motorApp->crearCamara(true, 45.f, 0.1f, 2000.f, 10.0f, 10.0f, 10.0f, true));
+	}
+	else
+	{
+		nodoCamara = motorApp->crearNodo(nodoTransfTC, motorApp->crearCamaraS(true, 45.f, 0.1f, 2000.f, 10.0f, 10.0f, 10.0f, true));
+	}
 	motorApp->addRegistroCamara(nodoCamara);
-
-
 }
-
 
 Camara::~Camara()
 {

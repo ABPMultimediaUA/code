@@ -21,10 +21,13 @@ int main() {
 		motorApp.info();
 		Mundo * world = new Mundo();
 
+		//Malla
+		player jugador(&motorApp, world);
+
 		//camara
 
-		Camara cam(&motorApp);
-		cam.Translation()->trasladar(0, 10, 30);
+		Camara cam(&motorApp,jugador.getNodoTrans());
+		cam.Translation()->trasladar(0, 10, 40);
 		cam.setPitch(-30);
 		cam.Rotation()->rotarYPR(0,cam.getPitch(),0);
 
@@ -53,8 +56,6 @@ int main() {
 		TNodo* nodoLuz = motorApp.crearNodo(nodoTransfTL, motorApp.crearLuz(0.0f,10.0f,10.0f, true));
 		motorApp.addRegistroLuz(nodoLuz);
 		
-		//Malla
-		player jugador(&motorApp, world);
 
 		//Malla3
 	/*	TTransform *transfRM = motorApp.crearTransform();

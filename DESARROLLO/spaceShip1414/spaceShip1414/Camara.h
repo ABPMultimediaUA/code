@@ -1,13 +1,13 @@
 #pragma once
 class TTransform;
 class TGraphicEngine;
-
+class TNodo;
 
 class Camara
 {
 public:
 	
-	Camara(TGraphicEngine * motorApp);
+	Camara(TGraphicEngine * motorApp, TNodo* jugador = nullptr);
 	~Camara();
 	float getVelocity();
 	float getYaw();

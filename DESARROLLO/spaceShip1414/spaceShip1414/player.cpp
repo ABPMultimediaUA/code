@@ -28,10 +28,8 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 50.0f }, yaw{ 0 
 
 	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
 	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
-	TNodo* nodoTransfTM = motorApp->crearNodo(nodoTransfEM, translation);
+	nodoTransfTM = motorApp->crearNodo(nodoTransfEM, translation);
 
-	//TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Nanosuit/nanosuit.obj"));
-	//motorApp->setPlayerMove(this);
 	TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Nanosuit/nanosuit.obj"));
 	motorApp->setPlayerMove(this);
 }
@@ -165,3 +163,7 @@ void player::actualizarFisicas(int n)
 
 }
 
+TNodo * player::getNodoTrans()
+{
+	return nodoTransfTM;
+}

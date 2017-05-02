@@ -4,6 +4,7 @@
 class TTransform;
 class TGraphicEngine;
 class TCamara;
+class TNodo;
 class Entity2D;
 class Mundo;
 
@@ -28,6 +29,7 @@ public:
 	void setRot(float x, float y, float z);
 	void setScale(float x, float y, float z);
 	void actualizarFisicas(int n);
+	TNodo * getNodoTrans();
 private:
 	float velocity;
 	float yaw;
@@ -39,5 +41,6 @@ private:
 	glm::vec3 rot;
 	glm::vec3 escale;
 	Entity2D *entity;
+	TNodo *nodoTransfTM;
 };
 

@@ -32,8 +32,10 @@ public:
 	void desactivar();
 	bool getActiva();
 	void chechKeys();
+	char getTipo();
+	void setTipo(char);
 private:
-	bool tipo;
+	char tipo;
 	bool activa;
 	bool esPerspectiva;
 	glm::vec3 front, up;

@@ -50,6 +50,17 @@ TCamara * TGraphicEngine::crearCamara(bool pe, float xu, float yu, float zu, flo
 	return c;
 }
 
+TCamara * TGraphicEngine::crearCamaraS(bool pe, float xu, float yu, float zu, float xf, float yf, float zf, bool a)
+{
+	TCamara* c = new TCamara(pe, xu, yu, zu, xf, yf, zf);
+	if (a)
+	{
+		c->activar();
+	}
+	c->setTipo(2);
+	return c;
+}
+
 TCamara * TGraphicEngine::crearCamara()
 {
 	return new TCamara();
@@ -202,19 +213,14 @@ TCamara* TGraphicEngine::getCamaraActiva()
 	return camaraActiva;
 }
 
-void TGraphicEngine::cambiarCamaraActiva(bool m)
+void TGraphicEngine::cambiarCamaraActiva(char m)
 {
-	if (m) {
-		static_cast<TCamara*>(registroCamaras.at(0)->getEntidad())->activar();
-		static_cast<TCamara*>(registroCamaras.at(1)->getEntidad())->desactivar();
-		camaraActiva = static_cast<TCamara*>(registroCamaras.at(0)->getEntidad());
-		camaraActiva->setWindow(window);
+	if (camaraActiva) {
+		camaraActiva->desactivar();
 	}
-	else {
-		static_cast<TCamara*>(registroCamaras.at(1)->getEntidad())->activar();
-		static_cast<TCamara*>(registroCamaras.at(0)->getEntidad())->desactivar();
-		camaraActiva = static_cast<TCamara*>(registroCamaras.at(1)->getEntidad());
-		camaraActiva->setWindow(window);
+	if (registroCamaras.size() > m) {
+		static_cast<TCamara*>(registroCamaras.at(m)->getEntidad())->activar();
+		camaraActiva = static_cast<TCamara*>(registroCamaras.at(m)->getEntidad());
 	}
 }
 
@@ -262,15 +268,22 @@ void TGraphicEngine::onresize(int width, int height)
 
 void TGraphicEngine::camaraActivada()
 {
-
-	for (size_t i = 0; i < registroCamaras.size(); i++) {
+	for (size_t i = 0; i < registroCamaras.size(); i++)
+	{
 		if (static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->getActiva())
 		{
-		
 			glm::mat4 t = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getEntidad())->getMatriz();
 			glm::mat4 e = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getPadre()->getEntidad())->getMatriz();
 			glm::mat4 r = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
-			static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView((r*e)*t);
+			if (static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->getTipo() == 2)
+			{
+				glm::mat4 tt = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
+				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView(tt*r*e*t);
+			}
+			else
+			{
+				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView((r*e)*t);
+			}
 			camaraActiva = static_cast<TCamara*>(registroCamaras.at(i)->getEntidad());
 			camaraActiva->setWindow(this->window);
 			break;

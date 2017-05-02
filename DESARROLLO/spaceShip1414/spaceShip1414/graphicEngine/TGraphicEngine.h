@@ -33,6 +33,7 @@ public:
 	TNodo* crearNodo(TNodo*, TEntidad*);
 	TTransform* crearTransform();
 	TCamara* crearCamara(bool, float, float, float, float, float, float, bool a = false);
+	TCamara* crearCamaraS(bool, float, float, float, float, float, float, bool a = false);
 	TCamara* crearCamara();
 	TLuz* crearLuz(float, float, float, bool a = false);
 	TMalla* crearMalla(std::string);
@@ -50,7 +51,7 @@ public:
 	double getDT();
 	void setLastTime(double);
 	TCamara * getCamaraActiva();
-	void cambiarCamaraActiva(bool);
+	void cambiarCamaraActiva(char);
 	glm::vec3 moverCamara();
 private:
 	void onstart();
