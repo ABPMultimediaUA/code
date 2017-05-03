@@ -10,7 +10,7 @@ TLuz::TLuz()
 {
 }
 
-TLuz::TLuz(float x, float y, float z) : intensidad {x, y, z}, activa(false)
+TLuz::TLuz(float x, float y, float z) : intensidad{ x, y, z }, activa{ false }
 {
 }
 

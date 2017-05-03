@@ -145,8 +145,8 @@ void TCamara::chechKeys()
 {
 	if (isKeyPress(GLFW_KEY_W)) { cameraPos += cameraSpeed * front; }
 	if (isKeyPress(GLFW_KEY_S)) { cameraPos -= cameraSpeed * front; }
-	if (isKeyPress(GLFW_KEY_A)) { cameraPos -= glm::normalize(glm::cross(front, up)) * cameraSpeed; }
-	if (isKeyPress(GLFW_KEY_D)) { cameraPos += glm::normalize(glm::cross(front, up)) * cameraSpeed; }
+	if (isKeyPress(GLFW_KEY_A)) { cameraPos -= up * cameraSpeed; }
+	if (isKeyPress(GLFW_KEY_D)) { cameraPos += up * cameraSpeed; }
 }
 
 inline bool TCamara::isKeyPress(int key)

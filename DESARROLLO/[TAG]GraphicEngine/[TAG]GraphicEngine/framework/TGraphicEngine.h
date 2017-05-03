@@ -48,7 +48,7 @@ public:
 	void setLastTime(double);
 	void cambiarCamaraActiva(char);
 	TNodo * addMalla(std::string path = "", TNodo * nodoPadre = nullptr);
-	TNodo * addCamara(char tipo = 2, bool per = false, bool act = false, TNodo * nodoPadre = nullptr);
+	TNodo * addCamara(char tipo = 0, bool per = false, bool act = false, TNodo * nodoPadre = nullptr);
 	TNodo * addLuz(TNodo * nodoPadre = nullptr);
 	void trasladar(TNodo *, float, float, float);
 	void rotar(TNodo *, float, float, float, float);

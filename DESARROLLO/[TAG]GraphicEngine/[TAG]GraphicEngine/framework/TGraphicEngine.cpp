@@ -262,7 +262,6 @@ TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre)
 	{
 		nodoTransfRL = crearNodo(nodoPadre, transfRL);
 	}
-	
 	TNodo* nodoTransfEL = crearNodo(nodoTransfRL, transfEL);
 	TNodo* nodoTransfTL = crearNodo(nodoTransfEL, transfTL);
 	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.0f, 10.0f, 10.0f, true));
