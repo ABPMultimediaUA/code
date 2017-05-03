@@ -14,20 +14,22 @@
 #include "BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/CollisionShapes/btCollisionShape.h"
-#include "LinearMath/btVector3.h"
+#include "Fisicas3D\Mundo3D.h"
+
+
 #define GLFW_DLL
 #define GLFW_BUILD_DLL
 
 //variables constante para las dimenciones de la ventana
-const GLuint WIDTH = 800, HEIGHT = 600;
+const GLuint WIDTH = 1366, HEIGHT = 768;
 
 int main() {
 	TGraphicEngine motorApp;
 	if (motorApp.init("Motor Grafico SpaceShip 1414", WIDTH, HEIGHT))
 	{
 		motorApp.info();
-		Mundo * world = new Mundo();
-
+		//Mundo * world = new Mundo();
+		Mundo3D * world = new Mundo3D();
 		//Malla
 		player jugador(&motorApp, world);
 		//camara
@@ -85,15 +87,15 @@ int main() {
 		TNodo* nodoMalla1 = motorApp.crearNodo(nodoTransfTM1, motorApp.crearMalla("resourse/models/untitled.obj"));*/
 		Escenario *scene = new Escenario(&motorApp, world);
 		readJson *json = new readJson(scene);
-		b2GLDraw fooDrawInstance;
-		world->getWorldBox2D()->SetDebugDraw(&fooDrawInstance);
-		uint32 flags = 0;
-		flags += b2Draw::e_shapeBit;
-		flags += b2Draw::e_jointBit;
-		flags += b2Draw::e_aabbBit;
-		flags += b2Draw::e_pairBit;
-		flags += b2Draw::e_centerOfMassBit;
-		fooDrawInstance.SetFlags(flags);
+		//b2GLDraw fooDrawInstance;
+		//world->getWorldBox2D()->SetDebugDraw(&fooDrawInstance);
+		//uint32 flags = 0;
+		//flags += b2Draw::e_shapeBit;
+		//flags += b2Draw::e_jointBit;
+		//flags += b2Draw::e_aabbBit;
+		//flags += b2Draw::e_pairBit;
+		//flags += b2Draw::e_centerOfMassBit;
+		//fooDrawInstance.SetFlags(flags);
 		motorApp.run(world);
 		
 	}

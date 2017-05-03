@@ -11,8 +11,7 @@
 #include "entityTree\TLuz.h"
 #include "entityTree\TMalla.h"
 #include "framework\movimentHandler.h"
-#include "../Fisicas/Mundo.h"
-#include "../Fisicas/Entity2D.h"
+#include "../Fisicas3D/Mundo3D.h"
 #include "../Pared.h"
 
 TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }
@@ -128,7 +127,7 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 	return true;
 }
 
-void TGraphicEngine::run(Mundo * world)
+void TGraphicEngine::run(Mundo3D * world)
 {
 	onstart();
 	glfwSetTime(0.0);
@@ -143,15 +142,19 @@ void TGraphicEngine::run(Mundo * world)
 		last = currentFrame;
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		world->stepBox2D(deltaTime, 6, 2);
-		world->clearForcesBox2D();
-		drawBox(world, 5, 50, 2, 1);
-		/*drawGround(world);*/
-	/*	world->getWorldBox2D()->DrawDebugData();*/
-	/*	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);*/
+		world->getMundo3DBullet()->stepSimulation(deltaTime);
+		world->getMundo3DBullet()->debugDrawWorld();
+		//drawBox(world, 5, 50, 2, 1);
+
+		//drawGround(world);
+		//world->getWorldBox2D()->DrawDebugData();
+		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
 		draw(getLastTime());
 		glfwSwapBuffers(window);
 		glfwPollEvents();
+		/*world->stepBox2D(deltaTime, 6, 2);
+		world->clearForcesBox2D();*/
 	}
 
 	glfwDestroyWindow(window);
@@ -159,39 +162,39 @@ void TGraphicEngine::run(Mundo * world)
 }
 
 
-void  TGraphicEngine::drawBox(Mundo * world, double x, double y, int w, int h) {
-	b2BodyDef myBodyDef;
-	myBodyDef.type = b2_staticBody;
-	myBodyDef.position.Set(1, 1);
-	myBodyDef.angle = 0;
-
-	b2Body* dynamicBody = world->getWorldBox2D()->CreateBody(&myBodyDef);
-
-	b2PolygonShape boxShape;
-	boxShape.SetAsBox(0.1, 0.1);
-
-	b2FixtureDef boxFixtureDef;
-	boxFixtureDef.shape = &boxShape;
-	boxFixtureDef.density = 0.5;
-	dynamicBody->CreateFixture(&boxFixtureDef);
-	//Pared * p = new Pared(this,glm::vec3(0,0,0), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1));
-	//p->setFisicas(world);
-}
-
-void  TGraphicEngine::drawGround(Mundo * world) {
-	//b2Body *groundBody;
-	//b2Fixture *bottomFixture;
-	//b2BodyDef groundBodyDef;
-	//groundBodyDef.position.Set(0, 0);
-	//groundBody = world->getWorldBox2D()->CreateBody(&groundBodyDef);
-
-	//b2EdgeShape groundBox;
-	//b2FixtureDef groundBoxDef;
-	//groundBoxDef.shape = &groundBox;
-
-	//groundBox.Set(b2Vec2(XMIN, YMIN), b2Vec2(XMAX, YMIN));
-	//bottomFixture = groundBody->CreateFixture(&groundBoxDef);
-}
+//void  TGraphicEngine::drawBox(Mundo * world, double x, double y, int w, int h) {
+//	b2BodyDef myBodyDef;
+//	myBodyDef.type = b2_staticBody;
+//	myBodyDef.position.Set(1, 1);
+//	myBodyDef.angle = 0;
+//
+//	b2Body* dynamicBody = world->getWorldBox2D()->CreateBody(&myBodyDef);
+//
+//	b2PolygonShape boxShape;
+//	boxShape.SetAsBox(0.1, 0.1);
+//
+//	b2FixtureDef boxFixtureDef;
+//	boxFixtureDef.shape = &boxShape;
+//	boxFixtureDef.density = 0.5;
+//	dynamicBody->CreateFixture(&boxFixtureDef);
+//	//Pared * p = new Pared(this,glm::vec3(0,0,0), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1));
+//	//p->setFisicas(world);
+//}
+//
+//void  TGraphicEngine::drawGround(Mundo * world) {
+//	//b2Body *groundBody;
+//	//b2Fixture *bottomFixture;
+//	//b2BodyDef groundBodyDef;
+//	//groundBodyDef.position.Set(0, 0);
+//	//groundBody = world->getWorldBox2D()->CreateBody(&groundBodyDef);
+//
+//	//b2EdgeShape groundBox;
+//	//b2FixtureDef groundBoxDef;
+//	//groundBoxDef.shape = &groundBox;
+//
+//	//groundBox.Set(b2Vec2(XMIN, YMIN), b2Vec2(XMAX, YMIN));
+//	//bottomFixture = groundBody->CreateFixture(&groundBoxDef);
+//}
 
 
 void TGraphicEngine::info()

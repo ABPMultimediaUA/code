@@ -9,8 +9,8 @@ class TTransform;
 class TGraphicEngine;
 class TCamara;
 class TNodo;
-class Entity2D;
-class Mundo;
+class Entity3D;
+class Mundo3D;
 class MallaFisica;
 class TGraphicEngine;
 
@@ -29,7 +29,7 @@ public:
 	void setVelocity(float);
 	void setYaw(float);
 	void setPitch(float);
-	void setFisicas(Mundo *);
+	void setFisicas(Mundo3D *);
 	glm::vec3 getPos();
 	glm::vec3 getRot();
 	glm::vec3 getEscala();
@@ -46,7 +46,7 @@ private:
 	glm::vec3 rot;
 	glm::vec3 escala;
 
-	Entity2D *entity;
+	Entity3D *entity;
 	MallaFisica * fis;
 	TGraphicEngine *motor;
 

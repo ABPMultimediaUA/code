@@ -1,49 +1,11 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GTX 1060 3GB/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 381.89
+Renderer: GeForce GTX 970/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 372.70
 GLSL: 4.50 NVIDIA
 
 Recurso nombre: nanosuit.obj
 Recurso nombre: untitled.obj
 -------------------------------------->0
-ID DE LA ENTITY 0
-MUERO ENTITY2D
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado

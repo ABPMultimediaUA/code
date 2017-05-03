@@ -5,14 +5,14 @@ class TTransform;
 class TGraphicEngine;
 class TCamara;
 class TNodo;
-class Entity2D;
-class Mundo;
+class Entity3D;
+class Mundo3D;
 class MallaFisica;
 
 class player
 {
 public:
-	player(TGraphicEngine*, Mundo*);
+	player(TGraphicEngine*, Mundo3D*);
 	~player();
 	float getVelocity();
 	float getYaw();
@@ -41,7 +41,7 @@ private:
 	glm::vec3 pos;
 	glm::vec3 rot;
 	glm::vec3 escale;
-	Entity2D *entity;
+	Entity3D *entity;
 	TNodo *nodoTransfTM;
 	MallaFisica * fis;
 };

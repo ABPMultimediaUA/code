@@ -15,7 +15,7 @@
 #include <time.h>
 #include "Escenario.h"
 #include "Pared.h"
-#include "Fisicas\Mundo.h"
+#include "Fisicas3D\Mundo3D.h"
 //#include "Pared.h"
 //#include "Puerta.h"
 #include "readJson.h"
@@ -36,7 +36,7 @@
 #include "../Fisicas/Entity2D.h"*/
 
 
-Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m/*,b2World *world, Juego* game*/) {
+Escenario::Escenario(TGraphicEngine * motorApp, Mundo3D *m/*,b2World *world, Juego* game*/) {
 
 	/*SM = smgr;
 	VD = driver;*/

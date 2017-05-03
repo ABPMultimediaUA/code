@@ -129,12 +129,14 @@
   <ItemGroup>
     <ClCompile Include="Camara.cpp" />
     <ClCompile Include="Escenario.cpp" />
+    <ClCompile Include="Fisicas3D\Entity3D.cpp" />
     <ClCompile Include="Fisicas\b2GLDraw.cpp" />
     <ClCompile Include="Fisicas\Entity2D.cpp" />
     <ClCompile Include="Fisicas\MiContactListener.cpp" />
     <ClCompile Include="Fisicas\Mundo.cpp" />
     <ClCompile Include="Fisicas\MyContactFilter.cpp" />
     <ClCompile Include="Fisicas\RayCastCallback.cpp" />
+    <ClCompile Include="Fisicas3D\GlDebugDraw.cpp" />
     <ClCompile Include="graphicEngine\entityTree\TCamara.cpp" />
     <ClCompile Include="graphicEngine\entityTree\TEntidad.cpp" />
     <ClCompile Include="graphicEngine\entityTree\TLuz.cpp" />
@@ -150,6 +152,7 @@
     <ClCompile Include="graphicEngine\resourceManager\TRecursoTextura.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MallaFisica.cpp" />
+    <ClCompile Include="Fisicas3D\Mundo3D.cpp" />
     <ClCompile Include="Pared.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="readJson.cpp" />
@@ -206,12 +209,14 @@
   <ItemGroup>
     <ClInclude Include="Camara.h" />
     <ClInclude Include="Escenario.h" />
+    <ClInclude Include="Fisicas3D\Entity3D.h" />
     <ClInclude Include="Fisicas\b2GLDraw.h" />
     <ClInclude Include="Fisicas\Entity2D.h" />
     <ClInclude Include="Fisicas\MiContactListener.h" />
     <ClInclude Include="Fisicas\Mundo.h" />
     <ClInclude Include="Fisicas\MyContactFilter.h" />
     <ClInclude Include="Fisicas\RayCastCallback.h" />
+    <ClInclude Include="Fisicas3D\GlDebugDraw.h" />
     <ClInclude Include="graphicEngine\entityTree\TCamara.h" />
     <ClInclude Include="graphicEngine\entityTree\TEntidad.h" />
     <ClInclude Include="graphicEngine\entityTree\TLuz.h" />
@@ -226,6 +231,7 @@
     <ClInclude Include="graphicEngine\resourceManager\TRecursoMalla.h" />
     <ClInclude Include="graphicEngine\resourceManager\TRecursoTextura.h" />
     <ClInclude Include="MallaFisica.h" />
+    <ClInclude Include="Fisicas3D\Mundo3D.h" />
     <ClInclude Include="Pared.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="readJson.h" />

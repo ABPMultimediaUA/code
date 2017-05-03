@@ -1,6 +1,6 @@
 #include "Pared.h"
-#include "Fisicas\Entity2D.h"
-#include "Fisicas\Mundo.h"
+#include "Fisicas3D\Entity3D.h"
+#include "Fisicas3D\Mundo3D.h"
 #include "graphicEngine\TGraphicEngine.h"
 #include "graphicEngine\entityTree\TTransform.h"
 #include "graphicEngine\entityTree\TNodo.h"
@@ -93,11 +93,12 @@ void Pared::setPitch(float p)
 	pitch = p;
 }
 
-void Pared::setFisicas(Mundo *m)
+void Pared::setFisicas(Mundo3D *m)
 {
-	entity = new Entity2D(m->getWorldBox2D(), pos, rot, escala, this);
-	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
-	fis = new MallaFisica(motor, pos2D, rot, entity->getEscalaFixture());
+	//entity = new Entity2D(m->getWorldBox2D(), pos, rot, escala, this);
+	//glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
+	//fis = new MallaFisica(motor, pos2D, rot, entity->getEscalaFixture());
+	entity = new Entity3D(m, this, pos, rot, escala);
 
 }
 
