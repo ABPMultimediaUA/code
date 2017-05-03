@@ -16,6 +16,7 @@
 #include "Escenario.h"
 #include "Pared.h"
 #include "Fisicas3D\Mundo3D.h"
+#include "Fisicas\Mundo.h"
 //#include "Pared.h"
 //#include "Puerta.h"
 #include "readJson.h"
@@ -41,7 +42,7 @@ Escenario::Escenario(TGraphicEngine * motorApp, Mundo3D *m/*,b2World *world, Jue
 	/*SM = smgr;
 	VD = driver;*/
 	engine = motorApp;
-	mundo = m;
+	//mundo = m;
 	//mundo = world;
 	srand(time(NULL));
 	//entity = new Entity2D(world);
@@ -49,6 +50,18 @@ Escenario::Escenario(TGraphicEngine * motorApp, Mundo3D *m/*,b2World *world, Jue
 	//pers = new Personaje(smgr, driver, world, game);
 }
 
+Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m/*,b2World *world, Juego* game*/) {
+
+	/*SM = smgr;
+	VD = driver;*/
+	engine = motorApp;
+	mundo = m;
+	//mundo = world;
+	srand(time(NULL));
+	//entity = new Entity2D(world);
+	//jue = game;
+	//pers = new Personaje(smgr, driver, world, game);
+}
 Escenario::Escenario(const Escenario& orig) {
 }
 

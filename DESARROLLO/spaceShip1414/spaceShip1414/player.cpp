@@ -6,11 +6,13 @@
 #include "graphicEngine\entityTree\TCamara.h"
 #include "../Fisicas3D/Entity3D.h"
 #include "../Fisicas3D/Mundo3D.h"
+#include "Fisicas\Entity2D.h"
+#include "Fisicas\Mundo.h"
 #include "MallaFisica.h"
 
 #include <iostream>
 
-player::player(TGraphicEngine * motorApp, Mundo3D *m) : velocity{ 50.0f }, yaw{ 0 }, pitch{ 0 }
+player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 50.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	translation = motorApp->crearTransform();
 	rotation = motorApp->crearTransform();
@@ -26,14 +28,6 @@ player::player(TGraphicEngine * motorApp, Mundo3D *m) : velocity{ 50.0f }, yaw{ 
 	escale = glm::vec3(2, 7, 2);
 
 
-	/*entity = new Entity2D(m->getWorldBox2D(), pos, rot, this);
-	entity->getCuerpo2D()->SetTransform(b2Vec2(0,0),0);
-	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);*/
-
-	/*fis = new MallaFisica(motorApp, pos2D, rot, entity->getEscalaFixture());*/
-
-	entity = new Entity3D(m, pos, rot, escale, this);
-
 
 	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
 	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
@@ -41,8 +35,52 @@ player::player(TGraphicEngine * motorApp, Mundo3D *m) : velocity{ 50.0f }, yaw{ 
 
 	TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Nanosuit/nanosuit.obj"));
 
+	fis = new MallaFisica(motorApp, pos, rot, escale, nodoMalla);
+
+	entity = new Entity2D(m->getWorldBox2D(), fis->getPos(), fis->getRot(), this);
+	/*entity->getCuerpo2D()->SetTransform(b2Vec2(0, 0), 0);
+	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);*/
+
 	motorApp->setPlayerMove(this);
 }
+
+
+
+
+
+//player::player(TGraphicEngine * motorApp, Mundo3D *m) : velocity{ 50.0f }, yaw{ 0 }, pitch{ 0 }
+//{
+//	translation = motorApp->crearTransform();
+//	rotation = motorApp->crearTransform();
+//	scale = motorApp->crearTransform();
+//	translation->trasladar(0,0,0);
+//	rotation->rotar(0.0f, 1.0f, 0.0f, 0.0f);
+//	rotation->rotar(0.0f, 0.0f, 1.0f, 0.0f);
+//	rotation->rotar(0.0f, 0.0f, 0.0f, 1.0f);
+//	scale->escalar(1,1,1);
+//
+//	pos = glm::vec3(0, 0, 0);
+//	rot = glm::vec3(0, 0, 0);
+//	escale = glm::vec3(2, 7, 2);
+//
+//
+//	/*entity = new Entity2D(m->getWorldBox2D(), pos, rot, this);
+//	entity->getCuerpo2D()->SetTransform(b2Vec2(0,0),0);
+//	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);*/
+//
+//	/*fis = new MallaFisica(motorApp, pos2D, rot, entity->getEscalaFixture());*/
+//
+//	entity = new Entity3D(m, pos, rot, escale, this);
+//
+//
+//	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
+//	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
+//	nodoTransfTM = motorApp->crearNodo(nodoTransfEM, translation);
+//
+//	TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Nanosuit/nanosuit.obj"));
+//
+//	motorApp->setPlayerMove(this);
+//}
 
 player::~player()
 {
@@ -144,48 +182,53 @@ void player::setScale(float x, float y, float z)
 
 void player::actualizarFisicas(int n, double delta)
 {
-/*
+
 	std::cout<<"//////////////////////////////////////////"<<std::endl;
 	            std::cout<<""<<std::endl;
 	            std::cout<<"POS PERS ANTES"<<std::endl;
 	                 std::cout<<"Pos 3D X: "<<pos.x<<"Pos 3D Z: "<<pos.z<<std::endl;
-	                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
+	                 std::cout<<"Pos 2D X: "<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).x<<"Pos 2D Z: "
+						 << entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y<<std::endl;
+				std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 
-	//if (n == -1) {
-	//	entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-	//	/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);*/
-	//}
+	if (n == -1) {
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);*/
+	}
 
-	//if (n == 0) {
-	//	entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity*delta*0.38, 0.0f));
-	//	/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x * 0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y * 0.016);*/
-	//}
+	if (n == 0) {
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity*delta, 0.0f));
+		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x * 0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y * 0.016);*/
+	}
 
-	//if (n == 1) {
+	if (n == 1) {
 
-	//	entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity*delta*0.38, 0.0f));
-	//	/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity*delta, 0.0f));
+		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
 
-	//}
+	}
 
-	//if (n == 2) {
-	//	entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity*delta*0.38));
-	///*	fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
-	//	//std::cout <<"-------------------------------<<<"<< entity->getCuerpo2D()->GetLinearVelocity().x << " " << entity->getCuerpo2D()->GetLinearVelocity().y << std::endl;
-	//}
+	if (n == 2) {
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity*delta));
+	/*	fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
+		//std::cout <<"-------------------------------<<<"<< entity->getCuerpo2D()->GetLinearVelocity().x << " " << entity->getCuerpo2D()->GetLinearVelocity().y << std::endl;
+	}
 
 
-	//if (n == 3) {
-	//	entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity*delta*0.38));
-	///*	fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
-	//}
+	if (n == 3) {
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity*delta));
+	/*	fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
+	}
 
-/*
+
 	std::cout << "//////////////////////////////////////////" << std::endl;
 	std::cout << "" << std::endl;
 	std::cout << "POS PERS DES" << std::endl;
 	std::cout << "Pos 3D X: " << pos.x << "Pos 3D Z: " << pos.z << std::endl;
-	std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;*/
+	std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).x << "Pos 2D Z: "
+		<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y << std::endl;
+	std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
+
 }
 
 TNodo * player::getNodoTrans()

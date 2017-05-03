@@ -58,9 +58,8 @@ Entity2D::Entity2D(b2World * world)
 Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) {
 
 	int scale = 2;
-
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(0, 0);
+    bodyDef.position.Set(pos.x, pos.z);
     bodyShape.SetAsBox(0.05, 0.05);
 
 	escalaFixture.x = 0.05;

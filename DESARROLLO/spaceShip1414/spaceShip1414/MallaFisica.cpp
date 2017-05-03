@@ -9,7 +9,7 @@
 
 #include <iostream>
 
-MallaFisica::MallaFisica(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca) : velocity{ 50.0f }, yaw{ 0 }, pitch{ 0 }
+MallaFisica::MallaFisica(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca, TNodo *nodo) : velocity{ 50.0f }, yaw{ 0 }, pitch{ 0 }
 {
 
 	rotation = motorApp->crearTransform();
@@ -21,7 +21,10 @@ MallaFisica::MallaFisica(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r,
 	rotation->rotar(rot.z, 0.0f, 0.0f, 1.0f);
 	translation->trasladar(tras.x, tras.y, tras.z);
 
-	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
+	
+
+	//TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
+	TNodo* nodoTransfRM = motorApp->crearNodo(nodo, rotation);
 	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
 	nodoTransfTM = motorApp->crearNodo(nodoTransfEM, translation);
 
@@ -29,6 +32,7 @@ MallaFisica::MallaFisica(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r,
 
 	//motorApp->setPlayerMove(this);
 }
+
 
 MallaFisica::~MallaFisica()
 {

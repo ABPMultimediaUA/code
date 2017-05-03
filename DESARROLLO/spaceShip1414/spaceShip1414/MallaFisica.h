@@ -1,6 +1,7 @@
 #pragma once
 #include <glm\vec3.hpp>
 
+class TNodo;
 class TTransform;
 class TGraphicEngine;
 class TCamara;
@@ -11,7 +12,7 @@ class Mundo;
 class MallaFisica
 {
 public:
-	MallaFisica(TGraphicEngine*, glm::vec3 tras, glm::vec3 r, glm::vec3 sca);
+	MallaFisica(TGraphicEngine*, glm::vec3 tras, glm::vec3 r, glm::vec3 sca, TNodo*);
 	~MallaFisica();
 	float getVelocity();
 	float getYaw();

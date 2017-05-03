@@ -21,11 +21,13 @@ Entity3D::Entity3D(Mundo3D * mundo, glm::vec3 pos, glm::vec3 rot, glm::vec3 scal
 
 	btDefaultMotionState* motionstate = new btDefaultMotionState(btTransform(
 		btQuaternion(rot.x, rot.y, rot.z, 1.0f),
-		btVector3(pos.x, pos.y, pos.z)
+		//btVector3(pos.x, pos.y, pos.z)
+		btVector3(0,0,0)
+
 	));
 
 	btTransform trans(btQuaternion(rot.x, rot.y, rot.z, 1.0f),
-		btVector3(pos.x, pos.y, pos.z));
+		btVector3(0, 0, 0));
 
 	rigidBody = new btRigidBody(1.0f, motionstate, capsule, btVector3(0, 0, 0));
 	rigidBody->setUserPointer(this);
@@ -35,7 +37,7 @@ Entity3D::Entity3D(Mundo3D * mundo, glm::vec3 pos, glm::vec3 rot, glm::vec3 scal
 	mundo->getMundo3DBullet()->addRigidBody(rigidBody);
 
 	//virtual void drawCapsule(btScalar radius, btScalar halfHeight, int upAxis, const btTransform& transform, const btVector3& color)
-	mundo->getDebgMode()->drawCapsule(2.0f, 2.5f, 1, trans, btVector3(255, 10, 10));
+	mundo->getDebgMode()->drawCapsule(2.0f, 2.5f,2 ,trans, btVector3(255, 10, 10));
 }
 
 Entity3D::Entity3D(Mundo3D * mundo, void * dirPared, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala)

@@ -36,7 +36,8 @@
 class Pared;
 class Mundo3D;
 //class Enemigo;
-//class Entity2D;
+class Entity2D;
+class Mundo;
 //class Waypoints;
 
 
@@ -81,7 +82,8 @@ private:
 	std::list<ElementoPadre> Padres;
 	std::list<ElementoHijo> Hijos;
 	std::list<Elemento> SubHijos;
-	Mundo3D *mundo;
+	//Mundo3D *mundo;
+	Mundo *mundo;
 	//std::list<Enemigo*> enemigos;
 	//std::list<Pared*> paredes;
 	//std::list<Puerta*> puertas;
@@ -95,6 +97,7 @@ private:
 
 public:
 	Escenario(TGraphicEngine * motorApp, Mundo3D* /*, b2World *world,  Juego* game*/);
+	Escenario(TGraphicEngine * motorApp, Mundo* /*, b2World *world,  Juego* game*/);
 	Escenario(const Escenario& orig);
 	virtual ~Escenario();
 

@@ -28,11 +28,11 @@ int main() {
 	if (motorApp.init("Motor Grafico SpaceShip 1414", WIDTH, HEIGHT))
 	{
 		motorApp.info();
-		//Mundo * world = new Mundo();
-		Mundo3D * world = new Mundo3D();
+		Mundo * world = new Mundo();
+		//Mundo3D * world = new Mundo3D();
 		//Malla
-		player jugador(&motorApp, world);
 		//camara
+		player jugador(&motorApp, world);
 
 		Camara cam(&motorApp,jugador.getNodoTrans());
 		cam.Translation()->trasladar(0, 10, 40);
@@ -87,15 +87,15 @@ int main() {
 		TNodo* nodoMalla1 = motorApp.crearNodo(nodoTransfTM1, motorApp.crearMalla("resourse/models/untitled.obj"));*/
 		Escenario *scene = new Escenario(&motorApp, world);
 		readJson *json = new readJson(scene);
-		//b2GLDraw fooDrawInstance;
-		//world->getWorldBox2D()->SetDebugDraw(&fooDrawInstance);
-		//uint32 flags = 0;
-		//flags += b2Draw::e_shapeBit;
-		//flags += b2Draw::e_jointBit;
-		//flags += b2Draw::e_aabbBit;
-		//flags += b2Draw::e_pairBit;
-		//flags += b2Draw::e_centerOfMassBit;
-		//fooDrawInstance.SetFlags(flags);
+		b2GLDraw fooDrawInstance;
+		world->getWorldBox2D()->SetDebugDraw(&fooDrawInstance);
+		uint32 flags = 0;
+		flags += b2Draw::e_shapeBit;
+		flags += b2Draw::e_jointBit;
+		flags += b2Draw::e_aabbBit;
+		flags += b2Draw::e_pairBit;
+		flags += b2Draw::e_centerOfMassBit;
+		fooDrawInstance.SetFlags(flags);
 		motorApp.run(world);
 		
 	}

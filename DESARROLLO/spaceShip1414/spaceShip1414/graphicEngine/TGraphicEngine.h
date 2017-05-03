@@ -7,12 +7,15 @@
 #define GLFW_STATIC
 #include <GLFW\glfw3.h>
 #endif
+#include <iostream>
+#include <vector>
 #include <string>
 #include <algorithm>
 #include <vector>
 #include <glm\vec3.hpp>
 #include <glm\mat4x4.hpp>
 #include "framework\openGLShader.h"
+#include "../Fisicas3D/GlDebugDraw.h"
 
 class TNodo;
 class TGestorRecursos;
@@ -25,6 +28,7 @@ class movimentHandler;
 class player;
 class Camara;
 class Mundo3D;
+class Mundo;
 
 class TGraphicEngine
 {
@@ -42,8 +46,10 @@ public:
 	GLFWwindow* getGLFWwindow();
 	bool init(std::string, int width = 1024, int height = 720, bool full_screen = false);
 	void run(Mundo3D * world);
-	//void drawBox(Mundo * world, double x, double y, int w, int h);
-	//void drawGround(Mundo * world);
+	void run(Mundo * world);
+	void drawDebug(std::vector<GlDebugDraw::LINE>& lines);
+	void drawBox(Mundo * world, double x, double y, int w, int h);
+	void drawGround(Mundo * world);
 	void info();
 	void addRegistroLuz(TNodo*);
 	void addRegistroCamara(TNodo*);

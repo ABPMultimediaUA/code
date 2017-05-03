@@ -13,6 +13,8 @@ class Entity3D;
 class Mundo3D;
 class MallaFisica;
 class TGraphicEngine;
+class Entity2D;
+class Mundo;
 
 class Pared
 
@@ -30,6 +32,7 @@ public:
 	void setYaw(float);
 	void setPitch(float);
 	void setFisicas(Mundo3D *);
+	void setFisicas(Mundo * m);
 	glm::vec3 getPos();
 	glm::vec3 getRot();
 	glm::vec3 getEscala();
@@ -45,8 +48,9 @@ private:
 	glm::vec3 pos;
 	glm::vec3 rot;
 	glm::vec3 escala;
-
-	Entity3D *entity;
+	TNodo* nodoMalla;
+	Entity2D *entity;
+	//Entity3D *entity;
 	MallaFisica * fis;
 	TGraphicEngine *motor;
 
