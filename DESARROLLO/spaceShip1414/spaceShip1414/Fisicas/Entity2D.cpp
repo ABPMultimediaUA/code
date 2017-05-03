@@ -61,15 +61,15 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(0, 0);
-    bodyShape.SetAsBox(scale, scale);
+    bodyShape.SetAsBox(0.05, 0.05);
 
-	escalaFixture.x = scale;
-	escalaFixture.y = 0.5;
-	escalaFixture.z = scale;
+	escalaFixture.x = 0.05;
+	escalaFixture.y = 0.05;
+	escalaFixture.z = 0.05;
 
 
     md.mass = 1.0f;
-    md.center = b2Vec2(1, 1);
+    md.center = b2Vec2(0, 0);
     md.I = 0.0f;
     body = world->CreateBody(&bodyDef);
     body -> CreateFixture(&bodyShape, 1.0f);

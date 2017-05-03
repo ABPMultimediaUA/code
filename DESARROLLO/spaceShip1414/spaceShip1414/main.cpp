@@ -11,6 +11,12 @@
 #include <glm\gtx\string_cast.hpp>
 #include "Fisicas\Mundo.h"
 #include "Fisicas\b2GLDraw.h"
+#include "BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h"
+#include "BulletCollision/CollisionDispatch/btCollisionObject.h"
+#include "BulletCollision/CollisionShapes/btCollisionShape.h"
+#include "LinearMath/btVector3.h"
+#define GLFW_DLL
+#define GLFW_BUILD_DLL
 
 //variables constante para las dimenciones de la ventana
 const GLuint WIDTH = 800, HEIGHT = 600;
@@ -24,7 +30,6 @@ int main() {
 
 		//Malla
 		player jugador(&motorApp, world);
-
 		//camara
 
 		Camara cam(&motorApp,jugador.getNodoTrans());
@@ -82,13 +87,13 @@ int main() {
 		readJson *json = new readJson(scene);
 		b2GLDraw fooDrawInstance;
 		world->getWorldBox2D()->SetDebugDraw(&fooDrawInstance);
-		//uint32 flags = 0;
-		//flags += b2Draw::e_shapeBit;
-		//flags += b2Draw::e_jointBit;
-		//flags += b2Draw::e_aabbBit;
-		//flags += b2Draw::e_pairBit;
-		//flags += b2Draw::e_centerOfMassBit;
-		//fooDrawInstance.SetFlags(flags);
+		uint32 flags = 0;
+		flags += b2Draw::e_shapeBit;
+		flags += b2Draw::e_jointBit;
+		flags += b2Draw::e_aabbBit;
+		flags += b2Draw::e_pairBit;
+		flags += b2Draw::e_centerOfMassBit;
+		fooDrawInstance.SetFlags(flags);
 		motorApp.run(world);
 		
 	}

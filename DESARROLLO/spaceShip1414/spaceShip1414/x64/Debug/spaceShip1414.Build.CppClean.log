@@ -40,7 +40,6 @@ d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2world.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2worldcallbacks.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2chainandcirclecontact.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2chainandpolygoncontact.obj
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\tmalla.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\tnodo.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\ttransform.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\movimenthandler.obj
@@ -51,6 +50,7 @@ d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\trecurso.ob
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\trecursomalla.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\trecursotextura.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\main.obj
+d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\mallafisica.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\pared.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\player.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\readjson.obj
@@ -62,6 +62,7 @@ d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2collision
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2distance.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\camara.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\escenario.obj
+d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2gldraw.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\entity2d.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\micontactlistener.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\mundo.obj
@@ -70,8 +71,7 @@ d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\raycastcall
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\tcamara.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\tentidad.obj
 d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\tluz.obj
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2gldraw.obj
-d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\mallafisica.obj
+d:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\tmalla.obj
 d:\repositorio\code\desarrollo\spaceship1414\x64\debug\spaceship1414.ilk
 d:\repositorio\code\desarrollo\spaceship1414\x64\debug\spaceship1414.exe
 d:\repositorio\code\desarrollo\spaceship1414\x64\debug\spaceship1414.pdb

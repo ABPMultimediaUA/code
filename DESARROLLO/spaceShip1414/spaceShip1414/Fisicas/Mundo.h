@@ -1,5 +1,6 @@
 #pragma once
 #include <Box2D\Box2D.h>
+#include <btBulletDynamicsCommon.h>
 
 class MiContactListener;
 class MyContactFilter;
@@ -21,6 +22,6 @@ private:
 	MiContactListener* contactListenerInstance;
 	MyContactFilter* filtroContact;
 	b2Vec2 gravity;
-
+	btDiscreteDynamicsWorld* dynamicsWorld;
 };
 

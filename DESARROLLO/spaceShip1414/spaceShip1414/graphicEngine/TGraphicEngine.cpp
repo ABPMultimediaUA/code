@@ -145,10 +145,10 @@ void TGraphicEngine::run(Mundo * world)
 
 		world->stepBox2D(deltaTime, 6, 2);
 		world->clearForcesBox2D();
-		/*drawBox(world, 5, 50, 2, 1);*/
-		//drawGround(world);
-		//world->getWorldBox2D()->DrawDebugData();
-		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		drawBox(world, 5, 50, 2, 1);
+		/*drawGround(world);*/
+	/*	world->getWorldBox2D()->DrawDebugData();*/
+	/*	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);*/
 		draw(getLastTime());
 		glfwSwapBuffers(window);
 		glfwPollEvents();
@@ -161,14 +161,14 @@ void TGraphicEngine::run(Mundo * world)
 
 void  TGraphicEngine::drawBox(Mundo * world, double x, double y, int w, int h) {
 	b2BodyDef myBodyDef;
-	myBodyDef.type = b2_dynamicBody;
-	myBodyDef.position.Set(x, y);
+	myBodyDef.type = b2_staticBody;
+	myBodyDef.position.Set(1, 1);
 	myBodyDef.angle = 0;
 
 	b2Body* dynamicBody = world->getWorldBox2D()->CreateBody(&myBodyDef);
 
 	b2PolygonShape boxShape;
-	boxShape.SetAsBox(w, h);
+	boxShape.SetAsBox(0.1, 0.1);
 
 	b2FixtureDef boxFixtureDef;
 	boxFixtureDef.shape = &boxShape;
@@ -179,18 +179,18 @@ void  TGraphicEngine::drawBox(Mundo * world, double x, double y, int w, int h) {
 }
 
 void  TGraphicEngine::drawGround(Mundo * world) {
-	b2Body *groundBody;
-	b2Fixture *bottomFixture;
-	b2BodyDef groundBodyDef;
-	groundBodyDef.position.Set(0, 0);
-	groundBody = world->getWorldBox2D()->CreateBody(&groundBodyDef);
+	//b2Body *groundBody;
+	//b2Fixture *bottomFixture;
+	//b2BodyDef groundBodyDef;
+	//groundBodyDef.position.Set(0, 0);
+	//groundBody = world->getWorldBox2D()->CreateBody(&groundBodyDef);
 
-	b2EdgeShape groundBox;
-	b2FixtureDef groundBoxDef;
-	groundBoxDef.shape = &groundBox;
+	//b2EdgeShape groundBox;
+	//b2FixtureDef groundBoxDef;
+	//groundBoxDef.shape = &groundBox;
 
-	groundBox.Set(b2Vec2(XMIN, YMIN), b2Vec2(XMAX, YMIN));
-	bottomFixture = groundBody->CreateFixture(&groundBoxDef);
+	//groundBox.Set(b2Vec2(XMIN, YMIN), b2Vec2(XMAX, YMIN));
+	//bottomFixture = groundBody->CreateFixture(&groundBoxDef);
 }
 
 

@@ -32,32 +32,32 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 
 		if (glfwGetKey(window, GLFW_KEY_W) != GLFW_PRESS || glfwGetKey(window, GLFW_KEY_S) != GLFW_PRESS || glfwGetKey(window, GLFW_KEY_A) != GLFW_PRESS || glfwGetKey(window, GLFW_KEY_D) != GLFW_PRESS) {
 
-			jugador->actualizarFisicas(-1);
+			jugador->actualizarFisicas(-1,dt);
 
 		}
 
 		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z - jugador->getVelocity() * dt);
 			jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
-			jugador->actualizarFisicas(3);
+			jugador->actualizarFisicas(3,dt);
 
 		}
 		if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getVelocity() * dt + jugador->getPos().z);
 			jugador->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
-			jugador->actualizarFisicas(2);
+			jugador->actualizarFisicas(2,dt);
 
 		}
 		if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x - jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
 			jugador->Translation()->trasladar(-jugador->getVelocity() * dt, 0.0, 0.0);
-			jugador->actualizarFisicas(1);
+			jugador->actualizarFisicas(1,dt);
 
 		}
 		if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
 			jugador->setPos(jugador->getPos().x + jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
 			jugador->Translation()->trasladar(jugador->getVelocity() * dt, 0.0, 0.0);
-			jugador->actualizarFisicas(0);
+			jugador->actualizarFisicas(0,dt);
 
 		}
 

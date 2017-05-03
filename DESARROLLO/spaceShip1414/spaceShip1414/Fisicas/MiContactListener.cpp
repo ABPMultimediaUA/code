@@ -520,8 +520,8 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			//            Personaje *pers = static_cast<Personaje*>(entity1->getObjeto3D());
 
-			 std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
-			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
+			/* std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
+			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;*/
 
 
 			   /* int a = *((int*)b1->GetUserData());
@@ -531,7 +531,7 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			   }*/
 
-			   std::cout << "///////////////////////////////////" << std::endl;
+		/*	   std::cout << "///////////////////////////////////" << std::endl;
 			   std::cout << "POSICION DE LA ENTITY 1" << std::endl;
 			   std::cout << "POS X: " << entity1->getCuerpo2D()->GetPosition().x << " POS Y: " << entity1->getCuerpo2D()->GetPosition().y << std::endl;
 			   std::cout << "///////////////////////////////////" << std::endl;
@@ -539,7 +539,7 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			   	std::cout<<"///////////////////////////////////"<<std::endl;
 				   std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
 				   std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
-				   std::cout<<"///////////////////////////////////"<<std::endl;
+				   std::cout<<"///////////////////////////////////"<<std::endl;*/
 
 
 				   //std::cout << "Sombra: " << entity1->getIDENSH() << " Elemento: " << entity2->getIDEN() << std::endl

@@ -27,9 +27,10 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 50.0f }, yaw{ 0 
 
 
 	entity = new Entity2D(m->getWorldBox2D(), pos, rot, this);
+	entity->getCuerpo2D()->SetTransform(b2Vec2(0,0),0);
 	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
 
-	fis = new MallaFisica(motorApp, pos2D, rot, entity->getEscalaFixture());
+	/*fis = new MallaFisica(motorApp, pos2D, rot, entity->getEscalaFixture());*/
 
 
 
@@ -140,50 +141,50 @@ void player::setScale(float x, float y, float z)
 
 }
 
-void player::actualizarFisicas(int n)
+void player::actualizarFisicas(int n, double delta)
 {
-
+/*
 	std::cout<<"//////////////////////////////////////////"<<std::endl;
 	            std::cout<<""<<std::endl;
 	            std::cout<<"POS PERS ANTES"<<std::endl;
 	                 std::cout<<"Pos 3D X: "<<pos.x<<"Pos 3D Z: "<<pos.z<<std::endl;
-	                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+	                 std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;*/
 
 	if (n == -1) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);
+		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);*/
 	}
 
 	if (n == 0) {
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
-		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x * 0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y * 0.016);
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity*delta*0.38, 0.0f));
+		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x * 0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y * 0.016);*/
 	}
 
 	if (n == 1) {
 
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
-		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity*delta*0.38, 0.0f));
+		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
 
 	}
 
 	if (n == 2) {
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
-		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity*delta*0.38));
+	/*	fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
 		//std::cout <<"-------------------------------<<<"<< entity->getCuerpo2D()->GetLinearVelocity().x << " " << entity->getCuerpo2D()->GetLinearVelocity().y << std::endl;
 	}
 
 
 	if (n == 3) {
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
-		fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity*delta*0.38));
+	/*	fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
 	}
 
-
+/*
 	std::cout << "//////////////////////////////////////////" << std::endl;
 	std::cout << "" << std::endl;
 	std::cout << "POS PERS DES" << std::endl;
 	std::cout << "Pos 3D X: " << pos.x << "Pos 3D Z: " << pos.z << std::endl;
-	std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
+	std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;*/
 }
 
 TNodo * player::getNodoTrans()
