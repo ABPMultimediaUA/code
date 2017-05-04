@@ -62,6 +62,9 @@ public:
 	TCamara * getCamaraActiva();
 	void cambiarCamaraActiva(char);
 	glm::vec3 moverCamara();
+	glm::mat4 getView();
+
+
 private:
 	void onstart();
 	void onstop();

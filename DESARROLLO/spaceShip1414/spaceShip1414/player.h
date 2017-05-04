@@ -34,6 +34,7 @@ public:
 	void setScale(float x, float y, float z);
 	void actualizarFisicas(int n, double delta);
 	TNodo * getNodoTrans();
+
 private:
 	float velocity;
 	float yaw;

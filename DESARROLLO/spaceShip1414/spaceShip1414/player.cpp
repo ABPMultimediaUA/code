@@ -12,7 +12,7 @@
 
 #include <iostream>
 
-player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 50.0f }, yaw{ 0 }, pitch{ 0 }
+player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 10.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	translation = motorApp->crearTransform();
 	rotation = motorApp->crearTransform();
@@ -35,9 +35,9 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 50.0f }, yaw{ 0 
 
 	TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Nanosuit/nanosuit.obj"));
 
-	fis = new MallaFisica(motorApp, pos, rot, escale, nodoMalla);
+	//fis = new MallaFisica(motorApp, pos, rot, escale, nodoMalla);
 
-	entity = new Entity2D(m->getWorldBox2D(), fis->getPos(), fis->getRot(), this);
+	entity = new Entity2D(m->getWorldBox2D(), pos, rot, this);
 	/*entity->getCuerpo2D()->SetTransform(b2Vec2(0, 0), 0);
 	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);*/
 
@@ -197,26 +197,26 @@ void player::actualizarFisicas(int n, double delta)
 	}
 
 	if (n == 0) {
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity*delta, 0.0f));
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
 		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x * 0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y * 0.016);*/
 	}
 
 	if (n == 1) {
 
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity*delta, 0.0f));
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
 		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
 
 	}
 
 	if (n == 2) {
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity*delta));
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
 	/*	fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
 		//std::cout <<"-------------------------------<<<"<< entity->getCuerpo2D()->GetLinearVelocity().x << " " << entity->getCuerpo2D()->GetLinearVelocity().y << std::endl;
 	}
 
 
 	if (n == 3) {
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity*delta));
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
 	/*	fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
 	}
 
@@ -228,7 +228,8 @@ void player::actualizarFisicas(int n, double delta)
 	std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).x << "Pos 2D Z: "
 		<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y << std::endl;
 	std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
-
+	
+	setPos(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
 }
 
 TNodo * player::getNodoTrans()

@@ -108,10 +108,11 @@ void Pared::setFisicas(Mundo *m)
 {
 
 	entity = new Entity2D(m->getWorldBox2D(), pos, rot, escala, this);
-	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
+	//glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
 	//fis = new MallaFisica(motor, pos2D, rot, entity->getEscalaFixture(), nodoMalla);
-
-
+	/*translation->resetMatriz();
+	translation->trasladar(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
+*/
 }
 
 glm::vec3 Pared::getPos()

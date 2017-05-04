@@ -103,3 +103,13 @@ glm::mat4 TTransform::getMatriz()
 {
 	return matriz;
 }
+
+void TTransform::setMatriz(glm::mat4 m) {
+
+	matriz = m;
+}
+
+void TTransform::resetMatriz()
+{
+	matriz = identidad();
+}

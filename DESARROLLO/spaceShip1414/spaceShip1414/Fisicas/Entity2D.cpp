@@ -59,7 +59,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 
 	int scale = 2;
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(pos.x, pos.z);
+    bodyDef.position.Set(pos.x, -pos.z);
     bodyShape.SetAsBox(0.05, 0.05);
 
 	escalaFixture.x = 0.05;
@@ -104,11 +104,11 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 //constructir pared
 
 Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void* dirPared) {
-    //  std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
+      std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
 
     bodyDef.type = b2_staticBody;
-    bodyDef.position.Set(pos.x, pos.z);
-	int scale = 1;
+    bodyDef.position.Set(pos.x, -pos.z);
+	int scale = 0.2;
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     // std::cout<<"PARED: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
@@ -133,6 +133,7 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
 
     filtro.groupIndex = FILTRO_PARED;
     body->GetFixtureList()->SetFilterData(filtro);
+	live = true;
 
     objeto3D = dirPared;
     iden = 1;

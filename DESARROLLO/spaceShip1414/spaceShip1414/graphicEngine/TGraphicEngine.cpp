@@ -176,24 +176,29 @@ void TGraphicEngine::run(Mundo * world)
 
 	while (!glfwWindowShouldClose(window))
 	{
+		
+
 		currentFrame = glfwGetTime();
 		deltaTime = (currentFrame - last);
 		last = currentFrame;
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+		world->stepBox2D(1.0/60.0, 6, 2);
+		world->clearForcesBox2D();
 
 		drawBox(world, 5, 50, 2, 1);
-
+		move->checkKeys(window);
 		//drawGround(world);
 		world->getWorldBox2D()->DrawDebugData();
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
+		glfwPollEvents();
 		draw(getLastTime());
 		glfwSwapBuffers(window);
-		glfwPollEvents();
+		
+	
+		
 
-		world->stepBox2D(deltaTime, 6, 2);
-		world->clearForcesBox2D();
 	}
 
 	glfwDestroyWindow(window);
@@ -234,7 +239,7 @@ void TGraphicEngine::drawDebug(std::vector<GlDebugDraw::LINE> & lines) {
 void  TGraphicEngine::drawBox(Mundo * world, double x, double y, int w, int h) {
 	b2BodyDef myBodyDef;
 	myBodyDef.type = b2_staticBody;
-	myBodyDef.position.Set(1, 1);
+	myBodyDef.position.Set(0.1, 0.1);
 	myBodyDef.angle = 0;
 
 	b2Body* dynamicBody = world->getWorldBox2D()->CreateBody(&myBodyDef);
@@ -342,6 +347,11 @@ glm::vec3 TGraphicEngine::moverCamara()
 	std::cout << "hle" << std::endl;
 	camaraActiva->setWindow(window);
 	return camaraActiva->mover();
+}
+
+glm::mat4 TGraphicEngine::getView()
+{
+	return camaraActiva->getView();
 }
 
 
