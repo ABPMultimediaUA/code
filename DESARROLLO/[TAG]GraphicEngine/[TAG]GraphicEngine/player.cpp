@@ -9,8 +9,8 @@
 player::player(TGraphicEngine * motorApp) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	nodo = motorApp->addMalla("models/Nanosuit/nanosuit.obj");
-	motorApp->escalar(nodo, 0.1f, 0.1f, 0.1f);
-	motorApp->trasladar(nodo, 0, 0, 0);
+	//motorApp->escalar(nodo, 0.1f, 0.1f, 0.1f);
+	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.1f);
 	motorApp->setPlayerMove(this);
 }
 

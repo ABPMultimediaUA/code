@@ -38,16 +38,16 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGr
 	GLfloat xoffset = ((width / 2.0f) - static_cast<float>(xpos));
 	GLfloat yoffset = ((height / 2.0f) - static_cast<float>(ypos));
 
-	if (activo) {
-		float pi = 3.1415926536f;
-		float angulo = -atan2f(xoffset, yoffset)*pi/180;
-		std::cout << "Angulo: " << angulo << " Rotation: "<< std::endl;
+	if (activo) 
+	{
+		float angulo = -atan2f(xoffset, yoffset);
 		/*jugador->setYaw(xoffset);
 		jugador->setPitch(yoffset);
 		jugador->Rotation()->rotarYPR(0.0f,jugador->getYaw(),jugador->getPitch());*/
-		jugador->rotation(motor, angulo,0,1,0);
+		jugador->rotation(motor, angulo, 0, 1, 0);
 	}
-	else {
+	else 
+	{
 		glfwSetCursorPos(window, width / 2.0, height / 2.0);
 	}
 }

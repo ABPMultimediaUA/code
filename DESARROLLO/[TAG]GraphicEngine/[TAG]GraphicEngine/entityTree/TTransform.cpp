@@ -52,13 +52,13 @@ void TTransform::escalar(float x, float y, float z)
 
 void TTransform::rotar(float r, float x, float y, float z)
 {
-	matriz = glm::rotate(matriz, r, glm::vec3(x, y, z));
+	matriz = glm::rotate(matriz, glm::radians(r), glm::vec3(x, y, z));
 	//std::cout << "MatrizRotacion: " << glm::to_string(matriz) << std::endl;
 }
 
 void TTransform::rotarYPR(float yaw, float pitch, float roll = 0.0f)
 {
-	matriz = matriz*glm::yawPitchRoll(glm::radians(yaw), glm::radians(pitch), roll);
+	matriz = matriz*glm::yawPitchRoll(glm::radians(yaw), glm::radians(pitch), glm::radians(roll));
 }
 
 glm::mat4 TTransform::multiplicarMatriz(const glm::mat4 &m1, const glm::mat4 &m2)

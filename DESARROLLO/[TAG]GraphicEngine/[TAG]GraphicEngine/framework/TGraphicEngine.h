@@ -32,7 +32,9 @@ public:
 	TTransform* crearTransform();
 	TCamara* crearCamara(bool, float, float, float, float, float, float, bool a = false);
 	TCamara* crearCamaraS(bool, float, float, float, float, float, float, bool a = false);
-	TCamara* crearCamara();
+	TCamara* crearCamara(bool, float, float, float, float, bool a = false);
+	TCamara* crearCamaraS(bool, float, float, float, float, bool a = false);
+	TCamara* crearCamara(float fovy, float aspect, float near, float far);
 	TLuz* crearLuz(float, float, float, bool a = false);
 	TMalla* crearMalla(std::string);
 	TNodo* nodoRaiz();
@@ -48,7 +50,12 @@ public:
 	void setLastTime(double);
 	void cambiarCamaraActiva(char);
 	TNodo * addMalla(std::string path = "", TNodo * nodoPadre = nullptr);
-	TNodo * addCamara(char tipo = 0, bool per = false, bool act = false, TNodo * nodoPadre = nullptr);
+	TNodo * addCamara(char tipo = 0, bool per = false, bool act = false, TNodo * nodoPadre = nullptr, float x = 45.0f, float y = 0.1f, float z = 1000.0f, float a = 0.0f, float b = 10.0f, float c = 10.0f);
+	TNodo * addCamaraLibre(bool activa = false);
+	TNodo * addCamaraParalelaFija(bool activa = false);
+	TNodo * addCamaraParalelaSeguidora(bool activa = false, TNodo * nodoPadre = nullptr);
+	TNodo * addCamaraPerspectivaFija(bool activa = false);
+	TNodo * addCamaraPerspectivaSeguidora(bool activa = false, TNodo * nodoPadre = nullptr);
 	TNodo * addLuz(TNodo * nodoPadre = nullptr);
 	void trasladar(TNodo *, float, float, float);
 	void rotar(TNodo *, float, float, float, float);

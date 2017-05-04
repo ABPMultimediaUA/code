@@ -39,9 +39,9 @@ TTransform * TGraphicEngine::crearTransform()
 	return new TTransform();
 }
 
-TCamara * TGraphicEngine::crearCamara(bool pe, float xu, float yu, float zu, float xf, float yf, float zf, bool a)
+TCamara * TGraphicEngine::crearCamara(bool pe, float left, float right, float bottom, float top, float near, float far, bool a)
 {
-	TCamara* c = new TCamara(pe, xu, yu, zu, xf, yf, zf);
+	TCamara* c = new TCamara(pe, left, right, bottom, top, near, far);
 	if (a) 
 	{
 		c->activar();
@@ -49,9 +49,9 @@ TCamara * TGraphicEngine::crearCamara(bool pe, float xu, float yu, float zu, flo
 	return c;
 }
 
-TCamara * TGraphicEngine::crearCamaraS(bool pe, float xu, float yu, float zu, float xf, float yf, float zf, bool a)
+TCamara * TGraphicEngine::crearCamaraS(bool pe, float left, float right, float bottom, float top, float near, float far, bool a)
 {
-	TCamara* c = new TCamara(pe, xu, yu, zu, xf, yf, zf);
+	TCamara* c = new TCamara(pe, left, right, bottom, top, near, far);
 	if (a)
 	{
 		c->activar();
@@ -60,9 +60,30 @@ TCamara * TGraphicEngine::crearCamaraS(bool pe, float xu, float yu, float zu, fl
 	return c;
 }
 
-TCamara * TGraphicEngine::crearCamara()
+TCamara * TGraphicEngine::crearCamara(bool pe, float fovy, float aspect, float near, float far, bool a)
 {
-	return new TCamara();
+	TCamara* c = new TCamara(pe, fovy, aspect, near, far);
+	if (a)
+	{
+		c->activar();
+	}
+	return c;
+}
+
+TCamara * TGraphicEngine::crearCamaraS(bool pe, float fovy, float aspect, float near, float far, bool a)
+{
+	TCamara* c = new TCamara(pe, fovy, aspect, near, far);
+	if (a)
+	{
+		c->activar();
+	}
+	c->setTipo(2);
+	return c;
+}
+
+TCamara * TGraphicEngine::crearCamara(float fovy, float aspect, float near, float far)
+{
+	return new TCamara(fovy, aspect, near, far);
 }
 
 TLuz * TGraphicEngine::crearLuz(float x, float y, float z, bool a)
@@ -224,7 +245,7 @@ TNodo * TGraphicEngine::addMalla(std::string path, TNodo * nodoPadre)
 	return nodoMalla;
 }
 
-TNodo * TGraphicEngine::addCamara(char tipo, bool per, bool act, TNodo * nodoPadre)
+TNodo * TGraphicEngine::addCamara(char tipo, bool per, bool act, TNodo * nodoPadre, float x, float y, float z, float a, float b, float c)
 {
 	TTransform *transfRC = crearTransform();
 	TTransform *transfEC = crearTransform();
@@ -234,16 +255,111 @@ TNodo * TGraphicEngine::addCamara(char tipo, bool per, bool act, TNodo * nodoPad
 	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
 	TNodo* nodoCamara;
 	if (tipo == 2) {
-		nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(per, 45.f, 0.1f, 1000.f, 0.0f, 10.0f, 10.0f, act));
+		if (!per) {
+			nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(per, x, y, z, a, b, c, act));
+		}
+		else {
+			nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(per, x, y, z, a, act));
+		}
 	}
 	else if(tipo == 1) {
-		nodoCamara = crearNodo(nodoTransfTC, crearCamara(per, 45.f, 0.1f, 1000.f, 0.0f, 10.0f, 10.0f, act));
+		if (!per) {
+			nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(per, x, y, z, a, b, c, act));
+		}
+		else {
+			nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(per, x, y, z, a, act));
+		}
 	}
 	else 
 	{
-		nodoCamara = crearNodo(nodoTransfTC, crearCamara());
+		nodoCamara = crearNodo(nodoTransfTC, crearCamara(x, y, z, a));
 	}
 	addRegistroCamara(nodoCamara);
+	return nodoCamara;
+}
+
+TNodo * TGraphicEngine::addCamaraLibre(bool activa)
+{
+	int width, height;
+	glfwGetWindowSize(window, &width, &height);
+	TTransform *transfRC = crearTransform();
+	TTransform *transfEC = crearTransform();
+	TTransform *transfTC = crearTransform();
+	TNodo* nodoTransfRC = crearNodo(nodoRaiz(), transfRC);
+	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
+	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
+	TNodo* nodoCamara;
+	nodoCamara = crearNodo(nodoTransfTC, crearCamara(45.0f, 1.0f * (width / height), 0.1f, 1000.0f));
+	addRegistroCamara(nodoCamara);
+	return nodoCamara;
+}
+
+TNodo * TGraphicEngine::addCamaraParalelaFija(bool activa)
+{
+	int width, height;
+	glfwGetWindowSize(window, &width, &height);
+	TTransform *transfRC = crearTransform();
+	TTransform *transfEC = crearTransform();
+	TTransform *transfTC = crearTransform();
+	TNodo* nodoTransfRC = crearNodo(nodoRaiz(), transfRC);
+	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
+	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
+	TNodo* nodoCamara;
+	nodoCamara = crearNodo(nodoTransfTC, crearCamara(false, 0.0f, 1.0f*(width / 4), -1.0f*(height / 4), 0.0f, -370.0f, 370.0f, activa));
+	addRegistroCamara(nodoCamara);
+	return nodoCamara;
+}
+
+TNodo * TGraphicEngine::addCamaraParalelaSeguidora(bool activa, TNodo * nodoPadre)
+{
+	int width, height;
+	glfwGetWindowSize(window, &width, &height);
+	TTransform *transfRC = crearTransform();
+	TTransform *transfEC = crearTransform();
+	TTransform *transfTC = crearTransform();
+	TNodo* nodoTransfRC = crearNodo(nodoPadre, transfRC);
+	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
+	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
+	TNodo* nodoCamara;
+	nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(false, 0.0f, 1.0f*(width / 4), -1.0f*(height / 4), 0.0f, -370.0f, 370.0f, activa));
+	addRegistroCamara(nodoCamara);
+	rotarYPR(nodoCamara, 15.0f, 0.0f, 0.0f);
+	rotarYPR(nodoCamara, 0.0f, -30.0f, 0.0f);
+	trasladar(nodoCamara, -240.0f, 128.0f, 0.0f);
+	return nodoCamara;
+}
+
+TNodo * TGraphicEngine::addCamaraPerspectivaFija(bool activa)
+{
+	int width, height;
+	glfwGetWindowSize(window, &width, &height);
+	TTransform *transfRC = crearTransform();
+	TTransform *transfEC = crearTransform();
+	TTransform *transfTC = crearTransform();
+	TNodo* nodoTransfRC = crearNodo(nodoRaiz(), transfRC);
+	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
+	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
+	TNodo* nodoCamara;
+	nodoCamara = crearNodo(nodoTransfTC, crearCamara(true, 45.0f, 1.0f * (width / height), 0.1f, 1000.f, activa));
+	addRegistroCamara(nodoCamara);
+	return nodoCamara;
+}
+
+TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoPadre)
+{
+	int width, height;
+	glfwGetWindowSize(window, &width, &height);
+	TTransform *transfRC = crearTransform();
+	TTransform *transfEC = crearTransform();
+	TTransform *transfTC = crearTransform();
+	TNodo* nodoTransfRC = crearNodo(nodoPadre, transfRC);
+	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
+	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
+	TNodo* nodoCamara;
+	nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(true, 45.f, 1.0f * (width / height), 0.1f, 1000.f, activa));
+	addRegistroCamara(nodoCamara);
+	rotarYPR(nodoCamara, 10.0f, -30.0f, 0.0f);
+	trasladar(nodoCamara, 0.0f, 30.0f, 200.0f);
 	return nodoCamara;
 }
 

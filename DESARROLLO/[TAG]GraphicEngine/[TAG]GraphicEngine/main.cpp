@@ -6,7 +6,6 @@
 #include "entityTree\TLuz.h"
 #include "player.h"
 
-//variables constante para las dimenciones de la ventana
 const GLuint WIDTH = 1920, HEIGHT = 1024;
 
 int main() {
@@ -20,17 +19,15 @@ int main() {
 		motorApp.trasladar(camara2, 0, 10, 50);
 
 		TNodo* luz = motorApp.addLuz();
-		motorApp.trasladar(luz, 0, 100, 10);
+		motorApp.trasladar(luz, 0, 100, 100);
 		
 		player jugador(&motorApp);
 
-		TNodo* camara = motorApp.addCamara(2,true, true, motorApp.getPadreX(jugador.getNodo()));
-		motorApp.rotar(camara, -0.3f, 1, 0, 0);
-		motorApp.trasladar(camara, 0, 10, 40);
-
+		TNodo* camara = motorApp.addCamaraPerspectivaSeguidora(true, motorApp.getPadreX(jugador.getNodo()));
+		
 		//Malla3
 		TNodo* terreno = motorApp.addMalla("models/StreetEnvironment/Street environment_V01.obj");
-		motorApp.escalar(terreno, 0.8f, 0.8f, 0.8f);
+		motorApp.escalar(terreno, 8.0f, 8.0f, 8.0f);
 
 		motorApp.run();
 	}

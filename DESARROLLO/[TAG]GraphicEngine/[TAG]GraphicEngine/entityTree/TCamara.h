@@ -10,13 +10,23 @@
 #endif
 #include <glm\vec3.hpp>
 #include <glm\mat4x4.hpp>
+#include <glm/gtc/quaternion.hpp>
+
+enum CameraType {
+	ORTHO, FREE
+};
+
+enum CameraDirection {
+	UP, DOWN, LEFT, RIGHT, FORWARD, BACK
+};
 
 class TCamara :
 	public TEntidad
 {
 public:
-	TCamara();
+	TCamara(float, float, float, float);
 	TCamara(bool, float, float, float, float, float, float);
+	TCamara::TCamara(bool, float, float, float, float);
 	~TCamara();
 	void setPerspectiva(float, float, float, float, float, float);
 	void setParalela(float, float, float, float, float, float);

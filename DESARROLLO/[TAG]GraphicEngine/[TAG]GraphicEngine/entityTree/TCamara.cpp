@@ -4,43 +4,50 @@
 #include <glm\gtx\matrix_cross_product.hpp>
 #include <glm\gtc\matrix_transform.hpp>
 #include <glm\gtc\matrix_inverse.hpp>
+#include <glm/gtx/quaternion.hpp>
+#include <glm/gtc/type_ptr.hpp>
 #include "..\framework\openGLShader.h"
 
-TCamara::TCamara() : yaw{ 0 }, pitch{ 0 },
+TCamara::TCamara(float fovy, float aspect, float near, float far) : yaw{ 0 }, pitch{ 0 },
 cameraPos{ 0.0f, 4.5f, 15.0f },
 cameraFront{ 0.0f, 0.0f, -1.0f },
 cameraUp{ 0.0f, 1.0f, 0.0f },
-cameraSpeed{ 0.05f }, mouseSensitive{ 0.15f }, tipo{ 0 }, activa{ false }
+cameraSpeed{ 0.05f }, mouseSensitive{ 0.15f }, 
+tipo{ 0 }, activa{ false }, esPerspectiva{ true }, 
+front{ fovy, aspect, 0 }, up{ near, far, 0 }
 {
 }
 
-TCamara::TCamara(bool p, float x1, float y1, float z1, float x2, float y2, float z2) : tipo{ 1 }
+TCamara::TCamara(bool p, float left, float right, float bottom, float top, float near, float far) : tipo{ 1 }
 {
 	if (p) {
-		this->setPerspectiva(x1, y1, z1, x2, y2, z2);
+		this->setPerspectiva(left, right, bottom, top, near, far);
 	}
 	else {
-		this->setParalela(x1, y1, z1, x2, y2, z2);
+		this->setParalela(left, right, bottom, top, near, far);
 	}
 }
+
+TCamara::TCamara(bool pe, float fovy, float aspect, float near, float far) : tipo{ 1 }, esPerspectiva{ pe }, front{ fovy, aspect, 0 }, up{ near, far, 0}
+{}
 
 TCamara::~TCamara()
 {
 	std::cout << "TCamara Detroyed" << std::endl;
 }
 
-void TCamara::setPerspectiva(float xu, float yu, float zu, float xf, float yf, float zf)
+void TCamara::setPerspectiva(float left, float right, float bottom, float top, float near, float far)
 {
 	this->esPerspectiva = true;
-	this->front = glm::vec3(xf, yf, zf);
-	this->up = glm::vec3(xu, yu, zu);
+	this->front = glm::vec3(left, right, near);
+	this->up = glm::vec3(bottom, top, far);
 }
 
-void TCamara::setParalela(float xu, float yu, float zu, float xf, float yf, float zf)
+void TCamara::setParalela(float left, float right, float bottom, float top, float near, float far)
 {
 	this->esPerspectiva = false;
-	this->front = glm::vec3(xf, yf, zf);
-	this->up = glm::vec3(xu, yu, zu);
+	this->front = glm::vec3(left, right, near);
+	this->up = glm::vec3(bottom, top, far);
 }
 
 void TCamara::setWindow(GLFWwindow * ventana)
@@ -75,16 +82,13 @@ glm::mat4 TCamara::getView()
 glm::mat4 TCamara::getProjectionMatrix()
 {
 	if (tipo!=0) {
-		int width, height;
-		glfwGetWindowSize(window, &width, &height);
-
-		return glm::perspective(up.x, static_cast<float>(width) / static_cast<float>(height), up.y, up.z);
-	}
-	else {
-		int width, height;
-		glfwGetWindowSize(window, &width, &height);
-
-		return glm::perspective(45.0f, static_cast<float>(width) / static_cast<float>(height), 0.1f, 1000.0f);
+		if (esPerspectiva) {
+			return glm::perspective(front.x, front.y, up.x, up.y);
+			//return glm::frustum(front.x, front.y, up.x, up.y, front.z, up.z);
+		}
+		else {
+			return glm::ortho(front.x, front.y, up.x, up.y, front.z, up.z);
+		}
 	}
 }
 
