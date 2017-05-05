@@ -16,15 +16,19 @@
 #define ENTITY2D_H
 #include <Box2D\Box2D.h>
 #include <glm\vec3.hpp>
+#include <glm\gtc\matrix_transform.hpp>
+#include <glm\gtx\string_cast.hpp>
+#include <glm\gtx\euler_angles.hpp>
 
 
 class RayCastCallback;
 
 class Entity2D {
 public:
+	glm::vec4 multiplicarVector(const glm::mat4 & m, float x, float y, float z);
 	Entity2D(b2World *world);
 	Entity2D(b2World *world, glm::vec3  pos, glm::vec3 rot, void* dirPers);
-	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, glm::vec3  escala, void* dirPared);
+	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, glm::vec3  escala, void* dirPared, glm::mat4 matrizCam, glm::mat4 matrizP);
 	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, glm::vec3  escala, bool sensor, void* dirPuerta, int ident);
 	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, bool vivo, void* dirBala, int tipo);
 	Entity2D(b2World *world, glm::vec3  pos, bool vivo, void* dirEnemigo, unsigned int raza);
@@ -43,6 +47,7 @@ public:
 	void setLive(bool x);
 
 	void* getObjeto3D();
+	void mostrarPos2D();
 	void destruirFixture();
 	void crearFixture();
 	b2Body* getSombraP2D();

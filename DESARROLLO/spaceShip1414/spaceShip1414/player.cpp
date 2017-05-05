@@ -183,13 +183,13 @@ void player::setScale(float x, float y, float z)
 void player::actualizarFisicas(int n, double delta)
 {
 
-	std::cout<<"//////////////////////////////////////////"<<std::endl;
-	            std::cout<<""<<std::endl;
-	            std::cout<<"POS PERS ANTES"<<std::endl;
-	                 std::cout<<"Pos 3D X: "<<pos.x<<"Pos 3D Z: "<<pos.z<<std::endl;
-	                 std::cout<<"Pos 2D X: "<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).x<<"Pos 2D Z: "
-						 << entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y<<std::endl;
-				std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+	//std::cout<<"//////////////////////////////////////////"<<std::endl;
+	//            std::cout<<""<<std::endl;
+	//            std::cout<<"POS PERS ANTES"<<std::endl;
+	//                 std::cout<<"Pos 3D X: "<<pos.x<<"Pos 3D Z: "<<pos.z<<std::endl;
+	//                 std::cout<<"Pos 2D X: "<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).x<<"Pos 2D Z: "
+	//					 << entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y<<std::endl;
+	//			std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
 
 	if (n == -1) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
@@ -221,6 +221,16 @@ void player::actualizarFisicas(int n, double delta)
 	}
 
 
+	//std::cout << "//////////////////////////////////////////" << std::endl;
+	//std::cout << "" << std::endl;
+	//std::cout << "POS PERS DES" << std::endl;
+	//std::cout << "Pos 3D X: " << pos.x << "Pos 3D Z: " << pos.z << std::endl;
+	//std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).x << "Pos 2D Z: "
+	//	<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y << std::endl;
+	//std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
+	
+	setPos(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
+
 	std::cout << "//////////////////////////////////////////" << std::endl;
 	std::cout << "" << std::endl;
 	std::cout << "POS PERS DES" << std::endl;
@@ -228,8 +238,6 @@ void player::actualizarFisicas(int n, double delta)
 	std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).x << "Pos 2D Z: "
 		<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y << std::endl;
 	std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
-	
-	setPos(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
 }
 
 TNodo * player::getNodoTrans()

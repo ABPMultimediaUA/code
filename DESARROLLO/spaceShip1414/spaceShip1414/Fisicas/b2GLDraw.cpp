@@ -3,6 +3,7 @@
 #include <cstdarg>
 #include <cstring>
 
+ float multi = 0.01;
 
 void b2GLDraw::DrawPolygon(const b2Vec2* vertices, int32 vertexCount, const b2Color& color) {
 
@@ -10,7 +11,7 @@ void b2GLDraw::DrawPolygon(const b2Vec2* vertices, int32 vertexCount, const b2Co
     glBegin(GL_LINE_LOOP);
     for (int i = 0; i < vertexCount; i++) {
         b2Vec2 v = vertices[i];
-        glVertex2f(v.x, v.y);
+        glVertex2f(v.x * multi, v.y * multi);
     }
     glEnd();
 }
@@ -21,7 +22,7 @@ void b2GLDraw::DrawSolidPolygon(const b2Vec2* vertices, int32 vertexCount, const
     glBegin(GL_TRIANGLE_FAN);
     for (int i = 0; i < vertexCount; i++) {
         b2Vec2 v = vertices[i];
-        glVertex2f(v.x, v.y);
+        glVertex2f(v.x* multi, v.y* multi);
     }
     glEnd();
 }
@@ -37,7 +38,7 @@ void b2GLDraw::DrawCircle(const b2Vec2& center, float32 radius, const b2Color& c
     GLfloat glVertices[vertexCount * 2];
     for (int32 i = 0; i < k_segments; ++i) {
         b2Vec2 v = center + radius * b2Vec2(cos(theta), sin(theta));
-        glVertex2f(v.x, v.y);
+        glVertex2f(v.x* multi, v.y* multi);
         theta += k_increment;
     }
     glEnd();
@@ -54,7 +55,7 @@ void b2GLDraw::DrawSolidCircle(const b2Vec2& center, float32 radius, const b2Vec
 	 GLfloat glVertices[vertexCount * 2];
     for (int32 i = 0; i < k_segments; ++i) {
         b2Vec2 v = center + radius * b2Vec2(cos(theta), sin(theta));
-        glVertex2f(v.x, v.y);
+        glVertex2f(v.x* multi, v.y* multi);
         theta += k_increment;
     }
     glEnd();
@@ -65,8 +66,8 @@ void b2GLDraw::DrawSolidCircle(const b2Vec2& center, float32 radius, const b2Vec
 void b2GLDraw::DrawSegment(const b2Vec2& p1, const b2Vec2& p2, const b2Color& color) {
     glColor4f(color.r, color.g, color.b, 1);
     glBegin(GL_LINES);
-    glVertex2f(p1.x, p1.y);
-    glVertex2f(p2.x, p2.y);
+    glVertex2f(p1.x* multi, p1.y* multi);
+    glVertex2f(p2.x* multi, p2.y* multi);
     glEnd();
 }
 
@@ -74,7 +75,7 @@ void b2GLDraw::DrawPoint(const b2Vec2& p, float32 size, const b2Color& color) {
     glColor4f(color.r, color.g, color.b, 1);
     glPointSize(1.0f);
     glBegin(GL_POINTS);
-    glVertex2f(p.x, p.y);
+    glVertex2f(p.x* multi, p.y* multi);
     glEnd();
 }
 
@@ -86,10 +87,10 @@ void b2GLDraw::DrawAABB(b2AABB* aabb, const b2Color& c) {
 
     glColor4f(c.r, c.g, c.b, 1);
     glBegin(GL_LINE_LOOP);
-    glVertex2f(aabb->lowerBound.x, aabb->lowerBound.y);
-    glVertex2f(aabb->upperBound.x, aabb->lowerBound.y);
-    glVertex2f(aabb->upperBound.x, aabb->upperBound.y);
-    glVertex2f(aabb->lowerBound.x, aabb->upperBound.y);
+    glVertex2f(aabb->lowerBound.x* multi, aabb->lowerBound.y* multi);
+    glVertex2f(aabb->upperBound.x* multi, aabb->lowerBound.y* multi);
+    glVertex2f(aabb->upperBound.x* multi, aabb->upperBound.y* multi);
+    glVertex2f(aabb->lowerBound.x* multi, aabb->upperBound.y* multi);
     glEnd();
 }
 

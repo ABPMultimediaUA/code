@@ -39,7 +39,7 @@ class Mundo3D;
 class Entity2D;
 class Mundo;
 //class Waypoints;
-
+class Camara;
 
 
 class Escenario {
@@ -94,10 +94,11 @@ private:
 	// Juego *jue;
 	//Personaje *pers;
 	TGraphicEngine * engine;
+	Camara *cam;
 
 public:
 	Escenario(TGraphicEngine * motorApp, Mundo3D* /*, b2World *world,  Juego* game*/);
-	Escenario(TGraphicEngine * motorApp, Mundo* /*, b2World *world,  Juego* game*/);
+	Escenario(TGraphicEngine * motorApp, Mundo*, Camara *c /*, b2World *world,  Juego* game*/);
 	Escenario(const Escenario& orig);
 	virtual ~Escenario();
 

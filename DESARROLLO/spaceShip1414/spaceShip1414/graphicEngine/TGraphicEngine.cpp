@@ -18,7 +18,6 @@
 #include "../Pared.h"
 
 
-
 TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }
 {
 	escena = new TNodo(nullptr);
@@ -166,6 +165,7 @@ void TGraphicEngine::run(Mundo3D * world)
 	glfwDestroyWindow(window);
 	glfwTerminate();
 }
+
 void TGraphicEngine::run(Mundo * world)
 {
 	onstart();
@@ -184,12 +184,12 @@ void TGraphicEngine::run(Mundo * world)
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		world->stepBox2D(1.0/60.0, 6, 2);
+		world->getWorldBox2D()->DrawDebugData();
 		world->clearForcesBox2D();
 
-		drawBox(world, 5, 50, 2, 1);
+		//drawBox(world, 5, 50, 2, 1);
 		move->checkKeys(window);
 		//drawGround(world);
-		world->getWorldBox2D()->DrawDebugData();
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
 		glfwPollEvents();

@@ -85,7 +85,7 @@ int main() {
 		TNodo* nodoTransfEM1 = motorApp.crearNodo(nodoTransfRM1, transfEM1);
 		TNodo* nodoTransfTM1 = motorApp.crearNodo(nodoTransfEM1, transfTM1);
 		TNodo* nodoMalla1 = motorApp.crearNodo(nodoTransfTM1, motorApp.crearMalla("resourse/models/untitled.obj"));*/
-		Escenario *scene = new Escenario(&motorApp, world);
+		Escenario *scene = new Escenario(&motorApp, world, &cam);
 		readJson *json = new readJson(scene);
 		b2GLDraw fooDrawInstance;
 		world->getWorldBox2D()->SetDebugDraw(&fooDrawInstance);

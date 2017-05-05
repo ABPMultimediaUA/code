@@ -17,6 +17,7 @@
 #include "Pared.h"
 #include "Fisicas3D\Mundo3D.h"
 #include "Fisicas\Mundo.h"
+#include "../Camara.h"
 //#include "Pared.h"
 //#include "Puerta.h"
 #include "readJson.h"
@@ -50,12 +51,13 @@ Escenario::Escenario(TGraphicEngine * motorApp, Mundo3D *m/*,b2World *world, Jue
 	//pers = new Personaje(smgr, driver, world, game);
 }
 
-Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m/*,b2World *world, Juego* game*/) {
+Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m, Camara *c /*,b2World *world, Juego* game*/) {
 
 	/*SM = smgr;
 	VD = driver;*/
 	engine = motorApp;
 	mundo = m;
+	cam = c;
 	//mundo = world;
 	srand(time(NULL));
 	//entity = new Entity2D(world);
@@ -285,7 +287,7 @@ void Escenario::dibujarEscenario() {
 							glm::vec3(rx,ry,-rz),
 							-glm::vec3(ex,ey, ez));
 
-						wall->setFisicas(mundo);
+						wall->setFisicas(mundo, cam->getTCamara()->getView(), cam->getTCamara()->getProjectionMatrix());
 					
 						}
 						//IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,

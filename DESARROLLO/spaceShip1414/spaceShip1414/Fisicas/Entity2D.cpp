@@ -30,6 +30,12 @@
 
 //hacer diferentes constructores para los distintos objetos
 
+glm::vec4 Entity2D::multiplicarVector(const glm::mat4& m, float x, float y, float z)
+{
+	return m * glm::vec4(x, y, z, 1.0);
+}
+
+
 Entity2D::Entity2D(b2World * world)
 {
 
@@ -60,7 +66,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 	int scale = 2;
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.x, -pos.z);
-    bodyShape.SetAsBox(0.05, 0.05);
+    bodyShape.SetAsBox(2, 2);
 
 	escalaFixture.x = 0.05;
 	escalaFixture.y = 0.05;
@@ -103,12 +109,14 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 }
 //constructir pared
 
-Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void* dirPared) {
+Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void* dirPared, glm::mat4 matrizCam, glm::mat4 matrizP) {
       std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
 
     bodyDef.type = b2_staticBody;
-    bodyDef.position.Set(pos.x, -pos.z);
-	int scale = 0.2;
+	glm::vec4 p = multiplicarVector(matrizCam, pos.x, pos.y, pos.z);
+	p = multiplicarVector(matrizP, p.x, p.y, p.z);
+    bodyDef.position.Set(p.x, -p.z);
+	int scale = 1;
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     // std::cout<<"PARED: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
@@ -137,6 +145,9 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
 
     objeto3D = dirPared;
     iden = 1;
+
+	mostrarPos2D();
+
 }
 
 //constructir puerta
@@ -515,4 +526,15 @@ void Entity2D::setLive(bool x) {
 
 void* Entity2D::getObjeto3D() {
     return objeto3D;
+}
+
+void Entity2D::mostrarPos2D() {
+
+	std::cout<<"//////////////////////////////////////////"<<std::endl;
+	std::cout<<""<<std::endl;
+	std::cout<<"POS 2D"<<std::endl;
+	std::cout << "X: " << body->GetPosition().x << " Y: " << body->GetPosition().y << std::endl;
+	std::cout << "" << std::endl;
+	std::cout << "//////////////////////////////////////////" << std::endl;
+
 }

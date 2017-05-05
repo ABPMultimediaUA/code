@@ -34,11 +34,13 @@ Camara::Camara(TGraphicEngine * motorApp, TNodo * jugador) : velocity{ 5.0f }, y
 
 	if (jugador == nullptr) {
 		motorApp->setCameraMove(this);
-		nodoCamara = motorApp->crearNodo(nodoTransfTC, motorApp->crearCamara(true, 45.f, 0.1f, 2000.f, 10.0f, 10.0f, 10.0f, true));
+		cam = motorApp->crearCamara(true, 45.f, 0.1f, 2000.f, 10.0f, 10.0f, 10.0f, true);
+		nodoCamara = motorApp->crearNodo(nodoTransfTC, cam);
 	}
 	else
 	{
-		nodoCamara = motorApp->crearNodo(nodoTransfTC, motorApp->crearCamaraS(true, 45.f, 0.1f, 2000.f, 10.0f, 10.0f, 10.0f, true));
+		cam = motorApp->crearCamaraS(true, 45.f, 0.1f, 2000.f, 10.0f, 10.0f, 10.0f, true);
+		nodoCamara = motorApp->crearNodo(nodoTransfTC, cam);
 	}
 	motorApp->addRegistroCamara(nodoCamara);
 }
@@ -92,4 +94,9 @@ void Camara::setYaw(float y)
 void Camara::setPitch(float p)
 {
 	pitch = p;
+}
+
+TCamara * Camara::getTCamara()
+{
+	return cam;
 }
