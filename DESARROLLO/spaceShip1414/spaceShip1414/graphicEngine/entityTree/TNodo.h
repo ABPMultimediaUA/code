@@ -3,6 +3,7 @@
 #include <glm\mat4x4.hpp>
 class TEntidad;
 class openGLShader;
+class Mundo;
 
 class TNodo
 {
@@ -19,7 +20,7 @@ public:
 	TNodo* getPadre();
 	int getID();
 	void draw();
-	void draw(openGLShader&, const glm::mat4&, const glm::mat4&);
+	void draw(openGLShader & s, const glm::mat4 & w, const glm::mat4 & pro, Mundo * world);
 private:
 	static int id;
 	TEntidad* entidad;

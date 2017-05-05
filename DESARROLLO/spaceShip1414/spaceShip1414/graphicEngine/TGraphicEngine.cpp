@@ -186,11 +186,11 @@ void TGraphicEngine::run(Mundo * world)
 		world->stepBox2D(1.0/60.0, 6, 2);
 		world->getWorldBox2D()->DrawDebugData();
 		world->clearForcesBox2D();
-
+		wo = world;
 		//drawBox(world, 5, 50, 2, 1);
 		move->checkKeys(window);
 		//drawGround(world);
-		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
 		glfwPollEvents();
 		draw(getLastTime());
@@ -362,7 +362,7 @@ void TGraphicEngine::draw(double time)
 	shader.use();
 	camaraActivada();
 	luzActivada();
-	this->escena->draw(shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
+	this->escena->draw(shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix(),wo);
 	shader.unUse();
 }
 

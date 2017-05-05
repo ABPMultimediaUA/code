@@ -37,7 +37,7 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 10.0f }, yaw{ 0 
 
 	//fis = new MallaFisica(motorApp, pos, rot, escale, nodoMalla);
 
-	entity = new Entity2D(m->getWorldBox2D(), pos, rot, this);
+	entity = new Entity2D(m->getWorldBox2D(), glm::vec3(0,0,0), rot, this);
 	/*entity->getCuerpo2D()->SetTransform(b2Vec2(0, 0), 0);
 	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);*/
 

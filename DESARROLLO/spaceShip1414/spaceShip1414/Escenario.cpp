@@ -287,7 +287,7 @@ void Escenario::dibujarEscenario() {
 							glm::vec3(rx,ry,-rz),
 							-glm::vec3(ex,ey, ez));
 
-						wall->setFisicas(mundo, cam->getTCamara()->getView(), cam->getTCamara()->getProjectionMatrix());
+					//	wall->setFisicas(mundo, cam->getTCamara()->getView(), cam->getTCamara()->getProjectionMatrix());
 					
 						}
 						//IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,

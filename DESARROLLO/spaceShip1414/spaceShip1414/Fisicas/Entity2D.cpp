@@ -128,7 +128,7 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
 		escalaFixture.z = scale * escala.x;
 
     } else {
-        bodyShape.SetAsBox(scale * escala.x, scale * escala.z);
+		bodyShape.SetAsBox(5.0f, 5.0f);
 		escalaFixture.x = scale * escala.x;
 		escalaFixture.y = 1;
 		escalaFixture.z = scale * escala.z;

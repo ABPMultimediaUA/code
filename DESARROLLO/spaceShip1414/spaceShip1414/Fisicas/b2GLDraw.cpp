@@ -11,7 +11,7 @@ void b2GLDraw::DrawPolygon(const b2Vec2* vertices, int32 vertexCount, const b2Co
     glBegin(GL_LINE_LOOP);
     for (int i = 0; i < vertexCount; i++) {
         b2Vec2 v = vertices[i];
-        glVertex2f(v.x * multi, v.y * multi);
+        glVertex2f(v.x * 0.5, v.y * multi*0.5);
     }
     glEnd();
 }

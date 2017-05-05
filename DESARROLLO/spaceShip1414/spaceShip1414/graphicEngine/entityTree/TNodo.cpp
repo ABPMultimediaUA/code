@@ -2,6 +2,7 @@
 #include <iostream>
 #include "TEntidad.h"
 #include "..\framework\openGLShader.h"
+#include "..\Fisicas\Mundo.h"
 
 int TNodo::id = 0;
 
@@ -131,15 +132,22 @@ void TNodo::draw()
 	}
 }
 
-void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro)
+void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro, Mundo * world)
 {
 	if (this->entidad) {
 		this->entidad->beginDraw(s,w,pro);
 	}
 	for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {
-		(*it)->draw(s,w,pro);
+		
+		(*it)->draw(s, w, pro, world);
+		if (world!=nullptr)
+		{
+		
+			world->getWorldBox2D()->DrawDebugData();
+		}
 	}
 	if (this->entidad) {
 		this->entidad->endDraw();
 	}
+	
 }

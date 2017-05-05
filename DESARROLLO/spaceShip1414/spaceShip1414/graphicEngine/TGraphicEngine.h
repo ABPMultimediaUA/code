@@ -97,5 +97,6 @@ private:
 	double XMAX = 100;
 	double YMIN;
 	double YMAX;
+	Mundo * wo;
 };
 
