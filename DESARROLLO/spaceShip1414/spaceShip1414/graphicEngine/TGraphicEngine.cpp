@@ -15,7 +15,9 @@
 #include "framework\movimentHandler.h"
 #include "../Fisicas3D/Mundo3D.h"
 #include "../Fisicas/Mundo.h"
-#include "../Pared.h"
+#include "../Game/Escenario/Escenario.h"
+
+
 
 
 TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }
@@ -166,13 +168,14 @@ void TGraphicEngine::run(Mundo3D * world)
 	glfwTerminate();
 }
 
-void TGraphicEngine::run(Mundo * world)
+void TGraphicEngine::run(Mundo * world, Escenario* esce)
 {
 	onstart();
 	glfwSetTime(0.0);
 	lastTime = 0.0;
 	double currentFrame = glfwGetTime();
 	double last = currentFrame;
+	wo = world;
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -187,12 +190,11 @@ void TGraphicEngine::run(Mundo * world)
 		world->getWorldBox2D()->DrawDebugData();
 
 		world->clearForcesBox2D();
-		wo = world;
 		//drawBox(world, 5, 50, 2, 1);
 		move->checkKeys(window);
 		//drawGround(world);
 		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
+		esce->actualizarEstadoPuerta();
 		glfwPollEvents();
 		draw(getLastTime());
 		glfwSwapBuffers(window);

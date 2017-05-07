@@ -9,7 +9,7 @@ class TNodo;
 //class Mundo3D;
 class Entity2D;
 class Mundo;
-class MallaFisica;
+
 
 class player
 {
@@ -48,6 +48,6 @@ private:
 	//Entity3D *entity;
 	Entity2D *entity;
 	TNodo *nodoTransfTM;
-	MallaFisica * fis;
+	
 };
 

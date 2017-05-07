@@ -114,7 +114,7 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
 
     bodyDef.type = b2_staticBody;
 
-    bodyDef.position.Set(pos.x, pos.z);
+    bodyDef.position.Set(pos.x, -pos.z);
 	int scale = 1;
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
@@ -156,18 +156,18 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
 	
 	id = ident;
     bodyDef.type = b2_kinematicBody;
-    bodyDef.position.Set(pos.x, pos.z);
+    bodyDef.position.Set(pos.x, -pos.z);
     b2PolygonShape bodyShape2;
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
     if (escala.z != 1) {
 
-        bodyShape.SetAsBox(15 * escala.x, 5 * escala.z);
-        bodyShape2.SetAsBox(5 * escala.x, 5 * escala.z);	
+        bodyShape.SetAsBox(8* escala.x,escala.z);
+        bodyShape2.SetAsBox(escala.x,  escala.z);	
     } else {
-        bodyShape.SetAsBox(5 * escala.x, 15 * escala.z);
-        bodyShape2.SetAsBox(5 * escala.x, 5 * escala.z);	
+        bodyShape.SetAsBox( escala.x, 8 * escala.z);
+        bodyShape2.SetAsBox( escala.x,  escala.z);	
     }
 
     objeto3D = dirPuerta;

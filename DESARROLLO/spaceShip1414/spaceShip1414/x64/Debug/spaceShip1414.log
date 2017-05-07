@@ -1,12 +1,6 @@
-﻿  TNodo.cpp
-  TGraphicEngine.cpp
+﻿  Puerta.cpp
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\tools\bullet\linearmath\btidebugdraw.h(169): warning C4305: 'argumento': truncamiento de 'double' a 'const btScalar'
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\tools\bullet\linearmath\btidebugdraw.h(170): warning C4305: 'argumento': truncamiento de 'double' a 'const btScalar'
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\tools\bullet\linearmath\btidebugdraw.h(171): warning C4305: 'argumento': truncamiento de 'double' a 'const btScalar'
-c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\graphicengine\tgraphicengine.cpp(149): warning C4244: 'argumento': conversión de 'double' a 'btScalar'; posible pérdida de datos
-c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\graphicengine\tgraphicengine.cpp(233): warning C4267: 'argumento': conversión de 'size_t' a 'GLsizei'; posible pérdida de datos
-c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\graphicengine\tgraphicengine.cpp(243): warning C4305: 'argumento': truncamiento de 'double' a 'float32'
-c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\graphicengine\tgraphicengine.cpp(249): warning C4305: 'argumento': truncamiento de 'double' a 'float32'
-  Generando código...
   spaceShip1414.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.exe
   spaceShip1414.vcxproj -> C:\Users\David\Documents\GitHub\code\DESARROLLO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)

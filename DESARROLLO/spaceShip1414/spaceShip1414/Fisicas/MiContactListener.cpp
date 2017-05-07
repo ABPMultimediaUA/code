@@ -13,9 +13,10 @@
 #include <Box2D\Box2D.h>
 #include <iostream>
 #include <math.h>
-//#include "../Escenario/Puerta.h"
+#include "../Game/Escenario/Puerta.h"
 #include "MiContactListener.h"
 //#include "../Jugador/Personaje.h"
+#include "../player.h"
 //#include "../Enemigos/Enemigo.h"
 #include "Entity2D.h"
 //#include "../Escenario/Terminal.h"
@@ -42,28 +43,28 @@ MiContactListener::~MiContactListener() {
 void MiContactListener::actualizarPuerta(Entity2D* entity, Entity2D *pers, int modo) {
 	std::cout << "ACTUALIZO " << modo << std::endl; 
 
-	//Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
+	Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
 
-	//std::cout << "ID PUERTA: " << entity->getId() << std::endl;
-	//if (pers->getIDEN() == 0)
-	//	Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
+	std::cout << "ID PUERTA: " << entity->getId() << std::endl;
+	if (pers->getIDEN() == 0)
+		//Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
 
-	//if (modo == 0 && puerta->getEstado() != "BLOQLLAVE" ) {
-	//	//si tiene rotacion en Y van | sino van -
-	//	puerta->setDetectado(true,entity->getId());
-	//	puerta->UpdateEstado();
-	//}	
+	if (modo == 0 && puerta->getEstado() != "BLOQLLAVE" ) {
+		//si tiene rotacion en Y van | sino van -
+		puerta->setDetectado(true,entity->getId());
+		puerta->UpdateEstado();
+	}	
 
 
-	//else if (modo == 1 && puerta->getEstado() != "BLOQLLAVE") {
-	//	std::cout << "cerrar123" << std::endl;
-	//	puerta->setDetectado(false,entity->getId());
-	//	puerta->UpdateEstado();
-	//}
+	else if (modo == 1 && puerta->getEstado() != "BLOQLLAVE") {
+		std::cout << "cerrar123" << std::endl;
+		puerta->setDetectado(false,entity->getId());
+		puerta->UpdateEstado();
+	}
 
-	////se deberia hacer un if para ver si el jugador tiene o no la llave asociada a la puerta
-	////con la que ha colisionado. Tambien se deberia pasar al jugador para gestionar las
-	////llaves que ha cogido
+	//se deberia hacer un if para ver si el jugador tiene o no la llave asociada a la puerta
+	//con la que ha colisionado. Tambien se deberia pasar al jugador para gestionar las
+	//llaves que ha cogido
 
 	//else if(puerta->getEstado() == "BLOQLLAVE" && pers->getIDEN() == 0){
 
@@ -520,8 +521,8 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			//            Personaje *pers = static_cast<Personaje*>(entity1->getObjeto3D());
 
-			/* std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
-			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;*/
+			 std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
+			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
 
 
 			   /* int a = *((int*)b1->GetUserData());

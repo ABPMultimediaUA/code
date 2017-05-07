@@ -29,6 +29,7 @@ class player;
 class Camara;
 class Mundo3D;
 class Mundo;
+class Escenario;
 
 class TGraphicEngine
 {
@@ -46,7 +47,7 @@ public:
 	GLFWwindow* getGLFWwindow();
 	bool init(std::string, int width = 1024, int height = 720, bool full_screen = false);
 	void run(Mundo3D * world);
-	void run(Mundo * world);
+	void run(Mundo * world, Escenario*);
 	void drawDebug(std::vector<GlDebugDraw::LINE>& lines);
 	void drawBox(Mundo * world, double x, double y, int w, int h);
 	void drawGround(Mundo * world);

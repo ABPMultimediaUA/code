@@ -6,8 +6,8 @@
 #include "graphicEngine\entityTree\TLuz.h"
 #include "Camara.h"
 #include "player.h"
-#include "readJson.h"
-#include "Escenario.h"
+#include "Game\Escenario\readJson.h"
+#include "Game\Escenario\Escenario.h"
 #include <glm\gtx\string_cast.hpp>
 #include "Fisicas\Mundo.h"
 #include "Fisicas\b2GLDraw.h"
@@ -96,7 +96,7 @@ int main() {
 		flags += b2Draw::e_pairBit;
 		flags += b2Draw::e_centerOfMassBit;
 		fooDrawInstance.SetFlags(flags);
-		motorApp.run(world);
+		motorApp.run(world, scene);
 		
 	}
 	return 0;
