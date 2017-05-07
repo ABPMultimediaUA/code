@@ -61,24 +61,22 @@ public:
 	void rotar(TNodo *, float, float, float, float);
 	void rotarYPR(TNodo *, float, float, float);
 	void escalar(TNodo *, float, float, float);
+	void resetTransform(TNodo *, char);
 	TNodo * getPadreX(TNodo *, char p = 0);
 private:
 	void onstart();
 	void onstop();
 	void draw(double);
-	//void onkey(int, int, int, int);
-	//void onmouse(double, double);
 	void onresize(int, int);
 	void camaraActivada();
 	void luzActivada();
-	//glm::mat4 getMatrizView();
-	//glm::mat4 getModelLuz();
 	static void error_callback(int, const char*);
 	static void close_callback(GLFWwindow*);
 	static void key_callback(GLFWwindow*, int, int, int, int);
 	static void resize_callback(GLFWwindow*, int, int);
 	static void mouse_callback(GLFWwindow*, double, double);
 	inline static TGraphicEngine* getTGraphicEngineApp(GLFWwindow*);
+
 	openGLShader shader;
 	TNodo* escena;
 	TGestorRecursos* gestorRecursos;

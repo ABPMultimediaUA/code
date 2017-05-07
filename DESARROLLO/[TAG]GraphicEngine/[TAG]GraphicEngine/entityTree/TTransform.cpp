@@ -112,7 +112,6 @@ glm::vec3 TTransform::getPosition()
 	glm::vec3 skew;
 	glm::vec4 perspective;
 	glm::decompose(matriz, scale, rotation, translation, skew, perspective);
-	rotation = glm::conjugate(rotation);
 	return translation;
 }
 
@@ -126,4 +125,9 @@ glm::quat TTransform::getRotation()
 	glm::decompose(matriz, scale, rotation, translation, skew, perspective);
 	rotation = glm::conjugate(rotation);
 	return rotation;
+}
+
+void TTransform::resetMatriz()
+{
+	matriz = identidad();
 }

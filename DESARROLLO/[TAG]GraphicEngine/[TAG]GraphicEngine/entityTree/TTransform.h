@@ -25,6 +25,7 @@ public:
 	glm::mat4 getMatriz();
 	glm::vec3 getPosition();
 	glm::quat getRotation();
+	void resetMatriz();
 private:
 	glm::mat4 matriz;
 	static std::stack<glm::mat4> pilaMatrices;

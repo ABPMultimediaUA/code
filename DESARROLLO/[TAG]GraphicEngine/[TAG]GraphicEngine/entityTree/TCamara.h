@@ -30,7 +30,6 @@ public:
 	~TCamara();
 	void setPerspectiva(float, float, float, float, float, float);
 	void setParalela(float, float, float, float, float, float);
-	void setWindow(GLFWwindow*);
 	void setView(glm::mat4);
 	glm::mat4 getView();
 	glm::mat4 getProjectionMatrix();
@@ -48,12 +47,5 @@ private:
 	bool esPerspectiva;
 	glm::vec3 front, up;
 	glm::mat4 view;
-	void checkMouse();
-	void chechKeys();
-	inline bool isKeyPress(int);
-	GLfloat cameraSpeed, mouseSensitive;
-	GLFWwindow* window;
-	float yaw, pitch;
-	glm::vec3 cameraPos, cameraFront, cameraUp;
 };
 

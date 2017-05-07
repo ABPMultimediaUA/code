@@ -10,6 +10,7 @@
 class TTransform;
 class player;
 class TGraphicEngine;
+class TNodo;
 class movimentHandler
 {
 public:
@@ -19,10 +20,15 @@ public:
 	void onMouse(GLFWwindow*, double, double, TGraphicEngine*);
 	void setMouseSensitive(float);
 	void setPlayer(player*);
+	void setCamara(TNodo*);
 private:
 	//false = camara : true = player
 	bool activo;
+	bool first;
 	float mouseSensitive;
 	player *jugador;
+	TNodo *camara;
+	float yaw;
+	float pitch;
 };
 

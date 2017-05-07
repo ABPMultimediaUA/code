@@ -118,7 +118,9 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 
 	glfwSetErrorCallback(error_callback);
 
-	if (!glfwInit()) return false;
+	if (!glfwInit()) {
+		return false;
+	}
 
 	window = glfwCreateWindow(width, height, title.c_str(), full_screen ? glfwGetPrimaryMonitor() : NULL, NULL);
 	if (!window)
@@ -280,8 +282,6 @@ TNodo * TGraphicEngine::addCamara(char tipo, bool per, bool act, TNodo * nodoPad
 
 TNodo * TGraphicEngine::addCamaraLibre(bool activa)
 {
-	int width, height;
-	glfwGetWindowSize(window, &width, &height);
 	TTransform *transfRC = crearTransform();
 	TTransform *transfEC = crearTransform();
 	TTransform *transfTC = crearTransform();
@@ -289,8 +289,9 @@ TNodo * TGraphicEngine::addCamaraLibre(bool activa)
 	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
 	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
 	TNodo* nodoCamara;
-	nodoCamara = crearNodo(nodoTransfTC, crearCamara(45.0f, 1.0f * (width / height), 0.1f, 1000.0f));
+	nodoCamara = crearNodo(nodoTransfTC, crearCamara(45.0f, aspect_ratio, 0.1f, 1000.0f));
 	addRegistroCamara(nodoCamara);
+	move->setCamara(nodoCamara);
 	return nodoCamara;
 }
 
@@ -340,7 +341,7 @@ TNodo * TGraphicEngine::addCamaraPerspectivaFija(bool activa)
 	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
 	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
 	TNodo* nodoCamara;
-	nodoCamara = crearNodo(nodoTransfTC, crearCamara(true, 45.0f, 1.0f * (width / height), 0.1f, 1000.f, activa));
+	nodoCamara = crearNodo(nodoTransfTC, crearCamara(true, 45.0f, aspect_ratio, 0.1f, 1000.f, activa));
 	addRegistroCamara(nodoCamara);
 	return nodoCamara;
 }
@@ -356,7 +357,7 @@ TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoP
 	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
 	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
 	TNodo* nodoCamara;
-	nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(true, 45.f, 1.0f * (width / height), 0.1f, 1000.f, activa));
+	nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(true, 45.f, aspect_ratio, 0.1f, 1000.f, activa));
 	addRegistroCamara(nodoCamara);
 	rotarYPR(nodoCamara, 10.0f, -30.0f, 0.0f);
 	trasladar(nodoCamara, 0.0f, 30.0f, 200.0f);
@@ -407,6 +408,24 @@ void TGraphicEngine::escalar(TNodo * nodo, float x, float y, float z)
 {
 	TTransform * e = static_cast<TTransform*>(nodo->getPadre()->getPadre()->getEntidad());
 	e->escalar(x, y, z);
+}
+
+void TGraphicEngine::resetTransform(TNodo * nodo, char tipo)
+{
+	switch (tipo)
+	{
+		case 0:
+			(static_cast<TTransform*>(nodo->getPadre()->getEntidad()))->resetMatriz();
+			break;
+		case 1:
+			(static_cast<TTransform*>(nodo->getPadre()->getPadre()->getEntidad()))->resetMatriz();
+			break;
+		case 2:
+			(static_cast<TTransform*>(nodo->getPadre()->getPadre()->getPadre()->getEntidad()))->resetMatriz();
+			break;
+		default:
+			std::cout << "No se puede reniciar la TTransformacion" << std::endl;
+	}
 }
 
 TNodo * TGraphicEngine::getPadreX(TNodo * hijo, char padre)
@@ -471,7 +490,6 @@ void TGraphicEngine::camaraActivada()
 				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView((r*e)*t);
 			}
 			camaraActiva = static_cast<TCamara*>(registroCamaras.at(i)->getEntidad());
-			camaraActiva->setWindow(this->window);
 			break;
 		}
 	}

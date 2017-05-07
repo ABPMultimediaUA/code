@@ -22,5 +22,9 @@ Nodo eliminado
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
 Facade Destroted
 shader Destroyed

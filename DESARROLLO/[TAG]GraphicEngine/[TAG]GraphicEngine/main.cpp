@@ -15,8 +15,8 @@ int main() {
 		motorApp.info();
 
 		//camara
-		TNodo* camara2 = motorApp.addCamara();
-		motorApp.trasladar(camara2, 0, 10, 50);
+		TNodo* camara2 = motorApp.addCamaraLibre();
+		motorApp.trasladar(camara2, 0, 10, -2.0f);
 
 		TNodo* luz = motorApp.addLuz();
 		motorApp.trasladar(luz, 0, 100, 100);
