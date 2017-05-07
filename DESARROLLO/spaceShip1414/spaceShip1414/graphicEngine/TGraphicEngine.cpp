@@ -185,6 +185,7 @@ void TGraphicEngine::run(Mundo * world)
 
 		world->stepBox2D(1.0/60.0, 6, 2);
 		world->getWorldBox2D()->DrawDebugData();
+
 		world->clearForcesBox2D();
 		wo = world;
 		//drawBox(world, 5, 50, 2, 1);
@@ -362,6 +363,8 @@ void TGraphicEngine::draw(double time)
 	shader.use();
 	camaraActivada();
 	luzActivada();
+	wo->getWorldBox2D()->DrawDebugData();
+
 	this->escena->draw(shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix(),wo);
 	shader.unUse();
 }

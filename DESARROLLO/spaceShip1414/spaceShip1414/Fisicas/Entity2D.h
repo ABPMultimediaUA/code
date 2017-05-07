@@ -28,7 +28,7 @@ public:
 	glm::vec4 multiplicarVector(const glm::mat4 & m, float x, float y, float z);
 	Entity2D(b2World *world);
 	Entity2D(b2World *world, glm::vec3  pos, glm::vec3 rot, void* dirPers);
-	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, glm::vec3  escala, void* dirPared, glm::mat4 matrizCam, glm::mat4 matrizP);
+	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, glm::vec3  escala, void* dirPared);
 	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, glm::vec3  escala, bool sensor, void* dirPuerta, int ident);
 	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, bool vivo, void* dirBala, int tipo);
 	Entity2D(b2World *world, glm::vec3  pos, bool vivo, void* dirEnemigo, unsigned int raza);

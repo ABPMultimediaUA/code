@@ -285,9 +285,9 @@ void Escenario::dibujarEscenario() {
 
 						Pared * wall = new Pared(engine, glm::vec3(tx*2,ty*2,-tz*2),
 							glm::vec3(rx,ry,-rz),
-							-glm::vec3(ex,ey, ez));
+							glm::vec3(ex,ey, ez));
 
-					//	wall->setFisicas(mundo, cam->getTCamara()->getView(), cam->getTCamara()->getProjectionMatrix());
+						wall->setFisicas(mundo);
 					
 						}
 						//IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,

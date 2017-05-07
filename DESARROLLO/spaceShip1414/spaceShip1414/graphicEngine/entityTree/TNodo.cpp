@@ -140,11 +140,7 @@ void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro, Mund
 	for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {
 		
 		(*it)->draw(s, w, pro, world);
-		if (world!=nullptr)
-		{
-		
-			world->getWorldBox2D()->DrawDebugData();
-		}
+
 	}
 	if (this->entidad) {
 		this->entidad->endDraw();

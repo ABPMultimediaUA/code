@@ -65,7 +65,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 
 	int scale = 2;
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(pos.x, -pos.z);
+    bodyDef.position.Set(pos.x, pos.z);
     bodyShape.SetAsBox(2, 2);
 
 	escalaFixture.x = 0.05;
@@ -109,30 +109,30 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 }
 //constructir pared
 
-Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void* dirPared, glm::mat4 matrizCam, glm::mat4 matrizP) {
+Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void* dirPared) {
       std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
 
     bodyDef.type = b2_staticBody;
-	glm::vec4 p = multiplicarVector(matrizCam, pos.x, pos.y, pos.z);
-	p = multiplicarVector(matrizP, p.x, p.y, p.z);
-    bodyDef.position.Set(p.x, -p.z);
+
+    bodyDef.position.Set(pos.x, pos.z);
 	int scale = 1;
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     // std::cout<<"PARED: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
-    if (rot.y == 90) {
+/*    if (rot.y == 90) {
 
         bodyShape.SetAsBox(scale * escala.z, scale * escala.x);
 		escalaFixture.x = scale * escala.z;
 		escalaFixture.y = 1;
 		escalaFixture.z = scale * escala.x;
 
-    } else {
-		bodyShape.SetAsBox(5.0f, 5.0f);
-		escalaFixture.x = scale * escala.x;
-		escalaFixture.y = 1;
-		escalaFixture.z = scale * escala.z;
-    }
+    }*/ 
+
+	bodyShape.SetAsBox(escala.x, escala.z);
+	escalaFixture.x = scale * escala.x;
+	escalaFixture.y = 1;
+	escalaFixture.z = scale * escala.z;
+   
 
 
     body = world->CreateBody(&bodyDef);

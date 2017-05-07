@@ -151,7 +151,6 @@
     <ClCompile Include="graphicEngine\resourceManager\TRecursoMalla.cpp" />
     <ClCompile Include="graphicEngine\resourceManager\TRecursoTextura.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MallaFisica.cpp" />
     <ClCompile Include="Fisicas3D\Mundo3D.cpp" />
     <ClCompile Include="Pared.cpp" />
     <ClCompile Include="player.cpp" />
@@ -230,7 +229,6 @@
     <ClInclude Include="graphicEngine\resourceManager\TRecurso.h" />
     <ClInclude Include="graphicEngine\resourceManager\TRecursoMalla.h" />
     <ClInclude Include="graphicEngine\resourceManager\TRecursoTextura.h" />
-    <ClInclude Include="MallaFisica.h" />
     <ClInclude Include="Fisicas3D\Mundo3D.h" />
     <ClInclude Include="Pared.h" />
     <ClInclude Include="player.h" />

@@ -32,7 +32,7 @@ public:
 	void setYaw(float);
 	void setPitch(float);
 	void setFisicas(Mundo3D *);
-	void setFisicas(Mundo * m, glm::mat4 matrizCam, glm::mat4 matrizP);
+	void setFisicas(Mundo * m);
 	glm::vec3 getPos();
 	glm::vec3 getRot();
 	glm::vec3 getEscala();

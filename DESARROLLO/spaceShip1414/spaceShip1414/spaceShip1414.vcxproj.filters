@@ -228,9 +228,6 @@
     <ClCompile Include="Fisicas\b2GLDraw.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="MallaFisica.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
     <ClCompile Include="Fisicas3D\Mundo3D.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
@@ -585,9 +582,6 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Fisicas\b2GLDraw.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="MallaFisica.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Fisicas3D\Mundo3D.h">
