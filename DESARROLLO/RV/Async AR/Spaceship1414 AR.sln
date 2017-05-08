@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship1414 AR.Plugins", "Spaceship1414 AR.Plugins.csproj", "{9906E458-7510-E15F-35C6-462D479D6919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship1414 AR", "Spaceship1414 AR.csproj", "{1E75CB24-C614-3024-9FDE-CB3865432D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spaceship1414 AR.Editor", "Spaceship1414 AR.Editor.csproj", "{B5BEDD68-725C-674C-D8B5-76FC9037856F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9906E458-7510-E15F-35C6-462D479D6919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9906E458-7510-E15F-35C6-462D479D6919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9906E458-7510-E15F-35C6-462D479D6919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9906E458-7510-E15F-35C6-462D479D6919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E75CB24-C614-3024-9FDE-CB3865432D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E75CB24-C614-3024-9FDE-CB3865432D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E75CB24-C614-3024-9FDE-CB3865432D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E75CB24-C614-3024-9FDE-CB3865432D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5BEDD68-725C-674C-D8B5-76FC9037856F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BEDD68-725C-674C-D8B5-76FC9037856F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BEDD68-725C-674C-D8B5-76FC9037856F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BEDD68-725C-674C-D8B5-76FC9037856F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
