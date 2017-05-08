@@ -4,8 +4,6 @@
 #include "graphicEngine\entityTree\TNodo.h"
 #include "graphicEngine\entityTree\TMalla.h"
 #include "graphicEngine\entityTree\TCamara.h"
-#include "../Fisicas3D/Entity3D.h"
-#include "../Fisicas3D/Mundo3D.h"
 #include "Fisicas\Entity2D.h"
 #include "Fisicas\Mundo.h"
 

@@ -11,10 +11,6 @@
 #include <glm\gtx\string_cast.hpp>
 #include "Fisicas\Mundo.h"
 #include "Fisicas\b2GLDraw.h"
-#include "BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h"
-#include "BulletCollision/CollisionDispatch/btCollisionObject.h"
-#include "BulletCollision/CollisionShapes/btCollisionShape.h"
-#include "Fisicas3D\Mundo3D.h"
 
 
 #define GLFW_DLL

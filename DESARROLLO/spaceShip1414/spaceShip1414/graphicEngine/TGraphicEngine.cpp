@@ -13,7 +13,6 @@
 #include "entityTree\TLuz.h"
 #include "entityTree\TMalla.h"
 #include "framework\movimentHandler.h"
-#include "../Fisicas3D/Mundo3D.h"
 #include "../Fisicas/Mundo.h"
 #include "../Game/Escenario/Escenario.h"
 
@@ -133,40 +132,6 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 	return true;
 }
 
-void TGraphicEngine::run(Mundo3D * world)
-{
-	onstart();
-	glfwSetTime(0.0);
-	lastTime = 0.0;
-	double currentFrame = glfwGetTime();
-	double last = currentFrame;
-
-	while (!glfwWindowShouldClose(window))
-	{
-		currentFrame = glfwGetTime();
-		deltaTime = (currentFrame - last);
-		last = currentFrame;
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-		world->getMundo3DBullet()->stepSimulation(deltaTime);
-		world->getMundo3DBullet()->debugDrawWorld();
-		//drawBox(world, 5, 50, 2, 1);
-		drawDebug(world->getDebgMode()->GetLines());
-		//drawGround(world);
-		//world->getWorldBox2D()->DrawDebugData();
-		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
-		draw(getLastTime());
-		glfwSwapBuffers(window);
-		glfwPollEvents();
-		
-		/*world->stepBox2D(deltaTime, 6, 2);
-		world->clearForcesBox2D();*/
-	}
-
-	glfwDestroyWindow(window);
-	glfwTerminate();
-}
 
 void TGraphicEngine::run(Mundo * world, Escenario* esce)
 {
@@ -207,37 +172,7 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 	glfwDestroyWindow(window);
 	glfwTerminate();
 }
-void TGraphicEngine::drawDebug(std::vector<GlDebugDraw::LINE> & lines) {
-	//glDisable(GL_CULL_FACE);
 
-	std::vector<GLfloat> vertices;
-	std::vector<GLuint> indices;
-	unsigned int indexI = 0;
-
-	for (std::vector<GlDebugDraw::LINE>::iterator it = lines.begin(); it != lines.end(); it++)
-	{
-		GlDebugDraw::LINE l = (*it);
-		vertices.push_back(l.a.x);
-		vertices.push_back(l.a.y);
-		vertices.push_back(l.a.z);
-
-		vertices.push_back(l.b.x);
-		vertices.push_back(l.b.y);
-		vertices.push_back(l.b.z);
-
-		indices.push_back(indexI);
-		indices.push_back(indexI + 1);
-		indexI += 2;
-	}
-	//glBindVertexArray(vertices.);
-
-
-	glDrawElements(GL_LINES, indices.size(), GL_UNSIGNED_INT, (void*)&indices[0]);
-
-
-	lines.clear();
-
-}
 
 void  TGraphicEngine::drawBox(Mundo * world, double x, double y, int w, int h) {
 	b2BodyDef myBodyDef;

@@ -34,7 +34,6 @@ class Puerta;
 class Terminal;
 class Objetos;
 class Pared;
-class Mundo3D;
 class Enemigo;
 class Entity2D;
 class Mundo;
