@@ -110,7 +110,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 //constructir pared
 
 Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void* dirPared) {
-      std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
+ 
 
     bodyDef.type = b2_staticBody;
 
@@ -146,7 +146,7 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     objeto3D = dirPared;
     iden = 1;
 
-	mostrarPos2D();
+	//mostrarPos2D();
 
 }
 
@@ -190,7 +190,11 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     }*/
 	body->GetFixtureList()->SetFilterData(filtro);
 	puertaBody->GetFixtureList()->SetFilterData(filtro);
+	std::cout << std::endl;
+	std::cout << "ID: " << id << std::endl;
+	std::cout << std::endl;
 
+	mostrarPos2D();
 
 }
 //constructor bala

@@ -52,14 +52,16 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, Entity2D *pers, int m
 	if (modo == 0 && puerta->getEstado() != "BLOQLLAVE" ) {
 		//si tiene rotacion en Y van | sino van -
 		puerta->setDetectado(true,entity->getId());
-		puerta->UpdateEstado();
+		puerta->setAbierta();
+		//puerta->UpdateEstado();
 	}	
 
 
 	else if (modo == 1 && puerta->getEstado() != "BLOQLLAVE") {
 		std::cout << "cerrar123" << std::endl;
 		puerta->setDetectado(false,entity->getId());
-		puerta->UpdateEstado();
+		puerta->setCerrada();
+		//puerta->UpdateEstado();
 	}
 
 	//se deberia hacer un if para ver si el jugador tiene o no la llave asociada a la puerta

@@ -48,7 +48,7 @@ Puerta::Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::ve
 
 	abierta = false;
 	limiteApX = pos.x + (escal.x / 2);
-	limiteApZ = pos.z + (escal.z / 2);
+	limiteApZ = -(pos.z + (escal.z / 2));
 	CERRADA = new Estados("CERRADA");
 	ABIERTA = new Estados("ABIERTA");
 	BLOQUEADA = new Estados("BLOQUEADA");
@@ -66,7 +66,13 @@ Puerta::Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::ve
 		Maquina->addEstado(BLOQUEADA, true);
 	}
 
-	
+	if(escal.x == 5 || escal.z == 5) {
+		desfase = 15;
+	}
+
+	else {
+		desfase = 30;
+	}
 	 //dependiendo de que string se le pase se inicia en un estado o otro
 	llaveAsociada = llave;
 	detectado = false;
@@ -153,7 +159,7 @@ void Puerta::setCerrada()
 
 void Puerta::UpdateEstado()
 {
-	if (detectado == true && id == idDetect)
+	if (detectado == true)
 	{
 		if (Maquina->getEstadoActivo()->getEstado() == "BLOQLLAVE")
 			//maya->getMaterial(0).EmissiveColor.set(0, 0, 180, 0);
@@ -200,7 +206,7 @@ void Puerta::abrirPuerta() {
 
 	if (escal.z != 1) {
 
-		if (limiteApZ + 70>entity->getCuerpo2D()->GetPosition().y)
+		if (limiteApZ + desfase >entity->getCuerpo2D()->GetPosition().y)
 		{
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, VEL));
 			pos.z = entity->getCuerpo2D()->GetPosition().y;
@@ -224,7 +230,7 @@ void Puerta::abrirPuerta() {
 
 	else {
 		
-		if (limiteApX+70>entity->getCuerpo2D()->GetPosition().x)
+		if (limiteApX + desfase >entity->getCuerpo2D()->GetPosition().x)
 		{
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(VEL, 0.0f));
 			pos.x = entity->getCuerpo2D()->GetPosition().x;
@@ -256,37 +262,40 @@ void Puerta::cerrarPuerta() {
 
 	if (escal.z != 1) {
 
-		if (limiteApZ-5<entity->getCuerpo2D()->GetPosition().y)
+		if (limiteApZ + 2 < entity->getCuerpo2D()->GetPosition().y)
 		{
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, -VEL));
 			pos.z = entity->getCuerpo2D()->GetPosition().y;
 			translation->resetMatriz();
 			translation->trasladar(pos.x, pos.y, -pos.z);
+		
+
 		}
 		else
 		{
 			abierta = false;
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
 
-			//manejador.cambiaEstado("BLOQUEADA");
+			//Maquina->cambiaEstado("BLOQUEADA");
 		}
 	}
 
 	else {
 		
-		if (limiteApX-5<entity->getCuerpo2D()->GetPosition().x)
+		if (limiteApX + 2 < entity->getCuerpo2D()->GetPosition().x)
 		{
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-VEL, 0.0f));
 			pos.x = entity->getCuerpo2D()->GetPosition().x;
 			translation->resetMatriz();
 			translation->trasladar(pos.x, pos.y, -pos.z);
+
 		}
 		else
 		{
 			abierta = false;
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
 
-	//		manejador.cambiaEstado("BLOQUEADA");
+			//Maquina->cambiaEstado("BLOQUEADA");
 
 		}
 		//  entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));

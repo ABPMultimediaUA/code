@@ -5,1033 +5,4844 @@ GLSL: 4.50 NVIDIA
 
 Recurso nombre: nanosuit.obj
 Recurso nombre: untitled.obj
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -50 Y: -14
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -50 Y: 14
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -29 Y: -10
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -29 Y: 10
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -71 Y: 10
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -71 Y: -10
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -4 Y: 46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -24 Y: -46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -27 Y: 25
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -27 Y: -25
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 10 Y: -46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 28 Y: -40
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 28 Y: 40
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 22 Y: 46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -25 Y: 46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 28 Y: 0
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 14 Y: -181
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 50 Y: -131
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 42 Y: -81
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -22 Y: -153
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 17 Y: -82
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 1 Y: -103
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -18 Y: -126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 0 Y: -126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 3 Y: 65
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 29 Y: 65
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 16 Y: 84
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -117 Y: 75
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -93 Y: 67
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -114 Y: 126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -96 Y: 126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -93 Y: 122
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -105 Y: 26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -27 Y: -74
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -1 Y: -97
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -64 Y: -124
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -82 Y: -100
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -93 Y: -63
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -117 Y: -77
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -1 Y: -54
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -38 Y: -100
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -116 Y: -26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -94 Y: -26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -24 Y: -48
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -5 Y: -48
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -70 Y: -126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -27 Y: 87
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -7 Y: 102
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -63 Y: 128
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -53 Y: 158
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -117 Y: 142
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -113 Y: 128
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -114 Y: 158
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -219 Y: 82
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -219 Y: 26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -243 Y: 71
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -243 Y: 37
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -195 Y: 37
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -195 Y: 71
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -193 Y: 71
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -193 Y: 37
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -169 Y: 26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -145 Y: 35
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -145 Y: 73
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -183 Y: 82
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -155 Y: 82
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 17 Y: -80
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 30 Y: -64
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 17 Y: -48
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 1 Y: -75
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 1 Y: -53
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -91 Y: 67
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -29 Y: 86
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -73 Y: 37
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -71 Y: 48
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -81 Y: 26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -91 Y: 122
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -60 Y: 126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -44 Y: 48
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -192 Y: 24
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -192 Y: 4
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -245 Y: -27
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -257 Y: -56
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -269 Y: 50
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -139 Y: 21
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -139 Y: 7
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -245 Y: 37
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -245 Y: 108
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -268 Y: 158
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -246 Y: 158
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -40 Y: -98
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -80 Y: -98
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -50 Y: -16
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -91 Y: -63
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -82 Y: -26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -29 Y: -57
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -71 Y: -21
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -54 Y: 160
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -113 Y: 160
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -117 Y: 174
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -7 Y: 174
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -62 Y: 188
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -143 Y: 72
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -143 Y: 36
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -131 Y: 26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -119 Y: 54
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -131 Y: 82
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -178 Y: -24
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -191 Y: -4
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -217 Y: -40
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
+ID: 0
 
-POS 2D
-X: -243 Y: -30
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -218 Y: -56
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -242 Y: -56
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -139 Y: -21
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -139 Y: -7
-
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
 POS 2D
-X: -194 Y: -126
+X: -72 Y: 0
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
-POS 2D
-X: -269 Y: -93
+ID: 1
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
 POS 2D
-X: -119 Y: -77
+X: 9 Y: 47
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
-POS 2D
-X: -166 Y: -26
+ID: 2
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
 POS 2D
-X: -215 Y: -42
+X: -28 Y: 0
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
-POS 2D
-X: -255 Y: -58
+ID: 3
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
 POS 2D
-X: -218 Y: -58
+X: -17 Y: 47
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
-POS 2D
-X: -165 Y: 126
+ID: 4
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
 POS 2D
-X: -201 Y: 106
+X: -105 Y: 127
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
-POS 2D
-X: -188 Y: 84
+ID: 5
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
 POS 2D
-X: -142 Y: 84
+X: -92 Y: 114
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
-POS 2D
-X: -119 Y: 105
+ID: 6
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
 POS 2D
-X: -165 Y: 128
+X: -7 Y: -125
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
-POS 2D
-X: -160 Y: 158
+ID: 7
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
 POS 2D
-X: -119 Y: 143
+X: -105 Y: -25
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
-POS 2D
-X: -201 Y: 143
+ID: 8
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
 POS 2D
-X: -29 Y: 31
+X: -105 Y: 159
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
-POS 2D
-X: -71 Y: 31
+ID: 9
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
 POS 2D
-X: -50 Y: 16
+X: -194 Y: 54
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
-POS 2D
-X: -43 Y: 46
+ID: 10
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
 POS 2D
-X: -70 Y: 46
+X: -144 Y: 54
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
-POS 2D
-X: -85 Y: -24
+ID: 11
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
 POS 2D
-X: -125 Y: -24
+X: -169 Y: 83
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
-POS 2D
-X: -73 Y: -15
+ID: 12
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
 POS 2D
-X: -73 Y: 15
+X: -244 Y: 54
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
-POS 2D
-X: -105 Y: 24
+ID: 13
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
 POS 2D
-X: -137 Y: 22
+X: -257 Y: 159
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
-POS 2D
-X: -137 Y: -22
+ID: 14
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
 POS 2D
-X: -137 Y: 0
+X: -229.06 Y: -57
 
 //////////////////////////////////////////
 -------------------------------------->0
-TIME: 0.0498155
-TIME: 0.0669469
-TIME: 0.0669469
-TIME: 0.0667039
-TIME: 0.0665508
-TIME: 0.0500491
-TIME: 0.0668254
-TIME: 0.066568
-TIME: 0.0500552
-TIME: 0.0667289
-TIME: 0.0670853
-TIME: 0.066318
-TIME: 0.0667466
-TIME: 0.0668016
-TIME: 0.0668763
-TIME: 0.0497802
-TIME: 0.0497802
-TIME: 0.0501854
-TIME: 0.0499694
-TIME: 0.0668562
-TIME: 0.0670147
+TIME: 0.0335514
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -18.3333 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -28 POS Y: 0
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 2
+UPDATE AB
+UPDATE AB
+UPDATE AB
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -24.995 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -28 POS Y: 5.994
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 2
+UPDATE AB
+TIME: 0.0331277
+ACTUALIZO 0
+ID PUERTA: 2
+UPDATE AB
+UPDATE AB
+TIME: 0.0334413
+UPDATE AB
+TIME: 0.0337566
+UPDATE AB
+TIME: 0.0331926
+UPDATE AB
+TIME: 0.0328539
+UPDATE AB
+TIME: 0.0333699
+UPDATE AB
+TIME: 0.0335731
+UPDATE AB
+TIME: 0.03331
+UPDATE AB
+TIME: 0.0334372
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 2
+cerrar123
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0327931
+UPDATE AB
+UPDATE CE
+TIME: 0.0500842
+UPDATE AB
+UPDATE CE
+TIME: 0.0500649
+UPDATE AB
+UPDATE CE
+TIME: 0.050404
+UPDATE AB
+UPDATE CE
+TIME: 0.0500444
+UPDATE AB
+UPDATE CE
+TIME: 0.0331014
+UPDATE AB
+UPDATE CE
+TIME: 0.0330764
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.050503
+UPDATE AB
+UPDATE CE
+TIME: 0.0337254
+UPDATE AB
+UPDATE CE
+TIME: 0.0334089
+UPDATE AB
+UPDATE CE
+TIME: 0.0495021
+UPDATE AB
+UPDATE CE
+TIME: 0.0332316
+UPDATE AB
+UPDATE CE
+TIME: 0.0331848
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -63.3184 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -72 POS Y: 0
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.0334237
+UPDATE AB
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.0499549
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -68.995 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -72 POS Y: 4.81196
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.0504874
+ACTUALIZO 0
+ID PUERTA: 0
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.032826
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.032915
+UPDATE AB
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.0333358
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.0334459
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.0334376
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.0331117
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.0335374
+UPDATE AB
+UPDATE AB
+UPDATE CE
+TIME: 0.0332316
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 0
+cerrar123
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333843
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333913
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333387
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331207
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334298
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333744
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333059
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0504816
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0496199
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333687
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033271
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334508
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0502706
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033062
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333945
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334471
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333539
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0337
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033069
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332332
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334779
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332771
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334171
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033794
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333362
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332012
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033356
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -133.985 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -137 POS Y: 0
+///////////////////////////////////
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335542
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336105
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331716
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331901
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333761
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033296
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033684
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.03328
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330267
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334537
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333379
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333748
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335349
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331187
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333334
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333724
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333621
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334549
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335756
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331035
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332878
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334364
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334212
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333601
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033484
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332086
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332361
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334791
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333748
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335333
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330838
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332936
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333847
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333473
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335419
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330932
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335624
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330288
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334311
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334795
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332537
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334545
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336076
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330004
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033372
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334155
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334184
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335875
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330226
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334155
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033296
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333646
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331987
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0491852
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334171
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334204
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334106
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332734
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333744
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333128
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333486
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333358
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033507
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033413
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -252.319 POS Y: 48.3333
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -244 POS Y: 54
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334241
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331096
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334832
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331975
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334853
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332377
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335505
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330928
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333309
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334426
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332734
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336577
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334376
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331917
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033521
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332919
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333687
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0338864
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331121
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330965
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333609
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033358
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334463
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335234
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331355
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332254
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334438
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333301
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334947
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335645
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332008
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333284
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033434
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333773
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333654
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335657
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330706
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334857
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0499422
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033411
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335181
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330542
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335161
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333412
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333445
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033395
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334808
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331359
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333133
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334188
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333691
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333367
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336963
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330649
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333744
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -252.319 POS Y: 150
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -257 POS Y: 159
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0333531
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0336019
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0333703
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -252.319 POS Y: 155.995
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -251.806 POS Y: 159
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0331376
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0333465
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0333917
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0333243
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.033459
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0333781
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0330805
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0334873
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0332468
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0333621
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0334348
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.033787
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0329824
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 13
+cerrar123
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332135
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033372
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333945
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336749
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333826
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333716
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -252.319 POS Y: 167.652
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -251 POS Y: 159
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -252.319 POS Y: 162.005
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -246.224 POS Y: 159
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0494947
+ACTUALIZO 0
+ID PUERTA: 13
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.049677
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0497546
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0500046
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.050285
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0497693
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0503966
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0333009
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0499935
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+TIME: 0.0497648
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 13
+cerrar123
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333794
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0501614
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0501951
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0498638
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0503814
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332644
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0497993
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0500875
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0499331
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0508441
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0663001
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0500912
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332829
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.050184
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0380951
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0453098
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0502378
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033395
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0329417
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335399
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333785
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332254
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334532
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334245
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332972
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334307
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033305
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0492734
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336093
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033484
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331334
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334627
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335801
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332977
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334028
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333305
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333453
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0503999
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0502846
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330468
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332229
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -253.985 POS Y: 57.015
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -244 POS Y: 54
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -248.005 POS Y: 57.015
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -245 POS Y: 108
+///////////////////////////////////
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333371
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335029
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0341438
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -247.005 POS Y: 53.6816
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -244 POS Y: 54
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.032626
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0499434
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332541
+TIME: 0.0332541
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335505
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -247.015 POS Y: 51.005
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -245 POS Y: 37
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.049943
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335748
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335152
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333223
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335797
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334996
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -253.682 POS Y: 51.015
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -244 POS Y: 54
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -247.015 POS Y: 51.015
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -244 POS Y: 54
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -247.015 POS Y: 51.015
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -245 POS Y: 37
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332135
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0329701
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336314
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331367
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033491
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332336
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336659
+TIME: 0.0336659
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333913
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333104
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333161
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333449
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336195
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334167
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335785
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033117
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335128
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333272
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334007
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333806
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334028
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333605
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335407
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330222
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336224
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334762
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334705
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330045
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334179
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332981
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333289
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331745
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033356
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335329
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334951
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0328436
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0336741
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334487
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0329458
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332755
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334812
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333432
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332972
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0329368
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334652
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333703
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033445
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0340887
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0329504
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0328555
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333908
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333695
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0340645
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331536
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0330854
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331109
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332903
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334401
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333888
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334491
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331577
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333096
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335033
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332718
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334812
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331876
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332266
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0338112
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033239
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033539
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333075
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333588
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332866
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334405
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333769
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332796
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -253.682 POS Y: 52.6817
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -244 POS Y: 54
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -247.015 POS Y: 52.6817
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -244 POS Y: 54
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332312
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332591
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0331926
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0333215
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332673
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335349
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0338207
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0328333
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332205
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.033397
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0335842
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0332673
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.050246
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0334578
+ACTUALIZO 0
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 12
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0342874
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ID DE LA ENTITY 0
+MUERO ENTITY2D
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Facade Destroted
+shader Destroyed
