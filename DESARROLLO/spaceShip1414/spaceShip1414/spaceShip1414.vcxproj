@@ -128,6 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camara.cpp" />
+    <ClCompile Include="Game\Enemigos\AlienBerserker.cpp" />
+    <ClCompile Include="Game\Enemigos\AStar.cpp" />
+    <ClCompile Include="Game\Enemigos\BehaviorTree\BehaivorTree.cpp" />
+    <ClCompile Include="Game\Enemigos\CriaAlien.cpp" />
+    <ClCompile Include="Game\Enemigos\Enemigo.cpp" />
+    <ClCompile Include="Game\Enemigos\Flocking\Flocking.cpp" />
+    <ClCompile Include="Game\Enemigos\LogicaDifusa.cpp" />
+    <ClCompile Include="Game\Enemigos\navmeshes.cpp" />
+    <ClCompile Include="Game\Enemigos\Nodo.cpp" />
+    <ClCompile Include="Game\Enemigos\Waypoints.cpp" />
     <ClCompile Include="Game\Escenario\Escenario.cpp" />
     <ClCompile Include="Fisicas3D\Entity3D.cpp" />
     <ClCompile Include="Fisicas\b2GLDraw.cpp" />
@@ -211,6 +221,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camara.h" />
+    <ClInclude Include="Game\Enemigos\AlienBerserker.h" />
+    <ClInclude Include="Game\Enemigos\AStar.h" />
+    <ClInclude Include="Game\Enemigos\BehaviorTree\BehaivorTree.h" />
+    <ClInclude Include="Game\Enemigos\CriaAlien.h" />
+    <ClInclude Include="Game\Enemigos\Enemigo.h" />
+    <ClInclude Include="Game\Enemigos\Flocking\Flocking.h" />
+    <ClInclude Include="Game\Enemigos\LogicaDifusa.h" />
+    <ClInclude Include="Game\Enemigos\navmeshes.h" />
+    <ClInclude Include="Game\Enemigos\Nodo.h" />
+    <ClInclude Include="Game\Enemigos\Waypoints.h" />
     <ClInclude Include="Game\Escenario\Escenario.h" />
     <ClInclude Include="Fisicas3D\Entity3D.h" />
     <ClInclude Include="Fisicas\b2GLDraw.h" />
