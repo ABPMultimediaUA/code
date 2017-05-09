@@ -235,7 +235,7 @@ void Puerta::abrirPuerta() {
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(VEL, 0.0f));
 			pos.x = entity->getCuerpo2D()->GetPosition().x;
 			translation->resetMatriz();
-			translation->trasladar(pos.x, pos.y, -pos.z);
+			translation->trasladar(pos.x, pos.y, pos.z);
 		}
 		else
 		{
@@ -282,12 +282,12 @@ void Puerta::cerrarPuerta() {
 
 	else {
 		
-		if (limiteApX + 2 < entity->getCuerpo2D()->GetPosition().x)
+		if (limiteApX - 2 < entity->getCuerpo2D()->GetPosition().x)
 		{
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-VEL, 0.0f));
 			pos.x = entity->getCuerpo2D()->GetPosition().x;
 			translation->resetMatriz();
-			translation->trasladar(pos.x, pos.y, -pos.z);
+			translation->trasladar(pos.x, pos.y, pos.z);
 
 		}
 		else
