@@ -15,7 +15,7 @@
 #include "framework\movimentHandler.h"
 #include "../Fisicas/Mundo.h"
 #include "../Game/Escenario/Escenario.h"
-
+#include "..\GUI.h"
 
 
 
@@ -127,6 +127,11 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 		return false;
 	}
 
+	m_gui.init("gui");
+	m_gui.loadScheme("TaharezLook.scheme");
+	m_gui.setFont("DejaVuSans-10");
+	m_gui.createWidget("TaharezLook/FrameWindow", glm::vec4(0.5f,0.5,0.1f,0.05f),glm::vec4(0.0f),"TestButton");
+
 	glfwSetWindowUserPointer(window, this);
 
 	return true;
@@ -153,11 +158,11 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 
 		world->stepBox2D(1.0/60.0, 6, 2);
 		world->getWorldBox2D()->DrawDebugData();
-
+		m_gui.draw();
 		world->clearForcesBox2D();
 		//drawBox(world, 5, 50, 2, 1);
 		move->checkKeys(window);
-		//drawGround(world);
+		drawGround(world);
 		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 		esce->actualizarEstadoPuerta();
 		glfwPollEvents();
@@ -300,9 +305,9 @@ void TGraphicEngine::draw(double time)
 	shader.use();
 	camaraActivada();
 	luzActivada();
-	wo->getWorldBox2D()->DrawDebugData();
-
+	
 	this->escena->draw(shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix(),wo);
+
 	shader.unUse();
 }
 

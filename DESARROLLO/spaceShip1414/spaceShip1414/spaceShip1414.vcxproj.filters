@@ -246,6 +246,9 @@
     <ClCompile Include="Game\Escenario\Puerta.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="output.txt" />
@@ -609,6 +612,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Game\Escenario\Puerta.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

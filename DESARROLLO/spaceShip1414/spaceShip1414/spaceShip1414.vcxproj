@@ -97,7 +97,7 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glfw3dll.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib;glfw3.lib;Box2D.lib;opengl32.lib;assimp-vc140-mt.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>CEGUIBase-0_d.lib;CEGUICommonDialogs-0_d.lib;CEGUIOpenGLRenderer-0_d.lib;CEGUISILLYImageCodec_d.lib;glfw3dll.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib;glfw3.lib;Box2D.lib;opengl32.lib;assimp-vc140-mt.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -153,6 +153,7 @@
     <ClCompile Include="graphicEngine\resourceManager\TRecurso.cpp" />
     <ClCompile Include="graphicEngine\resourceManager\TRecursoMalla.cpp" />
     <ClCompile Include="graphicEngine\resourceManager\TRecursoTextura.cpp" />
+    <ClCompile Include="GUI.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Fisicas3D\Mundo3D.cpp" />
     <ClCompile Include="Game\Escenario\Pared.cpp" />
@@ -237,6 +238,7 @@
     <ClInclude Include="graphicEngine\resourceManager\TRecursoTextura.h" />
     <ClInclude Include="Fisicas3D\Mundo3D.h" />
     <ClInclude Include="Game\Escenario\Pared.h" />
+    <ClInclude Include="GUI.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="Game\Escenario\readJson.h" />
     <ClInclude Include="tools\assimp\ai_assert.h" />
