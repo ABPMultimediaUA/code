@@ -18,7 +18,7 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 100.0f }, yaw{ 0
 	rotation->rotar(0.0f, 1.0f, 0.0f, 0.0f);
 	rotation->rotar(0.0f, 0.0f, 1.0f, 0.0f);
 	rotation->rotar(0.0f, 0.0f, 0.0f, 1.0f);
-	scale->escalar(1,1,1);
+	scale->escalar(0.7,0.7,0.7);
 
 	pos = glm::vec3(0, 0, 0);
 	rot = glm::vec3(0, 0, 0);

@@ -154,6 +154,7 @@
     <ClCompile Include="graphicEngine\resourceManager\TRecursoMalla.cpp" />
     <ClCompile Include="graphicEngine\resourceManager\TRecursoTextura.cpp" />
     <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="Game\Escenario\Luces.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Fisicas3D\Mundo3D.cpp" />
     <ClCompile Include="Game\Escenario\Pared.cpp" />
@@ -239,6 +240,7 @@
     <ClInclude Include="Fisicas3D\Mundo3D.h" />
     <ClInclude Include="Game\Escenario\Pared.h" />
     <ClInclude Include="GUI.h" />
+    <ClInclude Include="Game\Escenario\Luces.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="Game\Escenario\readJson.h" />
     <ClInclude Include="tools\assimp\ai_assert.h" />
