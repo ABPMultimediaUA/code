@@ -7,10 +7,7 @@
 #define GLFW_STATIC
 #include <GLFW\glfw3.h>
 #endif
-#include <string>
-#include <algorithm>
 #include <vector>
-#include <glm\vec3.hpp>
 #include <glm\mat4x4.hpp>
 #include "openGLShader.h"
 class TNodo;
@@ -63,6 +60,7 @@ public:
 	void escalar(TNodo *, float, float, float);
 	void resetTransform(TNodo *, char);
 	TNodo * getPadreX(TNodo *, char p = 0);
+	glm::mat4 getInverseProjectionCamaraActive();
 private:
 	void onstart();
 	void onstop();

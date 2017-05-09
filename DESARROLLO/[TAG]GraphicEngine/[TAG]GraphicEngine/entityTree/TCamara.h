@@ -12,14 +12,6 @@
 #include <glm\mat4x4.hpp>
 #include <glm/gtc/quaternion.hpp>
 
-enum CameraType {
-	ORTHO, FREE
-};
-
-enum CameraDirection {
-	UP, DOWN, LEFT, RIGHT, FORWARD, BACK
-};
-
 class TCamara :
 	public TEntidad
 {
@@ -41,6 +33,7 @@ public:
 	bool getActiva();
 	char getTipo();
 	void setTipo(char);
+	glm::mat4 getInverseProjection();
 private:
 	char tipo;
 	bool activa;

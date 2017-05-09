@@ -91,7 +91,7 @@
       <AdditionalIncludeDirectories>$(ProjectDir)tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-mt.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-mt.lib;glew32s.lib;libSOIL.a;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Xdcmake>
       <OutputFile>$(OutDir)$(TargetName).xml</OutputFile>
@@ -199,8 +199,8 @@
     <None Include="models\Nanosuit\nanosuit2.c4d" />
     <None Include="Shader\basicoFragmentShader.frag" />
     <None Include="Shader\basicoVertexShader.vs" />
-    <None Include="Shader\directionalFragmentShader.frag" />
-    <None Include="Shader\directionalVertexShader.vs" />
+    <None Include="Shader\dFS.frag" />
+    <None Include="Shader\dVS.vs" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\assimp-vc140-mt.lib" />

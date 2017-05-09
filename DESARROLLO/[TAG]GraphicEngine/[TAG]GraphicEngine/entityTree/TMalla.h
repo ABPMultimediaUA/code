@@ -1,7 +1,9 @@
 #pragma once
 #include "TEntidad.h"
 #include <string>
+#include <vector>
 class TRecursoMalla;
+class TRecursoTextura;
 class TGestorRecursos;
 
 class TMalla :
@@ -19,5 +21,6 @@ public:
 	void endDraw() override;
 private:
 	TRecursoMalla* malla;
+	std::vector<TRecursoTextura*> recursos;
 };
 

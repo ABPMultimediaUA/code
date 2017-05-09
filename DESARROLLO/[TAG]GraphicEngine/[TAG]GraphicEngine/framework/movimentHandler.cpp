@@ -1,10 +1,14 @@
 #include "movimentHandler.h"
-#include <iostream>
 #include "../entityTree/TTransform.h"
 #include "../player.h"
 #include "TGraphicEngine.h"
 #include <math.h>
 #include <glm/gtx/string_cast.hpp>
+#include <iostream>
+#include <glm\mat4x4.hpp>
+#include <glm\gtc\matrix_transform.hpp>
+#include <glm\gtx\euler_angles.hpp>
+#include <glm/gtx/matrix_decompose.hpp>
 
 movimentHandler::movimentHandler() : activo{ false }, mouseSensitive{ 0.015f }, first{ true }, yaw{ 0 }, pitch{ 0 }
 {
@@ -57,13 +61,18 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGr
 
 	if (activo) 
 	{
-		xoffset = ((width / 2.0f) - static_cast<float>(xpos));
-		yoffset = ((height / 2.0f) - static_cast<float>(ypos));
+		xoffset = (static_cast<float>(xpos) - (width / 2.0f));
+		yoffset = (static_cast<float>(ypos) - (height / 2.0f));
 		
 		float angulo = -atan2f(xoffset, yoffset);
 		/*jugador->setYaw(xoffset);
 		jugador->setPitch(yoffset);
 		jugador->Rotation()->rotarYPR(0.0f,jugador->getYaw(),jugador->getPitch());*/
+		std::cout << "angulo" << angulo << std::endl;
+		/*glm::mat4 anguloM(1.0f);
+		anguloM
+			anguloM = anguloM;*/
+		//motor->resetTransform(jugador->getNodo(), 'r');
 		jugador->rotation(motor, angulo, 0, 1, 0);
 	}
 	else 

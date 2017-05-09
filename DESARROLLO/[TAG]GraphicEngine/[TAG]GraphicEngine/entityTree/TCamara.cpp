@@ -104,3 +104,8 @@ void TCamara::setTipo(char t)
 {
 	this->tipo = t;
 }
+
+glm::mat4 TCamara::getInverseProjection()
+{
+	return glm::inverse(getProjectionMatrix());
+}

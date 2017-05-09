@@ -189,8 +189,8 @@
     <None Include="models\Nanosuit\nanosuit.blend" />
     <None Include="models\Nanosuit\nanosuit.mtl" />
     <None Include="models\Nanosuit\nanosuit.3ds" />
-    <None Include="Shader\directionalFragmentShader.frag" />
-    <None Include="Shader\directionalVertexShader.vs" />
+    <None Include="Shader\dFS.frag" />
+    <None Include="Shader\dVS.vs" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\assimp-vc140-mt.lib" />

@@ -8,7 +8,7 @@ Ks 0.500000 0.500000 0.500000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd arm_dif.png
+map_Kd arm_dif.bmp
 map_Bump arm_showroom_ddn.png
 map_Ks arm_showroom_spec.png
 
@@ -75,5 +75,3 @@ illum 2
 map_Kd leg_dif.png
 map_Bump leg_showroom_ddn.png
 map_Ks leg_showroom_spec.png
-
-

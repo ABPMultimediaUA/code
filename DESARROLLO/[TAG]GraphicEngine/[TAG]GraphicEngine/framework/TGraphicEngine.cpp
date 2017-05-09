@@ -11,7 +11,7 @@
 #include "..\entityTree\TLuz.h"
 #include "..\entityTree\TMalla.h"
 #include "movimentHandler.h"
-
+#include <algorithm>
 
 TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }
 {
@@ -359,8 +359,8 @@ TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoP
 	TNodo* nodoCamara;
 	nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(true, 45.f, aspect_ratio, 0.1f, 1000.f, activa));
 	addRegistroCamara(nodoCamara);
-	rotarYPR(nodoCamara, 10.0f, -30.0f, 0.0f);
-	trasladar(nodoCamara, 0.0f, 30.0f, 200.0f);
+	rotarYPR(nodoCamara, 0.0f, -30.0f, 0.0f);
+	trasladar(nodoCamara, 0.0f, 30.0f, 20.0f);
 	return nodoCamara;
 }
 
@@ -414,13 +414,13 @@ void TGraphicEngine::resetTransform(TNodo * nodo, char tipo)
 {
 	switch (tipo)
 	{
-		case 0:
+		case 't':
 			(static_cast<TTransform*>(nodo->getPadre()->getEntidad()))->resetMatriz();
 			break;
-		case 1:
+		case 'e':
 			(static_cast<TTransform*>(nodo->getPadre()->getPadre()->getEntidad()))->resetMatriz();
 			break;
-		case 2:
+		case 'r':
 			(static_cast<TTransform*>(nodo->getPadre()->getPadre()->getPadre()->getEntidad()))->resetMatriz();
 			break;
 		default:
@@ -437,6 +437,11 @@ TNodo * TGraphicEngine::getPadreX(TNodo * hijo, char padre)
 	{
 		return getPadreX(hijo->getPadre(), padre-1);
 	}
+}
+
+glm::mat4 TGraphicEngine::getInverseProjectionCamaraActive()
+{
+	return camaraActiva->getInverseProjection();
 }
 
 void TGraphicEngine::draw(double time)
@@ -483,11 +488,11 @@ void TGraphicEngine::camaraActivada()
 			if (static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->getTipo()==2) 
 			{
 				glm::mat4 tt = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
-				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView(tt*r*e*t);
+				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView(tt*t*e*r);
 			}
 			else
 			{
-				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView((r*e)*t);
+				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView(t*e*r);
 			}
 			camaraActiva = static_cast<TCamara*>(registroCamaras.at(i)->getEntidad());
 			break;
