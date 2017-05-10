@@ -20,7 +20,7 @@ public:
 	movimentHandler();
 	~movimentHandler();
 	void onKey(GLFWwindow* window, int key, int scancode, int action, int mods, double deltaTime, TGraphicEngine* motor);
-	void onMouse(GLFWwindow*, double, double);
+	void onMouse(GLFWwindow*, double, double, TGraphicEngine* motor);
 	void setMouseSensitive(float);
 	void setPlayer(player*);
 	void setCamara(Camara * cam);

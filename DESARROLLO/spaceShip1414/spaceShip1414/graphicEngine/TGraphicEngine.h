@@ -64,6 +64,8 @@ public:
 	glm::vec3 moverCamara();
 	glm::mat4 getView();
 
+	glm::mat4 getProjection();
+
 
 private:
 	void onstart();

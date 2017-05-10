@@ -297,6 +297,11 @@ glm::mat4 TGraphicEngine::getView()
 	return camaraActiva->getView();
 }
 
+glm::mat4 TGraphicEngine::getProjection()
+{
+	if(camaraActiva != nullptr)
+		return camaraActiva->getProjectionMatrix();
+}
 
 
 void TGraphicEngine::draw(double time)
@@ -399,7 +404,7 @@ void TGraphicEngine::resize_callback(GLFWwindow * window, int width, int height)
 void TGraphicEngine::mouse_callback(GLFWwindow * window, double xpos, double ypos)
 {
 	TGraphicEngine* win_app = getTGraphicEngineApp(window);
-	win_app->getMovimentHandler()->onMouse(window, xpos, ypos);
+	win_app->getMovimentHandler()->onMouse(window, xpos, ypos, win_app);
 }
 
 inline TGraphicEngine * TGraphicEngine::getTGraphicEngineApp(GLFWwindow * window)
