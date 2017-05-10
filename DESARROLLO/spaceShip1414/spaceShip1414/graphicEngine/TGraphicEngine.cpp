@@ -118,7 +118,7 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 	glfwSetKeyCallback(window, key_callback);
 	glfwSetWindowCloseCallback(window, close_callback);
 	glfwSetFramebufferSizeCallback(window, resize_callback);
-	glfwSetCursorPosCallback(window, mouse_callback);
+
 
 
 
@@ -155,10 +155,10 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		deltaTime = (currentFrame - last);
 		last = currentFrame;
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+		glEnable(GL_CULL_FACE);
 		world->stepBox2D(1.0/60.0, 6, 2);
-		world->getWorldBox2D()->DrawDebugData();
-		m_gui.draw();
+		//world->getWorldBox2D()->DrawDebugData();
+	//	m_gui.draw();
 		world->clearForcesBox2D();
 		//drawBox(world, 5, 50, 2, 1);
 		move->checkKeys(window);
@@ -167,6 +167,7 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		esce->actualizarEstadoPuerta();
 		glfwPollEvents();
 		draw(getLastTime());
+		glfwSetCursorPosCallback(window, mouse_callback);
 		glfwSwapBuffers(window);
 		
 	
