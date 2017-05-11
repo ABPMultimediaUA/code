@@ -130,7 +130,11 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 	m_gui.init("gui");
 	m_gui.loadScheme("TaharezLook.scheme");
 	m_gui.setFont("DejaVuSans-10");
-	m_gui.createWidget("TaharezLook/FrameWindow", glm::vec4(0.5f,0.5,0.1f,0.05f),glm::vec4(0.0f),"TestButton");
+	CEGUI::PushButton* caca = static_cast<CEGUI::PushButton*>(m_gui.createWidget("TaharezLook/FrameWindow", 
+		glm::vec4(0.5f,0.5,0.3f,0.3f),glm::vec4(0.0f),"TestButton"));
+	caca->setText("MUERETE");
+	m_gui.createMenu();
+
 
 	glfwSetWindowUserPointer(window, this);
 
@@ -150,15 +154,16 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 	while (!glfwWindowShouldClose(window))
 	{
 		
-
+		
 		currentFrame = glfwGetTime();
 		deltaTime = (currentFrame - last);
 		last = currentFrame;
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glEnable(GL_CULL_FACE);
+		m_gui.draw();
 		world->stepBox2D(1.0/60.0, 6, 2);
 		//world->getWorldBox2D()->DrawDebugData();
-	//	m_gui.draw();
+		
 		world->clearForcesBox2D();
 		//drawBox(world, 5, 50, 2, 1);
 		move->checkKeys(window);
