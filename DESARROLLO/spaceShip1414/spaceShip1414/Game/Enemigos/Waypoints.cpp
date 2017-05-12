@@ -45,7 +45,7 @@ void Waypoints::MuestraPuntos() {
 
 void Waypoints::creaPuntos(std::string nombre, glm::vec3 posicion) {
 
-	Nodo *way = new Nodo(nombre, posicion, puntos.size());
+	Nodo *way = new Nodo(nombre, posicion,static_cast<int>(puntos.size()));
 
     puntos.push_back(way);
  
@@ -184,5 +184,5 @@ Nodo* Waypoints::getNodoX(int x) {
 
 int Waypoints::getTamMapa()
 {
-	return puntos.size();
+	return static_cast<int>(puntos.size());
 }

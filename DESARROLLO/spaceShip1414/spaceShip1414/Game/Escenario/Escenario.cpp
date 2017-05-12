@@ -15,7 +15,10 @@
 #include <time.h>
 #include "Escenario.h"
 #include "Pared.h"
-#include "../Fisicas/Mundo.h"
+#ifndef MUNDO_GUARD
+#define MUNDO_GUARD
+#include "../Fisicas\Mundo.h"
+#endif
 #include "../Camara.h"
 #include "Puerta.h"
 #include "readJson.h"
@@ -34,8 +37,10 @@
 #include "ObjConsumables\TiposDeMunicion\MunicionEscopeta.h"
 #include "ObjConsumables\TiposDeMunicion\MunicionPistola.h"
 #include "ObjConsumables\TiposDeMunicion\MunicionSubfusil.h"*/
-#include "../Fisicas/Entity2D.h"
-
+#ifndef ENTITY2D_GUARD
+#define ENTITY2D_GUARD
+#include "../Fisicas\Entity2D.h"
+#endif
 
 
 Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m, Camara *c /*,b2World *world, Juego* game*/) {
@@ -46,7 +51,7 @@ Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m, Camara *c /*,b2World *
 	mundo = m;
 	cam = c;
 	//mundo = world;
-	srand(time(NULL));
+	srand(static_cast<unsigned int>(time(NULL)));
 	entity = new Entity2D(m->getWorldBox2D());
 	//jue = game;
 	//pers = new Personaje(smgr, driver, world, game);
@@ -173,7 +178,7 @@ void Escenario::dibujarEscenario() {
 	Waypoints *zona2 = new Waypoints();
 	Waypoints *zona3 = new Waypoints();
 	Waypoints *zona4 = new Waypoints();*/
-	TTransform *transfRM1 = engine->crearTransform();
+	/*TTransform *transfRM1 = engine->crearTransform();
 	TTransform *transfEM1 = engine->crearTransform();
 	TTransform *transfTM1 = engine->crearTransform();
 	TNodo* nodoTransfRM1;
@@ -181,7 +186,7 @@ void Escenario::dibujarEscenario() {
 	TNodo* nodoTransfTM1;
 	TNodo* nodoMalla1;
 	TNodo* paredTM;
-	TNodo* paredes;
+	TNodo* paredes;*/
 	float tx, ty, tz, rx, ry, rz, ex, ey, ez;
 
 
@@ -195,17 +200,17 @@ void Escenario::dibujarEscenario() {
 
 					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+						tx = static_cast<float>((((*N).position.x + (*T).position.x + (*I).position.x)));
+						ty = static_cast<float>((((*N).position.y + (*T).position.y + (*I).position.y)));
+						tz = static_cast<float>((((*N).position.z + (*T).position.z + (*I).position.z)));
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+						rx = static_cast<float>((((*N).rotation.x + (*T).rotation.x + (*I).rotation.x)));
+						ry = static_cast<float>((((*N).rotation.y + (*T).rotation.y + (*I).rotation.y)));
+						rz = static_cast<float>((((*N).rotation.z + (*T).rotation.z + (*I).rotation.z)));
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+						ex = static_cast<float>((((*N).escala.x * (*T).escala.x * (*I).escala.x)));
+						ey = static_cast<float>((((*N).escala.y * (*T).escala.y * (*I).escala.y)));
+						ez = static_cast<float>((((*N).escala.z * (*T).escala.z * (*I).escala.z)));
 					
 
 						if((*N).nombre == "Puerta-CERRADA") {
@@ -259,17 +264,17 @@ void Escenario::dibujarEscenario() {
 				if ((*T).nombre == "Modelo") {
 							std::cout << "entra" << std::endl;
 
-						tx = ((*T).position.x + (*I).position.x);
-						ty = ((*T).position.y + (*I).position.y);
-						tz = ((*T).position.z + (*I).position.z);
+						tx = static_cast<float>(((*T).position.x + (*I).position.x));
+						ty = static_cast<float>(((*T).position.y + (*I).position.y));
+						tz = static_cast<float>(((*T).position.z + (*I).position.z));
 
-						rx = ((*T).rotation.x + (*I).rotation.x);
-						ry = ((*T).rotation.y + (*I).rotation.y);
-						rz = ((*T).rotation.z + (*I).rotation.z);
+						rx = static_cast<float>(((*T).rotation.x + (*I).rotation.x));
+						ry = static_cast<float>(((*T).rotation.y + (*I).rotation.y));
+						rz = static_cast<float>(((*T).rotation.z + (*I).rotation.z));
 
-						ex = ((*T).escala.x * (*I).escala.x);
-						ey = ((*T).escala.y * (*I).escala.y);
-						ez = ((*T).escala.z * (*I).escala.z);
+						ex = static_cast<float>(((*T).escala.x * (*I).escala.x));
+						ey = static_cast<float>(((*T).escala.y * (*I).escala.y));
+						ez = static_cast<float>(((*T).escala.z * (*I).escala.z));
 
 						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),
@@ -283,17 +288,17 @@ void Escenario::dibujarEscenario() {
 					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 						
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+						tx = static_cast<float>(((*N).position.x + (*T).position.x + (*I).position.x));
+						ty = static_cast<float>(((*N).position.y + (*T).position.y + (*I).position.y));
+						tz = static_cast<float>(((*N).position.z + (*T).position.z + (*I).position.z));
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+						rx = static_cast<float>(((*N).rotation.x + (*T).rotation.x + (*I).rotation.x));
+						ry = static_cast<float>(((*N).rotation.y + (*T).rotation.y + (*I).rotation.y));
+						rz = static_cast<float>(((*N).rotation.z + (*T).rotation.z + (*I).rotation.z));
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+						ex = static_cast<float>(((*N).escala.x * (*T).escala.x * (*I).escala.x));
+						ey = static_cast<float>(((*N).escala.y * (*T).escala.y * (*I).escala.y));
+						ez = static_cast<float>(((*N).escala.z * (*T).escala.z * (*I).escala.z));
 
 						Pared * wall = new Pared(engine, glm::vec3(tx*2,ty*2,-tz*2),
 							glm::vec3(rx,ry,-rz),
@@ -322,17 +327,17 @@ void Escenario::dibujarEscenario() {
 
 
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+						tx = static_cast<float>(((*N).position.x + (*T).position.x + (*I).position.x));
+						ty = static_cast<float>(((*N).position.y + (*T).position.y + (*I).position.y));
+						tz = static_cast<float>(((*N).position.z + (*T).position.z + (*I).position.z));
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+						rx = static_cast<float>(((*N).rotation.x + (*T).rotation.x + (*I).rotation.x));
+						ry = static_cast<float>(((*N).rotation.y + (*T).rotation.y + (*I).rotation.y));
+						rz = static_cast<float>(((*N).rotation.z + (*T).rotation.z + (*I).rotation.z));
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+						ex = static_cast<float>(((*N).escala.x * (*T).escala.x * (*I).escala.x));
+						ey = static_cast<float>(((*N).escala.y * (*T).escala.y * (*I).escala.y));
+						ez = static_cast<float>(((*N).escala.z * (*T).escala.z * (*I).escala.z));
 
 						Luces * luz = new Luces(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							glm::vec3(rx, ry, -rz),

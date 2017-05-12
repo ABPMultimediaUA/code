@@ -40,7 +40,7 @@ Entity2D::Entity2D(b2World * world)
 {
 
 	bodyDef.type = b2_staticBody;
-	bodyDef.position.Set(-99999999, -99999999);
+	bodyDef.position.Set(static_cast<float>(-99999999), static_cast<float>(-99999999));
 	bodyShape.SetAsBox(5.0f, 5.0f);
 	md.mass = 50.0f;
 	md.center = b2Vec2(3, 3);
@@ -68,9 +68,9 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
     bodyDef.position.Set(pos.x, pos.z);
     bodyShape.SetAsBox(2, 2);
 
-	escalaFixture.x = 0.05;
-	escalaFixture.y = 0.05;
-	escalaFixture.z = 0.05;
+	escalaFixture.x = 0.05f;
+	escalaFixture.y = 0.05f;
+	escalaFixture.z = 0.05f;
 
 
     md.mass = 1.0f;
@@ -389,7 +389,6 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
 
     RayCastCallback *callback = new RayCastCallback();
     llamarCallBack(callback, inicio, fin);
-	float dis;
 	normal = callback->getNormal();
 	puntoDeChoque = callback->getPuntoDeChoque();
 
@@ -397,28 +396,16 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
 		std::cout << "----- RESULT: " << callback->getDistancia() + 1.0f << std::endl;
 		return callback->getDistancia();
 	}
-
-		
-
-
 	else if(callback->getEntidadChocada() != 1) {
-
 		return 0.0f;
 	}
-
-
-
-	
-
 	else {
 		return callback->getDistancia();
 	}
-
 }
 
 void Entity2D::llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin) {
     body->GetWorld()->RayCast(callback, inicio, fin);
-
 }
 
 void Entity2D::destruirFixture() {
@@ -461,7 +448,7 @@ b2Body* Entity2D::getCuerpo2D() {
 }
 
 void Entity2D::getRotarDireccion() {
-	float ang = -atan2f(body->GetPosition().x, body->GetPosition().y) * 180 / 3.14;
+	float ang = -atan2f(body->GetPosition().x, body->GetPosition().y) * 180 / 3.14f;
 	//direccion->setRotation(vector3df(0,ang,0));
 	
 }

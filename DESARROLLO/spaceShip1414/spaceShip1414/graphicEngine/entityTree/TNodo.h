@@ -20,7 +20,7 @@ public:
 	TNodo* getPadre();
 	int getID();
 	void draw();
-	void draw(openGLShader & s, const glm::mat4 & w, const glm::mat4 & pro, Mundo * world);
+	void draw(openGLShader & s, const glm::mat4 & w, const glm::mat4 & pro);
 private:
 	static int id;
 	TEntidad* entidad;

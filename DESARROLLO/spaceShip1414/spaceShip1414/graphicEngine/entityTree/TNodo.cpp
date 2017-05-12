@@ -132,14 +132,14 @@ void TNodo::draw()
 	}
 }
 
-void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro, Mundo * world)
+void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro)
 {
 	if (this->entidad) {
 		this->entidad->beginDraw(s,w,pro);
 	}
 	for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {
 		
-		(*it)->draw(s, w, pro, world);
+		(*it)->draw(s, w, pro);
 
 	}
 	if (this->entidad) {

@@ -41,32 +41,47 @@ public:
 	TTransform* crearTransform();
 	TCamara* crearCamara(bool, float, float, float, float, float, float, bool a = false);
 	TCamara* crearCamaraS(bool, float, float, float, float, float, float, bool a = false);
-	TCamara* crearCamara();
+	TCamara* crearCamara(bool, float, float, float, float, bool a = false);
+	TCamara* crearCamaraS(bool, float, float, float, float, bool a = false);
+	TCamara* crearCamara(float fovy, float aspect, float nearr, float farr);
 	TLuz* crearLuz(float, float, float, bool a = false);
 	TMalla* crearMalla(std::string);
 	TNodo* nodoRaiz();
 	GLFWwindow* getGLFWwindow();
 	bool init(std::string, int width = 1024, int height = 720, bool full_screen = false);
-	void run(Mundo * world, Escenario*);
-	void drawBox(Mundo * world, double x, double y, int w, int h);
-	void drawGround(Mundo * world);
+	void run();
 	void info();
 	void addRegistroLuz(TNodo*);
 	void addRegistroCamara(TNodo*);
 	movimentHandler* getMovimentHandler();
 	void setPlayerMove(player*);
-	void setCameraMove(Camara * j);
 	double getLastTime();
-	double getDT();
 	void setLastTime(double);
-	TCamara * getCamaraActiva();
 	void cambiarCamaraActiva(char);
-	glm::vec3 moverCamara();
+	TNodo * addMalla(std::string path = "", TNodo * nodoPadre = nullptr);
+	TNodo * addCamara(char tipo = 0, bool per = false, bool act = false, TNodo * nodoPadre = nullptr, float x = 45.0f, float y = 0.1f, float z = 1000.0f, float a = 0.0f, float b = 10.0f, float c = 10.0f);
+	TNodo * addCamaraLibre(bool activa = false);
+	TNodo * addCamaraParalelaFija(bool activa = false);
+	TNodo * addCamaraParalelaSeguidora(bool activa = false, TNodo * nodoPadre = nullptr);
+	TNodo * addCamaraPerspectivaFija(bool activa = false);
+	TNodo * addCamaraPerspectivaSeguidora(bool activa = false, TNodo * nodoPadre = nullptr);
+	TNodo * addLuz(TNodo * nodoPadre = nullptr);
+	void trasladar(TNodo *, float, float, float);
+	void rotar(TNodo *, float, float, float, float);
+	void rotarYPR(TNodo *, float, float, float);
+	void escalar(TNodo *, float, float, float);
+	void resetTransform(TNodo *, char);
+	TNodo * getPadreX(TNodo *, char p = 0);
+	glm::mat4 getInverseProjectionCamaraActive();
+	
+	void setCamaraMove(Camara * c);
 	glm::mat4 getView();
-
 	glm::mat4 getProjection();
 
-
+	void drawBox(Mundo * world, double x, double y, int w, int h);
+	void drawGround(Mundo * world);
+	double getDT();
+	void run(Mundo * world, Escenario*);
 private:
 	void onstart();
 	void onstop();

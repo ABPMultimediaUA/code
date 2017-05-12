@@ -4,44 +4,49 @@
 #include "graphicEngine\entityTree\TNodo.h"
 #include "graphicEngine\entityTree\TMalla.h"
 #include "graphicEngine\entityTree\TCamara.h"
+#ifndef ENTITY2D_GUARD
+#define ENTITY2D_GUARD
 #include "Fisicas\Entity2D.h"
+#endif
+#ifndef MUNDO_GUARD
+#define MUNDO_GUARD
 #include "Fisicas\Mundo.h"
-
+#endif
 #include <iostream>
 
 player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 100.0f }, yaw{ 0 }, pitch{ 0 }
 {
-	translation = motorApp->crearTransform();
-	rotation = motorApp->crearTransform();
-	scale = motorApp->crearTransform();
-	translation->trasladar(0,0,0);
-	rotation->rotar(0.0f, 1.0f, 0.0f, 0.0f);
-	rotation->rotar(0.0f, 0.0f, 1.0f, 0.0f);
-	rotation->rotar(0.0f, 0.0f, 0.0f, 1.0f);
-	scale->escalar(0.7,0.7,0.7);
-
+	nodo = motorApp->addMalla("resourse/models/Nanosuit/nanosuit.obj");
+	motorApp->escalar(nodo, 0.7f, 0.7f, 0.7f);
+	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.1f);
 	pos = glm::vec3(0, 0, 0);
 	rot = glm::vec3(0, 0, 0);
 	escale = glm::vec3(2, 7, 2);
 
-
-
-	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
-	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
-	nodoTransfTM = motorApp->crearNodo(nodoTransfEM, translation);
-
-	TNodo* nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Nanosuit/nanosuit.obj"));
-
-	//fis = new MallaFisica(motorApp, pos, rot, escale, nodoMalla);
-
 	entity = new Entity2D(m->getWorldBox2D(), glm::vec3(0,0,0), rot, this);
-	/*entity->getCuerpo2D()->SetTransform(b2Vec2(0, 0), 0);
-	glm::vec3 pos2D(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);*/
-
+	
 	motorApp->setPlayerMove(this);
 }
 
+void player::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
+{
+	motorApp->rotar(nodo, a, x, y, z);
+}
 
+void player::rotationYPR(TGraphicEngine * motorApp, float y, float p, float r)
+{
+	motorApp->rotarYPR(nodo, y, p, r);
+}
+
+void player::scale(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->escalar(nodo, x, y, z);
+}
+
+void player::translation(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->trasladar(nodo, x, y, z);
+}
 
 
 player::~player()
@@ -66,20 +71,6 @@ float player::getPitch()
 	return pitch;
 }
 
-TTransform * player::Rotation()
-{
-	return rotation;
-}
-
-TTransform * player::Scale()
-{
-	return scale;
-}
-
-TTransform * player::Translation()
-{
-	return translation;
-}
 
 void player::setVelocity(float v)
 {
@@ -202,7 +193,7 @@ void player::actualizarFisicas(int n, double delta)
 	//std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
 }
 
-TNodo * player::getNodoTrans()
+TNodo * player::getNodo()
 {
-	return nodoTransfTM;
+	return nodo;
 }

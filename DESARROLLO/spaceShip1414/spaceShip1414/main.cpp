@@ -20,7 +20,7 @@ const GLuint WIDTH = 1366, HEIGHT = 768;
 
 int main() {
 	TGraphicEngine motorApp;
-	if (motorApp.init("Motor Grafico SpaceShip 1414", WIDTH, HEIGHT))
+	if (motorApp.init("SpaceShip 1414", WIDTH, HEIGHT))
 	{
 		motorApp.info();
 		Mundo * world = new Mundo();
@@ -29,10 +29,10 @@ int main() {
 		//camara
 		player jugador(&motorApp, world);
 
-		Camara cam(&motorApp,jugador.getNodoTrans());
-		cam.Translation()->trasladar(0, 10, 40);
+		Camara cam(&motorApp,1,true,&jugador);
+		/*cam.Translation()->trasladar(0, 10, 40);
 		cam.setPitch(-30);
-		cam.Rotation()->rotarYPR(0,cam.getPitch(),0);
+		cam.Rotation()->rotarYPR(0,cam.getPitch(),0);*/
 
 
 	/*	Camara cam2(&motorApp);
@@ -41,9 +41,9 @@ int main() {
 		cam2.Rotation()->rotarYPR(0, cam.getPitch(), 0);*/
 		
 
-		Camara cam2(&motorApp);
-		cam2.Rotation()->rotar(80.0f, 1.0f, 0.0f, 0.0f);
-		cam2.Translation()->trasladar(0, 0, 100);
+		Camara cam2(&motorApp, 0);
+		/*cam2.Rotation()->rotar(80.0f, 1.0f, 0.0f, 0.0f);
+		cam2.Translation()->trasladar(0, 0, 100);*/
 
 
 

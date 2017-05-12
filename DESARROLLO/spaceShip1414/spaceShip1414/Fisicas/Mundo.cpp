@@ -38,7 +38,7 @@ b2World * Mundo::getWorldBox2D()
 
 void Mundo::stepBox2D(double dt, int t, int s)
 {
-	world->Step(dt, t, s);
+	world->Step(static_cast<float>(dt), t, s);
 }
 
 void Mundo::clearForcesBox2D()

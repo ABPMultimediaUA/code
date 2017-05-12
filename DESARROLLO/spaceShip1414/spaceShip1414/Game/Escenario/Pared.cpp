@@ -1,6 +1,12 @@
 #include "Pared.h"
+#ifndef ENTITY2D_GUARD
+#define ENTITY2D_GUARD
 #include "../Fisicas\Entity2D.h"
+#endif
+#ifndef MUNDO_GUARD
+#define MUNDO_GUARD
 #include "../Fisicas\Mundo.h"
+#endif
 #include "../graphicEngine\TGraphicEngine.h"
 #include "../graphicEngine\entityTree\TTransform.h"
 #include "../graphicEngine\entityTree\TNodo.h"

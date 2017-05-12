@@ -24,7 +24,7 @@ public:
 	void setMouseSensitive(float);
 	void setPlayer(player*);
 	void setCamara(Camara * cam);
-	void checkKeys(GLFWwindow *);
+	void checkKeys(GLFWwindow *, TGraphicEngine*);
 private:
 	//false = camara : true = player
 	bool activo;
