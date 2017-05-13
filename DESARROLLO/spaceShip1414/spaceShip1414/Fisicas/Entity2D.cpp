@@ -26,6 +26,7 @@
 
 #define FILTRO_PUERTAABIERTA 15
 
+#define DEGTORAD 180/3.14
 
 
 //hacer diferentes constructores para los distintos objetos
@@ -115,6 +116,7 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     bodyDef.type = b2_staticBody;
 
     bodyDef.position.Set(pos.x, -pos.z);
+	//bodyDef.angle = rot.y * 180 / 3.14;
 	int scale = 1;
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
@@ -139,6 +141,13 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     body -> CreateFixture(&bodyShape, 1.0f);
     body->SetUserData(this);
 
+	if(rot.y > 180 * DEGTORAD)
+		body->SetTransform(body->GetPosition(), rot.y - 360 * DEGTORAD);
+
+	else if(rot.y < -180 * DEGTORAD) {
+		body->SetTransform(body->GetPosition(), rot.y + 360 * DEGTORAD);
+
+	}
     filtro.groupIndex = FILTRO_PARED;
     body->GetFixtureList()->SetFilterData(filtro);
 	live = true;
