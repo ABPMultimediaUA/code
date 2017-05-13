@@ -1,4 +1,6 @@
 #include "GUI.h"
+#include <iostream>
+
 
 CEGUI::OpenGL3Renderer* GUI::m_renderer = nullptr;
 
@@ -67,9 +69,10 @@ void GUI::setWidgetDestRect(CEGUI::Window* widget, const glm::vec4& destRectPerc
 void GUI::createMenu()
 {
 	
-	loadScheme("AlfiskoSkin.scheme");
-	//setFont("DejaVuSans-10");
-	CEGUI::PushButton* NewGame = static_cast<CEGUI::PushButton*>(createWidget("AlfiskoSkin/Button",
+	loadScheme("WindowsLook.scheme");
+
+	setFont("DejaVuSans-12");
+	CEGUI::PushButton* NewGame = static_cast<CEGUI::PushButton*>(createWidget("WindowsLook/Button",
 		glm::vec4(0.2,0.2,0.2,0.05)
 		, glm::vec4(0.0f), "NewGame"));
 	//m_root->addChild(NewGame);
@@ -77,9 +80,11 @@ void GUI::createMenu()
 	//NewGame->setSize(CEGUI::USize(CEGUI::UDim(0.4f, 0.0f), CEGUI::UDim(0.2f, 0.0f)));
 	NewGame->setText("New Game");
 
+	//std::cout << NewGame->getText()<<std::endl;
 	/*NewGame->setProperty("NormalImage", "set:Buttons image:ButtonUp");
 	NewGame->setProperty("HoverImage", "set:Buttons image:ButtonDown");
 	NewGame->setProperty("PushedImage", "set:Buttons image:ButtonDown");*/
+	loadScheme("AlfiskoSkin.scheme");
 
 	CEGUI::PushButton* LoadGame = static_cast<CEGUI::PushButton*>(createWidget("AlfiskoSkin/FrameWindow", 
 		glm::vec4(0.2, 0.4, 0.2, 0.05)
@@ -105,7 +110,7 @@ void GUI::createMenu()
 	//QuitGame->setProperty("PushedImage", "set:Buttons image:ButtonDown");
 
 	//mGUIsystem->setGUISheet(m_root);
-
+	
 }
 
 void GUI::setFont(const std::string& fontFile) {

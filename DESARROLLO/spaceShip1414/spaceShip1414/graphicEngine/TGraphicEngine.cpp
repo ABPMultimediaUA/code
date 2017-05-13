@@ -160,7 +160,7 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		last = currentFrame;
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glEnable(GL_CULL_FACE);
-		//m_gui.draw();
+		m_gui.draw();
 		world->stepBox2D(1.0/60.0, 6, 2);
 		world->getWorldBox2D()->DrawDebugData();
 		
