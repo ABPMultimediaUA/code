@@ -567,9 +567,9 @@
           "components": [
             {
               "localPosition": [
-                -264.72,
-                0.0,
-                -13.67
+                -23.33,
+                6.0,
+                1.43
               ],
               "localRotation": [
                 0.0,
@@ -577,7 +577,7 @@
                 0.0
               ],
               "localScale": [
-                1.9,
+                1.8,
                 0.5,
                 0.7
               ],
@@ -588,7 +588,7 @@
           ],
           "children": [
             {
-              "name": "polySurface1165_polySurface1161",
+              "name": "polySurface1165",
               "components": [
                 {
                   "localPosition": [
@@ -611,7 +611,7 @@
                   "type": "Transform"
                 },
                 {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1165_polySurface1161",
+                  "mesh": "pasillo_salaespera-hangar_polySurface1165",
                   "enabled": true,
                   "castShadows": true,
                   "receiveShadows": true,
@@ -623,136 +623,7 @@
                     0.0
                   ],
                   "materials": [
-                    "polySurface1165_polySurface1161Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1188",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1188",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1188Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1189",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1189",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1189Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1190",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1190",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1190Mat"
+                    "initialShadingGroup"
                   ],
                   "type": "MeshRenderer"
                 }
@@ -770,7 +641,7 @@
           "localPosition": [
             0.0,
             0.0,
-            -0.33
+            0.0
           ],
           "localRotation": [
             0.0,
@@ -1785,9 +1656,9 @@
           "components": [
             {
               "localPosition": [
-                -88.2,
                 0.0,
-                -13.2
+                6.0,
+                0.0
               ],
               "localRotation": [
                 0.0,
@@ -1806,7 +1677,7 @@
           ],
           "children": [
             {
-              "name": "polySurface1792",
+              "name": "polySurface2110",
               "components": [
                 {
                   "localPosition": [
@@ -1831,7 +1702,7 @@
               ],
               "children": [
                 {
-                  "name": "polySurface1792_MeshPart0",
+                  "name": "polySurface2110_MeshPart0",
                   "components": [
                     {
                       "localPosition": [
@@ -1854,7 +1725,55 @@
                       "type": "Transform"
                     },
                     {
-                      "mesh": "hangar_polySurface1792_MeshPart0",
+                      "mesh": "hangar_polySurface2110_MeshPart0",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "hangar_VigasSG1",
+                        "initialShadingGroup",
+                        "hangar_VigasFBXASC046001SG1",
+                        "hangar_ParteFBXASC0321FBXASC046003SG",
+                        "hangar_ParteFBXASC0321FBXASC046004SG",
+                        "hangar_ParedFBXASC045SupFBXASC0453FBXASC046003SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "name": "polySurface2110_MeshPart1",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "hangar_polySurface2110_MeshPart1",
                       "enabled": true,
                       "castShadows": true,
                       "receiveShadows": true,
@@ -1867,9 +1786,8 @@
                       ],
                       "materials": [
                         "initialShadingGroup",
-                        "hangar_VigasSG",
                         "hangar_VigasSG1",
-                        "hangar_ParedFBXASC045SupFBXASC0451SG"
+                        "hangar_VigasSG"
                       ],
                       "type": "MeshRenderer"
                     }
@@ -1877,7 +1795,7 @@
                   "children": []
                 },
                 {
-                  "name": "polySurface1792_MeshPart1",
+                  "name": "polySurface2110_MeshPart2",
                   "components": [
                     {
                       "localPosition": [
@@ -1900,7 +1818,51 @@
                       "type": "Transform"
                     },
                     {
-                      "mesh": "hangar_polySurface1792_MeshPart1",
+                      "mesh": "hangar_polySurface2110_MeshPart2",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "initialShadingGroup",
+                        "hangar_ParedFBXASC045SupFBXASC0451SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "name": "polySurface2110_MeshPart3",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "hangar_polySurface2110_MeshPart3",
                       "enabled": true,
                       "castShadows": true,
                       "receiveShadows": true,
@@ -1915,128 +1877,13 @@
                         "initialShadingGroup",
                         "hangar_VigasSG",
                         "hangar_ParedFBXASC045SupFBXASC0453SG",
-                        "hangar_ParedFBXASC045SupFBXASC0453FBXASC046001SG"
-                      ],
-                      "type": "MeshRenderer"
-                    }
-                  ],
-                  "children": []
-                }
-              ]
-            },
-            {
-              "name": "polySurface1796",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "hangar_polySurface1796",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "hangar_VigasSG",
-                    "hangar_VigasSG1",
-                    "initialShadingGroup",
-                    "hangar_VigasFBXASC046001SG",
-                    "hangar_VigasFBXASC046001SG1",
-                    "hangar_ParteFBXASC0321FBXASC046000SG",
-                    "hangar_ParteFBXASC0321FBXASC046002SG",
-                    "hangar_ParedFBXASC045SupFBXASC0453FBXASC046002SG"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1813",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                }
-              ],
-              "children": [
-                {
-                  "name": "polySurface1813_MeshPart0",
-                  "components": [
-                    {
-                      "localPosition": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
-                      "localRotation": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
-                      "localScale": [
-                        1.0,
-                        1.0,
-                        1.0
-                      ],
-                      "name": null,
-                      "parentName": null,
-                      "type": "Transform"
-                    },
-                    {
-                      "mesh": "hangar_polySurface1813_MeshPart0",
-                      "enabled": true,
-                      "castShadows": true,
-                      "receiveShadows": true,
-                      "lightmapIndex": -1,
-                      "lightmapTilingOffset": [
-                        1.0,
-                        1.0,
-                        0.0,
-                        0.0
-                      ],
-                      "materials": [
+                        "hangar_ParedFBXASC045SupFBXASC0453FBXASC046001SG",
+                        "hangar_VigasFBXASC046001SG",
+                        "hangar_VigasFBXASC046001SG1",
                         "hangar_VigasSG1",
-                        "initialShadingGroup"
+                        "hangar_ParteFBXASC0321FBXASC046000SG",
+                        "hangar_ParteFBXASC0321FBXASC046002SG",
+                        "hangar_ParedFBXASC045SupFBXASC0453FBXASC046002SG"
                       ],
                       "type": "MeshRenderer"
                     }
@@ -2044,7 +1891,7 @@
                   "children": []
                 },
                 {
-                  "name": "polySurface1813_MeshPart1",
+                  "name": "polySurface2110_MeshPart4",
                   "components": [
                     {
                       "localPosition": [
@@ -2067,7 +1914,7 @@
                       "type": "Transform"
                     },
                     {
-                      "mesh": "hangar_polySurface1813_MeshPart1",
+                      "mesh": "hangar_polySurface2110_MeshPart4",
                       "enabled": true,
                       "castShadows": true,
                       "receiveShadows": true,
@@ -2079,8 +1926,11 @@
                         0.0
                       ],
                       "materials": [
+                        "hangar_ParedFBXASC045SupFBXASC0453FBXASC046002SG",
                         "initialShadingGroup",
-                        "hangar_VigasSG1"
+                        "hangar_VigasSG1",
+                        "hangar_ParteFBXASC0321FBXASC046003SG",
+                        "hangar_ParteFBXASC0321FBXASC046000SG"
                       ],
                       "type": "MeshRenderer"
                     }
@@ -2088,145 +1938,6 @@
                   "children": []
                 }
               ]
-            },
-            {
-              "name": "polySurface1829",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "hangar_polySurface1829",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "hangar_VigasSG1",
-                    "initialShadingGroup",
-                    "hangar_VigasFBXASC046001SG1",
-                    "hangar_ParteFBXASC0321FBXASC046003SG",
-                    "hangar_ParteFBXASC0321FBXASC046004SG",
-                    "hangar_ParedFBXASC045SupFBXASC0453FBXASC046003SG"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface2108",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "hangar_polySurface2108",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "hangar_VigasFBXASC046001SG",
-                    "initialShadingGroup",
-                    "hangar_VigasSG",
-                    "hangar_ParedFBXASC045SupFBXASC0453SG",
-                    "hangar_ParedFBXASC045SupFBXASC0453FBXASC046001SG",
-                    "hangar_VigasFBXASC046001SG1"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "pPlane3",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "hangar_pPlane3",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "initialShadingGroup"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
             }
           ]
         }
@@ -2708,13 +2419,13 @@
           "components": [
             {
               "localPosition": [
-                -88.432,
-                0.0,
-                25.367
+                -2.08,
+                7.0,
+                -74.46
               ],
               "localRotation": [
                 0.0,
-                180.203033,
+                179.9801,
                 0.0
               ],
               "localScale": [
@@ -2752,7 +2463,7 @@
                   "type": "Transform"
                 },
                 {
-                  "mesh": "almacen_1_polySurface1164",
+                  "mesh": "almacen_grande_abajo_polySurface1164",
                   "enabled": true,
                   "castShadows": true,
                   "receiveShadows": true,
@@ -2830,7 +2541,7 @@
               "components": [
                 {
                   "localPosition": [
-                    3.8,
+                    -0.89,
                     3.0,
                     29.2
                   ],
@@ -2886,7 +2597,7 @@
               "components": [
                 {
                   "localPosition": [
-                    28.4,
+                    23.71,
                     3.0,
                     29.6
                   ],
@@ -2942,7 +2653,7 @@
               "components": [
                 {
                   "localPosition": [
-                    15.9,
+                    11.21,
                     3.0,
                     38.9
                   ],
@@ -2998,7 +2709,7 @@
               "components": [
                 {
                   "localPosition": [
-                    21.7,
+                    17.01,
                     3.0,
                     21.0
                   ],
@@ -3139,9 +2850,9 @@
           "components": [
             {
               "localPosition": [
-                -82.2,
-                0.0,
-                -11.37
+                11.68,
+                5.0,
+                29.9
               ],
               "localRotation": [
                 0.0,
@@ -3160,7 +2871,7 @@
           ],
           "children": [
             {
-              "name": "polySurface2191",
+              "name": "polySurface2193",
               "components": [
                 {
                   "localPosition": [
@@ -3183,7 +2894,7 @@
                   "type": "Transform"
                 },
                 {
-                  "mesh": "almacen_4_polySurface2191",
+                  "mesh": "almacen_peque_arriba_polySurface2193",
                   "enabled": true,
                   "castShadows": true,
                   "receiveShadows": true,
@@ -3825,7 +3536,7 @@
           "localPosition": [
             -7.7,
             0.0,
-            -20.9
+            -22.51
           ],
           "localRotation": [
             0.0,
@@ -3848,9 +3559,9 @@
           "components": [
             {
               "localPosition": [
-                -8.0,
+                -8.29,
                 0.0,
-                -44.0
+                -43.42
               ],
               "localRotation": [
                 0.0,
@@ -3985,9 +3696,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -14.27,
+                    -15.64,
                     3.0,
-                    -11.54
+                    -9.93
                   ],
                   "localRotation": [
                     0.0,
@@ -3995,7 +3706,7 @@
                     0.0
                   ],
                   "localScale": [
-                    16.7,
+                    19.5,
                     6.0,
                     1.0
                   ],
@@ -4769,9 +4480,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -6.08,
+                    -7.3,
                     3.0,
-                    -3.61
+                    -2.3
                   ],
                   "localRotation": [
                     0.0,
@@ -4779,7 +4490,7 @@
                     0.0
                   ],
                   "localScale": [
-                    15.2,
+                    17.9,
                     6.0,
                     1.0
                   ],
@@ -5524,9 +5235,9 @@
           "components": [
             {
               "localPosition": [
-                -68.9,
-                0.0,
-                8.0
+                -39.5,
+                5.0,
+                -38.8
               ],
               "localRotation": [
                 0.0,
@@ -5568,7 +5279,7 @@
                   "type": "Transform"
                 },
                 {
-                  "mesh": "pasillo_bajogenerador_polySurface1510",
+                  "mesh": "pasillos_inferiores_polySurface1510",
                   "enabled": true,
                   "castShadows": true,
                   "receiveShadows": true,
@@ -6314,9 +6025,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -109.5,
+                    -140.1,
                     3.0,
-                    41.0
+                    58.29
                   ],
                   "localRotation": [
                     0.0,
@@ -6324,7 +6035,7 @@
                     0.0
                   ],
                   "localScale": [
-                    23.0,
+                    41.3,
                     6.0,
                     1.0
                   ],
@@ -6370,9 +6081,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -109.5,
+                    -106.1,
                     3.0,
-                    13.0
+                    58.22
                   ],
                   "localRotation": [
                     0.0,
@@ -6380,7 +6091,7 @@
                     0.0
                   ],
                   "localScale": [
-                    23.0,
+                    6.7,
                     6.0,
                     1.0
                   ],
@@ -6426,9 +6137,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -121.5,
+                    -127.32,
                     3.0,
-                    35.5
+                    44.65
                   ],
                   "localRotation": [
                     0.0,
@@ -6438,7 +6149,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    12.0
+                    28.7
                   ],
                   "name": null,
                   "parentName": null,
@@ -6482,9 +6193,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -121.5,
+                    -127.31,
                     3.0,
-                    18.5
+                    15.63
                   ],
                   "localRotation": [
                     0.0,
@@ -6538,9 +6249,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -97.5,
+                    -160.88,
                     3.0,
-                    18.5
+                    16.57
                   ],
                   "localRotation": [
                     0.0,
@@ -6550,63 +6261,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    12.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Comisaria"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-6",
-              "components": [
-                {
-                  "localPosition": [
-                    -97.5,
-                    3.0,
-                    35.5
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    12.0
+                    14.2
                   ],
                   "name": null,
                   "parentName": null,
@@ -6650,9 +6305,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -96.5,
+                    -160.24,
                     3.0,
-                    35.5
+                    47.33
                   ],
                   "localRotation": [
                     0.0,
@@ -6662,63 +6317,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    12.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Comisaria"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-8",
-              "components": [
-                {
-                  "localPosition": [
-                    -96.5,
-                    3.0,
-                    18.5
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    12.0
+                    22.0
                   ],
                   "name": null,
                   "parentName": null,
@@ -6762,9 +6361,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -84.5,
+                    -131.43,
                     3.0,
-                    13.0
+                    11.03
                   ],
                   "localRotation": [
                     0.0,
@@ -6772,65 +6371,9 @@
                     0.0
                   ],
                   "localScale": [
-                    23.0,
+                    57.6,
                     6.0,
                     1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Comisaria"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-10",
-              "components": [
-                {
-                  "localPosition": [
-                    -72.5,
-                    3.0,
-                    17.5
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    10.0
                   ],
                   "name": null,
                   "parentName": null,
@@ -6874,9 +6417,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -72.5,
+                    -102.36,
                     3.0,
-                    36.5
+                    34.52
                   ],
                   "localRotation": [
                     0.0,
@@ -6886,7 +6429,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    10.0
+                    47.6
                   ],
                   "name": null,
                   "parentName": null,
@@ -6930,9 +6473,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -91.5,
+                    -121.91,
                     3.0,
-                    41.0
+                    44.91
                   ],
                   "localRotation": [
                     0.0,
@@ -6940,7 +6483,7 @@
                     0.0
                   ],
                   "localScale": [
-                    9.0,
+                    10.5,
                     6.0,
                     1.0
                   ],
@@ -6986,9 +6529,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -77.5,
+                    -106.53,
                     3.0,
-                    41.0
+                    44.91
                   ],
                   "localRotation": [
                     0.0,
@@ -7069,9 +6612,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -97.0,
-                    3.0,
-                    27.0
+                    -127.65,
+                    5.0,
+                    26.15
                   ],
                   "localRotation": [
                     0.0,
@@ -7121,69 +6664,13 @@
               "children": []
             },
             {
-              "name": "Puerta-2",
-              "components": [
-                {
-                  "localPosition": [
-                    -72.0,
-                    3.0,
-                    27.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    9.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Puerta_A2"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
               "name": "Puerta-3",
               "components": [
                 {
                   "localPosition": [
-                    -84.5,
-                    3.0,
-                    41.5
+                    -114.65,
+                    5.0,
+                    59.36
                   ],
                   "localRotation": [
                     0.0,
@@ -7367,6 +6854,77 @@
                     1.0
                   ],
                   "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Modelo",
+          "components": [
+            {
+              "localPosition": [
+                -131.45,
+                9.0,
+                34.4
+              ],
+              "localRotation": [
+                0.0,
+                180.0,
+                0.0
+              ],
+              "localScale": [
+                0.5,
+                0.7,
+                0.7
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "polySurface3095",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "comisaria-celda_polySurface3095",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup",
+                    "celda_cell021SG"
+                  ],
+                  "type": "MeshRenderer"
                 }
               ],
               "children": []
@@ -7907,9 +7465,9 @@
           "components": [
             {
               "localPosition": [
-                -83.72,
-                0.0,
-                31.01
+                11.61,
+                6.0,
+                -27.04
               ],
               "localRotation": [
                 0.0,
@@ -7919,7 +7477,7 @@
               "localScale": [
                 0.5,
                 0.5,
-                0.71
+                0.7
               ],
               "name": null,
               "parentName": null,
@@ -7951,7 +7509,7 @@
                   "type": "Transform"
                 },
                 {
-                  "mesh": "almacen_3_polySurface2129",
+                  "mesh": "almacen_peque_abajo_polySurface2129",
                   "enabled": true,
                   "castShadows": true,
                   "receiveShadows": true,
@@ -7977,19 +7535,19 @@
           "components": [
             {
               "localPosition": [
-                59.82,
-                0.0,
-                -17.46
+                -3.65,
+                4.99,
+                -32.86
               ],
               "localRotation": [
                 0.0,
-                0.0,
+                180.0,
                 0.0
               ],
               "localScale": [
+                0.66,
                 0.5,
-                0.5,
-                0.7
+                0.65
               ],
               "name": null,
               "parentName": null,
@@ -7998,7 +7556,7 @@
           ],
           "children": [
             {
-              "name": "polySurface1165_polySurface1161",
+              "name": "polySurface1165",
               "components": [
                 {
                   "localPosition": [
@@ -8021,7 +7579,7 @@
                   "type": "Transform"
                 },
                 {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1165_polySurface1161",
+                  "mesh": "pasillo_salaespera-hangar_polySurface1165",
                   "enabled": true,
                   "castShadows": true,
                   "receiveShadows": true,
@@ -8033,136 +7591,7 @@
                     0.0
                   ],
                   "materials": [
-                    "polySurface1165_polySurface1161Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1188",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1188",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1188Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1189",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1189",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1189Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1190",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1190",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1190Mat"
+                    "initialShadingGroup"
                   ],
                   "type": "MeshRenderer"
                 }
@@ -8178,9 +7607,9 @@
       "components": [
         {
           "localPosition": [
-            -8.7,
+            -8.22,
             0.0,
-            19.0
+            23.08
           ],
           "localRotation": [
             0.0,
@@ -9097,13 +8526,13 @@
           "components": [
             {
               "localPosition": [
-                -124.03,
-                0.0,
-                92.8
+                -50.4,
+                7.0,
+                50.0
               ],
               "localRotation": [
                 0.0,
-                270.0,
+                268.8986,
                 0.0
               ],
               "localScale": [
@@ -9289,9 +8718,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -96.0,
+                    -101.6,
                     3.0,
-                    12.0
+                    12.64
                   ],
                   "localRotation": [
                     0.0,
@@ -9299,7 +8728,7 @@
                     0.0
                   ],
                   "localScale": [
-                    54.0,
+                    118.4,
                     6.0,
                     1.0
                   ],
@@ -9345,9 +8774,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -96.0,
+                    -101.6,
                     3.0,
-                    2.0
+                    0.8
                   ],
                   "localRotation": [
                     0.0,
@@ -9355,7 +8784,7 @@
                     0.0
                   ],
                   "localScale": [
-                    54.0,
+                    118.4,
                     6.0,
                     1.0
                   ],
@@ -9401,7 +8830,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -122.3,
+                    -158.8,
                     3.0,
                     26.8
                   ],
@@ -9457,9 +8886,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -128.5,
+                    -165.1,
                     3.0,
-                    -10.4
+                    -8.6
                   ],
                   "localRotation": [
                     0.0,
@@ -9513,9 +8942,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -134.5,
+                    -171.5,
                     3.0,
-                    42.6
+                    48.8
                   ],
                   "localRotation": [
                     0.0,
@@ -9525,119 +8954,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    107.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Pasillo3"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-6",
-              "components": [
-                {
-                  "localPosition": [
-                    -69.5,
-                    3.0,
-                    10.5
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    2.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Pasillo3"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-7",
-              "components": [
-                {
-                  "localPosition": [
-                    -69.5,
-                    3.0,
-                    3.5
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    2.0
+                    116.4
                   ],
                   "name": null,
                   "parentName": null,
@@ -9681,9 +8998,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -122.5,
+                    -158.83,
                     3.0,
-                    -4.6
+                    -5.07
                   ],
                   "localRotation": [
                     0.0,
@@ -9693,7 +9010,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    12.0
+                    7.6
                   ],
                   "name": null,
                   "parentName": null,
@@ -9737,9 +9054,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -122.5,
+                    -159.1,
                     3.0,
-                    71.66
+                    81.4
                   ],
                   "localRotation": [
                     0.0,
@@ -9749,287 +9066,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    49.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Pasillo3"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-10",
-              "components": [
-                {
-                  "localPosition": [
-                    -134.0,
-                    3.0,
-                    95.8
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    2.0,
-                    6.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Pasillo3"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-11",
-              "components": [
-                {
-                  "localPosition": [
-                    -123.0,
-                    3.0,
-                    96.66
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    2.0,
-                    6.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Pasillo3"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-8 (1)",
-              "components": [
-                {
-                  "localPosition": [
-                    -122.5,
-                    3.0,
-                    60.6
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    12.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Pasillo3"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-5 (1)",
-              "components": [
-                {
-                  "localPosition": [
-                    -134.5,
-                    3.0,
-                    42.6
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    107.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Pasillo3"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-4 (1)",
-              "components": [
-                {
-                  "localPosition": [
-                    -128.5,
-                    3.0,
-                    -10.4
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    11.0,
-                    6.0,
-                    1.0
+                    50.2
                   ],
                   "name": null,
                   "parentName": null,
@@ -10100,9 +9137,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -122.0,
-                    3.0,
-                    44.66
+                    -158.333,
+                    5.0,
+                    48.251
                   ],
                   "localRotation": [
                     0.0,
@@ -10156,9 +9193,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -128.5,
-                    3.0,
-                    97.16
+                    -165.6,
+                    5.0,
+                    105.37
                   ],
                   "localRotation": [
                     0.0,
@@ -10289,118 +9326,6 @@
                 }
               ],
               "children": []
-            },
-            {
-              "name": "Suelo-2",
-              "components": [
-                {
-                  "localPosition": [
-                    -128.0,
-                    0.2,
-                    43.1
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    11.0,
-                    0.5,
-                    106.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "S_Pasillo3"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Suelo-2",
-              "components": [
-                {
-                  "localPosition": [
-                    -128.0,
-                    0.2,
-                    43.1
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    11.0,
-                    0.5,
-                    106.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "S_Pasillo3"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
             }
           ]
         },
@@ -10434,9 +9359,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -123.22,
-                    3.48,
-                    90.2
+                    -158.84,
+                    5.8,
+                    97.52
                   ],
                   "localRotation": [
                     0.0,
@@ -10486,6 +9411,146 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "Modelo",
+          "components": [
+            {
+              "localPosition": [
+                -108.2,
+                6.0,
+                48.3
+              ],
+              "localRotation": [
+                0.0,
+                180.0,
+                0.0
+              ],
+              "localScale": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "polySurface2623",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2623_MeshPart0",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "pasillo_entrada_polySurface2623_MeshPart0",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "initialShadingGroup"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "name": "polySurface2623_MeshPart1",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "pasillo_entrada_polySurface2623_MeshPart1",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "initialShadingGroup"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -10494,13 +9559,13 @@
       "components": [
         {
           "localPosition": [
-            -35.51,
             0.0,
-            -9.69
+            0.0,
+            0.0
           ],
           "localRotation": [
             0.0,
-            324.2506,
+            0.0,
             0.0
           ],
           "localScale": [
@@ -10544,13 +9609,13 @@
               "components": [
                 {
                   "localPosition": [
-                    -20.81,
-                    3.0,
-                    -48.71
+                    -26.43,
+                    4.0,
+                    -57.29
                   ],
                   "localRotation": [
                     0.0,
-                    0.0,
+                    318.3128,
                     0.0
                   ],
                   "localScale": [
@@ -10600,13 +9665,13 @@
               "components": [
                 {
                   "localPosition": [
-                    -39.4,
-                    3.0,
-                    -48.84
+                    -40.02,
+                    4.0,
+                    -68.96
                   ],
                   "localRotation": [
                     0.0,
-                    0.0,
+                    319.7269,
                     0.0
                   ],
                   "localScale": [
@@ -10652,73 +9717,17 @@
               "children": []
             },
             {
-              "name": "Pared-3",
-              "components": [
-                {
-                  "localPosition": [
-                    -20.26,
-                    3.0,
-                    -14.51
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    10.42,
-                    6.0,
-                    0.5
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_SalEsp"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
               "name": "Pared-4",
               "components": [
                 {
                   "localPosition": [
-                    -44.32,
-                    3.0,
-                    -31.5
+                    -55.51,
+                    4.0,
+                    -57.68
                   ],
                   "localRotation": [
                     0.0,
-                    0.0,
+                    138.4939,
                     0.0
                   ],
                   "localScale": [
@@ -10764,129 +9773,17 @@
               "children": []
             },
             {
-              "name": "Pared-5",
-              "components": [
-                {
-                  "localPosition": [
-                    -40.09,
-                    3.0,
-                    -14.41
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    12.0,
-                    6.0,
-                    0.6
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_SalEsp"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-6",
-              "components": [
-                {
-                  "localPosition": [
-                    -15.71,
-                    3.0,
-                    -31.43
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    34.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_SalEsp"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
               "name": "Pared-4 (1)",
               "components": [
                 {
                   "localPosition": [
-                    -36.72,
-                    3.0,
-                    -7.85
+                    -62.56,
+                    4.0,
+                    -36.39
                   ],
                   "localRotation": [
                     0.0,
-                    355.395569,
+                    138.219376,
                     0.0
                   ],
                   "localScale": [
@@ -10932,23 +9829,191 @@
               "children": []
             },
             {
-              "name": "Pared-4 (2)",
+              "name": "Pared-1 (1)",
               "components": [
                 {
                   "localPosition": [
-                    -25.38,
-                    3.0,
-                    -7.97
+                    -48.12,
+                    4.0,
+                    -31.68
                   ],
                   "localRotation": [
                     0.0,
-                    355.395569,
+                    318.3128,
+                    0.0
+                  ],
+                  "localScale": [
+                    10.0,
+                    6.0,
+                    0.700000048
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_SalEsp"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Pared-2 (1)",
+              "components": [
+                {
+                  "localPosition": [
+                    -61.71,
+                    4.0,
+                    -43.35
+                  ],
+                  "localRotation": [
+                    0.0,
+                    319.7269,
+                    0.0
+                  ],
+                  "localScale": [
+                    10.6,
+                    6.0,
+                    0.5
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_SalEsp"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Pared-4 (3)",
+              "components": [
+                {
+                  "localPosition": [
+                    -34.69,
+                    4.0,
+                    -39.25
+                  ],
+                  "localRotation": [
+                    0.0,
+                    138.4939,
+                    0.0
+                  ],
+                  "localScale": [
+                    0.999999762,
+                    6.0,
+                    35.9999771
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_SalEsp"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Pared-4 (4)",
+              "components": [
+                {
+                  "localPosition": [
+                    -53.79,
+                    4.0,
+                    -28.56
+                  ],
+                  "localRotation": [
+                    0.0,
+                    138.219376,
                     0.0
                   ],
                   "localScale": [
                     1.0,
                     6.0,
-                    16.2
+                    12.5499992
                   ],
                   "name": null,
                   "parentName": null,
@@ -11129,17 +10194,156 @@
           ]
         },
         {
+          "name": "Puerta_Doble",
+          "components": [
+            {
+              "localPosition": [
+                -32.27,
+                3.0,
+                -36.05
+              ],
+              "localRotation": [
+                0.0,
+                1.14873028,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                6.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "Puerta-CERRADA",
+              "components": [
+                {
+                  "localPosition": [
+                    -31.87,
+                    0.0,
+                    4.25
+                  ],
+                  "localRotation": [
+                    0.0,
+                    135.743454,
+                    0.0
+                  ],
+                  "localScale": [
+                    5.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_Puerta_C"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Puerta-CERRADA",
+              "components": [
+                {
+                  "localPosition": [
+                    -27.36,
+                    0.0,
+                    9.11
+                  ],
+                  "localRotation": [
+                    0.0,
+                    133.565414,
+                    0.0
+                  ],
+                  "localScale": [
+                    5.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_Puerta_C"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
           "name": "Modelo",
           "components": [
             {
               "localPosition": [
-                -19.1,
-                0.0,
-                -73.86
+                -42.27,
+                7.0,
+                -49.82
               ],
               "localRotation": [
                 0.0,
-                89.9622345,
+                49.5965,
                 0.0
               ],
               "localScale": [
@@ -11158,9 +10362,9 @@
               "components": [
                 {
                   "localPosition": [
+                    -2.0,
                     0.0,
-                    0.0,
-                    0.0
+                    -1.7
                   ],
                   "localRotation": [
                     0.0,
@@ -11203,17 +10407,17 @@
           "components": [
             {
               "localPosition": [
-                -13.58,
-                0.0,
-                -102.31
+                -29.7,
+                4.15,
+                -67.99
               ],
               "localRotation": [
                 0.0,
-                83.38519,
+                47.3246727,
                 0.0
               ],
               "localScale": [
-                0.4,
+                0.64,
                 0.5,
                 0.45
               ],
@@ -11224,7 +10428,7 @@
           ],
           "children": [
             {
-              "name": "polySurface1165_polySurface1161",
+              "name": "polySurface1165",
               "components": [
                 {
                   "localPosition": [
@@ -11247,7 +10451,7 @@
                   "type": "Transform"
                 },
                 {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1165_polySurface1161",
+                  "mesh": "pasillo_salaespera-hangar_polySurface1165",
                   "enabled": true,
                   "castShadows": true,
                   "receiveShadows": true,
@@ -11259,136 +10463,7 @@
                     0.0
                   ],
                   "materials": [
-                    "polySurface1165_polySurface1161Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1188",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1188",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1188Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1189",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1189",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1189Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1190",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1190",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1190Mat"
+                    "initialShadingGroup"
                   ],
                   "type": "MeshRenderer"
                 }
@@ -11402,19 +10477,19 @@
           "components": [
             {
               "localPosition": [
-                -13.57,
-                0.0,
-                -96.15
+                -58.22,
+                4.15,
+                -32.94
               ],
               "localRotation": [
                 0.0,
-                85.80942,
+                226.831833,
                 0.0
               ],
               "localScale": [
-                0.7,
+                0.64,
                 0.5,
-                0.5
+                0.45
               ],
               "name": null,
               "parentName": null,
@@ -11423,50 +10498,7 @@
           ],
           "children": [
             {
-              "name": "polySurface1165_polySurface1161",
-              "components": [
-                {
-                  "localPosition": [
-                    14.95,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.12,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1165_polySurface1161",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1165_polySurface1161Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1188",
+              "name": "polySurface1165",
               "components": [
                 {
                   "localPosition": [
@@ -11489,7 +10521,7 @@
                   "type": "Transform"
                 },
                 {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1188",
+                  "mesh": "pasillo_salaespera-hangar_polySurface1165",
                   "enabled": true,
                   "castShadows": true,
                   "receiveShadows": true,
@@ -11501,234 +10533,9 @@
                     0.0
                   ],
                   "materials": [
-                    "polySurface1188Mat"
+                    "initialShadingGroup"
                   ],
                   "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1189",
-              "components": [
-                {
-                  "localPosition": [
-                    24.57,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.2,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1189",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1189Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "polySurface1190",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "pasillo_sala_espera-hangar_polySurface1190",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "polySurface1190Mat"
-                  ],
-                  "type": "MeshRenderer"
-                }
-              ],
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Puerta_Doble",
-          "components": [
-            {
-              "localPosition": [
-                -32.27,
-                3.0,
-                -36.05
-              ],
-              "localRotation": [
-                0.0,
-                1.14873028,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                6.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": [
-            {
-              "name": "Puerta-CERRADA",
-              "components": [
-                {
-                  "localPosition": [
-                    -0.2,
-                    0.0,
-                    21.8
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    5.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Puerta_C"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Puerta-CERRADA",
-              "components": [
-                {
-                  "localPosition": [
-                    4.8,
-                    0.0,
-                    21.8
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    5.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Puerta_C"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
                 }
               ],
               "children": []
@@ -12131,423 +10938,6 @@
                   ],
                   "materials": [
                     "S_Almacen"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "CELDA",
-      "components": [
-        {
-          "localPosition": [
-            -52.2,
-            0.0,
-            11.0
-          ],
-          "localRotation": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "localScale": [
-            1.0,
-            1.0,
-            1.0
-          ],
-          "name": null,
-          "parentName": null,
-          "type": "Transform"
-        }
-      ],
-      "children": [
-        {
-          "name": "Paredes",
-          "components": [
-            {
-              "localPosition": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": [
-            {
-              "name": "Pared-1",
-              "components": [
-                {
-                  "localPosition": [
-                    -71.5,
-                    3.0,
-                    36.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    9.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Carcel"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-2",
-              "components": [
-                {
-                  "localPosition": [
-                    -71.5,
-                    3.0,
-                    18.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    9.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Carcel"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-3",
-              "components": [
-                {
-                  "localPosition": [
-                    -65.5,
-                    3.0,
-                    13.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    13.0,
-                    6.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Carcel"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-4",
-              "components": [
-                {
-                  "localPosition": [
-                    -59.5,
-                    3.0,
-                    27.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    27.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Carcel"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Pared-5",
-              "components": [
-                {
-                  "localPosition": [
-                    -65.5,
-                    3.0,
-                    41.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    13.0,
-                    6.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Carcel"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Suelo",
-          "components": [
-            {
-              "localPosition": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": [
-            {
-              "name": "Suelo-1",
-              "components": [
-                {
-                  "localPosition": [
-                    -65.5,
-                    0.2,
-                    27.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    11.0,
-                    0.5,
-                    27.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "S_Celda"
                   ],
                   "type": "MeshRenderer"
                 },
@@ -13578,9 +11968,9 @@
           "components": [
             {
               "localPosition": [
-                -43.9,
-                0.0,
-                5.4
+                -123.2,
+                6.0,
+                -19.8
               ],
               "localRotation": [
                 0.0,
@@ -14175,7 +12565,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -120.5,
+                    -112.9,
                     0.2,
                     -46.0
                   ],
@@ -14233,9 +12623,9 @@
           "components": [
             {
               "localPosition": [
-                15.95,
-                0.0,
-                14.59
+                -92.7,
+                7.0,
+                -56.6
               ],
               "localRotation": [
                 0.0,
@@ -14305,9 +12695,9 @@
       "components": [
         {
           "localPosition": [
-            -54.1,
+            -83.66,
             0.0,
-            11.5
+            36.2
           ],
           "localRotation": [
             0.0,
@@ -14355,9 +12745,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -82.5,
+                    -80.12,
                     3.0,
-                    63.0
+                    65.66
                   ],
                   "localRotation": [
                     0.0,
@@ -14365,7 +12755,7 @@
                     0.0
                   ],
                   "localScale": [
-                    35.0,
+                    25.2,
                     6.0,
                     1.0
                   ],
@@ -14411,9 +12801,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -100.5,
+                    -112.52,
                     3.0,
-                    53.0
+                    50.27
                   ],
                   "localRotation": [
                     0.0,
@@ -14423,7 +12813,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    21.0
+                    29.8
                   ],
                   "name": null,
                   "parentName": null,
@@ -14467,9 +12857,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -94.0,
+                    -101.02,
                     3.0,
-                    42.0
+                    35.21
                   ],
                   "localRotation": [
                     0.0,
@@ -14477,7 +12867,7 @@
                     0.0
                   ],
                   "localScale": [
-                    14.0,
+                    22.8,
                     6.0,
                     1.0
                   ],
@@ -14523,9 +12913,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -71.0,
+                    -73.77,
                     3.0,
-                    42.0
+                    35.51
                   ],
                   "localRotation": [
                     0.0,
@@ -14533,7 +12923,7 @@
                     0.0
                   ],
                   "localScale": [
-                    22.0,
+                    11.6,
                     6.0,
                     1.0
                   ],
@@ -14579,9 +12969,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -59.5,
+                    -67.9,
                     3.0,
-                    52.5
+                    50.03
                   ],
                   "localRotation": [
                     0.0,
@@ -14591,7 +12981,175 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    22.0
+                    32.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_Vestuario"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Pared-1 (1)",
+              "components": [
+                {
+                  "localPosition": [
+                    -106.75,
+                    3.0,
+                    64.81
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    11.8,
+                    6.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_Vestuario"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Pared-4 (1)",
+              "components": [
+                {
+                  "localPosition": [
+                    -73.76999,
+                    3.0,
+                    47.72
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    11.5999994,
+                    6.0,
+                    0.2
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_Vestuario"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Pared-4 (2)",
+              "components": [
+                {
+                  "localPosition": [
+                    -86.77,
+                    3.0,
+                    58.23
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    15.1,
+                    6.0,
+                    0.199999988
                   ],
                   "name": null,
                   "parentName": null,
@@ -14745,9 +13303,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -62.5,
-                    3.0,
-                    63.5
+                    -96.35,
+                    5.0,
+                    65.58
                   ],
                   "localRotation": [
                     0.0,
@@ -14797,6 +13355,76 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "Modelo",
+          "components": [
+            {
+              "localPosition": [
+                -90.3,
+                7.0,
+                50.2
+              ],
+              "localRotation": [
+                0.0,
+                180.0,
+                0.0
+              ],
+              "localScale": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "pPlane5",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "vestuario_pPlane5",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -14805,9 +13433,9 @@
       "components": [
         {
           "localPosition": [
-            -55.4,
+            -115.38,
             0.0,
-            13.5
+            47.32
           ],
           "localRotation": [
             0.0,
@@ -14855,9 +13483,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -82.5,
+                    -49.18,
                     3.0,
-                    64.0
+                    55.55
                   ],
                   "localRotation": [
                     0.0,
@@ -14865,7 +13493,7 @@
                     0.0
                   ],
                   "localScale": [
-                    35.0,
+                    22.2,
                     6.0,
                     1.0
                   ],
@@ -14911,9 +13539,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -80.0,
+                    -59.76,
                     3.0,
-                    79.0
+                    80.3
                   ],
                   "localRotation": [
                     0.0,
@@ -14921,7 +13549,7 @@
                     0.0
                   ],
                   "localScale": [
-                    40.0,
+                    45.5,
                     6.0,
                     1.0
                   ],
@@ -14967,9 +13595,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -59.5,
+                    -37.82,
                     3.0,
-                    71.5
+                    67.63
                   ],
                   "localRotation": [
                     0.0,
@@ -14979,7 +13607,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    16.0
+                    24.8
                   ],
                   "name": null,
                   "parentName": null,
@@ -15023,9 +13651,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -100.5,
+                    -82.17,
                     3.0,
-                    71.5
+                    68.03
                   ],
                   "localRotation": [
                     0.0,
@@ -15035,7 +13663,63 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    16.0
+                    24.8
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Cube",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "P_Arsenal"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "size": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Pared-1 (1)",
+              "components": [
+                {
+                  "localPosition": [
+                    -76.18,
+                    3.0,
+                    55.5499954
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    13.3,
+                    6.0,
+                    1.0
                   ],
                   "name": null,
                   "parentName": null,
@@ -15106,7 +13790,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -80.0,
+                    -58.98,
                     0.2,
                     71.5
                   ],
@@ -15153,6 +13837,76 @@
                     1.0
                   ],
                   "type": "BoxCollider"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Modelo",
+          "components": [
+            {
+              "localPosition": [
+                -59.8,
+                7.0,
+                67.4
+              ],
+              "localRotation": [
+                0.0,
+                180.0,
+                0.0
+              ],
+              "localScale": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "polySurface2730",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "arsenal_polySurface2730",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
                 }
               ],
               "children": []
@@ -16616,13 +15370,13 @@
           "components": [
             {
               "localPosition": [
-                -32.1,
-                0.0,
-                57.6
+                -31.52,
+                7.0,
+                26.13
               ],
               "localRotation": [
                 0.0,
-                225.217484,
+                45.234108,
                 0.0
               ],
               "localScale": [
@@ -17522,9 +16276,9 @@
           "components": [
             {
               "localPosition": [
-                -58.94,
-                0.0,
-                -10.05
+                -58.8,
+                7.0,
+                -10.77
               ],
               "localRotation": [
                 0.0,
@@ -17532,7 +16286,7 @@
                 0.0
               ],
               "localScale": [
-                0.5,
+                0.51,
                 0.5,
                 0.5
               ],

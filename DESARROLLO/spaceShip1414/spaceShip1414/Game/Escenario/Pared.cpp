@@ -17,11 +17,7 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	rotation = motorApp->crearTransform();
 	scale = motorApp->crearTransform();
 	translation = motorApp->crearTransform();
-	scale->escalar(sca.x, sca.y, sca.z);
-	rotation->rotar(rot.x, 1.0f, 0.0f, 0.0f);
-	rotation->rotar(rot.y, 0.0f, 1.0f, 0.0f);
-	rotation->rotar(rot.z, 0.0f, 0.0f, 1.0f);
-	translation->trasladar(tras.x, tras.y, tras.z);
+
 
 	pos = tras;
 	rot = r;
@@ -36,7 +32,13 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	if (model!="")
 	{
 		nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Escenario/" + model + "/" + model + ".obj"));
+		rotation->resetMatriz();
+		rotation->rotarYPR(rot.y, 0.0, 0.0);
+
 	}
+	scale->escalar(sca.x, sca.y, sca.z);
+
+	translation->trasladar(tras.x, tras.y, tras.z);
 }
 
 Pared::~Pared()
