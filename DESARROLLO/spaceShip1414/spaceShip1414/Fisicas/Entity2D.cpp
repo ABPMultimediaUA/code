@@ -142,10 +142,10 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     body->SetUserData(this);
 
 	if(rot.y > 180 * DEGTORAD)
-		body->SetTransform(body->GetPosition(), rot.y - 360 * DEGTORAD);
+		body->SetTransform(body->GetPosition(), rot.y - 180 * DEGTORAD);
 
 	else if(rot.y < -180 * DEGTORAD) {
-		body->SetTransform(body->GetPosition(), rot.y + 360 * DEGTORAD);
+		body->SetTransform(body->GetPosition(), rot.y + 180 * DEGTORAD);
 
 	}
     filtro.groupIndex = FILTRO_PARED;
