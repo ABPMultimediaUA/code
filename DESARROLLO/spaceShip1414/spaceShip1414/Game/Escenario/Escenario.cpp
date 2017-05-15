@@ -374,7 +374,7 @@ void Escenario::dibujarEscenario() {
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
 
-					Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
+					Pared * wall = new Pared(engine, glm::vec3(tx * 5, ty * 2, -tz * 5),
 						glm::vec3(rx, -ry, -rz),
 						glm::vec3(ex * 2, ey * 2, ez * 2), "sala_espera");
 
@@ -423,7 +423,7 @@ void Escenario::dibujarEscenario() {
 						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
 						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
+						Pared * wall = new Pared(engine, glm::vec3(tx * 5, ty * 2, -tz * 5),
 							glm::vec3(rx, ry, -rz),
 							glm::vec3(ex, ey, ez), "");
 						wall->setFisicas(mundo);

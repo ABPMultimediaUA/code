@@ -73,5 +73,311 @@ X: 0
 Y: 180
 Z: 0
 Recurso nombre: almacen_peque_abajo.obj
-Unable to open file "resourse/models/Escenario/almacen_peque_abajo/almacen_peque_abajo.obj".
-Presione una tecla para continuar . . . ROTACIONES 2
+ROTACIONES 2
+X: 0
+Y: 180
+Z: 0
+Recurso nombre: pasillo_sala_espera-hangar.obj
+ROTACIONES 1
+X: 0
+Y: 49.5965
+Z: 0
+Recurso nombre: sala_espera.obj
+ROTACIONES 2
+X: 0
+Y: 47.3247
+Z: 0
+ROTACIONES 2
+X: 0
+Y: 226.832
+Z: 0
+-------------------------------------->0
+TIME: 0.0167217
+TIME: 0.0165066
+TIME: 0.0169184
+TIME: 0.0168991
+TIME: 0.0167611
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -25 POS Y: -43.495
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -30 POS Y: -46.5
+///////////////////////////////////
+TIME: 0.016858
+TIME: 0.0167562
+TIME: 0.0167316
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -12.505 POS Y: -43.485
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 12 POS Y: -46.4
+///////////////////////////////////
+TIME: 0.0166351
+TIME: 0.0167295
+TIME: 0.0324397
+TIME: 0.0166725
+TIME: 0.0167919
+TIME: 0.0168983
+TIME: 0.016271
+TIME: 0.0167271
+TIME: 0.0166482
+TIME: 0.01667
+TIME: 0.0325846
+TIME: 0.0167016
+TIME: 0.0169483
+TIME: 0.016576
+TIME: 0.016796
+TIME: 0.0167665
+TIME: 0.0167882
+TIME: 0.0167788
+TIME: 0.0166179
+TIME: 0.0166101
+TIME: 0.0167944
+TIME: 0.0172653
+TIME: 0.0167878
+TIME: 0.0166002
+TIME: 0.0166877
+TIME: 0.0166745
+TIME: 0.0168749
+TIME: 0.0166885
+TIME: 0.0166076
+TIME: 0.0167069
+TIME: 0.0168843
+TIME: 0.0166991
+TIME: 0.0324886
+TIME: 0.0337123
+TIME: 0.0167074
+TIME: 0.0170284
+TIME: 0.0165998
+TIME: 0.0166076
+TIME: 0.0167886
+TIME: 0.0165727
+TIME: 0.0168018
+TIME: 0.0166831
+TIME: 0.0166166
+TIME: 0.0166835
+TIME: 0.0165965
+TIME: 0.0343294
+TIME: 0.0166039
+TIME: 0.0167139
+TIME: 0.0167332
+TIME: 0.0167106
+TIME: 0.0166577
+TIME: 0.016383
+TIME: 0.0166384
+TIME: 0.0168022
+TIME: 0.0166659
+TIME: 0.0166355
+TIME: 0.0168166
+TIME: 0.0168556
+TIME: 0.016771
+TIME: 0.0163465
+TIME: 0.0166901
+TIME: 0.0166125
+TIME: 0.0328125
+TIME: 0.0162201
+TIME: 0.0166782
+TIME: 0.0166803
+TIME: 0.016881
+TIME: 0.0329976
+TIME: 0.0168469
+TIME: 0.0166474
+TIME: 0.0172369
+TIME: 0.0165411
+TIME: 0.0164586
+TIME: 0.0162898
+TIME: 0.016381
+TIME: 0.0165616
+TIME: 0.0167891
+TIME: 0.0166343
+TIME: 0.0329541
+TIME: 0.0168601
+TIME: 0.0166667
+TIME: 0.0165321
+TIME: 0.0166552
+TIME: 0.0166946
+TIME: 0.0166359
+TIME: 0.0166343
+TIME: 0.0166585
+TIME: 0.0166909
+107.705
+109.558
+TIME: 0.0172661
+115.075
+122.007
+122.995
+125.557
+TIME: 0.0169249
+125.818
+147.133
+148.869
+151.626
+TIME: 0.0173782
+TIME: 0.0165555
+TIME: 0.0166606
+TIME: 0.016601
+TIME: 0.0169877
+TIME: 0.0167418
+TIME: 0.0162316
+TIME: 0.0164692
+TIME: 0.0167283
+TIME: 0.0167685
+TIME: 0.0166515
+TIME: 0.0167648
+TIME: 0.0168601
+TIME: 0.0165752
+TIME: 0.0166963
+TIME: 0.0164233
+TIME: 0.0164487
+ID DE LA ENTITY 0
+MUERO ENTITY2D
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Facade Destroted
+shader Destroyed
