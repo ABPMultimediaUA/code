@@ -1,6 +1,8 @@
 #include "TRecursoTextura.h"
 #include <iostream>
 #include <SOIL\SOIL.h>
+#include <cstring>
+#include <string>
 
 TRecursoTextura::TRecursoTextura()
 {
@@ -11,26 +13,34 @@ TRecursoTextura::~TRecursoTextura()
 {
 }
 
-bool TRecursoTextura::cargarFichero(std::string ntextura, )
+bool TRecursoTextura::cargarFichero(std::string ntextura)
 {
 	size_t index = ntextura.find_last_of("\\/");
 	nombre = index == std::string::npos ? "" : ntextura.substr(index + 1);
 	std::cout << "Recurso nombre: " << nombre << std::endl;
 
-	glGenTextures(1, &textura);
-
-	unsigned char* image;
-
-	glActiveTexture(GL_TEXTURE0);
-	glBindTexture(GL_TEXTURE_2D, textura);
-	image = SOIL_load_image(ntextura.c_str, &width, &height, 0, SOIL_LOAD_RGB);
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
-	SOIL_free_image_data(image);
-
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+	unsigned int texture;
+	glGenTextures(1, &texture);
+	glBindTexture(GL_TEXTURE_2D, texture); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
+										   // set the texture wrapping parameters
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	// set texture wrapping to GL_REPEAT (default wrapping method)
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	// set texture filtering parameters
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	// load image, create texture and generate mipmaps
+	int width, height, nrComponents;
+	unsigned char *data = SOIL_load_image(ntextura.c_str(), &width, &height, &nrComponents, 0);
+	if (data)
+	{
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+		glGenerateMipmap(GL_TEXTURE_2D);
+	}
+	else
+	{
+		std::cout << "Failed to load texture" << std::endl;
+	}
+	SOIL_free_image_data(data);
 
 	return false;
 }

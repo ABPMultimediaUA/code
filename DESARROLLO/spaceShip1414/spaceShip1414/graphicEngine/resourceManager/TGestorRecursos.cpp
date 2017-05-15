@@ -39,8 +39,8 @@ TRecurso * TGestorRecursos::getRecurso(std::string nombre, int tipo)
 			recursos.push_back(rec);
 			break;
 		case 2:
-			//rec = new TRecursoTextura();
-			//recursos.push_back(rec);
+			rec = new TRecursoTextura();
+			recursos.push_back(rec);
 			break;
 		default:
 			rec = new TRecursoMalla(nombre);

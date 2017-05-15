@@ -4,6 +4,7 @@
 #include <assimp\postprocess.h>
 #include <glm\gtc\type_ptr.hpp>
 #include <iostream>
+#include "TRecursoTextura.h"
 
 TRecursoMalla::Mesh::Mesh(const aiMesh *ma, TRecursoMalla *mo) : buffer{ 0 }, vao(0)
 {
@@ -51,6 +52,7 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla)
 	uv.reserve(malla->mNumVertices);
 	normal.reserve(malla->mNumVertices);
 	indices.reserve(3 * malla->mNumFaces);
+	TRecursoTextura * textura=new TRecursoTextura();
 
 	for (unsigned int i = 0; i < malla->mNumVertices; i++)
 	{
@@ -99,6 +101,9 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla)
 		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_AMBIENT, &ambient) == AI_SUCCESS)   { aiColorToFloat(ambient, color_ambient);   }
 		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_EMISSIVE, &emisive) == AI_SUCCESS)  { aiColorToFloat(emisive, color_emissive);  }
 	}
+
+	textura->cargarFichero("resourse/texture/bruce.jpg");
+
 }
 
 inline void TRecursoMalla::Mesh::aiColorToFloat(aiColor4D & src, float dst[4])

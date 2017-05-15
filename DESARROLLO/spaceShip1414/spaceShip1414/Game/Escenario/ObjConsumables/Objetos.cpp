@@ -1,6 +1,6 @@
 
 #include "Objetos.h"
-#include "../../Fisicas/Entity2D.h"
+#include "../Fisicas/Entity2D.h"
 #include "../Fisicas/Mundo.h"
 
 Objetos::Objetos(const glm::vec3 & posicion, const glm::vec3 & rotacion, const glm::vec3 & escala, const int & identificacion)

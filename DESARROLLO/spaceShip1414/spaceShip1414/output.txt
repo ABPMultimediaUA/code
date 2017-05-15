@@ -1,9 +1,16 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GTX 780 Ti/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 376.53
+Renderer: GeForce GTX 1060 3GB/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 381.89
 GLSL: 4.50 NVIDIA
 
 Recurso nombre: nanosuit.obj
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
@@ -32,6 +39,7 @@ MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.00
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 Recurso nombre: untitled.obj
+Recurso nombre: bruce.jpg
 
 ID: 0
 
@@ -70,6 +78,77 @@ MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.00
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 Recurso nombre: hangar.obj
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
+Recurso nombre: bruce.jpg
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
@@ -84,154 +163,206 @@ MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.00
 MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 -------------------------------------->0
 119.228
-119.665
-122.338
-123.294
-125.974
-125.663
-127.691
-128.064
-130.668
-138.647
-139.028
-151.776
-169.357
--174.141
--159.202
--149.199
--139.671
--130.252
--120.771
--108.677
--103.432
--101.723
--99.3023
--99.0495
--95.7102
--95.6861
--92.3937
--90.5024
--88.6971
--88.4786
--85.4078
--81.5428
--78.7722
--78.5611
--76.3674
--74.8017
--73.8549
--73.5867
--74.5137
--77.0795
--79.5962
--80.822
--81.1394
--80.9663
-TIME: 0.0167601
--80.7764
--79.5661
--77.5105
--74.6616
--70.5496
--66.9635
--63.937
--63.4671
--62.9813
--60.9763
--58.024
--56.3385
--45.0228
--19.5466
-14.834
-42.7311
-53.7734
-58.6303
-59.2801
-62.0223
-64.0902
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 1
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 0 POS Y: 34.595
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -5.1 POS Y: 37.6
-///////////////////////////////////
-65.8619
-66.8353
-67.2004
-67.4396
-67.6367
-TIME: 0.0166659
-67.4634
-67.1242
-66.8353
-66.5476
-TIME: 0.0165343
-66.6717
-66.7946
-TIME: 0.0165794
-66.9163
-TIME: 0.0165794
-67.7352
-69.0792
-69.959
-70.3085
-70.5808
-TIME: 0.0167592
-71.4361
-71.6841
-73.4094
-75.1982
-76.6568
-78.0506
-78.6882
-78.8126
-TIME: 0.0172583
-TIME: 0.0161217
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 1
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -40 POS Y: -15.095
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -36 POS Y: -31.6
-///////////////////////////////////
-TIME: 0.0166527
-TIME: 0.0167777
-TIME: 0.0167043
-TIME: 0.0166202
-TIME: 0.0166929
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 1
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 18.3333 POS Y: 34.595
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 25 POS Y: 37.6
-///////////////////////////////////
-TIME: 0.0164334
-TIME: 0.0164334
-TIME: 0.016736
-TIME: 0.0164187
-TIME: 0.016658
-TIME: 0.016658
-TIME: 0.0166114
+120.234
+118.277
+101.685
+-5.19706
+-29.5687
+-38.8119
+-44.5064
+-47.0693
+-48.1992
+-49.0435
+-49.5391
+-49.7545
+-49.9056
+-50.0558
+-50.1305
+-50.5798
+-51.1827
+-52.1097
+-53.0845
+-54.3744
+-56.3742
+-58.6001
+-60.9905
+-62.7723
+-64.5765
+-66.071
+-67.3278
+-68.1583
+-68.6296
+-68.4002
+-67.8354
+-66.8016
+-65.4516
+-64.0029
+-61.3671
+-57.4996
+-52.0382
+-23.275
+-9.61699
+1.61436
+16.5342
+23.3674
+25.3109
+25.1069
+23.9404
+22.34
+20.7247
+18.6727
+-30.2326
+-44.1951
+-55.187
+-65.4827
+-76.2879
+-85.3087
+-94.0811
+-103.81
+-112.415
+-119.907
+-126.728
+-131.977
+-136.415
+-140.767
+-143.203
+-147.463
+-152.019
+-157.246
+-163.02
+-169.066
+-178.425
+170.686
+157.971
+146.138
+132.777
+120.697
+101.94
+88.1032
+74.9868
+61.9076
+46.4207
+35.6797
+26.0024
+17.8878
+11.2091
+5.05981
+-0.955326
+-6.59395
+-15.2815
+-22.1499
+-28.0415
+-33.8589
+-38.6519
+-42.5745
+-46.9653
+-52.5099
+-60.1607
+-67.925
+-73.6385
+-77.6546
+-83.5899
+-87.2684
+-90.5847
+-93.7993
+-96.7359
+-99.3106
+-101.654
+-103.394
+-104.97
+-105.839
+-106.457
+-106.8
+-107.084
+-107.379
+-107.671
+-108.149
+-107.594
+-106.696
+-106.339
+-105.781
+-105.337
+-104.797
+-104.88
+-104.964
+-104.729
+-104.418
+-103.751
+-103.743
+-102.906
+-101.919
+-99.2859
+-93.8982
+-84.0683
+-68.9426
+-48.391
+-31.8652
+-20.9533
+-13.48
+-8.86912
+-4.57624
+-2.96974
+-1.98965
+-1.11658
+-0.347419
+0.323866
+0.609816
+1.15792
+1.64524
+2.10272
+2.3123
+2.29177
+2.73954
+2.94975
+3.15454
+3.60814
+4.05374
+4.4915
+4.92157
+5.8293
+6.69977
+8.03712
+9.76433
+13.0682
+15.0103
+17.1769
+19.2256
+21.8125
+25.4868
+30.5742
+38.0959
+46.3661
+57.1066
+66.2572
+76.0023
+91.7312
+101.361
+109.998
+117.552
+125.927
+135.068
+144.693
+156.193
+168.776
+-179.272
+-170.22
+-160.869
+-147.246
+-138.745
+-130.591
+-124.674
+-119.727
+-114.259
+-110.81
+-106.959
+-103.965
+-101.458
+-99.751
+-98.1799
+-97.7072
+-96.7034
+-96.2317
+TIME: 0.0171584
 ID DE LA ENTITY 0
 MUERO ENTITY2D
 Nodo eliminado

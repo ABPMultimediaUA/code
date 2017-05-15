@@ -26,15 +26,15 @@ struct Material {
 uniform Light light;
 uniform Material material;
 
-//in vec2 texture_coord;
+in vec2 texture_coord;
 
-//uniform sampler2D texture_ambient;
-//uniform sampler2D texture_diffuse;
-//uniform sampler2D texture_specular;
+uniform sampler2D texture_ambient;
+uniform sampler2D texture_diffuse;
+uniform sampler2D texture_specular;
 
-//uniform bool enable_ambient = false;
-//uniform bool enable_diffuse = false;
-//uniform bool enable_specular = false;
+uniform bool enable_ambient = false;
+uniform bool enable_diffuse = false;
+uniform bool enable_specular = false;
 
 void main()
 {
@@ -53,13 +53,13 @@ void main()
 
 		color = vec4(emissive + ambient + diffuse + specular, 1.0);
 
-		//vec4 tex_amb  = texture(texture_ambient,  texture_coord);
-		//vec4 tex_diff = texture(texture_diffuse,  texture_coord);
-		//vec4 tex_spec = texture(texture_specular, texture_coord);
+		vec4 tex_amb  = texture(texture_ambient,  texture_coord);
+		vec4 tex_diff = texture(texture_diffuse,  texture_coord);
+		vec4 tex_spec = texture(texture_specular, texture_coord);
 
-		//vec4 fambi = vec4(ambient, 1)  * tex_amb;
-		//vec4 fdiff = vec4(diffuse, 1)  * tex_diff;
-		//vec4 fspec = vec4(specular, 1) * tex_spec;
+		vec4 fambi = vec4(ambient, 1)  * tex_amb;
+		vec4 fdiff = vec4(diffuse, 1)  * tex_diff;
+		vec4 fspec = vec4(specular, 1) * tex_spec;
 
-		//color = fambi + fdiff + fspec;
+		color = fambi + fdiff + fspec;
 } 

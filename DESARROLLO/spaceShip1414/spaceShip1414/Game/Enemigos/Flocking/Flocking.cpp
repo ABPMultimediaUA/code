@@ -1,7 +1,7 @@
 
 
 #include "Flocking.h"
-#include "../../Fisicas/Entity2D.h"
+#include "../Fisicas/Entity2D.h"
 #include "../Enemigo.h"
 #include <math.h>
 
