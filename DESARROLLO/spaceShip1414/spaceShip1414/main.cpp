@@ -30,8 +30,8 @@ int main() {
 		player jugador(&motorApp, world);
 
 		Camara cam(&motorApp,jugador.getNodoTrans());
-		cam.Translation()->trasladar(0, 10, 40);
-		cam.setPitch(-30);
+		cam.Translation()->trasladar(0, 10, 20);
+		cam.setPitch(-0);
 		cam.Rotation()->rotarYPR(0,cam.getPitch(),0);
 
 

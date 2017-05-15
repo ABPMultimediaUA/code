@@ -14,13 +14,13 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 100.0f }, yaw{ 0
 	translation = motorApp->crearTransform();
 	rotation = motorApp->crearTransform();
 	scale = motorApp->crearTransform();
-	translation->trasladar(0,0,0);
+	translation->trasladar(0,-6.0f,0);
 	rotation->rotar(0.0f, 1.0f, 0.0f, 0.0f);
 	rotation->rotar(0.0f, 0.0f, 1.0f, 0.0f);
 	rotation->rotar(0.0f, 0.0f, 0.0f, 1.0f);
 	scale->escalar(0.7,0.7,0.7);
 
-	pos = glm::vec3(0, 0, 0);
+	pos = glm::vec3(0, -6.0f, 0);
 	rot = glm::vec3(0, 0, 0);
 	escale = glm::vec3(2, 7, 2);
 
@@ -191,7 +191,7 @@ void player::actualizarFisicas(int n, double delta)
 	//	<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y << std::endl;
 	//std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
 	
-	setPos(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
+	setPos(entity->getCuerpo2D()->GetPosition().x, -6, entity->getCuerpo2D()->GetPosition().y);
 
 	//std::cout << "//////////////////////////////////////////" << std::endl;
 	//std::cout << "" << std::endl;
