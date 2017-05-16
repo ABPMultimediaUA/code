@@ -102,7 +102,7 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla)
 		if (aiGetMaterialColor(material, AI_MATKEY_COLOR_EMISSIVE, &emisive) == AI_SUCCESS)  { aiColorToFloat(emisive, color_emissive);  }
 	}
 
-	textura->cargarFichero("resourse/texture/bruce.jpg");
+	textura->cargarFichero("resourse/texture/metal.jpg");
 
 }
 

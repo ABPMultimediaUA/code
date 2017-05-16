@@ -72,39 +72,7 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 
 
 	}
-	else {
-	
-		//if (glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS) { this->activo = true; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);}
-		//if (glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS) { camara->Translation()->trasladar(0,camara->getVelocity(), 0); }
-		//if (glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS) { camara->Translation()->trasladar(0, -camara->getVelocity(),0); }
-		//if (glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS) { camara->Translation()->trasladar(-camara->getVelocity(), 0, 0); }
-		//if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS) { camara->Translation()->trasladar(camara->getVelocity(), 0, 0); }
-		//if (glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS) { camara->Translation()->trasladar(0, 0, camara->getVelocity()); }
-		//if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
-		//	jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z + jugador->getVelocity() * dt);
-		//	jugador->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
-		//	//camara->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
 
-		//}
-		//if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-		//	jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getVelocity() * dt - jugador->getPos().z);
-		//	jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
-		//	//camara->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
-		//}
-		//if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
-		//	jugador->setPos(jugador->getPos().x - jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
-		//	jugador->Translation()->trasladar(-jugador->getVelocity() * dt, 0.0, 0.0);
-		//	//camara->Translation()->trasladar(-jugador->getVelocity() * dt, 0.0, 0.0);
-		//}
-		//if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
-		//	jugador->setPos(jugador->getPos().x + jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
-		//	jugador->Translation()->trasladar(jugador->getVelocity() * dt, 0.0, 0.0);
-		//	//camara->Translation()->trasladar(jugador->getVelocity() * dt, 0.0, 0.0);
-		//}
-		//
-		//motor->getCamaraActiva()->chechKeys();
-
-	}
 }
 
 void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGraphicEngine* motor)
@@ -116,10 +84,15 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGr
 	glm::vec3 pos;
 		anguloRaton = -atan2f(static_cast<float>(xpos) - width/2.0f, static_cast<float>(ypos) - height / 2.0f) * 180 / 3.14f;
 		
-		jugador->setYaw(anguloRaton);
-		motor->resetTransform(jugador->getNodo(),'r');
+	//	jugador->setYaw(anguloRaton);
+		camara->setYaw(anguloRaton);
+	//	motor->resetTransform(camara->getNodo(), 'r');
+		//motor->rotarYPR(camara->getNodo(), -camara->getYaw(), 0.0f, 0.0f);
+		camara->rotationYPR(motor, -camara->getYaw(), 0.0f, 0.0f);
+		std::cout << camara->getYaw() << std::endl;
+/*	motor->resetTransform(jugador->getNodo(),'r');
 		motor->rotarYPR(jugador->getNodo(), -jugador->getYaw(), 0.0f, 0.0f);
-		std::cout << jugador->getYaw() << std::endl;
+			*/
 
 		
 	//pos.x = (2.0f * xpos) / width - 1.0f;
