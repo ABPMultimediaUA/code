@@ -121,41 +121,6 @@ GLFWwindow * TGraphicEngine::getGLFWwindow()
 	return window;
 }
 
-bool TGraphicEngine::init(std::string title, int width, int height, bool full_screen)
-{
-	aspect_ratio = static_cast<float>(width) / static_cast<float>(height);
-
-	glfwSetErrorCallback(error_callback);
-
-	if (!glfwInit()) {
-		return false;
-	}
-
-	window = glfwCreateWindow(width, height, title.c_str(), full_screen ? glfwGetPrimaryMonitor() : NULL, NULL);
-	if (!window)
-	{
-		glfwTerminate();
-		return false;
-	}
-
-	glfwMakeContextCurrent(window);
-	glfwSwapInterval(1);
-
-	glfwSetKeyCallback(window, key_callback);
-	glfwSetWindowCloseCallback(window, close_callback);
-	glfwSetFramebufferSizeCallback(window, resize_callback);
-	glfwSetCursorPosCallback(window, mouse_callback);
-
-	if (glewInit() != GLEW_OK) {
-		glfwTerminate();
-		return false;
-	}
-
-	glfwSetWindowUserPointer(window, this);
-
-	return true;
-}
-
 void TGraphicEngine::run()
 {
 	onstart();
@@ -625,6 +590,49 @@ glm::mat4 TGraphicEngine::getProjection()
 
 
 
+bool TGraphicEngine::init(std::string title, int width, int height, bool full_screen)
+{
+	aspect_ratio = static_cast<float>(width) / static_cast<float>(height);
+
+	glfwSetErrorCallback(error_callback);
+
+	if (!glfwInit()) {
+		return false;
+	}
+
+	window = glfwCreateWindow(width, height, title.c_str(), full_screen ? glfwGetPrimaryMonitor() : NULL, NULL);
+	if (!window)
+	{
+		glfwTerminate();
+		return false;
+	}
+
+	glfwMakeContextCurrent(window);
+	glfwSwapInterval(1);
+
+	glfwSetKeyCallback(window, key_callback);
+	glfwSetWindowCloseCallback(window, close_callback);
+	glfwSetFramebufferSizeCallback(window, resize_callback);
+	glfwSetCursorPosCallback(window, mouse_callback);
+
+	if (glewInit() != GLEW_OK) {
+		glfwTerminate();
+		return false;
+	}
+
+	m_gui.init("gui");
+	m_gui.loadScheme("TaharezLook.scheme");
+	m_gui.setFont("DejaVuSans-10");
+	CEGUI::PushButton* caca = static_cast<CEGUI::PushButton*>(m_gui.createWidget("TaharezLook/FrameWindow",
+		glm::vec4(0.5f, 0.5, 0.3f, 0.3f), glm::vec4(0.0f), "TestButton"));
+	caca->setText("MUERETE");
+	m_gui.createMenu();
+
+	glfwSetWindowUserPointer(window, this);
+
+	return true;
+}
+
 void  TGraphicEngine::drawBox(Mundo * world, double x, double y, int w, int h) {
 	b2BodyDef myBodyDef;
 	myBodyDef.type = b2_staticBody;
@@ -680,14 +688,12 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		last = currentFrame;
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glEnable(GL_CULL_FACE);
+		m_gui.draw();
 		world->stepBox2D(1.0 / 60.0, 6, 2);
 		//world->getWorldBox2D()->DrawDebugData();
-		//m_gui.draw();
 		world->clearForcesBox2D();
-		//drawBox(world, 5, 50, 2, 1);
 		move->checkKeys(window, this);
 		drawGround(world);
-		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 		esce->actualizarEstadoPuerta();
 		glfwPollEvents();
 		draw(getLastTime());
