@@ -24,7 +24,6 @@ int main() {
 	{
 		motorApp.info();
 		Mundo * world = new Mundo();
-		//Mundo3D * world = new Mundo3D();
 		//Malla
 		//camara
 		player jugador(&motorApp, world);
@@ -33,42 +32,11 @@ int main() {
 		/*cam.Translation()->trasladar(0, 10, 40);
 		cam.setPitch(-30);
 		cam.Rotation()->rotarYPR(0,cam.getPitch(),0);*/
-
-
-	/*	Camara cam2(&motorApp);
-		cam2.Translation()->trasladar(0, 10, 30);
-		cam2.setPitch(-30);
-		cam2.Rotation()->rotarYPR(0, cam.getPitch(), 0);*/
 		
-
 		Camara cam2(&motorApp, 0);
 		/*cam2.Rotation()->rotar(80.0f, 1.0f, 0.0f, 0.0f);
 		cam2.Translation()->trasladar(0, 0, 100);*/
 
-
-
-		
-
-		//Malla3
-	/*	TTransform *transfRM = motorApp.crearTransform();
-		TTransform *transfEM = motorApp.crearTransform();
-		TTransform *transfTM = motorApp.crearTransform();
-		transfEM->escalar(0.8, 0.8, 0.8);
-		transfTM->trasladar(10, -10, 10);
-		TNodo* nodoTransfRM = motorApp.crearNodo(motorApp.nodoRaiz(), transfRM);
-		TNodo* nodoTransfEM = motorApp.crearNodo(nodoTransfRM, transfEM);
-		TNodo* nodoTransfTM = motorApp.crearNodo(nodoTransfEM, transfTM);
-		TNodo* nodoMalla = motorApp.crearNodo(nodoTransfTM, motorApp.crearMalla("resourse/models/StreetEnvironment/Street environment_V01.obj"));*/
-
-	/*	TTransform *transfRM1 = motorApp.crearTransform();
-		TTransform *transfEM1 = motorApp.crearTransform();
-		TTransform *transfTM1 = motorApp.crearTransform();
-		transfEM1->escalar(1,1,1);
-		transfTM1->trasladar(10, 10,0);
-		TNodo* nodoTransfRM1 = motorApp.crearNodo(motorApp.nodoRaiz(), transfRM1);
-		TNodo* nodoTransfEM1 = motorApp.crearNodo(nodoTransfRM1, transfEM1);
-		TNodo* nodoTransfTM1 = motorApp.crearNodo(nodoTransfEM1, transfTM1);
-		TNodo* nodoMalla1 = motorApp.crearNodo(nodoTransfTM1, motorApp.crearMalla("resourse/models/untitled.obj"));*/
 		Escenario *scene = new Escenario(&motorApp, world, &cam);
 		readJson *json = new readJson(scene);
 		b2GLDraw fooDrawInstance;

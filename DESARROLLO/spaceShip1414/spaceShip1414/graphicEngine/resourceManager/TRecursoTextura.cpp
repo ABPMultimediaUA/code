@@ -35,14 +35,15 @@ bool TRecursoTextura::cargarFichero(std::string ntextura)
 	{
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
 		glGenerateMipmap(GL_TEXTURE_2D);
+		SOIL_free_image_data(data);
+		return true;
 	}
 	else
 	{
 		std::cout << "Failed to load texture" << std::endl;
+		SOIL_free_image_data(data);
+		return false;
 	}
-	SOIL_free_image_data(data);
-
-	return false;
 }
 
 void TRecursoTextura::draw()

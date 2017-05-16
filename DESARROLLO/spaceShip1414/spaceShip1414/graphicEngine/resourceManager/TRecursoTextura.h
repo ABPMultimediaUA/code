@@ -15,6 +15,5 @@ public:
 	GLuint getTexturaID();
 private:
 	GLuint textura;
-	int width, height;
 };
 

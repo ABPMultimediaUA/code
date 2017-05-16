@@ -71,6 +71,9 @@ public:
 	void rotarYPR(TNodo *, float, float, float);
 	void escalar(TNodo *, float, float, float);
 	void resetTransform(TNodo *, char);
+	glm::vec3 getPosicion(TNodo *);
+	glm::vec3 getRotacion(TNodo *);
+	glm::vec3 getEscalado(TNodo *);
 	TNodo * getPadreX(TNodo *, char p = 0);
 	glm::mat4 getInverseProjectionCamaraActive();
 	
@@ -83,6 +86,7 @@ public:
 	double getDT();
 	void run(Mundo * world, Escenario*);
 private:
+	glm::vec3 descomponerMatriz(TNodo *, char);
 	void onstart();
 	void onstop();
 	void draw(double);

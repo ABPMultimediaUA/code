@@ -183,7 +183,7 @@ bool TRecursoMalla::cargarFichero(std::string n)
 	else
 	{ 
 		std::cout << importer.GetErrorString() << std::endl;
-		system("PAUSE");
+		//system("PAUSE");
 		return false;
 	}
 }

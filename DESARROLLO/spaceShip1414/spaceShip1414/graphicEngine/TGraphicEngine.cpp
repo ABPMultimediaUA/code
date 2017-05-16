@@ -9,6 +9,9 @@
 #include <glm\gtc\matrix_inverse.hpp>
 #include <glm\gtc\matrix_transform.hpp>
 #include <glm\gtc\type_ptr.hpp>
+#include <glm\gtx\matrix_decompose.hpp>
+#include <glm/gtc/quaternion.hpp>
+#include <glm/gtx/quaternion.hpp>
 #include "resourceManager\TGestorRecursos.h"
 #include "entityTree\TEntidad.h"
 #include "entityTree\TNodo.h"
@@ -433,6 +436,21 @@ void TGraphicEngine::resetTransform(TNodo * nodo, char tipo)
 	}
 }
 
+glm::vec3 TGraphicEngine::getPosicion(TNodo * nodo)
+{
+	return descomponerMatriz(nodo, 't');
+}
+
+glm::vec3 TGraphicEngine::getRotacion(TNodo * nodo)
+{
+	return descomponerMatriz(nodo, 'r');
+}
+
+glm::vec3 TGraphicEngine::getEscalado(TNodo * nodo)
+{
+	return descomponerMatriz(nodo, 'e');
+}
+
 TNodo * TGraphicEngine::getPadreX(TNodo * hijo, char padre)
 {
 	if (padre == 0 || hijo->getPadre() == nullptr) {
@@ -457,6 +475,34 @@ void TGraphicEngine::draw(double time)
 	luzActivada();
 	escena->draw(shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
 	shader.unUse();
+}
+
+glm::vec3 TGraphicEngine::descomponerMatriz(TNodo * nodo, char tipo)
+{
+	glm::mat4 transform = (static_cast<TTransform*>(nodo->getPadre()->getEntidad()))->getMatriz() * (static_cast<TTransform*>(nodo->getPadre()->getPadre()->getEntidad()))->getMatriz() * (static_cast<TTransform*>(nodo->getPadre()->getPadre()->getPadre()->getEntidad()))->getMatriz();
+	glm::vec3 scale;
+	glm::quat rotation;
+	glm::vec3 translation;
+	glm::vec3 skew;
+	glm::vec4 perspective;
+	glm::decompose(transform, scale, rotation, translation, skew, perspective);
+	rotation = glm::conjugate(rotation);
+	glm::vec3 rotEulerAngle = glm::eulerAngles(rotation);
+	switch (tipo)
+	{
+	case 't':
+		return translation;
+		break;
+	case 'e':
+		return scale;
+		break;
+	case 'r':
+		return rotEulerAngle;
+		break;
+	default:
+		std::cout << "Error al descomponer" << std::endl;
+		return glm::vec3();
+	}
 }
 
 void TGraphicEngine::onstart()
@@ -636,7 +682,7 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		glEnable(GL_CULL_FACE);
 		world->stepBox2D(1.0 / 60.0, 6, 2);
 		//world->getWorldBox2D()->DrawDebugData();
-		//	m_gui.draw();
+		//m_gui.draw();
 		world->clearForcesBox2D();
 		//drawBox(world, 5, 50, 2, 1);
 		move->checkKeys(window, this);
