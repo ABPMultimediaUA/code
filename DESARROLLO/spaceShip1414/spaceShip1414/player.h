@@ -30,7 +30,8 @@ public:
 	void setPos(float x, float y, float z);
 	void setRot(float x, float y, float z);
 	void setScale(float x, float y, float z);
-	void actualizarFisicas(int n, double delta, glm::vec3);
+	void actualizarFisicas(int n, double delta, float);
+	void setCamPos(glm::vec3);
 	TNodo * getNodo();
 
 private:
@@ -40,6 +41,7 @@ private:
 	glm::vec3 pos;
 	glm::vec3 rot;
 	glm::vec3 escale;
+	glm::vec3 posCam;
 	//Entity3D *entity;
 	Entity2D *entity;
 	TNodo *nodo;

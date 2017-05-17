@@ -134,7 +134,7 @@ void player::setScale(float x, float y, float z)
 
 }
 
-void player::actualizarFisicas(int n, double delta, glm::vec3 posCam)
+void player::actualizarFisicas(int n, double delta, float anguloCam)
 {
 
 	//new_x = ((x - x_origin) * cos(angle)) - ((y_origin - y) * sin(angle)) + x_origin;
@@ -143,18 +143,20 @@ void player::actualizarFisicas(int n, double delta, glm::vec3 posCam)
 	//calculo del vec velocidad y el punto destino
 
 	glm::vec3 vecVel = glm::normalize(pos - posCam);
-	vecVel *= velocity * 2;
-	b2Vec2 vel(vecVel.x, vecVel.z);
+	vecVel *= velocity;
+	b2Vec2 vel(0,0);
 	glm::vec3 pto = vecVel + pos;
+
+	//glm::vec3 caca = glm::normalize(pto - pos);
+	//caca *= velocity;
+	//std::cout << "JAJA: " << glm::to_string(vecVel) << std::endl;
+	//std::cout << "HAHA: " << glm::to_string(caca) << std::endl;
+
 
 	glm::vec3 posSim;
 
 
 
-	if (n == -1) {
-		vel.SetZero();
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-	}
 
 	if (n == 0) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
@@ -168,13 +170,16 @@ void player::actualizarFisicas(int n, double delta, glm::vec3 posCam)
 
 	if (n == 2) {
 
-		posSim.x = ((pto.x - pos.x) * cos(180)) - ((pos.z - pto.z) * sin(180)) + pos.x;
-		posSim.z = ((pos.z - pto.z) * cos(180)) - ((pto.x - pos.x) * sin(180)) + pos.z;
-		posSim.y = 0.0f;
+		//posSim.x = ((pto.x - pos.x) * cos(180)) + ((pos.z - pto.z) * sin(180)) + pos.x;
+		//posSim.z = ((pos.z - pto.z) * cos(180)) - ((pto.x - pos.x) * sin(180)) + pos.z;
+		//posSim.x = velocity  * sin(anguloCam);
+		//posSim.z = velocity * cos(anguloCam);
 
-		glm::vec3 aux = posSim - pos;
-		vecVel = aux * velocity;
-		vel.Set(vecVel.x, vecVel.z);
+		//posSim.y = 0.0f;
+
+		//glm::vec3 aux = glm::normalize(posSim - pos);
+		//vecVel = aux * velocity;
+		//vel.Set(vecVel.x, vecVel.z);
 
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
 
@@ -183,6 +188,15 @@ void player::actualizarFisicas(int n, double delta, glm::vec3 posCam)
 
 	if (n == 3) {
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
+
+		//posSim.x = sin(anguloCam + 180);
+		//posSim.z = cos(anguloCam + 180);
+
+		//posSim.y = 0.0f;
+
+		//glm::vec3 aux = glm::normalize(posSim - pos);
+		//vecVel = aux * velocity;
+		//vel.Set(vecVel.x, vecVel.z);
 
 	}
 
@@ -198,6 +212,11 @@ void player::actualizarFisicas(int n, double delta, glm::vec3 posCam)
 	setPos(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
 
 
+}
+
+void player::setCamPos(glm::vec3 p)
+{
+	posCam = p;
 }
 
 TNodo * player::getNodo()
