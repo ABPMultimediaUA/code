@@ -28,6 +28,8 @@ public:
 
 	void resetMatriz();
 
+	void lookat(glm::vec3 eye, glm::vec3 tar, glm::vec3 mat);
+
 
 private:
 	glm::mat4 matriz;

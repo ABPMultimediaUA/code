@@ -113,3 +113,9 @@ void TTransform::resetMatriz()
 {
 	matriz = identidad();
 }
+
+
+void TTransform::lookat(glm::vec3 eye, glm::vec3 tar, glm::vec3 mat)
+{
+	matriz = glm::lookAt(eye, tar, mat);
+}

@@ -9,7 +9,7 @@
 #include "../TGraphicEngine.h"
 #include "../entityTree/TCamara.h"
 #include <math.h>
-
+#include <glm\glm.hpp>
 
 movimentHandler::movimentHandler() : activo{ false }, mouseSensitive{ 0.015f }
 {
@@ -81,20 +81,68 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGr
 	glfwGetWindowSize(window, &width, &height);
 
 	float anguloRaton;
-	glm::vec3 pos;
-		anguloRaton = -atan2f(static_cast<float>(xpos) - width/2.0f, static_cast<float>(ypos) - height / 2.0f) * 180 / 3.14f;
+	
+		//anguloRaton = -atan2f(static_cast<float>(xpos) - width/2.0f, static_cast<float>(ypos) - height / 2.0f) * 180 / 3.14f;
+	
+	if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT)){
+		float d = xpos - width / 2.0f;
+
+		if (d > 0) {
+			
+			anguloRaton = (d * 180) / (width / 2.0f);
+		}
+
+		else {
+
+			anguloRaton = -(d * 180) / (width / 2.0f);
+
+		}
+
+		float rho = 1.0f;
+		float phi = 0.0f;
+		float theta = 0.0f;
+		double dt = motor->getDT();
+		jugador->setYaw(anguloRaton);
+		glm::vec3 eye;
+		//eye.x = rho*sin((phi * 180) / 3.14)*cos((theta*180)/3.14);
+		//eye.y = rho*sin((phi * 180) / 3.14)*sin((theta * 180) / 3.14);
+		//eye.z = rho*cos((phi * 180) / 3.14);
+		//
+		eye.x = jugador->getPos().x + rho*cos(anguloRaton*0.016);
+		eye.y = 0;
+		eye.z = jugador->getPos().z + rho*sin(anguloRaton*0.016);
+
+
+		motor->look(camara->getNodo(), eye, glm::vec3(jugador->getPos().x, 0, jugador->getPos().z), glm::vec3(0, 1, 0));
+
+		camara->translation(motor, jugador->getPos().x + 10  , 15, jugador->getPos().z + 35 );
 		
+		//camara->rotationYPR(motor, (180 + jugador->getYaw()) * dt, 0, 0);
+
+	}
+
+
+
+
+
+
+
+
 	//	jugador->setYaw(anguloRaton);
-		camara->setYaw(anguloRaton);
+		//camara->setYaw(anguloRaton);
 	//	motor->resetTransform(camara->getNodo(), 'r');
 		//motor->rotarYPR(camara->getNodo(), -camara->getYaw(), 0.0f, 0.0f);
-		camara->rotationYPR(motor, -camara->getYaw(), 0.0f, 0.0f);
-		std::cout << camara->getYaw() << std::endl;
+		//std::cout << camara->getYaw() << std::endl;
 /*	motor->resetTransform(jugador->getNodo(),'r');
 		motor->rotarYPR(jugador->getNodo(), -jugador->getYaw(), 0.0f, 0.0f);
 			*/
+		//glm::vec3 posCam(jugador->getPos().x, jugador->getPos().y - 15.0f, jugador->getPos().z - 15.0f);
+		//glm::vec3 eye(jugador->getPos());
+		//glm::vec3 up(0, 1, 0);
 
-		
+		//glm::lookAt(posCam, eye, up);
+		//camara->rotationYPR(motor, -camara->getYaw() * motor->getDT(), 0.0f, 0.0f);
+
 	//pos.x = (2.0f * xpos) / width - 1.0f;
 	//pos.y = 1.0f - (2.0f * ypos) / height;
 	//pos.z = 1.0f;
@@ -190,3 +238,4 @@ void movimentHandler::checkKeys(GLFWwindow * window, TGraphicEngine* motor)
 	motor->resetTransform(jugador->getNodo(), 't');
 	motor->trasladar(jugador->getNodo(), jugador->getPos().x, jugador->getPos().y, -jugador->getPos().z);
 }
+

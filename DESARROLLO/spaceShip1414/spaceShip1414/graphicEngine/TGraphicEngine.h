@@ -75,6 +75,7 @@ public:
 	glm::vec3 getRotacion(TNodo *);
 	glm::vec3 getEscalado(TNodo *);
 	TNodo * getPadreX(TNodo *, char p = 0);
+	void look(TNodo * nodo, glm::vec3 eye, glm::vec3 tar, glm::vec3 mat);
 	glm::mat4 getInverseProjectionCamaraActive();
 	
 	void setCamaraMove(Camara * c);
