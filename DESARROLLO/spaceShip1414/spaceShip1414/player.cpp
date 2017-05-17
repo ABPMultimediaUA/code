@@ -13,6 +13,7 @@
 #include "Fisicas\Mundo.h"
 #endif
 #include <iostream>
+#include <math.h>
 
 player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 100.0f }, yaw{ 0 }, pitch{ 0 }
 {
@@ -133,47 +134,59 @@ void player::setScale(float x, float y, float z)
 
 }
 
-void player::actualizarFisicas(int n, double delta)
+void player::actualizarFisicas(int n, double delta, glm::vec3 posCam)
 {
 
-	//std::cout<<"//////////////////////////////////////////"<<std::endl;
-	//            std::cout<<""<<std::endl;
-	//            std::cout<<"POS PERS ANTES"<<std::endl;
-	//                 std::cout<<"Pos 3D X: "<<pos.x<<"Pos 3D Z: "<<pos.z<<std::endl;
-	//                 std::cout<<"Pos 2D X: "<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).x<<"Pos 2D Z: "
-	//					 << entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y<<std::endl;
-	//			std::cout<<"Pos 2D X: "<<entity->getCuerpo2D()->GetPosition().x<<"Pos 2D Z: "<<entity->getCuerpo2D()->GetPosition().y<<std::endl;
+	//new_x = ((x - x_origin) * cos(angle)) - ((y_origin - y) * sin(angle)) + x_origin;
+	//new_y = ((y_origin - y) * cos(angle)) - ((x - x_origin) * sin(angle)) + y_origin;
+
+	//calculo del vec velocidad y el punto destino
+
+	glm::vec3 vecVel = glm::normalize(pos - posCam);
+	vecVel *= velocity * 2;
+	b2Vec2 vel(vecVel.x, vecVel.z);
+	glm::vec3 pto = vecVel + pos;
+
+	glm::vec3 posSim;
+
+
 
 	if (n == -1) {
+		vel.SetZero();
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x, 0, entity->getCuerpo2D()->GetLinearVelocity().y);*/
 	}
 
 	if (n == 0) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
-		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x * 0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y * 0.016);*/
 	}
 
 	if (n == 1) {
 
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
-		/*fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
 
 	}
 
 	if (n == 2) {
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
-	/*	fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
-		//std::cout <<"-------------------------------<<<"<< entity->getCuerpo2D()->GetLinearVelocity().x << " " << entity->getCuerpo2D()->GetLinearVelocity().y << std::endl;
+
+		posSim.x = ((pto.x - pos.x) * cos(180)) - ((pos.z - pto.z) * sin(180)) + pos.x;
+		posSim.z = ((pos.z - pto.z) * cos(180)) - ((pto.x - pos.x) * sin(180)) + pos.z;
+		posSim.y = 0.0f;
+
+		glm::vec3 aux = posSim - pos;
+		vecVel = aux * velocity;
+		vel.Set(vecVel.x, vecVel.z);
+
+		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
+
 	}
 
 
 	if (n == 3) {
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
-	/*	fis->Translation()->trasladar(entity->getCuerpo2D()->GetLinearVelocity().x*0.016, 0, entity->getCuerpo2D()->GetLinearVelocity().y*0.016);*/
+		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
+
 	}
 
-
+	entity->getCuerpo2D()->SetLinearVelocity(vel);
 	//std::cout << "//////////////////////////////////////////" << std::endl;
 	//std::cout << "" << std::endl;
 	//std::cout << "POS PERS DES" << std::endl;
@@ -184,13 +197,7 @@ void player::actualizarFisicas(int n, double delta)
 	
 	setPos(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
 
-	//std::cout << "//////////////////////////////////////////" << std::endl;
-	//std::cout << "" << std::endl;
-	//std::cout << "POS PERS DES" << std::endl;
-	//std::cout << "Pos 3D X: " << pos.x << "Pos 3D Z: " << pos.z << std::endl;
-	//std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).x << "Pos 2D Z: "
-	//	<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y << std::endl;
-	//std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
+
 }
 
 TNodo * player::getNodo()

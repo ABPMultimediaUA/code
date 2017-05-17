@@ -30,7 +30,7 @@ public:
 	void setPos(float x, float y, float z);
 	void setRot(float x, float y, float z);
 	void setScale(float x, float y, float z);
-	void actualizarFisicas(int n, double delta);
+	void actualizarFisicas(int n, double delta, glm::vec3);
 	TNodo * getNodo();
 
 private:
