@@ -85,47 +85,73 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGr
 		//anguloRaton = -atan2f(static_cast<float>(xpos) - width/2.0f, static_cast<float>(ypos) - height / 2.0f) * 180 / 3.14f;
 	
 	if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT)){
-		float d = xpos - width / 2.0f;
 
-		if (d > 0) {
+
+
+		//float d = xpos - width / 2.0f;
+
+		//if (xpos > 200 && xpos < width - 200) {
+		//	offsetRango = 0.0f;
+		//}
+
+
+		//if (xpos > width - 200 && xpos < width) {
+		//	offsetRango += 20.0f;
+		//	d = d + offsetRango;
+		//}
+
+		//else if (xpos < 200 && xpos > 0) {
+		//	offsetRango -= 20.0f;
+		//	d = d + offsetRango;
+		//}
+
+		//if (d > 0) {
+		//	
+		//	anguloRaton = (d * 180) / (width / 2.0f);
+		//}
+
+		//else {
+
+		//	anguloRaton = -(d * 180) / (width / 2.0f);
+
+		//}
+
+		if (xpos > offsetRango) {
+
+			angle += 5.0f;
 			
-			anguloRaton = (d * 180) / (width / 2.0f);
-		}
-
-		else {
-
-			anguloRaton = -(d * 180) / (width / 2.0f);
 
 		}
+
+		else if (xpos < offsetRango) {
+			angle -= 5.0f;
+			
+		}
+		//anguloRaton = angle;
+		offsetRango = xpos;
 
 		float rho = 1.0f;
 		float phi = 0.0f;
 		float theta = 0.0f;
 		double dt = motor->getDT();
-		jugador->setYaw(anguloRaton);
+		//jugador->setYaw(anguloRaton);
 		glm::vec3 eye;
 		//eye.x = rho*sin((phi * 180) / 3.14)*cos((theta*180)/3.14);
 		//eye.y = rho*sin((phi * 180) / 3.14)*sin((theta * 180) / 3.14);
 		//eye.z = rho*cos((phi * 180) / 3.14);
 		//
-		eye.x = jugador->getPos().x + rho*cos(anguloRaton*0.016);
+		eye.x = jugador->getPos().x + rho*cos(angle*0.016);
 		eye.y = 0;
-		eye.z = jugador->getPos().z + rho*sin(anguloRaton*0.016);
+		eye.z = jugador->getPos().z + rho*sin(angle*0.016);
 
 
 		motor->look(camara->getNodo(), eye, glm::vec3(jugador->getPos().x, 0, jugador->getPos().z), glm::vec3(0, 1, 0));
 
-		camara->translation(motor, jugador->getPos().x + 10  , 15, jugador->getPos().z + 35 );
+		camara->translation(motor, jugador->getPos().x, 15, jugador->getPos().z + 15 );
 		
 		//camara->rotationYPR(motor, (180 + jugador->getYaw()) * dt, 0, 0);
 
 	}
-
-
-
-
-
-
 
 
 	//	jugador->setYaw(anguloRaton);

@@ -33,6 +33,7 @@ private:
 	player *jugador;
 	Camara *camara;
 	glm::vec3 front;
-	float uPosx;
+	float offsetRango = 0.0f;
+	float angle;
 };
 
