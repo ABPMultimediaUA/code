@@ -34,6 +34,6 @@ private:
 	Camara *camara;
 	glm::vec3 front;
 	float offsetRango = 0.0f;
-	float angle;
+	float angle = 180.0f;
 };
 

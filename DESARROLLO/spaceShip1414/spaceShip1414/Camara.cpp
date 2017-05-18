@@ -103,3 +103,12 @@ void Camara::translation(TGraphicEngine * motorApp, float x, float y, float z)
 {
 	motorApp->trasladar(nodo, x, y, z);
 }
+
+
+void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 eye, glm::vec3 posPers) {
+
+	motorApp->look(nodo, eye, posPers, glm::vec3(0, 1, 0));
+
+	translation(motorApp, posPers.x, 15,posPers.z - 15);
+
+}

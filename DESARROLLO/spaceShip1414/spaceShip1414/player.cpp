@@ -15,7 +15,7 @@
 #include <iostream>
 #include <math.h>
 
-player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 100.0f }, yaw{ 0 }, pitch{ 0 }
+player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	nodo = motorApp->addMalla("resourse/models/Nanosuit/nanosuit.obj");
 	motorApp->escalar(nodo, 0.7f, 0.7f, 0.7f);
@@ -143,7 +143,7 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	//calculo del vec velocidad y el punto destino
 
 	glm::vec3 vecVel = glm::normalize(pos - posCam);
-	vecVel *= velocity;
+
 	b2Vec2 vel(0,0);
 	glm::vec3 pto = vecVel + pos;
 
@@ -189,16 +189,21 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	if (n == 3) {
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
 
-		//posSim.x = sin(anguloCam + 180);
-		//posSim.z = cos(anguloCam + 180);
+		//posSim.x = sin(anguloCam);
+		//posSim.z = cos(anguloCam);
 
 		//posSim.y = 0.0f;
 
 		//glm::vec3 aux = glm::normalize(posSim - pos);
 		//vecVel = aux * velocity;
-		//vel.Set(vecVel.x, vecVel.z);
+		//vel.Set(vecVel.x, -vecVel.z);
+		//vecVel.x += 
+
 
 	}
+
+
+	vecVel *= velocity;
 
 	entity->getCuerpo2D()->SetLinearVelocity(vel);
 	//std::cout << "//////////////////////////////////////////" << std::endl;

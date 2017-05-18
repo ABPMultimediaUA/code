@@ -1,4 +1,5 @@
 #pragma once
+#include <glm\vec3.hpp>
 class TTransform;
 class TGraphicEngine;
 class TNodo;
@@ -18,6 +19,7 @@ public:
 	void rotationYPR(TGraphicEngine *, float, float, float);
 	void scale(TGraphicEngine *, float, float, float);
 	void translation(TGraphicEngine *, float, float, float);
+	void updateCam(TGraphicEngine * motorApp, glm::vec3 eye, glm::vec3 posPers);
 	void setVelocity(float);
 	void setYaw(float);
 	void setPitch(float);

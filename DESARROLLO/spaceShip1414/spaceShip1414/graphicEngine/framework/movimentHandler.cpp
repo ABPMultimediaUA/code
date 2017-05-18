@@ -90,13 +90,15 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGr
 		if (xpos > offsetRango) {
 
 			angle += 5.0f;
-			
+			jugador->rotationYPR(motor, 5, 0.0f, 0.0f);
+
 
 		}
 
 		else if (xpos < offsetRango) {
 			angle -= 5.0f;
-			
+			jugador->rotationYPR(motor, -5, 0.0f, 0.0f);
+
 		}
 		camara->setYaw(angle);
 		//anguloRaton = angle;
@@ -118,10 +120,9 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGr
 
 		std::cout << "CACA: " << glm::to_string(motor->getPosicion(camara->getNodo())) << std::endl;
 
-		motor->look(camara->getNodo(), eye, glm::vec3(jugador->getPos().x, 0, jugador->getPos().z), glm::vec3(0, 1, 0));
+		camara->updateCam(motor, eye, jugador->getPos());
+		jugador->setYaw(angle*0.016);
 
-		camara->translation(motor, jugador->getPos().x, 15, jugador->getPos().z + 15 );
-		
 		jugador->setCamPos(motor->getPosicion(camara->getNodo()));
 		//camara->rotationYPR(motor, (180 + jugador->getYaw()) * dt, 0, 0);
 
