@@ -567,13 +567,13 @@
           "components": [
             {
               "localPosition": [
-                -23.33,
-                6.0,
+                -23.42,
+                4.35,
                 1.43
               ],
               "localRotation": [
                 0.0,
-                180.0,
+                0.0,
                 0.0
               ],
               "localScale": [
@@ -586,7 +586,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface1165",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "pasillo_salaespera-hangar 1_polySurface1165",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -1037,7 +1081,7 @@
               "components": [
                 {
                   "localPosition": [
-                    17.34,
+                    16.5,
                     3.0,
                     -2.6
                   ],
@@ -1232,7 +1276,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -8.5,
+                    -11.34,
                     3.0,
                     23.74
                   ],
@@ -1612,9 +1656,9 @@
           "components": [
             {
               "localPosition": [
-                0.0,
-                6.0,
-                0.0
+                -2.9,
+                9.0,
+                -2.31
               ],
               "localRotation": [
                 0.0,
@@ -1631,7 +1675,271 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface2110",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2110_MeshPart0",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "hangar 1_polySurface2110_MeshPart0",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "hangar_VigasSG1",
+                        "initialShadingGroup",
+                        "hangar_VigasFBXASC046001SG1",
+                        "hangar_ParteFBXASC0321FBXASC046003SG",
+                        "hangar_ParteFBXASC0321FBXASC046004SG",
+                        "hangar_ParedFBXASC045SupFBXASC0453FBXASC046003SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "name": "polySurface2110_MeshPart1",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "hangar 1_polySurface2110_MeshPart1",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "initialShadingGroup",
+                        "hangar_VigasSG1",
+                        "hangar_VigasSG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "name": "polySurface2110_MeshPart2",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "hangar 1_polySurface2110_MeshPart2",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "initialShadingGroup",
+                        "hangar_ParedFBXASC045SupFBXASC0451SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "name": "polySurface2110_MeshPart3",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "hangar 1_polySurface2110_MeshPart3",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "initialShadingGroup",
+                        "hangar_VigasSG",
+                        "hangar_ParedFBXASC045SupFBXASC0453SG",
+                        "hangar_ParedFBXASC045SupFBXASC0453FBXASC046001SG",
+                        "hangar_VigasFBXASC046001SG",
+                        "hangar_VigasFBXASC046001SG1",
+                        "hangar_VigasSG1",
+                        "hangar_ParteFBXASC0321FBXASC046000SG",
+                        "hangar_ParteFBXASC0321FBXASC046002SG",
+                        "hangar_ParedFBXASC045SupFBXASC0453FBXASC046002SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "name": "polySurface2110_MeshPart4",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "hangar 1_polySurface2110_MeshPart4",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "hangar_ParedFBXASC045SupFBXASC0453FBXASC046002SG",
+                        "initialShadingGroup",
+                        "hangar_VigasSG1",
+                        "hangar_ParteFBXASC0321FBXASC046003SG",
+                        "hangar_ParteFBXASC0321FBXASC046000SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1991,133 +2299,20 @@
               "type": "Transform"
             }
           ],
-          "children": [
-            {
-              "name": "Suelo-1",
-              "components": [
-                {
-                  "localPosition": [
-                    1.37,
-                    0.2,
-                    -15.5
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    23.0,
-                    0.5,
-                    48.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "S_Almacen"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Suelo-2",
-              "components": [
-                {
-                  "localPosition": [
-                    -15.63,
-                    0.2,
-                    -26.5
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    11.0,
-                    0.5,
-                    26.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "S_Almacen"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            }
-          ]
+          "children": []
         },
         {
           "name": "Modelo",
           "components": [
             {
               "localPosition": [
-                -2.08,
-                7.0,
-                -74.46
+                -2.5,
+                6.54,
+                -74.8
               ],
               "localRotation": [
                 0.0,
-                179.9801,
+                180.0,
                 0.0
               ],
               "localScale": [
@@ -2130,7 +2325,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface1164",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "almacen_grande_abajo 1_polySurface1164",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -2498,7 +2737,7 @@
           "components": [
             {
               "localPosition": [
-                11.68,
+                11.546,
                 5.0,
                 29.9
               ],
@@ -2517,7 +2756,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface2193",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "almacen_peque_arriba 1_polySurface2193",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -3723,9 +4006,9 @@
               "components": [
                 {
                   "localPosition": [
-                    6.62,
+                    6.53,
                     3.0,
-                    -27.36
+                    -27.28
                   ],
                   "localRotation": [
                     0.0,
@@ -3837,7 +4120,7 @@
                   "localPosition": [
                     -67.0,
                     3.0,
-                    31.5
+                    -38.1
                   ],
                   "localRotation": [
                     0.0,
@@ -4228,7 +4511,7 @@
             {
               "localPosition": [
                 -39.5,
-                5.0,
+                3.93,
                 -38.8
               ],
               "localRotation": [
@@ -4246,7 +4529,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface1510",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "pasillos_inferiores 1_polySurface1510",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -4361,7 +4688,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -4.7,
+                    -3.48,
                     3.0,
                     108.4
                   ],
@@ -5145,7 +5472,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -73.92,
+                    -74.48,
                     3.0,
                     187.03
                   ],
@@ -5369,7 +5696,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -76.8,
+                    -75.16,
                     3.0,
                     136.5
                   ],
@@ -6266,7 +6593,7 @@
             {
               "localPosition": [
                 -39.2,
-                6.0,
+                4.19,
                 167.4
               ],
               "localRotation": [
@@ -6406,7 +6733,7 @@
             {
               "localPosition": [
                 -10.0,
-                6.0,
+                4.19,
                 66.5
               ],
               "localRotation": [
@@ -6476,7 +6803,7 @@
             {
               "localPosition": [
                 -53.5,
-                6.0,
+                4.19,
                 140.2
               ],
               "localRotation": [
@@ -7438,7 +7765,7 @@
             {
               "localPosition": [
                 -131.45,
-                9.0,
+                7.46,
                 34.4
               ],
               "localRotation": [
@@ -7456,7 +7783,52 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface3095",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "comisaria-celda 1_polySurface3095",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup",
+                    "celda_cell021SG"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -7988,6 +8360,76 @@
           ]
         },
         {
+          "name": "Pasillo",
+          "components": [
+            {
+              "localPosition": [
+                -3.65,
+                4.99,
+                -32.86
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                0.66,
+                0.5,
+                0.65
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "polySurface1165",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "pasillo_salaespera-hangar 1_polySurface1165",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
           "name": "Modelo",
           "components": [
             {
@@ -8011,33 +8453,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
-        },
-        {
-          "name": "Pasillo",
-          "components": [
+          "children": [
             {
-              "localPosition": [
-                -3.65,
-                4.99,
-                -32.86
+              "name": "polySurface2129",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "almacen_peque_abajo 1_polySurface2129",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
               ],
-              "localRotation": [
-                0.0,
-                180.0,
-                0.0
-              ],
-              "localScale": [
-                0.66,
-                0.5,
-                0.65
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
+              "children": []
             }
-          ],
-          "children": []
+          ]
         }
       ]
     },
@@ -8096,7 +8556,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -15.81,
+                    -16.3,
                     3.0,
                     51.78
                   ],
@@ -8152,7 +8612,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -37.82,
+                    -38.3,
                     3.0,
                     23.2
                   ],
@@ -8208,7 +8668,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -26.05,
+                    -26.5,
                     3.0,
                     20.9
                   ],
@@ -8264,7 +8724,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -61.44,
+                    -61.9,
                     3.0,
                     25.26
                   ],
@@ -8320,7 +8780,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -61.33,
+                    -61.8,
                     3.0,
                     75.1
                   ],
@@ -8376,7 +8836,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -20.67,
+                    -21.1,
                     3.0,
                     25.73
                   ],
@@ -8432,7 +8892,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -84.54,
+                    -85.0,
                     3.0,
                     49.51
                   ],
@@ -8488,7 +8948,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -25.05,
+                    -25.5,
                     3.0,
                     23.2
                   ],
@@ -8544,7 +9004,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -37.51,
+                    -38.0,
                     3.0,
                     20.9000015
                   ],
@@ -8600,7 +9060,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -19.86,
+                    -20.3,
                     3.0,
                     75.3
                   ],
@@ -8656,7 +9116,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -24.6,
+                    -25.1,
                     3.0,
                     77.69
                   ],
@@ -8712,7 +9172,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -38.12,
+                    -39.07,
                     3.0,
                     77.69
                   ],
@@ -8768,7 +9228,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -37.3,
+                    -38.27,
                     3.0,
                     79.39
                   ],
@@ -8824,7 +9284,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -25.7,
+                    -26.2,
                     3.0,
                     79.55
                   ],
@@ -8965,13 +9425,13 @@
           "components": [
             {
               "localPosition": [
-                -50.4,
-                7.0,
+                -50.5,
+                6.5,
                 50.0
               ],
               "localRotation": [
                 0.0,
-                268.8986,
+                269.4048,
                 0.0
               ],
               "localScale": [
@@ -8984,7 +9444,121 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface12",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface12_MeshPart0",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "sala_mantenimiento 1_polySurface12_MeshPart0",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "initialShadingGroup"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "name": "polySurface12_MeshPart1",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "sala_mantenimiento 1_polySurface12_MeshPart1",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "initialShadingGroup"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -9045,7 +9619,7 @@
                   "localPosition": [
                     -101.6,
                     3.0,
-                    12.64
+                    13.9
                   ],
                   "localRotation": [
                     0.0,
@@ -9101,7 +9675,7 @@
                   "localPosition": [
                     -101.6,
                     3.0,
-                    0.8
+                    2.1
                   ],
                   "localRotation": [
                     0.0,
@@ -9157,7 +9731,7 @@
                   "localPosition": [
                     -158.8,
                     3.0,
-                    26.8
+                    28.1
                   ],
                   "localRotation": [
                     0.0,
@@ -9213,7 +9787,7 @@
                   "localPosition": [
                     -165.1,
                     3.0,
-                    -8.6
+                    -7.3
                   ],
                   "localRotation": [
                     0.0,
@@ -9269,7 +9843,7 @@
                   "localPosition": [
                     -171.5,
                     3.0,
-                    48.8
+                    50.1
                   ],
                   "localRotation": [
                     0.0,
@@ -9325,7 +9899,7 @@
                   "localPosition": [
                     -158.83,
                     3.0,
-                    -5.07
+                    -3.8
                   ],
                   "localRotation": [
                     0.0,
@@ -9381,7 +9955,7 @@
                   "localPosition": [
                     -159.1,
                     3.0,
-                    81.4
+                    82.7
                   ],
                   "localRotation": [
                     0.0,
@@ -9742,9 +10316,9 @@
           "components": [
             {
               "localPosition": [
-                -108.2,
-                6.0,
-                48.3
+                -108.7,
+                4.9,
+                49.21
               ],
               "localRotation": [
                 0.0,
@@ -9761,7 +10335,121 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface2623",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2623_MeshPart0",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "pasillo_entrada 1_polySurface2623_MeshPart0",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "initialShadingGroup"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "name": "polySurface2623_MeshPart1",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "pasillo_entrada 1_polySurface2623_MeshPart1",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "initialShadingGroup"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -9820,9 +10508,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -26.43,
+                    -27.9,
                     4.0,
-                    -57.29
+                    -58.6
                   ],
                   "localRotation": [
                     0.0,
@@ -9876,9 +10564,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -40.02,
+                    -41.4,
                     4.0,
-                    -68.96
+                    -70.2
                   ],
                   "localRotation": [
                     0.0,
@@ -9932,9 +10620,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -55.51,
+                    -56.9,
                     4.0,
-                    -57.68
+                    -59.0
                   ],
                   "localRotation": [
                     0.0,
@@ -9988,9 +10676,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -62.56,
+                    -64.69,
                     4.0,
-                    -36.39
+                    -38.31
                   ],
                   "localRotation": [
                     0.0,
@@ -10044,9 +10732,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -48.12,
+                    -49.5,
                     4.0,
-                    -31.68
+                    -33.0
                   ],
                   "localRotation": [
                     0.0,
@@ -10100,9 +10788,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -61.71,
+                    -63.76,
                     4.0,
-                    -43.35
+                    -45.16
                   ],
                   "localRotation": [
                     0.0,
@@ -10156,9 +10844,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -34.69,
+                    -36.1,
                     4.0,
-                    -39.25
+                    -40.5
                   ],
                   "localRotation": [
                     0.0,
@@ -10212,9 +10900,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -53.79,
+                    -55.89,
                     4.0,
-                    -28.56
+                    -30.41
                   ],
                   "localRotation": [
                     0.0,
@@ -10548,13 +11236,13 @@
           "components": [
             {
               "localPosition": [
-                -42.27,
-                7.0,
-                -49.82
+                -45.47,
+                7.77,
+                -51.71
               ],
               "localRotation": [
                 0.0,
-                49.5965,
+                48.91421,
                 0.0
               ],
               "localScale": [
@@ -10567,20 +11255,64 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface433",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "sala_espera 1_polySurface433",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         },
         {
           "name": "Pasillo",
           "components": [
             {
               "localPosition": [
-                -29.7,
-                4.15,
-                -67.99
+                -30.47,
+                4.0,
+                -68.71
               ],
               "localRotation": [
                 0.0,
-                47.3246727,
+                47.2372665,
                 0.0
               ],
               "localScale": [
@@ -10593,20 +11325,64 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface1165",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "pasillo_salaespera-hangar 1_polySurface1165",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         },
         {
           "name": "Pasillo",
           "components": [
             {
               "localPosition": [
-                -58.22,
+                -60.16,
                 4.15,
-                -32.94
+                -34.58
               ],
               "localRotation": [
                 0.0,
-                226.831833,
+                229.73819,
                 0.0
               ],
               "localScale": [
@@ -10619,7 +11395,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface1165",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "pasillo_salaespera-hangar 1_polySurface1165",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -10680,7 +11500,7 @@
                   "localPosition": [
                     -33.94,
                     3.0,
-                    78.98
+                    78.27
                   ],
                   "localRotation": [
                     0.0,
@@ -10736,7 +11556,7 @@
                   "localPosition": [
                     -69.6,
                     3.0,
-                    78.98
+                    78.27
                   ],
                   "localRotation": [
                     0.0,
@@ -10790,9 +11610,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -80.2,
+                    -78.96,
                     3.0,
-                    88.0
+                    87.29
                   ],
                   "localRotation": [
                     0.0,
@@ -10848,7 +11668,7 @@
                   "localPosition": [
                     -23.95,
                     3.0,
-                    87.78
+                    87.07
                   ],
                   "localRotation": [
                     0.0,
@@ -10904,7 +11724,7 @@
                   "localPosition": [
                     -51.1,
                     3.0,
-                    96.54
+                    95.83
                   ],
                   "localRotation": [
                     0.0,
@@ -11044,8 +11864,8 @@
             {
               "localPosition": [
                 -51.73,
-                9.0,
-                86.63
+                8.0,
+                85.82
               ],
               "localRotation": [
                 0.0,
@@ -11167,7 +11987,7 @@
                   "localPosition": [
                     -109.7,
                     3.0,
-                    -12.84
+                    -16.09
                   ],
                   "localRotation": [
                     0.0,
@@ -11223,7 +12043,7 @@
                   "localPosition": [
                     -166.82,
                     3.0,
-                    -32.85
+                    -36.1
                   ],
                   "localRotation": [
                     0.0,
@@ -11279,7 +12099,7 @@
                   "localPosition": [
                     -178.05,
                     3.0,
-                    -31.48
+                    -34.73
                   ],
                   "localRotation": [
                     0.0,
@@ -11335,7 +12155,7 @@
                   "localPosition": [
                     -165.66,
                     3.0,
-                    -7.64
+                    -10.89
                   ],
                   "localRotation": [
                     0.0,
@@ -11391,7 +12211,7 @@
                   "localPosition": [
                     -174.93,
                     3.0,
-                    -20.39
+                    -23.64
                   ],
                   "localRotation": [
                     0.0,
@@ -11447,7 +12267,7 @@
                   "localPosition": [
                     -67.11,
                     3.0,
-                    -11.91
+                    -15.16
                   ],
                   "localRotation": [
                     0.0,
@@ -11503,7 +12323,7 @@
                   "localPosition": [
                     -67.31,
                     3.0,
-                    -1.29
+                    -4.54
                   ],
                   "localRotation": [
                     0.0,
@@ -11559,7 +12379,7 @@
                   "localPosition": [
                     -109.7,
                     3.0,
-                    -0.4
+                    -3.65
                   ],
                   "localRotation": [
                     0.0,
@@ -11615,7 +12435,7 @@
                   "localPosition": [
                     -165.1,
                     3.0,
-                    -25.77
+                    -29.02
                   ],
                   "localRotation": [
                     0.0,
@@ -11671,7 +12491,7 @@
                   "localPosition": [
                     -161.21,
                     3.0,
-                    -19.55
+                    -22.8
                   ],
                   "localRotation": [
                     0.0,
@@ -11727,7 +12547,7 @@
                   "localPosition": [
                     -155.56,
                     3.0,
-                    -15.08
+                    -18.33
                   ],
                   "localRotation": [
                     0.0,
@@ -11783,7 +12603,7 @@
                   "localPosition": [
                     -157.75,
                     3.0,
-                    -3.62
+                    -6.87
                   ],
                   "localRotation": [
                     0.0,
@@ -11839,7 +12659,7 @@
                   "localPosition": [
                     -169.41,
                     3.0,
-                    -11.23
+                    -14.48
                   ],
                   "localRotation": [
                     0.0,
@@ -12117,9 +12937,9 @@
           "components": [
             {
               "localPosition": [
-                -123.2,
+                -123.7,
                 6.0,
-                -19.8
+                -22.9
               ],
               "localRotation": [
                 0.0,
@@ -12136,7 +12956,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface7",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "pasillo_hall-cantina 1_polySurface7",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -12729,7 +13593,7 @@
             {
               "localPosition": [
                 -92.7,
-                7.0,
+                7.51,
                 -56.6
               ],
               "localRotation": [
@@ -12747,7 +13611,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface2859",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "cantina 1_polySurface2859",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -13423,7 +14331,7 @@
             {
               "localPosition": [
                 -90.3,
-                7.0,
+                5.66,
                 50.2
               ],
               "localRotation": [
@@ -13441,7 +14349,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "pPlane5",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "vestuario 1_pPlane5",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -13865,8 +14817,8 @@
           "components": [
             {
               "localPosition": [
-                -59.8,
-                7.0,
+                -60.01,
+                5.41,
                 67.4
               ],
               "localRotation": [
@@ -13884,7 +14836,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface2730",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "arsenal 1_polySurface2730",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -13943,9 +14939,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -12.85,
+                    -12.91,
                     3.0,
-                    12.68
+                    12.25
                   ],
                   "localRotation": [
                     0.0,
@@ -13999,9 +14995,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -38.15,
+                    -38.21,
                     3.0,
-                    13.02
+                    12.59
                   ],
                   "localRotation": [
                     0.0,
@@ -14055,9 +15051,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -20.27,
+                    -20.33,
                     3.0,
-                    7.08
+                    6.65
                   ],
                   "localRotation": [
                     0.0,
@@ -14111,9 +15107,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -7.21,
+                    -7.27,
                     3.0,
-                    25.16
+                    24.73
                   ],
                   "localRotation": [
                     0.0,
@@ -14167,9 +15163,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -30.49,
+                    -30.55,
                     3.0,
-                    7.328
+                    6.89
                   ],
                   "localRotation": [
                     0.0,
@@ -14223,9 +15219,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -38.01,
+                    -38.07,
                     3.0,
-                    38.18
+                    37.75
                   ],
                   "localRotation": [
                     0.0,
@@ -14279,9 +15275,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -43.56,
+                    -43.62,
                     3.0,
-                    25.16
+                    24.73
                   ],
                   "localRotation": [
                     0.0,
@@ -14335,9 +15331,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -11.91,
+                    -11.97,
                     3.0,
-                    37.04
+                    36.61
                   ],
                   "localRotation": [
                     0.0,
@@ -14391,9 +15387,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -30.4899979,
+                    -30.55,
                     3.0,
-                    43.87
+                    43.44
                   ],
                   "localRotation": [
                     0.0,
@@ -14447,9 +15443,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -20.27,
+                    -20.33,
                     3.0,
-                    43.63
+                    43.2
                   ],
                   "localRotation": [
                     0.0,
@@ -14503,9 +15499,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -15.015,
+                    -15.07,
                     0.5,
-                    15.963
+                    15.53
                   ],
                   "localRotation": [
                     0.0,
@@ -14559,9 +15555,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -12.1,
+                    -12.16,
                     0.5,
-                    18.96
+                    18.53
                   ],
                   "localRotation": [
                     0.0,
@@ -14615,9 +15611,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -17.86,
+                    -17.92,
                     0.5,
-                    13.13
+                    12.7
                   ],
                   "localRotation": [
                     0.0,
@@ -14671,9 +15667,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -38.63,
+                    -38.69,
                     0.5,
-                    32.05
+                    31.62
                   ],
                   "localRotation": [
                     0.0,
@@ -14727,9 +15723,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -32.87,
+                    -32.93,
                     0.5,
-                    37.88
+                    37.45
                   ],
                   "localRotation": [
                     0.0,
@@ -14783,9 +15779,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -35.78,
+                    -35.84,
                     0.5,
-                    34.88
+                    34.45
                   ],
                   "localRotation": [
                     0.0,
@@ -14839,9 +15835,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -34.97,
+                    -35.03,
                     0.5,
-                    14.97
+                    14.54
                   ],
                   "localRotation": [
                     0.0,
@@ -14895,9 +15891,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -37.8,
+                    -37.86,
                     0.5,
-                    17.92
+                    17.49
                   ],
                   "localRotation": [
                     0.0,
@@ -14951,9 +15947,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -31.84,
+                    -31.9,
                     0.5,
-                    12.03
+                    11.6
                   ],
                   "localRotation": [
                     0.0,
@@ -15007,9 +16003,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -12.9,
+                    -12.96,
                     0.5,
-                    33.23
+                    32.8
                   ],
                   "localRotation": [
                     0.0,
@@ -15063,9 +16059,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -18.77,
+                    -18.83,
                     0.5,
-                    39.03
+                    38.6
                   ],
                   "localRotation": [
                     0.0,
@@ -15119,9 +16115,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -15.94,
+                    -16.0,
                     0.5,
-                    36.08
+                    35.65
                   ],
                   "localRotation": [
                     0.0,
@@ -15343,13 +16339,13 @@
           "components": [
             {
               "localPosition": [
-                -31.52,
+                -31.58,
                 7.0,
-                26.13
+                25.75
               ],
               "localRotation": [
                 0.0,
-                45.234108,
+                44.7664261,
                 0.0
               ],
               "localScale": [
@@ -15362,7 +16358,51 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface268",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "sala_generador 1_polySurface268",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -15423,7 +16463,7 @@
                   "localPosition": [
                     -56.24,
                     3.0,
-                    -31.81
+                    -38.1
                   ],
                   "localRotation": [
                     0.0,
@@ -15479,7 +16519,7 @@
                   "localPosition": [
                     -77.33,
                     3.0,
-                    -31.77
+                    -38.1
                   ],
                   "localRotation": [
                     0.0,
@@ -15535,7 +16575,7 @@
                   "localPosition": [
                     -35.77,
                     3.0,
-                    -9.92
+                    -11.21
                   ],
                   "localRotation": [
                     0.0,
@@ -15545,7 +16585,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    12.5
+                    16.0
                   ],
                   "name": null,
                   "parentName": null,
@@ -15647,7 +16687,7 @@
                   "localPosition": [
                     -58.41,
                     3.0,
-                    11.89
+                    14.94
                   ],
                   "localRotation": [
                     0.0,
@@ -15701,9 +16741,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -82.3,
+                    -82.38,
                     3.0,
-                    9.51
+                    -34.69
                   ],
                   "localRotation": [
                     0.0,
@@ -15759,7 +16799,7 @@
                   "localPosition": [
                     -82.4,
                     3.0,
-                    -9.66
+                    -10.43
                   ],
                   "localRotation": [
                     0.0,
@@ -15769,7 +16809,7 @@
                   "localScale": [
                     1.0,
                     6.0,
-                    15.67
+                    18.1
                   ],
                   "name": null,
                   "parentName": null,
@@ -15815,7 +16855,7 @@
                   "localPosition": [
                     -82.3,
                     3.0,
-                    -29.2
+                    -32.39
                   ],
                   "localRotation": [
                     0.0,
@@ -15925,9 +16965,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -37.98,
+                    -38.23,
                     3.0,
-                    -19.05
+                    -22.01
                   ],
                   "localRotation": [
                     0.0,
@@ -16010,7 +17050,7 @@
                   "localPosition": [
                     -82.55,
                     3.0,
-                    -22.71
+                    -25.31
                   ],
                   "localRotation": [
                     0.0,
@@ -16205,9 +17245,9 @@
           "components": [
             {
               "localPosition": [
-                -58.8,
-                7.0,
-                -10.77
+                -58.89,
+                6.0,
+                -11.16
               ],
               "localRotation": [
                 0.0,
@@ -16215,16 +17255,60 @@
                 0.0
               ],
               "localScale": [
-                0.51,
                 0.5,
-                0.5
+                0.5,
+                0.6
               ],
               "name": null,
               "parentName": null,
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "polySurface1175",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "hall 1_polySurface1175",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "initialShadingGroup"
+                  ],
+                  "type": "MeshRenderer"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     }
