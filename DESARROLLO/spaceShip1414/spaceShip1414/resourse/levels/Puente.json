@@ -9,6 +9,349 @@
   },
   "hierarchy": [
     {
+      "name": "PlanosDeCambio",
+      "components": [
+        {
+          "localPosition": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "Pasillo3",
+          "components": [
+            {
+              "localPosition": [
+                -10.77,
+                0.0,
+                -20.67
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                0.4
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Plane",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            },
+            {
+              "type": "MeshCollider"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Hangar",
+          "components": [
+            {
+              "localPosition": [
+                -10.77,
+                0.0,
+                -25.46
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                0.399999976
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Plane",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            },
+            {
+              "type": "MeshCollider"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Almacen3",
+          "components": [
+            {
+              "localPosition": [
+                2.24,
+                0.0,
+                -58.08
+              ],
+              "localRotation": [
+                0.0,
+                90.0,
+                0.0
+              ],
+              "localScale": [
+                1.6,
+                1.0,
+                0.399999976
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Plane",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            },
+            {
+              "type": "MeshCollider"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Pasillo3",
+          "components": [
+            {
+              "localPosition": [
+                8.29,
+                0.0,
+                -58.08
+              ],
+              "localRotation": [
+                0.0,
+                90.0,
+                0.0
+              ],
+              "localScale": [
+                1.60000086,
+                1.0,
+                0.4000002
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Plane",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "Default-Material"
+              ],
+              "type": "MeshRenderer"
+            },
+            {
+              "type": "MeshCollider"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "CamarasFijas",
+      "components": [
+        {
+          "localPosition": [
+            -16.9,
+            0.0,
+            -3.2
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "GameObject",
+          "components": [
+            {
+              "localPosition": [
+                39.358,
+                10.248,
+                -66.37
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "CamarasSeguimiento",
+      "components": [
+        {
+          "localPosition": [
+            -16.9,
+            0.0,
+            -3.2
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "GameObject",
+          "components": [
+            {
+              "localPosition": [
+                32.38,
+                10.53,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "GameObject 1",
+          "components": [
+            {
+              "localPosition": [
+                1.07,
+                5.6,
+                -54.1
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
       "name": "PASILLO_6",
       "components": [
         {
@@ -11232,23 +11575,23 @@
           ]
         },
         {
-          "name": "Modelo",
+          "name": "Missing Prefab",
           "components": [
             {
               "localPosition": [
-                -45.47,
-                7.77,
-                -51.71
+                0.0,
+                0.0,
+                0.0
               ],
               "localRotation": [
                 0.0,
-                48.91421,
+                0.0,
                 0.0
               ],
               "localScale": [
-                0.5,
-                0.7,
-                0.5
+                1.0,
+                1.0,
+                1.0
               ],
               "name": null,
               "parentName": null,
@@ -11257,7 +11600,7 @@
           ],
           "children": [
             {
-              "name": "polySurface433",
+              "name": "Missing Prefab (Dummy)",
               "components": [
                 {
                   "localPosition": [
@@ -11278,23 +11621,6 @@
                   "name": null,
                   "parentName": null,
                   "type": "Transform"
-                },
-                {
-                  "mesh": "sala_espera 1_polySurface433",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "initialShadingGroup"
-                  ],
-                  "type": "MeshRenderer"
                 }
               ],
               "children": []
