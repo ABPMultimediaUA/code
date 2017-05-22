@@ -18,7 +18,7 @@
 player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	nodo = motorApp->addMalla("resourse/models/Nanosuit/nanosuit.obj");
-	motorApp->escalar(nodo, 0.7f, 0.7f, 0.7f);
+	motorApp->escalar(nodo, 0.5f, 0.5f, 0.5f);
 	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.1f);
 	pos = glm::vec3(0, 0, 0);
 	rot = glm::vec3(0, 0, 0);

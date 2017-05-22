@@ -332,7 +332,7 @@ TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoP
 	TNodo* nodoCamara;
 	nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(true, 45.f, aspect_ratio, 0.1f, 1000.f, activa));
 	addRegistroCamara(nodoCamara);
-	rotarYPR(nodoCamara, 180.0f, -10.0f, 0.0f);
+	rotarYPR(nodoCamara, 180.0f, -15.0f, 0.0f);
 	trasladar(nodoCamara, 0.0f, 15.0f, -15.0f);
 	return nodoCamara;
 }
