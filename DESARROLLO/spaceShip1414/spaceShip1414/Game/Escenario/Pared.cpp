@@ -6,21 +6,18 @@
 #include "../graphicEngine\entityTree\TNodo.h"
 #include "../graphicEngine\entityTree\TMalla.h"
 #include "../graphicEngine\entityTree\TCamara.h"
+#include <string>
 
 
 
 
-Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
+Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca, std::string model) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
 {
 
 	rotation = motorApp->crearTransform();
 	scale = motorApp->crearTransform();
 	translation = motorApp->crearTransform();
-	scale->escalar(sca.x, sca.y, sca.z);
-	rotation->rotar(rot.x, 1.0f, 0.0f, 0.0f);
-	rotation->rotar(rot.y, 0.0f, 1.0f, 0.0f);
-	rotation->rotar(rot.z, 0.0f, 0.0f, 1.0f);
-	translation->trasladar(tras.x, tras.y, tras.z);
+
 
 	pos = tras;
 	rot = r;
@@ -32,8 +29,16 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	TNodo* nodoTransfRM = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
 	TNodo* nodoTransfEM = motorApp->crearNodo(nodoTransfRM, scale);
 	TNodo* nodoTransfTM = motorApp->crearNodo(nodoTransfEM, translation);
-	 nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/untitled.obj"));
+	if (model!="")
+	{
+		nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Escenario/" + model + "/" + model + ".obj"));
+		rotation->resetMatriz();
+		rotation->rotarYPR(rot.y, 0.0, 0.0);
 
+	}
+	scale->escalar(sca.x, sca.y, sca.z);
+
+	translation->trasladar(tras.x, tras.y, tras.z);
 }
 
 Pared::~Pared()

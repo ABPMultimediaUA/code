@@ -1,1037 +1,1421 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GT 720M/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 359.46
+Renderer: GeForce GTX 970/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 372.70
 GLSL: 4.50 NVIDIA
 
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 Recurso nombre: nanosuit.obj
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, -0.110387, -0.993889, 0.000000), (0.000000, 0.993889, -0.110387, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 Recurso nombre: untitled.obj
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -50 Y: -14
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -50 Y: 14
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -29 Y: -10
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -29 Y: 10
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -71 Y: 10
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -71 Y: -10
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -4 Y: 46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -24 Y: -46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -27 Y: 25
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -27 Y: -25
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 10 Y: -46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 28 Y: -40
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 28 Y: 40
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 22 Y: 46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -25 Y: 46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 28 Y: 0
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 14 Y: -181
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 50 Y: -131
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 42 Y: -81
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -22 Y: -153
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 17 Y: -82
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 1 Y: -103
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -18 Y: -126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 0 Y: -126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 3 Y: 65
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 29 Y: 65
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 16 Y: 84
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -117 Y: 75
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -93 Y: 67
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -114 Y: 126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -96 Y: 126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -93 Y: 122
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -105 Y: 26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -27 Y: -74
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -1 Y: -97
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -64 Y: -124
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -82 Y: -100
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -93 Y: -63
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -117 Y: -77
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -1 Y: -54
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -38 Y: -100
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -116 Y: -26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -94 Y: -26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -24 Y: -48
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -5 Y: -48
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -70 Y: -126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -27 Y: 87
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -7 Y: 102
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -63 Y: 128
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -53 Y: 158
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -117 Y: 142
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -113 Y: 128
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -114 Y: 158
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -219 Y: 82
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -219 Y: 26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -243 Y: 71
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -243 Y: 37
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -195 Y: 37
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -195 Y: 71
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -193 Y: 71
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -193 Y: 37
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -169 Y: 26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -145 Y: 35
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -145 Y: 73
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -183 Y: 82
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -155 Y: 82
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 17 Y: -80
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 30 Y: -64
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 17 Y: -48
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 1 Y: -75
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: 1 Y: -53
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -91 Y: 67
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -29 Y: 86
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -73 Y: 37
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -71 Y: 48
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -81 Y: 26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -91 Y: 122
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -60 Y: 126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -44 Y: 48
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -192 Y: 24
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -192 Y: 4
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -245 Y: -27
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -257 Y: -56
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -269 Y: 50
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -139 Y: 21
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -139 Y: 7
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -245 Y: 37
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -245 Y: 108
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -268 Y: 158
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -246 Y: 158
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -40 Y: -98
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -80 Y: -98
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -50 Y: -16
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -91 Y: -63
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -82 Y: -26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -29 Y: -57
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -71 Y: -21
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -54 Y: 160
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -113 Y: 160
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -117 Y: 174
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -7 Y: 174
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -62 Y: 188
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -143 Y: 72
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -143 Y: 36
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -131 Y: 26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -119 Y: 54
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -131 Y: 82
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -178 Y: -24
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -191 Y: -4
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -217 Y: -40
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -243 Y: -30
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -218 Y: -56
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -242 Y: -56
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -139 Y: -21
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -139 Y: -7
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -194 Y: -126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -269 Y: -93
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -119 Y: -77
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -166 Y: -26
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -215 Y: -42
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -255 Y: -58
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -218 Y: -58
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -165 Y: 126
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -201 Y: 106
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -188 Y: 84
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -142 Y: 84
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -119 Y: 105
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -165 Y: 128
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -160 Y: 158
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -119 Y: 143
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -201 Y: 143
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -29 Y: 31
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -71 Y: 31
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
 
-POS 2D
-X: -50 Y: 16
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -43 Y: 46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -70 Y: 46
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -85 Y: -24
+ID: 0
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -125 Y: -24
-
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
-POS 2D
-X: -73 Y: -15
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
-
 POS 2D
-X: -73 Y: 15
+X: 4.5 Y: 18.64
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 
-POS 2D
-X: -105 Y: 24
+ID: 1
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
 POS 2D
-X: -137 Y: 22
+X: -14 Y: 0
 
 //////////////////////////////////////////
-CREO PARED CON ENTITY! 
-//////////////////////////////////////////
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
 
-POS 2D
-X: -137 Y: -22
+ID: 2
 
-//////////////////////////////////////////
-CREO PARED CON ENTITY! 
 //////////////////////////////////////////
 
 POS 2D
-X: -137 Y: 0
+X: -11.34 Y: 23.74
 
 //////////////////////////////////////////
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+MatrizRotacion: mat4x4((1.000000, 0.000000, 0.000000, 0.000000), (0.000000, 1.000000, 0.000000, 0.000000), (0.000000, 0.000000, 1.000000, 0.000000), (0.000000, 0.000000, 0.000000, 1.000000))
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+Recurso nombre: hangar.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+Recurso nombre: pasillos_inferiores.obj
+ROTACIONES 2
+X: 0
+Y: 0
+Z: 0
+Recurso nombre: pasillo_sala_espera-hangar.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+Recurso nombre: almacen_peque_abajo.obj
+ROTACIONES 1
+X: 0
+Y: 48.9142
+Z: 0
+Recurso nombre: sala_espera.obj
+ROTACIONES 2
+X: 0
+Y: 47.2373
+Z: 0
+ROTACIONES 2
+X: 0
+Y: 229.738
+Z: 0
 -------------------------------------->0
-TIME: 0.0498155
-TIME: 0.0669469
-TIME: 0.0669469
-TIME: 0.0667039
-TIME: 0.0665508
-TIME: 0.0500491
-TIME: 0.0668254
-TIME: 0.066568
-TIME: 0.0500552
-TIME: 0.0667289
-TIME: 0.0670853
-TIME: 0.066318
-TIME: 0.0667466
-TIME: 0.0668016
-TIME: 0.0668763
-TIME: 0.0497802
-TIME: 0.0497802
-TIME: 0.0501854
-TIME: 0.0499694
-TIME: 0.0668562
-TIME: 0.0670147
+119.665
+124.966
+129.588
+130.431
+137.301
+145.825
+154.732
+165.64
+-179.401
+-164.502
+-151.886
+-144.092
+-138.589
+-136.245
+-135.227
+-134.602
+-134.449
+-132.957
+-131.683
+-130.29
+-130.002
+-128.757
+-128.064
+-127.255
+-126.974
+-126.415
+TIME: 0.0173738
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -5 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -14 POS Y: 0
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 1
+UPDATE AB
+UPDATE AB
+UPDATE AB
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -10.995 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -14 POS Y: 5.194
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 1
+UPDATE AB
+ACTUALIZO 0
+ID PUERTA: 1
+UPDATE AB
+UPDATE AB
+UPDATE AB
+TIME: 0.0162105
+UPDATE AB
+UPDATE AB
+UPDATE AB
+UPDATE AB
+UPDATE AB
+UPDATE AB
+UPDATE AB
+UPDATE AB
+TIME: 0.0166842
+UPDATE AB
+UPDATE AB
+UPDATE AB
+UPDATE AB
+UPDATE AB
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 1
+cerrar123
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167942
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168624
+UPDATE AB
+UPDATE CE
+TIME: 0.0163667
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165955
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167968
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168272
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0169375
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166195
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165221
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164586
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168132
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168945
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168896
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166397
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165388
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164027
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0174045
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0169645
+UPDATE AB
+UPDATE CE
+TIME: 0.0164361
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0162149
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167641
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168226
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165847
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164349
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164694
+UPDATE AB
+UPDATE CE
+TIME: 0.0166763
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165411
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165613
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165601
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166526
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168466
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166982
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165593
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165988
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167816
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.016635
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165151
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164952
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167099
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167989
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167734
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165993
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165083
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164586
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0169893
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168205
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167793
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166511
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164645
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165452
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168044
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168164
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0175367
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.016626
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0163389
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0161827
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166763
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.016721
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167547
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166169
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0163313
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.01614
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0169882
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.016884
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166239
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166725
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164413
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165672
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168138
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167684
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167588
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166412
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165388
+UPDATE AB
+UPDATE CE
+TIME: 0.0168515
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.016731
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165669
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168141
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168486
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166736
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166301
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164958
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164648
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168495
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168296
+UPDATE AB
+UPDATE CE
+TIME: 0.0165233
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168278
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.016475
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164621
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164595
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0179873
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0170078
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0157936
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165581
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0163814
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0161956
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0170221
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168875
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -5.265 POS Y: -71.6667
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 14.57 POS Y: -70.34
+///////////////////////////////////
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166128
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167012
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0170174
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0160613
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0173431
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0169498
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168884
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0166649
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.016434
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165332
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168275
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168752
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167412
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0167073
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164212
+UPDATE AB
+UPDATE CE
+TIME: 0.0169139
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0168571
+UPDATE AB
+UPDATE CE
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -5.275 POS Y: -68.985
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 0.12 POS Y: -65.98
+///////////////////////////////////
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+-126.049
+TIME: 0.0166678
+-126.021
+UPDATE AB
+UPDATE CE
+-125.56
+UPDATE AB
+UPDATE CE
+-125.544
+TIME: 0.0165566
+-125.563
+-125.676
+UPDATE AB
+UPDATE CE
+-125.422
+TIME: 0.0168354
+-125.14
+UPDATE AB
+UPDATE CE
+-123.753
+UPDATE AB
+UPDATE CE
+-121.063
+UPDATE AB
+UPDATE CE
+-119.663
+TIME: 0.0168963
+-118.426
+UPDATE AB
+UPDATE CE
+-117.572
+UPDATE AB
+UPDATE CE
+-117.065
+UPDATE AB
+UPDATE CE
+-116.971
+UPDATE AB
+UPDATE CE
+-117.027
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165505
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0164911
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+TIME: 0.0165859
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+UPDATE AB
+UPDATE CE
+ID DE LA ENTITY 0
+MUERO ENTITY2D
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Facade Destroted
+shader Destroyed

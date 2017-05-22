@@ -107,19 +107,48 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 	}
 }
 
-void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos)
+void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGraphicEngine* motor)
 {
 	int width, height;
 	glfwGetWindowSize(window, &width, &height);
 
 	float anguloRaton;
-	//GLfloat xoffset = (static_cast<float>(xpos) * mouseSensitive-(width / 2.0f));
-	//GLfloat yoffset = (static_cast<float>(ypos) * mouseSensitive - (width / 2.0f));
-	////if (activo) {
+	glm::vec3 pos;
+		anguloRaton = -atan2f(xpos - width/2, ypos - height / 2) * 180 / 3.14;
+		
+		jugador->setYaw(anguloRaton);
+		jugador->Rotation()->resetMatriz();
+		std::cout << jugador->getYaw() << std::endl;
 
-		anguloRaton = abs(atan2f(ypos - height/2, xpos - width / 2) /3.14*180);
-		//std::cout <<xpos<<" "<< width << " " <<ypos<<" "<< height<<" "<<anguloRaton << std::endl;
-		jugador->Rotation()->rotar(anguloRaton,0.0f, 1.0f, 0.0f);
+		jugador->Rotation()->rotarYPR(-jugador->getYaw(),0.0,0.0f);
+		
+	//pos.x = (2.0f * xpos) / width - 1.0f;
+	//pos.y = 1.0f - (2.0f * ypos) / height;
+	//pos.z = 1.0f;
+	//glm::vec3  ray = glm::vec3(pos.x,pos.y,pos.z);
+	//glm::vec4 ray_clip = glm::vec4(ray.x,ray.y, -1.0, 1.0);
+	//glm::vec4 ray_eye = glm::inverse(motor->getCamaraActiva()->getProjectionMatrix()) * ray_clip;
+	//glm::vec3 ray_wor = glm::vec3((glm::inverse(motor->getCamaraActiva()->getView()) * ray_eye).x, (glm::inverse(motor->getCamaraActiva()->getView()) * ray_eye).y, (glm::inverse(motor->getCamaraActiva()->getView()) * ray_eye).x);
+	//ray_wor = glm::normalize(ray_wor);
+
+	//anguloRaton = -atan2f(ray_wor.x, ray_wor.z);
+	//std::cout << " ANGLE: " << anguloRaton << std::endl;
+	//jugador->Rotation()->rotar(anguloRaton,0.0f,1.0f,0.0f);
+
+	// don't forget to normalise the vector at some point
+
+
+	//glm::vec4 newPos(pos.x, pos.y, );
+	////GLfloat xoffset = (static_cast<float>(xpos) * mouseSensitive-(width / 2.0f));
+	////GLfloat yoffset = (static_cast<float>(ypos) * mouseSensitive - (width / 2.0f));
+	//////if (activo) {
+	//
+	//	anguloRaton = -atan2f(posRaton.x - width/2, posRaton.y - height / 2) * 180 / 3.14;
+	////	std::cout <<xpos<<" "<< width << " " <<ypos<<" "<< height
+
+	//		
+
+	//	jugador->Rotation()->rotar((anguloRaton + 90) * motor->getDT(), 0.0f, 1.0f, 0.0f);
 
 		//jugador->setYaw(jugador->getYaw() + xoffset);
 		//jugador->setPitch(jugador->getPitch() + yoffset);

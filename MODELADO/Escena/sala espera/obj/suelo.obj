@@ -1,0 +1,20 @@
+# This file uses centimeters as units for non-parametric coordinates.
+
+mtllib suelo.mtl
+g default
+v 48.694226 20.219383 5.810298
+v 118.123113 20.219381 5.810298
+v 48.694226 20.190790 -48.816718
+v 118.123113 20.190784 -48.816708
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 1.000000 0.852807
+vt 0.000000 0.852807
+vn 0.000000 1.000000 -0.000523
+vn 0.000000 1.000000 -0.000523
+vn 0.000000 1.000000 -0.000523
+vn 0.000000 1.000000 -0.000523
+s off
+g polySurface400 salaespera:polySurface291
+usemtl initialShadingGroup
+f 1/1/1 2/2/2 4/3/3 3/4/4

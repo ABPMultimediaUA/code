@@ -3,7 +3,7 @@
 #include <cstdarg>
 #include <cstring>
 
- float multi = 0.01;
+ float multi = 0.002;
 
 void b2GLDraw::DrawPolygon(const b2Vec2* vertices, int32 vertexCount, const b2Color& color) {
 

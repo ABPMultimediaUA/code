@@ -15,7 +15,7 @@ class Pared
 
 {
 public:
-	Pared(TGraphicEngine * motorApp,glm::vec3 tras, glm::vec3 r, glm::vec3 sca);
+	Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca, std::string model);
 	~Pared();
 	float getVelocity();
 	float getYaw();

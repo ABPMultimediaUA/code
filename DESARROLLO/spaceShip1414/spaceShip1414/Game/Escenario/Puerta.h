@@ -59,6 +59,7 @@ public:
 
 private:
 	int id;
+	int desfase;
 	glm::vec3 pos;
 	glm::vec3 posIni;
 	glm::vec3 rot;

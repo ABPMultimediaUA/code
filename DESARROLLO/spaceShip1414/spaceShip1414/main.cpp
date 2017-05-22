@@ -3,7 +3,6 @@
 #include "graphicEngine\entityTree\TCamara.h"
 #include "graphicEngine\entityTree\TNodo.h"
 #include "graphicEngine\entityTree\TMalla.h"
-#include "graphicEngine\entityTree\TLuz.h"
 #include "Camara.h"
 #include "player.h"
 #include "Game\Escenario\readJson.h"
@@ -31,8 +30,8 @@ int main() {
 		player jugador(&motorApp, world);
 
 		Camara cam(&motorApp,jugador.getNodoTrans());
-		cam.Translation()->trasladar(0, 10, 40);
-		cam.setPitch(-30);
+		cam.Translation()->trasladar(0, 10, 20);
+		cam.setPitch(-0);
 		cam.Rotation()->rotarYPR(0,cam.getPitch(),0);
 
 
@@ -47,18 +46,7 @@ int main() {
 		cam2.Translation()->trasladar(0, 0, 100);
 
 
-	
 
-		//Luz1
-		TTransform *transfRL = motorApp.crearTransform();
-		TTransform *transfEL = motorApp.crearTransform();
-		TTransform *transfTL = motorApp.crearTransform();
-		transfTL->trasladar(0, 100, 10);
-		TNodo* nodoTransfRL = motorApp.crearNodo(motorApp.nodoRaiz(), transfRL);
-		TNodo* nodoTransfEL = motorApp.crearNodo(nodoTransfRL, transfEL);
-		TNodo* nodoTransfTL = motorApp.crearNodo(nodoTransfEL, transfTL);
-		TNodo* nodoLuz = motorApp.crearNodo(nodoTransfTL, motorApp.crearLuz(0.0f,10.0f,10.0f, true));
-		motorApp.addRegistroLuz(nodoLuz);
 		
 
 		//Malla3

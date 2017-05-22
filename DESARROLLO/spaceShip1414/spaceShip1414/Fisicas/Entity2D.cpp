@@ -26,6 +26,7 @@
 
 #define FILTRO_PUERTAABIERTA 15
 
+#define DEGTORAD 180/3.14
 
 
 //hacer diferentes constructores para los distintos objetos
@@ -110,11 +111,12 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 //constructir pared
 
 Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void* dirPared) {
-      std::cout<<"CREO PARED CON ENTITY! "<<std::endl;
+ 
 
     bodyDef.type = b2_staticBody;
 
     bodyDef.position.Set(pos.x, -pos.z);
+	//bodyDef.angle = rot.y * 180 / 3.14;
 	int scale = 1;
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
@@ -139,6 +141,13 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     body -> CreateFixture(&bodyShape, 1.0f);
     body->SetUserData(this);
 
+	if(rot.y > 180 * DEGTORAD)
+		body->SetTransform(body->GetPosition(), rot.y - 180 * DEGTORAD);
+
+	else if(rot.y < -180 * DEGTORAD) {
+		body->SetTransform(body->GetPosition(), rot.y + 180 * DEGTORAD);
+
+	}
     filtro.groupIndex = FILTRO_PARED;
     body->GetFixtureList()->SetFilterData(filtro);
 	live = true;
@@ -146,7 +155,7 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     objeto3D = dirPared;
     iden = 1;
 
-	mostrarPos2D();
+	//mostrarPos2D();
 
 }
 
@@ -190,7 +199,11 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     }*/
 	body->GetFixtureList()->SetFilterData(filtro);
 	puertaBody->GetFixtureList()->SetFilterData(filtro);
+	std::cout << std::endl;
+	std::cout << "ID: " << id << std::endl;
+	std::cout << std::endl;
 
+	mostrarPos2D();
 
 }
 //constructor bala

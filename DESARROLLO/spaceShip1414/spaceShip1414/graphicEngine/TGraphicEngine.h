@@ -15,6 +15,7 @@
 #include <glm\vec3.hpp>
 #include <glm\mat4x4.hpp>
 #include "framework\openGLShader.h"
+#include "..\GUI.h"
 
 class TNodo;
 class TGestorRecursos;
@@ -29,6 +30,7 @@ class Camara;
 class Mundo3D;
 class Mundo;
 class Escenario;
+class GUI;
 
 class TGraphicEngine
 {
@@ -61,6 +63,8 @@ public:
 	void cambiarCamaraActiva(char);
 	glm::vec3 moverCamara();
 	glm::mat4 getView();
+
+	glm::mat4 getProjection();
 
 
 private:
@@ -96,5 +100,6 @@ private:
 	double YMIN;
 	double YMAX;
 	Mundo * wo;
+	GUI m_gui;
 };
 

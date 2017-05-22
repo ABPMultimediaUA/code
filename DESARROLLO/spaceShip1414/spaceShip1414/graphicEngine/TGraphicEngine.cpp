@@ -15,7 +15,7 @@
 #include "framework\movimentHandler.h"
 #include "../Fisicas/Mundo.h"
 #include "../Game/Escenario/Escenario.h"
-
+#include "..\GUI.h"
 
 
 
@@ -118,7 +118,7 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 	glfwSetKeyCallback(window, key_callback);
 	glfwSetWindowCloseCallback(window, close_callback);
 	glfwSetFramebufferSizeCallback(window, resize_callback);
-	glfwSetCursorPosCallback(window, mouse_callback);
+
 
 
 
@@ -126,6 +126,15 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 		glfwTerminate();
 		return false;
 	}
+
+	m_gui.init("gui");
+	m_gui.loadScheme("TaharezLook.scheme");
+	m_gui.setFont("DejaVuSans-10");
+	CEGUI::PushButton* caca = static_cast<CEGUI::PushButton*>(m_gui.createWidget("TaharezLook/FrameWindow", 
+		glm::vec4(0.5f,0.5,0.3f,0.3f),glm::vec4(0.0f),"TestButton"));
+	caca->setText("MUERETE");
+	m_gui.createMenu();
+
 
 	glfwSetWindowUserPointer(window, this);
 
@@ -145,23 +154,25 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 	while (!glfwWindowShouldClose(window))
 	{
 		
-
+		
 		currentFrame = glfwGetTime();
 		deltaTime = (currentFrame - last);
 		last = currentFrame;
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+		glEnable(GL_CULL_FACE);
+		//m_gui.draw();
 		world->stepBox2D(1.0/60.0, 6, 2);
 		world->getWorldBox2D()->DrawDebugData();
-
+		
 		world->clearForcesBox2D();
 		//drawBox(world, 5, 50, 2, 1);
 		move->checkKeys(window);
-		//drawGround(world);
+		drawGround(world);
 		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 		esce->actualizarEstadoPuerta();
 		glfwPollEvents();
 		draw(getLastTime());
+		glfwSetCursorPosCallback(window, mouse_callback);
 		glfwSwapBuffers(window);
 		
 	
@@ -292,6 +303,11 @@ glm::mat4 TGraphicEngine::getView()
 	return camaraActiva->getView();
 }
 
+glm::mat4 TGraphicEngine::getProjection()
+{
+	if(camaraActiva != nullptr)
+		return camaraActiva->getProjectionMatrix();
+}
 
 
 void TGraphicEngine::draw(double time)
@@ -300,9 +316,9 @@ void TGraphicEngine::draw(double time)
 	shader.use();
 	camaraActivada();
 	luzActivada();
-	wo->getWorldBox2D()->DrawDebugData();
-
+	
 	this->escena->draw(shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix(),wo);
+
 	shader.unUse();
 }
 
@@ -394,7 +410,7 @@ void TGraphicEngine::resize_callback(GLFWwindow * window, int width, int height)
 void TGraphicEngine::mouse_callback(GLFWwindow * window, double xpos, double ypos)
 {
 	TGraphicEngine* win_app = getTGraphicEngineApp(window);
-	win_app->getMovimentHandler()->onMouse(window, xpos, ypos);
+	win_app->getMovimentHandler()->onMouse(window, xpos, ypos, win_app);
 }
 
 inline TGraphicEngine * TGraphicEngine::getTGraphicEngineApp(GLFWwindow * window)
