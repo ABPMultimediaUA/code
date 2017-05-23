@@ -15,5 +15,6 @@ public:
 	GLuint getTexturaID();
 private:
 	GLuint textura;
+	std::string tipo;
 };
 

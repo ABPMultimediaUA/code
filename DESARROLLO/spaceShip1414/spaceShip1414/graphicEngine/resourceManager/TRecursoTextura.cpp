@@ -11,6 +11,7 @@ TRecursoTextura::TRecursoTextura()
 
 TRecursoTextura::~TRecursoTextura()
 {
+	glDeleteTextures(1, &textura);
 }
 
 bool TRecursoTextura::cargarFichero(std::string ntextura)
@@ -19,15 +20,14 @@ bool TRecursoTextura::cargarFichero(std::string ntextura)
 	nombre = index == std::string::npos ? "" : ntextura.substr(index + 1);
 	std::cout << "Recurso nombre: " << nombre << std::endl;
 
-	unsigned int texture;
-	glGenTextures(1, &texture);
-	glBindTexture(GL_TEXTURE_2D, texture); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
+	glGenTextures(1, &textura);
+	glBindTexture(GL_TEXTURE_2D, textura); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
 										   // set the texture wrapping parameters
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	// set texture wrapping to GL_REPEAT (default wrapping method)
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-	// set texture filtering parameters
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	// set texture filtering parameters	
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR);
 	// load image, create texture and generate mipmaps
 	int width, height, nrComponents;
 	unsigned char *data = SOIL_load_image(ntextura.c_str(), &width, &height, &nrComponents, 0);

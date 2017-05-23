@@ -229,7 +229,7 @@ void Escenario::dibujarEscenario() {
 					glm::vec3(tx, ty, -tz),
 					glm::vec3(rx, ry, rz),
 					glm::vec3(ex, ey, ez),
-					camaraDir, true);
+					0, true);
 
 			}
 

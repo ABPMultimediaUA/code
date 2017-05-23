@@ -20,17 +20,22 @@ class TRecursoMalla :
 	public:
 		Mesh(const aiMesh*, TRecursoMalla*);
 		~Mesh();
-		void draw();
+		void draw() ; 
 		void draw(GLuint);
+		void activeTextureNum(int, GLuint, GLuint, const std::string&);
+		void disableAllTexture();
 		void init(const aiMesh*);
 	private:
 		TRecursoMalla* model;
+
 		std::vector<glm::vec3> vertex;
 		std::vector<glm::vec3> normal;
 		std::vector<glm::vec2> uv;
 		std::vector<GLuint> indices;
 		GLuint buffer[4];
 		GLuint vao;
+		GLuint texture_ambient, texture_diffuse, texture_specular, texture_normal;
+
 		float shininess, shininess_strength;
 		float color_ambient[4] = { 1, 1, 1, 1 };
 		float color_diffuse[4] = { 1, 1, 1, 1 };
@@ -39,6 +44,9 @@ class TRecursoMalla :
 		
 		void load(const aiMesh*);
 		inline void aiColorToFloat(aiColor4D&, float[4]);
+		void loadMaterial(const aiMesh*, aiTextureType, GLuint&);
+		GLuint TextureFromFile(const std::string&);
+		std::string texture_path(const std::string& path);
 		void create();
 	};
 
@@ -49,11 +57,13 @@ public:
 	bool cargarFichero(std::string) override;
 	void draw() override;
 	void draw(GLuint);
+	std::string getRuta();
 private:
+	std::string ruta;
 	const aiScene* scene;
 	std::map<std::string, GLuint> textures;
 	std::vector<std::shared_ptr<Mesh>> meshes;
-	
+	//std::vector<TRecursoTextura*> rTexturas;
 	void processNode(const aiNode*, const aiScene*);
 };
 
