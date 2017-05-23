@@ -1,6 +1,6 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GTX 780 Ti/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 376.53
+Renderer: GeForce GTX 860M/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 376.54
 GLSL: 4.50 NVIDIA
 
 Recurso nombre: nanosuit.obj
@@ -36,30 +36,36 @@ ROTACIONES 1
 X: 0
 Y: 180
 Z: 0
+nombre modelohangar
 Recurso nombre: hangar.obj
 ROTACIONES 1
 X: 0
 Y: 180
 Z: 0
+nombre modelopasillos_inferiores
 Recurso nombre: pasillos_inferiores.obj
 ROTACIONES 2
 X: 0
 Y: 0
 Z: 0
+nombre modelopasillo_sala_espera-hangar
 Recurso nombre: pasillo_sala_espera-hangar.obj
 ROTACIONES 1
 X: 0
 Y: 180
 Z: 0
+nombre modeloalmacen_peque_abajo
 Recurso nombre: almacen_peque_abajo.obj
 ROTACIONES 2
 X: 0
 Y: 47.2373
 Z: 0
+nombre modelopasillo_sala_espera-hangar
 ROTACIONES 2
 X: 0
 Y: 229.738
 Z: 0
+nombre modelopasillo_sala_espera-hangar
 -------------------------------------->0
 ID DE LA ENTITY 0
 MUERO ENTITY2D

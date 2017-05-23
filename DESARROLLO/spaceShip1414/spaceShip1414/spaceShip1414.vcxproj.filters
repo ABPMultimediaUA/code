@@ -797,5 +797,7 @@
     <None Include="graphicEngine\Shader\directional.vertex_shader" />
     <None Include="graphicEngine\Shader\directionalFragmentShader.frag" />
     <None Include="graphicEngine\Shader\directionalVertexShader.vs" />
+    <None Include="graphicEngine\Shader\funciona.fs" />
+    <None Include="graphicEngine\Shader\funciona.vs" />
   </ItemGroup>
 </Project>

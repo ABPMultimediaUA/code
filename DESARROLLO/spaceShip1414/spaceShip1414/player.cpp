@@ -20,8 +20,9 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 
 	nodo = motorApp->addMalla("resourse/models/Nanosuit/nanosuit.obj");
 	motorApp->escalar(nodo, 0.5f, 0.5f, 0.5f);
 	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.1f);
+	motorApp->rotarYPR(nodo, 180, 0, 0);
 	pos = glm::vec3(0, 0, 0);
-	rot = glm::vec3(0, 0, 0);
+	rot = glm::vec3(180, 0, 0);
 	escale = glm::vec3(2, 7, 2);
 
 	entity = new Entity2D(m->getWorldBox2D(), glm::vec3(0,0,0), rot, this);

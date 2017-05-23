@@ -89,6 +89,8 @@ void TLuz::renderLuz(const glm::mat4& model, openGLShader& shader, const glm::ma
 	glUniform3fv(shader.getUniformLocation("light.direction"), 1, glm::value_ptr(lightDirEyeSpace));
 	glUniform3fv(shader.getUniformLocation("light.ambient"), 1, glm::value_ptr(glm::vec3(0.1f)));
 	glUniform3fv(shader.getUniformLocation("light.diffuse"), 1, glm::value_ptr(glm::vec3(1.0f)));
-	glUniform3fv(shader.getUniformLocation("light.specular"), 1, glm::value_ptr(glm::vec3(1.0f)));
+	glUniform3fv(shader.getUniformLocation("light.specular"), 1, glm::value_ptr(glm::vec3(0.8f)));
+	//glUniform1i(shader.getUniformLocation("texture_off"), texture ? GL_TRUE : GL_FALSE);
+	//glUniform1i(shader.getUniformLocation("normal_off"), normal ? GL_TRUE : GL_FALSE);
 }
 

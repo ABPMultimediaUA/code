@@ -442,7 +442,7 @@ glm::mat4 TGraphicEngine::getInverseProjectionCamaraActive()
 
 void TGraphicEngine::draw(double time)
 {
-	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	shader.use();
 	camaraActivada();
 	luzActivada();
@@ -483,7 +483,7 @@ void TGraphicEngine::onstart()
 	glEnable(GL_DEPTH_TEST);
 	glClearColor(0.0f, 0.5f, 0.5f, 1.0f);
 
-	shader.compile("graphicEngine/Shader/directionalVertexShader.vs", "graphicEngine/Shader/directionalFragmentShader.frag");
+	shader.compile("graphicEngine/Shader/funciona.vs", "graphicEngine/Shader/funciona.fs");
 
 	// ocultar el cursor y ubicarlo en el centro de la ventana
 	//glfwSetInputMode(this->window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -703,7 +703,6 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		world->getWorldBox2D()->DrawDebugData();
 		world->clearForcesBox2D();
 		move->checkKeys(window, this);
-		drawGround(world);
 		esce->actualizarEstadoPuerta();
 		glfwPollEvents();
 		draw(getLastTime());
