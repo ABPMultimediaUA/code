@@ -21,6 +21,7 @@
 #define FILTRO_DISPAROPERS 4
 #define FILTRO_DISPAROENE 5
 #define FILTRO_ENEMIGO 6
+#define FILTRO_SENSORCAMARA 7
 #define FILTRO_SOMB_ENEMIGO 14
 
 
@@ -203,7 +204,7 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, bool vivo, void
 
 
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(pos.x, pos.z);
+    bodyDef.position.Set(pos.x, -pos.z);
     // bodyShape.SetAsBox(2, 2);
     bodyCircle.m_p.Set(0, 0);
     bodyCircle.m_radius = 1;
@@ -235,7 +236,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 
 
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set((pos.x), (pos.z));
+    bodyDef.position.Set((pos.x), (-pos.z));
 
 	if (raza == 10) {
 		bodyShape.SetAsBox(5.0f, 5.0f);
@@ -300,7 +301,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void * dirObjeto, int tipo)
 {
 	bodyDef.type = b2_staticBody;
-	bodyDef.position.Set(pos.x, pos.z);
+	bodyDef.position.Set(pos.x, -pos.z);
 	
 
 	body = world->CreateBody(&bodyDef);
@@ -343,6 +344,37 @@ Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 esca
 	3:   " " de subfusil
 	4:   " " de escopeta	
 	*/
+}
+
+//entity de los sensores de cambio de camara
+
+Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void * dirCamara, bool sensor)
+{
+	bodyDef.type = b2_staticBody;
+	bodyDef.position.Set(pos.x, -pos.z);
+
+	if (rot.y == 90) {
+
+		bodyShape.SetAsBox(escala.z, escala.x);
+
+
+	}
+
+	else {
+		bodyShape.SetAsBox(escala.x, escala.z);
+
+	}
+
+	body = world->CreateBody(&bodyDef);
+	body->CreateFixture(&bodyShape, 1.0f);
+	body->SetUserData(this);
+	body->GetFixtureList()->SetSensor(true);
+	filtro.groupIndex = FILTRO_SENSORCAMARA;
+	body->GetFixtureList()->SetFilterData(filtro);
+	live = true;
+	iden = 6;
+	objeto3D = dirCamara;
+
 }
 
 Entity2D::Entity2D(const Entity2D& orig) {

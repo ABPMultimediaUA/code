@@ -81,11 +81,11 @@ private:
 	std::list<ElementoPadre> Padres;
 	std::list<ElementoHijo> Hijos;
 	std::list<Elemento> SubHijos;
-	//Mundo3D *mundo;
 	Mundo *mundo;
 	//std::list<Enemigo*> enemigos;
 	std::list<Pared*> Listparedes;
 	std::list<Puerta*> puertas;
+	std::list<Camara*> listaDeCamaras;
 	//std::list<Objetos*> objConsumables;
 	//std::vector<Waypoints*> waypoints;
 	int tam;

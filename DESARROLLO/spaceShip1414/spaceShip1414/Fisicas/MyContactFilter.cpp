@@ -124,6 +124,8 @@ bool MyContactFilter::ShouldCollide(b2Fixture* fixtureA, b2Fixture* fixtureB) {
 
 		}
 
+		if ((f1.groupIndex != 1 && f2.groupIndex != 7) || (f1.groupIndex != 7 && f2.groupIndex != 1)) { return false; }
+
 
 		//if (e1->getIDENSH() == 1 && e2->getIDENSH() == 1) { return false; }
 

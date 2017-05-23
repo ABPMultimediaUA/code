@@ -188,18 +188,51 @@ void Escenario::dibujarEscenario() {
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
 		if ((*I).nombre == "CamarasDeSeguimiento") {
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-			tx = (*I).position.x;
-			ty = (*I).position.y;
-			tz = (*I).position.z;
+				tx = ((*T).position.x + (*I).position.x);
+				ty = ((*T).position.y + (*I).position.y);
+				tz = ((*T).position.z + (*I).position.z);
 
-			rx = (*I).rotation.x;
-			ry = (*I).rotation.y;
-			rz = (*I).rotation.z;
+				rx = ((*T).rotation.x + (*I).rotation.x);
+				ry = ((*T).rotation.y + (*I).rotation.y);
+				rz = ((*T).rotation.z + (*I).rotation.z);
 
-			ex = (*I).escala.x;
-			ey = (*I).escala.y;
-			ez = (*I).escala.z;
+				ex = ((*T).escala.x * (*I).escala.x);
+				ey = ((*T).escala.y * (*I).escala.y);
+				ez = ((*T).escala.z * (*I).escala.z);
+
+
+			}
+		}
+
+
+		if ((*I).nombre == "PlanosDeCambio") {
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+
+				tx = ((*T).position.x + (*I).position.x);
+				ty = ((*T).position.y + (*I).position.y);
+				tz = ((*T).position.z + (*I).position.z);
+
+				rx = ((*T).rotation.x + (*I).rotation.x);
+				ry = ((*T).rotation.y + (*I).rotation.y);
+				rz = ((*T).rotation.z + (*I).rotation.z);
+
+				ex = ((*T).escala.x * (*I).escala.x);
+				ey = ((*T).escala.y * (*I).escala.y);
+				ez = ((*T).escala.z * (*I).escala.z);
+
+				//Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void * dirCamara, bool sensor)
+
+
+				Entity2D *entity = new Entity2D(mundo->getWorldBox2D(),
+					glm::vec3(tx, ty, -tz),
+					glm::vec3(rx, ry, rz),
+					glm::vec3(ex, ey, ez),
+					camaraDir, true);
+
+			}
+
 
 		}
 

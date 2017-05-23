@@ -33,6 +33,7 @@ public:
 	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, bool vivo, void* dirBala, int tipo);
 	Entity2D(b2World *world, glm::vec3  pos, bool vivo, void* dirEnemigo, unsigned int raza);
 	Entity2D(b2World* world, glm::vec3  pos, glm::vec3  rot, glm::vec3  escala, void* dirObjeto, int tipo);
+	Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void* dirCamara, bool sensor);
 
 	Entity2D(const Entity2D& orig);
 	virtual ~Entity2D();
