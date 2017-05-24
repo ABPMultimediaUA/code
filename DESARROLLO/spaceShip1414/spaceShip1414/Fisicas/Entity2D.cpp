@@ -380,6 +380,7 @@ Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 esca
 	else {
 		iden = 7; //sensor de desactivar camara 
 	}
+
 	objeto3D = dirCamara;
 
 }

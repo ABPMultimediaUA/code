@@ -119,6 +119,7 @@ public:
 	void cambiaEstado(std::string mensaje);
 	void actualizarEstadoPersonaje();
 	void actualizarEstadoPuerta();
+	void actualizarCamaras();
 	void actualizarObjetosConsumables();
 	void inicializarWaypoints();
 	void eleminarEnemigos();

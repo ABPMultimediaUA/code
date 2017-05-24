@@ -15,6 +15,7 @@
 #include <math.h>
 #include "../Game/Escenario/Puerta.h"
 #include "MiContactListener.h"
+#include "../Camara.h"
 //#include "../Jugador/Personaje.h"
 #include "../player.h"
 //#include "../Enemigos/Enemigo.h"
@@ -698,6 +699,18 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 						std::cout << "HOLA PAPITO 2" << std::endl;
 					}*/
 
+
+				//iden = 6 -> sensor de activar; iden = 7 -> sensor de desactivar
+
+				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6 && f2->IsSensor()) {
+
+				}
+
+				else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 6 && f1->IsSensor()) {
+
+				}
+
+
 			}
 		}
 	}
@@ -788,7 +801,15 @@ void MiContactListener::EndContact(b2Contact* contact) {
 
 				}
 
+				//iden = 6 -> sensor de activar; iden = 7 -> sensor de desactivar
 
+				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6 && f2->IsSensor()) {
+
+				}
+
+				else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 6 && f1->IsSensor()) {
+
+				}
 
 			}
 		}
