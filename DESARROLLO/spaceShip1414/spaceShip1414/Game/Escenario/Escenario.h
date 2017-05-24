@@ -93,7 +93,7 @@ private:
 	// Juego *jue;
 	//Personaje *pers;
 	TGraphicEngine * engine;
-	Camara *cam;
+	Camara *c;
 
 public:
 

@@ -188,7 +188,8 @@ void Escenario::dibujarEscenario() {
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
 		if ((*I).nombre == "CamarasSeguimiento") {
-			std::cout << "ENTROPUTO" << std::endl;
+		
+			bool pillado = false;
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 				
 
@@ -207,10 +208,14 @@ void Escenario::dibujarEscenario() {
 
 					Camara *cam = new Camara(engine, true,
 						glm::vec3(tx, ty, -tz),
-						glm::vec3(-15, ry, rz),
+						glm::vec3(-15, 90, rz),
 						glm::vec3(ex, ey, ez));
 
 					listaDeCamaras.push_back(cam);
+					if (pillado == false) {
+						cam = c;
+						pillado = true;
+					}
 				
 			}
 		}

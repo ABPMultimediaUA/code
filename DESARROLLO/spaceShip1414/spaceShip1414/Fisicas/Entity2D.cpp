@@ -372,7 +372,14 @@ Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 esca
 	filtro.groupIndex = FILTRO_SENSORCAMARA;
 	body->GetFixtureList()->SetFilterData(filtro);
 	live = true;
-	iden = 6;
+
+	if (sensor == true) {
+		iden = 6; //sensor de activar camara
+	}
+
+	else {
+		iden = 7; //sensor de desactivar camara 
+	}
 	objeto3D = dirCamara;
 
 }
