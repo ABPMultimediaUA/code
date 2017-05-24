@@ -97,7 +97,7 @@ private:
 
 public:
 
-	Escenario(TGraphicEngine * motorApp, Mundo*, Camara *c /*, b2World *world,  Juego* game*/);
+	Escenario(TGraphicEngine * motorApp, Mundo* /*, b2World *world,  Juego* game*/);
 	Escenario(const Escenario& orig);
 	virtual ~Escenario();
 

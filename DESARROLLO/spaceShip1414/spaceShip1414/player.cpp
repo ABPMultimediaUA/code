@@ -155,7 +155,9 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 	glm::vec3 posSim;
 
-
+	if(n == -1) {
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+	}
 
 
 	if (n == 0) {
@@ -181,13 +183,13 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		//vecVel = aux * velocity;
 		//vel.Set(vecVel.x, vecVel.z);
 
-		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
 
 	}
 
 
 	if (n == 3) {
-		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
+		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
 
 		//posSim.x = sin(anguloCam);
 		//posSim.z = cos(anguloCam);
@@ -205,7 +207,7 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 	vecVel *= velocity;
 
-	entity->getCuerpo2D()->SetLinearVelocity(vel);
+	//entity->getCuerpo2D()->SetLinearVelocity(vel);
 	//std::cout << "//////////////////////////////////////////" << std::endl;
 	//std::cout << "" << std::endl;
 	//std::cout << "POS PERS DES" << std::endl;

@@ -24,9 +24,9 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	scale = motorApp->crearTransform();
 	translation = motorApp->crearTransform();
 	scale->escalar(sca.x, sca.y, sca.z);
-	rotation->rotar(rot.x, 1.0f, 0.0f, 0.0f);
-	rotation->rotar(rot.y, 0.0f, 1.0f, 0.0f);
-	rotation->rotar(rot.z, 0.0f, 0.0f, 1.0f);
+	rotation->rotar(r.x, 1.0f, 0.0f, 0.0f);
+	rotation->rotar(r.y, 0.0f, 1.0f, 0.0f);
+	rotation->rotar(r.z, 0.0f, 0.0f, 1.0f);
 	translation->trasladar(tras.x, tras.y, tras.z);
 
 	pos = tras;

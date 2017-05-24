@@ -38,14 +38,14 @@
 
 
 
-Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m, Camara *c /*,b2World *world, Juego* game*/) {
+Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m /*,b2World *world, Juego* game*/) {
 
 	/*SM = smgr;
 	VD = driver;*/
 	engine = motorApp;
 	mundo = m;
-	cam = c;
-	//mundo = world;
+	
+	//cam->getTCamara()->desactivar();
 	srand(time(NULL));
 	entity = new Entity2D(m->getWorldBox2D());
 	//jue = game;
@@ -168,7 +168,7 @@ void Escenario::dibujarEscenario() {
 	tam = 0;
 
 	//Waypoints *puntos = new Waypoints();
-
+	
 	/*Waypoints *zona1 = new Waypoints();
 	Waypoints *zona2 = new Waypoints();
 	Waypoints *zona3 = new Waypoints();
@@ -187,25 +187,33 @@ void Escenario::dibujarEscenario() {
 
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
-		if ((*I).nombre == "CamarasDeSeguimiento") {
+		if ((*I).nombre == "CamarasSeguimiento") {
+			std::cout << "ENTROPUTO" << std::endl;
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				
 
-				tx = ((*T).position.x + (*I).position.x);
-				ty = ((*T).position.y + (*I).position.y);
-				tz = ((*T).position.z + (*I).position.z);
+					
+					tx = ((*T).position.x + (*I).position.x);
+					ty = ((*T).position.y + (*I).position.y);
+					tz = ((*T).position.z + (*I).position.z);
 
-				rx = ((*T).rotation.x + (*I).rotation.x);
-				ry = ((*T).rotation.y + (*I).rotation.y);
-				rz = ((*T).rotation.z + (*I).rotation.z);
+					rx = ((*T).rotation.x + (*I).rotation.x);
+					ry = ((*T).rotation.y + (*I).rotation.y);
+					rz = ((*T).rotation.z + (*I).rotation.z);
 
-				ex = ((*T).escala.x * (*I).escala.x);
-				ey = ((*T).escala.y * (*I).escala.y);
-				ez = ((*T).escala.z * (*I).escala.z);
+					ex = ((*T).escala.x * (*I).escala.x);
+					ey = ((*T).escala.y * (*I).escala.y);
+					ez = ((*T).escala.z * (*I).escala.z);
 
+					Camara *cam = new Camara(engine, true,
+						glm::vec3(tx, ty, -tz),
+						glm::vec3(-15, ry, rz),
+						glm::vec3(ex, ey, ez));
 
+					listaDeCamaras.push_back(cam);
+				
 			}
 		}
-
 
 		if ((*I).nombre == "PlanosDeCambio") {
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
@@ -226,7 +234,7 @@ void Escenario::dibujarEscenario() {
 
 
 				Entity2D *entity = new Entity2D(mundo->getWorldBox2D(),
-					glm::vec3(tx, ty, -tz),
+					glm::vec3(tx *2 , ty, -tz*2),
 					glm::vec3(rx, ry, rz),
 					glm::vec3(ex, ey, ez),
 					0, true);
