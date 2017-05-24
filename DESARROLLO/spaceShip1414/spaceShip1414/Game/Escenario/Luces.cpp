@@ -29,8 +29,6 @@ Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	TNodo* nodoTransfTL = motorApp->crearNodo(nodoTransfEL, translation);
 	TNodo* nodoLuz = motorApp->crearNodo(nodoTransfTL, motorApp->crearLuz(0.0f, 10.0f, 10.0f, true));
 	motorApp->addRegistroLuz(nodoLuz);
-
-
 }
 
 Luces::~Luces()

@@ -1,110 +1,32 @@
-newmtl hangar:ParedFBXASC045SupFBXASC0451SG
+newmtl blinn1SG
 illum 4
-Kd 0.80 0.80 0.80
+Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Kd plataclaro.jpg
 Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:ParedFBXASC045SupFBXASC0453FBXASC046001SG
+Ks 0.50 0.50 0.50
+newmtl blinn2SG
 illum 4
-Kd 0.80 0.80 0.80
+Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Kd plataoscuro.jpg
 Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:ParedFBXASC045SupFBXASC0453FBXASC046002SG
+Ks 0.50 0.50 0.50
+newmtl blinn3SG
 illum 4
-Kd 0.80 0.80 0.80
+Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Kd suelo.jpg
 Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:ParedFBXASC045SupFBXASC0453FBXASC046003SG
+Ks 0.50 0.50 0.50
+newmtl blinn4SG
 illum 4
-Kd 0.80 0.80 0.80
+Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Kd puerta.jpg
 Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:ParedFBXASC045SupFBXASC0453SG
-illum 4
-Kd 0.80 0.80 0.80
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:ParteFBXASC0321FBXASC046000SG
-illum 4
-Kd 0.80 0.80 0.80
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:ParteFBXASC0321FBXASC046002SG
-illum 4
-Kd 0.80 0.80 0.80
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:ParteFBXASC0321FBXASC046003SG
-illum 4
-Kd 0.80 0.80 0.80
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:ParteFBXASC0321FBXASC046004SG
-illum 4
-Kd 0.80 0.80 0.80
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:VigasFBXASC046001SG
-illum 4
-Kd 0.80 0.80 0.80
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:VigasFBXASC046001SG1
-illum 4
-Kd 0.80 0.80 0.80
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:VigasSG
-illum 4
-Kd 0.80 0.80 0.80
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl hangar:VigasSG1
-illum 4
-Kd 0.80 0.80 0.80
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.25 0.25 0.25
-Ns 7.61
-newmtl initialShadingGroup
-illum 4
-Kd 0.50 0.50 0.50
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
+Ks 0.50 0.50 0.50

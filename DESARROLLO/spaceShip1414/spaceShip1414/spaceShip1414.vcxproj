@@ -390,6 +390,8 @@
     <None Include="graphicEngine\Shader\directional.vertex_shader" />
     <None Include="graphicEngine\Shader\directionalFragmentShader.frag" />
     <None Include="graphicEngine\Shader\directionalVertexShader.vs" />
+    <None Include="graphicEngine\Shader\funciona.fs" />
+    <None Include="graphicEngine\Shader\funciona.vs" />
     <None Include="resourse\levels\Puente.json" />
     <None Include="tools\assimp\color4.inl" />
     <None Include="tools\assimp\material.inl" />

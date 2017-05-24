@@ -30,9 +30,9 @@ void TRecursoMalla::Mesh::draw()
 void TRecursoMalla::Mesh::draw(GLuint program)
 {
 	activeTextureNum(0, texture_diffuse, program, "material.diffuse");
-	activeTextureNum(1, texture_normal, program, "material.normal");
-	activeTextureNum(2, texture_specular, program, "material.specular");
-	activeTextureNum(3, texture_ambient, program, "material.ambient");
+	//activeTextureNum(1, texture_normal, program, "material.normal");
+	activeTextureNum(1, texture_specular, program, "material.specular");
+	activeTextureNum(2, texture_ambient, program, "material.ambient");
 
 	glUniform1f(glGetUniformLocation(program, "material.shininess"), shininess);
 	glUniform1f(glGetUniformLocation(program, "material.shininess_strength"), shininess_strength);
@@ -109,7 +109,7 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla)
 	loadMaterial(malla, aiTextureType_AMBIENT, texture_ambient);
 	loadMaterial(malla, aiTextureType_DIFFUSE, texture_diffuse);
 	loadMaterial(malla, aiTextureType_SPECULAR, texture_specular);
-	loadMaterial(malla, aiTextureType_HEIGHT, texture_normal);
+	//loadMaterial(malla, aiTextureType_HEIGHT, texture_normal);
 
 	if (malla->mMaterialIndex >= 0) {
 		// obtener el material correspondiente a este Mesh
