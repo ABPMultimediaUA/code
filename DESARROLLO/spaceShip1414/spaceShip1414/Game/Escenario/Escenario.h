@@ -39,6 +39,7 @@ class Entity2D;
 class Mundo;
 class Waypoints;
 class Camara;
+class player;
 
 
 class Escenario {
@@ -94,6 +95,7 @@ private:
 	//Personaje *pers;
 	TGraphicEngine * engine;
 	Camara *c;
+	player *jugador;
 
 public:
 
@@ -123,7 +125,7 @@ public:
 	void actualizarObjetosConsumables();
 	void inicializarWaypoints();
 	void eleminarEnemigos();
-	//Personaje* getPersonaje();
+	player* getPersonaje();
 	void destroyPared();
 };
 

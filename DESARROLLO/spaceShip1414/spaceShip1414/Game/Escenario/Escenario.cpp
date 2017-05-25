@@ -35,6 +35,7 @@
 #include "ObjConsumables\TiposDeMunicion\MunicionPistola.h"
 #include "ObjConsumables\TiposDeMunicion\MunicionSubfusil.h"*/
 #include "../Fisicas/Entity2D.h"
+#include "../player.h"
 
 
 
@@ -44,7 +45,8 @@ Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m /*,b2World *world, Jueg
 	VD = driver;*/
 	engine = motorApp;
 	mundo = m;
-	
+	jugador = new player(motorApp, m);
+
 	//cam->getTCamara()->desactivar();
 	srand(time(NULL));
 	entity = new Entity2D(m->getWorldBox2D());
@@ -207,15 +209,16 @@ void Escenario::dibujarEscenario() {
 					ez = ((*T).escala.z * (*I).escala.z);
 
 					Camara *cam = new Camara(engine, true,
-						glm::vec3(tx, ty, -tz),
-						glm::vec3(-15, 90, rz),
+						//glm::vec3(tx, ty, -tz),
+						glm::vec3(0, 600, 0),
+						glm::vec3(-90, 0, rz),
 						glm::vec3(ex, ey, ez));
 
-					listaDeCamaras.push_back(cam);
-					if (pillado == false) {
-						cam = c;
-						pillado = true;
-					}
+					//listaDeCamaras.push_back(cam);
+					//if (pillado == false) {
+					//	cam = c;
+					//	pillado = true;
+					//}
 				
 			}
 		}
@@ -337,6 +340,11 @@ void Escenario::dibujarEscenario() {
 						std::cout << "X: " << rx << std::endl;
 						std::cout << "Y: " << ry << std::endl;
 						std::cout << "Z: " << rz << std::endl;
+						std::cout << "///////////" << std::endl;
+						std::cout << "trans 1" << std::endl;
+						std::cout << "X: " << tx << std::endl;
+						std::cout << "Y: " << ty << std::endl;
+						std::cout << "Z: " << tz << std::endl;
 
 						Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz ),
 							glm::vec3(rx, ry, -rz),
@@ -427,6 +435,12 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
+
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
@@ -631,6 +645,12 @@ void Escenario::dibujarEscenario() {
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
 
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
+
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
 						glm::vec3(ex, ey, ez), "generador");
@@ -756,6 +776,12 @@ void Escenario::dibujarEscenario() {
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
 
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
+
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
 						glm::vec3(ex, ey, ez), "hall");
@@ -835,7 +861,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
-
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
 						glm::vec3(ex, ey, ez), "mantenimiento");
@@ -914,7 +944,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
-
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
 						glm::vec3(ex, ey, ez), "cantina");
@@ -1021,7 +1055,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
-
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
 						glm::vec3(ex, ey, ez), "comisaria");
@@ -1149,7 +1187,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
-
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
 						glm::vec3(ex, ey, ez), "vestuario");
@@ -1287,7 +1329,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
-
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
 						glm::vec3(ex, ey, ez), "arsenal");
@@ -1319,7 +1365,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
-
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
 						glm::vec3(ex, ey, ez), "pasillo_1");
@@ -1503,6 +1553,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
@@ -1581,6 +1636,11 @@ void Escenario::dibujarEscenario() {
 				std::cout << "X: " << rx << std::endl;
 				std::cout << "Y: " << ry << std::endl;
 				std::cout << "Z: " << rz << std::endl;
+				std::cout << "///////////" << std::endl;
+				std::cout << "trans 1" << std::endl;
+				std::cout << "X: " << tx << std::endl;
+				std::cout << "Y: " << ty << std::endl;
+				std::cout << "Z: " << tz << std::endl;
 
 				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 					glm::vec3(rx, ry, -rz),
@@ -1737,6 +1797,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
@@ -1880,6 +1945,11 @@ void Escenario::dibujarEscenario() {
 						std::cout << "X: " << rx << std::endl;
 						std::cout << "Y: " << ry << std::endl;
 						std::cout << "Z: " << rz << std::endl;
+						std::cout << "///////////" << std::endl;
+						std::cout << "trans 1" << std::endl;
+						std::cout << "X: " << tx << std::endl;
+						std::cout << "Y: " << ty << std::endl;
+						std::cout << "Z: " << tz << std::endl;
 
 						Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 							glm::vec3(rx, ry, -rz),
@@ -2044,6 +2114,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
@@ -2077,6 +2152,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
@@ -2159,6 +2239,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
@@ -2292,6 +2377,11 @@ void Escenario::dibujarEscenario() {
 					std::cout << "X: " << rx << std::endl;
 					std::cout << "Y: " << ry << std::endl;
 					std::cout << "Z: " << rz << std::endl;
+					std::cout << "///////////" << std::endl;
+					std::cout << "trans 1" << std::endl;
+					std::cout << "X: " << tx << std::endl;
+					std::cout << "Y: " << ty << std::endl;
+					std::cout << "Z: " << tz << std::endl;
 
 					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
 						glm::vec3(rx, ry, -rz),
@@ -2741,10 +2831,10 @@ void Escenario::cambiaEstado(std::string mensaje)
 	/* jue->cambioEstado(mensaje);*/
 }
 
-//Personaje* Escenario::getPersonaje()
-//{
-//	return pers;
-//}
+player* Escenario::getPersonaje()
+{
+	return jugador;
+}
 
 void Escenario::eleminarEnemigos()
 {

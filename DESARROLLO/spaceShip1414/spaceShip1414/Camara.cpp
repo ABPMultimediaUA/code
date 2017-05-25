@@ -17,7 +17,7 @@ Camara::Camara(TGraphicEngine * motorApp, char tipo, bool activa, player * jugad
 	case 0:
 		nodo = motorApp->addCamaraLibre(activa);
 		motorApp->setCamaraMove(this);
-		motorApp->trasladar(nodo, 0, 10, -2.0f);
+		//motorApp->trasladar(nodo, 0, 10, -2.0f);
 		break;
 	case 1:
 		nodo = motorApp->addCamaraPerspectivaSeguidora(activa, motorApp->getPadreX(jugador->getNodo()));

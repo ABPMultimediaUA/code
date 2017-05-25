@@ -24,9 +24,15 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	scale = motorApp->crearTransform();
 	translation = motorApp->crearTransform();
 	scale->escalar(sca.x, sca.y, sca.z);
-	rotation->rotar(r.x, 1.0f, 0.0f, 0.0f);
-	rotation->rotar(r.y, 0.0f, 1.0f, 0.0f);
-	rotation->rotar(r.z, 0.0f, 0.0f, 1.0f);
+
+	//cambio de ejes de rotacion en unity
+	//if (r.y == 180)
+	//	r.y = 0;
+
+	//else if (r.y == 0)
+	//	r.y = 180;
+
+	rotation->rotarYPR(r.y + 180, r.x, r.z);
 	translation->trasladar(tras.x, tras.y, tras.z);
 
 	pos = tras;

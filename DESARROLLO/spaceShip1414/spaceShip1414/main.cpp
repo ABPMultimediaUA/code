@@ -26,19 +26,22 @@ int main() {
 		Mundo * world = new Mundo();
 		//Malla
 		//camara
-		player jugador(&motorApp, world);
 
 
-	//	Camara cam(,1,true,&jugador);
-		/*cam.Translation()->trasladar(0, 10, 40);
-		cam.setPitch(-30);
-		cam.Rotation()->rotarYPR(0,cam.getPitch(),0);*/
-		
-	//	Camara cam2(&motorApp, 0);
+
+		//
+		//Camara cam2(&motorApp, 0, true);
+		//cam2.rotationYPR(&motorApp, 0.0f, -90.0f, 0.0f);
+		//cam2.translation(&motorApp, 0, 20, 0);
 		/*cam2.Rotation()->rotar(80.0f, 1.0f, 0.0f, 0.0f);
 		cam2.Translation()->trasladar(0, 0, 100);*/
+	
 
 		Escenario *scene = new Escenario(&motorApp, world);
+		//Camara cam(&motorApp,1,true, scene->getPersonaje());
+		//cam.translation(&motorApp,0, 10, 0);
+		//cam.setPitch(-30);
+		//cam.rotationYPR(&motorApp,0,cam.getPitch(),0);
 		readJson *json = new readJson(scene);
 		b2GLDraw fooDrawInstance;
 		world->getWorldBox2D()->SetDebugDraw(&fooDrawInstance);
