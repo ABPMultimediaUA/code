@@ -121,14 +121,16 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 eye, glm::vec3 posPer
 
 	
 
-	std::cout << "POS: " << glm::to_string(motorApp->getPosicion(nodo)) << std::endl;
 
-	motorApp->look(nodo, p, posPers, glm::vec3(0, 1, 0));
+	//motorApp->look(nodo, glm::vec3(0,50,0), glm::vec3(-posPers.x,10,-posPers.z), glm::vec3(0, 1, 0));
+	//translation(motorApp, 10, 10,10);
+	//motorApp->resetTransform(nodo, 't');
 
-	motorApp->resetTransform(nodo, 't');
+	//
 
-	translation(motorApp, p.x, p.y, p.z);
-
-
-
+	float anguloRaton = -atan2f(p.x - posPers.x, p.z - posPers.z) * 180 / 3.14f;
+	std::cout << "POS: " << anguloRaton << std::endl;
+//motorApp->resetTransform(this->getNodo(), 'r');
+	this->rotationYPR(motorApp,anguloRaton,0,0);
+	
 }

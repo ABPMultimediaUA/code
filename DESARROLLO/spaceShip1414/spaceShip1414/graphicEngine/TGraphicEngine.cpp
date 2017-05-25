@@ -429,7 +429,7 @@ TNodo * TGraphicEngine::getPadreX(TNodo * hijo, char padre)
 
 void TGraphicEngine::look(TNodo * nodo, glm::vec3 eye, glm::vec3 tar, glm::vec3 mat)
 {
-	TTransform * t = static_cast<TTransform*>(nodo->getPadre()->getPadre()->getPadre()->getEntidad());
+	TTransform * t = static_cast<TTransform*>(nodo->getPadre()->getEntidad());
 	t->lookat(eye, tar, mat);
 }
 

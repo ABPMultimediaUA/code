@@ -218,7 +218,7 @@ void Escenario::dibujarEscenario() {
 
 								Camara *cam = new Camara(engine, true,
 									glm::vec3(tx, ty, -tz),
-									glm::vec3(-25, ry, rz),
+									glm::vec3(rx, ry, rz),
 									glm::vec3(1, 1, 1));
 								
 								listaDeCamaras.push_back(cam);
