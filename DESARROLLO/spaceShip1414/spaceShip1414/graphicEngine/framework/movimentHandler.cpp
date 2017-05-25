@@ -85,48 +85,48 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGr
 	
 		//anguloRaton = -atan2f(static_cast<float>(xpos) - width/2.0f, static_cast<float>(ypos) - height / 2.0f) * 180 / 3.14f;
 	
-	if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT)){
+	//if(glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT)){
 
-		if (xpos > offsetRango) {
+	//	if (xpos > offsetRango) {
 
-			angle += 5.0f;
-			jugador->rotationYPR(motor, 5, 0.0f, 0.0f);
+	//		angle += 5.0f;
+	//		jugador->rotationYPR(motor, 5, 0.0f, 0.0f);
 
 
-		}
+	//	}
 
-		else if (xpos < offsetRango) {
-			angle -= 5.0f;
-			jugador->rotationYPR(motor, -5, 0.0f, 0.0f);
+	//	else if (xpos < offsetRango) {
+	//		angle -= 5.0f;
+	//		jugador->rotationYPR(motor, -5, 0.0f, 0.0f);
 
-		}
-		camara->setYaw(angle);
-		//anguloRaton = angle;
-		offsetRango = xpos;
-	//	motor->getPosicion(camara->getNodo());
-		float rho = 1.0f;
-		float phi = 0.0f;
-		float theta = 0.0f;
-		double dt = motor->getDT();
-		//jugador->setYaw(anguloRaton);
-		glm::vec3 eye;
-		//eye.x = rho*sin((phi * 180) / 3.14)*cos((theta*180)/3.14);
-		//eye.y = rho*sin((phi * 180) / 3.14)*sin((theta * 180) / 3.14);
-		//eye.z = rho*cos((phi * 180) / 3.14);
-		//
-		eye.x = jugador->getPos().x + rho*cos(angle*0.016);
-		eye.y = 0;
-		eye.z = jugador->getPos().z + rho*sin(angle*0.016);
+	//	}
+	//	camara->setYaw(angle);
+	//	//anguloRaton = angle;
+	//	offsetRango = xpos;
+	////	motor->getPosicion(camara->getNodo());
+	//	float rho = 1.0f;
+	//	float phi = 0.0f;
+	//	float theta = 0.0f;
+	//	double dt = motor->getDT();
+	//	//jugador->setYaw(anguloRaton);
+	//	glm::vec3 eye;
+	//	//eye.x = rho*sin((phi * 180) / 3.14)*cos((theta*180)/3.14);
+	//	//eye.y = rho*sin((phi * 180) / 3.14)*sin((theta * 180) / 3.14);
+	//	//eye.z = rho*cos((phi * 180) / 3.14);
+	//	//
+	//	eye.x = jugador->getPos().x + rho*cos(angle*0.016);
+	//	eye.y = 0;
+	//	eye.z = jugador->getPos().z + rho*sin(angle*0.016);
 
-		std::cout << "CACA: " << glm::to_string(motor->getPosicion(camara->getNodo())) << std::endl;
+	//	std::cout << "CACA: " << glm::to_string(motor->getPosicion(camara->getNodo())) << std::endl;
 
-		camara->updateCam(motor, eye, jugador->getPos());
-		jugador->setYaw(angle*0.016);
+	//	camara->updateCam(motor, eye, jugador->getPos());
+	//	jugador->setYaw(angle*0.016);
 
-		jugador->setCamPos(motor->getPosicion(camara->getNodo()));
+	//	jugador->setCamPos(motor->getPosicion(camara->getNodo()));
 		//camara->rotationYPR(motor, (180 + jugador->getYaw()) * dt, 0, 0);
 
-	}
+	//}
 
 
 	//	jugador->setYaw(anguloRaton);

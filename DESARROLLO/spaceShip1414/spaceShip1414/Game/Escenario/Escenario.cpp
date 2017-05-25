@@ -168,7 +168,7 @@ void Escenario::removeListSubHijos() {
 void Escenario::dibujarEscenario() {
 	int num = 0;
 	tam = 0;
-
+	int camaras = -1;
 	//Waypoints *puntos = new Waypoints();
 	
 	/*Waypoints *zona1 = new Waypoints();
@@ -185,71 +185,67 @@ void Escenario::dibujarEscenario() {
 	TNodo* paredTM;
 	TNodo* paredes;
 	float tx, ty, tz, rx, ry, rz, ex, ey, ez;
-	Camara *cam = new Camara(engine, true,
-		//glm::vec3(tx, ty, -tz),
-		glm::vec3(0, 600, 0),
-		glm::vec3(-90, 0, 0),
-		glm::vec3(1, 1, 1));
-
+	//Camara *cam = new Camara(engine, true,
+	//	glm::vec3(0, 0, 0),
+	//	glm::vec3(0, 0, 0),
+	//	glm::vec3(1, 1, 1));
+	bool primera = true;
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
 		if ((*I).nombre == "CamarasSeguimiento") {
 		
-			bool pillado = false;
+
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-				
+			
 
-					
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
-
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
-
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+					if ((*T).nombre == "CAMARA") {
+						for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
 
+							tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+							ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+							tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-					//listaDeCamaras.push_back(cam);
+							rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+							ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+							rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+
+							ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+							ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+							ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+
+							if ((*N).nombre == "PosCam") {
+
+								Camara *cam = new Camara(engine, primera,
+									glm::vec3(tx, ty, -tz),
+									glm::vec3(-25, ry, rz),
+									glm::vec3(1, 1, 1));
+								primera = false;
+								listaDeCamaras.push_back(cam);
+								camaras++;
+							}
+
+
+							if ((*N).nombre == "Activador") {
+
+								Entity2D *entity = new Entity2D(mundo->getWorldBox2D(),
+									glm::vec3(tx, ty, -tz),
+									glm::vec3(rx, ry, rz),
+									glm::vec3(ex, ey, ez),
+									listaDeCamaras[camaras], true);
+
+							}
+						}
+
+					}
+
+
 					//if (pillado == false) {
 					//	cam = c;
 					//	pillado = true;
 					//}
 				
 			}
-		}
-
-		if ((*I).nombre == "PlanosDeCambio") {
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-
-				tx = ((*T).position.x + (*I).position.x);
-				ty = ((*T).position.y + (*I).position.y);
-				tz = ((*T).position.z + (*I).position.z);
-
-				rx = ((*T).rotation.x + (*I).rotation.x);
-				ry = ((*T).rotation.y + (*I).rotation.y);
-				rz = ((*T).rotation.z + (*I).rotation.z);
-
-				ex = ((*T).escala.x * (*I).escala.x);
-				ey = ((*T).escala.y * (*I).escala.y);
-				ez = ((*T).escala.z * (*I).escala.z);
-
-				//Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void * dirCamara, bool sensor)
-
-
-				Entity2D *entity = new Entity2D(mundo->getWorldBox2D(),
-					glm::vec3(tx *2 , ty, -tz*2),
-					glm::vec3(rx, ry, rz),
-					glm::vec3(ex, ey, ez),
-					0, true);
-
-			}
-
-
 		}
 
 		if ((*I).nombre == "HANGAR") {
@@ -2747,10 +2743,10 @@ void Escenario::actualizarCamaras() {
 
 	if (!listaDeCamaras.empty())
 	{
-		for (std::list<Camara*>::iterator it = listaDeCamaras.begin(); it != listaDeCamaras.end(); it++) {
-			if ((*it) != NULL && (*it)->getTCamara()->getActiva() == true) {
+		for (std::size_t i = 0; listaDeCamaras.size(); i++) {
+			if (listaDeCamaras[i] != NULL && listaDeCamaras[i]->getTCamara()->getActiva() == true) {
 
-				//(*it)->updateCam(engine, ); //pasar la creacion del personaje aqui, ver que eye tiene que tener y pasar el engine
+				listaDeCamaras[i]->updateCam(engine, engine->getPosicion(listaDeCamaras[i]->getNodo()), engine->getPosicion(jugador->getNodo()) ); //pasar la creacion del personaje aqui, ver que eye tiene que tener y pasar el engine
 
 			}
 

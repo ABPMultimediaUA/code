@@ -40,7 +40,7 @@ Camara::Camara(TGraphicEngine * motorApp, char tipo, bool activa, player * jugad
 Camara::Camara(TGraphicEngine * motorApp, bool activa, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala) : velocity{ 5.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	nodo = motorApp->addCamaraPerspectivaFija(activa);
-	motorApp->rotarYPR(nodo, rot.y, rot.x, rot.z);
+	motorApp->rotarYPR(nodo, rot.y + 180, rot.x, rot.z);
 	motorApp->trasladar(nodo, pos.x, pos.y, pos.z);
 	motorApp->setCamaraMove(this);
 
@@ -119,6 +119,6 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 eye, glm::vec3 posPer
 
 	motorApp->look(nodo, eye, posPers, glm::vec3(0, 1, 0));
 
-	translation(motorApp, posPers.x, 15,posPers.z - 15);
+	//translation(motorApp, posPers.x, 15,posPers.z - 15);
 
 }

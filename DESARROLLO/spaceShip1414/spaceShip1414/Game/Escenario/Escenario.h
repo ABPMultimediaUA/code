@@ -86,7 +86,7 @@ private:
 	//std::list<Enemigo*> enemigos;
 	std::list<Pared*> Listparedes;
 	std::list<Puerta*> puertas;
-	std::list<Camara*> listaDeCamaras;
+	std::vector<Camara*> listaDeCamaras;
 	//std::list<Objetos*> objConsumables;
 	//std::vector<Waypoints*> waypoints;
 	int tam;
