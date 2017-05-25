@@ -442,7 +442,7 @@ glm::mat4 TGraphicEngine::getInverseProjectionCamaraActive()
 
 void TGraphicEngine::draw(double time)
 {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	shader.use();
 	camaraActivada();
 	luzActivada();
