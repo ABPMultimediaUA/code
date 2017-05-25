@@ -185,7 +185,11 @@ void Escenario::dibujarEscenario() {
 	TNodo* paredTM;
 	TNodo* paredes;
 	float tx, ty, tz, rx, ry, rz, ex, ey, ez;
-
+	Camara *cam = new Camara(engine, true,
+		//glm::vec3(tx, ty, -tz),
+		glm::vec3(0, 600, 0),
+		glm::vec3(-90, 0, 0),
+		glm::vec3(1, 1, 1));
 
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
@@ -208,11 +212,7 @@ void Escenario::dibujarEscenario() {
 					ey = ((*T).escala.y * (*I).escala.y);
 					ez = ((*T).escala.z * (*I).escala.z);
 
-					Camara *cam = new Camara(engine, true,
-						//glm::vec3(tx, ty, -tz),
-						glm::vec3(0, 600, 0),
-						glm::vec3(-90, 0, rz),
-						glm::vec3(ex, ey, ez));
+
 
 					//listaDeCamaras.push_back(cam);
 					//if (pillado == false) {

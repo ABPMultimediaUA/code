@@ -10502,9 +10502,9 @@
       "components": [
         {
           "localPosition": [
-            -16.9,
             0.0,
-            -3.2
+            0.0,
+            0.0
           ],
           "localRotation": [
             0.0,
@@ -10523,12 +10523,12 @@
       ],
       "children": [
         {
-          "name": "GameObject",
+          "name": "CAMARA",
           "components": [
             {
               "localPosition": [
-                32.38,
-                10.53,
+                0.0,
+                0.0,
                 0.0
               ],
               "localRotation": [
@@ -10546,16 +10546,89 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "PosCam",
+              "components": [
+                {
+                  "localPosition": [
+                    37.98,
+                    13.39,
+                    -6.7
+                  ],
+                  "localRotation": [
+                    0.0,
+                    270.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Activador",
+              "components": [
+                {
+                  "localPosition": [
+                    14.46,
+                    -6.02,
+                    41.958
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    0.1
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Plane",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "Default-Material"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "type": "MeshCollider"
+                }
+              ],
+              "children": []
+            }
+          ]
         },
         {
-          "name": "GameObject 1",
+          "name": "CAMARA",
           "components": [
             {
               "localPosition": [
-                1.07,
-                5.6,
-                -54.1
+                0.0,
+                0.0,
+                0.0
               ],
               "localRotation": [
                 0.0,
@@ -10572,7 +10645,80 @@
               "type": "Transform"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "name": "PosCam",
+              "components": [
+                {
+                  "localPosition": [
+                    45.982,
+                    11.405,
+                    75.273
+                  ],
+                  "localRotation": [
+                    0.0,
+                    188.437576,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "Activador",
+              "components": [
+                {
+                  "localPosition": [
+                    14.46,
+                    -6.02,
+                    42.87
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    0.1
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Plane",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "Default-Material"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "type": "MeshCollider"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -16495,217 +16641,6 @@
               "children": []
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "PlanosDeCambio",
-      "components": [
-        {
-          "localPosition": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "localRotation": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "localScale": [
-            1.0,
-            1.0,
-            1.0
-          ],
-          "name": null,
-          "parentName": null,
-          "type": "Transform"
-        }
-      ],
-      "children": [
-        {
-          "name": "Pasillo3",
-          "components": [
-            {
-              "localPosition": [
-                -10.77,
-                0.0,
-                -20.67
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                0.4
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Plane",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "Default-Material"
-              ],
-              "type": "MeshRenderer"
-            },
-            {
-              "type": "MeshCollider"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Hangar",
-          "components": [
-            {
-              "localPosition": [
-                -10.77,
-                0.0,
-                -25.46
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                0.399999976
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Plane",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "Default-Material"
-              ],
-              "type": "MeshRenderer"
-            },
-            {
-              "type": "MeshCollider"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Almacen3",
-          "components": [
-            {
-              "localPosition": [
-                2.24,
-                0.0,
-                -58.08
-              ],
-              "localRotation": [
-                0.0,
-                90.0,
-                0.0
-              ],
-              "localScale": [
-                1.6,
-                1.0,
-                0.399999976
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Plane",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "Default-Material"
-              ],
-              "type": "MeshRenderer"
-            },
-            {
-              "type": "MeshCollider"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Pasillo3",
-          "components": [
-            {
-              "localPosition": [
-                8.29,
-                0.0,
-                -58.08
-              ],
-              "localRotation": [
-                0.0,
-                90.0,
-                0.0
-              ],
-              "localScale": [
-                1.60000086,
-                1.0,
-                0.4000002
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Plane",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "Default-Material"
-              ],
-              "type": "MeshRenderer"
-            },
-            {
-              "type": "MeshCollider"
-            }
-          ],
-          "children": []
         }
       ]
     }
