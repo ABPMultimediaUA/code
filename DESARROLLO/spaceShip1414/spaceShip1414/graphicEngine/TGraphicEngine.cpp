@@ -429,7 +429,7 @@ TNodo * TGraphicEngine::getPadreX(TNodo * hijo, char padre)
 
 void TGraphicEngine::look(TNodo * nodo, glm::vec3 eye, glm::vec3 tar, glm::vec3 mat)
 {
-	TTransform * t = static_cast<TTransform*>(nodo->getPadre()->getEntidad());
+	TTransform * t = static_cast<TTransform*>(nodo->getPadre()->getPadre()->getPadre()->getEntidad());
 	t->lookat(eye, tar, mat);
 }
 
@@ -441,7 +441,7 @@ glm::mat4 TGraphicEngine::getInverseProjectionCamaraActive()
 
 void TGraphicEngine::draw(double time)
 {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	shader.use();
 	camaraActivada();
 	luzActivada();
@@ -701,9 +701,9 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		world->stepBox2D(1.0 / 60.0, 6, 2);
 		world->getWorldBox2D()->DrawDebugData();
 		world->clearForcesBox2D();
-		//esce->actualizarCamaras();
+		esce->actualizarCamaras();
 		move->checkKeys(window, this);
-		esce->actualizarEstadoPuerta();
+		//esce->actualizarEstadoPuerta();
 		glfwPollEvents();
 		draw(getLastTime());
 		glfwSetCursorPosCallback(window, mouse_callback);

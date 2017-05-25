@@ -40,6 +40,7 @@ c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2worldcallbacks.obj
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2chainandcirclecontact.obj
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2chainandpolygoncontact.obj
+c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\movimenthandler.obj
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\openglshader.obj
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\tgraphicengine.obj
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\tgestorrecursos.obj
@@ -102,7 +103,6 @@ c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\camara.obj
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\alienberserker.obj
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\astar.obj
-c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\movimenthandler.obj
 c:\users\david\documents\github\code\desarrollo\spaceship1414\x64\debug\spaceship1414.exe
 c:\users\david\documents\github\code\desarrollo\spaceship1414\x64\debug\spaceship1414.pdb
 c:\users\david\documents\github\code\desarrollo\spaceship1414\spaceship1414\x64\debug\spaceship1414.tlog\cl.command.1.tlog

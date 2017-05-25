@@ -7,6 +7,7 @@
 #include "graphicEngine\entityTree\TCamara.h"
 #include "graphicEngine\entityTree\TNodo.h"
 #include "player.h"
+#include <glm\gtx\string_cast.hpp>
 
 
 //tipo 0 = librePerspectiva, 1 = jugadorPerspectiva, 2 = libreOrto, 3 = jugadorOrto 
@@ -42,8 +43,9 @@ Camara::Camara(TGraphicEngine * motorApp, bool activa, glm::vec3 pos, glm::vec3 
 	nodo = motorApp->addCamaraPerspectivaFija(activa);
 	motorApp->rotarYPR(nodo, rot.y + 180, rot.x, rot.z);
 	motorApp->trasladar(nodo, pos.x, pos.y, pos.z);
-	motorApp->setCamaraMove(this);
-
+	//motorApp->setCamaraMove(this);
+	p = pos;
+	r = rot;
 }
 
 Camara::~Camara()
@@ -117,8 +119,16 @@ void Camara::translation(TGraphicEngine * motorApp, float x, float y, float z)
 
 void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 eye, glm::vec3 posPers) {
 
-	motorApp->look(nodo, eye, posPers, glm::vec3(0, 1, 0));
+	
 
-	//translation(motorApp, posPers.x, 15,posPers.z - 15);
+	std::cout << "POS: " << glm::to_string(motorApp->getPosicion(nodo)) << std::endl;
+
+	motorApp->look(nodo, p, posPers, glm::vec3(0, 1, 0));
+
+	motorApp->resetTransform(nodo, 't');
+
+	translation(motorApp, p.x, p.y, p.z);
+
+
 
 }

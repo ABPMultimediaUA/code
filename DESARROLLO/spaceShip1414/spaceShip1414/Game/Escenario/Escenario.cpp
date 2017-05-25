@@ -189,7 +189,7 @@ void Escenario::dibujarEscenario() {
 	//	glm::vec3(0, 0, 0),
 	//	glm::vec3(0, 0, 0),
 	//	glm::vec3(1, 1, 1));
-	bool primera = true;
+
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
 		if ((*I).nombre == "CamarasSeguimiento") {
@@ -216,13 +216,15 @@ void Escenario::dibujarEscenario() {
 
 							if ((*N).nombre == "PosCam") {
 
-								Camara *cam = new Camara(engine, primera,
+								Camara *cam = new Camara(engine, true,
 									glm::vec3(tx, ty, -tz),
 									glm::vec3(-25, ry, rz),
 									glm::vec3(1, 1, 1));
-								primera = false;
+								
 								listaDeCamaras.push_back(cam);
 								camaras++;
+
+
 							}
 
 
@@ -286,14 +288,14 @@ void Escenario::dibujarEscenario() {
 						else {
 
 							
-							Puerta *door = new Puerta(engine, num, glm::vec3(tx * 2, 0, -tz * 2),
-								glm::vec3(rx, ry, rz),
-								glm::vec3(ex, ey, ez),
-								 "ABIERTA");
+							//Puerta *door = new Puerta(engine, num, glm::vec3(tx * 2, 0, -tz * 2),
+							//	glm::vec3(rx, ry, rz),
+							//	glm::vec3(ex, ey, ez),
+							//	 "ABIERTA");
 
-							door->setFisica(mundo, num);
-							puertas.push_back(door);
-							num++;
+							//door->setFisica(mundo, num);
+							//puertas.push_back(door);
+							//num++;
 						}
 
 					}
@@ -2564,6 +2566,15 @@ void Escenario::dibujarEscenario() {
 	}
 
 
+	for (std::size_t i = 1; i < listaDeCamaras.size(); i++) {
+		if (listaDeCamaras[i] != NULL) {
+
+			listaDeCamaras[i]->getTCamara()->desactivar();
+
+		}
+
+	}
+
 	std::cout << "-------------------------------------->" << tam << std::endl;
 /*
 	waypoints.push_back(zona1); waypoints.push_back(zona2); waypoints.push_back(zona3); waypoints.push_back(zona4);
@@ -2743,7 +2754,7 @@ void Escenario::actualizarCamaras() {
 
 	if (!listaDeCamaras.empty())
 	{
-		for (std::size_t i = 0; listaDeCamaras.size(); i++) {
+		for (std::size_t i = 0; i < listaDeCamaras.size(); i++) {
 			if (listaDeCamaras[i] != NULL && listaDeCamaras[i]->getTCamara()->getActiva() == true) {
 
 				listaDeCamaras[i]->updateCam(engine, engine->getPosicion(listaDeCamaras[i]->getNodo()), engine->getPosicion(jugador->getNodo()) ); //pasar la creacion del personaje aqui, ver que eye tiene que tener y pasar el engine
