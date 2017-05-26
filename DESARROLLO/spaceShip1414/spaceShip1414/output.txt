@@ -1,0 +1,483 @@
+Vendor: NVIDIA Corporation
+Renderer: GeForce GTX 1060 3GB/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 382.33
+GLSL: 4.50 NVIDIA
+
+Recurso nombre: nanosuit.obj
+ROTACIONES 1
+X: 0
+Y: 180.017
+Z: 0
+///////////
+trans 1
+X: -47.02
+Y: 1
+Z: 0
+Recurso nombre: pasillo_2.obj
+Recurso nombre: untitled.obj
+
+ID: 0
+
+//////////////////////////////////////////
+
+POS 2D
+X: 9 Y: 37.28
+
+//////////////////////////////////////////
+
+ID: 1
+
+//////////////////////////////////////////
+
+POS 2D
+X: -28 Y: 0
+
+//////////////////////////////////////////
+
+ID: 2
+
+//////////////////////////////////////////
+
+POS 2D
+X: -22.68 Y: 47.48
+
+//////////////////////////////////////////
+ROTACIONES 1
+X: 0
+Y: 0
+Z: 0
+///////////
+trans 1
+X: 0
+Y: 11
+Z: 0
+Recurso nombre: hangar.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: 0.6
+Y: 6.7
+Z: -219.2
+Recurso nombre: almacen_1.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: 23.8
+Y: 4
+Z: 61.6
+Recurso nombre: almacen_4.obj
+ROTACIONES 1
+X: 0
+Y: 0
+Z: 0
+///////////
+trans 1
+X: -101
+Y: 1.5
+Z: -116.1
+Recurso nombre: pasillo_3.obj
+ROTACIONES 1
+X: 0
+Y: 0
+Z: 0
+///////////
+trans 1
+X: -88.5
+Y: 1.7
+Z: 157.5
+Recurso nombre: pasillo_1.obj
+ROTACIONES 1
+X: 0
+Y: 0
+Z: 0
+///////////
+trans 1
+X: -90
+Y: 3.5
+Z: 0
+Recurso nombre: sala_espera.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: -392
+Y: 1
+Z: 92.7
+Recurso nombre: comisaria.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: 17.5
+Y: 3.7
+Z: -103
+Recurso nombre: almacen_3.obj
+ROTACIONES 1
+X: 0
+Y: 179.975
+Z: 0
+///////////
+trans 1
+X: -87
+Y: 6
+Z: 126.5
+Recurso nombre: mantenimiento.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: -352
+Y: 0.7
+Z: 87.5
+Recurso nombre: pasillo_5.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: -94.1
+Y: 3.5
+Z: 290
+Recurso nombre: almacen_2.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: -334
+Y: 1
+Z: -71.07
+Recurso nombre: pasillo_4.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: -392.3
+Y: 3.8
+Z: -163
+Recurso nombre: cantina.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: -371
+Y: 1
+Z: 160
+Recurso nombre: vestuario.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: -372.7
+Y: -1
+Z: 218.8
+Recurso nombre: arsenal.obj
+ROTACIONES 1
+X: 0
+Y: 0
+Z: 0
+///////////
+trans 1
+X: -97.28
+Y: 7
+Z: -94.17
+Recurso nombre: generador.obj
+ROTACIONES 1
+X: 0
+Y: 180
+Z: 0
+///////////
+trans 1
+X: -173.4
+Y: 3.1
+Z: -20.8
+Recurso nombre: hall.obj
+-------------------------------------->0
+TIME: 0.0169772
+TIME: 0.0174959
+TIME: 0.0169506
+TIME: 0.0166281
+TIME: 0.0164936
+TIME: 0.0171088
+TIME: 0.0171392
+TIME: 0.0160908
+TIME: 0.0169138
+TIME: 0.0170127
+TIME: 0.0164751
+TIME: 0.0157699
+TIME: 0.0166121
+TIME: 0.0165753
+TIME: 0.0166121
+TIME: 0.0164068
+TIME: 0.017046
+TIME: 0.01615
+TIME: 0.0167139
+TIME: 0.0154929
+TIME: 0.0160866
+TIME: 0.0167815
+TIME: 0.0171536
+TIME: 0.0157273
+TIME: 0.0167431
+TIME: 0.0160712
+TIME: 0.0169551
+TIME: 0.0169845
+TIME: 0.0169038
+TIME: 0.0164033
+TIME: 0.0173
+TIME: 0.0160588
+TIME: 0.0166185
+TIME: 0.0165423
+TIME: 0.0168753
+TIME: 0.0166883
+TIME: 0.0153459
+TIME: 0.0161747
+TIME: 0.0169423
+TIME: 0.0160338
+TIME: 0.0171744
+TIME: 0.0171639
+TIME: 0.0171104
+TIME: 0.0167834
+TIME: 0.0167008
+TIME: 0.0166163
+TIME: 0.0163364
+TIME: 0.0167789
+TIME: 0.0158631
+TIME: 0.0172087
+TIME: 0.0169621
+TIME: 0.01642
+TIME: 0.0172542
+TIME: 0.0166441
+TIME: 0.0162455
+TIME: 0.016835
+TIME: 0.0174188
+TIME: 0.0165746
+TIME: 0.0163169
+TIME: 0.0168978
+TIME: 0.0160866
+TIME: 0.0165064
+TIME: 0.0164955
+TIME: 0.0169198
+TIME: 0.0159701
+TIME: 0.0168654
+TIME: 0.0170745
+TIME: 0.0161849
+TIME: 0.0162884
+TIME: 0.0169589
+TIME: 0.0826513
+TIME: 0.0159793
+TIME: 0.0163956
+TIME: 0.0174562
+TIME: 0.0161106
+TIME: 0.0162061
+TIME: 0.0170771
+TIME: 0.0172932
+TIME: 0.0159992
+TIME: 0.0161583
+TIME: 0.0168677
+TIME: 0.0158554
+TIME: 0.0173746
+TIME: 0.0171245
+TIME: 0.0159492
+TIME: 0.0164722
+TIME: 0.0180813
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 74.935 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 78.44 POS Y: 0
+///////////////////////////////////
+TIME: 0.0163332
+TIME: 0.016029
+TIME: 0.0168039
+TIME: 0.0167908
+TIME: 0.0164651
+TIME: 0.0183727
+TIME: 0.016298
+TIME: 0.0158625
+TIME: 0.0168965
+TIME: 0.0171229
+TIME: 0.0158714
+TIME: 0.0173839
+TIME: 0.0173989
+TIME: 0.0165224
+TIME: 0.0170777
+TIME: 0.0168981
+TIME: 0.0162259
+TIME: 0.016329
+TIME: 0.017226
+TIME: 0.0163505
+TIME: 0.0168219
+TIME: 0.0168641
+TIME: 0.0158058
+TIME: 0.0166733
+TIME: 0.0168769
+TIME: 0.0177992
+TIME: 0.0163454
+TIME: 0.0170134
+TIME: 0.0172394
+TIME: 0.0164466
+TIME: 0.016281
+TIME: 0.017055
+TIME: 0.0169432
+TIME: 0.0167184
+TIME: 0.0166896
+TIME: 0.0166973
+TIME: 0.0173835
+TIME: 0.0165183
+TIME: 0.0165042
+TIME: 0.0166505
+TIME: 0.016526
+TIME: 0.016386
+TIME: 0.0169564
+TIME: 0.0160395
+TIME: 0.0173265
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Facade Destroted
+shader Destroyed
