@@ -32,7 +32,8 @@ class TRecursoMalla :
 		std::vector<glm::vec3> normal;
 		std::vector<glm::vec2> uv;
 		std::vector<GLuint> indices;
-		GLuint buffer[4];
+		std::vector<glm::vec3> tangent, bitangent;
+		GLuint buffer[6];
 		GLuint vao;
 		GLuint texture_ambient, texture_diffuse, texture_specular, texture_normal;
 

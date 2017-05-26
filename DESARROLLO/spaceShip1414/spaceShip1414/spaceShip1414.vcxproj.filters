@@ -795,9 +795,10 @@
     <None Include="graphicEngine\Shader\basicoVertexShader.vs" />
     <None Include="graphicEngine\Shader\directional.fragment_shader" />
     <None Include="graphicEngine\Shader\directional.vertex_shader" />
-    <None Include="graphicEngine\Shader\directionalFragmentShader.frag" />
-    <None Include="graphicEngine\Shader\directionalVertexShader.vs" />
     <None Include="graphicEngine\Shader\funciona.fs" />
-    <None Include="graphicEngine\Shader\funciona.vs" />
+    <None Include="graphicEngine\Shader\nor.frag" />
+    <None Include="graphicEngine\Shader\nor.vs" />
+    <None Include="graphicEngine\Shader\spaceShip1414.fs" />
+    <None Include="graphicEngine\Shader\spaceShip1414.vs" />
   </ItemGroup>
 </Project>

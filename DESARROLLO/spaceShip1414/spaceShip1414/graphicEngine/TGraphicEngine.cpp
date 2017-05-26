@@ -95,9 +95,9 @@ TCamara * TGraphicEngine::crearCamara(float fovy, float aspect, float nearr, flo
 	return new TCamara(fovy, aspect, nearr, farr);
 }
 
-TLuz * TGraphicEngine::crearLuz(float x, float y, float z, bool a)
+TLuz * TGraphicEngine::crearLuz(float ax, float ay, float az, float dix, float diy, float diz, float sx, float sy, float sz, char t, float dirx, float diry, float dirz, bool a, float sE, float sCO)
 {
-	TLuz* l = new TLuz(x, y, z);
+	TLuz* l = new TLuz();
 	if (a)
 	{
 		l->activar();
@@ -143,7 +143,10 @@ void TGraphicEngine::info()
 	std::cout << "Vendor: " << glGetString(GL_VENDOR) << std::endl;
 	std::cout << "Renderer: " << glGetString(GL_RENDERER) << std::endl;
 	std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
-	std::cout << "GLSL: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl << std::endl;
+	std::cout << "GLSL: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
+	int num;
+	/*glGetIntegerv(GL_MAX_LIGHTS, &num);
+	std::cout << "Maximo numero de luces: " << num << std::endl << std::endl;*/
 }
 
 void TGraphicEngine::addRegistroLuz(TNodo* l)
@@ -337,7 +340,7 @@ TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoP
 	return nodoCamara;
 }
 
-TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre)
+TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre, char t)
 {
 	TTransform *transfRL = crearTransform();
 	TTransform *transfEL = crearTransform();
@@ -354,7 +357,7 @@ TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre)
 	}
 	TNodo* nodoTransfEL = crearNodo(nodoTransfRL, transfEL);
 	TNodo* nodoTransfTL = crearNodo(nodoTransfEL, transfTL);
-	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.0f, 10.0f, 10.0f, true));
+	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.1f, 0.1f, 0.1f, 1, 1, 1, 0.8f, 0.8f, 0.8f, t, 0, 10, 10, true, 0.1f, 0.8f));
 	addRegistroLuz(nodoLuz);
 	return nodoLuz;
 }
@@ -483,7 +486,7 @@ void TGraphicEngine::onstart()
 	glEnable(GL_DEPTH_TEST);
 	glClearColor(0.0f, 0.5f, 0.5f, 1.0f);
 
-	shader.compile("graphicEngine/Shader/funciona.vs", "graphicEngine/Shader/funciona.fs");
+	shader.compile("graphicEngine/Shader/spaceShip1414.vs", "graphicEngine/Shader/spaceShip1414.fs");
 
 	// ocultar el cursor y ubicarlo en el centro de la ventana
 	//glfwSetInputMode(this->window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -658,21 +661,6 @@ void  TGraphicEngine::drawBox(Mundo * world, double x, double y, int w, int h) {
 	dynamicBody->CreateFixture(&boxFixtureDef);
 	//Pared * p = new Pared(this,glm::vec3(0,0,0), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1));
 	//p->setFisicas(world);
-}
-
-void  TGraphicEngine::drawGround(Mundo * world) {
-	//b2Body *groundBody;
-	//b2Fixture *bottomFixture;
-	//b2BodyDef groundBodyDef;
-	//groundBodyDef.position.Set(0, 0);
-	//groundBody = world->getWorldBox2D()->CreateBody(&groundBodyDef);
-
-	//b2EdgeShape groundBox;
-	//b2FixtureDef groundBoxDef;
-	//groundBoxDef.shape = &groundBox;
-
-	//groundBox.Set(b2Vec2(XMIN, YMIN), b2Vec2(XMAX, YMIN));
-	//bottomFixture = groundBody->CreateFixture(&groundBoxDef);
 }
 
 double TGraphicEngine::getDT()

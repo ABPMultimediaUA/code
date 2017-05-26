@@ -30,9 +30,9 @@ void TRecursoMalla::Mesh::draw()
 void TRecursoMalla::Mesh::draw(GLuint program)
 {
 	activeTextureNum(0, texture_diffuse, program, "material.diffuse");
-	//activeTextureNum(1, texture_normal, program, "material.normal");
-	activeTextureNum(1, texture_specular, program, "material.specular");
-	activeTextureNum(2, texture_ambient, program, "material.ambient");
+	activeTextureNum(1, texture_normal, program, "material.normal");
+	activeTextureNum(2, texture_specular, program, "material.specular");
+	activeTextureNum(3, texture_ambient, program, "material.ambient");
 
 	glUniform1f(glGetUniformLocation(program, "material.shininess"), shininess);
 	glUniform1f(glGetUniformLocation(program, "material.shininess_strength"), shininess_strength);
@@ -70,8 +70,10 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla)
 	vertex.reserve(malla->mNumVertices);
 	uv.reserve(malla->mNumVertices);
 	normal.reserve(malla->mNumVertices);
+	tangent.reserve(malla->mNumVertices);
+	//bitangent.reserve(malla->mNumVertices);
 	indices.reserve(3 * malla->mNumFaces);
-	TRecursoTextura * textura=new TRecursoTextura();
+	//TRecursoTextura * textura=new TRecursoTextura();
 
 	for (unsigned int i = 0; i < malla->mNumVertices; i++)
 	{
@@ -96,6 +98,14 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla)
 			const aiVector3D* n = &(malla->mNormals[i]);
 			normal.push_back(glm::vec3(n->x, n->y, n->z));
 		}
+
+		if (malla->HasTangentsAndBitangents()) {
+			const aiVector3D* t = &(malla->mTangents[i]);
+			const aiVector3D* b = &(malla->mBitangents[i]);
+
+			tangent.push_back(glm::vec3(t->x, t->y, t->z));
+			bitangent.push_back(glm::vec3(b->x, b->y, b->z));
+		}
 	}
 
 	// Obtener los indices
@@ -109,7 +119,7 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla)
 	loadMaterial(malla, aiTextureType_AMBIENT, texture_ambient);
 	loadMaterial(malla, aiTextureType_DIFFUSE, texture_diffuse);
 	loadMaterial(malla, aiTextureType_SPECULAR, texture_specular);
-	//loadMaterial(malla, aiTextureType_HEIGHT, texture_normal);
+	loadMaterial(malla, aiTextureType_HEIGHT, texture_normal);
 
 	if (malla->mMaterialIndex >= 0) {
 		// obtener el material correspondiente a este Mesh
@@ -157,6 +167,7 @@ void TRecursoMalla::Mesh::loadMaterial(const aiMesh * mesh, aiTextureType ttype,
 
 GLuint TRecursoMalla::Mesh::TextureFromFile(const std::string & filename)
 {
+	std::cout << "Ruta textura: " << filename << std::endl;
 	GLuint textureID = 0;
 	glGenTextures(1, &textureID);
 
@@ -193,7 +204,7 @@ void TRecursoMalla::Mesh::create()
 	glBindVertexArray(vao);
 
 	// generar dos ids para los buffer
-	glGenBuffers(4, buffer);
+	glGenBuffers(6, buffer);
 
 	// buffer de vertices
 	glBindBuffer(GL_ARRAY_BUFFER, buffer[0]);
@@ -217,8 +228,22 @@ void TRecursoMalla::Mesh::create()
 		glEnableVertexAttribArray(2);
 	}
 
+	if (!tangent.empty()) {
+		glBindBuffer(GL_ARRAY_BUFFER, buffer[3]);
+		glBufferData(GL_ARRAY_BUFFER, tangent.size() * sizeof(glm::vec3), &tangent[0], GL_STATIC_DRAW);
+		glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+		glEnableVertexAttribArray(3);
+	}
+
+	if (!bitangent.empty()) {
+		glBindBuffer(GL_ARRAY_BUFFER, buffer[4]);
+		glBufferData(GL_ARRAY_BUFFER, bitangent.size() * sizeof(glm::vec3), &bitangent[0], GL_STATIC_DRAW);
+		glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, 0, NULL);
+		glEnableVertexAttribArray(4);
+	}
+
 	// buffer de indices
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffer[3]);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffer[5]);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint), &indices[0], GL_STATIC_DRAW);
 
 	// desactivar el VAO

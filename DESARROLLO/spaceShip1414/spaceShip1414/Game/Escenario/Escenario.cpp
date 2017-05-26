@@ -260,6 +260,7 @@ void Escenario::dibujarEscenario() {
 						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
 						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
 						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+						
 
 						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
 						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
@@ -321,9 +322,13 @@ void Escenario::dibujarEscenario() {
 				if ((*T).nombre == "Modelo") {
 						//	std::cout << "entra" << std::endl;
 
-						tx = ((*T).position.x + (*I).position.x);
-						ty = ((*T).position.y + (*I).position.y);
+						tx = ((*T).position.x + (*I).position.x) + 5.f;
+						ty = ((*T).position.y + (*I).position.y) - 10.f;
 						tz = ((*T).position.z + (*I).position.z);
+
+						std::cout << "tx: " << tx << std::endl;
+						std::cout << "ty: " << ty << std::endl;
+						std::cout << "tz: " << tz << std::endl;
 
 						rx = ((*T).rotation.x + (*I).rotation.x);
 						ry = ((*T).rotation.y + (*I).rotation.y);
