@@ -27,6 +27,7 @@ public:
 	glm::vec3 getPos();
 	glm::vec3 getRot();
 	glm::vec3 getScale();
+	glm::vec3 getPosAnt();
 	void setPos(float x, float y, float z);
 	void setRot(float x, float y, float z);
 	void setScale(float x, float y, float z);
@@ -42,6 +43,7 @@ private:
 	glm::vec3 rot;
 	glm::vec3 escale;
 	glm::vec3 posCam;
+	glm::vec3 posAnterior;
 	//Entity3D *entity;
 	Entity2D *entity;
 	TNodo *nodo;

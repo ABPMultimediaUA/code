@@ -44,7 +44,7 @@ public:
 	TCamara* crearCamara(bool, float, float, float, float, bool a = false);
 	TCamara* crearCamaraS(bool, float, float, float, float, bool a = false);
 	TCamara* crearCamara(float fovy, float aspect, float nearr, float farr);
-	TLuz* crearLuz(float, float, float, bool a = false);
+	TLuz* crearLuz(float ax = 0.1f, float ay = 0.1f, float az = 0.1f, float dix = 1, float diy = 1, float diz = 1, float sx = 0.8f, float sy = 0.8f, float sz = 0.8f, char t = 'd', float dirx = 0, float diry = 4, float dirz = 3, bool a = true, float sE = 0.1f, float sCO = 0.8f);
 	TMalla* crearMalla(std::string);
 	TNodo* nodoRaiz();
 	GLFWwindow* getGLFWwindow();
@@ -65,7 +65,7 @@ public:
 	TNodo * addCamaraParalelaSeguidora(bool activa = false, TNodo * nodoPadre = nullptr);
 	TNodo * addCamaraPerspectivaFija(bool activa = false);
 	TNodo * addCamaraPerspectivaSeguidora(bool activa = false, TNodo * nodoPadre = nullptr);
-	TNodo * addLuz(TNodo * nodoPadre = nullptr);
+	TNodo * addLuz(TNodo * nodoPadre = nullptr, char t = 'd');
 	void trasladar(TNodo *, float, float, float);
 	void rotar(TNodo *, float, float, float, float);
 	void rotarYPR(TNodo *, float, float, float);
@@ -86,6 +86,7 @@ public:
 	void drawGround(Mundo * world);
 	double getDT();
 	void run(Mundo * world, Escenario*);
+	void CamaraActiva();
 private:
 	glm::vec3 descomponerMatriz(TNodo *, char);
 	void onstart();
@@ -104,6 +105,7 @@ private:
 	static void resize_callback(GLFWwindow*, int, int);
 	static void mouse_callback(GLFWwindow*, double, double);
 	inline static TGraphicEngine* getTGraphicEngineApp(GLFWwindow*);
+
 	openGLShader shader;
 	TNodo* escena;
 	TGestorRecursos* gestorRecursos;
@@ -121,5 +123,6 @@ private:
 	double YMAX;
 	Mundo * wo;
 	GUI m_gui;
+	Escenario * maps;
 };
 

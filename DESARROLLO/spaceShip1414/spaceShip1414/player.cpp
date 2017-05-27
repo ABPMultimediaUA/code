@@ -22,6 +22,7 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 
 	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.1f);
 	motorApp->rotarYPR(nodo, 180, 0, 0);
 	pos = glm::vec3(0, 0, 0);
+	posAnterior = pos;
 	rot = glm::vec3(180, 0, 0);
 	escale = glm::vec3(2, 7, 2);
 
@@ -104,6 +105,11 @@ glm::vec3 player::getScale()
 	return escale;
 }
 
+glm::vec3 player::getPosAnt()
+{
+	return posAnterior;
+}
+
 void player::setPos(float x, float y, float z)
 {
 
@@ -147,7 +153,7 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 	b2Vec2 vel(0,0);
 	glm::vec3 pto = vecVel + pos;
-
+	posAnterior = pos;
 	//glm::vec3 caca = glm::normalize(pto - pos);
 	//caca *= velocity;
 	//std::cout << "JAJA: " << glm::to_string(vecVel) << std::endl;
@@ -217,7 +223,7 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	//	<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y << std::endl;
 	//std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
 	
-	setPos(entity->getCuerpo2D()->GetPosition().x, 0, entity->getCuerpo2D()->GetPosition().y);
+	setPos(entity->getCuerpo2D()->GetPosition().x, 0, -entity->getCuerpo2D()->GetPosition().y);
 
 
 }

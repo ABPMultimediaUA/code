@@ -10,6 +10,10 @@
 #include <glm\gtx\string_cast.hpp>
 
 
+
+
+
+
 //tipo 0 = librePerspectiva, 1 = jugadorPerspectiva, 2 = libreOrto, 3 = jugadorOrto 
 Camara::Camara(TGraphicEngine * motorApp, char tipo, bool activa, player * jugador) : velocity{ 5.0f }, yaw{ 0 }, pitch{ 0 }
 {
@@ -43,14 +47,17 @@ Camara::Camara(TGraphicEngine * motorApp, bool activa, glm::vec3 pos, glm::vec3 
 	nodo = motorApp->addCamaraPerspectivaFija(activa);
 	motorApp->rotarYPR(nodo, rot.y + 180, rot.x, rot.z);
 	motorApp->trasladar(nodo, pos.x, pos.y, pos.z);
-	//motorApp->setCamaraMove(this);
 	p = pos;
 	r = rot;
+	yaw = rot.y - 180;
 }
 
 Camara::~Camara()
 {
 }
+
+
+
 
 
 float Camara::getVelocity()
@@ -117,7 +124,27 @@ void Camara::translation(TGraphicEngine * motorApp, float x, float y, float z)
 }
 
 
-void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 eye, glm::vec3 posPers) {
+float Camara::anguloEntreDosVectores(glm::vec3 u, glm::vec3 v) {
+
+	float nominador = u.x * v.x + u.z * v.z;
+	float x = (powf(u.x, 2)) + powf(u.z, 2);
+	float y = (powf(v.x, 2)) + powf(v.z, 2);
+	float moduloU = sqrtf(x);
+	float moduloV = sqrtf(y);
+	float denominador = moduloU * moduloV;
+
+	if ((nominador / denominador) > 1.0f) {
+		return yaw;
+	}
+
+	else {
+		yaw = acosf((nominador / denominador)) * 180 / 3.14;
+		return yaw;
+	}
+}
+
+
+void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 eye, glm::vec3 posPers, glm::vec3 posAnterior) {
 
 	
 
@@ -128,9 +155,27 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 eye, glm::vec3 posPer
 
 	//
 
-	float anguloRaton = -atan2f(p.x - posPers.x, p.z - posPers.z) * 180 / 3.14f;
+	glm::vec3 u = posPers - p;
+	glm::vec3 v = posAnterior - p;
+
+	//float anguloRaton = anguloEntreDosVectores(u, v);
+
+	glm::vec3 ojo = p;
+	//ojo.x = posPers.x + cos(anguloRaton * 0.016);
+	//ojo.z = posPers.z + sin(anguloRaton * 0.016);
+
+	float anguloRaton = -atan2f(u.x, u.z) * 180 / 3.14f;
 	std::cout << "POS: " << anguloRaton << std::endl;
-//motorApp->resetTransform(this->getNodo(), 'r');
-	this->rotationYPR(motorApp,anguloRaton,0,0);
+	motorApp->resetTransform(this->getNodo(), 'r');
+	//motorApp->resetTransform(this->getNodo(), 't');
+	ojo.x= cos(anguloRaton * 180/3.14);
+	ojo.y = 10;
+	ojo.z = sin(anguloRaton * 180/3.14);
+	/*this->rotationYPR(motorApp,anguloRaton * 0.016,0,0);*/
+	//motorApp->look(nodo, ojo, p+glm::vec3(0,0,-1), glm::vec3(0, 1, 0));
+	
+		motorApp->rotarYPR(nodo, anguloRaton, 0, 0);
 	
 }
+
+

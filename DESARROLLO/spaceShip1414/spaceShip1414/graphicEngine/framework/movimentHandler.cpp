@@ -22,13 +22,14 @@ movimentHandler::~movimentHandler()
 
 void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int action, int mods, double deltaTime, TGraphicEngine* motor)
 {
-
+	motor->CamaraActiva();
 	double dt = motor->getDT();
 	std::cout << "TIME: " << dt << std::endl;
 //	jugador->setCamPos(motor->getPosicion(camara->getNodo()));
-
+	camara->updateCam(motor, motor->getPosicion(camara->getNodo()), jugador->getPos(), jugador->getPosAnt());
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) { glfwSetWindowShouldClose(window, GL_TRUE); }
 	if (activo) {
+		
 		if (glfwGetKey(window, GLFW_KEY_B) == GLFW_PRESS) { this->activo = false; motor->cambiarCamaraActiva(activo); glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);}
 
 		if (glfwGetKey(window, GLFW_KEY_W) == GLFW_RELEASE
@@ -44,7 +45,8 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 			//jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z - jugador->getVelocity() * dt);
 			//jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
 			jugador->actualizarFisicas(3,dt, 0);
-			
+
+
 
 		}
 		if (glfwGetKey(window, GLFW_KEY_S) != GLFW_RELEASE) {
@@ -52,25 +54,29 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 			//jugador->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
 			jugador->actualizarFisicas(2,dt, 0);
 
+
 		}
 		if (glfwGetKey(window, GLFW_KEY_A) != GLFW_RELEASE) {
 			//jugador->setPos(jugador->getPos().x - jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
 			//jugador->Translation()->trasladar(-jugador->getVelocity() * dt, 0.0, 0.0);
 			jugador->actualizarFisicas(1,dt, 0);
 
+
+
 		}
 		if (glfwGetKey(window, GLFW_KEY_D) != GLFW_RELEASE) {
 			//jugador->setPos(jugador->getPos().x + jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
 			//jugador->Translation()->trasladar(jugador->getVelocity() * dt, 0.0, 0.0);
 			jugador->actualizarFisicas(0,dt, 0);
+			
 
 		}
 
 		motor->resetTransform(jugador->getNodo(),'t');
-		motor->trasladar(jugador->getNodo(), jugador->getPos().x, jugador->getPos().y, -jugador->getPos().z);
+		motor->trasladar(jugador->getNodo(), jugador->getPos().x, jugador->getPos().y, jugador->getPos().z);
+		
+	//	camara->updateCam(motor, motor->getPosicion(camara->getNodo()), jugador->getPos(), jugador->getPosAnt());
 		//jugador->Translation()->setMatriz(jugador->Translation()->multiplicarMatriz(motor->getView(), jugador->Translation()->getMatriz()));
-			
-
 
 	}
 

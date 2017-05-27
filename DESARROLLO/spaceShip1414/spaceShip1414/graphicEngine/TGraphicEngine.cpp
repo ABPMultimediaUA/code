@@ -21,6 +21,7 @@
 #include "entityTree\TMalla.h"
 #include "framework\movimentHandler.h"
 #include <algorithm>
+#include "../Game/Escenario/Escenario.h"
 
 TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }
 {
@@ -95,9 +96,9 @@ TCamara * TGraphicEngine::crearCamara(float fovy, float aspect, float nearr, flo
 	return new TCamara(fovy, aspect, nearr, farr);
 }
 
-TLuz * TGraphicEngine::crearLuz(float x, float y, float z, bool a)
+TLuz * TGraphicEngine::crearLuz(float ax, float ay, float az, float dix, float diy, float diz, float sx, float sy, float sz, char t, float dirx, float diry, float dirz, bool a, float sE, float sCO)
 {
-	TLuz* l = new TLuz(x, y, z);
+	TLuz* l = new TLuz();
 	if (a)
 	{
 		l->activar();
@@ -164,12 +165,14 @@ void TGraphicEngine::addRegistroCamara(TNodo * c)
 
 movimentHandler* TGraphicEngine::getMovimentHandler()
 {
+
 	return move;
 }
 
 void TGraphicEngine::setPlayerMove(player * j)
 {
 	move->setPlayer(j);
+	
 }
 
 double TGraphicEngine::getLastTime()
@@ -336,7 +339,7 @@ TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoP
 	return nodoCamara;
 }
 
-TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre)
+TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre, char t)
 {
 	TTransform *transfRL = crearTransform();
 	TTransform *transfEL = crearTransform();
@@ -353,7 +356,7 @@ TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre)
 	}
 	TNodo* nodoTransfEL = crearNodo(nodoTransfRL, transfEL);
 	TNodo* nodoTransfTL = crearNodo(nodoTransfEL, transfTL);
-	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.0f, 10.0f, 10.0f, true));
+	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.1f, 0.1f, 0.1f, 1, 1, 1, 0.8f, 0.8f, 0.8f, t, 0, 10, 10, true, 0.1f, 0.8f));
 	addRegistroLuz(nodoLuz);
 	return nodoLuz;
 }
@@ -429,7 +432,7 @@ TNodo * TGraphicEngine::getPadreX(TNodo * hijo, char padre)
 
 void TGraphicEngine::look(TNodo * nodo, glm::vec3 eye, glm::vec3 tar, glm::vec3 mat)
 {
-	TTransform * t = static_cast<TTransform*>(nodo->getPadre()->getEntidad());
+	TTransform * t = static_cast<TTransform*>(nodo->getPadre()->getPadre()->getPadre()->getEntidad());
 	t->lookat(eye, tar, mat);
 }
 
@@ -482,7 +485,7 @@ void TGraphicEngine::onstart()
 	glEnable(GL_DEPTH_TEST);
 	glClearColor(0.0f, 0.5f, 0.5f, 1.0f);
 
-	shader.compile("graphicEngine/Shader/funciona.vs", "graphicEngine/Shader/funciona.fs");
+	shader.compile("graphicEngine/Shader/spaceShip1414.vs", "graphicEngine/Shader/spaceShip1414.fs");
 
 	// ocultar el cursor y ubicarlo en el centro de la ventana
 	//glfwSetInputMode(this->window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -515,7 +518,7 @@ void TGraphicEngine::camaraActivada()
 			}
 			else
 			{
-				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView(t*e*r);
+				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView(t*(e*r));
 			}
 			camaraActiva = static_cast<TCamara*>(registroCamaras.at(i)->getEntidad());
 			break;
@@ -572,7 +575,10 @@ inline TGraphicEngine * TGraphicEngine::getTGraphicEngineApp(GLFWwindow * window
 	return static_cast<TGraphicEngine*>(glfwGetWindowUserPointer(window));
 }
 
-
+void TGraphicEngine::CamaraActiva()
+{
+	setCamaraMove(maps->getCamara());
+}
 
 
 void TGraphicEngine::setCamaraMove(Camara * c)
@@ -687,7 +693,7 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 	double currentFrame = glfwGetTime();
 	double last = currentFrame;
 	wo = world;
-
+	maps = esce;
 	while (!glfwWindowShouldClose(window))
 	{
 		currentFrame = glfwGetTime();
@@ -701,7 +707,6 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		world->stepBox2D(1.0 / 60.0, 6, 2);
 		world->getWorldBox2D()->DrawDebugData();
 		world->clearForcesBox2D();
-		esce->actualizarCamaras();
 		move->checkKeys(window, this);
 		//esce->actualizarEstadoPuerta();
 		glfwPollEvents();

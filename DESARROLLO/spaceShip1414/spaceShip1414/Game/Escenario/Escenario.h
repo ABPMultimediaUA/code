@@ -121,6 +121,7 @@ public:
 	void cambiaEstado(std::string mensaje);
 	void actualizarEstadoPersonaje();
 	void actualizarEstadoPuerta();
+	Camara * getCamara();
 	void actualizarCamaras();
 	void actualizarObjetosConsumables();
 	void inicializarWaypoints();

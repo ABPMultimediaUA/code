@@ -2731,7 +2731,23 @@ void Escenario::actualizarEstadoPuerta()
 	}
 }
 
+Camara * Escenario::getCamara()
+{
+	Camara * cam=nullptr;
+	if (!listaDeCamaras.empty())
+	{
+		for (std::size_t i = 0; i < listaDeCamaras.size(); i++) {
+			if (listaDeCamaras[i] != NULL && listaDeCamaras[i]->getTCamara()->getActiva() == true) {
 
+				cam = listaDeCamaras[i];
+			}
+
+		}
+
+	}
+
+	return cam;
+}
 
 void Escenario::actualizarCamaras() {
 
@@ -2740,7 +2756,7 @@ void Escenario::actualizarCamaras() {
 		for (std::size_t i = 0; i < listaDeCamaras.size(); i++) {
 			if (listaDeCamaras[i] != NULL && listaDeCamaras[i]->getTCamara()->getActiva() == true) {
 
-				listaDeCamaras[i]->updateCam(engine, engine->getPosicion(listaDeCamaras[i]->getNodo()), engine->getPosicion(jugador->getNodo()) ); //pasar la creacion del personaje aqui, ver que eye tiene que tener y pasar el engine
+				//listaDeCamaras[i]->updateCam(engine, engine->getPosicion(listaDeCamaras[i]->getNodo()), engine->getPosicion(jugador->getNodo()) ); //pasar la creacion del personaje aqui, ver que eye tiene que tener y pasar el engine
 
 			}
 
