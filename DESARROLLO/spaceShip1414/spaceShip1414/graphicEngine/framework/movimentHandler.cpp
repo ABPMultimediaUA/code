@@ -26,6 +26,7 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 	double dt = motor->getDT();
 	std::cout << "TIME: " << dt << std::endl;
 //	jugador->setCamPos(motor->getPosicion(camara->getNodo()));
+	motor->resetTransform(camara->getNodo(), 'r');
 	camara->updateCam(motor, motor->getPosicion(camara->getNodo()), jugador->getPos(), jugador->getPosAnt());
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) { glfwSetWindowShouldClose(window, GL_TRUE); }
 	if (activo) {
@@ -71,9 +72,9 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 			
 
 		}
-
+		//El fantasma esta aqui
 		motor->resetTransform(jugador->getNodo(),'t');
-		motor->trasladar(jugador->getNodo(), jugador->getPos().x, jugador->getPos().y, jugador->getPos().z);
+		motor->trasladar(jugador->getNodo(), -jugador->getPos().x, jugador->getPos().y, -jugador->getPos().z);
 		
 	//	camara->updateCam(motor, motor->getPosicion(camara->getNodo()), jugador->getPos(), jugador->getPosAnt());
 		//jugador->Translation()->setMatriz(jugador->Translation()->multiplicarMatriz(motor->getView(), jugador->Translation()->getMatriz()));

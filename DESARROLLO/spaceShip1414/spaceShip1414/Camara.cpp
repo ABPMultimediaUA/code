@@ -165,8 +165,8 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 eye, glm::vec3 posPer
 	//ojo.z = posPers.z + sin(anguloRaton * 0.016);
 
 	float anguloRaton = -atan2f(u.x, u.z) * 180 / 3.14f;
-	std::cout << "POS: " << anguloRaton << std::endl;
-	motorApp->resetTransform(this->getNodo(), 'r');
+	//std::cout << "POS: " << anguloRaton << std::endl;
+	
 	//motorApp->resetTransform(this->getNodo(), 't');
 	ojo.x= cos(anguloRaton * 180/3.14);
 	ojo.y = 10;
