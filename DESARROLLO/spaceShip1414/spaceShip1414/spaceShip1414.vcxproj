@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ActivadorCamara.cpp" />
     <ClCompile Include="Camara.cpp" />
     <ClCompile Include="Game\Enemigos\AlienBerserker.cpp" />
     <ClCompile Include="Game\Enemigos\AStar.cpp" />
@@ -236,6 +237,7 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ActivadorCamara.h" />
     <ClInclude Include="Camara.h" />
     <ClInclude Include="Game\Enemigos\AlienBerserker.h" />
     <ClInclude Include="Game\Enemigos\AStar.h" />

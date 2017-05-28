@@ -11,8 +11,9 @@ class Camara
 public:
 	
 	Camara(TGraphicEngine * motorApp, char tipo, bool activa = false, player* jugador = nullptr);
-	Camara(TGraphicEngine * motorApp, bool activa, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala);
+	Camara(TGraphicEngine * motorApp, int ident, bool activa, bool move, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala);
 	~Camara();
+	int getId();
 	float getVelocity();
 	float getYaw();
 	float getPitch();
@@ -36,5 +37,7 @@ private:
 	bool activa;
 	glm::vec3 p;
 	glm::vec3 r;
+	bool fija;
+	int id;
 };
 

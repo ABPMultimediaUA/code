@@ -85,6 +85,7 @@ public:
 	void drawBox(Mundo * world, double x, double y, int w, int h);
 	void drawGround(Mundo * world);
 	double getDT();
+	int getIDCamera();
 	void run(Mundo * world, Escenario*);
 	void CamaraActiva();
 private:
@@ -124,5 +125,6 @@ private:
 	Mundo * wo;
 	GUI m_gui;
 	Escenario * maps;
+	Camara * cam;
 };
 

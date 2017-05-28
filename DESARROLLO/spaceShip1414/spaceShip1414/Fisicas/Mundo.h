@@ -4,7 +4,7 @@
 
 class MiContactListener;
 class MyContactFilter;
-
+class TGraphicEngine;
 
 class Mundo{
 
@@ -15,6 +15,8 @@ public:
 	b2World* getWorldBox2D();
 	void stepBox2D(double dt, int t, int s);
 	void clearForcesBox2D();
+
+	void setMotor(TGraphicEngine * motor);
 
 private:
 

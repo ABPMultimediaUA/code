@@ -36,7 +36,7 @@
 #include "ObjConsumables\TiposDeMunicion\MunicionSubfusil.h"*/
 #include "../Fisicas/Entity2D.h"
 #include "../player.h"
-
+#include "../ActivadorCamara.h"
 
 
 Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m /*,b2World *world, Juego* game*/) {
@@ -189,6 +189,7 @@ void Escenario::dibujarEscenario() {
 	//	glm::vec3(0, 0, 0),
 	//	glm::vec3(0, 0, 0),
 	//	glm::vec3(1, 1, 1));
+	ActivadorCamara * Active;
 
 	for (std::list<ElementoPadre>::iterator I = Padres.begin(); I != Padres.end(); I++) {
 
@@ -216,11 +217,11 @@ void Escenario::dibujarEscenario() {
 
 							if ((*N).nombre == "PosCam") {
 
-								Camara *cam = new Camara(engine, true,
+								Camara *cam = new Camara(engine, camaras, true, true,
 									glm::vec3(tx, ty, -tz),
 									glm::vec3(rx, ry, rz),
 									glm::vec3(1, 1, 1));
-								
+
 								listaDeCamaras.push_back(cam);
 								camaras++;
 
@@ -249,6 +250,103 @@ void Escenario::dibujarEscenario() {
 				
 			}
 		}
+
+		if ((*I).nombre == "CamarasFijas") {
+
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+
+
+				if ((*T).nombre == "CAMARA") {
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+
+						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+
+						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+
+						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+
+						if ((*N).nombre == "PosCam") {
+
+							Camara *cam = new Camara(engine, camaras, true, false,
+								glm::vec3(tx, ty, -tz),
+								glm::vec3(rx, ry, rz),
+								glm::vec3(1, 1, 1));
+
+							listaDeCamaras.push_back(cam);
+							camaras++;
+
+
+						}
+
+
+						if ((*N).nombre == "Activador") {
+
+							Entity2D *entity = new Entity2D(mundo->getWorldBox2D(),
+								glm::vec3(tx, ty, -tz),
+								glm::vec3(rx, ry, rz),
+								glm::vec3(ex, ey, ez),
+								listaDeCamaras[camaras], true);
+
+						}
+					}
+
+				}
+
+
+				//if (pillado == false) {
+				//	cam = c;
+				//	pillado = true;
+				//}
+
+			}
+		}
+
+
+		if ((*I).nombre == "PlanosDeCambio") {
+
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+
+				if ((*T).nombre == "Activador") {
+
+				
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						int res;
+
+						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+
+						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+
+						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+
+						std::stringstream((*N).nombre) >> res;
+
+
+						Active = new ActivadorCamara(engine, mundo, res, glm::vec3(tx, ty, -tz),
+							glm::vec3(rx, ry, -rz),
+							glm::vec3(ex, ey, ez));
+					}
+				}
+			}
+
+		}
+
+
 
 		if ((*I).nombre == "HANGAR") {
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {

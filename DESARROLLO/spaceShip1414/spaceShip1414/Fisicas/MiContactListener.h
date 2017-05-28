@@ -17,14 +17,16 @@
 
 class Entity2D;
 class Bala;
-
+class TGraphicEngine;
 class MiContactListener : public b2ContactListener {
 private:
 	bool terActivado;
+	TGraphicEngine * motor;
 public:
 	MiContactListener();
 	MiContactListener(const MiContactListener& orig);
 	~MiContactListener();
+	void setMotor(TGraphicEngine * engine);
 	// Se produce un contacto entre dos cuerpos
 	virtual void BeginContact(b2Contact* contact);
 	// El contacto entre los cuerpos ha finalizado

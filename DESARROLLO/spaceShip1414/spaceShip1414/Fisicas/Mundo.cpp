@@ -1,7 +1,7 @@
 #include "Mundo.h"
 #include "MiContactListener.h"
 #include "MyContactFilter.h"
-
+#include "../graphicEngine/TGraphicEngine.h"
 
 
 Mundo::Mundo()
@@ -44,4 +44,9 @@ void Mundo::stepBox2D(double dt, int t, int s)
 void Mundo::clearForcesBox2D()
 {
 	world->ClearForces();
+}
+
+void Mundo::setMotor(TGraphicEngine * motor)
+{
+	contactListenerInstance->setMotor(motor);
 }

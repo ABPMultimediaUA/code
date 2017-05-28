@@ -22,6 +22,7 @@
 #include "framework\movimentHandler.h"
 #include <algorithm>
 #include "../Game/Escenario/Escenario.h"
+#include "../Camara.h"
 
 TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }
 {
@@ -683,6 +684,13 @@ double TGraphicEngine::getDT()
 	return deltaTime;
 }
 
+
+int TGraphicEngine::getIDCamera()
+{
+	return cam->getId();
+}
+
+
 void TGraphicEngine::run(Mundo * world, Escenario* esce)
 {
 	onstart();
@@ -691,6 +699,7 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 	double currentFrame = glfwGetTime();
 	double last = currentFrame;
 	wo = world;
+	wo->setMotor(this);
 	maps = esce;
 	while (!glfwWindowShouldClose(window))
 	{

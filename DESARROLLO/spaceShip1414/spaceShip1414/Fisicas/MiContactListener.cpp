@@ -29,6 +29,8 @@
 //#include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionPistola.h"
 //#include "../Jugador/Bala.h"
 //#include "../Enemigos/Nodo.h"
+#include "../graphicEngine/TGraphicEngine.h"
+#include "../ActivadorCamara.h"
 
 
 MiContactListener::MiContactListener() {
@@ -39,6 +41,11 @@ MiContactListener::MiContactListener(const MiContactListener& orig) {
 }
 
 MiContactListener::~MiContactListener() {
+}
+
+void MiContactListener::setMotor(TGraphicEngine * engine)
+{
+	motor = engine;
 }
 
 void MiContactListener::actualizarPuerta(Entity2D* entity, Entity2D *pers, int modo) {
@@ -416,6 +423,8 @@ void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 }
 
 
+
+
 void quitarVidaJugador(Entity2D *jugador, Entity2D *bala) {
 
 	//Personaje *j = static_cast<Personaje*>(jugador->getObjeto3D()); //mirar el tema de hacer un cast dependiendo de la raza
@@ -703,7 +712,9 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				//iden = 6 -> sensor de activar; iden = 7 -> sensor de desactivar
 
 				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6 && f2->IsSensor()) {
-
+					ActivadorCamara *cam = static_cast<ActivadorCamara*>(entity2->getObjeto3D());
+					std::cout << "camID: " << cam->getID() << std::endl;
+					motor->cambiarCamaraActiva(cam->getID());
 				}
 
 				else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 6 && f1->IsSensor()) {
@@ -804,7 +815,7 @@ void MiContactListener::EndContact(b2Contact* contact) {
 				//iden = 6 -> sensor de activar; iden = 7 -> sensor de desactivar
 
 				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6 && f2->IsSensor()) {
-
+					
 				}
 
 				else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 6 && f1->IsSensor()) {
