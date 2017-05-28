@@ -25,7 +25,10 @@ TCamara::TCamara(bool p, float left, float right, float bottom, float top, float
 }
 
 TCamara::TCamara(bool pe, float fovy, float aspect, float near, float far) : tipo{ 1 }, esPerspectiva{ pe }, front{ fovy, aspect, 0 }, up{ near, far, 0 }
-{}
+{
+
+
+}
 
 TCamara::~TCamara()
 {
