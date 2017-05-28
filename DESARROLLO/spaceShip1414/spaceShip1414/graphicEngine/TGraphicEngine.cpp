@@ -98,7 +98,7 @@ TCamara * TGraphicEngine::crearCamara(float fovy, float aspect, float nearr, flo
 
 TLuz * TGraphicEngine::crearLuz(float ax, float ay, float az, float dix, float diy, float diz, float sx, float sy, float sz, char t, float dirx, float diry, float dirz, bool a, float sE, float sCO)
 {
-	TLuz* l = new TLuz();
+	TLuz* l = new TLuz(ax, ay, az, dix, diy, diz, sx, sy, sz, t, dirx, diry, dirz, a, sE, sCO);
 	if (a)
 	{
 		l->activar();
@@ -215,7 +215,7 @@ TNodo * TGraphicEngine::addMalla(std::string path, TNodo * nodoPadre)
 	TNodo* nodoMalla;
 	if (path.empty())
 	{
-		nodoMalla = crearNodo(nodoTranslation, crearMalla("resourse/models/box.obj"));
+		nodoMalla = crearNodo(nodoTranslation, crearMalla("resourse/models/untitled.obj"));
 	}
 	else
 	{
@@ -339,12 +339,11 @@ TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoP
 	return nodoCamara;
 }
 
-TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre, char t)
+TNodo * TGraphicEngine::addLuz(char t, TNodo * nodoPadre)
 {
 	TTransform *transfRL = crearTransform();
 	TTransform *transfEL = crearTransform();
 	TTransform *transfTL = crearTransform();
-	transfTL->trasladar(0, 100, 10);
 	TNodo* nodoTransfRL;
 	if (nodoPadre == nullptr)
 	{
@@ -356,7 +355,7 @@ TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre, char t)
 	}
 	TNodo* nodoTransfEL = crearNodo(nodoTransfRL, transfEL);
 	TNodo* nodoTransfTL = crearNodo(nodoTransfEL, transfTL);
-	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.1f, 0.1f, 0.1f, 1, 1, 1, 0.8f, 0.8f, 0.8f, t, 0, 10, 10, true, 0.1f, 0.8f));
+	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.1f, 0.1f, 0.1f, 1, 1, 1, 0.8f, 0.8f, 0.8f, t, 0, -10, 0, true, 2.5f, 5.0f));
 	addRegistroLuz(nodoLuz);
 	return nodoLuz;
 }
@@ -444,7 +443,6 @@ glm::mat4 TGraphicEngine::getInverseProjectionCamaraActive()
 
 void TGraphicEngine::draw(double time)
 {
-	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	shader.use();
 	camaraActivada();
 	luzActivada();
@@ -514,7 +512,7 @@ void TGraphicEngine::camaraActivada()
 			if (static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->getTipo() == 2)
 			{
 				glm::mat4 tt = static_cast<TTransform*>(registroCamaras.at(i)->getPadre()->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
-				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView(tt*t*e*r);
+				static_cast<TCamara*>(registroCamaras.at(i)->getEntidad())->setView(tt*t*(e*r));
 			}
 			else
 			{
@@ -534,7 +532,7 @@ void TGraphicEngine::luzActivada()
 			glm::mat4 t = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getEntidad())->getMatriz();
 			glm::mat4 e = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getEntidad())->getMatriz();
 			glm::mat4 r = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
-			static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->renderLuz((r*e)*t, shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
+			static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->renderLuz(t*(e*r), shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
 		}
 	}
 }

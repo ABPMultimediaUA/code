@@ -13,21 +13,10 @@
 Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
 {
 
-	rotation = motorApp->crearTransform();
-	scale = motorApp->crearTransform();
-	translation = motorApp->crearTransform();
-	scale->escalar(sca.x, sca.y, sca.z);
-	rotation->rotar(rot.x, 1.0f, 0.0f, 0.0f);
-	rotation->rotar(rot.y, 0.0f, 1.0f, 0.0f);
-	rotation->rotar(rot.z, 0.0f, 0.0f, 1.0f);
-	translation->trasladar(tras.x, tras.y, tras.z);
-
-	//sca.y = 1;
-	//fis->Scale()->escalar(sca.x, sca.y, sca.z );
-	TNodo* nodoTransfRL = motorApp->crearNodo(motorApp->nodoRaiz(), rotation);
-	TNodo* nodoTransfEL = motorApp->crearNodo(nodoTransfRL, scale);
-	TNodo* nodoTransfTL = motorApp->crearNodo(nodoTransfEL, translation);
-	TNodo* nodoLuz = motorApp->addLuz(nodoTransfTL,'d');
+	TNodo* nodoLuz = motorApp->addLuz('p');
+	motorApp->trasladar(nodoLuz, tras.x, tras.y, tras.z);
+	motorApp->rotarYPR(nodoLuz, r.x, r.y, r.z);
+	motorApp->escalar(nodoLuz, sca.x, sca.y, sca.z);
 	motorApp->addRegistroLuz(nodoLuz);
 }
 

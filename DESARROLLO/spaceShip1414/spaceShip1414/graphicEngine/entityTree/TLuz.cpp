@@ -174,30 +174,41 @@ void TLuz::luzDireccional(const glm::mat4 & MV, openGLShader& shader)
 
 void TLuz::luzFocal(const glm::vec3 & pos, openGLShader & shader, const glm::mat4 & MV)
 {
-	std::string variable = "spotLight[" + idLuz;
-	variable += "].";
-
-	glUniform3fv(shader.getUniformLocation(variable+"position"), 1, glm::value_ptr(pos));
-
+	std::string variable = "spotLight[" + std::to_string(idLuz) + "].position";
+	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(pos));
+	std::cout << variable << " ";
 	glm::vec3 spotPos(pos.x, 0, pos.z);
 	glm::vec3 spotDir = glm::normalize(glm::vec3(MV * glm::vec4(spotPos - pos, 0)));
-
-	glUniform3fv(shader.getUniformLocation(variable + "direction"), 1, glm::value_ptr(spotDir));
-	glUniform1f(shader.getUniformLocation(variable + "exponent"), spotExponent);
-	glUniform1f(shader.getUniformLocation(variable + "cutOff"), spotCutOff);
-	glUniform3fv(shader.getUniformLocation(variable + "ambient"), 1, glm::value_ptr(ambient));
-	glUniform3fv(shader.getUniformLocation(variable + "diffuse"), 1, glm::value_ptr(difuse));
-	glUniform3fv(shader.getUniformLocation(variable + "specular"), 1, glm::value_ptr(specular));
+	variable = "spotLight[" + std::to_string(idLuz) + "].direction";
+	std::cout << variable << " ";
+	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(spotDir));
+	variable = "spotLight[" + std::to_string(idLuz) + "].exponent";
+	std::cout << variable << " ";
+	glUniform1f(shader.getUniformLocation(variable), spotExponent);
+	variable = "spotLight[" + std::to_string(idLuz) + "].cutOff";
+	std::cout << variable << " ";
+	glUniform1f(shader.getUniformLocation(variable), spotCutOff);
+	variable = "spotLight[" + std::to_string(idLuz) + "].ambient";
+	std::cout << variable << " ";
+	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(ambient));
+	variable = "spotLight[" + std::to_string(idLuz) + "].diffuse";
+	std::cout << variable << " ";
+	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(difuse));
+	variable = "spotLight[" + std::to_string(idLuz) + "].specular";
+	std::cout << variable << std::endl;
+	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(specular));
 }
 
 void TLuz::luzPuntual(const glm::vec3 & pos, openGLShader & shader)
 {
-	std::string variable = "pointLights[" + idLuz;
-	variable += "].";
-	glUniform3fv(shader.getUniformLocation(variable + "position"), 1, glm::value_ptr(pos));
-	glUniform3fv(shader.getUniformLocation(variable + "ambient"), 1, glm::value_ptr(ambient));
-	glUniform3fv(shader.getUniformLocation(variable + "diffuse"), 1, glm::value_ptr(difuse));
-	glUniform3fv(shader.getUniformLocation(variable + "specular"), 1, glm::value_ptr(specular));
+	std::string variable = "pointLights[" + std::to_string(idLuz) + "].position";
+	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(pos));
+	variable = "pointLights[" + std::to_string(idLuz) + "].ambient";
+	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(ambient));
+	variable = "pointLights[" + std::to_string(idLuz) + "].diffuse";
+	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(difuse));
+	variable = "pointLights[" + std::to_string(idLuz) + "].specular";
+	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(specular));
 }
 
 glm::vec3 TLuz::descomponerMatriz(const glm::mat4 & model)

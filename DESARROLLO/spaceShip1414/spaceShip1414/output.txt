@@ -1,7 +1,4 @@
-Vendor: NVIDIA Corporation
-Renderer: GeForce GT 650M/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 376.54
-GLSL: 4.50 NVIDIA
+
 
 Recurso nombre: nanosuit.obj
 ROTACIONES 1

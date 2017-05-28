@@ -251,11 +251,8 @@ void Escenario::dibujarEscenario() {
 		}
 
 		if ((*I).nombre == "HANGAR") {
-
-
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 				if ((*T).nombre == "Puerta") {
-
 					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
 						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
@@ -269,10 +266,8 @@ void Escenario::dibujarEscenario() {
 						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
 						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
 						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
-					
 
 						if((*N).nombre == "Puerta-CERRADA") {
-
 							//puerta que se abre con el generador
 							//Puerta *door = new Puerta(engine, num, glm::vec3(tx * 2, ty * 2, -tz * 2),
 							//	glm::vec3(rx, ry, rz),
@@ -284,15 +279,11 @@ void Escenario::dibujarEscenario() {
 							//num++;
 
 						}
-
-						else {
-
-							
+						else {	
 							//Puerta *door = new Puerta(engine, num, glm::vec3(tx * 2, 0, -tz * 2),
 							//	glm::vec3(rx, ry, rz),
 							//	glm::vec3(ex, ey, ez),
 							//	 "ABIERTA");
-
 							//door->setFisica(mundo, num);
 							//puertas.push_back(door);
 							//num++;
@@ -365,9 +356,6 @@ void Escenario::dibujarEscenario() {
 
 				if ((*T).nombre == "Luces") {
 					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
-
-
-
 						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
 						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
 						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
@@ -384,6 +372,8 @@ void Escenario::dibujarEscenario() {
 							glm::vec3(rx, ry, -rz),
 							glm::vec3(ex, ey, ez));
 
+						TNodo * caja =  engine->addMalla();
+						engine->trasladar(caja, tx,ty,tz);
 
 					}
 				}	
@@ -1236,7 +1226,7 @@ void Escenario::dibujarEscenario() {
 //				}
 //			}
 //		}
-//
+
 		if ((*I).nombre == "ARSENAL") {
 
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
@@ -1941,7 +1931,7 @@ void Escenario::dibujarEscenario() {
 
 			}
 		}
-//
+
 //		if ((*I).nombre == "PASILLO_6") {
 //
 //			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
@@ -2023,7 +2013,7 @@ void Escenario::dibujarEscenario() {
 //				}
 //			}
 //		}
-//
+
 		if ((*I).nombre == "ALMACEN_1") {
 
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
@@ -2373,179 +2363,120 @@ void Escenario::dibujarEscenario() {
 			}
 		}
 
-
 		//if ((*I).nombre == "WAYPOINTS_ZONA1") {
-
-
-
 		////	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-
 		////		IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
 		////			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
 		////			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
 		////			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
 		////		objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);
-
 		////		zona1->creaPuntos((*T).nombre, vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)));
 		////		//puntos->MuestraPuntos();
 		////		//puntos->creaPesos();
 		////		//puntos->mostrarPesos();
 		////	}
 		//}
-
 		//if ((*I).nombre == "WAYPOINTS_ZONA2") {
-
-	
-
-
 		////	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-
 		////		IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
 		////			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
 		////			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
 		////			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
 		////		objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);
-
 		////		zona2->creaPuntos((*T).nombre, vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)));
 		////		//puntos->MuestraPuntos();
 		////		//puntos->creaPesos();
 		////		//puntos->mostrarPesos();
 		////	}
 		//}
-
 		//if ((*I).nombre == "WAYPOINTS_ZONA3") {
-
 		////	
-
-
 		////	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-
 		////		IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
 		////			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
 		////			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
 		////			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
 		////		objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);
-
 		////		zona3->creaPuntos((*T).nombre, vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)));
 		////		//puntos->MuestraPuntos();
 		////		//puntos->creaPesos();
 		////		//puntos->mostrarPesos();
 		////	}
 		//}
-
 		//if ((*I).nombre == "WAYPOINTS_ZONA4") {
-
-
-
 		////	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-
 		////		IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
 		////			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
 		////			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
 		////			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
 		////		objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);
-
 		////		zona4->creaPuntos((*T).nombre, vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)));
 		////		//puntos->MuestraPuntos();
 		////		//puntos->creaPesos();
 		////		//puntos->mostrarPesos();
 		////	}
 		//}
-
 		//if ((*I).nombre == "TAM") {
-
-
 		//	tam = (*I).escala.x* (*I).escala.z * 100;
-
 		//}
-
-		///*
-		//0: botiquin
-		//1: llave
-		//2: municion de pistola
-		//3:   " " de subfusil
-		//4:   " " de escopeta
-		//*/
-
+		//
+		////0: botiquin
+		////1: llave
+		////2: municion de pistola
+		////3:   " " de subfusil
+		////4:   " " de escopeta
 		//if((*I).nombre == "BOTIQUINES") {
-
 		//	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-
 		//		IMeshSceneNode *objeto = SM->addCubeSceneNode(2.0f, 0, -1,
 		//			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
 		//			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
 		//			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
 		//		objeto->getMaterial(0).EmissiveColor.set(20, 255, 0, 0);
-
 		//		Botiquines *bot = new Botiquines(objeto->getPosition(), objeto->getRotation(), objeto->getScale(), 0, objeto);
-
 		//		bot->setFisica(mundo);
 		//		objConsumables.push_back(bot);
-
 		//	}
 		//}
-
 		//if ((*I).nombre == "MUNICION_PISTOLA") {
-
 		//	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-
 		//		IMeshSceneNode *municion = SM->addCubeSceneNode(1.5f, 0, -1,
 		//			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
 		//			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
 		//			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
 		//		municion->getMaterial(0).EmissiveColor.set(0, 128, 0, 128);
-
 		//		MunicionPistola *pistola = new MunicionPistola(municion->getPosition(), municion->getRotation(),
 		//			municion->getScale(), 2, municion, 2, 7);
 		//		pistola->setFisica(mundo);
-
 		//		objConsumables.push_back(pistola);
-
 		//	}
 		//}
-
-
 		//
 		//if ((*I).nombre == "MUNICION_ESCOPETA") {
-
 		//	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-
 		//		IMeshSceneNode *municion = SM->addCubeSceneNode(1.5f, 0, -1,
 		//			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
 		//			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
 		//			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
 		//		municion->getMaterial(0).EmissiveColor.set(0, 0, 0, 128);
-
 		//		MunicionEscopeta *escopeta = new MunicionEscopeta(municion->getPosition(), municion->getRotation(),
 		//			municion->getScale(), 4, municion, 4, 2);
 		//		escopeta->setFisica(mundo);
-
 		//		objConsumables.push_back(escopeta);
-
 		//	}
 		//}
-
 		//if ((*I).nombre == "LLAVES") {
-
 		//	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-
 		//		IMeshSceneNode *objeto = SM->addCubeSceneNode(1.5f, 0, -1,
 		//			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
 		//			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
 		//			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
 		//		objeto->getMaterial(0).EmissiveColor.set(0, 128, 128, 128);
-
 		//		Llave *llave = new Llave(objeto->getPosition(), objeto->getRotation(),
 		//			objeto->getScale(), 1, objeto, (*T).nombre);
 		//		llave->setFisica(mundo);
-
 		//		objConsumables.push_back(llave);
-
 		//	}
 		//}
-
-
-
 	}
 
 
@@ -2559,16 +2490,12 @@ void Escenario::dibujarEscenario() {
 	}
 
 	std::cout << "-------------------------------------->" << tam << std::endl;
-/*
-	waypoints.push_back(zona1); waypoints.push_back(zona2); waypoints.push_back(zona3); waypoints.push_back(zona4);
+
+	/*waypoints.push_back(zona1); waypoints.push_back(zona2); waypoints.push_back(zona3); waypoints.push_back(zona4);
 
 	inicializarWaypoints();
 	fabricaDeEnemigos();*/
-
 	//destroyWaypoints();
-
-
-
 }
 
 void Escenario::fabricaDeEnemigos() {

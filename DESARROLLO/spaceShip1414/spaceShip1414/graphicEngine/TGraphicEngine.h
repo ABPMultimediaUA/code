@@ -65,7 +65,7 @@ public:
 	TNodo * addCamaraParalelaSeguidora(bool activa = false, TNodo * nodoPadre = nullptr);
 	TNodo * addCamaraPerspectivaFija(bool activa = false);
 	TNodo * addCamaraPerspectivaSeguidora(bool activa = false, TNodo * nodoPadre = nullptr);
-	TNodo * addLuz(TNodo * nodoPadre = nullptr, char t = 'd');
+	TNodo * addLuz(char t = 'd', TNodo * nodoPadre = nullptr);
 	void trasladar(TNodo *, float, float, float);
 	void rotar(TNodo *, float, float, float, float);
 	void rotarYPR(TNodo *, float, float, float);
