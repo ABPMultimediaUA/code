@@ -160,7 +160,7 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	engine->resetTransform(this->getNodo(), 't');
 	setPos(-entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 
-	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, entity->getCuerpo2D()->GetPosition().y);
+	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 
 }
 

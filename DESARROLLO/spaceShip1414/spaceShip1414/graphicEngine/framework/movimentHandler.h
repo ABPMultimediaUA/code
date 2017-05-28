@@ -9,6 +9,15 @@
 #endif
 #include <glm\vec3.hpp>
 
+enum {
+	TECLA_D,
+	TECLA_A,
+	TECLA_S,
+	TECLA_W
+	
+};
+
+
 class TTransform;
 class player;
 class TGraphicEngine;
@@ -35,5 +44,6 @@ private:
 	glm::vec3 front;
 	float offsetRango = 0.0f;
 	float angle = 180.0f;
+	int tecla = -1;
 };
 

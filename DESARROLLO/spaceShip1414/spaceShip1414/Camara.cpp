@@ -45,7 +45,7 @@ Camara::Camara(TGraphicEngine * motorApp, char tipo, bool activa, player * jugad
 Camara::Camara(TGraphicEngine * motorApp, bool activa, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala) : velocity{ 5.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	nodo = motorApp->addCamaraPerspectivaFija(activa);
-	motorApp->rotarYPR(nodo, rot.y + 180, rot.x, rot.z);
+	motorApp->rotarYPR(nodo, rot.y - 180 , rot.x, rot.z);
 	motorApp->trasladar(nodo, pos.x, pos.y, pos.z);
 	p = pos;
 	r = rot;
@@ -144,12 +144,35 @@ float Camara::anguloEntreDosVectores(glm::vec3 u, glm::vec3 v) {
 }
 
 
-void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers) {
+void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 
 	glm::vec3 u = posPers - p;
-	float anguloRaton = -atan2f(u.x, u.z) * 180 / 3.14f;
-	motorApp->rotarYPR(nodo, anguloRaton, 0, 0);
+	float anguloRaton = atan2f(u.x, u.z) * 180 / 3.14f;
+	float anguloX = acosf(u.x / u.z) * 180 / 3.14f;
 	
+	//if (anguloRaton > 180) {
+	//	anguloRaton = -180;
+	//}
+
+	//else if (anguloRaton < 0) {
+	//	anguloRaton = 0;
+	//}
+
+	//if (anguloX < -90) {
+	//	anguloX = -90;
+	//}
+
+
+	//else if (anguloX > 90) {
+
+	//	anguloX = 90;
+
+	//}
+
+	motorApp->resetTransform(nodo, 'r');
+	motorApp->rotarYPR(nodo, anguloRaton - 180 , 0, 0);
+
+
 }
 
 

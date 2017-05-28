@@ -23,11 +23,12 @@ movimentHandler::~movimentHandler()
 void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int action, int mods, double deltaTime, TGraphicEngine* motor)
 {
 	motor->CamaraActiva();
+	tecla = -1;
 	double dt = motor->getDT();
 	std::cout << "TIME: " << dt << std::endl;
 //	jugador->setCamPos(motor->getPosicion(camara->getNodo()));
-	motor->resetTransform(camara->getNodo(), 'r');
-	camara->updateCam(motor,jugador->getPos());
+//	motor->resetTransform(camara->getNodo(), 'r');
+	//camara->updateCam(motor,jugador->getPos());
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) { glfwSetWindowShouldClose(window, GL_TRUE); }
 	if (activo) {
 		
@@ -38,45 +39,44 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 			glfwGetKey(window, GLFW_KEY_A) == GLFW_RELEASE 
 			|| glfwGetKey(window, GLFW_KEY_D) == GLFW_RELEASE) {
 
-			jugador->actualizarFisicas(-1,0.016,0);
+			//jugador->actualizarFisicas(-1,0.016,0);
+			tecla = -1;
 
 		}
 
 		if (glfwGetKey(window, GLFW_KEY_W) != GLFW_RELEASE ) {
-			//jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z - jugador->getVelocity() * dt);
-			//jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
-			jugador->actualizarFisicas(3,dt, 0);
 
+			//jugador->actualizarFisicas(3,dt, 0);
+			tecla = TECLA_W;
 
 
 		}
 		if (glfwGetKey(window, GLFW_KEY_S) != GLFW_RELEASE) {
-			//jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getVelocity() * dt + jugador->getPos().z);
-			//jugador->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
-			jugador->actualizarFisicas(2,dt, 0);
+
+			//jugador->actualizarFisicas(2,dt, 0);
+			tecla = TECLA_S;
 
 
 		}
 		if (glfwGetKey(window, GLFW_KEY_A) != GLFW_RELEASE) {
-			//jugador->setPos(jugador->getPos().x - jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
-			//jugador->Translation()->trasladar(-jugador->getVelocity() * dt, 0.0, 0.0);
-			jugador->actualizarFisicas(1,dt, 0);
 
+			//jugador->actualizarFisicas(1,dt, 0);
+			tecla = TECLA_A;
 
 
 		}
 		if (glfwGetKey(window, GLFW_KEY_D) != GLFW_RELEASE) {
-			//jugador->setPos(jugador->getPos().x + jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
-			//jugador->Translation()->trasladar(jugador->getVelocity() * dt, 0.0, 0.0);
-			jugador->actualizarFisicas(0,dt, 0);
+
+			//jugador->actualizarFisicas(0,dt, 0);
+			tecla = TECLA_D;
 			
 
 		}
 		//El fantasma esta aqui
 		//motor->resetTransform(jugador->getNodo(),'t');
-		//motor->trasladar(jugador->getNodo(), -jugador->getPos().x, jugador->getPos().y, -jugador->getPos().z);
+		//motor->trasladar(jugador->getNodo(), jugador->getPos().x, jugador->getPos().y, jugador->getPos().z);
 		
-	//	camara->updateCam(motor, motor->getPosicion(camara->getNodo()), jugador->getPos(), jugador->getPosAnt());
+		//camara->updateCam(motor, motor->getPosicion(camara->getNodo()), jugador->getPos(), jugador->getPosAnt());
 		//jugador->Translation()->setMatriz(jugador->Translation()->multiplicarMatriz(motor->getView(), jugador->Translation()->getMatriz()));
 
 	}
@@ -112,37 +112,40 @@ void movimentHandler::checkKeys(GLFWwindow * window, TGraphicEngine* motor)
 	//jugador->setCamPos(motor->getPosicion(camara->getNodo()));
 	motor->CamaraActiva();
 	
-		motor->resetTransform(camara->getNodo(), 'r');
-		camara->updateCam(motor,jugador->getPos());
-	
-	if (glfwGetKey(window, GLFW_KEY_W) != GLFW_RELEASE) {
+
+	if (tecla == -1) {
+		jugador->actualizarFisicas(-1, 0, 0);
+	}
+
+	if (tecla == TECLA_W) {
 		//jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z - jugador->getVelocity() * dt);
 		//jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
 		jugador->actualizarFisicas(3, 0, 0);
 
 
 	}
-	if (glfwGetKey(window, GLFW_KEY_S) != GLFW_RELEASE) {
+	if (tecla == TECLA_S) {
 		//jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getVelocity() * dt + jugador->getPos().z);
 		//jugador->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
 		jugador->actualizarFisicas(2, 0,0);
 
 	}
-	if (glfwGetKey(window, GLFW_KEY_A) != GLFW_RELEASE) {
+	if (tecla == TECLA_A) {
 		//jugador->setPos(jugador->getPos().x - jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
 		//jugador->Translation()->trasladar(-jugador->getVelocity() * dt, 0.0, 0.0);
 		jugador->actualizarFisicas(1, 0, 0);
 
 	}
-	if (glfwGetKey(window, GLFW_KEY_D) != GLFW_RELEASE) {
+	if (tecla == TECLA_D) {
 		//jugador->setPos(jugador->getPos().x + jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
 		//jugador->Translation()->trasladar(jugador->getVelocity() * dt, 0.0, 0.0);
 		jugador->actualizarFisicas(0, 0, 0);
 
 	}
-
+	motor->resetTransform(camara->getNodo(), 'r');
+	camara->updateCam(motor, jugador->getPos(), tecla);
 	//motor->resetTransform(jugador->getNodo(), 't');
-	//motor->trasladar(jugador->getNodo(), -jugador->getPos().x, jugador->getPos().y, -jugador->getPos().z);
+	//motor->trasladar(jugador->getNodo(), jugador->getPos().x, jugador->getPos().y, jugador->getPos().z);
 	
 }
 
