@@ -44,9 +44,8 @@ private:
 	glm::vec3 escale;
 	glm::vec3 posCam;
 	glm::vec3 posAnterior;
-	//Entity3D *entity;
 	Entity2D *entity;
 	TNodo *nodo;
-	
+	TGraphicEngine * engine;
 };
 

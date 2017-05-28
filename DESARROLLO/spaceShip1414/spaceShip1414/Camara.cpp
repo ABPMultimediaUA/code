@@ -144,37 +144,11 @@ float Camara::anguloEntreDosVectores(glm::vec3 u, glm::vec3 v) {
 }
 
 
-void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 eye, glm::vec3 posPers, glm::vec3 posAnterior) {
-
-	
-
-
-	//motorApp->look(nodo, glm::vec3(0,50,0), glm::vec3(-posPers.x,10,-posPers.z), glm::vec3(0, 1, 0));
-	//translation(motorApp, 10, 10,10);
-	//motorApp->resetTransform(nodo, 't');
-
-	//
+void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers) {
 
 	glm::vec3 u = posPers - p;
-	glm::vec3 v = posAnterior - p;
-
-	//float anguloRaton = anguloEntreDosVectores(u, v);
-
-	glm::vec3 ojo = p;
-	//ojo.x = posPers.x + cos(anguloRaton * 0.016);
-	//ojo.z = posPers.z + sin(anguloRaton * 0.016);
-
 	float anguloRaton = -atan2f(u.x, u.z) * 180 / 3.14f;
-	//std::cout << "POS: " << anguloRaton << std::endl;
-	
-	//motorApp->resetTransform(this->getNodo(), 't');
-	ojo.x= cos(anguloRaton * 180/3.14);
-	ojo.y = 10;
-	ojo.z = sin(anguloRaton * 180/3.14);
-	/*this->rotationYPR(motorApp,anguloRaton * 0.016,0,0);*/
-	//motorApp->look(nodo, ojo, p+glm::vec3(0,0,-1), glm::vec3(0, 1, 0));
-	
-		motorApp->rotarYPR(nodo, anguloRaton, 0, 0);
+	motorApp->rotarYPR(nodo, anguloRaton, 0, 0);
 	
 }
 

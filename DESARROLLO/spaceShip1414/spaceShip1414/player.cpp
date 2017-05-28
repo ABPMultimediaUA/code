@@ -19,12 +19,12 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 
 {
 	nodo = motorApp->addMalla("resourse/models/Nanosuit/nanosuit.obj");
 	motorApp->escalar(nodo, 0.5f, 0.5f, 0.5f);
-	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.0f);
+	motorApp->trasladar(nodo, 0.0f, -5.0f, 0.0f);
 	motorApp->rotarYPR(nodo, 180, 0, 0);
-	pos = glm::vec3(0, 0, 0);
-	posAnterior = pos;
+	pos = glm::vec3(0, -5, 0);
 	rot = glm::vec3(180, 0, 0);
 	escale = glm::vec3(2, 7, 2);
+	engine = motorApp;
 
 	entity = new Entity2D(m->getWorldBox2D(), glm::vec3(0,0,0), rot, this);
 	
@@ -105,29 +105,11 @@ glm::vec3 player::getScale()
 	return escale;
 }
 
-glm::vec3 player::getPosAnt()
-{
-	return posAnterior;
-}
+
 
 void player::setPos(float x, float y, float z)
 {
-
-	//std::cout << std::endl;
-	//std::cout << "POS ANTES: " << std::endl;
-	//std::cout << "X: " << pos.x << std::endl;
-	//std::cout << "Y: " << pos.y << std::endl;
-	//std::cout << "Z: " << pos.z << std::endl;
-	//std::cout << std::endl;
 	pos.x = x; pos.y = y; pos.z = z;
-
-	//std::cout << std::endl;
-	//std::cout << "POS DESPUES: " << std::endl;
-	//std::cout << "X: " << pos.x << std::endl;
-	//std::cout << "Y: " << pos.y << std::endl;
-	//std::cout << "Z: " << pos.z << std::endl;
-	//std::cout << std::endl;
-
 }
 
 void player::setRot(float x, float y, float z)
@@ -144,20 +126,7 @@ void player::setScale(float x, float y, float z)
 void player::actualizarFisicas(int n, double delta, float anguloCam)
 {
 
-	//new_x = ((x - x_origin) * cos(angle)) - ((y_origin - y) * sin(angle)) + x_origin;
-	//new_y = ((y_origin - y) * cos(angle)) - ((x - x_origin) * sin(angle)) + y_origin;
-
-	//calculo del vec velocidad y el punto destino
-
-	glm::vec3 vecVel = glm::normalize(pos - posCam);
-
 	b2Vec2 vel(0,0);
-	glm::vec3 pto = vecVel + pos;
-	posAnterior = pos;
-	//glm::vec3 caca = glm::normalize(pto - pos);
-	//caca *= velocity;
-	//std::cout << "JAJA: " << glm::to_string(vecVel) << std::endl;
-	//std::cout << "HAHA: " << glm::to_string(caca) << std::endl;
 
 
 	glm::vec3 posSim;
@@ -179,17 +148,6 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 	if (n == 2) {
 
-		//posSim.x = ((pto.x - pos.x) * cos(180)) + ((pos.z - pto.z) * sin(180)) + pos.x;
-		//posSim.z = ((pos.z - pto.z) * cos(180)) - ((pto.x - pos.x) * sin(180)) + pos.z;
-		//posSim.x = velocity  * sin(anguloCam);
-		//posSim.z = velocity * cos(anguloCam);
-
-		//posSim.y = 0.0f;
-
-		//glm::vec3 aux = glm::normalize(posSim - pos);
-		//vecVel = aux * velocity;
-		//vel.Set(vecVel.x, vecVel.z);
-
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
 
 	}
@@ -197,34 +155,12 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 	if (n == 3) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
-
-		//posSim.x = sin(anguloCam);
-		//posSim.z = cos(anguloCam);
-
-		//posSim.y = 0.0f;
-
-		//glm::vec3 aux = glm::normalize(posSim - pos);
-		//vecVel = aux * velocity;
-		//vel.Set(vecVel.x, -vecVel.z);
-		//vecVel.x += 
-
-
 	}
 
+	engine->resetTransform(this->getNodo(), 't');
+	setPos(-entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 
-	vecVel *= velocity;
-
-	//entity->getCuerpo2D()->SetLinearVelocity(vel);
-	//std::cout << "//////////////////////////////////////////" << std::endl;
-	//std::cout << "" << std::endl;
-	//std::cout << "POS PERS DES" << std::endl;
-	//std::cout << "Pos 3D X: " << pos.x << "Pos 3D Z: " << pos.z << std::endl;
-	//std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).x << "Pos 2D Z: "
-	//	<< entity->getCuerpo2D()->GetWorldPoint(entity->getCuerpo2D()->GetPosition()).y << std::endl;
-	//std::cout << "Pos 2D X: " << entity->getCuerpo2D()->GetPosition().x << "Pos 2D Z: " << entity->getCuerpo2D()->GetPosition().y << std::endl;
-	
-	setPos(entity->getCuerpo2D()->GetPosition().x, 0, -entity->getCuerpo2D()->GetPosition().y);
-
+	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, entity->getCuerpo2D()->GetPosition().y);
 
 }
 

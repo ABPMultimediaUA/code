@@ -21,7 +21,7 @@ public:
 	void scale(TGraphicEngine *, float, float, float);
 	void translation(TGraphicEngine *, float, float, float);
 	float anguloEntreDosVectores(glm::vec3 u, glm::vec3 v);
-	void updateCam(TGraphicEngine * motorApp, glm::vec3 eye, glm::vec3 posPers, glm::vec3 posAnterior);
+	void updateCam(TGraphicEngine * motorApp, glm::vec3 posPers);
 
 	void setVelocity(float);
 	void setYaw(float);
