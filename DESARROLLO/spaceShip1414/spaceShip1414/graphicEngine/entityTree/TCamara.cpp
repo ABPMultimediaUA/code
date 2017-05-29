@@ -75,7 +75,7 @@ void TCamara::beginDraw()
 {
 }
 
-void TCamara::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
+void TCamara::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection, double dt)
 {
 }
 

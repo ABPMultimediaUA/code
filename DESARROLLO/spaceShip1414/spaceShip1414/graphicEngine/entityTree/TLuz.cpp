@@ -109,7 +109,7 @@ void TLuz::beginDraw()
 {
 }
 
-void TLuz::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
+void TLuz::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection, double dt)
 {
 	//esto se hace en el renderLuz por el sistema de registro de luces.
 }

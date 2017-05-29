@@ -24,6 +24,7 @@ class TCamara;
 class TTransform;
 class TLuz;
 class TMalla;
+class TAnimacion;
 class movimentHandler;
 class player;
 class Camara;
@@ -46,6 +47,7 @@ public:
 	TCamara* crearCamara(float fovy, float aspect, float nearr, float farr);
 	TLuz* crearLuz(float ax = 0.1f, float ay = 0.1f, float az = 0.1f, float dix = 1, float diy = 1, float diz = 1, float sx = 0.8f, float sy = 0.8f, float sz = 0.8f, char t = 'd', float dirx = 0, float diry = 4, float dirz = 3, bool a = true, float sE = 0.1f, float sCO = 0.8f);
 	TMalla* crearMalla(std::string);
+	TAnimacion* crearAnimacion(std::string, unsigned int);
 	TNodo* nodoRaiz();
 	GLFWwindow* getGLFWwindow();
 	bool init(std::string, int width = 1024, int height = 720, bool full_screen = false);
@@ -58,6 +60,7 @@ public:
 	double getLastTime();
 	void setLastTime(double);
 	void cambiarCamaraActiva(char);
+	TNodo * addAnimacion(std::string path = "", unsigned int frames = 25, TNodo * nodoPadre = nullptr);
 	TNodo * addMalla(std::string path = "", TNodo * nodoPadre = nullptr);
 	TNodo * addCamara(char tipo = 0, bool per = false, bool act = false, TNodo * nodoPadre = nullptr, float x = 45.0f, float y = 0.1f, float z = 1000.0f, float a = 0.0f, float b = 10.0f, float c = 10.0f);
 	TNodo * addCamaraLibre(bool activa = false);

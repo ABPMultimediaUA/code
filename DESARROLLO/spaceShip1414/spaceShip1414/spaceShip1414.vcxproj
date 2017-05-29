@@ -166,6 +166,7 @@
     <ClCompile Include="Game\Jugador\Pistola.cpp" />
     <ClCompile Include="Game\MaquinaEstados\FSM\Estados.cpp" />
     <ClCompile Include="Game\MaquinaEstados\FSM\MaquinaEstados.cpp" />
+    <ClCompile Include="graphicEngine\entityTree\TAnimacion.cpp" />
     <ClCompile Include="graphicEngine\entityTree\TCamara.cpp" />
     <ClCompile Include="graphicEngine\entityTree\TEntidad.cpp" />
     <ClCompile Include="graphicEngine\entityTree\TLuz.cpp" />
@@ -275,6 +276,7 @@
     <ClInclude Include="Game\Jugador\Pistola.h" />
     <ClInclude Include="Game\MaquinaEstados\FSM\Estados.h" />
     <ClInclude Include="Game\MaquinaEstados\FSM\MaquinaEstados.h" />
+    <ClInclude Include="graphicEngine\entityTree\TAnimacion.h" />
     <ClInclude Include="graphicEngine\entityTree\TCamara.h" />
     <ClInclude Include="graphicEngine\entityTree\TEntidad.h" />
     <ClInclude Include="graphicEngine\entityTree\TLuz.h" />

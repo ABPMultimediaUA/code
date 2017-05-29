@@ -19,6 +19,7 @@
 #include "entityTree\TCamara.h"
 #include "entityTree\TLuz.h"
 #include "entityTree\TMalla.h"
+#include "entityTree\TAnimacion.h"
 #include "framework\movimentHandler.h"
 #include <algorithm>
 #include "../Game/Escenario/Escenario.h"
@@ -113,6 +114,11 @@ TMalla * TGraphicEngine::crearMalla(std::string fichero)
 	return new TMalla(fichero, gestorRecursos);
 }
 
+TAnimacion * TGraphicEngine::crearAnimacion(std::string fichero, unsigned int num)
+{
+	return new TAnimacion(fichero, gestorRecursos, num);
+}
+
 TNodo * TGraphicEngine::nodoRaiz()
 {
 	return escena;
@@ -195,6 +201,34 @@ void TGraphicEngine::cambiarCamaraActiva(char m)
 		static_cast<TCamara*>(registroCamaras.at(m)->getEntidad())->activar();
 		camaraActiva = static_cast<TCamara*>(registroCamaras.at(m)->getEntidad());
 	}
+}
+
+TNodo * TGraphicEngine::addAnimacion(std::string path, unsigned int frames, TNodo * nodoPadre)
+{
+	TTransform * rotation = crearTransform();
+	TTransform * scale = crearTransform();
+	TTransform * translation = crearTransform();
+	TNodo* nodoRotation;
+	if (nodoPadre == nullptr)
+	{
+		nodoRotation = crearNodo(nodoRaiz(), rotation);
+	}
+	else
+	{
+		nodoRotation = crearNodo(nodoPadre, rotation);
+	}
+	TNodo* nodoScale = crearNodo(nodoRotation, scale);
+	TNodo* nodoTranslation = crearNodo(nodoScale, translation);
+	TNodo* nodoAnimacion;
+	if (path.empty())
+	{
+		nodoAnimacion = crearNodo(nodoTranslation, crearAnimacion("resourse/models/untitled.obj", 1));
+	}
+	else
+	{
+		nodoAnimacion = crearNodo(nodoTranslation, crearAnimacion(path, frames));
+	}
+	return nodoAnimacion;
 }
 
 TNodo * TGraphicEngine::addMalla(std::string path, TNodo * nodoPadre)
@@ -356,7 +390,7 @@ TNodo * TGraphicEngine::addLuz(char t, TNodo * nodoPadre)
 	}
 	TNodo* nodoTransfEL = crearNodo(nodoTransfRL, transfEL);
 	TNodo* nodoTransfTL = crearNodo(nodoTransfEL, transfTL);
-	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.1f, 0.1f, 0.1f, 1, 1, 1, 0.8f, 0.8f, 0.8f, t, 0, -10, 0, true, 2.5f, 5.0f));
+	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.1f, 0.1f, 0.1f, 1, 1, 1, 0.8f, 0.8f, 0.8f, t, 0, 10, 0, true, 2.5f, 5.0f));
 	addRegistroLuz(nodoLuz);
 	return nodoLuz;
 }
@@ -447,7 +481,7 @@ void TGraphicEngine::draw(double time)
 	shader.use();
 	camaraActivada();
 	luzActivada();
-	escena->draw(shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
+	escena->draw(shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix(), deltaTime);
 	shader.unUse();
 }
 

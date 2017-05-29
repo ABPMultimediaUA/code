@@ -20,7 +20,7 @@ public:
 	void apilar(glm::mat4);
 	void desapilar();
 	void beginDraw() override;
-	void beginDraw(openGLShader&, const glm::mat4&, const glm::mat4&) override;
+	void beginDraw(openGLShader&, const glm::mat4&, const glm::mat4&, double) override;
 	void endDraw() override;
 	glm::mat4 getMatriz();
 

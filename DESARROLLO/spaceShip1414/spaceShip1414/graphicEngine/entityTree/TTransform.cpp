@@ -88,7 +88,7 @@ void TTransform::beginDraw()
 	multiplicarMatriz(matriz, matrizActual);
 }
 
-void TTransform::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
+void TTransform::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection, double dt)
 {
 	apilar(matrizActual);
 	matrizActual = multiplicarMatriz(matriz, matrizActual);

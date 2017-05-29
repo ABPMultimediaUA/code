@@ -327,6 +327,9 @@
     <ClCompile Include="ActivadorCamara.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="graphicEngine\entityTree\TAnimacion.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="output.txt" />
@@ -771,6 +774,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="ActivadorCamara.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="graphicEngine\entityTree\TAnimacion.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

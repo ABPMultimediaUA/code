@@ -13,7 +13,7 @@
 Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
 {
 
-	TNodo* nodoLuz = motorApp->addLuz('p');
+	TNodo* nodoLuz = motorApp->addLuz('d');
 	motorApp->trasladar(nodoLuz, tras.x, tras.y, tras.z);
 	motorApp->rotarYPR(nodoLuz, r.x, r.y, r.z);
 	motorApp->escalar(nodoLuz, sca.x, sca.y, sca.z);

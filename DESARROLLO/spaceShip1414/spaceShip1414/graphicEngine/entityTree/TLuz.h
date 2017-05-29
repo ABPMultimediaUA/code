@@ -22,7 +22,7 @@ public:
 	void setSpotExponent(float);
 	float getSpotExponent();
 	void beginDraw() override;
-	void beginDraw(openGLShader&, const glm::mat4&, const glm::mat4&) override;
+	void beginDraw(openGLShader&, const glm::mat4&, const glm::mat4&, double) override;
 	void endDraw() override;
 	void activar();
 	void desactivar();
