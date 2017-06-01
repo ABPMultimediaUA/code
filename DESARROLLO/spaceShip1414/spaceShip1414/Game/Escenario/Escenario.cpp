@@ -228,16 +228,6 @@ void Escenario::dibujarEscenario() {
 
 							}
 
-
-							if ((*N).nombre == "Activador") {
-
-								Entity2D *entity = new Entity2D(mundo->getWorldBox2D(),
-									glm::vec3(tx, ty, -tz),
-									glm::vec3(rx, ry, rz),
-									glm::vec3(ex, ey, ez),
-									listaDeCamaras[camaras], true);
-
-							}
 						}
 
 					}
@@ -273,6 +263,8 @@ void Escenario::dibujarEscenario() {
 						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
 						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
+				
+
 						if ((*N).nombre == "PosCam") {
 
 							Camara *cam = new Camara(engine, camaras, true, false,
@@ -283,17 +275,6 @@ void Escenario::dibujarEscenario() {
 							listaDeCamaras.push_back(cam);
 							camaras++;
 
-
-						}
-
-
-						if ((*N).nombre == "Activador") {
-
-							Entity2D *entity = new Entity2D(mundo->getWorldBox2D(),
-								glm::vec3(tx, ty, -tz),
-								glm::vec3(rx, ry, rz),
-								glm::vec3(ex, ey, ez),
-								listaDeCamaras[camaras], true);
 
 						}
 					}

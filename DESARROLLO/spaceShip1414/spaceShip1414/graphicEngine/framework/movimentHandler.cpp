@@ -91,8 +91,13 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGr
 
 	float anguloRaton;
 
-	anguloRaton = -atan2f(static_cast<float>(xpos) - width/2.0f, static_cast<float>(ypos) - height / 2.0f) * 180 / 3.14f;
-	jugador->rotationYPR(motor, anguloRaton, 0, 0);
+	anguloRaton = -atan2f(xpos - width / 2, ypos - height / 2) * 180 / 3.14;
+
+	jugador->setYaw(anguloRaton);
+	motor->resetTransform(jugador->getNodo(),'r');
+	std::cout << jugador->getYaw() << std::endl;
+	
+	motor->rotarYPR(jugador->getNodo() ,-jugador->getYaw(), 0.0, 0.0f);
 	//if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT)) {
 
 		//if (xpos > offsetRango) {

@@ -44,8 +44,10 @@ Camara::Camara(TGraphicEngine * motorApp, char tipo, bool activa, player * jugad
 
 Camara::Camara(TGraphicEngine * motorApp, int ident, bool activa, bool move, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala) : velocity{ 5.0f }, yaw{ 0 }, pitch{ 0 }
 {
+	std::cout << "*******************ry:  " << rot.y << std::endl;
 	nodo = motorApp->addCamaraPerspectivaFija(activa);
-	motorApp->rotarYPR(nodo, rot.y - 180 , rot.x, rot.z);
+	motorApp->resetTransform(nodo, 'r');
+	motorApp->rotarYPR(nodo, rot.y -180 , rot.x, rot.z);
 	motorApp->trasladar(nodo, pos.x, pos.y, pos.z);
 	p = pos;
 	r = rot;
@@ -151,6 +153,8 @@ float Camara::anguloEntreDosVectores(glm::vec3 u, glm::vec3 v) {
 
 void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 
+	
+
 	if (fija!=false)
 	{
 		glm::vec3 u = posPers - p;
@@ -158,6 +162,11 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 		float anguloX = acosf(u.x / u.z) * 180 / 3.14f;
 		motorApp->resetTransform(nodo, 'r');
 		motorApp->rotarYPR(nodo, anguloRaton - 180, 0, 0);
+	}
+	else
+	{
+		motorApp->resetTransform(nodo, 'r');
+		motorApp->rotarYPR(nodo, yaw - 180, pitch, 0);
 	}
 
 }
