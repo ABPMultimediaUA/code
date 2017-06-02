@@ -117,5 +117,7 @@ void TTransform::resetMatriz()
 
 void TTransform::lookat(glm::vec3 eye, glm::vec3 tar, glm::vec3 mat)
 {
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 	matriz = glm::lookAt(eye, tar, mat);
 }

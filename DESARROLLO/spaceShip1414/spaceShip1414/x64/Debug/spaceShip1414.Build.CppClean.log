@@ -40,7 +40,6 @@ g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2world.obj
 g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2worldcallbacks.obj
 g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2chainandcirclecontact.obj
 g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\b2chainandpolygoncontact.obj
-g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\movimenthandler.obj
 g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\openglshader.obj
 g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\tgraphicengine.obj
 g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\tgestorrecursos.obj
@@ -105,6 +104,7 @@ g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\camara.obj
 g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\alienberserker.obj
 g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\astar.obj
 g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\behaivortree.obj
+g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\movimenthandler.obj
 g:\repositorio\code\desarrollo\spaceship1414\x64\debug\spaceship1414.exe
 g:\repositorio\code\desarrollo\spaceship1414\x64\debug\spaceship1414.pdb
 g:\repositorio\code\desarrollo\spaceship1414\spaceship1414\x64\debug\spaceship1414.tlog\cl.command.1.tlog

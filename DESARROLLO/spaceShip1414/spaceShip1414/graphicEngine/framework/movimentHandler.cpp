@@ -41,35 +41,37 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 
 			//jugador->actualizarFisicas(-1,0.016,0);
 			tecla = -1;
-
+			motor->resetTransform(jugador->getNodo(), 'r');
 		}
 
 		if (glfwGetKey(window, GLFW_KEY_W) != GLFW_RELEASE ) {
 
 			//jugador->actualizarFisicas(3,dt, 0);
 			tecla = TECLA_W;
-
-
+			motor->resetTransform(jugador->getNodo(), 'r');
+			motor->rotarYPR(jugador->getNodo(), 180, 0.0, 0.0f);
 		}
 		if (glfwGetKey(window, GLFW_KEY_S) != GLFW_RELEASE) {
 
 			//jugador->actualizarFisicas(2,dt, 0);
 			tecla = TECLA_S;
-
+			motor->resetTransform(jugador->getNodo(), 'r');
+			motor->rotarYPR(jugador->getNodo(), 0, 0.0, 0.0f);
 
 		}
 		if (glfwGetKey(window, GLFW_KEY_A) != GLFW_RELEASE) {
 
 			//jugador->actualizarFisicas(1,dt, 0);
 			tecla = TECLA_A;
-
-
+			motor->resetTransform(jugador->getNodo(), 'r');
+			motor->rotarYPR(jugador->getNodo(), -90, 0.0, 0.0f);
 		}
 		if (glfwGetKey(window, GLFW_KEY_D) != GLFW_RELEASE) {
 
 			//jugador->actualizarFisicas(0,dt, 0);
 			tecla = TECLA_D;
-			
+			motor->resetTransform(jugador->getNodo(), 'r');
+			motor->rotarYPR(jugador->getNodo(), 90, 0.0, 0.0f);
 
 		}
 		//El fantasma esta aqui
@@ -89,15 +91,37 @@ void movimentHandler::onMouse(GLFWwindow * window, double xpos, double ypos, TGr
 	int width, height;
 	glfwGetWindowSize(window, &width, &height);
 
-	float anguloRaton;
+	//float anguloRaton;
 
-	anguloRaton = -atan2f(xpos - width / 2, ypos - height / 2) * 180 / 3.14;
+	//glm::mat4 projection = motor->getProjection();
+	//projection = glm::inverse(projection);
+	//float x = (2.0f*xpos) / (float)width - 1.0f;
+	//float y = 1.0f - (2.0f*ypos) / (float)height;
+	//float z = 1.0f;
 
-	jugador->setYaw(anguloRaton);
-	motor->resetTransform(jugador->getNodo(),'r');
-	std::cout << jugador->getYaw() << std::endl;
+	//glm::vec3 ray_nds = glm::vec3(x, y, z);
+	//glm::vec4 ray_clip = glm::vec4(ray_nds.x, ray_nds.y, -1.0, 1.0);
+	//glm::vec4 ray_eye = glm::inverse(motor->getProjection()) * ray_clip;
+	//ray_eye = glm::vec4(ray_eye.x,ray_eye.y,-1.0,0.0);
+	//glm::vec3 ray_wor = glm::vec3(glm::inverse(camara->getTCamara()->getView())*ray_eye);
+	//ray_wor = glm::normalize(ray_wor);
+	////anguloRaton = -atan2f(2 * xpos / width - 1, 1 - 2 * ypos / height) * 180 / 3.14;
+	//std::cout << " angulo: " << ray_wor.x<<" "<<ray_wor.y<<" "<<ray_wor.z << std::endl;
+	//jugador->translation(motor, ray_nds.x, ray_nds.y, ray_nds.z);
+	/*motor->look(jugador->getNodo(), jugador->getPos(),ray_wor,glm::vec3(0,1
+		,0));*/
+	//glm::vec4 worldCoordinates = projection * glm::vec4(2.0 * xpos / width - 1.0, 2.0 * ypos / height - 1.0, 45.0f, 1.0);
 	
-	motor->rotarYPR(jugador->getNodo() ,-jugador->getYaw(), 0.0, 0.0f);
+
+	//
+	//std::cout <<" angulo: "<< anguloRaton<< std::endl;
+	////anguloRaton = -atan2f(xpos - width / 2, ypos - height / 2) * 180 / 3.14;
+
+	//jugador->setYaw(anguloRaton);
+	//motor->resetTransform(jugador->getNodo(),'r');
+	////std::cout << jugador->getYaw() << std::endl;
+	////
+	//motor->rotarYPR(jugador->getNodo() ,jugador->getYaw(), 0.0, 0.0f);
 	//if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT)) {
 
 		//if (xpos > offsetRango) {
