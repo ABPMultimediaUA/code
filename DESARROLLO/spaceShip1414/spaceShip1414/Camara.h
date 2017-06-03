@@ -23,6 +23,7 @@ public:
 	void translation(TGraphicEngine *, float, float, float);
 	float anguloEntreDosVectores(glm::vec3 u, glm::vec3 v);
 	void updateCam(TGraphicEngine * motorApp, glm::vec3 posPers, int tecla);
+	float getAnguloInicial();
 
 	void setVelocity(float);
 	void setYaw(float);
@@ -39,5 +40,6 @@ private:
 	glm::vec3 r;
 	bool fija;
 	int id;
+	float anguloInicial;
 };
 

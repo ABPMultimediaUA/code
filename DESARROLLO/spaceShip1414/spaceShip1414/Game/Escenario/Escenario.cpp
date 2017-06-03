@@ -320,7 +320,8 @@ void Escenario::dibujarEscenario() {
 
 						Active = new ActivadorCamara(engine, mundo, res, glm::vec3(tx, ty, -tz),
 							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez));
+							glm::vec3(ex, ey, ez),
+							listaDeCamaras[res]);
 					}
 				}
 			}
@@ -2567,6 +2568,8 @@ void Escenario::dibujarEscenario() {
 		}
 
 	}
+
+	jugador->asignarVectorDirector(glm::vec3(-1,0,0), listaDeCamaras[0]->getAnguloInicial());
 
 	std::cout << "-------------------------------------->" << tam << std::endl;
 

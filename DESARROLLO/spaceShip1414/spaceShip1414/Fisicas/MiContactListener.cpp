@@ -32,6 +32,8 @@
 #include "../graphicEngine/TGraphicEngine.h"
 #include "../ActivadorCamara.h"
 
+#define PI 3.14159265
+
 
 MiContactListener::MiContactListener() {
 	terActivado = false;
@@ -510,6 +512,37 @@ void evitarColisionEntreEnemigos(Entity2D *e1, Entity2D *e2) {
 }
 
 
+void asignarVecDirector(Entity2D *p, ActivadorCamara* c) {
+
+	player *jugador = static_cast<player*>(p->getObjeto3D());
+	Camara *cam = static_cast<Camara*>(c->getDirCamara());
+	
+	glm::vec3 u(0,0,0);
+
+	float angle = cam->getAnguloInicial();
+
+	if (angle < 0.0f) {
+		angle += 360;
+	}
+
+	else if (angle > 360) {
+		angle -= 360;
+	}
+
+	angle = angle * PI / 180;
+
+	u = glm::vec3(-1 * sin(angle),
+		0,
+		1 * cos(angle));
+
+	jugador->asignarVectorDirector(u, angle * 180 / PI);
+	//vecA = glm::vec3(vecDir.x * cos(angulo) - vecDir.z * sin(angulo),
+	//	0,
+	//	vecDir.x * sin(angulo) + vecDir.z * cos(angulo));
+
+}
+
+
 void MiContactListener::BeginContact(b2Contact* contact) {
 	std::cout<<""<<std::endl;
 
@@ -715,6 +748,7 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 					ActivadorCamara *cam = static_cast<ActivadorCamara*>(entity2->getObjeto3D());
 					std::cout << "camID: " << cam->getID() << std::endl;
 					motor->cambiarCamaraActiva(cam->getID());
+					asignarVecDirector(entity1, cam);
 				}
 
 				else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 6 && f1->IsSensor()) {

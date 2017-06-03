@@ -41,7 +41,7 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 
 			//jugador->actualizarFisicas(-1,0.016,0);
 			tecla = -1;
-			motor->resetTransform(jugador->getNodo(), 'r');
+			//motor->resetTransform(jugador->getNodo(), 'r');
 		}
 
 		if (glfwGetKey(window, GLFW_KEY_W) != GLFW_RELEASE ) {

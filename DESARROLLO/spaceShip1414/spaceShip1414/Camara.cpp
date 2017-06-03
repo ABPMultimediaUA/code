@@ -52,6 +52,7 @@ Camara::Camara(TGraphicEngine * motorApp, int ident, bool activa, bool move, glm
 	p = pos;
 	r = rot;
 	yaw = rot.y - 180;
+	anguloInicial = yaw;
 	fija = move;
 	id = ident;
 }
@@ -169,6 +170,11 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 		motorApp->rotarYPR(nodo, yaw - 180, pitch, 0);
 	}
 
+}
+
+float Camara::getAnguloInicial()
+{
+	return anguloInicial;
 }
 
 

@@ -35,6 +35,9 @@ public:
 	void setCamPos(glm::vec3);
 	TNodo * getNodo();
 
+	void asignarVectorDirector(glm::vec3 u, float angle);
+
+
 private:
 	float velocity;
 	float yaw;
@@ -44,6 +47,7 @@ private:
 	glm::vec3 escale;
 	glm::vec3 posCam;
 	glm::vec3 posAnterior;
+	glm::vec3 vecDir, vecA, vecS, vecD;
 	Entity2D *entity;
 	TNodo *nodo;
 	TGraphicEngine * engine;

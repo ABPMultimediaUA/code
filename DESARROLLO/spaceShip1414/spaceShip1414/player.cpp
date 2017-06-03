@@ -15,6 +15,8 @@
 #include <iostream>
 #include <math.h>
 
+#define PI 3.14159265
+
 player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	nodo = motorApp->addMalla("resourse/models/Nanosuit/nanosuit.obj");
@@ -25,7 +27,7 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 
 	rot = glm::vec3(180, 0, 0);
 	escale = glm::vec3(2, 7, 2);
 	engine = motorApp;
-
+	vecDir, vecA, vecD, vecS = glm::vec3(0, 0, 0);
 	entity = new Entity2D(m->getWorldBox2D(), glm::vec3(0,0,0), rot, this);
 	
 	motorApp->setPlayerMove(this);
@@ -137,25 +139,36 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 
 	if (n == 0) {
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
+
+		vel.Set(vecD.x, vecD.z);
+		vel = velocity * vel;
+		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
 	}
 
 	if (n == 1) {
 
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
+		vel.Set(vecA.x, vecA.z);
+		vel = velocity * vel;
+		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
 
 	}
 
 	if (n == 2) {
-
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
+		vel.Set(vecS.x, vecS.z);
+		vel = velocity * vel;
+		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
 
 	}
 
 
 	if (n == 3) {
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
+
+		vel.Set(vecDir.x, vecDir.z);
+		vel = velocity * vel;
+		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
 	}
+
+	entity->getCuerpo2D()->SetLinearVelocity(vel);
 
 	engine->resetTransform(this->getNodo(), 't');
 	setPos(-entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
@@ -172,4 +185,41 @@ void player::setCamPos(glm::vec3 p)
 TNodo * player::getNodo()
 {
 	return nodo;
+}
+
+void player::asignarVectorDirector(glm::vec3 u, float angle) {
+
+	vecDir = u;
+
+	std::cout << "ANGLEEEEE: " << angle << std::endl;
+	std::cout << angle + 90 << std::endl;
+	std::cout << angle + 180 << std::endl;
+	std::cout << angle - 90 << std::endl;
+
+	float angulo = (90) * PI / 180;
+
+
+	vecA = glm::vec3(vecDir.x * cos(angulo) - vecDir.z * sin(angulo),
+		0,
+		vecDir.x * sin(angulo) + vecDir.z * cos(angulo));
+
+	angulo = (180) * PI / 180;
+
+	vecS = glm::vec3(vecDir.x * cos(angulo) - vecDir.z * sin(angulo),
+		0,
+		vecDir.x * sin(angulo) + vecDir.z * cos(angulo));
+
+	angulo = (- 90) * PI / 180;
+
+
+	vecD = glm::vec3(vecDir.x * cos(angulo) - vecDir.z * sin(angulo),
+		0,
+		vecDir.x * sin(angulo) + vecDir.z * cos(angulo));
+
+	std::cout << "VECTORES" << std::endl;
+	std::cout << "DIR: "<< glm::to_string(vecDir) << std::endl;
+	std::cout << "A: "<<glm::to_string(vecA) << std::endl;
+	std::cout << "S: "<< glm::to_string(vecS) << std::endl;
+	std::cout <<"D:"<< glm::to_string(vecD) << std::endl;
+
 }
