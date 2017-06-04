@@ -32,7 +32,7 @@ Puerta::Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::ve
 	escal = escala;
 	posIni = posicion;
 	t_puerta = tipo;
-
+	motor = motorApp;
 	rotation = motorApp->crearTransform();
 	scale = motorApp->crearTransform();
 	translation = motorApp->crearTransform();
@@ -197,34 +197,40 @@ void Puerta::setFisica(Mundo *world, int ident) {
 
 }
 
+TNodo * Puerta::getNodo()
+{
+	return nodoMalla;
+}
+
 void Puerta::abrirPuerta() {
 
 
 	//si tiene rotacion en Y van | sino van -
 
 
-	
-	std::cout << "entra copon" << std::endl;
-		if (limiteApZ + desfase >entity->getCuerpo2D()->GetPosition().y)
+	if (t_puerta=="ARRIBA")
+	{
+
+		if (20 > entity->getCuerpo2D()->GetPosition().x)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, VEL));
-			pos.z = entity->getCuerpo2D()->GetPosition().y;
-			translation->resetMatriz();
-			translation->trasladar(pos.x, pos.y, -pos.z);
-			
+			std::cout << "entra copon" << std::endl;
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(10, 0));
+			pos.y = entity->getCuerpo2D()->GetPosition().x;
+			motor->trasladar(this->getNodo(), 0,pos.y*0.05,0);
+
 
 		}
-		else
-		{
-			abierta = true;
-			//std::cout << detectado << std::endl;
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
-			if (detectado == false)
-			{
-				Maquina->cambiaEstado("CERRADA");
-			}
-		}
-	
+		//else
+		//{
+		//	abierta = true;
+		//	//std::cout << detectado << std::endl;
+		//	entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+		//	if (detectado == false)
+		//	{
+		//		Maquina->cambiaEstado("CERRADA");
+		//	}
+		//}
+	}
 
 	//else {
 	//	

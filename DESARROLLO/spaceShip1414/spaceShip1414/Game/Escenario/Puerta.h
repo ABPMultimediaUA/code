@@ -49,6 +49,7 @@ public:
 
 	void setDetectado(bool x,int ident);
 	void setFisica(Mundo *world, int ident);
+	TNodo * getNodo();
 	void setAbierta();
 	void setCerrada();
 	void abrirPuerta();
@@ -86,6 +87,7 @@ private:
 	Estados* BLOQLLAVE;
 	std::string llaveAsociada;
 	std::string t_puerta;
+	TGraphicEngine * motor;
 };
 
 #endif /* PUERTA_H */

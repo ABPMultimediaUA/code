@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Puente.unity
-  isLoaded: 1
-  isActive: 1
