@@ -32,6 +32,8 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	//else if (r.y == 0)
 	//	r.y = 180;
 
+	std::cout << model << std::endl;
+
 	rotation->rotarYPR(r.y + 180, r.x, r.z);
 	translation->trasladar(tras.x, tras.y, tras.z);
 

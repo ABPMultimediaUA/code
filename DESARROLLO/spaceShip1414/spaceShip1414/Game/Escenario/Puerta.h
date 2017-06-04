@@ -33,7 +33,9 @@ class Estados;
 class Puerta {
 public:
 
-	Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave);
+	
+
+	Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo, std::string model);
 	Puerta(const Puerta& orig);
 	virtual ~Puerta();
 	TTransform* Rotation();
@@ -83,6 +85,7 @@ private:
 	Estados* BLOQUEADA;
 	Estados* BLOQLLAVE;
 	std::string llaveAsociada;
+	std::string t_puerta;
 };
 
 #endif /* PUERTA_H */

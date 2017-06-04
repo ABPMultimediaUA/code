@@ -58,12 +58,13 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, Entity2D *pers, int m
 	std::cout << "ID PUERTA: " << entity->getId() << std::endl;
 	if (pers->getIDEN() == 0)
 		//Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
-
+		
 	if (modo == 0 && puerta->getEstado() != "BLOQLLAVE" ) {
 		//si tiene rotacion en Y van | sino van -
+	
 		puerta->setDetectado(true,entity->getId());
 		puerta->setAbierta();
-		//puerta->UpdateEstado();
+		puerta->UpdateEstado();
 	}	
 
 
@@ -71,7 +72,7 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, Entity2D *pers, int m
 		std::cout << "cerrar123" << std::endl;
 		puerta->setDetectado(false,entity->getId());
 		puerta->setCerrada();
-		//puerta->UpdateEstado();
+		puerta->UpdateEstado();
 	}
 
 	//se deberia hacer un if para ver si el jugador tiene o no la llave asociada a la puerta
@@ -716,13 +717,15 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 					entity1->setLive(false);
 				}
 
-
+				
 
 				if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true && f2->IsSensor() != true) {
+					
 					actualizarPuerta(entity1, entity2, 0);
 				}
 
 				else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true && f1->IsSensor() != true) {
+				
 					actualizarPuerta(entity2, entity1, 0);
 				}
 

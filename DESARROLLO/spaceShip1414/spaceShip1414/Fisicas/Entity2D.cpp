@@ -162,26 +162,24 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
-    if (escala.z != 1) {
 
-        bodyShape.SetAsBox(8* escala.x,escala.z);
-        bodyShape2.SetAsBox(escala.x,  escala.z);	
-    } else {
-        bodyShape.SetAsBox( escala.x, 8 * escala.z);
-        bodyShape2.SetAsBox( escala.x,  escala.z);	
-    }
+
+	bodyShape.SetAsBox(2*escala.x,4* escala.z);
+	bodyShape2.SetAsBox(2*escala.x, 4*escala.z);
+	
 
     objeto3D = dirPuerta;
     puertaBody = world->CreateBody(&bodyDef);
 	puertaBody-> CreateFixture(&bodyShape, 1.0f);
 	puertaBody->GetFixtureList()->SetSensor(sensor);
-	
+	puertaBody->SetTransform(bodyDef.position, rot.y * 0.0174532925199432957f );
     //std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
 	puertaBody->SetUserData(this);
 
 	body = world->CreateBody(&bodyDef);
     body->CreateFixture(&bodyShape2, 1.0f);
 	body->SetUserData(this);
+	body->SetTransform(bodyDef.position, rot.y * 0.0174532925199432957f);
     filtro.groupIndex = FILTRO_PUERTA;
     //    body->GetFixtureList()->SetFilterData(filtro);
     iden = 2;

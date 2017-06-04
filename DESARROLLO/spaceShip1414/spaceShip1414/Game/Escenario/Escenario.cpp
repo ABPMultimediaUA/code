@@ -404,6 +404,33 @@ void Escenario::dibujarEscenario() {
 
 				}
 
+				if ((*T).nombre == "Modelo-Puerta-ABIERTA-ARRIBA") {
+					//	std::cout << "entra" << std::endl;
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+						
+						
+						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+
+						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+
+						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+
+						Puerta * door = new Puerta(engine,num, glm::vec3(tx, ty, -tz),
+							glm::vec3(rx, ry, -rz),
+							glm::vec3(ex, ey, ez), "ABIERTA","ARRIBA",(*N).nombre);
+						door->setFisica(mundo, num);
+						puertas.push_back(door);
+						num++;
+					
+					}
+
+				}
 
 				if ((*T).nombre == "Paredes" || (*T).nombre == "Ventanas") {
 
