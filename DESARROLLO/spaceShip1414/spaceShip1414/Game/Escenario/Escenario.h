@@ -97,6 +97,8 @@ private:
 	Camara *c;
 	player *jugador;
 
+	Camara* buscarCamara(int ID);
+
 public:
 
 	Escenario(TGraphicEngine * motorApp, Mundo* /*, b2World *world,  Juego* game*/);

@@ -39,6 +39,19 @@
 #include "../ActivadorCamara.h"
 
 
+Camara * Escenario::buscarCamara(int ID)
+{
+
+	for (std::size_t i = 0; i < listaDeCamaras.size(); i++) {
+		if (listaDeCamaras[i]->getId() == ID) {
+			return listaDeCamaras[i];
+		}
+	}
+
+
+
+}
+
 Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m /*,b2World *world, Juego* game*/) {
 
 	/*SM = smgr;
@@ -199,25 +212,27 @@ void Escenario::dibujarEscenario() {
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 			
 
-					if ((*T).nombre == "CAMARA") {
+					if ((*T).nombre == "PosCam") {
+
+						tx = ((*T).position.x + (*I).position.x);
+						ty = ((*T).position.y + (*I).position.y);
+						tz = ((*T).position.z + (*I).position.z);
+
+						rx = ((*T).rotation.x + (*I).rotation.x);
+						ry = ((*T).rotation.y + (*I).rotation.y);
+						rz = ((*T).rotation.z + (*I).rotation.z);
+
+						ex = ((*T).escala.x * (*I).escala.x);
+						ey = ((*T).escala.y * (*I).escala.y);
+						ez = ((*T).escala.z * (*I).escala.z);
+
 						for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+							
+							int ID;
+							std::stringstream((*N).nombre) >> ID;
 
 
-							tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-							ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-							tz = ((*N).position.z + (*T).position.z + (*I).position.z);
-
-							rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-							ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-							rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
-
-							ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-							ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-							ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
-
-							if ((*N).nombre == "PosCam") {
-
-								Camara *cam = new Camara(engine, camaras, true, true,
+								Camara *cam = new Camara(engine, ID, true, true,
 									glm::vec3(tx, ty, -tz),
 									glm::vec3(rx, ry, rz),
 									glm::vec3(1, 1, 1));
@@ -226,7 +241,7 @@ void Escenario::dibujarEscenario() {
 								camaras++;
 
 
-							}
+						
 
 						}
 
@@ -246,28 +261,26 @@ void Escenario::dibujarEscenario() {
 
 			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
+				if ((*T).nombre == "PosCam") {
 
-				if ((*T).nombre == "CAMARA") {
+						tx = ((*T).position.x + (*I).position.x);
+						ty = ((*T).position.y + (*I).position.y);
+						tz = ((*T).position.z + (*I).position.z);
+
+						rx = ((*T).rotation.x + (*I).rotation.x);
+						ry = ((*T).rotation.y + (*I).rotation.y);
+						rz = ( (*T).rotation.z + (*I).rotation.z);
+
+						ex = ((*T).escala.x * (*I).escala.x);
+						ey = ((*T).escala.y * (*I).escala.y);
+						ez = ((*T).escala.z * (*I).escala.z);
+
 					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
+						int ID;
+						std::stringstream((*N).nombre) >> ID;
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
-
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
-
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
-
-				
-
-						if ((*N).nombre == "PosCam") {
-
-							Camara *cam = new Camara(engine, camaras, true, false,
+							Camara *cam = new Camara(engine, ID, true, false,
 								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry, rz),
 								glm::vec3(1, 1, 1));
@@ -276,7 +289,7 @@ void Escenario::dibujarEscenario() {
 							camaras++;
 
 
-						}
+						
 					}
 
 				}
@@ -288,6 +301,56 @@ void Escenario::dibujarEscenario() {
 				//}
 
 			}
+		}
+
+		if ((*I).nombre == "CamarasDePasillos") {
+
+			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+
+
+				if ((*T).nombre == "PosCam") {
+
+					tx = ((*T).position.x + (*I).position.x);
+					ty = ((*T).position.y + (*I).position.y);
+					tz = ((*T).position.z + (*I).position.z);
+
+					rx = ((*T).rotation.x + (*I).rotation.x);
+					ry = ((*T).rotation.y + (*I).rotation.y);
+					rz = ((*T).rotation.z + (*I).rotation.z);
+
+					ex = ((*T).escala.x * (*I).escala.x);
+					ey = ((*T).escala.y * (*I).escala.y);
+					ez = ((*T).escala.z * (*I).escala.z);
+
+					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+
+						int ID;
+						std::stringstream((*N).nombre) >> ID;
+
+
+						Camara *cam = new Camara(engine, ID, true, false,
+							glm::vec3(tx, ty, -tz),
+							glm::vec3(rx, ry, rz),
+							glm::vec3(1, 1, 1));
+
+						listaDeCamaras.push_back(cam);
+						camaras++;
+
+
+
+
+					}
+
+				}
+
+
+				//if (pillado == false) {
+				//	cam = c;
+				//	pillado = true;
+				//}
+
+			}
+
 		}
 
 
@@ -317,11 +380,12 @@ void Escenario::dibujarEscenario() {
 
 						std::stringstream((*N).nombre) >> res;
 
+						Camara *cam = buscarCamara(res);
 
 						Active = new ActivadorCamara(engine, mundo, res, glm::vec3(tx, ty, -tz),
 							glm::vec3(rx, ry, -rz),
 							glm::vec3(ex, ey, ez),
-							listaDeCamaras[res]);
+							cam);
 					}
 				}
 			}
@@ -2587,10 +2651,14 @@ void Escenario::dibujarEscenario() {
 	}
 
 
-	for (std::size_t i = 1; i < listaDeCamaras.size(); i++) {
-		if (listaDeCamaras[i] != NULL) {
+	for (std::size_t i = 0; i < listaDeCamaras.size(); i++) {
+		if (listaDeCamaras[i]->getId() != 0) {
 
 			listaDeCamaras[i]->getTCamara()->desactivar();
+
+		}
+		else {
+			listaDeCamaras[i]->getTCamara()->activar();
 
 		}
 
