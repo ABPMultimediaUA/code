@@ -750,7 +750,7 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6 && f2->IsSensor()) {
 					ActivadorCamara *cam = static_cast<ActivadorCamara*>(entity2->getObjeto3D());
 					std::cout << "camID: " << cam->getID() << std::endl;
-					motor->cambiarCamaraActiva(cam->getID());
+					motor->cambiarCamaraActiva(cam->getID(), cam->getDirCamara());
 					asignarVecDirector(entity1, cam);
 				}
 

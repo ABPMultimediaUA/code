@@ -59,7 +59,8 @@ public:
 	void setPlayerMove(player*);
 	double getLastTime();
 	void setLastTime(double);
-	void cambiarCamaraActiva(char);
+	void cambiarCamaraActiva(char m, void * dirCam);
+
 	TNodo * addAnimacion(std::string path = "", unsigned int frames = 25, TNodo * nodoPadre = nullptr);
 	TNodo * addMalla(std::string path = "", TNodo * nodoPadre = nullptr);
 	TNodo * addCamara(char tipo = 0, bool per = false, bool act = false, TNodo * nodoPadre = nullptr, float x = 45.0f, float y = 0.1f, float z = 1000.0f, float a = 0.0f, float b = 10.0f, float c = 10.0f);

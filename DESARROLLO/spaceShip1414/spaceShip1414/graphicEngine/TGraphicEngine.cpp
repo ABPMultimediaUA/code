@@ -192,14 +192,21 @@ void TGraphicEngine::setLastTime(double t)
 	lastTime = t;
 }
 
-void TGraphicEngine::cambiarCamaraActiva(char m)
+void TGraphicEngine::cambiarCamaraActiva(char m, void* dirCam)
 {
 	if (camaraActiva) {
 		camaraActiva->desactivar();
 	}
 	if (registroCamaras.size() > m) {
-		static_cast<TCamara*>(registroCamaras.at(m)->getEntidad())->activar();
-		camaraActiva = static_cast<TCamara*>(registroCamaras.at(m)->getEntidad());
+		/*static_cast<TCamara*>(registroCamaras.at(m)->getEntidad())->activar();
+		camaraActiva = static_cast<TCamara*>(registroCamaras.at(m)->getEntidad());*/
+		//Camara *cam = maps->buscarCamara(m);
+		//camaraActiva = cam->getTCamara();
+		Camara *cam = static_cast<Camara*>(dirCam);
+		cam->getTCamara()->activar();
+		camaraActiva = cam->getTCamara();
+
+
 	}
 }
 
