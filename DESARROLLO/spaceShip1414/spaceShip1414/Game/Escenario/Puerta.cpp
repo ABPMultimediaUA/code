@@ -207,79 +207,59 @@ void Puerta::abrirPuerta() {
 
 	//si tiene rotacion en Y van | sino van -
 
-
 	if (t_puerta=="ARRIBA")
 	{
-
-		if (20 > entity->getCuerpo2D()->GetPosition().x)
+		
+		
+		if (entity->getCuerpo2D()->GetPosition().x  <= limiteApX+10)
 		{
-			std::cout << "entra copon" << std::endl;
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(10, 0));
-			pos.y = entity->getCuerpo2D()->GetPosition().x;
-			motor->trasladar(this->getNodo(), 0,pos.y*0.05,0);
-
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(120, 0));
+			
+			if (motor->getPosicion(this->getNodo()).y<10)
+			{
+				std::cout << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
+				motor->trasladar(this->getNodo(), 0, 60*motor->getDT(), 0);
+			}
 
 		}
-		//else
-		//{
-		//	abierta = true;
-		//	//std::cout << detectado << std::endl;
-		//	entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
-		//	if (detectado == false)
-		//	{
-		//		Maquina->cambiaEstado("CERRADA");
-		//	}
-		//}
+		else
+		{
+			abierta = true;
+			//std::cout << detectado << std::endl;
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+			if (detectado == false)
+			{
+				ABIERTA->limpiarEstado();
+				Maquina->cambiaEstado("CERRADA");
+			}
+		}
 	}
-
-	//else {
-	//	
-	//	if (limiteApX + desfase >entity->getCuerpo2D()->GetPosition().x)
-	//	{
-	//		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(VEL, 0.0f));
-	//		pos.x = entity->getCuerpo2D()->GetPosition().x;
-	//		translation->resetMatriz();
-	//		translation->trasladar(pos.x, pos.y, pos.z);
-	//	}
-	//	else
-	//	{
-	//		abierta = true;
-	//		//std::cout << detectado << std::endl;
-	//		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
-
-	//		if (detectado == false)
-	//		{
-	//			Maquina->cambiaEstado("CERRADA");
-	//		}
-	//	}
-	//	//  entity->getSombraP2D()->SetLinearVelocity(b2Vec2(-vel, 0.0f));
-	//	
-
-	//}
-
 
 }
 
 void Puerta::cerrarPuerta() {
 
 
-
-		if (limiteApZ + 2 < entity->getCuerpo2D()->GetPosition().y)
+	if (t_puerta == "ARRIBA")
+	{
+		if (entity->getCuerpo2D()->GetPosition().x >= limiteApX)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, -VEL));
-			pos.z = entity->getCuerpo2D()->GetPosition().y;
-			translation->resetMatriz();
-			translation->trasladar(pos.x, pos.y, -pos.z);
-		
+			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-120, 0));
+
+			if (motor->getPosicion(this->getNodo()).y>=pos.y)
+			{
+				std::cout << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
+				motor->trasladar(this->getNodo(), 0, -60 * motor->getDT(), 0);
+			}
 
 		}
 		else
 		{
 			abierta = false;
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
-
 			Maquina->cambiaEstado("BLOQUEADA");
 		}
+	}
 	/*}*/
 
 	//else {
@@ -310,18 +290,15 @@ void Puerta::cerrarPuerta() {
 
 void Puerta::Update()
 {
-	
+	std::cout << "ABIERTA: " << ABIERTA->getEstadoActivo() <<"CERRADA: "<< CERRADA->getEstadoActivo() <<std::endl;
+
 	if (ABIERTA->getEstadoActivo())
 	{
-		std::cout << "UPDATE AB" << std::endl;
-
 		this->abrirPuerta();
 	}
 
 	if (CERRADA->getEstadoActivo())
 	{
-		std::cout << "UPDATE CE" << std::endl;
-
 		this->cerrarPuerta();
 	}
 	//std::cout << Maquina->getEstadoActivo()->getEstado() << " COMPLETA: " << abierta << " id: " << id << " idEn: " << entity->getId() << " Detect: " << idDetect << std::endl;
