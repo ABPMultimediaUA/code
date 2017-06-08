@@ -513,7 +513,7 @@ void Escenario::dibujarEscenario() {
 						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
 						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx*2,0,-tz*2),
+						Pared * wall = new Pared(engine, glm::vec3(tx,ty,-tz),
 							glm::vec3(rx,ry,-rz),
 							glm::vec3(ex,ey, ez),"");
 
