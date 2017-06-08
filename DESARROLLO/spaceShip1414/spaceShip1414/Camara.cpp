@@ -52,7 +52,10 @@ Camara::Camara(TGraphicEngine * motorApp, int ident, bool activa, bool move, glm
 	p = pos;
 	r = rot;
 	yaw = rot.y - 180;
+	pitch = rot.x;
 	anguloInicial = yaw;
+	rotX = rot.x;
+	rotAnterior = anguloInicial;
 	fija = move;
 	id = ident;
 }
@@ -160,10 +163,49 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 	{
 		glm::vec3 u = posPers - p;
 		float anguloRaton = atan2f(u.x, u.z) * 180 / 3.14f;
-		float anguloX = acosf(u.x / u.z) * 180 / 3.14f;
-		motorApp->resetTransform(nodo, 'r');
-		motorApp->rotarYPR(nodo, anguloRaton - 180, 0, 0);
+		float anguloX = acosf(u.y / u.x) * 180 / 3.14f;
+		//glm::vec3 rotazione = motorApp->getRotacion(nodo);
+		std::cout << "VEC: " << glm::to_string(u) << std::endl;
+		std::cout << "ANGLEEEEE X: " << anguloX << std::endl;
+			//motorApp->resetTransform(nodo, 'r');
+		
+		//para evitar que la camara gire mas de lo que debe
+		if(tecla == 0 || tecla == 1) {
+		
+			rotAnterior = anguloRaton - 180;
+			//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+		}
+
+		else if (tecla == 3) {
+
+			rotX += 0.5;
+			//rotAnterior = anguloRaton + 180;
+
+			if (rotX > pitch) {
+				rotX = pitch;
+				
+			//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+			}
+		}
+
+		else if (tecla == 2) {
+
+			rotX -= 0.5;
+			//rotAnterior =  anguloRaton - 180;
+
+			if (rotX < -75) {
+				rotX = -75;
+			}
+
+			//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+		}
+
+			//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+			motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+
+
 	}
+
 	else
 	{
 		motorApp->resetTransform(nodo, 'r');
