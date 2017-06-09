@@ -1,16 +1,81 @@
-# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 27.05.2017 18:23:09
-
-newmtl 01___Default
-	Ns 10.0000
-	Ni 1.5000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
-	Ka 0.5882 0.5882 0.5882
-	Kd 0.5882 0.5882 0.5882
-	Ks 0.0000 0.0000 0.0000
-	Ke 0.0000 0.0000 0.0000
-	map_Ka hangar.bmp
-	map_Kd hangar.bmp
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 1-d.jpg
+bump 1-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 1-s.jpg
+Ns 18.00
+newmtl phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 3-d.jpg
+bump 3-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 3-s.jpg
+Ns 18.00
+newmtl phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 4-d.jpg
+bump 4-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 4-s.jpg
+Ns 18.00
+newmtl phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 5-s.jpg
+Ns 18.00
+newmtl phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 6-d.jpg
+bump 6-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 6-s.jpg
+Ns 18.00
+newmtl phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 8-d.jpg
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00

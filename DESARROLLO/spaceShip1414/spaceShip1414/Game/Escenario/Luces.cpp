@@ -14,7 +14,7 @@ Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 {
 
 	TNodo* nodoLuz = motorApp->addLuz('d');
-	motorApp->trasladar(nodoLuz, tras.x, tras.y, tras.z);
+	motorApp->trasladar(nodoLuz, tras.x, tras.y, tras.z+20);
 	motorApp->rotarYPR(nodoLuz, r.x, r.y, r.z);
 	motorApp->escalar(nodoLuz, sca.x, sca.y, sca.z);
 	motorApp->addRegistroLuz(nodoLuz);

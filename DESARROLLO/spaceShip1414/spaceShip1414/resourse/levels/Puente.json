@@ -1881,18 +1881,18 @@
             {
               "localPosition": [
                 0.0,
-                -2.8,
+                12.0,
                 0.0
               ],
               "localRotation": [
                 0.0,
-                179.994644,
+                180.0,
                 0.0
               ],
               "localScale": [
-                0.7,
-                0.7,
-                0.7
+                1.0,
+                1.0,
+                1.0
               ],
               "name": null,
               "parentName": null,
@@ -1900,275 +1900,6 @@
             }
           ],
           "children": [
-            {
-              "name": "hangar 2",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                }
-              ],
-              "children": [
-                {
-                  "name": "polySurface2417",
-                  "components": [
-                    {
-                      "localPosition": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
-                      "localRotation": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
-                      "localScale": [
-                        1.0,
-                        1.0,
-                        1.0
-                      ],
-                      "name": null,
-                      "parentName": null,
-                      "type": "Transform"
-                    }
-                  ],
-                  "children": [
-                    {
-                      "name": "polySurface2417_MeshPart0",
-                      "components": [
-                        {
-                          "localPosition": [
-                            0.0,
-                            0.0,
-                            0.0
-                          ],
-                          "localRotation": [
-                            0.0,
-                            0.0,
-                            0.0
-                          ],
-                          "localScale": [
-                            1.0,
-                            1.0,
-                            1.0
-                          ],
-                          "name": null,
-                          "parentName": null,
-                          "type": "Transform"
-                        },
-                        {
-                          "mesh": "hangar 2_polySurface2417_MeshPart0",
-                          "enabled": true,
-                          "castShadows": true,
-                          "receiveShadows": true,
-                          "lightmapIndex": -1,
-                          "lightmapTilingOffset": [
-                            1.0,
-                            1.0,
-                            0.0,
-                            0.0
-                          ],
-                          "materials": [
-                            "polySurface2417Mat"
-                          ],
-                          "type": "MeshRenderer"
-                        }
-                      ],
-                      "children": []
-                    },
-                    {
-                      "name": "polySurface2417_MeshPart1",
-                      "components": [
-                        {
-                          "localPosition": [
-                            0.0,
-                            0.0,
-                            0.0
-                          ],
-                          "localRotation": [
-                            0.0,
-                            0.0,
-                            0.0
-                          ],
-                          "localScale": [
-                            1.0,
-                            1.0,
-                            1.0
-                          ],
-                          "name": null,
-                          "parentName": null,
-                          "type": "Transform"
-                        },
-                        {
-                          "mesh": "hangar 2_polySurface2417_MeshPart1",
-                          "enabled": true,
-                          "castShadows": true,
-                          "receiveShadows": true,
-                          "lightmapIndex": -1,
-                          "lightmapTilingOffset": [
-                            1.0,
-                            1.0,
-                            0.0,
-                            0.0
-                          ],
-                          "materials": [
-                            "polySurface2417Mat"
-                          ],
-                          "type": "MeshRenderer"
-                        }
-                      ],
-                      "children": []
-                    },
-                    {
-                      "name": "polySurface2417_MeshPart2",
-                      "components": [
-                        {
-                          "localPosition": [
-                            0.0,
-                            0.0,
-                            0.0
-                          ],
-                          "localRotation": [
-                            0.0,
-                            0.0,
-                            0.0
-                          ],
-                          "localScale": [
-                            1.0,
-                            1.0,
-                            1.0
-                          ],
-                          "name": null,
-                          "parentName": null,
-                          "type": "Transform"
-                        },
-                        {
-                          "mesh": "hangar 2_polySurface2417_MeshPart2",
-                          "enabled": true,
-                          "castShadows": true,
-                          "receiveShadows": true,
-                          "lightmapIndex": -1,
-                          "lightmapTilingOffset": [
-                            1.0,
-                            1.0,
-                            0.0,
-                            0.0
-                          ],
-                          "materials": [
-                            "polySurface2417Mat"
-                          ],
-                          "type": "MeshRenderer"
-                        }
-                      ],
-                      "children": []
-                    },
-                    {
-                      "name": "polySurface2417_MeshPart3",
-                      "components": [
-                        {
-                          "localPosition": [
-                            0.0,
-                            0.0,
-                            0.0
-                          ],
-                          "localRotation": [
-                            0.0,
-                            0.0,
-                            0.0
-                          ],
-                          "localScale": [
-                            1.0,
-                            1.0,
-                            1.0
-                          ],
-                          "name": null,
-                          "parentName": null,
-                          "type": "Transform"
-                        },
-                        {
-                          "mesh": "hangar 2_polySurface2417_MeshPart3",
-                          "enabled": true,
-                          "castShadows": true,
-                          "receiveShadows": true,
-                          "lightmapIndex": -1,
-                          "lightmapTilingOffset": [
-                            1.0,
-                            1.0,
-                            0.0,
-                            0.0
-                          ],
-                          "materials": [
-                            "polySurface2417Mat"
-                          ],
-                          "type": "MeshRenderer"
-                        }
-                      ],
-                      "children": []
-                    },
-                    {
-                      "name": "polySurface2417_MeshPart4",
-                      "components": [
-                        {
-                          "localPosition": [
-                            0.0,
-                            0.0,
-                            0.0
-                          ],
-                          "localRotation": [
-                            0.0,
-                            0.0,
-                            0.0
-                          ],
-                          "localScale": [
-                            1.0,
-                            1.0,
-                            1.0
-                          ],
-                          "name": null,
-                          "parentName": null,
-                          "type": "Transform"
-                        },
-                        {
-                          "mesh": "hangar 2_polySurface2417_MeshPart4",
-                          "enabled": true,
-                          "castShadows": true,
-                          "receiveShadows": true,
-                          "lightmapIndex": -1,
-                          "lightmapTilingOffset": [
-                            1.0,
-                            1.0,
-                            0.0,
-                            0.0
-                          ],
-                          "materials": [
-                            "polySurface2417Mat"
-                          ],
-                          "type": "MeshRenderer"
-                        }
-                      ],
-                      "children": []
-                    }
-                  ]
-                }
-              ]
-            },
             {
               "name": "hangar 1",
               "components": [
@@ -2195,7 +1926,7 @@
               ],
               "children": [
                 {
-                  "name": "hangar:polySurface2110",
+                  "name": "polySurface2160",
                   "components": [
                     {
                       "localPosition": [
@@ -2220,7 +1951,7 @@
                   ],
                   "children": [
                     {
-                      "name": "hangar:polySurface2110_MeshPart0",
+                      "name": "polySurface2160_MeshPart0",
                       "components": [
                         {
                           "localPosition": [
@@ -2243,7 +1974,7 @@
                           "type": "Transform"
                         },
                         {
-                          "mesh": "hangar 1_hangar:polySurface2110_MeshPart0",
+                          "mesh": "hangar 1_polySurface2160_MeshPart0",
                           "enabled": true,
                           "castShadows": true,
                           "receiveShadows": true,
@@ -2255,7 +1986,7 @@
                             0.0
                           ],
                           "materials": [
-                            "hangar_polySurface2110Mat"
+                            "polySurface2160Mat"
                           ],
                           "type": "MeshRenderer"
                         }
@@ -2263,7 +1994,7 @@
                       "children": []
                     },
                     {
-                      "name": "hangar:polySurface2110_MeshPart1",
+                      "name": "polySurface2160_MeshPart1",
                       "components": [
                         {
                           "localPosition": [
@@ -2286,7 +2017,7 @@
                           "type": "Transform"
                         },
                         {
-                          "mesh": "hangar 1_hangar:polySurface2110_MeshPart1",
+                          "mesh": "hangar 1_polySurface2160_MeshPart1",
                           "enabled": true,
                           "castShadows": true,
                           "receiveShadows": true,
@@ -2298,7 +2029,7 @@
                             0.0
                           ],
                           "materials": [
-                            "hangar_polySurface2110Mat"
+                            "polySurface2160Mat"
                           ],
                           "type": "MeshRenderer"
                         }
@@ -2306,7 +2037,7 @@
                       "children": []
                     },
                     {
-                      "name": "hangar:polySurface2110_MeshPart2",
+                      "name": "polySurface2160_MeshPart2",
                       "components": [
                         {
                           "localPosition": [
@@ -2329,7 +2060,7 @@
                           "type": "Transform"
                         },
                         {
-                          "mesh": "hangar 1_hangar:polySurface2110_MeshPart2",
+                          "mesh": "hangar 1_polySurface2160_MeshPart2",
                           "enabled": true,
                           "castShadows": true,
                           "receiveShadows": true,
@@ -2341,7 +2072,7 @@
                             0.0
                           ],
                           "materials": [
-                            "hangar_polySurface2110Mat"
+                            "polySurface2160Mat"
                           ],
                           "type": "MeshRenderer"
                         }
@@ -2349,7 +2080,7 @@
                       "children": []
                     },
                     {
-                      "name": "hangar:polySurface2110_MeshPart3",
+                      "name": "polySurface2160_MeshPart3",
                       "components": [
                         {
                           "localPosition": [
@@ -2372,7 +2103,7 @@
                           "type": "Transform"
                         },
                         {
-                          "mesh": "hangar 1_hangar:polySurface2110_MeshPart3",
+                          "mesh": "hangar 1_polySurface2160_MeshPart3",
                           "enabled": true,
                           "castShadows": true,
                           "receiveShadows": true,
@@ -2384,7 +2115,7 @@
                             0.0
                           ],
                           "materials": [
-                            "hangar_polySurface2110Mat"
+                            "polySurface2160Mat"
                           ],
                           "type": "MeshRenderer"
                         }
@@ -2392,7 +2123,7 @@
                       "children": []
                     },
                     {
-                      "name": "hangar:polySurface2110_MeshPart4",
+                      "name": "polySurface2160_MeshPart4",
                       "components": [
                         {
                           "localPosition": [
@@ -2415,7 +2146,7 @@
                           "type": "Transform"
                         },
                         {
-                          "mesh": "hangar 1_hangar:polySurface2110_MeshPart4",
+                          "mesh": "hangar 1_polySurface2160_MeshPart4",
                           "enabled": true,
                           "castShadows": true,
                           "receiveShadows": true,
@@ -2427,7 +2158,7 @@
                             0.0
                           ],
                           "materials": [
-                            "hangar_polySurface2110Mat"
+                            "polySurface2160Mat"
                           ],
                           "type": "MeshRenderer"
                         }
