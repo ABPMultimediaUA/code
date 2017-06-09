@@ -40,6 +40,6 @@ private:
 	glm::vec3 r;
 	bool fija;
 	int id;
-	float anguloInicial;
+	float anguloInicial, rotAnterior, rotX;
 };
 
