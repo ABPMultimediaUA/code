@@ -114,25 +114,3 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks 8-s.jpg
 Ns 18.00
-newmtl phong9SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 9-d.jpg
-bump 9-n.jpg -bm 1
-Ni 1.00
-Ks 0.00 0.00 0.00
-map_Ks 9-s.jpg
-Ns 18.00
-newmtl phong10SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 10-d.jpg
-bump 10-n.jpg -bm 1
-Ni 1.00
-Ks 0.00 0.00 0.00
-map_Ks 10-s.jpg
-Ns 18.00

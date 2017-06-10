@@ -2201,9 +2201,9 @@
               "components": [
                 {
                   "localPosition": [
-                    14.3,
-                    -6.0,
-                    41.8
+                    14.2,
+                    0.0,
+                    42.18
                   ],
                   "localRotation": [
                     0.0,
@@ -2222,7 +2222,7 @@
               ],
               "children": [
                 {
-                  "name": "default",
+                  "name": "polySurface2543_polySurface2160",
                   "components": [
                     {
                       "localPosition": [
@@ -2245,7 +2245,7 @@
                       "type": "Transform"
                     },
                     {
-                      "mesh": "puerta-1_default",
+                      "mesh": "puerta-1_polySurface2543_polySurface2160",
                       "enabled": true,
                       "castShadows": true,
                       "receiveShadows": true,
@@ -2257,7 +2257,7 @@
                         0.0
                       ],
                       "materials": [
-                        "initialShadingGroup"
+                        "phong10SG"
                       ],
                       "type": "MeshRenderer"
                     }
