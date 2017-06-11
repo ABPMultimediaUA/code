@@ -2172,7 +2172,7 @@
           ]
         },
         {
-          "name": "Modelo-Puerta-ABIERTA-ARRIBA",
+          "name": "Modelo-Puerta-ABIERTA-ARRIBA-H",
           "components": [
             {
               "localPosition": [
@@ -2267,6 +2267,227 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-ARRIBA-V",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -5.99,
+                    0.0,
+                    19.43
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    1.11,
+                    0.0,
+                    19.25
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-V",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": []
         }
       ]
     },

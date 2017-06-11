@@ -230,7 +230,7 @@ void Puerta::abrirPuerta() {
 			}
 		}
 
-		if (motor->getPosicion(this->getNodo()).y<8)
+		if (motor->getPosicion(this->getNodo()).y<10)
 		{
 			std::cout << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
 			motor->trasladar(this->getNodo(), 0, 2, 0);  //:*
@@ -245,7 +245,7 @@ void Puerta::cerrarPuerta() {
 	if (t_puerta == "ARRIBA")
 	{
 
-		if (motor->getPosicion(this->getNodo()).y > -60)
+		if (motor->getPosicion(this->getNodo()).y > 0)
 		{
 			std::cout << "pos puerta: " << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
 			motor->trasladar(this->getNodo(), 0, -2, 0);
