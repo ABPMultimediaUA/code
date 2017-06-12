@@ -174,6 +174,15 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 		
 			rotAnterior = anguloRaton - 180;
 			//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+
+				if (rotAnterior < 0.0f) {
+					rotAnterior += 360;
+				}
+
+				else if (rotAnterior > 360.0f) {
+					rotAnterior -= 360;
+				}
+
 		}
 
 		else if (tecla == 3) {

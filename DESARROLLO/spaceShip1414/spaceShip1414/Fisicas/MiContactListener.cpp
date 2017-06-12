@@ -747,16 +747,13 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 				//iden = 6 -> sensor de activar; iden = 7 -> sensor de desactivar
 
-				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6 && f2->IsSensor()) {
+				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 7 && f2->IsSensor()) {
 					ActivadorCamara *cam = static_cast<ActivadorCamara*>(entity2->getObjeto3D());
 					std::cout << "camID: " << cam->getID() << std::endl;
 					motor->cambiarCamaraActiva(cam->getID(), cam->getDirCamara());
 					asignarVecDirector(entity1, cam);
 				}
 
-				else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 6 && f1->IsSensor()) {
-
-				}
 
 
 			}
@@ -850,14 +847,6 @@ void MiContactListener::EndContact(b2Contact* contact) {
 				}
 
 				//iden = 6 -> sensor de activar; iden = 7 -> sensor de desactivar
-
-				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 6 && f2->IsSensor()) {
-					
-				}
-
-				else if (entity2->getIDEN() == 0 && entity1->getIDEN() == 6 && f1->IsSensor()) {
-
-				}
 
 			}
 		}
