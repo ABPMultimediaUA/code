@@ -237,15 +237,15 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
     bodyDef.position.Set((pos.x), (-pos.z));
 
 	if (raza == 10) {
-		bodyShape.SetAsBox(5.0f, 5.0f);
+		bodyShape.SetAsBox(1.0f, 1.0f);
 	}
 
 	else if (raza == 11) {
-		bodyShape.SetAsBox(10.0f, 10.0f);
+		bodyShape.SetAsBox(2.0f, 2.0f);
 	}
 
 	bodyCircle.m_p.Set(0, 0);
-	bodyCircle.m_radius = 45; 
+	bodyCircle.m_radius = 5; 
 
     body = world->CreateBody(&bodyDef);
 	body->CreateFixture(&bodyCircle, 1.0f);
@@ -258,7 +258,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 
     sombraDef.type = b2_kinematicBody;
     sombraDef.position.Set(pos.x, pos.z);
-    sombraShape.SetAsBox(6.0f, 6.0f);
+    sombraShape.SetAsBox(2.0f, 2.0f);
     sombraE = world->CreateBody(&sombraDef);
     sombraE -> CreateFixture(&sombraShape, 1.0f);
 	

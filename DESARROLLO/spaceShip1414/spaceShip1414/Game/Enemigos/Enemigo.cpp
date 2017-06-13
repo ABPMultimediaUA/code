@@ -22,6 +22,7 @@
 //#include "../Jugador/Bala.h"
 #include "LogicaDifusa.h"
 #include "Flocking\Flocking.h"
+#include "../graphicEngine/TGraphicEngine.h"
 
 
 
@@ -48,6 +49,17 @@
 
 //Enemigo::Enemigo(const Enemigo& orig) {
 //}
+
+Enemigo::Enemigo(TGraphicEngine *motor, Mundo *m, glm::vec3 posicion, Waypoints * puntos)
+{
+		
+	engine = motor;
+	puntoIni = nullptr;
+	puntoFin = nullptr;
+	dir = -1;
+	vista = false;
+
+}
 
 Enemigo::~Enemigo() {
  //   std::cout << "" << std::endl;
@@ -309,6 +321,11 @@ glm::vec3 Enemigo::getPos() {
     return pos;
 }
 
+glm::vec3 Enemigo::getRot()
+{
+	return rot;
+}
+
 glm::vec3 Enemigo::getVectorVel()
 {
 	return vecVel;
@@ -538,4 +555,44 @@ void Enemigo::setGrupoFlocking(Entity2D *e) {
 
 void Enemigo::deleteEntity(Entity2D *e) {
 	floc->removeEntity(e);
+}
+
+float Enemigo::getYaw()
+{
+	return yaw;
+}
+
+float Enemigo::getPitch()
+{
+	return pitch;
+}
+
+void Enemigo::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
+{
+	motorApp->rotar(nodo, a, x, y, z);
+}
+
+void Enemigo::rotationYPR(TGraphicEngine * motorApp, float y, float p, float r)
+{
+	motorApp->rotarYPR(nodo, y, p, r);
+}
+
+void Enemigo::scale(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->escalar(nodo, x, y, z);
+}
+
+void Enemigo::translation(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->trasladar(nodo, x, y, z);
+}
+
+void Enemigo::setYaw(float y)
+{
+	yaw = y;
+}
+
+void Enemigo::setPitch(float p)
+{
+	pitch = p;
 }

@@ -30,6 +30,11 @@ class Entity2D;
 class Bala;
 class LogicaDifusa;
 class Flocking;
+class TTransform;
+class TGraphicEngine;
+class TNodo;
+class Mundo;
+
 
 #define CRIA 10
 #define BERSERKER 11
@@ -75,8 +80,8 @@ typedef struct
 	{
 		posicion += velocidad*dt;
 		orientacion += rotacion*dt;
-		posicion.y = 10;
-		st.linear.y = 10;
+		posicion.y = 0;
+		st.linear.y = 0;
 		velocidad += st.linear*dt;
 		rotacion += st.angular*dt;
 
@@ -97,6 +102,7 @@ class Enemigo {
 
 public:
 	//Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, glm::vec3 posicion, Waypoints* puntos);
+	Enemigo(TGraphicEngine*, Mundo*, glm::vec3 posicion, Waypoints *puntos);
 	// Enemigo(const Enemigo& orig);
 	virtual ~Enemigo();
 
@@ -110,6 +116,8 @@ public:
 	void setPos(glm::vec3 pos);
 	bool estaVivo();
 	glm::vec3 getPos();
+	glm::vec3 getRot();
+	glm::vec3 getScale();
 	glm::vec3 getVectorVel();
 	float getVel();
 	virtual void quitarVida(float damage) = 0;
@@ -159,10 +167,22 @@ public:
 	void deleteEntity(Entity2D * e);
 
 
+	//metodos del motor
+
+	float getYaw();
+	float getPitch();
+	void rotation(TGraphicEngine *, float, float, float, float);
+	void rotationYPR(TGraphicEngine *, float, float, float);
+	void scale(TGraphicEngine *, float, float, float);
+	void translation(TGraphicEngine *, float, float, float);
+	void setYaw(float);
+	void setPitch(float);
+
+
 protected:
 	
 
-	//IMeshSceneNode *maya;
+
 	float vel;
 	glm::vec3 vecVel;
 	glm::vec3 pos, rot, vectorUnitario;
@@ -170,10 +190,7 @@ protected:
 	int estadoActual;
 	float vida;
 	int raza;
-	//ITextSceneNode *GVida;
-	//ITextSceneNode *RVida;
-	//ISceneManager* smgr1;
-	//IVideoDriver* VD;
+
 	b2World* mundo;
 	float blindaje;
 	Waypoints *waypoints;
@@ -201,7 +218,11 @@ protected:
 	float damageBala;
 	float time;
 
-
+	//variables motor
+	TNodo *nodo;
+	TGraphicEngine * engine;
+	float yaw;
+	float pitch;
 };
 
 #endif /* ENEMIGO_H */

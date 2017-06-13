@@ -7,7 +7,7 @@ class TCamara;
 class TNodo;
 class Entity2D;
 class Mundo;
-
+class Bala;
 
 class player
 {
@@ -28,6 +28,7 @@ public:
 	glm::vec3 getRot();
 	glm::vec3 getScale();
 	glm::vec3 getPosAnt();
+	int getDireccion();
 	void setPos(float x, float y, float z);
 	void setRot(float x, float y, float z);
 	void setScale(float x, float y, float z);
@@ -36,6 +37,7 @@ public:
 	TNodo * getNodo();
 
 	void asignarVectorDirector(glm::vec3 u, float angle);
+	void actualizarPosicion();
 
 
 private:
@@ -51,5 +53,6 @@ private:
 	Entity2D *entity;
 	TNodo *nodo;
 	TGraphicEngine * engine;
+	int dir;
 };
 

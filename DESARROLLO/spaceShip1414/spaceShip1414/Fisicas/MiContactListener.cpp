@@ -16,9 +16,8 @@
 #include "../Game/Escenario/Puerta.h"
 #include "MiContactListener.h"
 #include "../Camara.h"
-//#include "../Jugador/Personaje.h"
 #include "../player.h"
-//#include "../Enemigos/Enemigo.h"
+#include "../Game/Enemigos/Enemigo.h"
 #include "Entity2D.h"
 //#include "../Escenario/Terminal.h"
 //#include "../Jugador/Inventario.h"
@@ -28,7 +27,7 @@
 //#include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionEscopeta.h"
 //#include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionPistola.h"
 //#include "../Jugador/Bala.h"
-//#include "../Enemigos/Nodo.h"
+#include "../Game/Enemigos/Nodo.h"
 #include "../graphicEngine/TGraphicEngine.h"
 #include "../ActivadorCamara.h"
 
@@ -262,94 +261,96 @@ void MiContactListener::addObjetoAlInventario(Entity2D * pers, Entity2D * objeto
 
 void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 
-	//Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
-	//Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
-//	int dir = p->getDireccion();
-//	float vel = 50000.0f;
-//
-//	//std::cout << "VELOSIDAD X: " << vel.x << "VELOSIDAD Y: " << vel.y << std::endl;
-//
-///*	std::cout << "//////////////////////////////////////////" << std::endl;
-//	std::cout << "" << std::endl;
-//	std::cout << "POS PERS ANTES" << std::endl;
-//	std::cout << "Pos 3D X: " << p->getPos().X << "Pos 3D Z: " << p->getPos().Z << std::endl;
-//	std::cout << "Pos 2D X: " << bodyPers->GetPosition().x << "Pos 2D Z: " << bodyPers->GetPosition().y << std::endl;
-//	*/
-//
-//	std::cout << "//////////////////////////////////////////" << std::endl;
-//	std::cout << "" << std::endl;
-//	std::cout << "VIDA: " <<p->getVida()<< std::endl;
-//	std::cout << "" << std::endl;
-//	std::cout << "//////////////////////////////////////////" << std::endl;
-//
-//	//p->setImpulso(true);
-//	//p->iniciarTiempoImpulso();
-//	//p->quitarVida(e->getDamageChoque());
-//
-//	switch (dir) {
-//
-//	case 0:
-//
-//		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, 0.0f), true);
-//
-//	break;
-//
-//	case 1:
-//
-//		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, 0.0f), true);
-//
-//
-//	break;
-//
-//	case 2:
-//
-//		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(0.0f, -vel), true);
-//
-//
-//	break;
-//
-//	case 3:
-//
-//		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(0.0f, vel), true);
-//
-//	break;
-//
-//	case 4:
-//
-//		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, -vel), true);
-//
-//
-//	break;
-//
-//	case 5:
-//
-//		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, vel), true);
-//
-//
-//	break;
-//
-//	case 6:
-//
-//		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, vel), true);
-//
-//
-//	break;
-//
-//	case 7:
-//
-//		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, -vel), true);
-//
-//
-//	break;
-//
-//
-//
-//
-//	}
-//
-//
-//	//p->actualizarPosicion();
-//
+	player *p = static_cast<player*>(pers->getObjeto3D());
+	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
+	int dir = p->getDireccion();
+	float vel = 50000.0f;
+
+	//std::cout << "VELOSIDAD X: " << vel.x << "VELOSIDAD Y: " << vel.y << std::endl;
+
+/*	std::cout << "//////////////////////////////////////////" << std::endl;
+	std::cout << "" << std::endl;
+	std::cout << "POS PERS ANTES" << std::endl;
+	std::cout << "Pos 3D X: " << p->getPos().X << "Pos 3D Z: " << p->getPos().Z << std::endl;
+	std::cout << "Pos 2D X: " << bodyPers->GetPosition().x << "Pos 2D Z: " << bodyPers->GetPosition().y << std::endl;
+	*/
+
+	//std::cout << "//////////////////////////////////////////" << std::endl;
+	//std::cout << "" << std::endl;
+	//std::cout << "VIDA: " <<p->getVida()<< std::endl;
+	//std::cout << "" << std::endl;
+	//std::cout << "//////////////////////////////////////////" << std::endl;
+
+	//falta hacer lo del tiempo
+
+	//p->setImpulso(true);
+	//p->iniciarTiempoImpulso();
+	//p->quitarVida(e->getDamageChoque());
+
+	switch (dir) {
+
+	case 0:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, 0.0f), true);
+
+	break;
+
+	case 1:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, 0.0f), true);
+
+
+	break;
+
+	case 2:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(0.0f, -vel), true);
+
+
+	break;
+
+	case 3:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(0.0f, vel), true);
+
+	break;
+
+	case 4:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, -vel), true);
+
+
+	break;
+
+	case 5:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(-vel, vel), true);
+
+
+	break;
+
+	case 6:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, vel), true);
+
+
+	break;
+
+	case 7:
+
+		bodyPers->ApplyLinearImpulseToCenter(b2Vec2(vel, -vel), true);
+
+
+	break;
+
+
+
+
+	}
+
+
+	p->actualizarPosicion();
+
 //	/*    std::cout<<"//////////////////////////////////////////"<<std::endl;
 //	            std::cout<<""<<std::endl;
 //	            std::cout<<"POS PERS DESPUES"<<std::endl;

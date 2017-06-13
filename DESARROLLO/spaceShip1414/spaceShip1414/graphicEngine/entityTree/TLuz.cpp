@@ -72,50 +72,50 @@ void TLuz::renderLuz(const glm::mat4& model, openGLShader& shader, const glm::ma
 	float Shininess = 0.1f;
 	float Strength = 0.2f;
 	
-	std::cout << "------------ Luz ID: " << id << " --------------" << std::endl;
+	//std::cout << "------------ Luz ID: " << id << " --------------" << std::endl;
 
 	glUniform1f(shader.getUniformLocation("Shininess"), Shininess);
 	glUniform1f(shader.getUniformLocation("Strength"), Strength);
 	std::string luz = "luz[" + std::to_string(id) + "].activa";
-	std::cout << luz << " -> " << activa << std::endl;
+	//std::cout << luz << " -> " << activa << std::endl;
 	glUniform1i(shader.getUniformLocation(luz), activa);
 	luz = "luz[" + std::to_string(id) + "].esLocal";
-	std::cout << luz << " -> " << esLocal << std::endl;
+	//std::cout << luz << " -> " << esLocal << std::endl;
 	glUniform1i(shader.getUniformLocation(luz), esLocal);
 	luz = "luz[" + std::to_string(id) + "].esFocal";
-	std::cout << luz << " -> " << esFoco << std::endl;
+//	std::cout << luz << " -> " << esFoco << std::endl;
 	glUniform1i(shader.getUniformLocation(luz), esFoco);
 	luz = "luz[" + std::to_string(id) + "].cAmbiente";
-	std::cout << luz << " -> " << ambient.r << " - " << ambient.g << " - " << ambient.b << std::endl;
+//	std::cout << luz << " -> " << ambient.r << " - " << ambient.g << " - " << ambient.b << std::endl;
 	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(ambient));
 	luz = "luz[" + std::to_string(id) + "].colorDS";
-	std::cout << luz << " -> " << color.r << " - " << color.g << " - " << color.b << std::endl;
+	//std::cout << luz << " -> " << color.r << " - " << color.g << " - " << color.b << std::endl;
 	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(color));
 	luz = "luz[" + std::to_string(id) + "].posicion";
-	std::cout << luz << " -> " << direccionLuz.x << " - " << direccionLuz.y << " - " << direccionLuz.z << std::endl;
+//	std::cout << luz << " -> " << direccionLuz.x << " - " << direccionLuz.y << " - " << direccionLuz.z << std::endl;
 	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(direccionLuz));
 	luz = "luz[" + std::to_string(id) + "].vectorMedio";
-	std::cout << luz << " -> " << vectorMedio.x << " - " << vectorMedio.y << " - " << vectorMedio.z << std::endl;
+//	std::cout << luz << " -> " << vectorMedio.x << " - " << vectorMedio.y << " - " << vectorMedio.z << std::endl;
 	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(vectorMedio));
 	luz = "luz[" + std::to_string(id) + "].direcCono";
-	std::cout << luz << " -> " << direccionCono.x << " - " << direccionCono.y << " - " << direccionCono.z << std::endl;
+	//std::cout << luz << " -> " << direccionCono.x << " - " << direccionCono.y << " - " << direccionCono.z << std::endl;
 	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(direccionCono));
 	luz = "luz[" + std::to_string(id) + "].spotCosCutOff";
-	std::cout << luz << " -> " << spotCosCutOff << std::endl;
+	//std::cout << luz << " -> " << spotCosCutOff << std::endl;
 	glUniform1f(shader.getUniformLocation(luz), spotCosCutOff);
 	luz = "luz[" + std::to_string(id) + "].spotExponent";
-	std::cout << luz << " -> " << spotExponent << std::endl;
+//	std::cout << luz << " -> " << spotExponent << std::endl;
 	glUniform1f(shader.getUniformLocation(luz), spotExponent);
 	luz = "luz[" + std::to_string(id) + "].atenuacionConstante";
-	std::cout << luz << " -> " << atenuacionConstante << std::endl;
+//	std::cout << luz << " -> " << atenuacionConstante << std::endl;
 	glUniform1f(shader.getUniformLocation(luz), atenuacionConstante);
 	luz = "luz[" + std::to_string(id) + "].atenuacionLinial";
-	std::cout << luz << " -> " << atenuacionLinial << std::endl;
+//	std::cout << luz << " -> " << atenuacionLinial << std::endl;
 	glUniform1f(shader.getUniformLocation(luz), atenuacionLinial);
 	luz = "luz[" + std::to_string(id) + "].atenuacionCuadratica";
-	std::cout << luz << " -> " << atenuacionCuadratica << std::endl;
+	//std::cout << luz << " -> " << atenuacionCuadratica << std::endl;
 	glUniform1f(shader.getUniformLocation(luz), atenuacionCuadratica);
-	std::cout << "-----------------------------------------" << std::endl;
+	//std::cout << "-----------------------------------------" << std::endl;
 }
 
 void TLuz::activar()

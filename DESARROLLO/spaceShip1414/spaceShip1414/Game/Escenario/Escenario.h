@@ -83,12 +83,12 @@ private:
 	std::list<ElementoHijo> Hijos;
 	std::list<Elemento> SubHijos;
 	Mundo *mundo;
-	//std::list<Enemigo*> enemigos;
+	std::list<Enemigo*> enemigos;
 	std::list<Pared*> Listparedes;
 	std::list<Puerta*> puertas;
 	std::vector<Camara*> listaDeCamaras;
 	//std::list<Objetos*> objConsumables;
-	//std::vector<Waypoints*> waypoints;
+	std::vector<Waypoints*> waypoints;
 	int tam;
 	Entity2D *entity;
 	// Juego *jue;

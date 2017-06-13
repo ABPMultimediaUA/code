@@ -107,6 +107,11 @@ glm::vec3 player::getScale()
 	return escale;
 }
 
+int player::getDireccion()
+{
+	return dir;
+}
+
 void player::setPos(float x, float y, float z)
 {
 	pos.x = x; pos.y = y; pos.z = z;
@@ -128,7 +133,7 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 	b2Vec2 vel(0,0);
 
-
+	dir = n;
 	glm::vec3 posSim;
 
 	if(n == -1) {
@@ -168,10 +173,12 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 	entity->getCuerpo2D()->SetLinearVelocity(vel);
 
-	engine->resetTransform(this->getNodo(), 't');
-	setPos(-entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	actualizarPosicion();
 
-	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	//engine->resetTransform(this->getNodo(), 't');
+	//setPos(-entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+
+	//engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 
 }
 
@@ -220,4 +227,12 @@ void player::asignarVectorDirector(glm::vec3 u, float angle) {
 	std::cout << "S: "<< glm::to_string(vecS) << std::endl;
 	std::cout <<"D:"<< glm::to_string(vecD) << std::endl;
 
+}
+
+void player::actualizarPosicion()
+{
+	engine->resetTransform(this->getNodo(), 't');
+	setPos(-entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+
+	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 }
