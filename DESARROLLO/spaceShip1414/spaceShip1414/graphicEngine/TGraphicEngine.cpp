@@ -750,6 +750,7 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		world->clearForcesBox2D();
 		move->checkKeys(window, this);
 		esce->actualizarEstadoPuerta();
+		esce->actualizarListaEnemigos(deltaTime);
 		glfwPollEvents();
 		draw(getLastTime());
 		glfwSetCursorPosCallback(window, mouse_callback);

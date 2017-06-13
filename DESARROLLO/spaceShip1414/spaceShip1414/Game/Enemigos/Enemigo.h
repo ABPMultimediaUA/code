@@ -51,7 +51,7 @@ class Mundo;
 #define CUERPOACUERPO 7
 #define FLOCKING 8
 
-#define MULTIVEL 25
+#define MULTIVEL 1
 //el enemigo deberia tener un estado que sea
 //siguiendo al lider o algo para aplicar el flocking
 
@@ -177,6 +177,8 @@ public:
 	void translation(TGraphicEngine *, float, float, float);
 	void setYaw(float);
 	void setPitch(float);
+	TNodo * getNodo();
+
 
 
 protected:

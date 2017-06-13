@@ -2575,7 +2575,7 @@ void Escenario::dibujarEscenario() {
 				tz = ((*T).position.z + (*I).position.z);
 
 				TNodo * caja = engine->addMalla();
-				engine->trasladar(caja, tx, ty, tz);
+				engine->trasladar(caja, tx, ty, -tz);
 
 	/*			IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
 					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
@@ -2954,36 +2954,36 @@ void Escenario::inicializarWaypoints()
 
 }
 
-void Escenario::actualizarListaEnemigos(/*f32 dt*/) {
+void Escenario::actualizarListaEnemigos(float dt) {
 
-	//if (!enemigos.empty()) {
-	//	for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
-	//		if ((*it) != NULL) {
-	//			if (!(*it)->estaVivo()) {
-	//				//std::cout << "HOLAAAAAA :D" << std::endl;
-	//				delete(*it);
-	//				it = enemigos.erase(it);
-	//			}
-	//			else
-	//				it++;
-	//		}
-	//		else
-	//			it++;
-	//	}
+	if (!enemigos.empty()) {
+		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
+			if ((*it) != NULL) {
+				if (!(*it)->estaVivo()) {
+					//std::cout << "HOLAAAAAA :D" << std::endl;
+					delete(*it);
+					it = enemigos.erase(it);
+				}
+				else
+					it++;
+			}
+			else
+				it++;
+		}
 
-	//	for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end(); it++) {
-	//		if ((*it) != NULL && (*it)->estaVivo() == true) {
+		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end(); it++) {
+			if ((*it) != NULL && (*it)->estaVivo() == true) {
 
-	//			//estados que usan / necesitan de la logica difusa
-	//			if((*it)->getEstado() == 3 || (*it)->getEstado() == 6 || (*it)->getEstado() == 7) {
-	//				(*it)->setPosJugador(pers->getPos().X, pers->getPos().Z);
-	//			}
+				//estados que usan / necesitan de la logica difusa
+				if((*it)->getEstado() == 3 || (*it)->getEstado() == 6 || (*it)->getEstado() == 7) {
+					(*it)->setPosJugador(jugador->getPos().x, jugador->getPos().z);
+				}
 
-	//			(*it)->Update(dt);
+				(*it)->Update(dt);
 
-	//		}
-	//	}
-	//}
+			}
+		}
+	}
 }
 
 

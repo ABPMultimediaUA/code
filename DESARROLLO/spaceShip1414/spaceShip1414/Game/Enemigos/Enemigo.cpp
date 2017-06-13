@@ -129,7 +129,7 @@ Kinematic Enemigo::seek(const glm::vec3 target)
 */
 
 	
-	float maxAcceleration = MULTIVEL * 2.5;
+	float maxAcceleration = MULTIVEL * 5.5;
 //	std::cout << "target  " << target.X << " " << target.Z << std::endl;
 	sto.linear = target - st.posicion;
 	//std::cout << "linear  " << sto.linear.X << " " << sto.linear.Z << std::endl;
@@ -160,7 +160,7 @@ Kinematic Enemigo::arrive(const glm::vec3 target) {
 	//distance = direction.getLength();
 	distance = sqrtf(powf(direction.x, 2) + powf(direction.z, 2));
 
-	float maxAcceleration = MULTIVEL * 2.5;
+	float maxAcceleration = MULTIVEL * 5.5;
 
 	if (distance < 5.0f)
 	{
@@ -213,7 +213,7 @@ void Enemigo::align(const glm::vec3 target){
 	float targetRotation;
 	float timeTarget = 0.1f;
 
-	float maxAngularAcceleration = MULTIVEL * 2.5;
+	float maxAngularAcceleration = MULTIVEL * 5.5;
 	float maxRotation = 135.0f;
 	float desireAngle = atan2f(-target.x, target.z) * 180 / 3.14f;
 	float rotationSize;
@@ -263,7 +263,7 @@ void Enemigo::align(const glm::vec3 target){
 
 void Enemigo::collisionAvoidance(glm::vec3 vecU) {
 
-	float maxAcceleration = MULTIVEL * 1.25f;
+	float maxAcceleration = MULTIVEL * 2.75f;
 
 
 	sto.linear = vecU * maxAcceleration;
@@ -331,9 +331,15 @@ glm::vec3 Enemigo::getVectorVel()
 	return vecVel;
 }
 
-void Enemigo::setPos(glm::vec3 pos) {
+void Enemigo::setPos(glm::vec3 p) {
 
     //maya->setPosition(pos);
+
+	engine->resetTransform(this->getNodo(), 't');
+	//setPos(entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	pos = p;
+	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+
 }
 
 float Enemigo::getVel() {
@@ -595,4 +601,9 @@ void Enemigo::setYaw(float y)
 void Enemigo::setPitch(float p)
 {
 	pitch = p;
+}
+
+TNodo * Enemigo::getNodo()
+{
+	return nodo;
 }

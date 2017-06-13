@@ -116,7 +116,7 @@ public:
 	std::list<Escenario::Elemento> getSubHijos();
 	void removeListHijos();
 	void removeListSubHijos();
-	void actualizarListaEnemigos(/*f32 dt*/);
+	void actualizarListaEnemigos(float dt);
 
 	std::list<Pared*> getParedes();
 	int getTam();
