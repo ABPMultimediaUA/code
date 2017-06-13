@@ -98,13 +98,9 @@ TCamara * TGraphicEngine::crearCamara(float fovy, float aspect, float nearr, flo
 	return new TCamara(fovy, aspect, nearr, farr);
 }
 
-TLuz * TGraphicEngine::crearLuz(float ax, float ay, float az, float dix, float diy, float diz, float sx, float sy, float sz, char t, float dirx, float diry, float dirz, bool a, float sE, float sCO)
+TLuz * TGraphicEngine::crearLuz(bool estaActiva, bool local, bool foco, float fAmbient[], float color[], float dicLuz[], float dicCono[], float sCosCutOff, float sExponet, float ateCos, float ateLin, float ateCua)
 {
-	TLuz* l = new TLuz(ax, ay, az, dix, diy, diz, sx, sy, sz, t, dirx, diry, dirz, a, sE, sCO);
-	if (a)
-	{
-		l->activar();
-	}
+	TLuz* l = new TLuz(estaActiva, local, foco, fAmbient, color, dicLuz, dicCono, sCosCutOff, sExponet, ateCos, ateLin, ateCua);
 
 	return l;
 }
@@ -381,7 +377,7 @@ TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoP
 	return nodoCamara;
 }
 
-TNodo * TGraphicEngine::addLuz(char t, TNodo * nodoPadre)
+TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre)
 {
 	TTransform *transfRL = crearTransform();
 	TTransform *transfEL = crearTransform();
@@ -397,7 +393,7 @@ TNodo * TGraphicEngine::addLuz(char t, TNodo * nodoPadre)
 	}
 	TNodo* nodoTransfEL = crearNodo(nodoTransfRL, transfEL);
 	TNodo* nodoTransfTL = crearNodo(nodoTransfEL, transfTL);
-	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz(0.1f, 0.1f, 0.1f, 1, 1, 1, 0.8f, 0.8f, 0.8f, t, 0, 10, 0, true, 2.5f, 5.0f));
+	TNodo* nodoLuz = crearNodo(nodoTransfTL, crearLuz());
 	addRegistroLuz(nodoLuz);
 	return nodoLuz;
 }
@@ -527,8 +523,6 @@ void TGraphicEngine::onstart()
 
 	shader.compile("graphicEngine/Shader/spaceShip1414.vs", "graphicEngine/Shader/spaceShip1414.fs");
 
-	// ocultar el cursor y ubicarlo en el centro de la ventana
-	//glfwSetInputMode(this->window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	glfwSetCursorPos(this->window, 1280 / 2, 720 / 2);
 }
 
@@ -569,7 +563,7 @@ void TGraphicEngine::camaraActivada()
 void TGraphicEngine::luzActivada()
 {
 	for (size_t i = 0; i < registroLuces.size(); i++) {
-		if (static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->getActiva())
+		if (static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->estaActiva())
 		{
 			glm::mat4 t = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getEntidad())->getMatriz();
 			glm::mat4 e = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getEntidad())->getMatriz();
@@ -748,7 +742,6 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		deltaTime = (currentFrame - last);
 		last = currentFrame;		
 		
-
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glEnable(GL_CULL_FACE);
 		//m_gui.draw();

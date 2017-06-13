@@ -13,6 +13,7 @@
 
 #include <stdlib.h>
 #include <time.h>
+#include <glm\glm.hpp>
 #include "Escenario.h"
 #include "Pared.h"
 #include "../Fisicas/Mundo.h"
@@ -188,15 +189,6 @@ void Escenario::dibujarEscenario() {
 	Waypoints *zona2 = new Waypoints();
 	Waypoints *zona3 = new Waypoints();
 	Waypoints *zona4 = new Waypoints();*/
-	TTransform *transfRM1 = engine->crearTransform();
-	TTransform *transfEM1 = engine->crearTransform();
-	TTransform *transfTM1 = engine->crearTransform();
-	TNodo* nodoTransfRM1;
-	TNodo* nodoTransfEM1;
-	TNodo* nodoTransfTM1;
-	TNodo* nodoMalla1;
-	TNodo* paredTM;
-	TNodo* paredes;
 	float tx, ty, tz, rx, ry, rz, ex, ey, ez;
 	//Camara *cam = new Camara(engine, true,
 	//	glm::vec3(0, 0, 0),
@@ -569,10 +561,24 @@ void Escenario::dibujarEscenario() {
 						Luces * luz = new Luces(engine, glm::vec3(tx * 2, ty, -tz * 2),
 							glm::vec3(rx, ry, -rz),
 							glm::vec3(ex, ey, ez));
-
-						TNodo * caja =  engine->addMalla();
-						engine->trasladar(caja, tx,ty,tz);
-
+						luz->activar();
+						luz->setLocal(true);
+						luz->setFoco(false);
+						float v[3] = { 0.2f, 0.2f, 0.2f };
+						luz->setAmbient(v);
+						v[0] = 16.0f;
+						v[1] = 16.0f;
+						v[2] = 16.0f;
+						luz->setColor(v);
+						luz->setAtenuacionConstante(1.0f);
+						luz->setAtenuacionLiniar(0.09f);
+						luz->setAtenuacionCuadratica(0.032f);
+						v[0] = (float)(tx * 2);
+						v[1] = (float)ty;
+						v[2] = (float)(-tz * 2);
+						luz->setDireccionLuz(v);
+						luz->setExponentFoco(glm::cos(glm::radians(15.0f)));
+						luz->setCosCutOffFoco(glm::cos(glm::radians(12.5f)));
 					}
 				}	
 			}

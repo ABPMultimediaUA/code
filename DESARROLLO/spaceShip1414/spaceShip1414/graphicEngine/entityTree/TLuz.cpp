@@ -7,102 +7,43 @@
 #include <glm\vec4.hpp>
 #include <glm\gtx\matrix_decompose.hpp>
 
-unsigned int TLuz::foco = 0;
-unsigned int TLuz::punto = 0;
+unsigned int TLuz::nLuces = 0;
 
-TLuz::TLuz(float ax, float ay, float az, float dix, float diy, float diz, float sx, float sy, float sz, char t, float dirx, float diry, float dirz, bool a, float sE, float sCO) : 
-difuse{ dix, diy, diz }, ambient{ ax, ay , az }, specular{ sx, sy , sz }, 
-direccion{ dirx, diry, dirz }, tipo{ t }, activa{ a }, spotExponent{ sE }, spotCutOff{ sCO }
+TLuz::TLuz(bool estaActiva, bool local, bool foco, float fAmbient[], float fColor[], float dicLuz[], float dicCono[], float sCosCutOff, float sExponet, float ateCos, float ateLin, float ateCua) :
+	activa{ estaActiva }, esLocal{ local }, esFoco{ foco }, spotCosCutOff{ sCosCutOff }, spotExponent{ sExponet }, atenuacionConstante{ ateCos }, atenuacionLinial{ ateLin }, atenuacionCuadratica{ ateCua }
 {
-	switch (t)
-	{
-		case 'p':
-			idLuz = punto;
-			punto++;
-			break;
-		case 'f':
-			idLuz = foco;
-			foco++;
-			break;
+	if (fAmbient != NULL) {
+		ambient = glm::vec3(fAmbient[0], fAmbient[1], fAmbient[2]);
 	}
+	else {
+		ambient = glm::vec3(0.2f, 0.2f, 0.2f);
+	}
+	if (fColor != NULL) {
+		color = glm::vec3(fColor[0], fColor[1], fColor[2]);
+	}
+	else {
+		color = glm::vec3(1.0f, 1.0f, 1.0f);
+	}
+	if (dicLuz != NULL) {
+		direccionLuz = glm::vec3(dicLuz[0], dicLuz[1], dicLuz[2]);
+	}
+	else {
+		direccionLuz = glm::vec3(0.0f, 0.0f, -40.0f);
+	}
+	if (dicCono != NULL) {
+		direccionCono = glm::vec3(dicCono[0], dicCono[1], dicCono[2]);
+	}
+	else {
+		direccionCono = glm::vec3(0.0f, -1.0f, 0.0f);
+	}
+	vectorMedio = glm::normalize(direccionLuz + glm::vec3(0, 0, 1));
+	id = nLuces;
+	++nLuces;
 }
 
 TLuz::~TLuz()
 {
 	std::cout << "TLuz Destroyed" << std::endl;
-}
-
-void TLuz::setDireccion(float x, float y, float z)
-{
-	this->direccion.x = x;
-	this->direccion.y = y;
-	this->direccion.z = z;
-}
-
-glm::vec3 TLuz::getDireccion()
-{
-	return direccion;
-}
-
-void TLuz::setDifuse(float x, float y, float z)
-{
-	this->difuse.x = x;
-	this->difuse.y = y;
-	this->difuse.z = z;
-}
-
-glm::vec3 TLuz::getDifuse()
-{
-	return difuse;
-}
-
-void TLuz::setAmbient(float x, float y, float z)
-{
-	this->ambient.x = x;
-	this->ambient.y = y;
-	this->ambient.z = z;
-}
-
-glm::vec3 TLuz::getAmbient()
-{
-	return ambient;
-}
-
-void TLuz::setSpecular(float x, float y, float z)
-{
-	this->specular.x = x;
-	this->specular.y = y;
-	this->specular.z = z;
-}
-
-glm::vec3 TLuz::getSpecular()
-{
-	return specular;
-}
-
-char TLuz::getTipo()
-{
-	return tipo;
-}
-
-void TLuz::setSpotCutOff(float sCO)
-{
-	this->spotCutOff = sCO;
-}
-
-float TLuz::getSpotCutOff()
-{
-	return spotCutOff;
-}
-
-void TLuz::setSpotExponent(float sE)
-{
-	this->spotExponent = sE;
-}
-
-float TLuz::getSpotExponent()
-{
-	return spotExponent;
 }
 
 void TLuz::beginDraw()
@@ -118,21 +59,6 @@ void TLuz::endDraw()
 {
 }
 
-void TLuz::activar()
-{
-	activa = true;
-}
-
-void TLuz::desactivar()
-{
-	activa = false;
-}
-
-bool TLuz::getActiva()
-{
-	return activa;
-}
-
 void TLuz::renderLuz(const glm::mat4& model, openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
 {
 	glm::mat4 MV = view * model;
@@ -143,85 +69,196 @@ void TLuz::renderLuz(const glm::mat4& model, openGLShader& shader, const glm::ma
 	glUniformMatrix4fv(shader.getUniformLocation("mv_matrix"), 1, GL_FALSE, glm::value_ptr(MV));
 	glUniformMatrix3fv(shader.getUniformLocation("n_matrix"), 1, GL_FALSE, glm::value_ptr(N));
 
-	//tipo de luces
-	glm::vec3 pos = descomponerMatriz(model);
-
-	switch (tipo)
-	{
-		case 'd': 
-			luzDireccional(MV, shader); 
-			break;
-		case 'p': 
-			luzPuntual(pos, shader);
-			break;
-		case 'f': 
-			luzFocal(pos, shader, MV); 
-			break;
-	}
+	float Shininess = 0.1f;
+	float Strength = 0.2f;
 	
-	//glUniform1i(shader.getUniformLocation("texture_off"), texture ? GL_TRUE : GL_FALSE);
-	//glUniform1i(shader.getUniformLocation("normal_off"), normal ? GL_TRUE : GL_FALSE);
+	std::cout << "------------ Luz ID: " << id << " --------------" << std::endl;
+
+	glUniform1f(shader.getUniformLocation("Shininess"), Shininess);
+	glUniform1f(shader.getUniformLocation("Strength"), Strength);
+	std::string luz = "luz[" + std::to_string(id) + "].activa";
+	std::cout << luz << " -> " << activa << std::endl;
+	glUniform1i(shader.getUniformLocation(luz), activa);
+	luz = "luz[" + std::to_string(id) + "].esLocal";
+	std::cout << luz << " -> " << esLocal << std::endl;
+	glUniform1i(shader.getUniformLocation(luz), esLocal);
+	luz = "luz[" + std::to_string(id) + "].esFocal";
+	std::cout << luz << " -> " << esFoco << std::endl;
+	glUniform1i(shader.getUniformLocation(luz), esFoco);
+	luz = "luz[" + std::to_string(id) + "].cAmbiente";
+	std::cout << luz << " -> " << ambient.r << " - " << ambient.g << " - " << ambient.b << std::endl;
+	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(ambient));
+	luz = "luz[" + std::to_string(id) + "].colorDS";
+	std::cout << luz << " -> " << color.r << " - " << color.g << " - " << color.b << std::endl;
+	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(color));
+	luz = "luz[" + std::to_string(id) + "].posicion";
+	std::cout << luz << " -> " << direccionLuz.x << " - " << direccionLuz.y << " - " << direccionLuz.z << std::endl;
+	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(direccionLuz));
+	luz = "luz[" + std::to_string(id) + "].vectorMedio";
+	std::cout << luz << " -> " << vectorMedio.x << " - " << vectorMedio.y << " - " << vectorMedio.z << std::endl;
+	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(vectorMedio));
+	luz = "luz[" + std::to_string(id) + "].direcCono";
+	std::cout << luz << " -> " << direccionCono.x << " - " << direccionCono.y << " - " << direccionCono.z << std::endl;
+	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(direccionCono));
+	luz = "luz[" + std::to_string(id) + "].spotCosCutOff";
+	std::cout << luz << " -> " << spotCosCutOff << std::endl;
+	glUniform1f(shader.getUniformLocation(luz), spotCosCutOff);
+	luz = "luz[" + std::to_string(id) + "].spotExponent";
+	std::cout << luz << " -> " << spotExponent << std::endl;
+	glUniform1f(shader.getUniformLocation(luz), spotExponent);
+	luz = "luz[" + std::to_string(id) + "].atenuacionConstante";
+	std::cout << luz << " -> " << atenuacionConstante << std::endl;
+	glUniform1f(shader.getUniformLocation(luz), atenuacionConstante);
+	luz = "luz[" + std::to_string(id) + "].atenuacionLinial";
+	std::cout << luz << " -> " << atenuacionLinial << std::endl;
+	glUniform1f(shader.getUniformLocation(luz), atenuacionLinial);
+	luz = "luz[" + std::to_string(id) + "].atenuacionCuadratica";
+	std::cout << luz << " -> " << atenuacionCuadratica << std::endl;
+	glUniform1f(shader.getUniformLocation(luz), atenuacionCuadratica);
+	std::cout << "-----------------------------------------" << std::endl;
 }
 
-void TLuz::luzDireccional(const glm::mat4 & MV, openGLShader& shader)
+void TLuz::activar()
 {
-	glm::vec3 lightDirEyeSpace = glm::vec3(MV * glm::vec4(this->direccion, 0));
-	glUniform3fv(shader.getUniformLocation("dirLight.direction"), 1, glm::value_ptr(lightDirEyeSpace));
-	glUniform3fv(shader.getUniformLocation("dirLight.ambient"), 1, glm::value_ptr(ambient));
-	glUniform3fv(shader.getUniformLocation("dirLight.diffuse"), 1, glm::value_ptr(difuse));
-	glUniform3fv(shader.getUniformLocation("dirLight.specular"), 1, glm::value_ptr(specular));
+	activa = true;
 }
 
-void TLuz::luzFocal(const glm::vec3 & pos, openGLShader & shader, const glm::mat4 & MV)
+void TLuz::desactivar()
 {
-	std::string variable = "spotLight[" + std::to_string(idLuz) + "].position";
-	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(pos));
-	std::cout << variable << " ";
-	glm::vec3 spotPos(pos.x, 0, pos.z);
-	glm::vec3 spotDir = glm::normalize(glm::vec3(MV * glm::vec4(spotPos - pos, 0)));
-	variable = "spotLight[" + std::to_string(idLuz) + "].direction";
-	std::cout << variable << " ";
-	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(spotDir));
-	variable = "spotLight[" + std::to_string(idLuz) + "].exponent";
-	std::cout << variable << " ";
-	glUniform1f(shader.getUniformLocation(variable), spotExponent);
-	variable = "spotLight[" + std::to_string(idLuz) + "].cutOff";
-	std::cout << variable << " ";
-	glUniform1f(shader.getUniformLocation(variable), spotCutOff);
-	variable = "spotLight[" + std::to_string(idLuz) + "].ambient";
-	std::cout << variable << " ";
-	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(ambient));
-	variable = "spotLight[" + std::to_string(idLuz) + "].diffuse";
-	std::cout << variable << " ";
-	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(difuse));
-	variable = "spotLight[" + std::to_string(idLuz) + "].specular";
-	std::cout << variable << std::endl;
-	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(specular));
+	activa = false;
 }
 
-void TLuz::luzPuntual(const glm::vec3 & pos, openGLShader & shader)
+bool TLuz::estaActiva()
 {
-	std::string variable = "pointLights[" + std::to_string(idLuz) + "].position";
-	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(pos));
-	variable = "pointLights[" + std::to_string(idLuz) + "].ambient";
-	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(ambient));
-	variable = "pointLights[" + std::to_string(idLuz) + "].diffuse";
-	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(difuse));
-	variable = "pointLights[" + std::to_string(idLuz) + "].specular";
-	glUniform3fv(shader.getUniformLocation(variable), 1, glm::value_ptr(specular));
+	return activa;
 }
 
-glm::vec3 TLuz::descomponerMatriz(const glm::mat4 & model)
+bool TLuz::esAmbiental()
 {
-	glm::mat4 transform = model;
-	glm::vec3 scale;
-	glm::quat rotation;
-	glm::vec3 translation;
-	glm::vec3 skew;
-	glm::vec4 perspective;
-	glm::decompose(transform, scale, rotation, translation, skew, perspective);
-	rotation = glm::conjugate(rotation);
-	glm::vec3 rotEulerAngle = glm::eulerAngles(rotation);
+	if (esLocal)
+		return false;
+	else
+		return true;
+}
 
-	return translation * rotEulerAngle;
+bool TLuz::esPuntual()
+{
+	if (esLocal && !esFoco)
+		return true;
+	else
+		return false;
+}
+
+bool TLuz::esFocal()
+{
+	return esFoco;
+}
+
+void TLuz::setLocal(bool l)
+{
+	esLocal = l;
+}
+
+void TLuz::setFoco(bool f)
+{
+	esFoco = f;
+}
+
+void TLuz::setAmbient(float v[])
+{
+	ambient.r = v[0];
+	ambient.g = v[1];
+	ambient.b = v[2];
+}
+
+void TLuz::setColor(float v[])
+{
+	color.r = v[0];
+	color.g = v[1];
+	color.b = v[2];
+}
+
+void TLuz::setDireccionLuz(float v[])
+{
+	direccionLuz.x = v[0];
+	direccionLuz.y = v[1];
+	direccionLuz.z = v[2];
+	vectorMedio = glm::normalize(direccionLuz + glm::vec3(0, 0, 1));
+}
+
+void TLuz::setDireccionCono(float v[])
+{
+	direccionCono.x = v[0];
+	direccionCono.y = v[1];
+	direccionCono.z = v[2];
+}
+
+void TLuz::setCosCutOffFoco(float f)
+{
+	spotCosCutOff = f;
+}
+
+void TLuz::setExponentFoco(float f)
+{
+	spotExponent = f;
+}
+
+void TLuz::setAtenuacionConstante(float f)
+{
+	atenuacionConstante = f;
+}
+
+void TLuz::setAtenuacionLiniar(float f)
+{
+	atenuacionLinial = f;
+}
+
+void TLuz::setAtenuacionCuadratica(float f)
+{
+	atenuacionCuadratica = f;
+}
+
+glm::vec3 TLuz::getAmbient()
+{
+	return ambient;
+}
+
+glm::vec3 TLuz::getColor()
+{
+	return color;
+}
+
+glm::vec3 TLuz::getDireccionLuz()
+{
+	return direccionLuz;
+}
+
+glm::vec3 TLuz::getDireccionCono()
+{
+	return direccionCono;
+}
+
+float TLuz::getCosCutOffFoco()
+{
+	return spotCosCutOff;
+}
+
+float TLuz::getExponentFoco()
+{
+	return spotExponent;
+}
+
+float TLuz::getAtenuacionConstante()
+{
+	return atenuacionConstante;
+}
+
+float TLuz::getAtenuacionLiniar()
+{
+	return atenuacionLinial;
+}
+
+float TLuz::getAtenuacionCuadratica()
+{
+	return atenuacionCuadratica;
 }

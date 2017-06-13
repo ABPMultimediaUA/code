@@ -107,8 +107,6 @@ glm::vec3 player::getScale()
 	return escale;
 }
 
-
-
 void player::setPos(float x, float y, float z)
 {
 	pos.x = x; pos.y = y; pos.z = z;

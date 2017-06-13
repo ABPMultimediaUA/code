@@ -1,30 +1,23 @@
 #include "Luces.h"
+#include <iostream>
 #include "..\graphicEngine\TGraphicEngine.h"
-#include "..\graphicEngine\entityTree\TTransform.h"
 #include "..\graphicEngine\entityTree\TNodo.h"
 #include "..\graphicEngine\entityTree\TLuz.h"
 
-#include "..\graphicEngine\entityTree\TCamara.h"
-#include <string>
 
-
-
-
-Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca) : velocity{ 1.0f }, yaw{ 0 }, pitch{ 0 }
+Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca) : velocity{ 1.0f }
 {
 
-	TNodo* nodoLuz = motorApp->addLuz('d');
-	motorApp->trasladar(nodoLuz, tras.x, tras.y, tras.z+20);
-	motorApp->rotarYPR(nodoLuz, r.x, r.y, r.z);
-	motorApp->escalar(nodoLuz, sca.x, sca.y, sca.z);
-	motorApp->addRegistroLuz(nodoLuz);
+	nodo = motorApp->addLuz();
+	motorApp->trasladar(nodo, tras.x, tras.y, tras.z+20);
+	motorApp->rotarYPR(nodo, r.x, r.y, r.z);
+	motorApp->escalar(nodo, sca.x, sca.y, sca.z);
+	motorApp->addRegistroLuz(nodo);
 }
 
 Luces::~Luces()
 {
-	delete(scale);
-	delete(rotation);
-	delete(translation);
+	std::cout << "Escenario::Luz delete" << std::endl;
 }
 
 
@@ -33,57 +26,159 @@ float Luces::getVelocity()
 	return velocity;
 }
 
-float Luces::getYaw()
-{
-	return yaw;
-}
-
-float Luces::getPitch()
-{
-	return pitch;
-}
-
-TTransform * Luces::Rotation()
-{
-	return rotation;
-}
-
-TTransform * Luces::Scale()
-{
-	return scale;
-}
-
-TTransform * Luces::Translation()
-{
-	return translation;
-}
-
 void Luces::setVelocity(float v)
 {
 	velocity = v;
 }
 
-void Luces::setYaw(float y)
+void Luces::activar()
 {
-	yaw = y;
+	static_cast<TLuz*>(nodo->getEntidad())->activar();
 }
 
-void Luces::setPitch(float p)
+void Luces::desactivar()
 {
-	pitch = p;
+	static_cast<TLuz*>(nodo->getEntidad())->desactivar();
 }
 
-glm::vec3 Luces::getPos()
+bool Luces::estaActiva()
 {
-	return pos;
+	return static_cast<TLuz*>(nodo->getEntidad())->estaActiva();
 }
 
-glm::vec3 Luces::getRot()
+bool Luces::esAmbiental()
 {
-	return rot;
+	return static_cast<TLuz*>(nodo->getEntidad())->esAmbiental();
 }
 
-glm::vec3 Luces::getEscala()
+bool Luces::esPuntual()
 {
-	return escala;
+	return static_cast<TLuz*>(nodo->getEntidad())->esPuntual();
+}
+
+bool Luces::esFocal()
+{
+	return static_cast<TLuz*>(nodo->getEntidad())->esFocal();
+}
+
+void Luces::setLocal(bool l)
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setLocal(l);
+}
+
+void Luces::setFoco(bool f)
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setFoco(f);
+}
+
+void Luces::setAmbient(float v[])
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setAmbient(v);
+}
+
+void Luces::setColor(float v[])
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setColor(v);
+}
+
+void Luces::setDireccionLuz(float v[])
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setDireccionLuz(v);
+}
+
+void Luces::setDireccionCono(float v[])
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setDireccionCono(v);
+}
+
+void Luces::setCosCutOffFoco(float f)
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setCosCutOffFoco(f);
+}
+
+void Luces::setExponentFoco(float f)
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setExponentFoco(f);
+}
+
+void Luces::setAtenuacionConstante(float f)
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setAtenuacionConstante(f);
+}
+
+void Luces::setAtenuacionLiniar(float f)
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setAtenuacionLiniar(f);
+}
+
+void Luces::setAtenuacionCuadratica(float f)
+{
+	static_cast<TLuz*>(nodo->getEntidad())->setAtenuacionCuadratica(f);
+}
+
+glm::vec3 Luces::getAmbient()
+{
+	return static_cast<TLuz*>(nodo->getEntidad())->getAmbient();
+}
+
+glm::vec3 Luces::getColor()
+{
+	return static_cast<TLuz*>(nodo->getEntidad())->getColor();
+}
+
+glm::vec3 Luces::getDireccionLuz()
+{
+	return static_cast<TLuz*>(nodo->getEntidad())->getDireccionLuz();
+}
+
+glm::vec3 Luces::getDireccionCono()
+{
+	return static_cast<TLuz*>(nodo->getEntidad())->getDireccionCono();
+}
+
+float Luces::getCosCutOffFoco()
+{
+	return static_cast<TLuz*>(nodo->getEntidad())->getCosCutOffFoco();
+}
+
+float Luces::getExponentFoco()
+{
+	return static_cast<TLuz*>(nodo->getEntidad())->getExponentFoco();
+}
+
+float Luces::getAtenuacionConstante()
+{
+	return static_cast<TLuz*>(nodo->getEntidad())->getAtenuacionConstante();
+}
+
+float Luces::getAtenuacionLiniar()
+{
+	return static_cast<TLuz*>(nodo->getEntidad())->getAtenuacionLiniar();
+}
+
+float Luces::getAtenuacionCuadratica()
+{
+	return static_cast<TLuz*>(nodo->getEntidad())->getAtenuacionCuadratica();
+}
+
+void Luces::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
+{
+	motorApp->rotar(nodo, a, x, y, z);
+}
+
+void Luces::rotationYPR(TGraphicEngine * motorApp, float y, float p, float r)
+{
+	motorApp->rotarYPR(nodo, y, p, r);
+}
+
+void Luces::scale(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->rotarYPR(nodo, x, y, z);
+}
+
+void Luces::translation(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->rotarYPR(nodo, x, y, z);
+	float v[3] = { x,y,z };
+	static_cast<TLuz*>(nodo->getEntidad())->setDireccionLuz(v);
 }

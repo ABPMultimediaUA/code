@@ -9,246 +9,97 @@ struct Material {
 	float shininess_strength;
 };
 
-struct LuzDireccional {
-    vec3 direction;
-
-    vec3 ambient;
-    vec3 diffuse;
-    vec3 specular;
+struct Luces
+{
+	int activa;
+	int esLocal;
+	int esFocal;
+	vec3 cAmbiente;
+	vec3 colorDS;
+	vec3 posicion;
+	vec3 vectorMedio;
+	vec3 direcCono;
+	float spotCosCutOff;
+	float spotExponent;
+	float atenuacionConstante;
+	float atenuacionLinial;
+	float atenuacionCuadratica;
 };
 
-struct luzPuntual {
-    vec3 position;
-
-    //float constant;
-    //float linear;
-    //float quadratic;
-
-    vec3 ambient;
-    vec3 diffuse;
-    vec3 specular;
-};
-
-struct LuzFocal {
-    vec3 position;
-    vec3 direction;
-    float cutOff;
-    float exponent;
-
-    //float constant;
-    //float linear;
-    //float quadratic;
-
-    vec3 ambient;
-    vec3 diffuse;
-    vec3 specular;
-};
-
-#define NUM_LUCES_PUNTUALES 3
-#define NUM_LUCES_FOCALES 4
-
-const float constant = 1.0;
-const float linear = 0.3;
-const float quadratic = 0.1;
-
-uniform mat4 mv_matrix;
-uniform LuzDireccional dirLight;
-uniform luzPuntual pointLights[NUM_LUCES_PUNTUALES];
-uniform LuzFocal spotLight[NUM_LUCES_FOCALES];
+const int LuMax = 30;
+uniform Luces luz[LuMax];
+uniform float Shininess;
+uniform float Strength;
 uniform Material material;
-uniform sampler2DShadow shadowMap;
-
-//Controla si se pinta la MapaNormal
-uniform bool texture_off = true;
-uniform bool normal_off = true;
 
 in vec3 FragPos;
 in vec3 Normal;
 in vec2 TexCoords;
-in vec3 ViewSpace;
-in vec3 Tangent;
-in vec3 Bitangent;
-in vec4 Shadow;
 
-out vec4 color;
-
-// Funciones para el calculo del color segun el tipo de luz
-vec3 CalcLuzDireccional(LuzDireccional light, Material mate, vec2 texCoo, vec3 normal, vec3 fragPos, vec4 sombra, sampler2DShadow mapaSombra);
-vec3 CalcLuzPuntual(luzPuntual light, Material mate, vec2 texCoo, vec3 normal, vec3 fragPos, mat4 mV, vec3 p , vec4 sombra, sampler2DShadow mapaSombra);
-vec3 CalcLuzFocal(LuzFocal light, Material mate, vec2 texCoo, vec3 normal, vec3 fragPos, mat4 mV, vec3 p, vec4 sombra, sampler2DShadow mapaSombra);
+out vec4 FragColor;
 
 void main()
 {
-	vec3 normalT = texture(material.normal, TexCoords).rgb;
-		 normalT = normalT * 2.0 - vec3(1.0);
+	vec3 scatteredLight = vec3( 0.0 );
+	vec3 reflectedLight = vec3( 0.0 );
 
-	mat3 TBN = mat3(normalize(Tangent), normalize(Bitangent), normalize(Normal));
-
-	vec3 NT = normal_off ? Normal : TBN * normalT;
-	NT = normalize(NT);
-
-    vec3 result = CalcLuzDireccional(dirLight, material, TexCoords, NT, FragPos, Shadow, shadowMap);
-
-    for(int i = 0; i < NUM_LUCES_PUNTUALES; i++)
-        result += CalcLuzPuntual(pointLights[i], material, TexCoords, NT, FragPos, mv_matrix, ViewSpace, Shadow, shadowMap);
-
-    for(int i = 0; i < NUM_LUCES_FOCALES; i++)
-      result += CalcLuzFocal(spotLight[i], material, TexCoords, NT, FragPos, mv_matrix, ViewSpace, Shadow, shadowMap);
-
-    color = vec4(result, 1.0);
-}
-
-vec3 CalcLuzDireccional(LuzDireccional light, Material mate, vec2 texCoo, vec3 normal, vec3 fragPos, vec4 sombra, sampler2DShadow mapaSombra)
-{
-    vec3 NT = normalize(normal);
-	vec3 L = normalize(light.direction);
-	vec3 V = normalize(fragPos);
-	vec3 H = normalize(L + V);
-
-	float diff = max(0.0, dot(NT, L));
-	float spec = pow(max(0.0, dot(NT, H)), material.shininess) * material.shininess_strength;
-
-	vec3 ambient;
-	vec3 diffuse;
-	vec3 specular;
-
-	if(texture_off)
+	for ( int l = 0; l < LuMax; ++l )
 	{
-		ambient  = texture(mate.ambient , texCoo).rgb * light.ambient;
-		diffuse  = texture(mate.diffuse , texCoo).rgb * light.diffuse  * diff;
-		specular = texture(mate.specular, texCoo).rgb * light.specular * spec;
-		if(sombra.w > 1) {
-			float shadow = textureProj(mapaSombra, sombra);
-			diffuse = mix(diffuse, diffuse * sombra.xyz, 0.5);
-		} 
-	}
-	else
-	{
-		vec3 texture_ambient  = texture_off ? vec3(0.10) : texture(mate.ambient , texCoo).rgb;
-		vec3 texture_diffuse  = texture_off ? vec3(0.64) : texture(mate.diffuse , texCoo).rgb;
-		vec3 texture_specular = texture_off ? vec3(0.50) : texture(mate.specular, texCoo).rgb;
-
-		ambient  = texture_ambient * light.ambient;
-		diffuse  = texture_diffuse * light.diffuse  * diff;
-		specular = texture_specular * light.specular * spec;
-
-		if(sombra.w > 1) {
-			float shadow = textureProj(mapaSombra, sombra);
-			diffuse = mix(diffuse, diffuse * sombra.xyz, 0.5);
+		if ( luz[l].activa == 0 )
+		{
+				continue;
 		}
-	}
 
-	return (ambient + diffuse + specular);
-}
+		vec3 halfVector;
+		vec3 direccionLuz = luz[l].posicion;
+		float atenuacion = 1.0;
 
-vec3 CalcLuzPuntual(luzPuntual light, Material mate, vec2 texCoo, vec3 normal, vec3 fragPos, mat4 mV, vec3 p, vec4 sombra, sampler2DShadow mapaSombra)
-{
-    vec3 light_position = (mV * vec4(light.position, 1)).xyz;
-	vec3 L1 = light_position - p;
-	float d = length(L1);
-		
-	vec3 NT = normalize(normal);
-	vec3 L = normalize(L1);
-	vec3 V = normalize(fragPos);
+		if ( luz[l].esLocal == 1 )
+		{
+			direccionLuz = direccionLuz - FragPos;
+			float distanciaLuz = length(direccionLuz);
+			direccionLuz = direccionLuz / distanciaLuz;
+			atenuacion = 1.0 / ( luz[l].atenuacionConstante + luz[l].atenuacionLinial * distanciaLuz + luz[l].atenuacionCuadratica * distanciaLuz * distanciaLuz );
 
-	vec3 R = reflect(-L, NT);
+			if ( luz[l].esFocal == 1 )
+			{
+				float spotCos = dot( direccionLuz, -luz[l].direcCono );
 
-	float diff = max(0.0, dot(NT, L));
-	float spec = pow(max(0.0, dot(R, V)), material.shininess) * material.shininess_strength;
-	
-	vec3 ambient;
-	vec3 diffuse;
-	vec3 specular;
+				if ( spotCos < luz[l].spotCosCutOff)
+				{
+					atenuacion = 0.0;
+				}
+				else
+				{
+					atenuacion *= pow( spotCos, luz[l].spotExponent );
+				}
 
-	if(texture_off){
-		ambient  = texture(mate.ambient , texCoo).rgb * light.ambient;
-		diffuse  = texture(mate.diffuse , texCoo).rgb * light.diffuse  * diff;
-		specular = texture(mate.specular, texCoo).rgb * light.specular * spec;
-
-		if(sombra.w > 1) {
-			float shadow = textureProj(mapaSombra, sombra);
-			diffuse = mix(diffuse, diffuse * sombra.xyz, 0.5);
-		}
-	}
-	else{
-		vec3 texture_ambient  = texture_off ? vec3(0.10) : texture(mate.ambient , texCoo).rgb;
-		vec3 texture_diffuse  = texture_off ? vec3(0.64) : texture(mate.diffuse , texCoo).rgb;
-		vec3 texture_specular = texture_off ? vec3(0.50) : texture(mate.specular, texCoo).rgb;
-
-		ambient  = texture_ambient * light.ambient;
-		diffuse  = texture_diffuse * light.diffuse  * diff;
-		specular = texture_specular * light.specular * spec;
-
-		if(sombra.w > 1) {
-			float shadow = textureProj(mapaSombra, sombra);
-			diffuse = mix(diffuse, diffuse * sombra.xyz, 0.5);
-		}
-	}
-
-	float attenuationAmount = 1.0 / (constant + (linear*d) + (quadratic*d*d));
-
-	diffuse *= attenuationAmount;
-	specular *= attenuationAmount;
-	ambient *= attenuationAmount;
-    return (ambient + diffuse + specular);
-}
-
-vec3 CalcLuzFocal(LuzFocal light, Material mate, vec2 texCoo, vec3 normal, vec3 fragPos, mat4 mV, vec3 p, vec4 sombra, sampler2DShadow mapaSombra)
-{
-    vec3 light_position = (mV * vec4(light.position, 1)).xyz;
-	vec3 L1 = light_position - p;
-	float d = length(L1);
-		
-	vec3 NT = normalize(normal);
-	vec3 L = normalize(L1);
-	vec3 V = normalize(fragPos);
-
-	vec3 D = normalize(light.direction);
-	float spotEffect = dot(-L, D);
-
-	if(spotEffect > light.cutOff) {
-		spotEffect = pow(spotEffect, light.exponent);
-	
-		vec3 R = reflect(-L, NT);
-	
-		float diff = max(0.0, dot(NT, L));
-		float spec = pow(max(0.0, dot(R, V)), material.shininess) * material.shininess_strength;
-	
-		vec3 ambient;
-		vec3 diffuse;
-		vec3 specular;
-
-		if(texture_off){
-			ambient  = texture(mate.ambient , texCoo).rgb * light.ambient;
-			diffuse  = texture(mate.diffuse , texCoo).rgb * light.diffuse  * diff;
-			specular = texture(mate.specular, texCoo).rgb * light.specular * spec;
-
-			if(sombra.w > 1) {
-				float shadow = textureProj(mapaSombra, sombra);
-				diffuse = mix(diffuse, diffuse * sombra.xyz, 0.5);
+				//halfVector = normalize( direccionLuz + EyeDirection );
+				halfVector = normalize( direccionLuz + vec3( 0, 0, 1 ) );
 			}
-		}
-		else{
-			vec3 texture_ambient  = texture_off ? vec3(0.10) : texture(mate.ambient , texCoo).rgb;
-			vec3 texture_diffuse  = texture_off ? vec3(0.64) : texture(mate.diffuse , texCoo).rgb;
-			vec3 texture_specular = texture_off ? vec3(0.50) : texture(mate.specular, texCoo).rgb;
-
-			ambient  = texture_ambient * light.ambient;
-			diffuse  = texture_diffuse * light.diffuse  * diff;
-			specular = texture_specular * light.specular * spec;
-
-			if(sombra.w > 1) {
-				float shadow = textureProj(mapaSombra, sombra);
-				diffuse = mix(diffuse, diffuse * sombra.xyz, 0.5);
+			else
+			{
+				halfVector = luz[l].vectorMedio;
 			}
 		}
 
-		float attenuationAmount = spotEffect / (constant + (linear*d) + (quadratic*d*d));
+		float difusa = max( 0.0, dot( Normal, direccionLuz ) );
+		float especular = max( 0.0, dot( Normal, halfVector ) );
 
-		ambient  *= attenuationAmount;
-		diffuse  *= attenuationAmount;
-		specular *= attenuationAmount;
-		return (ambient + diffuse + specular);
+		if( difusa == 0.0 )
+		{
+			especular = 0.0;
+		}
+		else
+		{
+			especular = pow( especular, Shininess ) * Strength;
+		}
+
+		scatteredLight += ( texture( material.ambient , TexCoords ).rgb * luz[l].cAmbiente * atenuacion ) + ( texture( material.diffuse, TexCoords ).rgb * luz[l].colorDS * difusa ) * atenuacion;
+		reflectedLight += ( texture( material.specular , TexCoords ).rgb * luz[l].colorDS ) * especular * atenuacion;
 	}
-	return vec3(0.0, 0.0, 0.0);
+
+	vec3 rgb = min(scatteredLight + reflectedLight, vec3( 1.0 ) );
+
+	FragColor = vec4(rgb, 1.0);
 }
