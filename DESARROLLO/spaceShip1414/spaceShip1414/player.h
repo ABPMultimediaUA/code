@@ -39,11 +39,20 @@ public:
 	void asignarVectorDirector(glm::vec3 u, float angle);
 	void actualizarPosicion();
 
+	void iniciarTiempoImpulso();
+
+	void disminuirTem();
+
+	float getTemporizador();
+	void setImpulso(bool x);
+
+	bool getImpulso();
 
 private:
 	float velocity;
 	float yaw;
 	float pitch;
+	float temporizador;
 	glm::vec3 pos;
 	glm::vec3 rot;
 	glm::vec3 escale;
@@ -54,5 +63,7 @@ private:
 	TNodo *nodo;
 	TGraphicEngine * engine;
 	int dir;
+	bool impulso = false;
 };
+
 

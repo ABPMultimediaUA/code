@@ -236,3 +236,33 @@ void player::actualizarPosicion()
 
 	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 }
+
+
+//aplicar impulso
+
+void player::iniciarTiempoImpulso() {
+
+	temporizador = 4.0f;
+
+}
+
+void player::disminuirTem() {
+
+	temporizador -= 0.5f;
+}
+
+float player::getTemporizador() {
+
+	return temporizador;
+}
+
+void player::setImpulso(bool x) {
+	impulso = x;
+}
+
+bool player::getImpulso() {
+	return impulso;
+
+}
+
+//end;

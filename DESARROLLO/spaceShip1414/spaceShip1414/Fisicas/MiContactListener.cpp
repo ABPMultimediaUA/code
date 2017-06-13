@@ -283,8 +283,8 @@ void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 
 	//falta hacer lo del tiempo
 
-	//p->setImpulso(true);
-	//p->iniciarTiempoImpulso();
+	p->setImpulso(true);
+	p->iniciarTiempoImpulso();
 	//p->quitarVida(e->getDamageChoque());
 
 	switch (dir) {
