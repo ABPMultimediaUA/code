@@ -71,6 +71,7 @@ glm::mat4 TCamara::getProjectionMatrix()
 	}
 }
 
+
 void TCamara::beginDraw()
 {
 }

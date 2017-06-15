@@ -377,6 +377,7 @@ TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoP
 	return nodoCamara;
 }
 
+
 TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre)
 {
 	TTransform *transfRL = crearTransform();

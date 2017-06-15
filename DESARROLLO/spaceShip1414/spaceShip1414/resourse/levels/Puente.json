@@ -19417,6 +19417,59 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "PosCam",
+          "components": [
+            {
+              "localPosition": [
+                29.96,
+                5.0,
+                -15.3
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "18",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -24223,6 +24276,98 @@
                     2.0,
                     1.0,
                     0.5
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Plane",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "Default-Material"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "type": "MeshCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "0",
+              "components": [
+                {
+                  "localPosition": [
+                    12.98,
+                    -6.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    11.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Plane",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "Default-Material"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "type": "MeshCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "18",
+              "components": [
+                {
+                  "localPosition": [
+                    16.58,
+                    -6.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    11.0
                   ],
                   "name": null,
                   "parentName": null,

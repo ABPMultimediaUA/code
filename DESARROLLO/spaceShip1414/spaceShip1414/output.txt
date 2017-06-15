@@ -1,6 +1,6 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GTX 970/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 372.70
+Renderer: GeForce GT 720M/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 359.46
 GLSL: 4.50 NVIDIA
 
 Recurso nombre: nanosuit.obj
@@ -232,6 +232,7 @@ Recurso nombre: vestuario.obj
 *******************ry:  90
 *******************ry:  180
 *******************ry:  180
+*******************ry:  0
 ROTACIONES 1
 X: 0
 Y: 180
@@ -301,6 +302,8 @@ Recurso nombre: hall.obj
 ---------->15
 ---------->15
 ---------->14
+---------->0
+---------->18
 ANGLEEEEE: -180
 -90
 0
@@ -314,14 +317,12 @@ D:vec3(0.000000, 0.000000, 1.000000)
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -5.99 Y: 19.43
+ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-RAY DE CHOQUE
-X: -5.67205
-Y: 18.43
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -339,50 +340,21 @@ Y: -41.02
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 17.03 Y: -41.77
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 29.5563
-Y: -41.02
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 1.15 Y: 41.81
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -6.67308
-Y: 41.06
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: 1.11 Y: 19.25
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 3.84816
-Y: 18.25
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 28.41 Y: 41.81
+ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-RAY DE CHOQUE
-X: 19.19
-Y: 41.06
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -455,6 +427,9 @@ Posicion de la Entity X: -27.07 Y: -28.54
 RAY DE CHOQUE
 X: -26.57
 Y: -19.3027
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -544,17 +519,6 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -5.99 Y: 19.43
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -7.39365
-Y: 20.43
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -694,6 +658,15 @@ Y: 16.8136
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: 17.03 Y: -41.77
@@ -760,6 +733,9 @@ Posicion de la Entity X: -5.99 Y: 19.43
 RAY DE CHOQUE
 X: -9.13274
 Y: 18.43
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -904,14 +880,6 @@ Y: -42.52
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 17.03 Y: -41.77
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 30.1799
-Y: -42.52
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -984,14 +952,6 @@ Y: -42.52
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 1.15 Y: 41.81
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -7.36496
-Y: 42.56
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1052,14 +1012,6 @@ Y: 42.56
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 28.41 Y: 41.81
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 19.337
-Y: 42.56
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1293,6 +1245,9 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: -28.06 Y: -15.95
@@ -1410,24 +1365,276 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 
 NOMBRE: Waypoint-1 (5)
 POS NODO: 5
 
 NOMBRE: Waypoint-1 (3)
 POS NODO: 3
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.0498244
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.0833
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.6667
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.25
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.8333
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.4167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.5833
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.1667
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.75
+TIME: 0.0501565
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.0501356
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.9167
+TIME: 0.0499143
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.5
+TIME: 0.0328818
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.0833
+TIME: 0.0505699
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+TIME: 0.0502033
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.25
+TIME: 0.0497571
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.8333
+TIME: 0.0501286
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.4167
+TIME: 0.0500071
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25
+TIME: 0.050051
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   24.5833
+TIME: 0.0501693
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   24.1667
+TIME: 0.0498396
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   23.75
+TIME: 0.0501315
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   23.3333
+TIME: 0.0500855
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   22.9167
+TIME: 0.0665203
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   22.5
+TIME: 0.0501533
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 10 POS Y: 8.74228e-07
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 12.98 POS Y: 0
+///////////////////////////////////
+camID: 0
+ANGLEEEEE: 90.2433
+180.243
+270.243
+0.243347
+VECTORES
+DIR: vec3(-0.999991, 0.000000, -0.004247)
+A: vec3(0.004247, 0.000000, -0.999991)
+S: vec3(0.999991, 0.000000, 0.004247)
+D:vec3(-0.004247, 0.000000, 0.999991)
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   22.0833
+TIME: 0.0500568
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   21.6667
+TIME: 0.0500482
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   21.25
+TIME: 0.0501803
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.8333
+TIME: 0.0498371
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.4167
+TIME: 0.0501003
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20
+TIME: 0.0500732
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.5834
+TIME: 0.0500428
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.1667
+TIME: 0.0328096
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.75
+TIME: 0.0505375
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 13.75 POS Y: 0.0141586
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 16.58 POS Y: 0
+///////////////////////////////////
+camID: 18
+ANGLEEEEE: 180
+270
+360
+90
+VECTORES
+DIR: vec3(0.000000, 0.000000, -1.000000)
+A: vec3(1.000000, 0.000000, 0.000000)
+S: vec3(-0.000000, 0.000000, 1.000000)
+D:vec3(-1.000000, 0.000000, -0.000000)
+TIME: 0.0500683
+TIME: 0.0499468
+TIME: 0.0502124
+TIME: 0.0499948
+TIME: 0.049941
+TIME: 0.0501832
+TIME: 0.0502263
+TIME: 0.0497682
+TIME: 0.0501052
+TIME: 0.049911
+TIME: 0.0503901
+TIME: 0.049824
+TIME: 0.0499213
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.58 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 22.501 POS Y: 5.35562
+///////////////////////////////////
+TIME: 0.0501865
+TIME: 0.0665178
+TIME: 0.0501491
+TIME: 0.0500428
+TIME: 0.0500892
+TIME: 0.0500765
+TIME: 0.04998
+TIME: 0.049987
+TIME: 0.0500987
+TIME: 0.0500256
+TIME: 0.0499582
+TIME: 0.0501085
+TIME: 0.0500408
+TIME: 0.0500839
+TIME: 0.0662136
+TIME: 0.0505137
+TIME: 0.0829797
+TIME: 0.050425
+TIME: 0.0665034
+TIME: 0.0502304
+TIME: 0.0501828
+TIME: 0.0499394
+TIME: 0.0500469
+TIME: 0.0500884
+TIME: 0.0664739
+TIME: 0.0503117
+TIME: 0.0499862
+TIME: 0.0501442
+TIME: 0.0664037
+TIME: 0.0512375
+TIME: 0.0323917
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 12.98 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.9822 POS Y: -8.97894
+///////////////////////////////////
+TIME: 0.033613
+TIME: 0.0333207
+TIME: 0.0504973
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.58 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.5956 POS Y: -10.5638
+///////////////////////////////////
 
 NOMBRE DEL DESTINO: Waypoint-1
 NUM: 0
+TIME: 0.0329262
+TIME: 0.0332891
 
 NOMBRE DEL DESTINO: Waypoint-1 (4)
 NUM: 4
+TIME: 0.033381
+TIME: 0.0338499
+TIME: 0.0334607
+TIME: 0.0335728
+TIME: 0.0345708
+TIME: 0.0373008
+TIME: 0.0377503
+TIME: 0.0411294
+TIME: 0.0497973
+TIME: 0.0332378
+TIME: 0.0332973
 
 NOMBRE DEL DESTINO: Waypoint-1 (2)
 NUM: 2
+TIME: 0.0332776
 
 NOMBRE DEL DESTINO: Waypoint-1 (42)
 NUM: 41
+TIME: 0.0340986
+TIME: 0.0332747
+TIME: 0.0360749
+TIME: 0.0361197
+TIME: 0.0377503
+TIME: 0.0397143
+TIME: 0.033209
+TIME: 0.0504386
+TIME: 0.0334578
+TIME: 0.033303
+TIME: 0.0335937
 
 ////////////////////////
 COLISION
@@ -1439,7 +1646,7 @@ POS X: -5.99 POS Y: 19.43
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -14.3052 POS Y: 16.0007
+POS X: -14.2352 POS Y: 16.3333
 ///////////////////////////////////
 
 ////////////////////////
@@ -1452,7 +1659,161 @@ POS X: -5.99 POS Y: 19.43
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -14.3052 POS Y: 16.0007
+POS X: -14.2352 POS Y: 16.3333
+///////////////////////////////////
+TIME: 0.0341307
+TIME: 0.0365421
+TIME: 0.0366591
+TIME: 0.0427929
+TIME: 0.0332254
+TIME: 0.0334915
+TIME: 0.0501319
+TIME: 0.0330411
+TIME: 0.0334525
+TIME: 0.0331947
+TIME: 0.0337304
+TIME: 0.0333778
+TIME: 0.0342575
+TIME: 0.0355355
+TIME: 0.0357568
+TIME: 0.037153
+TIME: 0.0404327
+TIME: 0.0336401
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 14.1666 POS Y: 39.175
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+0 15.7
+TIME: 0.050088
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 14.1666 POS Y: 39.165
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+2 15.7
+TIME: 0.0331889
+ACTUALIZO 0
+ID PUERTA: 0
+4 15.7
+TIME: 0.0333457
+ACTUALIZO 0
+ID PUERTA: 0
+6 15.7
+TIME: 0.0333995
+8 15.7
+TIME: 0.0331844
+TIME: 0.0338018
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 14.1666 POS Y: 39.9983
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 14.46 POS Y: 41.97
+///////////////////////////////////
+camID: 0
+ANGLEEEEE: 90.2433
+180.243
+270.243
+0.243347
+VECTORES
+DIR: vec3(-0.999991, 0.000000, -0.004247)
+A: vec3(0.004247, 0.000000, -0.999991)
+S: vec3(0.999991, 0.000000, 0.004247)
+D:vec3(-0.004247, 0.000000, 0.999991)
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.3334
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   17.9167
+TIME: 0.0360134
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   17.5
+TIME: 0.0353228
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   17.0834
+TIME: 0.0380377
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 17.03 POS Y: -41.77
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 11.8808 POS Y: -36.2301
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.6667
+TIME: 0.0405321
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.25
+TIME: 0.0351693
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.555 POS Y: 40.4252
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 28.41 POS Y: 41.81
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0372339
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.036781
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.040741
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0504402
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.049331
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0333901
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0333277
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0338815
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -16 POS Y: 43.92
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -16.0348 POS Y: 36.9361
 ///////////////////////////////////
 
 ////////////////////////
@@ -1465,8 +1826,26 @@ POS X: 17.03 POS Y: -41.77
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 11.4835 POS Y: -36.1723
+POS X: 10.7945 POS Y: -40.015
 ///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0332378
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0332825
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0332476
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.050322
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0331762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0335855
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0332427
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0354021
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0482981
 
 ////////////////////////
 COLISION
@@ -1478,47 +1857,24 @@ POS X: -16 POS Y: 43.92
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -17.5314 POS Y: 36.9732
+POS X: -16.9624 POS Y: 41.3077
 ///////////////////////////////////
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -16 POS Y: 43.92
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -18.9537 POS Y: 41.0691
-///////////////////////////////////
-
-////////////////////////
-COLISION
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -27.05 POS Y: 41.97
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -19.3782 POS Y: 42.1334
-///////////////////////////////////
-
-////////////////////////
-COLISION
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 17.03 POS Y: -41.77
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 10.1365 POS Y: -40.015
-///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0329537
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0336072
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0346368
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0385603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0437198
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.034361
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0385266
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0388879
 
 ////////////////////////
 COLISION
@@ -1530,8 +1886,961 @@ POS X: -16 POS Y: 51.57
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -20.5814 POS Y: 44.8579
+POS X: -17.9215 POS Y: 45.0054
 ///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0380094
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0373459
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0463743
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0329869
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.035609
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.038706
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0427534
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0331717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0364814
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -16 POS Y: 51.57
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -19.1426 POS Y: 48.9385
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0335822
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.3717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   17.205
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   17.6216
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0383
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.455
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.8716
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.2883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.705
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.1216
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.5383
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 11.855 POS Y: 40.4659
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 1.15 POS Y: 41.81
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.635
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.635
+TIME: 0.0379597
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.635
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.635
+TIME: 0.0388058
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.635
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.635
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.635
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.635
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.635
+TIME: 0.0417858
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.635
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.2183
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.8017
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.385
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.9683
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.5517
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.135
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   17.7184
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   17.3017
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.885
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.4684
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.0517
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.555 POS Y: 40.4774
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 28.41 POS Y: 41.81
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0379679
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0328966
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 0
+cerrar123
+entra
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9532
+pos puerta: 10 15.7
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9515
+pos puerta: 8 15.7
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9497
+pos puerta: 6 15.7
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9479
+pos puerta: 4 15.7
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9461
+pos puerta: 2 15.7
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9444
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9426
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9408
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9391
+TIME: 0.0405559
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9373
+TIME: 0.0345305
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9355
+TIME: 0.0489541
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9338
+TIME: 0.0331885
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.932
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9302
+TIME: 0.0344139
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9284
+TIME: 0.04056
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9267
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9267
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9267
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9267
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9267
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9267
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9267
+TIME: 0.0443713
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9267
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9284
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9302
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.932
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9338
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9355
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9373
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9391
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9408
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9426
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9444
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9461
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9479
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9497
+TIME: 0.0373837
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9515
+TIME: 0.0508729
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9532
+TIME: 0.0489319
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0332796
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.5435 POS Y: 39.175
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.5435 POS Y: 39.175
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 28.41 POS Y: 41.81
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9568
+0 15.7
+TIME: 0.0340662
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.5432 POS Y: 39.165
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9585
+2 15.7
+TIME: 0.0337123
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+4 15.7
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+6 15.7
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+8 15.7
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+TIME: 0.0496557
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9603
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9585
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 0
+cerrar123
+entra
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.9568
+pos puerta: 10 15.7
+TIME: 0.0334126
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+pos puerta: 8 15.7
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+pos puerta: 6 15.7
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+pos puerta: 4 15.7
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+pos puerta: 2 15.7
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+TIME: 0.0328088
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.5383
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.1217
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   14.705
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   14.2883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.8717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.455
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.0384
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   12.6217
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   12.205
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   11.7884
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   11.3717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   10.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   10.5384
+TIME: 0.0385459
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   10.1217
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   9.70506
+TIME: 0.0375701
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   9.2884
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   9.2884
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   9.2884
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   9.2884
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   9.2884
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   9.2884
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   9.2884
+TIME: 0.0504792
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   9.2884
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   9.70506
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   10.1217
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   10.5384
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   10.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   11.3717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   11.7884
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   12.205
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   12.6217
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.0384
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.455
+TIME: 0.0438627
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.8717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.8717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.8717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.8717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.8717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.8717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.8717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.8717
+TIME: 0.0379835
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   13.8717
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   14.2883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   14.705
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.1217
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.5383
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   15.955
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.3717
+TIME: 0.0631432
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+TIME: 0.0393863
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7883
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7866
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7848
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.783
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7812
+TIME: 0.0386555
+TIME: 0.0386555
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7795
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7777
+TIME: 0.0505827
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 12.98 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 11.6298 POS Y: -15.904
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.58 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 11.9824 POS Y: -14.2592
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+TIME: 0.0382491
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   16.7759
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 12.98 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 12.5424 POS Y: -11.6921
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   17.1926
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   17.6093
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0259
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.4426
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.8592
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.2759
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.6926
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.1092
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.5259
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9426
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   21.3592
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   21.7759
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   22.1926
+TIME: 0.0406248
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   22.6092
+TIME: 0.0384301
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   23.0259
+TIME: 0.0451542
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   23.4425
+TIME: 0.0336553
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   23.8592
+TIME: 0.0385471
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   24.2759
+TIME: 0.0380307
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   24.6925
+TIME: 0.0395295
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.58 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 14.5801 POS Y: -2.76631
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.1092
+TIME: 0.0508815
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.5259
+TIME: 0.0326614
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9425
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9425
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9425
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9425
+TIME: 0.0385385
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9425
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9443
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9461
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9478
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9496
+
+NOMBRE DEL DESTINO: Waypoint-1 (3)
+NUM: 3
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9514
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9531
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9549
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9567
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9584
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 6.54007 POS Y: 39.055
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 1.15 POS Y: 41.81
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9602
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.962
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9638
+TIME: 0.0331351
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9655
+TIME: 0.0347547
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9673
+TIME: 0.0384145
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9691
+TIME: 0.0381493
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9708
+TIME: 0.0385669
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9726
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9744
+TIME: 0.0404183
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9761
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9761
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9761
+TIME: 0.0398551
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.9761
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.5595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.1428
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   24.7262
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   24.3095
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   23.8928
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   23.4762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   23.0595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   22.6428
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   22.2262
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   21.8095
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   21.3928
+TIME: 0.0400419
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+TIME: 0.0421171
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.9762
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.5595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.6767 POS Y: 36.5004
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.6767 POS Y: 36.5004
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 11.9405 POS Y: 39.045
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.6767 POS Y: 36.5004
+///////////////////////////////////
+A DISPARAR!
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 28.41 POS Y: 41.81
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.6767 POS Y: 36.5004
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.1429
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.7262
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.3095
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 14.46 POS Y: 41.97
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.5012 POS Y: 38.2517
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.8929
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.4762
+TIME: 0.0334976
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 14.46 POS Y: 43.31
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.367 POS Y: 39.4136
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 28.41 POS Y: 41.81
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.287 POS Y: 40.0551
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.1854 POS Y: 40.076
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.1854 POS Y: 40.076
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+ACTUALIZO 0
+ID PUERTA: 0
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 28.41 POS Y: 41.81
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.1668 POS Y: 40.0842
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.0889 POS Y: 40.0847
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 18.0385 POS Y: 40.034
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+ACTUALIZO 0
+ID PUERTA: 0
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 28.41 POS Y: 41.81
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.9612 POS Y: 40.0941
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.8408 POS Y: 40.0956
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.8408 POS Y: 40.0956
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 28.41 POS Y: 41.81
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.7396 POS Y: 40.1023
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.6214 POS Y: 40.1102
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.6098 POS Y: 40.097
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 28.41 POS Y: 41.81
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.5622 POS Y: 40.105
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.0595
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 14.4405 POS Y: 39.0556
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.5012 POS Y: 40.1001
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.4766 POS Y: 40.1129
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.1859
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 15.2 POS Y: 42.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.4254 POS Y: 40.0797
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.3113
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.4366
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.562
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.6874
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.8127
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   18.9381
+ACTUALIZO 0
+ID PUERTA: 0
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.0635
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.1889
+ACTUALIZO 0
+ID PUERTA: 0
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.1889
+TIME: 0.0494381
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado

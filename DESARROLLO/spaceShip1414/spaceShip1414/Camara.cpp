@@ -159,68 +159,80 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 
 	
 
-	if (fija!=false)
+	//if (fija!=false)
+	//{
+	//	glm::vec3 u = posPers - p;
+	//	float anguloRaton = atan2f(u.x, u.z) * 180 / 3.14f;
+	//	float anguloX = acosf(u.y / u.x) * 180 / 3.14f;
+	//	//glm::vec3 rotazione = motorApp->getRotacion(nodo);
+	//	/*std::cout << "VEC: " << glm::to_string(u) << std::endl;
+	//	std::cout << "ANGLEEEEE X: " << anguloX << std::endl;*/
+	//		//motorApp->resetTransform(nodo, 'r');
+	//	
+	//	//para evitar que la camara gire mas de lo que debe
+	//	if(tecla == 0 || tecla == 1) {
+	//	
+	//		rotAnterior = anguloRaton - 180;
+	//		//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+
+	//			if (rotAnterior < 0.0f) {
+	//				rotAnterior += 360;
+	//			}
+
+	//			else if (rotAnterior > 360.0f) {
+	//				rotAnterior -= 360;
+	//			}
+
+	//	}
+
+	//	else if (tecla == 3) {
+
+	//		rotX += 0.5;
+	//		//rotAnterior = anguloRaton + 180;
+
+	//		if (rotX > pitch) {
+	//			rotX = pitch;
+	//			
+	//		//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+	//		}
+	//	}
+
+	//	else if (tecla == 2) {
+
+	//		rotX -= 0.5;
+	//		//rotAnterior =  anguloRaton - 180;
+
+	//		if (rotX < -75) {
+	//			rotX = -75;
+	//		}
+
+	//		//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+	//	}
+
+	//		//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+	//		motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
+
+
+	//}
+
+	//else
+	//{
+	//	motorApp->resetTransform(nodo, 'r');
+	//	motorApp->rotarYPR(nodo, yaw - 180, pitch, 0);
+	//}
+	float distancia = 0;
+	if (fija != false)
 	{
-		glm::vec3 u = posPers - p;
-		float anguloRaton = atan2f(u.x, u.z) * 180 / 3.14f;
-		float anguloX = acosf(u.y / u.x) * 180 / 3.14f;
-		//glm::vec3 rotazione = motorApp->getRotacion(nodo);
-		/*std::cout << "VEC: " << glm::to_string(u) << std::endl;
-		std::cout << "ANGLEEEEE X: " << anguloX << std::endl;*/
-			//motorApp->resetTransform(nodo, 'r');
-		
-		//para evitar que la camara gire mas de lo que debe
-		if(tecla == 0 || tecla == 1) {
-		
-			rotAnterior = anguloRaton - 180;
-			//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
-
-				if (rotAnterior < 0.0f) {
-					rotAnterior += 360;
-				}
-
-				else if (rotAnterior > 360.0f) {
-					rotAnterior -= 360;
-				}
-
-		}
-
-		else if (tecla == 3) {
-
-			rotX += 0.5;
-			//rotAnterior = anguloRaton + 180;
-
-			if (rotX > pitch) {
-				rotX = pitch;
-				
-			//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
-			}
-		}
-
-		else if (tecla == 2) {
-
-			rotX -= 0.5;
-			//rotAnterior =  anguloRaton - 180;
-
-			if (rotX < -75) {
-				rotX = -75;
-			}
-
-			//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
-		}
-
-			//motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
-			motorApp->rotarYPR(nodo, rotAnterior, rotX, 0);
-
-
+		distancia =  p.x - posPers.x;
+		std::cout << "se lo dijisteh a la wah se lo dijisteh a mah, ya verah   " << distancia << std::endl;
+		motorApp->rotarYPR(this->getNodo(),posPers.z+90,-posPers.x,0);
 	}
-
 	else
 	{
 		motorApp->resetTransform(nodo, 'r');
 		motorApp->rotarYPR(nodo, yaw - 180, pitch, 0);
+		
 	}
-
 }
 
 float Camara::getAnguloInicial()
