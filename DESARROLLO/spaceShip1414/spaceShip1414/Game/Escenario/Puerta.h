@@ -36,6 +36,8 @@ public:
 	
 
 	Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo, std::string model);
+	Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo, std::string model,
+		glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB );
 	Puerta(const Puerta& orig);
 	virtual ~Puerta();
 	TTransform* Rotation();
@@ -49,6 +51,7 @@ public:
 
 	void setDetectado(bool x,int ident);
 	void setFisica(Mundo *world, int ident);
+	void setFisicas(Mundo * world, int ident, glm::vec3 p, glm::vec3 r, glm::vec3 e);
 	TNodo * getNodo();
 	void setAbierta();
 	void setCerrada();
@@ -67,16 +70,20 @@ private:
 	glm::vec3 posIni;
 	glm::vec3 rot;
 	glm::vec3 escal;
-	Entity2D *entity;
+	Entity2D *entity, *entityB;
 	TTransform *rotation;
 	TTransform *scale;
 	TTransform *translation;
+	TTransform *rotation2;
+	TTransform *scale2;
+	TTransform *translation2;
 	TNodo* nodoMalla;
+	TNodo* nodoB;
 
 	bool abierta=false;
 	int estadoActual;
-	float limiteApX;
-	float limiteApZ;
+	float limiteApX, limiteX;
+	float limiteApZ, limiteZ;
 	bool abrir;
 	bool detectado;
 	int idDetect;
