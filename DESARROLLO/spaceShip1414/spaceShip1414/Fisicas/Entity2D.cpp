@@ -67,7 +67,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 	int scale = 2;
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.x, pos.z);
-    bodyShape.SetAsBox(2, 2);
+    bodyShape.SetAsBox(1, 1);
 
 	escalaFixture.x = 0.05f;
 	escalaFixture.y = 0.05f;
@@ -164,8 +164,8 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
 
 	//hay que cambiarlo para que se adapte a cada puerta en distinta posicions
-	bodyShape.SetAsBox(4*escala.x,1* escala.z);
-	bodyShape2.SetAsBox(4*escala.x, 1*escala.z);
+	bodyShape.SetAsBox(4*escala.x, escala.z);
+	bodyShape2.SetAsBox(5*escala.x, escala.z);
 	
 
     objeto3D = dirPuerta;
