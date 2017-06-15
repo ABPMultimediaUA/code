@@ -165,8 +165,8 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 		float anguloRaton = atan2f(u.x, u.z) * 180 / 3.14f;
 		float anguloX = acosf(u.y / u.x) * 180 / 3.14f;
 		//glm::vec3 rotazione = motorApp->getRotacion(nodo);
-		std::cout << "VEC: " << glm::to_string(u) << std::endl;
-		std::cout << "ANGLEEEEE X: " << anguloX << std::endl;
+		/*std::cout << "VEC: " << glm::to_string(u) << std::endl;
+		std::cout << "ANGLEEEEE X: " << anguloX << std::endl;*/
 			//motorApp->resetTransform(nodo, 'r');
 		
 		//para evitar que la camara gire mas de lo que debe

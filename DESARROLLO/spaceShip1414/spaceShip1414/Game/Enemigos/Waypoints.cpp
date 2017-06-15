@@ -43,6 +43,37 @@ void Waypoints::MuestraPuntos() {
     std::cout << "-<-<-<-<-<-<-<-<-<-<-<-<" << std::endl;
 }
 
+void Waypoints::MostrarAdyacencia() {
+
+	std::cout << "///////////////////////////////" << std::endl;
+
+	for (int i = 0; i < puntos.size(); i++) {
+
+		std::cout <<i<<" Llega a: " << "(";
+		for (int j = 0; j < puntos.size(); j++) {
+			
+			if (pesos[i][j] > 0) {
+				std::cout << j << ", ";
+				
+			}
+
+			//else {
+			//	std::cout << pesos[i][j] << ", ";
+			//}
+
+			if (puntos.size() - 1 == j) {
+				std::cout << ")" << std::endl;
+			}
+		}
+	}
+
+	std::cout << "///////////////////////////////" << std::endl;
+
+}
+
+
+
+
 void Waypoints::creaPuntos(std::string nombre, glm::vec3 posicion) {
 
 	Nodo *way = new Nodo(nombre, posicion,static_cast<int>(puntos.size()));
@@ -90,7 +121,7 @@ void Waypoints::creaPesos(Entity2D *entity) {
 
 
 
-				if(weight <=tamDelMapa * 0.01 ) {
+				if(weight <=tamDelMapa * 0.03 ) {
 					 f = entity->rayCasting(b2Vec2(puntos[i]->getPosicion().x, puntos[i]->getPosicion().z), 
 						 b2Vec2(puntos[j]->getPosicion().x, puntos[j]->getPosicion().z));
 
@@ -142,9 +173,9 @@ void Waypoints::mostrarPesos() {
 
     for (int i = 0; i < puntos.size(); i++) {
 
-		std::cout << "(";
+		std::cout<<"i: " << i << ": " << "(";
         for (int j = 0; j < puntos.size(); j++) {
-            std::cout << pesos[i][j] << ", ";
+			std::cout << j << ": [" << pesos[i][j] << "], " << std::endl;;
             if (puntos.size() - 1 == j) {
                 std::cout << ")" <<std::endl;
             }

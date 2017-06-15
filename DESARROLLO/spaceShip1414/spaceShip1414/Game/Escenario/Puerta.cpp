@@ -296,7 +296,7 @@ void Puerta::cerrarPuerta() {
 
 void Puerta::Update()
 {
-	std::cout << "ABIERTA: " << ABIERTA->getEstadoActivo() <<"CERRADA: "<< CERRADA->getEstadoActivo() <<std::endl;
+	//std::cout << "ABIERTA: " << ABIERTA->getEstadoActivo() <<"CERRADA: "<< CERRADA->getEstadoActivo() <<std::endl;
 
 	if (ABIERTA->getEstadoActivo())
 	{

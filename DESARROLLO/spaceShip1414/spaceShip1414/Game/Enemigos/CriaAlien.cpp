@@ -427,8 +427,9 @@ void CriaAlien::Patrullar() {
 
 		}
 
-		/*std::cout << std::endl;
-		std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;*/
+		std::cout << std::endl;
+		std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;
+		std::cout << "NUM: " << puntoFin->getLugarDelNodo() << std::endl;
 
 	}
 
@@ -526,9 +527,9 @@ void CriaAlien::BuscarWaypoint()
 			puntoIni = waypoints->getNodoX(posNodo);
 		}
 
-		//	std::cout << std::endl;
-		//std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
-		//std::cout << "POS NODO: " << posNodo << std::endl;
+			std::cout << std::endl;
+		std::cout << "NOMBRE: " << this->puntoIni->getNombre() << std::endl;
+		std::cout << "POS NODO: " << posNodo << std::endl;
 	}
 
 

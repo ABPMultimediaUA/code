@@ -2630,7 +2630,7 @@ void Escenario::dibujarEscenario() {
 		////	}
 		//}
 		if ((*I).nombre == "TAM") {
-			tam = (*I).escala.x* (*I).escala.z * 100;
+			tam = (*I).escala.x* (*I).escala.z;
 		}
 		//
 		////0: botiquin
@@ -2948,8 +2948,8 @@ void Escenario::inicializarWaypoints()
 		waypoints.at(i)->setTamDelMapa(tam);
 		waypoints.at(i)->crearMatriz();
 		waypoints.at(i)->creaPesos(entity);
-		waypoints[i]->mostrarPesos();
-
+		//waypoints[i]->mostrarPesos();
+		//waypoints[i]->MostrarAdyacencia();
 	}
 
 }
