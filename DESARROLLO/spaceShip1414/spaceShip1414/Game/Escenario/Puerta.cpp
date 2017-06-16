@@ -132,6 +132,8 @@ Puerta::Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::ve
 	limiteX = posicion2.x + (escala2.x / 4);
 	limiteZ = -(posicion2.z + (escala2.z / 4));
 
+	posIniB = posicion2;
+
 	CERRADA = new Estados("CERRADA");
 	ABIERTA = new Estados("ABIERTA");
 	BLOQUEADA = new Estados("BLOQUEADA");
@@ -343,10 +345,10 @@ void Puerta::abrirPuerta() {
 
 		}
 
-		//if (entityB != nullptr && entityB->getCuerpo2D()->GetPosition().x < limiteX + 10) {
-		//	entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(120, 0));
+		if (entityB != nullptr && entityB->getCuerpo2D()->GetPosition().x < limiteX + 10) {
+			entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(120, 0));
 
-		//}
+		}
 
 		else
 		{
@@ -372,11 +374,11 @@ void Puerta::abrirPuerta() {
 			motor->trasladar(this->getNodo(), -2, 0, 0);  //:*
 		}
 
-		//if (nodoB != nullptr && motor->getPosicion(nodoB).y<10)
-		//{
-		//	std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
-		//	motor->trasladar(nodoB, 0, 2, 0);  //:*
-		//}
+		if (nodoB != nullptr && motor->getPosicion(nodoB).x < posIniB.x + 10)
+		{
+			std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
+			motor->trasladar(nodoB, 2, 0, 0);  //:*
+		}
 	}
 
 }
@@ -439,17 +441,17 @@ void Puerta::cerrarPuerta() {
 
 	else if (t_puerta == "LATERAL") {
 
-		if (motor->getPosicion(this->getNodo()).x < posIni.x)
+		if (motor->getPosicion(this->getNodo()).x < posIni.x - 1)
 		{
 			std::cout << "pos puerta: " << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
 			motor->trasladar(this->getNodo(), 2, 0, 0);
 		}
 
-		//if (nodoB != nullptr && motor->getPosicion(nodoB).y<10)
-		//{
-		//	std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
-		//	motor->trasladar(nodoB, 0,- 2, 0);  //:*
-		//}
+		if (nodoB != nullptr && motor->getPosicion(nodoB).x > posIniB.x + 1)
+		{
+			std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
+			motor->trasladar(nodoB, -2, 0, 0);  //:*
+		}
 
 		if (entity->getCuerpo2D()->GetPosition().x >= limiteApX)
 		{
@@ -457,20 +459,20 @@ void Puerta::cerrarPuerta() {
 
 		}
 
-		//if (entityB != nullptr && entityB->getCuerpo2D()->GetPosition().x >= limiteX) {
-		//	entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(-120, 0));
+		if (entityB != nullptr && entityB->getCuerpo2D()->GetPosition().x >= limiteX) {
+			entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(-120, 0));
 
-		//}
+		}
 
 		else
 		{
 			abierta = false;
 			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
 
-			//if (entityB != nullptr) {
-			//	entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+			if (entityB != nullptr) {
+				entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
 
-			//}
+			}
 			Maquina->cambiaEstado("BLOQUEADA");
 		}
 

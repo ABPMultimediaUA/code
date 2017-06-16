@@ -67,7 +67,7 @@ private:
 	int id;
 	int desfase;
 	glm::vec3 pos;
-	glm::vec3 posIni;
+	glm::vec3 posIni, posIniB;
 	glm::vec3 rot;
 	glm::vec3 escal;
 	Entity2D *entity, *entityB;
