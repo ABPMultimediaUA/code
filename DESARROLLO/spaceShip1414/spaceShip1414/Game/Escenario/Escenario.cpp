@@ -534,7 +534,7 @@ void Escenario::dibujarEscenario() {
 							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
 								glm::vec3(rxA, ryA - 180, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx - 1, ty, -tz),
+								glm::vec3(tx + 1, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
