@@ -1,0 +1,133 @@
+26/05/2017 20:30:05 (Std) 	+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+26/05/2017 20:30:05 (Std) 	+                     Crazy Eddie's GUI System - Event log                    +
+26/05/2017 20:30:05 (Std) 	+                          (http://www.cegui.org.uk/)                         +
+26/05/2017 20:30:05 (Std) 	+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+26/05/2017 20:30:05 (Std) 	CEGUI::Logger singleton created. (000001D7834CD150)
+26/05/2017 20:30:05 (Std) 	
+26/05/2017 20:30:05 (Std) 	********************************************************************************
+26/05/2017 20:30:05 (Std) 	* Important:                                                                   *
+26/05/2017 20:30:05 (Std) 	*     To get support at the CEGUI forums, you must post _at least_ the section *
+26/05/2017 20:30:05 (Std) 	*     of this log file indicated below.  Failure to do this will result in no  *
+26/05/2017 20:30:05 (Std) 	*     support being given; please do not waste our time.                       *
+26/05/2017 20:30:05 (Std) 	********************************************************************************
+26/05/2017 20:30:05 (Std) 	********************************************************************************
+26/05/2017 20:30:05 (Std) 	* -------- START OF ESSENTIAL SECTION TO BE POSTED ON THE FORUM       -------- *
+26/05/2017 20:30:05 (Std) 	********************************************************************************
+26/05/2017 20:30:05 (Std) 	---- Version: 0.8.7 (Build: May  9 2017 Debug Microsoft Windows MSVC++ 14.0 (2015) 64 bit) ----
+26/05/2017 20:30:05 (Std) 	---- Renderer module is: CEGUI::OpenGL3Renderer - Official OpenGL 3.2 core based renderer module.  TextureTarget support enabled via FBO OGL 3.2 core implementation. ----
+26/05/2017 20:30:05 (Std) 	---- XML Parser module is: CEGUI::ExpatParser - Official expat based parser module for CEGUI ----
+26/05/2017 20:30:05 (Std) 	---- Image Codec module is: SILLYImageCodec - Official SILLY based image codec ----
+26/05/2017 20:30:05 (Std) 	---- Scripting module is: None ----
+26/05/2017 20:30:05 (Std) 	********************************************************************************
+26/05/2017 20:30:05 (Std) 	* -------- END OF ESSENTIAL SECTION TO BE POSTED ON THE FORUM         -------- *
+26/05/2017 20:30:05 (Std) 	********************************************************************************
+26/05/2017 20:30:05 (Std) 	
+26/05/2017 20:30:05 (Std) 	---- Begining CEGUI System initialisation ----
+26/05/2017 20:30:05 (Std) 	[CEGUI::ImageManager] Singleton created (000001D7834CF5D0)
+26/05/2017 20:30:05 (Std) 	[CEGUI::ImageManager] Registered Image type: BasicImage
+26/05/2017 20:30:05 (Std) 	CEGUI::FontManager singleton created. (000001D7834D1470)
+26/05/2017 20:30:05 (Std) 	CEGUI::WindowFactoryManager singleton created
+26/05/2017 20:30:05 (Std) 	CEGUI::WindowManager singleton created (000001D7810816D0)
+26/05/2017 20:30:05 (Std) 	CEGUI::SchemeManager singleton created. (000001D7834D16E0)
+26/05/2017 20:30:05 (Std) 	CEGUI::GlobalEventSet singleton created. (000001D7834C62D0)
+26/05/2017 20:30:05 (Std) 	CEGUI::AnimationManager singleton created (000001D7810810D0)
+26/05/2017 20:30:05 (Std) 	CEGUI::WidgetLookManager singleton created. (000001D7835FE640)
+26/05/2017 20:30:05 (Std) 	CEGUI::WindowRendererManager singleton created (000001D7835FDF80)
+26/05/2017 20:30:05 (Std) 	CEGUI::RenderEffectManager singleton created (000001D7810CDDE0)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'DefaultWindow' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'DefaultWindow' windows added. (000001D78362B720)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'DragContainer' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'DragContainer' windows added. (000001D78362B820)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'ScrolledContainer' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'ScrolledContainer' windows added. (000001D78362C720)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'ClippedContainer' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'ClippedContainer' windows added. (000001D78362B920)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/PushButton' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/PushButton' windows added. (000001D78362BC20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/RadioButton' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/RadioButton' windows added. (000001D78362BA20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Combobox' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Combobox' windows added. (000001D78362B220)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/ComboDropList' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/ComboDropList' windows added. (000001D78362B320)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Editbox' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Editbox' windows added. (000001D78362BB20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/FrameWindow' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/FrameWindow' windows added. (000001D78362BD20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/ItemEntry' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/ItemEntry' windows added. (000001D78362B120)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Listbox' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Listbox' windows added. (000001D78362BE20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/ListHeader' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/ListHeader' windows added. (000001D78362BF20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/ListHeaderSegment' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/ListHeaderSegment' windows added. (000001D78362C020)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Menubar' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Menubar' windows added. (000001D78362C620)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/PopupMenu' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/PopupMenu' windows added. (000001D78362CE20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/MenuItem' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/MenuItem' windows added. (000001D78362C220)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/MultiColumnList' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/MultiColumnList' windows added. (000001D78362C920)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/MultiLineEditbox' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/MultiLineEditbox' windows added. (000001D78362CC20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/ProgressBar' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/ProgressBar' windows added. (000001D78362C120)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/ScrollablePane' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/ScrollablePane' windows added. (000001D78362C420)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Scrollbar' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Scrollbar' windows added. (000001D78362C820)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Slider' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Slider' windows added. (000001D78362CA20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Spinner' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Spinner' windows added. (000001D78362CD20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/TabButton' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/TabButton' windows added. (000001D78362CF20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/TabControl' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/TabControl' windows added. (000001D783631920)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Thumb' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Thumb' windows added. (000001D783630920)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Titlebar' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Titlebar' windows added. (000001D783633420)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/ToggleButton' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/ToggleButton' windows added. (000001D783633120)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Tooltip' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Tooltip' windows added. (000001D783633720)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/ItemListbox' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/ItemListbox' windows added. (000001D783630D20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/GroupBox' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/GroupBox' windows added. (000001D783632120)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'CEGUI/Tree' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'CEGUI/Tree' windows added. (000001D783632620)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'LayoutCell' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'LayoutCell' windows added. (000001D783631A20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'HorizontalLayoutContainer' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'HorizontalLayoutContainer' windows added. (000001D783630020)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'VerticalLayoutContainer' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'VerticalLayoutContainer' windows added. (000001D783632D20)
+26/05/2017 20:30:05 (Std) 	Created WindowFactory for 'GridLayoutContainer' windows.
+26/05/2017 20:30:05 (Std) 	WindowFactory for 'GridLayoutContainer' windows added. (000001D783632020)
+26/05/2017 20:30:05 (Std) 	CEGUI::System singleton created. (000001D7834BA210)
+26/05/2017 20:30:05 (Std) 	---- CEGUI System initialisation completed ----
+26/05/2017 20:30:05 (Std) 	
+26/05/2017 20:30:05 (Error)	CEGUI::FileIOException in function 'void __cdecl CEGUI::DefaultResourceProvider::loadRawDataContainer(const class CEGUI::String &,class CEGUI::RawDataContainer &,const class CEGUI::String &)' (C:\Users\Hector\Desktop\cegui-0.8.7\cegui\src\DefaultResourceProvider.cpp:66) : gui/schemes/TaharezLook.scheme does not exist
+26/05/2017 20:30:05 (Error)	========== Start of Backtrace ==========
+26/05/2017 20:30:05 (Error)	#0 public: float __cdecl CEGUI::FrameWindow::getSizingBorderThickness(void)const __ptr64 +0x179b0b (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\CEGUIBase-0_d.dll)
+26/05/2017 20:30:05 (Error)	#1 public: float __cdecl CEGUI::FrameWindow::getSizingBorderThickness(void)const __ptr64 +0x179a1d (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\CEGUIBase-0_d.dll)
+26/05/2017 20:30:05 (Error)	#2 public: float __cdecl CEGUI::FrameWindow::getSizingBorderThickness(void)const __ptr64 +0x2b2df (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\CEGUIBase-0_d.dll)
+26/05/2017 20:30:05 (Error)	#3 public: float __cdecl CEGUI::FrameWindow::getSizingBorderThickness(void)const __ptr64 +0x151fa5 (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\CEGUIBase-0_d.dll)
+26/05/2017 20:30:05 (Error)	#4 public: float __cdecl CEGUI::FrameWindow::getSizingBorderThickness(void)const __ptr64 +0x287607 (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\CEGUIBase-0_d.dll)
+26/05/2017 20:30:05 (Error)	#5 public: float __cdecl CEGUI::FrameWindow::getSizingBorderThickness(void)const __ptr64 +0x425489 (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\CEGUIBase-0_d.dll)
+26/05/2017 20:30:05 (Error)	#6 public: float __cdecl CEGUI::FrameWindow::getSizingBorderThickness(void)const __ptr64 +0x132de6 (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\CEGUIBase-0_d.dll)
+26/05/2017 20:30:05 (Error)	#7 GUI::loadScheme +0x84 (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\spaceShip1414.exe)
+26/05/2017 20:30:05 (Error)	#8 TGraphicEngine::init +0x239 (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\spaceShip1414.exe)
+26/05/2017 20:30:05 (Error)	#9 main +0x9b (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\spaceShip1414.exe)
+26/05/2017 20:30:05 (Error)	#10 invoke_main +0x34 (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\spaceShip1414.exe)
+26/05/2017 20:30:05 (Error)	#11 __scrt_common_main_seh +0x127 (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\spaceShip1414.exe)
+26/05/2017 20:30:05 (Error)	#12 __scrt_common_main +0xe (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\spaceShip1414.exe)
+26/05/2017 20:30:05 (Error)	#13 mainCRTStartup +0x9 (C:\Users\elcuc_000\Desktop\spaceShip1414\x64\Debug\spaceShip1414.exe)
+26/05/2017 20:30:05 (Error)	#14 BaseThreadInitThunk +0x22 (C:\WINDOWS\system32\KERNEL32.DLL)
+26/05/2017 20:30:05 (Error)	#15 RtlUserThreadStart +0x34 (C:\WINDOWS\SYSTEM32\ntdll.dll)
+26/05/2017 20:30:05 (Error)	==========  End of Backtrace  ==========
