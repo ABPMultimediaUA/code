@@ -50,7 +50,7 @@
 //Enemigo::Enemigo(const Enemigo& orig) {
 //}
 
-Enemigo::Enemigo(TGraphicEngine *motor, Mundo *m, glm::vec3 posicion, Waypoints * &puntos)
+Enemigo::Enemigo(TGraphicEngine *motor, Mundo *m, glm::vec3 posicion, Waypoints * puntos)
 {
 		
 	engine = motor;
@@ -108,7 +108,7 @@ void Enemigo::Mover()
 
 	vec.Set(st.velocidad.x, st.velocidad.z);
 	entity->getCuerpo2D()->SetLinearVelocity(vec);
-	entity->getSombraE2D()->SetLinearVelocity(vec);
+	//entity->getSombraE2D()->SetLinearVelocity(vec);
 	st.posicion.x = entity->getCuerpo2D()->GetPosition().x;
 	st.posicion.z = entity->getCuerpo2D()->GetPosition().y;
 

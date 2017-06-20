@@ -24,7 +24,7 @@ class BehaivorTree;
 class CriaAlien : public Enemigo {
 public:
 
-	CriaAlien(TGraphicEngine*, Mundo*, glm::vec3 posicion, Escenario* esce, Waypoints* &puntos);
+	CriaAlien(TGraphicEngine*, Mundo*, glm::vec3 posicion, Escenario* esce, Waypoints* puntos);
 	//CriaAlien(const CriaAlien& orig);
 	virtual ~CriaAlien();
 	void crearArbol();

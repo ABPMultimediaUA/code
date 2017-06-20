@@ -2609,8 +2609,8 @@ void Escenario::dibujarEscenario() {
 				ty = ((*T).position.y + (*I).position.y);
 				tz = ((*T).position.z + (*I).position.z);
 
-				TNodo * caja = engine->addMalla();
-				engine->trasladar(caja, tx, ty, -tz);
+				//TNodo * caja = engine->addMalla();
+				//engine->trasladar(caja, tx, ty, -tz);
 
 	/*			IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
 					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),

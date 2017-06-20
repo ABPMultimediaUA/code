@@ -28,7 +28,7 @@
 
 
 
-CriaAlien::CriaAlien(TGraphicEngine *motor, Mundo* mundo, glm::vec3 posicion, Escenario* esce, Waypoints* &puntos) : Enemigo(motor, mundo, posicion, puntos) {
+CriaAlien::CriaAlien(TGraphicEngine *motor, Mundo* mundo, glm::vec3 posicion, Escenario* esce, Waypoints* puntos) : Enemigo(motor, mundo, posicion, puntos) {
     
 	//seria mejor que se le pasara las cosas necesarias del escenario que todo el escenario entero
 	//para hacer el tema de los navmesehses y los waypoints
@@ -313,7 +313,7 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
     }
 
 	setPos(st.posicion);
-	entity->getSombraE2D();
+	//entity->getSombraE2D();
 	this->actualizarLista();
 	//GVida->setPosition(st.posicion);
 	//RVida->setPosition(vector3df(st.posicion.X - 8, st.posicion.Y, st.posicion.Z));

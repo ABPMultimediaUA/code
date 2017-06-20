@@ -237,11 +237,11 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
     bodyDef.position.Set((pos.x), (-pos.z));
 
 	if (raza == 10) {
-		bodyShape.SetAsBox(1.0f, 1.0f);
+		bodyShape.SetAsBox(2.0f, 2.0f);
 	}
 
 	else if (raza == 11) {
-		bodyShape.SetAsBox(2.0f, 2.0f);
+		bodyShape.SetAsBox(2.5f, 2.5f);
 	}
 
 	bodyCircle.m_p.Set(0, 0);
@@ -256,15 +256,15 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
     body->SetUserData(this);
     
 
-    sombraDef.type = b2_kinematicBody;
-    sombraDef.position.Set(pos.x, pos.z);
-    sombraShape.SetAsBox(2.0f, 2.0f);
-    sombraE = world->CreateBody(&sombraDef);
-    sombraE -> CreateFixture(&sombraShape, 1.0f);
+    //sombraDef.type = b2_kinematicBody;
+    //sombraDef.position.Set(pos.x, pos.z);
+    //sombraShape.SetAsBox(2.0f, 2.0f);
+    //sombraE = world->CreateBody(&sombraDef);
+    //sombraE -> CreateFixture(&sombraShape, 1.0f);
 	
-    //sombraE->GetFixtureList()->SetFriction(10.0f);
-    sombraE->SetUserData(this);
-    sombraE->SetMassData(&md);
+    ////sombraE->GetFixtureList()->SetFriction(10.0f);
+    //sombraE->SetUserData(this);
+    //sombraE->SetMassData(&md);
     idenSh = 1;
     filtro.groupIndex = FILTRO_ENEMIGO;
 
@@ -273,8 +273,8 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 
 	}
 	
-	filtro.groupIndex = FILTRO_PUERTAABIERTA;
-	sombraE->GetFixtureList()->SetFilterData(filtro);
+	//filtro.groupIndex = FILTRO_PUERTAABIERTA;
+	//sombraE->GetFixtureList()->SetFilterData(filtro);
 
  //   fisica2 = smgr->addSphereSceneNode(45);
 	////smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));

@@ -264,7 +264,7 @@ void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 	player *p = static_cast<player*>(pers->getObjeto3D());
 	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 	int dir = p->getDireccion();
-	float vel = 50000.0f;
+	float vel = 500.0f;
 
 	//std::cout << "VELOSIDAD X: " << vel.x << "VELOSIDAD Y: " << vel.y << std::endl;
 
