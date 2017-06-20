@@ -50,7 +50,7 @@
 //Enemigo::Enemigo(const Enemigo& orig) {
 //}
 
-Enemigo::Enemigo(TGraphicEngine *motor, Mundo *m, glm::vec3 posicion, Waypoints * puntos)
+Enemigo::Enemigo(TGraphicEngine *motor, Mundo *m, glm::vec3 posicion, Waypoints * &puntos)
 {
 		
 	engine = motor;
@@ -112,6 +112,10 @@ void Enemigo::Mover()
 	st.posicion.x = entity->getCuerpo2D()->GetPosition().x;
 	st.posicion.z = entity->getCuerpo2D()->GetPosition().y;
 
+	if (raza == CRIA) {
+		st.posicion.y = -5.0f;
+	}
+
 	setPos(st.posicion);
 
 
@@ -129,7 +133,7 @@ Kinematic Enemigo::seek(const glm::vec3 target)
 */
 
 	
-	float maxAcceleration = MULTIVEL * 5.5;
+	float maxAcceleration = MULTIVEL * PROPCURVA;
 //	std::cout << "target  " << target.X << " " << target.Z << std::endl;
 	sto.linear = target - st.posicion;
 	//std::cout << "linear  " << sto.linear.X << " " << sto.linear.Z << std::endl;
@@ -160,7 +164,7 @@ Kinematic Enemigo::arrive(const glm::vec3 target) {
 	//distance = direction.getLength();
 	distance = sqrtf(powf(direction.x, 2) + powf(direction.z, 2));
 
-	float maxAcceleration = MULTIVEL * 5.5;
+	float maxAcceleration = MULTIVEL * PROPCURVA;
 
 	if (distance < 5.0f)
 	{
@@ -213,7 +217,7 @@ void Enemigo::align(const glm::vec3 target){
 	float targetRotation;
 	float timeTarget = 0.1f;
 
-	float maxAngularAcceleration = MULTIVEL * 5.5;
+	float maxAngularAcceleration = MULTIVEL * PROPCURVA;
 	float maxRotation = 135.0f;
 	float desireAngle = atan2f(-target.x, target.z) * 180 / 3.14f;
 	float rotationSize;
@@ -263,7 +267,7 @@ void Enemigo::align(const glm::vec3 target){
 
 void Enemigo::collisionAvoidance(glm::vec3 vecU) {
 
-	float maxAcceleration = MULTIVEL * 2.75f;
+	float maxAcceleration = MULTIVEL * (PROPCURVA * 0.5);
 
 
 	sto.linear = vecU * maxAcceleration;

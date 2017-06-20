@@ -28,7 +28,7 @@
 
 
 
-CriaAlien::CriaAlien(TGraphicEngine *motor, Mundo* mundo, glm::vec3 posicion, Escenario* esce, Waypoints* puntos) : Enemigo(motor, mundo, posicion, puntos) {
+CriaAlien::CriaAlien(TGraphicEngine *motor, Mundo* mundo, glm::vec3 posicion, Escenario* esce, Waypoints* &puntos) : Enemigo(motor, mundo, posicion, puntos) {
     
 	//seria mejor que se le pasara las cosas necesarias del escenario que todo el escenario entero
 	//para hacer el tema de los navmesehses y los waypoints
@@ -39,9 +39,9 @@ CriaAlien::CriaAlien(TGraphicEngine *motor, Mundo* mundo, glm::vec3 posicion, Es
  //   }
 
 	//nodo = motor->addMalla("resourse/models/Nanosuit/Personajes/aliensoldado/aliensoldado.obj");
-	nodo = motor->addMalla("resourse/models/Nanosuit/nanosuit.obj");
+	nodo = motor->addMalla("resourse/models/Personajes/criaAlien/cria.obj");
 
-	motor->escalar(nodo, 0.5f, 0.5f, 0.5f);
+	motor->escalar(nodo, 1.0f, 1.0f, 1.0f);
 	motor->trasladar(nodo, posicion.x, -5.0f, posicion.z); //esta en -5 mientras sea el nanosuit
 	motor->rotarYPR(nodo, 180, 0, 0);
 	rot = glm::vec3(180, 0, 0);
@@ -329,7 +329,7 @@ void CriaAlien::emepzarFlocking(float dt) {
 
 	//maya->getMaterial(0).EmissiveColor.set(0, 125, 50, 175);
 	glm::vec3 u;
-	float maxAngularAcceleration = MULTIVEL * 2.5;
+	float maxAngularAcceleration = MULTIVEL * PROPCURVA;
 
 	//vector3df v(0, 0, 0);
 	 if (time < 1.5f) {
@@ -442,12 +442,12 @@ void CriaAlien::Patrullar() {
 
 		//Mover(vectorUnitario);
 
-		if (path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 30.0f) {
+		if (path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 20.0f) {
 
 			arrive(puntoFin->getPosicion());
 			//Mover(vectorUnitario);
-			if (path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 10.0f
-				|| path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 20.0f)
+			if (path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 5.0f
+				|| path->distanciaEntreElNodoYEne(st.posicion, puntoFin->getPosicion()) < 10.0f)
 			{
 
 				dir = -1;
@@ -540,14 +540,14 @@ void CriaAlien::BuscarWaypoint()
 
 	//	std::cout << "DISTANSIA QUE ME FUMO PARA LLEGAR AL NODO: " << path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) << std::endl;
 
-		if (path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 50.0f) {
+		if (path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 20.0f) {
 
 			arrive(puntoIni->getPosicion());
 		//std::cout << "DISTANSIA QUE ME FUMO PARA LLEGAR AL NODO: " << path->distanciaEntreElNodoYEne(pos, puntoIni->getPosicion()) << std::endl;
 
 			//Mover(vectorUnitario);
-			if (path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 10.0f
-				|| path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 20.0f
+			if (path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 5.0f
+				|| path->distanciaEntreElNodoYEne(st.posicion, puntoIni->getPosicion()) < 10.0f
 				|| path->estoyEnElNodo(st.posicion, puntoIni->getPosicion()))
 			{
 		

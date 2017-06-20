@@ -52,6 +52,7 @@ class Mundo;
 #define FLOCKING 8
 
 #define MULTIVEL 1
+#define PROPCURVA 150
 //el enemigo deberia tener un estado que sea
 //siguiendo al lider o algo para aplicar el flocking
 
@@ -80,7 +81,7 @@ typedef struct
 	{
 		posicion += velocidad*dt;
 		orientacion += rotacion*dt;
-		posicion.y = 0;
+		//posicion.y = -5.0;
 		st.linear.y = 0;
 		velocidad += st.linear*dt;
 		rotacion += st.angular*dt;
@@ -102,7 +103,7 @@ class Enemigo {
 
 public:
 	//Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, glm::vec3 posicion, Waypoints* puntos);
-	Enemigo(TGraphicEngine*, Mundo*, glm::vec3 posicion, Waypoints *puntos);
+	Enemigo(TGraphicEngine*, Mundo*, glm::vec3 posicion, Waypoints *&puntos);
 	// Enemigo(const Enemigo& orig);
 	virtual ~Enemigo();
 
