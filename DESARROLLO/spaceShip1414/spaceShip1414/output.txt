@@ -1,6 +1,6 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GTX 970/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 372.70
+Renderer: GeForce GTX 1060 3GB/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 382.33
 GLSL: 4.50 NVIDIA
 
 Recurso nombre: personaje.obj
@@ -1144,20 +1144,6 @@ se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 16.58 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 22.3189 POS Y: 8.6099
-///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
@@ -1174,7 +1160,28 @@ POS X: 16.58 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.3927 POS Y: -2.25481
+POS X: 22.5695 POS Y: 8.16047
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.58 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 19.3237 POS Y: -4.39028
 ///////////////////////////////////
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 
@@ -1188,7 +1195,7 @@ POS X: 12.98 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 18.9071 POS Y: -4.19496
+POS X: 18.8639 POS Y: -6.22231
 ///////////////////////////////////
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
@@ -1197,9 +1204,6 @@ se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-TIME: 0.100471
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 
@@ -1208,327 +1212,47 @@ NUM: 0
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-TIME: 0.0999002
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-TIME: 0.100039
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 
 NOMBRE DEL DESTINO: Waypoint-1 (2)
 NUM: 2
-TIME: 0.0999868
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-TIME: 0.10002
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-TIME: 0.0999441
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-TIME: 0.0999965
-TIME: 0.0999965
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-TIME: 0.100008
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   33.3333
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   33.75
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   34.1667
-TIME: 0.0999614
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   34.5833
-TIME: 0.1005
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35
-TIME: 0.0995211
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35.4167
-TIME: 0.100044
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35.8333
-TIME: 0.0999547
-TIME: 0.0999547
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-TIME: 0.100056
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-TIME: 0.0998707
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-TIME: 0.0999997
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-TIME: 0.100071
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-TIME: 0.0999602
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-TIME: 0.0999429
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-TIME: 0.100019
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-TIME: 0.100025
-TIME: 0.100025
-TIME: 0.100025
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35.8333
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35.4167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   34.5833
-TIME: 0.0996331
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   34.1667
-TIME: 0.100474
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 12.98 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 12.7384 POS Y: -15.5891
-///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   33.75
-TIME: 0.0995392
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 16.58 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 12.8635 POS Y: -14.8248
-///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   33.3333
-
-NOMBRE DEL DESTINO: Waypoint-1 (4)
-NUM: 4
-TIME: 0.100566
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.0994295
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-TIME: 0.100532
 
 ////////////////////////
 COLISION
-ENTIDAD 1: 7
+ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: 12.98 POS Y: 0
+POS X: 17.03 POS Y: -41.77
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 13.2058 POS Y: -12.8014
+POS X: 11.4668 POS Y: -36.2758
 ///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.0833
-TIME: 0.0995076
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.6667
-TIME: 0.100482
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.25
-TIME: 0.0994792
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 16.58 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 13.6647 POS Y: -10.5253
-///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.8333
-TIME: 0.100171
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.4167
-TIME: 0.0998461
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30
-TIME: 0.100077
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.5833
-TIME: 0.0999277
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.1667
-TIME: 0.100073
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.75
-TIME: 0.099921
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
-
-NOMBRE DEL DESTINO: Waypoint-1 (42)
-NUM: 41
-TIME: 0.100012
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.9167
-TIME: 0.0999617
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.5
-TIME: 0.10002
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.0833
-TIME: 0.0999786
-TIME: 0.0999786
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-TIME: 0.100018
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-TIME: 0.1005
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-TIME: 0.0995401
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-TIME: 0.100309
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-TIME: 0.0995568
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-
-NOMBRE DEL DESTINO: Waypoint-1 (3)
-NUM: 3
-TIME: 0.100335
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-TIME: 0.099677
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-TIME: 0.100507
-TIME: 0.100507
-TIME: 0.100507
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.0833
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
-TIME: 0.099538
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.75
-TIME: 0.10051
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.1667
-TIME: 0.0994933
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.5833
-TIME: 0.100524
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30
-TIME: 0.0994693
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.4167
-TIME: 0.10052
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.8333
-TIME: 0.0994807
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.25
-
-NOMBRE DEL DESTINO: Waypoint-1 (41)
-NUM: 40
-TIME: 0.100044
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.6667
-TIME: 0.0999233
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.0833
-TIME: 0.100102
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-TIME: 0.0999011
-TIME: 0.0999011
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.100106
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 
 ////////////////////////
 COLISION
-ENTIDAD 1: 7
+ENTIDAD 1: 1
 ENTIDAD 2: 4
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -47.63 POS Y: -0.9
+POS X: 17.03 POS Y: -41.77
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -42.1233 POS Y: -1.47823
+POS X: 10.6241 POS Y: -39.015
 ///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.0998985
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -47.63 POS Y: -0.9
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -45.353 POS Y: -1.04615
-///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.100097
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.0998818
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.100004
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.100005
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -55.64 POS Y: -0.9
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -50.7424 POS Y: -0.437881
-///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.100023
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.0999666
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -55.64 POS Y: -0.9
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -53.6042 POS Y: -0.200639
-///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.100015
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.100016
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.0999892
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.10002
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.099995
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-
-NOMBRE DEL DESTINO: Waypoint-1 (2)
-NUM: 2
-TIME: 0.100313
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.0996568
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.100399
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.0995986
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-
-NOMBRE DEL DESTINO: Waypoint-1 (40)
-NUM: 39
-TIME: 0.10045
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.0995351
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-TIME: 0.100531
-TIME: 0.100531
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.0501762
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado
