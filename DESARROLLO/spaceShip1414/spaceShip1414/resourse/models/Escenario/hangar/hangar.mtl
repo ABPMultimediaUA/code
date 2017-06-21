@@ -1,142 +1,314 @@
-# Blender MTL File: 'None'
-# Material Count: 11
-
 newmtl initialShadingGroup
-Ns 96.078431
-Ka 0.000000 0.000000 0.000000
-Kd 0.500000 0.500000 0.500000
-Ks 0.500000 0.500000 0.500000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 0.000000
-illum 6
-
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pasted__pasted__pasted__pasted__phong7SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl pasted__pasted__pasted__phong5SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 5-s.jpg
+Ns 18.00
+newmtl pasted__pasted__pasted__phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl pasted__pasted__pasted__phong7SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl pasted__pasted__pasted__phong7SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl pasted__pasted__phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 5-s.jpg
+Ns 18.00
+newmtl pasted__pasted__phong5SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 5-s.jpg
+Ns 18.00
+newmtl pasted__pasted__phong5SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 5-s.jpg
+Ns 18.00
+newmtl pasted__pasted__phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl pasted__pasted__phong7SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl pasted__pasted__phong7SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl pasted__pasted__phong7SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl pasted__pasted__phong7SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl pasted__phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 5-s.jpg
+Ns 18.00
+newmtl pasted__phong5SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 5-s.jpg
+Ns 18.00
+newmtl pasted__phong5SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 5-s.jpg
+Ns 18.00
+newmtl pasted__phong5SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 5-s.jpg
+Ns 18.00
+newmtl pasted__phong5SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 5-s.jpg
+Ns 18.00
+newmtl pasted__phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
+newmtl pasted__phong7SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
 newmtl phong1SG
-Ns 17.647059
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 0.000000
-illum 6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
 map_Kd 1-d.jpg
-map_Bump 1
+bump 1-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
 map_Ks 1-s.jpg
-
+Ns 18.00
 newmtl phong2SG
-Ns 17.647059
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 0.000000
-illum 6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
 map_Kd 2-d.jpg
-map_Bump 1
+bump 2-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
 map_Ks 2-s.jpg
-
+Ns 18.00
 newmtl phong3SG
-Ns 17.647059
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 0.000000
-illum 6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
 map_Kd 3-d.jpg
-map_Bump 1
+bump 3-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
 map_Ks 3-s.jpg
-
+Ns 18.00
 newmtl phong4SG
-Ns 17.647059
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 0.000000
-illum 6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
 map_Kd 4-d.jpg
-map_Bump 1
+bump 4-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
 map_Ks 4-s.jpg
-
+Ns 18.00
 newmtl phong5SG
-Ns 17.647059
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 0.000000
-illum 6
-map_Bump 1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
 map_Kd 5-d.jpg
+bump 5-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
 map_Ks 5-s.jpg
-
-newmtl phong5SG_5-d.jpg
-Ns 17.647059
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 0.000000
-illum 6
-map_Kd 5-d.jpg
-map_Bump 1
-map_Ks 5-s.jpg
-
+Ns 18.00
 newmtl phong6SG
-Ns 17.647059
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 0.000000
-illum 6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
 map_Kd 6-d.jpg
-map_Bump 1
+bump 6-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
 map_Ks 6-s.jpg
-
+Ns 18.00
 newmtl phong7SG
-Ns 17.647059
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 0.000000
-illum 6
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
 map_Kd 7-d.jpg
-map_Bump 1
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
 map_Ks 7-s.jpg
-
-newmtl phong7SG_NONE
-Ns 17.647059
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 0.000000
-illum 6
-map_Bump 1
-map_Kd 7-d.jpg
-map_Ks 7-s.jpg
-
+Ns 18.00
 newmtl phong8SG
-Ns 17.647059
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 1.000000
-illum 2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
 map_Kd 8-d.jpg
-map_Bump 1
+bump 8-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
 map_Ks 8-s.jpg
+Ns 18.00
