@@ -60,7 +60,7 @@ private:
 	glm::vec3 posAnterior;
 	glm::vec3 vecDir, vecA, vecS, vecD;
 	Entity2D *entity;
-	TNodo *nodo;
+	TNodo *nodo, *animation;
 	TGraphicEngine * engine;
 	int dir;
 	bool impulso = false;

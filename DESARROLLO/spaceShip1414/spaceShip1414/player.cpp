@@ -20,9 +20,18 @@
 player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	nodo = motorApp->addMalla("resourse/models/Personajes/personaje/personaje.obj");
+	
+
 	motorApp->escalar(nodo, 0.75f, 0.75f, 0.75f);
 	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.0f);
 	motorApp->rotarYPR(nodo, 180, 0, 0);
+
+	animation = motorApp->addAnimacion("resourse/animations/Personaje/AndarFix/", 25);
+
+	motorApp->escalar(animation, 0.75f, 0.75f, 0.75f);
+	motorApp->trasladar(animation, 0.0f, 0.0f, 0.0f);
+	motorApp->rotarYPR(animation, 180, 0, 0);
+
 	pos = glm::vec3(0, -5, 0);
 	rot = glm::vec3(180, 0, 0);
 	escale = glm::vec3(2, 7, 2);
@@ -232,9 +241,11 @@ void player::asignarVectorDirector(glm::vec3 u, float angle) {
 void player::actualizarPosicion()
 {
 	engine->resetTransform(this->getNodo(), 't');
+	engine->resetTransform(animation, 't');
 	setPos(entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 
 	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	engine->trasladar(animation, entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 }
 
 

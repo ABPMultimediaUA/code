@@ -1,20 +1,37 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GT 720M/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 359.46
+Renderer: GeForce GTX 970/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 372.70
 GLSL: 4.50 NVIDIA
 
 Recurso nombre: personaje.obj
-ROTACIONES 1
-X: 0
-Y: 180.017
-Z: 0
-///////////
-trans 1
-X: -47.02
-Y: 1
-Z: 0
-pasillo_2
-Recurso nombre: pasillo_2.obj
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+Recurso nombre: 0.obj
+Recurso nombre: 1.obj
+Recurso nombre: 2.obj
+Recurso nombre: 3.obj
+Recurso nombre: 4.obj
+Recurso nombre: 5.obj
+Recurso nombre: 6.obj
+Recurso nombre: 7.obj
+Recurso nombre: 8.obj
+Recurso nombre: 9.obj
+Recurso nombre: 10.obj
+Recurso nombre: 11.obj
+Recurso nombre: 12.obj
+Recurso nombre: 13.obj
+Recurso nombre: 14.obj
+Recurso nombre: 15.obj
+Recurso nombre: 16.obj
+Recurso nombre: 17.obj
+Recurso nombre: 18.obj
+Recurso nombre: 19.obj
+Recurso nombre: 20.obj
+Recurso nombre: 21.obj
+Recurso nombre: 22.obj
+Recurso nombre: 23.obj
+Recurso nombre: 24.obj
 
 
 
@@ -40,188 +57,15 @@ Y: 12
 Z: 0
 hangar
 Recurso nombre: hangar.obj
-Recurso nombre: puerta-1.obj
-
-ID: 0
-
-//////////////////////////////////////////
-
-POS 2D
-X: 15.2 Y: 42.18
-
-//////////////////////////////////////////
-Recurso nombre: puerta-2a.obj
-Recurso nombre: puerta-2b.obj
-
-ID: 1
-
-//////////////////////////////////////////
-
-POS 2D
-X: -18.56 Y: 42
-
-//////////////////////////////////////////
-
-ID: 1
-
-//////////////////////////////////////////
-
-POS 2D
-X: -13.46 Y: 42
-
-//////////////////////////////////////////
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: 0.6
-Y: 6.7
-Z: -219.2
-almacen_1
-Recurso nombre: almacen_1.obj
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: 23.8
-Y: 4
-Z: 61.6
-almacen_4
-Recurso nombre: almacen_4.obj
-ROTACIONES 1
-X: 0
-Y: 0
-Z: 0
-///////////
-trans 1
-X: -101
-Y: 1.5
-Z: -116.4
-pasillo_3
-Recurso nombre: pasillo_3.obj
-ROTACIONES 1
-X: 0
-Y: 0
-Z: 0
-///////////
-trans 1
-X: -88.5
-Y: 1.7
-Z: 157.5
-pasillo_1
-Recurso nombre: pasillo_1.obj
 *******************ry:  0
 *******************ry:  0
 *******************ry:  0
 *******************ry:  0
-ROTACIONES 1
-X: 0
-Y: 0
-Z: 0
-///////////
-trans 1
-X: -90
-Y: 3.5
-Z: 0
-sala_espera
-Recurso nombre: sala_espera.obj
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: -392
-Y: 1
-Z: 92.7
-comisaria
-Recurso nombre: comisaria.obj
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: 17.5
-Y: 3.7
-Z: -103
-almacen_3
-Recurso nombre: almacen_3.obj
-ROTACIONES 1
-X: 0
-Y: 179.975
-Z: 0
-///////////
-trans 1
-X: -87
-Y: 6
-Z: 126.5
-mantenimiento
-Recurso nombre: mantenimiento.obj
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: -352
-Y: 0.7
-Z: 87.5
-pasillo_5
-Recurso nombre: pasillo_5.obj
 *******************ry:  270.243
 *******************ry:  270.243
 *******************ry:  0
 *******************ry:  270.243
 *******************ry:  270.243
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: -94.1
-Y: 3.5
-Z: 290
-almacen_2
-Recurso nombre: almacen_2.obj
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: -334
-Y: 1
-Z: -71.07
-pasillo_4
-Recurso nombre: pasillo_4.obj
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: -392.3
-Y: 3.8
-Z: -163
-cantina
-Recurso nombre: cantina.obj
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: -371
-Y: 1
-Z: 160
-vestuario
-Recurso nombre: vestuario.obj
 *******************ry:  268.587
 *******************ry:  270.243
 *******************ry:  0
@@ -232,39 +76,6 @@ Recurso nombre: vestuario.obj
 *******************ry:  180
 *******************ry:  180
 *******************ry:  0
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: -372.7
-Y: -1
-Z: 218.8
-arsenal
-Recurso nombre: arsenal.obj
-ROTACIONES 1
-X: 0
-Y: 0
-Z: 0
-///////////
-trans 1
-X: -97.28
-Y: 7
-Z: -94.17
-generador
-Recurso nombre: generador.obj
-ROTACIONES 1
-X: 0
-Y: 180
-Z: 0
-///////////
-trans 1
-X: -173.4
-Y: 3.1
-Z: -20.8
-hall
-Recurso nombre: hall.obj
 ---------->0
 ---------->0
 ---------->0
@@ -382,17 +193,6 @@ Y: -41.02
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -14.1807
-Y: 41
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -462,17 +262,6 @@ Posicion de la Entity X: 17.03 Y: -41.77
 RAY DE CHOQUE
 X: 19.9495
 Y: -41.02
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -15.6147
-Y: 41
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -565,42 +354,9 @@ Y: -41.02
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -13.8738
-Y: 41
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -13.6309
-Y: 41
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -9.29831
-Y: 41
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -612,20 +368,6 @@ Posicion de la Entity X: 1.15 Y: 41.81
 RAY DE CHOQUE
 X: -5.98292
 Y: 41.06
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -18.56 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -21.628
-Y: 41
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -810,17 +552,6 @@ ENTRO AL CALLBACK
 //////////////////////////////////////////
 
 //////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -8.86344
-Y: 41
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: -28.06 Y: -15.95
 //////////////////////////////////////////
@@ -994,42 +725,9 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -14.1843
-Y: 43
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -15.4434
-Y: 43
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -13.9148
-Y: 43
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1047,14 +745,6 @@ Y: 42.56
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -9.51546
-Y: 43
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1064,45 +754,6 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -18.56 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -22.2647
-Y: 43
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -13.6355
-Y: 43
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -13.46 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -8.65435
-Y: 43
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1150,17 +801,6 @@ Posicion de la Entity X: 28.41 Y: 41.81
 RAY DE CHOQUE
 X: 23.3531
 Y: 42.56
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -18.56 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -22.8298
-Y: 43
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1463,25 +1103,6 @@ Y: -41.02
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 2
-Posicion de la Entity X: -18.56 Y: 42
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -23.3834
-Y: 41
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.07 Y: 27.9
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -27.57
-Y: 33.5152
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1520,22 +1141,6 @@ se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 16.58 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 22.5397 POS Y: 9.19131
-///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
@@ -1550,9 +1155,27 @@ POS X: 16.58 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 19.5692 POS Y: -2.43487
+POS X: 22.3189 POS Y: 8.6099
 ///////////////////////////////////
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.58 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 19.3927 POS Y: -2.25481
+///////////////////////////////////
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 
 ////////////////////////
@@ -1565,7 +1188,7 @@ POS X: 12.98 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 18.651 POS Y: -6.32806
+POS X: 18.9071 POS Y: -4.19496
 ///////////////////////////////////
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
@@ -1575,6 +1198,8 @@ se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.100471
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 
@@ -1583,35 +1208,68 @@ NUM: 0
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.0999002
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.100039
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 
 NOMBRE DEL DESTINO: Waypoint-1 (2)
 NUM: 2
+TIME: 0.0999868
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.10002
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.0999441
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.0999965
+TIME: 0.0999965
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.100008
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   33.3333
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   33.75
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   34.1667
+TIME: 0.0999614
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   34.5833
+TIME: 0.1005
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35
+TIME: 0.0995211
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35.4167
+TIME: 0.100044
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35.8333
+TIME: 0.0999547
+TIME: 0.0999547
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+TIME: 0.100056
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+TIME: 0.0998707
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+TIME: 0.0999997
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+TIME: 0.100071
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+TIME: 0.0999602
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+TIME: 0.0999429
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+TIME: 0.100019
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+TIME: 0.100025
+TIME: 0.100025
+TIME: 0.100025
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   36.25
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35.8333
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35.4167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   35
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   34.5833
+TIME: 0.0996331
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   34.1667
+TIME: 0.100474
 
 ////////////////////////
 COLISION
@@ -1623,9 +1281,10 @@ POS X: 12.98 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 13.612 POS Y: -15.809
+POS X: 12.7384 POS Y: -15.5891
 ///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   33.75
+TIME: 0.0995392
 
 ////////////////////////
 COLISION
@@ -1637,29 +1296,17 @@ POS X: 16.58 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 13.6672 POS Y: -15.2702
+POS X: 12.8635 POS Y: -14.8248
 ///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   33.3333
 
 NOMBRE DEL DESTINO: Waypoint-1 (4)
 NUM: 4
+TIME: 0.100566
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.0994295
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 16.58 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 13.9186 POS Y: -12.9321
-///////////////////////////////////
+TIME: 0.100532
 
 ////////////////////////
 COLISION
@@ -1671,57 +1318,110 @@ POS X: 12.98 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 13.9186 POS Y: -12.9321
+POS X: 13.2058 POS Y: -12.8014
 ///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.0833
+TIME: 0.0995076
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.6667
+TIME: 0.100482
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.25
+TIME: 0.0994792
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.58 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 13.6647 POS Y: -10.5253
+///////////////////////////////////
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.8333
+TIME: 0.100171
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.4167
+TIME: 0.0998461
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30
+TIME: 0.100077
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.5833
+TIME: 0.0999277
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.1667
+TIME: 0.100073
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.75
+TIME: 0.099921
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
 
 NOMBRE DEL DESTINO: Waypoint-1 (42)
 NUM: 41
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.100012
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.9167
+TIME: 0.0999617
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.5
+TIME: 0.10002
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.0833
+TIME: 0.0999786
+TIME: 0.0999786
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+TIME: 0.100018
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+TIME: 0.1005
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+TIME: 0.0995401
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+TIME: 0.100309
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+TIME: 0.0995568
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
 
 NOMBRE DEL DESTINO: Waypoint-1 (3)
 NUM: 3
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.100335
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+TIME: 0.099677
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+TIME: 0.100507
+TIME: 0.100507
+TIME: 0.100507
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.0833
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.099538
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.75
+TIME: 0.10051
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.1667
+TIME: 0.0994933
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.5833
+TIME: 0.100524
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30
+TIME: 0.0994693
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.4167
+TIME: 0.10052
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.8333
+TIME: 0.0994807
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.25
 
 NOMBRE DEL DESTINO: Waypoint-1 (41)
 NUM: 40
+TIME: 0.100044
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.6667
+TIME: 0.0999233
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.0833
+TIME: 0.100102
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.0999011
+TIME: 0.0999011
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.100106
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
 
 ////////////////////////
 COLISION
@@ -1733,11 +1433,12 @@ POS X: -47.63 POS Y: -0.9
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -41.7124 POS Y: 0.515003
+POS X: -42.1233 POS Y: -1.47823
 ///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.0998985
 
 ////////////////////////
 COLISION
@@ -1749,12 +1450,16 @@ POS X: -47.63 POS Y: -0.9
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -45.2351 POS Y: 0.534279
+POS X: -45.353 POS Y: -1.04615
 ///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.100097
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.0998818
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.100004
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.100005
 
 ////////////////////////
 COLISION
@@ -1766,10 +1471,12 @@ POS X: -55.64 POS Y: -0.9
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -50.9665 POS Y: 0.552779
+POS X: -50.7424 POS Y: -0.437881
 ///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.100023
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.0999666
 
 ////////////////////////
 COLISION
@@ -1781,171 +1488,47 @@ POS X: -55.64 POS Y: -0.9
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -53.6869 POS Y: 0.559055
+POS X: -53.6042 POS Y: -0.200639
 ///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.100015
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.100016
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.0999892
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.10002
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.099995
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
 
 NOMBRE DEL DESTINO: Waypoint-1 (2)
 NUM: 2
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.100313
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.0996568
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.100399
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.0995986
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
 
 NOMBRE DEL DESTINO: Waypoint-1 (40)
 NUM: 39
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-
-NOMBRE DEL DESTINO: Waypoint-1 (42)
-NUM: 41
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-
-NOMBRE DEL DESTINO: Waypoint-1 (36)
-NUM: 35
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -123 POS Y: -0.9
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -117.377 POS Y: 0.62079
-///////////////////////////////////
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-
-NOMBRE DEL DESTINO: Waypoint-1 (41)
-NUM: 40
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
+TIME: 0.10045
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.0995351
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+TIME: 0.100531
+TIME: 0.100531
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.9167
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado

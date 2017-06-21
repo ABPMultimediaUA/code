@@ -26,13 +26,13 @@ void TAnimacion::cargarMalla(std::string path, TGestorRecursos * gestor, unsigne
 	animacion = new TRecursoMalla*[num];
 	size_t punto = path.find_last_of(".");
 	std::string ruta = punto == std::string::npos ? path : path.substr(punto);
-	
-	std::cout << ruta << std::endl;
-	ruta += "[";
-	std::cout << ruta << std::endl;
+	std::cout << "LA PATH SURMANO: " << path << std::endl;
+
+	std::cout <<"LA RUTA SURMANO: "<<ruta << std::endl;
+	std::cout <<"MAS RUTA: "<< ruta << std::endl;
 	for (unsigned int i = 0; i < num; i++)
 	{
-		animacion[i] = static_cast<TRecursoMalla*>(gestor->getRecurso((ruta+std::to_string(i)+"].obj"), 1));
+		animacion[i] = static_cast<TRecursoMalla*>(gestor->getRecurso((ruta+std::to_string(i)+".obj"), 1));
 	}
 	ultimoFrame = 0;
 	numeroFrame = num;
@@ -41,7 +41,7 @@ void TAnimacion::cargarMalla(std::string path, TGestorRecursos * gestor, unsigne
 void TAnimacion::beginDraw()
 {
 	animacion[ultimoFrame]->draw();
-	if (ultimoFrame == numeroFrame) 
+	if (ultimoFrame == numeroFrame - 1) 
 	{
 		ultimoFrame = 0;
 	}
@@ -62,7 +62,7 @@ void TAnimacion::beginDraw(openGLShader& shader, const glm::mat4& view, const gl
 	glUniformMatrix3fv(shader.getUniformLocation("n_matrix"), 1, GL_FALSE, glm::value_ptr(N));
 	animacion[ultimoFrame]->draw(shader.getProgram());
 	if (deltaTime >= 0.0041667) {
-		if (ultimoFrame == numeroFrame)
+		if (ultimoFrame == numeroFrame - 1)
 		{
 			ultimoFrame = 0;
 		}
