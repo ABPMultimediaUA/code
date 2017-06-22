@@ -6,6 +6,7 @@
 #include <glm\mat3x3.hpp>
 #include <glm\vec4.hpp>
 #include <glm\gtx\matrix_decompose.hpp>
+#include <glm\gtc\matrix_transform.hpp>
 
 unsigned int TLuz::nLuces = 0;
 
@@ -36,6 +37,7 @@ TLuz::TLuz(bool estaActiva, bool local, bool foco, float fAmbient[], float fColo
 	else {
 		direccionCono = glm::vec3(0.0f, -1.0f, 0.0f);
 	}
+	direccionConoView = glm::vec3(0.0f, -1.0f, 0.0f);
 	vectorMedio = glm::normalize(direccionLuz + glm::vec3(0, 0, 1));
 	id = nLuces;
 	++nLuces;
@@ -92,13 +94,24 @@ void TLuz::renderLuz(const glm::mat4& model, openGLShader& shader, const glm::ma
 	//std::cout << luz << " -> " << color.r << " - " << color.g << " - " << color.b << std::endl;
 	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(color));
 	luz = "luz[" + std::to_string(id) + "].posicion";
-//	std::cout << luz << " -> " << direccionLuz.x << " - " << direccionLuz.y << " - " << direccionLuz.z << std::endl;
+	glm::vec3 v = getDirectionXView(MV);
+	float p[] = { v.x, v.y, v.z };
+	setDireccionLuz(p);
+	std::cout << luz << " -> " << direccionLuz.x << " - " << direccionLuz.y << " - " << direccionLuz.z << std::endl;
 	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(direccionLuz));
 	luz = "luz[" + std::to_string(id) + "].vectorMedio";
 //	std::cout << luz << " -> " << vectorMedio.x << " - " << vectorMedio.y << " - " << vectorMedio.z << std::endl;
 	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(vectorMedio));
 	luz = "luz[" + std::to_string(id) + "].direcCono";
+	/*glm::mat4 modelCono = glm::translate(glm::mat4(), glm::vec3(direccionCono.x, direccionCono.y, direccionCono.z));
+	glm::mat4 MVCono = view * modelCono;
+	v = getDirectionXView(MVCono);
+	p[0] = 0;
+	p[1] = v.y;
+	p[2] = 0;
+	setDireccionConoView(p);*/
 	//std::cout << luz << " -> " << direccionCono.x << " - " << direccionCono.y << " - " << direccionCono.z << std::endl;
+	//std::cout << luz << " -> " << direccionConoView.x << " - " << direccionConoView.y << " - " << direccionConoView.z << std::endl;
 	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(direccionCono));
 	luz = "luz[" + std::to_string(id) + "].spotCosCutOff";
 	//std::cout << luz << " -> " << spotCosCutOff << std::endl;
@@ -218,6 +231,13 @@ void TLuz::setAtenuacionCuadratica(float f)
 	atenuacionCuadratica = f;
 }
 
+void TLuz::setDireccionConoView(float v[])
+{
+	direccionConoView.x = v[0];
+	direccionConoView.y = v[1];
+	direccionConoView.z = v[3];
+}
+
 glm::vec3 TLuz::getAmbient()
 {
 	return ambient;
@@ -236,6 +256,11 @@ glm::vec3 TLuz::getDireccionLuz()
 glm::vec3 TLuz::getDireccionCono()
 {
 	return direccionCono;
+}
+
+glm::vec3 TLuz::getDireccionConoView()
+{
+	return direccionConoView;
 }
 
 float TLuz::getCosCutOffFoco()
@@ -261,4 +286,16 @@ float TLuz::getAtenuacionLiniar()
 float TLuz::getAtenuacionCuadratica()
 {
 	return atenuacionCuadratica;
+}
+
+glm::vec3 TLuz::getDirectionXView(const glm::mat4 & matriz)
+{
+	glm::vec3 scale;
+	glm::quat rotation;
+	glm::vec3 translation;
+	glm::vec3 skew;
+	glm::vec4 perspective;
+	glm::decompose(matriz, scale, rotation, translation, skew, perspective);
+
+	return translation;
 }
