@@ -52,7 +52,7 @@ class Mundo;
 #define FLOCKING 8
 
 #define MULTIVEL 1
-#define PROPCURVA 50
+#define PROPCURVA 100
 //el enemigo deberia tener un estado que sea
 //siguiendo al lider o algo para aplicar el flocking
 
