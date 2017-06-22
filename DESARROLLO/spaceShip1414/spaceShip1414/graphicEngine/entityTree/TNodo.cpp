@@ -52,6 +52,7 @@ TNodo::~TNodo()
 		delete entidad;
 		entidad = nullptr;
 	}
+
 	if (hijos.size() > 0) {
 		for (std::vector<TNodo*>::iterator it = hijos.begin(); it != hijos.end(); ++it)
 		{
@@ -63,6 +64,14 @@ TNodo::~TNodo()
 	}
 	std::cout << "Nodo eliminado" << std::endl;
 }
+
+
+void TNodo::destruirEntidad()
+{
+	delete entidad;
+	entidad = nullptr;
+}
+
 
 bool TNodo::addHijo(TNodo* n)
 {
@@ -134,7 +143,8 @@ void TNodo::draw()
 
 void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro, double dt)
 {
-	if (this->entidad) {
+	if (this->entidad != nullptr) {
+		std::cout << "VALOR: "<< entidad << std::endl;
 		this->entidad->beginDraw(s,w,pro, dt);
 	}
 	for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {

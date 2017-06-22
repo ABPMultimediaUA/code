@@ -47,7 +47,7 @@ Camara::Camara(TGraphicEngine * motorApp, int ident, bool activa, bool move, glm
 	std::cout << "*******************ry:  " << rot.y << std::endl;
 	nodo = motorApp->addCamaraPerspectivaFija(activa);
 	motorApp->resetTransform(nodo, 'r');
-	motorApp->rotarYPR(nodo, rot.y -180 , rot.x, rot.z);
+	motorApp->rotarYPR(nodo, rot.y - 180 , rot.x, rot.z);
 	motorApp->trasladar(nodo, pos.x, pos.y, pos.z);
 	p = pos;
 	r = rot;

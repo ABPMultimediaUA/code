@@ -4,6 +4,7 @@
 #include "graphicEngine\entityTree\TNodo.h"
 #include "graphicEngine\entityTree\TMalla.h"
 #include "graphicEngine\entityTree\TCamara.h"
+#include "graphicEngine\entityTree\TAnimacion.h"
 #ifndef ENTITY2D_GUARD
 #define ENTITY2D_GUARD
 #include "Fisicas\Entity2D.h"
@@ -19,26 +20,28 @@
 
 player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 }, pitch{ 0 }
 {
-	nodo = motorApp->addMalla("resourse/models/Personajes/personaje/personaje.obj");
 	
+	
+	anguloCamara = 90.0f; //para hacer que rote con la camara
+
+	nodo = motorApp->addMalla("resourse/models/Personajes/personaje/personaje.obj");
 
 	motorApp->escalar(nodo, 0.75f, 0.75f, 0.75f);
 	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.0f);
-	motorApp->rotarYPR(nodo, 180, 0, 0);
-
+	motorApp->rotarYPR(nodo, 0, 0, 0);
+	
 	animation = motorApp->addAnimacion("resourse/animations/Personaje/AndarFix/", 25);
 
 	motorApp->escalar(animation, 0.75f, 0.75f, 0.75f);
 	motorApp->trasladar(animation, 0.0f, 0.0f, 0.0f);
-	motorApp->rotarYPR(animation, 180, 0, 0);
+	motorApp->rotarYPR(animation, 0, 0, 0);
 
 	pos = glm::vec3(0, -5, 0);
 	rot = glm::vec3(180, 0, 0);
-	escale = glm::vec3(2, 7, 2);
+	escale = glm::vec3(0.75f, 0.75f, 0.75f);
 	engine = motorApp;
 	vecDir, vecA, vecD, vecS = glm::vec3(0, 0, 0);
 	entity = new Entity2D(m->getWorldBox2D(), glm::vec3(0,0,0), rot, this);
-	
 	motorApp->setPlayerMove(this);
 }
 
@@ -140,6 +143,8 @@ void player::setScale(float x, float y, float z)
 void player::actualizarFisicas(int n, double delta, float anguloCam)
 {
 
+
+
 	b2Vec2 vel(0,0);
 
 	dir = n;
@@ -205,6 +210,8 @@ void player::asignarVectorDirector(glm::vec3 u, float angle) {
 
 	vecDir = u;
 
+	anguloCamara = angle;
+
 	std::cout << "ANGLEEEEE: " << angle << std::endl;
 	std::cout << angle + 90 << std::endl;
 	std::cout << angle + 180 << std::endl;
@@ -269,6 +276,19 @@ float player::getTemporizador() {
 
 void player::setImpulso(bool x) {
 	impulso = x;
+}
+
+void player::destruirAnimacion()
+{
+	animation->destruirEntidad();
+	
+}
+
+//hay que pasarle el paht
+void player::nuevaAnimacion()
+{
+	engine->cargarNuevaAnimacion(animation, "resourse/animations/Personaje/AndarFix/", 25);
+
 }
 
 bool player::getImpulso() {

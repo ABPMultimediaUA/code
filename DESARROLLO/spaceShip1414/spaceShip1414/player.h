@@ -45,7 +45,8 @@ public:
 
 	float getTemporizador();
 	void setImpulso(bool x);
-
+	void destruirAnimacion();
+	void nuevaAnimacion();
 	bool getImpulso();
 
 private:
@@ -53,6 +54,7 @@ private:
 	float yaw;
 	float pitch;
 	float temporizador;
+	float anguloCamara;
 	glm::vec3 pos;
 	glm::vec3 rot;
 	glm::vec3 escale;

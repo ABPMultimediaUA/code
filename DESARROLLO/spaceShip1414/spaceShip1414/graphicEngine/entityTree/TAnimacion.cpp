@@ -19,6 +19,11 @@ TAnimacion::TAnimacion(std::string path, TGestorRecursos * gestor, unsigned int 
 
 TAnimacion::~TAnimacion()
 {
+	for (int i = 0; i < numeroFrame; i++) {
+		delete[] animacion[i];
+	}
+
+	delete[] animacion;
 }
 
 void TAnimacion::cargarMalla(std::string path, TGestorRecursos * gestor, unsigned int num)

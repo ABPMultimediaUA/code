@@ -234,6 +234,11 @@ TNodo * TGraphicEngine::addAnimacion(std::string path, unsigned int frames, TNod
 	return nodoAnimacion;
 }
 
+void TGraphicEngine::cargarNuevaAnimacion(TNodo* padre, std::string path, unsigned int frames)
+{
+	padre->setEntidad(crearAnimacion(path, frames));
+}
+
 TNodo * TGraphicEngine::addMalla(std::string path, TNodo * nodoPadre)
 {
 	TTransform * rotation = crearTransform();

@@ -12,6 +12,7 @@ public:
 	TNodo(TEntidad*);
 	TNodo(TNodo*, TEntidad*);
 	~TNodo();
+	void destruirEntidad();
 	bool addHijo(TNodo*);
 	void setPadre(TNodo*);
 	int removeHijo(TNodo*);

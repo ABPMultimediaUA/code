@@ -48,30 +48,48 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 
 			//jugador->actualizarFisicas(3,dt, 0);
 			tecla = TECLA_W;
-			motor->resetTransform(jugador->getNodo(), 'r');
-			motor->rotarYPR(jugador->getNodo(), 180, 0.0, 0.0f);
+		/*	motor->resetTransform(jugador->getNodo(), 'r');
+			motor->rotarYPR(jugador->getNodo(), 180, 0.0, 0.0f);*/
 		}
 		if (glfwGetKey(window, GLFW_KEY_S) != GLFW_RELEASE) {
 
 			//jugador->actualizarFisicas(2,dt, 0);
 			tecla = TECLA_S;
-			motor->resetTransform(jugador->getNodo(), 'r');
-			motor->rotarYPR(jugador->getNodo(), 0, 0.0, 0.0f);
+			//motor->resetTransform(jugador->getNodo(), 'r');
+			//motor->rotarYPR(jugador->getNodo(), 0, 0.0, 0.0f);
 
 		}
 		if (glfwGetKey(window, GLFW_KEY_A) != GLFW_RELEASE) {
 
 			//jugador->actualizarFisicas(1,dt, 0);
 			tecla = TECLA_A;
-			motor->resetTransform(jugador->getNodo(), 'r');
-			motor->rotarYPR(jugador->getNodo(), -90, 0.0, 0.0f);
+			//motor->resetTransform(jugador->getNodo(), 'r');
+			//motor->rotarYPR(jugador->getNodo(), -90, 0.0, 0.0f);
 		}
 		if (glfwGetKey(window, GLFW_KEY_D) != GLFW_RELEASE) {
 
 			//jugador->actualizarFisicas(0,dt, 0);
 			tecla = TECLA_D;
-			motor->resetTransform(jugador->getNodo(), 'r');
-			motor->rotarYPR(jugador->getNodo(), 90, 0.0, 0.0f);
+			//motor->resetTransform(jugador->getNodo(), 'r');
+			//motor->rotarYPR(jugador->getNodo(), 90, 0.0, 0.0f);
+
+		}
+
+		if (glfwGetKey(window, GLFW_KEY_H) != GLFW_RELEASE) {
+
+			//jugador->actualizarFisicas(0,dt, 0);
+			jugador->destruirAnimacion();
+			//motor->resetTransform(jugador->getNodo(), 'r');
+			//motor->rotarYPR(jugador->getNodo(), 90, 0.0, 0.0f);
+
+		}
+
+		if (glfwGetKey(window, GLFW_KEY_J) != GLFW_RELEASE) {
+
+			//jugador->actualizarFisicas(0,dt, 0);
+			jugador->nuevaAnimacion();
+			//motor->resetTransform(jugador->getNodo(), 'r');
+			//motor->rotarYPR(jugador->getNodo(), 90, 0.0, 0.0f);
 
 		}
 		//El fantasma esta aqui
