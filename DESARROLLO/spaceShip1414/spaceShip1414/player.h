@@ -8,6 +8,8 @@ class TNodo;
 class Entity2D;
 class Mundo;
 class Bala;
+class MaquinaEstados;
+class Estados;
 
 class player
 {
@@ -43,6 +45,9 @@ public:
 
 	void disminuirTem();
 
+	void initEstados();
+	void deleteEstados();
+
 	float getTemporizador();
 	void setImpulso(bool x);
 	void destruirAnimacion();
@@ -66,6 +71,10 @@ private:
 	TGraphicEngine * engine;
 	int dir;
 	bool impulso = false;
+	MaquinaEstados* MaquinaEstadosAnimation;
+	Estados* andar, *correr, *reposo, *disparar;
+
+
 };
 
 

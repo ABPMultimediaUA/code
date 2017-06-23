@@ -5,6 +5,9 @@
 #include "graphicEngine\entityTree\TMalla.h"
 #include "graphicEngine\entityTree\TCamara.h"
 #include "graphicEngine\entityTree\TAnimacion.h"
+#include "Game\MaquinaEstados\FSM\MaquinaEstados.h"
+#include "Game\MaquinaEstados\FSM\Estados.h"
+
 #ifndef ENTITY2D_GUARD
 #define ENTITY2D_GUARD
 #include "Fisicas\Entity2D.h"
@@ -24,13 +27,15 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 
 	
 	anguloCamara = 90.0f; //para hacer que rote con la camara
 
-	//nodo = motorApp->addMalla("resourse/models/Personajes/personaje/personaje.obj");
 
-	//motorApp->escalar(nodo, 0.75f, 0.75f, 0.75f);
-	//motorApp->trasladar(nodo, 0.0f, 0.0f, 0.0f);
-	//motorApp->rotarYPR(nodo, 0, 0, 0);
-	
-	animation = motorApp->addAnimacion("resourse/animations/Personaje/AndarFix/", 25);
+	initEstados();
+	nodo = motorApp->addMalla(MaquinaEstadosAnimation->getEstadoActivo()->getPathAnimacion());
+
+	motorApp->escalar(nodo, 0.75f, 0.75f, 0.75f);
+	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.0f);
+	motorApp->rotarYPR(nodo, 0, 0, 0);
+
+	animation = motorApp->addAnimacion(andar->getPathAnimacion(), 25);
 
 	motorApp->escalar(animation, 0.75f, 0.75f, 0.75f);
 	motorApp->trasladar(animation, 0.0f, 0.0f, 0.0f);
@@ -66,10 +71,43 @@ void player::translation(TGraphicEngine * motorApp, float x, float y, float z)
 }
 
 
+void player::initEstados()
+{
+
+	MaquinaEstadosAnimation = new MaquinaEstados();
+	andar = new Estados("andar");
+	andar->asignarPath("resourse/animations/Personaje/AndarFix/");
+	reposo = new Estados("reposo");
+	//reposo->asignarPath("resourse/animations/Personaje/Reposo/");
+	reposo->asignarPath("resourse/models/Personajes/personaje/personaje.obj");
+	correr = new Estados("correr");
+	correr->asignarPath("resourse/animations/Personaje/Correr/");
+	disparar = new Estados("disparar");
+	disparar->asignarPath("resourse/animations/Personaje/Disparar/");
+
+	MaquinaEstadosAnimation->addEstado(andar);
+	MaquinaEstadosAnimation->addEstado(reposo, true);
+	MaquinaEstadosAnimation->addEstado(correr);
+	MaquinaEstadosAnimation->addEstado(disparar);
+
+
+}
+
+void player::deleteEstados()
+{
+	delete andar;
+	delete reposo;
+	delete correr;
+	delete disparar;
+	delete MaquinaEstadosAnimation;
+
+}
+
 player::~player()
 {
 
 	delete(entity);
+	deleteEstados();
 
 }
 
@@ -268,6 +306,8 @@ void player::disminuirTem() {
 
 	temporizador -= 0.5f;
 }
+
+
 
 float player::getTemporizador() {
 
