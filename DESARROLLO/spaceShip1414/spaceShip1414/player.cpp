@@ -228,6 +228,8 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		cambiarAnimacion('a');
 	}
 
+	
+	
 
 	b2Vec2 vel(0,0);
 
@@ -239,6 +241,12 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		if (MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != reposo->getEstado()) {
 			cambiarAnimacion('r');
 		}
+
+		glm::vec3 rotaton = engine->getRotacion(animation);
+
+		engine->resetTransform(this->getNodo(), 'r');
+		engine->rotarYPR(nodo, rotaton.y, 0.0f, 0.0f);
+
 	}
 
 
@@ -246,6 +254,10 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 		vel.Set(vecD.x, vecD.z);
 		vel = velocity * vel;
+
+		engine->resetTransform(animation, 'r');
+
+		engine->rotarYPR(animation, anguloCamara - 90, 0.0f, 0.0f);
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
 	}
 
@@ -253,6 +265,11 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 		vel.Set(vecA.x, vecA.z);
 		vel = velocity * vel;
+
+		engine->resetTransform(animation, 'r');
+
+		engine->rotarYPR(animation, anguloCamara + 90, 0.0f, 0.0f);
+
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
 
 	}
@@ -260,6 +277,9 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	if (n == 2) {
 		vel.Set(vecS.x, vecS.z);
 		vel = velocity * vel;
+		engine->resetTransform(animation, 'r');
+
+		engine->rotarYPR(animation, anguloCamara + 180, 0.0f, 0.0f);
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
 
 	}
@@ -269,6 +289,9 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 		vel.Set(vecDir.x, vecDir.z);
 		vel = velocity * vel;
+		engine->resetTransform(animation, 'r');
+
+		engine->rotarYPR(animation, anguloCamara, 0.0f, 0.0f);
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
 	}
 
@@ -336,7 +359,11 @@ void player::actualizarPosicion()
 {
 	engine->resetTransform(this->getNodo(), 't');
 	engine->resetTransform(animation, 't');
+
+
 	setPos(entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+
+	
 
 	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 	engine->trasladar(animation, entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
