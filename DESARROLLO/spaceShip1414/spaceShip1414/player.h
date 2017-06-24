@@ -34,6 +34,7 @@ public:
 	void setPos(float x, float y, float z);
 	void setRot(float x, float y, float z);
 	void setScale(float x, float y, float z);
+	void cambiarAnimacion(char c);
 	void actualizarFisicas(int n, double delta, float);
 	void setCamPos(glm::vec3);
 	TNodo * getNodo();
@@ -50,7 +51,7 @@ public:
 
 	float getTemporizador();
 	void setImpulso(bool x);
-	void destruirAnimacion();
+	void destruirAnimacion(TNodo * n);
 	void nuevaAnimacion();
 	bool getImpulso();
 

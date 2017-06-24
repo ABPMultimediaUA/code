@@ -68,8 +68,10 @@ TNodo::~TNodo()
 
 void TNodo::destruirEntidad()
 {
-	delete entidad;
-	entidad = nullptr;
+	if (entidad == nullptr) {
+		delete entidad;
+		entidad = nullptr;
+	}
 }
 
 
@@ -144,7 +146,6 @@ void TNodo::draw()
 void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro, double dt)
 {
 	if (this->entidad != nullptr) {
-		std::cout << "VALOR: "<< entidad << std::endl;
 		this->entidad->beginDraw(s,w,pro, dt);
 	}
 	for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {

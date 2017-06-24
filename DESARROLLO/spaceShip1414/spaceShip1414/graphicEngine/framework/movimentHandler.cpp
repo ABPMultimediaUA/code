@@ -78,7 +78,7 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 		if (glfwGetKey(window, GLFW_KEY_H) != GLFW_RELEASE) {
 
 			//jugador->actualizarFisicas(0,dt, 0);
-			jugador->destruirAnimacion();
+			//jugador->destruirAnimacion();
 			//motor->resetTransform(jugador->getNodo(), 'r');
 			//motor->rotarYPR(jugador->getNodo(), 90, 0.0, 0.0f);
 
@@ -87,7 +87,7 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 		if (glfwGetKey(window, GLFW_KEY_J) != GLFW_RELEASE) {
 
 			//jugador->actualizarFisicas(0,dt, 0);
-			jugador->nuevaAnimacion();
+		//	jugador->nuevaAnimacion();
 			//motor->resetTransform(jugador->getNodo(), 'r');
 			//motor->rotarYPR(jugador->getNodo(), 90, 0.0, 0.0f);
 

@@ -29,7 +29,7 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 
 
 
 	initEstados();
-	nodo = motorApp->addMalla(MaquinaEstadosAnimation->getEstadoActivo()->getPathAnimacion());
+	nodo = motorApp->addMalla(reposo->getPathAnimacion());
 
 	motorApp->escalar(nodo, 0.75f, 0.75f, 0.75f);
 	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.0f);
@@ -178,9 +178,55 @@ void player::setScale(float x, float y, float z)
 
 }
 
+void player::cambiarAnimacion(char c) {
+
+
+	switch (c)
+	{
+
+	case 'r': //reposo
+		std::cout << "REPOSO" << std::endl;
+		MaquinaEstadosAnimation->cambiaEstado("reposo");
+		destruirAnimacion(nodo);
+		destruirAnimacion(animation);
+		engine->cargarNuevaMalla(nodo, reposo->getEstado());
+
+		break;
+
+	case 'a': //andar
+		std::cout << "ANDAR" << std::endl;
+
+		MaquinaEstadosAnimation->cambiaEstado("andar");
+		destruirAnimacion(nodo);
+		destruirAnimacion(animation);
+		//engine->cargarNuevaMalla(nodo, reposo->getEstado());
+		engine->cargarNuevaAnimacion(animation, andar->getPathAnimacion(), 25);
+
+		break;
+
+	case 'c': //correr
+		
+		break;
+
+	case 'd': //disparar
+
+		break;
+
+	default:
+		//animacion de andar
+		break;
+	}
+
+
+}
+
+
 void player::actualizarFisicas(int n, double delta, float anguloCam)
 {
 
+	if (MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != andar->getEstado()) {
+		cambiarAnimacion('a');
+	}
 
 
 	b2Vec2 vel(0,0);
@@ -190,6 +236,9 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 	if(n == -1) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+		if (MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != reposo->getEstado()) {
+			cambiarAnimacion('r');
+		}
 	}
 
 
@@ -285,11 +334,11 @@ void player::asignarVectorDirector(glm::vec3 u, float angle) {
 
 void player::actualizarPosicion()
 {
-	//engine->resetTransform(this->getNodo(), 't');
+	engine->resetTransform(this->getNodo(), 't');
 	engine->resetTransform(animation, 't');
 	setPos(entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 
-	//engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 	engine->trasladar(animation, entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 }
 
@@ -318,9 +367,9 @@ void player::setImpulso(bool x) {
 	impulso = x;
 }
 
-void player::destruirAnimacion()
+void player::destruirAnimacion(TNodo* n)
 {
-	animation->destruirEntidad();
+	n->destruirEntidad();
 	
 }
 

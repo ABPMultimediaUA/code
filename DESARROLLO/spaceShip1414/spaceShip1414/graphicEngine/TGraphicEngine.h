@@ -63,6 +63,7 @@ public:
 
 	TNodo * addAnimacion(std::string path = "", unsigned int frames = 25, TNodo * nodoPadre = nullptr);
 	void cargarNuevaAnimacion(TNodo * padre, std::string path, unsigned int frames);
+	void cargarNuevaMalla(TNodo * padre, std::string path);
 	TNodo * addMalla(std::string path = "", TNodo * nodoPadre = nullptr);
 	TNodo * addCamara(char tipo = 0, bool per = false, bool act = false, TNodo * nodoPadre = nullptr, float x = 45.0f, float y = 0.1f, float z = 1000.0f, float a = 0.0f, float b = 10.0f, float c = 10.0f);
 	TNodo * addCamaraLibre(bool activa = false);
