@@ -1,0 +1,65 @@
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metalplata.jpg
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd panel.jpg
+bump panelN.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks panelS.jpg
+Ns 18.00
+newmtl phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd azul2.jpg
+bump azulN.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks azulS.jpg
+Ns 18.00
+newmtl phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd steel_diffuse.jpg
+bump steel_normal.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks steel_specular.jpg
+Ns 18.00
+newmtl phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd suelo2.jpg
+bump suelo2N.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks suelo2S.jpg
+Ns 18.00
