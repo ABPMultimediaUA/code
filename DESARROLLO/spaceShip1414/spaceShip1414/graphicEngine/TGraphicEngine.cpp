@@ -314,7 +314,7 @@ TNodo * TGraphicEngine::addCamaraLibre(bool activa)
 	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
 	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
 	TNodo* nodoCamara;
-	nodoCamara = crearNodo(nodoTransfTC, crearCamara(45.0f, aspect_ratio, 0.1f, 1000.0f));
+	nodoCamara = crearNodo(nodoTransfTC, crearCamara(45.0f, aspect_ratio, 0.1f, 300.0f));
 	addRegistroCamara(nodoCamara);
 	return nodoCamara;
 }
@@ -365,7 +365,7 @@ TNodo * TGraphicEngine::addCamaraPerspectivaFija(bool activa)
 	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
 	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
 	TNodo* nodoCamara;
-	nodoCamara = crearNodo(nodoTransfTC, crearCamara(true, 45.0f, aspect_ratio, 0.1f, 1000.f, activa));
+	nodoCamara = crearNodo(nodoTransfTC, crearCamara(true, 45.0f, aspect_ratio, 0.1f, 300.f, activa));
 	addRegistroCamara(nodoCamara);
 	return nodoCamara;
 }
@@ -381,7 +381,7 @@ TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoP
 	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
 	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
 	TNodo* nodoCamara;
-	nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(true, 45.f, aspect_ratio, 0.1f, 1000.f, activa));
+	nodoCamara = crearNodo(nodoTransfTC, crearCamaraS(true, 45.f, aspect_ratio, 0.1f, 300.f, activa));
 	addRegistroCamara(nodoCamara);
 
 	return nodoCamara;
