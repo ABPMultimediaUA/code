@@ -183,7 +183,7 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 			speedRel = sqrtf(x + y);
 
 
-			float time = (posRel.length() * velRel.length()) / (speedRel * speedRel);
+			float time = (glm::length(posRel)  * glm::length(velRel)) / (speedRel * speedRel);
 
 			//std::cout << "TIME: " << time << std::endl;
 			//std::cout << "shortestTime: " << shortestTime << std::endl;

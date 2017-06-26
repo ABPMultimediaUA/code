@@ -51,10 +51,11 @@ class Mundo;
 #define CUERPOACUERPO 7
 #define FLOCKING 8
 
-#define MULTIVEL 1
-#define PROPCURVA 100
+#define MULTIVEL 50
+#define PROPCURVA 15
 //el enemigo deberia tener un estado que sea
 //siguiendo al lider o algo para aplicar el flocking
+// a menos velocidad mas propcurva y a mas vel, menos propcurva
 
 
 #ifdef _IRR_WINDOWS_
@@ -85,8 +86,8 @@ typedef struct
 		st.linear.y = 0;
 		velocidad += st.linear*dt;
 		rotacion += st.angular*dt;
-
-		if (velocidad.length() > 5.0f)
+		//std::cout << "CACA: " << velocidad.length() << std::endl;
+		if (glm::length(velocidad) > 5.0f)
 		{
 			velocidad = glm::normalize(velocidad);
 			velocidad *= MULTIVEL;
