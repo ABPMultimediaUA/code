@@ -9,7 +9,7 @@ Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 {
 
 	nodo = motorApp->addLuz();
-	motorApp->trasladar(nodo, tras.x, tras.y, tras.z+20);
+	motorApp->trasladar(nodo, tras.x, tras.y, tras.z);
 	motorApp->rotarYPR(nodo, r.x, r.y, r.z);
 	motorApp->escalar(nodo, sca.x, sca.y, sca.z);
 	motorApp->addRegistroLuz(nodo);

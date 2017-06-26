@@ -9,6 +9,72 @@
   },
   "hierarchy": [
     {
+      "name": "Luces",
+      "components": [
+        {
+          "localPosition": [
+            23.8,
+            0.0,
+            61.6
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "0",
+          "components": [
+            {
+              "localPosition": [
+                -23.8,
+                5.0,
+                -61.6
+              ],
+              "localRotation": [
+                90.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "range": 15.0,
+              "lightType": "Point",
+              "castsShadows": false,
+              "realtime": false,
+              "type": "Light"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
       "name": "PASILLO_2",
       "components": [
         {
@@ -1686,189 +1752,6 @@
                     1.0
                   ],
                   "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Luces",
-          "components": [
-            {
-              "localPosition": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": [
-            {
-              "name": "Luz-1",
-              "components": [
-                {
-                  "localPosition": [
-                    -7.0,
-                    16.4,
-                    -9.24
-                  ],
-                  "localRotation": [
-                    90.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "color": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "range": 10.85,
-                  "lightType": "Point",
-                  "castsShadows": false,
-                  "realtime": false,
-                  "type": "Light"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Luz-2",
-              "components": [
-                {
-                  "localPosition": [
-                    -7.0,
-                    16.4,
-                    4.52
-                  ],
-                  "localRotation": [
-                    90.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.00000048,
-                    1.00000048
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "color": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "range": 15.0,
-                  "lightType": "Point",
-                  "castsShadows": false,
-                  "realtime": false,
-                  "type": "Light"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Luz-3",
-              "components": [
-                {
-                  "localPosition": [
-                    6.5,
-                    16.4,
-                    4.52
-                  ],
-                  "localRotation": [
-                    90.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.00000048,
-                    1.00000048
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "color": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "range": 15.0,
-                  "lightType": "Point",
-                  "castsShadows": false,
-                  "realtime": false,
-                  "type": "Light"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Luz-4",
-              "components": [
-                {
-                  "localPosition": [
-                    6.5,
-                    16.4,
-                    -9.24
-                  ],
-                  "localRotation": [
-                    90.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.00000048,
-                    1.00000048
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "color": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "range": 15.0,
-                  "lightType": "Point",
-                  "castsShadows": false,
-                  "realtime": false,
-                  "type": "Light"
                 }
               ],
               "children": []
@@ -12203,7 +12086,7 @@
             {
               "localPosition": [
                 -90.0,
-                3.5,
+                3.1,
                 0.0
               ],
               "localRotation": [
@@ -21463,89 +21346,6 @@
                   ],
                   "materials": [
                     "P_Puerta_C"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Suelo",
-          "components": [
-            {
-              "localPosition": [
-                -6.2,
-                0.0,
-                0.42
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": [
-            {
-              "name": "Suelo-1",
-              "components": [
-                {
-                  "localPosition": [
-                    -25.0,
-                    0.2,
-                    15.5
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    20.0,
-                    0.5,
-                    14.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "S_Gene"
                   ],
                   "type": "MeshRenderer"
                 },

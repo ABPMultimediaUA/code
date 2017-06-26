@@ -353,13 +353,13 @@ Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 esca
 
 	if (rot.y == 90) {
 
-		bodyShape.SetAsBox(2*escala.z, 1.5*escala.x);
+		bodyShape.SetAsBox(2.5*escala.z, 2*escala.x);
 
 
 	}
 
 	else {
-		bodyShape.SetAsBox(2.5*escala.x, 2.5*escala.z);
+		bodyShape.SetAsBox(3*escala.x, 3*escala.z);
 
 	}
 
