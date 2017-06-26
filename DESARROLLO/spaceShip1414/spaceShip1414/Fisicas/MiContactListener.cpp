@@ -427,8 +427,6 @@ void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 }
 
 
-
-
 void quitarVidaJugador(Entity2D *jugador, Entity2D *bala) {
 
 	//Personaje *j = static_cast<Personaje*>(jugador->getObjeto3D()); //mirar el tema de hacer un cast dependiendo de la raza
@@ -521,7 +519,7 @@ void asignarVecDirector(Entity2D *p, ActivadorCamara* c) {
 	
 	glm::vec3 u(0,0,0);
 
-	float angle = cam->getAnguloInicial();
+	float angle = cam->getAnguloInicial() + 180;
 
 	if (angle < 0.0f) {
 		angle += 360;
@@ -533,9 +531,9 @@ void asignarVecDirector(Entity2D *p, ActivadorCamara* c) {
 
 	angle = angle * PI / 180;
 
-	u = glm::vec3(-1 * sin(angle),
+	u = glm::vec3(sin(angle),
 		0,
-		1 * cos(angle));
+		-cos(angle));
 
 	jugador->asignarVectorDirector(u, angle * 180 / PI);
 	//vecA = glm::vec3(vecDir.x * cos(angulo) - vecDir.z * sin(angulo),
@@ -608,13 +606,13 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			{
 				if (entity1->getIDEN() == 4 && f1->IsSensor() && entity2->getIDEN() == 4 && !f2->IsSensor()) {
 					empezarFlocking(entity1, entity2);
-					//evitarColisionEntreEnemigos(entity1, entity2);
+					evitarColisionEntreEnemigos(entity1, entity2);
 
 				}
 
 				else if (entity2->getIDEN() == 4 && f2->IsSensor() && entity1->getIDEN() == 4 && !f1->IsSensor()) {
 					empezarFlocking(entity2, entity1);
-					//evitarColisionEntreEnemigos(entity2, entity1);
+					evitarColisionEntreEnemigos(entity2, entity1);
 
 
 				}
@@ -820,6 +818,8 @@ void MiContactListener::EndContact(b2Contact* contact) {
 				//	p->setImpulso(false);
 
 				//}
+
+				//esto es para cuando se vayan del flocking los enemigos
 
 				if ((entity1->getIDEN() == 4 && f1->IsSensor()) && entity2->getIDEN() == 4) {
 					gestionarCambioDeEstadoEnemigo(entity1);

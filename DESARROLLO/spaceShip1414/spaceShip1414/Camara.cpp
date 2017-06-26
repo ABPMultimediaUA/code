@@ -47,13 +47,23 @@ Camara::Camara(TGraphicEngine * motorApp, int ident, bool activa, bool move, glm
 	std::cout << "*******************ry:  " << rot.y << std::endl;
 	nodo = motorApp->addCamaraPerspectivaFija(activa);
 	motorApp->resetTransform(nodo, 'r');
-	motorApp->rotarYPR(nodo, rot.y - 180 , rot.x, rot.z);
+	if (rot.y == 0 || rot.y == 180) {
+		motorApp->rotarYPR(nodo, rot.y , rot.x, rot.z);
+		yaw = rot.y;
+
+	}
+	
+	else {
+		motorApp->rotarYPR(nodo, rot.y - 180, rot.x, rot.z);
+		yaw = rot.y - 180;
+	}
+
 	motorApp->trasladar(nodo, pos.x, pos.y, pos.z);
 	p = pos;
 	r = rot;
-	yaw = rot.y - 180;
-	pitch = rot.x;
+	
 	anguloInicial = yaw;
+	pitch = rot.x;
 	rotX = rot.x;
 	rotAnterior = anguloInicial;
 	fija = move;
@@ -230,7 +240,7 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 	else
 	{
 		motorApp->resetTransform(nodo, 'r');
-		motorApp->rotarYPR(nodo, yaw - 180, pitch, 0);
+		motorApp->rotarYPR(nodo, yaw, pitch, 0);
 		
 	}
 }
