@@ -365,7 +365,7 @@ TNodo * TGraphicEngine::addCamaraPerspectivaFija(bool activa)
 	TNodo* nodoTransfEC = crearNodo(nodoTransfRC, transfEC);
 	TNodo* nodoTransfTC = crearNodo(nodoTransfEC, transfTC);
 	TNodo* nodoCamara;
-	nodoCamara = crearNodo(nodoTransfTC, crearCamara(true, 45.0f, aspect_ratio, 0.1f, 300.f, activa));
+	nodoCamara = crearNodo(nodoTransfTC, crearCamara(true, 45.0f, aspect_ratio, 0.1f, 400.f, activa));
 	addRegistroCamara(nodoCamara);
 	return nodoCamara;
 }

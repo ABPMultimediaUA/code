@@ -400,13 +400,6 @@ void player::destruirAnimacion(TNodo* n)
 	
 }
 
-//hay que pasarle el paht
-void player::nuevaAnimacion()
-{
-	engine->cargarNuevaAnimacion(animation, "resourse/animations/Personaje/AndarFix/", 25);
-
-}
-
 bool player::getImpulso() {
 	return impulso;
 

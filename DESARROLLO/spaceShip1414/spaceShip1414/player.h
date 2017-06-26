@@ -29,7 +29,6 @@ public:
 	glm::vec3 getPos();
 	glm::vec3 getRot();
 	glm::vec3 getScale();
-	glm::vec3 getPosAnt();
 	int getDireccion();
 	void setPos(float x, float y, float z);
 	void setRot(float x, float y, float z);
@@ -52,7 +51,6 @@ public:
 	float getTemporizador();
 	void setImpulso(bool x);
 	void destruirAnimacion(TNodo * n);
-	void nuevaAnimacion();
 	bool getImpulso();
 
 private:

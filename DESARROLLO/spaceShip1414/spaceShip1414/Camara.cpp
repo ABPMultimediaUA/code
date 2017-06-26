@@ -48,13 +48,13 @@ Camara::Camara(TGraphicEngine * motorApp, int ident, bool activa, bool move, glm
 	nodo = motorApp->addCamaraPerspectivaFija(activa);
 	motorApp->resetTransform(nodo, 'r');
 	if (rot.y == 0 || rot.y == 180) {
-		motorApp->rotarYPR(nodo, rot.y , rot.x, rot.z);
+		motorApp->rotarYPR(nodo, rot.y , 0.0f, 0.0f);
 		yaw = rot.y;
 
 	}
 	
 	else {
-		motorApp->rotarYPR(nodo, rot.y - 180, rot.x, rot.z);
+		motorApp->rotarYPR(nodo, rot.y - 180, 0.0f, 0.0f);
 		yaw = rot.y - 180;
 	}
 
@@ -235,7 +235,14 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 	{
 		distancia =  p.x - posPers.x;
 		std::cout << "se lo dijisteh a la wah se lo dijisteh a mah, ya verah   " << distancia << std::endl;
-		motorApp->rotarYPR(this->getNodo(),posPers.z+90,-posPers.x,0);
+		if (distancia <= 30.0f) {
+			motorApp->rotarYPR(this->getNodo(), posPers.z + 90, -posPers.x, 0);
+		}
+
+		else {
+			motorApp->rotarYPR(this->getNodo(), posPers.z + 90, 0, 0);
+
+		}
 	}
 	else
 	{
