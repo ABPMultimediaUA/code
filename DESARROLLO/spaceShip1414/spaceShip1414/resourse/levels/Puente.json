@@ -9,6 +9,32 @@
   },
   "hierarchy": [
     {
+      "name": "almacen_grande_abajo 1",
+      "components": [
+        {
+          "localPosition": [
+            231.017136,
+            307.5164,
+            129.676788
+          ],
+          "localRotation": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": []
+    },
+    {
       "name": "PASILLO_2",
       "components": [
         {
@@ -1724,7 +1750,7 @@
                   "localPosition": [
                     -7.0,
                     16.4,
-                    -9.24
+                    -20.6
                   ],
                   "localRotation": [
                     90.0,
@@ -1763,7 +1789,7 @@
                   "localPosition": [
                     -7.0,
                     16.4,
-                    4.52
+                    19.64
                   ],
                   "localRotation": [
                     90.0,
@@ -1800,9 +1826,9 @@
               "components": [
                 {
                   "localPosition": [
-                    6.5,
+                    16.95,
                     16.4,
-                    4.52
+                    21.23
                   ],
                   "localRotation": [
                     90.0,
@@ -1839,9 +1865,9 @@
               "components": [
                 {
                   "localPosition": [
-                    6.5,
+                    19.65,
                     16.4,
-                    -9.24
+                    -13.29
                   ],
                   "localRotation": [
                     90.0,
