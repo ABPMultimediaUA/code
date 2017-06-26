@@ -1,0 +1,134 @@
+newmtl escopeta_phong1SG
+illum 4
+Kd 0.26 0.26 0.26
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl escopeta_phong2SG
+illum 4
+Kd 0.08 0.08 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl escopeta_phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd diffuse.png
+bump normal.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks specular.jpg
+Ns 18.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd diffus.jpg
+bump normal.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks specular.jpg
+Ns 18.00
+newmtl phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ad2.jpg
+bump an2.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks as2.jpg
+Ns 18.00
+newmtl phong3SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ab_crate_a.png
+bump ab_crate_a_nm.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks ab_crate_a_sm.png
+Ns 18.00
+newmtl phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ab_crate_b.png
+bump ab_crate_b_nm.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks ab_crate_b_sm.png
+Ns 18.00
+newmtl phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal1-dif-1024.png
+bump metal1-nor-1024.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks metal1-spec-1024.png
+Ns 18.00
+newmtl phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Hex_glow_basecolor.png
+bump NN.png -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Hex_glow_metallic.png
+Ns 18.00
+newmtl pistola_phong1SG
+illum 4
+Kd 0.17 0.17 0.17
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl pistola_phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd diffuse_yellow.png
+bump normal.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks specular_yellow.jpg
+Ns 18.00
+newmtl pistola_phong3SG
+illum 4
+Kd 0.09 0.09 0.09
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
