@@ -24,6 +24,7 @@
 #include <algorithm>
 #include "../Game/Escenario/Escenario.h"
 #include "../Camara.h"
+#include "../Game/Escenario/Luces.h"
 
 TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }
 {
@@ -205,6 +206,28 @@ void TGraphicEngine::cambiarCamaraActiva(char m, void* dirCam)
 
 	}
 }
+
+
+void TGraphicEngine::cambiarLuzActiva(char m, void* dirLuz)
+{
+	//luzActiva->desactivar();
+	//if (luzActiva) {
+	//	luzActiva->desactivar();
+	//}
+	//if (registroLuces.size() > m) {
+	//	/*static_cast<TCamara*>(registroCamaras.at(m)->getEntidad())->activar();
+	//	camaraActiva = static_cast<TCamara*>(registroCamaras.at(m)->getEntidad());*/
+	//	//Camara *cam = maps->buscarCamara(m);
+	//	//camaraActiva = cam->getTCamara();
+	//	/*Luces *luz = static_cast<Luces*>(dirLuz);
+	//	luz->activar();*/
+	//
+	///*	luzActivada();*/
+
+
+	//}
+}
+
 
 TNodo * TGraphicEngine::addAnimacion(std::string path, unsigned int frames, TNodo * nodoPadre)
 {
@@ -580,9 +603,11 @@ void TGraphicEngine::luzActivada()
 			glm::mat4 e = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getEntidad())->getMatriz();
 			glm::mat4 r = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
 			static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->renderLuz(t*(e*r), shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
+			luzActiva = static_cast<TLuz*>(registroLuces.at(i)->getEntidad());
 		}
 	}
 }
+
 
 void TGraphicEngine::error_callback(int error, const char * description)
 {

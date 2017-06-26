@@ -61,6 +61,8 @@ public:
 	void setLastTime(double);
 	void cambiarCamaraActiva(char m, void * dirCam);
 
+	void cambiarLuzActiva(char m, void * dirLuz);
+
 	TNodo * addAnimacion(std::string path = "", unsigned int frames = 25, TNodo * nodoPadre = nullptr);
 	void cargarNuevaAnimacion(TNodo * padre, std::string path, unsigned int frames);
 	void cargarNuevaMalla(TNodo * padre, std::string path);
@@ -117,6 +119,7 @@ private:
 	TNodo* escena;
 	TGestorRecursos* gestorRecursos;
 	TCamara* camaraActiva;
+	TLuz* luzActiva;
 	std::vector<TNodo*> registroCamaras;
 	std::vector<TNodo*> registroLuces;
 	GLFWwindow* window;
