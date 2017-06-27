@@ -4,15 +4,6 @@
 # 3DBrowser for 3D Users copyright (C) 2013 by Mootools
 # www: http://www.mootools.com/
 # 
-newmtl sala_espera:blinn10SG
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Tr 1.000000
-d 1.000000
-Ns 0.060000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\suelo.jpg
-
 newmtl sala_espera:blinn3SG
 Ka 0.000000 0.000000 0.000000
 Kd 0.000000 0.000000 0.000000
@@ -20,7 +11,7 @@ Ks 0.498039 0.498039 0.498039
 Tr 1.000000
 d 1.000000
 Ns 0.060000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\sci.png
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\sci.png
 
 newmtl sala_espera:initialShadingGroup
 Ka 0.000000 0.000000 0.000000
@@ -37,7 +28,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 0.060000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\hangar.jpg
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\hangar.jpg
 
 newmtl sala_espera:lambert2SG
 Ka 0.000000 0.000000 0.000000
@@ -46,7 +37,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 0.000000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\leaf.jpg
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\leaf.jpg
 
 newmtl sala_espera:blinn5SG
 Ka 0.000000 0.000000 0.000000
@@ -55,7 +46,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 0.060000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\jarron1.png
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\jarron1.png
 
 newmtl sala_espera:lambert3SG
 Ka 0.000000 0.000000 0.000000
@@ -64,7 +55,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 0.000000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\blanco.jpg
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\blanco.jpg
 
 newmtl sala_espera:blinn6SG
 Ka 0.000000 0.000000 0.000000
@@ -73,7 +64,7 @@ Ks 0.498039 0.498039 0.498039
 Tr 1.000000
 d 1.000000
 Ns 0.060000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\jarron2.jpg
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\jarron2.jpg
 
 newmtl sala_espera:phong1SG
 Ka 0.000000 0.000000 0.000000
@@ -82,7 +73,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 18.000000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\plata2.jpg
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\plata2.jpg
 
 newmtl sala_espera:blinn7SG
 Ka 0.000000 0.000000 0.000000
@@ -91,7 +82,7 @@ Ks 0.498039 0.498039 0.498039
 Tr 1.000000
 d 1.000000
 Ns 0.060000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\coso.jpg
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\coso.jpg
 
 newmtl sala_espera:blinn1SG
 Ka 0.000000 0.000000 0.000000
@@ -100,7 +91,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 0.060000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\dibujopared.jpg
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\dibujopared.jpg
 
 newmtl sala_espera:phong2SG
 Ka 0.000000 0.000000 0.000000
@@ -117,7 +108,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 0.060000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\gris.jpg
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\gris.jpg
 
 newmtl sala_espera:blinn2SG
 Ka 0.000000 0.000000 0.000000
@@ -126,14 +117,14 @@ Ks 0.498039 0.498039 0.498039
 Tr 1.000000
 d 1.000000
 Ns 0.060000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\grispared.jpg
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\grispared.jpg
 
-newmtl sala_espera:phong3SG
+newmtl sala_espera:blinn10SG
 Ka 0.000000 0.000000 0.000000
 Kd 0.000000 0.000000 0.000000
-Ks 0.498039 0.498039 0.498039
+Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
-Ns 18.000000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\4-d.jpg
+Ns 0.060000
+map_Kd C:\Users\Hector\Desktop\ABP\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\sala_espera\suelo.jpg
 

@@ -9,72 +9,6 @@
   },
   "hierarchy": [
     {
-      "name": "Luces",
-      "components": [
-        {
-          "localPosition": [
-            23.8,
-            0.0,
-            61.6
-          ],
-          "localRotation": [
-            0.0,
-            0.0,
-            0.0
-          ],
-          "localScale": [
-            1.0,
-            1.0,
-            1.0
-          ],
-          "name": null,
-          "parentName": null,
-          "type": "Transform"
-        }
-      ],
-      "children": [
-        {
-          "name": "0",
-          "components": [
-            {
-              "localPosition": [
-                -23.8,
-                5.0,
-                -61.6
-              ],
-              "localRotation": [
-                90.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "color": [
-                1.0,
-                1.0,
-                1.0,
-                1.0
-              ],
-              "range": 15.0,
-              "lightType": "Point",
-              "castsShadows": false,
-              "realtime": false,
-              "type": "Light"
-            }
-          ],
-          "children": []
-        }
-      ]
-    },
-    {
       "name": "PASILLO_2",
       "components": [
         {
@@ -17141,6 +17075,72 @@
               "children": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Luces",
+      "components": [
+        {
+          "localPosition": [
+            23.8,
+            0.0,
+            61.6
+          ],
+          "localRotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localScale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "name": null,
+          "parentName": null,
+          "type": "Transform"
+        }
+      ],
+      "children": [
+        {
+          "name": "0",
+          "components": [
+            {
+              "localPosition": [
+                -23.8,
+                5.0,
+                -61.6
+              ],
+              "localRotation": [
+                90.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "range": 15.0,
+              "lightType": "Point",
+              "castsShadows": false,
+              "realtime": false,
+              "type": "Light"
+            }
+          ],
+          "children": []
         }
       ]
     },
