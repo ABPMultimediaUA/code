@@ -1,6 +1,6 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GTX 970/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 372.70
+Renderer: GeForce GT 650M/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 376.54
 GLSL: 4.50 NVIDIA
 
 Recurso nombre: personaje.obj
@@ -185,7 +185,7 @@ Z: 0
 ///////////
 trans 1
 X: -90
-Y: 3.5
+Y: 3.1
 Z: 0
 sala_espera
 Recurso nombre: sala_espera.obj
@@ -275,6 +275,28 @@ Recurso nombre: pasillo_4.obj
 *******************ry:  180
 *******************ry:  180
 *******************ry:  0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---------->0
 ---------->18
 ---------->0
@@ -385,6 +407,9 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: 17.03 Y: -41.77
@@ -461,14 +486,6 @@ Y: -41.02
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 17.03 Y: -41.77
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 19.9495
-Y: -41.02
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -604,36 +621,6 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 23.85 Y: 78.53
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 15.0009
-Y: 78.03
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -3
-Y: 46.3154
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 1.15 Y: 41.81
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -5.98292
-Y: 41.06
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -706,25 +693,6 @@ Y: 23.7999
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -55.6 Y: 17.39
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -54.85
-Y: 8.98915
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.07 Y: 27.9
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -26.57
-Y: 21.7757
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -827,15 +795,14 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-ENTRO AL CALLBACK 
+//////////////////////////////////////////
+ID ENTITY 0
+Posicion de la Entity X: 0 Y: 0
 //////////////////////////////////////////
 
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
+RAY DE CHOQUE
+X: 0.291677
+Y: -0.999999
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -920,25 +887,6 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 17.03 Y: -41.77
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 14.1789
-Y: -42.52
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -55.6 Y: -17.4
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -54.85
-Y: -11.9207
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -962,14 +910,6 @@ Y: -42.52
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 17.03 Y: -41.77
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 21.3845
-Y: -42.52
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -987,32 +927,32 @@ Y: -42.52
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 ID ENTITY 1
-Posicion de la Entity X: 17.03 Y: -41.77
+Posicion de la Entity X: -2.5 Y: 130.7
 //////////////////////////////////////////
 
 RAY DE CHOQUE
-X: 24.26
-Y: -42.52
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
+X: -3
+Y: 46.3561
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1148,6 +1088,28 @@ Posicion de la Entity X: -27.5 Y: 130.49
 RAY DE CHOQUE
 X: -27
 Y: 58.2816
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -90.15 Y: 26.74
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: -61.9617
+Y: 27.49
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -27.5 Y: 130.49
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: -27
+Y: 49.3888
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1378,14 +1340,6 @@ Y: 79.03
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 81.1012
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1488,14 +1442,6 @@ Y: 79.03
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 23.85 Y: 78.53
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 15.5685
-Y: 79.03
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1510,14 +1456,6 @@ Y: 79.03
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 23.85 Y: 78.53
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 8.22691
-Y: 79.03
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1595,6 +1533,9 @@ Posicion de la Entity X: -2.5 Y: 130.7
 RAY DE CHOQUE
 X: -2
 Y: 122.362
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1818,14 +1759,6 @@ Y: 143.368
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.5 Y: 130.49
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -28
-Y: 139.21
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2258,14 +2191,6 @@ Y: 219.487
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -37.41
-Y: 112.039
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2440,14 +2365,6 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -37.41
-Y: 83.9907
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2586,14 +2503,6 @@ Y: 57.6
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -37.41
-Y: 66.1517
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2784,14 +2693,6 @@ Y: 57.6
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -37.41
-Y: 58.9992
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -3987,6 +3888,9 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: -137.57 Y: 104.63
@@ -4130,6 +4034,9 @@ Posicion de la Entity X: -137.57 Y: 104.63
 RAY DE CHOQUE
 X: -138.07
 Y: 137.516
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -5183,14 +5090,6 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -55.6 Y: 17.39
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -56.1641
-Y: 8.395
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -5200,14 +5099,6 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -55.6 Y: -17.4
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -56.35
-Y: -10.9045
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -5383,6 +5274,9 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: 17.03 Y: -41.77
@@ -5394,25 +5288,6 @@ Y: -41.02
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.07 Y: -28.54
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -27.57
-Y: -17.5172
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -33.66 Y: -13.2
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -32.7106
-Y: -12.45
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -5509,6 +5384,19 @@ ENTRO AL CALLBACK
 //////////////////////////////////////////
 
 Recurso nombre: cria.obj
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -16 POS Y: -39.53
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -17.15 POS Y: -31.62
+///////////////////////////////////
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
@@ -5523,98 +5411,73 @@ POS NODO: 5
 
 NOMBRE: Waypoint-1 (3)
 POS NODO: 3
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.217586
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
 
 ////////////////////////
 COLISION
@@ -5626,162 +5489,72 @@ POS X: 16.58 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 23.7525 POS Y: 17.8588
+POS X: 24.491 POS Y: 15.6703
 ///////////////////////////////////
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
 se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.0833
+TIME: 0.200893
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.6667
+TIME: 0.100674
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   31.25
+TIME: 0.100393
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.8333
+TIME: 0.10045
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30.4167
+TIME: 0.150534
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+luz[0].posicion -> 1.42062e-06 - -7 - -32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   30
+TIME: 0.0837229
+luz[0].posicion -> 1.42062e-06 - -5.57571 - -32.7744
+luz[0].posicion -> 1.42062e-06 - -5.57571 - -32.7744
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.5833
+TIME: 0.117193
+luz[0].posicion -> 1.42062e-06 - -5.33722 - -32.8141
+luz[0].posicion -> 1.42062e-06 - -5.33722 - -32.8141
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   29.1667
+TIME: 0.100407
+luz[0].posicion -> 1.42062e-06 - -5.09845 - -32.852
+luz[0].posicion -> 1.42062e-06 - -5.09845 - -32.852
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.75
+TIME: 0.117144
+TIME: 0.117144
+luz[0].posicion -> 1.42062e-06 - -4.85941 - -32.8882
+luz[0].posicion -> 1.42062e-06 - -4.85941 - -32.8882
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+luz[0].posicion -> 1.42062e-06 - -4.62011 - -32.9227
+luz[0].posicion -> 1.42062e-06 - -4.62011 - -32.9227
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.100458
+luz[0].posicion -> -0.236344 - -4.62018 - -32.9219
+luz[0].posicion -> -0.236344 - -4.62018 - -32.9219
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+luz[0].posicion -> -0.472678 - -4.62036 - -32.9193
+luz[0].posicion -> -0.472678 - -4.62036 - -32.9193
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+luz[0].posicion -> -0.708986 - -4.62068 - -32.915
+luz[0].posicion -> -0.708986 - -4.62068 - -32.915
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+luz[0].posicion -> -0.945253 - -4.62111 - -32.909
+luz[0].posicion -> -0.945253 - -4.62111 - -32.909
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.150822
+luz[0].posicion -> -1.18147 - -4.62168 - -32.9013
+luz[0].posicion -> -1.18147 - -4.62168 - -32.9013
 
 ////////////////////////
 COLISION
@@ -5793,64 +5566,20 @@ POS X: 16.58 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 21.0719 POS Y: 9.1214
+POS X: 21.5124 POS Y: 2.67395
 ///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.0835306
+luz[0].posicion -> -1.41763 - -4.62236 - -32.8919
+luz[0].posicion -> -1.41763 - -4.62236 - -32.8919
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.100413
+luz[0].posicion -> -1.65371 - -4.62317 - -32.8807
+luz[0].posicion -> -1.65371 - -4.62317 - -32.8807
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.117116
+luz[0].posicion -> -1.88971 - -4.62411 - -32.8679
+luz[0].posicion -> -1.88971 - -4.62411 - -32.8679
 
 ////////////////////////
 COLISION
@@ -5862,288 +5591,69 @@ POS X: 12.98 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 20.4206 POS Y: 5.85236
+POS X: 20.9538 POS Y: 0.237155
 ///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.117108
+luz[0].posicion -> -2.1256 - -4.62517 - -32.8533
+luz[0].posicion -> -2.1256 - -4.62517 - -32.8533
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.150656
+luz[0].posicion -> -2.36138 - -4.62636 - -32.837
+luz[0].posicion -> -2.36138 - -4.62636 - -32.837
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.083593
+luz[0].posicion -> -2.59704 - -4.62767 - -32.819
+luz[0].posicion -> -2.59704 - -4.62767 - -32.819
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.100481
+luz[0].posicion -> -2.83256 - -4.6291 - -32.7994
+luz[0].posicion -> -2.83256 - -4.6291 - -32.7994
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.117441
+luz[0].posicion -> -3.06793 - -4.63066 - -32.778
+luz[0].posicion -> -3.06793 - -4.63066 - -32.778
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.116867
+TIME: 0.116867
+luz[0].posicion -> -3.30314 - -4.63234 - -32.7549
+luz[0].posicion -> -3.30314 - -4.63234 - -32.7549
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+TIME: 0.168009
+luz[0].posicion -> -3.53817 - -4.63415 - -32.73
+luz[0].posicion -> -3.53817 - -4.63415 - -32.73
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   28.3333
+luz[0].posicion -> -3.77302 - -4.63608 - -32.7035
+luz[0].posicion -> -3.77302 - -4.63608 - -32.7035
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.9167
+luz[0].posicion -> -3.77302 - -4.39813 - -32.7364
+luz[0].posicion -> -3.77302 - -4.39813 - -32.7364
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.5
+luz[0].posicion -> -3.77302 - -4.15996 - -32.7675
+luz[0].posicion -> -3.77302 - -4.15996 - -32.7675
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   27.0833
+luz[0].posicion -> -3.77302 - -3.92156 - -32.7969
+luz[0].posicion -> -3.77302 - -3.92156 - -32.7969
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.6667
+TIME: 0.217291
+luz[0].posicion -> -3.77302 - -3.68295 - -32.8245
+luz[0].posicion -> -3.77302 - -3.68295 - -32.8245
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   26.25
+TIME: 0.0664142
+luz[0].posicion -> -3.77302 - -3.44414 - -32.8505
+luz[0].posicion -> -3.77302 - -3.44414 - -32.8505
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.8333
+TIME: 0.0837639
+luz[0].posicion -> -3.77302 - -3.20516 - -32.8746
+luz[0].posicion -> -3.77302 - -3.20516 - -32.8746
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25.4167
+TIME: 0.067416
+luz[0].posicion -> -3.77302 - -2.96601 - -32.8971
+luz[0].posicion -> -3.77302 - -2.96601 - -32.8971
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   25
+TIME: 0.0663825
+luz[0].posicion -> -3.77302 - -2.7267 - -32.9178
+luz[0].posicion -> -3.77302 - -2.7267 - -32.9178
 
 ////////////////////////
 COLISION
@@ -6155,1294 +5665,338 @@ POS X: 12.98 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 17.4711 POS Y: -10.5511
+POS X: 17.9746 POS Y: -12.7591
 ///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   24.5833
+TIME: 0.083788
+luz[0].posicion -> -3.77302 - -2.48724 - -32.9367
+luz[0].posicion -> -3.77302 - -2.48724 - -32.9367
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   24.1667
+TIME: 0.0836292
+luz[0].posicion -> -3.77302 - -2.24766 - -32.9539
+luz[0].posicion -> -3.77302 - -2.24766 - -32.9539
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   23.75
+TIME: 0.0836983
+luz[0].posicion -> -3.77302 - -2.00795 - -32.9694
+luz[0].posicion -> -3.77302 - -2.00795 - -32.9694
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   23.3333
+TIME: 0.0669064
+luz[0].posicion -> -3.77302 - -1.76814 - -32.9831
+luz[0].posicion -> -3.77302 - -1.76814 - -32.9831
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 9.16667 POS Y: 6.66667
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 12.98 POS Y: 0
+///////////////////////////////////
+camID: 0
+ANGLEEEEE: 270.243
+360.243
+450.243
+180.243
+VECTORES
+DIR: vec3(-0.999991, 0.000000, -0.004247)
+A: vec3(0.004247, 0.000000, -0.999991)
+S: vec3(0.999991, 0.000000, 0.004247)
+D:vec3(-0.004247, 0.000000, 0.999991)
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   22.9167
+TIME: 0.0668908
+luz[0].posicion -> -3.77302 - -1.52824 - -32.9951
+luz[0].posicion -> -3.77302 - -1.52824 - -32.9951
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   22.5
+TIME: 0.067009
+luz[0].posicion -> -3.77402 - -1.28827 - -33.0053
+luz[0].posicion -> -3.77402 - -1.28827 - -33.0053
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   22.0833
+TIME: 0.0668881
+luz[0].posicion -> -3.77501 - -1.04824 - -33.0136
+luz[0].posicion -> -3.77501 - -1.04824 - -33.0136
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   21.6667
+TIME: 0.0674659
+luz[0].posicion -> -3.77601 - -0.808157 - -33.0203
+luz[0].posicion -> -3.77601 - -0.808157 - -33.0203
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   21.25
+TIME: 0.0664111
+luz[0].posicion -> -3.77701 - -0.568032 - -33.0252
+luz[0].posicion -> -3.77701 - -0.568032 - -33.0252
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.8334
 
 NOMBRE DEL DESTINO: Waypoint-1
 NUM: 0
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.0669104
+luz[0].posicion -> -3.77801 - -0.327879 - -33.0283
+luz[0].posicion -> -3.77801 - -0.327879 - -33.0283
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20.4167
+TIME: 0.0676904
+luz[0].posicion -> -3.779 - -0.0877099 - -33.0297
+luz[0].posicion -> -3.779 - -0.0877099 - -33.0297
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   20
+TIME: 0.0663267
+luz[0].posicion -> -3.78 - 0.152461 - -33.0294
+luz[0].posicion -> -3.78 - 0.152461 - -33.0294
+se lo dijisteh a la wah se lo dijisteh a mah, ya verah   19.5834
+TIME: 0.0668484
+luz[0].posicion -> -3.781 - 0.392623 - -33.0273
+luz[0].posicion -> -3.781 - 0.392623 - -33.0273
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 12.9166 POS Y: 6.68082
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 16.58 POS Y: 0
+///////////////////////////////////
+camID: 18
+ANGLEEEEE: 180
+270
+360
+90
+VECTORES
+DIR: vec3(-0.000000, 0.000000, 1.000000)
+A: vec3(-1.000000, 0.000000, -0.000000)
+S: vec3(0.000000, 0.000000, -1.000000)
+D:vec3(1.000000, 0.000000, 0.000000)
+TIME: 0.0676315
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0662928
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669675
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669296
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669706
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669693
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669787
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
 NOMBRE DEL DESTINO: Waypoint-1 (2)
 NUM: 2
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -27.07 POS Y: 27.9
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -21.8164 POS Y: 21.6788
-///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 12.98 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 8.70691 POS Y: -16.527
-///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 16.58 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 9.39051 POS Y: -15.007
-///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -27.82 POS Y: 15.26
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -22.3129 POS Y: 18.3911
-///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.0669216
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0670304
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
 NOMBRE DEL DESTINO: Waypoint-1 (4)
 NUM: 4
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+TIME: 0.0668716
+TIME: 0.0668716
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0675423
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0662433
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+REPOSO
+TIME: 0.0670367
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 16.58 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 12.2532 POS Y: -8.98741
-///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669617
+TIME: 0.0669617
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
 NOMBRE DEL DESTINO: Waypoint-1 (42)
 NUM: 41
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.6666 POS Y: 5.01593
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.4036 POS Y: -0.946184
+///////////////////////////////////
+A DISPARAR!
+TIME: 0.066934
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669729
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669738
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0677823
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0662714
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0667957
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669747
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0668801
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.6666 POS Y: 8.34926
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 19.0344 POS Y: 5.51794
+///////////////////////////////////
+TIME: 0.0670237
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0668586
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669916
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+ADIOS 1
+TIME: 0.0675008
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0663821
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669171
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.066976
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
 NOMBRE DEL DESTINO: Waypoint-1 (3)
 NUM: 3
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.0668368
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0674133
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.06647
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669345
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 12.98 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 20.6271 POS Y: 14.3021
+///////////////////////////////////
+TIME: 0.0678546
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0662915
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0668292
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0675547
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 12.98 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.6847 POS Y: 15.8303
+///////////////////////////////////
+TIME: 0.0663
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0671148
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
 NOMBRE DEL DESTINO: Waypoint-1 (41)
 NUM: 40
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 12.98 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 20.3799 POS Y: 16.9707
-///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+TIME: 0.0667614
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0671232
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669559
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0668162
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
 ////////////////////////
 COLISION
@@ -7454,64 +6008,20 @@ POS X: -47.63 POS Y: -0.9
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -40.2644 POS Y: 0.464052
+POS X: -39.6274 POS Y: 1.97627
 ///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+TIME: 0.066839
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0671232
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669314
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669175
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
 ////////////////////////
 COLISION
@@ -7523,105 +6033,26 @@ POS X: -47.63 POS Y: -0.9
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -43.5978 POS Y: 0.4697
+POS X: -42.9564 POS Y: 1.80951
 ///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-
-////////////////////////
-COLISION
-ENTIDAD 1: 7
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 12.98 POS Y: 0
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 16.792 POS Y: 20.3362
-///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+TIME: 0.0669947
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0668702
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669501
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669372
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0668283
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0674262
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
 ////////////////////////
 COLISION
@@ -7633,64 +6064,20 @@ POS X: -55.64 POS Y: -0.9
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -48.5977 POS Y: 0.489353
+POS X: -47.9526 POS Y: 1.6133
 ///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+TIME: 0.0665115
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0668564
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0675918
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0663544
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
 ////////////////////////
 COLISION
@@ -7702,790 +6089,1488 @@ POS X: -55.64 POS Y: -0.9
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -51.931 POS Y: 0.505481
+POS X: -51.2834 POS Y: 1.48308
 ///////////////////////////////////
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 0.0669599
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669135
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669858
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0669813
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0668939
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0675083
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0665039
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0667904
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
-NOMBRE DEL DESTINO: Waypoint-1 (40)
-NUM: 39
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.6666 POS Y: 40.5159
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 14.46 POS Y: 41.97
+///////////////////////////////////
+camID: 18
+ANGLEEEEE: 180
+270
+360
+90
+VECTORES
+DIR: vec3(-0.000000, 0.000000, 1.000000)
+A: vec3(-1.000000, 0.000000, -0.000000)
+S: vec3(0.000000, 0.000000, -1.000000)
+D:vec3(1.000000, 0.000000, 0.000000)
+TIME: 0.0676087
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
 
 NOMBRE DEL DESTINO: Waypoint-1 (2)
 NUM: 2
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+TIME: 0.0662928
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+TIME: 0.0676837
+luz[0].posicion -> -13.06 - 0 - -18.5
+luz[0].posicion -> -13.06 - 0 - -18.5
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 16.6666 POS Y: 41.7659
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 14.46 POS Y: 43.31
+///////////////////////////////////
+camID: 9
+ANGLEEEEE: 268.587
+358.587
+448.587
+178.587
+VECTORES
+DIR: vec3(-0.999696, 0.000000, 0.024650)
+A: vec3(-0.024650, 0.000000, -0.999696)
+S: vec3(0.999696, 0.000000, -0.024650)
+D:vec3(0.024650, 0.000000, 0.999696)
+TIME: 0.0667712
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+TIME: 0.0664735
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+TIME: 0.0668225
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+TIME: 0.0670407
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+NOMBRE DEL DESTINO: Waypoint-1 (40)
+NUM: 39
+TIME: 0.0668618
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+TIME: 0.0670831
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+TIME: 0.0672892
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+TIME: 0.0664508
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+TIME: 0.0670117
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+TIME: 0.0669599
+TIME: 0.0669599
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
 
 NOMBRE DEL DESTINO: Waypoint-1 (42)
 NUM: 41
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
 
 NOMBRE DEL DESTINO: Waypoint-1 (36)
 NUM: 35
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
 REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[0].posicion -> -38.48 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[1].posicion -> -10.96 - 4.4 - -46.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[2].posicion -> -10.96 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
-luz[3].posicion -> -38.48 - 4.4 - -19.5
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+
+NOMBRE DEL DESTINO: Waypoint-1 (41)
+NUM: 40
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -47.63 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -39.8087 POS Y: 1.82226
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -47.63 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -43.1386 POS Y: 1.67295
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -55.64 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -48.1355 POS Y: 1.49818
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -123 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -115.438 POS Y: 0.644543
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -55.64 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -50.634 POS Y: 1.4112
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -123 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -118.771 POS Y: 0.640924
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -127.65 POS Y: 1.54
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -121.271 POS Y: 0.638209
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -127.65 POS Y: 1.54
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -124.604 POS Y: 0.634589
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+
+NOMBRE DEL DESTINO: Waypoint-1 (37)
+NUM: 36
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+
+NOMBRE DEL DESTINO: Waypoint-1 (40)
+NUM: 39
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+
+NOMBRE DEL DESTINO: Waypoint-1 (38)
+NUM: 37
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+
+NOMBRE DEL DESTINO: Waypoint-1 (36)
+NUM: 35
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -123 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -115.624 POS Y: 0.64026
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -123 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -118.124 POS Y: 0.638001
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -127.65 POS Y: 1.54
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -121.457 POS Y: 0.634988
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -127.65 POS Y: 1.54
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -124.79 POS Y: 0.631975
+///////////////////////////////////
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+
+NOMBRE DEL DESTINO: Waypoint-1 (37)
+NUM: 36
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+TIME: 0.0674557
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+luz[0].posicion -> -63.1094 - -5.05 - -45.038
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado
