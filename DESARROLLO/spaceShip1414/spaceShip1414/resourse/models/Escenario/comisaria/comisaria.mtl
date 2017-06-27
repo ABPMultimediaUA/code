@@ -4,6 +4,7 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd pared.jpg
+bump paredN.jpg -bm 1
 Ni 1.00
 Ks 0.50 0.50 0.50
 newmtl blinn2SG
@@ -20,6 +21,7 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd negro.jpg
+bump paredN2.jpg -bm 1
 Ni 1.00
 Ks 0.50 0.50 0.50
 newmtl blinn4SG
@@ -30,28 +32,12 @@ Tf 1.00 1.00 1.00
 map_Kd CARTEL.jpg
 Ni 1.00
 Ks 0.50 0.50 0.50
-newmtl blinn5SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd suelo.png
-Ni 1.00
-Ks 0.50 0.50 0.50
 newmtl blinn6SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd plata.jpg
-Ni 1.00
-Ks 0.50 0.50 0.50
-newmtl blinn7SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd tuberia.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 newmtl blinn8SG
@@ -76,6 +62,7 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd techo.jpg
+bump techoN.jpg -bm 1
 Ni 1.00
 Ks 0.50 0.50 0.50
 newmtl initialShadingGroup
@@ -102,13 +89,6 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd cama.jpg
-Ni 1.00
-newmtl lambert7SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd suelo2.png
 Ni 1.00
 newmtl phong1SG
 illum 4
@@ -150,9 +130,9 @@ illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd 4-d.jpg
-bump 4-n.jpg -bm 1
+map_Kd diffus.jpg
+bump normal.jpg -bm 1
 Ni 1.00
 Ks 0.00 0.00 0.00
-map_Ks 4-s.jpg
+map_Ks specular.jpg
 Ns 18.00

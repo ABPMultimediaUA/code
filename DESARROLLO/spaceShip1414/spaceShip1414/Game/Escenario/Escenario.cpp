@@ -976,7 +976,7 @@ void Escenario::dibujarEscenario() {
 					}
 				}
 
-				if ((*T).nombre == "Modelo") {
+				/*if ((*T).nombre == "Modelo") {
 
 					tx = ((*T).position.x + (*I).position.x);
 					ty = ((*T).position.y + (*I).position.y);
@@ -1003,7 +1003,7 @@ void Escenario::dibujarEscenario() {
 						glm::vec3(rx, ry, -rz),
 						glm::vec3(ex, ey, ez), "comisaria");
 
-				}
+				}*/
 
 			}
 		}
