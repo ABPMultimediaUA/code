@@ -690,6 +690,8 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 		return false;
 	}
 
+
+
 	glfwMakeContextCurrent(window);
 	glfwSwapInterval(1);
 
@@ -716,39 +718,7 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 	return true;
 }
 
-void  TGraphicEngine::drawBox(Mundo * world, double x, double y, int w, int h) {
-	b2BodyDef myBodyDef;
-	myBodyDef.type = b2_staticBody;
-	myBodyDef.position.Set(0.1f, 0.1f);
-	myBodyDef.angle = 0;
 
-	b2Body* dynamicBody = world->getWorldBox2D()->CreateBody(&myBodyDef);
-
-	b2PolygonShape boxShape;
-	boxShape.SetAsBox(0.1f, 0.1f);
-
-	b2FixtureDef boxFixtureDef;
-	boxFixtureDef.shape = &boxShape;
-	boxFixtureDef.density = 0.5;
-	dynamicBody->CreateFixture(&boxFixtureDef);
-	//Pared * p = new Pared(this,glm::vec3(0,0,0), glm::vec3(0, 0, 0), glm::vec3(1, 1, 1));
-	//p->setFisicas(world);
-}
-
-void  TGraphicEngine::drawGround(Mundo * world) {
-	//b2Body *groundBody;
-	//b2Fixture *bottomFixture;
-	//b2BodyDef groundBodyDef;
-	//groundBodyDef.position.Set(0, 0);
-	//groundBody = world->getWorldBox2D()->CreateBody(&groundBodyDef);
-
-	//b2EdgeShape groundBox;
-	//b2FixtureDef groundBoxDef;
-	//groundBoxDef.shape = &groundBox;
-
-	//groundBox.Set(b2Vec2(XMIN, YMIN), b2Vec2(XMAX, YMIN));
-	//bottomFixture = groundBody->CreateFixture(&groundBoxDef);
-}
 
 double TGraphicEngine::getDT()
 {
@@ -780,17 +750,20 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glEnable(GL_CULL_FACE);
+
 		//m_gui.draw();
 		world->stepBox2D(1.0 / 60.0, 6, 2);
 		world->getWorldBox2D()->DrawDebugData();
 		world->clearForcesBox2D();
 		move->checkKeys(window, this);
 		esce->actualizarEstadoPuerta();
-		esce->actualizarListaEnemigos(deltaTime);
+	//	esce->actualizarListaEnemigos(deltaTime);
 		glfwPollEvents();
 		draw(getLastTime());
 		glfwSetCursorPosCallback(window, mouse_callback);
 		glfwSwapBuffers(window);
+
+
 	}
 
 	glfwDestroyWindow(window);

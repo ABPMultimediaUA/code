@@ -3,11 +3,12 @@
 #include <cstdarg>
 #include <cstring>
 
+
  float multi = 0.002f;
 
 void b2GLDraw::DrawPolygon(const b2Vec2* vertices, int32 vertexCount, const b2Color& color) {
 
-    glColor4f(color.r, color.g, color.b, 0.5f);
+    glColor4f(1.0f, 0.309804f, 0.184314f, 0.5f);
     glBegin(GL_LINE_LOOP);
     for (int i = 0; i < vertexCount; i++) {
         b2Vec2 v = vertices[i];
@@ -19,6 +20,7 @@ void b2GLDraw::DrawPolygon(const b2Vec2* vertices, int32 vertexCount, const b2Co
 void b2GLDraw::DrawSolidPolygon(const b2Vec2* vertices, int32 vertexCount, const b2Color& color) {
 
     glColor4f(color.r, color.g, color.b, 0.5f);
+
     glBegin(GL_TRIANGLE_FAN);
     for (int i = 0; i < vertexCount; i++) {
         b2Vec2 v = vertices[i];

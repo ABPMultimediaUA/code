@@ -14,6 +14,15 @@
 #include "Entity2D.h"
 //#include "../Enemigos/Enemigo.h"
 #include "RayCastCallback.h"
+#ifndef GLEW_STATIC
+#define GLEW_STATIC
+#include <GL/glew.h>
+#endif
+#ifndef GLFW_STATIC
+#define GLFW_STATIC
+#include <GLFW\glfw3.h>
+#endif
+
 
 #define FILTRO_PERSONAJE 1
 #define FILTRO_PARED 2
@@ -28,6 +37,7 @@
 #define FILTRO_PUERTAABIERTA 15
 
 
+#define DEGTORAD 0.0174532925199432957f
 
 //hacer diferentes constructores para los distintos objetos
 
@@ -83,27 +93,13 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
     body->SetUserData(this);
     body->SetMassData(&md);
 	live = true;
-    /*
-   sombraDef.type = b2_dynamicBody;
-   sombraDef.position.Set(pos.X, pos.Z);
-   sombraShape.SetAsBox(5.0f, 5.0f);
-   sombraP= world->CreateBody(&sombraDef);
-   sombraP -> CreateFixture(&sombraShape, 1.0f);
-   sombraP->GetFixtureList()->SetFriction(10.0f);
-   sombraP->SetUserData(this);
-   sombraP->SetMassData(&md);*/
+
     filtro.groupIndex = FILTRO_PERSONAJE;
     body->GetFixtureList()->SetFilterData(filtro);
     //   sombraP->GetFixtureList()->SetFilterData(filtro);
     idenSh = 0;
 
 
-    /* fisica=smgr->addCubeSceneNode(10);
-     fisica->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
-     fisica->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING,false);
-     fisica->getMaterial(0).EmissiveColor.set(0,255,10,20);
-     fisica->setPosition(vector3df(sombraP->GetPosition().x,10,sombraP->GetPosition().y));
-     */
     iden = 0;
     objeto3D = dirPers;
 
@@ -143,6 +139,8 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     filtro.groupIndex = FILTRO_PARED;
     body->GetFixtureList()->SetFilterData(filtro);
 	live = true;
+
+	body->SetTransform(body->GetPosition(), -rot.y * DEGTORAD);
 
     objeto3D = dirPared;
     iden = 1;
@@ -233,6 +231,13 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, bool vivo, void
 Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, unsigned int raza) {
 
 
+
+	//myFixtureDef.shape = &polygonShape;
+	//tower->m_body->CreateFixture(&myFixtureDef);
+
+	////make the tower rotate at 45 degrees per second
+	//tower->m_body->SetAngularVelocity(45 * DEGTORAD);
+
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set((pos.x), (-pos.z));
 
@@ -247,14 +252,27 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 	bodyCircle.m_p.Set(0, 0);
 	bodyCircle.m_radius = 5; 
 
+	////add semicircle radar sensor to tower
+	float radius = 20;
+	b2Vec2 vertices[8];
+	vertices[0].Set(0, 0);
+	for (int i = 0; i < 7; i++) {
+		float angle = i / 6.0 * 90 * DEGTORAD;
+		vertices[i + 1].Set(radius * cosf(angle), radius * sinf(angle));
+	}
+	sombraShape.Set(vertices, 8);
+
+	glEnable(GL_LINE_STIPPLE);
+
     body = world->CreateBody(&bodyDef);
-	body->CreateFixture(&bodyCircle, 1.0f);
+	body->CreateFixture(&sombraShape, 1.0f);
 	body->GetFixtureList()->SetSensor(true);
     body -> CreateFixture(&bodyShape, 1.0f);
     live = vivo;
    
     body->SetUserData(this);
     
+	//body->SetAngularVelocity(45 * DEGTORAD);//esto es para rotar el sensor
 
     //sombraDef.type = b2_kinematicBody;
     //sombraDef.position.Set(pos.x, pos.z);
@@ -273,22 +291,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 
 	}
 	
-	//filtro.groupIndex = FILTRO_PUERTAABIERTA;
-	//sombraE->GetFixtureList()->SetFilterData(filtro);
 
- //   fisica2 = smgr->addSphereSceneNode(45);
-	////smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
- //   fisica2->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
- //   fisica2->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
- //   fisica2->getMaterial(0).EmissiveColor.set(0, 100, 10, 100);
- //   fisica2->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
-
-	//direccion = smgr->addCubeSceneNode(5);
-	////smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
-	//direccion->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
-	//direccion->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
-	//direccion->getMaterial(0).EmissiveColor.set(0, 140, 50, 100);
-	//direccion->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y+5));
 
     iden = 4;
     objeto3D = dirEnemigo;
@@ -370,7 +373,7 @@ Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 esca
 	filtro.groupIndex = FILTRO_SENSORCAMARA;
 	body->GetFixtureList()->SetFilterData(filtro);
 	live = true;
-
+	body->SetTransform(body->GetPosition(), -rot.y * DEGTORAD);
 	iden = 7; //sensor de activar camara
 	
 
