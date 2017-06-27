@@ -59,6 +59,17 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks 7-s.jpg
 Ns 18.00
+newmtl pasted__pasted__pasted__phong7SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 7-d.jpg
+bump 7-n.jpg -bm 1
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks 7-s.jpg
+Ns 18.00
 newmtl pasted__pasted__phong5SG
 illum 4
 Kd 0.00 0.00 0.00

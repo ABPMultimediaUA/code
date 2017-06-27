@@ -4,7 +4,24 @@
 # 3DBrowser for 3D Users copyright (C) 2013 by Mootools
 # www: http://www.mootools.com/
 # 
-newmtl pasillos_generador_almacenes:pho
+newmtl pasillo_3:initialShadingGroup1
+Ka 0.000000 0.000000 0.000000
+Kd 0.498039 0.498039 0.498039
+Ks 0.000000 0.000000 0.000000
+Tr 1.000000
+d 1.000000
+Ns 0.000000
+
+newmtl pasillo_3:phong1SG
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Tr 1.000000
+d 1.000000
+Ns 18.000000
+map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\pasillo_3\azul2.jpg
+
+newmtl pasillo_3:phong3SG
 Ka 0.000000 0.000000 0.000000
 Kd 1.000000 1.000000 1.000000
 Ks 0.498039 0.498039 0.498039
@@ -12,7 +29,7 @@ Tr 1.000000
 d 1.000000
 Ns 18.000000
 
-newmtl pasillos_generador_almacenes:bli
+newmtl pasillo_3:blinn3SG
 Ka 0.000000 0.000000 0.000000
 Kd 0.000000 0.000000 0.000000
 Ks 0.000000 0.000000 0.000000
@@ -21,7 +38,7 @@ d 1.000000
 Ns 0.060000
 map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\pasillo_3\suelo2.jpg
 
-newmtl pasillos_generador_almacenes:bl0
+newmtl pasillo_3:blinn4SG
 Ka 0.000000 0.000000 0.000000
 Kd 0.000000 0.000000 0.000000
 Ks 0.000000 0.000000 0.000000
@@ -30,7 +47,7 @@ d 1.000000
 Ns 0.060000
 map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\pasillo_3\panel.jpg
 
-newmtl pasillos_generador_almacenes:bl1
+newmtl pasillo_3:blinn6SG
 Ka 0.000000 0.000000 0.000000
 Kd 0.000000 0.000000 0.000000
 Ks 0.000000 0.000000 0.000000
@@ -38,21 +55,4 @@ Tr 1.000000
 d 1.000000
 Ns 0.060000
 map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\pasillo_3\steel_diffuse.jpg
-
-newmtl pasillos_generador_almacenes:ini
-Ka 0.000000 0.000000 0.000000
-Kd 0.498039 0.498039 0.498039
-Ks 0.000000 0.000000 0.000000
-Tr 1.000000
-d 1.000000
-Ns 0.000000
-
-newmtl pasillos_generador_almacenes:ph0
-Ka 0.000000 0.000000 0.000000
-Kd 0.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-Tr 1.000000
-d 1.000000
-Ns 18.000000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\pasillo_3\azul2.jpg
 
