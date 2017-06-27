@@ -74,6 +74,7 @@ private:
 	b2Body *puertaBody;
 	b2BodyDef sombraDef;
 	b2PolygonShape sombraShape;
+
 	/*IMeshSceneNode* fisica;
 	IMeshSceneNode* fisica2;
 	IMeshSceneNode* direccion;*/
