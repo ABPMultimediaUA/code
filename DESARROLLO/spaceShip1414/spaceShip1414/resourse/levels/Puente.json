@@ -456,7 +456,7 @@
             {
               "localPosition": [
                 -47.02,
-                1.0,
+                2.98,
                 0.0
               ],
               "localRotation": [
@@ -1359,201 +1359,6 @@
           ]
         },
         {
-          "name": "Puerta",
-          "components": [
-            {
-              "localPosition": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": [
-            {
-              "name": "Puerta-1",
-              "components": [
-                {
-                  "localPosition": [
-                    4.5,
-                    3.0,
-                    18.64
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    5.0,
-                    6.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Puerta_A"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Puerta-2",
-              "components": [
-                {
-                  "localPosition": [
-                    -14.0,
-                    3.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    6.0,
-                    5.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Puerta_A"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            },
-            {
-              "name": "Puerta-4",
-              "components": [
-                {
-                  "localPosition": [
-                    -11.34,
-                    3.0,
-                    23.74
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    5.0,
-                    6.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                },
-                {
-                  "mesh": "unity default resources_Cube",
-                  "enabled": true,
-                  "castShadows": true,
-                  "receiveShadows": true,
-                  "lightmapIndex": -1,
-                  "lightmapTilingOffset": [
-                    1.0,
-                    1.0,
-                    0.0,
-                    0.0
-                  ],
-                  "materials": [
-                    "P_Puerta_A"
-                  ],
-                  "type": "MeshRenderer"
-                },
-                {
-                  "center": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "size": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "type": "BoxCollider"
-                }
-              ],
-              "children": []
-            }
-          ]
-        },
-        {
           "name": "Puerta_Doble",
           "components": [
             {
@@ -2305,6 +2110,175 @@
             }
           ],
           "children": []
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -16.87,
+                    0.2,
+                    -42.39
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -9.77,
+                    0.2,
+                    -42.39
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4579,12 +4553,181 @@
           "children": []
         },
         {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -13.29,
+                    0.86,
+                    -182.92
+                  ],
+                  "localRotation": [
+                    0.0,
+                    136.324982,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.24,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -7.49,
+                    0.77,
+                    -177.32
+                  ],
+                  "localRotation": [
+                    0.0,
+                    134.586609,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Modelo",
           "components": [
             {
               "localPosition": [
                 0.6,
-                6.7,
+                8.46,
                 -219.2
               ],
               "localRotation": [
@@ -6925,7 +7068,7 @@
                 {
                   "localPosition": [
                     0.0,
-                    0.0,
+                    1.72,
                     0.0
                   ],
                   "localRotation": [
@@ -11652,6 +11795,175 @@
       ],
       "children": [
         {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-V",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -56.11,
+                    0.66,
+                    -3.98
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -56.11,
+                    0.66,
+                    3.6
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Paredes",
           "components": [
             {
@@ -12020,7 +12332,7 @@
             {
               "localPosition": [
                 -90.0,
-                3.1,
+                5.08,
                 0.0
               ],
               "localRotation": [
@@ -12101,6 +12413,175 @@
                       ],
                       "materials": [
                         "initialShadingGroup"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-V",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -125.64,
+                    0.66,
+                    -3.98
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -125.64,
+                    0.66,
+                    3.6
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
                       ],
                       "type": "MeshRenderer"
                     }
@@ -13009,7 +13490,7 @@
             {
               "localPosition": [
                 -392.0,
-                1.0,
+                5.02,
                 92.7
               ],
               "localRotation": [
@@ -13071,6 +13552,175 @@
                 }
               ],
               "children": []
+            }
+          ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-V",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -450.95,
+                    0.8,
+                    83.15
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -450.95,
+                    0.8,
+                    90.75
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
             }
           ]
         }
@@ -13609,7 +14259,7 @@
             {
               "localPosition": [
                 17.5,
-                3.7,
+                5.08,
                 -103.0
               ],
               "localRotation": [
@@ -13670,6 +14320,175 @@
                 }
               ],
               "children": []
+            }
+          ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-V",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -2.96,
+                    0.81,
+                    -114.22
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.07,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -2.96,
+                    0.81,
+                    -106.62
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.07,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
             }
           ]
         }
@@ -14203,6 +15022,175 @@
           ]
         },
         {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-V",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -141.57,
+                    0.66,
+                    158.87
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -141.57,
+                    0.66,
+                    166.47
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Modelo",
           "components": [
             {
@@ -14374,7 +15362,7 @@
           "components": [
             {
               "localPosition": [
-                0.0,
+                1.3,
                 0.0,
                 0.0
               ],
@@ -14793,7 +15781,7 @@
           "components": [
             {
               "localPosition": [
-                0.0,
+                1.3,
                 0.0,
                 0.0
               ],
@@ -14932,7 +15920,7 @@
           "components": [
             {
               "localPosition": [
-                0.0,
+                1.3,
                 0.0,
                 0.0
               ],
@@ -15015,7 +16003,7 @@
           "components": [
             {
               "localPosition": [
-                0.0,
+                1.3,
                 0.0,
                 0.0
               ],
@@ -15098,8 +16086,8 @@
           "components": [
             {
               "localPosition": [
-                -352.0,
-                0.7,
+                -350.7,
+                3.22,
                 87.5
               ],
               "localRotation": [
@@ -16009,6 +16997,175 @@
                 }
               ],
               "children": []
+            }
+          ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -99.39,
+                    0.2,
+                    272.18
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.18,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -91.06,
+                    0.2,
+                    272.18
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.2,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.03,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
             }
           ]
         }
@@ -17012,7 +18169,7 @@
             {
               "localPosition": [
                 -178.0,
-                1.0,
+                3.05,
                 -52.3
               ],
               "localRotation": [
@@ -17838,8 +18995,8 @@
             {
               "localPosition": [
                 -392.3,
-                3.8,
-                -163.0
+                5.96,
+                -161.7
               ],
               "localRotation": [
                 0.0,
@@ -17901,6 +19058,175 @@
               "children": []
             }
           ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -435.73,
+                    0.6,
+                    -105.12
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -427.92,
+                    0.6,
+                    -105.12
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -17936,7 +19262,7 @@
               "localPosition": [
                 0.0,
                 0.0,
-                0.0
+                158.5
               ],
               "localRotation": [
                 0.0,
@@ -17959,9 +19285,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -349.92,
+                    -349.72,
                     -3.0,
-                    189.3
+                    27.16
                   ],
                   "localRotation": [
                     0.0,
@@ -18015,9 +19341,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -415.54,
+                    -415.32,
                     -3.0,
-                    159.75
+                    -2.44
                   ],
                   "localRotation": [
                     0.0,
@@ -18071,9 +19397,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -392.52,
+                    -392.32,
                     -3.0,
-                    131.24
+                    -30.94
                   ],
                   "localRotation": [
                     0.0,
@@ -18127,9 +19453,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -337.73,
+                    -337.52,
                     -3.0,
-                    131.77
+                    -30.34
                   ],
                   "localRotation": [
                     0.0,
@@ -18183,9 +19509,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -326.08,
+                    -325.92,
                     -3.0,
-                    160.9
+                    -1.24
                   ],
                   "localRotation": [
                     0.0,
@@ -18239,9 +19565,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -404.85,
+                    -404.72,
                     -3.0,
-                    188.98
+                    26.86
                   ],
                   "localRotation": [
                     0.0,
@@ -18295,9 +19621,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -338.14,
+                    -337.92,
                     -3.0,
-                    154.96
+                    -7.24
                   ],
                   "localRotation": [
                     0.0,
@@ -18351,9 +19677,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -363.95,
+                    -363.82,
                     -3.0,
-                    175.71
+                    13.56
                   ],
                   "localRotation": [
                     0.0,
@@ -18411,7 +19737,7 @@
               "localPosition": [
                 0.0,
                 0.0,
-                0.0
+                158.5
               ],
               "localRotation": [
                 0.0,
@@ -18494,7 +19820,7 @@
               "localPosition": [
                 0.0,
                 0.0,
-                0.0
+                158.5
               ],
               "localRotation": [
                 0.0,
@@ -18571,13 +19897,182 @@
           ]
         },
         {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -362.32,
+                    0.84,
+                    127.91
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -355.22,
+                    0.84,
+                    127.91
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Modelo",
           "components": [
             {
               "localPosition": [
                 -371.0,
-                1.0,
-                160.0
+                5.1,
+                158.5
               ],
               "localRotation": [
                 0.0,
@@ -19545,7 +21040,7 @@
               "localPosition": [
                 0.0,
                 0.0,
-                0.0
+                -3.22
               ],
               "localRotation": [
                 0.0,
@@ -19852,7 +21347,7 @@
               "localPosition": [
                 0.0,
                 0.0,
-                0.0
+                -3.22
               ],
               "localRotation": [
                 0.0,
@@ -19929,13 +21424,182 @@
           ]
         },
         {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -386.85,
+                    0.84,
+                    189.35
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -379.75,
+                    0.84,
+                    189.35
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Modelo",
           "components": [
             {
               "localPosition": [
                 -372.7,
-                -1.0,
-                218.8
+                2.89,
+                215.58
               ],
               "localRotation": [
                 0.0,
@@ -21373,7 +23037,7 @@
             {
               "localPosition": [
                 -89.0,
-                7.0,
+                8.63,
                 -93.0
               ],
               "localRotation": [
@@ -21434,6 +23098,344 @@
                 }
               ],
               "children": []
+            }
+          ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
+          "components": [
+            {
+              "localPosition": [
+                8.28,
+                0.0,
+                1.17
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -57.12,
+                    0.79,
+                    -140.06
+                  ],
+                  "localRotation": [
+                    0.0,
+                    136.324982,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.24,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -51.39,
+                    0.7,
+                    -134.55
+                  ],
+                  "localRotation": [
+                    0.0,
+                    134.586609,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
+          "components": [
+            {
+              "localPosition": [
+                8.28,
+                0.0,
+                1.17
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -143.91,
+                    0.79,
+                    -53.41
+                  ],
+                  "localRotation": [
+                    0.0,
+                    136.324982,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.24,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -137.96,
+                    0.7,
+                    -47.68
+                  ],
+                  "localRotation": [
+                    0.0,
+                    134.586609,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
             }
           ]
         }
@@ -21522,7 +23524,7 @@
           "components": [
             {
               "localPosition": [
-                0.0,
+                -172.7,
                 0.0,
                 0.0
               ],
@@ -21547,7 +23549,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -166.45,
+                    7.39,
                     -3.0,
                     -63.63
                   ],
@@ -21603,7 +23605,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -209.5,
+                    -35.61,
                     -3.0,
                     -63.95
                   ],
@@ -21659,7 +23661,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -127.68,
+                    46.19,
                     -3.0,
                     -19.85
                   ],
@@ -21715,7 +23717,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -220.7,
+                    -46.81,
                     -3.0,
                     18.73
                   ],
@@ -21771,7 +23773,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -173.99,
+                    -0.11,
                     -3.0,
                     22.0
                   ],
@@ -21827,7 +23829,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -220.46,
+                    -46.61,
                     -3.0,
                     -59.28
                   ],
@@ -21883,7 +23885,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -220.23,
+                    -46.41,
                     -3.0,
                     -20.55
                   ],
@@ -21939,7 +23941,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -152.05,
+                    21.79,
                     -3.0,
                     -58.82
                   ],
@@ -21995,7 +23997,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -132.0,
+                    41.89,
                     -3.0,
                     -37.77
                   ],
@@ -22051,7 +24053,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -127.65,
+                    46.19,
                     -3.0,
                     16.31
                   ],
@@ -22109,7 +24111,7 @@
           "components": [
             {
               "localPosition": [
-                0.0,
+                -172.7,
                 0.0,
                 0.0
               ],
@@ -22248,7 +24250,7 @@
           "components": [
             {
               "localPosition": [
-                0.0,
+                -172.7,
                 0.0,
                 0.0
               ],
@@ -22331,8 +24333,8 @@
           "components": [
             {
               "localPosition": [
-                -173.4,
-                3.1,
+                -172.7,
+                4.99,
                 -20.8
               ],
               "localRotation": [
@@ -22393,6 +24395,513 @@
                 }
               ],
               "children": []
+            }
+          ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-V",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -220.79,
+                    0.66,
+                    0.69
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -220.79,
+                    0.66,
+                    8.27
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-V",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -220.79,
+                    0.66,
+                    -48.85
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -220.79,
+                    0.66,
+                    -41.27
+                  ],
+                  "localRotation": [
+                    0.0,
+                    90.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
+          "components": [
+            {
+              "localPosition": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "puerta-2a",
+              "components": [
+                {
+                  "localPosition": [
+                    -192.29,
+                    0.6,
+                    -66.11
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.06,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2549_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2a_polySurface2549_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "puerta-2b",
+              "components": [
+                {
+                  "localPosition": [
+                    -184.76,
+                    0.63,
+                    -66.11
+                  ],
+                  "localRotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.12,
+                    1.06,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": [
+                {
+                  "name": "polySurface2551_polySurface2160",
+                  "components": [
+                    {
+                      "localPosition": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localRotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "localScale": [
+                        1.03,
+                        1.0,
+                        1.0
+                      ],
+                      "name": null,
+                      "parentName": null,
+                      "type": "Transform"
+                    },
+                    {
+                      "mesh": "puerta-2b_polySurface2551_polySurface2160",
+                      "enabled": true,
+                      "castShadows": true,
+                      "receiveShadows": true,
+                      "lightmapIndex": -1,
+                      "lightmapTilingOffset": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0
+                      ],
+                      "materials": [
+                        "phong9SG",
+                        "phong4SG"
+                      ],
+                      "type": "MeshRenderer"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
             }
           ]
         }
