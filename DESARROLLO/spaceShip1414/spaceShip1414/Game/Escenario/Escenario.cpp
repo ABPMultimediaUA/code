@@ -220,11 +220,11 @@ void Escenario::dibujarEscenario() {
 				luz->activar();
 				luz->setLocal(true);
 				luz->setFoco(false);
-				float v[3] = { 0.2f, 0.2f, 0.2f };
+				float v[3] = { 0.25f, 0.25f, 0.25f };
 				luz->setAmbient(v);
-				v[0] = 16.0f;
-				v[1] = 16.0f;
-				v[2] = 16.0f;
+				v[0] = 20.0f;
+				v[1] = 20.0f;
+				v[2] = 20.0f;
 				luz->setColor(v);
 				luz->setAtenuacionConstante(1.0f);
 				luz->setAtenuacionLiniar(0.09f);
@@ -235,6 +235,7 @@ void Escenario::dibujarEscenario() {
 				luz->setDireccionLuz(v);
 				luz->setExponentFoco(glm::cos(glm::radians(15.0f)));
 				luz->setCosCutOffFoco(glm::cos(glm::radians(12.5f)));
+				ListLuces.push_back(luz);
 			}
 		}
 		if ((*I).nombre == "CamarasSeguimiento") {
@@ -2035,6 +2036,10 @@ void Escenario::dibujarEscenario() {
 
 		}
 
+	}
+
+	for (std::size_t i = 0; i < ListLuces.size(); i++) {
+		ListLuces[i]->activar();
 	}
 
 	jugador->asignarVectorDirector(glm::vec3(-1,0,0), listaDeCamaras[0]->getAnguloInicial());

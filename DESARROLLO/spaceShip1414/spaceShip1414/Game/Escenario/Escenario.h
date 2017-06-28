@@ -40,6 +40,7 @@ class Mundo;
 class Waypoints;
 class Camara;
 class player;
+class Luces;
 
 
 class Escenario {
@@ -85,6 +86,7 @@ private:
 	Mundo *mundo;
 	std::list<Enemigo*> enemigos;
 	std::list<Pared*> Listparedes;
+	std::vector<Luces*> ListLuces;
 	std::list<Puerta*> puertas;
 	std::vector<Camara*> listaDeCamaras;
 	//std::list<Objetos*> objConsumables;
