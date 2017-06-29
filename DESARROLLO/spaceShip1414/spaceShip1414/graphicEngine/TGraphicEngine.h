@@ -15,7 +15,7 @@
 #include <glm\vec3.hpp>
 #include <glm\mat4x4.hpp>
 #include "framework\openGLShader.h"
-#include "..\GUI.h"
+#include "../menuGame.h"
 
 class TNodo;
 class TGestorRecursos;
@@ -31,7 +31,6 @@ class Camara;
 class Mundo3D;
 class Mundo;
 class Escenario;
-class GUI;
 
 class TGraphicEngine
 {
@@ -96,6 +95,7 @@ public:
 	int getIDCamera();
 	void run(Mundo * world, Escenario*);
 	void CamaraActiva();
+	void changeState(unsigned int);
 private:
 	glm::vec3 descomponerMatriz(TNodo *, char);
 	void onstart();
@@ -132,8 +132,9 @@ private:
 	double YMIN;
 	double YMAX;
 	Mundo * wo;
-	GUI m_gui;
+	menuGame menuJuego;
 	Escenario * maps;
 	Camara * cam;
+	unsigned int state;
 };
 

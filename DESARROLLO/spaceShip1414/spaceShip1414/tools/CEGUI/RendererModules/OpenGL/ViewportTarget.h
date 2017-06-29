@@ -38,7 +38,7 @@ namespace CEGUI
     OpenGL implementation of a RenderTarget that represents am on-scren
     viewport.
 */
-class OPENGL_GUIRENDERER_API OpenGLViewportTarget : public OpenGLRenderTarget<RenderTarget>
+class OPENGL_GUIRENDERER_API OpenGLViewportTarget : public OpenGLRenderTarget<>
 {
 public:
     /*!
@@ -47,8 +47,6 @@ public:
         defined OpenGL viewport as it's initial area.
     */
     OpenGLViewportTarget(OpenGLRendererBase& owner);
-
-    virtual ~OpenGLViewportTarget();
 
     /*!
     \brief

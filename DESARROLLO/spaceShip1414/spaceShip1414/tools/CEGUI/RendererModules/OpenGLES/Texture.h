@@ -144,12 +144,12 @@ protected:
     void setTextureSize_impl(const Sizef& sz);
 
     //! load uncompressed data from buffer to GL texture.
-    void loadUncompressedTextureBuffer(const Rectf& buffer_size,
-                                       const GLvoid* buffer) const;
+    void loadUncompressedTextureBuffer(const Sizef& buffer_size,
+                                       const void* buffer) const;
 
     //! load uncompressed data from buffer to GL texture.
-    void loadCompressedTextureBuffer(const Rectf& buffer_size,
-                                     const GLvoid* buffer) const;
+    void loadCompressedTextureBuffer(const Sizef& buffer_size,
+                                     const void* buffer) const;
 
     GLsizei getCompressedTextureSize(const Sizef& pixel_size) const;
 

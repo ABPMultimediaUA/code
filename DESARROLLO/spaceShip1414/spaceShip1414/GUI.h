@@ -22,9 +22,8 @@ class GUI {
 		void loadScheme(const std::string& schemeFile);
 		void setFont(const std::string& fontFile);
 		CEGUI::Window* createWidget(const std::string& type, const glm::vec4& destRectPerc, const glm::vec4& destRectPix, const std::string& name = "");
+		CEGUI::Window* createWidget(const std::string& type, const std::string& type1);
 		static void setWidgetDestRect(CEGUI::Window* widget, const glm::vec4& destRectPerc, const glm::vec4& destRectPix);
-		void createMenu();
-
 
 		// Getters
 		static CEGUI::OpenGL3Renderer* getRenderer() { return m_renderer; }
@@ -33,6 +32,6 @@ class GUI {
 		static CEGUI::OpenGL3Renderer* m_renderer;
 		CEGUI::WindowManager* wmgr = nullptr;
 		CEGUI::GUIContext* m_context = nullptr;
-		CEGUI::Window* m_root = nullptr; //WindowManager::getSingletonPtr()
+		CEGUI::Window* m_root = nullptr;
 		CEGUI::System* mGUIsystem = CEGUI::System::getSingletonPtr();
  };

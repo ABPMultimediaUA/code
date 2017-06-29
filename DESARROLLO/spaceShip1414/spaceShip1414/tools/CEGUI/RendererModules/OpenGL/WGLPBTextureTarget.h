@@ -28,7 +28,7 @@
 #define _CEGUIOpenGLWGLPBTextureTarget_h_
 
 //#include <windows.h>
-#include "CEGUI/RendererModules/OpenGL/GL.h"
+#include <GL/glew.h>
 #include <GL/wglew.h>
 
 #include "CEGUI/RendererModules/OpenGL/TextureTarget.h"

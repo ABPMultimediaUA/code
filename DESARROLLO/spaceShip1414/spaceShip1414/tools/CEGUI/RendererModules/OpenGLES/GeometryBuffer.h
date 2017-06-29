@@ -70,8 +70,6 @@ public:
     uint getBatchCount() const;
     void setRenderEffect(RenderEffect* effect);
     RenderEffect* getRenderEffect();
-    void setClippingActive(const bool active);
-    bool isClippingActive() const;
 
     //! return the GL modelview matrix used for this buffer.
 	const float* getMatrix() const;
@@ -105,8 +103,6 @@ protected:
     VertexList d_vertices;
     //! rectangular clip region
     Rectf d_clipRect;
-    //! whether clipping will be active for the current batch
-    bool d_clippingActive;
     //! translation vector
     Vector3f d_translation;
     //! rotation quaternion

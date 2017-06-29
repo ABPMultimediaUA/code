@@ -4,7 +4,6 @@
 #include "../Fisicas\Mundo.h"
 #endif
 #include "../Game/Escenario/Escenario.h"
-#include "..\GUI.h"
 #include <iostream>
 #include <glm\gtc\matrix_inverse.hpp>
 #include <glm\gtc\matrix_transform.hpp>
@@ -26,7 +25,7 @@
 #include "../Camara.h"
 #include "../Game/Escenario/Luces.h"
 
-TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }
+TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }, state{ 0 }, menuJuego()
 {
 	escena = new TNodo(nullptr);
 	gestorRecursos = new TGestorRecursos();
@@ -553,7 +552,7 @@ glm::vec3 TGraphicEngine::descomponerMatriz(TNodo * nodo, char tipo)
 void TGraphicEngine::onstart()
 {
 	glEnable(GL_DEPTH_TEST);
-	glClearColor(0.0f, 0.5f, 0.5f, 1.0f);
+	glClearColor(0.0f, 0.0f, 0.0f, 0.8f);
 
 	shader.compile("graphicEngine/Shader/spaceShip1414.vs", "graphicEngine/Shader/spaceShip1414.fs");
 
@@ -650,6 +649,10 @@ void TGraphicEngine::CamaraActiva()
 	setCamaraMove(maps->getCamara());
 }
 
+void TGraphicEngine::changeState(unsigned int s)
+{
+	state = s;
+}
 
 void TGraphicEngine::setCamaraMove(Camara * c)
 {
@@ -705,13 +708,7 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 		return false;
 	}
 
-	m_gui.init("gui");
-	m_gui.loadScheme("TaharezLook.scheme");
-	m_gui.setFont("DejaVuSans-10");
-	CEGUI::PushButton* caca = static_cast<CEGUI::PushButton*>(m_gui.createWidget("TaharezLook/FrameWindow",
-		glm::vec4(0.5f, 0.5, 0.3f, 0.3f), glm::vec4(0.0f), "TestButton"));
-	caca->setText("MUERETE");
-	m_gui.createMenu();
+	menuJuego.init();
 
 	glfwSetWindowUserPointer(window, this);
 
@@ -751,15 +748,26 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glEnable(GL_CULL_FACE);
 
-		//m_gui.draw();
-		world->stepBox2D(1.0 / 60.0, 6, 2);
-		world->getWorldBox2D()->DrawDebugData();
-		world->clearForcesBox2D();
-		move->checkKeys(window, this);
-		esce->actualizarEstadoPuerta();
-	//	esce->actualizarListaEnemigos(deltaTime);
-		glfwPollEvents();
-		draw(getLastTime());
+		switch (state)
+		{
+		case 0:
+			move->checkKeys(window, this);
+			glfwPollEvents();
+			menuJuego.draw();
+			break;
+		case 1:
+			world->stepBox2D(1.0 / 60.0, 6, 2);
+			world->getWorldBox2D()->DrawDebugData();
+			world->clearForcesBox2D();
+			move->checkKeys(window, this);
+			esce->actualizarEstadoPuerta();
+		//	esce->actualizarListaEnemigos(deltaTime);
+			glfwPollEvents();
+			draw(getLastTime());
+			break;
+		default:
+			break;
+		}
 		glfwSetCursorPosCallback(window, mouse_callback);
 		glfwSwapBuffers(window);
 

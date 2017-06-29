@@ -35,7 +35,7 @@ int main() {
 		//cam2.translation(&motorApp, 0, 20, 0);
 		/*cam2.Rotation()->rotar(80.0f, 1.0f, 0.0f, 0.0f);
 		cam2.Translation()->trasladar(0, 0, 100);*/
-	
+		
 
 		Escenario *scene = new Escenario(&motorApp, world);
 		//Camara cam(&motorApp,1,true, scene->getPersonaje());

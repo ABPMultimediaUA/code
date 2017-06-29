@@ -79,10 +79,10 @@ namespace CEGUI
             GLuint d_buffer;
         };
 
-public:
-
-    OpenGL3StateChangeWrapper();
+    public:
+    //! constructor.
     OpenGL3StateChangeWrapper(OpenGL3Renderer& owner);
+    //! destructor
     virtual ~OpenGL3StateChangeWrapper();
 
     void reset();
