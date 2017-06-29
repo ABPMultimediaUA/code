@@ -52,8 +52,12 @@ public:
 	void setImpulso(bool x);
 	void destruirAnimacion(TNodo * n);
 	bool getImpulso();
+	void setAnguloCamara(float angle);
+	void setRecalculo(bool x);
+	void setVectorDirector(glm::vec3 u);
 
 private:
+
 	float velocity;
 	float yaw;
 	float pitch;
@@ -69,7 +73,7 @@ private:
 	TNodo *nodo, *animation;
 	TGraphicEngine * engine;
 	int dir;
-	bool impulso = false;
+	bool impulso = false, recalculo = false;
 	MaquinaEstados* MaquinaEstadosAnimation;
 	Estados* andar, *correr, *reposo, *disparar;
 

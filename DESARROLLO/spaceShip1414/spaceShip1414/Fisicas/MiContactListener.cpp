@@ -521,6 +521,8 @@ void asignarVecDirector(Entity2D *p, ActivadorCamara* c) {
 
 	float angle = cam->getAnguloInicial() + 180;
 
+
+
 	if (angle < 0.0f) {
 		angle += 360;
 	}
@@ -529,13 +531,16 @@ void asignarVecDirector(Entity2D *p, ActivadorCamara* c) {
 		angle -= 360;
 	}
 
+	jugador->setAnguloCamara(angle);
+	jugador->setRecalculo(true);
 	angle = angle * PI / 180;
 
 	u = glm::vec3(sin(angle),
 		0,
 		-cos(angle));
 
-	jugador->asignarVectorDirector(u, angle * 180 / PI);
+	jugador->setVectorDirector(u);
+	//jugador->asignarVectorDirector(u, angle * 180 / PI);
 	//vecA = glm::vec3(vecDir.x * cos(angulo) - vecDir.z * sin(angulo),
 	//	0,
 	//	vecDir.x * sin(angulo) + vecDir.z * cos(angulo));

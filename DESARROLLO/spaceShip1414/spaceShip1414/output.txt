@@ -1,6 +1,6 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GTX 780 Ti/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 376.53
+Renderer: GeForce GTX 970/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 372.70
 GLSL: 4.50 NVIDIA
 
 Recurso nombre: personaje.obj
@@ -6116,1180 +6116,262 @@ ENTRO AL CALLBACK
 //////////////////////////////////////////
 
 Recurso nombre: cria.obj
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-Recurso nombre: 
-Unable to open file "reposo".
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-TIME: 1.173e-06
-TIME: 1.173e-06
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-REPOSO
-se lo dijisteh a la wah se lo dijisteh a mah, ya verah   32.5
+TIME: 5.85143e-07
+TIME: 5.85143e-07
+TIME: 0.0165976
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 38.72 POS Y: 0.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 26.47 POS Y: 20.95
+///////////////////////////////////
+TIME: 0.0662121
+TIME: 0.0666791
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0666129
+TIME: 0.0666583
+TIME: 0.0667598
+TIME: 0.0665837
+TIME: 0.0666445
+TIME: 0.0667504
+TIME: 0.0669538
+TIME: 0.0663054
+TIME: 0.0666992
+TIME: 0.0671495
+TIME: 0.0661615
+TIME: 0.0666752
+TIME: 0.0670925
+TIME: 0.0662127
+TIME: 0.0666764
+TIME: 0.0671106
+TIME: 0.066227
+TIME: 0.0666469
+TIME: 0.0671627
+TIME: 0.066175
+TIME: 0.0666893
+TIME: 0.0667399
+TIME: 0.0666106
+TIME: 0.0666647
+TIME: 0.0666688
+TIME: 0.0666662
+TIME: 0.0666238
+TIME: 0.0667528
+TIME: 0.0665793
+TIME: 0.0666709
+TIME: 0.0668286
+TIME: 0.0665255
+TIME: 0.0666594
+TIME: 0.0666545
+TIME: 0.0671118
+TIME: 0.0662162
+TIME: 0.0666562
+TIME: 0.0671121
+TIME: 0.0662297
+TIME: 0.0666641
+TIME: 0.0671527
+TIME: 0.0661916
+TIME: 0.0666594
+TIME: 0.0671606
+TIME: 0.0661817
+TIME: 0.0667071
+TIME: 0.0670922
+TIME: 0.0661946
+TIME: 0.0666635
+TIME: 0.0667548
+TIME: 0.066615
+TIME: 0.0666094
+TIME: 0.0667264
+TIME: 0.0666191
+TIME: 0.0667109
+TIME: 0.0670968
+TIME: 0.0662124
+TIME: 0.0666694
+TIME: 0.0666744
+TIME: 0.0666176
+TIME: 0.0667212
+TIME: 0.0666931
+TIME: 0.0665846
+TIME: 0.0666565
+TIME: 0.06672
+TIME: 0.0666665
+TIME: 0.0666554
+TIME: 0.066696
+TIME: 0.0666276
+TIME: 0.0666808
+TIME: 0.0668382
+TIME: 0.0664684
+TIME: 0.0666571
+TIME: 0.0666583
+TIME: 0.0671518
+TIME: 0.0662241
+TIME: 0.0666431
+TIME: 0.0671878
+TIME: 0.0661343
+TIME: 0.0667139
+TIME: 0.0667768
+TIME: 0.0665565
+TIME: 0.0666085
+TIME: 0.0667876
+TIME: 0.0665407
+TIME: 0.0666633
+TIME: 0.0667528
+TIME: 0.0665892
+TIME: 0.0666548
+TIME: 0.066718
+TIME: 0.0667063
+TIME: 0.0665919
+TIME: 0.0667147
+TIME: 0.066603
+TIME: 0.0666653
+TIME: 0.0666811
+TIME: 0.0671416
+TIME: 0.0662063
+TIME: 0.0666881
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -43.75 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -47.63 POS Y: -0.9
+///////////////////////////////////
+camID: 0
+TIME: 0.0670898
+TIME: 0.0662121
+TIME: 0.0666714
+TIME: 0.067151
+TIME: 0.0661635
+TIME: 0.0666597
+TIME: 0.0667639
+TIME: 0.0665626
+TIME: 0.0666875
+TIME: 0.0668505
+TIME: 0.0664617
+TIME: 0.0666697
+TIME: 0.0667168
+TIME: 0.0666729
+TIME: 0.0666431
+TIME: 0.0667259
+TIME: 0.0665939
+TIME: 0.0666761
+TIME: 0.0667042
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -51.6666 POS Y: -0.0318539
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -55.64 POS Y: -0.9
+///////////////////////////////////
+camID: 12
+TIME: 0.066627
+TIME: 0.0666922
+TIME: 0.066665
+TIME: 0.0671047
+TIME: 0.0661679
+TIME: 0.0667697
+TIME: 0.067093
+TIME: 0.0661752
+TIME: 0.0666589
+TIME: 0.0666954
+TIME: 0.0666504
+TIME: 0.0666214
+TIME: 0.0668327
+TIME: 0.0664901
+TIME: 0.0666831
+TIME: 0.0667674
+TIME: 0.0665895
+TIME: 0.0666621
+TIME: 0.0666551
+TIME: 0.0670974
+TIME: 0.0662788
+TIME: 0.0665986
+TIME: 0.06712
+TIME: 0.0662226
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -52.0833 POS Y: 9.925
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -48.87 POS Y: 11.43
+///////////////////////////////////
+TIME: 0.0666665
+TIME: 0.0670597
+TIME: 0.0662715
+TIME: 0.0666609
+TIME: 0.0670354
+TIME: 0.0663049
+TIME: 0.0666791
+TIME: 0.0671235
+TIME: 0.0662022
+TIME: 0.0666431
+TIME: 0.0667203
+TIME: 0.0666334
+TIME: 0.0666627
+TIME: 0.0666916
+TIME: 0.0666548
+TIME: 0.0666791
+TIME: 0.0667929
+TIME: 0.0665278
+TIME: 0.0666571
+TIME: 0.0667086
+TIME: 0.0666135
+TIME: 0.0666972
+TIME: 0.0667706
+TIME: 0.0668891
+TIME: 0.0666521
+TIME: 0.0668564
+TIME: 0.0661943
+TIME: 0.0666422
+TIME: 0.0667074
+TIME: 0.0670755
+TIME: 0.0662071
+TIME: 0.0666498
+TIME: 0.0670474
+TIME: 0.0662917
+TIME: 0.0666577
+TIME: 0.0672238
+TIME: 0.0661235
+TIME: 0.0666685
+TIME: 0.0671246
+TIME: 0.0661937
+TIME: 0.0666723
+REPOSO
+ANGLEEEEE: 180
+270
+360
+90
+VECTORES
+DIR: vec3(-0.000000, 0.000000, 1.000000)
+A: vec3(-1.000000, 0.000000, -0.000000)
+S: vec3(0.000000, 0.000000, -1.000000)
+D:vec3(1.000000, 0.000000, 0.000000)
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado

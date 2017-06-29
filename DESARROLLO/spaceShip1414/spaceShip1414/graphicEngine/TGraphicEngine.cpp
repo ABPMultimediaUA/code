@@ -699,6 +699,7 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 	glfwSwapInterval(1);
 
 	glfwSetKeyCallback(window, key_callback);
+	glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
 	glfwSetWindowCloseCallback(window, close_callback);
 	glfwSetFramebufferSizeCallback(window, resize_callback);
 	glfwSetCursorPosCallback(window, mouse_callback);

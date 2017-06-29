@@ -97,7 +97,7 @@ void TLuz::renderLuz(const glm::mat4& model, openGLShader& shader, const glm::ma
 	glm::vec3 v = getDirectionXView(MV);
 	float p[] = { v.x, v.y, v.z };
 	setDireccionLuz(p);
-	std::cout << luz << " -> " << direccionLuz.x << " - " << direccionLuz.y << " - " << direccionLuz.z << std::endl;
+	//std::cout << luz << " -> " << direccionLuz.x << " - " << direccionLuz.y << " - " << direccionLuz.z << std::endl;
 	glUniform3fv(shader.getUniformLocation(luz), 1, glm::value_ptr(direccionLuz));
 	luz = "luz[" + std::to_string(id) + "].vectorMedio";
 //	std::cout << luz << " -> " << vectorMedio.x << " - " << vectorMedio.y << " - " << vectorMedio.z << std::endl;

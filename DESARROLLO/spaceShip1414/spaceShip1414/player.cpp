@@ -41,6 +41,7 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 
 	motorApp->trasladar(animation, 0.0f, 0.0f, 0.0f);
 	motorApp->rotarYPR(animation, 0, 0, 0);
 
+	animation->destruirEntidad();
 	pos = glm::vec3(0, -5, 0);
 	rot = glm::vec3(180, 0, 0);
 	escale = glm::vec3(0.75f, 0.75f, 0.75f);
@@ -189,7 +190,7 @@ void player::cambiarAnimacion(char c) {
 		MaquinaEstadosAnimation->cambiaEstado("reposo");
 		destruirAnimacion(nodo);
 		destruirAnimacion(animation);
-		engine->cargarNuevaMalla(nodo, reposo->getEstado());
+		engine->cargarNuevaMalla(nodo, reposo->getPathAnimacion());
 
 		break;
 
@@ -224,22 +225,25 @@ void player::cambiarAnimacion(char c) {
 void player::actualizarFisicas(int n, double delta, float anguloCam)
 {
 
-	if (MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != andar->getEstado()) {
-		cambiarAnimacion('a');
-	}
-
-	
-	
-
 	b2Vec2 vel(0,0);
 
 	dir = n;
 	glm::vec3 posSim;
 
+
+	if (n != -1 && MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != andar->getEstado()) {
+		cambiarAnimacion('a');
+	}
+
 	if(n == -1) {
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
 		if (MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != reposo->getEstado()) {
 			cambiarAnimacion('r');
+		}
+
+		if (recalculo == true) {
+			asignarVectorDirector(vecDir, anguloCamara);
+			setRecalculo(false);
 		}
 
 		glm::vec3 rotaton = engine->getRotacion(animation);
@@ -250,7 +254,11 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	}
 
 
+
+
 	if (n == 0) {
+
+
 
 		vel.Set(vecD.x, vecD.z);
 		vel = velocity * vel;
@@ -262,6 +270,8 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	}
 
 	if (n == 1) {
+
+
 
 		vel.Set(vecA.x, vecA.z);
 		vel = velocity * vel;
@@ -275,6 +285,8 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	}
 
 	if (n == 2) {
+
+
 		vel.Set(vecS.x, vecS.z);
 		vel = velocity * vel;
 		engine->resetTransform(animation, 'r');
@@ -286,6 +298,7 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 
 	if (n == 3) {
+
 
 		vel.Set(vecDir.x, vecDir.z);
 		vel = velocity * vel;
@@ -403,6 +416,21 @@ void player::destruirAnimacion(TNodo* n)
 bool player::getImpulso() {
 	return impulso;
 
+}
+
+void player::setAnguloCamara(float angle)
+{
+	anguloCamara = angle;
+}
+
+void player::setRecalculo(bool x)
+{
+	recalculo = x;
+}
+
+void player::setVectorDirector(glm::vec3 u)
+{
+	vecDir = u;
 }
 
 //end;
