@@ -1,5 +1,5 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GTX 780 Ti/PCIe/SSE2
+Renderer: GeForce GTX 1060 3GB/PCIe/SSE2
 OpenGL Version: 4.5.0 NVIDIA 376.53
 GLSL: 4.50 NVIDIA
 
@@ -6129,6 +6129,20 @@ POS X: 38.72 POS Y: 0.18
 POSICION DE LA ENTITY 2
 POS X: 26.47 POS Y: 20.95
 ///////////////////////////////////
+TIME: 0.0678434
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0656172
+TIME: 0.0672993
+TIME: 0.066728
+TIME: 0.0666995
+TIME: 0.065856
+TIME: 0.0676817
+TIME: 0.0669163
+TIME: 0.0669163
+REPOSO
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado
