@@ -29,19 +29,19 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 25.0f }, yaw{ 0 
 
 
 	initEstados();
-	nodo = motorApp->addMalla(reposo->getPathAnimacion());
+	nodo = motorApp->addAnimacion(andar->getPathAnimacion(), 25);
 
 	motorApp->escalar(nodo, 0.75f, 0.75f, 0.75f);
 	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.0f);
 	motorApp->rotarYPR(nodo, 0, 0, 0);
 
-	animation = motorApp->addAnimacion(andar->getPathAnimacion(), 25);
+	//animation = motorApp->addAnimacion(andar->getPathAnimacion(), 25);
 
-	motorApp->escalar(animation, 0.75f, 0.75f, 0.75f);
-	motorApp->trasladar(animation, 0.0f, 0.0f, 0.0f);
-	motorApp->rotarYPR(animation, 0, 0, 0);
+	//motorApp->escalar(animation, 0.75f, 0.75f, 0.75f);
+	//motorApp->trasladar(animation, 0.0f, 0.0f, 0.0f);
+	//motorApp->rotarYPR(animation, 0, 0, 0);
 
-	animation->destruirEntidad();
+	//animation->destruirEntidad();
 	pos = glm::vec3(0, -5, 0);
 	rot = glm::vec3(180, 0, 0);
 	escale = glm::vec3(0.75f, 0.75f, 0.75f);
@@ -189,7 +189,7 @@ void player::cambiarAnimacion(char c) {
 		std::cout << "REPOSO" << std::endl;
 		MaquinaEstadosAnimation->cambiaEstado("reposo");
 		destruirAnimacion(nodo);
-		destruirAnimacion(animation);
+		//destruirAnimacion(animation);
 		engine->cargarNuevaMalla(nodo, reposo->getPathAnimacion());
 
 		break;
@@ -199,9 +199,9 @@ void player::cambiarAnimacion(char c) {
 
 		MaquinaEstadosAnimation->cambiaEstado("andar");
 		destruirAnimacion(nodo);
-		destruirAnimacion(animation);
+		//destruirAnimacion(animation);
 		//engine->cargarNuevaMalla(nodo, reposo->getEstado());
-		engine->cargarNuevaAnimacion(animation, andar->getPathAnimacion(), 25);
+		engine->cargarNuevaAnimacion(nodo, andar->getPathAnimacion(), 25);
 
 		break;
 
@@ -226,11 +226,11 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 {
 
 	b2Vec2 vel(0,0);
-
+	glm::vec3 rotaton = engine->getRotacion(nodo);
 	dir = n;
 	glm::vec3 posSim;
 
-
+	//std::cout << "VALORS DE N: " << n << std::endl;
 	if (n != -1 && MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != andar->getEstado()) {
 		cambiarAnimacion('a');
 	}
@@ -242,11 +242,12 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		}
 
 		if (recalculo == true) {
+			std::cout << "HORA DEL RECALCULO" << std::endl;
 			asignarVectorDirector(vecDir, anguloCamara);
 			setRecalculo(false);
 		}
 
-		glm::vec3 rotaton = engine->getRotacion(animation);
+		
 
 		engine->resetTransform(this->getNodo(), 'r');
 		engine->rotarYPR(nodo, rotaton.y, 0.0f, 0.0f);
@@ -263,9 +264,9 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		vel.Set(vecD.x, vecD.z);
 		vel = velocity * vel;
 
-		engine->resetTransform(animation, 'r');
+		engine->resetTransform(nodo, 'r');
 
-		engine->rotarYPR(animation, anguloCamara - 90, 0.0f, 0.0f);
+		engine->rotarYPR(nodo, anguloCamara - 90, 0.0f, 0.0f);
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
 	}
 
@@ -276,9 +277,9 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		vel.Set(vecA.x, vecA.z);
 		vel = velocity * vel;
 
-		engine->resetTransform(animation, 'r');
+		engine->resetTransform(nodo, 'r');
 
-		engine->rotarYPR(animation, anguloCamara + 90, 0.0f, 0.0f);
+		engine->rotarYPR(nodo, anguloCamara + 90, 0.0f, 0.0f);
 
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
 
@@ -289,9 +290,9 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 		vel.Set(vecS.x, vecS.z);
 		vel = velocity * vel;
-		engine->resetTransform(animation, 'r');
+		engine->resetTransform(nodo, 'r');
 
-		engine->rotarYPR(animation, anguloCamara + 180, 0.0f, 0.0f);
+		engine->rotarYPR(nodo, anguloCamara + 180, 0.0f, 0.0f);
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
 
 	}
@@ -302,9 +303,9 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 
 		vel.Set(vecDir.x, vecDir.z);
 		vel = velocity * vel;
-		engine->resetTransform(animation, 'r');
+		engine->resetTransform(nodo, 'r');
 
-		engine->rotarYPR(animation, anguloCamara, 0.0f, 0.0f);
+		engine->rotarYPR(nodo, anguloCamara, 0.0f, 0.0f);
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
 	}
 
@@ -371,7 +372,7 @@ void player::asignarVectorDirector(glm::vec3 u, float angle) {
 void player::actualizarPosicion()
 {
 	engine->resetTransform(this->getNodo(), 't');
-	engine->resetTransform(animation, 't');
+	//engine->resetTransform(animation, 't');
 
 
 	setPos(entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
@@ -379,7 +380,7 @@ void player::actualizarPosicion()
 	
 
 	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
-	engine->trasladar(animation, entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	//engine->trasladar(animation, entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 }
 
 

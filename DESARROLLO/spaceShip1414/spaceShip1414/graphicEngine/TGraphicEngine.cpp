@@ -25,6 +25,7 @@
 #include "../Camara.h"
 #include "../Game/Escenario/Luces.h"
 
+
 TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }, state{ 0 }
 {
 	escena = new TNodo(nullptr);

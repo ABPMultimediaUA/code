@@ -10,6 +10,7 @@
 #include "../entityTree/TCamara.h"
 #include <math.h>
 #include <glm\glm.hpp>
+#include "SFML\Graphics.hpp"
 
 movimentHandler::movimentHandler() : activo{ false }, mouseSensitive{ 0.015f }
 {
@@ -23,7 +24,7 @@ movimentHandler::~movimentHandler()
 void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int action, int mods, double deltaTime, TGraphicEngine* motor)
 {
 	motor->CamaraActiva();
-	tecla = -1;
+	//tecla = -1;
 	double dt = motor->getDT();
 	std::cout << "TIME: " << dt << std::endl;
 //	jugador->setCamPos(motor->getPosicion(camara->getNodo()));
@@ -47,7 +48,7 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 
 		if ((key == GLFW_KEY_W || key == GLFW_KEY_A || key == GLFW_KEY_S || key == GLFW_KEY_D) && action == GLFW_RELEASE) {
 			//std::cout << "CACA -1" << std::endl;
-			tecla = -1;
+			//tecla = -1;
 		}
 
 		//if (glfwGetKey(window, GLFW_KEY_W) == GLFW_REPEAT) {
@@ -56,7 +57,7 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 			//std::cout << "CACA 3" << std::endl;
 
 			//jugador->actualizarFisicas(3,dt, 0);
-			tecla = TECLA_W;
+			//tecla = TECLA_W;
 		/*	motor->resetTransform(jugador->getNodo(), 'r');
 			motor->rotarYPR(jugador->getNodo(), 180, 0.0, 0.0f);*/
 		}
@@ -64,7 +65,7 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 			//std::cout << "CACA 2" << std::endl;
 
 			//jugador->actualizarFisicas(2,dt, 0);
-			tecla = TECLA_S;
+			//tecla = TECLA_S;
 			//motor->resetTransform(jugador->getNodo(), 'r');
 			//motor->rotarYPR(jugador->getNodo(), 0, 0.0, 0.0f);
 
@@ -73,7 +74,7 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 			//std::cout << "CACA 1" << std::endl;
 
 			//jugador->actualizarFisicas(1,dt, 0);
-			tecla = TECLA_A;
+		//	tecla = TECLA_A;
 			//motor->resetTransform(jugador->getNodo(), 'r');
 			//motor->rotarYPR(jugador->getNodo(), -90, 0.0, 0.0f);
 		}
@@ -81,7 +82,7 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 			//std::cout << "CACA 0" << std::endl;
 
 			//jugador->actualizarFisicas(0,dt, 0);
-			tecla = TECLA_D;
+		//	tecla = TECLA_D;
 			//motor->resetTransform(jugador->getNodo(), 'r');
 			//motor->rotarYPR(jugador->getNodo(), 90, 0.0, 0.0f);
 
@@ -93,6 +94,11 @@ void movimentHandler::onKey(GLFWwindow* window, int key, int scancode, int actio
 			/*	motor->resetTransform(jugador->getNodo(), 'r');
 			motor->rotarYPR(jugador->getNodo(), 180, 0.0, 0.0f);*/
 		}
+
+		//if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+		//{
+		//	std::cout << "Jump PLayer" << std::endl;
+		//}
 
 	}
 
@@ -266,36 +272,45 @@ void movimentHandler::checkKeys(GLFWwindow * window, TGraphicEngine* motor)
 
 	if (jugador->getImpulso() == false) {
 
+		
+		if (!sf::Keyboard::isKeyPressed(sf::Keyboard::W) ||
+			!sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||
+			!sf::Keyboard::isKeyPressed(sf::Keyboard::D) ||
+			!sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+			tecla = -1;
+		}
+
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+		{
+			std::cout << "W" << std::endl;
+			tecla = TECLA_W;
+		}
+
+		
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+		{
+			std::cout << "A" << std::endl;
+			tecla = TECLA_A;
+		}
+
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+		{
+			std::cout << "S" << std::endl;
+			tecla = TECLA_S;
+		}
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+		{
+			std::cout << "D" << std::endl;
+			tecla = TECLA_D;
+		}
+
+	
+
 		jugador->actualizarFisicas(tecla, 0, 0);
-		//if (tecla == -1) {
-		//	jugador->actualizarFisicas(-1, 0, 0);
-		//}
 
-		//else if (tecla == TECLA_W) {
-		//	//jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getPos().z - jugador->getVelocity() * dt);
-		//	//jugador->Translation()->trasladar(0.0, 0.0, -jugador->getVelocity() * dt);
-		//	jugador->actualizarFisicas(3, 0, 0);
-
-
-		//}
-		//else if (tecla == TECLA_S) {
-		//	//jugador->setPos(jugador->getPos().x, jugador->getPos().y, jugador->getVelocity() * dt + jugador->getPos().z);
-		//	//jugador->Translation()->trasladar(0.0, 0.0, jugador->getVelocity() * dt);
-		//	jugador->actualizarFisicas(2, 0, 0);
-
-		//}
-		//else if (tecla == TECLA_A) {
-		//	//jugador->setPos(jugador->getPos().x - jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
-		//	//jugador->Translation()->trasladar(-jugador->getVelocity() * dt, 0.0, 0.0);
-		//	jugador->actualizarFisicas(1, 0, 0);
-
-		//}
-		//else if (tecla == TECLA_D) {
-		//	//jugador->setPos(jugador->getPos().x + jugador->getVelocity() * dt, jugador->getPos().y, jugador->getPos().z);
-		//	//jugador->Translation()->trasladar(jugador->getVelocity() * dt, 0.0, 0.0);
-		//	jugador->actualizarFisicas(0, 0, 0);
-
-		//}
 
 	}
 

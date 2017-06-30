@@ -1,9 +1,8 @@
 Vendor: NVIDIA Corporation
-Renderer: GeForce GTX 780 Ti/PCIe/SSE2
-OpenGL Version: 4.5.0 NVIDIA 376.53
+Renderer: GeForce GTX 970/PCIe/SSE2
+OpenGL Version: 4.5.0 NVIDIA 372.70
 GLSL: 4.50 NVIDIA
 
-Recurso nombre: personaje.obj
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
@@ -6129,10 +6128,138 @@ POS X: 38.72 POS Y: 0.18
 POSICION DE LA ENTITY 2
 POS X: 26.47 POS Y: 20.95
 ///////////////////////////////////
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
-Nodo eliminado
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0666739
+D
+D
+D
+D
+W
+TIME: 0.0666514
+W
+TIME: 0.0666628
+W
+W
+W
+W
+W
+W
+W
+REPOSO
+Recurso nombre: personaje.obj
+TIME: 0.0666423
+TIME: 0.0666423
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0667596
+A
+A
+A
+A
+A
+A
+A
+TIME: 0.0665829
+REPOSO
+TIME: 0.0667596
+TIME: 0.0667596
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0498188
+S
+S
+S
+S
+S
+S
+S
+S
+S
+S
+TIME: 0.0501254
+S
+TIME: 0.049923
+S
+TIME: 0.0499853
+S
+TIME: 0.0499508
+REPOSO
+TIME: 0.0500368
+TIME: 0.0500368
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0499958
+D
+D
+D
+D
+D
+D
+D
+D
+D
+REPOSO
+TIME: 0.0500479
+TIME: 0.0500479
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0498832
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0500306
+W
+TIME: 0.0499911
+W
+TIME: 0.0499373
+W
+TIME: 0.0500011
+W
+TIME: 0.0499926
+W
+TIME: 0.0500198
+W
+TIME: 0.0500122
+W
+TIME: 0.0499906
+W
+TIME: 0.049999
+W
+TIME: 0.0500043
+W
+TIME: 0.0500245
+W
+TIME: 0.0499765
+W
+TIME: 0.0500064
+W
+TIME: 0.0500292
+REPOSO
+TIME: 0.0499762
+TIME: 0.0499762
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado
