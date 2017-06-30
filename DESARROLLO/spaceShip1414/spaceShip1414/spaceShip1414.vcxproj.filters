@@ -246,9 +246,6 @@
     <ClCompile Include="Game\Escenario\Puerta.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="GUI.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
     <ClCompile Include="Game\Escenario\Luces.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
@@ -328,9 +325,6 @@
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
     <ClCompile Include="graphicEngine\entityTree\TAnimacion.cpp">
-      <Filter>Archivos de código fuente</Filter>
-    </ClCompile>
-    <ClCompile Include="menuGame.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
@@ -698,9 +692,6 @@
     <ClInclude Include="Game\Escenario\Puerta.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="GUI.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="Game\Escenario\Luces.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -780,9 +771,6 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="graphicEngine\entityTree\TAnimacion.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="menuGame.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

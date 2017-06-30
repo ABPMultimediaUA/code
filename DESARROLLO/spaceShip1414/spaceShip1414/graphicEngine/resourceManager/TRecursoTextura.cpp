@@ -1,6 +1,6 @@
 #include "TRecursoTextura.h"
 #include <iostream>
-#include <SOIL\SOIL.h>
+//#include <SOIL\SOIL.h>
 #include <cstring>
 #include <string>
 
@@ -16,7 +16,7 @@ TRecursoTextura::~TRecursoTextura()
 
 bool TRecursoTextura::cargarFichero(std::string ntextura)
 {
-	size_t index = ntextura.find_last_of("\\/");
+	/*size_t index = ntextura.find_last_of("\\/");
 	nombre = index == std::string::npos ? "" : ntextura.substr(index + 1);
 	std::cout << "Recurso nombre: " << nombre << std::endl;
 
@@ -43,7 +43,8 @@ bool TRecursoTextura::cargarFichero(std::string ntextura)
 		std::cout << "Failed to load texture" << std::endl;
 		SOIL_free_image_data(data);
 		return false;
-	}
+	}*/
+	return false;
 }
 
 void TRecursoTextura::draw()

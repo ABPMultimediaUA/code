@@ -25,7 +25,7 @@
 #include "../Camara.h"
 #include "../Game/Escenario/Luces.h"
 
-TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }, state{ 0 }, menuJuego()
+TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }, state{ 0 }
 {
 	escena = new TNodo(nullptr);
 	gestorRecursos = new TGestorRecursos();
@@ -709,8 +709,6 @@ bool TGraphicEngine::init(std::string title, int width, int height, bool full_sc
 		return false;
 	}
 
-	menuJuego.init();
-
 	glfwSetWindowUserPointer(window, this);
 
 	return true;
@@ -749,26 +747,15 @@ void TGraphicEngine::run(Mundo * world, Escenario* esce)
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glEnable(GL_CULL_FACE);
 
-		switch (state)
-		{
-		case 0:
-			move->checkKeys(window, this);
-			glfwPollEvents();
-			menuJuego.draw();
-			break;
-		case 1:
-			world->stepBox2D(1.0 / 60.0, 6, 2);
-			world->getWorldBox2D()->DrawDebugData();
-			world->clearForcesBox2D();
-			move->checkKeys(window, this);
-			esce->actualizarEstadoPuerta();
-		//	esce->actualizarListaEnemigos(deltaTime);
-			glfwPollEvents();
-			draw(getLastTime());
-			break;
-		default:
-			break;
-		}
+		world->stepBox2D(1.0 / 60.0, 6, 2);
+		world->getWorldBox2D()->DrawDebugData();
+		world->clearForcesBox2D();
+		move->checkKeys(window, this);
+		esce->actualizarEstadoPuerta();
+	//	esce->actualizarListaEnemigos(deltaTime);
+		glfwPollEvents();
+		draw(getLastTime());
+
 		glfwSetCursorPosCallback(window, mouse_callback);
 		glfwSwapBuffers(window);
 

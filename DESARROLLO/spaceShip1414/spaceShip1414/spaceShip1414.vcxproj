@@ -93,11 +93,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(ProjectDir)tools;</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>SOIL.lib;CEGUIBase-0_d.lib;CEGUICommonDialogs-0_d.lib;CEGUIOpenGLRenderer-0_d.lib;CEGUISILLYImageCodec_d.lib;glfw3dll.lib;LinearMath.lib;glfw3.lib;Box2D.lib;opengl32.lib;assimp-vc140-mt.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3dll.lib;LinearMath.lib;glfw3.lib;Box2D.lib;opengl32.lib;assimp-vc140-mt.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;freetype.lib;jpeg.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -180,12 +180,10 @@
     <ClCompile Include="graphicEngine\resourceManager\TRecurso.cpp" />
     <ClCompile Include="graphicEngine\resourceManager\TRecursoMalla.cpp" />
     <ClCompile Include="graphicEngine\resourceManager\TRecursoTextura.cpp" />
-    <ClCompile Include="GUI.cpp" />
     <ClCompile Include="Game\Escenario\Luces.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Fisicas3D\Mundo3D.cpp" />
     <ClCompile Include="Game\Escenario\Pared.cpp" />
-    <ClCompile Include="menuGame.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="Game\Escenario\readJson.cpp" />
     <ClCompile Include="tools\Box2D\Collision\b2BroadPhase.cpp" />
@@ -293,9 +291,7 @@
     <ClInclude Include="graphicEngine\resourceManager\TRecursoTextura.h" />
     <ClInclude Include="Fisicas3D\Mundo3D.h" />
     <ClInclude Include="Game\Escenario\Pared.h" />
-    <ClInclude Include="GUI.h" />
     <ClInclude Include="Game\Escenario\Luces.h" />
-    <ClInclude Include="menuGame.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="Game\Escenario\readJson.h" />
     <ClInclude Include="tools\assimp\ai_assert.h" />

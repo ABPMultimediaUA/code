@@ -14,6 +14,7 @@
 
 #define GLFW_DLL
 #define GLFW_BUILD_DLL
+//#include <SFML\Graphics.hpp>
 
 //variables constante para las dimenciones de la ventana
 const GLuint WIDTH = 1366, HEIGHT = 768;
@@ -33,8 +34,6 @@ int main() {
 		//Camara cam2(&motorApp, 0, true);
 		//cam2.rotationYPR(&motorApp, 0.0f, -90.0f, 0.0f);
 		//cam2.translation(&motorApp, 0, 20, 0);
-		/*cam2.Rotation()->rotar(80.0f, 1.0f, 0.0f, 0.0f);
-		cam2.Translation()->trasladar(0, 0, 100);*/
 		
 
 		Escenario *scene = new Escenario(&motorApp, world);
@@ -55,5 +54,22 @@ int main() {
 		motorApp.run(world, scene);
 		
 	}
+	/*sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+	sf::CircleShape shape(100.f);
+	shape.setFillColor(sf::Color::Green);
+
+	while (window.isOpen())
+	{
+		sf::Event event;
+		while (window.pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+				window.close();
+		}
+
+		window.clear();
+		window.draw(shape);
+		window.display();
+	}*/
 	return 0;
 }

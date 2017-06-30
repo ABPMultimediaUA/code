@@ -5,7 +5,8 @@
 #include <glm\gtc\type_ptr.hpp>
 #include <iostream>
 #include "TRecursoTextura.h"
-#include <SOIL\SOIL.h>
+//#include <SOIL\SOIL.h>
+#include <SFML\Graphics\Image.hpp>
 
 TRecursoMalla::Mesh::Mesh(const aiMesh *maya, TRecursoMalla *modelo) : buffer{ 0 }, vao{ 0 }, texture_diffuse{ 0 }, texture_specular{ 0 }, texture_ambient{ 0 }, texture_normal{ 0 }
 {
@@ -71,7 +72,7 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla)
 	uv.reserve(malla->mNumVertices);
 	normal.reserve(malla->mNumVertices);
 	indices.reserve(3 * malla->mNumFaces);
-	TRecursoTextura * textura=new TRecursoTextura();
+	//TRecursoTextura * textura=new TRecursoTextura();
 
 	for (unsigned int i = 0; i < malla->mNumVertices; i++)
 	{
@@ -157,15 +158,22 @@ void TRecursoMalla::Mesh::loadMaterial(const aiMesh * mesh, aiTextureType ttype,
 
 GLuint TRecursoMalla::Mesh::TextureFromFile(const std::string & filename)
 {
-	GLuint textureID = 0;
+	GLuint textureID = -1;
 	glGenTextures(1, &textureID);
 
-	int width, height, comp;
-	unsigned char *image = SOIL_load_image(filename.c_str(), &width, &height, &comp, 3);
+	/*int width, height, comp;
+	unsigned char *image = SOIL_load_image(filename.c_str(), &width, &height, &comp, 3);*/
+
+	sf::Image imagen;
+	if (!imagen.loadFromFile(filename))
+	{
+		std::cerr << "No se a podidio cargar la textura -> " << filename << std::endl;
+		return textureID;
+	}
 
 	glBindTexture(GL_TEXTURE_2D, textureID);
 
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, imagen.getSize().x, imagen.getSize().y, 0, GL_RGBA, GL_UNSIGNED_BYTE, imagen.getPixelsPtr());
 
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
@@ -174,7 +182,7 @@ GLuint TRecursoMalla::Mesh::TextureFromFile(const std::string & filename)
 
 	glBindTexture(GL_TEXTURE_2D, textureID);
 
-	SOIL_free_image_data(image);
+	//SOIL_free_image_data(image);
 
 	return textureID;
 }

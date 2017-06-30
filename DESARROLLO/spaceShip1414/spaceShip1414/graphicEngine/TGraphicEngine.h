@@ -15,7 +15,6 @@
 #include <glm\vec3.hpp>
 #include <glm\mat4x4.hpp>
 #include "framework\openGLShader.h"
-#include "../menuGame.h"
 
 class TNodo;
 class TGestorRecursos;
@@ -132,7 +131,6 @@ private:
 	double YMIN;
 	double YMAX;
 	Mundo * wo;
-	menuGame menuJuego;
 	Escenario * maps;
 	Camara * cam;
 	unsigned int state;

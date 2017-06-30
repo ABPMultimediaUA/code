@@ -11,6 +11,7 @@
 * Created on 17 de noviembre de 2016, 20:08
 */
 
+#include <sstream>
 #include <stdlib.h>
 #include <time.h>
 #include <glm\glm.hpp>
