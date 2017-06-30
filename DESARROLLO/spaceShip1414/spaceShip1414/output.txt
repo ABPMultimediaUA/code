@@ -167,9 +167,13 @@ Y: 1.7
 Z: 157.5
 pasillo_1
 Recurso nombre: pasillo_1.obj
+CAMARASPASILLOS ID: 2
 *******************ry:  180
+CAMARASPASILLOS ID: 3
 *******************ry:  0
+CAMARASPASILLOS ID: 4
 *******************ry:  0
+CAMARASPASILLOS ID: 1
 *******************ry:  0
 
 
@@ -252,11 +256,16 @@ Y: 3.22
 Z: 87.5
 pasillo_5
 Recurso nombre: pasillo_5.obj
+CAMARASEGUIMIENTO ID: 0
 *******************ry:  270.243
+CAMARASEGUIMIENTO ID: 5
 *******************ry:  270.243
+CAMARASEGUIMIENTO ID: 7
+*******************ry:  270.243
+CAMARASEGUIMIENTO ID: 8
+*******************ry:  270
+CAMARASEGUIMIENTO ID: 6
 *******************ry:  180
-*******************ry:  270.243
-*******************ry:  270.243
 
 
 
@@ -322,15 +331,25 @@ Y: 5.1
 Z: 158.5
 vestuario
 Recurso nombre: vestuario.obj
+CAMARAFIJA ID: 9
 *******************ry:  268.587
+CAMARAFIJA ID: 10
 *******************ry:  270.243
+CAMARAFIJA ID: 11
+*******************ry:  221.275
+CAMARAFIJA ID: 12
 *******************ry:  0
+CAMARAFIJA ID: 13
+*******************ry:  180
+CAMARAFIJA ID: 14
+*******************ry:  90
+CAMARAFIJA ID: 15
+*******************ry:  90
+CAMARAFIJA ID: 16
 *******************ry:  0
-*******************ry:  90
-*******************ry:  90
-*******************ry:  90
-*******************ry:  180
-*******************ry:  180
+CAMARAFIJA ID: 17
+*******************ry:  0
+CAMARAFIJA ID: 18
 *******************ry:  0
 
 
@@ -402,43 +421,85 @@ Y: 4.99
 Z: -20.8
 hall
 Recurso nombre: hall.obj
+ACTIVADOR ID: 0
 ---------->0
+ACTIVADOR ID: 18
 ---------->18
+ACTIVADOR ID: 0
 ---------->0
+ACTIVADOR ID: 0
 ---------->0
+ACTIVADOR ID: 1
 ---------->1
+ACTIVADOR ID: 1
 ---------->1
+ACTIVADOR ID: 1
 ---------->1
+ACTIVADOR ID: 2
 ---------->2
+ACTIVADOR ID: 2
 ---------->2
+ACTIVADOR ID: 2
 ---------->2
+ACTIVADOR ID: 2
 ---------->2
+ACTIVADOR ID: 2
 ---------->2
+ACTIVADOR ID: 3
 ---------->3
+ACTIVADOR ID: 3
 ---------->3
+ACTIVADOR ID: 4
 ---------->4
+ACTIVADOR ID: 4
 ---------->4
+ACTIVADOR ID: 5
 ---------->5
+ACTIVADOR ID: 6
 ---------->6
+ACTIVADOR ID: 6
 ---------->6
+ACTIVADOR ID: 6
 ---------->6
+ACTIVADOR ID: 6
 ---------->6
+ACTIVADOR ID: 7
 ---------->7
+ACTIVADOR ID: 8
 ---------->8
+ACTIVADOR ID: 8
+---------->8
+ACTIVADOR ID: 6
+---------->6
+ACTIVADOR ID: 9
 ---------->9
+ACTIVADOR ID: 10
 ---------->10
+ACTIVADOR ID: 11
 ---------->11
+ACTIVADOR ID: 12
 ---------->12
+ACTIVADOR ID: 12
 ---------->12
+ACTIVADOR ID: 13
 ---------->13
+ACTIVADOR ID: 16
 ---------->16
+ACTIVADOR ID: 16
 ---------->16
+ACTIVADOR ID: 17
 ---------->17
+ACTIVADOR ID: 17
 ---------->17
+ACTIVADOR ID: 15
 ---------->15
+ACTIVADOR ID: 15
 ---------->15
+ACTIVADOR ID: 14
 ---------->14
+ACTIVADOR ID: 0
 ---------->0
+ACTIVADOR ID: 18
 ---------->18
 ANGLEEEEE: 180
 270
@@ -743,6 +804,14 @@ Y: 56.6
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -27.07 Y: 27.9
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: -26.57
+Y: 39.0909
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -822,39 +891,6 @@ Posicion de la Entity X: 17.03 Y: -41.77
 RAY DE CHOQUE
 X: 33.8082
 Y: -41.02
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 45.371
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -0.28 Y: 61.86
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -0.111041
-Y: 43.51
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 1.15 Y: 41.81
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 2.37582
-Y: 41.06
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1319,14 +1355,6 @@ Y: 79.03
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 81.1012
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1498,14 +1526,6 @@ Y: 79.03
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 23.85 Y: 78.53
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 8.22691
-Y: 79.03
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1638,6 +1658,9 @@ Posicion de la Entity X: -2.5 Y: 130.7
 RAY DE CHOQUE
 X: -2
 Y: 122.362
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -5585,6 +5608,14 @@ Y: 48.7624
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -90.15 Y: 26.74
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: -64.3565
+Y: 25.99
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -6128,98 +6159,12 @@ POS X: 38.72 POS Y: 0.18
 POSICION DE LA ENTITY 2
 POS X: 26.47 POS Y: 20.95
 ///////////////////////////////////
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0666739
-D
-D
-D
-D
-W
-TIME: 0.0666514
-W
-TIME: 0.0666628
-W
-W
-W
-W
-W
-W
-W
-REPOSO
-Recurso nombre: personaje.obj
-TIME: 0.0666423
-TIME: 0.0666423
-A
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0667596
-A
-A
-A
-A
-A
-A
-A
-TIME: 0.0665829
-REPOSO
-TIME: 0.0667596
-TIME: 0.0667596
-S
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0498188
-S
-S
-S
-S
-S
-S
-S
-S
-S
-S
-TIME: 0.0501254
-S
-TIME: 0.049923
-S
-TIME: 0.0499853
-S
-TIME: 0.0499508
-REPOSO
-TIME: 0.0500368
-TIME: 0.0500368
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0499958
-D
-D
-D
-D
-D
-D
-D
-D
-D
-REPOSO
-TIME: 0.0500479
-TIME: 0.0500479
 W
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0498832
+TIME: 0.0495418
 W
 W
 W
@@ -6230,36 +6175,3944 @@ W
 W
 W
 W
-TIME: 0.0500306
+TIME: 0.0499988
 W
-TIME: 0.0499911
+TIME: 0.05004
 W
-TIME: 0.0499373
-W
-TIME: 0.0500011
-W
-TIME: 0.0499926
-W
-TIME: 0.0500198
-W
-TIME: 0.0500122
-W
-TIME: 0.0499906
-W
-TIME: 0.049999
-W
-TIME: 0.0500043
-W
-TIME: 0.0500245
-W
-TIME: 0.0499765
+TIME: 0.0499675
 W
 TIME: 0.0500064
 W
-TIME: 0.0500292
+TIME: 0.050016
+W
+TIME: 0.0500491
+W
+TIME: 0.0503475
+W
+TIME: 0.0495912
+W
+TIME: 0.0500031
+W
+TIME: 0.0500064
+W
+TIME: 0.0504479
+W
+TIME: 0.0495546
+W
+TIME: 0.0499906
+W
+TIME: 0.0499982
+W
+TIME: 0.0504265
+W
+TIME: 0.0495745
+W
+TIME: 0.0500225
+W
+TIME: 0.0499695
+W
+TIME: 0.0504657
+W
+TIME: 0.0495339
+W
+TIME: 0.0499888
+W
+TIME: 0.0499947
+W
+TIME: 0.0500096
+W
+TIME: 0.049999
+W
+TIME: 0.0499774
+W
+TIME: 0.0500362
+W
+TIME: 0.0499967
+W
+TIME: 0.0503958
+W
+TIME: 0.0496058
+W
+TIME: 0.0500163
+W
+TIME: 0.0499783
+W
+TIME: 0.0500023
+W
+TIME: 0.0500108
+W
+TIME: 0.0499853
+W
+TIME: 0.0500034
+W
+TIME: 0.0504233
+W
+TIME: 0.0496014
+W
+TIME: 0.0499601
+W
+TIME: 0.0499841
+W
+TIME: 0.0504923
+W
+TIME: 0.0495227
+W
+TIME: 0.0500113
+W
+TIME: 0.0499689
+W
+TIME: 0.0500549
+W
+TIME: 0.0499572
+W
+TIME: 0.0499996
+W
+TIME: 0.0499865
+W
+TIME: 0.0500579
+W
+TIME: 0.0499718
+W
+TIME: 0.0499859
+W
+TIME: 0.0499897
+W
+TIME: 0.0500418
+W
+TIME: 0.0504171
+W
+TIME: 0.0495514
+W
+TIME: 0.050021
+W
+TIME: 0.0499903
+W
+TIME: 0.0500625
+W
+TIME: 0.0499335
+W
+TIME: 0.0499727
+W
+TIME: 0.0500526
+W
+TIME: 0.0503999
+W
+TIME: 0.0495634
+W
+TIME: 0.0499756
+W
+TIME: 0.0500321
+W
+TIME: 0.0503662
+W
+TIME: 0.0496254
+W
+TIME: 0.0499715
+W
+TIME: 0.0500248
+W
+TIME: 0.050466
+W
+TIME: 0.0495403
+W
+TIME: 0.0499675
+W
+TIME: 0.0500268
+W
+TIME: 0.0504935
+W
+TIME: 0.0495067
+W
+TIME: 0.0500181
+W
+TIME: 0.0500087
+W
+TIME: 0.0504443
+W
+TIME: 0.0495652
+W
+TIME: 0.0499391
+W
+TIME: 0.0500459
+W
+TIME: 0.0499923
+W
+TIME: 0.0500137
+W
+TIME: 0.0499426
+W
+TIME: 0.0500388
+W
+TIME: 0.0500064
+W
+TIME: 0.0499944
+W
+TIME: 0.0499765
+W
+TIME: 0.0500087
+W
+TIME: 0.0499911
+W
+TIME: 0.0505219
+W
+TIME: 0.0494613
+W
+TIME: 0.0500242
+W
+TIME: 0.0499967
+W
+TIME: 0.0504973
+W
+TIME: 0.0494926
+W
+TIME: 0.0500195
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -43.75 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -47.63 POS Y: -0.9
+///////////////////////////////////
+camID: 0
+ID CAMARA: 0
+W
+TIME: 0.0499736
+W
+TIME: 0.0505075
+W
+TIME: 0.0494859
+W
+TIME: 0.0500342
+W
+TIME: 0.0499695
+W
+TIME: 0.0505087
+W
+TIME: 0.0494906
+W
+TIME: 0.0500248
+W
+TIME: 0.0499809
+W
+TIME: 0.0505239
+W
+TIME: 0.0494657
+W
+TIME: 0.0500312
+W
+TIME: 0.0499935
+W
+TIME: 0.0500453
+W
+TIME: 0.0499596
+W
+TIME: 0.0500026
+W
+TIME: 0.0499917
+W
+TIME: 0.0500388
+W
+TIME: 0.0499745
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -51.6666 POS Y: -0.0318539
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -55.64 POS Y: -0.9
+///////////////////////////////////
+camID: 12
+ID CAMARA: 12
+W
+TIME: 0.0500172
+W
+TIME: 0.0500011
+W
+TIME: 0.0500043
+W
+TIME: 0.0499715
+W
+TIME: 0.0500096
+W
+TIME: 0.0499543
+W
+TIME: 0.0500511
+W
+TIME: 0.0504174
+W
+TIME: 0.0495576
+W
+TIME: 0.0499704
+W
+TIME: 0.0500587
+A
+TIME: 0.050425
+TIME: 0.050425
+TIME: 0.050425
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+TIME: 0.0499672
 REPOSO
+Recurso nombre: personaje.obj
+HORA DEL RECALCULO
+ANGLEEEEE: 180
+270
+360
+90
+VECTORES
+DIR: vec3(-0.000000, 0.000000, 1.000000)
+A: vec3(-1.000000, 0.000000, -0.000000)
+S: vec3(0.000000, 0.000000, -1.000000)
+D:vec3(1.000000, 0.000000, 0.000000)
+TIME: 0.050035
+TIME: 0.050035
+TIME: 0.533318
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500497
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+TIME: 0.0500274
+A
+TIME: 0.0499566
+A
+TIME: 0.0500304
+A
+TIME: 0.0500371
+A
+TIME: 0.0499677
+A
+TIME: 0.0499619
+A
+TIME: 0.0500266
+A
+TIME: 0.0500166
+A
+TIME: 0.0499865
+A
+TIME: 0.0499698
+A
+TIME: 0.0500225
+A
+TIME: 0.0500166
+A
+TIME: 0.049999
+A
+TIME: 0.0499587
+A
+TIME: 0.0500236
+A
+TIME: 0.0500239
+A
+TIME: 0.0504835
+A
+TIME: 0.0494689
+A
+TIME: 0.050023
+A
+TIME: 0.04998
+A
+TIME: 0.0505166
+A
+TIME: 0.0494818
+A
+TIME: 0.0500181
+A
+TIME: 0.0499794
+TIME: 0.0499794
+A
+TIME: 0.0504879
+A
+TIME: 0.0495189
+A
+TIME: 0.0500207
+A
+TIME: 0.0499827
+A
+TIME: 0.0500564
+A
+TIME: 0.0499546
+A
+TIME: 0.0499985
+A
+TIME: 0.0499982
+A
+TIME: 0.0500166
+A
+TIME: 0.0499721
+A
+TIME: 0.0500072
+A
+TIME: 0.0499917
+A
+TIME: 0.0500312
+A
+TIME: 0.0499774
+A
+TIME: 0.049997
+A
+TIME: 0.0500222
+A
+TIME: 0.0500008
+A
+TIME: 0.0503876
+A
+TIME: 0.0495921
+A
+TIME: 0.0499891
+A
+TIME: 0.0500093
+A
+TIME: 0.0504847
+A
+TIME: 0.049516
+A
+TIME: 0.0499774
+A
+TIME: 0.0500204
+A
+TIME: 0.0504938
+A
+TIME: 0.0495154
+A
+TIME: 0.0499754
+A
+TIME: 0.0500304
+A
+TIME: 0.0504242
+A
+TIME: 0.049595
+A
+TIME: 0.0499487
+A
+TIME: 0.0500315
+A
+TIME: 0.0500049
+A
+TIME: 0.05044
+A
+TIME: 0.0495186
+A
+TIME: 0.0500289
+A
+TIME: 0.0500362
+A
+TIME: 0.0499596
+A
+TIME: 0.049973
+A
+TIME: 0.0500201
+A
+TIME: 0.0499961
+A
+TIME: 0.0504125
+A
+TIME: 0.0495719
+A
+TIME: 0.0500187
+A
+TIME: 0.0500011
+A
+TIME: 0.0504326
+A
+TIME: 0.0495514
+A
+TIME: 0.050016
+A
+TIME: 0.0499856
+A
+TIME: 0.0504455
+A
+TIME: 0.0495845
+A
+TIME: 0.0499996
+A
+TIME: 0.0499999
+A
+TIME: 0.0504218
+A
+TIME: 0.0495643
+A
+TIME: 0.0500029
+A
+TIME: 0.0500192
+A
+TIME: 0.050368
+A
+TIME: 0.0496012
+A
+TIME: 0.0500391
+A
+TIME: 0.0499844
+A
+TIME: 0.0503943
+A
+TIME: 0.0495763
+A
+TIME: 0.0500207
+A
+TIME: 0.0500034
+A
+TIME: 0.0504865
+A
+TIME: 0.0494952
+A
+TIME: 0.0500052
+A
+TIME: 0.0499789
+A
+TIME: 0.0500479
+A
+TIME: 0.0499511
+A
+TIME: 0.0500233
+A
+TIME: 0.0499745
+A
+TIME: 0.0500456
+A
+TIME: 0.0499604
+A
+TIME: 0.050014
+A
 TIME: 0.0499762
+A
+TIME: 0.0500353
+A
+TIME: 0.0499909
+A
+TIME: 0.0499976
+A
+TIME: 0.0499754
+A
+TIME: 0.05005
+A
+TIME: 0.0503765
+A
+TIME: 0.0496129
+A
+TIME: 0.0499669
+A
+TIME: 0.0500187
+A
+TIME: 0.0499853
+A
+TIME: 0.0500198
+A
+TIME: 0.0499713
+A
+TIME: 0.0500368
+A
+TIME: 0.0504066
+A
+TIME: 0.0495786
+A
+TIME: 0.0499815
+A
+TIME: 0.0500154
+A
+TIME: 0.0504224
+A
+TIME: 0.049554
+A
+TIME: 0.0500029
+A
+TIME: 0.0500277
+A
+TIME: 0.050461
+A
+TIME: 0.0495292
+A
+TIME: 0.0500023
+A
+TIME: 0.0500087
+A
+TIME: 0.0504291
+A
+TIME: 0.0495619
+A
+TIME: 0.0500078
+A
+TIME: 0.0500423
+A
+TIME: 0.0499607
+A
+TIME: 0.0499985
+A
+TIME: 0.0500023
+A
+TIME: 0.0499865
+A
+TIME: 0.0500192
+A
+TIME: 0.0499973
+A
+TIME: 0.0499833
+A
+TIME: 0.0500064
+A
+TIME: 0.0500125
+A
+TIME: 0.0499847
+A
+TIME: 0.0499604
+A
+TIME: 0.0500029
+A
+TIME: 0.0500002
+A
+TIME: 0.0500151
+A
+TIME: 0.0499821
+A
+TIME: 0.0500192
+A
+TIME: 0.0499985
+A
+TIME: 0.050373
+A
+TIME: 0.0496442
+A
+TIME: 0.0500172
+A
+TIME: 0.0499952
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -119.166 POS Y: -0.0336325
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -123 POS Y: -0.9
+///////////////////////////////////
+camID: 12
+ID CAMARA: 12
+A
+TIME: 0.0504458
+A
+TIME: 0.04959
+A
+TIME: 0.0499508
+A
+TIME: 0.0666803
+A
+TIME: 0.0500403
+A
+TIME: 0.0499473
+A
+TIME: 0.0499988
+A
+TIME: 0.0500096
+A
+TIME: 0.0504669
+A
+TIME: 0.0495263
+A
+TIME: 0.0499932
+A
+TIME: 0.0500084
+A
+TIME: 0.0500014
+A
+TIME: 0.0499926
+A
+TIME: 0.0499821
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.416 POS Y: -0.0336334
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -127.65 POS Y: 1.54
+///////////////////////////////////
+camID: 6
+ID CAMARA: 6
+A
+TIME: 0.0500069
+A
+TIME: 0.0500172
+A
+TIME: 0.0500029
+A
+TIME: 0.0500049
+A
+TIME: 0.0499876
+A
+TIME: 0.0500143
+A
+TIME: 0.050399
+A
+TIME: 0.049569
+A
+TIME: 0.0499964
+A
+TIME: 0.0500151
+A
+TIME: 0.0500008
+A
+TIME: 0.0500046
+A
+TIME: 0.0499572
+A
+TIME: 0.0500368
+A
+TIME: 0.0503674
+A
+TIME: 0.0496067
+A
+TIME: 0.0499865
+A
+TIME: 0.0500257
+A
+TIME: 0.0506371
+A
+TIME: 0.0493709
+A
+TIME: 0.0500189
+A
+TIME: 0.0499865
+A
+TIME: 0.0504303
+A
+TIME: 0.0495748
+A
+TIME: 0.0499833
+A
+TIME: 0.0500198
+A
+TIME: 0.050686
+A
+TIME: 0.0493472
+A
+TIME: 0.0499461
+A
+TIME: 0.0499812
+A
+TIME: 0.0504625
+A
+TIME: 0.0495418
+A
+TIME: 0.0499976
+A
+TIME: 0.0499844
+A
+TIME: 0.050473
+A
+TIME: 0.0495315
+A
+TIME: 0.0499876
+A
+TIME: 0.050009
+A
+TIME: 0.0500204
+A
+TIME: 0.0500005
+REPOSO
+HORA DEL RECALCULO
+ANGLEEEEE: 360
+450
+540
+270
+VECTORES
+DIR: vec3(0.000000, 0.000000, -1.000000)
+A: vec3(1.000000, 0.000000, 0.000000)
+S: vec3(-0.000000, 0.000000, 1.000000)
+D:vec3(-1.000000, 0.000000, -0.000000)
+TIME: 0.0499736
+TIME: 0.0499736
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0499698
+A
+A
+A
+REPOSO
+TIME: 0.0499534
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0495306
+W
+W
+REPOSO
+TIME: 0.0504072
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0494628
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0499871
+D
+TIME: 0.0500315
+REPOSO
+TIME: 0.0499809
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500274
+S
+S
+S
+S
+S
+S
+S
+S
+S
+REPOSO
+TIME: 0.0495377
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0503876
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0499865
+W
+TIME: 0.0500137
+W
+TIME: 0.0504675
+W
+TIME: 0.0495526
+W
+TIME: 0.0499692
+W
+TIME: 0.0500148
+W
+TIME: 0.0500087
+W
+TIME: 0.0499865
+W
+TIME: 0.0500043
+W
+TIME: 0.0500172
+W
+TIME: 0.0500195
+W
+TIME: 0.0504303
+W
+TIME: 0.0495356
+W
+TIME: 0.0500046
+W
+TIME: 0.0500128
+W
+TIME: 0.0504543
+W
+TIME: 0.0495005
+W
+TIME: 0.050028
+W
+TIME: 0.0499806
+W
+TIME: 0.0504874
+W
+TIME: 0.0495078
+W
+TIME: 0.0500137
+W
+TIME: 0.0499794
+W
+TIME: 0.0505488
+TIME: 0.0505488
+W
+W
+W
+TIME: 0.0499768
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+D
+TIME: 0.0495508
+TIME: 0.0495508
+D
+D
+D
+D
+D
+REPOSO
+TIME: 0.0500365
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500309
+A
+A
+A
+A
+A
+A
+A
+A
+REPOSO
+TIME: 0.0499768
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0504967
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0500037
+W
+TIME: 0.0500023
+W
+TIME: 0.050026
+W
+TIME: 0.0499733
+W
+TIME: 0.0500116
+W
+TIME: 0.0499689
+W
+TIME: 0.0500418
+W
+TIME: 0.0499555
+A
+TIME: 0.0500277
+TIME: 0.0500277
+A
+A
+A
+A
+REPOSO
+TIME: 0.0499645
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500321
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.049559
+W
+TIME: 0.0499525
+W
+TIME: 0.0500312
+W
+TIME: 0.0504242
+W
+TIME: 0.0495772
+W
+TIME: 0.0499581
+W
+TIME: 0.0500403
+W
+TIME: 0.0504432
+A
+TIME: 0.0495678
+TIME: 0.0495678
+A
+A
+A
+A
+W
+TIME: 0.0499619
+TIME: 0.0499619
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0500473
+W
+TIME: 0.049978
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -140.416 POS Y: -42.9503
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -141.47 POS Y: -47.96
+///////////////////////////////////
+camID: 6
+ID CAMARA: 6
+W
+TIME: 0.0500029
+W
+TIME: 0.0499976
+W
+TIME: 0.0499985
+W
+TIME: 0.0504084
+W
+TIME: 0.049564
+W
+TIME: 0.0500146
+W
+TIME: 0.0500207
+W
+TIME: 0.0499853
+W
+TIME: 0.0499721
+W
+TIME: 0.0500233
+W
+TIME: 0.0500081
+W
+TIME: 0.0499993
+W
+TIME: 0.04998
+W
+TIME: 0.050021
+W
+TIME: 0.0500067
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -140.416 POS Y: -49.2003
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -138.35 POS Y: -51.1
+///////////////////////////////////
+camID: 8
+ID CAMARA: 8
+W
+TIME: 0.0504789
+W
+TIME: 0.0494821
+W
+TIME: 0.0500277
+W
+TIME: 0.0499701
+W
+TIME: 0.0505538
+W
+TIME: 0.0494461
+W
+TIME: 0.0500263
+W
+TIME: 0.0499745
+W
+TIME: 0.0504657
+W
+TIME: 0.0495359
+W
+TIME: 0.0500169
+W
+TIME: 0.0499911
+W
+TIME: 0.0504613
+W
+TIME: 0.0495242
+W
+TIME: 0.0500309
+W
+TIME: 0.0499695
+W
+TIME: 0.0500283
+W
+TIME: 0.0499932
+REPOSO
+HORA DEL RECALCULO
+ANGLEEEEE: 270
+360
+450
+180
+VECTORES
+DIR: vec3(-1.000000, 0.000000, -0.000000)
+A: vec3(0.000000, 0.000000, -1.000000)
+S: vec3(1.000000, 0.000000, 0.000000)
+D:vec3(0.000000, 0.000000, 1.000000)
+TIME: 0.0499967
+TIME: 0.0500441
+TIME: 0.0500441
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+S
+REPOSO
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -147.083 POS Y: -49.617
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -141.47 POS Y: -47.96
+///////////////////////////////////
+camID: 6
+ID CAMARA: 6
+HORA DEL RECALCULO
+ANGLEEEEE: 360
+450
+540
+270
+VECTORES
+DIR: vec3(0.000000, 0.000000, -1.000000)
+A: vec3(1.000000, 0.000000, 0.000000)
+S: vec3(-0.000000, 0.000000, 1.000000)
+D:vec3(-1.000000, 0.000000, -0.000000)
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+S
+S
+A
+A
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -145.833 POS Y: -48.367
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -141.47 POS Y: -47.96
+///////////////////////////////////
+camID: 6
+ID CAMARA: 6
+A
+REPOSO
+HORA DEL RECALCULO
+ANGLEEEEE: 360
+450
+540
+270
+VECTORES
+DIR: vec3(0.000000, 0.000000, -1.000000)
+A: vec3(1.000000, 0.000000, 0.000000)
+S: vec3(-0.000000, 0.000000, 1.000000)
+D:vec3(-1.000000, 0.000000, -0.000000)
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+A
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+REPOSO
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+S
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+REPOSO
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+D
+D
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+A
+A
+D
+D
+D
+REPOSO
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0504359
+D
+D
+D
+D
+D
+D
+REPOSO
+TIME: 0.0496131
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500105
+A
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -145 POS Y: -47.5337
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -141.47 POS Y: -47.96
+///////////////////////////////////
+camID: 6
+ID CAMARA: 6
+A
+A
+A
+A
+A
+A
+A
+REPOSO
+HORA DEL RECALCULO
+ANGLEEEEE: 360
+450
+540
+270
+VECTORES
+DIR: vec3(0.000000, 0.000000, -1.000000)
+A: vec3(1.000000, 0.000000, 0.000000)
+S: vec3(-0.000000, 0.000000, 1.000000)
+D:vec3(-1.000000, 0.000000, -0.000000)
+TIME: 0.0499999
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0494885
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0499751
+D
+TIME: 0.05004
+D
+TIME: 0.0499999
+D
+TIME: 0.0500026
+D
+TIME: 0.0499581
+D
+TIME: 0.0500491
+D
+TIME: 0.0499654
+W
+TIME: 0.050011
+TIME: 0.050011
+W
+TIME: 0.0499695
+W
+W
+W
+W
+W
+W
+W
+REPOSO
+TIME: 0.0499786
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0499715
+S
+S
+S
+S
+S
+S
+S
+S
+S
+S
+TIME: 0.0500017
+S
+TIME: 0.0499885
+S
+TIME: 0.049999
+S
+TIME: 0.0500143
+S
+TIME: 0.0499792
+S
+TIME: 0.0500034
+S
+TIME: 0.0500198
+S
+TIME: 0.050004
+S
+TIME: 0.049997
+S
+TIME: 0.0499926
+S
+TIME: 0.049992
+S
+TIME: 0.0500084
+S
+TIME: 0.0499955
+S
+TIME: 0.0499944
+S
+TIME: 0.0500055
+S
+TIME: 0.0504072
+S
+TIME: 0.0495851
+S
+TIME: 0.0500034
+S
+TIME: 0.0500084
+S
+TIME: 0.0504312
+S
+TIME: 0.0495678
+S
+TIME: 0.0499914
+S
+TIME: 0.0499967
+S
+TIME: 0.0504253
+S
+TIME: 0.0495704
+S
+TIME: 0.0499988
+S
+TIME: 0.0500081
+S
+TIME: 0.0503788
+S
+TIME: 0.0496152
+S
+TIME: 0.0499938
+S
+TIME: 0.050016
+S
+TIME: 0.0503855
+S
+TIME: 0.0495827
+S
+TIME: 0.0500225
+S
+TIME: 0.0500061
+S
+TIME: 0.0499988
+S
+TIME: 0.0499689
+S
+TIME: 0.0500172
+S
+TIME: 0.0499993
+S
+TIME: 0.0504654
+S
+TIME: 0.049521
+S
+TIME: 0.0500213
+S
+TIME: 0.0499952
+S
+TIME: 0.0500166
+S
+TIME: 0.0499689
+S
+TIME: 0.0500096
+S
+TIME: 0.0499847
+S
+TIME: 0.0500295
+S
+TIME: 0.0499815
+S
+TIME: 0.0500046
+S
+TIME: 0.0500052
+S
+TIME: 0.0500131
+S
+TIME: 0.0503917
+S
+TIME: 0.0495871
+S
+TIME: 0.0499774
+S
+TIME: 0.0500426
+S
+TIME: 0.0503645
+S
+TIME: 0.0496061
+S
+TIME: 0.0500108
+S
+TIME: 0.0500029
+S
+TIME: 0.0504467
+S
+TIME: 0.0495415
+S
+TIME: 0.0499891
+S
+TIME: 0.0500213
+S
+TIME: 0.0499865
+S
+TIME: 0.0500169
+S
+TIME: 0.049968
+S
+TIME: 0.0500146
+S
+TIME: 0.0500172
+S
+TIME: 0.0504323
+S
+TIME: 0.0495371
+S
+TIME: 0.0500014
+S
+TIME: 0.0500242
+S
+TIME: 0.0504441
+S
+TIME: 0.0495391
+S
+TIME: 0.0500131
+S
+TIME: 0.0499745
+S
+TIME: 0.05055
+S
+TIME: 0.0499127
+S
+TIME: 0.0495655
+S
+TIME: 0.0499996
+S
+TIME: 0.0504593
+S
+TIME: 0.0495151
+S
+TIME: 0.0499955
+S
+TIME: 0.0500017
+S
+TIME: 0.0500067
+S
+TIME: 0.0500023
+S
+TIME: 0.0499838
+S
+TIME: 0.0500383
+S
+TIME: 0.0671745
+S
+TIME: 0.0494868
+S
+TIME: 0.0500008
+S
+TIME: 0.0499891
+A
+TIME: 0.0500061
+TIME: 0.0500061
+A
+A
+TIME: 0.0499844
+A
+A
+A
+A
+A
+A
+A
+A
+REPOSO
+TIME: 0.0499882
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0499645
+S
+S
+S
+S
+S
+S
+S
+S
+S
+S
+TIME: 0.0499797
+S
+TIME: 0.0500283
+REPOSO
+TIME: 0.0504364
+TIME: 0.0504364
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0495561
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0500207
+D
+TIME: 0.0500201
+D
+TIME: 0.0499964
+D
+TIME: 0.049971
+D
+TIME: 0.0500198
+D
+TIME: 0.050014
+D
+TIME: 0.0504022
+D
+TIME: 0.0495564
+D
+TIME: 0.0500283
+D
+TIME: 0.04999
+D
+TIME: 0.0504344
+D
+TIME: 0.0495421
+D
+TIME: 0.0500225
+D
+TIME: 0.0500315
+D
+TIME: 0.0504066
+D
+TIME: 0.0495447
+D
+TIME: 0.050016
+D
+TIME: 0.0499797
+D
+TIME: 0.0504932
+D
+TIME: 0.0495037
+D
+TIME: 0.0500669
+D
+TIME: 0.0499282
+D
+TIME: 0.0505388
+D
+TIME: 0.0494786
+D
+TIME: 0.0500122
+D
+TIME: 0.0499786
+D
+TIME: 0.0504955
+D
+TIME: 0.0494979
+D
+TIME: 0.0500157
+D
+TIME: 0.0499882
+D
+TIME: 0.0505845
+D
+TIME: 0.0494183
+D
+TIME: 0.0500195
+D
+TIME: 0.0499923
+D
+TIME: 0.0500687
+D
+TIME: 0.0499587
+D
+TIME: 0.0499715
+REPOSO
+TIME: 0.0499944
+TIME: 0.0499944
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500011
+S
+S
+S
+S
+S
+S
+S
+S
+REPOSO
+TIME: 0.0499607
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.05004
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0495283
+D
+TIME: 0.0499812
+D
+TIME: 0.0500236
+D
+TIME: 0.0504438
+S
+TIME: 0.0495476
+TIME: 0.0495476
+TIME: 0.0495476
+S
+S
+S
+S
+S
+S
+S
+S
+S
+S
+TIME: 0.0500248
+S
+TIME: 0.0500192
+S
+TIME: 0.0504098
+S
+TIME: 0.0495432
+S
+TIME: 0.0500248
+S
+TIME: 0.0499806
+S
+TIME: 0.0504914
+S
+TIME: 0.0495102
+S
+TIME: 0.0500172
+S
+TIME: 0.0499865
+S
+TIME: 0.0500388
+S
+TIME: 0.0499704
+S
+TIME: 0.050002
+S
+TIME: 0.0499885
+S
+TIME: 0.0500696
+S
+TIME: 0.0499543
+S
+TIME: 0.0499812
+S
+TIME: 0.0499812
+REPOSO
+TIME: 0.0500801
+TIME: 0.0833663
+TIME: 0.0833663
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+REPOSO
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+D
+D
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+REPOSO
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+S
+S
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+A
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+A
+REPOSO
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+S
+REPOSO
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+S
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+A
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+REPOSO
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+D
+D
+REPOSO
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+A
+A
+A
+D
+D
+REPOSO
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0504054
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0500031
+W
+TIME: 0.0499941
+W
+TIME: 0.0505134
+W
+TIME: 0.0495058
+W
+TIME: 0.0499856
+W
+TIME: 0.0500163
+W
+TIME: 0.0504999
+D
+TIME: 0.0494786
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0499821
+D
+TIME: 0.0500347
+D
+TIME: 0.0499736
+D
+TIME: 0.0500075
+D
+TIME: 0.0499783
+D
+TIME: 0.0500453
+D
+TIME: 0.0499587
+D
+TIME: 0.0500154
+D
+TIME: 0.0499742
+D
+TIME: 0.0500412
+D
+TIME: 0.0499929
+D
+TIME: 0.0499865
+D
+TIME: 0.0499941
+D
+TIME: 0.0500502
+D
+TIME: 0.0504174
+D
+TIME: 0.0495301
+D
+TIME: 0.0499885
+D
+TIME: 0.0500339
+D
+TIME: 0.0504575
+D
+TIME: 0.0495204
+D
+TIME: 0.0499868
+D
+TIME: 0.0500172
+D
+TIME: 0.050471
+D
+TIME: 0.049533
+D
+TIME: 0.04998
+D
+TIME: 0.0500175
+D
+TIME: 0.0500163
+D
+TIME: 0.0499961
+D
+TIME: 0.0499648
+D
+TIME: 0.0500227
+D
+TIME: 0.050021
+D
+TIME: 0.0499742
+D
+TIME: 0.0499903
+D
+TIME: 0.050023
+D
+TIME: 0.0499827
+D
+TIME: 0.0500198
+D
+TIME: 0.049966
+D
+TIME: 0.0500245
+D
+TIME: 0.0500151
+D
+TIME: 0.05037
+D
+TIME: 0.0495912
+D
+TIME: 0.0500125
+D
+TIME: 0.0500239
+D
+TIME: 0.0504063
+D
+TIME: 0.0495631
+TIME: 0.0495631
+D
+TIME: 0.0500119
+D
+TIME: 0.0500148
+D
+TIME: 0.0504221
+D
+TIME: 0.0495517
+D
+TIME: 0.0500058
+D
+TIME: 0.049995
+D
+TIME: 0.0504783
+D
+TIME: 0.0495207
+D
+TIME: 0.0500105
+D
+TIME: 0.0499751
+D
+TIME: 0.0500306
+D
+TIME: 0.0499774
+D
+TIME: 0.0500178
+D
+TIME: 0.0499862
+D
+TIME: 0.0500283
+D
+TIME: 0.0503791
+D
+TIME: 0.0496052
+D
+TIME: 0.0499768
+D
+TIME: 0.0500549
+D
+TIME: 0.0504171
+D
+TIME: 0.0495605
+D
+TIME: 0.0499651
+D
+TIME: 0.0500268
+D
+TIME: 0.0503934
+D
+TIME: 0.0496003
+D
+TIME: 0.0499792
+D
+TIME: 0.0500336
+D
+TIME: 0.0503835
+D
+TIME: 0.0496082
+D
+TIME: 0.0499771
+D
+TIME: 0.0500216
+D
+TIME: 0.0504581
+D
+TIME: 0.0495461
+D
+TIME: 0.0499739
+D
+TIME: 0.0500233
+D
+TIME: 0.0505435
+D
+TIME: 0.0494461
+D
+TIME: 0.04998
+D
+TIME: 0.0500236
+D
+TIME: 0.049985
+D
+TIME: 0.0499973
+D
+TIME: 0.0499923
+D
+TIME: 0.0500216
+D
+TIME: 0.0500026
+D
+TIME: 0.0500093
+D
+TIME: 0.0499639
+D
+TIME: 0.050011
+D
+TIME: 0.0500327
+D
+TIME: 0.050002
+D
+TIME: 0.0499961
+D
+TIME: 0.0499996
+D
+TIME: 0.0500014
+D
+TIME: 0.0499909
+D
+TIME: 0.0499727
+D
+TIME: 0.0500195
+D
+TIME: 0.0500052
+D
+TIME: 0.0504312
+D
+TIME: 0.049571
+D
+TIME: 0.0499932
+D
+TIME: 0.0500005
+D
+TIME: 0.0504628
+D
+TIME: 0.0495315
+D
+TIME: 0.050002
+D
+TIME: 0.0500415
+D
+TIME: 0.0503615
+D
+TIME: 0.0495775
+D
+TIME: 0.0500157
+D
+TIME: 0.0499947
+D
+TIME: 0.0504604
+D
+TIME: 0.0495271
+D
+TIME: 0.0500198
+D
+TIME: 0.0499862
+D
+TIME: 0.0504947
+D
+TIME: 0.0495102
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -218.334 POS Y: 7.88303
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -220.71 POS Y: 6.8
+///////////////////////////////////
+camID: 6
+ID CAMARA: 6
+D
+TIME: 0.0500031
+D
+TIME: 0.0499929
+D
+TIME: 0.0504675
+D
+TIME: 0.049535
+D
+TIME: 0.0500075
+D
+TIME: 0.0499891
+D
+TIME: 0.0500242
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -221.251 POS Y: 7.88303
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -223.61 POS Y: 6.8
+///////////////////////////////////
+camID: 4
+ID CAMARA: 4
+D
+TIME: 0.0499736
+D
+TIME: 0.0500143
+D
+TIME: 0.0499815
+D
+TIME: 0.0500198
+D
+TIME: 0.050454
+D
+TIME: 0.0495473
+D
+TIME: 0.0499806
+D
+TIME: 0.0500222
+D
+TIME: 0.050514
+D
+TIME: 0.0494724
+D
+TIME: 0.0499809
+D
+TIME: 0.0500181
+D
+TIME: 0.0500069
+D
+TIME: 0.0499935
+D
+TIME: 0.0499797
+D
+TIME: 0.0500125
+D
+TIME: 0.0500137
+D
+TIME: 0.0499926
+D
+TIME: 0.049971
+D
+TIME: 0.0500084
+D
+TIME: 0.0500409
+D
+TIME: 0.0499675
+D
+TIME: 0.0499873
+D
+TIME: 0.0500002
+D
+TIME: 0.0500178
+D
+TIME: 0.0499973
+D
+TIME: 0.049983
+D
+TIME: 0.0500122
+D
+TIME: 0.0500207
+D
+TIME: 0.0503826
+D
+TIME: 0.0495868
+D
+TIME: 0.0500181
+D
+TIME: 0.0499911
+D
+TIME: 0.0500084
+D
+TIME: 0.0500014
+D
+TIME: 0.0499862
+D
+TIME: 0.0500078
+D
+TIME: 0.0500257
+D
+TIME: 0.0499715
+REPOSO
+HORA DEL RECALCULO
+ANGLEEEEE: 180
+270
+360
+90
+VECTORES
+DIR: vec3(-0.000000, 0.000000, 1.000000)
+A: vec3(-1.000000, 0.000000, -0.000000)
+S: vec3(0.000000, 0.000000, -1.000000)
+D:vec3(1.000000, 0.000000, 0.000000)
+TIME: 0.0499926
+TIME: 0.0499926
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0499894
+A
+A
+A
+A
+A
+A
+REPOSO
+TIME: 0.0495991
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0499982
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+TIME: 0.0500064
+A
+TIME: 0.049983
+REPOSO
+TIME: 0.0500453
+TIME: 0.0500453
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0499914
+D
+D
+D
+D
+D
+D
+D
+D
+REPOSO
+TIME: 0.05004
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0498984
+W
+W
+W
+W
+REPOSO
+TIME: 0.0498595
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0498577
+S
+S
+S
+S
+S
+S
+S
+S
+S
+S
+TIME: 0.0496427
+S
+TIME: 0.0499777
+S
+TIME: 0.0500508
+REPOSO
+TIME: 0.0504604
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.050033
+W
+W
+W
+REPOSO
+TIME: 0.0500412
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500116
+S
+S
+REPOSO
+TIME: 0.0499876
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0504645
+W
+W
+REPOSO
+TIME: 0.0499833
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500163
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+TIME: 0.0504367
+A
+TIME: 0.0499882
+A
+TIME: 0.049578
+A
+TIME: 0.0500105
+A
+TIME: 0.0504204
+A
+TIME: 0.0495581
+A
+TIME: 0.0499988
+A
+TIME: 0.0500383
+A
+TIME: 0.0504912
+A
+TIME: 0.0494756
+A
+TIME: 0.050002
+A
+TIME: 0.0499932
+A
+TIME: 0.0505105
+A
+TIME: 0.0494938
+A
+TIME: 0.0499982
+A
+TIME: 0.0499917
+A
+TIME: 0.0500494
+A
+TIME: 0.0499675
+A
+TIME: 0.0499932
+A
+TIME: 0.0499926
+A
+TIME: 0.0500219
+A
+TIME: 0.0499756
+A
+TIME: 0.0499958
+A
+TIME: 0.0499955
+A
+TIME: 0.0500219
+A
+TIME: 0.0503923
+A
+TIME: 0.0495965
+A
+TIME: 0.0500318
+A
+TIME: 0.0499733
+A
+TIME: 0.0504912
+A
+TIME: 0.0495023
+A
+TIME: 0.0499903
+A
+TIME: 0.0500175
+TIME: 0.0500175
+A
+A
+TIME: 0.0495026
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+W
+TIME: 0.0500309
+TIME: 0.0500309
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0500555
+W
+TIME: 0.0499432
+W
+TIME: 0.0500242
+W
+TIME: 0.04998
+W
+TIME: 0.050038
+W
+TIME: 0.0499601
+W
+TIME: 0.0500072
+W
+TIME: 0.049995
+W
+TIME: 0.0500383
+W
+TIME: 0.0499581
+W
+TIME: 0.0500166
+W
+TIME: 0.0499911
+W
+TIME: 0.0500181
+W
+TIME: 0.0500195
+W
+TIME: 0.0499446
+W
+TIME: 0.0500146
+W
+TIME: 0.050078
+W
+TIME: 0.0499239
+W
+TIME: 0.0499909
+W
+TIME: 0.0499958
+W
+TIME: 0.0500268
+W
+TIME: 0.0499844
+W
+TIME: 0.0499765
+W
+TIME: 0.0500292
+W
+TIME: 0.0500251
+W
+TIME: 0.0504367
+W
+TIME: 0.0495318
+W
+TIME: 0.0499976
+W
+TIME: 0.049985
+W
+TIME: 0.0505172
+W
+TIME: 0.0495148
+W
+TIME: 0.0499736
+W
+TIME: 0.0500029
+W
+TIME: 0.0504871
+W
+TIME: 0.0495034
+W
+TIME: 0.0500116
+W
+TIME: 0.049983
+W
+TIME: 0.0505476
+W
+TIME: 0.0494654
+W
+TIME: 0.0499897
+W
+TIME: 0.0500151
+W
+TIME: 0.0500014
+W
+TIME: 0.0499853
+W
+TIME: 0.0500069
+W
+TIME: 0.0499938
+W
+TIME: 0.0500189
+W
+TIME: 0.0504046
+W
+TIME: 0.0495745
+W
+TIME: 0.0504376
+W
+TIME: 0.0495772
+W
+TIME: 0.050411
+W
+TIME: 0.0495739
+W
+TIME: 0.0500011
+W
+TIME: 0.0500365
+W
+TIME: 0.050483
+W
+TIME: 0.0494812
+W
+TIME: 0.049995
+W
+TIME: 0.0500049
+W
+TIME: 0.0504999
+W
+TIME: 0.0494967
+W
+TIME: 0.0500008
+W
+TIME: 0.0500002
+W
+TIME: 0.0504941
+W
+TIME: 0.0495192
+W
+TIME: 0.0499768
+W
+TIME: 0.0500134
+W
+TIME: 0.0505017
+W
+TIME: 0.0494985
+W
+TIME: 0.0500014
+W
+TIME: 0.0499888
+W
+TIME: 0.0500359
+W
+TIME: 0.0499768
+W
 TIME: 0.0499762
+W
+TIME: 0.0500116
+W
+TIME: 0.050014
+W
+TIME: 0.049999
+W
+TIME: 0.0499742
+W
+TIME: 0.0500207
+W
+TIME: 0.0500336
+W
+TIME: 0.0504824
+W
+TIME: 0.0494727
+W
+TIME: 0.0499982
+W
+TIME: 0.0500356
+W
+TIME: 0.0504122
+W
+TIME: 0.0495464
+W
+TIME: 0.0500116
+W
+TIME: 0.0500292
+W
+TIME: 0.0504742
+W
+TIME: 0.0494777
+W
+TIME: 0.0500195
+W
+TIME: 0.0500263
+W
+TIME: 0.0499944
+W
+TIME: 0.0499663
+W
+TIME: 0.0500087
+W
+TIME: 0.0499888
+W
+TIME: 0.0505213
+W
+TIME: 0.0494759
+W
+TIME: 0.0500099
+W
+TIME: 0.0500014
+W
+TIME: 0.0500529
+W
+TIME: 0.0499557
+W
+TIME: 0.0499853
+W
+TIME: 0.0499996
+W
+TIME: 0.0500306
+W
+TIME: 0.0499903
+W
+TIME: 0.0499909
+W
+TIME: 0.0499897
+W
+TIME: 0.0500304
+W
+TIME: 0.0499645
+W
+TIME: 0.0500078
+W
+TIME: 0.0500026
+W
+TIME: 0.0500263
+W
+TIME: 0.0504677
+W
+TIME: 0.0495017
+W
+TIME: 0.0499903
+W
+TIME: 0.0500394
+W
+TIME: 0.0504666
+W
+TIME: 0.0495052
+W
+TIME: 0.0499847
+W
+TIME: 0.0500248
+W
+TIME: 0.0500301
+W
+TIME: 0.0499809
+W
+TIME: 0.0499634
+W
+TIME: 0.0500148
+W
+TIME: 0.0500175
+W
+TIME: 0.0499999
+W
+TIME: 0.0499707
+W
+TIME: 0.0500122
+W
+TIME: 0.0500362
+W
+TIME: 0.050413
+W
+TIME: 0.0495353
+W
+TIME: 0.0500342
+W
+TIME: 0.0499979
+W
+TIME: 0.0504148
+W
+TIME: 0.0495538
+W
+TIME: 0.0500146
+W
+TIME: 0.0500002
+W
+TIME: 0.0504903
+W
+TIME: 0.0494958
+W
+TIME: 0.0500128
+W
+TIME: 0.050014
+W
+TIME: 0.0500105
+W
+TIME: 0.0499932
+W
+TIME: 0.049983
+W
+TIME: 0.0499903
+W
+TIME: 0.0504452
+W
+TIME: 0.0495485
+W
+TIME: 0.0500154
+W
+TIME: 0.0500207
+W
+TIME: 0.0504028
+W
+TIME: 0.0495622
+W
+TIME: 0.0500119
+W
+TIME: 0.049997
+W
+TIME: 0.0504973
+W
+TIME: 0.049504
+W
+TIME: 0.049999
+W
+TIME: 0.0500002
+W
+TIME: 0.0504903
+W
+TIME: 0.0494917
+W
+TIME: 0.0500195
+W
+TIME: 0.0499906
+W
+TIME: 0.0500485
+W
+TIME: 0.0504233
+TIME: 0.0504233
+W
+TIME: 0.0495271
+W
+TIME: 0.0499988
+W
+TIME: 0.0500116
+W
+TIME: 0.0503785
+W
+TIME: 0.0496155
+W
+TIME: 0.0499841
+W
+TIME: 0.0500236
+W
+TIME: 0.0503844
+W
+TIME: 0.0496029
+W
+TIME: 0.0499903
+W
+TIME: 0.0500175
+W
+TIME: 0.0503724
+W
+TIME: 0.0496348
+W
+TIME: 0.0499759
+W
+TIME: 0.0500345
+W
+TIME: 0.0499777
+W
+TIME: 0.050016
+W
+TIME: 0.0499598
+D
+TIME: 0.0500453
+TIME: 0.0500453
+TIME: 0.0500453
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0495353
+D
+TIME: 0.0499762
+D
+TIME: 0.0500239
+D
+TIME: 0.0504508
+D
+TIME: 0.0495584
+D
+TIME: 0.0499593
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -454.58 POS Y: 85.7996
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -452.46 POS Y: 86.46
+///////////////////////////////////
+camID: 4
+ID CAMARA: 4
+D
+TIME: 0.0500119
+D
+TIME: 0.0505058
+D
+TIME: 0.0495189
+D
+TIME: 0.0499663
+D
+TIME: 0.0504876
+D
+TIME: 0.0495292
+D
+TIME: 0.0500061
+D
+TIME: 0.0504057
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -451.246 POS Y: 85.7996
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -448.98 POS Y: 86.46
+///////////////////////////////////
+camID: 16
+ID CAMARA: 16
+D
+TIME: 0.0495854
+D
+TIME: 0.0500134
+D
+TIME: 0.0504733
+D
+TIME: 0.0494806
+D
+TIME: 0.0500415
+D
+TIME: 0.0500102
+D
+TIME: 0.0500037
+D
+TIME: 0.0499452
+D
+TIME: 0.0500371
+D
+TIME: 0.049983
+D
+TIME: 0.0505032
+D
+TIME: 0.0494891
+D
+TIME: 0.0500187
+D
+TIME: 0.0499745
+D
+TIME: 0.0505517
+D
+TIME: 0.0498721
+D
+TIME: 0.0496091
+D
+TIME: 0.0499642
+D
+TIME: 0.0500371
+REPOSO
+HORA DEL RECALCULO
+ANGLEEEEE: 180
+270
+360
+90
+VECTORES
+DIR: vec3(-0.000000, 0.000000, 1.000000)
+A: vec3(-1.000000, 0.000000, -0.000000)
+S: vec3(0.000000, 0.000000, -1.000000)
+D:vec3(1.000000, 0.000000, 0.000000)
+TIME: 0.0499733
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0499777
+D
+D
+D
+D
+D
+REPOSO
+TIME: 0.0504991
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.050011
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0500432
+D
+TIME: 0.0499525
+D
+TIME: 0.0500699
+D
+TIME: 0.0499432
+REPOSO
+TIME: 0.0500175
+TIME: 0.0500175
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500102
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0495447
+D
+TIME: 0.0499885
+D
+TIME: 0.050033
+D
+TIME: 0.0503554
+D
+TIME: 0.0496193
+REPOSO
+TIME: 0.0499745
+TIME: 0.0499745
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500251
+W
+W
+W
+W
+W
+W
+W
+D
+TIME: 0.0500119
+TIME: 0.0500119
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.050401
+D
+TIME: 0.049559
+D
+TIME: 0.0500195
+D
+TIME: 0.0500248
+D
+TIME: 0.050459
+D
+TIME: 0.0495028
+D
+TIME: 0.0500169
+D
+TIME: 0.0499818
+REPOSO
+TIME: 0.0505052
+TIME: 0.0505052
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500312
+S
+S
+S
+S
+S
+S
+REPOSO
+TIME: 0.0504347
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500464
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0495614
+REPOSO
+TIME: 0.0499455
+TIME: 0.0499455
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500113
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+TIME: 0.0504154
+A
+TIME: 0.049559
+A
+TIME: 0.0500251
+A
+TIME: 0.0500134
+A
+TIME: 0.049992
+A
+TIME: 0.0499669
+A
+TIME: 0.0500227
+A
+TIME: 0.0499806
+A
+TIME: 0.0505631
+A
+TIME: 0.0494399
+A
+TIME: 0.0500055
+A
+TIME: 0.0499809
+A
+TIME: 0.0505558
+A
+TIME: 0.0494516
+A
+TIME: 0.0500143
+A
+TIME: 0.0499815
+A
+TIME: 0.0505093
+A
+TIME: 0.0494964
+A
+TIME: 0.0500058
+A
+TIME: 0.0499882
+A
+TIME: 0.0500298
+A
+TIME: 0.0503896
+A
+TIME: 0.0495839
+A
+TIME: 0.0499973
+A
+TIME: 0.0500289
+A
+TIME: 0.050389
+A
+TIME: 0.0495965
+A
+TIME: 0.0499882
+A
+TIME: 0.0500324
+A
+TIME: 0.0503905
+A
+TIME: 0.0495927
+A
+TIME: 0.0499724
+A
+TIME: 0.0500306
+A
+TIME: 0.0504563
+A
+TIME: 0.0495186
+A
+TIME: 0.0500005
+A
+TIME: 0.0500166
+A
+TIME: 0.0504683
+A
+TIME: 0.0495301
+A
+TIME: 0.04998
+A
+TIME: 0.050028
+A
+TIME: 0.050004
+A
+TIME: 0.0499745
+A
+TIME: 0.050004
+A
+TIME: 0.0499792
+A
+TIME: 0.0500462
+A
+TIME: 0.0504221
+A
+TIME: 0.0495485
+A
+TIME: 0.0499821
+A
+TIME: 0.0500488
+A
+TIME: 0.0499803
+A
+TIME: 0.0499859
+A
+TIME: 0.049983
+A
+TIME: 0.0500192
+A
+TIME: 0.0505178
+A
+TIME: 0.0494873
+A
+TIME: 0.0499789
+A
+TIME: 0.0500216
+A
+TIME: 0.050478
+A
+TIME: 0.0495181
+A
+TIME: 0.0499792
+A
+TIME: 0.0500043
+A
+TIME: 0.0500418
+A
+TIME: 0.0499733
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -446.663 POS Y: 86.2163
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -448.98 POS Y: 86.46
+///////////////////////////////////
+camID: 16
+ID CAMARA: 16
+A
+TIME: 0.0499821
+A
+TIME: 0.0500064
+A
+TIME: 0.0500289
+A
+TIME: 0.0499891
+A
+TIME: 0.049973
+A
+TIME: 0.0500061
+A
+TIME: 0.0500403
+A
+TIME: 0.049961
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -449.996 POS Y: 86.2163
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -452.46 POS Y: 86.46
+///////////////////////////////////
+camID: 4
+ID CAMARA: 4
+A
+TIME: 0.0499993
+A
+TIME: 0.0499979
+A
+TIME: 0.0500485
+A
+TIME: 0.0503896
+A
+TIME: 0.0495517
+A
+TIME: 0.0500146
+A
+TIME: 0.050014
+A
+TIME: 0.0504853
+A
+TIME: 0.049502
+A
+TIME: 0.0499958
+A
+TIME: 0.0500072
+A
+TIME: 0.0500198
+A
+TIME: 0.0500067
+A
+TIME: 0.0499868
+A
+TIME: 0.0499745
+A
+TIME: 0.050038
+A
+TIME: 0.0499704
+A
+TIME: 0.049992
+A
+TIME: 0.0499929
+A
+TIME: 0.0500157
+A
+TIME: 0.0499923
+A
+TIME: 0.0500069
+A
+TIME: 0.0499891
+A
+TIME: 0.0500824
+S
+TIME: 0.0502682
+TIME: 0.0502682
+S
+S
+S
+S
+S
+S
+S
+S
+S
+S
+TIME: 0.0499833
+S
+TIME: 0.0500201
+S
+TIME: 0.0504716
+S
+TIME: 0.0495318
+S
+TIME: 0.0499838
+S
+TIME: 0.0500034
+S
+TIME: 0.0500359
+S
+TIME: 0.0499909
+S
+TIME: 0.0499721
+S
+TIME: 0.0500257
+S
+TIME: 0.050014
+S
+TIME: 0.0499689
+S
+TIME: 0.0499859
+REPOSO
+HORA DEL RECALCULO
+ANGLEEEEE: 180
+270
+360
+90
+VECTORES
+DIR: vec3(-0.000000, 0.000000, 1.000000)
+A: vec3(-1.000000, 0.000000, -0.000000)
+S: vec3(0.000000, 0.000000, -1.000000)
+D:vec3(1.000000, 0.000000, 0.000000)
+TIME: 0.0500049
+TIME: 0.0500049
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado

@@ -200,6 +200,7 @@ void TGraphicEngine::cambiarCamaraActiva(char m, void* dirCam)
 		//Camara *cam = maps->buscarCamara(m);
 		//camaraActiva = cam->getTCamara();
 		Camara *cam = static_cast<Camara*>(dirCam);
+		std::cout << "ID CAMARA: " << cam->getId() << std::endl;
 		cam->getTCamara()->activar();
 		camaraActiva = cam->getTCamara();
 

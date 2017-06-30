@@ -9501,8 +9501,8 @@
             {
               "localPosition": [
                 -13.69,
-                6.81,
-                -45.58
+                8.35,
+                -50.15
               ],
               "localRotation": [
                 90.0,
@@ -9553,7 +9553,7 @@
           "components": [
             {
               "localPosition": [
-                -224.12,
+                -226.476,
                 8.14,
                 -45.58
               ],
@@ -9660,7 +9660,7 @@
             {
               "localPosition": [
                 -13.9,
-                8.52,
+                7.94,
                 44.5
               ],
               "localRotation": [
@@ -16359,59 +16359,6 @@
           "components": [
             {
               "localPosition": [
-                -175.42,
-                8.49,
-                23.15
-              ],
-              "localRotation": [
-                0.0,
-                180.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": [
-            {
-              "name": "6",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                }
-              ],
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "PosCam",
-          "components": [
-            {
-              "localPosition": [
                 -330.42,
                 8.01,
                 -162.47
@@ -16465,13 +16412,13 @@
           "components": [
             {
               "localPosition": [
-                -55.3399963,
-                16.32,
-                -54.38
+                -57.73,
+                11.38,
+                -95.13
               ],
               "localRotation": [
                 0.0,
-                270.243347,
+                270.0,
                 0.0
               ],
               "localScale": [
@@ -16487,6 +16434,59 @@
           "children": [
             {
               "name": "8",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "PosCam",
+          "components": [
+            {
+              "localPosition": [
+                -175.42,
+                8.49,
+                23.15
+              ],
+              "localRotation": [
+                0.0,
+                180.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "6",
               "components": [
                 {
                   "localPosition": [
@@ -20826,7 +20826,7 @@
               ],
               "localRotation": [
                 0.0,
-                0.0,
+                221.2755,
                 0.0
               ],
               "localScale": [
@@ -20932,7 +20932,7 @@
               ],
               "localRotation": [
                 0.0,
-                90.0,
+                180.0,
                 0.0
               ],
               "localScale": [
@@ -21091,7 +21091,7 @@
               ],
               "localRotation": [
                 0.0,
-                180.0,
+                0.0,
                 0.0
               ],
               "localScale": [
@@ -21144,7 +21144,7 @@
               ],
               "localRotation": [
                 0.0,
-                180.0,
+                0.0,
                 0.0
               ],
               "localScale": [
@@ -25536,7 +25536,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -27.2,
+                    -18.12,
                     -6.0,
                     51.57
                   ],
@@ -26367,6 +26367,98 @@
                     -55.31,
                     -6.0,
                     -137.2
+                  ],
+                  "localRotation": [
+                    0.0,
+                    135.116714,
+                    0.0
+                  ],
+                  "localScale": [
+                    2.000001,
+                    1.0,
+                    0.500000238
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Plane",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "Default-Material"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "type": "MeshCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "8",
+              "components": [
+                {
+                  "localPosition": [
+                    -138.35,
+                    -6.0,
+                    -51.1
+                  ],
+                  "localRotation": [
+                    0.0,
+                    135.116714,
+                    0.0
+                  ],
+                  "localScale": [
+                    2.000001,
+                    1.0,
+                    0.500000238
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Plane",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "Default-Material"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "type": "MeshCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "6",
+              "components": [
+                {
+                  "localPosition": [
+                    -141.47,
+                    -6.0,
+                    -47.96
                   ],
                   "localRotation": [
                     0.0,
