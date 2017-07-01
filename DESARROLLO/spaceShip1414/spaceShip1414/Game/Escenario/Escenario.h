@@ -68,7 +68,7 @@ private:
 		TipoDatos position;
 		TipoDatos rotation;
 		TipoDatos escala;
-		std::list<Elemento> ObjetosEscena;
+		std::vector<Elemento> ObjetosEscena;
 	}ElementoHijo;
 
 	typedef struct
@@ -77,17 +77,17 @@ private:
 		TipoDatos position;
 		TipoDatos rotation;
 		TipoDatos escala;
-		std::list<ElementoHijo> ObjetosEscena;
+		std::vector<ElementoHijo> ObjetosEscena;
 	}ElementoPadre;
 
-	std::list<ElementoPadre> Padres;
-	std::list<ElementoHijo> Hijos;
-	std::list<Elemento> SubHijos;
+	std::vector<ElementoPadre> Padres;
+	std::vector<ElementoHijo> Hijos;
+	std::vector<Elemento> SubHijos;
 	Mundo *mundo;
-	std::list<Enemigo*> enemigos;
-	std::list<Pared*> Listparedes;
+	std::vector<Enemigo*> enemigos;
+	std::vector<Pared*> Listparedes;
 	std::vector<Luces*> ListLuces;
-	std::list<Puerta*> puertas;
+	std::vector<Puerta*> puertas;
 	std::vector<Camara*> listaDeCamaras;
 	//std::list<Objetos*> objConsumables;
 	std::vector<Waypoints*> waypoints;
@@ -107,20 +107,20 @@ public:
 	Escenario(const Escenario& orig);
 	virtual ~Escenario();
 	Camara* buscarCamara(int ID);
-	void setPadres(std::string nombre, double t[], double r[], double s[], std::list<Escenario::ElementoHijo> objetos);
-	void setHijos(std::string nombre, double t[], double r[], double s[], std::list<Escenario::Elemento> objetos);
+	void setPadres(std::string nombre, double t[], double r[], double s[], std::vector<Escenario::ElementoHijo> objetos);
+	void setHijos(std::string nombre, double t[], double r[], double s[], std::vector<Escenario::Elemento> objetos);
 	void setSubHijos(std::string nombre, double t[], double r[], double s[]);
 	void muestraEstructura();
 	void dibujarEscenario();
 	void fabricaDeEnemigos();
 	void destroyWaypoints();
-	std::list<Escenario::ElementoHijo> getHijos();
-	std::list<Escenario::Elemento> getSubHijos();
+	std::vector<Escenario::ElementoHijo> getHijos();
+	std::vector<Escenario::Elemento> getSubHijos();
 	void removeListHijos();
 	void removeListSubHijos();
 	void actualizarListaEnemigos(float dt);
 
-	std::list<Pared*> getParedes();
+	std::vector<Pared*> getParedes();
 	int getTam();
 	void cambiaEstado(std::string mensaje);
 	void actualizarEstadoPersonaje();
