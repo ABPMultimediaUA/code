@@ -268,17 +268,14 @@ void movimentHandler::checkKeys(GLFWwindow * window, TGraphicEngine* motor)
 {
 	//jugador->setCamPos(motor->getPosicion(camara->getNodo()));
 	motor->CamaraActiva();
-	
+	if (!sf::Keyboard::isKeyPressed(sf::Keyboard::W) ||
+		!sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||
+		!sf::Keyboard::isKeyPressed(sf::Keyboard::D) ||
+		!sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+		tecla = -1;
+	}
 
 	if (jugador->getImpulso() == false) {
-
-		
-		if (!sf::Keyboard::isKeyPressed(sf::Keyboard::W) ||
-			!sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||
-			!sf::Keyboard::isKeyPressed(sf::Keyboard::D) ||
-			!sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-			tecla = -1;
-		}
 
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
