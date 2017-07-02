@@ -26,18 +26,18 @@ bool TRecursoTextura::cargarFichero(std::string ntextura)
 		//std::cerr << "No se a podidio cargar la textura -> " << ntextura << std::endl;
 		return false;
 	}
+	
+		glBindTexture(GL_TEXTURE_2D, texturaID);
 
-	glBindTexture(GL_TEXTURE_2D, texturaID);
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, imagen.getSize().x, imagen.getSize().y, 0, GL_RGBA, GL_UNSIGNED_BYTE, imagen.getPixelsPtr());
 
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, imagen.getSize().x, imagen.getSize().y, 0, GL_RGBA, GL_UNSIGNED_BYTE, imagen.getPixelsPtr());
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-
-	glBindTexture(GL_TEXTURE_2D, texturaID);
-
+		glBindTexture(GL_TEXTURE_2D, texturaID);
+	
 	return true;
 }
 
@@ -54,5 +54,8 @@ void TRecursoTextura::draw(unsigned int num, GLuint programID, const std::string
 
 GLuint TRecursoTextura::getTexturaID()
 {
-	return texturaID;
+	
+		return texturaID;
+	
+	
 }

@@ -622,1306 +622,1224 @@ void Escenario::dibujarEscenario() {
 			}
 		}
 
-		//hay que poner un if de puerta doble
-		if ((*I).nombre == "SALA_ESPERA") {
+	//	//hay que poner un if de puerta doble
+	//	if ((*I).nombre == "SALA_ESPERA") {
 
-		
+	//	
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
 
-				if ((*T).nombre == "Modelo") {
+	//			if ((*T).nombre == "Modelo") {
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
 
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
 
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "sala_espera");
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "sala_espera");
 
-				}
+	//			}
 
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
-			}
-		}
+	//		}
+	//	}
 
-		if ((*I).nombre == "GENERADOR") {
-		
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//	if ((*I).nombre == "GENERADOR") {
+	//	
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
 
-				if ((*T).nombre == "Modelo") {
+	//			if ((*T).nombre == "Modelo") {
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
 
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
 
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "generador");
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "generador");
 
-				}
-			}
-		}
+	//			}
+	//		}
+	//	}
 
-		if ((*I).nombre == "HALL") {
-		
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//	if ((*I).nombre == "HALL") {
+	//	
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
 
 
-				if ((*T).nombre == "Modelo") {
+	//			if ((*T).nombre == "Modelo") {
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
 
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
 
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "hall");
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "hall");
 
-				}
-			}
-		}
+	//			}
+	//		}
+	//	}
 
-		if ((*I).nombre == "MANTENIMIENTO") {
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//	if ((*I).nombre == "MANTENIMIENTO") {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
-				if ((*T).nombre == "Modelo") {
+	//			if ((*T).nombre == "Modelo") {
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "mantenimiento");
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "mantenimiento");
 
-				}
-			}
-		}
+	//			}
+	//		}
+	//	}
 
-		if ((*I).nombre == "CANTINA") {
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//	if ((*I).nombre == "CANTINA") {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
-				if ((*T).nombre == "Modelo") {
+	//			if ((*T).nombre == "Modelo") {
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "cantina");
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "cantina");
 
-				}
-			}
-		}
+	//			}
+	//		}
+	//	}
 
-		if ((*I).nombre == "COMISARIA") {
+	//	if ((*I).nombre == "COMISARIA") {
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
-				/*if ((*T).nombre == "Modelo") {
+	//			/*if ((*T).nombre == "Modelo") {
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "comisaria");
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "comisaria");
 
-				}*/
+	//			}*/
 
-			}
-		}
+	//		}
+	//	}
 
-		if ((*I).nombre == "VESTUARIO") {
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//	if ((*I).nombre == "VESTUARIO") {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
-				if ((*T).nombre == "Modelo") {
+	//			if ((*T).nombre == "Modelo") {
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "vestuario");
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "vestuario");
 
-				}
-			}
-		}
+	//			}
+	//		}
+	//	}
 
-		if ((*I).nombre == "ARSENAL") {
+	//	if ((*I).nombre == "ARSENAL") {
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
-				if ((*T).nombre == "Modelo") {
+	//			if ((*T).nombre == "Modelo") {
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "arsenal");
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "arsenal");
 
-				}
-			}
-		}
+	//			}
+	//		}
+	//	}
 
-		if ((*I).nombre == "PASILLO_1") {
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-				
+	//	if ((*I).nombre == "PASILLO_1") {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//			
 
-				if ((*T).nombre == "Modelo") {
-					//	std::cout << "entra" << std::endl;
+	//			if ((*T).nombre == "Modelo") {
+	//				//	std::cout << "entra" << std::endl;
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "pasillo_1");
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "pasillo_1");
 
-				}
+	//			}
 
-	
+	//
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
-			}
-		}
+	//				}
+	//			}
+	//		}
+	//	}
 
-		if ((*I).nombre == "PASILLO_2") {
+	//	if ((*I).nombre == "PASILLO_2") {
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-				//if ((*T).nombre == "Puerta") {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//			//if ((*T).nombre == "Puerta") {
 
-				//	for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
-				//	
-				//		tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-				//		ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-				//		tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//			//	for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			//	
+	//			//		tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//			//		ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//			//		tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-				//		rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-				//		ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-				//		rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//			//		rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//			//		ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//			//		rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-				//		ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-				//		ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-				//		ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//			//		ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//			//		ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//			//		ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-				//		Puerta *door = new Puerta(engine, num, glm::vec3(tx * 2, ty * 2, -tz * 2),
-				//			glm::vec3(rx, ry, rz),
-				//			glm::vec3(ex, ey, ez),
-				//			"ABIERTA");
+	//			//		Puerta *door = new Puerta(engine, num, glm::vec3(tx * 2, ty * 2, -tz * 2),
+	//			//			glm::vec3(rx, ry, rz),
+	//			//			glm::vec3(ex, ey, ez),
+	//			//			"ABIERTA");
 
-				//		door->setFisica(mundo, num);
-				//		puertas.push_back(door);
-				//		num++;
-				//	}
+	//			//		door->setFisica(mundo, num);
+	//			//		puertas.push_back(door);
+	//			//		num++;
+	//			//	}
 
-				//}
+	//			//}
 
 
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
-				if ((*T).nombre == "Modelo") {
+	//			if ((*T).nombre == "Modelo") {
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
 
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "pasillo_2");
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "pasillo_2");
 
-				}
+	//			}
 
-			}
-		}
+	//		}
+	//	}
 
-		if ((*I).nombre == "PASILLO_3") {
-	
-			
+	//	if ((*I).nombre == "PASILLO_3") {
+	//
+	//		
 
-		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-			
+	//	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//		
 
-			if ((*T).nombre == "Modelo") {
+	//		if ((*T).nombre == "Modelo") {
 
-				tx = ((*T).position.x + (*I).position.x);
-				ty = ((*T).position.y + (*I).position.y);
-				tz = ((*T).position.z + (*I).position.z);
+	//			tx = ((*T).position.x + (*I).position.x);
+	//			ty = ((*T).position.y + (*I).position.y);
+	//			tz = ((*T).position.z + (*I).position.z);
 
-				rx = ((*T).rotation.x + (*I).rotation.x);
-				ry = ((*T).rotation.y + (*I).rotation.y);
-				rz = ((*T).rotation.z + (*I).rotation.z);
+	//			rx = ((*T).rotation.x + (*I).rotation.x);
+	//			ry = ((*T).rotation.y + (*I).rotation.y);
+	//			rz = ((*T).rotation.z + (*I).rotation.z);
 
-				ex = ((*T).escala.x * (*I).escala.x);
-				ey = ((*T).escala.y * (*I).escala.y);
-				ez = ((*T).escala.z * (*I).escala.z);
+	//			ex = ((*T).escala.x * (*I).escala.x);
+	//			ey = ((*T).escala.y * (*I).escala.y);
+	//			ez = ((*T).escala.z * (*I).escala.z);
 
-				std::cout << "ROTACIONES 1" << std::endl;
-				std::cout << "X: " << rx << std::endl;
-				std::cout << "Y: " << ry << std::endl;
-				std::cout << "Z: " << rz << std::endl;
-				std::cout << "///////////" << std::endl;
-				std::cout << "trans 1" << std::endl;
-				std::cout << "X: " << tx << std::endl;
-				std::cout << "Y: " << ty << std::endl;
-				std::cout << "Z: " << tz << std::endl;
+	//			std::cout << "ROTACIONES 1" << std::endl;
+	//			std::cout << "X: " << rx << std::endl;
+	//			std::cout << "Y: " << ry << std::endl;
+	//			std::cout << "Z: " << rz << std::endl;
+	//			std::cout << "///////////" << std::endl;
+	//			std::cout << "trans 1" << std::endl;
+	//			std::cout << "X: " << tx << std::endl;
+	//			std::cout << "Y: " << ty << std::endl;
+	//			std::cout << "Z: " << tz << std::endl;
 
-				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-					glm::vec3(rx, ry, -rz),
-					glm::vec3(ex, ey, ez), "pasillo_3");
+	//			Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//				glm::vec3(rx, ry, -rz),
+	//				glm::vec3(ex, ey, ez), "pasillo_3");
 
-			}
+	//		}
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0 , -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0 , -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
-				/*if ((*T).nombre == "Suelo") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			/*if ((*T).nombre == "Suelo") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez));
+	//					Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez));
 
-					}
-				}*/
-			}
-		}
+	//				}
+	//			}*/
+	//		}
+	//	}
 
-		if ((*I).nombre == "PASILLO_4") {
+	//	if ((*I).nombre == "PASILLO_4") {
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-				//if ((*T).nombre == "Puerta") {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//			//if ((*T).nombre == "Puerta") {
 
-				//	for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
-				//		
-				//		tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-				//		ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-				//		tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//			//	for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			//		
+	//			//		tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//			//		ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//			//		tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-				//		rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-				//		ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-				//		rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//			//		rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//			//		ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//			//		rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-				//		ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-				//		ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-				//		ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//			//		ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//			//		ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//			//		ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-				//		Puerta *door = new Puerta(engine, num, glm::vec3(tx * 2, ty * 2, -tz * 2),
-				//			glm::vec3(rx, ry, rz),
-				//			glm::vec3(ex, ey, ez),
-				//			"ABIERTA");
+	//			//		Puerta *door = new Puerta(engine, num, glm::vec3(tx * 2, ty * 2, -tz * 2),
+	//			//			glm::vec3(rx, ry, rz),
+	//			//			glm::vec3(ex, ey, ez),
+	//			//			"ABIERTA");
 
-				//		door->setFisica(mundo, num);
-				//		puertas.push_back(door);
-				//		num++;
-				//	}
+	//			//		door->setFisica(mundo, num);
+	//			//		puertas.push_back(door);
+	//			//		num++;
+	//			//	}
 
-				//}
+	//			//}
 
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
 
-				if ((*T).nombre == "Modelo") {
+	//			if ((*T).nombre == "Modelo") {
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
 
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "pasillo_4");
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "pasillo_4");
 
-				}
-			}
-		}
+	//			}
+	//		}
+	//	}
 
-		if ((*I).nombre == "PASILLO_5") {
+	//	if ((*I).nombre == "PASILLO_5") {
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-				
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//			
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
 
 
-						Listparedes.push_back(wall);
+	//					Listparedes.push_back(wall);
 
-					}
-				}
+	//				}
+	//			}
 
-			
+	//		
 
-		////		if ((*T).nombre == "Terminal") {
-		////			for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//	////		if ((*T).nombre == "Terminal") {
+	//	////			for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-		////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
-		////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
-		////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
-		////					vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
-		////				objeto->getMaterial(0).EmissiveColor.set(0, 96, 110, 174);
+	//	////				IMeshSceneNode *objeto = SM->addCubeSceneNode(10.0f, 0, -1,
+	//	////					vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+	//	////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+	//	////					vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z));
+	//	////				objeto->getMaterial(0).EmissiveColor.set(0, 96, 110, 174);
 
-		////				Terminal *ter = new Terminal(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
-		////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
-		////					vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
-		////					mundo, objeto, this);
+	//	////				Terminal *ter = new Terminal(vector3df(10 * ((*N).position.x + ((*T).position.x + (*I).position.x)), 10 * ((*N).position.y + ((*T).position.y + (*I).position.y)), 10 * ((*N).position.z + (*T).position.z + (*I).position.z)),
+	//	////					vector3df((*N).rotation.x + (*T).rotation.x + (*I).rotation.x, (*N).rotation.y + (*T).rotation.y + (*I).rotation.y, (*N).rotation.z + (*T).rotation.z + (*I).rotation.z),
+	//	////					vector3df(((*N).escala.x * (*T).escala.x * (*I).escala.x), (*N).escala.y * (*T).escala.y * (*I).escala.y, (*N).escala.z * (*T).escala.z * (*I).escala.z),
+	//	////					mundo, objeto, this);
 
-		////			}
-		////		}
+	//	////			}
+	//	////		}
 
-					if ((*T).nombre == "Modelo") {
+	//				if ((*T).nombre == "Modelo") {
 
-						tx = ((*T).position.x + (*I).position.x);
-						ty = ((*T).position.y + (*I).position.y);
-						tz = ((*T).position.z + (*I).position.z);
+	//					tx = ((*T).position.x + (*I).position.x);
+	//					ty = ((*T).position.y + (*I).position.y);
+	//					tz = ((*T).position.z + (*I).position.z);
 
-						rx = ((*T).rotation.x + (*I).rotation.x);
-						ry = ((*T).rotation.y + (*I).rotation.y);
-						rz = ((*T).rotation.z + (*I).rotation.z);
+	//					rx = ((*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*T).rotation.z + (*I).rotation.z);
 
-						ex = ((*T).escala.x * (*I).escala.x);
-						ey = ((*T).escala.y * (*I).escala.y);
-						ez = ((*T).escala.z * (*I).escala.z);
+	//					ex = ((*T).escala.x * (*I).escala.x);
+	//					ey = ((*T).escala.y * (*I).escala.y);
+	//					ez = ((*T).escala.z * (*I).escala.z);
 
-						std::cout << "ROTACIONES 1" << std::endl;
-						std::cout << "X: " << rx << std::endl;
-						std::cout << "Y: " << ry << std::endl;
-						std::cout << "Z: " << rz << std::endl;
-						std::cout << "///////////" << std::endl;
-						std::cout << "trans 1" << std::endl;
-						std::cout << "X: " << tx << std::endl;
-						std::cout << "Y: " << ty << std::endl;
-						std::cout << "Z: " << tz << std::endl;
+	//					std::cout << "ROTACIONES 1" << std::endl;
+	//					std::cout << "X: " << rx << std::endl;
+	//					std::cout << "Y: " << ry << std::endl;
+	//					std::cout << "Z: " << rz << std::endl;
+	//					std::cout << "///////////" << std::endl;
+	//					std::cout << "trans 1" << std::endl;
+	//					std::cout << "X: " << tx << std::endl;
+	//					std::cout << "Y: " << ty << std::endl;
+	//					std::cout << "Z: " << tz << std::endl;
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "pasillo_5");
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "pasillo_5");
 
-					}
+	//				}
 
 
-			}
-		}
+	//		}
+	//	}
 
-//		if ((*I).nombre == "PASILLO_6") {
-//
-//			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-//				if ((*T).nombre == "Puerta") {
-//
-//					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
-//				
-//						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-//						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-//						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
-//
-//						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-//						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-//						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
-//
-//						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-//						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-//						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
-//
-//						Puerta *door = new Puerta(engine, num, glm::vec3(tx * 2, ty * 2, -tz * 2),
-//							glm::vec3(rx, ry, rz),
-//							glm::vec3(ex, ey, ez),
-//							"ABIERTA");
-//
-//						door->setFisica(mundo, num);
-//						puertas.push_back(door);
-//						num++;
-//					}
-//
-//				}
-//
-//
-//				if ((*T).nombre == "Paredes") {
-//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
-//		
-//
-//						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-//						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-//						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
-//
-//						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-//						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-//						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
-//
-//						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-//						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-//						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
-//
-//						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
-//							glm::vec3(rx, ry, -rz),
-//							glm::vec3(ex, ey, ez));
-//						wall->setFisicas(mundo);
-//
-//
-//						Listparedes.push_back(wall);
-//					}
-//			}
-//
-//				if ((*T).nombre == "Suelo") {
-//					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
-//
-//						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-//						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-//						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
-//
-//						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-//						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-//						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
-//
-//						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-//						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-//						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
-//
-//						Pared * wall = new Pared(engine, glm::vec3(tx * 2, ty * 2, -tz * 2),
-//							glm::vec3(rx, ry, -rz),
-//							glm::vec3(ex, ey, ez));
-//
-//					}
-//				}
-//			}
-//		}
+	//	if ((*I).nombre == "ALMACEN_1") {
 
-		if ((*I).nombre == "ALMACEN_1") {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
 
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
 
 
+	//					Listparedes.push_back(wall);
 
-						Listparedes.push_back(wall);
+	//				}
+	//			}
 
-					}
-				}
+	//			if ((*T).nombre == "Modelo") {
 
-				if ((*T).nombre == "Modelo") {
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "almacen_1");
 
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "almacen_1");
+	//			}
 
-				}
+	//		}
+	//	}
 
-			}
-		}
+	//	if ((*I).nombre == "ALMACEN_2") {
 
-		if ((*I).nombre == "ALMACEN_2") {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
+	//			//if ((*T).nombre == "Modelo") {
 
-				//if ((*T).nombre == "Modelo") {
+	//			//	tx = ((*T).position.x + (*I).position.x);
+	//			//	ty = ((*T).position.y + (*I).position.y);
+	//			//	tz = ((*T).position.z + (*I).position.z);
 
-				//	tx = ((*T).position.x + (*I).position.x);
-				//	ty = ((*T).position.y + (*I).position.y);
-				//	tz = ((*T).position.z + (*I).position.z);
+	//			//	rx = ((*T).rotation.x + (*I).rotation.x);
+	//			//	ry = ((*T).rotation.y + (*I).rotation.y);
+	//			//	rz = ((*T).rotation.z + (*I).rotation.z);
 
-				//	rx = ((*T).rotation.x + (*I).rotation.x);
-				//	ry = ((*T).rotation.y + (*I).rotation.y);
-				//	rz = ((*T).rotation.z + (*I).rotation.z);
+	//			//	ex = ((*T).escala.x * (*I).escala.x);
+	//			//	ey = ((*T).escala.y * (*I).escala.y);
+	//			//	ez = ((*T).escala.z * (*I).escala.z);
 
-				//	ex = ((*T).escala.x * (*I).escala.x);
-				//	ey = ((*T).escala.y * (*I).escala.y);
-				//	ez = ((*T).escala.z * (*I).escala.z);
+	//			//	std::cout << "ROTACIONES 1" << std::endl;
+	//			//	std::cout << "X: " << rx << std::endl;
+	//			//	std::cout << "Y: " << ry << std::endl;
+	//			//	std::cout << "Z: " << rz << std::endl;
+	//			//	std::cout << "///////////" << std::endl;
+	//			//	std::cout << "trans 1" << std::endl;
+	//			//	std::cout << "X: " << tx << std::endl;
+	//			//	std::cout << "Y: " << ty << std::endl;
+	//			//	std::cout << "Z: " << tz << std::endl;
 
-				//	std::cout << "ROTACIONES 1" << std::endl;
-				//	std::cout << "X: " << rx << std::endl;
-				//	std::cout << "Y: " << ry << std::endl;
-				//	std::cout << "Z: " << rz << std::endl;
-				//	std::cout << "///////////" << std::endl;
-				//	std::cout << "trans 1" << std::endl;
-				//	std::cout << "X: " << tx << std::endl;
-				//	std::cout << "Y: " << ty << std::endl;
-				//	std::cout << "Z: " << tz << std::endl;
+	//			//	Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//			//		glm::vec3(rx, ry, -rz),
+	//			//		glm::vec3(ex, ey, ez), "almacen_2");
 
-				//	Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-				//		glm::vec3(rx, ry, -rz),
-				//		glm::vec3(ex, ey, ez), "almacen_2");
+	//			//}
 
-				//}
 
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
 
 
+	//					Listparedes.push_back(wall);
 
-						Listparedes.push_back(wall);
+	//				}
+	//			}
 
-					}
-				}
+	//		}
+	//	}
 
-			}
-		}
+	//	if ((*I).nombre == "ALMACEN_3") {
 
-		if ((*I).nombre == "ALMACEN_3") {
+	//		
 
-			
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
+	//			if ((*T).nombre == "Modelo") {
 
-				if ((*T).nombre == "Modelo") {
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "almacen_3");
 
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "almacen_3");
+	//			}
 
-				}
 
+	//		if ((*T).nombre == "Paredes") {
+	//			for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-			if ((*T).nombre == "Paredes") {
-				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//				tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//				ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//				tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//				rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//				ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//				ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//				ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "");
+	//				wall->setFisicas(mundo);
 
-					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "");
-					wall->setFisicas(mundo);
 
 
+	//				Listparedes.push_back(wall);
 
-					Listparedes.push_back(wall);
+	//			}
+	//		}
+	//		}
+	//	}
 
-				}
-			}
-			}
-		}
+	//	if ((*I).nombre == "ALMACEN_4") {
 
-		if ((*I).nombre == "ALMACEN_4") {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//			if ((*T).nombre == "Paredes") {
+	//				for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
 
-				if ((*T).nombre == "Paredes") {
-					for (std::list<Elemento>::iterator N = (*T).ObjetosEscena.begin(); N != (*T).ObjetosEscena.end(); N++) {
+	//					tx = ((*N).position.x + (*T).position.x + (*I).position.x);
+	//					ty = ((*N).position.y + (*T).position.y + (*I).position.y);
+	//					tz = ((*N).position.z + (*T).position.z + (*I).position.z);
 
-						tx = ((*N).position.x + (*T).position.x + (*I).position.x);
-						ty = ((*N).position.y + (*T).position.y + (*I).position.y);
-						tz = ((*N).position.z + (*T).position.z + (*I).position.z);
+	//					rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
+	//					ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
+	//					rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
 
-						rx = ((*N).rotation.x + (*T).rotation.x + (*I).rotation.x);
-						ry = ((*N).rotation.y + (*T).rotation.y + (*I).rotation.y);
-						rz = ((*N).rotation.z + (*T).rotation.z + (*I).rotation.z);
+	//					ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
+	//					ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
+	//					ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
 
-						ex = ((*N).escala.x * (*T).escala.x * (*I).escala.x);
-						ey = ((*N).escala.y * (*T).escala.y * (*I).escala.y);
-						ez = ((*N).escala.z * (*T).escala.z * (*I).escala.z);
+	//					Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
+	//						glm::vec3(rx, ry, -rz),
+	//						glm::vec3(ex, ey, ez), "");
+	//					wall->setFisicas(mundo);
 
-						Pared * wall = new Pared(engine, glm::vec3(tx, 0, -tz),
-							glm::vec3(rx, ry, -rz),
-							glm::vec3(ex, ey, ez), "");
-						wall->setFisicas(mundo);
 
 
+	//					Listparedes.push_back(wall);
 
-						Listparedes.push_back(wall);
+	//				}
+	//			}
 
-					}
-				}
+	//			if ((*T).nombre == "Modelo") {
 
-				if ((*T).nombre == "Modelo") {
+	//				tx = ((*T).position.x + (*I).position.x);
+	//				ty = ((*T).position.y + (*I).position.y);
+	//				tz = ((*T).position.z + (*I).position.z);
 
-					tx = ((*T).position.x + (*I).position.x);
-					ty = ((*T).position.y + (*I).position.y);
-					tz = ((*T).position.z + (*I).position.z);
+	//				rx = ((*T).rotation.x + (*I).rotation.x);
+	//				ry = ((*T).rotation.y + (*I).rotation.y);
+	//				rz = ((*T).rotation.z + (*I).rotation.z);
 
-					rx = ((*T).rotation.x + (*I).rotation.x);
-					ry = ((*T).rotation.y + (*I).rotation.y);
-					rz = ((*T).rotation.z + (*I).rotation.z);
+	//				ex = ((*T).escala.x * (*I).escala.x);
+	//				ey = ((*T).escala.y * (*I).escala.y);
+	//				ez = ((*T).escala.z * (*I).escala.z);
 
-					ex = ((*T).escala.x * (*I).escala.x);
-					ey = ((*T).escala.y * (*I).escala.y);
-					ez = ((*T).escala.z * (*I).escala.z);
+	//				std::cout << "ROTACIONES 1" << std::endl;
+	//				std::cout << "X: " << rx << std::endl;
+	//				std::cout << "Y: " << ry << std::endl;
+	//				std::cout << "Z: " << rz << std::endl;
+	//				std::cout << "///////////" << std::endl;
+	//				std::cout << "trans 1" << std::endl;
+	//				std::cout << "X: " << tx << std::endl;
+	//				std::cout << "Y: " << ty << std::endl;
+	//				std::cout << "Z: " << tz << std::endl;
 
-					std::cout << "ROTACIONES 1" << std::endl;
-					std::cout << "X: " << rx << std::endl;
-					std::cout << "Y: " << ry << std::endl;
-					std::cout << "Z: " << rz << std::endl;
-					std::cout << "///////////" << std::endl;
-					std::cout << "trans 1" << std::endl;
-					std::cout << "X: " << tx << std::endl;
-					std::cout << "Y: " << ty << std::endl;
-					std::cout << "Z: " << tz << std::endl;
+	//				Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
+	//					glm::vec3(rx, ry, -rz),
+	//					glm::vec3(ex, ey, ez), "almacen_4");
 
-					Pared * wall = new Pared(engine, glm::vec3(tx, ty, -tz),
-						glm::vec3(rx, ry, -rz),
-						glm::vec3(ex, ey, ez), "almacen_4");
+	//			}
 
-				}
+	//		}
+	//	}
 
-			}
-		}
+	//	if ((*I).nombre == "WAYPOINTS_ZONA1") {
+	//		for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-		if ((*I).nombre == "WAYPOINTS_ZONA1") {
-			for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+	//			tx = ((*T).position.x + (*I).position.x);
+	//			ty = ((*T).position.y + (*I).position.y);
+	//			tz = ((*T).position.z + (*I).position.z);
 
-				tx = ((*T).position.x + (*I).position.x);
-				ty = ((*T).position.y + (*I).position.y);
-				tz = ((*T).position.z + (*I).position.z);
+	//			//TNodo * caja = engine->addMalla();
+	//			//engine->trasladar(caja, tx, ty, -tz);
 
-				//TNodo * caja = engine->addMalla();
-				//engine->trasladar(caja, tx, ty, -tz);
+	///*			IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
+	//				vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
+	//				vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
+	//				vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
+	//			objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);*/
 
-	/*			IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
-					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
-					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
-					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
-				objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);*/
-
-				zona1->creaPuntos((*T).nombre, glm::vec3(tx, ty, -tz));
-				//puntos->MuestraPuntos();
-				//puntos->creaPesos();
-				//puntos->mostrarPesos();
-			}
-		}
+	//			zona1->creaPuntos((*T).nombre, glm::vec3(tx, ty, -tz));
+	//			//puntos->MuestraPuntos();
+	//			//puntos->creaPesos();
+	//			//puntos->mostrarPesos();
+	//		}
+	//	}
 		//if ((*I).nombre == "WAYPOINTS_ZONA2") {
 		////	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 		////		IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,

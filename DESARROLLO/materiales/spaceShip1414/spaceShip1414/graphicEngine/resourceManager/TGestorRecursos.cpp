@@ -25,11 +25,18 @@ TRecurso * TGestorRecursos::getRecurso(std::string nombre, int tipo)
 	TRecurso* rec = nullptr;
 	if (recursos.size() > 0) {
 		size_t index = nombre.find_last_of("\\/");
+
+		
 		std::string comparar = index == std::string::npos ? "" : nombre.substr(index+1);
+	
 		for (std::vector<TRecurso*>::iterator it = recursos.begin(); it != recursos.end(); ++it)
 		{
-			if ((*it)->getNombre().compare(comparar) == 0)
+			size_t index2 = (*it)->getNombre().find_last_of("\\/");
+			std::string comparar2 = index == std::string::npos ? "" : (*it)->getNombre().substr(index2+1);
+			std::cout << "OSTIAS " << comparar2 << " " << comparar << std::endl;
+			if (comparar2 ==comparar)
 			{
+
 				return *it;
 			}
 		}
