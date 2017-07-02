@@ -1,6 +1,6 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
-mtllib andar.0025.mtl
+mtllib andar.0004.mtl
 g personaje:default1
 v 1.084449 -3.975204 -1.310424
 v 0.748731 -3.946230 -1.483103
