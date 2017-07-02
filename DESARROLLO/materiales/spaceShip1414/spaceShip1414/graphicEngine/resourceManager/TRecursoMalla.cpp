@@ -30,14 +30,37 @@ void TRecursoMalla::Mesh::draw()
 
 void TRecursoMalla::Mesh::draw(GLuint program)
 {
-	std::cout << "SOOOOOOOOOOOOOOORRA " << texture_diffuse <<" "<< texture_specular <<" "<< texture_ambient << std::endl;
-	if (texture_diffuse!=nullptr&&texture_specular!=nullptr&&texture_ambient!=nullptr)
+	std::cout << "---- "<< std::endl;
+	if (texture_diffuse!=nullptr)
 	{
-		activeTextureNum(1, texture_diffuse->getTexturaID(), program, "material.diffuse");
-		//activeTextureNum(1, texture_normal->getTexturaID(), program, "material.normal");
-		activeTextureNum(2, texture_specular->getTexturaID(), program, "material.specular");
-		activeTextureNum(3, texture_ambient->getTexturaID(), program, "material.ambient");
+		std::cout << "S1 " << texture_diffuse->getNombre() << std::endl;
+		activeTextureNum(0, texture_diffuse->getTexturaID(), program, "material.diffuse");
+		//activeTextureNum(1, texture_normal->getTexturaID(), program, "material.normal");	
 	}
+	else
+	{
+		activeTextureNum(0, 1, program, "material.diffuse");
+	}
+
+	if (texture_specular!=nullptr)
+	{
+		std::cout << "S2 " << texture_specular->getNombre() << std::endl;
+		activeTextureNum(1, texture_specular->getTexturaID(), program, "material.specular");
+	}
+	else
+	{
+		activeTextureNum(1, 1, program, "material.specular");
+	}
+
+	if (texture_ambient != nullptr)
+	{
+		activeTextureNum(2, texture_ambient->getTexturaID(), program, "material.ambient");
+	}
+	else
+	{
+		activeTextureNum(2, 1, program, "material.ambient");
+	}
+	std::cout << "---- "<< std::endl;
 	glUniform1f(glGetUniformLocation(program, "material.shininess"), shininess);
 	glUniform1f(glGetUniformLocation(program, "material.shininess_strength"), shininess_strength);
 
@@ -104,9 +127,9 @@ void TRecursoMalla::Mesh::load(const aiMesh * malla, TGestorRecursos* gr)
 		indices.push_back(malla->mFaces[i].mIndices[2]);
 	}
 
-	loadMaterial(malla, aiTextureType_AMBIENT, gr, texture_ambient);
-	loadMaterial(malla, aiTextureType_DIFFUSE, gr, texture_diffuse);
-	loadMaterial(malla, aiTextureType_SPECULAR, gr, texture_specular);
+	texture_ambient=loadMaterial(malla, aiTextureType_AMBIENT, gr);
+	texture_diffuse=loadMaterial(malla, aiTextureType_DIFFUSE, gr);
+	texture_specular=loadMaterial(malla, aiTextureType_SPECULAR, gr);
 	//loadMaterial(malla, aiTextureType_HEIGHT, gr, texture_normal);
 
 	if (malla->mMaterialIndex >= 0) {
@@ -133,7 +156,7 @@ inline void TRecursoMalla::Mesh::aiColorToFloat(aiColor4D & src, float dst[4])
 	dst[3] = src.a;
 }
 
-void TRecursoMalla::Mesh::loadMaterial(const aiMesh * mesh, aiTextureType ttype, TGestorRecursos * gr, TRecursoTextura * textureADSN)
+TRecursoTextura * TRecursoMalla::Mesh::loadMaterial(const aiMesh * mesh, aiTextureType ttype, TGestorRecursos * gr)
 {
 
 	if (mesh->mMaterialIndex >= 0) {
@@ -141,11 +164,12 @@ void TRecursoMalla::Mesh::loadMaterial(const aiMesh * mesh, aiTextureType ttype,
 
 		for (unsigned int i = 0; i < material->GetTextureCount(ttype); i++) {
 			
-			aiString path= aiString(gr->getRecurso("7-d.jpg",2)->getNombre().c_str());
+			aiString path;
 			
 			if (AI_SUCCESS == material->GetTexture(ttype, i, &path)) {
 				const std::string tex_path = path.C_Str();
-				textureADSN = static_cast<TRecursoTextura*>(gr->getRecurso(tex_path,2));
+				return static_cast<TRecursoTextura*>(gr->getRecurso(texture_path(path.C_Str()), 2));
+				//std::cout << "tex-mex: " << textureADSN->getTexturaID()<<" "<<textureADSN->getNombre() << std::endl;
 				
 			}
 		}

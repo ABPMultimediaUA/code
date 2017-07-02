@@ -48,7 +48,7 @@ class TRecursoMalla :
 		
 		void load(const aiMesh*, TGestorRecursos*);
 		inline void aiColorToFloat(aiColor4D&, float[4]);
-		void loadMaterial(const aiMesh*, aiTextureType, TGestorRecursos*, TRecursoTextura *);
+		TRecursoTextura * loadMaterial(const aiMesh*, aiTextureType, TGestorRecursos*);
 		GLuint TextureFromFile(const std::string&);
 		std::string texture_path(const std::string& path);
 		void create();

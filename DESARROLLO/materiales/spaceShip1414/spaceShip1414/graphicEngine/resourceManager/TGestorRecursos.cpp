@@ -33,7 +33,6 @@ TRecurso * TGestorRecursos::getRecurso(std::string nombre, int tipo)
 		{
 			size_t index2 = (*it)->getNombre().find_last_of("\\/");
 			std::string comparar2 = index == std::string::npos ? "" : (*it)->getNombre().substr(index2+1);
-			std::cout << "OSTIAS " << comparar2 << " " << comparar << std::endl;
 			if (comparar2 ==comparar)
 			{
 
