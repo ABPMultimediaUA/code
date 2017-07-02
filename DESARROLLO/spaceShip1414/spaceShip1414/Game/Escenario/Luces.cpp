@@ -5,7 +5,7 @@
 #include "..\graphicEngine\entityTree\TLuz.h"
 
 
-Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca) : velocity{ 1.0f }
+Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca, int iden) : velocity{ 1.0f }
 {
 
 	nodo = motorApp->addLuz();
@@ -13,11 +13,13 @@ Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	motorApp->rotarYPR(nodo, r.x, r.y, r.z);
 	motorApp->escalar(nodo, sca.x, sca.y, sca.z);
 	motorApp->addRegistroLuz(nodo);
+	ID = iden;
 }
 
 Luces::~Luces()
 {
 	std::cout << "Escenario::Luz delete" << std::endl;
+	//delete nodo;
 }
 
 
@@ -181,4 +183,9 @@ void Luces::translation(TGraphicEngine * motorApp, float x, float y, float z)
 	motorApp->rotarYPR(nodo, x, y, z);
 	float v[3] = { x,y,z };
 	static_cast<TLuz*>(nodo->getEntidad())->setDireccionLuz(v);
+}
+
+int Luces::getID()
+{
+	return ID;
 }

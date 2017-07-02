@@ -239,9 +239,13 @@ void Escenario::dibujarEscenario() {
 				ey = ((*T).escala.y * (*I).escala.y);
 				ez = ((*T).escala.z * (*I).escala.z);
 
+				int ID;
+				std::stringstream((*T).nombre) >> ID;
+
+
 				Luces * luz = new Luces(engine, glm::vec3(tx, ty, -tz),
 					glm::vec3(rx, ry, -rz),
-					glm::vec3(ex, ey, ez));
+					glm::vec3(ex, ey, ez), ID);
 				luz->activar();
 				luz->setLocal(true);
 				luz->setFoco(false);
@@ -1835,9 +1839,13 @@ void Escenario::dibujarEscenario() {
 
 	}
 
-	for (std::size_t i = 0; i < ListLuces.size(); i++) {
-		ListLuces[i]->activar();
-	}
+	//for (std::size_t i = 0; i < ListLuces.size(); i++) {
+	//	if (ListLuces[i]->getID() == 0) {
+	//		ListLuces[i]->activar();
+	//	}
+	//}
+
+	cambioDeLuces(0);
 
 	jugador->asignarVectorDirector(glm::vec3(-1,0,0), listaDeCamaras[0]->getAnguloInicial());
 
@@ -2151,4 +2159,19 @@ void Escenario::eleminarEnemigos()
 	}*/
 
 	
+}
+
+
+void Escenario::cambioDeLuces(int ID) {
+
+	//ListLuces
+	for (std::size_t i = 0; i < ListLuces.size(); i++) {
+		ListLuces[i]->desactivar();
+		if (ListLuces[i]->getID() == ID) {
+			ListLuces[i]->activar();
+		}
+	}
+
+
+
 }

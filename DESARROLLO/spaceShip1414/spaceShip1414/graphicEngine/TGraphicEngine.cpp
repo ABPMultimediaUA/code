@@ -208,6 +208,12 @@ void TGraphicEngine::cambiarCamaraActiva(char m, void* dirCam)
 	}
 }
 
+void TGraphicEngine::cambiarLuzActiva(int ID) {
+
+	maps->cambioDeLuces(ID);
+
+}
+
 
 void TGraphicEngine::cambiarLuzActiva(char m, void* dirLuz)
 {

@@ -755,7 +755,8 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 					ActivadorCamara *cam = static_cast<ActivadorCamara*>(entity2->getObjeto3D());
 					std::cout << "camID: " << cam->getID() << std::endl;
 					motor->cambiarCamaraActiva(cam->getID(), cam->getDirCamara());
-					motor->cambiarLuzActiva(cam->getID(), cam->getDirCamara());
+					//motor->cambiarLuzActiva(cam->getID(), cam->getDirCamara());
+					motor->cambiarLuzActiva(cam->getID());
 					asignarVecDirector(entity1, cam);
 				}
 

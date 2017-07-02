@@ -130,6 +130,7 @@ public:
 	void actualizarObjetosConsumables();
 	void inicializarWaypoints();
 	void eleminarEnemigos();
+	void cambioDeLuces(int ID);
 	player* getPersonaje();
 	void destroyPared();
 };

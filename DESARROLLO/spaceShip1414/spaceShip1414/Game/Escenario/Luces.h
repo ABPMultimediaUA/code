@@ -8,7 +8,7 @@ class Luces
 
 {
 public:
-	Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca);
+	Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca, int iden);
 	~Luces();
 	float getVelocity();
 	void setVelocity(float);
@@ -42,8 +42,11 @@ public:
 	void rotationYPR(TGraphicEngine *, float, float, float);
 	void scale(TGraphicEngine *, float, float, float);
 	void translation(TGraphicEngine *, float, float, float);
+	int getID();
+
 private:
 	float velocity;
 	TNodo* nodo;
+	int ID;
 };
 
