@@ -237,14 +237,29 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 	{
 		distancia =  p.x - posPers.x;
 		//std::cout << "se lo dijisteh a la wah se lo dijisteh a mah, ya verah   " << distancia << std::endl;
-		if (distancia <= 30.0f) {
-			motorApp->rotarYPR(this->getNodo(), posPers.x + 90, 0, 0);
+		if(anguloInicial == 90.0f) {
+			if (distancia <= 30.0f) {
+				motorApp->rotarYPR(this->getNodo(), posPers.x + 90, 0, 0);
+			}
+
+			else {
+				motorApp->rotarYPR(this->getNodo(), posPers.z + 90, 0, 0);
+
+			}
 		}
 
-		else {
-			motorApp->rotarYPR(this->getNodo(), posPers.z + 90, 0, 0);
+		else if(anguloInicial == 180.0f) {
+			
+			if (distancia <= 30.0f) {
+				motorApp->rotarYPR(this->getNodo(), posPers.x, 0, 0); //funciona con pos.x + 360
+			}
 
+			else {
+				motorApp->rotarYPR(this->getNodo(), posPers.z, 0, 0);
+
+			}
 		}
+
 	}
 	else
 	{
