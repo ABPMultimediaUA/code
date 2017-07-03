@@ -339,45 +339,91 @@ void Puerta::abrirPuerta() {
 
 	else if (t_puerta == "LATERAL") {
 
-		if (entity->getCuerpo2D()->GetPosition().x  < -limiteApX + 10)
+		if (rot.y==0)
 		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(120, 0));
+			if (entity->getCuerpo2D()->GetPosition().x < -limiteApX + 10)
+			{
+				entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(120, 0));
 
+			}
+
+			if (entityB != nullptr && entityB->getCuerpo2D()->GetPosition().x < limiteX + 10) {
+				entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(120, 0));
+
+			}
+
+			else
+			{
+				abierta = true;
+				//std::cout << detectado << std::endl;
+				entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+				if (entityB != nullptr) {
+					entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+
+				}
+
+
+				if (detectado == false)
+				{
+					ABIERTA->limpiarEstado();
+					Maquina->cambiaEstado("CERRADA");
+				}
+			}
+
+			if (motor->getPosicion(this->getNodo()).x > posIni.x - 10)
+			{
+				std::cout << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
+				motor->trasladar(this->getNodo(), -2, 0, 0);  //:*
+			}
+
+			if (nodoB != nullptr && motor->getPosicion(nodoB).x < posIniB.x + 10)
+			{
+				std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
+				motor->trasladar(nodoB, 2, 0, 0);  //:*
+			}
 		}
-
-		if (entityB != nullptr && entityB->getCuerpo2D()->GetPosition().x < limiteX + 10) {
-			entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(120, 0));
-
-		}
-
 		else
 		{
-			abierta = true;
-			//std::cout << detectado << std::endl;
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
-			if (entityB != nullptr) {
-				entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
-
-			}
-
-
-			if (detectado == false)
+			if (entity->getCuerpo2D()->GetPosition().y < limiteApZ + 20)
 			{
-				ABIERTA->limpiarEstado();
-				Maquina->cambiaEstado("CERRADA");
+				entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 120));
+
 			}
-		}
 
-		if (motor->getPosicion(this->getNodo()).x > posIni.x - 10)
-		{
-			std::cout << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
-			motor->trasladar(this->getNodo(), -2, 0, 0);  //:*
-		}
+			if (entityB != nullptr && entityB->getCuerpo2D()->GetPosition().y < limiteZ + 20) {
+				entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 120));
 
-		if (nodoB != nullptr && motor->getPosicion(nodoB).x < posIniB.x + 10)
-		{
-			std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
-			motor->trasladar(nodoB, 2, 0, 0);  //:*
+			}
+
+			else
+			{
+				abierta = true;
+				//std::cout << detectado << std::endl;
+				entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+				if (entityB != nullptr) {
+					entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+
+				}
+
+
+				if (detectado == false)
+				{
+					ABIERTA->limpiarEstado();
+					Maquina->cambiaEstado("CERRADA");
+				}
+			}
+
+			if (motor->getPosicion(this->getNodo()).z< posIni.z + 10)
+			{
+				std::cout <<"Alllla: "<< motor->getPosicion(this->getNodo()).z << " " << posIni.z-10 << std::endl;
+				motor->trasladar(this->getNodo(), 0, 0, 2);  //:*
+			}
+
+			if (nodoB != nullptr && motor->getPosicion(nodoB).z > posIniB.z - 10)
+			{
+				std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
+				motor->trasladar(nodoB, 0, 0, -2);  //:*
+			}
 		}
 	}
 
@@ -440,42 +486,80 @@ void Puerta::cerrarPuerta() {
 	//}
 
 	else if (t_puerta == "LATERAL") {
-
-		if (motor->getPosicion(this->getNodo()).x < posIni.x - 1)
+		if (rot.y == 0)
 		{
-			std::cout << "pos puerta: " << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
-			motor->trasladar(this->getNodo(), 2, 0, 0);
-		}
+			if (motor->getPosicion(this->getNodo()).x < posIni.x - 1)
+			{
+				std::cout << "pos puerta: " << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
+				motor->trasladar(this->getNodo(), 2, 0, 0);
+			}
 
-		if (nodoB != nullptr && motor->getPosicion(nodoB).x > posIniB.x + 1)
-		{
-			std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
-			motor->trasladar(nodoB, -2, 0, 0);  //:*
-		}
+			if (nodoB != nullptr && motor->getPosicion(nodoB).x > posIniB.x + 1)
+			{
+				std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
+				motor->trasladar(nodoB, -2, 0, 0);  //:*
+			}
 
-		if (entity->getCuerpo2D()->GetPosition().x >= limiteApX)
-		{
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-120, 0));
-
-		}
-
-		if (entityB != nullptr && entityB->getCuerpo2D()->GetPosition().x >= limiteX) {
-			entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(-120, 0));
-
-		}
-
-		else
-		{
-			abierta = false;
-			entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
-
-			if (entityB != nullptr) {
-				entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+			if (entity->getCuerpo2D()->GetPosition().x >= limiteApX)
+			{
+				entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-120, 0));
 
 			}
-			Maquina->cambiaEstado("BLOQUEADA");
-		}
 
+			if (entityB != nullptr && entityB->getCuerpo2D()->GetPosition().x >= limiteX) {
+				entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(-120, 0));
+
+			}
+
+			else
+			{
+				abierta = false;
+				entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+
+				if (entityB != nullptr) {
+					entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+
+				}
+				Maquina->cambiaEstado("BLOQUEADA");
+			}
+		}
+		else
+		{
+			if (motor->getPosicion(this->getNodo()).z > posIni.z - 1)
+			{
+				std::cout << "pos puerta: " << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
+				motor->trasladar(this->getNodo(), 0, 0,-2);
+			}
+
+			if (nodoB != nullptr && motor->getPosicion(nodoB).z < posIniB.z + 1)
+			{
+				std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
+				motor->trasladar(nodoB, 0, 0, 2);  //:*
+			}
+
+			if (entity->getCuerpo2D()->GetPosition().y >= limiteApZ)
+			{
+				entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, -400));
+
+			}
+
+			if (entityB != nullptr && entityB->getCuerpo2D()->GetPosition().y >= limiteZ) {
+				entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, -400));
+
+			}
+
+			else
+			{
+				abierta = false;
+				entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+
+				if (entityB != nullptr) {
+					entityB->getCuerpo2D()->SetLinearVelocity(b2Vec2(0, 0));
+
+				}
+				Maquina->cambiaEstado("BLOQUEADA");
+			}
+		}
 
 	}
 
