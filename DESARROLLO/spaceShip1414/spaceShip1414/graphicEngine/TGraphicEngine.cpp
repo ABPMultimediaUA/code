@@ -90,6 +90,9 @@ TCamara * TGraphicEngine::crearCamaraS(bool pe, float fovy, float aspect, float 
 	{
 		c->activar();
 	}
+	else
+		c->desactivar();
+
 	c->setTipo(2);
 	return c;
 }

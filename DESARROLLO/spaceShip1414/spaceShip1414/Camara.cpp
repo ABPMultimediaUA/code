@@ -68,7 +68,32 @@ Camara::Camara(TGraphicEngine * motorApp, int ident, bool activa, bool move, glm
 	rotAnterior = anguloInicial;
 	fija = move;
 	id = ident;
+	movil = false;
 }
+
+Camara::Camara(TGraphicEngine * motorApp, int ident, bool movimiento, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, player * jugador) : velocity{ 5.0f }, yaw{ 0 }, pitch{ 0 }
+{
+	nodo = motorApp->addCamaraPerspectivaSeguidora(false, motorApp->getPadreX(jugador->getNodo()));
+	motorApp->resetTransform(nodo, 'r');
+	if (rot.y == 0 || rot.y == 180) {
+		motorApp->rotarYPR(nodo, rot.y, 0.0f, 0.0f);
+		yaw = rot.y;
+
+	}
+
+	else {
+		motorApp->rotarYPR(nodo, rot.y - 180, 0.0f, 0.0f);
+		yaw = rot.y - 180;
+	}
+
+	motorApp->trasladar(nodo, pos.x, pos.y, pos.z);
+	p = pos;
+	r = rot;
+
+	anguloInicial = yaw;
+	movil = movimiento;
+}
+
 
 Camara::~Camara()
 {
@@ -122,6 +147,11 @@ TCamara * Camara::getTCamara()
 TNodo * Camara::getNodo()
 {
 	return nodo;
+}
+
+bool Camara::getMovil()
+{
+	return movil;
 }
 
 void Camara::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
@@ -237,25 +267,25 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 	{
 		distancia =  p.x - posPers.x;
 		//std::cout << "se lo dijisteh a la wah se lo dijisteh a mah, ya verah   " << distancia << std::endl;
-		if(anguloInicial == 90.0f) {
+		if(anguloInicial == 90.0f || anguloInicial == 270.0f) {
 			if (distancia <= 30.0f) {
-				motorApp->rotarYPR(this->getNodo(), posPers.x + 90, 0, 0);
+				motorApp->rotarYPR(this->getNodo(), posPers.x + anguloInicial, 0, 0);
 			}
 
 			else {
-				motorApp->rotarYPR(this->getNodo(), posPers.z + 90, 0, 0);
+				motorApp->rotarYPR(this->getNodo(), posPers.z + anguloInicial, 0, 0);
 
 			}
 		}
 
-		else if(anguloInicial == 180.0f) {
+		else if(anguloInicial == 0.0f || anguloInicial == 180.0f) {
 			
 			if (distancia <= 30.0f) {
-				motorApp->rotarYPR(this->getNodo(), posPers.x, 0, 0); //funciona con pos.x + 360
+				motorApp->rotarYPR(this->getNodo(), posPers.x + (anguloInicial - 180), 0, 0); 
 			}
 
 			else {
-				motorApp->rotarYPR(this->getNodo(), posPers.z, 0, 0);
+				motorApp->rotarYPR(this->getNodo(), posPers.z + (anguloInicial - 180), 0, 0);
 
 			}
 		}
