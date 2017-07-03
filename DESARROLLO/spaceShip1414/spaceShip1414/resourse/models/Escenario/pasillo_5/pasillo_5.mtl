@@ -19,7 +19,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 18.000000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\pasillo_5\panel.jpg
+map_Kd ./panel.jpg
 
 newmtl pasillo_comisaria:phong7SG
 Ka 0.000000 0.000000 0.000000
@@ -28,7 +28,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 18.000000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\pasillo_5\azul2.jpg
+map_Kd ./azul2.jpg
 
 newmtl pasillo_comisaria:phong8SG
 Ka 0.000000 0.000000 0.000000
@@ -37,7 +37,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 18.000000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\pasillo_5\steel_diffuse.jpg
+map_Kd ./steel_diffuse.jpg
 
 newmtl pasillo_comisaria:phong9SG
 Ka 0.000000 0.000000 0.000000
@@ -46,7 +46,7 @@ Ks 0.000000 0.000000 0.000000
 Tr 1.000000
 d 1.000000
 Ns 18.000000
-map_Kd G:\REPOSITORIO\code\DESARROLLO\spaceShip1414\spaceShip1414\resourse\models\Escenario\pasillo_5\suelo2.jpg
+map_Kd ./suelo2.jpg
 
 newmtl pasillo_comisaria:initialShading
 Ka 0.000000 0.000000 0.000000
