@@ -372,13 +372,13 @@ void Puerta::abrirPuerta() {
 
 			if (motor->getPosicion(this->getNodo()).x > posIni.x - 10)
 			{
-				std::cout << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
+				//std::cout << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
 				motor->trasladar(this->getNodo(), -2, 0, 0);  //:*
 			}
 
 			if (nodoB != nullptr && motor->getPosicion(nodoB).x < posIniB.x + 10)
 			{
-				std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
+				//std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
 				motor->trasladar(nodoB, 2, 0, 0);  //:*
 			}
 		}
@@ -413,15 +413,15 @@ void Puerta::abrirPuerta() {
 				}
 			}
 
-			if (motor->getPosicion(this->getNodo()).z< posIni.z + 10)
+			if (motor->getPosicion(this->getNodo()).z < posIni.z + 10)
 			{
-				std::cout <<"Alllla: "<< motor->getPosicion(this->getNodo()).z << " " << posIni.z-10 << std::endl;
+			//	std::cout <<"Alllla: "<< motor->getPosicion(this->getNodo()).z << " " << posIni.z-10 << std::endl;
 				motor->trasladar(this->getNodo(), 0, 0, 2);  //:*
 			}
 
 			if (nodoB != nullptr && motor->getPosicion(nodoB).z > posIniB.z - 10)
 			{
-				std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
+				//std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
 				motor->trasladar(nodoB, 0, 0, -2);  //:*
 			}
 		}
@@ -525,13 +525,13 @@ void Puerta::cerrarPuerta() {
 		}
 		else
 		{
-			if (motor->getPosicion(this->getNodo()).z > posIni.z - 1)
+			if (motor->getPosicion(this->getNodo()).z > posIni.z + 1)
 			{
 				std::cout << "pos puerta: " << motor->getPosicion(this->getNodo()).y << " " << limiteApX << std::endl;
 				motor->trasladar(this->getNodo(), 0, 0,-2);
 			}
 
-			if (nodoB != nullptr && motor->getPosicion(nodoB).z < posIniB.z + 1)
+			if (nodoB != nullptr && motor->getPosicion(nodoB).z < posIniB.z - 1)
 			{
 				std::cout << motor->getPosicion(nodoB).y << " " << limiteX << std::endl;
 				motor->trasladar(nodoB, 0, 0, 2);  //:*
