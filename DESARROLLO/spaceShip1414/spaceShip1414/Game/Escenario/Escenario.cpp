@@ -2438,6 +2438,7 @@ void Escenario::eleminarEnemigos()
 void Escenario::cambioDeLuces(int ID) {
 
 	//ListLuces
+	//luces del ID que no se tienen que activar 
 	for (std::size_t i = 0; i < ListLuces.size(); i++) {
 		ListLuces[i]->desactivar();
 		if (ListLuces[i]->getID() == ID) {

@@ -267,9 +267,9 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 	{
 		distancia =  p.x - posPers.x;
 		//std::cout << "se lo dijisteh a la wah se lo dijisteh a mah, ya verah   " << distancia << std::endl;
-		if(anguloInicial == 90.0f || anguloInicial == 270.0f) {
-			if (distancia <= 30.0f) {
-				motorApp->rotarYPR(this->getNodo(), posPers.x + anguloInicial, 0, 0);
+		if(anguloInicial == 90.0f && id != 5) {
+			if (distancia <= 150.0f) {
+				motorApp->rotarYPR(this->getNodo(), posPers.z + anguloInicial, 0, 0);
 			}
 
 			else {
@@ -278,14 +278,37 @@ void Camara::updateCam(TGraphicEngine *motorApp, glm::vec3 posPers, int tecla) {
 			}
 		}
 
-		else if(anguloInicial == 0.0f || anguloInicial == 180.0f) {
+		else if(anguloInicial == 180.0f) {
 			
-			if (distancia <= 30.0f) {
+			if (distancia <= 150.0f) {
 				motorApp->rotarYPR(this->getNodo(), posPers.x + (anguloInicial - 180), 0, 0); 
 			}
 
 			else {
-				motorApp->rotarYPR(this->getNodo(), posPers.z + (anguloInicial - 180), 0, 0);
+				motorApp->rotarYPR(this->getNodo(), posPers.x + (anguloInicial - 180), 0, 0);
+
+			}
+		}
+
+		else if (anguloInicial == 0.0f) {
+
+			if (distancia <= 70.0f) {
+				motorApp->rotarYPR(this->getNodo(), -posPers.x + (anguloInicial - 90), 0, 0);
+			}
+
+			else {
+				motorApp->rotarYPR(this->getNodo(), posPers.z + (anguloInicial + 90), 0, 0);
+
+			}
+		}
+
+		else if (r.y == 270.0f) {
+			if (distancia <= 150.0f) {
+				motorApp->rotarYPR(this->getNodo(), posPers.z + (anguloInicial + 180) , 0, 0);
+			}
+
+			else {
+				motorApp->rotarYPR(this->getNodo(), posPers.z + (anguloInicial + 180), 0, 0);
 
 			}
 		}

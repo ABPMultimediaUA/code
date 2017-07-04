@@ -663,32 +663,6 @@
           ]
         },
         {
-          "name": "Modelo-Puerta-ABIERTA-ARRIBA-V",
-          "components": [
-            {
-              "localPosition": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": []
-        },
-        {
           "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
           "components": [
             {
@@ -856,32 +830,6 @@
               ]
             }
           ]
-        },
-        {
-          "name": "Modelo-Puerta-ABIERTA-LATERAL-V",
-          "components": [
-            {
-              "localPosition": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": []
         },
         {
           "name": "Modelo-Puerta-ABIERTA-LATERAL-H",
@@ -7104,7 +7052,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -125.64,
+                    -125.98,
                     0.66,
                     -3.98
                   ],
@@ -7175,7 +7123,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -125.64,
+                    -125.98,
                     0.66,
                     3.6
                   ],
@@ -8447,13 +8395,13 @@
           "components": [
             {
               "localPosition": [
-                -41.9,
-                12.0,
-                126.2
+                -42.4,
+                4.84,
+                159.1
               ],
               "localRotation": [
                 0.0,
-                270.243347,
+                270.0,
                 0.0
               ],
               "localScale": [
@@ -8506,59 +8454,6 @@
               ],
               "localRotation": [
                 0.0,
-                270.243347,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": [
-            {
-              "name": "7",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                }
-              ],
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "PosCam",
-          "components": [
-            {
-              "localPosition": [
-                -57.73,
-                11.38,
-                -95.13
-              ],
-              "localRotation": [
-                0.0,
                 270.0,
                 0.0
               ],
@@ -8574,7 +8469,7 @@
           ],
           "children": [
             {
-              "name": "8",
+              "name": "7",
               "components": [
                 {
                   "localPosition": [
@@ -21824,9 +21719,9 @@
           "components": [
             {
               "localPosition": [
-                63.48,
-                10.05,
-                65.18
+                64.546,
+                9.811,
+                65.205
               ],
               "localRotation": [
                 0.0,
@@ -22566,13 +22461,13 @@
           "components": [
             {
               "localPosition": [
-                12.72,
-                4.89,
-                -122.59
+                3.35,
+                4.93,
+                -106.38
               ],
               "localRotation": [
                 0.0,
-                222.623718,
+                180.0,
                 0.0
               ],
               "localScale": [
@@ -22619,9 +22514,9 @@
           "components": [
             {
               "localPosition": [
-                3.21,
-                1.14,
-                -40.84
+                -170.3,
+                -0.23,
+                -70.5
               ],
               "localRotation": [
                 0.0,
@@ -22859,6 +22754,59 @@
                     2.5,
                     0.0,
                     -5.8
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "PosCam",
+          "components": [
+            {
+              "localPosition": [
+                -34.2600021,
+                11.38,
+                -88.82
+              ],
+              "localRotation": [
+                0.0,
+                270.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "8",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
                   ],
                   "localRotation": [
                     0.0,
@@ -24580,9 +24528,9 @@
               "components": [
                 {
                   "localPosition": [
-                    14.46,
+                    15.0,
                     -6.0,
-                    41.97
+                    40.65
                   ],
                   "localRotation": [
                     0.0,
@@ -24672,7 +24620,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -47.63,
+                    -49.46,
                     -6.0,
                     -0.9
                   ],
@@ -24902,7 +24850,7 @@
               "components": [
                 {
                   "localPosition": [
-                    -192.5,
+                    -187.5,
                     -6.0,
                     -74.13
                   ],
@@ -25686,7 +25634,7 @@
                   "localPosition": [
                     14.46,
                     -6.0,
-                    43.31
+                    45.16
                   ],
                   "localRotation": [
                     0.0,
@@ -25822,9 +25770,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -55.64,
+                    -62.67,
                     -6.0,
-                    -0.9
+                    1.77
                   ],
                   "localRotation": [
                     0.0,
@@ -26282,7 +26230,7 @@
               "components": [
                 {
                   "localPosition": [
-                    12.98,
+                    9.38,
                     -6.0,
                     0.0
                   ],
@@ -26292,7 +26240,7 @@
                     0.0
                   ],
                   "localScale": [
-                    1.0,
+                    0.6,
                     1.0,
                     11.0
                   ],
@@ -26328,7 +26276,7 @@
               "components": [
                 {
                   "localPosition": [
-                    16.58,
+                    18.56,
                     -6.0,
                     0.0
                   ],
@@ -26374,9 +26322,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -9.62,
+                    -11.64,
                     -6.0,
-                    -125.67
+                    -129.21
                   ],
                   "localRotation": [
                     0.0,
@@ -26384,7 +26332,7 @@
                     0.0
                   ],
                   "localScale": [
-                    3.0,
+                    3.97,
                     1.0,
                     0.71
                   ],
@@ -26420,9 +26368,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -12.68,
+                    -14.7,
                     -6.0,
-                    -131.73
+                    -135.27
                   ],
                   "localRotation": [
                     0.0,
@@ -26430,7 +26378,7 @@
                     0.0
                   ],
                   "localScale": [
-                    3.0,
+                    3.97,
                     1.0,
                     0.83
                   ],
@@ -26466,19 +26414,19 @@
               "components": [
                 {
                   "localPosition": [
-                    -62.32,
+                    -51.5,
                     -6.0,
-                    -178.22
+                    -178.1
                   ],
                   "localRotation": [
                     0.0,
-                    0.0,
+                    325.917633,
                     0.0
                   ],
                   "localScale": [
                     1.0,
                     1.0,
-                    2.0
+                    4.06
                   ],
                   "name": null,
                   "parentName": null,
@@ -26512,19 +26460,19 @@
               "components": [
                 {
                   "localPosition": [
-                    -65.39,
+                    -54.6,
                     -6.0,
-                    -178.22
+                    -178.1
                   ],
                   "localRotation": [
                     0.0,
-                    0.0,
+                    325.917633,
                     0.0
                   ],
                   "localScale": [
                     1.0,
                     1.0,
-                    2.0
+                    4.06
                   ],
                   "name": null,
                   "parentName": null,
@@ -26558,9 +26506,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -164.05,
+                    -162.9,
                     -6.0,
-                    -166.98
+                    -163.9
                   ],
                   "localRotation": [
                     0.0,
@@ -26570,7 +26518,7 @@
                   "localScale": [
                     1.0,
                     1.0,
-                    2.0
+                    3.5
                   ],
                   "name": null,
                   "parentName": null,
@@ -26604,9 +26552,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -169.66,
+                    -170.5,
                     -6.0,
-                    -160.97
+                    -160.0
                   ],
                   "localRotation": [
                     0.0,
@@ -26616,7 +26564,7 @@
                   "localScale": [
                     0.9999999,
                     1.0,
-                    1.99999976
+                    3.51
                   ],
                   "name": null,
                   "parentName": null,
@@ -26650,19 +26598,19 @@
               "components": [
                 {
                   "localPosition": [
-                    -153.69,
+                    -157.9,
                     -6.0,
                     215.9
                   ],
                   "localRotation": [
                     0.0,
-                    90.0,
+                    0.0,
                     0.0
                   ],
                   "localScale": [
+                    4.43,
                     1.0,
-                    1.0,
-                    3.0
+                    1.0
                   ],
                   "name": null,
                   "parentName": null,
@@ -26696,19 +26644,19 @@
               "components": [
                 {
                   "localPosition": [
-                    -147.74,
+                    -152.0,
                     -6.0,
                     227.7
                   ],
                   "localRotation": [
                     0.0,
-                    90.0,
+                    0.0,
                     0.0
                   ],
                   "localScale": [
-                    1.00000048,
+                    4.43,
                     1.0,
-                    3.000002
+                    1.0
                   ],
                   "name": null,
                   "parentName": null,
@@ -26744,7 +26692,7 @@
                   "localPosition": [
                     -48.0,
                     -6.0,
-                    248.3
+                    252.1
                   ],
                   "localRotation": [
                     0.0,
@@ -26754,7 +26702,7 @@
                   "localScale": [
                     1.0,
                     1.0,
-                    3.0
+                    4.34
                   ],
                   "name": null,
                   "parentName": null,
@@ -26790,7 +26738,7 @@
                   "localPosition": [
                     -35.7,
                     -6.0,
-                    242.6
+                    246.4
                   ],
                   "localRotation": [
                     0.0,
@@ -26800,7 +26748,7 @@
                   "localScale": [
                     1.0,
                     1.0,
-                    3.0
+                    4.34
                   ],
                   "name": null,
                   "parentName": null,

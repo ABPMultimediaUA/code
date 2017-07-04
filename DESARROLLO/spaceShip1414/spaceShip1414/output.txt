@@ -211,7 +211,7 @@ ID: 5
 //////////////////////////////////////////
 
 POS 2D
-X: -124.64 Y: -3.98
+X: -124.98 Y: -3.98
 
 //////////////////////////////////////////
 
@@ -220,7 +220,7 @@ ID: 5
 //////////////////////////////////////////
 
 POS 2D
-X: -126.64 Y: 3.6
+X: -126.98 Y: 3.6
 
 //////////////////////////////////////////
 salida: COMISARIA
@@ -329,10 +329,8 @@ salida: CamarasSeguimiento
 CAMARASEGUIMIENTO ID: 0
 *******************ry:  270
 CAMARASEGUIMIENTO ID: 5
-*******************ry:  270.243
+*******************ry:  270
 CAMARASEGUIMIENTO ID: 7
-*******************ry:  270.243
-CAMARASEGUIMIENTO ID: 8
 *******************ry:  270
 CAMARASEGUIMIENTO ID: 6
 *******************ry:  180
@@ -651,7 +649,7 @@ CAMARAFIJA ID: 4
 CAMARAFIJA ID: 1
 *******************ry:  0
 CAMARAFIJA ID: 19
-*******************ry:  222.624
+*******************ry:  180
 CAMARAFIJA ID: 21
 *******************ry:  180
 CAMARAFIJA ID: 22
@@ -662,6 +660,8 @@ CAMARAFIJA ID: 24
 *******************ry:  0
 CAMARAFIJA ID: 25
 *******************ry:  180
+CAMARAFIJA ID: 8
+*******************ry:  270
 salida: CRIAS_ALIENS
 salida: ARSENAL
 
@@ -934,6 +934,18 @@ D:vec3(0.000000, 0.000000, 1.000000)
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: 17.03 Y: -41.77
@@ -945,39 +957,9 @@ Y: -41.02
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 17.03 Y: -41.77
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 29.5563
-Y: -41.02
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 23.85 Y: 78.53
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 22.8111
-Y: 78.03
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 28.41 Y: 41.81
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 19.19
-Y: 41.06
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1041,6 +1023,36 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -33.66 Y: -13.2
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: -31.7823
+Y: -13.95
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -28.06 Y: -15.95
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: -29.1044
+Y: -16.7
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -27.07 Y: -28.54
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: -26.57
+Y: -19.3027
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1144,9 +1156,6 @@ Posicion de la Entity X: -33.66 Y: 12.49
 RAY DE CHOQUE
 X: -33.7676
 Y: 11.74
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1304,6 +1313,25 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -27.82 Y: 15.26
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: -27.5328
+Y: 16.01
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: -27.07 Y: 27.9
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: -26.57
+Y: 16.8136
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1353,25 +1381,6 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 23.85 Y: 78.53
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 16.542
-Y: 78.03
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 28.41 Y: 41.81
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 20.6521
-Y: 41.06
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1403,6 +1412,12 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 ID ENTITY 0
 Posicion de la Entity X: 0 Y: 0
@@ -1411,6 +1426,12 @@ Posicion de la Entity X: 0 Y: 0
 RAY DE CHOQUE
 X: 0.291677
 Y: -0.999999
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1425,26 +1446,26 @@ Y: -41.02
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
+ENTRO AL CALLBACK 
+//////////////////////////////////////////
+
 //////////////////////////////////////////
 ID ENTITY 1
 Posicion de la Entity X: 17.03 Y: -41.77
 //////////////////////////////////////////
 
 RAY DE CHOQUE
-X: 23.0902
-Y: -41.02
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
+X: 14.3672
+Y: -42.52
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1476,6 +1497,14 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: 17.03 Y: -41.77
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: 14.1789
+Y: -42.52
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1538,6 +1567,14 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
+//////////////////////////////////////////
+ID ENTITY 1
+Posicion de la Entity X: 17.03 Y: -41.77
+//////////////////////////////////////////
+
+RAY DE CHOQUE
+X: 14.2444
+Y: -42.52
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -1986,14 +2023,6 @@ Y: 79.03
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: 23.85 Y: 78.53
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: 16.4308
-Y: 79.03
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -6217,14 +6246,6 @@ Y: 56.6
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -48.87 Y: 11.43
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -49.3852
-Y: 10.93
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -6239,25 +6260,6 @@ Y: 56.6
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -55.6 Y: 17.39
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -54.85
-Y: 11.5138
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -48.87 Y: 11.43
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -54.3741
-Y: 10.93
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -6303,66 +6305,206 @@ ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0500046
+TIME: 0.0496122
 W
 W
 W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0499606
+W
+TIME: 0.0500197
 REPOSO
 Recurso nombre: personaje.obj
-TIME: 0.050011
-TIME: 0.050011
+TIME: 0.04953
+TIME: 0.04953
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0498644
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+TIME: 0.0503942
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -14 POS Y: -11.6667
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -17.15 POS Y: -31.62
+///////////////////////////////////
+A DISPARAR!
+A
+TIME: 0.050025
+A
+TIME: 0.0500677
+A
+TIME: 0.0494495
+A
+TIME: 0.0504598
+A
+TIME: 0.0501812
+A
+TIME: 0.050056
+REPOSO
+TIME: 0.0493541
+TIME: 0.0493541
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0501444
+S
+S
+S
+S
+S
+S
+S
+S
+REPOSO
+TIME: 0.0496891
 D
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.049743
 D
 D
 D
 D
+ADIOS 1
 D
 D
-TIME: 0.0497729
 REPOSO
-TIME: 0.0499253
-TIME: 0.0499253
+TIME: 0.050367
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.049508
+A
+A
+A
+A
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 4
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -3.5 POS Y: -16.3333
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -17.15 POS Y: -31.62
+///////////////////////////////////
+A DISPARAR!
+A
+A
+A
+A
+A
+A
+TIME: 0.0495376
+A
+TIME: 0.0505095
+A
+TIME: 0.0495083
+A
+TIME: 0.0504138
+A
+TIME: 0.049573
+A
+TIME: 0.0505311
+A
+TIME: 0.049508
+A
+TIME: 0.0503585
+A
+TIME: 0.049604
+ADIOS 1
+A
+TIME: 0.0505926
+A
+TIME: 0.0494232
+A
+TIME: 0.0504226
+A
+TIME: 0.0495382
+A
+TIME: 0.0505241
+A
+TIME: 0.0497105
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -3.5 POS Y: -40.015
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.03 POS Y: -41.77
+///////////////////////////////////
+A
+TIME: 0.0502005
+A
+TIME: 0.0496139
+A
+TIME: 0.050499
+REPOSO
+TIME: 0.049642
 W
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0498984
-REPOSO
-TIME: 0.0500552
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0499704
-D
-D
-D
-D
-D
-D
-REPOSO
-TIME: 0.050184
+TIME: 0.0502093
 W
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0502387
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -4.66667 POS Y: -40.005
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -10.77 POS Y: -42.39
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 2
 W
-D
-TIME: 0.0499853
-TIME: 0.0499853
-D
-D
-D
-D
-D
+W
 
 ////////////////////////
 COLISION
@@ -6370,14 +6512,17 @@ ENTIDAD 1: 0
 ENTIDAD 2: 7
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 38
+POS X: -7 POS Y: -40.005
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -16 POS Y: 43.92
+POS X: -16 POS Y: -39.53
 ///////////////////////////////////
 camID: 0
 ID CAMARA: 0
+W
+W
+W
 
 ////////////////////////
 COLISION
@@ -6385,14 +6530,364 @@ ENTIDAD 1: 0
 ENTIDAD 2: 2
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 39.995
+POS X: -10.5 POS Y: -40.005
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -13.46 POS Y: 42
+POS X: -7.87 POS Y: -42.39
 ///////////////////////////////////
 ACTUALIZO 0
-ID PUERTA: 1
+ID PUERTA: 2
+W
+A
+TIME: 0.0504135
+TIME: 0.0504135
+A
+A
+A
+A
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -12.8333 POS Y: -44.6717
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -16 POS Y: -51.5
+///////////////////////////////////
+camID: 2
+ID CAMARA: 2
+A
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 2
+cerrar123
+entra
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 2
+cerrar123
+entra
+A
+pos puerta: 0.2 -15.62
+0.2 -8.52
+A
+pos puerta: 0.2 -15.62
+0.2 -8.52
+A
+pos puerta: 0.2 -15.62
+0.2 -8.52
+A
+pos puerta: 0.2 -15.62
+0.2 -8.52
+A
+pos puerta: 0.2 -15.62
+0.2 -8.52
+TIME: 0.0505183
+A
+TIME: 0.0494855
+A
+TIME: 0.0506099
+A
+TIME: 0.0493884
+A
+TIME: 0.0504975
+REPOSO
+HORA DEL RECALCULO
+ANGLEEEEE: 360
+450
+540
+270
+VECTORES
+DIR: vec3(0.000000, 0.000000, -1.000000)
+A: vec3(1.000000, 0.000000, 0.000000)
+S: vec3(-0.000000, 0.000000, 1.000000)
+D:vec3(-1.000000, 0.000000, -0.000000)
+TIME: 0.0495191
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0494952
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0496482
+W
+TIME: 0.0503076
+W
+TIME: 0.0495531
+W
+TIME: 0.0503916
+W
+TIME: 0.0502336
+W
+TIME: 0.0498544
+W
+TIME: 0.0495332
+W
+TIME: 0.0503884
+W
+TIME: 0.0497099
+W
+TIME: 0.0503632
+D
+TIME: 0.0495209
+TIME: 0.0495209
+TIME: 0.0495209
+D
+D
+D
+W
+TIME: 0.0493811
+TIME: 0.0493811
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0505572
+W
+TIME: 0.0494352
+W
+TIME: 0.0503623
+W
+TIME: 0.0495949
+W
+TIME: 0.0505923
+W
+TIME: 0.0494349
+W
+TIME: 0.0504247
+W
+TIME: 0.0495496
+W
+TIME: 0.0507067
+W
+TIME: 0.0493015
+W
+TIME: 0.0504238
+W
+TIME: 0.0495642
+W
+TIME: 0.050597
+W
+TIME: 0.0494492
+W
+TIME: 0.0503822
+W
+TIME: 0.0495683
+W
+TIME: 0.0504802
+W
+TIME: 0.0497833
+W
+TIME: 0.0501654
+W
+TIME: 0.0495665
+W
+TIME: 0.050427
+W
+TIME: 0.0498737
+W
+TIME: 0.0501125
+W
+TIME: 0.049621
+W
+TIME: 0.0504355
+W
+TIME: 0.0496812
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -17.5 POS Y: -122.838
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -11.64 POS Y: -129.21
+///////////////////////////////////
+camID: 2
+ID CAMARA: 2
+W
+TIME: 0.0502986
+W
+TIME: 0.0495624
+W
+TIME: 0.0504001
+W
+TIME: 0.0497503
+W
+TIME: 0.0502798
+W
+TIME: 0.049556
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -17.5 POS Y: -129.838
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -14.7 POS Y: -135.27
+///////////////////////////////////
+camID: 19
+ID CAMARA: 19
+W
+TIME: 0.0504987
+W
+TIME: 0.0496432
+W
+TIME: 0.0504565
+W
+TIME: 0.0494147
+W
+TIME: 0.050472
+W
+TIME: 0.0496894
+W
+TIME: 0.050283
+W
+TIME: 0.049561
+W
+TIME: 0.0504805
+W
+TIME: 0.0496546
+W
+TIME: 0.0503737
+W
+TIME: 0.0494873
+D
+TIME: 0.0504694
+TIME: 0.0504694
+TIME: 0.0504694
+D
+D
+D
+D
+D
+D
+W
+TIME: 0.0495513
+TIME: 0.0495513
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0496517
+W
+TIME: 0.0505107
+W
+TIME: 0.0494592
+W
+TIME: 0.0503904
+W
+TIME: 0.0496294
+D
+TIME: 0.0506289
+TIME: 0.0506289
+D
+D
+D
+D
+D
+D
+D
+REPOSO
+HORA DEL RECALCULO
+ANGLEEEEE: 360
+450
+540
+270
+VECTORES
+DIR: vec3(0.000000, 0.000000, -1.000000)
+A: vec3(1.000000, 0.000000, 0.000000)
+S: vec3(-0.000000, 0.000000, 1.000000)
+D:vec3(-1.000000, 0.000000, -0.000000)
+TIME: 0.0504191
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0497011
+S
+S
+S
+S
+S
+S
+S
+S
+S
+S
+TIME: 0.049628
+S
+TIME: 0.050365
+S
+TIME: 0.0497848
+S
+TIME: 0.0502541
+S
+TIME: 0.0495832
+S
+TIME: 0.0503781
+REPOSO
+TIME: 0.0498003
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0497219
+D
+D
+D
+D
+D
+D
+REPOSO
+TIME: 0.0504249
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0505379
+D
+D
+D
+D
 D
 
 ////////////////////////
@@ -6401,14 +6896,14 @@ ENTIDAD 1: 0
 ENTIDAD 2: 2
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 39.985
+POS X: -49 POS Y: -143.838
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -13.46 POS Y: 42
+POS X: -52.28 POS Y: -143.4
 ///////////////////////////////////
 ACTUALIZO 0
-ID PUERTA: 1
+ID PUERTA: 13
 
 ////////////////////////
 COLISION
@@ -6416,16 +6911,17 @@ ENTIDAD 1: 0
 ENTIDAD 2: 2
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 39.985
+POS X: -49.2364 POS Y: -143.838
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -18.56 POS Y: 42
+POS X: -52.28 POS Y: -143.4
 ///////////////////////////////////
 ACTUALIZO 0
-ID PUERTA: 1
+ID PUERTA: 13
+D
 ACTUALIZO 0
-ID PUERTA: 1
+ID PUERTA: 13
 D
 
 ////////////////////////
@@ -6434,26 +6930,165 @@ ENTIDAD 1: 0
 ENTIDAD 2: 2
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 39.985
+POS X: -50.8832 POS Y: -144.31
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -16.56 POS Y: 42
+POS X: -48.55 POS Y: -135.89
 ///////////////////////////////////
 ACTUALIZO 0
-ID PUERTA: 1
+ID PUERTA: 13
+S
+TIME: 0.0504431
+TIME: 0.0504431
+S
+S
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -52.0499 POS Y: -141.976
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -52.86 POS Y: -139.66
+///////////////////////////////////
+camID: 19
+ID CAMARA: 19
+S
+S
+S
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 13
+cerrar123
+S
+pos puerta: 0.79 -51.97
+0.7 -46.27
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -52.0499 POS Y: -137.31
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -55.31 POS Y: -137.2
+///////////////////////////////////
+camID: 8
+ID CAMARA: 8
+S
+pos puerta: 0.79 -51.97
+0.7 -46.27
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 13
+cerrar123
+S
+pos puerta: 0.79 -51.97
+0.7 -46.27
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -52.0499 POS Y: -134.81
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -52.28 POS Y: -131.685
+///////////////////////////////////
 ACTUALIZO 0
-ID PUERTA: 1
-D
+ID PUERTA: 13
+S
 ACTUALIZO 0
-ID PUERTA: 1
-D
+ID PUERTA: 13
+S
+TIME: 0.0504756
+S
+TIME: 0.0497494
+S
+TIME: 0.0502046
+S
+TIME: 0.0495888
+S
+S
+S
+S
+TIME: 0.0495393
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -50.6874 POS Y: -125.224
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -52.28 POS Y: -123.4
+///////////////////////////////////
 ACTUALIZO 0
-ID PUERTA: 1
-D
-TIME: 0.0500546
+ID PUERTA: 13
+S
 ACTUALIZO 0
-ID PUERTA: 1
+ID PUERTA: 13
+S
+ACTUALIZO 0
+ID PUERTA: 13
+S
+ACTUALIZO 0
+ID PUERTA: 13
+S
+ACTUALIZO 0
+ID PUERTA: 13
+S
+ACTUALIZO 0
+ID PUERTA: 13
+S
+S
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -47.5237 POS Y: -120.295
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -48.55 POS Y: -117.89
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 13
+S
+ACTUALIZO 0
+ID PUERTA: 13
+S
+ACTUALIZO 0
+ID PUERTA: 13
+S
+ACTUALIZO 0
+ID PUERTA: 13
+S
+ACTUALIZO 0
+ID PUERTA: 13
+S
+ACTUALIZO 0
+ID PUERTA: 13
+S
+S
+S
 REPOSO
 HORA DEL RECALCULO
 ANGLEEEEE: 270
@@ -6465,340 +7100,13 @@ DIR: vec3(-1.000000, 0.000000, -0.000000)
 A: vec3(0.000000, 0.000000, -1.000000)
 S: vec3(1.000000, 0.000000, 0.000000)
 D:vec3(0.000000, 0.000000, 1.000000)
-TIME: 0.0500655
-A
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0500974
-A
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 1
-cerrar123
-entra
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 1
-cerrar123
-entra
-A
-pos puerta: 0.2 -18.31
-0.2 -11.21
-A
-pos puerta: 0.2 -18.31
-0.2 -11.21
-A
-pos puerta: 0.2 -18.31
-0.2 -11.21
-A
-pos puerta: 0.2 -18.31
-0.2 -11.21
-A
-pos puerta: 0.2 -18.31
-0.2 -11.21
-A
-REPOSO
-TIME: 0.0500991
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0500643
-D
-D
-D
-D
-D
-D
-D
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 7
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 37.985
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -16 POS Y: 43.92
-///////////////////////////////////
-camID: 0
-ID CAMARA: 0
-D
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 39.985
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -11.46 POS Y: 42
-///////////////////////////////////
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 39.985
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -11.46 POS Y: 42
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 1
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 39.985
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -16.56 POS Y: 42
-///////////////////////////////////
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 39.985
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -16.56 POS Y: 42
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 1
-ACTUALIZO 0
-ID PUERTA: 1
-ACTUALIZO 0
-ID PUERTA: 1
-D
-ACTUALIZO 0
-ID PUERTA: 1
-ACTUALIZO 0
-ID PUERTA: 1
-D
-TIME: 0.0501445
-ACTUALIZO 0
-ID PUERTA: 1
-D
-TIME: 0.0497922
-ACTUALIZO 0
-ID PUERTA: 1
-D
-TIME: 0.0500102
-ACTUALIZO 0
-ID PUERTA: 1
-D
-TIME: 0.0500084
-D
-TIME: 0.0500017
-D
-TIME: 0.049904
-D
-TIME: 0.0500479
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 7
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 45.985
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -18.12 POS Y: 51.57
-///////////////////////////////////
-camID: 1
-ID CAMARA: 1
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 1
-cerrar123
-entra
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 1
-cerrar123
-entra
-D
-pos puerta: 0.2 -18.31
-0.2 -11.21
-TIME: 0.049978
-D
-pos puerta: 0.2 -18.31
-0.2 -11.21
-TIME: 0.0503004
-D
-pos puerta: 0.2 -18.31
-0.2 -11.21
-TIME: 0.049681
-D
-pos puerta: 0.2 -18.31
-0.2 -11.21
-TIME: 0.0500637
-D
-pos puerta: 0.2 -18.31
-0.2 -11.21
-TIME: 0.0499242
-D
-TIME: 0.0503314
-D
-TIME: 0.0496901
-D
-TIME: 0.0500268
-D
-TIME: 0.0499868
-REPOSO
-HORA DEL RECALCULO
-ANGLEEEEE: 180
-270
-360
-90
-VECTORES
-DIR: vec3(-0.000000, 0.000000, 1.000000)
-A: vec3(-1.000000, 0.000000, -0.000000)
-S: vec3(0.000000, 0.000000, -1.000000)
-D:vec3(1.000000, 0.000000, 0.000000)
-TIME: 0.0500959
-TIME: 0.0500959
-A
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0500494
-A
-REPOSO
-TIME: 0.0501225
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0499771
-D
-REPOSO
-TIME: 0.0502164
+TIME: 0.0495071
 S
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0500456
-S
-S
-S
-S
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 7
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14 POS Y: 57.985
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -18.12 POS Y: 51.57
-///////////////////////////////////
-camID: 1
-ID CAMARA: 1
-S
-REPOSO
-HORA DEL RECALCULO
-ANGLEEEEE: 180
-270
-360
-90
-VECTORES
-DIR: vec3(-0.000000, 0.000000, 1.000000)
-A: vec3(-1.000000, 0.000000, -0.000000)
-S: vec3(0.000000, 0.000000, -1.000000)
-D:vec3(1.000000, 0.000000, 0.000000)
-TIME: 0.0498598
-A
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0497147
-A
-REPOSO
-TIME: 0.0499318
-S
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0503841
-S
-S
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 7
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -18 POS Y: 49.985
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -16 POS Y: 43.92
-///////////////////////////////////
-camID: 0
-ID CAMARA: 0
-REPOSO
-HORA DEL RECALCULO
-ANGLEEEEE: 270
-360
-450
-180
-VECTORES
-DIR: vec3(-1.000000, 0.000000, -0.000000)
-A: vec3(0.000000, 0.000000, -1.000000)
-S: vec3(1.000000, 0.000000, 0.000000)
-D:vec3(0.000000, 0.000000, 1.000000)
-TIME: 0.0499751
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0500842
-D
-REPOSO
-TIME: 0.0501325
-S
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0497398
-S
-S
-S
+TIME: 0.0504902
 S
 S
 S
@@ -6809,41 +7117,27 @@ ENTIDAD 1: 0
 ENTIDAD 2: 1
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -4.005 POS Y: 51.985
+POS X: -40.295 POS Y: -113.634
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -2.5 POS Y: 130.7
+POS X: -39.04 POS Y: -93.6
 ///////////////////////////////////
+S
+S
+S
 S
 S
 S
 REPOSO
-TIME: 0.0496977
+TIME: 0.0505513
+TIME: 0.0505513
 W
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0496187
-W
-W
-W
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 7
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -10.015 POS Y: 51.985
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -18.12 POS Y: 51.57
-///////////////////////////////////
-camID: 1
-ID CAMARA: 1
+TIME: 0.0505092
 W
 W
 W
@@ -6851,38 +7145,356 @@ W
 W
 W
 W
-TIME: 0.0501099
+W
+W
+W
+TIME: 0.0504797
+W
+TIME: 0.0494916
+W
+TIME: 0.0505399
+W
+TIME: 0.0497547
+W
+TIME: 0.0501561
+W
+TIME: 0.049539
+W
+TIME: 0.0505756
+W
+TIME: 0.0497857
+W
+TIME: 0.0501379
+W
+TIME: 0.049532
+W
+TIME: 0.0505841
+W
+TIME: 0.0495741
+W
+TIME: 0.0503024
+W
+TIME: 0.0495241
+W
+TIME: 0.0505844
+W
+TIME: 0.0495639
+A
+TIME: 0.0503357
+TIME: 0.0503357
+TIME: 0.0503357
+A
+A
+A
+A
+A
 REPOSO
-HORA DEL RECALCULO
-ANGLEEEEE: 180
-270
-360
-90
-VECTORES
-DIR: vec3(-0.000000, 0.000000, 1.000000)
-A: vec3(-1.000000, 0.000000, -0.000000)
-S: vec3(0.000000, 0.000000, -1.000000)
-D:vec3(1.000000, 0.000000, 0.000000)
-TIME: 0.0495897
-TIME: 0.0495897
+TIME: 0.0505449
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0504653
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0501128
+W
+TIME: 0.0495695
+W
+TIME: 0.0504214
+W
+TIME: 0.0499475
+W
+TIME: 0.0500566
+W
+TIME: 0.0495607
+W
+TIME: 0.0504507
+W
+TIME: 0.0496315
+W
+TIME: 0.0503641
+W
+TIME: 0.0495496
+W
+TIME: 0.0504346
+W
+TIME: 0.0497321
+TIME: 0.0497321
+D
+TIME: 0.0503234
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0505072
+D
+TIME: 0.0501292
+D
+TIME: 0.0498269
+D
+TIME: 0.0495581
+D
+TIME: 0.0504522
+A
+TIME: 0.0502003
+TIME: 0.0502003
+A
+A
+A
+A
+A
+REPOSO
+TIME: 0.0494246
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0504852
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0505926
+D
+TIME: 0.0493843
+D
+TIME: 0.0504475
+D
+TIME: 0.0495276
+D
+TIME: 0.050707
+D
+TIME: 0.0493243
+D
+TIME: 0.0504922
+D
+TIME: 0.0494867
+D
+TIME: 0.0505411
+D
+TIME: 0.0497193
+D
+TIME: 0.0502052
+D
+TIME: 0.0495507
+D
+TIME: 0.0504996
+D
+TIME: 0.0496215
+REPOSO
+TIME: 0.0504065
+TIME: 0.0504065
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0504223
+W
+W
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0503524
+W
+TIME: 0.0495259
+W
+TIME: 0.0504563
+W
+TIME: 0.0497017
+W
+TIME: 0.0503439
+W
+TIME: 0.0494843
+W
+TIME: 0.0505168
+W
+TIME: 0.0495493
+W
+TIME: 0.0504706
+W
+TIME: 0.0494706
+W
+TIME: 0.0505469
+W
+TIME: 0.0494723
+W
+TIME: 0.0505279
+W
+TIME: 0.0494668
+W
+TIME: 0.0504296
+REPOSO
+TIME: 0.0495908
+TIME: 0.0495908
 A
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0499806
+TIME: 0.0504996
+A
+A
+A
+A
+A
 REPOSO
-TIME: 0.0496766
+TIME: 0.0506224
 S
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0500385
+TIME: 0.0495861
 S
 S
 S
 S
+TIME: 0.0495999
+REPOSO
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0501774
+W
+W
+W
+W
+W
+W
+W
+W
+W
+REPOSO
+TIME: 0.0505177
+TIME: 0.0505177
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0503702
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+TIME: 0.0503799
+D
+TIME: 0.0495431
+D
+TIME: 0.0506736
+D
+TIME: 0.0493933
+D
+TIME: 0.0504027
+D
+TIME: 0.0496139
+D
+TIME: 0.0506611
+D
+TIME: 0.0494756
+D
+TIME: 0.0502327
+D
+TIME: 0.0495993
+D
+TIME: 0.0505276
+D
+TIME: 0.049671
+D
+TIME: 0.0502245
+D
+TIME: 0.04958
+D
+TIME: 0.0504668
+W
+TIME: 0.0497675
+TIME: 0.0497675
+W
+W
+W
+W
+W
+W
+W
+W
+TIME: 0.0496865
+W
+W
+D
+TIME: 0.0505113
+D
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -144.138 POS Y: -58.8012
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -142.66 POS Y: -53.47
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 14
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -144.138 POS Y: -57.7672
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -142.66 POS Y: -53.47
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 14
+D
+ACTUALIZO 0
+ID PUERTA: 14
+D
+D
 
 ////////////////////////
 COLISION
@@ -6890,18 +7502,15 @@ ENTIDAD 1: 0
 ENTIDAD 2: 7
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -14.015 POS Y: 57.985
+POS X: -144.138 POS Y: -55.4432
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -18.12 POS Y: 51.57
+POS X: -138.35 POS Y: -51.1
 ///////////////////////////////////
-camID: 1
-ID CAMARA: 1
-S
-S
-S
-S
+camID: 8
+ID CAMARA: 8
+D
 
 ////////////////////////
 COLISION
@@ -6909,17 +7518,16 @@ ENTIDAD 1: 0
 ENTIDAD 2: 7
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -14.015 POS Y: 49.985
+POS X: -144.138 POS Y: -54.2766
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -16 POS Y: 43.92
+POS X: -141.47 POS Y: -47.96
 ///////////////////////////////////
-camID: 0
-ID CAMARA: 0
-S
-S
-TIME: 0.0502036
+camID: 6
+ID CAMARA: 6
+D
+D
 
 ////////////////////////
 COLISION
@@ -6927,123 +7535,145 @@ ENTIDAD 1: 0
 ENTIDAD 2: 2
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -14.015 POS Y: 44.005
+POS X: -144.138 POS Y: -51.9432
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -11.46 POS Y: 42
-///////////////////////////////////
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14.015 POS Y: 44.005
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -16.56 POS Y: 42
+POS X: -138.71 POS Y: -37.74
 ///////////////////////////////////
 ACTUALIZO 0
-ID PUERTA: 1
-ACTUALIZO 0
-ID PUERTA: 1
-S
-TIME: 0.0498893
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14.015 POS Y: 44.015
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -11.46 POS Y: 42
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 1
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14.015 POS Y: 44.015
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -16.56 POS Y: 42
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 1
-ACTUALIZO 0
-ID PUERTA: 1
-ACTUALIZO 0
-ID PUERTA: 1
-S
-TIME: 0.0500119
-ACTUALIZO 0
-ID PUERTA: 1
-S
-TIME: 0.0498949
-ACTUALIZO 0
-ID PUERTA: 1
-S
-TIME: 0.050138
-ACTUALIZO 0
-ID PUERTA: 1
-S
-TIME: 0.0499233
-S
-TIME: 0.0500778
-S
-TIME: 0.0499502
-S
-TIME: 0.0500274
+ID PUERTA: 14
+D
 lalal 2
 ACTUALIZO 1
-ID PUERTA: 1
+ID PUERTA: 14
 cerrar123
-entra
+REPOSO
+HORA DEL RECALCULO
+ANGLEEEEE: 360
+450
+540
+270
+VECTORES
+DIR: vec3(0.000000, 0.000000, -1.000000)
+A: vec3(1.000000, 0.000000, 0.000000)
+S: vec3(-0.000000, 0.000000, 1.000000)
+D:vec3(-1.000000, 0.000000, -0.000000)
+pos puerta: 0.79 -142.35
+0.7 -136.43
+TIME: 0.0505212
+W
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+pos puerta: 0.79 -142.35
+0.7 -136.43
+TIME: 0.0495557
+W
+pos puerta: 0.79 -142.35
+0.7 -136.43
+W
+pos puerta: 0.79 -142.35
+0.7 -136.43
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -144.138 POS Y: -51.9432
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -142.66 POS Y: -45.47
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 14
+W
 lalal 2
 ACTUALIZO 1
-ID PUERTA: 1
+ID PUERTA: 14
 cerrar123
-entra
-S
-pos puerta: 0.2 -18.31
-0.2 -11.21
-TIME: 0.0499133
-S
-pos puerta: 0.2 -18.31
-0.2 -11.21
-TIME: 0.0500663
-S
-pos puerta: 0.2 -18.31
-0.2 -11.21
-TIME: 0.0498525
-S
-pos puerta: 0.2 -18.31
-0.2 -11.21
-TIME: 0.0501629
-S
-pos puerta: 0.2 -18.31
-0.2 -11.21
-TIME: 0.0500342
-S
-TIME: 0.0499955
-S
-TIME: 0.0498367
-S
-TIME: 0.0501526
-S
-TIME: 0.050016
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -144.138 POS Y: -53.1099
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -138.35 POS Y: -51.1
+///////////////////////////////////
+camID: 8
+ID CAMARA: 8
+W
+pos puerta: 0.79 -142.35
+0.7 -136.43
+W
+pos puerta: 0.79 -142.35
+0.7 -136.43
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -145.798 POS Y: -54.2766
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -150.93 POS Y: -59.57
+///////////////////////////////////
+W
+pos puerta: 0.79 -142.35
+0.7 -136.43
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 2
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -146.3 POS Y: -53.7451
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -142.66 POS Y: -50.1161
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 14
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -146.878 POS Y: -53.8858
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -150.93 POS Y: -59.57
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 14
+W
+lalal 2
+ACTUALIZO 1
+ID PUERTA: 14
+cerrar123
+W
+pos puerta: 0.79 -142.35
+0.7 -136.43
+W
+pos puerta: 0.79 -142.35
+0.7 -136.43
 REPOSO
 HORA DEL RECALCULO
 ANGLEEEEE: 270
@@ -7055,113 +7685,21 @@ DIR: vec3(-1.000000, 0.000000, -0.000000)
 A: vec3(0.000000, 0.000000, -1.000000)
 S: vec3(1.000000, 0.000000, 0.000000)
 D:vec3(0.000000, 0.000000, 1.000000)
-TIME: 0.0498996
-TIME: 0.0498996
-S
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.049875
-S
-S
-S
-S
-S
-S
-S
-A
-TIME: 0.0498969
-TIME: 0.0498969
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-TIME: 0.0500655
-A
-TIME: 0.049968
-A
-TIME: 0.0499303
-REPOSO
-TIME: 0.050059
-TIME: 0.050059
-A
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0498337
-A
-A
-A
-A
-A
-A
-A
-REPOSO
-TIME: 0.0499288
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 1.98501 POS Y: -23.985
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -17.15 POS Y: -31.62
-///////////////////////////////////
-A DISPARAR!
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0496541
-D
-ADIOS 1
-D
-D
-D
-D
-D
-D
-D
-D
-D
-TIME: 0.0499663
-D
-TIME: 0.0500696
-D
-TIME: 0.0499906
-REPOSO
-TIME: 0.0498428
-W
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.066943
-W
-W
-REPOSO
-TIME: 0.0501017
-A
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0499186
-REPOSO
-TIME: 0.050107
+pos puerta: 0.79 -142.35
+0.7 -136.43
+TIME: 0.0504589
+pos puerta: 0.79 -142.35
+0.7 -136.43
+pos puerta: 0.79 -142.35
+0.7 -136.43
+pos puerta: 0.79 -142.35
+0.7 -136.43
+pos puerta: 0.79 -142.35
+0.7 -136.43
+pos puerta: 0.79 -142.35
+0.7 -136.43
+pos puerta: 0.79 -142.35
+0.7 -136.43
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado

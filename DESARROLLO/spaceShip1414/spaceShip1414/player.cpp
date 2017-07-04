@@ -21,7 +21,7 @@
 
 #define PI 3.14159265
 
-player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 155.0f }, yaw{ 0 }, pitch{ 0 }
+player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	
 	
