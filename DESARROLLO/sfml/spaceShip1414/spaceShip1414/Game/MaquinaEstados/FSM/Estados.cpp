@@ -62,6 +62,6 @@ void Estados::draw(void * window)
 {
 }
 
-void Estados::handler(void * event, void * window)
+void Estados::handler(void * event, void * window, void * manager)
 {
 }

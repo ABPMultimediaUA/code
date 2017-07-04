@@ -330,7 +330,10 @@
     <ClCompile Include="mainGame.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="gui\menu.cpp">
+    <ClCompile Include="gameStates\menu.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="gameStates\ajustes.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
@@ -782,7 +785,10 @@
     <ClInclude Include="mainGame.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="gui\menu.h">
+    <ClInclude Include="gameStates\menu.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="gameStates\ajustes.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
