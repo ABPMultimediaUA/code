@@ -162,22 +162,22 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
 
 	//hay que cambiarlo para que se adapte a cada puerta en distinta posicions
-	bodyShape.SetAsBox(4*escala.x, escala.z);
-	bodyShape2.SetAsBox(5*escala.x, escala.z);
+	bodyShape.SetAsBox(5*escala.x, 1.5*escala.z);
+	bodyShape2.SetAsBox(3*escala.x, escala.z);
 	
 
     objeto3D = dirPuerta;
     puertaBody = world->CreateBody(&bodyDef);
 	puertaBody-> CreateFixture(&bodyShape, 1.0f);
 	puertaBody->GetFixtureList()->SetSensor(sensor);
-	puertaBody->SetTransform(bodyDef.position, rot.y * 0.0174532925199432957f );
+	puertaBody->SetTransform(bodyDef.position, -rot.y * DEGTORAD);
     //std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
 	puertaBody->SetUserData(this);
 
 	body = world->CreateBody(&bodyDef);
     body->CreateFixture(&bodyShape2, 1.0f);
 	body->SetUserData(this);
-	body->SetTransform(bodyDef.position, rot.y * 0.0174532925199432957f);
+	body->SetTransform(bodyDef.position, -rot.y * DEGTORAD);
     filtro.groupIndex = FILTRO_PUERTA;
     //    body->GetFixtureList()->SetFilterData(filtro);
     iden = 2;
