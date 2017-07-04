@@ -2,6 +2,7 @@
 #include <SFML\Graphics.hpp>
 class MaquinaEstados;
 class menu;
+class ajustes;
 class mainGame
 {
 public:
@@ -13,5 +14,6 @@ private:
 	sf::RenderWindow * window;
 	MaquinaEstados * manager;
 	menu * gameMenu;
+	ajustes * gameConfig;
 };
 

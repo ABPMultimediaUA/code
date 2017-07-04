@@ -130,6 +130,7 @@
   <ItemGroup>
     <ClCompile Include="ActivadorCamara.cpp" />
     <ClCompile Include="Camara.cpp" />
+    <ClCompile Include="gameStates\ajustes.cpp" />
     <ClCompile Include="Game\Enemigos\AlienBerserker.cpp" />
     <ClCompile Include="Game\Enemigos\AStar.cpp" />
     <ClCompile Include="Game\Enemigos\BehaviorTree\BehaivorTree.cpp" />
@@ -181,7 +182,7 @@
     <ClCompile Include="graphicEngine\resourceManager\TRecursoMalla.cpp" />
     <ClCompile Include="graphicEngine\resourceManager\TRecursoTextura.cpp" />
     <ClCompile Include="Game\Escenario\Luces.cpp" />
-    <ClCompile Include="gui\menu.cpp" />
+    <ClCompile Include="gameStates\menu.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Fisicas3D\Mundo3D.cpp" />
     <ClCompile Include="Game\Escenario\Pared.cpp" />
@@ -241,6 +242,7 @@
   <ItemGroup>
     <ClInclude Include="ActivadorCamara.h" />
     <ClInclude Include="Camara.h" />
+    <ClInclude Include="gameStates\ajustes.h" />
     <ClInclude Include="Game\Enemigos\AlienBerserker.h" />
     <ClInclude Include="Game\Enemigos\AStar.h" />
     <ClInclude Include="Game\Enemigos\BehaviorTree\BehaivorTree.h" />
@@ -294,7 +296,7 @@
     <ClInclude Include="Fisicas3D\Mundo3D.h" />
     <ClInclude Include="Game\Escenario\Pared.h" />
     <ClInclude Include="Game\Escenario\Luces.h" />
-    <ClInclude Include="gui\menu.h" />
+    <ClInclude Include="gameStates\menu.h" />
     <ClInclude Include="mainGame.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="Game\Escenario\readJson.h" />

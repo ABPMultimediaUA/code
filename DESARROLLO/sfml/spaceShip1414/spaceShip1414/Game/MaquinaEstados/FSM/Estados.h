@@ -21,7 +21,6 @@ public:
 	std::string getPathAnimacion();
 	void asignarPath(std::string path);
 	virtual void draw(void * window);
-	virtual void handler(void * event, void * window);
-
+	virtual void handler(void * event, void * window, void * manager);
 };
 
