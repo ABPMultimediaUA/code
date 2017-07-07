@@ -35,6 +35,7 @@ class TGraphicEngine;
 class TNodo;
 class Mundo;
 
+#define DEGTORAD 0.0174532925199432957f
 
 #define CRIA 10
 #define BERSERKER 11

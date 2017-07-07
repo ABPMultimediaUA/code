@@ -32,23 +32,8 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-//Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos) {
-//    
-//
-//
-//	smgr1 = smgr;
-//	mundo = world;
-//	VD = driver;
-//	puntoIni = nullptr;
-//	puntoFin = nullptr;
-//	dir = -1;
-//	vista = false;
-//
-//
-//}
 
-//Enemigo::Enemigo(const Enemigo& orig) {
-//}
+
 
 Enemigo::Enemigo(TGraphicEngine *motor, Mundo *m, glm::vec3 posicion, Waypoints * puntos)
 {
@@ -60,6 +45,9 @@ Enemigo::Enemigo(TGraphicEngine *motor, Mundo *m, glm::vec3 posicion, Waypoints 
 	vista = false;
 
 }
+
+//Enemigo::Enemigo(const Enemigo& orig) {
+//}
 
 Enemigo::~Enemigo() {
  //   std::cout << "" << std::endl;
@@ -203,6 +191,7 @@ Kinematic Enemigo::arrive(const glm::vec3 target) {
 	}
 
 	sto.angular = 0;
+	//align(target);
 
 	Mover();
 
@@ -218,7 +207,7 @@ void Enemigo::align(const glm::vec3 target){
 	float timeTarget = 0.1f;
 
 	float maxAngularAcceleration = vel * PROPCURVA;
-	float maxRotation = 135.0f;
+	float maxRotation = 45.0f;
 	float desireAngle = atan2f(-target.x, target.z) * 180 / 3.14f;
 	float rotationSize;
 	float rotation = desireAngle - st.orientacion;
@@ -260,9 +249,12 @@ void Enemigo::align(const glm::vec3 target){
 	}
 
 	//sto.linear = 0;
-	
+	std::cout << "---- ANGLE: " << sto.angular << std::endl;
 	//maya->setRotation(vector3df(0, sto.angular, 0));
-
+	engine->resetTransform(nodo, 'r');
+	engine->rotarYPR(nodo, sto.angular - 180, 0.0f, 0.0f);
+	entity->getCuerpo2D()->SetTransform(entity->getCuerpo2D()->GetPosition(), -(sto.angular + 135) * DEGTORAD);
+	//entity->getCuerpo2D()->SetAngularVelocity(sto.angular * DEGTORAD);
 }
 
 void Enemigo::collisionAvoidance(glm::vec3 vecU) {
@@ -507,18 +499,18 @@ void Enemigo::setPesoMaximoLogicaDifusa(float x)
 
 void Enemigo::iniLogicaDifusa()
 {
-	//std::cout << std::endl;
-	//std::cout << "ESTADO ANTES: " << std::endl;
-	//std::cout << estadoActual << std::endl;
-	//std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << "ESTADO ANTES: " << std::endl;
+	std::cout << estadoActual << std::endl;
+	std::cout << std::endl;
 	
 	logica->fusificador(vida, st.posicion, posJugador, moral, resistencia);
 	estadoActual = logica->getEstadoDecidido();
 
-	//std::cout << std::endl;
-	//std::cout << "ESTADO DESPUES: " << std::endl;
-	//std::cout << estadoActual << std::endl;
-	//std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << "ESTADO DESPUES: " << std::endl;
+	std::cout << estadoActual << std::endl;
+	std::cout << std::endl;
 }
 
 

@@ -366,32 +366,32 @@ void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 
 void atacarJugador(Entity2D *pers, Entity2D *enemigo) {
 
-	//Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
-	//Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
+	player *p = static_cast<player*>(pers->getObjeto3D());
+	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 
-	////if (e->getVista() == false) {
-	//	float pesoX = powf(p->getPos().X - e->getPos().X, 2);
-	//	float pesoZ = powf(p->getPos().Z - e->getPos().Z, 2);
-	//	float peso = sqrtf((pesoX + pesoZ));
+	//if (e->getVista() == false) {
+		float pesoX = powf(p->getPos().x - e->getPos().x, 2);
+		float pesoZ = powf(p->getPos().z - e->getPos().z, 2);
+		float peso = sqrtf((pesoX + pesoZ));
 
-	//	p->getPos();
-	//	e->setPesoMaximoLogicaDifusa(peso);
-	//	e->setPosJugador(p->getPos().X, p->getPos().Z);
-	//	//e->setEstado(3);
-	//	e->iniLogicaDifusa();
-	//	//std::cout << std::endl;
-	//	//std::cout <<"CALLBACK"<< std::endl;
+		p->getPos();
+		e->setPesoMaximoLogicaDifusa(peso);
+		e->setPosJugador(p->getPos().x, p->getPos().z);
+		//e->setEstado(3);
+		e->iniLogicaDifusa();
+		//std::cout << std::endl;
+		//std::cout <<"CALLBACK"<< std::endl;
 
-	//	//std::cout << "POS X: " << p->getPos().X<<"POS Z: " << p->getPos().Z<< std::endl;
-	//	//std::cout << std::endl;
+		//std::cout << "POS X: " << p->getPos().X<<"POS Z: " << p->getPos().Z<< std::endl;
+		//std::cout << std::endl;
 
 
 
-	//	std::cout << std::endl;
-	//	std::cout << "DISTANCIA ENTRE ENEMIGO Y JUGADOR" << std::endl;
+		std::cout << std::endl;
+		std::cout << "DISTANCIA ENTRE ENEMIGO Y JUGADOR" << std::endl;
 
-	//	std::cout << "DISTANCIA: " << peso << std::endl;
-	//	std::cout << std::endl;
+		std::cout << "DISTANCIA: " << peso << std::endl;
+		std::cout << std::endl;
 
 	////}
 
@@ -399,31 +399,31 @@ void atacarJugador(Entity2D *pers, Entity2D *enemigo) {
 
 void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 
-	//Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
+	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 
-	////if (e->getVista() == false) {
-	//	if (e->getNodoInicio() == nullptr || e->getNodoFin() == nullptr || e->getEstado() == 8) {
-	//		e->setEstado(0);
-	//	}
+	//if (e->getVista() == false) {
+		if (e->getNodoInicio() == nullptr || e->getNodoFin() == nullptr || e->getEstado() == 8) {
+			e->setEstado(0);
+		}
 
-	//	else if (e->getNodoFin() != nullptr && e->getEstado() != 5) {
-	//		e->setEstado(1);
-	//	}
+		else if (e->getNodoFin() != nullptr && e->getEstado() != 5) {
+			e->setEstado(1);
+		}
 
-	//	else if (e->getEstado() == 5) {
-	//		e->setEstado(5);
-	//	}
+		else if (e->getEstado() == 5) {
+			e->setEstado(5);
+		}
 
-	//	else if (e->getEstado() == 8) {
-	//		if (e->getNodoInicio() != nullptr) {
-	//			e->setEstado(1);
-	//		}
-	//	}
+		else if (e->getEstado() == 8) {
+			if (e->getNodoInicio() != nullptr) {
+				e->setEstado(1);
+			}
+		}
 
-	//	
-	////}
+		
+	//}
 
-	//e->setTime(0.0f);
+	e->setTime(0.0f);
 }
 
 
@@ -819,12 +819,7 @@ void MiContactListener::EndContact(b2Contact* contact) {
 					actualizarPuerta(entity2, entity1, 1);
 				}
 
-				//if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
-				//	//aplicarKnockBack(entity1, b1);
-				//	Personaje *p = static_cast<Personaje*>(entity1->getObjeto3D());
-				//	p->setImpulso(false);
 
-				//}
 
 				//esto es para cuando se vayan del flocking los enemigos
 
@@ -963,7 +958,7 @@ void MiContactListener::PreSolve(b2Contact* contact, const b2Manifold* oldManifo
 			if (entity1 != nullptr&&entity2 != nullptr)
 			{
 				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
-					aplicarKnockBack(entity1, entity2, b1);
+				///	aplicarKnockBack(entity1, entity2, b1);
 
 				}
 

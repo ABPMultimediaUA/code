@@ -32,13 +32,7 @@ CriaAlien::CriaAlien(TGraphicEngine *motor, Mundo* mundo, glm::vec3 posicion, Es
     
 	//seria mejor que se le pasara las cosas necesarias del escenario que todo el escenario entero
 	//para hacer el tema de los navmesehses y los waypoints
-	//maya = smgr -> addCubeSceneNode(5); //preguntar a Miguel Angel
- //   if (maya) {
- //       maya -> setPosition(posicion); //vector3df(0, 10, 40)
- //       maya->getMaterial(0).EmissiveColor.set(0, 0, 0, 20);
- //   }
 
-	//nodo = motor->addMalla("resourse/models/Nanosuit/Personajes/aliensoldado/aliensoldado.obj");
 	nodo = motor->addMalla("resourse/models/Personajes/criaAlien/cria.obj");
 
 	motor->escalar(nodo, 1.0f, 1.0f, 1.0f);
@@ -58,16 +52,6 @@ CriaAlien::CriaAlien(TGraphicEngine *motor, Mundo* mundo, glm::vec3 posicion, Es
 
 	sto.angular = 0;
 	sto.linear = glm::vec3(0, 0, 0);
-
-	//irr::core::stringw wideString(vida);
-	//GVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), wideString.c_str(), video::SColor(255, 255, 0, 0), 0);
-	//RVida = smgr->addTextSceneNode(smgr->getGUIEnvironment()->getBuiltInFont(), L"Vida: ", video::SColor(255, 255, 0, 0), 0);
-	//napis a lo mejor estaria bien que estuviese en el .h de enemigo
-	//tambien se tiene que borrar con el destructor
-	//GVida->setPosition(posicion);
-	//RVida->setPosition(vector3df(posicion.X - 64, posicion.Y, posicion.Z));
-
-	//smgr->getGUIEnvironment()->clear();
     
     estadoActual = BUSCARPUNTO;
     raza = CRIA;
@@ -79,7 +63,7 @@ CriaAlien::CriaAlien(TGraphicEngine *motor, Mundo* mundo, glm::vec3 posicion, Es
 	entity = new Entity2D(mundo->getWorldBox2D(), pos, true, this, raza);
 
    // nav = new navmeshes(10, esce);
-	//Botiquines *bot = new Botiquines(*static_cast<Botiquines*>(objeto->getObjeto3D()));
+
 	
 	waypoints = puntos;
 	logica = new LogicaDifusa(vida, moral, resistencia);

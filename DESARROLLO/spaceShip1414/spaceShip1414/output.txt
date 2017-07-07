@@ -73,7 +73,7 @@ ID: 1
 //////////////////////////////////////////
 
 POS 2D
-X: -18.56 Y: 42
+X: -19.56 Y: 42
 
 //////////////////////////////////////////
 
@@ -82,7 +82,7 @@ ID: 1
 //////////////////////////////////////////
 
 POS 2D
-X: -13.46 Y: 42
+X: -12.46 Y: 42
 
 //////////////////////////////////////////
 
@@ -91,7 +91,7 @@ ID: 2
 //////////////////////////////////////////
 
 POS 2D
-X: -15.87 Y: -42.39
+X: -16.87 Y: -42.39
 
 //////////////////////////////////////////
 
@@ -100,7 +100,7 @@ ID: 2
 //////////////////////////////////////////
 
 POS 2D
-X: -10.77 Y: -42.39
+X: -9.77 Y: -42.39
 
 //////////////////////////////////////////
 salida: MUNICION_ESCOPETA
@@ -112,7 +112,7 @@ ID: 3
 //////////////////////////////////////////
 
 POS 2D
-X: -12.29 Y: -182.92
+X: -13.29 Y: -182.92
 
 //////////////////////////////////////////
 
@@ -121,7 +121,7 @@ ID: 3
 //////////////////////////////////////////
 
 POS 2D
-X: -8.49 Y: -177.32
+X: -7.49 Y: -177.32
 
 //////////////////////////////////////////
 ROTACIONES 1
@@ -182,7 +182,7 @@ ID: 4
 //////////////////////////////////////////
 
 POS 2D
-X: -55.11 Y: -3.98
+X: -56.11 Y: -3.98
 
 //////////////////////////////////////////
 
@@ -191,7 +191,7 @@ ID: 4
 //////////////////////////////////////////
 
 POS 2D
-X: -57.11 Y: 3.6
+X: -56.11 Y: 3.6
 
 //////////////////////////////////////////
 ROTACIONES 1
@@ -211,7 +211,7 @@ ID: 5
 //////////////////////////////////////////
 
 POS 2D
-X: -124.98 Y: -3.98
+X: -125.98 Y: -3.98
 
 //////////////////////////////////////////
 
@@ -220,7 +220,7 @@ ID: 5
 //////////////////////////////////////////
 
 POS 2D
-X: -126.98 Y: 3.6
+X: -125.98 Y: 3.6
 
 //////////////////////////////////////////
 salida: COMISARIA
@@ -230,7 +230,7 @@ ID: 6
 //////////////////////////////////////////
 
 POS 2D
-X: -449.95 Y: 83.15
+X: -450.95 Y: 83.15
 
 //////////////////////////////////////////
 
@@ -239,7 +239,7 @@ ID: 6
 //////////////////////////////////////////
 
 POS 2D
-X: -451.95 Y: 90.75
+X: -450.95 Y: 90.75
 
 //////////////////////////////////////////
 ROTACIONES 1
@@ -260,7 +260,7 @@ ID: 7
 //////////////////////////////////////////
 
 POS 2D
-X: -1.96 Y: -114.22
+X: -2.96 Y: -114.22
 
 //////////////////////////////////////////
 
@@ -269,7 +269,7 @@ ID: 7
 //////////////////////////////////////////
 
 POS 2D
-X: -3.96 Y: -106.62
+X: -2.96 Y: -106.62
 
 //////////////////////////////////////////
 ROTACIONES 1
@@ -290,7 +290,7 @@ ID: 8
 //////////////////////////////////////////
 
 POS 2D
-X: -140.57 Y: 158.87
+X: -141.57 Y: 158.87
 
 //////////////////////////////////////////
 
@@ -299,7 +299,7 @@ ID: 8
 //////////////////////////////////////////
 
 POS 2D
-X: -142.57 Y: 166.47
+X: -141.57 Y: 166.47
 
 //////////////////////////////////////////
 ROTACIONES 1
@@ -343,7 +343,7 @@ ID: 9
 //////////////////////////////////////////
 
 POS 2D
-X: -98.39 Y: 272.18
+X: -99.39 Y: 272.18
 
 //////////////////////////////////////////
 
@@ -352,7 +352,7 @@ ID: 9
 //////////////////////////////////////////
 
 POS 2D
-X: -92.06 Y: 272.18
+X: -91.06 Y: 272.18
 
 //////////////////////////////////////////
 ROTACIONES 1
@@ -388,7 +388,7 @@ ID: 10
 //////////////////////////////////////////
 
 POS 2D
-X: -434.73 Y: -105.12
+X: -435.73 Y: -105.12
 
 //////////////////////////////////////////
 
@@ -397,7 +397,7 @@ ID: 10
 //////////////////////////////////////////
 
 POS 2D
-X: -428.92 Y: -105.12
+X: -427.92 Y: -105.12
 
 //////////////////////////////////////////
 ROTACIONES 1
@@ -418,7 +418,7 @@ ID: 11
 //////////////////////////////////////////
 
 POS 2D
-X: -361.32 Y: 127.91
+X: -362.32 Y: 127.91
 
 //////////////////////////////////////////
 
@@ -427,7 +427,7 @@ ID: 11
 //////////////////////////////////////////
 
 POS 2D
-X: -356.22 Y: 127.91
+X: -355.22 Y: 127.91
 
 //////////////////////////////////////////
 ROTACIONES 1
@@ -661,7 +661,19 @@ CAMARAFIJA ID: 24
 CAMARAFIJA ID: 25
 *******************ry:  180
 CAMARAFIJA ID: 8
+*******************ry:  227.356
+CAMARAFIJA ID: 26
+*******************ry:  0
+CAMARAFIJA ID: 27
 *******************ry:  270
+CAMARAFIJA ID: 28
+*******************ry:  0
+CAMARAFIJA ID: 30
+*******************ry:  44.853
+CAMARAFIJA ID: 31
+*******************ry:  134.733
+CAMARAFIJA ID: 29
+*******************ry:  314.545
 salida: CRIAS_ALIENS
 salida: ARSENAL
 
@@ -670,7 +682,7 @@ ID: 12
 //////////////////////////////////////////
 
 POS 2D
-X: -385.85 Y: 189.35
+X: -386.85 Y: 189.35
 
 //////////////////////////////////////////
 
@@ -679,7 +691,7 @@ ID: 12
 //////////////////////////////////////////
 
 POS 2D
-X: -380.75 Y: 189.35
+X: -379.75 Y: 189.35
 
 //////////////////////////////////////////
 ROTACIONES 1
@@ -700,7 +712,7 @@ ID: 13
 //////////////////////////////////////////
 
 POS 2D
-X: -52.28 Y: -143.4
+X: -57.17 Y: -139.57
 
 //////////////////////////////////////////
 
@@ -709,7 +721,7 @@ ID: 13
 //////////////////////////////////////////
 
 POS 2D
-X: -48.55 Y: -137.89
+X: -51.44 Y: -134.06
 
 //////////////////////////////////////////
 
@@ -718,7 +730,7 @@ ID: 14
 //////////////////////////////////////////
 
 POS 2D
-X: -142.66 Y: -53.47
+X: -143.66 Y: -53.47
 
 //////////////////////////////////////////
 
@@ -727,7 +739,7 @@ ID: 14
 //////////////////////////////////////////
 
 POS 2D
-X: -138.71 Y: -47.74
+X: -137.71 Y: -47.74
 
 //////////////////////////////////////////
 ROTACIONES 1
@@ -750,7 +762,7 @@ ID: 15
 //////////////////////////////////////////
 
 POS 2D
-X: -219.79 Y: 0.69
+X: -220.79 Y: 0.69
 
 //////////////////////////////////////////
 
@@ -759,7 +771,7 @@ ID: 15
 //////////////////////////////////////////
 
 POS 2D
-X: -221.79 Y: 8.27
+X: -220.79 Y: 8.27
 
 //////////////////////////////////////////
 salida: Modelo-Puerta-ABIERTA-LATERAL-V
@@ -769,7 +781,7 @@ ID: 16
 //////////////////////////////////////////
 
 POS 2D
-X: -219.79 Y: -48.85
+X: -220.79 Y: -48.85
 
 //////////////////////////////////////////
 
@@ -778,7 +790,7 @@ ID: 16
 //////////////////////////////////////////
 
 POS 2D
-X: -221.79 Y: -41.27
+X: -220.79 Y: -41.27
 
 //////////////////////////////////////////
 salida: Modelo
@@ -800,7 +812,7 @@ ID: 17
 //////////////////////////////////////////
 
 POS 2D
-X: -191.29 Y: -66.11
+X: -192.29 Y: -66.11
 
 //////////////////////////////////////////
 
@@ -809,7 +821,7 @@ ID: 17
 //////////////////////////////////////////
 
 POS 2D
-X: -185.76 Y: -66.11
+X: -184.76 Y: -66.11
 
 //////////////////////////////////////////
 salida: PlanosDeCambio
@@ -857,10 +869,10 @@ ACTIVADOR ID: 6
 ---------->6
 ACTIVADOR ID: 7
 ---------->7
-ACTIVADOR ID: 8
----------->8
-ACTIVADOR ID: 8
----------->8
+ACTIVADOR ID: 29
+---------->29
+ACTIVADOR ID: 31
+---------->31
 ACTIVADOR ID: 6
 ---------->6
 ACTIVADOR ID: 9
@@ -921,6 +933,34 @@ ACTIVADOR ID: 25
 ---------->25
 ACTIVADOR ID: 3
 ---------->3
+ACTIVADOR ID: 1
+---------->1
+ACTIVADOR ID: 26
+---------->26
+ACTIVADOR ID: 27
+---------->27
+ACTIVADOR ID: 4
+---------->4
+ACTIVADOR ID: 28
+---------->28
+ACTIVADOR ID: 24
+---------->24
+ACTIVADOR ID: 31
+---------->31
+ACTIVADOR ID: 8
+---------->8
+ACTIVADOR ID: 29
+---------->29
+ACTIVADOR ID: 30
+---------->30
+ACTIVADOR ID: 31
+---------->31
+ACTIVADOR ID: 30
+---------->30
+ACTIVADOR ID: 8
+---------->8
+ACTIVADOR ID: 29
+---------->29
 ANGLEEEEE: 90
 180
 270
@@ -1510,7 +1550,7 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 2
-Posicion de la Entity X: -10.77 Y: -42.39
+Posicion de la Entity X: -9.77 Y: -42.39
 //////////////////////////////////////////
 
 RAY DE CHOQUE
@@ -1825,14 +1865,6 @@ Y: 105.57
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.5 Y: 130.49
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -27
-Y: 147.355
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2051,14 +2083,6 @@ Y: 123.413
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 127.01
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2128,25 +2152,6 @@ Y: 104.705
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -36.41
-Y: 159.199
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 125.027
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2233,14 +2238,6 @@ Y: 121.427
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 125.643
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2310,25 +2307,6 @@ Y: 90.4215
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -36.41
-Y: 158.415
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 122.362
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2357,47 +2335,15 @@ Y: 122.439
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.5 Y: 130.49
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -27
-Y: 152.745
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -3
-Y: 179.159
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -3
-Y: 165.756
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -10.12 Y: 230.81
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -10.4473
-Y: 230.32
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2558,113 +2504,21 @@ ENTRO AL CALLBACK
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.5 Y: 130.49
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -28
-Y: 150.194
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -3
-Y: 128.135
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.5 Y: 130.49
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -28
-Y: 156.274
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -3
-Y: 126.815
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.5 Y: 130.49
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -28
-Y: 156.11
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.5 Y: 130.49
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -28
-Y: 154.399
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -3
-Y: 188.786
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.5 Y: 130.49
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -28
-Y: 163.816
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -3
-Y: 190.257
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -27.5 Y: 130.49
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -28
-Y: 163.999
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2778,25 +2632,9 @@ Y: 172.011
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 182.023
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 189.785
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2822,47 +2660,9 @@ Y: 209.107
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -36.41
-Y: 155.724
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 189.818
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -36.41
-Y: 154.79
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 189.717
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2910,47 +2710,12 @@ Y: 193.044
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 167.704
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 191.307
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -36.41
-Y: 156.288
-ENTRO AL CALLBACK 
-//////////////////////////////////////////
-
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -2.5 Y: 130.7
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -2
-Y: 191.793
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -2976,14 +2741,6 @@ Y: 202.989
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -10.12 Y: 230.81
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -10.2872
-Y: 232.395
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -3133,25 +2890,9 @@ Y: 154.548
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -37.41
-Y: 154.733
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -37.41
-Y: 155.256
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -3230,14 +2971,6 @@ Y: 154.238
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -37.41
-Y: 153.775
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -3935,25 +3668,9 @@ Y: 150.487
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -37.41
-Y: 160.192
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -36.91 Y: 126.67
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -37.41
-Y: 159.463
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -4148,14 +3865,6 @@ Y: 125.864
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
-//////////////////////////////////////////
-ID ENTITY 1
-Posicion de la Entity X: -144.9 Y: 99.9
-//////////////////////////////////////////
-
-RAY DE CHOQUE
-X: -145.474
-Y: 147.616
 ENTRO AL CALLBACK 
 //////////////////////////////////////////
 
@@ -6028,7 +5737,7 @@ ENTRO AL CALLBACK
 
 //////////////////////////////////////////
 ID ENTITY 2
-Posicion de la Entity X: -10.77 Y: -42.39
+Posicion de la Entity X: -9.77 Y: -42.39
 //////////////////////////////////////////
 
 RAY DE CHOQUE
@@ -6288,223 +5997,730 @@ ENTRO AL CALLBACK
 
 Recurso nombre: cria.obj
 
-////////////////////////
-COLISION
-ENTIDAD 1: 1
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: 38.72 POS Y: 0.18
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 26.47 POS Y: 20.95
-///////////////////////////////////
-W
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0496122
-W
-W
-W
-W
-W
-W
-W
-W
-W
-W
-TIME: 0.0499606
-W
-TIME: 0.0500197
-REPOSO
-Recurso nombre: personaje.obj
-TIME: 0.04953
-TIME: 0.04953
-A
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0498644
-A
-A
-A
-A
-A
-A
-A
-A
-A
-A
-TIME: 0.0503942
+NOMBRE: Waypoint-1 (5)
+POS NODO: 5
 
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -14 POS Y: -11.6667
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -17.15 POS Y: -31.62
-///////////////////////////////////
-A DISPARAR!
-A
-TIME: 0.050025
-A
-TIME: 0.0500677
-A
-TIME: 0.0494495
-A
-TIME: 0.0504598
-A
-TIME: 0.0501812
-A
-TIME: 0.050056
-REPOSO
-TIME: 0.0493541
-TIME: 0.0493541
-S
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0501444
-S
-S
-S
-S
-S
-S
-S
-S
-REPOSO
-TIME: 0.0496891
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.049743
-D
-D
-D
-D
-ADIOS 1
-D
-D
-REPOSO
-TIME: 0.050367
-A
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.049508
-A
-A
-A
-A
+NOMBRE: Waypoint-1 (3)
+POS NODO: 3
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: -450
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
 
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -3.5 POS Y: -16.3333
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -17.15 POS Y: -31.62
-///////////////////////////////////
-A DISPARAR!
-A
-A
-A
-A
-A
-A
-TIME: 0.0495376
-A
-TIME: 0.0505095
-A
-TIME: 0.0495083
-A
-TIME: 0.0504138
-A
-TIME: 0.049573
-A
-TIME: 0.0505311
-A
-TIME: 0.049508
-A
-TIME: 0.0503585
-A
-TIME: 0.049604
-ADIOS 1
-A
-TIME: 0.0505926
-A
-TIME: 0.0494232
-A
-TIME: 0.0504226
-A
-TIME: 0.0495382
-A
-TIME: 0.0505241
-A
-TIME: 0.0497105
+NOMBRE DEL DESTINO: Waypoint-1
+NUM: 0
+---- ANGLE: -450
 
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 1
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -3.5 POS Y: -40.015
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: 17.03 POS Y: -41.77
-///////////////////////////////////
-A
-TIME: 0.0502005
-A
-TIME: 0.0496139
-A
-TIME: 0.050499
-REPOSO
-TIME: 0.049642
+NOMBRE DEL DESTINO: Waypoint-1 (2)
+NUM: 2
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (4)
+NUM: 4
+---- ANGLE: 450
+---- ANGLE: -450
+---- ANGLE: 450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+---- ANGLE: -450
+
+NOMBRE DEL DESTINO: Waypoint-1 (42)
+NUM: 41
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (3)
+NUM: 3
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+---- ANGLE: 825
+
+NOMBRE DEL DESTINO: Waypoint-1 (41)
+NUM: 40
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 825
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (2)
+NUM: 2
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (40)
+NUM: 39
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (42)
+NUM: 41
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (36)
+NUM: 35
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (41)
+NUM: 40
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (40)
+NUM: 39
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (36)
+NUM: 35
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
 W
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0502093
+TIME: 0.0499908
 W
 
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -4.66667 POS Y: -40.005
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -10.77 POS Y: -42.39
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 2
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
 W
+---- ANGLE: 450
 W
+---- ANGLE: 450
+W
+---- ANGLE: 450
+W
+---- ANGLE: 450
+W
+---- ANGLE: 450
+W
+---- ANGLE: 450
+W
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+W
+---- ANGLE: 450
+---- ANGLE: 450
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500314
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499797
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499972
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500663
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499873
+W
+---- ANGLE: 450
+TIME: 0.0499393
+W
+---- ANGLE: 450
+TIME: 0.0499849
+W
+---- ANGLE: 450
+TIME: 0.0501315
+W
+---- ANGLE: 450
+TIME: 0.0499077
+W
+---- ANGLE: 450
+TIME: 0.0499659
+W
+---- ANGLE: 450
+TIME: 0.0499946
+W
+---- ANGLE: 450
+TIME: 0.0500232
+W
+TIME: 0.0500329
+W
+TIME: 0.0499963
+W
+TIME: 0.0503044
+W
+TIME: 0.049719
+W
+TIME: 0.0504086
+W
+TIME: 0.0497751
+W
+TIME: 0.0497997
+W
+TIME: 0.0500314
+W
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+TIME: 0.0499861
+W
+---- ANGLE: 450
+TIME: 0.0499802
+W
+---- ANGLE: 450
+TIME: 0.049908
+W
+---- ANGLE: 450
+TIME: 0.0500864
+W
+---- ANGLE: 450
+TIME: 0.0499633
+W
+---- ANGLE: 450
+TIME: 0.0500525
+W
+TIME: 0.0499565
+W
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+TIME: 0.0499636
+W
+---- ANGLE: 450
+TIME: 0.0500818
+W
+---- ANGLE: 450
+TIME: 0.0499981
 
 ////////////////////////
 COLISION
@@ -6512,40 +6728,44 @@ ENTIDAD 1: 0
 ENTIDAD 2: 7
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -7 POS Y: -40.005
+POS X: -45.5 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -16 POS Y: -39.53
+POS X: -49.46 POS Y: -0.9
 ///////////////////////////////////
 camID: 0
 ID CAMARA: 0
 W
+---- ANGLE: 450
+TIME: 0.0499308
 W
+---- ANGLE: 450
+TIME: 0.0500121
+W
+---- ANGLE: 450
+TIME: 0.0500946
+W
+TIME: 0.049965
+W
+TIME: 0.0499451
+W
+TIME: 0.0500636
+W
+TIME: 0.0499293
+W
+TIME: 0.0501049
+W
+TIME: 0.049903
+W
+TIME: 0.0499849
+W
+TIME: 0.0499852
 W
 
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -10.5 POS Y: -40.005
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -7.87 POS Y: -42.39
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 2
-W
-A
-TIME: 0.0504135
-TIME: 0.0504135
-A
-A
-A
-A
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+TIME: 0.0501037
 
 ////////////////////////
 COLISION
@@ -6553,948 +6773,145 @@ ENTIDAD 1: 0
 ENTIDAD 2: 7
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -12.8333 POS Y: -44.6717
+POS X: -59.5 POS Y: -1.53036e-07
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -16 POS Y: -51.5
+POS X: -62.67 POS Y: 1.77
 ///////////////////////////////////
-camID: 2
-ID CAMARA: 2
+camID: 12
+ID CAMARA: 12
+W
+---- ANGLE: 450
+TIME: 0.049901
+W
+---- ANGLE: 450
+TIME: 0.0500168
+W
+---- ANGLE: 450
+TIME: 0.0500031
+W
+---- ANGLE: 450
+TIME: 0.0500259
+W
+---- ANGLE: 450
+TIME: 0.049996
+W
+---- ANGLE: 450
+TIME: 0.0499919
+W
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+TIME: 0.0499571
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500861
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.049917
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500291
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499925
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500352
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499615
+W
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500355
 A
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 2
-cerrar123
-entra
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 2
-cerrar123
-entra
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499764
+TIME: 0.0499764
+TIME: 0.0499764
 A
-pos puerta: 0.2 -15.62
-0.2 -8.52
+---- ANGLE: 450
+---- ANGLE: 450
 A
-pos puerta: 0.2 -15.62
-0.2 -8.52
+---- ANGLE: 450
+---- ANGLE: 450
 A
-pos puerta: 0.2 -15.62
-0.2 -8.52
+---- ANGLE: 450
+---- ANGLE: 450
 A
-pos puerta: 0.2 -15.62
-0.2 -8.52
+---- ANGLE: 450
+---- ANGLE: 450
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -60.6667 POS Y: 11.6667
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -62.67 POS Y: 1.77
+///////////////////////////////////
+camID: 12
+ID CAMARA: 12
 A
-pos puerta: 0.2 -15.62
-0.2 -8.52
-TIME: 0.0505183
+---- ANGLE: 450
+---- ANGLE: 450
 A
-TIME: 0.0494855
+---- ANGLE: 450
+---- ANGLE: 450
 A
-TIME: 0.0506099
+---- ANGLE: 450
 A
-TIME: 0.0493884
+---- ANGLE: 450
 A
-TIME: 0.0504975
+---- ANGLE: 450
+S
+---- ANGLE: 450
+TIME: 0.0500341
+TIME: 0.0500341
+S
+---- ANGLE: 450
+S
+---- ANGLE: 450
+S
+---- ANGLE: 450
+S
 REPOSO
+Recurso nombre: personaje.obj
 HORA DEL RECALCULO
-ANGLEEEEE: 360
-450
-540
+ANGLEEEEE: 180
 270
-VECTORES
-DIR: vec3(0.000000, 0.000000, -1.000000)
-A: vec3(1.000000, 0.000000, 0.000000)
-S: vec3(-0.000000, 0.000000, 1.000000)
-D:vec3(-1.000000, 0.000000, -0.000000)
-TIME: 0.0495191
-W
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0494952
-W
-W
-W
-W
-W
-W
-W
-W
-W
-W
-TIME: 0.0496482
-W
-TIME: 0.0503076
-W
-TIME: 0.0495531
-W
-TIME: 0.0503916
-W
-TIME: 0.0502336
-W
-TIME: 0.0498544
-W
-TIME: 0.0495332
-W
-TIME: 0.0503884
-W
-TIME: 0.0497099
-W
-TIME: 0.0503632
-D
-TIME: 0.0495209
-TIME: 0.0495209
-TIME: 0.0495209
-D
-D
-D
-W
-TIME: 0.0493811
-TIME: 0.0493811
-W
-W
-W
-W
-W
-W
-W
-W
-W
-W
-W
-TIME: 0.0505572
-W
-TIME: 0.0494352
-W
-TIME: 0.0503623
-W
-TIME: 0.0495949
-W
-TIME: 0.0505923
-W
-TIME: 0.0494349
-W
-TIME: 0.0504247
-W
-TIME: 0.0495496
-W
-TIME: 0.0507067
-W
-TIME: 0.0493015
-W
-TIME: 0.0504238
-W
-TIME: 0.0495642
-W
-TIME: 0.050597
-W
-TIME: 0.0494492
-W
-TIME: 0.0503822
-W
-TIME: 0.0495683
-W
-TIME: 0.0504802
-W
-TIME: 0.0497833
-W
-TIME: 0.0501654
-W
-TIME: 0.0495665
-W
-TIME: 0.050427
-W
-TIME: 0.0498737
-W
-TIME: 0.0501125
-W
-TIME: 0.049621
-W
-TIME: 0.0504355
-W
-TIME: 0.0496812
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 7
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -17.5 POS Y: -122.838
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -11.64 POS Y: -129.21
-///////////////////////////////////
-camID: 2
-ID CAMARA: 2
-W
-TIME: 0.0502986
-W
-TIME: 0.0495624
-W
-TIME: 0.0504001
-W
-TIME: 0.0497503
-W
-TIME: 0.0502798
-W
-TIME: 0.049556
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 7
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -17.5 POS Y: -129.838
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -14.7 POS Y: -135.27
-///////////////////////////////////
-camID: 19
-ID CAMARA: 19
-W
-TIME: 0.0504987
-W
-TIME: 0.0496432
-W
-TIME: 0.0504565
-W
-TIME: 0.0494147
-W
-TIME: 0.050472
-W
-TIME: 0.0496894
-W
-TIME: 0.050283
-W
-TIME: 0.049561
-W
-TIME: 0.0504805
-W
-TIME: 0.0496546
-W
-TIME: 0.0503737
-W
-TIME: 0.0494873
-D
-TIME: 0.0504694
-TIME: 0.0504694
-TIME: 0.0504694
-D
-D
-D
-D
-D
-D
-W
-TIME: 0.0495513
-TIME: 0.0495513
-W
-W
-W
-W
-W
-W
-W
-W
-W
-W
-TIME: 0.0496517
-W
-TIME: 0.0505107
-W
-TIME: 0.0494592
-W
-TIME: 0.0503904
-W
-TIME: 0.0496294
-D
-TIME: 0.0506289
-TIME: 0.0506289
-D
-D
-D
-D
-D
-D
-D
-REPOSO
-HORA DEL RECALCULO
-ANGLEEEEE: 360
-450
-540
-270
-VECTORES
-DIR: vec3(0.000000, 0.000000, -1.000000)
-A: vec3(1.000000, 0.000000, 0.000000)
-S: vec3(-0.000000, 0.000000, 1.000000)
-D:vec3(-1.000000, 0.000000, -0.000000)
-TIME: 0.0504191
-S
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0497011
-S
-S
-S
-S
-S
-S
-S
-S
-S
-S
-TIME: 0.049628
-S
-TIME: 0.050365
-S
-TIME: 0.0497848
-S
-TIME: 0.0502541
-S
-TIME: 0.0495832
-S
-TIME: 0.0503781
-REPOSO
-TIME: 0.0498003
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0497219
-D
-D
-D
-D
-D
-D
-REPOSO
-TIME: 0.0504249
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0505379
-D
-D
-D
-D
-D
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -49 POS Y: -143.838
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -52.28 POS Y: -143.4
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 13
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -49.2364 POS Y: -143.838
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -52.28 POS Y: -143.4
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 13
-D
-ACTUALIZO 0
-ID PUERTA: 13
-D
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -50.8832 POS Y: -144.31
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -48.55 POS Y: -135.89
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 13
-S
-TIME: 0.0504431
-TIME: 0.0504431
-S
-S
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 7
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -52.0499 POS Y: -141.976
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -52.86 POS Y: -139.66
-///////////////////////////////////
-camID: 19
-ID CAMARA: 19
-S
-S
-S
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 13
-cerrar123
-S
-pos puerta: 0.79 -51.97
-0.7 -46.27
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 7
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -52.0499 POS Y: -137.31
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -55.31 POS Y: -137.2
-///////////////////////////////////
-camID: 8
-ID CAMARA: 8
-S
-pos puerta: 0.79 -51.97
-0.7 -46.27
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 13
-cerrar123
-S
-pos puerta: 0.79 -51.97
-0.7 -46.27
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -52.0499 POS Y: -134.81
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -52.28 POS Y: -131.685
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-TIME: 0.0504756
-S
-TIME: 0.0497494
-S
-TIME: 0.0502046
-S
-TIME: 0.0495888
-S
-S
-S
-S
-TIME: 0.0495393
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -50.6874 POS Y: -125.224
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -52.28 POS Y: -123.4
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-S
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -47.5237 POS Y: -120.295
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -48.55 POS Y: -117.89
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-ACTUALIZO 0
-ID PUERTA: 13
-S
-S
-S
-REPOSO
-HORA DEL RECALCULO
-ANGLEEEEE: 270
 360
-450
-180
+90
 VECTORES
-DIR: vec3(-1.000000, 0.000000, -0.000000)
-A: vec3(0.000000, 0.000000, -1.000000)
-S: vec3(1.000000, 0.000000, 0.000000)
-D:vec3(0.000000, 0.000000, 1.000000)
-TIME: 0.0495071
-S
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0504902
-S
-S
-S
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 1
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -40.295 POS Y: -113.634
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -39.04 POS Y: -93.6
-///////////////////////////////////
-S
-S
-S
-S
-S
-S
-REPOSO
-TIME: 0.0505513
-TIME: 0.0505513
-W
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0505092
-W
-W
-W
-W
-W
-W
-W
-W
-W
-W
-TIME: 0.0504797
-W
-TIME: 0.0494916
-W
-TIME: 0.0505399
-W
-TIME: 0.0497547
-W
-TIME: 0.0501561
-W
-TIME: 0.049539
-W
-TIME: 0.0505756
-W
-TIME: 0.0497857
-W
-TIME: 0.0501379
-W
-TIME: 0.049532
-W
-TIME: 0.0505841
-W
-TIME: 0.0495741
-W
-TIME: 0.0503024
-W
-TIME: 0.0495241
-W
-TIME: 0.0505844
-W
-TIME: 0.0495639
-A
-TIME: 0.0503357
-TIME: 0.0503357
-TIME: 0.0503357
-A
-A
-A
-A
-A
-REPOSO
-TIME: 0.0505449
-W
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0504653
-W
-W
-W
-W
-W
-W
-W
-W
-W
-W
-TIME: 0.0501128
-W
-TIME: 0.0495695
-W
-TIME: 0.0504214
-W
-TIME: 0.0499475
-W
-TIME: 0.0500566
-W
-TIME: 0.0495607
-W
-TIME: 0.0504507
-W
-TIME: 0.0496315
-W
-TIME: 0.0503641
-W
-TIME: 0.0495496
-W
-TIME: 0.0504346
-W
-TIME: 0.0497321
-TIME: 0.0497321
-D
-TIME: 0.0503234
-D
-D
-D
-D
-D
-D
-D
-D
-D
-D
-TIME: 0.0505072
-D
-TIME: 0.0501292
-D
-TIME: 0.0498269
-D
-TIME: 0.0495581
-D
-TIME: 0.0504522
-A
-TIME: 0.0502003
-TIME: 0.0502003
-A
-A
-A
-A
-A
-REPOSO
-TIME: 0.0494246
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0504852
-D
-D
-D
-D
-D
-D
-D
-D
-D
-D
-TIME: 0.0505926
-D
-TIME: 0.0493843
-D
-TIME: 0.0504475
-D
-TIME: 0.0495276
-D
-TIME: 0.050707
-D
-TIME: 0.0493243
-D
-TIME: 0.0504922
-D
-TIME: 0.0494867
-D
-TIME: 0.0505411
-D
-TIME: 0.0497193
-D
-TIME: 0.0502052
-D
-TIME: 0.0495507
-D
-TIME: 0.0504996
-D
-TIME: 0.0496215
-REPOSO
-TIME: 0.0504065
-TIME: 0.0504065
-W
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0504223
-W
-W
-W
-W
-W
-W
-W
-W
-W
-W
-TIME: 0.0503524
-W
-TIME: 0.0495259
-W
-TIME: 0.0504563
-W
-TIME: 0.0497017
-W
-TIME: 0.0503439
-W
-TIME: 0.0494843
-W
-TIME: 0.0505168
-W
-TIME: 0.0495493
-W
-TIME: 0.0504706
-W
-TIME: 0.0494706
-W
-TIME: 0.0505469
-W
-TIME: 0.0494723
-W
-TIME: 0.0505279
-W
-TIME: 0.0494668
-W
-TIME: 0.0504296
-REPOSO
-TIME: 0.0495908
-TIME: 0.0495908
+DIR: vec3(-0.000000, 0.000000, 1.000000)
+A: vec3(-1.000000, 0.000000, -0.000000)
+S: vec3(0.000000, 0.000000, -1.000000)
+D:vec3(1.000000, 0.000000, 0.000000)
+TIME: 0.049922
+TIME: 0.049922
 A
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0504996
 A
 A
 A
 A
-A
-REPOSO
-TIME: 0.0506224
-S
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0495861
-S
-S
-S
-S
-TIME: 0.0495999
-REPOSO
-W
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0501774
-W
-W
-W
-W
-W
-W
-W
-W
-W
-REPOSO
-TIME: 0.0505177
-TIME: 0.0505177
-D
-ANDAR
-LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
-LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
-MAS RUTA: resourse/animations/Personaje/AndarFix/
-TIME: 0.0503702
-D
-D
-D
-D
-D
-D
-D
-D
-D
-D
-TIME: 0.0503799
-D
-TIME: 0.0495431
-D
-TIME: 0.0506736
-D
-TIME: 0.0493933
-D
-TIME: 0.0504027
-D
-TIME: 0.0496139
-D
-TIME: 0.0506611
-D
-TIME: 0.0494756
-D
-TIME: 0.0502327
-D
-TIME: 0.0495993
-D
-TIME: 0.0505276
-D
-TIME: 0.049671
-D
-TIME: 0.0502245
-D
-TIME: 0.04958
-D
-TIME: 0.0504668
-W
-TIME: 0.0497675
-TIME: 0.0497675
-W
-W
-W
-W
-W
-W
-W
-W
-TIME: 0.0496865
-W
-W
-D
-TIME: 0.0505113
-D
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -144.138 POS Y: -58.8012
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -142.66 POS Y: -53.47
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 14
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -144.138 POS Y: -57.7672
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -142.66 POS Y: -53.47
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 14
-D
-ACTUALIZO 0
-ID PUERTA: 14
-D
-D
 
 ////////////////////////
 COLISION
@@ -7502,15 +6919,158 @@ ENTIDAD 1: 0
 ENTIDAD 2: 7
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -144.138 POS Y: -55.4432
+POS X: -59.5 POS Y: 4.66667
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -138.35 POS Y: -51.1
+POS X: -62.67 POS Y: 1.77
 ///////////////////////////////////
-camID: 8
-ID CAMARA: 8
-D
+camID: 12
+ID CAMARA: 12
+A
+A
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+A
+---- ANGLE: 450
+TIME: 0.050008
+A
+---- ANGLE: 450
+TIME: 0.0499905
+A
+---- ANGLE: 450
+TIME: 0.0499761
+A
+---- ANGLE: 450
+TIME: 0.0500139
+A
+---- ANGLE: 450
+TIME: 0.0500036
+A
+---- ANGLE: 450
+TIME: 0.049987
+A
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+TIME: 0.0500373
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500703
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0498442
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500399
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500423
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500221
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499159
+A
+---- ANGLE: 450
+TIME: 0.050042
+A
+---- ANGLE: 450
+TIME: 0.0500326
+A
+---- ANGLE: 450
+TIME: 0.0499583
+A
+---- ANGLE: 450
+TIME: 0.0500478
+A
+---- ANGLE: 450
+TIME: 0.0499448
+A
+---- ANGLE: 450
+TIME: 0.0499829
+A
+---- ANGLE: 450
+TIME: 0.0501227
+A
+TIME: 0.0498606
+A
+TIME: 0.050049
+A
+TIME: 0.0499086
+A
+TIME: 0.0501444
+A
+TIME: 0.0498813
+A
+TIME: 0.050075
+A
+TIME: 0.0499586
+A
+TIME: 0.0500601
+A
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+TIME: 0.0499214
+A
+---- ANGLE: 450
+TIME: 0.0500355
+A
+---- ANGLE: 450
+TIME: 0.0499577
+A
+---- ANGLE: 450
+TIME: 0.0500859
+A
+---- ANGLE: 450
+TIME: 0.0499056
+A
+---- ANGLE: 450
+TIME: 0.0500288
+A
+TIME: 0.0500007
+A
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+TIME: 0.0500777
+A
+---- ANGLE: 450
+TIME: 0.049903
+A
+---- ANGLE: 450
+TIME: 0.0499808
+A
+---- ANGLE: 450
+TIME: 0.0500347
+A
+---- ANGLE: 450
+TIME: 0.0500639
+A
+---- ANGLE: 450
+TIME: 0.0499267
+A
+TIME: 0.0500127
+A
+TIME: 0.0501684
+A
+TIME: 0.0498389
+A
+TIME: 0.0499703
+A
+TIME: 0.0500402
+A
+TIME: 0.0499887
 
 ////////////////////////
 COLISION
@@ -7518,36 +7078,121 @@ ENTIDAD 1: 0
 ENTIDAD 2: 7
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: -144.138 POS Y: -54.2766
+POS X: -116.667 POS Y: 4.66667
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -141.47 POS Y: -47.96
+POS X: -120.63 POS Y: 2.44
+///////////////////////////////////
+camID: 12
+ID CAMARA: 12
+A
+TIME: 0.0500159
+A
+TIME: 0.0499393
+A
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+TIME: 0.0500115
+A
+---- ANGLE: 450
+TIME: 0.049987
+A
+---- ANGLE: 450
+TIME: 0.0501254
+A
+---- ANGLE: 450
+TIME: 0.0499513
+A
+---- ANGLE: 450
+TIME: 0.0499583
+A
+---- ANGLE: 450
+TIME: 0.0499603
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+ENTIDAD 2: 7
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -126 POS Y: 4.66667
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -127.65 POS Y: 0.47
 ///////////////////////////////////
 camID: 6
 ID CAMARA: 6
-D
-D
+A
+---- ANGLE: 450
+TIME: 0.0500648
+A
+---- ANGLE: 450
 
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -144.138 POS Y: -51.9432
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -138.71 POS Y: -37.74
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 14
-D
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 14
-cerrar123
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+TIME: 0.0500484
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499396
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499679
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0501944
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0505622
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0492667
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499747
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.051063
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.049049
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499893
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499153
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500349
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500788
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499773
+A
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499337
+A
+---- ANGLE: 450
+TIME: 0.0499402
 REPOSO
 HORA DEL RECALCULO
 ANGLEEEEE: 360
@@ -7559,147 +7204,719 @@ DIR: vec3(0.000000, 0.000000, -1.000000)
 A: vec3(1.000000, 0.000000, 0.000000)
 S: vec3(-0.000000, 0.000000, 1.000000)
 D:vec3(-1.000000, 0.000000, -0.000000)
-pos puerta: 0.79 -142.35
-0.7 -136.43
-TIME: 0.0505212
+---- ANGLE: 450
+TIME: 0.0500232
+TIME: 0.0500232
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0500256
+D
+D
+D
+D
+D
+D
+REPOSO
+TIME: 0.0500794
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+---- ANGLE: 450
+TIME: 0.0499905
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+D
+---- ANGLE: 450
+---- ANGLE: 450
+D
+---- ANGLE: 450
+---- ANGLE: 450
+D
+---- ANGLE: 450
+---- ANGLE: 450
+D
+---- ANGLE: 450
+---- ANGLE: 450
+D
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500557
+D
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.049922
+D
+---- ANGLE: 450
+TIME: 0.0500364
+D
+---- ANGLE: 450
+TIME: 0.0499747
+D
+---- ANGLE: 450
+TIME: 0.0500311
+D
+---- ANGLE: 450
+TIME: 0.049977
+D
+---- ANGLE: 450
+TIME: 0.0500212
+D
+---- ANGLE: 450
+TIME: 0.0499577
+D
+---- ANGLE: 450
+TIME: 0.050087
+D
+TIME: 0.0499083
+D
+TIME: 0.0500645
+D
+TIME: 0.0500282
+D
+TIME: 0.0500165
+D
+TIME: 0.0499018
+D
+TIME: 0.0500613
+D
+TIME: 0.0499636
+D
+TIME: 0.0500709
+D
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+TIME: 0.0499124
+D
+---- ANGLE: 450
+TIME: 0.0500385
+D
+---- ANGLE: 450
+TIME: 0.0500592
+D
+---- ANGLE: 450
+TIME: 0.0499443
+D
+---- ANGLE: 450
+TIME: 0.0499861
+D
+---- ANGLE: 450
+TIME: 0.0500016
+D
+TIME: 0.0501865
+D
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+TIME: 0.0499065
+REPOSO
+---- ANGLE: 450
+TIME: 0.0498922
+TIME: 0.0498922
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
 W
 ANDAR
 LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
 LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
 MAS RUTA: resourse/animations/Personaje/AndarFix/
-pos puerta: 0.79 -142.35
-0.7 -136.43
-TIME: 0.0495557
+TIME: 0.0500019
 W
-pos puerta: 0.79 -142.35
-0.7 -136.43
 W
-pos puerta: 0.79 -142.35
-0.7 -136.43
+W
+W
+W
+W
+W
+W
 
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -144.138 POS Y: -51.9432
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -142.66 POS Y: -45.47
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 14
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
 W
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 14
-cerrar123
+---- ANGLE: 450
+W
+---- ANGLE: 450
+TIME: 0.0498032
+W
+---- ANGLE: 450
+TIME: 0.0501315
+W
+---- ANGLE: 450
+TIME: 0.0499606
+W
+---- ANGLE: 450
+TIME: 0.0499033
+W
+TIME: 0.0500361
+W
 
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 7
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -144.138 POS Y: -53.1099
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -138.35 POS Y: -51.1
-///////////////////////////////////
-camID: 8
-ID CAMARA: 8
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+TIME: 0.0500314
 W
-pos puerta: 0.79 -142.35
-0.7 -136.43
+---- ANGLE: 450
+TIME: 0.0500566
 W
-pos puerta: 0.79 -142.35
-0.7 -136.43
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 1
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -145.798 POS Y: -54.2766
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -150.93 POS Y: -59.57
-///////////////////////////////////
-W
-pos puerta: 0.79 -142.35
-0.7 -136.43
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 2
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -146.3 POS Y: -53.7451
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -142.66 POS Y: -50.1161
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 14
-
-////////////////////////
-COLISION
-ENTIDAD 1: 0
-ENTIDAD 2: 1
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -146.878 POS Y: -53.8858
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -150.93 POS Y: -59.57
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 14
-W
-lalal 2
-ACTUALIZO 1
-ID PUERTA: 14
-cerrar123
-W
-pos puerta: 0.79 -142.35
-0.7 -136.43
-W
-pos puerta: 0.79 -142.35
-0.7 -136.43
+---- ANGLE: 450
+TIME: 0.0498617
 REPOSO
-HORA DEL RECALCULO
-ANGLEEEEE: 270
-360
-450
-180
-VECTORES
-DIR: vec3(-1.000000, 0.000000, -0.000000)
-A: vec3(0.000000, 0.000000, -1.000000)
-S: vec3(1.000000, 0.000000, 0.000000)
-D:vec3(0.000000, 0.000000, 1.000000)
-pos puerta: 0.79 -142.35
-0.7 -136.43
-TIME: 0.0504589
-pos puerta: 0.79 -142.35
-0.7 -136.43
-pos puerta: 0.79 -142.35
-0.7 -136.43
-pos puerta: 0.79 -142.35
-0.7 -136.43
-pos puerta: 0.79 -142.35
-0.7 -136.43
-pos puerta: 0.79 -142.35
-0.7 -136.43
-pos puerta: 0.79 -142.35
-0.7 -136.43
+---- ANGLE: 450
+TIME: 0.0500472
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+---- ANGLE: 450
+TIME: 0.0498875
+S
+---- ANGLE: 450
+S
+---- ANGLE: 450
+S
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+S
+---- ANGLE: 450
+---- ANGLE: 450
+S
+---- ANGLE: 450
+---- ANGLE: 450
+S
+---- ANGLE: 450
+---- ANGLE: 450
+S
+---- ANGLE: 450
+---- ANGLE: 450
+S
+---- ANGLE: 450
+---- ANGLE: 450
+S
+---- ANGLE: 450
+---- ANGLE: 450
+S
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500019
+S
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500025
+S
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500715
+S
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499097
+S
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0500627
+S
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499396
+S
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499993
+REPOSO
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499492
+TIME: 0.0499492
+---- ANGLE: 450
+---- ANGLE: 450
+A
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+---- ANGLE: 450
+TIME: 0.0500537
+A
+---- ANGLE: 450
+A
+---- ANGLE: 450
+A
+---- ANGLE: 450
+A
+---- ANGLE: 450
+A
+A
+A
+A
+REPOSO
+TIME: 0.0499097
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+---- ANGLE: 450
+TIME: 0.0499832
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+REPOSO
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0498942
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+D
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+---- ANGLE: 450
+---- ANGLE: 450
+TIME: 0.0499715
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+D
+---- ANGLE: 450
+REPOSO
+TIME: 0.0499843
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+S
+ANDAR
+LA PATH SURMANO: resourse/animations/Personaje/AndarFix/
+LA RUTA SURMANO: resourse/animations/Personaje/AndarFix/
+MAS RUTA: resourse/animations/Personaje/AndarFix/
+TIME: 0.0499955
+S
+S
+REPOSO
+TIME: 0.0498828
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+
+NOMBRE DEL DESTINO: Waypoint-1 (34)
+NUM: 33
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+---- ANGLE: 450
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado

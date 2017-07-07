@@ -161,8 +161,9 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
 
+
 	//hay que cambiarlo para que se adapte a cada puerta en distinta posicions
-	bodyShape.SetAsBox(5.5*escala.x, 1.5*escala.z);
+	bodyShape.SetAsBox(3.5*escala.x, 3.5*escala.z);
 	bodyShape2.SetAsBox(3*escala.x, escala.z);
 	
 
@@ -242,7 +243,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
     bodyDef.position.Set((pos.x), (-pos.z));
 
 	if (raza == 10) {
-		bodyShape.SetAsBox(2.0f, 2.0f);
+		bodyShape.SetAsBox(2.5f, 2.5f);
 	}
 
 	else if (raza == 11) {

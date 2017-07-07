@@ -544,16 +544,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA - 180, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -647,16 +647,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -745,16 +745,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA - 180, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -804,16 +804,16 @@ void Escenario::dibujarEscenario() {
 								//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 								//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-								Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+								Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 									glm::vec3(rxA, ryA, -rzA),
 									glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-									glm::vec3(tx + 1, ty, -tz),
+									glm::vec3(tx, ty, -tz),
 									glm::vec3(rx, ry, -rz),
 									glm::vec3(ex, ey, ez),
 									(*N).nombre);
 
 								door->setFisica(mundo, num);
-								door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+								door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 									glm::vec3(rx, ry, -rz),
 									glm::vec3(ex, ey, ez));
 								puertas.push_back(door);
@@ -904,16 +904,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA - 180, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -1001,16 +1001,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -1096,16 +1096,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA - 180, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -1191,16 +1191,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -1286,16 +1286,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA - 180, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -1383,16 +1383,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA - 180, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -1693,16 +1693,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA - 180, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -1790,16 +1790,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA - 180, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry - 180, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
@@ -1891,16 +1891,16 @@ void Escenario::dibujarEscenario() {
 							//Puerta(TGraphicEngine * motorApp, int ident, glm::vec3 posicion, glm::vec3 rotacion, glm::vec3 escala, std::string llave, std::string tipo,
 							//std::string model, glm::vec3 posicion2, glm::vec3 rotacion2, glm::vec3 escala2, std::string modelB);
 
-							Puerta * door = new Puerta(engine, num, glm::vec3(txA + 1, tyA, -tzA),
+							Puerta * door = new Puerta(engine, num, glm::vec3(txA, tyA, -tzA),
 								glm::vec3(rxA, ryA, -rzA),
 								glm::vec3(exA, eyA, ezA), "ABIERTA", "LATERAL", aux,
-								glm::vec3(tx + 1, ty, -tz),
+								glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry, -rz),
 								glm::vec3(ex, ey, ez),
 								(*N).nombre);
 
 							door->setFisica(mundo, num);
-							door->setFisicas(mundo, num, glm::vec3(tx - 1, ty, -tz),
+							door->setFisicas(mundo, num, glm::vec3(tx, ty, -tz),
 								glm::vec3(rx, ry, -rz),
 								glm::vec3(ex, ey, ez));
 							puertas.push_back(door);
