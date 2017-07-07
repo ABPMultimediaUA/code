@@ -163,14 +163,14 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
 
 
 	//hay que cambiarlo para que se adapte a cada puerta en distinta posicions
-	bodyShape.SetAsBox(3.5*escala.x, 3.5*escala.z);
-	bodyShape2.SetAsBox(3*escala.x, escala.z);
+	bodyShape.SetAsBox(5.5*escala.x, 5.5*escala.z);
+	bodyShape2.SetAsBox(3*escala.x, 1.5*escala.z);
 	
 
     objeto3D = dirPuerta;
     puertaBody = world->CreateBody(&bodyDef);
 	puertaBody-> CreateFixture(&bodyShape, 1.0f);
-	puertaBody->GetFixtureList()->SetSensor(sensor);
+	puertaBody->GetFixtureList()->SetSensor(true);
 	puertaBody->SetTransform(bodyDef.position, -rot.y * DEGTORAD);
     //std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
 	puertaBody->SetUserData(this);
@@ -254,20 +254,19 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 	bodyCircle.m_radius = 5; 
 
 	////add semicircle radar sensor to tower
-	float radius = 20;
-	b2Vec2 vertices[8];
-	vertices[0].Set(0, 0);
-	for (int i = 0; i < 7; i++) {
-		float angle = i / 6.0 * 90 * DEGTORAD;
-		vertices[i + 1].Set(radius * cosf(angle), radius * sinf(angle));
-	}
-	sombraShape.Set(vertices, 8);
+	//float radius = 20;
+	//b2Vec2 vertices[8];
+	//vertices[0].Set(0, 0);
+	//for (int i = 0; i < 7; i++) {
+	//	float angle = i / 6.0 * 120 * DEGTORAD;
+	//	vertices[i + 1].Set(radius * cosf(angle), radius * sinf(angle));
+	//}
+	//sombraShape.Set(vertices, 8);
 
-	glEnable(GL_LINE_STIPPLE);
-
-    body = world->CreateBody(&bodyDef);
-	body->CreateFixture(&sombraShape, 1.0f);
-	body->GetFixtureList()->SetSensor(true);
+	//
+	  body = world->CreateBody(&bodyDef);
+	//body->CreateFixture(&sombraShape, 1.0f);
+	//body->GetFixtureList()->SetSensor(true);
     body -> CreateFixture(&bodyShape, 1.0f);
     live = vivo;
    
@@ -286,11 +285,11 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
     //sombraE->SetMassData(&md);
     idenSh = 1;
     filtro.groupIndex = FILTRO_ENEMIGO;
+	body->GetFixtureList()->SetFilterData(filtro);
+	//for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
+	//	f->SetFilterData(filtro);
 
-	for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
-		f->SetFilterData(filtro);
-
-	}
+	//}
 	
 
 

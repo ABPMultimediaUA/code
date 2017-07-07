@@ -55,7 +55,7 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, Entity2D *pers, int m
 	Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
 
 	std::cout << "ID PUERTA: " << entity->getId() << std::endl;
-	if (pers->getIDEN() == 0)
+	
 		//Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
 		
 	if (modo == 0 && puerta->getEstado() != "BLOQLLAVE" ) {
@@ -808,13 +808,13 @@ void MiContactListener::EndContact(b2Contact* contact) {
 				}
 
 
-				if (entity1->getIDEN() == 2 && entity2->getIDEN() == 0 && f1->IsSensor() == true) {
+				if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true && f2->IsSensor() != true) {
 					std::cout << "lalal 1" << std::endl;
 
 					actualizarPuerta(entity1, entity2, 1);
 				}
 
-				else if (entity2->getIDEN() == 2 && entity1->getIDEN() == 0 && f2->IsSensor() == true) {
+				else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true && f1->IsSensor() != true) {
 					std::cout << "lalal 2" << std::endl;
 					actualizarPuerta(entity2, entity1, 1);
 				}
@@ -903,7 +903,7 @@ void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* im
 					actualizarPuerta(entity1, entity2, 0);
 				}
 
-				else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4)) {
+				else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) ) {
 					actualizarPuerta(entity2, entity1, 0);
 				}
 
