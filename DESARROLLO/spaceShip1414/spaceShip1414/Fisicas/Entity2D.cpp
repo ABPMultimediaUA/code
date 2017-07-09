@@ -250,12 +250,18 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 
 	////add semicircle radar sensor to tower
 	float radius = 15;
+	float tamSensor = 90.0f;
+	float rotSenParaEmpezar = 45.0f;
 	b2Vec2 vertices[8];
 	vertices[0].Set(0, 0);
 	for (int i = 0; i < 7; i++) {
-		float angle = i / 6.0 * 90 * DEGTORAD;
+
+		float angle = (i / 6.0 * tamSensor) + rotSenParaEmpezar;
+		angle *= DEGTORAD;
 		vertices[i + 1].Set(radius * cosf(angle), radius * sinf(angle));
+
 	}
+
 	sombraShape.Set(vertices, 8);
 
 	

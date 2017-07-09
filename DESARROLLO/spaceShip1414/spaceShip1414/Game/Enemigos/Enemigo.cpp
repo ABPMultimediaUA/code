@@ -265,7 +265,7 @@ void Enemigo::align(const glm::vec3 target){
 	*/
 	engine->resetTransform(nodo, 'r');
 	engine->rotarYPR(nodo, desireAngle - 180, 0.0f, 0.0f);
-	entity->getCuerpo2D()->SetTransform(entity->getCuerpo2D()->GetPosition(), (desireAngle + 90 ) * DEGTORAD);
+	entity->getCuerpo2D()->SetTransform(entity->getCuerpo2D()->GetPosition(), (desireAngle ) * DEGTORAD);
 	//entity->getCuerpo2D()->SetAngularVelocity(0.0f);
 	//entity->getCuerpo2D()->SetAngularVelocity(sto.angular * DEGTORAD);
 	std::cout << "--------> ANGLE CUERPO: " <<this<<" ---> "<<entity->getCuerpo2D()->GetAngle() * RADTODEG << std::endl;
