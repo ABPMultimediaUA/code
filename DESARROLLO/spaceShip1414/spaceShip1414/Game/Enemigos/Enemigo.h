@@ -36,6 +36,7 @@ class TNodo;
 class Mundo;
 
 #define DEGTORAD 0.0174532925199432957f
+#define RADTODEG 180 / 3.14f 
 
 #define CRIA 10
 #define BERSERKER 11
@@ -53,7 +54,7 @@ class Mundo;
 #define FLOCKING 8
 
 #define MULTIVEL 50
-#define PROPCURVA 15
+#define PROPCURVA 25
 //el enemigo deberia tener un estado que sea
 //siguiendo al lider o algo para aplicar el flocking
 // a menos velocidad mas propcurva y a mas vel, menos propcurva
@@ -210,7 +211,7 @@ protected:
 	float resistencia;
 	bool vista; //usado para esquivar enemigos
 	bool esquivarPared;
-	bool vision;
+	bool vision; //cambiarlo por un raycasting que te diga si choca contra algo o no
 	//hay que crear booleanos para ver si tiene que esquivar un muro, enemigo o si puede verte
 	Kinematic st;
 	Steering sto;

@@ -55,7 +55,7 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, Entity2D *pers, int m
 	Puerta *puerta = static_cast<Puerta*>(entity->getObjeto3D());
 
 	std::cout << "ID PUERTA: " << entity->getId() << std::endl;
-	
+
 		//Personaje *p = static_cast<Personaje*>(pers->getObjeto3D());
 		
 	if (modo == 0 && puerta->getEstado() != "BLOQLLAVE" ) {
@@ -446,38 +446,38 @@ void paredDetectada(Entity2D *ene, bool x) {
 
 	//Enemigo *e = static_cast<Enemigo*>(ene->getObjeto3D());
 
-	////e->setVista(x);
+
 	//e->setEsquivarPared(x);
-	////e->obstacleAvoidance();
+
 
 }
 
 
 void empezarFlocking(Entity2D *e1, Entity2D *e2) {
 
-	//Enemigo *ene1 = static_cast<Enemigo*>(e1->getObjeto3D());
-	//Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
+	Enemigo *ene1 = static_cast<Enemigo*>(e1->getObjeto3D());
+	Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
 
-	//if (ene1->getLider()) {
-	//	//ene2->iniLogicaDifusa();
-	//	//hay que hacer un metodo que me diga su estado de la moral
-	//	//para ver si tiene que activar el flocking o no
+	if (ene1->getLider()) {
+		//ene2->iniLogicaDifusa();
+		//hay que hacer un metodo que me diga su estado de la moral
+		//para ver si tiene que activar el flocking o no
 
-	//}
+	}
 
-	//else if(ene2->getLider()) {
-	//	//ene1->iniLogicaDifusa();
-	//
-	//}
+	else if(ene2->getLider()) {
+		//ene1->iniLogicaDifusa();
+	
+	}
 
-	//	ene1->setGrupoFlocking(e1);
-	//	ene1->setGrupoFlocking(e2);
+		ene1->setGrupoFlocking(e1);
+		ene1->setGrupoFlocking(e2);
 
-	//	ene2->setGrupoFlocking(e2);
-	//	ene2->setGrupoFlocking(e1);
+		ene2->setGrupoFlocking(e2);
+		ene2->setGrupoFlocking(e1);
 
-	//	ene1->setVista(true);
-	//	ene2->setVista(true);
+		ene1->setVista(true);
+		ene2->setVista(true);
 
 
 }
@@ -485,19 +485,19 @@ void empezarFlocking(Entity2D *e1, Entity2D *e2) {
 
 void eliminarEntityDelVecindario(Entity2D *e1, Entity2D *e2) {
 
-	//Enemigo *ene1 = static_cast<Enemigo*>(e1->getObjeto3D());
-	//Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
+	Enemigo *ene1 = static_cast<Enemigo*>(e1->getObjeto3D());
+	Enemigo *ene2 = static_cast<Enemigo*>(e2->getObjeto3D());
 
-	//std::cout << "ME MARCHO" << std::endl;
+	std::cout << "ME MARCHO" << std::endl;
 
-	//ene1->deleteEntity(e1);
-	//ene1->deleteEntity(e2);
-	//
-	//ene2->deleteEntity(e2);
-	//ene2->deleteEntity(e1);
+	ene1->deleteEntity(e1);
+	ene1->deleteEntity(e2);
+	
+	ene2->deleteEntity(e2);
+	ene2->deleteEntity(e1);
 
-	//ene1->setVista(false);
-	//ene2->setVista(false);
+	ene1->setVista(false);
+	ene2->setVista(false);
 
 }
 
@@ -572,7 +572,9 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			//            Personaje *pers = static_cast<Personaje*>(entity1->getObjeto3D());
 
 			 std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
+			 std::cout << "SENSOR E1: " << f1->IsSensor() << std::endl;
 			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
+			   std::cout << "SENSOR E2: " << f2->IsSensor() << std::endl;
 
 
 			   /* int a = *((int*)b1->GetUserData());
@@ -611,13 +613,13 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 			{
 				if (entity1->getIDEN() == 4 && f1->IsSensor() && entity2->getIDEN() == 4 && !f2->IsSensor()) {
 					empezarFlocking(entity1, entity2);
-					evitarColisionEntreEnemigos(entity1, entity2);
+					//evitarColisionEntreEnemigos(entity1, entity2);
 
 				}
 
 				else if (entity2->getIDEN() == 4 && f2->IsSensor() && entity1->getIDEN() == 4 && !f1->IsSensor()) {
 					empezarFlocking(entity2, entity1);
-					evitarColisionEntreEnemigos(entity2, entity1);
+				//	evitarColisionEntreEnemigos(entity2, entity1);
 
 
 				}
@@ -899,11 +901,11 @@ void MiContactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* im
 
 				}
 
-				if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4)) {
+				if (entity1->getIDEN() == 2 && (entity2->getIDEN() == 0 || entity2->getIDEN() == 4) && f1->IsSensor() == true && f2->IsSensor() != true) {
 					actualizarPuerta(entity1, entity2, 0);
 				}
 
-				else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) ) {
+				else if (entity2->getIDEN() == 2 && (entity1->getIDEN() == 0 || entity1->getIDEN() == 4) && f2->IsSensor() == true && f1->IsSensor() != true) {
 					actualizarPuerta(entity2, entity1, 0);
 				}
 

@@ -208,7 +208,7 @@ void Enemigo::align(const glm::vec3 target){
 
 	float maxAngularAcceleration = vel * PROPCURVA;
 	float maxRotation = 45.0f;
-	float desireAngle = atan2f(-target.x, target.z) * 180 / 3.14f;
+	float desireAngle = atan2f(-target.x, -target.z) * RADTODEG;
 	float rotationSize;
 	float rotation = desireAngle - st.orientacion;
 	rotationSize = abs(rotation);
@@ -248,13 +248,28 @@ void Enemigo::align(const glm::vec3 target){
 		sto.angular *= maxAngularAcceleration;
 	}
 
+	if (desireAngle < 0.0f) {
+		desireAngle += 360;
+	}
+
+	else if (desireAngle > 360) {
+		desireAngle -= 360;
+	}
+
 	//sto.linear = 0;
-	std::cout << "---- ANGLE: " << sto.angular << std::endl;
+	//std::cout << "---- ANGLE: " << sto.angular << std::endl;
 	//maya->setRotation(vector3df(0, sto.angular, 0));
+	/*
+	Smooth rotazione
+	Use setPosition to set the actual body angle to: body.angle = body.angle + (angleTarget - body.angle) * 0.05
+	*/
 	engine->resetTransform(nodo, 'r');
-	engine->rotarYPR(nodo, sto.angular - 180, 0.0f, 0.0f);
-	entity->getCuerpo2D()->SetTransform(entity->getCuerpo2D()->GetPosition(), -(sto.angular + 135) * DEGTORAD);
+	engine->rotarYPR(nodo, desireAngle - 180, 0.0f, 0.0f);
+	entity->getCuerpo2D()->SetTransform(entity->getCuerpo2D()->GetPosition(), (desireAngle + 90 ) * DEGTORAD);
+	//entity->getCuerpo2D()->SetAngularVelocity(0.0f);
 	//entity->getCuerpo2D()->SetAngularVelocity(sto.angular * DEGTORAD);
+	std::cout << "--------> ANGLE CUERPO: " <<this<<" ---> "<<entity->getCuerpo2D()->GetAngle() * RADTODEG << std::endl;
+	
 }
 
 void Enemigo::collisionAvoidance(glm::vec3 vecU) {
@@ -267,6 +282,7 @@ void Enemigo::collisionAvoidance(glm::vec3 vecU) {
 	Mover();
 }
 
+//esquiva paredes
 void Enemigo::obstacleAvoidance()
 {
 
@@ -335,6 +351,7 @@ void Enemigo::setPos(glm::vec3 p) {
 	//setPos(entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 	pos = p;
 	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	entity->getCuerpo2D()->SetAngularVelocity(0.0f);
 
 }
 
@@ -344,15 +361,15 @@ float Enemigo::getVel() {
 
 void Enemigo::setVelocidad() {
 
-    if (entity->getSombraE2D() != NULL) {
-        entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-        entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-		setPos(st.posicion);
-		st.velocidad = glm::vec3(0, 0, 0);
-		sto.linear = glm::vec3(0, 0, 0);
-		sto.angular = 0.0f;
+    
+    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+	entity->getCuerpo2D()->SetAngularVelocity(0.0f);
+	setPos(st.posicion);
+	st.velocidad = glm::vec3(0, 0, 0);
+	sto.linear = glm::vec3(0, 0, 0);
+	sto.angular = 0.0f;
 
-    }
+    
 }
 
 void Enemigo::Patrullar() {

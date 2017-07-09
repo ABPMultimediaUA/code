@@ -5974,318 +5974,1301 @@ ENTRO AL CALLBACK
 
 Recurso nombre: cria.obj
 
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 38.72 POS Y: 0.18
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 26.47 POS Y: 20.95
+///////////////////////////////////
+
 NOMBRE: Waypoint-1 (5)
 POS NODO: 5
 
 NOMBRE: Waypoint-1 (3)
 POS NODO: 3
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
 
 ////////////////////////
 COLISION
 ENTIDAD 1: 7
+SENSOR E1: 1
 ENTIDAD 2: 4
+SENSOR E2: 1
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
 POS X: 18.56 POS Y: 0
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 24.9545 POS Y: 19.042
+POS X: 25.7858 POS Y: 20.4743
 ///////////////////////////////////
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: -450
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -16 POS Y: -51.5
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -16.5953 POS Y: -32.2419
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -16 POS Y: -39.53
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -16.5953 POS Y: -32.2419
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 17.03 POS Y: -41.77
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -16.5953 POS Y: -32.2419
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -9.77 POS Y: -42.39
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -16.5953 POS Y: -32.2419
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -9.77 POS Y: -42.39
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -16.5953 POS Y: -32.2419
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -16.87 POS Y: -42.39
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -16.5953 POS Y: -32.2419
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -16.87 POS Y: -42.39
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -16.5953 POS Y: -32.2419
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -24.9 POS Y: -42.14
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -15.8378 POS Y: -29.9253
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 18.56 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 24.7578 POS Y: 17.3228
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 9.38 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 24.5726 POS Y: 16.5103
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 424.631
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 0 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -14.4396 POS Y: 5.88068
+///////////////////////////////////
+A DISPARAR!
+
+ESTADO ANTES: 
+0
+
+
+ESTADO DESPUES: 
+7
+
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 15.5912
+
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 90.0456
+
+ESTADO ANTES: 
+7
+
+
+ESTADO DESPUES: 
+7
+
+ADIOS 1
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -27.07 POS Y: 27.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -14.3753 POS Y: 7.54611
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -27.82 POS Y: 15.26
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -14.3753 POS Y: 7.54611
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 244.003
+
+////////////////////////
+COLISION
+ENTIDAD 1: 0
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 0 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -13.2858 POS Y: 8.29464
+///////////////////////////////////
+A DISPARAR!
+
+ESTADO ANTES: 
+0
+
+
+ESTADO DESPUES: 
+7
+
+
+DISTANCIA ENTRE ENEMIGO Y JUGADOR
+DISTANCIA: 15.6625
+
 
 NOMBRE DEL DESTINO: Waypoint-1
 NUM: 0
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 90.0456
+
+ESTADO ANTES: 
+7
+
+
+ESTADO DESPUES: 
+7
+
+ADIOS 1
+--------> ANGLE CUERPO: 00000099FD469810 ---> 379.652
 
 ////////////////////////
 COLISION
-ENTIDAD 1: 7
+ENTIDAD 1: 1
+SENSOR E1: 0
 ENTIDAD 2: 4
+SENSOR E2: 1
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: 9.38 POS Y: 0
+POS X: -27.07 POS Y: 27.9
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 14.2759 POS Y: -22.8943
+POS X: -13.2828 POS Y: 9.96053
 ///////////////////////////////////
 
-NOMBRE DEL DESTINO: Waypoint-1 (2)
-NUM: 2
----- ANGLE: 450
----- ANGLE: 450
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -27.82 POS Y: 15.26
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -13.2828 POS Y: 9.96053
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -27.82 POS Y: 15.26
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -12.0205 POS Y: 11.2542
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -27.07 POS Y: 27.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -12.1712 POS Y: 12.0738
+///////////////////////////////////
 
 NOMBRE DEL DESTINO: Waypoint-1 (4)
 NUM: 4
----- ANGLE: 450
----- ANGLE: -450
----- ANGLE: 450
----- ANGLE: -450
----- ANGLE: 450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
----- ANGLE: -450
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
 
-NOMBRE DEL DESTINO: Waypoint-1 (42)
-NUM: 41
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
-
-NOMBRE DEL DESTINO: Waypoint-1 (3)
-NUM: 3
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
----- ANGLE: 825
-
-NOMBRE DEL DESTINO: Waypoint-1 (41)
-NUM: 40
----- ANGLE: 825
----- ANGLE: 450
+NOMBRE DEL DESTINO: Waypoint-1 (2)
+NUM: 2
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.658
 
 ////////////////////////
 COLISION
-ENTIDAD 1: 7
+ENTIDAD 1: 1
+SENSOR E1: 0
 ENTIDAD 2: 4
+SENSOR E2: 1
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
-POS X: 9.38 POS Y: 0
+POS X: -27.82 POS Y: 15.26
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: 14.108 POS Y: 18.2649
+POS X: -12.8605 POS Y: 19.5419
 ///////////////////////////////////
----- ANGLE: 825
----- ANGLE: 450
----- ANGLE: 825
----- ANGLE: 450
----- ANGLE: 825
----- ANGLE: 450
----- ANGLE: 825
----- ANGLE: 450
----- ANGLE: 825
----- ANGLE: 450
----- ANGLE: 825
----- ANGLE: 450
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.658
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -29.51 POS Y: 13.26
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -14.1465 POS Y: 17.2956
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -33.66 POS Y: 12.49
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -14.6057 POS Y: 15.6934
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+--------> ANGLE CUERPO: 00000099FD469810 ---> 317.79
+
+NOMBRE DEL DESTINO: Waypoint-1 (42)
+NUM: 41
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.91
+
+NOMBRE DEL DESTINO: Waypoint-1 (3)
+NUM: 3
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
 
 ////////////////////////
 COLISION
 ENTIDAD 1: 7
+SENSOR E1: 1
 ENTIDAD 2: 4
+SENSOR E2: 1
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
 POS X: -49.46 POS Y: -0.9
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -43.3419 POS Y: 1.5071
+POS X: -31.7198 POS Y: 3.56307
 ///////////////////////////////////
----- ANGLE: 825
----- ANGLE: 450
----- ANGLE: 825
----- ANGLE: 450
----- ANGLE: 825
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -40.74 POS Y: -10.88
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -31.7198 POS Y: 3.56307
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 9.38 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 17.6059 POS Y: 15.9572
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
 
 ////////////////////////
 COLISION
 ENTIDAD 1: 2
+SENSOR E1: 1
 ENTIDAD 2: 4
+SENSOR E2: 1
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
 POS X: -56.11 POS Y: 3.6
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -47.5066 POS Y: 1.3795
+POS X: -35.8004 POS Y: 2.72032
 ///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 4
 
 ////////////////////////
 COLISION
 ENTIDAD 1: 2
+SENSOR E1: 1
 ENTIDAD 2: 4
+SENSOR E2: 1
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
 POS X: -56.11 POS Y: -3.98
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -47.5066 POS Y: 1.3795
+POS X: -35.8004 POS Y: 2.72032
 ///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 4
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
-
-////////////////////////
-COLISION
-ENTIDAD 1: 2
-ENTIDAD 2: 4
-///////////////////////////////////
-POSICION DE LA ENTITY 1
-POS X: -56.11 POS Y: 2.57463
-///////////////////////////////////
-///////////////////////////////////
-POSICION DE LA ENTITY 2
-POS X: -51.0695 POS Y: 1.27465
-///////////////////////////////////
-ACTUALIZO 0
-ID PUERTA: 4
----- ANGLE: 450
-ACTUALIZO 0
-ID PUERTA: 4
-
-NOMBRE DEL DESTINO: Waypoint-1 (2)
-NUM: 2
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
 
 ////////////////////////
 COLISION
 ENTIDAD 1: 7
+SENSOR E1: 1
 ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: 9.38 POS Y: 0
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: 14.4842 POS Y: 17.1257
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -33.66 POS Y: -13.2
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -36.6165 POS Y: 2.55177
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -49.21 POS Y: -11.21
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -36.6165 POS Y: 2.55177
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+
+NOMBRE DEL DESTINO: Waypoint-1 (41)
+NUM: 40
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: 3.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -39.8952 POS Y: 1.97598
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: -3.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -40.7275 POS Y: 1.93543
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+--------> ANGLE CUERPO: 00000099FD469810 ---> 244.003
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -49.46 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -44.0581 POS Y: 1.80062
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -55.6 POS Y: -17.4
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -44.0581 POS Y: 1.80062
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
 ///////////////////////////////////
 POSICION DE LA ENTITY 1
 POS X: -62.67 POS Y: 1.77
 ///////////////////////////////////
 ///////////////////////////////////
 POSICION DE LA ENTITY 2
-POS X: -57.7218 POS Y: 1.26411
+POS X: -44.8908 POS Y: 1.76708
 ///////////////////////////////////
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
----- ANGLE: 450
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: 3.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -48.2214 POS Y: 1.63288
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 4
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: -3.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -48.2214 POS Y: 1.63288
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 4
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.622
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: 3.29291
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -52.082 POS Y: 1.47733
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: 4.10001
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -52.0917 POS Y: 1.31833
+///////////////////////////////////
+
+NOMBRE DEL DESTINO: Waypoint-1 (2)
+NUM: 2
+--------> ANGLE CUERPO: 00000099FD469810 ---> 179.658
+--------> ANGLE CUERPO: 00000099FD469810 ---> 179.658
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -62.67 POS Y: 1.77
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -56.3363 POS Y: -4.71106
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 179.658
+--------> ANGLE CUERPO: 00000099FD469810 ---> 179.658
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 4
+cerrar123
+entra
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 00000099FD469810 ---> 179.658
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 00000099FD469810 ---> 179.658
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 00000099FD469810 ---> 179.658
+pos puerta: 0.66 -55.83
+0.66 -55.83
+pos puerta: 0.66 -55.83
+0.66 -55.83
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 4
+cerrar123
+entra
 
 NOMBRE DEL DESTINO: Waypoint-1 (40)
 NUM: 39
----- ANGLE: 450
----- ANGLE: 450
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -27.07 POS Y: 27.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -11.5584 POS Y: 15.4304
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -27.82 POS Y: 15.26
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -11.5584 POS Y: 15.4304
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+NOMBRE DEL DESTINO: Waypoint-1 (42)
+NUM: 41
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -90.15 POS Y: -26.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -73.6771 POS Y: -11.0267
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.91
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -40.74 POS Y: -10.88
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -31.4268 POS Y: 3.31039
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -49.46 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -32.2462 POS Y: 3.1588
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -33.66 POS Y: -13.2
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -35.5239 POS Y: 2.55245
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: 1.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -36.3434 POS Y: 2.40086
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: -5.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -36.3434 POS Y: 2.40086
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -49.21 POS Y: -11.21
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -36.3434 POS Y: 2.40086
+///////////////////////////////////
+
+NOMBRE DEL DESTINO: Waypoint-1 (41)
+NUM: 40
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: 1.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -39.6325 POS Y: 1.88171
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: -5.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -40.465 POS Y: 1.84437
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -49.46 POS Y: -0.9
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -44.6287 POS Y: 1.68807
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -55.6 POS Y: -17.4
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -44.6287 POS Y: 1.68807
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -62.67 POS Y: 1.77
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -45.4615 POS Y: 1.65711
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: 1.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -48.7925 POS Y: 1.53328
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 4
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: -5.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -48.7925 POS Y: 1.53328
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 4
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.622
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -56.11 POS Y: -0.0667045
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -52.0875 POS Y: 1.41079
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -55.6 POS Y: -17.4
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -55.8752 POS Y: -4.89336
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -62.67 POS Y: 1.77
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -56.8832 POS Y: -5.14844
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -97.64 POS Y: -36.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -80.3784 POS Y: -21.7121
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
 lalal 1
 ACTUALIZO 1
 ID PUERTA: 4
 cerrar123
 entra
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
 lalal 1
 ACTUALIZO 1
 ID PUERTA: 4
@@ -6293,21 +7276,710 @@ cerrar123
 entra
 pos puerta: 0.66 -55.83
 0.66 -55.83
----- ANGLE: 450
----- ANGLE: 450
-pos puerta: 0.66 -55.83
-0.66 -55.83
----- ANGLE: 450
-pos puerta: 0.66 -55.83
-0.66 -55.83
----- ANGLE: 450
-pos puerta: 0.66 -55.83
-0.66 -55.83
----- ANGLE: 450
-pos puerta: 0.66 -55.83
-0.66 -55.83
----- ANGLE: 450
----- ANGLE: 450
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+NOMBRE DEL DESTINO: Waypoint-1 (40)
+NUM: 39
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 4
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -73.3322 POS Y: -6.39914
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -80.917 POS Y: -22.902
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -90.15 POS Y: -26.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -78.907 POS Y: -23.2915
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -90.15 POS Y: -26.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -78.1581 POS Y: -23.3362
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -90.15 POS Y: -26.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -77.7196 POS Y: -23.324
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -90.15 POS Y: -26.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -77.6086 POS Y: -23.2849
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+ME MARCHO
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -90.15 POS Y: -26.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -77.9538 POS Y: -23.2082
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 4
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -76.1431 POS Y: -4.76874
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -79.6725 POS Y: -22.0388
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 4
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -77.6174 POS Y: -4.96835
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -81.7913 POS Y: -18.2359
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+ME MARCHO
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.476
+
+////////////////////////
+COLISION
+ENTIDAD 1: 4
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -82.2317 POS Y: -3.2258
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -102.772 POS Y: -9.00229
+///////////////////////////////////
+
+NOMBRE DEL DESTINO: Waypoint-1 (36)
+NUM: 35
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.395
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: -3.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -106.147 POS Y: -6.9892
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.395
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -120.63 POS Y: 2.44
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -107.577 POS Y: -5.83184
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.395
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -124.55 POS Y: -17.4
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -110.696 POS Y: -4.04328
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: -3.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -110.696 POS Y: -4.04328
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.395
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -127.65 POS Y: 0.47
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -112.271 POS Y: -3.20959
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -126.77 POS Y: -20.41
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -112.271 POS Y: -3.20959
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.395
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: 3.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -113.85 POS Y: -2.38931
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 180.395
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -120.63 POS Y: 2.44
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -115.431 POS Y: -1.58406
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: 3.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -118.681 POS Y: -0.130403
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 5
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: -3.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -118.681 POS Y: -0.130403
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 5
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: 4.42207
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -121.143 POS Y: 0.56602
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: -1.67952
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -121.25 POS Y: 0.629525
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -127.65 POS Y: 0.47
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -123.126 POS Y: -5.49792
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -124.55 POS Y: -17.4
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -123.187 POS Y: -5.56354
+///////////////////////////////////
+
+NOMBRE DEL DESTINO: Waypoint-1 (36)
+NUM: 35
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+
+NOMBRE DEL DESTINO: Waypoint-1 (35)
+NUM: 34
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -120.63 POS Y: 2.44
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -102.857 POS Y: -6.47829
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 5
+cerrar123
+entra
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 5
+cerrar123
+entra
+pos puerta: 0.66 -125.7
+0.66 -125.7
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: 16.02
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -105.955 POS Y: -7.36605
+///////////////////////////////////
+pos puerta: 0.66 -125.7
+0.66 -125.7
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+pos puerta: 0.66 -125.7
+0.66 -125.7
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+pos puerta: 0.66 -125.7
+0.66 -125.7
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+pos puerta: 0.66 -125.7
+0.66 -125.7
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -124.55 POS Y: -17.4
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -109.005 POS Y: -8.03403
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -126.77 POS Y: -20.41
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -111.004 POS Y: -8.35652
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: -5.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -111.5 POS Y: -8.4224
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 179.948
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -120.63 POS Y: 2.44
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -115.387 POS Y: -8.72264
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+--------> ANGLE CUERPO: 00000099FD469810 ---> 180.395
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: -5.98
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -118.258 POS Y: -8.73496
+///////////////////////////////////
+ACTUALIZO 0
+ID PUERTA: 5
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -127.65 POS Y: 0.47
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -120.425 POS Y: -8.8313
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 1
+SENSOR E1: 0
+ENTIDAD 2: 4
+SENSOR E2: 0
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -124.55 POS Y: -17.4
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -120.528 POS Y: -8.83598
+///////////////////////////////////
+
+////////////////////////
+COLISION
+ENTIDAD 1: 2
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -125.98 POS Y: 11.6
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -120.336 POS Y: -9.44186
+///////////////////////////////////
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 187.613
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 187.613
+
+////////////////////////
+COLISION
+ENTIDAD 1: 7
+SENSOR E1: 1
+ENTIDAD 2: 4
+SENSOR E2: 1
+///////////////////////////////////
+POSICION DE LA ENTITY 1
+POS X: -120.63 POS Y: 2.44
+///////////////////////////////////
+///////////////////////////////////
+POSICION DE LA ENTITY 2
+POS X: -120.273 POS Y: -10.6047
+///////////////////////////////////
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 187.613
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 187.613
+--------> ANGLE CUERPO: 00000099FA0B7480 ---> 187.613
 Nodo eliminado
 Nodo eliminado
 Nodo eliminado

@@ -41,11 +41,6 @@
 
 //hacer diferentes constructores para los distintos objetos
 
-glm::vec4 Entity2D::multiplicarVector(const glm::mat4& m, float x, float y, float z)
-{
-	return m * glm::vec4(x, y, z, 1.0);
-}
-
 
 Entity2D::Entity2D(b2World * world)
 {
@@ -254,19 +249,19 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 	bodyCircle.m_radius = 5; 
 
 	////add semicircle radar sensor to tower
-	//float radius = 20;
-	//b2Vec2 vertices[8];
-	//vertices[0].Set(0, 0);
-	//for (int i = 0; i < 7; i++) {
-	//	float angle = i / 6.0 * 120 * DEGTORAD;
-	//	vertices[i + 1].Set(radius * cosf(angle), radius * sinf(angle));
-	//}
-	//sombraShape.Set(vertices, 8);
+	float radius = 15;
+	b2Vec2 vertices[8];
+	vertices[0].Set(0, 0);
+	for (int i = 0; i < 7; i++) {
+		float angle = i / 6.0 * 90 * DEGTORAD;
+		vertices[i + 1].Set(radius * cosf(angle), radius * sinf(angle));
+	}
+	sombraShape.Set(vertices, 8);
 
-	//
+	
 	  body = world->CreateBody(&bodyDef);
-	//body->CreateFixture(&sombraShape, 1.0f);
-	//body->GetFixtureList()->SetSensor(true);
+	body->CreateFixture(&sombraShape, 1.0f);
+	body->GetFixtureList()->SetSensor(true);
     body -> CreateFixture(&bodyShape, 1.0f);
     live = vivo;
    
