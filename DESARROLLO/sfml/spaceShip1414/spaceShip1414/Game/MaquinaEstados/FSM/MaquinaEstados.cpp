@@ -4,9 +4,7 @@
 
 MaquinaEstados::MaquinaEstados()
 {
-
 }
-
 
 MaquinaEstados::~MaquinaEstados()
 {
@@ -76,4 +74,3 @@ Estados * MaquinaEstados::getEstado(const std::string nombre)
 	}
 	return NULL;
 }
-

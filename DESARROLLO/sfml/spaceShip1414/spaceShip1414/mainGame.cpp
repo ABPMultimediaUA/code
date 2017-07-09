@@ -1,7 +1,8 @@
 #include "mainGame.h"
-#include "Game\MaquinaEstados\FSM\MaquinaEstados.h"
+#include "gameStates\MaquinaEstadosJuego.h"
 #include "gameStates\menu.h"
 #include "gameStates\ajustes.h"
+#include "gameStates\jugando.h"
 #include <SFML\OpenGL.hpp>
 #include <iostream>
 
@@ -21,11 +22,13 @@ mainGame::~mainGame()
 bool mainGame::init(const std::string titulo, int width, int height, bool full_screen)
 {
 	window = new sf::RenderWindow(sf::VideoMode(width, height), titulo);
-	manager = new MaquinaEstados();
+	manager = new MaquinaEstadosJuego();
 	gameMenu = new menu(width,height);
 	manager->addEstado(gameMenu, true);
 	gameConfig = new ajustes(width, height);
 	manager->addEstado(gameConfig, false);
+	gamePlaying = new jugando(width, height);
+	manager->addEstado(gamePlaying, false);
 	return true;
 }
 
@@ -41,8 +44,10 @@ void mainGame::run()
 				window->close();
 		}
 
+		manager->getEstadoActivo()->update();
+
 		window->clear();
-		manager->getEstadoActivo()->draw(window);
+		manager->getEstadoActivo()->render(window);
 		window->display();
 	}
 }

@@ -1,16 +1,16 @@
 #pragma once
-#include "..\Game\MaquinaEstados\FSM\Estados.h"
+#include "estadosJuego.h"
 #include <SFML/Graphics.hpp>
 
 #define MAX_OPCIONES 3
 
 class ajustes :
-	public Estados
+	public estadosJuego
 {
 public:
 	ajustes(unsigned int, unsigned int);
 	~ajustes();
-	void draw(void * window) override;
+	void render(void * window) override;
 	void MoveUp();
 	void MoveDown();
 	int GetPressedItem() { return opcionSelecionada; }

@@ -131,6 +131,9 @@
     <ClCompile Include="ActivadorCamara.cpp" />
     <ClCompile Include="Camara.cpp" />
     <ClCompile Include="gameStates\ajustes.cpp" />
+    <ClCompile Include="gameStates\estadosJuego.cpp" />
+    <ClCompile Include="gameStates\jugando.cpp" />
+    <ClCompile Include="gameStates\MaquinaEstadosJuego.cpp" />
     <ClCompile Include="Game\Enemigos\AlienBerserker.cpp" />
     <ClCompile Include="Game\Enemigos\AStar.cpp" />
     <ClCompile Include="Game\Enemigos\BehaviorTree\BehaivorTree.cpp" />
@@ -243,6 +246,9 @@
     <ClInclude Include="ActivadorCamara.h" />
     <ClInclude Include="Camara.h" />
     <ClInclude Include="gameStates\ajustes.h" />
+    <ClInclude Include="gameStates\estadosJuego.h" />
+    <ClInclude Include="gameStates\jugando.h" />
+    <ClInclude Include="gameStates\MaquinaEstadosJuego.h" />
     <ClInclude Include="Game\Enemigos\AlienBerserker.h" />
     <ClInclude Include="Game\Enemigos\AStar.h" />
     <ClInclude Include="Game\Enemigos\BehaviorTree\BehaivorTree.h" />

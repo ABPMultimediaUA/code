@@ -1,8 +1,10 @@
 #pragma once
 #include <SFML\Graphics.hpp>
-class MaquinaEstados;
+class MaquinaEstadosJuego;
 class menu;
 class ajustes;
+class ajustesJuego;
+class jugando;
 class mainGame
 {
 public:
@@ -12,8 +14,10 @@ public:
 	void run();
 private:
 	sf::RenderWindow * window;
-	MaquinaEstados * manager;
+	MaquinaEstadosJuego * manager;
 	menu * gameMenu;
 	ajustes * gameConfig;
+	ajustesJuego * gameConfigGame;
+	jugando * gamePlaying;
 };
 

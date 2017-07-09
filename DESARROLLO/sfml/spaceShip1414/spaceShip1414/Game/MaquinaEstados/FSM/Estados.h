@@ -8,7 +8,7 @@ private:
 	bool estadoActivo;
 	bool primerEstado;
 	std::string pathAnimacion;
-
+	bool iniciado;
 public:
 	Estados();
 	Estados(std::string nuevoEstado);
@@ -20,7 +20,10 @@ public:
 	virtual void limpiarEstado();
 	std::string getPathAnimacion();
 	void asignarPath(std::string path);
-	virtual void draw(void * window);
+	virtual void render(void * window);
 	virtual void handler(void * event, void * window, void * manager);
+	virtual void update();
+	bool getIniciado();
+	void setIniciado(bool);
 };
 

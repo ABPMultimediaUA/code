@@ -1,9 +1,9 @@
 #include "menu.h"
-#include "../Game/MaquinaEstados/FSM/MaquinaEstados.h"
+#include "MaquinaEstadosJuego.h"
 #include <iostream>
 
 
-menu::menu(unsigned int width, unsigned int height) : Estados("menuState")
+menu::menu(unsigned int width, unsigned int height) : estadosJuego("menuState")
 {
 	if (!imagen.loadFromFile("resourse/image/CARTEL.jpg", sf::IntRect(1, 1, width, height)))
 	{
@@ -40,7 +40,7 @@ menu::~menu()
 	std::cout << "Menu eliminado" << std::endl;
 }
 
-void menu::draw(void * window)
+void menu::render(void * window)
 {
 	static_cast<sf::RenderWindow *>(window)->draw(fondo);
 	for (int i = 0; i < MAX_OPCIONES; i++)
@@ -87,10 +87,10 @@ void menu::handler(void * event, void * window, void * manager)
 			{
 			case 0:
 				std::cout << "Jugar Pulsado" << std::endl;
-				//static_cast<MaquinaEstados *>(manager)->cambiaEstado("playingState");
+				static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("playingState");
 				break;
 			case 1:
-				static_cast<MaquinaEstados *>(manager)->cambiaEstado("configState");
+				static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("configState");
 				break;
 			case 2:
 				static_cast<sf::RenderWindow *>(window)->close();

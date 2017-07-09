@@ -1,15 +1,15 @@
 #pragma once
-#include "..\Game\MaquinaEstados\FSM\Estados.h"
+#include "estadosJuego.h"
 #include <SFML/Graphics.hpp>
 
 #define MAX_OPCIONES 3
 class menu :
-	public Estados
+	public estadosJuego
 {
 public:
 	menu(unsigned int, unsigned int);
 	~menu();
-	void draw(void * window) override;
+	void render(void * window) override;
 	void MoveUp();
 	void MoveDown();
 	int GetPressedItem() { return opcionSelecionada; }

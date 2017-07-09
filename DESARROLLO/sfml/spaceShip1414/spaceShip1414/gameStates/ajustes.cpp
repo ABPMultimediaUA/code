@@ -1,9 +1,9 @@
 #include "ajustes.h"
-#include "../Game/MaquinaEstados/FSM/MaquinaEstados.h"
+#include "MaquinaEstadosJuego.h"
 #include <iostream>
 #include <locale>
 
-ajustes::ajustes(unsigned int width, unsigned int height) : Estados("configState")
+ajustes::ajustes(unsigned int width, unsigned int height) : estadosJuego("configState")
 {
 	if (!imagen.loadFromFile("resourse/image/CARTEL.jpg", sf::IntRect(1, 1, width, height)))
 	{
@@ -20,7 +20,8 @@ ajustes::ajustes(unsigned int width, unsigned int height) : Estados("configState
 	titulo.setFont(font);
 	titulo.setFillColor(sf::Color::Yellow);
 	titulo.setString("Ajustes");
-	titulo.setCharacterSize(64);
+	titulo.setCharacterSize(80);
+	titulo.setOutlineThickness(5);
 	titulo.setPosition(sf::Vector2f(width / 2, height*0.1));
 
 	opciones[0].setFont(font);
@@ -47,7 +48,7 @@ ajustes::~ajustes()
 	std::cout << "Menu eliminado" << std::endl;
 }
 
-void ajustes::draw(void * window)
+void ajustes::render(void * window)
 {
 	static_cast<sf::RenderWindow *>(window)->draw(fondo);
 	static_cast<sf::RenderWindow *>(window)->draw(titulo);
@@ -100,7 +101,7 @@ void ajustes::handler(void * event, void * window, void * manager)
 				std::cout << "Ajustes Pulsado" << std::endl;
 				break;
 			case 2:
-				static_cast<MaquinaEstados *>(manager)->cambiaEstado("menuState");
+				static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("menuState");
 				break;
 			}
 			break;

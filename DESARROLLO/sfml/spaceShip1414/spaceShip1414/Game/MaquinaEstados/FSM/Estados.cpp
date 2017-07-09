@@ -40,7 +40,6 @@ void Estados::setEstadoActivo(bool activo)
 void Estados::inicializarEstado()
 {
 	estadoActivo = true;
-
 }
 
 void Estados::limpiarEstado()
@@ -58,10 +57,24 @@ void Estados::asignarPath(std::string path)
 	pathAnimacion = path;
 }
 
-void Estados::draw(void * window)
+void Estados::render(void * window)
 {
 }
 
 void Estados::handler(void * event, void * window, void * manager)
 {
+}
+
+void Estados::update()
+{
+}
+
+bool Estados::getIniciado()
+{
+	return iniciado;
+}
+
+void Estados::setIniciado(bool in)
+{
+	iniciado = in;
 }
