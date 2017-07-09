@@ -1111,9 +1111,9 @@
           "components": [
             {
               "localPosition": [
-                14.66,
+                24.11,
                 0.0,
-                5.19
+                2.42
               ],
               "localRotation": [
                 0.0,
@@ -1240,9 +1240,9 @@
           "components": [
             {
               "localPosition": [
-                -13.6,
+                -13.43,
                 0.0,
-                -27.64
+                -30.19
               ],
               "localRotation": [
                 0.0,
@@ -1283,9 +1283,9 @@
           "components": [
             {
               "localPosition": [
-                22.9,
+                11.67,
                 0.0,
-                -20.84
+                -23.2
               ],
               "localRotation": [
                 0.0,
@@ -1455,9 +1455,9 @@
           "components": [
             {
               "localPosition": [
-                -14.21,
+                -14.62,
                 0.0,
-                -57.4
+                -55.03
               ],
               "localRotation": [
                 0.0,
@@ -2444,9 +2444,9 @@
           "components": [
             {
               "localPosition": [
-                -188.22,
+                -186.81,
                 0.0,
-                -46.8
+                -49.94
               ],
               "localRotation": [
                 0.0,
@@ -2659,9 +2659,9 @@
           "components": [
             {
               "localPosition": [
-                -146.15,
+                -136.6,
                 0.0,
-                -28.81
+                -23.5
               ],
               "localRotation": [
                 0.0,
@@ -2702,9 +2702,9 @@
           "components": [
             {
               "localPosition": [
-                -159.31,
+                -150.25,
                 0.0,
-                -42.22
+                -39.03
               ],
               "localRotation": [
                 0.0,
@@ -2745,7 +2745,7 @@
           "components": [
             {
               "localPosition": [
-                -178.13,
+                -171.55,
                 0.0,
                 -23.35
               ],
@@ -2877,6 +2877,264 @@
                 -45.97,
                 0.0,
                 -0.62
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (43)",
+          "components": [
+            {
+              "localPosition": [
+                -201.38,
+                0.0,
+                -23.35
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (44)",
+          "components": [
+            {
+              "localPosition": [
+                -157.0,
+                0.0,
+                -13.0
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (45)",
+          "components": [
+            {
+              "localPosition": [
+                -169.92,
+                0.0,
+                -40.13
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (46)",
+          "components": [
+            {
+              "localPosition": [
+                -190.97,
+                0.0,
+                -7.54
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (47)",
+          "components": [
+            {
+              "localPosition": [
+                -14.62,
+                0.0,
+                -83.8
+              ],
+              "localRotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "mesh": "unity default resources_Sphere",
+              "enabled": true,
+              "castShadows": true,
+              "receiveShadows": true,
+              "lightmapIndex": -1,
+              "lightmapTilingOffset": [
+                1.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              "materials": [
+                "S_Arsenal"
+              ],
+              "type": "MeshRenderer"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "Waypoint-1 (8)",
+          "components": [
+            {
+              "localPosition": [
+                -1.38,
+                0.0,
+                9.84
               ],
               "localRotation": [
                 0.0,
@@ -5717,9 +5975,9 @@
           "components": [
             {
               "localPosition": [
-                95.5,
+                76.29,
                 0.0,
-                68.6
+                69.53
               ],
               "localRotation": [
                 0.0,
@@ -5743,9 +6001,9 @@
           "components": [
             {
               "localPosition": [
-                72.5,
+                67.71,
                 0.0,
-                -96.8
+                -97.16
               ],
               "localRotation": [
                 0.0,
@@ -5769,9 +6027,9 @@
           "components": [
             {
               "localPosition": [
-                -57.7,
+                -57.81,
                 0.0,
-                -124.8
+                -112.8
               ],
               "localRotation": [
                 0.0,
@@ -5795,9 +6053,9 @@
           "components": [
             {
               "localPosition": [
-                -314.0,
+                -302.14,
                 0.0,
-                233.7
+                212.43
               ],
               "localRotation": [
                 0.0,
@@ -5821,9 +6079,9 @@
           "components": [
             {
               "localPosition": [
-                -295.3,
+                -348.98,
                 0.0,
-                -190.9
+                -189.7
               ],
               "localRotation": [
                 0.0,
@@ -8417,59 +8675,6 @@
           "children": [
             {
               "name": "5",
-              "components": [
-                {
-                  "localPosition": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localRotation": [
-                    0.0,
-                    0.0,
-                    0.0
-                  ],
-                  "localScale": [
-                    1.0,
-                    1.0,
-                    1.0
-                  ],
-                  "name": null,
-                  "parentName": null,
-                  "type": "Transform"
-                }
-              ],
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "PosCam",
-          "components": [
-            {
-              "localPosition": [
-                -330.42,
-                8.01,
-                -162.47
-              ],
-              "localRotation": [
-                0.0,
-                270.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            }
-          ],
-          "children": [
-            {
-              "name": "7",
               "components": [
                 {
                   "localPosition": [
@@ -21772,9 +21977,9 @@
           "components": [
             {
               "localPosition": [
-                51.7,
-                6.29,
-                -92.96
+                51.66,
+                4.12,
+                -101.13
               ],
               "localRotation": [
                 0.0,
@@ -23119,6 +23324,112 @@
           "children": [
             {
               "name": "29",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "PosCam",
+          "components": [
+            {
+              "localPosition": [
+                -313.52002,
+                3.24,
+                -42.37
+              ],
+              "localRotation": [
+                0.0,
+                270.0,
+                0.0
+              ],
+              "localScale": [
+                1.00000048,
+                1.0,
+                1.00000048
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "32",
+              "components": [
+                {
+                  "localPosition": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "PosCam",
+          "components": [
+            {
+              "localPosition": [
+                -313.52002,
+                6.489,
+                -159.27
+              ],
+              "localRotation": [
+                0.0,
+                270.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            }
+          ],
+          "children": [
+            {
+              "name": "7",
               "components": [
                 {
                   "localPosition": [
@@ -27192,9 +27503,9 @@
               "components": [
                 {
                   "localPosition": [
-                    -419.7,
+                    -426.12,
                     -6.0,
-                    -63.0
+                    -75.9
                   ],
                   "localRotation": [
                     0.0,
@@ -27202,7 +27513,7 @@
                     0.0
                   ],
                   "localScale": [
-                    3.0,
+                    4.54,
                     1.0,
                     1.0
                   ],
@@ -27234,13 +27545,13 @@
               "children": []
             },
             {
-              "name": "3",
+              "name": "32",
               "components": [
                 {
                   "localPosition": [
-                    -413.7,
+                    -420.12,
                     -6.0,
-                    -53.3
+                    -66.2
                   ],
                   "localRotation": [
                     0.0,
@@ -27248,7 +27559,7 @@
                     0.0
                   ],
                   "localScale": [
-                    3.0,
+                    4.54,
                     1.0,
                     1.0
                   ],
@@ -27895,6 +28206,98 @@
                     3.66999984,
                     1.0,
                     0.5
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Plane",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "Default-Material"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "type": "MeshCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "32",
+              "components": [
+                {
+                  "localPosition": [
+                    -330.7,
+                    -6.0,
+                    -41.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    0.5,
+                    1.0,
+                    3.81
+                  ],
+                  "name": null,
+                  "parentName": null,
+                  "type": "Transform"
+                },
+                {
+                  "mesh": "unity default resources_Plane",
+                  "enabled": true,
+                  "castShadows": true,
+                  "receiveShadows": true,
+                  "lightmapIndex": -1,
+                  "lightmapTilingOffset": [
+                    1.0,
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "materials": [
+                    "Default-Material"
+                  ],
+                  "type": "MeshRenderer"
+                },
+                {
+                  "type": "MeshCollider"
+                }
+              ],
+              "children": []
+            },
+            {
+              "name": "3",
+              "components": [
+                {
+                  "localPosition": [
+                    -312.5,
+                    -6.0,
+                    -41.0
+                  ],
+                  "localRotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "localScale": [
+                    0.5,
+                    1.0,
+                    3.81
                   ],
                   "name": null,
                   "parentName": null,

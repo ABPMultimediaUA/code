@@ -7,6 +7,8 @@
 #include "graphicEngine\entityTree\TAnimacion.h"
 #include "Game\MaquinaEstados\FSM\MaquinaEstados.h"
 #include "Game\MaquinaEstados\FSM\Estados.h"
+#include "Game\Jugador\Inventario.h"
+#include "Game\Escenario\ObjConsumables\Botiquines.h"
 
 #ifndef ENTITY2D_GUARD
 #define ENTITY2D_GUARD
@@ -20,14 +22,17 @@
 #include <math.h>
 
 #define PI 3.14159265
+#define PISTOLA 0
+#define FUSIL 1
+#define ESCOPETA 2
 
 player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 }, pitch{ 0 }
 {
 	
 	
 	anguloCamara = 90.0f; //para hacer que rote con la camara
-
-
+	vida = 100.0f;
+	vidaMax = vida;
 	initEstados();
 	nodo = motorApp->addAnimacion(andar->getPathAnimacion(), 25);
 
@@ -49,6 +54,7 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 
 	vecDir, vecA, vecD, vecS = glm::vec3(0, 0, 0);
 	entity = new Entity2D(m->getWorldBox2D(), glm::vec3(0,0,0), rot, this);
 	motorApp->setPlayerMove(this);
+	inv = new Inventario();
 }
 
 void player::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
@@ -108,6 +114,7 @@ player::~player()
 {
 
 	delete(entity);
+	delete inv;
 	deleteEstados();
 
 }
@@ -408,6 +415,8 @@ void player::setImpulso(bool x) {
 	impulso = x;
 }
 
+//end;
+
 void player::destruirAnimacion(TNodo* n)
 {
 	n->destruirEntidad();
@@ -434,4 +443,90 @@ void player::setVectorDirector(glm::vec3 u)
 	vecDir = u;
 }
 
-//end;
+void player::setTeclaE(bool x)
+{
+	teclaE = x;
+}
+
+void player::setTeclaQ(bool x)
+{
+	teclaQ = x;
+}
+
+bool player::getTeclaE()
+{
+	return teclaE;
+}
+
+bool player::getTeclaQ()
+{
+	return teclaQ;
+}
+
+void player::quitarVida(float damage)
+{
+	std::cout << std::endl;
+	std::cout << "VIDA ANTES: " << vida << std::endl;
+
+	vida -= damage;
+
+	std::cout << std::endl;
+	std::cout << "VIDA DESPUES: " << vida << std::endl;
+}
+
+void player::curar(float recup)
+{
+	vida += recup;
+
+}
+
+void player::usarBotiquin()
+{
+
+	Botiquines *bot = static_cast<Botiquines*>(inv->usarObjeto(0));
+
+	if (bot != nullptr) {
+
+
+		float dif = vidaMax - vida;
+
+		if (dif >= bot->getVida()) {
+			curar(bot->getVida());
+			inv->deleteObj(bot);
+		}
+
+		else if (vida != vidaMax) {
+			curar(dif);
+			inv->deleteObj(bot);
+
+		}
+
+		else {
+			std::cout << std::endl;
+			std::cout << "TIENES LA VIDA MAX " << std::endl;
+			std::cout << std::endl;
+		}
+
+
+	}
+
+	else {
+		std::cout << std::endl;
+		std::cout << "NO TIENES BOTIQUINES " << std::endl;
+		std::cout << std::endl;
+
+	}
+
+
+
+}
+
+float player::getVida()
+{
+	return vida;
+}
+
+Inventario * player::getInventario()
+{
+	return inv;
+}

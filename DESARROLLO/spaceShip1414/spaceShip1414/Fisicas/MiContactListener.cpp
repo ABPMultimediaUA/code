@@ -20,12 +20,12 @@
 #include "../Game/Enemigos/Enemigo.h"
 #include "Entity2D.h"
 //#include "../Escenario/Terminal.h"
-//#include "../Jugador/Inventario.h"
-//#include "../Escenario/ObjConsumables/Botiquines.h"
-//#include "../Escenario/ObjConsumables/Llave.h"
-//#include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionSubfusil.h"
-//#include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionEscopeta.h"
-//#include "../Escenario/ObjConsumables/TiposDeMunicion/MunicionPistola.h"
+#include "../Game/Jugador/Inventario.h"
+#include "../Game/Escenario/ObjConsumables/Botiquines.h"
+#include "../Game/Escenario/ObjConsumables/Llave.h"
+#include "../Game/Escenario/ObjConsumables/TiposDeMunicion/MunicionSubfusil.h"
+#include "../Game/Escenario/ObjConsumables/TiposDeMunicion/MunicionEscopeta.h"
+#include "../Game/Escenario/ObjConsumables/TiposDeMunicion/MunicionPistola.h"
 //#include "../Jugador/Bala.h"
 #include "../Game/Enemigos/Nodo.h"
 #include "../graphicEngine/TGraphicEngine.h"
@@ -196,11 +196,11 @@ void MiContactListener::aumentarMunicionPistola(Entity2D * pers, Entity2D * munP
 	std::cout << "////////////////////////" << std::endl;
 	std::cout << "" << std::endl;
 
-	//Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
-	//MunicionPistola *mun = static_cast<MunicionPistola*>(munPistola->getObjeto3D());
+	player *personaje = static_cast<player*>(pers->getObjeto3D());
+	MunicionPistola *mun = static_cast<MunicionPistola*>(munPistola->getObjeto3D());
 
 	//personaje->cogerMunicion(mun->getMunicion(), 0);
-//	munPistola->setLive(false);
+	munPistola->setLive(false);
 
 }
 
@@ -214,11 +214,11 @@ void MiContactListener::aumentarMunicionSubfusil(Entity2D * pers, Entity2D * mun
 	std::cout << "////////////////////////" << std::endl;
 	std::cout << "" << std::endl;
 
-	//Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
-	//MunicionSubfusil *mun = static_cast<MunicionSubfusil*>(munSubfisul->getObjeto3D());
+	player *personaje = static_cast<player*>(pers->getObjeto3D());
+	MunicionSubfusil *mun = static_cast<MunicionSubfusil*>(munSubfisul->getObjeto3D());
 
 	//personaje->cogerMunicion(mun->getMunicion(), 1);
-	//munSubfisul->setLive(false);
+	munSubfisul->setLive(false);
 }
 
 void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * munEscopeta)
@@ -231,30 +231,30 @@ void MiContactListener::aumentarMunicionEscopeta(Entity2D * pers, Entity2D * mun
 	std::cout << "////////////////////////" << std::endl;
 	std::cout << "" << std::endl;
 
-	//Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
-	//MunicionEscopeta *mun = static_cast<MunicionEscopeta*>(munEscopeta->getObjeto3D());
+	player *personaje = static_cast<player*>(pers->getObjeto3D());
+	MunicionEscopeta *mun = static_cast<MunicionEscopeta*>(munEscopeta->getObjeto3D());
 
 	//personaje->cogerMunicion(mun->getMunicion(), 2);
-//	munEscopeta->setLive(false);
+	munEscopeta->setLive(false);
 }
 
 void MiContactListener::addObjetoAlInventario(Entity2D * pers, Entity2D * objeto, int tipo)
 {
-	//Personaje *personaje = static_cast<Personaje*>(pers->getObjeto3D());
+	player *personaje = static_cast<player*>(pers->getObjeto3D());
 
-	//if(tipo == 0) {
+	if(tipo == 0) {
 
-	//	Botiquines *bot = new Botiquines(*static_cast<Botiquines*>(objeto->getObjeto3D()));
-	//	//bot->setFisica(objeto->getCuerpo2D()->GetWorld());
-	//	personaje->getInventario()->addObjeto(bot);
-	//}
+		Botiquines *bot = new Botiquines(*static_cast<Botiquines*>(objeto->getObjeto3D()));
+		//bot->setFisica(objeto->getCuerpo2D()->GetWorld());
+		personaje->getInventario()->addObjeto(bot);
+	}
 
-	//else {
-	//	Llave *llave = new Llave(*static_cast<Llave*>(objeto->getObjeto3D()));
-	//	//llave->setFisica(objeto->getCuerpo2D()->GetWorld());
+	else {
+		Llave *llave = new Llave(*static_cast<Llave*>(objeto->getObjeto3D()));
+		//llave->setFisica(objeto->getCuerpo2D()->GetWorld());
 
-	//	personaje->getInventario()->addObjeto(llave);
-	//}
+		personaje->getInventario()->addObjeto(llave);
+	}
 
 }
 
@@ -377,7 +377,7 @@ void atacarJugador(Entity2D *pers, Entity2D *enemigo) {
 		p->getPos();
 		e->setPesoMaximoLogicaDifusa(peso);
 		e->setPosJugador(p->getPos().x, p->getPos().z);
-		//e->setEstado(3);
+
 		e->iniLogicaDifusa();
 		//std::cout << std::endl;
 		//std::cout <<"CALLBACK"<< std::endl;
@@ -393,7 +393,7 @@ void atacarJugador(Entity2D *pers, Entity2D *enemigo) {
 		std::cout << "DISTANCIA: " << peso << std::endl;
 		std::cout << std::endl;
 
-	////}
+	//}
 
 }
 
@@ -549,11 +549,11 @@ void asignarVecDirector(Entity2D *p, ActivadorCamara* c) {
 
 
 void MiContactListener::BeginContact(b2Contact* contact) {
-	std::cout<<""<<std::endl;
+	//std::cout<<""<<std::endl;
 
-	std::cout<<"////////////////////////"<<std::endl;
+	//std::cout<<"////////////////////////"<<std::endl;
 
-	std::cout<<"COLISION"<<std::endl;
+	//std::cout<<"COLISION"<<std::endl;
 
 	if (contact != NULL) {
 		b2Fixture *f1 = contact->GetFixtureA();
@@ -571,10 +571,10 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			//            Personaje *pers = static_cast<Personaje*>(entity1->getObjeto3D());
 
-			 std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
-			 std::cout << "SENSOR E1: " << f1->IsSensor() << std::endl;
-			   std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
-			   std::cout << "SENSOR E2: " << f2->IsSensor() << std::endl;
+			 //std::cout<<"ENTIDAD 1: "<<entity1->getIDEN()<<std::endl;
+			 //std::cout << "SENSOR E1: " << f1->IsSensor() << std::endl;
+			 //  std::cout<<"ENTIDAD 2: "<<entity2->getIDEN()<<std::endl;
+			 //  std::cout << "SENSOR E2: " << f2->IsSensor() << std::endl;
 
 
 			   /* int a = *((int*)b1->GetUserData());
@@ -584,15 +584,15 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 
 			   }*/
 
-		  std::cout << "///////////////////////////////////" << std::endl;
-			   std::cout << "POSICION DE LA ENTITY 1" << std::endl;
-			   std::cout << "POS X: " << entity1->getCuerpo2D()->GetPosition().x << " POS Y: " << entity1->getCuerpo2D()->GetPosition().y << std::endl;
-			   std::cout << "///////////////////////////////////" << std::endl;
+		  //std::cout << "///////////////////////////////////" << std::endl;
+			 //  std::cout << "POSICION DE LA ENTITY 1" << std::endl;
+			 //  std::cout << "POS X: " << entity1->getCuerpo2D()->GetPosition().x << " POS Y: " << entity1->getCuerpo2D()->GetPosition().y << std::endl;
+			 //  std::cout << "///////////////////////////////////" << std::endl;
 
-			   	std::cout<<"///////////////////////////////////"<<std::endl;
-				   std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
-				   std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
-				   std::cout<<"///////////////////////////////////"<<std::endl;
+			 //  	std::cout<<"///////////////////////////////////"<<std::endl;
+				//   std::cout<<"POSICION DE LA ENTITY 2"<<std::endl;
+				//   std::cout<<"POS X: "<<entity2->getCuerpo2D()->GetPosition().x<<" POS Y: "<<entity2->getCuerpo2D()->GetPosition().y<<std::endl;
+				//   std::cout<<"///////////////////////////////////"<<std::endl;
 
 
 				   //std::cout << "Sombra: " << entity1->getIDENSH() << " Elemento: " << entity2->getIDEN() << std::endl

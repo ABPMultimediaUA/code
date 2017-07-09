@@ -10,6 +10,7 @@ class Mundo;
 class Bala;
 class MaquinaEstados;
 class Estados;
+class Inventario;
 
 class player
 {
@@ -56,6 +57,20 @@ public:
 	void setRecalculo(bool x);
 	void setVectorDirector(glm::vec3 u);
 
+	void setTeclaE(bool x);
+	void setTeclaQ(bool x);
+	bool getTeclaE();
+	bool getTeclaQ();
+
+	void quitarVida(float damage);
+	void curar(float recup);
+	void usarBotiquin();
+	float getVida();
+	Inventario* getInventario();
+
+
+
+
 private:
 
 	float velocity;
@@ -76,6 +91,9 @@ private:
 	bool impulso = false, recalculo = false;
 	MaquinaEstados* MaquinaEstadosAnimation;
 	Estados* andar, *correr, *reposo, *disparar;
+	bool teclaE = false, teclaQ = false;
+	float vida, vidaMax;
+	Inventario *inv;
 
 
 };

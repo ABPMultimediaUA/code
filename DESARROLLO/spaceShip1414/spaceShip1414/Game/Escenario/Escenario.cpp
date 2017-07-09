@@ -1985,11 +1985,11 @@ void Escenario::dibujarEscenario() {
 				ty = ((*T).position.y + (*I).position.y);
 				tz = ((*T).position.z + (*I).position.z);
 
-				//TNodo * caja = engine->addMalla();
-				//engine->trasladar(caja, tx, ty, -tz);
+				TNodo * caja = engine->addMalla();
+				engine->trasladar(caja, tx, ty, -tz);
 
 
-				zona1->creaPuntos((*T).nombre, glm::vec3(tx, ty, -tz));
+				zona1->creaPuntos((*T).nombre, glm::vec3(tx, ty, tz));
 				//puntos->MuestraPuntos();
 				//puntos->creaPesos();
 				//puntos->mostrarPesos();

@@ -414,6 +414,7 @@ void CriaAlien::Patrullar() {
 		std::cout << std::endl;
 		std::cout << "NOMBRE DEL DESTINO: " << this->puntoFin->getNombre() << std::endl;
 		std::cout << "NUM: " << puntoFin->getLugarDelNodo() << std::endl;
+		std::cout << "POS: " << glm::to_string(puntoFin->getPosicion()) << std::endl;
 
 	}
 
