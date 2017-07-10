@@ -8,13 +8,14 @@ class TRecursoTextura :
 	public TRecurso
 {
 public:
-	TRecursoTextura();
+	TRecursoTextura(std::string);
 	~TRecursoTextura();
 	bool cargarFichero(std::string) override;
 	void draw() override;
+	void draw(unsigned int, GLuint, const std::string &);
+	void desactivar(unsigned int);
 	GLuint getTexturaID();
 private:
-	GLuint textura;
-	std::string tipo;
+	GLuint texturaID;
 };
 

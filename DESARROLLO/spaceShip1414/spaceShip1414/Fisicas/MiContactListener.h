@@ -18,10 +18,12 @@
 class Entity2D;
 class Bala;
 class TGraphicEngine;
+class TGameEngine;
 class MiContactListener : public b2ContactListener {
 private:
 	bool terActivado;
 	TGraphicEngine * motor;
+	TGameEngine * juego;
 public:
 	MiContactListener();
 	MiContactListener(const MiContactListener& orig);

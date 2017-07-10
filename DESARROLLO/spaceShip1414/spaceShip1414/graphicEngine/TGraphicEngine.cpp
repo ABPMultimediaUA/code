@@ -1,10 +1,6 @@
 #include "TGraphicEngine.h"
-#ifndef MUNDO_GUARD
-#define MUNDO_GUARD
-#include "../Fisicas\Mundo.h"
-#endif
-#include "../Game/Escenario/Escenario.h"
 #include <iostream>
+#include <algorithm>
 #include <glm\gtc\matrix_inverse.hpp>
 #include <glm\gtc\matrix_transform.hpp>
 #include <glm\gtc\type_ptr.hpp>
@@ -19,18 +15,11 @@
 #include "entityTree\TLuz.h"
 #include "entityTree\TMalla.h"
 #include "entityTree\TAnimacion.h"
-#include "framework\movimentHandler.h"
-#include <algorithm>
-#include "../Game/Escenario/Escenario.h"
-#include "../Camara.h"
-#include "../Game/Escenario/Luces.h"
+#include "../Game/Camara.h"
 
-
-TGraphicEngine::TGraphicEngine() : shader(), aspect_ratio{}, window{}, registroCamaras(), registroLuces(), lastTime{ 0 }, state{ 0 }
+TGraphicEngine::TGraphicEngine(float w, float h) : shader(), registroCamaras(), registroLuces(), width{ w }, height{ h }
 {
-	escena = new TNodo(nullptr);
-	gestorRecursos = new TGestorRecursos();
-	move = new movimentHandler();
+	aspect_ratio = w / h;
 }
 
 TGraphicEngine::~TGraphicEngine()
@@ -40,6 +29,19 @@ TGraphicEngine::~TGraphicEngine()
 	delete gestorRecursos;
 	gestorRecursos = nullptr;
 	std::cout << "Facade Destroted" << std::endl;
+}
+
+bool TGraphicEngine::iniciarGraphicEngine()
+{
+	if (glewInit() != GLEW_OK) { return false; }
+	escena = new TNodo(nullptr);
+	gestorRecursos = new TGestorRecursos();
+	glEnable(GL_DEPTH_TEST);
+	glClearColor(0.0f, 0.0f, 0.0f, 0.8f);
+	glViewport(0, 0, width, height);
+	
+	shader.compile("graphicEngine/Shader/spaceShip1414.vs", "graphicEngine/Shader/spaceShip1414.fs");
+	return true;
 }
 
 TNodo * TGraphicEngine::crearNodo(TNodo* padre, TEntidad* entidad)
@@ -124,36 +126,6 @@ TNodo * TGraphicEngine::nodoRaiz()
 	return escena;
 }
 
-GLFWwindow * TGraphicEngine::getGLFWwindow()
-{
-	return window;
-}
-
-void TGraphicEngine::run()
-{
-	onstart();
-	glfwSetTime(0.0);
-
-	while (!glfwWindowShouldClose(window))
-	{
-		draw(getLastTime());
-
-		glfwSwapBuffers(window);
-		glfwPollEvents();
-	}
-
-	glfwDestroyWindow(window);
-	glfwTerminate();
-}
-
-void TGraphicEngine::info()
-{
-	std::cout << "Vendor: " << glGetString(GL_VENDOR) << std::endl;
-	std::cout << "Renderer: " << glGetString(GL_RENDERER) << std::endl;
-	std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << std::endl;
-	std::cout << "GLSL: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl << std::endl;
-}
-
 void TGraphicEngine::addRegistroLuz(TNodo* l)
 {
 	if (l)
@@ -169,75 +141,6 @@ void TGraphicEngine::addRegistroCamara(TNodo * c)
 		registroCamaras.push_back(c);
 	}
 }
-
-movimentHandler* TGraphicEngine::getMovimentHandler()
-{
-
-	return move;
-}
-
-void TGraphicEngine::setPlayerMove(player * j)
-{
-	move->setPlayer(j);
-	
-}
-
-double TGraphicEngine::getLastTime()
-{
-	return lastTime;
-}
-
-void TGraphicEngine::setLastTime(double t)
-{
-	lastTime = t;
-}
-
-void TGraphicEngine::cambiarCamaraActiva(char m, void* dirCam)
-{
-	if (camaraActiva) {
-		camaraActiva->desactivar();
-	}
-	if (registroCamaras.size() > m) {
-		/*static_cast<TCamara*>(registroCamaras.at(m)->getEntidad())->activar();
-		camaraActiva = static_cast<TCamara*>(registroCamaras.at(m)->getEntidad());*/
-		//Camara *cam = maps->buscarCamara(m);
-		//camaraActiva = cam->getTCamara();
-		Camara *cam = static_cast<Camara*>(dirCam);
-		std::cout << "ID CAMARA: " << cam->getId() << std::endl;
-		cam->getTCamara()->activar();
-		camaraActiva = cam->getTCamara();
-
-
-	}
-}
-
-void TGraphicEngine::cambiarLuzActiva(int ID) {
-
-	maps->cambioDeLuces(ID);
-
-}
-
-
-void TGraphicEngine::cambiarLuzActiva(char m, void* dirLuz)
-{
-	//luzActiva->desactivar();
-	//if (luzActiva) {
-	//	luzActiva->desactivar();
-	//}
-	//if (registroLuces.size() > m) {
-	//	/*static_cast<TCamara*>(registroCamaras.at(m)->getEntidad())->activar();
-	//	camaraActiva = static_cast<TCamara*>(registroCamaras.at(m)->getEntidad());*/
-	//	//Camara *cam = maps->buscarCamara(m);
-	//	//camaraActiva = cam->getTCamara();
-	//	/*Luces *luz = static_cast<Luces*>(dirLuz);
-	//	luz->activar();*/
-	//
-	///*	luzActivada();*/
-
-
-	//}
-}
-
 
 TNodo * TGraphicEngine::addAnimacion(std::string path, unsigned int frames, TNodo * nodoPadre)
 {
@@ -275,7 +178,6 @@ void TGraphicEngine::cargarNuevaAnimacion(TNodo* padre, std::string path, unsign
 void TGraphicEngine::cargarNuevaMalla(TNodo* padre, std::string path) {
 	padre->setEntidad(crearMalla(path));
 }
-
 
 TNodo * TGraphicEngine::addMalla(std::string path, TNodo * nodoPadre)
 {
@@ -354,8 +256,6 @@ TNodo * TGraphicEngine::addCamaraLibre(bool activa)
 
 TNodo * TGraphicEngine::addCamaraParalelaFija(bool activa)
 {
-	int width, height;
-	glfwGetWindowSize(window, &width, &height);
 	TTransform *transfRC = crearTransform();
 	TTransform *transfEC = crearTransform();
 	TTransform *transfTC = crearTransform();
@@ -370,8 +270,6 @@ TNodo * TGraphicEngine::addCamaraParalelaFija(bool activa)
 
 TNodo * TGraphicEngine::addCamaraParalelaSeguidora(bool activa, TNodo * nodoPadre)
 {
-	int width, height;
-	glfwGetWindowSize(window, &width, &height);
 	TTransform *transfRC = crearTransform();
 	TTransform *transfEC = crearTransform();
 	TTransform *transfTC = crearTransform();
@@ -389,8 +287,6 @@ TNodo * TGraphicEngine::addCamaraParalelaSeguidora(bool activa, TNodo * nodoPadr
 
 TNodo * TGraphicEngine::addCamaraPerspectivaFija(bool activa)
 {
-	int width, height;
-	glfwGetWindowSize(window, &width, &height);
 	TTransform *transfRC = crearTransform();
 	TTransform *transfEC = crearTransform();
 	TTransform *transfTC = crearTransform();
@@ -405,8 +301,6 @@ TNodo * TGraphicEngine::addCamaraPerspectivaFija(bool activa)
 
 TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoPadre)
 {
-	int width, height;
-	glfwGetWindowSize(window, &width, &height);
 	TTransform *transfRC = crearTransform();
 	TTransform *transfEC = crearTransform();
 	TTransform *transfTC = crearTransform();
@@ -419,7 +313,6 @@ TNodo * TGraphicEngine::addCamaraPerspectivaSeguidora(bool activa, TNodo * nodoP
 
 	return nodoCamara;
 }
-
 
 TNodo * TGraphicEngine::addLuz(TNodo * nodoPadre)
 {
@@ -510,21 +403,21 @@ TNodo * TGraphicEngine::getPadreX(TNodo * hijo, char padre)
 	}
 }
 
-
 void TGraphicEngine::look(TNodo * nodo, glm::vec3 eye, glm::vec3 tar, glm::vec3 mat)
 {
 	TTransform * t = static_cast<TTransform*>(nodo->getPadre()->getPadre()->getPadre()->getEntidad());
 	t->lookat(eye, tar, mat);
 }
 
-
 glm::mat4 TGraphicEngine::getInverseProjectionCamaraActive()
 {
 	return camaraActiva->getInverseProjection();
 }
 
-void TGraphicEngine::draw(double time)
+void TGraphicEngine::draw(double deltaTime)
 {
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glEnable(GL_CULL_FACE);
 	shader.use();
 	camaraActivada();
 	luzActivada();
@@ -558,20 +451,6 @@ glm::vec3 TGraphicEngine::descomponerMatriz(TNodo * nodo, char tipo)
 		std::cout << "Error al descomponer" << std::endl;
 		return glm::vec3();
 	}
-}
-
-void TGraphicEngine::onstart()
-{
-	glEnable(GL_DEPTH_TEST);
-	glClearColor(0.0f, 0.0f, 0.0f, 0.8f);
-
-	shader.compile("graphicEngine/Shader/spaceShip1414.vs", "graphicEngine/Shader/spaceShip1414.fs");
-
-	glfwSetCursorPos(this->window, 1280 / 2, 720 / 2);
-}
-
-void TGraphicEngine::onstop()
-{
 }
 
 void TGraphicEngine::onresize(int width, int height)
@@ -618,58 +497,6 @@ void TGraphicEngine::luzActivada()
 	}
 }
 
-
-void TGraphicEngine::error_callback(int error, const char * description)
-{
-	std::cerr << "Error: " << error << ", " << description << std::endl << std::endl;
-}
-
-void TGraphicEngine::close_callback(GLFWwindow *window)
-{
-	TGraphicEngine* win_app = getTGraphicEngineApp(window);
-	win_app->onstop();
-}
-
-void TGraphicEngine::key_callback(GLFWwindow * window, int key, int scancode, int action, int mods)
-{
-	TGraphicEngine* win_app = getTGraphicEngineApp(window);
-	double currentTime = glfwGetTime();
-	win_app->getMovimentHandler()->onKey(window, key, scancode, action, mods, currentTime - win_app->getLastTime(), win_app);
-	win_app->setLastTime(currentTime);
-}
-
-void TGraphicEngine::resize_callback(GLFWwindow * window, int width, int height)
-{
-	TGraphicEngine* win_app = getTGraphicEngineApp(window);
-	win_app->onresize(width, height);
-}
-
-void TGraphicEngine::mouse_callback(GLFWwindow * window, double xpos, double ypos)
-{
-	TGraphicEngine* win_app = getTGraphicEngineApp(window);
-	win_app->getMovimentHandler()->onMouse(window, xpos, ypos, win_app);
-}
-
-inline TGraphicEngine * TGraphicEngine::getTGraphicEngineApp(GLFWwindow * window)
-{
-	return static_cast<TGraphicEngine*>(glfwGetWindowUserPointer(window));
-}
-
-void TGraphicEngine::CamaraActiva()
-{
-	setCamaraMove(maps->getCamara());
-}
-
-void TGraphicEngine::changeState(unsigned int s)
-{
-	state = s;
-}
-
-void TGraphicEngine::setCamaraMove(Camara * c)
-{
-	move->setCamara(c);
-}
-
 glm::mat4 TGraphicEngine::getView()
 {
 	return camaraActiva->getView();
@@ -685,94 +512,14 @@ glm::mat4 TGraphicEngine::getProjection()
 	}
 }
 
-
-
-bool TGraphicEngine::init(std::string title, int width, int height, bool full_screen)
+void TGraphicEngine::cambiarCamaraActiva(char m, void * dirCam)
 {
-	aspect_ratio = static_cast<float>(width) / static_cast<float>(height);
-
-	glfwSetErrorCallback(error_callback);
-
-	if (!glfwInit()) {
-		return false;
+	if (camaraActiva) {
+		camaraActiva->desactivar();
 	}
-
-	window = glfwCreateWindow(width, height, title.c_str(), full_screen ? glfwGetPrimaryMonitor() : NULL, NULL);
-	if (!window)
-	{
-		glfwTerminate();
-		return false;
+	if (registroCamaras.size() > m) {
+		Camara * cam = static_cast<Camara*>(dirCam);
+		cam->getTCamara()->activar();
+		camaraActiva = cam->getTCamara();
 	}
-
-
-
-	glfwMakeContextCurrent(window);
-	glfwSwapInterval(1);
-
-	glfwSetKeyCallback(window, key_callback);
-	glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
-	glfwSetWindowCloseCallback(window, close_callback);
-	glfwSetFramebufferSizeCallback(window, resize_callback);
-	glfwSetCursorPosCallback(window, mouse_callback);
-
-	if (glewInit() != GLEW_OK) {
-		glfwTerminate();
-		return false;
-	}
-
-	glfwSetWindowUserPointer(window, this);
-
-	return true;
-}
-
-
-
-double TGraphicEngine::getDT()
-{
-	return deltaTime;
-}
-
-
-int TGraphicEngine::getIDCamera()
-{
-	return cam->getId();
-}
-
-
-void TGraphicEngine::run(Mundo * world, Escenario* esce)
-{
-	onstart();
-	glfwSetTime(0.0);
-	lastTime = 0.0;
-	double currentFrame = glfwGetTime();
-	double last = currentFrame;
-	wo = world;
-	wo->setMotor(this);
-	maps = esce;
-	while (!glfwWindowShouldClose(window))
-	{
-		currentFrame = glfwGetTime();
-		deltaTime = (currentFrame - last);
-		last = currentFrame;		
-		
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		glEnable(GL_CULL_FACE);
-
-		world->stepBox2D(1.0 / 60.0, 6, 2);
-		world->getWorldBox2D()->DrawDebugData();
-		world->clearForcesBox2D();
-		move->checkKeys(window, this);
-		esce->actualizarEstadoPuerta();
-		esce->actualizarListaEnemigos(deltaTime);
-		glfwPollEvents();
-		draw(getLastTime());
-
-		glfwSetCursorPosCallback(window, mouse_callback);
-		glfwSwapBuffers(window);
-
-
-	}
-
-	glfwDestroyWindow(window);
-	glfwTerminate();
 }

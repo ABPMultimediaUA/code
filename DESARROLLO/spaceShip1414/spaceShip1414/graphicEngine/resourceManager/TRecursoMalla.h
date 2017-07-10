@@ -12,19 +12,19 @@
 #include <map>
 #include <memory>
 
+class TRecursoTextura;
+class TGestorRecursos;
 class TRecursoMalla :
 	public TRecurso
 {
 	class Mesh
 	{
 	public:
-		Mesh(const aiMesh*, TRecursoMalla*);
+		Mesh(const aiMesh*, TRecursoMalla*, TGestorRecursos*);
 		~Mesh();
 		void draw() ; 
 		void draw(GLuint);
-		void activeTextureNum(int, GLuint, GLuint, const std::string&);
 		void disableAllTexture();
-		void init(const aiMesh*);
 	private:
 		TRecursoMalla* model;
 
@@ -34,7 +34,10 @@ class TRecursoMalla :
 		std::vector<GLuint> indices;
 		GLuint buffer[4];
 		GLuint vao;
-		GLuint texture_ambient, texture_diffuse, texture_specular, texture_normal;
+		TRecursoTextura * texture_ambient;
+		TRecursoTextura * texture_diffuse;
+		TRecursoTextura * texture_specular;
+		TRecursoTextura * texture_normal;
 
 		float shininess, shininess_strength;
 		float color_ambient[4] = { 1, 1, 1, 1 };
@@ -42,9 +45,9 @@ class TRecursoMalla :
 		float color_specular[4] = { 0.0 };
 		float color_emissive[4] = { 0.0 };
 		
-		void load(const aiMesh*);
+		void load(const aiMesh*, TGestorRecursos*);
 		inline void aiColorToFloat(aiColor4D&, float[4]);
-		void loadMaterial(const aiMesh*, aiTextureType, GLuint&);
+		TRecursoTextura * loadMaterial(const aiMesh*, aiTextureType, TGestorRecursos*);
 		GLuint TextureFromFile(const std::string&);
 		std::string texture_path(const std::string& path);
 		void create();
@@ -52,18 +55,17 @@ class TRecursoMalla :
 
 public:
 	TRecursoMalla();
-	TRecursoMalla(std::string);
+	TRecursoMalla(std::string, TGestorRecursos*);
 	~TRecursoMalla();
 	bool cargarFichero(std::string) override;
+	bool cargarFichero(std::string, TGestorRecursos*);
 	void draw() override;
 	void draw(GLuint);
 	std::string getRuta();
 private:
 	std::string ruta;
 	const aiScene* scene;
-	std::map<std::string, GLuint> textures;
 	std::vector<std::shared_ptr<Mesh>> meshes;
-	//std::vector<TRecursoTextura*> rTexturas;
-	void processNode(const aiNode*, const aiScene*);
+	void processNode(const aiNode*, const aiScene*, TGestorRecursos*);
 };
 

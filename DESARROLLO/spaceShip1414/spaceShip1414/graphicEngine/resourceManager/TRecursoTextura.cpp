@@ -1,57 +1,67 @@
 #include "TRecursoTextura.h"
 #include <iostream>
-//#include <SOIL\SOIL.h>
 #include <cstring>
 #include <string>
+#include <SFML\Graphics\Image.hpp>
 
-TRecursoTextura::TRecursoTextura()
+TRecursoTextura::TRecursoTextura(std::string ntextura) : texturaID{ 0 }
 {
+	cargarFichero(ntextura);
 }
 
 
 TRecursoTextura::~TRecursoTextura()
 {
-	glDeleteTextures(1, &textura);
+	glDeleteTextures(1, &texturaID);
 }
 
 bool TRecursoTextura::cargarFichero(std::string ntextura)
 {
-	/*size_t index = ntextura.find_last_of("\\/");
-	nombre = index == std::string::npos ? "" : ntextura.substr(index + 1);
-	std::cout << "Recurso nombre: " << nombre << std::endl;
-
-	glGenTextures(1, &textura);
-	glBindTexture(GL_TEXTURE_2D, textura); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
-										   // set the texture wrapping parameters
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	// set texture wrapping to GL_REPEAT (default wrapping method)
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-	// set texture filtering parameters	
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR);
-	// load image, create texture and generate mipmaps
-	int width, height, nrComponents;
-	unsigned char *data = SOIL_load_image(ntextura.c_str(), &width, &height, &nrComponents, 0);
-	if (data)
+	setNombre(ntextura);
+	glGenTextures(1, &texturaID);
+	std::cout << "textura ID: " << texturaID << std::endl;
+	sf::Image imagen;
+	if (!imagen.loadFromFile(/*"resourse/texture/"+*/ntextura))
 	{
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-		glGenerateMipmap(GL_TEXTURE_2D);
-		SOIL_free_image_data(data);
-		return true;
-	}
-	else
-	{
-		std::cout << "Failed to load texture" << std::endl;
-		SOIL_free_image_data(data);
+		//std::cerr << "No se a podidio cargar la textura -> " << ntextura << std::endl;
 		return false;
-	}*/
-	return false;
+	}
+	
+		glBindTexture(GL_TEXTURE_2D, texturaID);
+
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, imagen.getSize().x, imagen.getSize().y, 0, GL_RGBA, GL_UNSIGNED_BYTE, imagen.getPixelsPtr());
+
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+
+		glBindTexture(GL_TEXTURE_2D, texturaID);
+	
+	return true;
 }
 
 void TRecursoTextura::draw()
 {
 }
 
+void TRecursoTextura::draw(unsigned int num, GLuint programID, const std::string & nombre)
+{
+	glActiveTexture(GL_TEXTURE0 + num);
+	glBindTexture(GL_TEXTURE_2D, texturaID);
+	glUniform1i(glGetUniformLocation(programID, nombre.c_str()), num);
+}
+
+void TRecursoTextura::desactivar(unsigned int t)
+{
+	glActiveTexture(GL_TEXTURE0 + t);
+	glBindTexture(GL_TEXTURE_2D, 0);
+}
+
 GLuint TRecursoTextura::getTexturaID()
 {
-	return textura;
+	
+		return texturaID;
+	
+	
 }

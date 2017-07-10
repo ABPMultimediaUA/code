@@ -15,8 +15,8 @@
 #include <math.h>
 #include "../Game/Escenario/Puerta.h"
 #include "MiContactListener.h"
-#include "../Camara.h"
-#include "../player.h"
+#include "../Game/Camara.h"
+#include "../Game/player.h"
 #include "../Game/Enemigos/Enemigo.h"
 #include "Entity2D.h"
 //#include "../Escenario/Terminal.h"
@@ -29,7 +29,8 @@
 //#include "../Jugador/Bala.h"
 #include "../Game/Enemigos/Nodo.h"
 #include "../graphicEngine/TGraphicEngine.h"
-#include "../ActivadorCamara.h"
+#include "../Game/TGameEngine.h"
+#include "../Game/ActivadorCamara.h"
 
 #define PI 3.14159265
 
@@ -757,13 +758,9 @@ void MiContactListener::BeginContact(b2Contact* contact) {
 					ActivadorCamara *cam = static_cast<ActivadorCamara*>(entity2->getObjeto3D());
 					std::cout << "camID: " << cam->getID() << std::endl;
 					motor->cambiarCamaraActiva(cam->getID(), cam->getDirCamara());
-					//motor->cambiarLuzActiva(cam->getID(), cam->getDirCamara());
-					motor->cambiarLuzActiva(cam->getID());
+					juego->cambiarLuzActiva(cam->getID());
 					asignarVecDirector(entity1, cam);
 				}
-
-
-
 			}
 		}
 	}

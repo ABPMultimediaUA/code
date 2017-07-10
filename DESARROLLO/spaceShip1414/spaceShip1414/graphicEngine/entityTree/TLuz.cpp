@@ -63,6 +63,7 @@ void TLuz::endDraw()
 
 void TLuz::renderLuz(const glm::mat4& model, openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
 {
+	std::cout << "Inicia Render Luz"<< std::endl;
 	glm::mat4 MV = view * model;
 	glm::mat4 MVP = proyection * MV;
 	glm::mat3 N = glm::inverseTranspose(glm::mat3(MV));
@@ -71,11 +72,13 @@ void TLuz::renderLuz(const glm::mat4& model, openGLShader& shader, const glm::ma
 	glUniformMatrix4fv(shader.getUniformLocation("mv_matrix"), 1, GL_FALSE, glm::value_ptr(MV));
 	glUniformMatrix3fv(shader.getUniformLocation("n_matrix"), 1, GL_FALSE, glm::value_ptr(N));
 
+
+	std::cout << "matricez Render Luz completas" << std::endl;
 	float Shininess = 0.1f;
 	float Strength = 0.2f;
 	
 	//std::cout << "------------ Luz ID: " << id << " --------------" << std::endl;
-
+	std::cout << "Inicia Render Luz shader" << std::endl;
 	glUniform1f(shader.getUniformLocation("Shininess"), Shininess);
 	glUniform1f(shader.getUniformLocation("Strength"), Strength);
 	std::string luz = "luz[" + std::to_string(id) + "].activa";
@@ -129,6 +132,7 @@ void TLuz::renderLuz(const glm::mat4& model, openGLShader& shader, const glm::ma
 	//std::cout << luz << " -> " << atenuacionCuadratica << std::endl;
 	glUniform1f(shader.getUniformLocation(luz), atenuacionCuadratica);
 	//std::cout << "-----------------------------------------" << std::endl;
+	std::cout << "Finaliza Render Luz shader" << std::endl;
 }
 
 void TLuz::activar()
