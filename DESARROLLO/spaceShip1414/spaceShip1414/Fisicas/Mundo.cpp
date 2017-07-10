@@ -46,7 +46,8 @@ void Mundo::clearForcesBox2D()
 	world->ClearForces();
 }
 
-void Mundo::setMotor(TGraphicEngine * motor)
+void Mundo::setMotorGame(TGraphicEngine * motor, TGameEngine * juego)
 {
 	contactListenerInstance->setMotor(motor);
+	contactListenerInstance->setJuego(juego);
 }

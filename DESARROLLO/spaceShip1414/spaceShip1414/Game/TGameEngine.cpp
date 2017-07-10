@@ -16,7 +16,7 @@ TGameEngine::~TGameEngine()
 bool TGameEngine::iniciarGameEngine(TGraphicEngine * motorApp)
 {
 	world = new Mundo();
-	world->setMotor(motorApp);
+	world->setMotorGame(motorApp, this);
 	scene = new Escenario(motorApp, world);
 	json = new readJson(scene);
 	fooDrawInstance = new b2GLDraw();
@@ -41,7 +41,11 @@ void TGameEngine::update(double deltaTime)
 	scene->actualizarListaEnemigos(deltaTime);
 }
 
-void TGameEngine::cambiarLuzActiva(int id) {
+void TGameEngine::cambiarLuzActiva(int id)
+{
+	if (scene) {
+		std::cout << "no es nulo" << std::endl;
+	}
 	scene->cambioDeLuces(id);
 }
 

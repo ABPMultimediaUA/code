@@ -1,15 +1,10 @@
 #pragma once
-#ifndef GLEW_STATIC
-#define GLEW_STATIC
-#include <GL/glew.h>
-#endif
 #include <iostream>
 #include <vector>
 #include <string>
 #include <vector>
 #include <glm\vec3.hpp>
 #include <glm\mat4x4.hpp>
-#include "framework\openGLShader.h"
 
 class TNodo;
 class TGestorRecursos;
@@ -19,7 +14,7 @@ class TTransform;
 class TLuz;
 class TMalla;
 class TAnimacion;
-
+class openGLShader;
 class TGraphicEngine
 {
 public:
@@ -72,7 +67,7 @@ private:
 	void camaraActivada();
 	void luzActivada();
 
-	openGLShader shader;
+	openGLShader * shader;
 	TNodo* escena;
 	TGestorRecursos* gestorRecursos;
 	TCamara* camaraActiva;

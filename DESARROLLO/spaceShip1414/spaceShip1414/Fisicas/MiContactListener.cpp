@@ -50,6 +50,11 @@ void MiContactListener::setMotor(TGraphicEngine * engine)
 	motor = engine;
 }
 
+void MiContactListener::setJuego(TGameEngine * engine)
+{
+	juego = engine;
+}
+
 void MiContactListener::actualizarPuerta(Entity2D* entity, Entity2D *pers, int modo) {
 	std::cout << "ACTUALIZO " << modo << std::endl; 
 

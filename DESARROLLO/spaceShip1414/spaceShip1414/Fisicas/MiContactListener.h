@@ -29,6 +29,7 @@ public:
 	MiContactListener(const MiContactListener& orig);
 	~MiContactListener();
 	void setMotor(TGraphicEngine * engine);
+	void setJuego(TGameEngine * engine);
 	// Se produce un contacto entre dos cuerpos
 	virtual void BeginContact(b2Contact* contact);
 	// El contacto entre los cuerpos ha finalizado

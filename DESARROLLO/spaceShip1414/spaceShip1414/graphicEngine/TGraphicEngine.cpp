@@ -7,6 +7,7 @@
 #include <glm\gtx\matrix_decompose.hpp>
 #include <glm/gtc/quaternion.hpp>
 #include <glm/gtx/quaternion.hpp>
+#include "framework\openGLShader.h"
 #include "resourceManager\TGestorRecursos.h"
 #include "entityTree\TEntidad.h"
 #include "entityTree\TNodo.h"
@@ -20,6 +21,7 @@
 TGraphicEngine::TGraphicEngine(float w, float h) : shader(), registroCamaras(), registroLuces(), width{ w }, height{ h }
 {
 	aspect_ratio = w / h;
+	shader = new openGLShader();
 }
 
 TGraphicEngine::~TGraphicEngine()
@@ -40,7 +42,7 @@ bool TGraphicEngine::iniciarGraphicEngine()
 	glClearColor(0.0f, 0.0f, 0.0f, 0.8f);
 	glViewport(0, 0, width, height);
 	
-	shader.compile("graphicEngine/Shader/spaceShip1414.vs", "graphicEngine/Shader/spaceShip1414.fs");
+	shader->compile("graphicEngine/Shader/spaceShip1414.vs", "graphicEngine/Shader/spaceShip1414.fs");
 	return true;
 }
 
@@ -418,11 +420,11 @@ void TGraphicEngine::draw(double deltaTime)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glEnable(GL_CULL_FACE);
-	shader.use();
+	shader->use();
 	camaraActivada();
 	luzActivada();
-	escena->draw(shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix(), deltaTime);
-	shader.unUse();
+	escena->draw(*shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix(), deltaTime);
+	shader->unUse();
 }
 
 glm::vec3 TGraphicEngine::descomponerMatriz(TNodo * nodo, char tipo)
@@ -491,7 +493,7 @@ void TGraphicEngine::luzActivada()
 			glm::mat4 t = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getEntidad())->getMatriz();
 			glm::mat4 e = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getEntidad())->getMatriz();
 			glm::mat4 r = static_cast<TTransform*>(registroLuces.at(i)->getPadre()->getPadre()->getPadre()->getEntidad())->getMatriz();
-			static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->renderLuz(t*(e*r), shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
+			static_cast<TLuz*>(registroLuces.at(i)->getEntidad())->renderLuz(t*(e*r), *shader, camaraActiva->getView(), camaraActiva->getProjectionMatrix());
 			luzActiva = static_cast<TLuz*>(registroLuces.at(i)->getEntidad());
 		}
 	}
