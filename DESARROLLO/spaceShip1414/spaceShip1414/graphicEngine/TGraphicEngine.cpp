@@ -35,7 +35,7 @@ TGraphicEngine::~TGraphicEngine()
 
 bool TGraphicEngine::iniciarGraphicEngine()
 {
-	if (glewInit() != GLEW_OK) { return false; }
+	
 	escena = new TNodo(nullptr);
 	gestorRecursos = new TGestorRecursos();
 	glEnable(GL_DEPTH_TEST);

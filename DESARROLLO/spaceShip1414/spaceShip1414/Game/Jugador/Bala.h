@@ -25,21 +25,26 @@
 #endif
 class Mundo;
 class Entity2D;
+class TTransform;
+class TNodo;
+class TGraphicEngine;
 
 class Bala {
-private:
-	//ISceneNode *maya;
 
+private:
 
 	glm::vec3 pos;
-	glm::vec2 posRaton;
+	glm::vec3 posRaton;
 	Entity2D *entity;
 	float damage;
 	float vel;
+	TNodo * nodo;
+	TGraphicEngine* engine;
+
 
 public:
 
-	Bala(/*ISceneManager * smgr, IVideoDriver * driver,*/ Mundo * world, glm::vec3 posPers, glm::vec2 mousePosition, float dumug, int tipo, float velocidad);
+	Bala(TGraphicEngine*, Mundo * world, glm::vec3 posPers, glm::vec3 mousePosition, float dumug, int tipo, float velocidad);
 	Bala(const Bala& orig);
 	virtual ~Bala();
 	void setPosition(glm::vec3);
@@ -52,6 +57,13 @@ public:
 //	bool update();
 	float getDamage();
 	Entity2D* Bala::getEntity();
+	void rotation(TGraphicEngine *, float, float, float, float);
+	void rotationYPR(TGraphicEngine *, float, float, float);
+	void scale(TGraphicEngine *, float, float, float);
+	void translation(TGraphicEngine *, float, float, float);
+	TNodo * getNodo();
+
+
 };
 
 

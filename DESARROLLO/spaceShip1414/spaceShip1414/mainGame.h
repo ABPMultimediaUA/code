@@ -1,6 +1,11 @@
 #pragma once
 #include <SFML\Graphics.hpp>
-#include <SFML\OpenGL.hpp>
+#ifndef GLEW_STATIC
+#define GLEW_STATIC
+#include <GL/glew.h>
+#endif
+
+
 class MaquinaEstadosJuego;
 class menu;
 class ajustes;

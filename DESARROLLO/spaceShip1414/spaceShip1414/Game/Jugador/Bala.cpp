@@ -8,39 +8,35 @@
 #include <Math.h>
 #include "../Fisicas/Entity2D.h"
 #include "../Fisicas/Mundo.h"
+#include "../graphicEngine\TGraphicEngine.h"
+#include "../graphicEngine\entityTree\TNodo.h"
 
 #ifdef _IRR_WINDOWS_
 #pragma comment(lib, "Irrlicht.lib")
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-Bala::Bala(/*ISceneManager* smgr, IVideoDriver* driver, */ Mundo *world, glm::vec3 posPers, glm::vec2 mousePosition, float dumug, int tipo, float velocidad) {
+Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3 mousePosition, 
+	float dumug, int tipo, float velocidad) {
 
-	//maya = smgr->addSphereSceneNode(2);
-
-	//if (maya) {
-
-
-	//	maya->setPosition(posPers);
-	//	// maya->setMaterialTexture(0, driver->getTexture("texture/bruce.jpg"));
-	//	//primer parametro del setVertexColors es de la maya que quieres cambiar el color y con su getMesh se consigue
-	//	maya->getMaterial(0).EmissiveColor.set(0, 255, 140, 0);
-	//}
 
 
 	vel = velocidad;
 	//pos = maya->getPosition();
 
+	nodo = motorApp->addMalla();
+	motorApp->escalar(nodo, 0.2f, 0.2f, 0.2f);
+	motorApp->trasladar(nodo, posPers.x, posPers.y + 25.0f, posPers.z);
+	motorApp->rotarYPR(nodo, 0, 0, 0);
+	engine = motorApp;
 
-
-
-	posRaton = mousePosition;
+	posRaton = mousePosition; //vector direccion del personaje donde esta mirando
 
 	posInicial = posPers;
 
 	damage = dumug;
 
-	if (tipo == 1) {
+	if (tipo == 1) { //jugador
 		entity = new Entity2D(world->getWorldBox2D(), pos, glm::vec3(0,0,0), true, this, tipo);
 	}
 	else {
@@ -70,20 +66,22 @@ void Bala::mover() {
 
 	if (entity != NULL) {
 
-		glm::vec2 direction(posRaton.x - 683, posRaton.y - 384); //pasar tamanyo pantalla por parametro
-		direction = glm::normalize(direction);
+		//glm::vec2 direction(posRaton.x - 683, posRaton.y - 384); //pasar tamanyo pantalla por parametro
+		//direction = glm::normalize(direction);
 
-		float v1 = direction.x * vel;
-		float v2 = -direction.y * vel;
+		//float v1 = direction.x * vel;
+		//float v2 = -direction.y * vel;
 
+		b2Vec2 v(posRaton.x, posRaton.z);
+		v = vel * v;
 		//float x = entity->getCuerpo2D()->GetPosition().x + v1;
 		//float y = entity->getCuerpo2D()->GetPosition().y + v2;
-		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(v1, v2));
+		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(v1, v2));
+		entity->getCuerpo2D()->SetLinearVelocity(v);
 
-		//maya->setPosition(vector3df(entity->getCuerpo2D()->GetPosition().x, 10, entity->getCuerpo2D()->GetPosition().y));
-		// maya->setPosition(vector3df(x, 10, y));
+		engine->resetTransform(this->getNodo(), 't');
+		engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 
-		//pos = maya->getPosition();
 
 	}
 }
@@ -153,4 +151,29 @@ float Bala::getDamage() {
 Entity2D* Bala::getEntity()
 {
 	return entity;
+}
+
+void Bala::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
+{
+	motorApp->rotar(nodo, a, x, y, z);
+}
+
+void Bala::rotationYPR(TGraphicEngine * motorApp, float y, float p, float r)
+{
+	motorApp->rotarYPR(nodo, y, p, r);
+}
+
+void Bala::scale(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->escalar(nodo, x, y, z);
+}
+
+void Bala::translation(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->trasladar(nodo, x, y, z);
+}
+
+TNodo * Bala::getNodo()
+{
+	return nodo;
 }

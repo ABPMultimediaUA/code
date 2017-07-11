@@ -1,7 +1,7 @@
 #pragma once
 #include <glm\vec3.hpp>
+#include <list>
 
-class TTransform;
 class TGraphicEngine;
 class TCamara;
 class TNodo;
@@ -68,11 +68,19 @@ public:
 	float getVida();
 	Inventario* getInventario();
 
+	float getTiempoDisparo();
+	void setTiempoDisparo(float x);
+	void setDisparo(bool x);
+	bool getDisparo();
+	void actualizarLista(float dt);
+	void Disparar(Mundo* w, float dt);
+
 
 
 
 private:
 
+	
 	float velocity;
 	float yaw;
 	float pitch;
@@ -83,7 +91,7 @@ private:
 	glm::vec3 escale;
 	glm::vec3 posCam;
 	glm::vec3 posAnterior;
-	glm::vec3 vecDir, vecA, vecS, vecD;
+	glm::vec3 vecDir, vecA, vecS, vecD, vecAux;
 	Entity2D *entity;
 	TNodo *nodo, *animation;
 	TGraphicEngine * engine;
@@ -95,7 +103,10 @@ private:
 	float vida, vidaMax;
 	Inventario *inv;
 
-
+	std::list<Bala*> listaBalas;
+	bool disparo;
+	float tiempoDisparo;
+	
 };
 
 

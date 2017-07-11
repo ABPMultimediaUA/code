@@ -39,8 +39,10 @@ void TGameEngine::update(double deltaTime, movimentHandler* handler, TGraphicEng
 	world->getWorldBox2D()->DrawDebugData();
 	world->clearForcesBox2D();
 	handler->update(tecla, motorApp, this);
+	jugador->actualizarLista(0.0f);
 	scene->actualizarEstadoPuerta();
 	scene->actualizarListaEnemigos(deltaTime);
+	actualizarTiempoDeDisparo();
 	
 }
 
@@ -65,4 +67,19 @@ Camara * TGameEngine::getCamara()
 void TGameEngine::drawDebug() {
 	world->getWorldBox2D()->DrawDebugData();
 
+}
+
+Mundo* TGameEngine::getMundo() {
+	return world;
+
+}
+
+void TGameEngine::actualizarTiempoDeDisparo() {
+	if (jugador->getDisparo() == true) {
+		jugador->setTiempoDisparo(jugador->getTiempoDisparo() + 0.016);
+		if (jugador->getTiempoDisparo() >= 0.5f/*pers->getTiempoArma()*/) {
+			jugador->setDisparo(false);
+			jugador->setTiempoDisparo(0);
+		}
+	}
 }

@@ -20,6 +20,10 @@ public:
 	player * getPlayer();
 	Camara * getCamara();
 	void drawDebug();
+	Mundo * getMundo();
+
+	void actualizarTiempoDeDisparo();
+
 private:
 	unsigned int flags;
 	Mundo * world;

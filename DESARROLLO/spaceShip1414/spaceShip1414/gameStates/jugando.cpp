@@ -192,25 +192,25 @@ void jugando::render(void * window)
 	std::cout << "Inicia Render" << std::endl;
 	if (opciones)
 	{
-		//static_cast<sf::RenderWindow *>(window)->pushGLStates();
+		static_cast<sf::RenderWindow *>(window)->pushGLStates();
 		drawConfiguracion(window);
-		//static_cast<sf::RenderWindow *>(window)->popGLStates();
+		static_cast<sf::RenderWindow *>(window)->popGLStates();
 	}
 	else
 	{
 		std::cout << "Inicia Draw" << std::endl;		
-		gameApp->drawDebug();
+	
 		graphicApp->draw(0.1);
 
 		std::cout << "Finaliza Draw" << std::endl;
-		//static_cast<sf::RenderWindow *>(window)->pushGLStates();
+		static_cast<sf::RenderWindow *>(window)->pushGLStates();
 		drawNoClickHub(window);
 		static_cast<sf::RenderWindow *>(window)->draw(*bPausaPlay);
 		if (pausa)
 		{
 			drawPause(window);
 		}
-		//static_cast<sf::RenderWindow *>(window)->popGLStates();
+		static_cast<sf::RenderWindow *>(window)->popGLStates();
 	}
 	std::cout << "Finaliza Render" << std::endl;
 }
@@ -232,49 +232,7 @@ void jugando::handler(void * event, void * window, void * manager)
 			break;
 		}
 		break;
-	case sf::Event::KeyReleased:
-		switch (static_cast<sf::Event *>(event)->key.code)
-		{
-		case sf::Keyboard::Num1:
-			changeWeapon(0);
-			break;
-		case sf::Keyboard::Num2:
-			changeWeapon(1);
-			break;
-		case sf::Keyboard::Escape:
-			if (pausa) { play(); }
-			else       { pause(); }
-			break;
-		case sf::Keyboard::W:
-			if (!pausa) { tecla = 3; }
-			break;
-		case sf::Keyboard::A:
-			if (!pausa) { tecla = 1; }
-			break;
-		case sf::Keyboard::S:
-			if (!pausa) { tecla = 2; }
-			break;
-		case sf::Keyboard::D:
-			if (!pausa) { tecla = 0; }
-			break;
-		}
-		break;
-	case sf::Event::KeyPressed:
-		if (!pausa)
-		{
-			switch (static_cast<sf::Event *>(event)->key.code)
-			{
-			case sf::Keyboard::W: tecla = 3;
-				break;
-			case sf::Keyboard::A: tecla = 1;
-				break;
-			case sf::Keyboard::S: tecla = 2;
-				break;
-			case sf::Keyboard::D: tecla = 0;
-				break;
-			}
-			break;
-		}
+
 	}*/
 
 	if (!sf::Keyboard::isKeyPressed(sf::Keyboard::W) ||
@@ -326,50 +284,62 @@ void jugando::handler(void * event, void * window, void * manager)
 
 
 
+
+
 	if (static_cast<sf::Event *>(event)->type == sf::Event::MouseButtonPressed)
 	{
 		if (static_cast<sf::Event *>(event)->key.code == sf::Mouse::Left)
 		{
-			if (!pausa)
-			{
+			//if (!pausa)
+			//{
 				if (pausa) { if (opciones) { clickAjustes(window); } else { clickPauseMenu(window, manager); } }
 				else { clickPlayPause(window); }
+			//}
+
+
+
+			if(gameApp->getPlayer()->getDisparo() == false && !pausa) {
+
+			//	if (pers->getCargador() >= 0) {
+				gameApp->getPlayer()->Disparar(gameApp->getMundo(), 0.016);
+			//	}
+
 			}
+
+			//if (gameApp->getPlayer()->getDisparo() == true) {
+			//	gameApp->getPlayer()->setTiempoDisparo(gameApp->getPlayer()->getTiempoDisparo() + 0.016);
+			//	if (gameApp->getPlayer()->getTiempoDisparo() >= 0.5f/*pers->getTiempoArma()*/) {
+			//		gameApp->getPlayer()->setDisparo(false);
+			//		gameApp->getPlayer()->setTiempoDisparo(0);
+			//	}
+			//}
+
 		}
 	}
-	//if (static_cast<sf::Event *>(event)->type == sf::Event::KeyPressed)
-	//{
-	//	if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::W) { if (!pausa) { tecla = 3; } }
-	//	if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::A) { if (!pausa) { tecla = 1; } }
-	//	if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::S) { if (!pausa) { tecla = 2; } }
-	//	if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::D) { if (!pausa) { tecla = 0; } }
-	//}
+
 	if (static_cast<sf::Event *>(event)->type == sf::Event::KeyReleased)
 	{
 		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Num1) { if (!pausa) { changeWeapon(0); } }
 		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Num2) { if (!pausa) { changeWeapon(1); } }
 		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Escape) { if (!pausa) { if (pausa) { play(); } else { pause(); } } }
-		//if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::W) { if (!pausa) { tecla = -1; } }
-		//if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::A) { if (!pausa) { tecla = -1; } }
-		//if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::S) { if (!pausa) { tecla = -1; } }
-		//if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::D) { if (!pausa) { tecla = -1; } }
+
 	}
 }
 
 void jugando::drawConfiguracion(void * window)
 {
 	static_cast<sf::RenderWindow *>(window)->draw(*fFondo);
-	texto->setFillColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 255, 180));
 	texto->setString("Ajustes del Juego");
 	texto->setCharacterSize(20);
-	texto->setOutlineThickness(2);
+
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(621, 308); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
-	texto->setFillColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 255, 180));
 	texto->setString("Volver al juego");
 	texto->setCharacterSize(20);
-	texto->setOutlineThickness(2);
+
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(621, 608); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
@@ -383,31 +353,31 @@ void jugando::drawPause(void * window)
 	static_cast<sf::RenderWindow *>(window)->draw(*rectangle);
 	static_cast<sf::RenderWindow *>(window)->draw(*bMenuPausa);
 	checkMousePos(window);
-	texto->setFillColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 255, 180));
 	texto->setString("Continuar");
 	texto->setCharacterSize(20);
-	texto->setOutlineThickness(2);
+
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(621, 308); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
-	texto->setFillColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 255, 180));
 	texto->setString("Opciones");
 	texto->setCharacterSize(20);
-	texto->setOutlineThickness(2);
+
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(627, 344); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
-	texto->setFillColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 255, 180));
 	texto->setString("Volver al Menu");
 	texto->setCharacterSize(16);
-	texto->setOutlineThickness(2);
+
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(623, 386); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
-	texto->setFillColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 255, 180));
 	texto->setString("Salir a Windows");
 	texto->setCharacterSize(16);
-	texto->setOutlineThickness(2);
+
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(622, 423); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
@@ -439,10 +409,10 @@ void jugando::drawNoClickHub(void * window)
 		rec = true;
 	}
 
-	texto->setFillColor(sf::Color(255, 255, 255, 150));
+	texto->setColor(sf::Color(255, 255, 255, 150));
 	texto->setString("REC");
 	texto->setCharacterSize(20);
-	texto->setOutlineThickness(2);
+
 	texto->setPosition(92, 65);
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
 
@@ -483,10 +453,10 @@ void jugando::drawNoClickHub(void * window)
 	static_cast<sf::RenderWindow *>(window)->draw(*rectangle);
 
 	static_cast<sf::RenderWindow *>(window)->draw(*iArma);
-	texto->setFillColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 255, 180));
 	texto->setString(std::to_string(balas));
 	texto->setCharacterSize(20);
-	texto->setOutlineThickness(2);
+
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(1262, 688); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
@@ -495,10 +465,10 @@ void jugando::drawNoClickHub(void * window)
 	{
 		tiempo = reloj->getElapsedTime();
 	}
-	texto->setFillColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 255, 180));
 	texto->setString(std::to_string(tiempo.asSeconds()));
 	texto->setCharacterSize(30);
-	texto->setOutlineThickness(4);
+
 	if (height > 768) { texto->setPosition(900, 1015); }
 	else { texto->setPosition(623, 680); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);

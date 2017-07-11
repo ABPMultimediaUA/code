@@ -1,13 +1,13 @@
 #include "player.h"
 #include "../graphicEngine\TGraphicEngine.h"
-#include "../graphicEngine\entityTree\TTransform.h"
 #include "../graphicEngine\entityTree\TNodo.h"
-#include "../graphicEngine\entityTree\TMalla.h"
 #include "../graphicEngine\entityTree\TCamara.h"
 #include "../graphicEngine\entityTree\TAnimacion.h"
 #include "MaquinaEstados\FSM\MaquinaEstados.h"
 #include "MaquinaEstados\FSM\Estados.h"
 #include "Jugador\Inventario.h"
+#include "Jugador\Bala.h"
+
 #include "Escenario\ObjConsumables\Botiquines.h"
 
 #ifndef ENTITY2D_GUARD
@@ -49,6 +49,7 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 
 	entity = new Entity2D(m->getWorldBox2D(), glm::vec3(0,0,0), rot, this);
 	//motorApp->setPlayerMove(this);
 	inv = new Inventario();
+
 }
 
 void player::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
@@ -238,6 +239,7 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		vel = velocity * vel;
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara - 90, 0.0f, 0.0f);
+		vecAux = vecD;
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
 	}
 	if (n == 1)
@@ -246,6 +248,8 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		vel = velocity * vel;
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara + 90, 0.0f, 0.0f);
+		vecAux = vecA;
+
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
 	}
 	if (n == 2)
@@ -254,6 +258,8 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		vel = velocity * vel;
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara + 180, 0.0f, 0.0f);
+		vecAux = vecS;
+
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
 	}
 	if (n == 3)
@@ -262,6 +268,8 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		vel = velocity * vel;
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara, 0.0f, 0.0f);
+		vecAux = vecDir;
+
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
 	}
 
@@ -433,4 +441,62 @@ float player::getVida()
 Inventario * player::getInventario()
 {
 	return inv;
+}
+
+float player::getTiempoDisparo()
+{
+	return tiempoDisparo;
+}
+
+void player::setTiempoDisparo(float x)
+{
+	tiempoDisparo = x;
+}
+
+void player::setDisparo(bool x)
+{
+	disparo = x;
+}
+
+bool player::getDisparo()
+{
+	return disparo;
+}
+
+void player::actualizarLista(float dt)
+{
+	if (!listaBalas.empty()) {
+		for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end();) {
+			if ((*it) != NULL) {
+				if (!(*it)->estaViva()) {
+
+					delete(*it);
+					it = listaBalas.erase(it);
+				}
+				else
+					it++;
+			}
+			else
+				it++;
+		}
+
+		for (std::list<Bala*>::iterator it = listaBalas.begin(); it != listaBalas.end(); it++) {
+			if ((*it) != NULL && (*it)->estaViva() == true) {
+				(*it)->mover();
+				//(*it)->update();
+			}
+		}
+	}
+}
+
+void player::Disparar(Mundo * w, float dt)
+{
+	//std::cout << "CARGADOR: " << cargador << std::endl;
+	tiempoDisparo += dt;
+	disparo = true;
+	Bala *bullet = new Bala(engine, w, engine->getPosicion(nodo), vecAux, 10.0f, 1, 300.0f);
+	//Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3 mousePosition,
+	//	float dumug, int tipo, float velocidad) {
+	listaBalas.push_back(bullet);
+	//cargador--;
 }

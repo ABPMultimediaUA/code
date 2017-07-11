@@ -5,6 +5,7 @@
 #include "gameStates\jugando.h"
 #include <iostream>
 
+
 mainGame::mainGame()
 {
 }
@@ -22,9 +23,10 @@ bool mainGame::init(const std::string titulo, int width, int height, bool full_s
 {
 	contextSettings = new sf::ContextSettings();
 	contextSettings->depthBits = 24;
-	contextSettings->sRgbCapable = false;
+
 	if (full_screen) { window = new sf::RenderWindow(sf::VideoMode(width, height), titulo, sf::Style::Fullscreen, *contextSettings); }
 	else { window = new sf::RenderWindow(sf::VideoMode(width, height), titulo, sf::Style::Default, *contextSettings); }
+	glewInit();
 	window->setVerticalSyncEnabled(true);
 	manager = new MaquinaEstadosJuego();
 	gameMenu = new menu(width,height);
@@ -55,9 +57,13 @@ void mainGame::run()
 				window->close();
 		}
 
-		window->clear();
-
 		manager->getEstadoActivo()->update();
+
+		window->clear();
+		glBindBuffer(GL_ARRAY_BUFFER, 0);
+		glDisableVertexArrayAttribEXT(0, 0);
+
+	
 		manager->getEstadoActivo()->render(window);
 		window->display();
 	}
