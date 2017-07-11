@@ -525,3 +525,14 @@ void TGraphicEngine::cambiarCamaraActiva(char m, void * dirCam)
 		camaraActiva = cam->getTCamara();
 	}
 }
+
+void TGraphicEngine::buscarNodoPadre(TNodo* n)
+{
+
+	TNodo* aux = n->getPadre()->getPadre()->getPadre();
+	TNodo* godfather = aux->getPadre();
+
+	godfather->removeHijo(aux);
+
+
+}

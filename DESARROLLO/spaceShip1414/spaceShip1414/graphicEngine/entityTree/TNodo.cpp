@@ -97,8 +97,9 @@ int TNodo::removeHijo(TNodo* n)
 	{
 		if (*it == n)
 		{
-			hijos.erase(it);
 			delete *it;
+			hijos.erase(it);
+			
 			return 1;
 		}
 	}
@@ -158,3 +159,4 @@ void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro, doub
 	}
 	
 }
+

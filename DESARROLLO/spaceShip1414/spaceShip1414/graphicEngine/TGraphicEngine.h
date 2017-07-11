@@ -61,6 +61,7 @@ public:
 	glm::mat4 getInverseProjectionCamaraActive();
 	void onresize(int, int);
 	void cambiarCamaraActiva(char m, void * dirCam);
+	void buscarNodoPadre(TNodo * n);
 	void draw(double);
 private:
 	glm::vec3 descomponerMatriz(TNodo *, char);

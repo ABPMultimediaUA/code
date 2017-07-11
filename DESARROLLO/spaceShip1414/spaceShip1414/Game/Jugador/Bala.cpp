@@ -26,7 +26,7 @@ Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3
 
 	nodo = motorApp->addMalla();
 	motorApp->escalar(nodo, 0.2f, 0.2f, 0.2f);
-	motorApp->trasladar(nodo, posPers.x, posPers.y + 25.0f, posPers.z);
+	motorApp->trasladar(nodo, posPers.x, posPers.y + 10.0f, posPers.z);
 	motorApp->rotarYPR(nodo, 0, 0, 0);
 	engine = motorApp;
 
@@ -37,11 +37,11 @@ Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3
 	damage = dumug;
 
 	if (tipo == 1) { //jugador
-		entity = new Entity2D(world->getWorldBox2D(), pos, glm::vec3(0,0,0), true, this, tipo);
+		entity = new Entity2D(world->getWorldBox2D(), posPers, glm::vec3(0,0,0), true, this, tipo);
 	}
 	else {
 		//maya->getMaterial(0).EmissiveColor.set(0, 0, 140, 255);
-		entity = new Entity2D(world->getWorldBox2D(), pos, glm::vec3(0, 0, 0), true, this, tipo);
+		entity = new Entity2D(world->getWorldBox2D(), posPers, glm::vec3(0, 0, 0), true, this, tipo);
 
 	}
 
@@ -53,7 +53,9 @@ Bala::Bala(const Bala& orig) {
 Bala::~Bala() {
 	std::cout << "MUERO BALA" << std::endl;
 
-	//maya->getParent()->removeChild(maya);
+	//nodo->destruirEntidad();
+	engine->buscarNodoPadre(nodo);
+	nodo = nullptr;
 	delete(entity);
 }
 
@@ -80,7 +82,8 @@ void Bala::mover() {
 		entity->getCuerpo2D()->SetLinearVelocity(v);
 
 		engine->resetTransform(this->getNodo(), 't');
-		engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+		engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, 
+			posInicial.y + 10.0f, -entity->getCuerpo2D()->GetPosition().y);
 
 
 	}

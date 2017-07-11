@@ -318,13 +318,13 @@ void player::asignarVectorDirector(glm::vec3 u, float angle)
 void player::actualizarPosicion()
 {	
 	
-//	std::cout << "POS ANTES DEL PUTO JUGADOR: " << glm::to_string(engine->getPosicion(nodo)) << std::endl;
+	std::cout << "POS ANTES DEL PUTO JUGADOR: " << glm::to_string(engine->getPosicion(nodo)) << std::endl;
 	engine->resetTransform(this->getNodo(), 't');
 
 	setPos(entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 //	std::cout << "POS 2D DEL PUTO JUGADOR DEPSUES: " << entity->getCuerpo2D()->GetPosition().x << ", " << -entity->getCuerpo2D()->GetPosition().y << std::endl;
 	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
-//	std::cout << "POS DESPUES DEL PUTO JUGADOR: " << glm::to_string(engine->getPosicion(nodo)) << std::endl;
+	std::cout << "POS DESPUES DEL PUTO JUGADOR: " << glm::to_string(engine->getPosicion(nodo)) << std::endl;
 
 }
 
@@ -494,7 +494,11 @@ void player::Disparar(Mundo * w, float dt)
 	//std::cout << "CARGADOR: " << cargador << std::endl;
 	tiempoDisparo += dt;
 	disparo = true;
-	Bala *bullet = new Bala(engine, w, engine->getPosicion(nodo), vecAux, 10.0f, 1, 300.0f);
+	glm::vec3 caca(entity->getCuerpo2D()->GetPosition().x,
+		this->getPos().y,
+		-entity->getCuerpo2D()->GetPosition().y);
+	
+	Bala *bullet = new Bala(engine, w, pos, vecAux, 10.0f, 1, 300.0f);
 	//Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3 mousePosition,
 	//	float dumug, int tipo, float velocidad) {
 	listaBalas.push_back(bullet);
