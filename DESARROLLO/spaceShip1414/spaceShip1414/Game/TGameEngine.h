@@ -16,6 +16,7 @@ public:
 	void cambiarLuzActiva(int);
 	player * getPlayer();
 	Camara * getCamara();
+	void drawDebug();
 private:
 	unsigned int flags;
 	Mundo * world;

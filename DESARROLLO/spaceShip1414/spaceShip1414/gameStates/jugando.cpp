@@ -57,7 +57,7 @@ void jugando::inicializarEstado()
 	reloj = new sf::Clock();
 	fFondo = new sf::Sprite();
 	tFondo = new sf::Texture();
-
+	tecla = -1;
 	if (!tFondo->loadFromFile("resourse/image/espacio.jpg", sf::IntRect(1, 1, width, height)))
 	{
 		std::cerr << "Fondo no cargado" << std::endl;
@@ -181,8 +181,9 @@ void jugando::update()
 	}
 	else
 	{
-		handlerApp->update(tecla, graphicApp, gameApp);
 		gameApp->update(0.1);
+		handlerApp->update(tecla, graphicApp, gameApp);
+		
 	}
 }
 
@@ -197,8 +198,10 @@ void jugando::render(void * window)
 	}
 	else
 	{
-		std::cout << "Inicia Draw" << std::endl;
+		std::cout << "Inicia Draw" << std::endl;		
+		gameApp->drawDebug();
 		graphicApp->draw(0.1);
+
 		std::cout << "Finaliza Draw" << std::endl;
 		//static_cast<sf::RenderWindow *>(window)->pushGLStates();
 		drawNoClickHub(window);
@@ -214,7 +217,7 @@ void jugando::render(void * window)
 
 void jugando::handler(void * event, void * window, void * manager)
 {
-	tecla = -1;
+	//tecla = -1;
 	/*switch (static_cast<sf::Event *>(event)->type)
 	{
 	case sf::Event::MouseButtonPressed:
@@ -273,6 +276,56 @@ void jugando::handler(void * event, void * window, void * manager)
 			break;
 		}
 	}*/
+
+	if (!sf::Keyboard::isKeyPressed(sf::Keyboard::W) ||
+		!sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||
+		!sf::Keyboard::isKeyPressed(sf::Keyboard::D) ||
+		!sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+		tecla = -1;
+	}
+
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && !pausa)
+		{
+			std::cout << "W" << std::endl;
+			tecla = 3;
+		}
+
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !pausa)
+		{
+			std::cout << "A" << std::endl;
+			tecla = 1;
+		}
+
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && !pausa)
+		{
+			std::cout << "S" << std::endl;
+			tecla = 2;
+		}
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !pausa)
+		{
+			std::cout << "D" << std::endl;
+			tecla = 0;
+		}
+
+		//else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
+		//{
+		//	std::cout << "1" << std::endl;
+		//	tecla = TECLA_1;
+		//	jugador->cambiarAnimacion('a');
+		//}
+		//else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
+		//{
+		//	std::cout << "2" << std::endl;
+		//	tecla = TECLA_2;
+		//	jugador->cambiarAnimacion('c');
+		//}
+
+
+
 	if (static_cast<sf::Event *>(event)->type == sf::Event::MouseButtonPressed)
 	{
 		if (static_cast<sf::Event *>(event)->key.code == sf::Mouse::Left)
@@ -284,22 +337,22 @@ void jugando::handler(void * event, void * window, void * manager)
 			}
 		}
 	}
-	if (static_cast<sf::Event *>(event)->type == sf::Event::KeyPressed)
-	{
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::W) { if (!pausa) { tecla = 3; } }
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::A) { if (!pausa) { tecla = 1; } }
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::S) { if (!pausa) { tecla = 2; } }
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::D) { if (!pausa) { tecla = 0; } }
-	}
+	//if (static_cast<sf::Event *>(event)->type == sf::Event::KeyPressed)
+	//{
+	//	if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::W) { if (!pausa) { tecla = 3; } }
+	//	if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::A) { if (!pausa) { tecla = 1; } }
+	//	if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::S) { if (!pausa) { tecla = 2; } }
+	//	if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::D) { if (!pausa) { tecla = 0; } }
+	//}
 	if (static_cast<sf::Event *>(event)->type == sf::Event::KeyReleased)
 	{
 		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Num1) { if (!pausa) { changeWeapon(0); } }
 		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Num2) { if (!pausa) { changeWeapon(1); } }
 		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Escape) { if (!pausa) { if (pausa) { play(); } else { pause(); } } }
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::W) { if (!pausa) { tecla = 3; } }
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::A) { if (!pausa) { tecla = 1; } }
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::S) { if (!pausa) { tecla = 2; } }
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::D) { if (!pausa) { tecla = 0; } }
+		//if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::W) { if (!pausa) { tecla = -1; } }
+		//if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::A) { if (!pausa) { tecla = -1; } }
+		//if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::S) { if (!pausa) { tecla = -1; } }
+		//if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::D) { if (!pausa) { tecla = -1; } }
 	}
 }
 

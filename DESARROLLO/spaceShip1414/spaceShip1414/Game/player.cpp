@@ -256,6 +256,8 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		engine->rotarYPR(nodo, anguloCamara, 0.0f, 0.0f);
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
 	}
+	std::cout << "POS 2D DEL PUTO JUGADOR ANTES: " << entity->getCuerpo2D()->GetPosition().x << ", " << -entity->getCuerpo2D()->GetPosition().y << std::endl;
+
 	entity->getCuerpo2D()->SetLinearVelocity(vel);
 	actualizarPosicion();
 	//engine->resetTransform(this->getNodo(), 't');
@@ -299,12 +301,18 @@ void player::asignarVectorDirector(glm::vec3 u, float angle)
 }
 
 void player::actualizarPosicion()
-{
+{	
+	
+	std::cout << "POS ANTES DEL PUTO JUGADOR: " << glm::to_string(engine->getPosicion(nodo)) << std::endl;
 	engine->resetTransform(this->getNodo(), 't');
 	//engine->resetTransform(animation, 't');
+
 	setPos(entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	std::cout << "POS 2D DEL PUTO JUGADOR DEPSUES: " << entity->getCuerpo2D()->GetPosition().x << ", " << -entity->getCuerpo2D()->GetPosition().y << std::endl;
 	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
 	//engine->trasladar(animation, entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	std::cout << "POS DESPUES DEL PUTO JUGADOR: " << glm::to_string(engine->getPosicion(nodo)) << std::endl;
+
 }
 
 void player::iniciarTiempoImpulso() {

@@ -2120,7 +2120,7 @@ void Escenario::dibujarEscenario() {
 
 	cambioDeLuces(0);
 
-	jugador->asignarVectorDirector(glm::vec3(-1,0,0), listaDeCamaras[0]->getAnguloInicial());
+	jugador->asignarVectorDirector(glm::vec3(-1,0,0), buscarCamara(0)->getAnguloInicial());
 
 	std::cout << "-------------------------------------->" << tam << std::endl;
 

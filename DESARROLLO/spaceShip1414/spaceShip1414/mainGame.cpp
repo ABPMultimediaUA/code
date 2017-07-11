@@ -55,9 +55,9 @@ void mainGame::run()
 				window->close();
 		}
 
-		manager->getEstadoActivo()->update();
-
 		window->clear();
+
+		manager->getEstadoActivo()->update();
 		manager->getEstadoActivo()->render(window);
 		window->display();
 	}

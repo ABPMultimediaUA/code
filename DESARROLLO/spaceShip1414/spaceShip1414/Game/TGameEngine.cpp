@@ -58,3 +58,8 @@ Camara * TGameEngine::getCamara()
 {
 	return scene->getCamara();
 }
+
+void TGameEngine::drawDebug() {
+	world->getWorldBox2D()->DrawDebugData();
+
+}
