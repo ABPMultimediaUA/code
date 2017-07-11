@@ -77,7 +77,7 @@ Mundo* TGameEngine::getMundo() {
 void TGameEngine::actualizarTiempoDeDisparo() {
 	if (jugador->getDisparo() == true) {
 		jugador->setTiempoDisparo(jugador->getTiempoDisparo() + 0.016);
-		if (jugador->getTiempoDisparo() >= 0.5f/*pers->getTiempoArma()*/) {
+		if (jugador->getTiempoDisparo() >= 0.2f/*pers->getTiempoArma()*/) {
 			jugador->setDisparo(false);
 			jugador->setTiempoDisparo(0);
 		}
