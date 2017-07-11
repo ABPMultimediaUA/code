@@ -54,10 +54,8 @@ Camara * Escenario::buscarCamara(int ID)
 
 }
 
-Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m /*,b2World *world, Juego* game*/) {
+Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m) {
 
-	/*SM = smgr;
-	VD = driver;*/
 	engine = motorApp;
 	mundo = m;
 	jugador = new player(motorApp, m);
@@ -65,8 +63,7 @@ Escenario::Escenario(TGraphicEngine * motorApp, Mundo *m /*,b2World *world, Jueg
 	//cam->getTCamara()->desactivar();
 	srand(time(NULL));
 	entity = new Entity2D(m->getWorldBox2D());
-	//jue = game;
-	//pers = new Personaje(smgr, driver, world, game);
+
 }
 Escenario::Escenario(const Escenario& orig) {
 }

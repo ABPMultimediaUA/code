@@ -4,6 +4,7 @@
 #include "..\Fisicas\Mundo.h"
 #include "..\Fisicas\b2GLDraw.h"
 #include "player.h"
+#include "../movimentHandler/movimentHandler.h"
 
 TGameEngine::TGameEngine()
 {
@@ -28,17 +29,19 @@ bool TGameEngine::iniciarGameEngine(TGraphicEngine * motorApp)
 	flags += b2Draw::e_pairBit;
 	flags += b2Draw::e_centerOfMassBit;
 	fooDrawInstance->SetFlags(flags);
-	jugador = new player(motorApp, world);
+	jugador = scene->getPersonaje();
 	return true;
 }
 
-void TGameEngine::update(double deltaTime)
+void TGameEngine::update(double deltaTime, movimentHandler* handler, TGraphicEngine * motorApp, int tecla)
 {
 	world->stepBox2D(1.0 / 60.0, 6, 2);
 	world->getWorldBox2D()->DrawDebugData();
 	world->clearForcesBox2D();
+	handler->update(tecla, motorApp, this);
 	scene->actualizarEstadoPuerta();
 	scene->actualizarListaEnemigos(deltaTime);
+	
 }
 
 void TGameEngine::cambiarLuzActiva(int id)

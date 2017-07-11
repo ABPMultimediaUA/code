@@ -6,13 +6,16 @@ class b2GLDraw;
 class player;
 class Camara;
 class TGraphicEngine;
+class movimentHandler;
+
 class TGameEngine
 {
 public:
 	TGameEngine();
 	~TGameEngine();
 	bool iniciarGameEngine(TGraphicEngine *);
-	void update(double);
+	void update(double deltaTime, movimentHandler * handler, TGraphicEngine * motorApp, int tecla);
+
 	void cambiarLuzActiva(int);
 	player * getPlayer();
 	Camara * getCamara();

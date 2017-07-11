@@ -181,8 +181,8 @@ void jugando::update()
 	}
 	else
 	{
-		gameApp->update(0.1);
-		handlerApp->update(tecla, graphicApp, gameApp);
+		gameApp->update(0.1,handlerApp, graphicApp, tecla);
+		//handlerApp->update(tecla, graphicApp, gameApp);
 		
 	}
 }

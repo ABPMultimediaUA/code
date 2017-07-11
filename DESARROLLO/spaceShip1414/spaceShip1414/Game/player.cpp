@@ -203,17 +203,25 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	b2Vec2 vel(0,0);
 	glm::vec3 rotaton = engine->getRotacion(nodo);
 	dir = n;
-	glm::vec3 posSim;
+
 	//std::cout << "VALORS DE N: " << n << std::endl;
-	if (n != -1 && MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != andar->getEstado())
-	{
-		cambiarAnimacion('a');
-	}
+	//if (n != -1 && MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != andar->getEstado())
+	//{
+	//	cambiarAnimacion('a');
+	//}
+
+	//std::cout << "VECTORES ACTU" << std::endl;
+	//std::cout << "DIR: "<< glm::to_string(vecDir) << std::endl;
+	//std::cout << "A: "<<glm::to_string(vecA) << std::endl;
+	//std::cout << "S: "<< glm::to_string(vecS) << std::endl;
+	//std::cout <<"D:"<< glm::to_string(vecD) << std::endl;
+
+
 	if(n == -1)
 	{
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
 		if (MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != reposo->getEstado()) {
-			cambiarAnimacion('r');
+			//cambiarAnimacion('r');
 		}
 		if (recalculo == true)
 		{
@@ -256,7 +264,6 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		engine->rotarYPR(nodo, anguloCamara, 0.0f, 0.0f);
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
 	}
-	std::cout << "POS 2D DEL PUTO JUGADOR ANTES: " << entity->getCuerpo2D()->GetPosition().x << ", " << -entity->getCuerpo2D()->GetPosition().y << std::endl;
 
 	entity->getCuerpo2D()->SetLinearVelocity(vel);
 	actualizarPosicion();
@@ -279,10 +286,10 @@ void player::asignarVectorDirector(glm::vec3 u, float angle)
 {
 	vecDir = u;
 	anguloCamara = angle;
-	/*std::cout << "ANGLEEEEE: " << angle << std::endl;
-	std::cout << angle + 90 << std::endl;
-	std::cout << angle + 180 << std::endl;
-	std::cout << angle - 90 << std::endl;*/
+	//std::cout << "ANGLEEEEE: " << angle << std::endl;
+	//std::cout << angle + 90 << std::endl;
+	//std::cout << angle + 180 << std::endl;
+	//std::cout << angle - 90 << std::endl;
 	float angulo = (90) * PI / 180;
 	vecA = glm::vec3(vecDir.x * cos(angulo) - vecDir.z * sin(angulo),
 					0, vecDir.x * sin(angulo) + vecDir.z * cos(angulo));
@@ -292,26 +299,24 @@ void player::asignarVectorDirector(glm::vec3 u, float angle)
 	angulo = (- 90) * PI / 180;
 	vecD = glm::vec3(vecDir.x * cos(angulo) - vecDir.z * sin(angulo),
 					0, vecDir.x * sin(angulo) + vecDir.z * cos(angulo));
-	/*std::cout << "VECTORES" << std::endl;
-	std::cout << "DIR: "<< glm::to_string(vecDir) << std::endl;
-	std::cout << "A: "<<glm::to_string(vecA) << std::endl;
-	std::cout << "S: "<< glm::to_string(vecS) << std::endl;
-	std::cout <<"D:"<< glm::to_string(vecD) << std::endl;*/
+	//std::cout << "VECTORES" << std::endl;
+	//std::cout << "DIR: "<< glm::to_string(vecDir) << std::endl;
+	//std::cout << "A: "<<glm::to_string(vecA) << std::endl;
+	//std::cout << "S: "<< glm::to_string(vecS) << std::endl;
+	//std::cout <<"D:"<< glm::to_string(vecD) << std::endl;
 
 }
 
 void player::actualizarPosicion()
 {	
 	
-	std::cout << "POS ANTES DEL PUTO JUGADOR: " << glm::to_string(engine->getPosicion(nodo)) << std::endl;
+//	std::cout << "POS ANTES DEL PUTO JUGADOR: " << glm::to_string(engine->getPosicion(nodo)) << std::endl;
 	engine->resetTransform(this->getNodo(), 't');
-	//engine->resetTransform(animation, 't');
 
 	setPos(entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
-	std::cout << "POS 2D DEL PUTO JUGADOR DEPSUES: " << entity->getCuerpo2D()->GetPosition().x << ", " << -entity->getCuerpo2D()->GetPosition().y << std::endl;
+//	std::cout << "POS 2D DEL PUTO JUGADOR DEPSUES: " << entity->getCuerpo2D()->GetPosition().x << ", " << -entity->getCuerpo2D()->GetPosition().y << std::endl;
 	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
-	//engine->trasladar(animation, entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
-	std::cout << "POS DESPUES DEL PUTO JUGADOR: " << glm::to_string(engine->getPosicion(nodo)) << std::endl;
+//	std::cout << "POS DESPUES DEL PUTO JUGADOR: " << glm::to_string(engine->getPosicion(nodo)) << std::endl;
 
 }
 
