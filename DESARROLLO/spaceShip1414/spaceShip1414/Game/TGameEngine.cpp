@@ -53,3 +53,8 @@ player * TGameEngine::getPlayer()
 {
 	return jugador;
 }
+
+Camara * TGameEngine::getCamara()
+{
+	return scene->getCamara();
+}

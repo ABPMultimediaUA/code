@@ -4,6 +4,7 @@
 
 class TGameEngine;
 class TGraphicEngine;
+class movimentHandler;
 class jugando :
 	public estadosJuego
 {
@@ -47,6 +48,7 @@ private:
 
 	TGameEngine * gameApp;
 	TGraphicEngine * graphicApp;
+	movimentHandler * handlerApp;
 
 	float vida;
 	float vidaMax;
@@ -55,5 +57,6 @@ private:
 	bool rec;
 	bool pausa, opciones;
 	float width, height;
+	int tecla;
 };
 

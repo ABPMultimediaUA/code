@@ -4,6 +4,7 @@ class Escenario;
 class Mundo;
 class b2GLDraw;
 class player;
+class Camara;
 class TGraphicEngine;
 class TGameEngine
 {
@@ -14,6 +15,7 @@ public:
 	void update(double);
 	void cambiarLuzActiva(int);
 	player * getPlayer();
+	Camara * getCamara();
 private:
 	unsigned int flags;
 	Mundo * world;

@@ -192,6 +192,7 @@
     <ClCompile Include="mainGame.cpp" />
     <ClCompile Include="Game\player.cpp" />
     <ClCompile Include="Game\Escenario\readJson.cpp" />
+    <ClCompile Include="movimentHandler\movimentHandler.cpp" />
     <ClCompile Include="tools\Box2D\Collision\b2BroadPhase.cpp" />
     <ClCompile Include="tools\Box2D\Collision\b2CollideCircle.cpp" />
     <ClCompile Include="tools\Box2D\Collision\b2CollideEdge.cpp" />
@@ -306,6 +307,7 @@
     <ClInclude Include="mainGame.h" />
     <ClInclude Include="Game\player.h" />
     <ClInclude Include="Game\Escenario\readJson.h" />
+    <ClInclude Include="movimentHandler\movimentHandler.h" />
     <ClInclude Include="tools\assimp\ai_assert.h" />
     <ClInclude Include="tools\assimp\anim.h" />
     <ClInclude Include="tools\assimp\camera.h" />

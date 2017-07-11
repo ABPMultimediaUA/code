@@ -2,13 +2,16 @@
 #include "MaquinaEstadosJuego.h"
 #include "..\Game\TGameEngine.h"
 #include "..\graphicEngine\TGraphicEngine.h"
+#include "..\movimentHandler\movimentHandler.h"
 #include <iostream>
 #include <string>
 #include <SFML\OpenGL.hpp>
+#include "../Game/player.h"
 
 jugando::jugando(float w, float h) : estadosJuego("playingState"), arma{ 0 }, balas{ 10 }, opciones{ false }, rec{ false }, pausa{ false }, vida{ 145.f }, vidaMax{ 250.f },
 texto{ nullptr }, font{ nullptr }, tMenuPausa{ nullptr }, bMenuPausa{ nullptr }, bPulsetMenu{ nullptr }, tPulsetMenu{ nullptr }, bPausaPlay{ nullptr }, tPausa{ nullptr },
-tPlay{ nullptr }, iArma{ nullptr }, iVida{ nullptr }, tVida{ nullptr }, rectangle{ nullptr }, reloj{ nullptr }, fFondo{ nullptr }, tFondo{ nullptr }, width{ w }, height{ h }
+tPlay{ nullptr }, iArma{ nullptr }, iVida{ nullptr }, tVida{ nullptr }, rectangle{ nullptr }, reloj{ nullptr }, fFondo{ nullptr }, tFondo{ nullptr }, width{ w }, height{ h },
+tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }
 {
 	tArma[0] = nullptr;
 	tArma[1] = nullptr;
@@ -32,6 +35,7 @@ void jugando::inicializarEstado()
 	{
 		std::cout << "Error al inicializar el motor del Juego" << std::endl;
 	}
+	handlerApp = new movimentHandler();
 	rec = false;
 	pausa = false;
 	opciones = false;
@@ -144,6 +148,9 @@ void jugando::limpiarEstado()
 	delete reloj;
 	delete fFondo;
 	delete tFondo;
+	delete handlerApp;
+	delete graphicApp;
+	delete gameApp;
 	texto = nullptr;
 	font = nullptr;
 	tMenuPausa = nullptr;
@@ -162,6 +169,9 @@ void jugando::limpiarEstado()
 	reloj = nullptr;
 	fFondo = nullptr;
 	tFondo = nullptr;
+	handlerApp = nullptr;
+	graphicApp = nullptr;
+	gameApp = nullptr;
 }
 
 void jugando::update()
@@ -171,6 +181,7 @@ void jugando::update()
 	}
 	else
 	{
+		handlerApp->update(tecla, graphicApp, gameApp);
 		gameApp->update(0.1);
 	}
 }
@@ -180,32 +191,31 @@ void jugando::render(void * window)
 	std::cout << "Inicia Render" << std::endl;
 	if (opciones)
 	{
-		static_cast<sf::RenderWindow *>(window)->pushGLStates();
+		//static_cast<sf::RenderWindow *>(window)->pushGLStates();
 		drawConfiguracion(window);
-		static_cast<sf::RenderWindow *>(window)->popGLStates();
+		//static_cast<sf::RenderWindow *>(window)->popGLStates();
 	}
 	else
 	{
-		static_cast<sf::RenderWindow *>(window)->pushGLStates();
-		static_cast<sf::RenderWindow *>(window)->popGLStates();
 		std::cout << "Inicia Draw" << std::endl;
 		graphicApp->draw(0.1);
 		std::cout << "Finaliza Draw" << std::endl;
-		static_cast<sf::RenderWindow *>(window)->pushGLStates();
+		//static_cast<sf::RenderWindow *>(window)->pushGLStates();
 		drawNoClickHub(window);
 		static_cast<sf::RenderWindow *>(window)->draw(*bPausaPlay);
 		if (pausa)
 		{
 			drawPause(window);
 		}
-		static_cast<sf::RenderWindow *>(window)->popGLStates();
+		//static_cast<sf::RenderWindow *>(window)->popGLStates();
 	}
 	std::cout << "Finaliza Render" << std::endl;
 }
 
 void jugando::handler(void * event, void * window, void * manager)
 {
-	switch (static_cast<sf::Event *>(event)->type)
+	tecla = -1;
+	/*switch (static_cast<sf::Event *>(event)->type)
 	{
 	case sf::Event::MouseButtonPressed:
 		switch (static_cast<sf::Event *>(event)->key.code)
@@ -232,8 +242,64 @@ void jugando::handler(void * event, void * window, void * manager)
 			if (pausa) { play(); }
 			else       { pause(); }
 			break;
+		case sf::Keyboard::W:
+			if (!pausa) { tecla = 3; }
+			break;
+		case sf::Keyboard::A:
+			if (!pausa) { tecla = 1; }
+			break;
+		case sf::Keyboard::S:
+			if (!pausa) { tecla = 2; }
+			break;
+		case sf::Keyboard::D:
+			if (!pausa) { tecla = 0; }
+			break;
 		}
 		break;
+	case sf::Event::KeyPressed:
+		if (!pausa)
+		{
+			switch (static_cast<sf::Event *>(event)->key.code)
+			{
+			case sf::Keyboard::W: tecla = 3;
+				break;
+			case sf::Keyboard::A: tecla = 1;
+				break;
+			case sf::Keyboard::S: tecla = 2;
+				break;
+			case sf::Keyboard::D: tecla = 0;
+				break;
+			}
+			break;
+		}
+	}*/
+	if (static_cast<sf::Event *>(event)->type == sf::Event::MouseButtonPressed)
+	{
+		if (static_cast<sf::Event *>(event)->key.code == sf::Mouse::Left)
+		{
+			if (!pausa)
+			{
+				if (pausa) { if (opciones) { clickAjustes(window); } else { clickPauseMenu(window, manager); } }
+				else { clickPlayPause(window); }
+			}
+		}
+	}
+	if (static_cast<sf::Event *>(event)->type == sf::Event::KeyPressed)
+	{
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::W) { if (!pausa) { tecla = 3; } }
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::A) { if (!pausa) { tecla = 1; } }
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::S) { if (!pausa) { tecla = 2; } }
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::D) { if (!pausa) { tecla = 0; } }
+	}
+	if (static_cast<sf::Event *>(event)->type == sf::Event::KeyReleased)
+	{
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Num1) { if (!pausa) { changeWeapon(0); } }
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Num2) { if (!pausa) { changeWeapon(1); } }
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Escape) { if (!pausa) { if (pausa) { play(); } else { pause(); } } }
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::W) { if (!pausa) { tecla = 3; } }
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::A) { if (!pausa) { tecla = 1; } }
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::S) { if (!pausa) { tecla = 2; } }
+		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::D) { if (!pausa) { tecla = 0; } }
 	}
 }
 
