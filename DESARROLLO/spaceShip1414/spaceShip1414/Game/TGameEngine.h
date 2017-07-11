@@ -28,7 +28,6 @@ private:
 	unsigned int flags;
 	Mundo * world;
 	Escenario * scene;
-	readJson * json;
 	b2GLDraw * fooDrawInstance;
 	player * jugador;
 };

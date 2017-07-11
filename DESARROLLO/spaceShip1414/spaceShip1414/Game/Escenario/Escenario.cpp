@@ -69,7 +69,39 @@ Escenario::Escenario(const Escenario& orig) {
 }
 
 Escenario::~Escenario() {
-	delete(entity);
+	for (std::vector<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end(); ++it)
+	{
+		if ((*it) != nullptr) { delete (*it); }
+	}
+	enemigos.clear();
+	/*for (std::vector<Pared*>::iterator it = Listparedes.begin(); it != Listparedes.end(); ++it)
+	{
+		if ((*it) != nullptr) { delete (*it); }
+	}*/
+	Listparedes.clear();
+	for (std::vector<Luces*>::iterator it = ListLuces.begin(); it != ListLuces.end(); ++it)
+	{
+		if ((*it) != nullptr) { delete (*it); }
+	}
+	ListLuces.clear();
+	/*for (std::vector<Puerta*>::iterator it = puertas.begin(); it != puertas.end(); ++it)
+	{
+		if ((*it) != nullptr) { delete (*it); }
+	}*/
+	puertas.clear();
+	for (std::vector<Camara*>::iterator it = listaDeCamaras.begin(); it != listaDeCamaras.end(); ++it)
+	{
+		if ((*it) != nullptr) { delete (*it); }
+	}
+	listaDeCamaras.clear();
+	for (std::vector<Waypoints*>::iterator it = waypoints.begin(); it != waypoints.end(); ++it)
+	{
+		if ((*it) != nullptr) { delete (*it); }
+	}
+	waypoints.clear();
+	delete jugador;
+	delete entity;
+	std::cout << "Escenario Destroyed" << std::endl;
 }
 
 void Escenario::setPadres(std::string nombre, double t[], double r[], double s[], std::vector<Escenario::ElementoHijo> objetos) {

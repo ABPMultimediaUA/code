@@ -50,12 +50,14 @@ ajustes::~ajustes()
 
 void ajustes::render(void * window)
 {
+	static_cast<sf::RenderWindow *>(window)->pushGLStates();
 	static_cast<sf::RenderWindow *>(window)->draw(fondo);
 	static_cast<sf::RenderWindow *>(window)->draw(titulo);
 	for (int i = 0; i < MAX_OPCIONES; i++)
 	{
 		static_cast<sf::RenderWindow *>(window)->draw(opciones[i]);
 	}
+	static_cast<sf::RenderWindow *>(window)->popGLStates();
 }
 
 void ajustes::MoveUp()

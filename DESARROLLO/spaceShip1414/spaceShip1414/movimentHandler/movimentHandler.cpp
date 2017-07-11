@@ -17,7 +17,6 @@ movimentHandler::~movimentHandler()
 
 void movimentHandler::update(int tecla, TGraphicEngine * graphicMotor, TGameEngine * gameMotor)
 {
-	std::cout << "----------------------------------------------------->Tecla pulsada: " << tecla << std::endl;
 	if (gameMotor->getPlayer()->getImpulso() == false)
 	{
 		gameMotor->getPlayer()->actualizarFisicas(tecla, 0, 0);

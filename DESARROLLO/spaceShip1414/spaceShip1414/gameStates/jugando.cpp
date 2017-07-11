@@ -19,7 +19,7 @@ tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }
 
 jugando::~jugando()
 {
-	limpiarEstado();
+	if (graphicApp != nullptr) { limpiarEstado(); }
 	std::cout << "Menu eliminado" << std::endl;
 }
 
@@ -149,8 +149,8 @@ void jugando::limpiarEstado()
 	delete fFondo;
 	delete tFondo;
 	delete handlerApp;
-	delete graphicApp;
 	delete gameApp;
+	delete graphicApp;
 	texto = nullptr;
 	font = nullptr;
 	tMenuPausa = nullptr;
@@ -181,9 +181,7 @@ void jugando::update()
 	}
 	else
 	{
-		gameApp->update(0.1,handlerApp, graphicApp, tecla);
-		//handlerApp->update(tecla, graphicApp, gameApp);
-		
+		gameApp->update(0.1,handlerApp, graphicApp, tecla);		
 	}
 }
 
@@ -200,7 +198,7 @@ void jugando::render(void * window)
 	{
 		std::cout << "Inicia Draw" << std::endl;		
 	
-		graphicApp->draw(0.1);
+		if (graphicApp) { graphicApp->draw(0.1); }
 
 		std::cout << "Finaliza Draw" << std::endl;
 		static_cast<sf::RenderWindow *>(window)->pushGLStates();
@@ -290,15 +288,9 @@ void jugando::handler(void * event, void * window, void * manager)
 	{
 		if (static_cast<sf::Event *>(event)->key.code == sf::Mouse::Left)
 		{
-			//if (!pausa)
-			//{
-				if (pausa) { if (opciones) { clickAjustes(window); } else { clickPauseMenu(window, manager); } }
-				else { clickPlayPause(window); }
-			//}
-
-
-
-			if(gameApp->getPlayer()->getDisparo() == false && !pausa) {
+			if (pausa) { if (opciones) { clickAjustes(window); } else { clickPauseMenu(window, manager); } }
+			else { clickPlayPause(window); }
+			if(gameApp && gameApp->getPlayer()->getDisparo() == false && !pausa) {
 
 			//	if (pers->getCargador() >= 0) {
 				gameApp->getPlayer()->Disparar(gameApp->getMundo(), 0.016);
@@ -506,7 +498,7 @@ void jugando::clickPauseMenu(void * window, void * manager)
 			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("menuState");
 		}
 		if (posMouse.y > 125 + 293 && posMouse.y < 293 + 159) {
-			static_cast<sf::RenderWindow *>(window)->close();
+			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("exitState");
 		}
 	}
 }

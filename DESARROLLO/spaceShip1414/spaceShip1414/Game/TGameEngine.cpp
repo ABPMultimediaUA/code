@@ -6,12 +6,20 @@
 #include "player.h"
 #include "../movimentHandler/movimentHandler.h"
 
-TGameEngine::TGameEngine()
+TGameEngine::TGameEngine() : flags{ 0 }, scene{ nullptr }, world{ nullptr }, fooDrawInstance{ nullptr }, jugador{ nullptr }
 {
 }
 
 TGameEngine::~TGameEngine()
 {
+	delete scene;
+	delete world;
+	delete fooDrawInstance;
+	scene = nullptr;
+	world = nullptr;
+	fooDrawInstance = nullptr;
+	jugador = nullptr;
+	std::cout << "TGameEngine Destroyed" << std::endl;
 }
 
 bool TGameEngine::iniciarGameEngine(TGraphicEngine * motorApp)
@@ -19,13 +27,11 @@ bool TGameEngine::iniciarGameEngine(TGraphicEngine * motorApp)
 	world = new Mundo();
 	world->setMotorGame(motorApp, this);
 	scene = new Escenario(motorApp, world);
-	json = new readJson(scene);
+	readJson json(scene);
 	fooDrawInstance = new b2GLDraw();
 	world->getWorldBox2D()->SetDebugDraw(fooDrawInstance);
-	flags = 0;
 	flags += b2Draw::e_shapeBit;
 	flags += b2Draw::e_jointBit;
-	//	flags += b2Draw::e_aabbBit;
 	flags += b2Draw::e_pairBit;
 	flags += b2Draw::e_centerOfMassBit;
 	fooDrawInstance->SetFlags(flags);
@@ -43,7 +49,6 @@ void TGameEngine::update(double deltaTime, movimentHandler* handler, TGraphicEng
 	scene->actualizarEstadoPuerta();
 	scene->actualizarListaEnemigos(deltaTime);
 	actualizarTiempoDeDisparo();
-	
 }
 
 void TGameEngine::cambiarLuzActiva(int id)

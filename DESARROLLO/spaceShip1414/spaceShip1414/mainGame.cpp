@@ -3,6 +3,7 @@
 #include "gameStates\menu.h"
 #include "gameStates\ajustes.h"
 #include "gameStates\jugando.h"
+#include "gameStates\salida.h"
 #include <iostream>
 
 

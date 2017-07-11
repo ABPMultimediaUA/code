@@ -105,7 +105,7 @@ public:
 
 	Escenario(TGraphicEngine * motorApp, Mundo* /*, b2World *world,  Juego* game*/);
 	Escenario(const Escenario& orig);
-	virtual ~Escenario();
+	~Escenario();
 	Camara* buscarCamara(int ID);
 	void setPadres(std::string nombre, double t[], double r[], double s[], std::vector<Escenario::ElementoHijo> objetos);
 	void setHijos(std::string nombre, double t[], double r[], double s[], std::vector<Escenario::Elemento> objetos);
