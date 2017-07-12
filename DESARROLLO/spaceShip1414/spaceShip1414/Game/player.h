@@ -66,6 +66,7 @@ public:
 	void curar(float recup);
 	void usarBotiquin();
 	float getVida();
+	float getPorcentajeVida();
 	Inventario* getInventario();
 
 	float getTiempoDisparo();
@@ -76,7 +77,6 @@ public:
 	void Disparar(Mundo* w, float dt);
 
 	void load_personaje();
-
 
 
 

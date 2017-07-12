@@ -586,6 +586,11 @@ float player::getVida()
 	return vida;
 }
 
+float player::getPorcentajeVida()
+{
+	return vida / vidaMax;
+}
+
 Inventario * player::getInventario()
 {
 	return inv;
