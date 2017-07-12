@@ -98,13 +98,6 @@ CriaAlien::CriaAlien(TGraphicEngine *motor, Mundo* mundo, glm::vec3 posicion, Es
 CriaAlien::~CriaAlien() {
 
 	delete(tree);
-	delete(entity);
-	delete(path);
-	delete(logica);
-	/*delete(puntoIni);
-	delete(puntoFin);*/
-	delete(floc);
-	waypoints = nullptr;
 	//delete(nav);
 
 }

@@ -204,7 +204,7 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, bool vivo, void
     body -> CreateFixture(&bodyCircle, 1.0f);
     body ->SetBullet(true);
     body->SetUserData(this);
-    live = true;
+    live = vivo;
 	if (tipo == 1) {
 		filtro.groupIndex = FILTRO_DISPAROPERS;
 		body->GetFixtureList()->SetFilterData(filtro);
@@ -269,7 +269,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 	body->CreateFixture(&sombraShape, 1.0f);
 	body->GetFixtureList()->SetSensor(true);
     body -> CreateFixture(&bodyShape, 1.0f);
-    live = true;
+    live = vivo;
    
     body->SetUserData(this);
     

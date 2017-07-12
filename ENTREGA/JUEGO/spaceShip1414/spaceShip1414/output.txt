@@ -11092,4 +11092,4676 @@ POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
 
 NOMBRE: Waypoint-1 (4)
 POS NODO: 4
-OBSTACLE!!
+
+NOMBRE: Waypoint-1 (1)
+POS NODO: 1
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 333.452
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+D
+D
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -2.333333)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -2.333333)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -3.500000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -3.500000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -4.666667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -4.666667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+A
+A
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -4.666667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -4.666667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -3.500000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -3.500000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -2.333333)
+
+NOMBRE DEL DESTINO: Waypoint-1 (3)
+NUM: 3
+POS: vec3(-13.430000, 1.000000, -30.190001)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -2.333333)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 24.0062
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000000, 0.000000, -1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 24.0062
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 156.559
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 24.0062
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 2.333333)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 24.0062
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 2.333333)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 24.0062
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 24.0062
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 24.0062
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 24.0062
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 24.0062
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+D
+D
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 3.500000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 2.333333)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 2.333333)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+
+NOMBRE DEL DESTINO: Waypoint-1 (8)
+NUM: 47
+POS: vec3(-1.380000, 1.000000, 9.840000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 172.191
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 172.191
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+
+NOMBRE DEL DESTINO: Waypoint-1 (9)
+NUM: 8
+POS: vec3(-14.620000, 1.000000, -55.029999)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 14.8934
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 14.8934
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 14.8934
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 14.8934
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 14.8934
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 14.8934
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 14.8934
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+
+NOMBRE DEL DESTINO: Waypoint-1 (2)
+NUM: 2
+POS: vec3(-19.139999, 1.000000, 0.160000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 90.5708
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ACTUALIZO 0
+ID PUERTA: 2
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ACTUALIZO 0
+ID PUERTA: 2
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+
+NOMBRE DEL DESTINO: Waypoint-1 (42)
+NUM: 41
+POS: vec3(-45.970001, 1.000000, -0.620000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.3178
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+
+NOMBRE DEL DESTINO: Waypoint-1 (47)
+NUM: 46
+POS: vec3(-14.620000, 1.000000, -83.800003)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 2
+cerrar123
+entra
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 2
+cerrar123
+entra
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+pos puerta: 0.2 -16.62
+0.2 -9.52
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+pos puerta: 0.2 -16.62
+0.2 -9.52
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+pos puerta: 0.2 -16.62
+0.2 -9.52
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+pos puerta: 0.2 -16.62
+0.2 -9.52
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+pos puerta: 0.2 -16.62
+0.2 -9.52
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+D
+D
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -1.166667)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -2.333333)
+
+NOMBRE DEL DESTINO: Waypoint-1 (41)
+NUM: 40
+POS: vec3(-73.360001, 1.000000, -0.620000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -2.333333)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -3.500000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ANDAR
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -3.500000)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -4.666667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -4.666667)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.6066
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ACTUALIZO 0
+ID PUERTA: 4
+ACTUALIZO 0
+ID PUERTA: 4
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+2
+
+ARMA: -1
+MUNICION TOTAL: 28
+
+CAMBIO A PISTOLA 0
+
+ARMA CAMBIADA: 0
+MUNICION TOTAL: 28
+
+2
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+
+NOMBRE DEL DESTINO: Waypoint-1 (10)
+NUM: 9
+POS: vec3(-13.790000, 1.000000, -109.860001)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+D
+D
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -7.000001)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+W
+W
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -7.000001)
+POS DESPUES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -8.166668)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+W
+POS ANTES DEL PUTO JUGADOR: vec3(0.000001, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-1.166666, 0.000000, -8.166668)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-1.166666, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-2.333332, 0.000000, -8.166668)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-2.333332, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-3.499999, 0.000000, -8.166668)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-3.499999, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-4.666666, 0.000000, -8.166668)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-4.666666, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -8.166668)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-7.000000, 0.000000, -8.166668)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-7.000000, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -8.166668)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+W
+W
+POS ANTES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-9.333334, 0.000000, -8.166668)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+W
+W
+POS ANTES DEL PUTO JUGADOR: vec3(-9.333334, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-10.500001, 0.000000, -8.166668)
+
+NOMBRE DEL DESTINO: Waypoint-1 (40)
+NUM: 39
+POS: vec3(-104.860001, 1.000000, -0.620000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+D
+D
+D
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 4
+cerrar123
+entra
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 4
+cerrar123
+entra
+POS ANTES DEL PUTO JUGADOR: vec3(-10.500001, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -8.166668)
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -9.333335)
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -9.333335)
+POS DESPUES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+pos puerta: 0.66 -55.83
+0.66 -55.83
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+S
+S
+POS ANTES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-11.666668, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-10.500001, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-10.500001, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-9.333334, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-9.333334, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+
+NOMBRE DEL DESTINO: Waypoint-1 (11)
+NUM: 10
+POS: vec3(12.970000, 1.000000, -110.160004)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 353.461
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 353.461
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+S
+S
+POS ANTES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 353.461
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-8.166667, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-7.000000, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 353.461
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-7.000000, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 353.461
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.7522
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 353.461
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ACTUALIZO 0
+ID PUERTA: 7
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+A
+A
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -10.500002)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -9.333335)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -9.333335)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -8.166668)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -8.166668)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -7.000001)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+A
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -7.000001)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -5.833334)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+A
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -5.833334)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -4.666667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -4.666667)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -3.500000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+A
+ACTUALIZO 0
+ID PUERTA: 7
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -3.500000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -2.333333)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+A
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -2.333333)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+A
+A
+A
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, -1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+A
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 1.166667)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 2.333333)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 2.333333)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 2.333333)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+D
+D
+D
+D
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 2.333333)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 2.333333)
+
+NOMBRE DEL DESTINO: Waypoint-1 (36)
+NUM: 35
+POS: vec3(-138.039993, 1.000000, -0.620000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+D
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 2.333333)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 1.166667)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 1.166667)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+CARGADOR: 7
+TGestorRecursos: resourse/models/untitled.obj
+Recurso nombre: untitled.obj
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+
+NOMBRE DEL DESTINO: Waypoint-1 (12)
+NUM: 11
+POS: vec3(24.440001, 1.000000, -94.660004)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 345.691
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 7
+cerrar123
+entra
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 7
+cerrar123
+entra
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.81 -2.68
+0.81 -2.68
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.81 -2.68
+0.81 -2.68
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.81 -2.68
+0.81 -2.68
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.81 -2.68
+0.81 -2.68
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.81 -2.68
+0.81 -2.68
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 89.8337
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+
+NOMBRE DEL DESTINO: Waypoint-1 (10)
+NUM: 9
+POS: vec3(-13.790000, 1.000000, -109.860001)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+MUERO BALA
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+ID DE LA ENTITY 3
+MUERO ENTITY2D
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ACTUALIZO 0
+ID PUERTA: 5
+ACTUALIZO 0
+ID PUERTA: 5
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 7.1618
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+
+NOMBRE DEL DESTINO: Waypoint-1 (44)
+NUM: 43
+POS: vec3(-157.000000, 1.000000, -13.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 85.3531
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 85.3531
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 85.3531
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 85.3531
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ACTUALIZO 0
+ID PUERTA: 7
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 85.3531
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 85.3531
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 85.3531
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+CARGADOR: 6
+TGestorRecursos: resourse/models/untitled.obj
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 5
+cerrar123
+entra
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 5
+cerrar123
+entra
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.66 -125.7
+0.66 -125.7
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.66 -125.7
+0.66 -125.7
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.66 -125.7
+0.66 -125.7
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.66 -125.7
+0.66 -125.7
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.66 -125.7
+0.66 -125.7
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ACTUALIZO 0
+ID PUERTA: 7
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+
+NOMBRE DEL DESTINO: Waypoint-1 (47)
+NUM: 46
+POS: vec3(-14.620000, 1.000000, -83.800003)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 9.90643
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+
+NOMBRE DEL DESTINO: Waypoint-1 (39)
+NUM: 38
+POS: vec3(-171.550003, 1.000000, -23.350000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 7
+cerrar123
+entra
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.81 -2.68
+0.81 -2.68
+--------> ANGLE CUERPO: 000000CFB2F47D20 ---> 82.3324
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+MUERO BALA
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+ID DE LA ENTITY 3
+MUERO ENTITY2D
+pos puerta: 0.81 -2.68
+0.81 -2.68
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.81 -2.68
+0.81 -2.68
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.81 -2.68
+0.81 -2.68
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+pos puerta: 0.81 -2.68
+0.81 -2.68
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+lalal 1
+ACTUALIZO 1
+ID PUERTA: 7
+cerrar123
+entra
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+
+NOMBRE DEL DESTINO: Waypoint-1 (9)
+NUM: 8
+POS: vec3(-14.620000, 1.000000, -55.029999)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 14.8934
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 14.8934
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+REPOSO
+POS ANTES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+POS DESPUES DEL PUTO JUGADOR: vec3(-5.833333, 0.000000, 0.000000)
+--------> ANGLE CUERPO: 000000CFB224EE70 ---> 14.8934
+
+NOMBRE DEL DESTINO: Waypoint-1 (45)
+NUM: 44
+POS: vec3(-169.919998, 1.000000, -40.130001)
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+Inicia Render Luz
+matricez Render Luz completas
+Inicia Render Luz shader
+Finaliza Render Luz shader
+ID DE LA ENTITY 4
+MUERO ENTITY2D
+ID DE LA ENTITY 4
+MUERO ENTITY2D
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+Escenario::Luz delete
+ID DE LA ENTITY 0
+MUERO ENTITY2D
+ID DE LA ENTITY -1
+MUERO ENTITY2D
+Escenario Destroyed
+TGameEngine Destroyed
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Nodo eliminado
+Facade Destroted
+Ajustes Destroyed
+Menu Destroyed
+Jugando Destroyed
+Salida Destroyed
+MaquinaEstadosJuego Destroyed
+Gracias por jugar a SpaceShip 1414

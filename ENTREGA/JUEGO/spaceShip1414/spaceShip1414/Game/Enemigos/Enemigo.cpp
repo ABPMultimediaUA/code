@@ -60,7 +60,12 @@ Enemigo::~Enemigo() {
  //   GVida->getParent()->removeChild(GVida);
  //   RVida->getParent()->removeChild(RVida);
 
-
+	delete(path);
+	delete(logica);
+	/*delete(puntoIni);
+	delete(puntoFin);*/
+	delete(floc);
+    delete(entity);
 	puntoFin = nullptr;
 	puntoIni = nullptr;
 	engine->buscarNodoPadre(nodo);
