@@ -20,13 +20,15 @@ public:
 	void apilar(glm::mat4);
 	void desapilar();
 	void beginDraw() override;
-	void beginDraw(openGLShader&, const glm::mat4&, const glm::mat4&) override;
+	void beginDraw(openGLShader&, const glm::mat4&, const glm::mat4&, double) override;
 	void endDraw() override;
 	glm::mat4 getMatriz();
 
 	void setMatriz(glm::mat4 m);
 
 	void resetMatriz();
+
+	void lookat(glm::vec3 eye, glm::vec3 tar, glm::vec3 mat);
 
 
 private:

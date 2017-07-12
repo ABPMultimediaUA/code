@@ -7,6 +7,8 @@
 #include "MaquinaEstados\FSM\Estados.h"
 #include "Jugador\Inventario.h"
 #include "Jugador\Bala.h"
+#include "Jugador/Pistola.h"
+#include "Jugador/Escopeta.h"
 
 #include "Escenario\ObjConsumables\Botiquines.h"
 
@@ -22,9 +24,8 @@
 #include <math.h>
 
 #define PI 3.14159265
-#define PISTOLA 0
-#define FUSIL 1
-#define ESCOPETA 2
+#define PISTOL 0
+#define SHOTGUN 1
 
 player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 }, pitch{ 0 }
 {
@@ -45,6 +46,14 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 
 	pos = glm::vec3(0, 0, 0);
 	rot = glm::vec3(180, 0, 0);
 	escale = glm::vec3(0.75f, 0.75f, 0.75f);
+
+	pistol = new Pistola();
+	shotgun = new Escopeta();
+
+	armaActual = -1;
+	cargador = pistol->getCargador();
+	municionTotal = pistol->getCapacidadDeMun();
+
 
 	vecDir, vecA, vecD, vecS = glm::vec3(0, 0, 0);
 	entity = new Entity2D(m->getWorldBox2D(), glm::vec3(0,0,0), rot, this);
@@ -586,6 +595,11 @@ float player::getVida()
 	return vida;
 }
 
+float player::getPorcentajeVida()
+{
+	return vida / vidaMax;
+}
+
 Inventario * player::getInventario()
 {
 	return inv;
@@ -639,18 +653,194 @@ void player::actualizarLista(float dt)
 
 void player::Disparar(Mundo * w, float dt)
 {
-	//std::cout << "CARGADOR: " << cargador << std::endl;
-	tiempoDisparo += dt;
-	disparo = true;
-	glm::vec3 caca(entity->getCuerpo2D()->GetPosition().x,
-		this->getPos().y,
-		-entity->getCuerpo2D()->GetPosition().y);
+	if(armaActual != -1)
+	{
+		std::cout << "CARGADOR: " << cargador << std::endl;
+		tiempoDisparo += dt;
+		disparo = true;
+		glm::vec3 caca(entity->getCuerpo2D()->GetPosition().x,
+			this->getPos().y,
+			-entity->getCuerpo2D()->GetPosition().y);
 	
-	Bala *bullet = new Bala(engine, w, pos, vecAux, 10.0f, 1, 300.0f);
-	//Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3 mousePosition,
-	//	float dumug, int tipo, float velocidad) {
-	listaBalas.push_back(bullet);
-	//cargador--;
+		Bala *bullet = new Bala(engine, w, pos, vecAux, 10.0f, 1, 300.0f);
+		//Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3 mousePosition,
+		//	float dumug, int tipo, float velocidad) {
+		listaBalas.push_back(bullet);
+		cargador--;
+	}
+
+}
+
+int player::getCargador()
+{
+	return cargador;
+}
+
+int player::getMunicionActual()
+{
+	return municionTotal;
+}
+
+float player::getDamage()
+{
+	switch (armaActual) {
+
+	case 0:
+		return pistol->getDamage();
+		break;
+
+	case 1:
+		return shotgun->getDamage();
+		break;
+
+	}
+}
+
+float player::getTiempoArma()
+{
+	switch (armaActual) {
+
+	case 0:
+		return pistol->getTiempoDisparo();
+		break;
+
+	case 1:
+		return shotgun->getTiempoDisparo();
+		break;
+
+	}
+}
+
+int player::getArmaActual()
+{
+	return armaActual;
+}
+
+void player::recargar()
+{
+	//restar de la recarga al total de balas que se tiene actualmente
+	int recarga;
+
+	switch (armaActual) {
+
+	case 0:
+		recarga = pistol->getCargador() - cargador;
+
+		break;
+
+	case 1:
+		recarga = shotgun->getCargador() - cargador;
+
+		break;
+
+	}
+
+
+	cargador += recarga;
+	municionTotal -= recarga;
+}
+
+void player::cogerMunicion(int municionCogida, int arma)
+{
+	//usar armaActual para el switch
+	//municionTotal += municionCogida;
+	int auxMunicion;
+
+	switch (arma) {
+
+	case 0:
+
+		auxMunicion = pistol->getCapacidadDeMun();
+		auxMunicion += municionCogida;
+
+		if (auxMunicion > pistol->getTotalMunicion()) {
+			auxMunicion = pistol->getTotalMunicion();
+		}
+
+		pistol->setCapacidadDeMun(auxMunicion);
+
+		if (arma == armaActual) {
+			municionTotal = auxMunicion;
+		}
+
+
+		break;
+
+	case 1:
+
+		auxMunicion = shotgun->getCapacidadDeMun();
+		auxMunicion += municionCogida;
+
+		if (auxMunicion > shotgun->getTotalMunicion()) {
+			auxMunicion = shotgun->getTotalMunicion();
+		}
+
+		shotgun->setCapacidadDeMun(auxMunicion);
+
+		if (arma == armaActual) {
+			municionTotal = auxMunicion;
+		}
+
+		break;
+
+	}
+}
+
+void player::setArmaActual(int newArma)
+{
+	//habria que poner tambien el de total de municion del arma actual (llamar al seter)
+	//y devolver tambien el cargador total del arma
+	switch (armaActual) {
+
+	case 0:
+
+		pistol->setMunicionAcutal(cargador);
+		pistol->setCapacidadDeMun(municionTotal);
+
+		break;
+
+	case 1:
+
+		shotgun->setMunicionAcutal(cargador);
+		shotgun->setCapacidadDeMun(municionTotal);
+		break;
+
+	}
+
+	std::cout << "" << std::endl;
+	std::cout << "ARMA: " << armaActual << std::endl;
+	std::cout << "MUNICION TOTAL: " << municionTotal << std::endl;
+	std::cout << "" << std::endl;
+
+
+	armaActual = newArma;
+
+	switch (armaActual) {
+
+	case 0:
+		std::cout << "CAMBIO A PISTOLA " << armaActual << std::endl;
+		cargador = pistol->getMunicionActual();
+		municionTotal = pistol->getCapacidadDeMun();
+
+		break;
+
+
+	case 1:
+
+		std::cout << "CAMBIO A ESCOPETA " << armaActual << std::endl;
+		cargador = shotgun->getMunicionActual();
+		municionTotal = shotgun->getCapacidadDeMun();
+
+
+		break;
+
+
+
+	}
+	std::cout << "" << std::endl;
+	std::cout << "ARMA CAMBIADA: " << armaActual << std::endl;
+	std::cout << "MUNICION TOTAL: " << municionTotal << std::endl;
+	std::cout << "" << std::endl;
 }
 
 void player::load_personaje()

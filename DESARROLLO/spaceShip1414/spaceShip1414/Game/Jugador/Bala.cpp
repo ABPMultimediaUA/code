@@ -26,7 +26,7 @@ Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3
 
 	nodo = motorApp->addMalla();
 	motorApp->escalar(nodo, 0.2f, 0.2f, 0.2f);
-	motorApp->trasladar(nodo, posPers.x, posPers.y + 10.0f, posPers.z);
+	motorApp->trasladar(nodo, posPers.x, posPers.y + 5.0f, posPers.z);
 	motorApp->rotarYPR(nodo, 0, 0, 0);
 	engine = motorApp;
 
@@ -83,7 +83,7 @@ void Bala::mover() {
 
 		engine->resetTransform(this->getNodo(), 't');
 		engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, 
-			posInicial.y + 10.0f, -entity->getCuerpo2D()->GetPosition().y);
+			posInicial.y + 1.0f, -entity->getCuerpo2D()->GetPosition().y);
 
 
 	}

@@ -348,19 +348,65 @@ void jugando::handler(void * event, void * window, void * manager)
 	{
 		std::cout << "1" << std::endl;
 		tecla = 4;
+		if (gameApp->getPlayer()->getArmaActual() != -1)
+			gameApp->getPlayer()->setArmaActual(-1);
 		
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
 	{
+		//pistola
 		std::cout << "2" << std::endl;
 		tecla = 5;
+		if (gameApp->getPlayer()->getArmaActual() != 0)
+			gameApp->getPlayer()->setArmaActual(0);
 		
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3))
 	{
+		//escopeta
 		std::cout << "3" << std::endl;
 		tecla = 6;
 
+		if(gameApp->getPlayer()->getArmaActual() != 1)
+			gameApp->getPlayer()->setArmaActual(1);
+
+
+	}
+
+	//comprobar que si no tienes balas no puedes recargar mas
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::R) 
+		&& gameApp->getPlayer()->getMunicionActual() > 0) {
+		gameApp->getPlayer()->recargar();
+
+		if (gameApp->getPlayer()->getMunicionActual() < 0) {
+			std::cout << "No puedes recagar, no te quedan balas" << std::endl;
+		}
+	}
+
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::E) 
+		&& gameApp->getPlayer()->getTeclaE() == false) {
+		std::cout << "CAMBIO ESTADO TRUE" << std::endl;
+		gameApp->getPlayer()->setTeclaE(true);
+	}
+
+	if (!sf::Keyboard::isKeyPressed(sf::Keyboard::E)
+		&& gameApp->getPlayer()->getTeclaE() == true) {
+		std::cout << "CAMBIO ESTADO FALSE" << std::endl;
+		gameApp->getPlayer()->setTeclaE(false);
+	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q) 
+		&& gameApp->getPlayer()->getTeclaQ() == false) {
+		std::cout << "CAMBIO ESTADO TRUE" << std::endl;
+		gameApp->getPlayer()->setTeclaQ(true);
+		gameApp->getPlayer()->usarBotiquin();
+	}
+
+	if (!sf::Keyboard::isKeyPressed(sf::Keyboard::Q) 
+		&& gameApp->getPlayer()->getTeclaQ() == true) {
+		std::cout << "CAMBIO ESTADO FALSE" << std::endl;
+		gameApp->getPlayer()->setTeclaQ(false);
 	}
 
 
@@ -390,9 +436,9 @@ void jugando::handler(void * event, void * window, void * manager)
 			else { clickPlayPause(window); }
 			if (gameApp && gameApp->getPlayer()->getDisparo() == false && !pausa) {
 
-				//	if (pers->getCargador() >= 0) {
+			if (gameApp->getPlayer()->getCargador() >= 0) {
 				gameApp->getPlayer()->Disparar(gameApp->getMundo(), 0.016);
-				//	}
+			}
 
 			}
 

@@ -50,7 +50,7 @@ void TMalla::beginDraw()
 	this->malla->draw();
 }
 
-void TMalla::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
+void TMalla::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection, double dt)
 {
 	glm::mat4 MV = view * matrizActual;
 	glm::mat4 MVP = proyection * MV;

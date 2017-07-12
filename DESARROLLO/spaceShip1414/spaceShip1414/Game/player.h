@@ -11,6 +11,8 @@ class Bala;
 class MaquinaEstados;
 class Estados;
 class Inventario;
+class Pistola;
+class Escopeta;
 
 class player
 {
@@ -66,6 +68,7 @@ public:
 	void curar(float recup);
 	void usarBotiquin();
 	float getVida();
+	float getPorcentajeVida();
 	Inventario* getInventario();
 
 	float getTiempoDisparo();
@@ -74,6 +77,14 @@ public:
 	bool getDisparo();
 	void actualizarLista(float dt);
 	void Disparar(Mundo* w, float dt);
+	int getCargador();
+	int getMunicionActual();
+	float getDamage();
+	float getTiempoArma();
+	int getArmaActual();
+	void recargar();
+	void cogerMunicion(int municionCogida, int arma);
+	void setArmaActual(int newArma);
 
 	void load_personaje();
 
@@ -107,6 +118,11 @@ private:
 	std::list<Bala*> listaBalas;
 	bool disparo;
 	float tiempoDisparo;
+	Pistola *pistol;
+	Escopeta *shotgun;
+	int cargador; //cargador actual del arma en uso
+	int municionTotal; //balas totales que tiene el jugador del arma actual
+	int armaActual;
 
 	Estados* andar, *pistola, *escopeta, *reposoAndar, *reposoPistola, *disparar, *reposoEscopeta;
 	TNodo *godfather, *NreposoAndar, *NreposoPistola, *Nandar, *NPistola, *NreposoEscopeta,*NEscopeta;
