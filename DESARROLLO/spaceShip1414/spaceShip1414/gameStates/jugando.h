@@ -22,7 +22,7 @@ private:
 	void drawPause(void *);
 	void drawNoClickHubOld(void * window);
 	void drawHub(void *);
-	void changeWeapon(unsigned int);
+	void changeWeapon(int);
 	void pause();
 	void play();
 	void clickPauseMenu(void *, void *);
@@ -57,9 +57,7 @@ private:
 	TGraphicEngine * graphicApp;
 	movimentHandler * handlerApp;
 
-	float vida;
-	float vidaMax;
-	unsigned int arma;
+	int arma;
 	unsigned int balas;
 	bool rec;
 	bool pausa, opciones;
