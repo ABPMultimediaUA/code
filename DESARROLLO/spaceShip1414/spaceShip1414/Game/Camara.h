@@ -27,6 +27,8 @@ public:
 	void updateCam(TGraphicEngine * motorApp, glm::vec3 posPers, int tecla);
 	float getAnguloInicial();
 
+	float getRotY();
+
 	void setVelocity(float);
 	void setYaw(float);
 	void setPitch(float);

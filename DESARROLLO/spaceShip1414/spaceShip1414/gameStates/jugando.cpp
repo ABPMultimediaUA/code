@@ -8,7 +8,7 @@
 #include <SFML\OpenGL.hpp>
 #include "../Game/player.h"
 
-jugando::jugando(float w, float h) : estadosJuego("playingState"), arma{ 0 }, balas{ 10 }, opciones{ false }, rec{ false }, pausa{ false }, vida{ 250.f }, vidaMax{ 250.f },
+jugando::jugando(float w, float h) : estadosJuego("playingState"), arma{ -1 }, opciones{ false }, rec{ false }, pausa{ false },
 texto{ nullptr }, font{ nullptr }, tMenuPausa{ nullptr }, bMenuPausa{ nullptr }, bPulsetMenu{ nullptr }, tPulsetMenu{ nullptr }, bPausaPlay{ nullptr }, tPausa{ nullptr },
 tPlay{ nullptr }, iArma{ nullptr }, iVida{ nullptr }, tVida{ nullptr }, rectangle{ nullptr }, reloj{ nullptr }, fFondo{ nullptr }, tFondo{ nullptr }, width{ w }, height{ h },
 tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }, parcialReloj(sf::milliseconds(10))
@@ -350,6 +350,7 @@ void jugando::handler(void * event, void * window, void * manager)
 		tecla = 4;
 		if (gameApp->getPlayer()->getArmaActual() != -1)
 			gameApp->getPlayer()->setArmaActual(-1);
+		changeWeapon(-1);
 		
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
@@ -359,7 +360,8 @@ void jugando::handler(void * event, void * window, void * manager)
 		tecla = 5;
 		if (gameApp->getPlayer()->getArmaActual() != 0)
 			gameApp->getPlayer()->setArmaActual(0);
-		
+		changeWeapon(0);
+
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3))
 	{
@@ -369,6 +371,8 @@ void jugando::handler(void * event, void * window, void * manager)
 
 		if(gameApp->getPlayer()->getArmaActual() != 1)
 			gameApp->getPlayer()->setArmaActual(1);
+
+		changeWeapon(1);
 
 
 	}
@@ -455,8 +459,6 @@ void jugando::handler(void * event, void * window, void * manager)
 
 	if (static_cast<sf::Event *>(event)->type == sf::Event::KeyReleased)
 	{
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Num1) { if (!pausa) { changeWeapon(0); } }
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Num2) { if (!pausa) { changeWeapon(1); } }
 		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Escape) { if (!pausa) { if (pausa) { play(); } else { pause(); } } }
 
 	}
@@ -485,7 +487,7 @@ void jugando::update(double deltatime, void * window)
 			}
 			reloj->restart();
 		}
-		iVida->setTextureRect(sf::IntRect(0, 0, 196 * (vida / vidaMax), 36));
+		iVida->setTextureRect(sf::IntRect(0, 0, 196 * gameApp->getPlayer()->getPorcentajeVida(), 36));
 
 		gameApp->update(0.1,handlerApp, graphicApp, tecla);		
 	}
@@ -622,7 +624,7 @@ void jugando::drawNoClickHubOld(void * window)
 	static_cast<sf::RenderWindow *>(window)->draw(*rectangle);
 
 	static_cast<sf::RenderWindow *>(window)->draw(*iVida);
-	rectangle->setSize(sf::Vector2f(70*(vida / vidaMax), 28));
+	rectangle->setSize(sf::Vector2f(70*(gameApp->getPlayer()->getPorcentajeVida()), 28));
 	rectangle->setFillColor(sf::Color(0, 255, 0, 170));
 	if (height > 768) { rectangle->setPosition(1770, 81); }
 	else { rectangle->setPosition(1221, 81); }
@@ -667,37 +669,45 @@ void jugando::drawHub(void * window)
 	static_cast<sf::RenderWindow *>(window)->draw(*bHub);
 	static_cast<sf::RenderWindow *>(window)->draw(*rectangleParcialRelojA);
 	static_cast<sf::RenderWindow *>(window)->draw(*rectangleParcialRelojB);
-	static_cast<sf::RenderWindow *>(window)->draw(*iArma);
+	if(arma != -1) { static_cast<sf::RenderWindow *>(window)->draw(*iArma); }
+
 	texto->setColor(sf::Color(255, 255, 255, 140));
-	texto->setString(std::to_string(balas));
+	texto->setString(std::to_string(gameApp->getPlayer()->getCargador()));
 	texto->setCharacterSize(20);
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(1258, 596); }
-	static_cast<sf::RenderWindow *>(window)->draw(*texto);
+	if (arma != -1) {
+		static_cast<sf::RenderWindow *>(window)->draw(*texto);
+	}
 	static_cast<sf::RenderWindow *>(window)->draw(*iVida);
 	static_cast<sf::RenderWindow *>(window)->draw(*bPausaPlay);
 }
 
-void jugando::changeWeapon(unsigned int a)
+void jugando::changeWeapon(int a)
 {
-	iArma->setTexture(*tArma[a]);
-	if (width > 1366)
+	arma = a;
+	if(arma != -1)
 	{
-	}
-	else
-	{
-		switch (a)
+		iArma->setTexture(*tArma[a]);
+		if (width > 1366)
 		{
-		case 0:
-			iArma->setPosition(1214, 564);
-			iArma->setTextureRect(sf::IntRect(0, 0, 64, 64));
-			break;
-		case 1:
-			iArma->setPosition(1198, 590);
-			iArma->setTextureRect(sf::IntRect(0, 0, 95, 20));
-			break;
+		}
+		else
+		{
+			switch (a)
+			{
+			case 0:
+				iArma->setPosition(1214, 564);
+				iArma->setTextureRect(sf::IntRect(0, 0, 64, 64));
+				break;
+			case 1:
+				iArma->setPosition(1198, 590);
+				iArma->setTextureRect(sf::IntRect(0, 0, 95, 20));
+				break;
+			}
 		}
 	}
+
 }
 
 void jugando::pause()

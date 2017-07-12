@@ -68,6 +68,8 @@ Enemigo::~Enemigo() {
     delete(entity);
 	puntoFin = nullptr;
 	puntoIni = nullptr;
+	engine->buscarNodoPadre(nodo);
+	nodo = nullptr;
 }
 
 void Enemigo::Update(float dt) {

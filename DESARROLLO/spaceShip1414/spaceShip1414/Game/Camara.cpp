@@ -322,4 +322,10 @@ float Camara::getAnguloInicial()
 	return anguloInicial;
 }
 
+float Camara::getRotY() 
+{
+	return r.y;
+}
+
+
 

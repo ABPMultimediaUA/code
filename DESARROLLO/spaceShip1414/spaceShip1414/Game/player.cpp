@@ -290,6 +290,8 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	//std::cout << "S: "<< glm::to_string(vecS) << std::endl;
 	//std::cout <<"D:"<< glm::to_string(vecD) << std::endl;
 
+	//if (anguloCamara == 90.0f || anguloCam == 270.0f)
+	//	anguloCam -= 180.0f;
 
 	if(n == -1)
 	{

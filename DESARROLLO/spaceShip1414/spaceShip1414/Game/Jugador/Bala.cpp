@@ -25,7 +25,7 @@ Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3
 	//pos = maya->getPosition();
 
 	nodo = motorApp->addMalla();
-	motorApp->escalar(nodo, 0.2f, 0.2f, 0.2f);
+	motorApp->escalar(nodo, 0.4f, 0.4f, 0.4f);
 	motorApp->trasladar(nodo, posPers.x, posPers.y + 5.0f, posPers.z);
 	motorApp->rotarYPR(nodo, 0, 0, 0);
 	engine = motorApp;

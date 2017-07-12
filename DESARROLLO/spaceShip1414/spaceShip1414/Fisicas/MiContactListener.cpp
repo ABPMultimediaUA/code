@@ -26,7 +26,7 @@
 #include "../Game/Escenario/ObjConsumables/TiposDeMunicion/MunicionSubfusil.h"
 #include "../Game/Escenario/ObjConsumables/TiposDeMunicion/MunicionEscopeta.h"
 #include "../Game/Escenario/ObjConsumables/TiposDeMunicion/MunicionPistola.h"
-//#include "../Jugador/Bala.h"
+#include "../Game/Jugador/Bala.h"
 #include "../Game/Enemigos/Nodo.h"
 #include "../graphicEngine/TGraphicEngine.h"
 #include "../Game/TGameEngine.h"
@@ -109,14 +109,14 @@ void MiContactListener::actualizarPuerta(Entity2D* entity, Entity2D *pers, int m
 
 void MiContactListener::aplicarDamage(Entity2D* entity, Entity2D *bala) {
 
-	//Enemigo *ene = static_cast<Enemigo*>(entity->getObjeto3D()); //mirar el tema de hacer un cast dependiendo de la raza
-	//Bala *bullet = static_cast<Bala*>(bala->getObjeto3D());
-	//if (ene->getVida() > 0.0f) {
-	//	ene->quitarVida(bullet->getDamage());
-	//	if (ene->getVida() <= 0.0f) {
-	//		entity->setLive(false);
-		//}
-	//}
+	Enemigo *ene = static_cast<Enemigo*>(entity->getObjeto3D()); //mirar el tema de hacer un cast dependiendo de la raza
+	Bala *bullet = static_cast<Bala*>(bala->getObjeto3D());
+	if (ene->getVida() > 0.0f) {
+		ene->quitarVida(bullet->getDamage());
+		if (ene->getVida() <= 0.0f) {
+			entity->setLive(false);
+		}
+	}
 }
 
 void MiContactListener::activarTerminar(Entity2D * pers, Entity2D * terminal, bool actTer)
@@ -270,7 +270,7 @@ void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 	player *p = static_cast<player*>(pers->getObjeto3D());
 	Enemigo *e = static_cast<Enemigo*>(enemigo->getObjeto3D());
 	int dir = p->getDireccion();
-	float vel = 500.0f;
+	float vel = 200.0f;
 
 	//std::cout << "VELOSIDAD X: " << vel.x << "VELOSIDAD Y: " << vel.y << std::endl;
 
@@ -291,7 +291,7 @@ void aplicarKnockBack(Entity2D *pers, Entity2D *enemigo, b2Body *bodyPers) {
 
 	p->setImpulso(true);
 	p->iniciarTiempoImpulso();
-	//p->quitarVida(e->getDamageChoque());
+	p->quitarVida(e->getDamageChoque());
 
 	switch (dir) {
 
@@ -435,25 +435,25 @@ void gestionarCambioDeEstadoEnemigo(Entity2D *enemigo) {
 
 void quitarVidaJugador(Entity2D *jugador, Entity2D *bala) {
 
-	//Personaje *j = static_cast<Personaje*>(jugador->getObjeto3D()); //mirar el tema de hacer un cast dependiendo de la raza
-	//Bala *bullet = static_cast<Bala*>(bala->getObjeto3D());
-	//if (j->getVida() > 0.0f) {
-	//	j->quitarVida(bullet->getDamage());
-	//	if (j->getVida() <= 0.0f && jugador->getLive() != false) {
-	//	/*	jugador->setLive(false);
-	//		j->pasarMensaje();*/
-	//	}
-	//}
+	player *j = static_cast<player*>(jugador->getObjeto3D()); //mirar el tema de hacer un cast dependiendo de la raza
+	Bala *bullet = static_cast<Bala*>(bala->getObjeto3D());
+	if (j->getVida() > 0.0f) {
+		j->quitarVida(bullet->getDamage());
+		if (j->getVida() <= 0.0f && jugador->getLive() != false) {
+		/*	jugador->setLive(false);
+			j->pasarMensaje();*/
+		}
+	}
 
 }
 
 
 void paredDetectada(Entity2D *ene, bool x) {
 
-	//Enemigo *e = static_cast<Enemigo*>(ene->getObjeto3D());
+	Enemigo *e = static_cast<Enemigo*>(ene->getObjeto3D());
 
 
-	//e->setEsquivarPared(x);
+	e->setEsquivarPared(x);
 
 
 }
@@ -537,7 +537,7 @@ void asignarVecDirector(Entity2D *p, ActivadorCamara* c) {
 		angle -= 360;
 	}
 
-	jugador->setAnguloCamara(angle);
+	jugador->setAnguloCamara(cam->getAnguloInicial());
 	jugador->setRecalculo(true);
 	angle = angle * PI / 180;
 
@@ -962,7 +962,7 @@ void MiContactListener::PreSolve(b2Contact* contact, const b2Manifold* oldManifo
 			if (entity1 != nullptr&&entity2 != nullptr)
 			{
 				if (entity1->getIDEN() == 0 && entity2->getIDEN() == 4) {
-				///	aplicarKnockBack(entity1, entity2, b1);
+					aplicarKnockBack(entity1, entity2, b1);
 
 				}
 
