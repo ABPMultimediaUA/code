@@ -28,9 +28,5 @@ private:
 	sf::Texture tHub;
 	sf::Sprite sButtonSelec;
 	sf::Texture tButtonSelec;
-	sf::Sprite sTitulo;
-	sf::Texture tTitulo;
-	sf::Sprite slogo;
-	sf::Texture tlogo;
 };
 

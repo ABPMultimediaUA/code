@@ -27,24 +27,7 @@ menu::menu(unsigned int width, unsigned int height) : estadosJuego("menuState")
 	}
 	tButtonSelec.setSmooth(true);
 	sButtonSelec.setTexture(tButtonSelec);
-	sButtonSelec.setPosition(889, 190);
-
-	if (!tTitulo.loadFromFile("resourse/image/titulo.png"))
-	{
-		std::cerr << "Titulo no cargado" << std::endl;
-	}
-	tTitulo.setSmooth(true);
-	sTitulo.setTexture(tTitulo);
-	sTitulo.scale(0.7f, 0.7f);
-	sTitulo.setPosition(156,30);
-
-	if (!tlogo.loadFromFile("resourse/image/logoAsync.png"))
-	{
-		std::cerr << "Logo no cargado" << std::endl;
-	}
-	tlogo.setSmooth(true);
-	slogo.setTexture(tlogo);
-	slogo.setPosition(80, 530);
+	sButtonSelec.setPosition(581, 209);
 
 	if (!font.loadFromFile("resourse/font/Radiof.ttf"))
 	{
@@ -54,22 +37,22 @@ menu::menu(unsigned int width, unsigned int height) : estadosJuego("menuState")
 	opciones[0].setFont(font);
 	opciones[0].setColor(sf::Color::Red);
 	opciones[0].setString("Jugar");
-	opciones[0].setPosition(sf::Vector2f(934, 196));
+	opciones[0].setPosition(sf::Vector2f(626, 222));
 
 	opciones[1].setFont(font);
 	opciones[1].setColor(sf::Color::White);
 	opciones[1].setString("Ajustes");
-	opciones[1].setPosition(sf::Vector2f(928, 290));
+	opciones[1].setPosition(sf::Vector2f(620, 316));
 
 	opciones[2].setFont(font);
 	opciones[2].setColor(sf::Color::White);
 	opciones[2].setString("Creditos");
-	opciones[2].setPosition(sf::Vector2f(924, 386));
+	opciones[2].setPosition(sf::Vector2f(618, 412));
 
 	opciones[3].setFont(font);
 	opciones[3].setColor(sf::Color::White);
 	opciones[3].setString("Salir");
-	opciones[3].setPosition(sf::Vector2f(936, 480));
+	opciones[3].setPosition(sf::Vector2f(628, 506));
 
 	opcionSelecionada = 0;
 }
@@ -84,8 +67,6 @@ void menu::render(void * window)
 	static_cast<sf::RenderWindow *>(window)->pushGLStates();
 	static_cast<sf::RenderWindow *>(window)->draw(sFondo);
 	static_cast<sf::RenderWindow *>(window)->draw(sHub);
-	static_cast<sf::RenderWindow *>(window)->draw(sTitulo);
-	static_cast<sf::RenderWindow *>(window)->draw(slogo);
 	static_cast<sf::RenderWindow *>(window)->draw(sButtonSelec);
 	for (int i = 0; i < MAX_OPCIONES; i++)
 	{
@@ -123,24 +104,24 @@ void menu::MoveDown()
 void menu::checkMousePos(void * window)
 {
 	sf::Vector2i posMouse = sf::Mouse::getPosition(*(static_cast<sf::RenderWindow *>(window)));
-	if (posMouse.x > 889 && posMouse.x < 889 + 190)
+	if (posMouse.x > 581 && posMouse.x < 581 + 190)
 	{
-		if (posMouse.y > 190 && posMouse.y < 190 + 57) {
+		if (posMouse.y > 209 && posMouse.y < 209 + 57) {
 			opciones[opcionSelecionada].setColor(sf::Color::White);
 			opcionSelecionada = 0;
 			opciones[opcionSelecionada].setColor(sf::Color::Red);
 		}
-		if (posMouse.y > 284 && posMouse.y < 284 + 57) {
+		if (posMouse.y > 303 && posMouse.y < 303 + 57) {
 			opciones[opcionSelecionada].setColor(sf::Color::White);
 			opcionSelecionada = 1;
 			opciones[opcionSelecionada].setColor(sf::Color::Red);
 		}
-		if (posMouse.y > 380 && posMouse.y < 380 + 57) {
+		if (posMouse.y > 399 && posMouse.y < 399 + 57) {
 			opciones[opcionSelecionada].setColor(sf::Color::White);
 			opcionSelecionada = 2;
 			opciones[opcionSelecionada].setColor(sf::Color::Red);
 		}
-		if (posMouse.y > 474 && posMouse.y < 474 + 57) {
+		if (posMouse.y > 493 && posMouse.y < 493 + 57) {
 			opciones[opcionSelecionada].setColor(sf::Color::White);
 			opcionSelecionada = 3;
 			opciones[opcionSelecionada].setColor(sf::Color::Red);
@@ -153,16 +134,16 @@ void menu::checkOpcionSelecionada()
 	switch (opcionSelecionada)
 	{
 		case 0:
-			sButtonSelec.setPosition(889, 190);
+			sButtonSelec.setPosition(581, 209);
 			break;
 		case 1:
-			sButtonSelec.setPosition(889, 284);
+			sButtonSelec.setPosition(581, 303);
 			break;
 		case 2:
-			sButtonSelec.setPosition(889, 380);
+			sButtonSelec.setPosition(581, 399);
 			break;
 		case 3:
-			sButtonSelec.setPosition(889, 474);
+			sButtonSelec.setPosition(581, 493);
 			break;
 	}
 }
@@ -170,19 +151,19 @@ void menu::checkOpcionSelecionada()
 void menu::clickOpcion(void * window, void * manager)
 {
 	sf::Vector2i posMouse = sf::Mouse::getPosition(*(static_cast<sf::RenderWindow *>(window)));
-	if (posMouse.x > 889 && posMouse.x < 889 + 190)
+	if (posMouse.x > 581 && posMouse.x < 581 + 190)
 	{
-		if (posMouse.y > 190 && posMouse.y < 190 + 57) {
+		if (posMouse.y > 209 && posMouse.y < 209 + 57) {
 			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("playingState");
 		}
-		if (posMouse.y > 284 && posMouse.y < 284 + 57) {
+		if (posMouse.y > 303 && posMouse.y < 303 + 57) {
 			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("configState");
 		}
-		if (posMouse.y > 380 && posMouse.y < 380 + 57) {
+		if (posMouse.y > 399 && posMouse.y < 399 + 57) {
 			std::cout << "Creditos Pulsado" << std::endl;
 			//static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("creditsState");
 		}
-		if (posMouse.y > 474 && posMouse.y < 474 + 57) {
+		if (posMouse.y > 493 && posMouse.y < 493 + 57) {
 			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("exitState");
 		}
 	}
