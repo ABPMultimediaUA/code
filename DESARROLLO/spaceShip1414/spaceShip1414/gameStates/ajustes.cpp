@@ -5,7 +5,7 @@
 
 ajustes::ajustes(unsigned int width, unsigned int height) : estadosJuego("configState")
 {
-	if (!imagen.loadFromFile("resourse/image/CARTEL.jpg", sf::IntRect(1, 1, width, height)))
+	if (!imagen.loadFromFile("resourse/image/cartel" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".jpg", sf::IntRect(1, 1, width, height)))
 	{
 		std::cerr << "Fondo no cargado" << std::endl;
 	}
@@ -45,7 +45,11 @@ ajustes::ajustes(unsigned int width, unsigned int height) : estadosJuego("config
 
 ajustes::~ajustes()
 {
-	std::cout << "Menu eliminado" << std::endl;
+	std::cout << "Ajustes Destroyed" << std::endl;
+}
+
+void ajustes::update(double deltatime, void * window)
+{
 }
 
 void ajustes::render(void * window)

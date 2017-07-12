@@ -8,10 +8,10 @@
 #include <SFML\OpenGL.hpp>
 #include "../Game/player.h"
 
-jugando::jugando(float w, float h) : estadosJuego("playingState"), arma{ 0 }, balas{ 10 }, opciones{ false }, rec{ false }, pausa{ false }, vida{ 145.f }, vidaMax{ 250.f },
+jugando::jugando(float w, float h) : estadosJuego("playingState"), arma{ 0 }, balas{ 10 }, opciones{ false }, rec{ false }, pausa{ false }, vida{ 250.f }, vidaMax{ 250.f },
 texto{ nullptr }, font{ nullptr }, tMenuPausa{ nullptr }, bMenuPausa{ nullptr }, bPulsetMenu{ nullptr }, tPulsetMenu{ nullptr }, bPausaPlay{ nullptr }, tPausa{ nullptr },
 tPlay{ nullptr }, iArma{ nullptr }, iVida{ nullptr }, tVida{ nullptr }, rectangle{ nullptr }, reloj{ nullptr }, fFondo{ nullptr }, tFondo{ nullptr }, width{ w }, height{ h },
-tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }
+tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }, parcialReloj(sf::milliseconds(10))
 {
 	tArma[0] = nullptr;
 	tArma[1] = nullptr;
@@ -20,10 +20,10 @@ tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }
 jugando::~jugando()
 {
 	if (graphicApp != nullptr) { limpiarEstado(); }
-	std::cout << "Menu eliminado" << std::endl;
+	std::cout << "Jugando Destroyed" << std::endl;
 }
 
-void jugando::inicializarEstado()
+void jugando::inicializarEstadoOld()
 {
 	graphicApp = new TGraphicEngine(width,height);
 	if (!graphicApp->iniciarGraphicEngine())
@@ -128,6 +128,122 @@ void jugando::inicializarEstado()
 	texto->setFont(*font);
 }
 
+void jugando::inicializarEstado()
+{
+	graphicApp = new TGraphicEngine(width, height);
+	if (!graphicApp->iniciarGraphicEngine())
+	{
+		std::cout << "Error al inicializar el motor Grafrico" << std::endl;
+	}
+	gameApp = new TGameEngine();
+	if (!gameApp->iniciarGameEngine(graphicApp))
+	{
+		std::cout << "Error al inicializar el motor del Juego" << std::endl;
+	}
+	handlerApp = new movimentHandler();
+	rec = false;
+	pausa = false;
+	opciones = false;
+	font = new sf::Font();
+	texto = new sf::Text();
+	bPausaPlay = new sf::Sprite();
+	tPausa = new sf::Texture();
+	bMenuPausa = new sf::Sprite();
+	tMenuPausa = new sf::Texture();
+	bPulsetMenu = new sf::Sprite();
+	tPulsetMenu = new sf::Texture();
+	tHub = new sf::Texture();
+	bHub = new sf::Sprite();
+	iArma = new sf::Sprite();
+	tArma[0] = new sf::Texture();
+	tArma[1] = new sf::Texture();
+	rectangle = new sf::RectangleShape();
+	reloj = new sf::Clock();
+	fFondo = new sf::Sprite();
+	tFondo = new sf::Texture();
+	iVida = new sf::Sprite();
+	tVida = new sf::Texture();
+	tecla = -1;
+	if (!tFondo->loadFromFile("resourse/image/espacio" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".jpg", sf::IntRect(1, 1, width, height)))
+	{
+		std::cerr << "Fondo no cargado" << std::endl;
+	}
+	fFondo->setTexture(*tFondo);
+	fFondo->setPosition(0, 0);
+
+	if (!tPausa->loadFromFile("resourse/image/botonPausa" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(0, 0, 58, 58)))
+	{
+		std::cerr << "Boton Pause no cargado" << std::endl;
+	}
+	tPausa->setSmooth(true);
+	bPausaPlay->setTexture(*tPausa);
+	if (height > 768) { bPausaPlay->setPosition(80, 960); }
+	else { bPausaPlay->setPosition(76, 671); }
+
+	if (!tHub->loadFromFile("resourse/image/hub" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(0, 0, width, height)))
+	{
+		std::cerr << "Hub no cargado" << std::endl;
+	}
+	tHub->setSmooth(true);
+	bHub->setTexture(*tHub);
+	bHub->setPosition(0, 0);
+
+	if (!tArma[0]->loadFromFile("resourse/image/pistola" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(0, 0, 64, 64)))
+	{
+		std::cerr << "Icono Arma no cargado" << std::endl;
+	}
+	tArma[0]->setSmooth(true);
+	if (!tArma[1]->loadFromFile("resourse/image/escopeta" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(0, 0, 95, 20)))
+	{
+		std::cerr << "Icono Arma no cargado" << std::endl;
+	}
+	tArma[1]->setSmooth(true);
+	iArma->setTexture(*tArma[0]);
+	if (height > 768) { iArma->setPosition(1750, 960); }
+	else { iArma->setPosition(1214, 564); }
+
+	if (!tVida->loadFromFile("resourse/image/vida" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(0, 0, 196, 36)))
+	{
+		std::cerr << "Icono Vida no cargado" << std::endl;
+	}
+	tVida->setSmooth(true);
+	iVida->setTexture(*tVida);
+	if (height > 768) { iVida->setPosition(1770, 50); }
+	else { iVida->setPosition(1312, 40); }
+	iVida->setScale(-1,1);
+
+	if (!tMenuPausa->loadFromFile("resourse/image/bMenu.png", sf::IntRect(0, 0, 181, 182)))
+	{
+		std::cerr << "Icono Menu no cargado" << std::endl;
+	}
+	tMenuPausa->setSmooth(true);
+	bMenuPausa->setTexture(*tMenuPausa);
+	if (height > 768) { bMenuPausa->setPosition(870, 449); }
+	else { bMenuPausa->setPosition(593, 293); }
+
+	if (!tPulsetMenu->loadFromFile("resourse/image/bPulsetMenu.png", sf::IntRect(0, 0, 131, 130)))
+	{
+		std::cerr << "Icono Menu no cargado" << std::endl;
+	}
+	tPulsetMenu->setSmooth(true);
+	bPulsetMenu->setTexture(*tPulsetMenu);
+
+	if (!font->loadFromFile("resourse/font/Radiof.ttf"))
+	{
+		std::cerr << "Fuente no cargada" << std::endl;
+	}
+	texto->setFont(*font);
+
+	rectangleParcialRelojA = new sf::RectangleShape();
+	rectangleParcialRelojA->setSize(sf::Vector2f(4, 10));
+	rectangleParcialRelojA->setFillColor(sf::Color(255, 0, 0, 100));
+	rectangleParcialRelojA->setPosition(330, 140);
+	rectangleParcialRelojB = new sf::RectangleShape();
+	rectangleParcialRelojB->setSize(sf::Vector2f(4, 6));
+	rectangleParcialRelojB->setFillColor(sf::Color(255, 0, 0, 100));
+	rectangleParcialRelojB->setPosition(330, 636);
+}
+
 void jugando::limpiarEstado()
 {
 	delete texto;
@@ -174,62 +290,23 @@ void jugando::limpiarEstado()
 	gameApp = nullptr;
 }
 
-void jugando::update()
-{
-	if (pausa)
-	{
-	}
-	else
-	{
-		gameApp->update(0.1,handlerApp, graphicApp, tecla);		
-	}
-}
-
-void jugando::render(void * window)
-{
-	std::cout << "Inicia Render" << std::endl;
-	if (opciones)
-	{
-		static_cast<sf::RenderWindow *>(window)->pushGLStates();
-		drawConfiguracion(window);
-		static_cast<sf::RenderWindow *>(window)->popGLStates();
-	}
-	else
-	{
-		std::cout << "Inicia Draw" << std::endl;		
-	
-		if (graphicApp) { graphicApp->draw(0.1); }
-
-		std::cout << "Finaliza Draw" << std::endl;
-		static_cast<sf::RenderWindow *>(window)->pushGLStates();
-		drawNoClickHub(window);
-		static_cast<sf::RenderWindow *>(window)->draw(*bPausaPlay);
-		if (pausa)
-		{
-			drawPause(window);
-		}
-		static_cast<sf::RenderWindow *>(window)->popGLStates();
-	}
-	std::cout << "Finaliza Render" << std::endl;
-}
-
 void jugando::handler(void * event, void * window, void * manager)
 {
 	//tecla = -1;
 	/*switch (static_cast<sf::Event *>(event)->type)
 	{
 	case sf::Event::MouseButtonPressed:
-		switch (static_cast<sf::Event *>(event)->key.code)
-		{
-		case sf::Mouse::Left:
-			if (pausa) {
-				if (opciones) { clickAjustes(window); }
-				else { clickPauseMenu(window, manager); }
-			}
-			else { clickPlayPause(window); }
-			break;
-		}
-		break;
+	switch (static_cast<sf::Event *>(event)->key.code)
+	{
+	case sf::Mouse::Left:
+	if (pausa) {
+	if (opciones) { clickAjustes(window); }
+	else { clickPauseMenu(window, manager); }
+	}
+	else { clickPlayPause(window); }
+	break;
+	}
+	break;
 
 	}*/
 
@@ -241,44 +318,44 @@ void jugando::handler(void * event, void * window, void * manager)
 	}
 
 
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && !pausa)
-		{
-			std::cout << "W" << std::endl;
-			tecla = 3;
-		}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && !pausa)
+	{
+		std::cout << "W" << std::endl;
+		tecla = 3;
+	}
 
 
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !pausa)
-		{
-			std::cout << "A" << std::endl;
-			tecla = 1;
-		}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !pausa)
+	{
+		std::cout << "A" << std::endl;
+		tecla = 1;
+	}
 
 
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && !pausa)
-		{
-			std::cout << "S" << std::endl;
-			tecla = 2;
-		}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && !pausa)
+	{
+		std::cout << "S" << std::endl;
+		tecla = 2;
+	}
 
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !pausa)
-		{
-			std::cout << "D" << std::endl;
-			tecla = 0;
-		}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !pausa)
+	{
+		std::cout << "D" << std::endl;
+		tecla = 0;
+	}
 
-		//else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
-		//{
-		//	std::cout << "1" << std::endl;
-		//	tecla = TECLA_1;
-		//	jugador->cambiarAnimacion('a');
-		//}
-		//else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
-		//{
-		//	std::cout << "2" << std::endl;
-		//	tecla = TECLA_2;
-		//	jugador->cambiarAnimacion('c');
-		//}
+	//else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
+	//{
+	//	std::cout << "1" << std::endl;
+	//	tecla = TECLA_1;
+	//	jugador->cambiarAnimacion('a');
+	//}
+	//else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
+	//{
+	//	std::cout << "2" << std::endl;
+	//	tecla = TECLA_2;
+	//	jugador->cambiarAnimacion('c');
+	//}
 
 
 
@@ -290,11 +367,11 @@ void jugando::handler(void * event, void * window, void * manager)
 		{
 			if (pausa) { if (opciones) { clickAjustes(window); } else { clickPauseMenu(window, manager); } }
 			else { clickPlayPause(window); }
-			if(gameApp && gameApp->getPlayer()->getDisparo() == false && !pausa) {
+			if (gameApp && gameApp->getPlayer()->getDisparo() == false && !pausa) {
 
-			//	if (pers->getCargador() >= 0) {
+				//	if (pers->getCargador() >= 0) {
 				gameApp->getPlayer()->Disparar(gameApp->getMundo(), 0.016);
-			//	}
+				//	}
 
 			}
 
@@ -315,6 +392,56 @@ void jugando::handler(void * event, void * window, void * manager)
 		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Num2) { if (!pausa) { changeWeapon(1); } }
 		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Escape) { if (!pausa) { if (pausa) { play(); } else { pause(); } } }
 
+	}
+}
+
+void jugando::update(double deltatime, void * window)
+{
+	if (pausa)
+	{
+	}
+	else
+	{
+		if (parcialReloj.asMilliseconds() - reloj->getElapsedTime().asMilliseconds() <= 0)
+		{
+			if (!rec)
+			{
+				rectangleParcialRelojA->setPosition(rectangleParcialRelojA->getPosition().x + 8, 140);
+				rectangleParcialRelojB->setPosition(rectangleParcialRelojB->getPosition().x + 8, 636);
+				if (rectangleParcialRelojA->getPosition().x >= 1034) { rec = true; }
+			}
+			else
+			{
+				rectangleParcialRelojA->setPosition(rectangleParcialRelojA->getPosition().x - 8, 140);
+				rectangleParcialRelojB->setPosition(rectangleParcialRelojB->getPosition().x - 8, 636);
+				if (rectangleParcialRelojA->getPosition().x <= 326) { rec = false; }
+			}
+			reloj->restart();
+		}
+		iVida->setTextureRect(sf::IntRect(0, 0, 196 * (vida / vidaMax), 36));
+
+		gameApp->update(0.1,handlerApp, graphicApp, tecla);		
+	}
+}
+
+void jugando::render(void * window)
+{
+	if (opciones)
+	{
+		static_cast<sf::RenderWindow *>(window)->pushGLStates();
+		drawConfiguracion(window);
+		static_cast<sf::RenderWindow *>(window)->popGLStates();
+	}
+	else
+	{
+		if (graphicApp) { graphicApp->draw(0.1); }
+		static_cast<sf::RenderWindow *>(window)->pushGLStates();
+		drawHub(window);
+		if (pausa)
+		{
+			drawPause(window);
+		}
+		static_cast<sf::RenderWindow *>(window)->popGLStates();
 	}
 }
 
@@ -345,28 +472,28 @@ void jugando::drawPause(void * window)
 	static_cast<sf::RenderWindow *>(window)->draw(*rectangle);
 	static_cast<sf::RenderWindow *>(window)->draw(*bMenuPausa);
 	checkMousePos(window);
-	texto->setColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 0, 230));
 	texto->setString("Continuar");
 	texto->setCharacterSize(20);
 
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(621, 308); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
-	texto->setColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 0, 230));
 	texto->setString("Opciones");
 	texto->setCharacterSize(20);
 
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(627, 344); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
-	texto->setColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 0, 230));
 	texto->setString("Volver al Menu");
 	texto->setCharacterSize(16);
 
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(623, 386); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
-	texto->setColor(sf::Color(255, 255, 255, 180));
+	texto->setColor(sf::Color(255, 255, 0, 230));
 	texto->setString("Salir a Windows");
 	texto->setCharacterSize(16);
 
@@ -375,7 +502,7 @@ void jugando::drawPause(void * window)
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
 }
 
-void jugando::drawNoClickHub(void * window)
+void jugando::drawNoClickHubOld(void * window)
 {
 	rectangle->setSize(sf::Vector2f(100, 10));
 	rectangle->setFillColor(sf::Color(255, 255, 255, 150));
@@ -445,13 +572,14 @@ void jugando::drawNoClickHub(void * window)
 	static_cast<sf::RenderWindow *>(window)->draw(*rectangle);
 
 	static_cast<sf::RenderWindow *>(window)->draw(*iArma);
+
 	texto->setColor(sf::Color(255, 255, 255, 180));
 	texto->setString(std::to_string(balas));
 	texto->setCharacterSize(20);
-
 	if (height > 768) { texto->setPosition(1226, 980); }
 	else { texto->setPosition(1262, 688); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
+
 	sf::Time tiempo;
 	if (!pausa)
 	{
@@ -464,23 +592,57 @@ void jugando::drawNoClickHub(void * window)
 	if (height > 768) { texto->setPosition(900, 1015); }
 	else { texto->setPosition(623, 680); }
 	static_cast<sf::RenderWindow *>(window)->draw(*texto);
+	static_cast<sf::RenderWindow *>(window)->draw(*bPausaPlay);
+}
+
+void jugando::drawHub(void * window)
+{
+	static_cast<sf::RenderWindow *>(window)->draw(*bHub);
+	static_cast<sf::RenderWindow *>(window)->draw(*rectangleParcialRelojA);
+	static_cast<sf::RenderWindow *>(window)->draw(*rectangleParcialRelojB);
+	static_cast<sf::RenderWindow *>(window)->draw(*iArma);
+	texto->setColor(sf::Color(255, 255, 255, 140));
+	texto->setString(std::to_string(balas));
+	texto->setCharacterSize(20);
+	if (height > 768) { texto->setPosition(1226, 980); }
+	else { texto->setPosition(1258, 596); }
+	static_cast<sf::RenderWindow *>(window)->draw(*texto);
+	static_cast<sf::RenderWindow *>(window)->draw(*iVida);
+	static_cast<sf::RenderWindow *>(window)->draw(*bPausaPlay);
 }
 
 void jugando::changeWeapon(unsigned int a)
 {
 	iArma->setTexture(*tArma[a]);
+	if (width > 1366)
+	{
+	}
+	else
+	{
+		switch (a)
+		{
+		case 0:
+			iArma->setPosition(1214, 564);
+			iArma->setTextureRect(sf::IntRect(0, 0, 64, 64));
+			break;
+		case 1:
+			iArma->setPosition(1198, 590);
+			iArma->setTextureRect(sf::IntRect(0, 0, 95, 20));
+			break;
+		}
+	}
 }
 
 void jugando::pause()
 {
 	pausa = true;
-	bPausaPlay->setTexture(*tPlay);
+	//bPausaPlay->setTexture(*tPlay);
 }
 
 void jugando::play()
 {
 	pausa = false;
-	bPausaPlay->setTexture(*tPausa);
+	//bPausaPlay->setTexture(*tPausa);
 }
 
 void jugando::clickPauseMenu(void * window, void * manager)

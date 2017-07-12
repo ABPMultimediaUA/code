@@ -2,10 +2,12 @@
 #include "MaquinaEstadosJuego.h"
 #include <iostream>
 #include <locale>
+#include <string>
+#include <SFML\System\Time.hpp>
 
-salida::salida(float width, float height) : estadosJuego("exitState")
+salida::salida(float width, float height) : estadosJuego("exitState"), firtsUpdate{ false }
 {
-	if (!imagen.loadFromFile("resourse/image/CARTEL.jpg", sf::IntRect(1, 1, width, height)))
+	if (!imagen.loadFromFile("resourse/image/cartel" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".jpg", sf::IntRect(1, 1, width, height)))
 	{
 		std::cerr << "Fondo no cargado" << std::endl;
 	}
@@ -20,22 +22,40 @@ salida::salida(float width, float height) : estadosJuego("exitState")
 	titulo.setFont(font);
 	titulo.setColor(sf::Color::Yellow);
 	titulo.setString("Gracias por haber jugado");
-	titulo.setCharacterSize(80);
-	titulo.setPosition(sf::Vector2f(width / 2, height*0.1));
+	titulo.setCharacterSize(60);
+	titulo.setPosition(sf::Vector2f(300, 400));
+	descuento = sf::milliseconds(3000);
 }
-
 
 salida::~salida()
 {
-	std::cout << "Menu eliminado" << std::endl;
+	std::cout << "Salida Destroyed" << std::endl;
 }
 
 void salida::render(void * window)
 {
 	static_cast<sf::RenderWindow *>(window)->pushGLStates();
 	static_cast<sf::RenderWindow *>(window)->draw(fondo);
+	/*titulo.setString("Gracias por haber jugado");
+	titulo.setCharacterSize(60);
+	titulo.setPosition(sf::Vector2f(300, 400));*/
 	static_cast<sf::RenderWindow *>(window)->draw(titulo);
+	/*int tempo = (descuento.asMilliseconds() - reloj.getElapsedTime().asMilliseconds()) / 1000;
+	titulo.setString(std::to_string(tempo));
+	titulo.setCharacterSize(30);
+	titulo.setPosition(sf::Vector2f(1200, 700));
+	static_cast<sf::RenderWindow *>(window)->draw(titulo);*/
 	static_cast<sf::RenderWindow *>(window)->popGLStates();
+}
+
+void salida::update(double deltatime, void * window)
+{
+	if (!firtsUpdate)
+	{
+		firtsUpdate = true;
+		reloj.restart(); 
+	}
+	if (descuento.asMilliseconds() - reloj.getElapsedTime().asMilliseconds()<=0) { static_cast<sf::RenderWindow *>(window)->close(); }
 }
 
 void salida::handler(void * event, void * window, void * manager)

@@ -14,9 +14,17 @@ mainGame::mainGame()
 mainGame::~mainGame()
 {
 	delete gameConfig;
+	gameConfig = nullptr;
 	delete gameMenu;
+	gameMenu = nullptr;
+	delete gamePlaying;
+	gamePlaying = nullptr;
+	delete gameExit;
+	gameExit = nullptr;
 	delete manager;
+	manager = nullptr;
 	delete window;
+	window = nullptr;
 	std::cout << "Gracias por jugar a SpaceShip 1414" << std::endl;
 }
 
@@ -36,6 +44,8 @@ bool mainGame::init(const std::string titulo, int width, int height, bool full_s
 	manager->addEstado(gameConfig, false);
 	gamePlaying = new jugando(width, height);
 	manager->addEstado(gamePlaying, false);
+	gameExit = new salida(width, height);
+	manager->addEstado(gameExit, false);
 	if (window != nullptr && gameMenu != nullptr && gameConfig != nullptr && gamePlaying != nullptr)
 	{
 		return true;
@@ -54,11 +64,10 @@ void mainGame::run()
 		while (window->pollEvent(event))
 		{
 			manager->getEstadoActivo()->handler(&event, window, manager);
-			if (event.type == sf::Event::Closed)
-				window->close();
+			if (event.type == sf::Event::Closed) { manager->cambiaEstado("exitState");	}
 		}
 
-		manager->getEstadoActivo()->update();
+		manager->getEstadoActivo()->update(0.1, window);
 
 		window->clear();
 		glBindBuffer(GL_ARRAY_BUFFER, 0);

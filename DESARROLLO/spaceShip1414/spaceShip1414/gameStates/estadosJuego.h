@@ -15,8 +15,8 @@ public:
 	void setEstadoActivo(bool activo);
 	virtual void inicializarEstado();
 	virtual void limpiarEstado();
-	virtual void render(void * window);
 	virtual void handler(void * event, void * window, void * manager);
-	virtual void update();
+	virtual void update(double deltatime, void * window);
+	virtual void render(void * window);
 };
 

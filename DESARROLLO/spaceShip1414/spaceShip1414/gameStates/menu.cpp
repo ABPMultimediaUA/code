@@ -5,7 +5,7 @@
 
 menu::menu(unsigned int width, unsigned int height) : estadosJuego("menuState")
 {
-	if (!imagen.loadFromFile("resourse/image/CARTEL.jpg", sf::IntRect(1, 1, width, height)))
+	if (!imagen.loadFromFile("resourse/image/espacio" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".jpg", sf::IntRect(1, 1, width, height)))
 	{
 		std::cerr << "Fondo no cargado" << std::endl;
 	}
@@ -37,7 +37,7 @@ menu::menu(unsigned int width, unsigned int height) : estadosJuego("menuState")
 
 menu::~menu()
 {
-	std::cout << "Menu eliminado" << std::endl;
+	std::cout << "Menu Destroyed" << std::endl;
 }
 
 void menu::render(void * window)
@@ -49,6 +49,10 @@ void menu::render(void * window)
 		static_cast<sf::RenderWindow *>(window)->draw(opciones[i]);
 	}
 	static_cast<sf::RenderWindow *>(window)->popGLStates();
+}
+
+void menu::update(double deltatime, void * window)
+{
 }
 
 void menu::MoveUp()
@@ -95,7 +99,7 @@ void menu::handler(void * event, void * window, void * manager)
 				static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("configState");
 				break;
 			case 2:
-				static_cast<sf::RenderWindow *>(window)->close();
+				static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("exitState");
 				break;
 			}
 			break;

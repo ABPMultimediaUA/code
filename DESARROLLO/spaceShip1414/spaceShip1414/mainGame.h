@@ -10,6 +10,7 @@ class MaquinaEstadosJuego;
 class menu;
 class ajustes;
 class jugando;
+class salida;
 class mainGame
 {
 public:
@@ -24,5 +25,6 @@ private:
 	menu * gameMenu;
 	ajustes * gameConfig;
 	jugando * gamePlaying;
+	salida * gameExit;
 };
 

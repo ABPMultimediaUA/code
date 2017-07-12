@@ -10,11 +10,12 @@ class ajustes :
 public:
 	ajustes(unsigned int, unsigned int);
 	~ajustes();
+	void handler(void*, void *, void *)override;
+	void update(double, void *) override;
 	void render(void * window) override;
 	void MoveUp();
 	void MoveDown();
 	int GetPressedItem() { return opcionSelecionada; }
-	void handler(void*, void *, void *)override;
 private:
 	int opcionSelecionada;
 	sf::Font font;

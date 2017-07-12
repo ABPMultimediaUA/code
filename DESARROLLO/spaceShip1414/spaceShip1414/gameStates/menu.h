@@ -9,11 +9,12 @@ class menu :
 public:
 	menu(unsigned int, unsigned int);
 	~menu();
-	void render(void * window) override;
+	void handler(void*, void *, void *)override;
+	void update(double, void *) override;
+	void render(void *) override;
 	void MoveUp();
 	void MoveDown();
 	int GetPressedItem() { return opcionSelecionada; }
-	void handler(void*, void *, void *)override;
 private:
 	int opcionSelecionada;
 	sf::Font font;

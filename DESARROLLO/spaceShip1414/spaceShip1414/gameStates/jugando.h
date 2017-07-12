@@ -11,15 +11,17 @@ class jugando :
 public:
 	jugando(float, float);
 	~jugando();
+	void inicializarEstadoOld();
 	void inicializarEstado() override;
 	void limpiarEstado() override;
-	void update() override;
+	void handler(void*, void *, void *) override;
+	void update(double, void *) override;
 	void render(void * window) override;
-	void handler(void*, void *, void *)override;
 private:
 	void drawConfiguracion(void *);
 	void drawPause(void *);
-	void drawNoClickHub(void *);
+	void drawNoClickHubOld(void * window);
+	void drawHub(void *);
 	void changeWeapon(unsigned int);
 	void pause();
 	void play();
@@ -30,6 +32,8 @@ private:
 	
 	sf::Font * font;
 	sf::Text * texto;
+	sf::Texture * tHub;
+	sf::Sprite * bHub;
 	sf::Sprite * bMenuPausa;
 	sf::Texture * tMenuPausa;
 	sf::Sprite * bPulsetMenu;
@@ -43,6 +47,9 @@ private:
 	sf::Texture * tVida;
 	sf::RectangleShape * rectangle;
 	sf::Clock * reloj;
+	sf::Time parcialReloj;
+	sf::RectangleShape * rectangleParcialRelojA;
+	sf::RectangleShape * rectangleParcialRelojB;
 	sf::Sprite * fFondo;
 	sf::Texture * tFondo;
 

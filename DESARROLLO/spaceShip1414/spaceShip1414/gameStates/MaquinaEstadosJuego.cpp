@@ -9,6 +9,7 @@ MaquinaEstadosJuego::MaquinaEstadosJuego()
 MaquinaEstadosJuego::~MaquinaEstadosJuego()
 {
 	listaEstados.clear();
+	std::cout << "MaquinaEstadosJuego Destroyed" << std::endl;
 }
 
 void MaquinaEstadosJuego::addEstado(estadosJuego * nombreEstados, bool activo)
