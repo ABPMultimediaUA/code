@@ -450,10 +450,10 @@ void quitarVidaJugador(Entity2D *jugador, Entity2D *bala) {
 
 void paredDetectada(Entity2D *ene, bool x) {
 
-	Enemigo *e = static_cast<Enemigo*>(ene->getObjeto3D());
+	//Enemigo *e = static_cast<Enemigo*>(ene->getObjeto3D());
 
 
-	e->setEsquivarPared(x);
+	//e->setEsquivarPared(x);
 
 
 }
