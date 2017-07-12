@@ -28,11 +28,12 @@
 
 player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 }, pitch{ 0 }
 {
+	engine = motorApp;
 	anguloCamara = 90.0f; //para hacer que rote con la camara
 	vida = 100.0f;
 	vidaMax = vida;
 	initEstados();
-	nodo = motorApp->addAnimacion(andar->getPathAnimacion(), 25);
+	load_personaje();
 	motorApp->escalar(nodo, 0.75f, 0.75f, 0.75f);
 	motorApp->trasladar(nodo, 0.0f, 0.0f, 0.0f);
 	motorApp->rotarYPR(nodo, 0, 0, 0);
@@ -41,15 +42,15 @@ player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 
 	//motorApp->trasladar(animation, 0.0f, 0.0f, 0.0f);
 	//motorApp->rotarYPR(animation, 0, 0, 0);
 	//animation->destruirEntidad();
-	pos = glm::vec3(0, -5, 0);
+	pos = glm::vec3(0, 0, 0);
 	rot = glm::vec3(180, 0, 0);
 	escale = glm::vec3(0.75f, 0.75f, 0.75f);
-	engine = motorApp;
+
 	vecDir, vecA, vecD, vecS = glm::vec3(0, 0, 0);
 	entity = new Entity2D(m->getWorldBox2D(), glm::vec3(0,0,0), rot, this);
 	//motorApp->setPlayerMove(this);
 	inv = new Inventario();
-
+	movimiento = "andar";
 }
 
 void player::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
@@ -77,24 +78,33 @@ void player::initEstados()
 	MaquinaEstadosAnimation = new MaquinaEstados();
 	andar = new Estados("andar");
 	andar->asignarPath("resourse/animations/Personaje/AndarFix/");
-	reposo = new Estados("reposo");
-	//reposo->asignarPath("resourse/animations/Personaje/Reposo/");
-	reposo->asignarPath("resourse/models/Personajes/personaje/personaje.obj");
-	correr = new Estados("correr");
-	correr->asignarPath("resourse/animations/Personaje/Correr/");
+	reposoAndar = new Estados("reposoAndar");
+	reposoAndar->asignarPath("resourse/animations/Personaje/AndarFix/reposo.obj");
+	pistola = new Estados("pistola");
+	pistola->asignarPath("resourse/animations/Personaje/AndarPistolaFix/r");
+	reposoPistola = new Estados("reposoPistola");
+	reposoPistola->asignarPath("resourse/animations/Personaje/AndarPistolaFix/reposop.obj");
 	disparar = new Estados("disparar");
 	disparar->asignarPath("resourse/animations/Personaje/Disparar/");
+	escopeta = new Estados("escopeta");
+	escopeta->asignarPath("resourse/animations/Personaje/AndarEscopetaFix/e");
+	reposoEscopeta= new Estados("reposoEscopeta");
+	reposoEscopeta->asignarPath("resourse/animations/Personaje/AndarEscopetaFix/ereposo.obj");
 	MaquinaEstadosAnimation->addEstado(andar);
-	MaquinaEstadosAnimation->addEstado(reposo, true);
-	MaquinaEstadosAnimation->addEstado(correr);
+	MaquinaEstadosAnimation->addEstado(reposoAndar, true);
+	MaquinaEstadosAnimation->addEstado(reposoPistola);
+	MaquinaEstadosAnimation->addEstado(pistola);
 	MaquinaEstadosAnimation->addEstado(disparar);
+	MaquinaEstadosAnimation->addEstado(reposoEscopeta);
+	MaquinaEstadosAnimation->addEstado(escopeta);
 }
 
 void player::deleteEstados()
 {
 	delete andar;
-	delete reposo;
-	delete correr;
+	delete reposoAndar;
+	delete reposoPistola;
+	delete pistola;
 	delete disparar;
 	delete MaquinaEstadosAnimation;
 }
@@ -172,27 +182,81 @@ void player::setScale(float x, float y, float z)
 }
 
 void player::cambiarAnimacion(char c) {
+
 	switch (c)
 	{
+
 	case 'r': //reposo
-		//std::cout << "REPOSO" << std::endl;
-		MaquinaEstadosAnimation->cambiaEstado("reposo");
-		destruirAnimacion(nodo);
-		//destruirAnimacion(animation);
-		engine->cargarNuevaMalla(nodo, reposo->getPathAnimacion());
+		std::cout << "REPOSO" << std::endl;
+		if (movimiento == "andar")
+		{
+			MaquinaEstadosAnimation->cambiaEstado("reposoAndar");
+			NPistola->noDraw(false);
+			Nandar->noDraw(false);
+			NreposoPistola->noDraw(false);
+			NreposoEscopeta->noDraw(false);
+			NEscopeta->noDraw(false);
+			nodo = NreposoAndar;
+		}
+		if (movimiento == "pistola")
+		{
+			MaquinaEstadosAnimation->cambiaEstado("reposoPistola");
+			NPistola->noDraw(false);
+			Nandar->noDraw(false);
+			NreposoAndar->noDraw(false);
+			NreposoEscopeta->noDraw(false);
+			NEscopeta->noDraw(false);
+			nodo = NreposoPistola;
+		}
+
+		if (movimiento == "escopeta")
+		{
+			MaquinaEstadosAnimation->cambiaEstado("reposoEscopeta");
+			NPistola->noDraw(false);
+			Nandar->noDraw(false);
+			NreposoAndar->noDraw(false);
+			NreposoPistola->noDraw(false);
+			NEscopeta->noDraw(false);
+			nodo = NreposoEscopeta;
+		}
 		break;
+
 	case 'a': //andar
-		//std::cout << "ANDAR" << std::endl;
+		std::cout << "ANDAR" << std::endl;
 		MaquinaEstadosAnimation->cambiaEstado("andar");
-		destruirAnimacion(nodo);
-		//destruirAnimacion(animation);
-		//engine->cargarNuevaMalla(nodo, reposo->getEstado());
-		engine->cargarNuevaAnimacion(nodo, andar->getPathAnimacion(), 25);
+		NPistola->noDraw(false);
+		NreposoAndar->noDraw(false);
+		NreposoPistola->noDraw(false);
+		NreposoEscopeta->noDraw(false);
+		NEscopeta->noDraw(false);
+		nodo = Nandar;
 		break;
-	case 'c': //correr
+
+	case 'c': //pistola
+		MaquinaEstadosAnimation->cambiaEstado("pistola");
+		Nandar->noDraw(false);
+		NreposoAndar->noDraw(false);
+		NreposoPistola->noDraw(false);
+		NreposoEscopeta->noDraw(false);
+		NEscopeta->noDraw(false);
+		nodo = NPistola;
+
 		break;
+
 	case 'd': //disparar
+
 		break;
+	case 'e': //escopeta
+		MaquinaEstadosAnimation->cambiaEstado("escopeta");
+		Nandar->noDraw(false);
+		NreposoAndar->noDraw(false);
+		NreposoPistola->noDraw(false);
+		NPistola->noDraw(false);
+		NreposoEscopeta->noDraw(false);
+		nodo = NEscopeta;
+
+		break;
+
 	default:
 		//animacion de andar
 		break;
@@ -221,8 +285,12 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 	if(n == -1)
 	{
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-		if (MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != reposo->getEstado()) {
-			//cambiarAnimacion('r');
+		if (MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != reposoAndar->getEstado()) {
+			cambiarAnimacion('r');
+			engine->resetTransform(nodo, 'r');
+
+			engine->rotarYPR(nodo, anguloCamara - 90, 0.0f, 0.0f);
+			nodo->noDraw(true);
 		}
 		if (recalculo == true)
 		{
@@ -241,6 +309,22 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		engine->rotarYPR(nodo, anguloCamara - 90, 0.0f, 0.0f);
 		vecAux = vecD;
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
+		if (movimiento == "andar")
+		{
+			cambiarAnimacion('a');
+
+			nodo->noDraw(true);
+		}
+		else if (movimiento == "pistola")
+		{
+			cambiarAnimacion('c');
+			nodo->noDraw(true);
+		}
+		else if (movimiento == "escopeta")
+		{
+			cambiarAnimacion('e');
+			nodo->noDraw(true);
+		}
 	}
 	if (n == 1)
 	{
@@ -249,7 +333,22 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara + 90, 0.0f, 0.0f);
 		vecAux = vecA;
+		if (movimiento == "andar")
+		{
+			cambiarAnimacion('a');
 
+			nodo->noDraw(true);
+		}
+		else if (movimiento == "pistola")
+		{
+			cambiarAnimacion('c');
+			nodo->noDraw(true);
+		}
+		else if (movimiento == "escopeta")
+		{
+			cambiarAnimacion('e');
+			nodo->noDraw(true);
+		}
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(-velocity, 0.0f));
 	}
 	if (n == 2)
@@ -259,7 +358,22 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara + 180, 0.0f, 0.0f);
 		vecAux = vecS;
+		if (movimiento == "andar")
+		{
+			cambiarAnimacion('a');
 
+			nodo->noDraw(true);
+		}
+		else if (movimiento == "pistola")
+		{
+			cambiarAnimacion('c');
+			nodo->noDraw(true);
+		}
+		else if (movimiento == "escopeta")
+		{
+			cambiarAnimacion('e');
+			nodo->noDraw(true);
+		}
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, -velocity));
 	}
 	if (n == 3)
@@ -269,8 +383,42 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara, 0.0f, 0.0f);
 		vecAux = vecDir;
+		if (movimiento == "andar")
+		{
+			cambiarAnimacion('a');
 
+			nodo->noDraw(true);
+		}
+		else if (movimiento == "pistola")
+		{
+			cambiarAnimacion('c');
+			nodo->noDraw(true);
+		}
+		else if (movimiento == "escopeta")
+		{
+			cambiarAnimacion('e');
+			nodo->noDraw(true);
+		}
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, velocity));
+	}
+
+	if (n == 4)
+	{
+		cambiarAnimacion('a');
+		movimiento = "andar";
+	}
+
+
+	if (n == 5)
+	{
+		cambiarAnimacion('c');
+		movimiento = "pistola";
+	}
+
+	if (n == 6)
+	{
+		cambiarAnimacion('e');
+		movimiento = "escopeta";
 	}
 
 	entity->getCuerpo2D()->SetLinearVelocity(vel);
@@ -503,4 +651,23 @@ void player::Disparar(Mundo * w, float dt)
 	//	float dumug, int tipo, float velocidad) {
 	listaBalas.push_back(bullet);
 	//cargador--;
+}
+
+void player::load_personaje()
+{
+
+	NreposoAndar = engine->addMalla(reposoAndar->getPathAnimacion());
+	nodo = NreposoAndar;
+	nodo->noDraw(true);
+	godfather = nodo->getPadre();
+	Nandar = engine->addAnimacion(andar->getPathAnimacion(), 8, godfather);
+	Nandar->noDraw(false);
+	NPistola = engine->addAnimacion(pistola->getPathAnimacion(), 8, godfather);
+	NPistola->noDraw(false);
+	NreposoPistola = engine->addMalla(reposoPistola->getPathAnimacion(), godfather);
+	NreposoPistola->noDraw(false);
+	NreposoEscopeta = engine->addMalla(reposoEscopeta->getPathAnimacion(), godfather);
+	NreposoEscopeta->noDraw(false);
+	NEscopeta = engine->addAnimacion(escopeta->getPathAnimacion(), 8, godfather);
+	NEscopeta->noDraw(false);
 }

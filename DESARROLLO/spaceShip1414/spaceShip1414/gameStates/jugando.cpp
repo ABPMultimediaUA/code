@@ -344,6 +344,27 @@ void jugando::handler(void * event, void * window, void * manager)
 		tecla = 0;
 	}
 
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
+	{
+		std::cout << "1" << std::endl;
+		tecla = 4;
+		
+	}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
+	{
+		std::cout << "2" << std::endl;
+		tecla = 5;
+		
+	}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3))
+	{
+		std::cout << "3" << std::endl;
+		tecla = 6;
+
+	}
+
+
+
 	//else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
 	//{
 	//	std::cout << "1" << std::endl;

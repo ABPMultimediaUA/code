@@ -75,6 +75,8 @@ public:
 	void actualizarLista(float dt);
 	void Disparar(Mundo* w, float dt);
 
+	void load_personaje();
+
 
 
 
@@ -98,7 +100,6 @@ private:
 	int dir;
 	bool impulso = false, recalculo = false;
 	MaquinaEstados* MaquinaEstadosAnimation;
-	Estados* andar, *correr, *reposo, *disparar;
 	bool teclaE = false, teclaQ = false;
 	float vida, vidaMax;
 	Inventario *inv;
@@ -106,6 +107,10 @@ private:
 	std::list<Bala*> listaBalas;
 	bool disparo;
 	float tiempoDisparo;
+
+	Estados* andar, *pistola, *escopeta, *reposoAndar, *reposoPistola, *disparar, *reposoEscopeta;
+	TNodo *godfather, *NreposoAndar, *NreposoPistola, *Nandar, *NPistola, *NreposoEscopeta,*NEscopeta;
+	std::string movimiento;
 	
 };
 

@@ -20,6 +20,7 @@ public:
 	TEntidad* getEntidad();
 	TNodo* getPadre();
 	int getID();
+	void noDraw(bool t);
 	void draw();
 	void draw(openGLShader & s, const glm::mat4 & w, const glm::mat4 & pro, double dt);
 private:
@@ -27,6 +28,7 @@ private:
 	TEntidad* entidad;
 	std::vector<TNodo*> hijos;
 	TNodo* padre;
+	bool dibujar;
 	int idN;
 };
 

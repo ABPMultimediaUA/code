@@ -150,25 +150,28 @@ TNodo * TGraphicEngine::addAnimacion(std::string path, unsigned int frames, TNod
 	TTransform * scale = crearTransform();
 	TTransform * translation = crearTransform();
 	TNodo* nodoRotation;
+	TNodo* nodoAnimacion;
 	if (nodoPadre == nullptr)
 	{
 		nodoRotation = crearNodo(nodoRaiz(), rotation);
+
+		TNodo* nodoScale = crearNodo(nodoRotation, scale);
+		TNodo* nodoTranslation = crearNodo(nodoScale, translation);
+		if (path.empty())
+		{
+			nodoAnimacion = crearNodo(nodoTranslation, crearAnimacion("resourse/models/untitled.obj", 1));
+		}
+		else
+		{
+			nodoAnimacion = crearNodo(nodoTranslation, crearAnimacion(path, frames));
+		}
 	}
 	else
 	{
-		nodoRotation = crearNodo(nodoPadre, rotation);
+		nodoAnimacion = crearNodo(nodoPadre, crearAnimacion(path, frames));
 	}
-	TNodo* nodoScale = crearNodo(nodoRotation, scale);
-	TNodo* nodoTranslation = crearNodo(nodoScale, translation);
-	TNodo* nodoAnimacion;
-	if (path.empty())
-	{
-		nodoAnimacion = crearNodo(nodoTranslation, crearAnimacion("resourse/models/untitled.obj", 1));
-	}
-	else
-	{
-		nodoAnimacion = crearNodo(nodoTranslation, crearAnimacion(path, frames));
-	}
+
+
 	return nodoAnimacion;
 }
 
@@ -187,25 +190,26 @@ TNodo * TGraphicEngine::addMalla(std::string path, TNodo * nodoPadre)
 	TTransform * scale = crearTransform();
 	TTransform * translation = crearTransform();
 	TNodo* nodoRotation;
+	TNodo* nodoMalla;
 	if (nodoPadre == nullptr)
 	{
 		nodoRotation = crearNodo(nodoRaiz(), rotation);
+		TNodo* nodoScale = crearNodo(nodoRotation, scale);
+		TNodo* nodoTranslation = crearNodo(nodoScale, translation);
+		if (path.empty())
+		{
+			nodoMalla = crearNodo(nodoTranslation, crearMalla("resourse/models/untitled.obj"));
+		}
+		else
+		{
+			nodoMalla = crearNodo(nodoTranslation, crearMalla(path));
+		}
 	}
 	else
 	{
-		nodoRotation = crearNodo(nodoPadre, rotation);
+		nodoMalla = crearNodo(nodoPadre, crearMalla(path));
 	}
-	TNodo* nodoScale = crearNodo(nodoRotation, scale);
-	TNodo* nodoTranslation = crearNodo(nodoScale, translation);
-	TNodo* nodoMalla;
-	if (path.empty())
-	{
-		nodoMalla = crearNodo(nodoTranslation, crearMalla("resourse/models/untitled.obj"));
-	}
-	else
-	{
-		nodoMalla = crearNodo(nodoTranslation, crearMalla(path));
-	}
+
 	return nodoMalla;
 }
 
