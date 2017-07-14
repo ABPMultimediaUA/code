@@ -27,7 +27,7 @@
 //#include "../Jugador/Personaje.h"
 #include "../Enemigos/CriaAlien.h"
 #include "../Enemigos/Waypoints.h"
-//#include "../Enemigos/AlienBerserker.h"
+#include "../Enemigos/AlienBerserker.h"
 #include "../Enemigos/Enemigo.h"
 //#include "Pared.h"
 //#include "ObjConsumables\Objetos.h"
@@ -216,9 +216,9 @@ void Escenario::dibujarEscenario() {
 	//Waypoints *puntos = new Waypoints();
 	
 	Waypoints *zona1 = new Waypoints();
-	/*Waypoints *zona2 = new Waypoints();
+	Waypoints *zona2 = new Waypoints();
 	Waypoints *zona3 = new Waypoints();
-	Waypoints *zona4 = new Waypoints();*/
+	Waypoints *zona4 = new Waypoints();
 	float tx, ty, tz, rx, ry, rz, ex, ey, ez;
 	float txA, tyA, tzA, rxA, ryA, rzA, exA, eyA, ezA;
 	std::string aux;
@@ -2024,46 +2024,64 @@ void Escenario::dibujarEscenario() {
 				//puntos->mostrarPesos();
 			}
 		}
-		//if ((*I).nombre == "WAYPOINTS_ZONA2") {
-		////	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-		////		IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
-		////			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
-		////			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
-		////			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
-		////		objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);
-		////		zona2->creaPuntos((*T).nombre, vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)));
-		////		//puntos->MuestraPuntos();
-		////		//puntos->creaPesos();
-		////		//puntos->mostrarPesos();
-		////	}
-		//}
-		//if ((*I).nombre == "WAYPOINTS_ZONA3") {
-		////	
-		////	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-		////		IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
-		////			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
-		////			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
-		////			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
-		////		objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);
-		////		zona3->creaPuntos((*T).nombre, vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)));
-		////		//puntos->MuestraPuntos();
-		////		//puntos->creaPesos();
-		////		//puntos->mostrarPesos();
-		////	}
-		//}
-		//if ((*I).nombre == "WAYPOINTS_ZONA4") {
-		////	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-		////		IMeshSceneNode *objeto = SM->addSphereSceneNode(2.0f, 16, 0, -1,
-		////			vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
-		////			vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
-		////			vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
-		////		objeto->getMaterial(0).EmissiveColor.set(20, 200, 80, 80);
-		////		zona4->creaPuntos((*T).nombre, vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)));
-		////		//puntos->MuestraPuntos();
-		////		//puntos->creaPesos();
-		////		//puntos->mostrarPesos();
-		////	}
-		//}
+
+		if ((*I).nombre == "WAYPOINTS_ZONA2") {
+			for (std::vector<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+				
+
+				tx = ((*T).position.x + (*I).position.x);
+				ty = ((*T).position.y + (*I).position.y);
+				tz = ((*T).position.z + (*I).position.z);
+
+				//TNodo * caja = engine->addMalla();
+				//engine->trasladar(caja, tx, ty, -tz);
+
+
+				zona2->creaPuntos((*T).nombre, glm::vec3(tx, ty, tz));
+				//puntos->MuestraPuntos();
+				//puntos->creaPesos();
+				//puntos->mostrarPesos();
+			}
+		}
+		if ((*I).nombre == "WAYPOINTS_ZONA3") {
+		//	
+			for (std::vector<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+
+
+				tx = ((*T).position.x + (*I).position.x);
+				ty = ((*T).position.y + (*I).position.y);
+				tz = ((*T).position.z + (*I).position.z);
+
+				//TNodo * caja = engine->addMalla();
+				//engine->trasladar(caja, tx, ty, -tz);
+
+
+				zona3->creaPuntos((*T).nombre, glm::vec3(tx, ty, tz));
+				//puntos->MuestraPuntos();
+				//puntos->creaPesos();
+				//puntos->mostrarPesos();
+			}
+		}
+
+		if ((*I).nombre == "WAYPOINTS_ZONA4") {
+			for (std::vector<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+
+
+				tx = ((*T).position.x + (*I).position.x);
+				ty = ((*T).position.y + (*I).position.y);
+				tz = ((*T).position.z + (*I).position.z);
+
+				//TNodo * caja = engine->addMalla();
+				//engine->trasladar(caja, tx, ty, -tz);
+
+
+				zona4->creaPuntos((*T).nombre, glm::vec3(tx, ty, tz));
+				//puntos->MuestraPuntos();
+				//puntos->creaPesos();
+				//puntos->mostrarPesos();
+			}
+		}
+
 		if ((*I).nombre == "TAM") {
 			tam = (*I).escala.x* (*I).escala.z;
 		}
@@ -2153,7 +2171,7 @@ void Escenario::dibujarEscenario() {
 
 	std::cout << "-------------------------------------->" << tam << std::endl;
 
-	waypoints.push_back(zona1); //waypoints.push_back(zona2); waypoints.push_back(zona3); waypoints.push_back(zona4);
+	waypoints.push_back(zona1); waypoints.push_back(zona2); waypoints.push_back(zona3); waypoints.push_back(zona4);
 
 	inicializarWaypoints();
 	fabricaDeEnemigos();
@@ -2186,78 +2204,87 @@ void Escenario::fabricaDeEnemigos() {
 					enemigos.push_back(ene);
 				}
 
-				//else if ((*T).nombre == "zona2") {
+				else if ((*T).nombre == "zona2") {
 
-				//	CriaAlien *ene = new CriaAlien(SM, VD, mundo,
-				//		vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z))
-				//		, this, waypoints.at(1));
+					CriaAlien *ene = new CriaAlien(engine, mundo,
+						glm::vec3(tx, ty, -tz),
+						this, waypoints.at(1));
 
-				//	enemigos.push_back(ene);
-				//}
+					//enemigos.push_back(ene);
+				}
 
-				//else if ((*T).nombre == "zona3") {
+				else if ((*T).nombre == "zona3") {
 
-				//	CriaAlien *ene = new CriaAlien(SM, VD, mundo,
-				//		vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z))
-				//		, this, waypoints.at(2));
+					CriaAlien *ene = new CriaAlien(engine, mundo,
+						glm::vec3(tx, ty, -tz),
+						this, waypoints.at(2));
 
-				//	enemigos.push_back(ene);
-				//}
+					//enemigos.push_back(ene);
+				}
 
-				//else if ((*T).nombre == "zona4") {
+				else if ((*T).nombre == "zona4") {
 
-				//	CriaAlien *ene = new CriaAlien(SM, VD, mundo,
-				//		vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z))
-				//		, this, waypoints.at(3));
+					CriaAlien *ene = new CriaAlien(engine, mundo,
+						glm::vec3(tx, ty, -tz),
+						this, waypoints.at(3));
 
-				//	enemigos.push_back(ene);
-				//}
+					//enemigos.push_back(ene);
+				}
 			}
 
 		}
 
-		//else if ((*I).nombre == "ALIEN_BERSERKER") {
+		else if ((*I).nombre == "ALIEN_BERSERKER") {
 
-		//	for (std::list<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
+			
 
-		//		if ((*T).nombre == "zona1") {
+			for (std::vector<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
-		//			AlienBerserker *ene = new AlienBerserker(SM, VD, mundo,
-		//				vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z))
-		//				, waypoints.at(0));
 
-		//			enemigos.push_back(ene);
-		//		}
+				tx = ((*T).position.x + (*I).position.x);
+				ty = ((*T).position.y + (*I).position.y);
+				tz = ((*T).position.z + (*I).position.z);
 
-		//		else if ((*T).nombre == "zona2") {
 
-		//			AlienBerserker *ene = new AlienBerserker(SM, VD, mundo,
-		//				vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z))
-		//				, waypoints.at(1));
+				if ((*T).nombre == "zona1") {
 
-		//			enemigos.push_back(ene);
-		//		}
+					AlienBerserker *ene = new AlienBerserker(engine, mundo,
+						glm::vec3(tx, ty, -tz),
+						this, waypoints.at(0));
 
-		//		else if ((*T).nombre == "zona3") {
+					//enemigos.push_back(ene);
+				}
 
-		//			AlienBerserker *ene = new AlienBerserker(SM, VD, mundo,
-		//				vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z))
-		//				, waypoints.at(2));
+				else if ((*T).nombre == "zona2") {
 
-		//			enemigos.push_back(ene);
-		//		}
+					AlienBerserker *ene = new AlienBerserker(engine, mundo,
+						glm::vec3(tx, ty, -tz),
+						this, waypoints.at(1));
 
-		//		else if ((*T).nombre == "zona4") {
+				//	enemigos.push_back(ene);
+				}
 
-		//			AlienBerserker *ene = new AlienBerserker(SM, VD, mundo,
-		//				vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z))
-		//				, waypoints.at(3));
+				else if ((*T).nombre == "zona3") {
 
-		//			enemigos.push_back(ene);
-		//		}
-		//	}
+					AlienBerserker *ene = new AlienBerserker(engine, mundo,
+						glm::vec3(tx, ty, -tz),
+						this, waypoints.at(2));
 
-		//}
+					enemigos.push_back(ene);
+				}
+
+				else if ((*T).nombre == "zona4") {
+
+					AlienBerserker *ene = new AlienBerserker(engine, mundo,
+						glm::vec3(tx, ty, -tz),
+						this, waypoints.at(3));
+
+					//enemigos.push_back(ene);
+
+				}
+			}
+
+		}
 
 	}
 

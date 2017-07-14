@@ -222,21 +222,19 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
           
 			BuscarWaypoint();
 
-			//st.update(sto, dt);
-
 				
             break;
 
         case PATRULLAR: //patrullar
           
 			Patrullar();
-			//iniLogicaDifusa();
+
 			if (vel < VELMAX * 0.5f) {
 				setVelocidad();
 				estadoActual = DESCANSAR;
 
 			}
-		//	st.update(sto, dt);
+
 			if(floc->getLider()) {
 				floc->cambiarEstadoSequito(entity, FLOCKING);
 			}
@@ -266,14 +264,13 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
 			break;
 
 		case ROTACION:
-		//	maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
+
 
 
 			break;
 
 		case ESCAPAR:
 
-			//maya->getMaterial(0).EmissiveColor.set(0, 255, 50, 150);
 			iniLogicaDifusa();
 
 			break;
@@ -281,7 +278,7 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
 		case CUERPOACUERPO:
 
 			CQC();
-			//st.update(sto, dt);
+
 
 
 			break;
@@ -289,7 +286,7 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
 		case FLOCKING:
 
 			emepzarFlocking(dt);
-			//st.update(sto, dt);
+
 
 
 			break;
@@ -297,18 +294,11 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
     }
 
 	setPos(st.posicion);
-	//entity->getSombraE2D();
 	this->actualizarLista();
-	//GVida->setPosition(st.posicion);
-	//RVida->setPosition(vector3df(st.posicion.X - 8, st.posicion.Y, st.posicion.Z));
-
 
 }
 
-/*void CriaAlien::Mover(int modo) {
 
-
-}*/
 void CriaAlien::emepzarFlocking(float dt) {
 
 	//maya->getMaterial(0).EmissiveColor.set(0, 125, 50, 175);
