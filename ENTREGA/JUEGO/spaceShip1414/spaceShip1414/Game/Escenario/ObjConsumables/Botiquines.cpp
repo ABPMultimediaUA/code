@@ -4,8 +4,8 @@
 #include "../Fisicas/Entity2D.h"
 #include "../Fisicas/Mundo.h"
 
-Botiquines::Botiquines(const glm::vec3 & posicion, const glm::vec3 & rotacion, const glm::vec3 & escala, const int & identificacion) :
-	Objetos(posicion, rotacion, escala, identificacion)
+Botiquines::Botiquines(const glm::vec3 & posicion, const glm::vec3 & rotacion, const glm::vec3 & escala, const int & identificacion, TGraphicEngine *motor) :
+	Objetos(posicion, rotacion, escala, identificacion, motor)
 {
 	vida = 50.0f;
 }
