@@ -11,7 +11,10 @@ Objetos::Objetos(const glm::vec3 & posicion, const glm::vec3 & rotacion, const g
 	rot = rotacion;
 	esca = escala;
 	ID = identificacion;
-	engine = motor
+	engine = motor;
+	motor->escalar(nodo, esca.x, esca.y, esca.z);
+	motor->trasladar(nodo, pos.x, pos.y, pos.z);
+	motor->rotarYPR(nodo, rot.y, rot.x, rot.z);
 
 
 }

@@ -3,11 +3,16 @@
 #include "Botiquines.h"
 #include "../Fisicas/Entity2D.h"
 #include "../Fisicas/Mundo.h"
+#include "../graphicEngine/TGraphicEngine.h"
 
 Botiquines::Botiquines(const glm::vec3 & posicion, const glm::vec3 & rotacion, const glm::vec3 & escala, const int & identificacion, TGraphicEngine *motor) :
 	Objetos(posicion, rotacion, escala, identificacion, motor)
 {
 	vida = 50.0f;
+
+	nodo = motor->addMalla();
+
+
 }
 
 Botiquines::~Botiquines()

@@ -2112,7 +2112,7 @@ void Escenario::dibujarEscenario() {
 				//engine, mundo
 				Botiquines *bot = new Botiquines(glm::vec3(tx, ty, -tz),
 					glm::vec3(rx, ry, rz),
-					glm::vec3(ex, ey, ez), 0, objeto, engine);
+					glm::vec3(ex, ey, ez), 0, engine);
 				bot->setFisica(mundo);
 				objConsumables.push_back(bot);
 			}
@@ -2120,9 +2120,21 @@ void Escenario::dibujarEscenario() {
 		if ((*I).nombre == "MUNICION_PISTOLA") {
 			for (std::vector<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
+				tx = ((*T).position.x + (*I).position.x);
+				ty = ((*T).position.y + (*I).position.y);
+				tz = ((*T).position.z + (*I).position.z);
 
-				MunicionPistola *pistola = new MunicionPistola(municion->getPosition(), municion->getRotation(),
-					municion->getScale(), 2, municion, 2, 7, engine);
+				rx = ((*T).rotation.x + (*I).rotation.x);
+				ry = ((*T).rotation.y + (*I).rotation.y);
+				rz = ((*T).rotation.z + (*I).rotation.z);
+
+				ex = ((*T).escala.x * (*I).escala.x);
+				ey = ((*T).escala.y * (*I).escala.y);
+				ez = ((*T).escala.z * (*I).escala.z);
+
+				MunicionPistola *pistola = new MunicionPistola(glm::vec3(tx, ty, -tz),
+					glm::vec3(rx, ry, rz),
+					glm::vec3(ex, ey, ez), 2, 2, 7, engine);
 				pistola->setFisica(mundo);
 				objConsumables.push_back(pistola);
 			}
@@ -2131,22 +2143,43 @@ void Escenario::dibujarEscenario() {
 		if ((*I).nombre == "MUNICION_ESCOPETA") {
 			for (std::vector<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
 
+				tx = ((*T).position.x + (*I).position.x);
+				ty = ((*T).position.y + (*I).position.y);
+				tz = ((*T).position.z + (*I).position.z);
 
-				MunicionEscopeta *escopeta = new MunicionEscopeta(municion->getPosition(), municion->getRotation(),
-					municion->getScale(), 4, municion, 4, 2, engine);
+				rx = ((*T).rotation.x + (*I).rotation.x);
+				ry = ((*T).rotation.y + (*I).rotation.y);
+				rz = ((*T).rotation.z + (*I).rotation.z);
+
+				ex = ((*T).escala.x * (*I).escala.x);
+				ey = ((*T).escala.y * (*I).escala.y);
+				ez = ((*T).escala.z * (*I).escala.z);
+
+				MunicionEscopeta *escopeta = new MunicionEscopeta(glm::vec3(tx, ty, -tz),
+					glm::vec3(rx, ry, rz),
+					glm::vec3(ex, ey, ez), 4, 4, 2, engine);
 				escopeta->setFisica(mundo);
 				objConsumables.push_back(escopeta);
 			}
 		}
 		if ((*I).nombre == "LLAVES") {
 			for (std::vector<ElementoHijo>::iterator T = (*I).ObjetosEscena.begin(); T != (*I).ObjetosEscena.end(); T++) {
-				IMeshSceneNode *objeto = SM->addCubeSceneNode(1.5f, 0, -1,
-					vector3df(10 * ((*T).position.x + ((*I).position.x)), 10 * ((*T).position.y + ((*I).position.y)), 10 * ((*T).position.z + (*I).position.z)),
-					vector3df((*T).rotation.x + (*I).rotation.x, (*T).rotation.y + (*I).rotation.y, (*T).rotation.z + (*I).rotation.z),
-					vector3df((*T).escala.x * (*I).escala.x, (*T).escala.y * (*I).escala.y, (*T).escala.z * (*I).escala.z));
-				objeto->getMaterial(0).EmissiveColor.set(0, 128, 128, 128);
-				Llave *llave = new Llave(objeto->getPosition(), objeto->getRotation(),
-					objeto->getScale(), 1, objeto, (*T).nombre);
+
+				tx = ((*T).position.x + (*I).position.x);
+				ty = ((*T).position.y + (*I).position.y);
+				tz = ((*T).position.z + (*I).position.z);
+
+				rx = ((*T).rotation.x + (*I).rotation.x);
+				ry = ((*T).rotation.y + (*I).rotation.y);
+				rz = ((*T).rotation.z + (*I).rotation.z);
+
+				ex = ((*T).escala.x * (*I).escala.x);
+				ey = ((*T).escala.y * (*I).escala.y);
+				ez = ((*T).escala.z * (*I).escala.z);
+
+				Llave *llave = new Llave(glm::vec3(tx, ty, -tz),
+					glm::vec3(rx, ry, rz),
+					glm::vec3(ex, ey, ez), 1, (*T).nombre, engine);
 				llave->setFisica(mundo);
 				objConsumables.push_back(llave);
 			}
@@ -2401,9 +2434,9 @@ void Escenario::actualizarCamaras() {
 
 void Escenario::actualizarObjetosConsumables()
 {
-/*
+
 	if (!objConsumables.empty()) {
-		for (std::list<Objetos*>::iterator it = objConsumables.begin(); it != objConsumables.end();) {
+		for (std::vector<Objetos*>::iterator it = objConsumables.begin(); it != objConsumables.end();) {
 			if ((*it) != NULL) {
 				if (!(*it)->getVivo() ) {
 
@@ -2417,7 +2450,7 @@ void Escenario::actualizarObjetosConsumables()
 				it++;
 		}
 
-	}*/
+	}
 }
 
 void Escenario::inicializarWaypoints()

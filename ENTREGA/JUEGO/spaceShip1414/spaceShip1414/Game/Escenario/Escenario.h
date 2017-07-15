@@ -89,7 +89,7 @@ private:
 	std::vector<Luces*> ListLuces;
 	std::vector<Puerta*> puertas;
 	std::vector<Camara*> listaDeCamaras;
-	//std::list<Objetos*> objConsumables;
+	std::vector<Objetos*> objConsumables;
 	std::vector<Waypoints*> waypoints;
 	int tam;
 	Entity2D *entity;
