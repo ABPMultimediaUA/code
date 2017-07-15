@@ -7,7 +7,7 @@ Llave::Llave(const glm::vec3 & posicion, const glm::vec3 & rotacion, const glm::
 	Objetos(posicion, rotacion, escala, identificacion, motor)
 {
 	nombre = nombreHabitacion;
-	nodo = motor->addMalla();
+	nodo = motor->addMalla("resourse/models/Objetos/key-1.obj");
 
 	motor->escalar(nodo, esca.x, esca.y, esca.z);
 	motor->trasladar(nodo, pos.x, pos.y, pos.z);
