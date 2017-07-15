@@ -300,7 +300,7 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 
 
 //constructor de objeto
-Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void * dirObjeto, int tipo)
+Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 escala, void * dirObjeto, int tipo)
 {
 	bodyDef.type = b2_staticBody;
 	bodyDef.position.Set(pos.x, -pos.z);

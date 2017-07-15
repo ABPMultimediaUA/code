@@ -48,6 +48,7 @@ void TGameEngine::update(double deltaTime, movimentHandler* handler, TGraphicEng
 	jugador->actualizarLista(0.0f);
 	scene->actualizarEstadoPuerta();
 	scene->actualizarListaEnemigos(deltaTime);
+	scene->actualizarObjetosConsumables();
 	actualizarTiempoDeDisparo();
 }
 

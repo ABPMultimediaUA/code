@@ -12,26 +12,24 @@ Objetos::Objetos(const glm::vec3 & posicion, const glm::vec3 & rotacion, const g
 	esca = escala;
 	ID = identificacion;
 	engine = motor;
-	motor->escalar(nodo, esca.x, esca.y, esca.z);
-	motor->trasladar(nodo, pos.x, pos.y, pos.z);
-	motor->rotarYPR(nodo, rot.y, rot.x, rot.z);
+
 
 
 }
 
 Objetos::~Objetos() {
 
-	//destroyEntidades();
+	destroyEntidades();
 
 }
 
 void Objetos::destroyEntidades()
 {
-	//if (maya != nullptr && entity != nullptr) {
-	//	maya->getParent()->removeChild(maya);
-	//	delete(entity);
-	//}
-	//maya = nullptr;
+	if (nodo != nullptr && entity != nullptr) {
+		delete(entity);
+		engine->buscarNodoPadre(nodo);
+	}
+	nodo = nullptr;
 	entity = nullptr;
 }
 
