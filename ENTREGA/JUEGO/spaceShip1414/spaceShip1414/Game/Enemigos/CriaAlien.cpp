@@ -22,9 +22,11 @@
 #include "LogicaDifusa.h"
 #include "Flocking\Flocking.h"
 #include "../Fisicas/Mundo.h"
+#include "..\graphicEngine\entityTree\TNodo.h"
+#include "..\graphicEngine\TGraphicEngine.h"
 
 #define RESISTMAX 50
-#define VELMAX 55
+#define VELMAX 20
 
 
 
@@ -32,14 +34,14 @@ CriaAlien::CriaAlien(TGraphicEngine *motor, Mundo* mundo, glm::vec3 posicion, Es
     
 	//seria mejor que se le pasara las cosas necesarias del escenario que todo el escenario entero
 	//para hacer el tema de los navmesehses y los waypoints
-
-	nodo = motor->addMalla("resourse/models/Personajes/criaAlien/cria.obj");
+	engine = motor;
+	load_cria();
 
 	motor->escalar(nodo, 1.0f, 1.0f, 1.0f);
-	motor->trasladar(nodo, posicion.x, -5.0f, posicion.z); //esta en -5 mientras sea el nanosuit
+	motor->trasladar(nodo, posicion.x, 0.0f, posicion.z); //esta en -5 mientras sea el nanosuit
 	motor->rotarYPR(nodo, 180, 0, 0);
 	rot = glm::vec3(180, 0, 0);
-
+	
     vel = VELMAX;
     pos = posicion;
 	//rot = maya->getRotation();
@@ -196,6 +198,18 @@ void CriaAlien::setLider(bool c) {
 	floc->setLider(c);
 }
 
+void CriaAlien::load_cria()
+{
+	Nreposo = engine->addMalla("resourse/animations/Cria_Alien/AndarFix/cria_reposo.obj");
+	nodo = Nreposo;
+	nodo->noDraw(true);
+	godfather = nodo->getPadre();
+	Nandar = engine->addAnimacion("resourse/animations/Cria_Alien/AndarFix/ca", 8, godfather);
+	Nandar->noDraw(false);
+	Naranar = engine->addAnimacion("resourse/animations/Cria_Alien/AranarFix/ar", 12, godfather);
+	Naranar->noDraw(false);
+}
+
 
 
 void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en el estado 0 busque el waypoint mas cercano a su posicion
@@ -221,7 +235,9 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
         case BUSCARPUNTO: 
           
 			BuscarWaypoint();
-
+			nodo->noDraw(false);
+			nodo = Nandar;
+			nodo->noDraw(true);
 				
             break;
 
@@ -238,13 +254,17 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
 			if(floc->getLider()) {
 				floc->cambiarEstadoSequito(entity, FLOCKING);
 			}
-
+			nodo->noDraw(false);
+			nodo = Nandar;
+			nodo->noDraw(true);
             break;
 
         case ATACAR: //atacar
           
 			Atacar(dt);
-
+			nodo->noDraw(false);
+			nodo = Naranar;
+			nodo->noDraw(true);
             break;
 
 
@@ -253,13 +273,12 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
 			setVelocidad();
 			recuperarResistencia();
 			if (resistencia >= RESISTMAX * 0.75) {
-
 				vel = VELMAX;
 				estadoActual = PATRULLAR;
-				
-
 			}
-				
+			nodo->noDraw(false);
+			nodo = Nreposo;
+			nodo->noDraw(true);
 
 			break;
 
@@ -272,7 +291,10 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
 		case ESCAPAR:
 
 			iniLogicaDifusa();
-
+			nodo->noDraw(false);
+			Nreposo->noDraw(false);
+			nodo = Nandar;
+			nodo->noDraw(true);
 			break;
 
 		case CUERPOACUERPO:

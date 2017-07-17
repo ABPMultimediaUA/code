@@ -20,6 +20,8 @@
 class navmeshes;
 class Escenario;
 class BehaivorTree;
+class TNodo;
+class TGraphicEngine;
 
 class CriaAlien : public Enemigo {
 public:
@@ -38,13 +40,15 @@ public:
 	void recuperarResistencia();
 	//void dibujaGrid(ISceneManager *grid);
 	void setLider(bool c);
+	void load_cria();
 
 	
 private:
 
 	navmeshes* nav;
 	BehaivorTree *tree;
-
+	TNodo *godfather, *Nreposo, *Naranar, *Nandar;
+	TGraphicEngine * engine;
 };
 
 #endif /* CRIAALIEN_H */

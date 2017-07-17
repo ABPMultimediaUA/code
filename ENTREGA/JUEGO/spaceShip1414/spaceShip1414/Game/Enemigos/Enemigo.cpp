@@ -103,7 +103,7 @@ void Enemigo::Mover()
 	st.posicion.z = entity->getCuerpo2D()->GetPosition().y;
 
 	if (raza == CRIA) {
-		st.posicion.y = -5.0f;
+		st.posicion.y = 0.0f;
 	}
 
 	setPos(st.posicion);
