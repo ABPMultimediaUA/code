@@ -63,6 +63,7 @@ public:
 	void cambiarCamaraActiva(char m, void * dirCam);
 	void buscarNodoPadre(TNodo * n);
 	void draw(double);
+	void resetShader();
 private:
 	glm::vec3 descomponerMatriz(TNodo *, char);
 	void camaraActivada();

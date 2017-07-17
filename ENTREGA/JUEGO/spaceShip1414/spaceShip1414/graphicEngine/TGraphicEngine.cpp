@@ -18,7 +18,7 @@
 #include "entityTree\TAnimacion.h"
 #include "../Game/Camara.h"
 
-TGraphicEngine::TGraphicEngine(float w, float h) : shader(), registroCamaras(), registroLuces(), width{ w }, height{ h }
+TGraphicEngine::TGraphicEngine(float w, float h) : registroCamaras(), registroLuces(), width{ w }, height{ h }
 {
 	aspect_ratio = w / h;
 	shader = new openGLShader();
@@ -30,6 +30,12 @@ TGraphicEngine::~TGraphicEngine()
 	escena = nullptr;
 	delete gestorRecursos;
 	gestorRecursos = nullptr;
+	delete shader;
+	shader = nullptr;
+	camaraActiva = nullptr;
+	luzActiva = nullptr;
+	registroCamaras.clear();
+	registroLuces.clear();
 	std::cout << "Facade Destroted" << std::endl;
 }
 
@@ -431,6 +437,13 @@ void TGraphicEngine::draw(double deltaTime)
 	shader->unUse();
 }
 
+void TGraphicEngine::resetShader()
+{
+	delete shader;
+	shader = new openGLShader();
+	shader->compile("graphicEngine/Shader/spaceShip1414.vs", "graphicEngine/Shader/spaceShip1414.fs");
+}
+
 glm::vec3 TGraphicEngine::descomponerMatriz(TNodo * nodo, char tipo)
 {
 	glm::mat4 transform = (static_cast<TTransform*>(nodo->getPadre()->getEntidad()))->getMatriz() * (static_cast<TTransform*>(nodo->getPadre()->getPadre()->getEntidad()))->getMatriz() * (static_cast<TTransform*>(nodo->getPadre()->getPadre()->getPadre()->getEntidad()))->getMatriz();
@@ -532,11 +545,7 @@ void TGraphicEngine::cambiarCamaraActiva(char m, void * dirCam)
 
 void TGraphicEngine::buscarNodoPadre(TNodo* n)
 {
-
 	TNodo* aux = n->getPadre()->getPadre()->getPadre();
 	TNodo* godfather = aux->getPadre();
-
 	godfather->removeHijo(aux);
-
-
 }
