@@ -206,6 +206,8 @@ void player::cambiarAnimacion(char c) {
 			NreposoEscopeta->noDraw(false);
 			NEscopeta->noDraw(false);
 			nodo = NreposoAndar;
+			
+			
 		}
 		if (movimiento == "pistola")
 		{
@@ -228,6 +230,8 @@ void player::cambiarAnimacion(char c) {
 			NEscopeta->noDraw(false);
 			nodo = NreposoEscopeta;
 		}
+		
+		//engine->rotarYPR(nodo, 27.0f, 0.0f, 0.0f);
 		break;
 
 	case 'a': //andar
@@ -239,6 +243,7 @@ void player::cambiarAnimacion(char c) {
 		NreposoEscopeta->noDraw(false);
 		NEscopeta->noDraw(false);
 		nodo = Nandar;
+
 		break;
 
 	case 'c': //pistola
@@ -298,9 +303,9 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
 		if (MaquinaEstadosAnimation->getEstadoActivo()->getEstado() != reposoAndar->getEstado()) {
 			cambiarAnimacion('r');
-			engine->resetTransform(nodo, 'r');
+			//engine->resetTransform(nodo, 'r');
 
-			engine->rotarYPR(nodo, anguloCamara - 90, 0.0f, 0.0f);
+			//engine->rotarYPR(nodo, anguloCamara - 90, 0.0f, 0.0f);
 			nodo->noDraw(true);
 		}
 		if (recalculo == true)
@@ -308,9 +313,10 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 			//std::cout << "HORA DEL RECALCULO" << std::endl;
 			asignarVectorDirector(vecDir, anguloCamara);
 			setRecalculo(false);
+			//engine->resetTransform(this->getNodo(), 'r');
+			//engine->rotarYPR(nodo, rotaton.y, 0.0f, 0.0f);
 		}
-		engine->resetTransform(this->getNodo(), 'r');
-		engine->rotarYPR(nodo, rotaton.y, 0.0f, 0.0f);
+	
 	}
 	if (n == 0)
 	{
