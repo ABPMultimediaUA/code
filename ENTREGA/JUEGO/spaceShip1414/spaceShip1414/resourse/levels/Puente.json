@@ -10010,6 +10010,45 @@
           "children": []
         },
         {
+          "name": "1",
+          "components": [
+            {
+              "localPosition": [
+                -40.2,
+                5.7,
+                11.1
+              ],
+              "localRotation": [
+                90.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.00000048,
+                1.00000048
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "range": 15.0,
+              "lightType": "Point",
+              "castsShadows": false,
+              "realtime": false,
+              "type": "Light"
+            }
+          ],
+          "children": []
+        },
+        {
           "name": "26",
           "components": [
             {
@@ -10053,9 +10092,9 @@
           "components": [
             {
               "localPosition": [
-                -95.0,
-                7.26,
-                204.5
+                -105.0,
+                7.3,
+                199.4
               ],
               "localRotation": [
                 90.0,
@@ -10092,9 +10131,9 @@
           "components": [
             {
               "localPosition": [
-                -169.7,
-                8.51,
-                180.0
+                -157.9,
+                8.5,
+                189.3
               ],
               "localRotation": [
                 90.0,
@@ -10244,6 +10283,45 @@
           "children": []
         },
         {
+          "name": "2",
+          "components": [
+            {
+              "localPosition": [
+                -38.6,
+                10.0,
+                -174.7
+              ],
+              "localRotation": [
+                90.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.00000048,
+                1.00000048
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "range": 15.0,
+              "lightType": "Point",
+              "castsShadows": false,
+              "realtime": false,
+              "type": "Light"
+            }
+          ],
+          "children": []
+        },
+        {
           "name": "19",
           "components": [
             {
@@ -10289,7 +10367,7 @@
               "localPosition": [
                 -132.4,
                 8.7,
-                -236.0
+                -238.8
               ],
               "localRotation": [
                 90.0,
@@ -10482,9 +10560,9 @@
           "components": [
             {
               "localPosition": [
-                -303.5,
-                7.94,
-                -56.1
+                -318.6,
+                7.9,
+                -59.0
               ],
               "localRotation": [
                 90.0,
@@ -10523,7 +10601,7 @@
               "localPosition": [
                 -409.2,
                 10.33,
-                -57.1
+                -60.4
               ],
               "localRotation": [
                 90.0,
@@ -10560,7 +10638,7 @@
           "components": [
             {
               "localPosition": [
-                -497.6,
+                -493.1,
                 10.57,
                 -57.1
               ],
@@ -11457,9 +11535,48 @@
           "components": [
             {
               "localPosition": [
-                -114.8,
-                11.2,
-                -60.53
+                -101.2,
+                13.29,
+                -62.0
+              ],
+              "localRotation": [
+                90.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.00000048,
+                1.00000048
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "range": 15.0,
+              "lightType": "Point",
+              "castsShadows": false,
+              "realtime": false,
+              "type": "Light"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "12",
+          "components": [
+            {
+              "localPosition": [
+                -127.5,
+                12.53,
+                -61.9
               ],
               "localRotation": [
                 90.0,
@@ -11811,6 +11928,45 @@
                 -382.67,
                 13.01,
                 40.4
+              ],
+              "localRotation": [
+                90.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.00000048,
+                1.00000048
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "range": 15.0,
+              "lightType": "Point",
+              "castsShadows": false,
+              "realtime": false,
+              "type": "Light"
+            }
+          ],
+          "children": []
+        },
+        {
+          "name": "18",
+          "components": [
+            {
+              "localPosition": [
+                -4.1,
+                19.95,
+                -59.6
               ],
               "localRotation": [
                 90.0,
