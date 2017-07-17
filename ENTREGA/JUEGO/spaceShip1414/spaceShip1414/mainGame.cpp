@@ -7,7 +7,7 @@
 #include <iostream>
 
 
-mainGame::mainGame()
+mainGame::mainGame() : width{ 1366.f }, height{ 768.f }, fullScreen { false }
 {
 }
 
@@ -28,12 +28,12 @@ mainGame::~mainGame()
 	std::cout << "Gracias por jugar a SpaceShip 1414" << std::endl;
 }
 
-bool mainGame::init(const std::string titulo, int width, int height, bool full_screen)
+bool mainGame::init(const std::string titulo)
 {
 	contextSettings = new sf::ContextSettings();
 	contextSettings->depthBits = 24;
 
-	if (full_screen) { window = new sf::RenderWindow(sf::VideoMode(width, height), titulo, sf::Style::Fullscreen, *contextSettings); }
+	if (fullScreen) { window = new sf::RenderWindow(sf::VideoMode(width, height), titulo, sf::Style::Fullscreen, *contextSettings); }
 	else { window = new sf::RenderWindow(sf::VideoMode(width, height), titulo, sf::Style::Default, *contextSettings); }
 	glewInit();
 	window->setVerticalSyncEnabled(true);
@@ -77,4 +77,15 @@ void mainGame::run()
 		manager->getEstadoActivo()->render(window);
 		window->display();
 	}
+}
+
+void mainGame::resizeWindow(float w, float h)
+{
+	width = w;
+	height = h;
+	window->setSize(sf::Vector2u(width, height));
+}
+
+void mainGame::fullScreenWindow()
+{
 }

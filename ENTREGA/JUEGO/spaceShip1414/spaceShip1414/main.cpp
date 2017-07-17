@@ -3,7 +3,7 @@
 
 int main() {
 	mainGame spaceShip1414;
-	if (spaceShip1414.init("SpaceShip 1414", 1366, 768, false))
+	if (spaceShip1414.init("SpaceShip 1414"))
 	{
 		spaceShip1414.run();
 	}

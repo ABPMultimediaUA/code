@@ -2,7 +2,6 @@
 #include "MaquinaEstadosJuego.h"
 #include <iostream>
 
-
 menu::menu(unsigned int width, unsigned int height) : estadosJuego("menuState")
 {
 	if (!tFondo.loadFromFile("resourse/image/espacio" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".jpg", sf::IntRect(1, 1, width, height)))

@@ -2,7 +2,6 @@
 #include "estadosJuego.h"
 #include <SFML/Graphics.hpp>
 
-#define MAX_OPCIONES 3
 
 class ajustes :
 	public estadosJuego
@@ -12,16 +11,19 @@ public:
 	~ajustes();
 	void handler(void*, void *, void *)override;
 	void update(double, void *) override;
-	void render(void * window) override;
-	void MoveUp();
-	void MoveDown();
+	void render(void *) override;
 	int GetPressedItem() { return opcionSelecionada; }
 private:
-	int opcionSelecionada;
+	void checkMousePos(void *);
+	void clickOpcion(void *, void*);
+	bool opcionSelecionada;
 	sf::Font font;
-	sf::Text titulo;
-	sf::Text opciones[MAX_OPCIONES];
-	sf::Sprite fondo;
-	sf::Texture imagen;
+	sf::Text opciones;
+	sf::Sprite sFondo;
+	sf::Texture tFondo;
+	sf::Sprite sHub;
+	sf::Texture tHub;
+	sf::Sprite sButtonSelec;
+	sf::Texture tButtonSelec;
 };
 

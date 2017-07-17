@@ -1,115 +1,107 @@
 #include "ajustes.h"
 #include "MaquinaEstadosJuego.h"
 #include <iostream>
-#include <locale>
 
-ajustes::ajustes(unsigned int width, unsigned int height) : estadosJuego("configState")
+ajustes::ajustes(unsigned int width, unsigned int height) : estadosJuego("configState"), opcionSelecionada{ false }
 {
-	if (!imagen.loadFromFile("resourse/image/cartel" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".jpg", sf::IntRect(1, 1, width, height)))
+	if (!tFondo.loadFromFile("resourse/image/espacio" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".jpg", sf::IntRect(1, 1, width, height)))
 	{
 		std::cerr << "Fondo no cargado" << std::endl;
 	}
 
-	fondo.setTexture(imagen);
+	sFondo.setTexture(tFondo);
+	sFondo.setPosition(0, 0);
+
+	if (!tHub.loadFromFile("resourse/image/menuAjustes" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(1, 1, width, height)))
+	{
+		std::cerr << "Hub no cargado" << std::endl;
+	}
+	tHub.setSmooth(true);
+	sHub.setTexture(tHub);
+	sHub.setPosition(0, 0);
+
+	if (!tButtonSelec.loadFromFile("resourse/image/menuPrinPulsado" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png"))
+	{
+		std::cerr << "Botton Seleccin no cargado" << std::endl;
+	}
+	tButtonSelec.setSmooth(true);
+	sButtonSelec.setTexture(tButtonSelec);
+	sButtonSelec.setPosition(581, 493);
 
 	if (!font.loadFromFile("resourse/font/Radiof.ttf"))
 	{
 		std::cerr << "Fuente no cargada" << std::endl;
 	}
 
-	titulo.setFont(font);
-	titulo.setColor(sf::Color::Yellow);
-	titulo.setString("Ajustes");
-	titulo.setCharacterSize(80);
-
-	titulo.setPosition(sf::Vector2f(width / 2, height*0.1));
-
-	opciones[0].setFont(font);
-	opciones[0].setColor(sf::Color::Red);
-	opciones[0].setString("Resolución ventana:");
-	opciones[0].setPosition(sf::Vector2f(width / 3, height / (MAX_OPCIONES + 1) * 1));
-
-	opciones[1].setFont(font);
-	opciones[1].setColor(sf::Color::White);
-	opciones[1].setString("Pantalla Completa:");
-	opciones[1].setPosition(sf::Vector2f(width / 3, height / (MAX_OPCIONES + 1) * 2));
-
-	opciones[2].setFont(font);
-	opciones[2].setColor(sf::Color::White);
-	opciones[2].setString("Volver");
-	opciones[2].setPosition(sf::Vector2f(width / 3, height / (MAX_OPCIONES + 1) * 3));
-
-	opcionSelecionada = 0;
+	opciones.setFont(font);
+	opciones.setColor(sf::Color::White);
+	opciones.setString("Volver");
+	opciones.setPosition(sf::Vector2f(628, 506));
+	
 }
-
 
 ajustes::~ajustes()
 {
 	std::cout << "Ajustes Destroyed" << std::endl;
 }
 
-void ajustes::update(double deltatime, void * window)
-{
-}
-
 void ajustes::render(void * window)
 {
 	static_cast<sf::RenderWindow *>(window)->pushGLStates();
-	static_cast<sf::RenderWindow *>(window)->draw(fondo);
-	static_cast<sf::RenderWindow *>(window)->draw(titulo);
-	for (int i = 0; i < MAX_OPCIONES; i++)
-	{
-		static_cast<sf::RenderWindow *>(window)->draw(opciones[i]);
-	}
+	static_cast<sf::RenderWindow *>(window)->draw(sFondo);
+	static_cast<sf::RenderWindow *>(window)->draw(sHub);
+	if (opcionSelecionada) { static_cast<sf::RenderWindow *>(window)->draw(sButtonSelec); }
+	static_cast<sf::RenderWindow *>(window)->draw(opciones);
 	static_cast<sf::RenderWindow *>(window)->popGLStates();
 }
 
-void ajustes::MoveUp()
+void ajustes::update(double deltatime, void * window)
 {
-	if (opcionSelecionada - 1 >= 0)
-	{
-		opciones[opcionSelecionada].setColor(sf::Color::White);
-		opcionSelecionada--;
-		opciones[opcionSelecionada].setColor(sf::Color::Red);
-	}
+	checkMousePos(window);
 }
 
-void ajustes::MoveDown()
+void ajustes::checkMousePos(void * window)
 {
-	if (opcionSelecionada + 1 < MAX_OPCIONES)
+	sf::Vector2i posMouse = sf::Mouse::getPosition(*(static_cast<sf::RenderWindow *>(window)));
+	if (posMouse.x > 581 && posMouse.x < 581 + 190)
 	{
-		opciones[opcionSelecionada].setColor(sf::Color::White);
-		opcionSelecionada++;
-		opciones[opcionSelecionada].setColor(sf::Color::Red);
+		if (posMouse.y > 493 && posMouse.y < 493 + 57) {
+			opciones.setColor(sf::Color::White);
+			opcionSelecionada = true;
+			opciones.setColor(sf::Color::Red);
+		}
+		else { opcionSelecionada = false; }
+	}
+	else { opcionSelecionada = false; }
+}
+
+void ajustes::clickOpcion(void * window, void * manager)
+{
+	sf::Vector2i posMouse = sf::Mouse::getPosition(*(static_cast<sf::RenderWindow *>(window)));
+	if (posMouse.x > 581 && posMouse.x < 581 + 190)
+	{
+		if (posMouse.y > 493 && posMouse.y < 493 + 57) {
+			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("menuState");
+		}
 	}
 }
 
 void ajustes::handler(void * event, void * window, void * manager)
 {
+	if (static_cast<sf::Event *>(event)->type == sf::Event::MouseButtonPressed)
+	{
+		if (static_cast<sf::Event *>(event)->key.code == sf::Mouse::Left)
+		{
+			clickOpcion(window, manager);
+		}
+	}
 	switch (static_cast<sf::Event *>(event)->type)
 	{
 	case sf::Event::KeyReleased:
 		switch (static_cast<sf::Event *>(event)->key.code)
 		{
-		case sf::Keyboard::Up:
-			MoveUp();
-			break;
-		case sf::Keyboard::Down:
-			MoveDown();
-			break;
 		case sf::Keyboard::Return:
-			switch (GetPressedItem())
-			{
-			case 0:
-				std::cout << "Jugar Pulsado" << std::endl;
-				break;
-			case 1:
-				std::cout << "Ajustes Pulsado" << std::endl;
-				break;
-			case 2:
-				static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("menuState");
-				break;
-			}
+			if( opcionSelecionada ){ static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("exitState"); }
 			break;
 		}
 		break;
