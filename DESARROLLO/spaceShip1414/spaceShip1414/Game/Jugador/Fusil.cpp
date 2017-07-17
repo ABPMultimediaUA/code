@@ -23,7 +23,7 @@ Fusil::Fusil() : Arma() {
 
 	for (int i = 1; i < 4; i++) {
 		cargadorNiveles[i] = cargadorNiveles[i - 1] + 10;
-		damageNiveles[i] = damageNiveles[i - 1] + damageNiveles[i - 1] * 0.3;
+		damageNiveles[i] = damageNiveles[i - 1] + damageNiveles[i - 1] * 0.3f;
 		totalMunicion[i] = totalMunicion[i - 1] + 30;
 	}
 

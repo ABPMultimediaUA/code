@@ -21,6 +21,7 @@ void MaquinaEstados::addEstado(Estados * nombreEstados, bool activo)
 	{
 		nombreEstados->setEstadoActivo(true);
 		nombreEstados->inicializarEstado();
+		estadoActivo = nombreEstados;
 	}
 }
 
@@ -38,6 +39,7 @@ void MaquinaEstados::cambiaEstado(const std::string nombre)
 					this->getEstadoActivo()->limpiarEstado();
 				}
 				listaEstados[i]->inicializarEstado();
+				estadoActivo = listaEstados[i];
 			}
 		}
 	}
@@ -45,17 +47,19 @@ void MaquinaEstados::cambiaEstado(const std::string nombre)
 
 Estados * MaquinaEstados::getEstadoActivo()
 {
-	if (!listaEstados.empty())
-	{
-		for (std::size_t i = 0; i < listaEstados.size(); i++)
-		{
-			if (listaEstados[i]->getEstadoActivo())
-			{
-				return listaEstados[i];
-			}
-		}
-	}
-	return NULL;
+	//if (!listaEstados.empty())
+	//{
+	//	for (std::size_t i = 0; i < listaEstados.size(); i++)
+	//	{
+	//		if (listaEstados[i]->getEstadoActivo())
+	//		{
+	//			return listaEstados[i];
+	//		}
+	//	}
+	//}
+	//return NULL;
+
+	return estadoActivo;
 }
 
 Estados * MaquinaEstados::getEstado(const std::string nombre)

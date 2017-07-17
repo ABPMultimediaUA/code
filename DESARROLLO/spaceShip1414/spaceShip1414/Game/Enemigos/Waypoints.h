@@ -40,6 +40,7 @@ public:
 	virtual ~Waypoints();
 
 	void MuestraPuntos();
+	void MostrarAdyacencia();
 	void creaPuntos(std::string nombre, glm::vec3 posicion);
 	void creaPesos(Entity2D * entity);
 	void crearMatriz();

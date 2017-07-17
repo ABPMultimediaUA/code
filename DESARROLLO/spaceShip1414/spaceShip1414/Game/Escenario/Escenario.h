@@ -39,6 +39,8 @@ class Entity2D;
 class Mundo;
 class Waypoints;
 class Camara;
+class player;
+class Luces;
 
 
 class Escenario {
@@ -66,7 +68,7 @@ private:
 		TipoDatos position;
 		TipoDatos rotation;
 		TipoDatos escala;
-		std::list<Elemento> ObjetosEscena;
+		std::vector<Elemento> ObjetosEscena;
 	}ElementoHijo;
 
 	typedef struct
@@ -75,54 +77,61 @@ private:
 		TipoDatos position;
 		TipoDatos rotation;
 		TipoDatos escala;
-		std::list<ElementoHijo> ObjetosEscena;
+		std::vector<ElementoHijo> ObjetosEscena;
 	}ElementoPadre;
 
-	std::list<ElementoPadre> Padres;
-	std::list<ElementoHijo> Hijos;
-	std::list<Elemento> SubHijos;
-	//Mundo3D *mundo;
+	std::vector<ElementoPadre> Padres;
+	std::vector<ElementoHijo> Hijos;
+	std::vector<Elemento> SubHijos;
 	Mundo *mundo;
-	//std::list<Enemigo*> enemigos;
-	std::list<Pared*> Listparedes;
-	std::list<Puerta*> puertas;
-	//std::list<Objetos*> objConsumables;
-	//std::vector<Waypoints*> waypoints;
+	std::vector<Enemigo*> enemigos;
+	std::vector<Pared*> Listparedes;
+	std::vector<Luces*> ListLuces;
+	std::vector<Puerta*> puertas;
+	std::vector<Camara*> listaDeCamaras;
+	std::vector<Objetos*> objConsumables;
+	std::vector<Waypoints*> waypoints;
 	int tam;
 	Entity2D *entity;
 	// Juego *jue;
 	//Personaje *pers;
 	TGraphicEngine * engine;
-	Camara *cam;
+	Camara *c;
+	player *jugador;
+
+	
 
 public:
 
-	Escenario(TGraphicEngine * motorApp, Mundo*, Camara *c /*, b2World *world,  Juego* game*/);
+	Escenario(TGraphicEngine * motorApp, Mundo* /*, b2World *world,  Juego* game*/);
 	Escenario(const Escenario& orig);
-	virtual ~Escenario();
-
-	void setPadres(std::string nombre, double t[], double r[], double s[], std::list<Escenario::ElementoHijo> objetos);
-	void setHijos(std::string nombre, double t[], double r[], double s[], std::list<Escenario::Elemento> objetos);
+	~Escenario();
+	Camara* buscarCamara(int ID);
+	void setPadres(std::string nombre, double t[], double r[], double s[], std::vector<Escenario::ElementoHijo> objetos);
+	void setHijos(std::string nombre, double t[], double r[], double s[], std::vector<Escenario::Elemento> objetos);
 	void setSubHijos(std::string nombre, double t[], double r[], double s[]);
 	void muestraEstructura();
 	void dibujarEscenario();
 	void fabricaDeEnemigos();
 	void destroyWaypoints();
-	std::list<Escenario::ElementoHijo> getHijos();
-	std::list<Escenario::Elemento> getSubHijos();
+	std::vector<Escenario::ElementoHijo> getHijos();
+	std::vector<Escenario::Elemento> getSubHijos();
 	void removeListHijos();
 	void removeListSubHijos();
-	void actualizarListaEnemigos(/*f32 dt*/);
+	void actualizarListaEnemigos(float dt);
 
-	std::list<Pared*> getParedes();
+	std::vector<Pared*> getParedes();
 	int getTam();
 	void cambiaEstado(std::string mensaje);
 	void actualizarEstadoPersonaje();
 	void actualizarEstadoPuerta();
+	Camara * getCamara();
+	void actualizarCamaras();
 	void actualizarObjetosConsumables();
 	void inicializarWaypoints();
 	void eleminarEnemigos();
-	//Personaje* getPersonaje();
+	void cambioDeLuces(int ID);
+	player* getPersonaje();
 	void destroyPared();
 };
 

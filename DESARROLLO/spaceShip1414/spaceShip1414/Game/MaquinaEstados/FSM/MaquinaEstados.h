@@ -11,7 +11,7 @@ class MaquinaEstados
 
 private:
 	std::vector<Estados*> listaEstados;
-
+	Estados* estadoActivo;
 	
 /*public:
 	static MaquinaEstados& getInstancia(void)

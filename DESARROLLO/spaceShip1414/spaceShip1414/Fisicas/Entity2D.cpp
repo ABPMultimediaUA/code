@@ -14,6 +14,15 @@
 #include "Entity2D.h"
 //#include "../Enemigos/Enemigo.h"
 #include "RayCastCallback.h"
+#ifndef GLEW_STATIC
+#define GLEW_STATIC
+#include <GL/glew.h>
+#endif
+#ifndef GLFW_STATIC
+#define GLFW_STATIC
+#include <GLFW\glfw3.h>
+#endif
+
 
 #define FILTRO_PERSONAJE 1
 #define FILTRO_PARED 2
@@ -21,27 +30,23 @@
 #define FILTRO_DISPAROPERS 4
 #define FILTRO_DISPAROENE 5
 #define FILTRO_ENEMIGO 6
+#define FILTRO_SENSORCAMARA 7
 #define FILTRO_SOMB_ENEMIGO 14
 
 
 #define FILTRO_PUERTAABIERTA 15
 
-#define DEGTORAD 180/3.14
 
+#define DEGTORAD 0.0174532925199432957f
 
 //hacer diferentes constructores para los distintos objetos
-
-glm::vec4 Entity2D::multiplicarVector(const glm::mat4& m, float x, float y, float z)
-{
-	return m * glm::vec4(x, y, z, 1.0);
-}
 
 
 Entity2D::Entity2D(b2World * world)
 {
 
 	bodyDef.type = b2_staticBody;
-	bodyDef.position.Set(-99999999, -99999999);
+	bodyDef.position.Set(static_cast<float>(-99999999), static_cast<float>(-99999999));
 	bodyShape.SetAsBox(5.0f, 5.0f);
 	md.mass = 50.0f;
 	md.center = b2Vec2(3, 3);
@@ -67,11 +72,11 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
 	int scale = 2;
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(pos.x, pos.z);
-    bodyShape.SetAsBox(2, 2);
+    bodyShape.SetAsBox(1, 1);
 
-	escalaFixture.x = 0.05;
-	escalaFixture.y = 0.05;
-	escalaFixture.z = 0.05;
+	escalaFixture.x = 0.05f;
+	escalaFixture.y = 0.05f;
+	escalaFixture.z = 0.05f;
 
 
     md.mass = 1.0f;
@@ -83,27 +88,13 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, glm::vec3 rot, void* dirPers) 
     body->SetUserData(this);
     body->SetMassData(&md);
 	live = true;
-    /*
-   sombraDef.type = b2_dynamicBody;
-   sombraDef.position.Set(pos.X, pos.Z);
-   sombraShape.SetAsBox(5.0f, 5.0f);
-   sombraP= world->CreateBody(&sombraDef);
-   sombraP -> CreateFixture(&sombraShape, 1.0f);
-   sombraP->GetFixtureList()->SetFriction(10.0f);
-   sombraP->SetUserData(this);
-   sombraP->SetMassData(&md);*/
+
     filtro.groupIndex = FILTRO_PERSONAJE;
     body->GetFixtureList()->SetFilterData(filtro);
     //   sombraP->GetFixtureList()->SetFilterData(filtro);
     idenSh = 0;
 
 
-    /* fisica=smgr->addCubeSceneNode(10);
-     fisica->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
-     fisica->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING,false);
-     fisica->getMaterial(0).EmissiveColor.set(0,255,10,20);
-     fisica->setPosition(vector3df(sombraP->GetPosition().x,10,sombraP->GetPosition().y));
-     */
     iden = 0;
     objeto3D = dirPers;
 
@@ -116,7 +107,6 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     bodyDef.type = b2_staticBody;
 
     bodyDef.position.Set(pos.x, -pos.z);
-	//bodyDef.angle = rot.y * 180 / 3.14;
 	int scale = 1;
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
@@ -130,7 +120,7 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
 
     }*/ 
 
-	bodyShape.SetAsBox(escala.x, escala.z);
+	bodyShape.SetAsBox(escala.x/2, escala.z/2);
 	escalaFixture.x = scale * escala.x;
 	escalaFixture.y = 1;
 	escalaFixture.z = scale * escala.z;
@@ -141,16 +131,11 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     body -> CreateFixture(&bodyShape, 1.0f);
     body->SetUserData(this);
 
-	if(rot.y > 180 * DEGTORAD)
-		body->SetTransform(body->GetPosition(), rot.y - 180 * DEGTORAD);
-
-	else if(rot.y < -180 * DEGTORAD) {
-		body->SetTransform(body->GetPosition(), rot.y + 180 * DEGTORAD);
-
-	}
     filtro.groupIndex = FILTRO_PARED;
     body->GetFixtureList()->SetFilterData(filtro);
 	live = true;
+
+	body->SetTransform(body->GetPosition(), -rot.y * DEGTORAD);
 
     objeto3D = dirPared;
     iden = 1;
@@ -170,26 +155,25 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escal
     //si tiene rotacion en Y van | sino van -
     // con la Y rotada y como esta escalado en X en unity hay que poner el escalado de X en la Y del body
     //std::cout<<"PUERTA: "<<this<<" ESCALA X: "<<escala.X<<" ESCALA Z: "<<escala.Z<<std::endl;
-    if (escala.z != 1) {
 
-        bodyShape.SetAsBox(8* escala.x,escala.z);
-        bodyShape2.SetAsBox(escala.x,  escala.z);	
-    } else {
-        bodyShape.SetAsBox( escala.x, 8 * escala.z);
-        bodyShape2.SetAsBox( escala.x,  escala.z);	
-    }
+
+	//hay que cambiarlo para que se adapte a cada puerta en distinta posicions
+	bodyShape.SetAsBox(5.5*escala.x, 5.5*escala.z);
+	bodyShape2.SetAsBox(3*escala.x, 1.5*escala.z);
+	
 
     objeto3D = dirPuerta;
     puertaBody = world->CreateBody(&bodyDef);
 	puertaBody-> CreateFixture(&bodyShape, 1.0f);
-	puertaBody->GetFixtureList()->SetSensor(sensor);
-	
+	puertaBody->GetFixtureList()->SetSensor(true);
+	puertaBody->SetTransform(bodyDef.position, -rot.y * DEGTORAD);
     //std::cout<<"SENSOR: "<<body->GetFixtureList()->IsSensor()<<std::endl;
 	puertaBody->SetUserData(this);
 
 	body = world->CreateBody(&bodyDef);
     body->CreateFixture(&bodyShape2, 1.0f);
 	body->SetUserData(this);
+	body->SetTransform(bodyDef.position, -rot.y * DEGTORAD);
     filtro.groupIndex = FILTRO_PUERTA;
     //    body->GetFixtureList()->SetFilterData(filtro);
     iden = 2;
@@ -212,7 +196,7 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, bool vivo, void
 
 
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(pos.x, pos.z);
+    bodyDef.position.Set(pos.x, -pos.z);
     // bodyShape.SetAsBox(2, 2);
     bodyCircle.m_p.Set(0, 0);
     bodyCircle.m_radius = 1;
@@ -243,62 +227,72 @@ Entity2D::Entity2D(b2World* world, glm::vec3 pos, glm::vec3 rot, bool vivo, void
 Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, unsigned int raza) {
 
 
+
+	//myFixtureDef.shape = &polygonShape;
+	//tower->m_body->CreateFixture(&myFixtureDef);
+
+	////make the tower rotate at 45 degrees per second
+	//tower->m_body->SetAngularVelocity(45 * DEGTORAD);
+
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set((pos.x), (pos.z));
+    bodyDef.position.Set((pos.x), (-pos.z));
 
 	if (raza == 10) {
-		bodyShape.SetAsBox(5.0f, 5.0f);
+		bodyShape.SetAsBox(2.5f, 2.5f);
 	}
 
 	else if (raza == 11) {
-		bodyShape.SetAsBox(10.0f, 10.0f);
+		bodyShape.SetAsBox(2.5f, 2.5f);
 	}
 
 	bodyCircle.m_p.Set(0, 0);
-	bodyCircle.m_radius = 45; 
+	bodyCircle.m_radius = 5; 
 
-    body = world->CreateBody(&bodyDef);
-	body->CreateFixture(&bodyCircle, 1.0f);
+	////add semicircle radar sensor to tower
+	float radius = 15;
+	float tamSensor = 90.0f;
+	float rotSenParaEmpezar = 45.0f;
+	b2Vec2 vertices[8];
+	vertices[0].Set(0, 0);
+	for (int i = 0; i < 7; i++) {
+
+		float angle = (i / 6.0 * tamSensor) + rotSenParaEmpezar;
+		angle *= DEGTORAD;
+		vertices[i + 1].Set(radius * cosf(angle), radius * sinf(angle));
+
+	}
+
+	sombraShape.Set(vertices, 8);
+
+	
+	  body = world->CreateBody(&bodyDef);
+	body->CreateFixture(&sombraShape, 1.0f);
 	body->GetFixtureList()->SetSensor(true);
     body -> CreateFixture(&bodyShape, 1.0f);
     live = vivo;
    
     body->SetUserData(this);
     
+	//body->SetAngularVelocity(45 * DEGTORAD);//esto es para rotar el sensor
 
-    sombraDef.type = b2_kinematicBody;
-    sombraDef.position.Set(pos.x, pos.z);
-    sombraShape.SetAsBox(6.0f, 6.0f);
-    sombraE = world->CreateBody(&sombraDef);
-    sombraE -> CreateFixture(&sombraShape, 1.0f);
+    //sombraDef.type = b2_kinematicBody;
+    //sombraDef.position.Set(pos.x, pos.z);
+    //sombraShape.SetAsBox(2.0f, 2.0f);
+    //sombraE = world->CreateBody(&sombraDef);
+    //sombraE -> CreateFixture(&sombraShape, 1.0f);
 	
-    //sombraE->GetFixtureList()->SetFriction(10.0f);
-    sombraE->SetUserData(this);
-    sombraE->SetMassData(&md);
+    ////sombraE->GetFixtureList()->SetFriction(10.0f);
+    //sombraE->SetUserData(this);
+    //sombraE->SetMassData(&md);
     idenSh = 1;
     filtro.groupIndex = FILTRO_ENEMIGO;
+	body->GetFixtureList()->SetFilterData(filtro);
+	//for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
+	//	f->SetFilterData(filtro);
 
-	for (b2Fixture* f = body->GetFixtureList(); f; f = f->GetNext()) {
-		f->SetFilterData(filtro);
-
-	}
+	//}
 	
-	filtro.groupIndex = FILTRO_PUERTAABIERTA;
-	sombraE->GetFixtureList()->SetFilterData(filtro);
 
- //   fisica2 = smgr->addSphereSceneNode(45);
-	////smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
- //   fisica2->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
- //   fisica2->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
- //   fisica2->getMaterial(0).EmissiveColor.set(0, 100, 10, 100);
- //   fisica2->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
-
-	//direccion = smgr->addCubeSceneNode(5);
-	////smgr->addSphereSceneNode(25)->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y));
-	//direccion->setMaterialFlag(irr::video::EMF_WIREFRAME, true);
-	//direccion->setMaterialFlag(irr::video::EMF_BACK_FACE_CULLING, false);
-	//direccion->getMaterial(0).EmissiveColor.set(0, 140, 50, 100);
-	//direccion->setPosition(vector3df(sombraE->GetPosition().x, 10, sombraE->GetPosition().y+5));
 
     iden = 4;
     objeto3D = dirEnemigo;
@@ -306,10 +300,10 @@ Entity2D::Entity2D(b2World *world, glm::vec3 pos, bool vivo, void* dirEnemigo, u
 
 
 //constructor de objeto
-Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void * dirObjeto, int tipo)
+Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 escala, void * dirObjeto, int tipo)
 {
 	bodyDef.type = b2_staticBody;
-	bodyDef.position.Set(pos.x, pos.z);
+	bodyDef.position.Set(pos.x, -pos.z);
 	
 
 	body = world->CreateBody(&bodyDef);
@@ -352,6 +346,40 @@ Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 esca
 	3:   " " de subfusil
 	4:   " " de escopeta	
 	*/
+}
+
+//entity de los sensores de cambio de camara
+
+Entity2D::Entity2D(b2World * world, glm::vec3 pos, glm::vec3 rot, glm::vec3 escala, void * dirCamara, bool sensor)
+{
+	bodyDef.type = b2_staticBody;
+	bodyDef.position.Set(pos.x, -pos.z);
+
+	if (rot.y == 90) {
+
+		bodyShape.SetAsBox(2.5*escala.z, 2*escala.x);
+
+
+	}
+
+	else {
+		bodyShape.SetAsBox(3*escala.x, 3*escala.z);
+
+	}
+
+	body = world->CreateBody(&bodyDef);
+	body->CreateFixture(&bodyShape, 1.0f);
+	body->SetUserData(this);
+	body->GetFixtureList()->SetSensor(true);
+	filtro.groupIndex = FILTRO_SENSORCAMARA;
+	body->GetFixtureList()->SetFilterData(filtro);
+	live = true;
+	body->SetTransform(body->GetPosition(), -rot.y * DEGTORAD);
+	iden = 7; //sensor de activar camara
+	
+
+	objeto3D = dirCamara;
+
 }
 
 Entity2D::Entity2D(const Entity2D& orig) {
@@ -398,7 +426,6 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
 
     RayCastCallback *callback = new RayCastCallback();
     llamarCallBack(callback, inicio, fin);
-	float dis;
 	normal = callback->getNormal();
 	puntoDeChoque = callback->getPuntoDeChoque();
 
@@ -406,28 +433,16 @@ float Entity2D::rayCasting(b2Vec2 inicio, b2Vec2 fin) {
 		std::cout << "----- RESULT: " << callback->getDistancia() + 1.0f << std::endl;
 		return callback->getDistancia();
 	}
-
-		
-
-
 	else if(callback->getEntidadChocada() != 1) {
-
 		return 0.0f;
 	}
-
-
-
-	
-
 	else {
 		return callback->getDistancia();
 	}
-
 }
 
 void Entity2D::llamarCallBack(RayCastCallback* callback, b2Vec2 inicio, b2Vec2 fin) {
     body->GetWorld()->RayCast(callback, inicio, fin);
-
 }
 
 void Entity2D::destruirFixture() {
@@ -470,7 +485,7 @@ b2Body* Entity2D::getCuerpo2D() {
 }
 
 void Entity2D::getRotarDireccion() {
-	float ang = -atan2f(body->GetPosition().x, body->GetPosition().y) * 180 / 3.14;
+	float ang = -atan2f(body->GetPosition().x, body->GetPosition().y) * 180 / 3.14f;
 	//direccion->setRotation(vector3df(0,ang,0));
 	
 }

@@ -1,32 +1,35 @@
 
 #include "Objetos.h"
-#include "../../Fisicas/Entity2D.h"
+#include "../Fisicas/Entity2D.h"
 #include "../Fisicas/Mundo.h"
+#include "../graphicEngine/TGraphicEngine.h"
 
-Objetos::Objetos(const glm::vec3 & posicion, const glm::vec3 & rotacion, const glm::vec3 & escala, const int & identificacion)
+
+Objetos::Objetos(const glm::vec3 & posicion, const glm::vec3 & rotacion, const glm::vec3 & escala, const int & identificacion, TGraphicEngine *motor)
 {
 	pos = posicion;
 	rot = rotacion;
-	scale = escala;
+	esca = escala;
 	ID = identificacion;
-	
+	engine = motor;
+
 
 
 }
 
 Objetos::~Objetos() {
 
-	//destroyEntidades();
+	destroyEntidades();
 
 }
 
 void Objetos::destroyEntidades()
 {
-	//if (maya != nullptr && entity != nullptr) {
-	//	maya->getParent()->removeChild(maya);
-	//	delete(entity);
-	//}
-	//maya = nullptr;
+	if (nodo != nullptr && entity != nullptr) {
+		delete(entity);
+		engine->buscarNodoPadre(nodo);
+	}
+	nodo = nullptr;
 	entity = nullptr;
 }
 
@@ -42,7 +45,7 @@ glm::vec3 Objetos::getRot()
 
 glm::vec3 Objetos::getEscala()
 {
-	return scale;
+	return esca;
 }
 
 int Objetos::getID()
@@ -57,4 +60,29 @@ void Objetos::setFisica(Mundo * world)
 
 bool Objetos::getVivo() {
 	return entity->getLive();
+}
+
+void Objetos::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
+{
+	motorApp->rotar(nodo, a, x, y, z);
+}
+
+void Objetos::rotationYPR(TGraphicEngine * motorApp, float y, float p, float r)
+{
+	motorApp->rotarYPR(nodo, y, p, r);
+}
+
+void Objetos::scale(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->escalar(nodo, x, y, z);
+}
+
+void Objetos::translation(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->trasladar(nodo, x, y, z);
+}
+
+TNodo * Objetos::getNodo()
+{
+	return nodo;
 }

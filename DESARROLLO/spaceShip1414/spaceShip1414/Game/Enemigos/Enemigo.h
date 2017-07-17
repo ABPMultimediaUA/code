@@ -30,6 +30,13 @@ class Entity2D;
 class Bala;
 class LogicaDifusa;
 class Flocking;
+class TTransform;
+class TGraphicEngine;
+class TNodo;
+class Mundo;
+
+#define DEGTORAD 0.0174532925199432957f
+#define RADTODEG 180 / 3.14f 
 
 #define CRIA 10
 #define BERSERKER 11
@@ -46,9 +53,11 @@ class Flocking;
 #define CUERPOACUERPO 7
 #define FLOCKING 8
 
-#define MULTIVEL 25
+#define MULTIVEL 50
+#define PROPCURVA 20
 //el enemigo deberia tener un estado que sea
 //siguiendo al lider o algo para aplicar el flocking
+// a menos velocidad mas propcurva y a mas vel, menos propcurva
 
 
 #ifdef _IRR_WINDOWS_
@@ -75,12 +84,12 @@ typedef struct
 	{
 		posicion += velocidad*dt;
 		orientacion += rotacion*dt;
-		posicion.y = 10;
-		st.linear.y = 10;
+		//posicion.y = -5.0;
+		st.linear.y = 0;
 		velocidad += st.linear*dt;
 		rotacion += st.angular*dt;
-
-		if (velocidad.length() > 5.0f)
+		//std::cout << "CACA: " << velocidad.length() << std::endl;
+		if (glm::length(velocidad) > 5.0f)
 		{
 			velocidad = glm::normalize(velocidad);
 			velocidad *= MULTIVEL;
@@ -97,6 +106,7 @@ class Enemigo {
 
 public:
 	//Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, glm::vec3 posicion, Waypoints* puntos);
+	Enemigo(TGraphicEngine*, Mundo*, glm::vec3 posicion, Waypoints *puntos);
 	// Enemigo(const Enemigo& orig);
 	virtual ~Enemigo();
 
@@ -110,6 +120,8 @@ public:
 	void setPos(glm::vec3 pos);
 	bool estaVivo();
 	glm::vec3 getPos();
+	glm::vec3 getRot();
+	glm::vec3 getScale();
 	glm::vec3 getVectorVel();
 	float getVel();
 	virtual void quitarVida(float damage) = 0;
@@ -159,10 +171,24 @@ public:
 	void deleteEntity(Entity2D * e);
 
 
+	//metodos del motor
+
+	float getYaw();
+	float getPitch();
+	void rotation(TGraphicEngine *, float, float, float, float);
+	void rotationYPR(TGraphicEngine *, float, float, float);
+	void scale(TGraphicEngine *, float, float, float);
+	void translation(TGraphicEngine *, float, float, float);
+	void setYaw(float);
+	void setPitch(float);
+	TNodo * getNodo();
+
+
+
 protected:
 	
 
-	//IMeshSceneNode *maya;
+
 	float vel;
 	glm::vec3 vecVel;
 	glm::vec3 pos, rot, vectorUnitario;
@@ -170,10 +196,7 @@ protected:
 	int estadoActual;
 	float vida;
 	int raza;
-	//ITextSceneNode *GVida;
-	//ITextSceneNode *RVida;
-	//ISceneManager* smgr1;
-	//IVideoDriver* VD;
+
 	b2World* mundo;
 	float blindaje;
 	Waypoints *waypoints;
@@ -188,7 +211,7 @@ protected:
 	float resistencia;
 	bool vista; //usado para esquivar enemigos
 	bool esquivarPared;
-	bool vision;
+	bool vision; //cambiarlo por un raycasting que te diga si choca contra algo o no
 	//hay que crear booleanos para ver si tiene que esquivar un muro, enemigo o si puede verte
 	Kinematic st;
 	Steering sto;
@@ -201,7 +224,11 @@ protected:
 	float damageBala;
 	float time;
 
-
+	//variables motor
+	TNodo *nodo;
+	TGraphicEngine * engine;
+	float yaw;
+	float pitch;
 };
 
 #endif /* ENEMIGO_H */

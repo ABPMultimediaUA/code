@@ -1,7 +1,7 @@
 
 
 #include "Flocking.h"
-#include "../../Fisicas/Entity2D.h"
+#include "../Fisicas/Entity2D.h"
 #include "../Enemigo.h"
 #include <math.h>
 
@@ -46,7 +46,7 @@ glm::vec3 Flocking::cohesion(Entity2D * entity)
 
 	if(vecindario.size() > 0) {
 
-		centroMasas = media(centroMasas, vecindario.size());
+		centroMasas = media(centroMasas, static_cast<int>(vecindario.size()));
 		vectorU = centroMasas - posE;
 		vectorU = glm::normalize(vectorU);
 	}
@@ -79,7 +79,7 @@ glm::vec3 Flocking::alineacion(Entity2D * entity)
 
 	if (vecindario.size() > 0) {
 
-		vectorU = media(vectorU, vecindario.size());
+		vectorU = media(vectorU, static_cast<int>(vecindario.size()));
 		vectorU = glm::normalize(vectorU);
 	}
 	return vectorU;
@@ -126,7 +126,7 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 	float radio = 5.0f;
 	float distance;
 	float minSeparation;
-	float shortestTime = INT_MAX;
+	float shortestTime = INT_MAX*1.0f;
 
 	Entity2D *firstEntity = nullptr;
 	float fisrtMinSeparation = -1.0f;
@@ -183,7 +183,7 @@ void Flocking::colisionAvoidance(Entity2D *e) {
 			speedRel = sqrtf(x + y);
 
 
-			float time = (posRel.length() * velRel.length()) / (speedRel * speedRel);
+			float time = (glm::length(posRel)  * glm::length(velRel)) / (speedRel * speedRel);
 
 			//std::cout << "TIME: " << time << std::endl;
 			//std::cout << "shortestTime: " << shortestTime << std::endl;
@@ -304,7 +304,7 @@ void Flocking::removeEntity(Entity2D * e)
 
 	for(std::size_t i = 0; i < vecindario.size(); i++) {
 		if(vecindario.at(i) != nullptr && vecindario.at(i) == e) {
-			vecindario.at(i) == nullptr;
+			vecindario.at(i) = nullptr;
 		}
 
 	}
@@ -319,7 +319,6 @@ glm::vec3 Flocking::media(glm::vec3 v, int cont)
 	v.z / cont;
 
 	return v;
-	
 }
 
 float Flocking::distanciaAlCuadrado(glm::vec3 u, glm::vec3 v)

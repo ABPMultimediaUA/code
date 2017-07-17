@@ -53,7 +53,7 @@ void TTransform::escalar(float x, float y, float z)
 void TTransform::rotar(float r, float x, float y, float z)
 {
 	matriz = glm::rotate(matriz, r, glm::vec3(x, y, z));
-	std::cout << "MatrizRotacion: " << glm::to_string(matriz) << std::endl;
+	//std::cout << "MatrizRotacion: " << glm::to_string(matriz) << std::endl;
 }
 
 void TTransform::rotarYPR(float yaw, float pitch, float roll = 0.0f)
@@ -88,7 +88,7 @@ void TTransform::beginDraw()
 	multiplicarMatriz(matriz, matrizActual);
 }
 
-void TTransform::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection)
+void TTransform::beginDraw(openGLShader& shader, const glm::mat4& view, const glm::mat4& proyection, double dt)
 {
 	apilar(matrizActual);
 	matrizActual = multiplicarMatriz(matriz, matrizActual);
@@ -112,4 +112,12 @@ void TTransform::setMatriz(glm::mat4 m) {
 void TTransform::resetMatriz()
 {
 	matriz = identidad();
+}
+
+
+void TTransform::lookat(glm::vec3 eye, glm::vec3 tar, glm::vec3 mat)
+{
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	matriz = glm::lookAt(eye, tar, mat);
 }

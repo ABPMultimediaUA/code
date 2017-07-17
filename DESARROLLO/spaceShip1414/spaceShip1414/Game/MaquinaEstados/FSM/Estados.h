@@ -8,6 +8,7 @@ private:
 	std::string nombreEstado;
 	bool estadoActivo;
 	bool primerEstado;
+	std::string pathAnimacion;
 
 public:
 	Estados();
@@ -18,6 +19,8 @@ public:
 	void setEstadoActivo(bool activo);
 	virtual void inicializarEstado();
 	virtual void limpiarEstado();
+	std::string getPathAnimacion();
+	void asignarPath(std::string path);
 
 
 };

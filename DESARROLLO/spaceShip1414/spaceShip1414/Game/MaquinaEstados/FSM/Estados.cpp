@@ -5,6 +5,7 @@
 Estados::Estados()
 {
 	nombreEstado = "desconocido";
+	pathAnimacion = "desconocido";
 	estadoActivo = false;
 	primerEstado = true;
 }
@@ -12,6 +13,7 @@ Estados::Estados()
 Estados::Estados(std::string nuevoEstado)
 {
 	nombreEstado = nuevoEstado;
+	pathAnimacion = "desconocido";
 	estadoActivo = false;
 	primerEstado = true;
 }
@@ -44,4 +46,14 @@ void Estados::inicializarEstado()
 void Estados::limpiarEstado()
 {
 	estadoActivo = false;
+}
+
+std::string Estados::getPathAnimacion()
+{
+	return pathAnimacion;
+}
+
+void Estados::asignarPath(std::string path)
+{
+	pathAnimacion = path;
 }

@@ -18,12 +18,12 @@ Escopeta::Escopeta() : Arma() {
 	cargadorNiveles[0] = 5;
 	damageNiveles[0] = 8;
 	totalMunicion[0] = 35;
-	capacidadDeMunicion = 0;
+	capacidadDeMunicion = 15;
 	municionActual = 5;
 
 	for (int i = 1; i < 4; i++) {
 		cargadorNiveles[i] = cargadorNiveles[i - 1] + 1;
-		damageNiveles[i] = damageNiveles[i - 1] + damageNiveles[i - 1] * 0.7;
+		damageNiveles[i] = damageNiveles[i - 1] + damageNiveles[i - 1] * 0.7f;
 		totalMunicion[i] = totalMunicion[i - 1] + 5;
 	}
 

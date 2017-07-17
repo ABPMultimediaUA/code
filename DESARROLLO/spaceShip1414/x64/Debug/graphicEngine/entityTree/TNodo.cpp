@@ -10,6 +10,7 @@ TNodo::TNodo()
 {
 	padre = nullptr;
 	entidad = nullptr;
+	dibujar = true;
 	idN = id++;
 }
 
@@ -22,6 +23,7 @@ TNodo::TNodo(TEntidad *e)
 	else {
 		entidad = nullptr;
 	}
+	dibujar = true;
 	idN = id++;
 }
 
@@ -42,6 +44,7 @@ TNodo::TNodo(TNodo *p, TEntidad *e)
 	else {
 		entidad = nullptr;
 	}
+	dibujar = true;
 	idN = id++;
 }
 
@@ -52,6 +55,7 @@ TNodo::~TNodo()
 		delete entidad;
 		entidad = nullptr;
 	}
+
 	if (hijos.size() > 0) {
 		for (std::vector<TNodo*>::iterator it = hijos.begin(); it != hijos.end(); ++it)
 		{
@@ -63,6 +67,16 @@ TNodo::~TNodo()
 	}
 	std::cout << "Nodo eliminado" << std::endl;
 }
+
+
+void TNodo::destruirEntidad()
+{
+	if (entidad == nullptr) {
+		delete entidad;
+		entidad = nullptr;
+	}
+}
+
 
 bool TNodo::addHijo(TNodo* n)
 {
@@ -86,8 +100,9 @@ int TNodo::removeHijo(TNodo* n)
 	{
 		if (*it == n)
 		{
-			hijos.erase(it);
 			delete *it;
+			hijos.erase(it);
+			
 			return 1;
 		}
 	}
@@ -119,31 +134,42 @@ int TNodo::getID()
 	return idN;
 }
 
+void TNodo::noDraw(bool t)
+{
+	dibujar = t;
+}
+
 void TNodo::draw()
 {
-	if (this->entidad) {
-		this->entidad->beginDraw();
-	}
-	for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {
-		(*it)->draw();
-	}
-	if (this->entidad) {
-		this->entidad->endDraw();
+	if (dibujar == true)
+	{
+		if (this->entidad) {
+			this->entidad->beginDraw();
+		}
+		for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {
+			(*it)->draw();
+		}
+		if (this->entidad) {
+			this->entidad->endDraw();
+		}
 	}
 }
 
-void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro, Mundo * world)
+void TNodo::draw(openGLShader& s, const glm::mat4& w, const glm::mat4& pro, double dt)
 {
-	if (this->entidad) {
-		this->entidad->beginDraw(s,w,pro);
-	}
-	for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {
-		
-		(*it)->draw(s, w, pro, world);
+	if (dibujar == true)
+	{
+		if (this->entidad != nullptr) {
+			this->entidad->beginDraw(s, w, pro, dt);
+		}
+		for (std::vector<TNodo*>::iterator it = this->hijos.begin(); it != this->hijos.end(); ++it) {
 
+			(*it)->draw(s, w, pro, dt);
+
+		}
+		if (this->entidad) {
+			this->entidad->endDraw();
+		}
 	}
-	if (this->entidad) {
-		this->entidad->endDraw();
-	}
-	
 }
+

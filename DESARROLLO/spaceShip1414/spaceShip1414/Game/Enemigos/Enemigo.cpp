@@ -22,6 +22,7 @@
 //#include "../Jugador/Bala.h"
 #include "LogicaDifusa.h"
 #include "Flocking\Flocking.h"
+#include "../graphicEngine/TGraphicEngine.h"
 
 
 
@@ -31,20 +32,19 @@
 #pragma comment(linker, "/subsystem:windows /ENTRY:mainCRTStartup")
 #endif
 
-//Enemigo::Enemigo(ISceneManager* smgr, IVideoDriver* driver, b2World *world, vector3df posicion, Waypoints* puntos) {
-//    
-//
-//
-//	smgr1 = smgr;
-//	mundo = world;
-//	VD = driver;
-//	puntoIni = nullptr;
-//	puntoFin = nullptr;
-//	dir = -1;
-//	vista = false;
-//
-//
-//}
+
+
+
+Enemigo::Enemigo(TGraphicEngine *motor, Mundo *m, glm::vec3 posicion, Waypoints * puntos)
+{
+		
+	engine = motor;
+	puntoIni = nullptr;
+	puntoFin = nullptr;
+	dir = -1;
+	vista = false;
+
+}
 
 //Enemigo::Enemigo(const Enemigo& orig) {
 //}
@@ -68,6 +68,8 @@ Enemigo::~Enemigo() {
     delete(entity);
 	puntoFin = nullptr;
 	puntoIni = nullptr;
+	engine->buscarNodoPadre(nodo);
+	nodo = nullptr;
 }
 
 void Enemigo::Update(float dt) {
@@ -96,9 +98,13 @@ void Enemigo::Mover()
 
 	vec.Set(st.velocidad.x, st.velocidad.z);
 	entity->getCuerpo2D()->SetLinearVelocity(vec);
-	entity->getSombraE2D()->SetLinearVelocity(vec);
+	//entity->getSombraE2D()->SetLinearVelocity(vec);
 	st.posicion.x = entity->getCuerpo2D()->GetPosition().x;
 	st.posicion.z = entity->getCuerpo2D()->GetPosition().y;
+
+	if (raza == CRIA) {
+		st.posicion.y = -5.0f;
+	}
 
 	setPos(st.posicion);
 
@@ -117,14 +123,14 @@ Kinematic Enemigo::seek(const glm::vec3 target)
 */
 
 	
-	float maxAcceleration = MULTIVEL * 2.5;
+	float maxAcceleration = vel * PROPCURVA ;
 //	std::cout << "target  " << target.X << " " << target.Z << std::endl;
 	sto.linear = target - st.posicion;
 	//std::cout << "linear  " << sto.linear.X << " " << sto.linear.Z << std::endl;
 	sto.linear = glm::normalize(sto.linear);
 	sto.linear *= maxAcceleration;
 
-	float desireAngle = atan2f(-target.x, target.z) * 180 / 3.14;
+	float desireAngle = atan2f(-target.x, target.z) * 180 / 3.14f;
 	//maya->setRotation(glm::vec3(0, desireAngle - 90, 0));
 
 	align(target);
@@ -143,12 +149,12 @@ Kinematic Enemigo::arrive(const glm::vec3 target) {
 	float distance;
 	float targetSpeed;
 	glm::vec3 targetVelocity;
-	float timeTarget = 0.1;
+	float timeTarget = 0.1f;
 	direction = target - st.posicion;
 	//distance = direction.getLength();
 	distance = sqrtf(powf(direction.x, 2) + powf(direction.z, 2));
 
-	float maxAcceleration = MULTIVEL * 2.5;
+	float maxAcceleration = vel * PROPCURVA;
 
 	if (distance < 5.0f)
 	{
@@ -187,6 +193,7 @@ Kinematic Enemigo::arrive(const glm::vec3 target) {
 	}
 
 	sto.angular = 0;
+	//align(target);
 
 	Mover();
 
@@ -199,11 +206,11 @@ void Enemigo::align(const glm::vec3 target){
 
 
 	float targetRotation;
-	float timeTarget = 0.1;
+	float timeTarget = 0.1f;
 
-	float maxAngularAcceleration = MULTIVEL * 2.5;
-	float maxRotation = 135.0f;
-	float desireAngle = atan2f(-target.x, target.z) * 180 / 3.14;
+	float maxAngularAcceleration = vel * PROPCURVA;
+	float maxRotation = 45.0f;
+	float desireAngle = atan2f(-target.x, -target.z) * RADTODEG;
 	float rotationSize;
 	float rotation = desireAngle - st.orientacion;
 	rotationSize = abs(rotation);
@@ -243,15 +250,33 @@ void Enemigo::align(const glm::vec3 target){
 		sto.angular *= maxAngularAcceleration;
 	}
 
-	//sto.linear = 0;
-	
-	//maya->setRotation(vector3df(0, sto.angular, 0));
+	if (desireAngle < 0.0f) {
+		desireAngle += 360;
+	}
 
+	else if (desireAngle > 360) {
+		desireAngle -= 360;
+	}
+
+	//sto.linear = 0;
+	//std::cout << "---- ANGLE: " << sto.angular << std::endl;
+	//maya->setRotation(vector3df(0, sto.angular, 0));
+	/*
+	Smooth rotazione
+	Use setPosition to set the actual body angle to: body.angle = body.angle + (angleTarget - body.angle) * 0.05
+	*/
+	engine->resetTransform(nodo, 'r');
+	engine->rotarYPR(nodo, desireAngle - 180, 0.0f, 0.0f);
+	entity->getCuerpo2D()->SetTransform(entity->getCuerpo2D()->GetPosition(), (desireAngle ) * DEGTORAD);
+	//entity->getCuerpo2D()->SetAngularVelocity(0.0f);
+	//entity->getCuerpo2D()->SetAngularVelocity(sto.angular * DEGTORAD);
+	std::cout << "--------> ANGLE CUERPO: " <<this<<" ---> "<<entity->getCuerpo2D()->GetAngle() * RADTODEG << std::endl;
+	
 }
 
 void Enemigo::collisionAvoidance(glm::vec3 vecU) {
 
-	float maxAcceleration = MULTIVEL * 1.25f;
+	float maxAcceleration = vel * (PROPCURVA * 0.5);
 
 
 	sto.linear = vecU * maxAcceleration;
@@ -259,12 +284,13 @@ void Enemigo::collisionAvoidance(glm::vec3 vecU) {
 	Mover();
 }
 
+//esquiva paredes
 void Enemigo::obstacleAvoidance()
 {
 
 	float look = 50.0f;
 	float avoidDistance = 70.0f; //cuanto mayor es el numero mas rapido esquivan
-	float lim = -4.31602000;
+	float lim = -4.31602000f;
 	std::cout << "OBSTACLE!!" << std::endl;
 	glm::vec3 target(0, 0, 0);
 	glm::vec3 rayVector = st.velocidad;
@@ -309,14 +335,26 @@ glm::vec3 Enemigo::getPos() {
     return pos;
 }
 
+glm::vec3 Enemigo::getRot()
+{
+	return rot;
+}
+
 glm::vec3 Enemigo::getVectorVel()
 {
 	return vecVel;
 }
 
-void Enemigo::setPos(glm::vec3 pos) {
+void Enemigo::setPos(glm::vec3 p) {
 
     //maya->setPosition(pos);
+
+	engine->resetTransform(this->getNodo(), 't');
+	//setPos(entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	pos = p;
+	engine->trasladar(this->getNodo(), entity->getCuerpo2D()->GetPosition().x, this->getPos().y, -entity->getCuerpo2D()->GetPosition().y);
+	entity->getCuerpo2D()->SetAngularVelocity(0.0f);
+
 }
 
 float Enemigo::getVel() {
@@ -325,15 +363,15 @@ float Enemigo::getVel() {
 
 void Enemigo::setVelocidad() {
 
-    if (entity->getSombraE2D() != NULL) {
-        entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-        entity->getSombraE2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
-		setPos(st.posicion);
-		st.velocidad = glm::vec3(0, 0, 0);
-		sto.linear = glm::vec3(0, 0, 0);
-		sto.angular = 0.0f;
+    
+    entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+	entity->getCuerpo2D()->SetAngularVelocity(0.0f);
+	setPos(st.posicion);
+	st.velocidad = glm::vec3(0, 0, 0);
+	sto.linear = glm::vec3(0, 0, 0);
+	sto.angular = 0.0f;
 
-    }
+    
 }
 
 void Enemigo::Patrullar() {
@@ -480,18 +518,18 @@ void Enemigo::setPesoMaximoLogicaDifusa(float x)
 
 void Enemigo::iniLogicaDifusa()
 {
-	//std::cout << std::endl;
-	//std::cout << "ESTADO ANTES: " << std::endl;
-	//std::cout << estadoActual << std::endl;
-	//std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << "ESTADO ANTES: " << std::endl;
+	std::cout << estadoActual << std::endl;
+	std::cout << std::endl;
 	
 	logica->fusificador(vida, st.posicion, posJugador, moral, resistencia);
 	estadoActual = logica->getEstadoDecidido();
 
-	//std::cout << std::endl;
-	//std::cout << "ESTADO DESPUES: " << std::endl;
-	//std::cout << estadoActual << std::endl;
-	//std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << "ESTADO DESPUES: " << std::endl;
+	std::cout << estadoActual << std::endl;
+	std::cout << std::endl;
 }
 
 
@@ -538,4 +576,49 @@ void Enemigo::setGrupoFlocking(Entity2D *e) {
 
 void Enemigo::deleteEntity(Entity2D *e) {
 	floc->removeEntity(e);
+}
+
+float Enemigo::getYaw()
+{
+	return yaw;
+}
+
+float Enemigo::getPitch()
+{
+	return pitch;
+}
+
+void Enemigo::rotation(TGraphicEngine * motorApp, float a, float x, float y, float z)
+{
+	motorApp->rotar(nodo, a, x, y, z);
+}
+
+void Enemigo::rotationYPR(TGraphicEngine * motorApp, float y, float p, float r)
+{
+	motorApp->rotarYPR(nodo, y, p, r);
+}
+
+void Enemigo::scale(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->escalar(nodo, x, y, z);
+}
+
+void Enemigo::translation(TGraphicEngine * motorApp, float x, float y, float z)
+{
+	motorApp->trasladar(nodo, x, y, z);
+}
+
+void Enemigo::setYaw(float y)
+{
+	yaw = y;
+}
+
+void Enemigo::setPitch(float p)
+{
+	pitch = p;
+}
+
+TNodo * Enemigo::getNodo()
+{
+	return nodo;
 }

@@ -1,6 +1,12 @@
 #include "Pared.h"
+#ifndef ENTITY2D_GUARD
+#define ENTITY2D_GUARD
 #include "../Fisicas\Entity2D.h"
+#endif
+#ifndef MUNDO_GUARD
+#define MUNDO_GUARD
 #include "../Fisicas\Mundo.h"
+#endif
 #include "../graphicEngine\TGraphicEngine.h"
 #include "../graphicEngine\entityTree\TTransform.h"
 #include "../graphicEngine\entityTree\TNodo.h"
@@ -17,7 +23,19 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	rotation = motorApp->crearTransform();
 	scale = motorApp->crearTransform();
 	translation = motorApp->crearTransform();
+	scale->escalar(sca.x, sca.y, sca.z);
 
+	//cambio de ejes de rotacion en unity
+	//if (r.y == 180)
+	//	r.y = 0;
+
+	//else if (r.y == 0)
+	//	r.y = 180;
+
+	std::cout << model << std::endl;
+
+	rotation->rotarYPR(r.y + 180, r.x, r.z);
+	translation->trasladar(tras.x, tras.y, tras.z);
 
 	pos = tras;
 	rot = r;
@@ -32,13 +50,7 @@ Pared::Pared(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 s
 	if (model!="")
 	{
 		nodoMalla = motorApp->crearNodo(nodoTransfTM, motorApp->crearMalla("resourse/models/Escenario/" + model + "/" + model + ".obj"));
-		rotation->resetMatriz();
-		rotation->rotarYPR(rot.y, 0.0, 0.0);
-
 	}
-	scale->escalar(sca.x, sca.y, sca.z);
-
-	translation->trasladar(tras.x, tras.y, tras.z);
 }
 
 Pared::~Pared()
