@@ -16,7 +16,7 @@
 Escopeta::Escopeta() : Arma() {
 
 	cargadorNiveles[0] = 5;
-	damageNiveles[0] = 8;
+	damageNiveles[0] = 25;
 	totalMunicion[0] = 35;
 	capacidadDeMunicion = 15;
 	municionActual = 5;

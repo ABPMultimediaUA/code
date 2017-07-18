@@ -8,7 +8,7 @@
 #include <SFML\OpenGL.hpp>
 #include "../Game/player.h"
 
-jugando::jugando(float w, float h) : estadosJuego("playingState"), arma{ -1 }, opciones{ false }, rec{ false }, pausa{ false },
+jugando::jugando(float w, float h) : estadosJuego("playingState"), arma{ -1 }, opciones{ false }, rec{ false }, pausa{ false }, victoria { false },
 texto{ nullptr }, font{ nullptr }, tMenuPausa{ nullptr }, bMenuPausa{ nullptr }, bPulsetMenu{ nullptr }, tPulsetMenu{ nullptr }, bPausaPlay{ nullptr }, tPausa{ nullptr },
 tPlay{ nullptr }, iArma{ nullptr }, iVida{ nullptr }, tVida{ nullptr }, rectangle{ nullptr }, reloj{ nullptr }, fFondo{ nullptr }, tFondo{ nullptr }, width{ w }, height{ h },
 tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }, parcialReloj(sf::milliseconds(10)), fin{ false }, debugFisicas { true }
@@ -440,6 +440,11 @@ void jugando::update(double deltatime, void * window, void * manager)
 		if (gameApp != nullptr && gameApp->getPlayer()->getVida() <= 0.0f)
 		{
 			fin = true;
+			pausa = true;
+		}
+		else if (gameApp != nullptr && gameApp->getPlayer()->getVictory())
+		{
+			victoria = true;
 			pausa = true;
 		}
 		else

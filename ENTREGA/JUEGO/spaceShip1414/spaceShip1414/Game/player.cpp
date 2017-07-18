@@ -27,7 +27,7 @@
 #define PISTOL 0
 #define SHOTGUN 1
 
-player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 }, pitch{ 0 }
+player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 }, pitch{ 0 }, victoria{ false }
 {
 	engine = motorApp;
 	anguloCamara = 90.0f; //para hacer que rote con la camara
@@ -674,7 +674,7 @@ void player::Disparar(Mundo * w, float dt)
 		disparo = true;
 		//glm::vec3 caca = engine->getRotacion(nodo);
 	
-		Bala *bullet = new Bala(engine, w, pos, vecAux, 10.0f, 1, 400.0f, rotAnt);
+		Bala *bullet = new Bala(engine, w, pos, vecAux, getDamage(), 1, 600.0f, rotAnt);
 		//Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3 mousePosition,
 		//	float dumug, int tipo, float velocidad) {
 		listaBalas.push_back(bullet);
@@ -872,4 +872,14 @@ void player::load_personaje()
 	NreposoEscopeta->noDraw(false);
 	NEscopeta = engine->addAnimacion(escopeta->getPathAnimacion(), 8, godfather);
 	NEscopeta->noDraw(false);
+}
+
+void player::victory()
+{
+	victoria = true;
+}
+
+bool player::getVictory()
+{
+	return victoria;
 }

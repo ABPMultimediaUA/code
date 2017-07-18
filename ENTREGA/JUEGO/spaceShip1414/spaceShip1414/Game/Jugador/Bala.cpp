@@ -25,7 +25,7 @@ Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3
 	//pos = maya->getPosition();
 
 	nodo = motorApp->addMalla("resourse/models/Objetos/bullet.obj");
-	motorApp->escalar(nodo, 0.2f, 0.2f, 0.2f);
+	motorApp->escalar(nodo, 0.1f, 0.1f, 0.1f);
 	motorApp->trasladar(nodo, posPers.x, posPers.y + 5.0f, posPers.z);
 	engine = motorApp;
 

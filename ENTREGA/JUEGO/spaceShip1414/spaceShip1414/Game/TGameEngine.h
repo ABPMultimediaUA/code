@@ -23,6 +23,7 @@ public:
 	Mundo * getMundo();
 
 	void actualizarTiempoDeDisparo();
+	void victory();
 
 private:
 	unsigned int flags;

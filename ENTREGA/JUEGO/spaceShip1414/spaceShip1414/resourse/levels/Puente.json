@@ -4595,92 +4595,6 @@
           "children": []
         },
         {
-          "name": "Waypoint-1 (16)",
-          "components": [
-            {
-              "localPosition": [
-                -293.98,
-                0.0,
-                113.73
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "P_Vestuario"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-1 (17)",
-          "components": [
-            {
-              "localPosition": [
-                -289.76,
-                0.0,
-                131.17
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "P_Vestuario"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
           "name": "Waypoint-1 (18)",
           "components": [
             {
@@ -6644,49 +6558,6 @@
       ],
       "children": [
         {
-          "name": "Waypoint-1 (4)",
-          "components": [
-            {
-              "localPosition": [
-                -340.85,
-                0.0,
-                -71.8
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "P_Puerta_A"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
           "name": "Waypoint-1 (5)",
           "components": [
             {
@@ -7160,49 +7031,6 @@
           "children": []
         },
         {
-          "name": "Waypoint-1 (16)",
-          "components": [
-            {
-              "localPosition": [
-                -373.0,
-                0.0,
-                18.2
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "P_Puerta_A"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
           "name": "Waypoint-1 (17)",
           "components": [
             {
@@ -7253,49 +7081,6 @@
                 -372.8,
                 0.0,
                 211.5
-              ],
-              "localRotation": [
-                0.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.0,
-                1.0
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "mesh": "unity default resources_Sphere",
-              "enabled": true,
-              "castShadows": true,
-              "receiveShadows": true,
-              "lightmapIndex": -1,
-              "lightmapTilingOffset": [
-                1.0,
-                1.0,
-                0.0,
-                0.0
-              ],
-              "materials": [
-                "P_Puerta_A"
-              ],
-              "type": "MeshRenderer"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "Waypoint-1 (19)",
-          "components": [
-            {
-              "localPosition": [
-                -291.14,
-                0.0,
-                -6.58
               ],
               "localRotation": [
                 0.0,
@@ -9971,6 +9756,45 @@
           "children": []
         },
         {
+          "name": "18",
+          "components": [
+            {
+              "localPosition": [
+                -9.0,
+                12.0,
+                -66.0
+              ],
+              "localRotation": [
+                90.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "range": 10.0,
+              "lightType": "Point",
+              "castsShadows": false,
+              "realtime": false,
+              "type": "Light"
+            }
+          ],
+          "children": []
+        },
+        {
           "name": "1",
           "components": [
             {
@@ -11967,45 +11791,6 @@
                 -382.67,
                 12.29,
                 40.4
-              ],
-              "localRotation": [
-                90.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.00000048,
-                1.00000048
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "color": [
-                1.0,
-                1.0,
-                1.0,
-                1.0
-              ],
-              "range": 15.0,
-              "lightType": "Point",
-              "castsShadows": false,
-              "realtime": false,
-              "type": "Light"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "18",
-          "components": [
-            {
-              "localPosition": [
-                -4.1,
-                15.34,
-                -59.6
               ],
               "localRotation": [
                 90.0,
