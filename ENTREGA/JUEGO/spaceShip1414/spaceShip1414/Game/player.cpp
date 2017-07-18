@@ -674,7 +674,7 @@ void player::Disparar(Mundo * w, float dt)
 		disparo = true;
 		//glm::vec3 caca = engine->getRotacion(nodo);
 	
-		Bala *bullet = new Bala(engine, w, pos, vecAux, 10.0f, 1, 400.0f, rotAnt);
+		Bala *bullet = new Bala(engine, w, pos, vecAux, getDamage(), 1, 600.0f, rotAnt);
 		//Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3 mousePosition,
 		//	float dumug, int tipo, float velocidad) {
 		listaBalas.push_back(bullet);

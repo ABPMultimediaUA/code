@@ -2251,7 +2251,7 @@ void Escenario::fabricaDeEnemigos() {
 						glm::vec3(tx, ty, -tz),
 						this, waypoints.at(1));
 
-					//enemigos.push_back(ene);
+					enemigos.push_back(ene);
 				}
 
 				else if ((*T).nombre == "zona3") {
@@ -2260,7 +2260,7 @@ void Escenario::fabricaDeEnemigos() {
 						glm::vec3(tx, ty, -tz),
 						this, waypoints.at(2));
 
-					//enemigos.push_back(ene);
+					enemigos.push_back(ene);
 				}
 
 				else if ((*T).nombre == "zona4") {
@@ -2269,7 +2269,7 @@ void Escenario::fabricaDeEnemigos() {
 						glm::vec3(tx, ty, -tz),
 						this, waypoints.at(3));
 
-					//enemigos.push_back(ene);
+					enemigos.push_back(ene);
 				}
 			}
 
@@ -2293,7 +2293,7 @@ void Escenario::fabricaDeEnemigos() {
 						glm::vec3(tx, ty, -tz),
 						this, waypoints.at(0));
 
-					//enemigos.push_back(ene);
+					enemigos.push_back(ene);
 				}
 
 				else if ((*T).nombre == "zona2") {
@@ -2302,7 +2302,7 @@ void Escenario::fabricaDeEnemigos() {
 						glm::vec3(tx, ty, -tz),
 						this, waypoints.at(1));
 
-				//	enemigos.push_back(ene);
+					enemigos.push_back(ene);
 				}
 
 				else if ((*T).nombre == "zona3") {
@@ -2320,7 +2320,7 @@ void Escenario::fabricaDeEnemigos() {
 						glm::vec3(tx, ty, -tz),
 						this, waypoints.at(3));
 
-					//enemigos.push_back(ene);
+					enemigos.push_back(ene);
 
 				}
 			}

@@ -8,7 +8,7 @@
 #include <iostream>
 
 
-mainGame::mainGame() : width{ 1366.f }, height{ 768.f }, fullScreen { true }
+mainGame::mainGame() : width{ 1366.f }, height{ 768.f }, fullScreen { false }
 {
 }
 
