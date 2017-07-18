@@ -216,7 +216,7 @@ void CriaAlien::Update(float dt) { //cambiar a que no se le pase nada y que en e
 	
 	//crear metodos para todos los estados
 
-	if (vista == true && estadoActual != FLOCKING && floc->getLider() != true) {
+	if (vista == true && estadoActual != FLOCKING && estadoActual != CUERPOACUERPO && floc->getLider() != true) {
 		floc->colisionAvoidance(entity);
 
 	}

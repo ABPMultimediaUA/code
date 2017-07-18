@@ -169,7 +169,12 @@ glm::vec3 AStar::getVectorDeDireccion(const glm::vec3 & posEne, const glm::vec3 
 bool AStar::estoyEnElNodo(const glm::vec3 &posEne, const glm::vec3 &posNodo)
 {
 	int xE, zE, xN, zN;
-	xE = static_cast<int>(ceilf(posEne.x));	zE = static_cast<int>(ceilf(posEne.z));	xN = static_cast<int>(ceilf(posNodo.x)); zN = static_cast<int>(ceilf(posNodo.z));
+
+	xE = static_cast<int>(truncf(posEne.x));
+	zE = static_cast<int>(truncf(posEne.z));
+	xN = static_cast<int>(truncf(posNodo.x));
+	zN = static_cast<int>(truncf(posNodo.z));
+
 	/*float xE, zE, xN, zN;
 	xE = posEne.X;	zE = posEne.Z;	xN = posNodo.X; zN = posNodo.Z;*/
 

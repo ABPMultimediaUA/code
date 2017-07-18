@@ -288,8 +288,8 @@ void Enemigo::collisionAvoidance(glm::vec3 vecU) {
 void Enemigo::obstacleAvoidance()
 {
 
-	float look = 50.0f;
-	float avoidDistance = 70.0f; //cuanto mayor es el numero mas rapido esquivan
+	float look = 10.0f;
+	float avoidDistance = 30.0f; //cuanto mayor es el numero mas rapido esquivan
 	float lim = -4.31602000f;
 	std::cout << "OBSTACLE!!" << std::endl;
 	glm::vec3 target(0, 0, 0);
@@ -311,8 +311,8 @@ void Enemigo::obstacleAvoidance()
 	
 	if(rayVector.x!=0 && rayVector.z!=0)
 	{
-		float distansia = entity->rayCasting(b2Vec2(st.posicion.x, st.posicion.z), 
-			b2Vec2(rayVector.x + st.posicion.x, rayVector.z + st.posicion.z));
+		float distansia = entity->rayCasting(b2Vec2(st.posicion.x, -st.posicion.z), 
+			b2Vec2(rayVector.x + st.posicion.x, -rayVector.z - st.posicion.z));
 		
 		if(distansia != 0.0f) {
 		
