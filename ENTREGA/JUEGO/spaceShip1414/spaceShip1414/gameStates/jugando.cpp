@@ -428,7 +428,7 @@ void jugando::update(double deltatime, void * window, void * manager)
 	}
 	else
 	{
-		if (gameApp->getPlayer()->getVida <= 0)
+		if (gameApp->getPlayer()->getVida() <= 0)
 		{
 			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("gameOverState");
 		}

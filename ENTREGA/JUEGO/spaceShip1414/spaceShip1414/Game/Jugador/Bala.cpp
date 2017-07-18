@@ -17,7 +17,7 @@
 #endif
 
 Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3 mousePosition, 
-	float dumug, int tipo, float velocidad) {
+	float dumug, int tipo, float velocidad, float rotBala) {
 
 
 
@@ -27,7 +27,6 @@ Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3
 	nodo = motorApp->addMalla("resourse/models/Objetos/bullet.obj");
 	motorApp->escalar(nodo, 0.2f, 0.2f, 0.2f);
 	motorApp->trasladar(nodo, posPers.x, posPers.y + 5.0f, posPers.z);
-	motorApp->rotarYPR(nodo, 0, 0, 0);
 	engine = motorApp;
 
 	posRaton = mousePosition; //vector direccion del personaje donde esta mirando
@@ -37,6 +36,7 @@ Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3
 	damage = dumug;
 
 	if (tipo == 1) { //jugador
+		motorApp->rotarYPR(nodo, rotBala, 0, 0);
 		entity = new Entity2D(world->getWorldBox2D(), posPers, glm::vec3(0,0,0), true, this, tipo);
 	}
 	else {

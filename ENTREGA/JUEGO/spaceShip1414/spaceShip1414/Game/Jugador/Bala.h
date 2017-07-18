@@ -44,7 +44,7 @@ private:
 
 public:
 
-	Bala(TGraphicEngine*, Mundo * world, glm::vec3 posPers, glm::vec3 mousePosition, float dumug, int tipo, float velocidad);
+	Bala(TGraphicEngine * motorApp, Mundo * world, glm::vec3 posPers, glm::vec3 mousePosition, float dumug, int tipo, float velocidad, float rotBala);
 	Bala(const Bala& orig);
 	virtual ~Bala();
 	void setPosition(glm::vec3);

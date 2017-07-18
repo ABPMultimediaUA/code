@@ -324,6 +324,7 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		vel = velocity * vel;
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara - 90, 0.0f, 0.0f);
+		rotAnt = anguloCamara - 90;
 		vecAux = vecD;
 		//entity->getCuerpo2D()->SetLinearVelocity(b2Vec2(velocity, 0.0f));
 		if (movimiento == "andar")
@@ -349,6 +350,8 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		vel = velocity * vel;
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara + 90, 0.0f, 0.0f);
+		rotAnt = anguloCamara + 90;
+
 		vecAux = vecA;
 		if (movimiento == "andar")
 		{
@@ -374,6 +377,8 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		vel = velocity * vel;
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara + 180, 0.0f, 0.0f);
+		rotAnt = anguloCamara + 180;
+
 		vecAux = vecS;
 		if (movimiento == "andar")
 		{
@@ -399,6 +404,7 @@ void player::actualizarFisicas(int n, double delta, float anguloCam)
 		vel = velocity * vel;
 		engine->resetTransform(nodo, 'r');
 		engine->rotarYPR(nodo, anguloCamara, 0.0f, 0.0f);
+		rotAnt = anguloCamara;
 		vecAux = vecDir;
 		if (movimiento == "andar")
 		{
@@ -666,11 +672,9 @@ void player::Disparar(Mundo * w, float dt)
 		std::cout << "CARGADOR: " << cargador << std::endl;
 		tiempoDisparo += dt;
 		disparo = true;
-		glm::vec3 caca(entity->getCuerpo2D()->GetPosition().x,
-			this->getPos().y,
-			-entity->getCuerpo2D()->GetPosition().y);
+		//glm::vec3 caca = engine->getRotacion(nodo);
 	
-		Bala *bullet = new Bala(engine, w, pos, vecAux, 10.0f, 1, 300.0f);
+		Bala *bullet = new Bala(engine, w, pos, vecAux, 10.0f, 1, 400.0f, rotAnt);
 		//Bala::Bala(TGraphicEngine * motorApp, Mundo *world, glm::vec3 posPers, glm::vec3 mousePosition,
 		//	float dumug, int tipo, float velocidad) {
 		listaBalas.push_back(bullet);

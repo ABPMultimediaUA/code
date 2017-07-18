@@ -2539,6 +2539,7 @@ void Escenario::cambioDeLuces(int ID) {
 	for (std::size_t i = 0; i < ListLuces.size(); i++) {
 		ListLuces[i]->desactivar();
 		if (ListLuces[i]->getID() == ID) {
+			std::cout << "ENCONTRADO" << std::endl;
 			ListLuces[i]->activar();
 		}
 	}

@@ -1,1 +1,4 @@
-﻿
+﻿  Camara.cpp
+c:\users\david\documents\github\code\entrega\juego\spaceship1414\spaceship1414\game\camara.cpp(187): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  spaceShip1414.vcxproj -> C:\Users\David\Documents\GitHub\code\ENTREGA\JUEGO\spaceShip1414\x64\Debug\spaceShip1414.exe
+  spaceShip1414.vcxproj -> C:\Users\David\Documents\GitHub\code\ENTREGA\JUEGO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)

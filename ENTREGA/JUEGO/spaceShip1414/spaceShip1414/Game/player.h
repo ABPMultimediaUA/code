@@ -111,7 +111,7 @@ private:
 	bool impulso = false, recalculo = false;
 	MaquinaEstados* MaquinaEstadosAnimation;
 	bool teclaE = false, teclaQ = false;
-	float vida, vidaMax;
+	float vida, vidaMax, rotAnt;
 	Inventario *inv;
 
 	std::list<Bala*> listaBalas;
