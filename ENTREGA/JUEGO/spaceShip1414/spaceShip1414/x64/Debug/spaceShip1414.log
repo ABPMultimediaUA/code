@@ -1,2 +1,6 @@
-﻿  spaceShip1414.vcxproj -> D:\Documentos\GitHub\code\ENTREGA\JUEGO\spaceShip1414\x64\Debug\spaceShip1414.exe
-  spaceShip1414.vcxproj -> D:\Documentos\GitHub\code\ENTREGA\JUEGO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)
+﻿  CriaAlien.cpp
+c:\users\user\documents\github\code\entrega\juego\spaceship1414\spaceship1414\game\enemigos\criaalien.cpp(88): warning C4267: 'argumento': conversión de 'size_t' a 'int'; posible pérdida de datos
+c:\users\user\documents\github\code\entrega\juego\spaceship1414\spaceship1414\game\enemigos\criaalien.cpp(577): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\user\documents\github\code\entrega\juego\spaceship1414\spaceship1414\game\enemigos\criaalien.cpp(581): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  spaceShip1414.vcxproj -> C:\Users\User\Documents\GitHub\code\ENTREGA\JUEGO\spaceShip1414\x64\Debug\spaceShip1414.exe
+  spaceShip1414.vcxproj -> C:\Users\User\Documents\GitHub\code\ENTREGA\JUEGO\spaceShip1414\x64\Debug\spaceShip1414.pdb (Partial PDB)
