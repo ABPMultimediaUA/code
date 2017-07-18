@@ -130,6 +130,7 @@
   <ItemGroup>
     <ClCompile Include="gameStates\perdido.cpp" />
     <ClCompile Include="gameStates\salida.cpp" />
+    <ClCompile Include="gameStates\victoria.cpp" />
     <ClCompile Include="Game\ActivadorCamara.cpp" />
     <ClCompile Include="Game\Camara.cpp" />
     <ClCompile Include="gameStates\ajustes.cpp" />
@@ -248,6 +249,7 @@
   <ItemGroup>
     <ClInclude Include="gameStates\perdido.h" />
     <ClInclude Include="gameStates\salida.h" />
+    <ClInclude Include="gameStates\victoria.h" />
     <ClInclude Include="Game\ActivadorCamara.h" />
     <ClInclude Include="Game\Camara.h" />
     <ClInclude Include="gameStates\ajustes.h" />

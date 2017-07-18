@@ -22,8 +22,8 @@ perdido::perdido(float width, float height) : estadosJuego("gameOverState")
 	titulo.setFont(font);
 	titulo.setColor(sf::Color::Yellow);
 	titulo.setString("Has Muerto");
-	titulo.setCharacterSize(60);
-	titulo.setPosition(sf::Vector2f(300, 400));
+	titulo.setCharacterSize(40);
+	titulo.setPosition(sf::Vector2f(503, 364));
 	descuento = sf::milliseconds(2000);
 }
 
@@ -38,6 +38,16 @@ void perdido::render(void * window)
 	static_cast<sf::RenderWindow *>(window)->draw(fondo);
 	static_cast<sf::RenderWindow *>(window)->draw(titulo);
 	static_cast<sf::RenderWindow *>(window)->popGLStates();
+}
+
+void perdido::resize(float width, float height)
+{
+	if (!imagen.loadFromFile("resourse/image/cartel" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".jpg", sf::IntRect(1, 1, width, height)))
+	{
+		std::cerr << "Fondo no cargado" << std::endl;
+	}
+	fondo.setTexture(imagen);
+	titulo.setPosition(sf::Vector2f(300, 400));
 }
 
 void perdido::update(double deltatime, void * window, void * manager)

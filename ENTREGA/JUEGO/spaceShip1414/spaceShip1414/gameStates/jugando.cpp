@@ -244,7 +244,7 @@ void jugando::inicializarEstado()
 	rectangleParcialRelojB->setPosition(330, 636);
 }
 
-void jugando::limpiarEstado()
+bool jugando::limpiarEstado()
 {
 	delete texto;
 	delete font;
@@ -288,6 +288,7 @@ void jugando::limpiarEstado()
 	handlerApp = nullptr;
 	graphicApp = nullptr;
 	gameApp = nullptr;
+	return 1;
 }
 
 void jugando::handler(void * event, void * window, void * manager)
@@ -430,10 +431,8 @@ void jugando::update(double deltatime, void * window, void * manager)
 {
 	if (pausa)
 	{
-		if (fin == true)
-		{
-			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("gameOverState");
-		}
+		if (fin == true) { static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("gameOverState"); }
+		if (victoria == true) { static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("gameVictoryState"); }
 	}
 	else
 	{
@@ -495,6 +494,89 @@ void jugando::render(void * window)
 			static_cast<sf::RenderWindow *>(window)->popGLStates();
 		}
 	}
+}
+
+void jugando::resize(float width, float height)
+{
+	graphicApp->onresize(static_cast<int>(width), static_cast<int>(height));
+	if (!tFondo->loadFromFile("resourse/image/espacio" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".jpg", sf::IntRect(1, 1, width, height)))
+	{
+		std::cerr << "Fondo no cargado" << std::endl;
+	}
+	fFondo->setTexture(*tFondo);
+	fFondo->setPosition(0, 0);
+
+	if (!tPausa->loadFromFile("resourse/image/botonPausa" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(0, 0, 58, 58)))
+	{
+		std::cerr << "Boton Pause no cargado" << std::endl;
+	}
+	tPausa->setSmooth(true);
+	bPausaPlay->setTexture(*tPausa);
+	if (height > 768) { bPausaPlay->setPosition(80, 960); }
+	else { bPausaPlay->setPosition(76, 671); }
+
+	if (!tHub->loadFromFile("resourse/image/hub" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(0, 0, width, height)))
+	{
+		std::cerr << "Hub no cargado" << std::endl;
+	}
+	tHub->setSmooth(true);
+	bHub->setTexture(*tHub);
+	bHub->setPosition(0, 0);
+
+	if (!tArma[0]->loadFromFile("resourse/image/pistola" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(0, 0, 64, 64)))
+	{
+		std::cerr << "Icono Arma no cargado" << std::endl;
+	}
+	tArma[0]->setSmooth(true);
+	if (!tArma[1]->loadFromFile("resourse/image/escopeta" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(0, 0, 95, 20)))
+	{
+		std::cerr << "Icono Arma no cargado" << std::endl;
+	}
+	tArma[1]->setSmooth(true);
+	iArma->setTexture(*tArma[0]);
+	if (height > 768) { iArma->setPosition(1750, 960); }
+	else { iArma->setPosition(1214, 564); }
+
+	if (!tVida->loadFromFile("resourse/image/vida" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".png", sf::IntRect(0, 0, 196, 36)))
+	{
+		std::cerr << "Icono Vida no cargado" << std::endl;
+	}
+	tVida->setSmooth(true);
+	iVida->setTexture(*tVida);
+	if (height > 768) { iVida->setPosition(1770, 50); }
+	else { iVida->setPosition(1312, 40); }
+	iVida->setScale(-1, 1);
+
+	if (!tMenuPausa->loadFromFile("resourse/image/bMenu.png", sf::IntRect(0, 0, 181, 182)))
+	{
+		std::cerr << "Icono Menu no cargado" << std::endl;
+	}
+	tMenuPausa->setSmooth(true);
+	bMenuPausa->setTexture(*tMenuPausa);
+	if (height > 768) { bMenuPausa->setPosition(870, 449); }
+	else { bMenuPausa->setPosition(593, 293); }
+
+	if (!tPulsetMenu->loadFromFile("resourse/image/bPulsetMenu.png", sf::IntRect(0, 0, 131, 130)))
+	{
+		std::cerr << "Icono Menu no cargado" << std::endl;
+	}
+	tPulsetMenu->setSmooth(true);
+	bPulsetMenu->setTexture(*tPulsetMenu);
+
+	if (!font->loadFromFile("resourse/font/Radiof.ttf"))
+	{
+		std::cerr << "Fuente no cargada" << std::endl;
+	}
+	texto->setFont(*font);
+
+	rectangleParcialRelojA = new sf::RectangleShape();
+	rectangleParcialRelojA->setSize(sf::Vector2f(4, 10));
+	rectangleParcialRelojA->setFillColor(sf::Color(255, 0, 0, 100));
+	rectangleParcialRelojA->setPosition(330, 140);
+	rectangleParcialRelojB = new sf::RectangleShape();
+	rectangleParcialRelojB->setSize(sf::Vector2f(4, 6));
+	rectangleParcialRelojB->setFillColor(sf::Color(255, 0, 0, 100));
+	rectangleParcialRelojB->setPosition(330, 636);
 }
 
 void jugando::drawConfiguracion(void * window)

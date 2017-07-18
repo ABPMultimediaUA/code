@@ -9,6 +9,7 @@ private:
 	std::vector<estadosJuego *> listaEstados;
 	estadosJuego * estadoActivo;
 	void activarEstado(estadosJuego * nombreEstados);
+	bool reniciar;
 public:
 	MaquinaEstadosJuego();
 	 ~MaquinaEstadosJuego(void);
@@ -16,5 +17,7 @@ public:
 	void cambiaEstado(const std::string nombre);
 	estadosJuego * getEstadoActivo();
 	estadosJuego * getEstado(const std::string nombre);
+	void borrarEstado(const std::string nombre);
+	bool reniciarEstado();
 };
 

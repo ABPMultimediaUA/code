@@ -5,10 +5,11 @@
 #include "gameStates\jugando.h"
 #include "gameStates\salida.h"
 #include "gameStates\perdido.h"
+#include "gameStates\victoria.h"
 #include <iostream>
 
 
-mainGame::mainGame() : width{ 1366.f }, height{ 768.f }, fullScreen { false }
+mainGame::mainGame() : width{ 1366.f }, height{ 768.f }, fullScreen{ false }, redimencion{ false }
 {
 }
 
@@ -28,6 +29,8 @@ mainGame::~mainGame()
 	window = nullptr;
 	delete gameOver;
 	gameOver = nullptr;
+	delete gamePass;
+	gamePass = nullptr;
 	std::cout << "Gracias por jugar a SpaceShip 1414" << std::endl;
 }
 
@@ -51,6 +54,8 @@ bool mainGame::init(const std::string titulo)
 	manager->addEstado(gameExit, false);
 	gameOver = new perdido(width, height);
 	manager->addEstado(gameOver, false);
+	gamePass = new victoria(width, height);
+	manager->addEstado(gamePass, false);
 	if (window != nullptr && gameMenu != nullptr && gameConfig != nullptr && gamePlaying != nullptr)
 	{
 		return true;
@@ -65,6 +70,7 @@ void mainGame::run()
 {
 	while (window->isOpen())
 	{
+		//if (manager->reniciarEstado()) { reniciarJugando(); }
 		sf::Event event;
 		while (window->pollEvent(event))
 		{
@@ -88,8 +94,24 @@ void mainGame::resizeWindow(float w, float h)
 	width = w;
 	height = h;
 	window->setSize(sf::Vector2u(width, height));
+	gameConfig->resize(width, height);
+	gameMenu->resize(width, height);
+	gamePlaying->resize(width, height);
+	gameExit->resize(width, height);
+	gameOver->resize(width, height);
+	gamePass->resize(width, height);
 }
 
 void mainGame::fullScreenWindow()
 {
+	if (fullScreen == true)	{ fullScreen = false; }
+	else { fullScreen = true; }
+}
+
+void mainGame::reniciarJugando()
+{
+	manager->borrarEstado("playingState");
+	delete gamePlaying;
+	gamePlaying = new jugando(width, height);
+	manager->addEstado(gamePlaying, false);
 }

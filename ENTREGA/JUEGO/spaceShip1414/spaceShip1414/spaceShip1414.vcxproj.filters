@@ -354,6 +354,9 @@
     <ClCompile Include="gameStates\perdido.cpp">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
+    <ClCompile Include="gameStates\victoria.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="output.txt" />
@@ -825,6 +828,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="gameStates\perdido.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="gameStates\victoria.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

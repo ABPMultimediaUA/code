@@ -48,6 +48,17 @@ void salida::render(void * window)
 	static_cast<sf::RenderWindow *>(window)->popGLStates();
 }
 
+void salida::resize(float width, float height)
+{
+	if (!imagen.loadFromFile("resourse/image/cartel" + std::to_string(static_cast<int>(width)) + "x" + std::to_string(static_cast<int>(height)) + ".jpg", sf::IntRect(1, 1, width, height)))
+	{
+		std::cerr << "Fondo no cargado" << std::endl;
+	}
+
+	fondo.setTexture(imagen);
+	titulo.setPosition(sf::Vector2f(300, 400));
+}
+
 void salida::update(double deltatime, void * window, void * manager)
 {
 	if (!firtsUpdate)

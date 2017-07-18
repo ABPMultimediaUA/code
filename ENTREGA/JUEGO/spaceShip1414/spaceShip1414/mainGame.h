@@ -12,6 +12,7 @@ class ajustes;
 class jugando;
 class salida;
 class perdido;
+class victoria;
 class mainGame
 {
 public:
@@ -22,6 +23,7 @@ public:
 	void resizeWindow(float, float);
 	void fullScreenWindow();
 private:
+	void reniciarJugando();
 	sf::RenderWindow * window;
 	sf::ContextSettings * contextSettings;
 	MaquinaEstadosJuego * manager;
@@ -30,7 +32,8 @@ private:
 	jugando * gamePlaying;
 	salida * gameExit;
 	perdido * gameOver;
+	victoria * gamePass;
 	float width, height;
-	bool fullScreen;
+	bool fullScreen, redimencion;
 };
 

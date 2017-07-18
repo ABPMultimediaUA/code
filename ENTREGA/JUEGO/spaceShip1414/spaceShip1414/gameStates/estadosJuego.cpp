@@ -35,12 +35,17 @@ void estadosJuego::inicializarEstado()
 {
 }
 
-void estadosJuego::limpiarEstado()
+bool estadosJuego::limpiarEstado()
 {
 	estadoActivo = false;
+	return 0;
 }
 
 void estadosJuego::render(void * window)
+{
+}
+
+void estadosJuego::resize(float width, float height)
 {
 }
 

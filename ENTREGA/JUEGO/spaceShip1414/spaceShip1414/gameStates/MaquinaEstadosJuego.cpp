@@ -28,7 +28,7 @@ void MaquinaEstadosJuego::cambiaEstado(const std::string nombre)
 {
 	if (!listaEstados.empty())
 	{
-		getEstadoActivo()->limpiarEstado();
+		reniciar = getEstadoActivo()->limpiarEstado();
 		getEstadoActivo()->setEstadoActivo(false);
 		for (std::size_t i = 0; i < listaEstados.size(); i++)
 		{
@@ -59,7 +59,23 @@ estadosJuego * MaquinaEstadosJuego::getEstado(const std::string nombre)
 			}
 		}
 	}
-	return NULL;
+	return nullptr;
+}
+
+void MaquinaEstadosJuego::borrarEstado(const std::string nombre)
+{
+	if (!listaEstados.empty())
+	{
+		for (std::vector<estadosJuego*>::iterator it = listaEstados.begin(); it != listaEstados.end(); ++it)
+		{
+			if ((*it)->getEstado() == nombre) { listaEstados.erase(it); break; }
+		}
+	}
+}
+
+bool MaquinaEstadosJuego::reniciarEstado()
+{
+	return reniciar;
 }
 
 void MaquinaEstadosJuego::activarEstado(estadosJuego * estado)

@@ -12,6 +12,7 @@ public:
 	void handler(void*, void *, void *)override;
 	void update(double, void *, void *) override;
 	void render(void *) override;
+	void resize(float width, float height) override;
 	void MoveUp();
 	void MoveDown();
 	int GetPressedItem() { return opcionSelecionada; }
