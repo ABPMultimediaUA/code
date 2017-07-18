@@ -77,7 +77,6 @@ void mainGame::run()
 		window->clear();
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
 		glDisableVertexArrayAttribEXT(0, 0);
-
 	
 		manager->getEstadoActivo()->render(window);
 		window->display();

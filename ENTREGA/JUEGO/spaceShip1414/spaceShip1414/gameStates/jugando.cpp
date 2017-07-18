@@ -11,7 +11,7 @@
 jugando::jugando(float w, float h) : estadosJuego("playingState"), arma{ -1 }, opciones{ false }, rec{ false }, pausa{ false },
 texto{ nullptr }, font{ nullptr }, tMenuPausa{ nullptr }, bMenuPausa{ nullptr }, bPulsetMenu{ nullptr }, tPulsetMenu{ nullptr }, bPausaPlay{ nullptr }, tPausa{ nullptr },
 tPlay{ nullptr }, iArma{ nullptr }, iVida{ nullptr }, tVida{ nullptr }, rectangle{ nullptr }, reloj{ nullptr }, fFondo{ nullptr }, tFondo{ nullptr }, width{ w }, height{ h },
-tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }, parcialReloj(sf::milliseconds(10)), fin { true }
+tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }, parcialReloj(sf::milliseconds(10)), fin{ false }, debugFisicas { true }
 {
 	tArma[0] = nullptr;
 	tArma[1] = nullptr;
@@ -353,11 +353,14 @@ void jugando::handler(void * event, void * window, void * manager)
 				gameApp->getPlayer()->setArmaActual(1);
 
 			changeWeapon(1);
-
-
 		}
 
 		//comprobar que si no tienes balas no puedes recargar mas
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::F9)) {
+			if (!debugFisicas) { debugFisicas = true; }
+			else { debugFisicas = false; }
+		}
+
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)
 			&& gameApp->getPlayer()->getMunicionActual() > 0) {
 			gameApp->getPlayer()->recargar();
@@ -427,6 +430,10 @@ void jugando::update(double deltatime, void * window, void * manager)
 {
 	if (pausa)
 	{
+		if (fin == true)
+		{
+			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("gameOverState");
+		}
 	}
 	else
 	{
@@ -472,8 +479,10 @@ void jugando::render(void * window)
 		else
 		{
 			if (graphicApp) { graphicApp->draw(0.1); }
+			if (debugFisicas) { gameApp->drawDebug(); }
 			static_cast<sf::RenderWindow *>(window)->pushGLStates();
 			drawHub(window);
+			
 			if (pausa)
 			{
 				drawPause(window);
@@ -693,10 +702,6 @@ void jugando::play()
 
 void jugando::clickPauseMenu(void * window, void * manager)
 {
-	if (fin == true)
-	{
-		static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("gameOverState");
-	}
 	sf::Vector2i posMouse = sf::Mouse::getPosition(*(static_cast<sf::RenderWindow *>(window)));
 	if (posMouse.x > 23 + 593 && posMouse.x < 593 + 157)
 	{

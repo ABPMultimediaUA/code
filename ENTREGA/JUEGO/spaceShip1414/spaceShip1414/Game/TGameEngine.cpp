@@ -33,6 +33,7 @@ bool TGameEngine::iniciarGameEngine(TGraphicEngine * motorApp)
 	flags += b2Draw::e_shapeBit;
 	flags += b2Draw::e_jointBit;
 	flags += b2Draw::e_pairBit;
+	flags += b2Draw::e_aabbBit;
 	flags += b2Draw::e_centerOfMassBit;
 	fooDrawInstance->SetFlags(flags);
 	jugador = scene->getPersonaje();
@@ -72,7 +73,7 @@ Camara * TGameEngine::getCamara()
 
 void TGameEngine::drawDebug() {
 	world->getWorldBox2D()->DrawDebugData();
-
+	std::cout << "Se dibujan las fisicas" << std::endl;
 }
 
 Mundo* TGameEngine::getMundo() {

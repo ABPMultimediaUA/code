@@ -2511,7 +2511,6 @@ player* Escenario::getPersonaje()
 
 void Escenario::eleminarEnemigos()
 {
-	
 	/*if (!enemigos.empty()) {
 		for (std::list<Enemigo*>::iterator it = enemigos.begin(); it != enemigos.end();) {
 			if ((*it) != NULL) {
@@ -2525,12 +2524,8 @@ void Escenario::eleminarEnemigos()
 			else
 				it++;
 		}
-		
 	}*/
-
-	
 }
-
 
 void Escenario::cambioDeLuces(int ID) {
 
@@ -2543,7 +2538,7 @@ void Escenario::cambioDeLuces(int ID) {
 			ListLuces[i]->activar();
 		}
 	}
-	if (ID == 12 || ID == 18)
+	if (ID == 12 || ID == 18 || ID == 9)
 	{
 		for (std::size_t i = 0; i < ListLuces.size(); i++) {
 			if (ListLuces[i]->getID() == 0) {
