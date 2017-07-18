@@ -90,3 +90,8 @@ void TGameEngine::actualizarTiempoDeDisparo() {
 		}
 	}
 }
+
+void TGameEngine::victory()
+{
+	getPlayer()->victory();
+}

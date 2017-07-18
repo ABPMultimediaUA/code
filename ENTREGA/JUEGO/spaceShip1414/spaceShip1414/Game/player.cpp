@@ -27,7 +27,7 @@
 #define PISTOL 0
 #define SHOTGUN 1
 
-player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 }, pitch{ 0 }
+player::player(TGraphicEngine * motorApp, Mundo *m) : velocity{ 70.0f }, yaw{ 0 }, pitch{ 0 }, victoria{ false }
 {
 	engine = motorApp;
 	anguloCamara = 90.0f; //para hacer que rote con la camara
@@ -872,4 +872,14 @@ void player::load_personaje()
 	NreposoEscopeta->noDraw(false);
 	NEscopeta = engine->addAnimacion(escopeta->getPathAnimacion(), 8, godfather);
 	NEscopeta->noDraw(false);
+}
+
+void player::victory()
+{
+	victoria = true;
+}
+
+bool player::getVictory()
+{
+	return victoria;
 }

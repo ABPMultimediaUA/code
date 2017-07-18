@@ -88,7 +88,8 @@ public:
 
 	void load_personaje();
 
-
+	void victory();
+	bool getVictory();
 
 private:
 
@@ -127,6 +128,7 @@ private:
 	TNodo *godfather, *NreposoAndar, *NreposoPistola, *Nandar, *NPistola, *NreposoEscopeta,*NEscopeta;
 	std::string movimiento;
 	
+	bool victoria;
 };
 
 
