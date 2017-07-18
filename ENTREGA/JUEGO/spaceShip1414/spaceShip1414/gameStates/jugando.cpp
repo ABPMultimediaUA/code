@@ -11,7 +11,7 @@
 jugando::jugando(float w, float h) : estadosJuego("playingState"), arma{ -1 }, opciones{ false }, rec{ false }, pausa{ false },
 texto{ nullptr }, font{ nullptr }, tMenuPausa{ nullptr }, bMenuPausa{ nullptr }, bPulsetMenu{ nullptr }, tPulsetMenu{ nullptr }, bPausaPlay{ nullptr }, tPausa{ nullptr },
 tPlay{ nullptr }, iArma{ nullptr }, iVida{ nullptr }, tVida{ nullptr }, rectangle{ nullptr }, reloj{ nullptr }, fFondo{ nullptr }, tFondo{ nullptr }, width{ w }, height{ h },
-tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }, parcialReloj(sf::milliseconds(10))
+tecla{ -1 }, handlerApp{ nullptr }, graphicApp{ nullptr }, gameApp{ nullptr }, parcialReloj(sf::milliseconds(10)), fin { true }
 {
 	tArma[0] = nullptr;
 	tArma[1] = nullptr;
@@ -292,132 +292,134 @@ void jugando::limpiarEstado()
 
 void jugando::handler(void * event, void * window, void * manager)
 {
-	if (!sf::Keyboard::isKeyPressed(sf::Keyboard::W) ||
-		!sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||
-		!sf::Keyboard::isKeyPressed(sf::Keyboard::D) ||
-		!sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-		tecla = -1;
-	}
-
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && !pausa)
-	{
-		std::cout << "W" << std::endl;
-		tecla = 3;
-	}
-
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !pausa)
-	{
-		std::cout << "A" << std::endl;
-		tecla = 1;
-	}
-
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && !pausa)
-	{
-		std::cout << "S" << std::endl;
-		tecla = 2;
-	}
-
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !pausa)
-	{
-		std::cout << "D" << std::endl;
-		tecla = 0;
-	}
-
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
-	{
-		std::cout << "1" << std::endl;
-		tecla = 4;
-		if (gameApp->getPlayer()->getArmaActual() != -1)
-			gameApp->getPlayer()->setArmaActual(-1);
-		changeWeapon(-1);
-		
-	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
-	{
-		//pistola
-		std::cout << "2" << std::endl;
-		tecla = 5;
-		if (gameApp->getPlayer()->getArmaActual() != 0)
-			gameApp->getPlayer()->setArmaActual(0);
-		changeWeapon(0);
-
-	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3))
-	{
-		//escopeta
-		std::cout << "3" << std::endl;
-		tecla = 6;
-
-		if(gameApp->getPlayer()->getArmaActual() != 1)
-			gameApp->getPlayer()->setArmaActual(1);
-
-		changeWeapon(1);
-
-
-	}
-
-	//comprobar que si no tienes balas no puedes recargar mas
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::R) 
-		&& gameApp->getPlayer()->getMunicionActual() > 0) {
-		gameApp->getPlayer()->recargar();
-
-		if (gameApp->getPlayer()->getMunicionActual() < 0) {
-			std::cout << "No puedes recagar, no te quedan balas" << std::endl;
+	if (gameApp != nullptr && gameApp->getPlayer()->getVida() > 0) {
+		if (!sf::Keyboard::isKeyPressed(sf::Keyboard::W) ||
+			!sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||
+			!sf::Keyboard::isKeyPressed(sf::Keyboard::D) ||
+			!sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+			tecla = -1;
 		}
-	}
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::E) 
-		&& gameApp->getPlayer()->getTeclaE() == false) {
-		std::cout << "CAMBIO ESTADO TRUE" << std::endl;
-		gameApp->getPlayer()->setTeclaE(true);
-	}
-
-	if (!sf::Keyboard::isKeyPressed(sf::Keyboard::E)
-		&& gameApp->getPlayer()->getTeclaE() == true) {
-		std::cout << "CAMBIO ESTADO FALSE" << std::endl;
-		gameApp->getPlayer()->setTeclaE(false);
-	}
-
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q) 
-		&& gameApp->getPlayer()->getTeclaQ() == false) {
-		std::cout << "CAMBIO ESTADO TRUE" << std::endl;
-		gameApp->getPlayer()->setTeclaQ(true);
-		gameApp->getPlayer()->usarBotiquin();
-	}
-
-	if (!sf::Keyboard::isKeyPressed(sf::Keyboard::Q) 
-		&& gameApp->getPlayer()->getTeclaQ() == true) {
-		std::cout << "CAMBIO ESTADO FALSE" << std::endl;
-		gameApp->getPlayer()->setTeclaQ(false);
-	}
-
-	if (static_cast<sf::Event *>(event)->type == sf::Event::MouseButtonPressed)
-	{
-		if (static_cast<sf::Event *>(event)->key.code == sf::Mouse::Left)
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && !pausa)
 		{
-			if (pausa) { if (opciones) { clickAjustes(window); } else { clickPauseMenu(window, manager); } }
-			else { clickPlayPause(window); }
-			if (gameApp && gameApp->getPlayer()->getDisparo() == false && !pausa) {
-
-			if (gameApp->getPlayer()->getCargador() >= 0) {
-				gameApp->getPlayer()->Disparar(gameApp->getMundo(), 0.016);
-			}
-
-			}
-
-			//if (gameApp->getPlayer()->getDisparo() == true) {
-			//	gameApp->getPlayer()->setTiempoDisparo(gameApp->getPlayer()->getTiempoDisparo() + 0.016);
-			//	if (gameApp->getPlayer()->getTiempoDisparo() >= 0.5f/*pers->getTiempoArma()*/) {
-			//		gameApp->getPlayer()->setDisparo(false);
-			//		gameApp->getPlayer()->setTiempoDisparo(0);
-			//	}
-			//}
+			std::cout << "W" << std::endl;
+			tecla = 3;
 		}
-	}
 
-	if (static_cast<sf::Event *>(event)->type == sf::Event::KeyReleased)
-	{
-		if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Escape) { if (!pausa) { if (pausa) { play(); } else { pause(); } } }
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !pausa)
+		{
+			std::cout << "A" << std::endl;
+			tecla = 1;
+		}
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) && !pausa)
+		{
+			std::cout << "S" << std::endl;
+			tecla = 2;
+		}
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && !pausa)
+		{
+			std::cout << "D" << std::endl;
+			tecla = 0;
+		}
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
+		{
+			std::cout << "1" << std::endl;
+			tecla = 4;
+			if (gameApp->getPlayer()->getArmaActual() != -1)
+				gameApp->getPlayer()->setArmaActual(-1);
+			changeWeapon(-1);
+
+		}
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
+		{
+			//pistola
+			std::cout << "2" << std::endl;
+			tecla = 5;
+			if (gameApp->getPlayer()->getArmaActual() != 0)
+				gameApp->getPlayer()->setArmaActual(0);
+			changeWeapon(0);
+
+		}
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3))
+		{
+			//escopeta
+			std::cout << "3" << std::endl;
+			tecla = 6;
+
+			if (gameApp->getPlayer()->getArmaActual() != 1)
+				gameApp->getPlayer()->setArmaActual(1);
+
+			changeWeapon(1);
+
+
+		}
+
+		//comprobar que si no tienes balas no puedes recargar mas
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)
+			&& gameApp->getPlayer()->getMunicionActual() > 0) {
+			gameApp->getPlayer()->recargar();
+
+			if (gameApp->getPlayer()->getMunicionActual() < 0) {
+				std::cout << "No puedes recagar, no te quedan balas" << std::endl;
+			}
+		}
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::E)
+			&& gameApp->getPlayer()->getTeclaE() == false) {
+			std::cout << "CAMBIO ESTADO TRUE" << std::endl;
+			gameApp->getPlayer()->setTeclaE(true);
+		}
+
+		if (!sf::Keyboard::isKeyPressed(sf::Keyboard::E)
+			&& gameApp->getPlayer()->getTeclaE() == true) {
+			std::cout << "CAMBIO ESTADO FALSE" << std::endl;
+			gameApp->getPlayer()->setTeclaE(false);
+		}
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q)
+			&& gameApp->getPlayer()->getTeclaQ() == false) {
+			std::cout << "CAMBIO ESTADO TRUE" << std::endl;
+			gameApp->getPlayer()->setTeclaQ(true);
+			gameApp->getPlayer()->usarBotiquin();
+		}
+
+		if (!sf::Keyboard::isKeyPressed(sf::Keyboard::Q)
+			&& gameApp->getPlayer()->getTeclaQ() == true) {
+			std::cout << "CAMBIO ESTADO FALSE" << std::endl;
+			gameApp->getPlayer()->setTeclaQ(false);
+		}
+
+		if (static_cast<sf::Event *>(event)->type == sf::Event::MouseButtonPressed)
+		{
+			if (static_cast<sf::Event *>(event)->key.code == sf::Mouse::Left)
+			{
+				if (pausa) { if (opciones) { clickAjustes(window); } else { clickPauseMenu(window, manager); } }
+				else { clickPlayPause(window); }
+				if (gameApp && gameApp->getPlayer()->getDisparo() == false && !pausa) {
+
+					if (gameApp->getPlayer()->getCargador() >= 0) {
+						gameApp->getPlayer()->Disparar(gameApp->getMundo(), 0.016);
+					}
+
+				}
+
+				//if (gameApp->getPlayer()->getDisparo() == true) {
+				//	gameApp->getPlayer()->setTiempoDisparo(gameApp->getPlayer()->getTiempoDisparo() + 0.016);
+				//	if (gameApp->getPlayer()->getTiempoDisparo() >= 0.5f/*pers->getTiempoArma()*/) {
+				//		gameApp->getPlayer()->setDisparo(false);
+				//		gameApp->getPlayer()->setTiempoDisparo(0);
+				//	}
+				//}
+			}
+		}
+
+		if (static_cast<sf::Event *>(event)->type == sf::Event::KeyReleased)
+		{
+			if (static_cast<sf::Event *>(event)->key.code == sf::Keyboard::Escape) { if (!pausa) { if (pausa) { play(); } else { pause(); } } }
+		}
 	}
 }
 
@@ -428,50 +430,56 @@ void jugando::update(double deltatime, void * window, void * manager)
 	}
 	else
 	{
-		if (gameApp->getPlayer()->getVida() <= 0)
+		if (gameApp != nullptr && gameApp->getPlayer()->getVida() <= 0.0f)
 		{
-			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("gameOverState");
+			fin = true;
+			pausa = true;
 		}
-		if (parcialReloj.asMilliseconds() - reloj->getElapsedTime().asMilliseconds() <= 0)
+		else
 		{
-			if (!rec)
+			if (parcialReloj.asMilliseconds() - reloj->getElapsedTime().asMilliseconds() <= 0)
 			{
-				rectangleParcialRelojA->setPosition(rectangleParcialRelojA->getPosition().x + 8, 140);
-				rectangleParcialRelojB->setPosition(rectangleParcialRelojB->getPosition().x + 8, 636);
-				if (rectangleParcialRelojA->getPosition().x >= 1034) { rec = true; }
+				if (!rec)
+				{
+					rectangleParcialRelojA->setPosition(rectangleParcialRelojA->getPosition().x + 8, 140);
+					rectangleParcialRelojB->setPosition(rectangleParcialRelojB->getPosition().x + 8, 636);
+					if (rectangleParcialRelojA->getPosition().x >= 1034) { rec = true; }
+				}
+				else
+				{
+					rectangleParcialRelojA->setPosition(rectangleParcialRelojA->getPosition().x - 8, 140);
+					rectangleParcialRelojB->setPosition(rectangleParcialRelojB->getPosition().x - 8, 636);
+					if (rectangleParcialRelojA->getPosition().x <= 326) { rec = false; }
+				}
+				reloj->restart();
 			}
-			else
-			{
-				rectangleParcialRelojA->setPosition(rectangleParcialRelojA->getPosition().x - 8, 140);
-				rectangleParcialRelojB->setPosition(rectangleParcialRelojB->getPosition().x - 8, 636);
-				if (rectangleParcialRelojA->getPosition().x <= 326) { rec = false; }
-			}
-			reloj->restart();
-		}
-		iVida->setTextureRect(sf::IntRect(0, 0, 196 * gameApp->getPlayer()->getPorcentajeVida(), 36));
+			iVida->setTextureRect(sf::IntRect(0, 0, 196 * gameApp->getPlayer()->getPorcentajeVida(), 36));
 
-		gameApp->update(0.1,handlerApp, graphicApp, tecla);		
+			gameApp->update(0.1, handlerApp, graphicApp, tecla);
+		}
 	}
 }
 
 void jugando::render(void * window)
 {
-	if (opciones)
-	{
-		static_cast<sf::RenderWindow *>(window)->pushGLStates();
-		drawConfiguracion(window);
-		static_cast<sf::RenderWindow *>(window)->popGLStates();
-	}
-	else
-	{
-		if (graphicApp) { graphicApp->draw(0.1); }
-		static_cast<sf::RenderWindow *>(window)->pushGLStates();
-		drawHub(window);
-		if (pausa)
+	if (gameApp != nullptr && gameApp->getPlayer()->getVida() > 0.0f) {
+		if (opciones)
 		{
-			drawPause(window);
+			static_cast<sf::RenderWindow *>(window)->pushGLStates();
+			drawConfiguracion(window);
+			static_cast<sf::RenderWindow *>(window)->popGLStates();
 		}
-		static_cast<sf::RenderWindow *>(window)->popGLStates();
+		else
+		{
+			if (graphicApp) { graphicApp->draw(0.1); }
+			static_cast<sf::RenderWindow *>(window)->pushGLStates();
+			drawHub(window);
+			if (pausa)
+			{
+				drawPause(window);
+			}
+			static_cast<sf::RenderWindow *>(window)->popGLStates();
+		}
 	}
 }
 
@@ -685,6 +693,10 @@ void jugando::play()
 
 void jugando::clickPauseMenu(void * window, void * manager)
 {
+	if (fin == true)
+	{
+		static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("gameOverState");
+	}
 	sf::Vector2i posMouse = sf::Mouse::getPosition(*(static_cast<sf::RenderWindow *>(window)));
 	if (posMouse.x > 23 + 593 && posMouse.x < 593 + 157)
 	{

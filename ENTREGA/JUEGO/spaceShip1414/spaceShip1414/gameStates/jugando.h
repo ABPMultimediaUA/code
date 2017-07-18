@@ -60,6 +60,7 @@ private:
 	int arma;
 	unsigned int balas;
 	bool rec;
+	bool fin;
 	bool pausa, opciones;
 	float width, height;
 	int tecla;

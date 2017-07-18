@@ -8,7 +8,7 @@
 #include <iostream>
 
 
-mainGame::mainGame() : width{ 1366.f }, height{ 768.f }, fullScreen { false }
+mainGame::mainGame() : width{ 1366.f }, height{ 768.f }, fullScreen { true }
 {
 }
 
@@ -50,7 +50,7 @@ bool mainGame::init(const std::string titulo)
 	gameExit = new salida(width, height);
 	manager->addEstado(gameExit, false);
 	gameOver = new perdido(width, height);
-	manager->addEstado(gameExit, false);
+	manager->addEstado(gameOver, false);
 	if (window != nullptr && gameMenu != nullptr && gameConfig != nullptr && gamePlaying != nullptr)
 	{
 		return true;

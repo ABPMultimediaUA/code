@@ -2543,7 +2543,14 @@ void Escenario::cambioDeLuces(int ID) {
 			ListLuces[i]->activar();
 		}
 	}
-
+	if (ID == 12 || ID == 18)
+	{
+		for (std::size_t i = 0; i < ListLuces.size(); i++) {
+			if (ListLuces[i]->getID() == 0) {
+				ListLuces[i]->activar();
+			}
+		}
+	}
 
 
 }

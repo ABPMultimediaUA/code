@@ -21,7 +21,7 @@ perdido::perdido(float width, float height) : estadosJuego("gameOverState")
 
 	titulo.setFont(font);
 	titulo.setColor(sf::Color::Yellow);
-	titulo.setString("Has Muertos");
+	titulo.setString("Has Muerto");
 	titulo.setCharacterSize(60);
 	titulo.setPosition(sf::Vector2f(300, 400));
 	descuento = sf::milliseconds(2000);
@@ -58,7 +58,7 @@ void perdido::handler(void * event, void * window, void * manager)
 		switch (static_cast<sf::Event *>(event)->key.code)
 		{
 		case sf::Keyboard::Return:
-			static_cast<sf::RenderWindow *>(window)->close();
+			static_cast<MaquinaEstadosJuego *>(manager)->cambiaEstado("menuState");
 			break;
 		}
 		break;
