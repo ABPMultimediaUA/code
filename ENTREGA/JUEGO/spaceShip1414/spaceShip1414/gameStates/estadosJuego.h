@@ -16,7 +16,7 @@ public:
 	virtual void inicializarEstado();
 	virtual void limpiarEstado();
 	virtual void handler(void * event, void * window, void * manager);
-	virtual void update(double deltatime, void * window);
+	virtual void update(double deltatime, void * window, void * manager);
 	virtual void render(void * window);
 };
 

@@ -48,6 +48,6 @@ void estadosJuego::handler(void * event, void * window, void * manager)
 {
 }
 
-void estadosJuego::update(double deltatime, void * window)
+void estadosJuego::update(double deltatime, void * window, void * manager)
 {
 }

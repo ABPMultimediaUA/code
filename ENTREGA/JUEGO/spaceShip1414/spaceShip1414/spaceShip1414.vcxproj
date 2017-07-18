@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="gameStates\perdido.cpp" />
     <ClCompile Include="gameStates\salida.cpp" />
     <ClCompile Include="Game\ActivadorCamara.cpp" />
     <ClCompile Include="Game\Camara.cpp" />
@@ -245,6 +246,7 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="gameStates\perdido.h" />
     <ClInclude Include="gameStates\salida.h" />
     <ClInclude Include="Game\ActivadorCamara.h" />
     <ClInclude Include="Game\Camara.h" />

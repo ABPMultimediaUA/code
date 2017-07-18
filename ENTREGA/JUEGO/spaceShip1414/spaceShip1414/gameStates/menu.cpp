@@ -74,7 +74,7 @@ void menu::render(void * window)
 	static_cast<sf::RenderWindow *>(window)->popGLStates();
 }
 
-void menu::update(double deltatime, void * window)
+void menu::update(double deltatime, void * window, void * manager)
 {
 	checkMousePos(window);
 	checkOpcionSelecionada();

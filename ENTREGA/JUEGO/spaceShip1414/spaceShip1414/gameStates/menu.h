@@ -10,7 +10,7 @@ public:
 	menu(unsigned int, unsigned int);
 	~menu();
 	void handler(void*, void *, void *)override;
-	void update(double, void *) override;
+	void update(double, void *, void *) override;
 	void render(void *) override;
 	void MoveUp();
 	void MoveDown();

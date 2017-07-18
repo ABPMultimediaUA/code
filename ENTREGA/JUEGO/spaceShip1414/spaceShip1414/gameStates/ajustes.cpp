@@ -55,7 +55,7 @@ void ajustes::render(void * window)
 	static_cast<sf::RenderWindow *>(window)->popGLStates();
 }
 
-void ajustes::update(double deltatime, void * window)
+void ajustes::update(double deltatime, void * window, void * manager)
 {
 	checkMousePos(window);
 }

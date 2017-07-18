@@ -4,6 +4,7 @@
 #include "gameStates\ajustes.h"
 #include "gameStates\jugando.h"
 #include "gameStates\salida.h"
+#include "gameStates\perdido.h"
 #include <iostream>
 
 
@@ -25,6 +26,8 @@ mainGame::~mainGame()
 	manager = nullptr;
 	delete window;
 	window = nullptr;
+	delete gameOver;
+	gameOver = nullptr;
 	std::cout << "Gracias por jugar a SpaceShip 1414" << std::endl;
 }
 
@@ -45,6 +48,8 @@ bool mainGame::init(const std::string titulo)
 	gamePlaying = new jugando(width, height);
 	manager->addEstado(gamePlaying, false);
 	gameExit = new salida(width, height);
+	manager->addEstado(gameExit, false);
+	gameOver = new perdido(width, height);
 	manager->addEstado(gameExit, false);
 	if (window != nullptr && gameMenu != nullptr && gameConfig != nullptr && gamePlaying != nullptr)
 	{
@@ -67,7 +72,7 @@ void mainGame::run()
 			if (event.type == sf::Event::Closed) { manager->cambiaEstado("exitState");	}
 		}
 
-		manager->getEstadoActivo()->update(0.1, window);
+		manager->getEstadoActivo()->update(0.1, window, manager);
 
 		window->clear();
 		glBindBuffer(GL_ARRAY_BUFFER, 0);

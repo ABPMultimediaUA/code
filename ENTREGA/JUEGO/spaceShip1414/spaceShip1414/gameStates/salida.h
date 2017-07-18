@@ -9,7 +9,7 @@ public:
 	salida(float, float);
 	~salida();
 	void handler(void*, void *, void *) override;
-	void update(double, void *) override;
+	void update(double, void *, void *) override;
 	void render(void *) override;
 private:
 	sf::Font font;

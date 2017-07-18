@@ -11,6 +11,7 @@ class menu;
 class ajustes;
 class jugando;
 class salida;
+class perdido;
 class mainGame
 {
 public:
@@ -28,6 +29,7 @@ private:
 	ajustes * gameConfig;
 	jugando * gamePlaying;
 	salida * gameExit;
+	perdido * gameOver;
 	float width, height;
 	bool fullScreen;
 };

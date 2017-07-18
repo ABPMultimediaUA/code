@@ -10,7 +10,7 @@ public:
 	ajustes(unsigned int, unsigned int);
 	~ajustes();
 	void handler(void*, void *, void *)override;
-	void update(double, void *) override;
+	void update(double, void *, void *) override;
 	void render(void *) override;
 	int GetPressedItem() { return opcionSelecionada; }
 private:

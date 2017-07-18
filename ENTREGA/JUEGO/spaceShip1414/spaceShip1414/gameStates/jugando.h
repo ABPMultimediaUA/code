@@ -15,7 +15,7 @@ public:
 	void inicializarEstado() override;
 	void limpiarEstado() override;
 	void handler(void*, void *, void *) override;
-	void update(double, void *) override;
+	void update(double, void *, void *) override;
 	void render(void * window) override;
 private:
 	void drawConfiguracion(void *);

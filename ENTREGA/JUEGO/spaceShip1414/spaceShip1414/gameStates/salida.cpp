@@ -24,7 +24,7 @@ salida::salida(float width, float height) : estadosJuego("exitState"), firtsUpda
 	titulo.setString("Gracias por haber jugado");
 	titulo.setCharacterSize(60);
 	titulo.setPosition(sf::Vector2f(300, 400));
-	descuento = sf::milliseconds(3000);
+	descuento = sf::milliseconds(500);
 }
 
 salida::~salida()
@@ -48,7 +48,7 @@ void salida::render(void * window)
 	static_cast<sf::RenderWindow *>(window)->popGLStates();
 }
 
-void salida::update(double deltatime, void * window)
+void salida::update(double deltatime, void * window, void * manager)
 {
 	if (!firtsUpdate)
 	{
