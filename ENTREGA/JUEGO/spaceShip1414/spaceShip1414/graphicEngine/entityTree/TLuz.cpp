@@ -77,7 +77,7 @@ void TLuz::renderLuz(const glm::mat4& model, openGLShader& shader, const glm::ma
 	float Shininess = 0.1f;
 	float Strength = 0.2f;
 	
-	//std::cout << "------------ Luz ID: " << id << " --------------" << std::endl;
+	std::cout << "------------ Luz ID: " << id << " --------------" << std::endl;
 	std::cout << "Inicia Render Luz shader" << std::endl;
 	glUniform1f(shader.getUniformLocation("Shininess"), Shininess);
 	glUniform1f(shader.getUniformLocation("Strength"), Strength);

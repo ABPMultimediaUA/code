@@ -8,11 +8,18 @@
 Luces::Luces(TGraphicEngine * motorApp, glm::vec3 tras, glm::vec3 r, glm::vec3 sca, int iden) : velocity{ 1.0f }
 {
 
-	nodo = motorApp->addLuz();
-	motorApp->trasladar(nodo, tras.x, tras.y, tras.z);
-	motorApp->rotarYPR(nodo, r.x, r.y, r.z);
-	motorApp->escalar(nodo, sca.x, sca.y, sca.z);
-	motorApp->addRegistroLuz(nodo);
+	
+
+	pos = tras;
+
+	if (iden==0)
+	{
+		nodo = motorApp->addLuz();
+		motorApp->trasladar(nodo, tras.x, tras.y, tras.z);
+		motorApp->rotarYPR(nodo, r.x, r.y, r.z);
+		motorApp->escalar(nodo, sca.x, sca.y, sca.z);
+		motorApp->addRegistroLuz(nodo);
+	}
 	ID = iden;
 }
 
@@ -189,3 +196,14 @@ int Luces::getID()
 {
 	return ID;
 }
+
+glm::vec3 Luces::getPos()
+{
+	return pos;
+}
+
+TNodo* Luces::getNodo()
+{
+	return nodo;
+}
+

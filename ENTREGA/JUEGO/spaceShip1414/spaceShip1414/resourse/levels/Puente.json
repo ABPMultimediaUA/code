@@ -9756,6 +9756,45 @@
           "children": []
         },
         {
+          "name": "18",
+          "components": [
+            {
+              "localPosition": [
+                -9.0,
+                12.0,
+                -66.0
+              ],
+              "localRotation": [
+                90.0,
+                0.0,
+                0.0
+              ],
+              "localScale": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "name": null,
+              "parentName": null,
+              "type": "Transform"
+            },
+            {
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "range": 10.0,
+              "lightType": "Point",
+              "castsShadows": false,
+              "realtime": false,
+              "type": "Light"
+            }
+          ],
+          "children": []
+        },
+        {
           "name": "1",
           "components": [
             {
@@ -11752,45 +11791,6 @@
                 -382.67,
                 12.29,
                 40.4
-              ],
-              "localRotation": [
-                90.0,
-                0.0,
-                0.0
-              ],
-              "localScale": [
-                1.0,
-                1.00000048,
-                1.00000048
-              ],
-              "name": null,
-              "parentName": null,
-              "type": "Transform"
-            },
-            {
-              "color": [
-                1.0,
-                1.0,
-                1.0,
-                1.0
-              ],
-              "range": 15.0,
-              "lightType": "Point",
-              "castsShadows": false,
-              "realtime": false,
-              "type": "Light"
-            }
-          ],
-          "children": []
-        },
-        {
-          "name": "18",
-          "components": [
-            {
-              "localPosition": [
-                -4.1,
-                15.34,
-                -59.6
               ],
               "localRotation": [
                 90.0,

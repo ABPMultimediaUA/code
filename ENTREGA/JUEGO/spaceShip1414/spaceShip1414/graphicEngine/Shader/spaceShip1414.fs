@@ -26,7 +26,7 @@ struct Luces
 	float atenuacionCuadratica;
 };
 
-const int LuMax = 30;
+const int LuMax = 60;
 uniform Luces luz[LuMax];
 uniform float Shininess;
 uniform float Strength;

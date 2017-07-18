@@ -91,6 +91,7 @@ private:
 	std::vector<Camara*> listaDeCamaras;
 	std::vector<Objetos*> objConsumables;
 	std::vector<Waypoints*> waypoints;
+	Luces *luzActual;
 	int tam;
 	Entity2D *entity;
 	// Juego *jue;

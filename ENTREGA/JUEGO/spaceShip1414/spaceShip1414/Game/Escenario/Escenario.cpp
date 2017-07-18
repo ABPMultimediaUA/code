@@ -102,6 +102,7 @@ Escenario::~Escenario() {
 	delete jugador;
 	delete entity;
 	std::cout << "Escenario Destroyed" << std::endl;
+
 }
 
 void Escenario::setPadres(std::string nombre, double t[], double r[], double s[], std::vector<Escenario::ElementoHijo> objetos) {
@@ -271,28 +272,32 @@ void Escenario::dibujarEscenario() {
 				int ID;
 				std::stringstream((*T).nombre) >> ID;
 
+				std::cout << "Lus ID: " << ID << " " << tx << " " << ty <<" "<< -tz << std::endl;
 
 				Luces * luz = new Luces(engine, glm::vec3(tx, ty, -tz),
 					glm::vec3(rx, ry, -rz),
 					glm::vec3(ex, ey, ez), ID);
-				luz->activar();
-				luz->setLocal(true);
-				luz->setFoco(false);
-				float v[3] = { 0.25f, 0.25f, 0.25f };
-				luz->setAmbient(v);
-				v[0] = 20.0f;
-				v[1] = 20.0f;
-				v[2] = 20.0f;
-				luz->setColor(v);
-				luz->setAtenuacionConstante(1.0f);
-				luz->setAtenuacionLiniar(0.09f);
-				luz->setAtenuacionCuadratica(0.032f);
-				v[0] = (float)(tx);
-				v[1] = (float)ty;
-				v[2] = (float)(-tz);
-				luz->setDireccionLuz(v);
-				luz->setExponentFoco(glm::cos(glm::radians(15.0f)));
-				luz->setCosCutOffFoco(glm::cos(glm::radians(12.5f)));
+				if (ListLuces.empty())
+				{	luz->activar();
+					luz->setLocal(true);
+					luz->setFoco(false);
+					float v[3] = { 0.25f, 0.25f, 0.25f };
+					luz->setAmbient(v);
+					v[0] = 20.0f;
+					v[1] = 20.0f;
+					v[2] = 20.0f;
+					luz->setColor(v);
+					luz->setAtenuacionConstante(1.0f);
+					luz->setAtenuacionLiniar(0.09f);
+					luz->setAtenuacionCuadratica(0.032f);
+					v[0] = (float)(tx);
+					v[1] = (float)ty;
+					v[2] = (float)(-tz);
+					luz->setDireccionLuz(v);
+					luz->setExponentFoco(glm::cos(glm::radians(15.0f)));
+					luz->setCosCutOffFoco(glm::cos(glm::radians(12.5f)));
+					luzActual = luz;
+				}
 				ListLuces.push_back(luz);
 			}
 		}
@@ -2531,21 +2536,28 @@ void Escenario::cambioDeLuces(int ID) {
 
 	//ListLuces
 	//luces del ID que no se tienen que activar 
+
+
 	for (std::size_t i = 0; i < ListLuces.size(); i++) {
-		ListLuces[i]->desactivar();
+		//ListLuces[i]->desactivar();
+	std::cout << "ID: " << ListLuces[i]->getID() << " IDpara: " << i<<" "<< ID << std::endl;
 		if (ListLuces[i]->getID() == ID) {
-			std::cout << "ENCONTRADO" << std::endl;
-			ListLuces[i]->activar();
+			engine->resetTransform(luzActual->getNodo(),'t');
+			engine->trasladar(luzActual->getNodo(), ListLuces[i]->getPos().x, ListLuces[i]->getPos().y, ListLuces[i]->getPos().z);
 		}
 	}
-	if (ID == 12 || ID == 18 || ID == 9)
-	{
-		for (std::size_t i = 0; i < ListLuces.size(); i++) {
-			if (ListLuces[i]->getID() == 0) {
-				ListLuces[i]->activar();
-			}
-		}
-	}
+
+	
+	
+
+	//if (ID == 12 || ID == 18 || ID == 9)
+	//{
+	//	for (std::size_t i = 0; i < ListLuces.size(); i++) {
+	//		if (ListLuces[i]->getID() == 0) {
+	//			ListLuces[i]->activar();
+	//		}
+	//	}
+	//}
 
 
 }

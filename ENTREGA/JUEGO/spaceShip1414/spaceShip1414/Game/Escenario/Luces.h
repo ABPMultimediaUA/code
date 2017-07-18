@@ -43,10 +43,13 @@ public:
 	void scale(TGraphicEngine *, float, float, float);
 	void translation(TGraphicEngine *, float, float, float);
 	int getID();
+	glm::vec3 getPos();
+	TNodo* getNodo();
 
 private:
 	float velocity;
 	TNodo* nodo;
 	int ID;
+	glm::vec3 pos;
 };
 
